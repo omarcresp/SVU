@@ -1,0 +1,556 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Universal Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Universal_Love"],
+                    "Value": "{{ModId}}_donut {{ModId}}_unknowable_dish",
+                    "Delimiter": " "
+                },
+                // Universal Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Universal_Neutral"],
+                    "Value": "{{ModId}}_neutral_fugu {{ModId}}_fried_egg",
+                    "Delimiter": " "
+                },
+                // Universal Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Universal_Dislike"],
+                    "Value": "{{ModId}}_unlucky_fugu {{ModId}}_baked_void_salmon",
+                    "Delimiter": " "
+                },
+                // Personal Tastes
+                //Abigail Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Abigail", 1 ],
+                    "Value": "{{ModId}}_pierogies {{ModId}}_charcuterie {{ModId}}_lucky_fugu",
+                    "Delimiter": " "
+                },
+                //Abigail Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Abigail", 9 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                //Abigail Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Abigail", 5 ],
+                    "Value": "{{ModId}}_cooked_egg {{ModId}}_fried_egg {{ModId}}_omelette {{ModId}}_the_egg",
+                    "Delimiter": " "
+                },
+                //Alex Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Alex", 1 ],
+                    "Value": "{{ModId}}_fried_egg {{ModId}}_cooked_egg {{ModId}}_the_egg {{ModId}}_smoked_salmon_bagel {{ModId}}_salmon_filet",
+                    "Delimiter": " "
+                },
+                //Alex Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Alex", 9 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                //Alex Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Alex", 5 ],
+                    "Value": "{{ModId}}_gooseberry_pie {{ModId}}_apple_melon_pie {{ModId}}_dragonfruit_gelatin {{ModId}}_tropical_delight {{ModId}}_charcuterie {{ModId}}_shrimp_rice",
+                    "Delimiter": " "
+                },
+                //Caroline Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Caroline", 1 ],
+                    "Value": "{{ModId}}_sweet_potato_fries {{ModId}}_mushroom_skewer {{ModId}}_pita {{ModId}}_cinnamon_latte",
+                    "Delimiter": " "
+                },
+                //Caroline Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Caroline", 9 ],
+                    "Value": "{{ModId}}_cooked_egg {{ModId}}_fried_egg {{ModId}}_omelette {{ModId}}_the_egg {{ModId}}_heavy_cream {{ModId}}_gooseberry_pie {{ModId}}_apple_melon_pie {{ModId}}_dragonfruit_gelatin {{ModId}}_tropical_delight {{ModId}}_charcuterie",
+                    "Delimiter": " "
+                },
+                //Caroline Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Caroline", 5 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms {{ModId}}_sandwich {{ModId}}_dipping_fries {{ModId}}_grilled_cheese",
+                    "Delimiter": " "
+                },
+                //Dwarf Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Dwarf", 1 ],
+                    "Value": "{{ModId}}_cinnamon_latte {{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                //Dwarf Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Dwarf", 9 ],
+                    "Value": "{{ModId}}_heavy_cream {{ModId}}_gooseberry_pie {{ModId}}_apple_melon_pie {{ModId}}_dragonfruit_gelatin {{ModId}}_tropical_delight {{ModId}}_charcuterie",
+                    "Delimiter": " "
+                },
+                //Dwarf Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Dwarf", 5 ],
+                    "Value": "{{ModId}}_baked_void_salmon",
+                    "Delimiter": " "
+                },
+                //Elliott Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Elliott", 1 ],
+                    "Value": "{{ModId}}_smoked_salmon_bagel {{ModId}}_fresh_maki",
+                    "Delimiter": " "
+                },
+                //Elliott Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Elliott", 9 ],
+                    "Value": "{{ModId}}_cooked_egg {{ModId}}_fried_egg {{ModId}}_omelette {{ModId}}_the_egg",
+                    "Delimiter": " "
+                },
+                //Elliott Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Elliott", 5 ],
+                    "Value": "{{ModId}}_fried_sea_cucumber {{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms {{ModId}}_margerita_pizza",
+                    "Delimiter": " "
+                },
+                //Emily Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Emily", 1 ],
+                    "Value": "{{ModId}}_sandwich {{ModId}}_burger {{ModId}}_blackened_tofu",
+                    "Delimiter": " "
+                },
+                //Emily Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Emily", 9 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms {{ModId}}_shrimp_rice",
+                    "Delimiter": " "
+                },
+                //Emily Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Emily", 5 ],
+                    "Value": "{{ModId}}_shrimp_nigiri {{ModId}}_shrimp_rice {{ModId}}_fried_sea_cucumber {{ModId}}_lobster_quinoa {{ModId}}_smoked_salmon_bagel {{ModId}}_fresh_maki {{ModId}}_catfish_dinner {{ModId}}_salmon_filet {{ModId}}_broiled_tiger_trout {{ModId}}_fish_and_chips {{ModId}}_vanilla_ice_cream",
+                    "Delimiter": " "
+                },
+                //Evelyn Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Evelyn", 1 ],
+                    "Value": "{{ModId}}_pull_apart_bread {{ModId}}_oatmeal_raisin_cookies {{ModId}}_sweet_potato_mash {{ModId}}_chocolate_cupcake",
+                    "Delimiter": " "
+                },
+                //Evelyn Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Evelyn", 9 ],
+                    "Value": "{{ModId}}_cooked_egg {{ModId}}_fried_egg {{ModId}}_omelette {{ModId}}_the_egg",
+                    "Delimiter": " "
+                },
+                //Evelyn Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Evelyn", 5 ],
+                    "Value": "{{ModId}}_shrimp_nigiri {{ModId}}_shrimp_rice {{ModId}}_fried_sea_cucumber {{ModId}}_lobster_quinoa {{ModId}}_fresh_maki {{ModId}}_margherita_pizza",
+                    "Delimiter": " "
+                },
+                //George Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "George", 1 ],
+                    "Value": "{{ModId}}_sweet_potato_mash {{ModId}}_pull_apart_bread {{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                //George Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "George", 9 ],
+                    "Value": "{{ModId}}_heavy_cream {{ModId}}_cooked_egg {{ModId}}_fried_egg {{ModId}}_omelette {{ModId}}_the_egg {{ModId}}_gooseberry_pie {{ModId}}_apple_melon_pie {{ModId}}_dragonfruit_gelatin {{ModId}}_tropical_delight {{ModId}}_charcuterie",
+                    "Delimiter": " "
+                },
+                //Gus Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Gus", 1 ],
+                    "Value": "{{ModId}}_croquettes {{ModId}}_mushroom_skewer {{ModId}}_pita",
+                    "Delimiter": " "
+                },
+                //Gus Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Gus", 5 ],
+                    "Value": "{{ModId}}_fried_sea_cucumber {{ModId}}_shrimp_rice",
+                    "Delimiter": " "
+                },
+                //Haley Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Haley", 1 ],
+                    "Value": "{{ModId}}_apple_melon_pie {{ModId}}_gooseberry_pie {{ModId}}_apple_melon_pie {{ModId}}_dragonfruit_gelatin {{ModId}}_tropical_delight {{ModId}}_chocolate_cupcake",
+                    "Delimiter": " "
+                },
+                //Haley Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Haley", 5 ],
+                    "Value": "{{ModId}}_unknowable_dish {{ModId}}_donut {{ModId}}_heavy_cream {{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                //Harvey Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Harvey", 1 ],
+                    "Value": "{{ModId}}_dumpling_soup {{ModId}}_cinnamon_latte {{ModId}}_burger {{ModId}}_mushroom_crepes",
+                    "Delimiter": " "
+                },
+                //Harvey Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Harvey", 9 ],
+                    "Value": "{{ModId}}_heavy_cream",
+                    "Delimiter": " "
+                },
+                //Harvey Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Harvey", 5 ],
+                    "Value": "{{ModId}}_oatmeal_raisin_cookies {{ModId}}_chocolate_cupcake {{ModId}}_omelette {{ModId}}_vanilla_ice_cream {{ModId}}_croquettes",
+                    "Delimiter": " "
+                },
+                //Jodi Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Jodi", 1 ],
+                    "Value": "{{ModId}}_pita {{ModId}}_chocolate_cupcake {{ModId}}_fried_sea_cucumber {{ModId}}_gooseberry_pie {{ModId}}_pierogies {{ModId}}_catfish_dinner {{ModId}}_salmon_filet {{ModId}}_broiled_tiger_trout {{ModId}}_fish_and_chips",
+                    "Delimiter": " "
+                },
+                //Jodi Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Jodi", 5 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms {{ModId}}_grilled_cheese {{ModId}}_shrimp_rice {{ModId}}_spicy_chocolate_bar {{ModId}}_fried_egg {{ModId}}_enchiladas {{ModId}}_blackened_tofu",
+                    "Delimiter": " "
+                },
+                //Kent Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Kent", 1 ],
+                    "Value": "{{ModId}}_smoked_salmon_bagel {{ModId}}_mushroom_skewer",
+                    "Delimiter": " "
+                },
+                //Kent Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Kent", 9 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                //Kent Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Kent", 5 ],
+                    "Value": "{{ModId}}_shrimp_nigiri {{ModId}}_lobster_quinoa {{ModId}}_fresh_maki",
+                    "Delimiter": " "
+                },
+                //Krobus Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Krobus", 1 ],
+                    "Value": "{{ModId}}_baked_void_salmon {{ModId}}_cinnamon_latte {{ModId}}_hot_cocoa",
+                    "Delimiter": " "
+                },
+                //Krobus Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Krobus", 9 ],
+                    "Value": "{{ModId}}_gooseberry_pie {{ModId}}_apple_melon_pie {{ModId}}_dragonfruit_gelatin {{ModId}}_tropical_delight {{ModId}}_charcuterie {{ModId}}_cooked_egg {{ModId}}_fried_egg {{ModId}}_omelette {{ModId}}_the_egg {{ModId}}_heavy_cream",
+                    "Delimiter": " "
+                },
+                //Krobus Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Krobus", 5 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                //Leah Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Leah", 1 ],
+                    "Value": "{{ModId}}_gooseberry_pie {{ModId}}_omelette {{ModId}}_green_salad {{ModId}}_caprese_salad {{ModId}}_mushroom_crepes",
+                    "Delimiter": " "
+                },
+                //Leah Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Leah", 5 ],
+                    "Value": "{{ModId}}_pecan_pie {{ModId}}_oatmeal_raisin_cookies {{ModId}}_fried_egg {{ModId}}_vanilla_ice_cream {{ModId}}_chocolate_cupcake {{ModId}}_margherita_pizza",
+                    "Delimiter": " "
+                },
+                //Lewis Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Lewis", 1 ],
+                    "Value": "{{ModId}}_minestrone_soup {{ModId}}_sweet_potato_mash {{ModId}}_sweet_potato_fries {{ModId}}_grilled cheese {{ModId}}_spicy_chocolate_bar {{ModId}}_pierogies",
+                    "Delimiter": " "
+                },
+                //Lewis Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Lewis", 9 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                //Lewis Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Lewis", 5 ],
+                    "Value": "{{ModId}}_shrimp_rice",
+                    "Delimiter": " "
+                },
+                //Marnie Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Marnie", 1 ],
+                    "Value": "{{ModId}}_omelette {{ModId}}_pecan_pie {{ModId}}_cooked_egg {{ModId}}_fried_egg {{ModId}}_the_egg",
+                    "Delimiter": " "
+                },
+                //Marnie Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Marnie", 9 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms {{ModId}}_gooseberry_pie {{ModId}}_apple_melon_pie {{ModId}}_dragonfruit_gelatin {{ModId}}_tropical_delight {{ModId}}_charcuterie",
+                    "Delimiter": " "
+                },
+                //Marnie Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Marnie", 5 ],
+                    "Value": "{{ModId}}_adzuki_onigiri {{ModId}}_fresh_maki {{ModId}}_shrimp_rice",
+                    "Delimiter": " "
+                },
+                //Maru Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Maru", 1 ],
+                    "Value": "{{ModId}}_guacamole {{ModId}}_pecan_pie {{ModId}}_grilled_cheese {{ModId}}_shrimp_rice {{ModId}}_spicy_chocolate_bar {{ModId}}_fried_egg {{ModId}}_enchiladas {{ModId}}_blackened_tofu",
+                    "Delimiter": " "
+                },
+                //Maru Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Maru", 5 ],
+                    "Value": "{{ModId}}_gooseberry_pie {{ModId}}_burger {{ModId}}_mushroom_crepes",
+                    "Delimiter": " "
+                },
+                //Penny Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Penny", 1 ],
+                    "Value": "{{ModId}}_tomato_soup {{ModId}}_apple_melon_pie {{ModId}}_miso_soup {{ModId}}_shrimp_nigiri",
+                    "Delimiter": " "
+                },
+                //Penny Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Penny", 9 ],
+                    "Value": "{{ModId}}_cooked_egg {{ModId}}_fried_egg {{ModId}}_omelette {{ModId}}_the_egg {{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms {{ModId}}_shrimp_rice",
+                    "Delimiter": " "
+                },
+                //Penny Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Penny", 5 ],
+                    "Value": "{{ModId}}_fried_sea_cucumber",
+                    "Delimiter": " "
+                },
+                //Sebastian Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Sebastian", 1 ],
+                    "Value": "{{ModId}}_fancy_ramen {{ModId}}_shrimp_nigiri {{ModId}}_fresh_maki {{ModId}}_baked_void_salmon {{ModId}}_bamboo_shoots",
+                    "Delimiter": " "
+                },
+                //Sebastian Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Sebastian", 9 ],
+                    "Value": "{{ModId}}_heavy_cream {{ModId}}_gooseberry_pie {{ModId}}_apple_melon_pie {{ModId}}_dragonfruit_gelatin {{ModId}}_tropical_delight {{ModId}}_charcuterie {{ModId}}_catfish_dinner {{ModId}}_salmon_filet {{ModId}}_broiled_tiger_trout {{ModId}}_fish_and_chips",
+                    "Delimiter": " "
+                },
+                //Sebastian Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Sebastian", 5 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms {{ModId}}_cooked_egg {{ModId}}_fried_egg {{ModId}}_omelette {{ModId}}_the_egg",
+                    "Delimiter": " "
+                },
+                //Shane Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Shane", 1 ],
+                    "Value": "{{ModId}}_grilled_cheese {{ModId}}_shrimp_rice {{ModId}}_spicy_chocolate_bar {{ModId}}_fried_egg {{ModId}}_enchiladas {{ModId}}_blackened_tofu {{ModId}}_margherita_pizza",
+                    "Delimiter": " "
+                },
+                //Shane Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Shane", 9 ],
+                    "Value": "{{ModId}}_heavy_cream {{ModId}}_baked_void_salmon",
+                    "Delimiter": " "
+                },
+                //Shane Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Shane", 5 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms {{ModId}}_burger",
+                    "Delimiter": " "
+                },
+                //Willy Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Willy", 1 ],
+                    "Value": "{{ModId}}_fried_sea_cucumber {{ModId}}_catfish_dinner",
+                    "Delimiter": " "
+                },
+                //Willy Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Willy", 9 ],
+                    "Value": "{{ModId}}_shrimp_nigiri {{ModId}}_shrimp_rice {{ModId}}_fried_sea_cucumber {{ModId}}_lobster_quinoa {{ModId}}_smoked_salmon_bagel {{ModId}}_fresh_maki {{ModId}}_catfish_dinner {{ModId}}_salmon_filet {{ModId}}_broiled_tiger_trout {{ModId}}_fish_and_chips",
+                    "Delimiter": " "
+                },
+                //Willy Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Willy", 5 ],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                //Wizard Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Wizard", 1 ],
+                    "Value": "{{ModId}}_baked_void_salmon",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Modded Compat
+        //DSV
+        {
+            "Action": "EditData",
+            "When": { 
+                "DSVElliottCompat": "false" 
+            },
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Elliott", 1 ],
+                    "Value": "{{ModId}}_shrimp_nigiri {{ModId}}_shrimp_rice {{ModId}}_lobster_quinoa",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Edel
+        {
+            "Action": "EditData",
+            "When": {
+				"HasMod |contains=Aviroen.Edelweiss": true
+			},
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "EdelweissSeung", 1],
+                    "Value": "{{ModId}}_the_egg {{ModId}}_unknowable_dish {{ModId}}_catfish_dinner {{ModId}}_salmon_filet {{ModId}}_broiled_tiger_trout {{ModId}}_fish_and_chips {{ModId}}_shrimp_nigiri {{ModId}}_shrimp_rice {{ModId}}_fried_sea_cucumber {{ModId}}_lobster_quinoa {{ModId}}_smoked_salmon_bagel {{ModId}}_fresh_maki",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Jean and Jorts
+        {
+            "Action": "EditData",
+            "When": {
+				"HasMod |contains=tiakall.jortsandjean": true
+			},
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Jean Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "JeanCat", 1],
+                    "Value": "{{ModId}}_heavy_cream {{ModId}}_salmon_filet",
+                    "Delimiter": " "
+                },
+                // Jean Neutral
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "JeanCat", 9],
+                    "Value": "{{ModId}}_baked_void_salmon",
+                    "Delimiter": " "
+                },
+                //Jorts Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "JortsCat", 1],
+                    "Value": "{{ModId}}_heavy_cream {{ModId}}_salmon_filet",
+                    "Delimiter": " "
+                },
+                //Jorts Like
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "JortsCat", 3],
+                    "Value": "{{ModId}}_baked_void_salmon",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Wren
+        {
+            "Action": "EditData",
+            "When": {
+				"HasMod |contains=tiakall.tiakall.wren": true
+			},
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Wren Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "WrenSong", 1],
+                    "Value": "{{ModId}}_mushroom_crepes {{ModId}}_mushroom_stroganoff {{ModId}}_mushroom_skewer {{ModId}}_beer_braised_mushrooms",
+                    "Delimiter": " "
+                },
+                // Wren Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "WrenSong", 6],
+                    "Value": "{{ModId}}_donut {{ModId}}_fried_egg {{ModId}}_pierogies {{ModId}}_sweet_potato_fries {{ModId}}_popcorn {{ModId}}_dipping_fries {{ModId}}_grilled_cheese {{ModId}}_croquettes {{ModId}}_fried_sea_cucumber {{ModId}}_fish_and_chips {{ModId}}_caprese_salad {{ModId}}_green_salad",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

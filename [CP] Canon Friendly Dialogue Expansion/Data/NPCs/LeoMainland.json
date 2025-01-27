@@ -1,0 +1,81 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_LeoMainland_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/LeoMainland",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)444": "{{i18n: CFE_Leo_DuckFeather}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Leo}}' = 'true' OR ('{{CFE_Leo}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Leo_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Leo": "{{i18n: CFE_Leo_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Leo}}' = 'true' OR ('{{CFE_Leo}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Leo_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/LeoMainland",
+      "Entries": {
+        "AcceptGift_(O)279": "{{i18n: CFE_Leo_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Leo_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Leo_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Leo_RabbitsFoot}}",
+
+        "AcceptGift_(TR)ParrotEgg": "{{i18n: CFE_Leo_ParrotEgg}}",
+
+        "AcceptGift_(O)834": "{{i18n: CFE_Leo_Mango}}",
+        "AcceptGift_(O)289": "{{i18n: CFE_Leo_OstrichEgg}}",
+        "AcceptGift_(O)906": "{{i18n: CFE_Leo_Poi}}"
+      },
+      "When": { "Query: '{{CFE_Leo}}' = 'true' OR ('{{CFE_Leo}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Leo_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/LeoMainland",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Leo_spring1}}",
+        "winter_28_2": "{{i18n: CFE_Leo_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon8": "{{i18n: CFE_Leo_summerMon8}}",
+        "summer_Tue10": "{{i18n: CFE_Leo_summerTue10}}",
+        "summer_Fri10": "{{i18n: CFE_Leo_summerFri10}}",
+        "summer_Sat10": "{{i18n: CFE_Leo_summerSat10}}",
+
+        "fall_Thu10": "{{i18n: CFE_Leo_fallThu10}}",
+        "fall_Sat10": "{{i18n: CFE_Leo_fallSat10}}",
+
+        "winter_Wed10": "{{i18n: CFE_Leo_winterWed10}}",
+        "winter_Sun8": "{{i18n: CFE_Leo_winterSun8}}",
+
+        "Mon10": "{{i18n: CFE_Leo_Mon10}}",
+        "Mon8": "{{i18n: CFE_Leo_Mon8}}",
+        "Tue8": "{{i18n: CFE_Leo_Tue8}}",
+        "Wed10": "{{i18n: CFE_Leo_Wed10}}",
+        "Wed8": "{{i18n: CFE_Leo_Wed8}}",
+        "Fri10": "{{i18n: CFE_Leo_Fri10}}",
+        "Sat8": "{{i18n: CFE_Leo_Sat8}}",
+        "Sun8": "{{i18n: CFE_Leo_Sun8}}",
+
+        //Generic Weekday Dialogue
+        "fall_Tue": "{{i18n: CFE_Leo_fallTue}}",
+        "fall_Wed": "{{i18n: CFE_Leo_fallWed}}",
+        "winter_Wed": "{{i18n: CFE_Leo_winterWed}}"
+      },
+      "When": { "Query: '{{CFE_Leo}}' = 'true' OR ('{{CFE_Leo}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

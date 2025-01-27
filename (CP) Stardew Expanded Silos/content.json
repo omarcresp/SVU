@@ -1,0 +1,288 @@
+{
+    "Format": "2.3.0",
+    "ConfigSchema": {
+        "BigHay": {
+            "Default": 480,
+            "Description": "How much hay the Big Silo can store (must be an integer of 0 or higher)",
+            "Section": "Big Silo"
+        },
+        "BigGold": {
+            "Default": 1000,
+            "Description": "How much gold the Big Silo needs to be built (must be an integer of 0 or higher)",
+            "Section": "Big Silo"
+        },
+        "BigStone": {
+            "Default": 200,
+            "Description": "How much stone the Big Silo needs to be built (must be an integer of 0 or higher)",
+            "Section": "Big Silo"
+        },
+        "BigClay": {
+            "Default": 20,
+            "Description": "How much clay the Big Silo needs to be built (must be an integer of 0 or higher)",
+            "Section": "Big Silo"
+        },
+        "BigBar": {
+            "Default": 5,
+            "Description": "How many gold bars the Big Silo needs to be built (must be an integer of 0 or higher)",
+            "Section": "Big Silo"
+        },
+        "DeluxeHay": {
+            "Default": 960,
+            "Description": "How many gold bars the Deluxe Silo needs to be built (must be an integer of 0 or higher)",
+            "Section": "Deluxe Silo"
+        },
+        "DeluxeGold": {
+            "Default": 10000,
+            "Description": "How much gold the Deluxe Silo needs to be built (must be an integer of 0 or higher)",
+            "Section": "Deluxe Silo"
+        },
+        "DeluxeStone": {
+            "Default": 350,
+            "Description": "How much stone the Deluxe Silo needs to be built (must be an integer of 0 or higher)",
+            "Section": "Deluxe Silo"
+        },
+        "DeluxeClay": {
+            "Default": 50,
+            "Description": "How much clay the Deluxe Silo needs to be built (must be an integer of 0 or higher)",
+            "Section": "Deluxe Silo"
+        },
+        "DeluxeBar": {
+            "Default": 5,
+            "Description": "How many gold bars the Deluxe Silo needs to be built (must be an integer of 0 or higher)",
+            "Section": "Deluxe Silo"
+        },
+        "IsSeasonal": {
+            "Default": true,
+            "Description": "Whether to use seasonal assets",
+            "Section": "Misc"            
+        }
+    },
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Buildings//BigSilo",
+            "FromFile": "assets//bigsilo.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Buildings//DeluxeSilo",
+            "FromFile": "assets//deluxesilo.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Buildings//BigSilo",
+            "FromFile": "assets//seasonal//bigsilo-{{season}}.png",
+            "When": {
+                "IsSeasonal": true,
+                "HasFile:{{FromFile}}": true
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Buildings//DeluxeSilo",
+            "FromFile": "assets//seasonal//deluxesilo-{{season}}.png",
+            "When": {
+                "IsSeasonal": true,
+                "HasFile:{{FromFile}}": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data//PaintData",
+            "Entries": {
+                "Silo": "Building/-20 -5/Roof/-15 0/Trim/-5 5",
+                "BigSilo": "Building/-20 -5/Roof/-15 0/Trim/-5 5",
+                "DeluxeSilo": "Building/-20 -5/Roof/-15 0/Trim/-5 5"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Buildings//Silo_PaintMask, Buildings//BigSilo_PaintMask, Buildings//DeluxeSilo_PaintMask",
+            "FromFile": "assets//paintmask.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Entries": {
+                "BigSilo": {
+                    "Name": "Big Silo",
+                    "NameForGeneralType": null,
+                    "Description": "A bigger silo. Holds {{BigHay}} hay",
+                    "Texture": "Buildings\\BigSilo",
+                    "Skins": [],
+                    "DrawShadow": true,
+                    "UpgradeSignTile": "1, 2",
+                    "UpgradeSignHeight": 16.0,
+                    "Size": {
+                        "X": 3,
+                        "Y": 3
+                    },
+                    "FadeWhenBehind": true,
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 0,
+                        "Height": 0
+                    },
+                    "SeasonOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "DrawOffset": "0, 0",
+                    "SortTileOffset": 0.0,
+                    "CollisionMap": null,
+                    "AdditionalPlacementTiles": null,
+                    "BuildingType": null,
+                    "Builder": "Robin",
+                    "BuildCondition": null,
+                    "BuildDays": 2,
+                    "BuildCost": "{{BigGold}}",
+                    "BuildMaterials": [
+                        {
+                            "ItemId": "(O)390",
+                            "Amount": "{{BigStone}}"
+                        },
+                        {
+                            "ItemId": "(O)330",
+                            "Amount": "{{BigClay}}"
+                        },
+                        {
+                            "ItemId": "(O)336",
+                            "Amount": "{{BigBar}}"
+                        }
+                    ],
+                    "BuildingToUpgrade": "Silo",
+                    "MagicalConstruction": false,
+                    "BuildMenuDrawOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "HumanDoor": {
+                        "X": -1,
+                        "Y": -1
+                    },
+                    "AnimalDoor": {
+                        "X": -1,
+                        "Y": -1,
+                        "Width": 0,
+                        "Height": 0
+                    },
+                    "AnimalDoorOpenDuration": 0.0,
+                    "AnimalDoorOpenSound": null,
+                    "AnimalDoorCloseDuration": 0.0,
+                    "AnimalDoorCloseSound": null,
+                    "NonInstancedIndoorLocation": null,
+                    "IndoorMap": null,
+                    "IndoorMapType": null,
+                    "MaxOccupants": 20,
+                    "ValidOccupantTypes": [],
+                    "AllowAnimalPregnancy": false,
+                    "IndoorItemMoves": null,
+                    "IndoorItems": null,
+                    "AddMailOnBuild": null,
+                    "Metadata": {},
+                    "ModData": {},
+                    "HayCapacity": "{{BigHay}}",
+                    "Chests": null,
+                    "DefaultAction": "BuildingSilo",
+                    "AdditionalTilePropertyRadius": 0,
+                    "AllowsFlooringUnderneath": true,
+                    "ActionTiles": [],
+                    "TileProperties": [],
+                    "ItemConversions": null,
+                    "DrawLayers": null,
+                    "CustomFields": null
+                },
+                "DeluxeSilo": {
+                    "Name": "Deluxe Silo",
+                    "NameForGeneralType": null,
+                    "Description": "The biggest silo. Holds {{DeluxeHay}} hay.",
+                    "Texture": "Buildings\\DeluxeSilo",
+                    "Skins": [],
+                    "DrawShadow": true,
+                    "UpgradeSignTile": "1, 2",
+                    "UpgradeSignHeight": 16.0,
+                    "Size": {
+                        "X": 3,
+                        "Y": 3
+                    },
+                    "FadeWhenBehind": true,
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 0,
+                        "Height": 0
+                    },
+                    "SeasonOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "DrawOffset": "0, 0",
+                    "SortTileOffset": 0.0,
+                    "CollisionMap": null,
+                    "AdditionalPlacementTiles": null,
+                    "BuildingType": null,
+                    "Builder": "Robin",
+                    "BuildCondition": null,
+                    "BuildDays": 2,
+                    "BuildCost": "{{DeluxeGold}}",
+                    "BuildMaterials": [
+                        {
+                            "ItemId": "(O)390",
+                            "Amount": "{{DeluxeStone}}"
+                        },
+                        {
+                            "ItemId": "(O)330",
+                            "Amount": "{{DeluxeClay}}"
+                        },
+                        {
+                            "ItemId": "(O)337",
+                            "Amount": "{{DeluxeBar}}"
+                        }
+                    ],
+                    "BuildingToUpgrade": "BigSilo",
+                    "MagicalConstruction": false,
+                    "BuildMenuDrawOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "HumanDoor": {
+                        "X": -1,
+                        "Y": -1
+                    },
+                    "AnimalDoor": {
+                        "X": -1,
+                        "Y": -1,
+                        "Width": 0,
+                        "Height": 0
+                    },
+                    "AnimalDoorOpenDuration": 0.0,
+                    "AnimalDoorOpenSound": null,
+                    "AnimalDoorCloseDuration": 0.0,
+                    "AnimalDoorCloseSound": null,
+                    "NonInstancedIndoorLocation": null,
+                    "IndoorMap": null,
+                    "IndoorMapType": null,
+                    "MaxOccupants": 20,
+                    "ValidOccupantTypes": [],
+                    "AllowAnimalPregnancy": false,
+                    "IndoorItemMoves": null,
+                    "IndoorItems": null,
+                    "AddMailOnBuild": null,
+                    "Metadata": {},
+                    "ModData": {},
+                    "HayCapacity": "{{DeluxeHay}}",
+                    "Chests": null,
+                    "DefaultAction": "BuildingSilo",
+                    "AdditionalTilePropertyRadius": 0,
+                    "AllowsFlooringUnderneath": true,
+                    "ActionTiles": [],
+                    "TileProperties": [],
+                    "ItemConversions": null,
+                    "DrawLayers": null,
+                    "CustomFields": null
+                }
+            }
+        }
+    ]
+}

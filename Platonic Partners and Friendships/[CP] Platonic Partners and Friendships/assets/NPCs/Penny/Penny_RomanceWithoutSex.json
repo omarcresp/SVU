@@ -1,0 +1,195 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "SpouseStardrop": "I found a dusty old book in the library that showed me the way to that fruit!$h#$b#I was sure you'd love it, so I gave it to you to show how much I appreciate you.#$b#It's in my nature to take care of other people... but since we've been together, you've shown me what it's like to feel cared for in return.$7#$b#I love you, @.$l",
+            },
+        },
+        {
+            "LogName": "Penny terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Penny terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+		"event_pool4": "...Oh, @. I thought you did, but I wasn't sure.$6#$b#I'll never forget this moment...$6",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries":
+            {
+                "Penny_spouse": "These vapors... You'll have to go on without me...$u",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialoguePenny",
+            "Entries":
+            {
+                "Indoor_Night_4": "Ready to tuck in? I'm pretty tired myself.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BathHouse_Pool",
+            "Entries":
+            {
+  		"38/f Penny 2500/t 1900 2400/n pennySpa": "echos/-1000 -1000/farmer 13 23 2 Penny 9 29 1/swimming farmer/swimming Penny/skippable/showFrame Penny 31/viewport 13 27 true/pause 2000/playSound slosh/move farmer 0 6 3/positionOffset farmer 0 16/pause 700/speak Penny \"There you are... I was worried you didn't get my note.$6\"/playSound slosh/move Penny 1 0 1/pause 1500/faceDirection Penny 0/speak Penny \"It looks like we're alone.$8\"/pause 800/speak Penny \"The water feels so good after being out in the cold of night, doesn't it?$6\"/faceDirection farmer 0/pause 1300/faceDirection Penny 1/pause 500/playSound slosh/move Penny 1 0 1/faceDirection farmer 3/speak Penny \"$q -1 null#Do you know why I asked you here tonight?$8#$r -1 0 event_pool1#You have something to tell me.#$r -1 0 event_pool2#I'm not exactly sure.#$r -1 0 event_pool3#You wanted to see me in my bathing suit.\"/faceDirection Penny 3/pause 800/faceDirection Penny 1/speak Penny \"Um, how do I say this...$8\"/pause 1000/playSound slosh/move Penny 1 0 1/pause 500/speak Penny \"I've been meaning to tell you for a while now... about how I feel.$8#$b#I'm... I'm not looking for anything physical. But I can't stop thinking about you.$8#$b#I've never felt this way about anyone.$8\"/speak Penny \"$q -1 null#...$8#$r -1 0 event_pool4#I feel the same way about you.#$r -1 -1500 event_pool5#Sorry, but I don't like you romantically...\"/fork pennyHeartbroken/pause 1000/showFrame Penny 32/pause 200/playSound slosh/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/eyes 1 -10000/positionOffset Penny 2 0/positionOffset farmer -2 2/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/specificTemporarySprite heart 13 29/pause 1200/globalFade/viewport -1000 -1000/pause 2000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+		"pennyHeartbroken": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut"
+            },
+        },
+        {
+	    "Logname": "Penny no blush edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny",
+            "FromFile": "assets/Portraits/PennyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.PennyPam": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        {
+	    "Logname": "Penny no blush edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny_Winter",
+            "FromFile": "assets/Portraits/PennyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.PennyPam": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Penny no blush edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny",
+            "FromFile": "assets/Portraits/PennyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        {
+	    "Logname": "Penny no blush edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny_Winter",
+            "FromFile": "assets/Portraits/PennyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+//CFDE
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialoguePenny",
+            "Entries":
+            {
+                "Indoor_Night_4": "#$c .5#Ready to tuck in? I'm pretty tired myself.#Hi, @! I can finish this chapter later if you wanted to tell me about your day.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+//Immersive Spouses
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Penny",
+		"Entries": {
+			"marriage_bus2": "That's a great gift idea! @ would-#$b#Oh, hi! Um. We weren't talking about any... surprises...$h",
+		},
+		"When": {
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+    ]
+}

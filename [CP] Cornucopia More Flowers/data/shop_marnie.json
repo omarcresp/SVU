@@ -1,0 +1,69 @@
+{
+  "Changes": [
+	//Essential flowers seeds & saplings
+    {
+      "Action": "EditData",
+	  "Target": "Data/Shops",
+      "TargetField": [ "AnimalShop", "Items" ],
+      //"When": {"Enable Essential Flowers Pack": true},
+      "Entries": {
+		"Cornucopia_PinkCatSeeds": {
+			"Id": "Cornucopia_PinkCatSeeds",
+			"ItemId": "Cornucopia_PinkCatSeeds",
+			//"Condition": "SEASON spring",
+			//"Price": 20,
+			"IgnoreShopPriceModifiers": true
+		}
+      },
+	  "MoveEntries": [
+			{ "Id": "Cornucopia_PinkCatSeeds", "AfterId": "(O)178" }
+		]
+    },
+	//Extended flowers seeds & saplings
+    {
+      "Action": "EditData",
+	  "Target": "Data/Shops",
+      "TargetField": [ "AnimalShop", "Items" ],
+      "When": {
+        "Enable Extended Flowers Pack": true
+      },
+      "Entries": {
+		"Cornucopia_BeeBalmSeeds": {
+			"Id": "Cornucopia_BeeBalmSeeds",
+			"ItemId": "Cornucopia_BeeBalmSeeds",
+			//"Condition": "SEASON fall",
+			//"Price": 20,
+			"IgnoreShopPriceModifiers": true
+		},
+		"Cornucopia_ButtercupSeeds": {
+			"Id": "Cornucopia_ButtercupSeeds",
+			"ItemId": "Cornucopia_ButtercupSeeds",
+			//"Condition": "SEASON summer",
+			//"Price": 15,
+			"IgnoreShopPriceModifiers": true
+		},
+		"Cornucopia_HoneysuckleSeeds": {
+			"Id": "Cornucopia_HoneysuckleSeeds",
+			"ItemId": "Cornucopia_HoneysuckleSeeds",
+			//"Condition": "SEASON spring summer",
+			//"Price": 240,
+			"IgnoreShopPriceModifiers": true
+		},
+		"Cornucopia_WolfsbaneSeeds": {
+			"Id": "Cornucopia_WolfsbaneSeeds",
+			"ItemId": "Cornucopia_WolfsbaneSeeds",
+			//"Condition": "SEASON summer",
+			//"Price": 55,
+			"IgnoreShopPriceModifiers": true
+		}
+      },
+	  "MoveEntries": [
+			{ "Id": "Cornucopia_BeeBalmSeeds", "AfterId": "(O)178" },
+			{ "Id": "Cornucopia_ButtercupSeeds", "AfterId": "(O)178" },
+			{ "Id": "Cornucopia_HoneysuckleSeeds", "AfterId": "(O)178" },
+			{ "Id": "Cornucopia_PinkCatSeeds", "AfterId": "(O)178" },
+			{ "Id": "Cornucopia_WolfsbaneSeeds", "AfterId": "(O)178" }
+		]
+    },
+  ]
+}

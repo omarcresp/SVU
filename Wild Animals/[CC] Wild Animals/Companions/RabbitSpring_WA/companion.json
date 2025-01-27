@@ -1,0 +1,177 @@
+{
+	"Name": "RabbitSpring_WA",
+	"Type": "Walking",
+	"EnableSpawnAtDayStart": false,
+	"EnableCharacterCollision": false,
+	"EnableFarmerCollision": false,
+	"TravelSpeed": 2,
+	"MaxIdleDistance": -1,
+	"MaxDistanceBeforeTeleport": -1,
+	"IdleBehavior": "Wander",
+	"FrameSizeWidth": 32,
+	"FrameSizeHeight": 32,
+	"TileSheetPath": "Characters\\RabbitSpring_WA",
+
+	// This plays when the companion travels upwards
+	"UpAnimation": {
+		"StartingFrame": 8,
+		"NumberOfFrames": 4,
+		"Duration": 100,
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+        "Frame": 8,
+        "Duration": 3000,
+		},
+		{
+        "Frame": 22,
+        "Duration": 100,
+		},
+		{
+        "Frame": 8,
+        "Duration": 100,
+		},
+		{
+        "Frame": 23,
+        "Duration": 100,
+		},
+    ],
+    }
+  },
+	// This plays when the companion travels downwards
+	"DownAnimation": {
+		"StartingFrame": 0,
+		"NumberOfFrames": 4,
+		"Duration": 100,
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+        "Frame": 0,
+        "Duration": 3000,
+		},
+		{
+        "Frame": 13,
+        "Duration": 250,
+		},
+		{
+        "Frame": 14,
+        "Duration": 250,
+		},
+		{
+        "Frame": 13,
+        "Duration": 250,
+		},
+		{
+        "Frame": 14,
+        "Duration": 250,
+		},
+		{
+        "Frame": 13,
+        "Duration": 250,
+		},
+		{
+        "Frame": 14,
+        "Duration": 250,
+		},
+		{
+        "Frame": 13,
+        "Duration": 500,
+		},
+    ],
+    }
+  },
+	// This plays when the companion travels left
+	"LeftAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 4,
+		"Duration": 150,
+		"Flip": true
+		},
+		{
+		"Frame": 5,
+		"Duration": 150,
+		"Flip": true
+		},
+		{
+		"Frame": 6,
+		"Duration": 150,
+		"Flip": true
+		},
+		{
+		"Frame": 7,
+		"Duration": 150,
+		"Flip": true
+		}
+		],
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+        "Frame": 4,
+        "Duration": 3000,
+		"Flip": true
+		},
+		{
+        "Frame": 17,
+        "Duration": 1000,
+		"Flip": true
+		},
+		{
+        "Frame": 18,
+        "Duration": 150,
+		"Flip": true
+		},
+		{
+        "Frame": 19,
+        "Duration": 150,
+		"Flip": true
+		},
+		{
+        "Frame": 18,
+        "Duration": 150,
+		"Flip": true
+		},
+		{
+        "Frame": 17,
+        "Duration": 300,
+		"Flip": true
+		},
+    ],
+    }
+  },
+	// This plays when the companion travels right
+	"RightAnimation": {
+		"StartingFrame": 4,
+		"NumberOfFrames": 4,
+		"Duration": 150,
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+        "Frame": 4,
+        "Duration": 3000,
+		},
+		{
+        "Frame": 20,
+        "Duration": 250,
+		},
+		{
+        "Frame": 21,
+        "Duration": 1000,
+		},
+		{
+        "Frame": 20,
+        "Duration": 150,
+		},
+    ],
+    }
+  },
+
+"Sounds": [
+	{
+	"SoundName": "rabbit",
+	"WhenToPlay": "Idle",
+	"TimeBetweenSound": 5000,
+	"ChanceOfPlaying": 0.1
+	}
+]  
+}

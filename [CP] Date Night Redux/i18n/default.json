@@ -1,0 +1,1023 @@
+{
+	
+	//CONFIG TRANSLATIONS
+	
+	"config.section.Date Chances.name": "Date Chances",
+	"config.section.Date Chances.description": "Modify the chances to have a spouse ask for a date.",
+	
+	"config.section.Friendship Requirements.name": "Friendship Requirements and Bonuses",
+	"config.section.Friendship Requirements.description": "Modify friendship requirements for a date to occur and the resulting bonus to friendship from going on a date.",
+	
+	"config.section.Date Tweaks.name": "Date Tweaks",
+	"config.section.Date Tweaks.description": "Change how date asks and dates happen, including which spouse joins if married to multiple people, whether dialogue is gendered, whether the end is suggestive or not, and more.",
+	
+	"config.section.Allowed Dates.name": "Allowed Dates",
+	"config.section.Allowed Dates.description": "Disable or enable particular NPC dates here. Only covers roommate dates (to prevent them from having romantic dates) and vanilla spouses.",
+	
+	"config.DateAskPercentChance.name": "Date Ask Chance",
+    "config.DateAskPercentChance.description": "Configure the chance your spouse will ask you to go on a date upon leaving the farmhouse each day. Default is 10%, but can be any percent 0-100. Set to 0 to disable the date event.",
+	
+	"config.UniqueDateChance.name": "Unique Date Chance",
+    "config.UniqueDateChance.description": "Choose the chance that, when asked on a date, it will be a spouse-unique date (given the spouse has the chance of asking specific date event). This will not affect anything if your spouse has no unique dates yet. If set to 0, disables spouse-specific unique dates. If set to 100, disables generic dates for spouses with specific events unless your spouse does not have any unique dates yet, in which case they will still ask for generic dates.",
+	
+	"config.MinHeartsRequired.name": "Min Hearts for Date",
+    "config.MinHeartsRequired.description": "Change the minimum number of hearts required with your spouse for them to ask you on a date. Default is 10 hearts.",
+	
+	"config.FriendshipBonus.name": "Date Friendship Bonus",
+    "config.FriendshipBonus.description": "Change the amount of friendship received with your spouse if you go on a date with them. 'none' will disable any friendship bonuses, 'small' will increase friendship by 25 points (1/10 of a heart), 'medium' increases by 50 points (2/10 of a heart), and large increases by 100 points (4/10 of a heart).",
+	"config.FriendshipBonus.values.none": "no additional friendship",
+	"config.FriendshipBonus.values.small": "small friendship boost (1/10 heart)",
+	"config.FriendshipBonus.values.medium": "medium friendship boost (1/5 heart)",
+	"config.FriendshipBonus.values.large": "large friendship boost (2/5 heart)",
+	
+	"config.FreeLovePatch.name": "Poly Compatibility",
+    "config.FreeLovePatch.description": "If a polyamory mod like Polyamory Sweet or Free Love is installed and the player has multiple spouses, enable this to choose a random spouse to ask for a date. Does nothing if no polyamory mod is installed.",
+	"config.FreeLovePatch.values.disabled": "main spouse asks for date",
+	"config.FreeLovePatch.values.enabled": "random spouse asks for date",
+	
+	"config.GenderedDialogue.name": "Gendered Dialogue",
+    "config.GenderedDialogue.description": "Enable gendered dialogue for dialogue used in Date Night events. Defaults to on, but gender neutral dialogue on dates should automatically fire if your player's gender is not male or female (e.g. with a gender neutral mod).",
+	"config.GenderedDialogue.values.disabled": "use gender neutral dialogues",
+	"config.GenderedDialogue.values.enabled": "use gendered dialogues",
+	
+	"config.SuggestiveEndings.name": "Suggestive Endings",
+    "config.SuggestiveEndings.description": "Enable/Disable suggestive endings to the date events. The endings are not NSFW, but can be disabled if you would rather keep it PG.",
+	"config.SuggestiveEndings.values.disabled": "do not use suggestive endings",
+	"config.SuggestiveEndings.values.enabled": "use suggestive endings",
+	
+	"config.LibraryDateCutscene.name": "Library Date Cutscene",
+    "config.LibraryDateCutscene.description": "Enable/Disable the book cutscene section of the library date. I recommend seeing it at least once, but if you would like to cut it out to make the dates overall shorter, you can disable this after.",
+	"config.LibraryDateCutscene.values.disabled": "remove library story cutscene",
+	"config.LibraryDateCutscene.values.enabled": "use library story cutscene",
+	
+	"config.ModdedSpouseFoods.name": "Modded Spouse Foods",
+    "config.ModdedSpouseFoods.description": "Choose whether SVE and RSV spouses use vanilla dishes or dishes from their own mods in their dates. SVE spouses will use them in both Saloon and Picnic Dates, while the RSV spouses will only use them on Picnic Dates so Gus is not suddenly preparing dishes from the Village.",
+	"config.ModdedSpouseFoods.values.disabled": "use vanilla foods only",
+	"config.ModdedSpouseFoods.values.enabled": "use modded foods for RSV/SVE spouses",
+	
+	"config.DateReminders.name": "Date Reminders",
+    "config.DateReminders.description": "Choose whether you are given a reminder for your date night. You will get only one date reminder per day if enabled. Does nothing without SpaceCore installed.",
+	"config.DateReminders.values.disabled": "do not use date reminders",
+	"config.DateReminders.values.enabled": "use date reminders",
+	
+	"config.DynamicPool.name": "Dynamic Pool Forks",
+    "config.DynamicPool.description": "Choose whether your pool forks are the original mod's endings or a more dynamic approach that allows your spouse or yourself to randomly win. The first playthrough of the date will always be the original date, but if the date is repeated, there will be an equal chance the spouse or the player will win at pool.",
+	"config.DynamicPool.values.disabled": "use original pool event",
+	"config.DynamicPool.values.enabled": "use dynamic pool endings",
+	
+	"config.DatesOnFestivalDays.name": "Dates on Festival Days",
+    "config.DatesOnFestivalDays.description": "Enable/Disable being asked on a date on a festival day. Usually many areas are closed or off-limits on festival days, making it impossible for you to complete the date if asked. Enabling this will allow dates to be asked on a date with a festival, even if you won't be able to complete it. When disabled, dates will never be asked on every festival day (except passive festivals). Works on every vanilla festival, the Pelican Town Potluck, and the Ridgeside festivals - more can be added on request.",
+	"config.DatesOnFestivalDays.values.disabled": "no dates on festival days",
+	"config.DatesOnFestivalDays.values.enabled": "allow festival day dates",
+	
+	"config.AllowRoommateDates.name": "Roommate Dates",
+    "config.AllowRoommateDates.description": "Enable/Disable being asked on a date by a platonic roommate. NOTE: This does not make events platonic, just simply unblocks them from occuring. The dialogue will still be heavily romantic at present.",
+	"config.AllowRoommateDates.values.disabled": "no roommate dates",
+	"config.AllowRoommateDates.values.enabled": "allow roommate dates",
+	
+	"config.DisabledDates.name": "Remove",
+    "config.DisabledDates.description": "Enable/Disable certain vanilla spouses from asking you on a date. Works well with mods like Platonic Partners and Friendships, if you have a platonic housemate that is usually romancable. If an NPC has this set to true, then this NPC will never ask you on a date. Default set to false for all.",
+	"config.DisabledDates.values.Abigail": "Abigail Dates",
+	"config.DisabledDates.values.Leah": "Leah Dates",
+	"config.DisabledDates.values.Penny": "Penny Dates",
+	"config.DisabledDates.values.Maru": "Maru Dates",
+	"config.DisabledDates.values.Haley": "Haley Dates",
+	"config.DisabledDates.values.Emily": "Emily Dates",
+	"config.DisabledDates.values.Sebastian": "Sebastian Dates",
+	"config.DisabledDates.values.Elliott": "Elliott Dates",
+	"config.DisabledDates.values.Sam": "Sam Dates",
+	"config.DisabledDates.values.Harvey": "Harvey Dates",
+	"config.DisabledDates.values.Alex": "Alex Dates",
+	"config.DisabledDates.values.Shane": "Shane Dates",
+	
+	
+	//Date Translations
+	
+	//Common Date Lines
+	
+	"AcceptDate.Choice": "Go on a date with [CharacterName {{Date}}]?",
+	"AcceptDate.Yes": "Yes",
+	"AcceptDate.No": "No",
+	
+	"RejectDate.1": "Oh...$s#$b#Too busy again?$s",
+	"RejectDate.2": "It's okay, we'll do it some other time. You just get back to work.", //Applies to all generic dates except Dance, Grocery and Unique Dates
+	"RejectDate.3": "Don't worry, I'm not upset.#$b#I know you're busy...I knew what I was getting into when I married you.",
+	
+	//GENERIC DATES
+	
+	//Saloon Date
+	
+		//Intro
+		"SaloonDateIntro.1": "Hey, @...",
+		"SaloonDateIntro.2": "Dear, before you go...",
+		"SaloonDateIntro.3": "@, wait up!",
+		"SaloonDateIntro.4": "Honey, hold on.",
+		
+		"SaloonDateIntro.5": "Um, I was just wondering if you maybe wanted to, uh...$l#$b#...go on a date tonight?$l",
+		"SaloonDateIntro.6": "I was hoping you, maybe, uh...$l#$b#...wanted to go on a date with me tonight?$l",
+		
+		"SaloonDateIntro.7.Gendered": "You're always so busy and I want to spend some more time with my amazing husband.$l^You're always so busy and I want to spend some more time with my amazing wife.$l",
+		"SaloonDateIntro.7.Neutral": "You're always so busy and I want to spend some more time with my amazing spouse.$l",
+		
+		"SaloonDateIntro.8.Gendered": "I want to spend more time with my husband.$l^I want to spend more time with my wife.$l",
+		"SaloonDateIntro.8.Neutral": "I want to spend more time with my spouse.$l",
+		
+		"SaloonDateIntro.9": "I know you're very busy, but I really want to have some time to ourselves.$l",
+		"SaloonDateIntro.10": "Awesome! Let's meet at the Saloon after 6.$h#$b#I can't wait to see you!$l",
+		"SaloonDateIntro.End": "I'm so excited, dear.$h#$b#Remember, it's at the saloon after 6, okay? Don't forget!$h",
+	
+		//Date
+		"SaloonDate.1": "@! There you are! I almost thought you weren't going to come.",
+		"SaloonDate.2": "[CharacterName {{Gus}}] let us reserve the entire side room for ourselves. Isn't that nice?",
+		"SaloonDate.3": "Come, sit down.",
+		"SaloonDate.4": "I'm so glad you found the time to spend with me, @.$l",
+		"SaloonDate.5": "I already ordered with [CharacterName {{Gus}}].#$b#Don't worry, I got your favorite!$h",
+		"SaloonDate.6": "I never would have believed that I would fall in love with the new farmer moving into Pelican Town, but look at where we are now.$l",
+		"SaloonDate.7": "You're the best thing to happen to me, @. I wouldn't want anything to be different.$l",
+		"SaloonDate.8": "Thanks for agreeing to this date, by the way. I know you're very busy.",
+		"SaloonDate.9": "I have your order ready, [CharacterName {{Date}}].",
+		"SaloonDate.10": "Thank you [CharacterName {{Gus}}]! I'll take it from here.",
+		"SaloonDate.11": "Mmm... just how I like it! [CharacterName {{Date}}] really knows me well!",
+		"SaloonDate.12": "I knew you would like it!$h", //Split into two for item giving
+		"SaloonDate.13": "We even have some extra!",
+		"SaloonDate.14": "All right, dear. What do you want to do now?",
+		"SaloonDate.15": "What do you want to do now?",
+		"SaloonDate.16": "Let's play some pool!",
+		"SaloonDate.17": "Let's watch the waves at the beach.",
+		
+			//Beach Fork
+		
+		"Waves.1": "You want to watch the waves at the beach?$h#$b#That sounds romantic. Let's do it!$h",
+		"Waves.2": "@, I've never told you this but...",
+		"Waves.3": "The night before you arrived in Pelican Town, I came here to clear my mind.",
+		"Waves.4": "The truth is... I wasn't happy. I wished that night for something to help me feel happy again, for something to change my life...$s",
+		"Waves.5": "@, my wish came true.$l#$b#My wish was for you...",
+		"Waves.6": "I love you, @.",
+		"Waves.7": "What a romantic night. I'm so grateful that [CharacterName {{Date}}] is in my life!",
+		
+		"Waves.8": "This has been a magical night, @.",
+		"Waves.9": "Hey, @...$l#$b#Why don't we head back to the farmhouse and keep this night going there?$l",
+		"Waves.10": "Wow... That was great, @...$l#$b#Ha, I'm exhausted...$l",
+		
+			//Pool Fork
+			
+		"Pool.1": "You want to play pool? All right!$h#$b#I'm going to beat you though!$h",
+		
+		"Pool.2.Gendered": "Don't think that just because you're my husband that I'll go easy on you!^Don't think that just because you're my wife that I'll go easy on you!",
+		"Pool.2.Neutral": "Don't think that just because we're married that I'll go easy on you!",
+		
+		"Pool.3": "Take this!",
+		"Pool.4": "The ball barely moves forward.",
+		"Pool.5": "Oops...",
+		"Pool.6": "[CharacterName {{Date}}] tried their hardest, but I easily beat them. What a fun night!",
+		
+		"Pool.7": "I'll beat you next time, honey. Just you wait!$h",
+		"Pool.8": "Hey, @. How about we go home and you can teach me some of your skills?$l",
+		"Pool.9": "Wow... That was great, @...$l#$b#Ha, I'm exhausted...$l",
+		
+		"SaloonDate.End": "That was fun... Let's do that again sometime.$l",
+		
+	//Picnic Date
+	
+		//Intro
+		"PicnicDateIntro.1": "Hey, @...",
+		"PicnicDateIntro.2": "Dear, before you go...",
+		"PicnicDateIntro.3": "@, wait up!",
+		"PicnicDateIntro.4": "Honey, hold on.",
+		"PicnicDateIntro.5": "Um, I was just wondering if you maybe wanted to, uh...$l#$b#...go on a date today?$l",
+		"PicnicDateIntro.6": "I was hoping you, maybe, uh...$l#$b#...wanted to go on a date with me today?$l",
+		"PicnicDateIntro.7": "I've been wanting to ask you this for a while...$l#$b#@, do you want to go out on a date today?$l",
+		
+		"PicnicDateIntro.8.Gendered": "You're always so busy and I want to spend some more time with my amazing husband.$l^You're always so busy and I want to spend some more time with my amazing wife.$l",
+		"PicnicDateIntro.8.Neutral": "You're always so busy and I want to spend some more time with my amazing spouse.$l",
+		
+		"PicnicDateIntro.9.Gendered": "I want to spend more time with my husband.$l^I want to spend more time with my wife.$l",
+		"PicnicDateIntro.9.Neutral": "I want to spend more time with my spouse.$l",
+		
+		"PicnicDateIntro.10": "I know you're very busy, but I really want to have some time to ourselves.$l",
+		"PicnicDateIntro.11": "I really want you to see something.$l",
+		"PicnicDateIntro.12": "Really? Great! Meet me at Cindersap forest around noon.$h#$b#I can't wait to see you, @!$l",
+		"PicnicDateIntro.End": "I'm so excited, dear.$h#$b#Remember, come to the forest around noon!$h",
+		
+		//Date
+		
+		"PicnicDate.1": "@! You made it just in time!$h",
+		"PicnicDate.2": "So, what do you think?$l#$b#I just finished setting it up...$l#$b#It's a picnic for us!$h",
+		"PicnicDate.3": "I have your favorite Farmer's Lunch prepped and ready for you!$h#$b#I hope you like it.$l",
+		"PicnicDate.4": "Yum! Just how I like it!",
+		"PicnicDate.5": "You know, being out here has really reminded me to be extra thankful of the life we have out here in the valley.",
+		"PicnicDate.6": "Everything is just beautiful as far as the eye can see...",
+		
+		"PicnicDate.7.Gendered": "Especially the man standing right in front of me!$l^Especially the woman standing right in front of me!$l",
+		"PicnicDate.7.Neutral": "Especially the person standing right in front of me!$l",
+		
+		"PicnicDate.8": "Everytime I look out at our farm, @, I'm reminded about just how lucky I am.$l",
+		"PicnicDate.9": "To have you, to have the farm...$l#$b#I must be the luckiest person alive!$h",
+		"PicnicDate.10": "Delicious!$h",
+		"PicnicDate.11": "I'm glad you enjoyed your meal, @.$l",
+		"PicnicDate.12": "Looks like we still have some food... and some free time!#$b#What do you want to do now, dear?",
+		"PicnicDate.13": "What should we do now?",
+		"PicnicDate.14": "Let's relax at the lake.",
+		"PicnicDate.15": "Let's explore the forest together!",
+
+			//Forest Fork
+			
+		"Forest.1": "The forest? Sure! I've never gone too deep into the forest...#$b#And there's nobody I'd rather explore it with than you!",
+		"Forest.2": "All right, let's go!",
+		"Forest.3": "Come on, @! Climb on up!",
+		"Forest.4": "Don't worry, hon! I've got you!",
+		"Forest.5": "Wow... you can really see everything from here.",
+		"Forest.6": "Thanks for coming on this date with me, @.$l",
+		"Forest.7": "@, you've gotten me through my hardest times. I can't thank you enough for that.$l",
+		"Forest.8": "I love you, @. Forever.",
+		"Forest.9": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have them!",
+		
+			//Lake Fork
+			
+		"Lake.1": "The lake? Oh, that's a great idea! I've heard the lake looks great this time of year.",
+		"Lake.2": "All right then, let's go!",
+		"Lake.3": "Wow... they were right.#$b#The lake does look amazing today.",
+		"Lake.4": "Not as amazing as you, though.$l",
+		"Lake.5": "Thanks for coming on this date with me, @.#$b#It really means a lot to me.",
+		"Lake.6": "You've done so much for me ever since you moved to Pelican Town...#$b#I just wanted to do something special for you, to thank you for everything you've given me.",
+		"Lake.7": "@, thank you for everything. You've made me happier than I've ever been before.$l",
+		"Lake.8": "I love you more than anything, @.$l",
+		"Lake.9": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have them!",
+		
+		//Suggestive End
+		"PicnicDate.Suggestive.1": "Hey, @...$l",
+		"PicnicDate.Suggestive.2": "Wanna have some fun in these bushes before we go back?$l",
+		"PicnicDate.Suggestive.3": "Haha, I'm just kidding!$h",
+		"PicnicDate.Suggestive.4": "Let's go to the farmhouse instead...$l",
+		"PicnicDate.Suggestive.5": "That was fun, @!$l#$b#Let's do that again sometime...$l",
+		
+		"PicnicDate.End": "Thanks for coming, dear.$l",
+		
+	//Library Date
+	
+		//Intro
+		"LibraryDateIntro.1": "@, hold on!",
+		"LibraryDateIntro.2": "Honey, wait!",
+		"LibraryDateIntro.3": "@, wait up!",
+		"LibraryDateIntro.4": "Honey, hold on!",
+		"LibraryDateIntro.5": "Brr...",
+		"LibraryDateIntro.6": "Wow, it's chilly out here!",
+		"LibraryDateIntro.7": "Brr... it's cold today.",
+		"LibraryDateIntro.8": "Oh wow! I didn't know it would be this cold today!",
+		"LibraryDateIntro.9": "Hey, @, I've got an idea!",
+		"LibraryDateIntro.10": "Hmm... wait, I think I know what we should do today!",
+		"LibraryDateIntro.11": "Wait, @! I've got the perfect idea of what we can do today!",
+		"LibraryDateIntro.12": "I've got the perfect place to go on a date together! Will you come, @?$h",
+		"LibraryDateIntro.13": "Great! Come to the library anytime today. I've got the perfect thing for this chilly day!$h#$b#I can't wait to see you!$l",
+		"LibraryDateIntro.End": "Don't forget!$h#$b#Come to the Library anytime, okay?$h",
+		
+		//Date
+		
+		"LibraryDate.1": "Oh, @, you're here! Sorry, I was just keeping this coffee hot for you.",
+		"LibraryDate.2": "Here, have some!",
+		"LibraryDate.3": "Mmm... warm and delicious! Just what I needed today!",
+		"LibraryDate.4": "Thanks! I made sure it was just how you liked it.",
+		"LibraryDate.5": "Looks like I made a lot extra, too!$h",
+		"LibraryDate.6": "Hey, @, I have an idea.#$b#Let's read a book together!$h",
+		"LibraryDate.7": "Pick out any book you like. I don't care, as long I as get to read it with you!",
+		
+			//Book Choices
+		"LibraryDate.BookChoice": "What book should we read?",
+		"LibraryDate.Detective": "Detective La{{PlayerName}} and the Stolen Treasure",
+		
+			//Detective Book (Default)
+		"Detective.1": "'Detective La{{PlayerName}} and the Stolen Treasure'...#$b#Sounds fun!$h",
+		"Detective.2": "[CharacterName {{Date}}] snuggles closer to you.",
+		"Detective.3": "Let's read this together, @!$h#$b#You read first.",
+		"Detective.4": "'La{{PlayerName}} wasn't your ordinary small town resident.'",
+		
+		"Detective.5.Male": "'He moved to Seagull Village after he grew tired of his burdened life in the city.'",
+		"Detective.5.Female": "'She moved to Seagull Village after she grew tired of her burdened life in the city.'",
+		"Detective.5.Neutral": "'They moved to Seagull Village after they grew tired of their burdened life in the city.'",
+		
+		"Detective.6": "Hey, kinda like you, @! Your names are even similar!",
+		"Detective.7": "'But La{{PlayerName}} wasn't just some office clerk.'",
+		
+		"Detective.8.Male": "'He was a world class detective!'",
+		"Detective.8.Female": "'She was a world class detective!'",
+		"Detective.8.Neutral": "'They were a world class detective!'",
+		
+		"Detective.9": "My turn!",
+		"Detective.10": "Where were we...",
+		"Detective.11": "Aha! Okay...",
+		"Detective.12": "One chilly night, trouble arose in their peaceful town...",
+		
+		"Detective.Skip": "[CharacterName {{Date}}] and I read the book all day long. It was so interesting! [CharacterName {{Date}}] says that La{{PlayerName}} reminds them of me somehow...", //Library Cutscene Disabled
+		
+				//Detective Story
+		"Detective.13": "Hey!",
+		"Detective.14": "Josie: Come back, thief!",
+		"Detective.15": "Josie: Oh, La{{PlayerName}}! Thank Yoba!",
+		"Detective.16": "La{{PlayerName}}: What's wrong, Josie?",
+		"Detective.17": "Josie: Some hooligan stole my precious family heirloom! It was passed down to me by my grandmother.",
+		
+		"Detective.18.Male": "'La{{PlayerName}} knew what he had to do.'",
+		"Detective.18.Female": "'La{{PlayerName}} knew what she had to do.'",
+		"Detective.18.Neutral": "'La{{PlayerName}} knew what they had to do.'",
+		
+		"Detective.19": "'To others it may have seemed like the robber vanished into thin air...#$b#...but La{{PlayerName}} knew better!'",
+		
+		"Detective.20.Male": "'He followed the clues, and it led him straight to...'",
+		"Detective.20.Female": "'She followed the clues, and it led her straight to...'",
+		"Detective.20.Neutral": "'They followed the clues, and it led them straight to...'",
+		
+		"Detective.21": "The robber's hiding place!#$b#This is so exciting, @! Your turn!",
+		"Detective.22": "La{{PlayerName}}: Come out, thief!",
+		"Detective.23": "La{{PlayerName}}: Stop, thief! I will unmask you, whoever you are!",
+		"Detective.24": "'The robber was none other than...'",
+		"Detective.25": "Oh, who could it be?! I'm on the edge of my seat!",
+		"Detective.26": "[CharacterName {{Date}}]reap!", //Translator note: This is the Date's name with -reap appended to it. Likely doesn't need translating, but if you have a better idea on how to make the name work better, feel free to alter.
+		"Detective.27": "La{{PlayerName}}: [CharacterName {{Date}}]reap? But why? You're a nice, normal civilian!",
+		"Detective.28": "[CharacterName {{Date}}]reap: It's too late! I have everything I need!",
+		"Detective.29": "[CharacterName {{Date}}]reap: All I need is a sign from the heavens, and soon the prophecy will be fulfilled!",
+		"Detective.30": "Prophecy? What prophecy? Did we miss something, @?",
+		"Detective.31": "[CharacterName {{Date}}]reap: Yes, finally, I am-",
+		
+				//Story ends here (merge no cutscene and cutscene dialogues here)
+		"Detective.32": "Excuse me, [CharacterName {{Date}}] and @.",
+		"Detective.33": "Huh?",
+		"Detective.34": "Sorry to bother you couple, but I'm closing up for the day.",
+		"Detective.35": "Oh! Has it really been that long?",
+		"Detective.36": "I guess time really does fly when you're spending it with your favorite person!",
+		"Detective.37": "Sorry Mr. [CharacterName {{Gunther}}], we'll be on our way.",
+		"Detective.38": "Thank you, [CharacterName {{Date}}].",
+		"Detective.39": "All right, @. I guess we better head home. It's too bad we didn't finish that book, I really wanted to know what happened...#$b#Oh, did I tell you? While we were reading, I envisioned the whole story in my head.#$b#[CharacterName {{Jodi}}] was Josie, you were La{{PlayerName}}...#$b#And I was [CharacterName {{Date}}]reap!$h",
+		"Detective.39.NoStory": "All right, @. I guess we better head home. It's too bad we didn't finish that book, I really wanted to know what happened...#$b#Oh, did I tell you? While we were reading, I envisioned the whole story in my head.#$b#{{Jodi}} was the civilian in distress, Josie, you were the courageous hero, La{{PlayerName}}...#$b#And I was the villain, [CharacterName {{Date}}]reap!$h",
+		
+		"Detective.40": "Thanks for coming today, @. I had a lot of fun.#$b#I hope we can do this again sometime.",
+		"Detective.41": "[CharacterName {{Date}}] and I had a great time at the library. What an amazing date!",
+		
+		"Detective.40.Suggestive": "Thanks for coming today, @. I had a lot of fun.",
+		"Detective.41.Suggestive": "Hey, @, wanna keep the fun going at home?",
+		"Detective.42.Suggestive": "That was amazing, @...$l#$b#I'm exhausted!$h",
+		
+		"LibraryDate.End": "Thanks for coming, @. I appreciate it a lot.$l",
+	
+	//Dance Date (1st of Season)
+	
+		"DanceDate.1": "Hi, @.$l",
+		"DanceDate.2": "I just wanted to wish you a happy {{Season}}. The time is just flying by...$l#$b#Every day with you is amazing, dear.$l",
+		"DanceDate.3": "Here, @. I have something for you.",
+		"DanceDate.4": "I grew it myself. I know I'm not as great of a farmer as you, but I hope you like it.#$b#To me, a flower represents life and happiness...#$b#...something I will always have with you at my side.$l",
+		"DanceDate.5": "Hey, @...$l",
+		"DanceDate.6": "I know it's a little cheesy but...$l#$b#Would you like to dance with me? It'll be just me and you, together in front of the farm that changed our lives.$l",
+		"DanceDate.7": "Dance with [CharacterName {{Date}}]?",
+		"DanceDate.8": "Thank you, hon. I'll set up the music.$l",
+		
+		
+		"DanceDate.9.Suggestive": "Thanks for dancing with me, @.$l#$b#I can already feel the great season that lies ahead of us.$l",
+		"DanceDate.10.Suggestive": "Hey, you have a little time before you have to get to work, right?$l#$b#How about we go back inside and have some fun there?$l",
+		"DanceDate.11.Suggestive": "Haha...$l#$b#That felt nice...$l#$b#You're amazing, @. I love you.$l",
+		
+		"DanceDate.9": "Thanks for dancing with me, @.$l#$b#I can already feel the great season that lies ahead of us. I love you, @.$l",
+		
+		"DanceDate.ILoveYou": "I love you too, [CharacterName {{Date}}].",
+		"DanceDate.End": "Thanks for dancing with me, dear. Have a great {{Season}}.",
+		
+		"DanceRefusal.1": "Oh...$s#$b#Too busy?$s",
+		"DanceRefusal.2": "I understand. The start of a new season means a lot of work for you.$s#$b#It's okay, I guess we can spend time together later...$s#$b#I just wish you would make more time for me...",
+		"DanceRefusal.3": "Don't worry, I'm not upset.#$b#I know you're busy...I knew what I was getting into when I married you.",
+	
+	//Beach Date
+	
+		//Intro
+		"BeachDateIntro.1": "Hey, @...",
+		"BeachDateIntro.2": "Dear, before you go...",
+		"BeachDateIntro.3": "@, wait up!",
+		"BeachDateIntro.4": "Honey, hold on.",
+		"BeachDateIntro.5": "Wow... it's hot out here.",
+		"BeachDateIntro.6": "Wow, I can feel the sun beating down today.",
+		"BeachDateIntro.7": "Wow! I know it's summer, but this is hotter than I expected!",
+		
+		"BeachDateIntro.8.Gendered": "Hey, @, I have an idea...#$b#Do you want to go to the beach today?#$b#It would be great to cool down and relax. I know you're always busy and you deserve some relax time.#$b#Plus, I get to spend time with my amazing husband!$l^Plus, I get to spend time with my amazing wife!$l",
+		"BeachDateIntro.8.Neutral": "Hey, @, I have an idea...#$b#Do you want to go to the beach today?#$b#It would be great to cool down and relax. I know you're always busy and you deserve some relax time.#$b#Plus, I get to spend time with my amazing spouse!$l",
+		
+		"BeachDateIntro.9": "Well, dear?",
+		"BeachDateIntro.10": "Really? Great!$h#$b#Let's meet at the beach after 10.#$b#Come before dark though!#$b#I still want to have enough time to share with you.$l",
+		"BeachDateIntro.11": "Alright hon, have a great morning! I'll see you soon!",
+		"BeachDateIntro.End": "Hi, honey! I'm excited for our date today.$l#$b#Remember, come by the beach after 10 but before dark, okay?",
+		
+		//Date
+		
+		"BeachDate.1": "@, you're here!$h",
+		"BeachDate.2": "What do you think? I spent the whole morning setting this up for us.#$b#It'll be the perfect beach day!",
+		"BeachDate.3": "I brought a fresh pizza from the Saloon and I even splurged on some wine for us to enjoy!",
+		"BeachDate.4": "I hope you like it, @.$l",
+		"BeachDate.5": "Okay, let's eat!$h",
+		"BeachDate.6": "All right, @! Let's dig in!",
+		"BeachDate.7": "Yum! The pizza was perfect!",
+		"BeachDate.8": "Delicious! The Saloon's pizza never disappoints!$h",
+		"BeachDate.9": "Mmm... this wine was worth it!#$b#We have a lot extra too!",
+		"BeachDate.10": "Here, @. Keep it for a rainy day.",
+		"BeachDate.11": "All right! It's time to have some fun now!#$b#What do you want to do, honey?",
+		"BeachDate.12": "What should we do?",
+		"BeachDate.13": "Let's go swimming!",
+		"BeachDate.14": "Let's explore the tide pools!",
+		
+			//Swimming Fork
+			
+		"Swim.1": "Swimming? That sounds fun!$h#$b#We can cool down from this boiling heat.",
+		"Swim.2": "All right, honey, let's go!",
+		"Swim.3": "Wow... this is nice!$h#$b#The cool sea breeze makes me feel at peace, somehow.",
+		"Swim.4": "The world is vast across the ocean, but...#$b#There's no place I'd rather be than here, standing next to you.$l",
+		"Swim.5": "Well, honey?",
+		"Swim.6": "Let's jump in!",
+		"Swim.7": "Come on in, dear! The water's great!",
+		"Swim.8": "Ha! This is nice.$h",
+		"Swim.9": "What's wrong, dear?$s#$b#Don't be scared, hon. I'm right here.",
+		"Swim.10": "I'll make sure you're okay.#$b#I'll always be right here, honey. Through the worst and best of times. You can count on me to be there for you.",
+		"Swim.11": "I love you, @.",
+		"Swim.12": "I love you too, [CharacterName {{Date}}].",
+		"Swim.13": "I'll always be there for you too.",
+		"Swim.14": "I hope we stay together forever.",
+		"Swim.15": "Haha, see?$h#$b#You don't have be scared when you're with me. The ocean's fun!",
+		"Swim.16": "That's the spirit, honey!",
+		"Swim.17": "[CharacterName {{Date}}]'s splash drenches you in water.",
+		"Swim.18": "Oops! Sorry, dear!",
+		"Swim.19": "I chased [CharacterName {{Date}}] around for a long time to try and splash them back.",
+		"Swim.20": "After almost 5 minutes of chasing, I finally got them!",
+		"Swim.21": "Haha, okay, honey, you got me!$h",
+		"Swim.22": "That was fun!$h#$b#Now we're both drenched!$h",
+		"Swim.23": "I was having such a great time with [CharacterName {{Date}}] that I forgot about the time! What an amazing date!",
+		
+				//Suggestive Lines
+		"Swim.24": "Hey, honey...$l#$b#We can't go on with our day in our swimsuits, right?$l#$b#Let's go back home and take them off...",
+		"Swim.25": "Wow, @... that was great...$l#$b#You're amazing, you know. I don't know if anyone has told you that, but take it from me...$l",
+		
+			//Tide Pool Fork
+			
+		"TidePool.1": "The tide pools? Oh, that's right! I haven't been there in forever since the bridge was destroyed.#$b#I hear it's a sight to see during the summer!$h",
+		"TidePool.2": "All right, honey, let's go!",
+		"TidePool.3": "Wow, it really does look nice this time of year!",
+		"TidePool.4": "What's this?",
+		"TidePool.5": "It's a crab!#$b#But why does it look scared?$s",
+		
+		"TidePool.6.Gendered": "Hey, Mr. Crab, are you okay?$s^Hey, Ms. Crab, are you okay?",
+		"TidePool.6.Neutral": "Hey, Mx. Crab, are you okay?$s", //Small change for gender neutral players, since the game supports gender neutral dialogues now and if someone sets it to non-gendered, should have a backup line
+		
+		"TidePool.7": "*clamp...*",
+		"TidePool.8": "It looks so lonely, @...$s#$b#I want to help it, but I know they say to leave nature untouched...$s",
+		
+		"TidePool.9.Gendered": "We're so sorry, Mr. Crab. We wish we could help you...$s^We're so sorry, Mr. Crab. We wish we could help you...$s",
+		"TidePool.9.Neutral": "We're so sorry, Mx. Crab. We wish we could help you...$s",
+		
+		"TidePool.10": "Is there anything else around?",
+		"TidePool.11": "What is it, honey?",
+		
+		"TidePool.12.Gendered": "That must be his friend!$h^That must be her friend!$h",
+		"TidePool.12.Neutral": "That must be their friend!$h",
+		
+		"TidePool.13.Gendered": "She came back for him, @!^He came back for her, @!", //Consider making this non-heterosexual? Granted, they're crabs, so it shouldn't matter that much.
+		"TidePool.13.Neutral": "They came back for them, @!",
+		
+		"TidePool.14.Gendered": "She knew that he was sad, so she came to help.^He knew that she was sad, so he came to help.#$b#That's just like me and you, honey!$h#$b#I'll always be there for you whenever you feel sad or scared.$l#$b#I'll always help you, honey.$l",
+		"TidePool.14.Neutral": "They knew that their friend was sad, so they came to help.#$b#That's just like me and you, honey!$h#$b#I'll always be there for you whenever you feel sad or scared.$l#$b#I'll always help you, honey.$l",
+		
+		"TidePool.15": "Love is a universal thing. Even in animals like these crabs, love brings them together.",
+		"TidePool.16": "I love you, @. I hope you know that.#$b#I love you the most.",
+		"TidePool.17": "I love you too, [CharacterName {{Date}}].",
+		"TidePool.18": "I'll always be there for you too.",
+		"TidePool.19": "I hope we stay together forever.",
+		"TidePool.20": "*Clamp!*",
+		"TidePool.21": "Seeing those crabs really reminded me of how lucky I am to have someone like you, @.$l#$b#This has been an amazing date with you.",
+		
+		"TidePool.22.NotSuggestive": "What an amazing date! I had so much fun with [CharacterName {{Date}}]. I can't wait to do this again!",
+		
+		"TidePool.22": "Hey, we still have some time left before you have to get back to work...$l#$b#How about we go back to the house and take off these sandy clothes...$l",
+		"TidePool.23": "Wow, @... that was great...$l#$b#You're amazing, you know. I don't know if anyone has told you that, but take it from me...$l",
+		
+		"BeachDate.End": "Oh, don't mind me, honey. I'm still in awe of how lucky I was to have found you.$l#$b#Thanks for the magical date, @.",
+	
+	//Grocery Date
+	
+		//Intro
+		"GroceryDateIntro.1": "Oh, hi honey.",
+		"GroceryDateIntro.2": "I was just going to head out to Pierre's to grab our groceries for the week. We gotta keep the food stocked! I'd hate to see you hungry after a long day of work.",
+		"GroceryDateIntro.3": "Hey, @...$l#$b#Would you maybe want to come with me? I know it won't be the most romantic of dates, but I'd do anything to spend more time with you...",
+		"GroceryDateIntro.4": "Really? Great!$h#$b#Let's meet at Pierre's before it closes then. I'll go back inside and grab a couple bags for you to hold.",
+		"GroceryDateIntro.End": "Thanks for agreeing to come with me, @. Grocery shopping isn't the most fun thing, but I'll be way more fun with you by my side.$l",
+		
+		"GroceryDate.Refusal.1": "Oh...$s#$b#Too busy again?$s",
+		"GroceryDate.Refusal.2": "It's okay, we'll do it some other time. You just get back to work. I'll go by myself today.",
+		"GroceryDate.Refusal.3": "Don't worry, I'm not upset.#$b#I know you're busy...I knew what I was getting into when I married you.",
+	
+		//Date
+		"GroceryDate.1": "@! You sure got here quick!",
+		"GroceryDate.2": "All right, honey, let's get started!",
+		"GroceryDate.3": "We'll need some of this for dinner tonight...#$b#Oh, and let's also get some cookies for dessert!",
+		"GroceryDate.4": "Is there anything that you need, honey?",
+		"GroceryDate.5": "Do I need anything from the store?",
+		"GroceryDate.6": "Eggs!",
+		"GroceryDate.7": "Milk!",
+		"GroceryDate.8": "Fruit!",
+		"GroceryDate.9": "Seeds!",
+		"GroceryDate.10": "Treats!",
+		"GroceryDate.11": "Nope, I'm good!",
+		
+			//Eggs Fork
+		"Eggs.1": "Oh, you need some eggs?#$b#That's right, getting protein is important, especially for someone who works as hard as you do.$l",
+		"Eggs.2": "All right, honey, let's go get some eggs. They should be over here somewhere...",
+		"Eggs.3": "Here, honey!#$b#I hope you make me an omelet with this... your cooking is the best!",
+
+			//Milk Fork
+		"Milk.1": "You want milk? Okay!#$b#A hard worker like you needs every bit of energy, right?",
+		"Milk.2": "All right, honey, let's go get some milk. It should be over here somewhere...",
+		"Milk.3": "Here, honey!#$b#Drink it and become even stronger than you already are!",
+		
+			//Fruit Fork
+		"Fruit.1": "Oh, that's a great idea!#$b#Some fruit would be great. A perfect blend of sweetness and healthiness!",
+		"Fruit.2": "All right, honey, let's go get some fruit. It should be over here somewhere...",
+		"Fruit.3": "Here, @. Let's get have some of this. I hear they taste great after long days of work!",
+		
+			//Seeds Fork
+		"Seeds.1": "Seeds? Of course!#$b#A hard-working farmer like you always needs to be prepared.$l",
+		"Seeds.2": "All right, honey, let's go get some seeds. They should be over here somewhere...",
+		"Seeds.3": "Here, honey! Some seeds for you. Plant them and make our farm shine, dear!#$b#Oh, and if you have any extra crops, I wouldn't mind some of your amazing cooking with fresh ingredients...$l",
+		
+			//Treats Fork
+		"Treats.1": "Some treats? Yes, please!#$b#I know we have to eat healthy, but one or two sweet snacks wouldn't hurt right?",
+		"Treats.2": "I think there are some great options over here, dear...let's go check them.",
+		"Treats.3": "Yum! Let's try this, @. I can't wait to have this for dessert!",
+		
+		//Date (continued)
+		
+		"GroceryDate.12": "Okay, honey! Let's go check out with [CharacterName {{Pierre}}] then!",
+		"GroceryDate.13": "Hello, [CharacterName {{Pierre}}]! Here's what we'll be buying today.",
+		"GroceryDate.14": "Hi, Farmer @ and [CharacterName {{Date}}]. Thanks for shopping with at Pierre's.#$b#Did you find everything all right?",
+		"GroceryDate.15": "Yup! Everything was great.",
+		"GroceryDate.16": "That's great to hear.#$b#All right, your total should be about 700g.",
+		"GroceryDate.17": "Great! I have my money right here...",
+		"GroceryDate.18": "Offer To Pay",
+		"GroceryDate.19": "Let [CharacterName {{Date}}] Pay",
+		
+			//Offer to Pay
+		"Offer.1": "What, honey?#$b#You want to pay?#$b#Don't worry, dear! You don't have to! You already do so much for us and I want to help out in any way I can.",
+		"Offer.2": "Insist On Paying",
+		"Offer.3": "Let [CharacterName {{Date}}] Pay",
+		
+			//Date Pays
+		"DatePay.1": "All right, [CharacterName {{Date}}], thanks for coming!#$b#You two have a great day.",
+		"DatePay.2": "Thanks, you too!",
+		"DatePay.3": "Thanks for letting me pay, honey. I know you work very hard so I just wanted to make your life a little bit easier.",
+		
+			//Player Pays
+		"PlayerPay.1": "!!!$l#$b#Honey, what did I do to deserve you?$l#$b#If you really insist, then, I guess you can pay this time...$l#$b#But I'm paying next time, okay?$l",
+		"PlayerPay.2": "Paid 700g.",
+		"PlayerPay.3": "Thanks, @! You two have a great day.",
+
+		//Date End
+		
+		"GroceryDate.20": "All right, dear. Let's go home.",
+		"GroceryDate.21": "Thanks for coming to get groceries with me, @. I know it isn't the most exciting thing, but it becomes infintely more exciting when I do it with you.",
+		
+		"GroceryDate.22": "Hey, @...$l",
+		"GroceryDate.23": "[CharacterName {{Date}}] begins to whisper in your ear.",
+		"GroceryDate.24": "Let's get these bags home and then have a little fun, okay?$l",
+		"GroceryDate.25": "That was fun, @....$l#$b#I think I'm gonna ask you to come with me to the store more often now...$l",
+		
+		"GroceryDate.22.NotSuggestive": "Come on, let's go home and relax now.",
+		"GroceryDate.23.NotSuggestive": "That was fun, @.$l#$b#I think I'm gonna ask you to come with me to the store more often now!$l",
+		
+		"GroceryDate.DateEnd": "I want to go to the store more often with [CharacterName {{Date}}] now, too!",
+		
+		"GroceryDate.End": "Thanks again, honey. You can make any boring task feel special.$l",
+	
+	//Camping Date
+	
+		//Intro
+		"CampingDateIntro.1": "Hey, @...",
+		"CampingDateIntro.2": "Dear, before you go...",
+		"CampingDateIntro.3": "@, wait up!",
+		"CampingDateIntro.4": "Honey, hold on.",
+		"CampingDateIntro.5": "It's a beautiful day today...#$b#I was wondering if you maybe wanted to, um...$l#$b#...go camping with me tonight?$l#$b#It'll be fun, just me and you out in peaceful nature.",
+		"CampingDateIntro.6": "Thanks, @! Let's meet at Cindersap forest after 8:00. I'll set everything up.#$b#I can't wait to see you there! Oh, and remember to finish your work before coming. We're going to spend all night together!$h",
+		"CampingDateIntro.7": "I'll get everything ready for our date tonight, @.$h#$b#You just have come to the forest tonight after 8!$h#$b#Don't forget!",
+		
+		//Date
+		"CampingDate.1": "Hi, honey.$l#$b#I spent the whole evening setting this up for us. I hope you like it.$l",
+		"CampingDate.2": "Here, I roasted some food for us!",
+		"CampingDate.3": "Delicious! Fish is always better when it's freshly baked!",
+		"CampingDate.4": "I'm glad you liked it, honey!$h#$b#Come on, let's sit next to the fire.$l",
+		"CampingDate.5": "[CharacterName {{Date}}] cuddles up closer to you.",
+		"CampingDate.6": "You know, something about this peaceful view just makes me feel at ease.#$b#I used to have so much stress, so many worries...#$b#But when I'm with you, they all go away...$l#$b#I'll always be grateful for that, @.",
+		"CampingDate.7": "Okay, honey! What do you want to do now?",
+		"CampingDate.8": "What do you want to do now?",
+		"CampingDate.9": "Let's skip some rocks over the water.",
+		"CampingDate.10": "Let's stargaze together.",
+
+			//Rock Skipping Fork
+			
+		"RockSkip.1": "Rock skipping sounds like a great idea, dear.$l#$b#Let's do it!$h",
+		"RockSkip.2": "The water looks even more peaceful at night.$l",
+		"RockSkip.3": "All right, honey, watch this!",
+		"RockSkip.4": "Wow! That was a good one!$h",
+		"RockSkip.5": "Your turn, honey!",
+		"RockSkip.6": "Haha! Don't worry, honey. I can teach you how to do it better.",
+		"RockSkip.7": "So first, you have to hold the rock like this...",
+		"RockSkip.8": "[CharacterName {{Date}}] puts their hand on your shoulder.",
+		"RockSkip.9": "Then, make sure to flick your wrist like this when throwing...",
+		"RockSkip.10": "And make sure to give it your all!",
+		"RockSkip.11": "That was great, @! All you needed was a little help from me, but you're a natural!",
+		"RockSkip.12": "I'll always be there for you, honey. Always!$l",
+		
+		"RockSkip.13.Suggestive": "Why don't we head over to the tent? I can teach you some more in there...$l",
+		"RockSkip.14.Suggestive": "Haha... that was fun...$l#$b#I think I'm gonna ask you to camping more often now!#$b#Let's go to sleep now, honey.",
+		
+		"RockSkip.13": "All right, honey, let's go back to the tent now. We have a long day ahead of us!",
+		"RockSkip.14": "Thanks for coming on this camping night with me, @.$l#$b#I hope we get to do this again sometime.$l",
+		"RockSkip.15": "I hope I get to spend time with [CharacterName {{Date}}] again too!",
+		"RockSkip.16": "*yawn*#$b#Now let's go to sleep...",
+			
+			//Stargazing Fork
+			
+		"Stars.1": "Stargazing? That sounds romantic!$h#$b#Let's do it, honey.$l",
+		"Stars.2": "Wow... it's beautiful!",
+		"Stars.3": "There's so much out there... the universe is so much bigger than we could ever imagine, @.$l#$b#You and I are just tiny specks in the entirety of the galaxy...$l",
+		"Stars.4": "It's kind of amazing, isn't it, @?#$b#Out of the trillions of things in this universe...#$b#We were brought together...$l",
+		"Stars.5": "I'll be eternally thankful for meeting you, honey.$l",
+		
+		"Stars.6.Suggestive": "Hey, @...",
+		"Stars.7.Suggestive": "Why don't we head inside the tent? I can show you something out of this world...$l",
+		"Stars.8.Suggestive": "Haha...that was fun...$l#$b#I think I'm gonna ask you to camping more often now!#$b#Let's go to sleep now, honey.",
+		
+		"Stars.6": "All right, honey, let's head into the tent now. We have a long day ahead of us!",
+		"Stars.7": "Thanks for coming on this camping night with me, @.$l#$b#I hope we get to do this again sometime.$l",
+		"Stars.8": "I hope I get to spend time with [CharacterName {{Date}}] again too!",
+		"Stars.9": "*yawn*#$b#Now let's go to sleep...",
+	
+	//UNIQUE DATES
+	
+	//Maru Eclipse Date
+	
+		//Intro
+		"Maru.EclipseDate.Intro.1": "Honey! Wait!",
+		"Maru.EclipseDate.Intro.2": "Oh, good. I caught you before you got to work!#$b#There's something very special happening today, honey.#$b#It only happens once a month, but tonight there's going to be a beautiful lunar eclipse in the sky.#$b#The moon will turn red, and a lovely glow will bask our quiet valley for a few minutes.#$b#I really want to watch it, @, so I was wondering if...#$b#...you maybe wanted to join me tonight? We could camp out in the backwoods for a private little viewing party!",
+		"Maru.EclipseDate.Intro.3": "Awesome! This is going to be so fun!$h#$b#Meet me at the backwoods after 8. I'll set up our little viewing area.#$b#We'll be two little starwatchers all alone looking at the universe above.$l#$b#I can't wait!$h",
+		"Maru.EclipseDate.Intro.End": "It's going to be so beautiful tonight, @. I can't wait.$l#$b#Remember, come to the backwoods after 8. I'll set everything up.$l",
+		
+		"Maru.EclipseDate.Intro.Refuse.1": "Oh...$s#$b#Too busy again?$s",
+		"Maru.EclipseDate.Intro.Refuse.2": "It's okay, we'll do it some other time. You just get back to work.#$b#I'll just watch it alone, I guess.$s",
+		"Maru.EclipseDate.Intro.Refuse.End": "Don't worry, I'm not upset.#$b#I know you're busy...I knew what I was getting into when I married you.",
+		
+		//Date
+		"Maru.EclipseDate.1": "Hi, honey.$l#$b#I'm glad you came.$l",
+		"Maru.EclipseDate.2": "So, what do you think about our little camp?",
+		"Maru.EclipseDate.3": "It's great, Maru!",
+		"Maru.EclipseDate.4": "It looks so cozy.",
+		"Maru.EclipseDate.5": "I love the firepit!",
+		"Maru.EclipseDate.6": "Thanks, honey! I tried to make it as cozy and warm as it could be.",
+		"Maru.EclipseDate.7": "Oh! And one more thing...",
+		"Maru.EclipseDate.8": "I brought some fish we can fry over the fire out here. It's the true camping experience, @!",
+		"Maru.EclipseDate.9": "Here, @. I hope it tastes good!",
+		"Maru.EclipseDate.10": "Yum! Hot and crispy, perfect! Maru cooked it just right!",
+		"Maru.EclipseDate.11": "Wow! These are great!",
+		"Maru.EclipseDate.12": "I'm full, haha. I could eat this all day.$h",
+		"Maru.EclipseDate.13": "Thanks again for coming, @.$l#$b#The eclipse should be happening any second now...",
+		"Maru.EclipseDate.14": "That's it! It's happening! Come on, honey, let's look!",
+		"Maru.EclipseDate.15": "Wow... it's beautiful! I can't believe I'm witnessing this!$h",
+		"Maru.EclipseDate.16": "Here, honey, you look!",
+		"Maru.EclipseDate.17": "A lunar eclipse happens when our planet comes in between the Moon and Sun.#$b#The Moon becomes basked in Earth's shadow, and the only light the Moon receives is the red tint of our sunset.",
+		"Maru.EclipseDate.18": "When I was little, I used to stare at the sky and wonder what the stars and planets really meant.#$b#Is there really a meaning to our existence? I suppose we'll never know.",
+		"Maru.EclipseDate.19": "I always thought...$s#$b#No...$s#$b#I always knew...$l#$b#...that the stars would guide me through my life.",
+		"Maru.EclipseDate.20": "The first time I looked at a lunar eclipse like this, my father asked me something...#$b#He told me 'Maru, there is little point studying the galaxy. We will never be able to explore it in our lifetimes, nor will our children, and nor will their children after that. Life should be focused here, on the ground.'.#$b#I never understood why he said that. I always wanted to explore the unknown.#$b#Now, I think it's clear I won't be around to see what's truly out there, but, strangely...#$b#I can accept that.",
+		"Maru.EclipseDate.21": "After meeting you, @...$l#$b#I wouldn't want to be anywhere else!",
+		"Maru.EclipseDate.22": "It's very symbolic if you think about it.#$b#Red can represent anger, frustration, negativity...#$b#But it can also represent love, warmth, and passion.",
+		"Maru.EclipseDate.23": "I'm so lucky to have you in my life, @... I hope you're happy to have me in your life as well.",
+		"Maru.EclipseDate.24": "Looks like the eclipse is over, honey. The Moon has passed through our planet's loving shadow and is back to its normal, silver self.",
+		"Maru.EclipseDate.25": "*Yawn*",
+		"Maru.EclipseDate.26": "I'm getting tired, @. What do you say we retire to the tent for the evening?",
+		
+		"Maru.EclipseDate.27": "Hey, @...$l#$b#I love you.",
+		
+		"Maru.EclipseDate.27.Suggestive": "Hey, @...$l#$b#I have one more surprise for you in the tent...$l",
+		"Maru.EclipseDate.28.Suggestive": "Ha...that was great...$l#$b#I'm exhausted after that! Let's go to sleep now, honey...$h",
+		
+		"Maru.EclipseDate.End": "I had a stellar night watching the eclipse with Maru. It was so romantic!",
+	
+	//Haley Desert Date
+	
+		//Intro
+		"Haley.DesertDate.Intro.1": "All right, let's see if there's any mail today...",
+		"Haley.DesertDate.Intro.2": "What's this?",
+		"Haley.DesertDate.Intro.3": "Oh, hi honey!",
+		"Haley.DesertDate.Intro.4": "I was just checking if there was any mail today.",
+		"Haley.DesertDate.Intro.5": "Hey, actually, dear...$l",
+		"Haley.DesertDate.Intro.6": "I just got a letter from my sister.#$b#She invited me to go with her to the Desert to visit her friend Sandy.#$b#Now that the Bus is repaired, we can all go to the Desert more often.",
+		
+		"Haley.DesertDate.Intro.7.Gendered": "Would you want to go with me, honey? The Desert is a great place for photos...the scenery is perfect.#$b#It would be some time with just each other...$l#$b#Exploring the vast Desert and taking pictures of memories that will last a lifetime...I can't think of anything more romantic to do with my husband.$l^Exploring the vast Desert and taking pictures of memories that will last a lifetime...I can't think of anything more romantic to do with my wife.$l",
+		"Haley.DesertDate.Intro.7.Neutral": "Would you want to go with me, honey? The Desert is a great place for photos...the scenery is perfect.#$b#It would be some time with just each other...$l#$b#Exploring the vast Desert and taking pictures of memories that will last a lifetime...I can't think of anything more romantic to do with my spouse.$l",
+		
+		"Haley.DesertDate.Intro.8": "Well, honey?",
+		"Haley.DesertDate.Intro.9": "Yay! Thanks, @!$h#$b#This will be so much fun. Just come to the bus stop anytime before 5:00 PM today. I'll grab some things, then I'll be waiting with Emily for you.",
+		"Haley.DesertDate.Intro.10": "I can't wait to spend time with you, @.$l",
+		"Haley.DesertDate.Intro.End": "I'm so excited, dear.$h#$b#I'm just gonna finish packing then I'll head out to the bus stop.#$b#Just come by before 5 and we'll be on our way!$h",
+		
+		"Haley.DesertDate.Intro.Refusal.9": "Oh...$s#$b#Too busy again?$s",
+		"Haley.DesertDate.Intro.Refusal.10": "It's okay, we'll do it some other time. You just get back to work.",
+		"Haley.DesertDate.Intro.Refusal.End": "Don't worry, I'm not upset.#$b#I know you're busy...I knew what I was getting into when I married you.#$b#We'll go some other time, I guess...$s",
+		
+		//Date
+		"Haley.DesertDate.1": "@, you're here!$h#$b#I'm glad you decided to come.",
+		"Haley.DesertDate.2": "Emily's just buying our bus tickets now. We'll hop onto the bus in a minute.",
+		"Haley.DesertDate.3": "All right sis, I think it went through. Hop on!",
+		"Haley.DesertDate.4": "Hi, @! I bought you a ticket too, don't worry.#$b#You're family now!$h",
+		"Haley.DesertDate.5": "All right, honey! Let's get on this bus and go!",
+		"Haley.DesertDate.6": "I'm so excited!$h",
+		"Haley.DesertDate.7": "All right kids, let's go...",
+		"Haley.DesertDate.8": "Hi Sandy!",
+		"Haley.DesertDate.9": "Hi Emily!",
+		"Haley.DesertDate.10": "It's great to see you again, Sandy!",
+		"Haley.DesertDate.11": "It's great to see you too, sweetie.",
+		"Haley.DesertDate.12": "Oh, who's this?",
+		"Haley.DesertDate.13": "Why hello, Haley! It's been a while since I've seen you.",
+		
+		"Haley.DesertDate.14.Gendered": "I see you've brought your beautiful husband along with you as well.^I see you've brought your beautiful wife along with you as well.",
+		"Haley.DesertDate.14.Neutral": "I see you've brought your beautiful spouse along with you as well.",
+		
+		"Haley.Giggle": "*giggle*",
+		
+		"Haley.DesertDate.15": "It's nice to see you too, Sandy!",
+		"Haley.DesertDate.16": "Okay sis, me and Sandy are going to head to her store and hang out there. You have fun in the Desert with @!",
+		"Haley.DesertDate.17": "Okay Em! See you soon.",
+		"Haley.DesertDate.18": "All right, honey! We're here!$h#$b#There's so many amazing photoshoot locations to check out!$h",
+		"Haley.DesertDate.19": "Wow, it's hotter than I expected...$s",
+		"Haley.DesertDate.20": "Hey, @, is it okay if we stop by Sandy's store?#$b#We can get some supplies to keep us cool while we're there. We don't want to overcook ourselves!",
+		"Haley.DesertDate.21": "Let's go, then!",
+		"Haley.DesertDate.22": "He really said that?",
+		"Haley.DesertDate.23": "Yeah, I know!",
+		"Haley.DesertDate.24": "Hi, love. What brings you here? I though you were going to explore the Desert together.",
+		"Haley.DesertDate.25": "Oh, we're still going to, Sandy!#$b#We just decided to stop by to see how things were going and to buy a few essentials.",
+		"Haley.DesertDate.26": "Oh, of course!$h#$b#Here, take some ice cold milk. It'll keep you refreshed in the heat.#$b#I'll give it to you free of charge, since you're the sister of my best friend!$h",
+		"Haley.DesertDate.27": "Wow, you're so nice, Sandy!",
+		"Haley.DesertDate.28": "Thank you!",
+		"Haley.DesertDate.29": "Here you go, dear!",
+		"Haley.DesertDate.30": "Okay, we'll be off!",
+		"Haley.DesertDate.31": "Actually Sandy, before we leave...",
+		"Haley.DesertDate.32": "Can I take a picture of this? I want to remember this trip for quite some time!",
+		"Haley.DesertDate.33": "Of course, dear.",
+		"Haley.DesertDate.34": "Yay!",
+		"Haley.DesertDate.35": "You go stand over there, honey.#$b#I'll set up the camera.",
+		"Haley.DesertDate.36": "Perfect!",
+		"Haley.DesertDate.37": "All right, everyone! Smile!$h",
+		"Haley.DesertDate.38": "Cheese!",
+		"Haley.DesertDate.39": "These look great! Thanks a lot guys!$h",
+		"Haley.DesertDate.40": "No problem!",
+		"Haley.DesertDate.41": "All right, @. Let's head out!",
+		"Haley.DesertDate.42": "Haley and I went all around the desert snapping pictures.",
+		"Haley.DesertDate.43": "We saw all the beautiful sights that there were to see at the Desert.",
+		"Haley.DesertDate.44": "There was one last spot that Haley wanted to see...",
+		"Haley.DesertDate.45": "Aww, it's so cute!",
+		"Haley.DesertDate.46": "His name is Humphrey.",
+		"Haley.DesertDate.47": "Humphrey?#$b#That's adorable!$h",
+		"Haley.DesertDate.48": "Do you like that, Humphrey?",
+		"Haley.DesertDate.49": "You know, @...",
+		"Haley.DesertDate.50": "There's no way I would be here doing this today if I hadn't fallen in love with you.$l",
+		"Haley.DesertDate.51": "You showed people that there really was more to me than looking pretty...$l#$b#..you showed me that I was worth more than I thought I was...$l",
+		"Haley.DesertDate.52": "I love you, @. More than anything.$l#$b#It's because of you that I'm able to go on trips like these, places I've always wanted to see...$l",
+		"Haley.DesertDate.53": "...and things I've always wanted to try.$l#$b#Like petting a camel!$h",
+		"Haley.DesertDate.54": "Good boy, Humphrey!",
+		"Haley.DesertDate.55": "Thank you, honey. This trip was amazing, and it was even more amazing because I got to do it all with you.$l",
+		"Haley.DesertDate.56": "Haley, @! Our bus leaves soon, so come quick!",
+		"Haley.DesertDate.57": "We're coming, Emily!",
+		"Haley.DesertDate.58": "Just one more thing before we go.",
+		"Haley.DesertDate.59": "Say cheese, @!",
+		"Haley.DesertDate.60": "Haley and I had a great time at the Desert. It was nice to spend time with her.",
+		"Haley.DesertDate.61": "Wow, Haley! Your expedition sounds like it was really fun!",
+		"Haley.DesertDate.62": "Yeah, it was amazing!$h#$b#Here, let me show you my photos!$h",
+		"Haley.DesertDate.63": "Here's the first one I took, of the sand when we first arrived...",
+		"Haley.DesertDate.64": "Cute!",
+		"Haley.DesertDate.65": "And here's the one I took of all of us at Sandy's shop!",
+		"Haley.DesertDate.66": "Wow, Haley, these all look great!",
+		"Haley.DesertDate.67": "Thanks! Now this next one is...",
+		"Haley.DesertDate.68": "OH!$l",
+		"Haley.DesertDate.69": "Oh! Well isn't this cute?",
+		"Haley.DesertDate.70": "Hehe, well...$l",
+		"Haley.DesertDate.71": "I, uh, didn't realize the camera was still rolling...$l",
+		"Haley.DesertDate.72": "It's beautiful! You two are so in love. I'm glad you two found each other.",
+		"Haley.DesertDate.73": "I'm glad I found Haley too.",
+		
+		"Haley.DesertDate.74": "Hey, um, @...$l#$b#Don't we have something important to do back at the farmhouse?$l",
+		"Haley.DesertDate.75": "We should head back quick, so we can get started on it...$l",
+		"Haley.DesertDate.76": "Don't do anything I wouldn't do, you two!", //giggle with textabovehead after this, see above
+		"Haley.DesertDate.77": "That was great, @...#$b#Want to go for another round?$13",
+		
+		"Haley.DesertDate.End": "What an amazing day with you, @.",
+		
+	
+	//Emily Gem Date
+	
+		//Intro
+		"Emily.GemDate.Intro.1": "I think I have everything...",
+		"Emily.GemDate.Intro.2": "Wait! I forgot...",
+		"Emily.GemDate.Intro.3": "Oh! @! Sorry, dear.",
+		"Emily.GemDate.Intro.4": "I was going to drop some stuff by my old house for Haley and pick up a few things I left there today.#$b#I didn't want to wake you...you look so peaceful when you sleep.$l",
+		"Emily.GemDate.Intro.5": "I was going to go, but I just remembered that I left something inside.",
+		"Emily.GemDate.Intro.6": "Hey, hon...$l",
+		
+		"Emily.GemDate.Intro.7.Gendered": "Do you wanna come along? I could show you some of my old things...$l#$b#It could just be a little 'us' time.#$b#Spending time with my amazing husband... I couldn't envision a more perfect day!^Spending time with my amazing wife... I couldn't envision a more perfect day!",
+		"Emily.GemDate.Intro.7.Neutral": "Do you wanna come along? I could show you some of my old things...$l#$b#It could just be a little 'us' time.#$b#Spending time with my amazing spouse... I couldn't envision a more perfect day!",
+		
+		"Emily.GemDate.Intro.8": "Well, dear?",
+		"Emily.GemDate.Intro.9": "Splendid! This will be so much fun, @!$h#$b#I'm just gonna grab what I forgot and then I'll head out.#$b#Just swing by my old house after you've done your chores!$h#$b#I can't wait to see you, honey!$l",
+		"Emily.GemDate.Intro.End": "I'm gonna head to Haley's soon.#$b#Don't forget to swing by anytime, dear!",
+		
+		"Emily.GemDate.Intro.Refusal.9": "Oh...$s#$b#Too busy again?$s",
+		"Emily.GemDate.Intro.Refusal.10": "It's okay hon, we'll spend time together some other day. You just get back to work.",
+		"Emily.GemDate.Intro.Refusal.11": "I'll just grab what I forgot, and head out, I guess.$s#$b#On second thought, maybe I won't go anywhere today...$s",
+		"Emily.GemDate.Intro.Refusal.End": "Don't worry, @. I'm not upset.#$b#I know you're busy...I knew what I was getting into when I married you.",
+		
+		//Date
+		"Emily.GemDate.1": "Done!",
+		"Emily.GemDate.2": "That's all!",
+		"Emily.GemDate.3": "*sigh*... I wish Haley wasn't so messy..$s#$b#I agreed to let her use my room after I moved out, but the least she could do is keep it clean...$s",
+		"Emily.GemDate.4": "'1 New Unread Email'",
+		"Emily.GemDate.5": "Ooh, I wonder who it's from!",
+		"Emily.GemDate.6": "Subject: How are you doing sweetie?",
+		"Emily.GemDate.7": "From: Sandy",
+		"Emily.GemDate.8": "'Splendid day Em! It's been a while since I've heard from you. Hope you're doing well! If you ever feel lonely always remember you've got a good friend out here in the Desert.'",
+		"Emily.GemDate.9": "Oh, Sandy! You're so sweet!",
+		"Emily.GemDate.10": "Although, I don't suppose you'll feel lonely anytime soon, considering you got married to that attractive farmer, {{PlayerName}}.",
+		"Emily.GemDate.11": "Come on, Em! You think I didn't know? I still keep up to date with the news in the Valley. Did you forget to tell me? I'm so happy for you!",
+		"Emily.GemDate.12": "Oh no! I completely forgot to tell Sandy about my wedding!$s",
+		"Emily.GemDate.13": "I better plan a visit with her right away. Let me respond to this.",
+		"Emily.GemDate.14": "'My dearest Sandy,'#$b#'I am so sorry that I forgot to tell you about @.'#$b#'I was so swept up in them that I completely forgot to tell you.'#$b#'Please don't feel left out. I feel terrible for what I have done and I will come visit you as soon as possible.'",
+		
+		"Emily.GemDate.15.Gendered": "As for @...'$l#$b#'He's the best thing that has ever happened to me.'$l^'She's the best thing that has ever happened to me.'$l#$b#'He makes me feel safe, happy, and I treasure every day with him. I love his-'$l^'She makes me feel safe, happy, and I treasure every day with her. I love her-'$l",
+		"Emily.GemDate.15.Neutral": "'As for @...'$l#$b#'They are the best thing that has ever happened to me.'$l#$b#'They make me feel safe, happy, and I treasure every day with them. I love their-'$l",
+		
+		"Emily.GemDate.16": "@! Dear, you're here!$h",
+		"Emily.GemDate.17": "I was just chatting with my friend Sandy about you.",
+		"Emily.GemDate.18": "I told her that you're the most honest, loyal, smart, brave, and most amazing person I know.$l",
+		"Emily.GemDate.19": "Oh, hey! I wanted to show you something.",
+		"Emily.GemDate.20": "Come, look closer!",
+		"Emily.GemDate.21": "This was one of my 'Sadness Cleansing Gems'.$3",
+		"Emily.GemDate.22": "Whenever I felt sad or lonely after a long day of work at the Saloon, or after fighting with Haley, I would take one of these and capture my sad feelings inside them.$s",
+		"Emily.GemDate.23": "I thought that by capturing the negative energy in these crystals, I could keep them hidden, away from the world.$3#$b#I didn't want any negative energy to be released onto others because of me.$s#$b#And in a way, these crystals were also me hiding my negative memories...$s",
+		"Emily.GemDate.24": "There's a crystal from the first night me and Haley were by ourselves after our parents left...$s#$b#There's a crystal from the night Clint and I had an argument...$s#$b#And then there's my latest crystal...$s",
+		"Emily.GemDate.25": "@, the last time I used one of these crystals to capture my feelings was the night before we first met.$3#$b#I just had a huge fight with Haley, and I just felt so alone.$s",
+		"Emily.GemDate.26": "But then you came into my life, @. I knew from the moment we met you had a positive, loving aura...$l#$b#I knew our destinies would intertwine...$l",
+		"Emily.GemDate.27": "Here, @. I want you to have this crystal.",
+		
+		"Emily.GemDate.28.Gendered": "Think of it not as me burdening you with my negative emotions...$s#$b#But as me giving my amazing husband my emotions to protect and keep safe.$l^But as me giving my amazing wife my emotions to protect and keep safe.$l",
+		"Emily.GemDate.28.Neutral": "Think of it not as me burdening you with my negative emotions...$s#$b#But as me giving my amazing spouse my emotions to protect and keep safe.$l",
+		
+		"Emily.GemDate.29": "Thank you for coming, @. I'm glad I got to go on this trip down memory lane with you.",
+		
+		"Emily.GemDate.30.Suggestive": "Hey, @...$l",
+		"Emily.GemDate.31.Suggestive": "Haley shouldn't be back for a couple more hours...$l#$b#We have the house to ourselves...$l",
+		"Emily.GemDate.32.Suggestive": "I've never had this much fun before, @.$l#$b#Let's do this again, okay?$l",
+		"Emily.GemDate.End.Suggestive": "That was nice...$l#$b#Oh, and remember to keep that gem safe!",
+		
+		"Emily.GemDate.30": "I think I still have some of my 'Awkwardness Cleansing Gems' around here too...#$b#Had to use a lot of those after I hung out with Clint!$h",
+		"Emily.GemDate.31": "What a good way to spend time with Emily. I'm glad she'll never have to use one of these sadness gems again!",
+		"Emily.GemDate.End": "That was nice, @.$l#$b#Remember to keep that gem safe!",
+	
+	//Alex Gridball Date
+	
+		//Intro
+		"Alex.Gridball.Intro.1": "@, wait up!",
+		"Alex.Gridball.Intro.2": "Guess what I just got?",
+		"Alex.Gridball.Intro.3": "Nope...#$b#It's...#$b#Two tickets to the Tunnelers game tonight!$h",
+		"Alex.Gridball.Intro.4": "So, honey? Do you wanna come watch with me? It's gonna be great!$h",
+		
+		"Alex.Gridball.Intro.Refusal.5": "Oh...$s#$b#Too busy again?$s",
+		"Alex.Gridball.Intro.Refusal.6": "It's okay, we'll do it some other time. You just get back to work.#$b#I guess I'll ask someone else to go...$s",
+		"Alex.Gridball.Intro.Refusal.7.Gendered": "Don't worry, I'm not upset.#$b#I know you're busy...I knew what I was getting into when I married you.#$b#It just would've been nice to go with my husband.^It just would've been nice to go with my wife.",
+		"Alex.Gridball.Intro.Refusal.7.Neutral": "Don't worry, I'm not upset.#$b#I know you're busy...I knew what I was getting into when I married you.#$b#It just would've been nice to go with my spouse.",
+		
+		"Alex.Gridball.Intro.5": "Awesome! This is gonna be so fun!$h#$b#Come to the Bus Stop after noon but before 7, @. We wanna be early!$h#$b#I'll pack the essentials then wait out there for you.#$b#I can't wait to watch!$h",
+		"Alex.Gridball.Intro.End": "Remember, @! The bus stop after noon but before 7 pm!#$b#We're gonna have so much fun together, honey!$h",
+		
+		//Date
+		"Alex.Gridball.1": "Hey, kid! You coming?! We gotta leave now if we wanna make it in time!",
+		"Alex.Gridball.2": "Hold on, Pam! I'm just waiting for someone...",
+		"Alex.Gridball.3": "Hmph.",
+		"Alex.Gridball.4": "@! There you are!#$b#Come on, we gotta go! We don't wanna be late!",
+		"Alex.Gridball.5": "It's gonna be awesome, dear. I can't wait!$h",
+		"Alex.Gridball.6": "We got here just in time! Come on, @!$h",
+		"Alex.Gridball.7": "Let's see...",
+		"Alex.Gridball.8": "Looks like the Tunnelers are in the lead, @!$h",
+		"Alex.Gridball.9": "WOOHOO!",
+		"Alex.Gridball.10": "Let's go! Tunnelers just scored!$h#$b#We're making our lead even bigger!$h",
+		"Alex.Gridball.11": "Aww, looks like they're calling a timeout.",
+		"Alex.Gridball.12": "Announcer: Itttt's time for another round of the Kiss Cam!",
+		"Alex.Gridball.13": "Announcer: Let's watch...",
+		"Alex.Gridball.14": "Announcer: This lovely couple near the bottom!",
+		"Alex.Gridball.15": "T-that's us, @!",
+		"Alex.Gridball.16": "Well, honey?",
+		"Alex.Gridball.17": "Announcer: Adorable!",
+		"Alex.Gridball.18": "Heh, that was nice.$l",
+		"Alex.Gridball.19": "Looks like the game's back on, @!$h",
+		"Alex.Gridball.20": "WOO!",
+		"Alex.Gridball.21": "Another score, @!$h#$b#This is the best the Tunnelers have played all season!$h",
+		"Alex.Gridball.22": "GO!",
+		"Alex.Gridball.23": "Alex and I had a great time at the Tunnelers game. The Tunnelers won by a landslide!",
+		"Alex.Gridball.24": "That was awesome, @!#$b#The Tunnelers are looking better than ever!$h",
+		"Alex.Gridball.25": "Thanks for coming to the game with me, honey.#$b#It's always better with you around.$l",
+		
+		"Alex.Gridball.26.Suggestive": "Hey, honey...$l#$b#What do you say we keep this party rolling back home?$l",
+		"Alex.Gridball.27.Suggestive": "Heh, that was fun...$l#$b#We should, uh, try that again sometime...$l",
+		
+		"Alex.Gridball.26": "Come on, let's go back home.#$b#We can look at all the photos we took, haha!$h",
+		"Alex.Gridball.27": "Alex and I had the best date today. I'm so lucky to be married to him!",
+		
+	//2.1 Lines
+		
+	//NPC Tokens Compat
+	
+		//Make ABSOLUTELY sure these do not apply with spouses which swap gender or have a non-binary gender presentation or otherwise. Not having specific pronouns is something to fix, but the fix *cannot* be misgendering an NPC.
+	
+		//Generic Alterations
+		
+		"Pool.6.M": "[CharacterName {{Date}}] tried their hardest, but I easily beat him. What a fun night!",
+		"Pool.6.F": "[CharacterName {{Date}}] tried their hardest, but I easily beat her. What a fun night!",
+		
+		"Forest.9.M": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have him!",
+		"Forest.9.F": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have her!",
+		
+		"Lake.9.M": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have him!",
+		"Lake.9.F": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have her!",
+		
+		"Swim.19.M": "I chased [CharacterName {{Date}}] around for a long time to try and splash him back.",
+		"Swim.20.M": "After almost 5 minutes of chasing, I finally got him!",
+		"Swim.19.F": "I chased [CharacterName {{Date}}] around for a long time to try and splash her back.",
+		"Swim.20.F": "After almost 5 minutes of chasing, I finally got her!",
+		
+		//Unique Alterations (for genderbent mods)
+		
+		"Haley.DesertDate.60.M": "Haley and I had a great time at the Desert. It was nice to spend time with him.", //Haley is male
+		"Alex.Gridball.27.F": "Alex and I had the best date today. I'm so lucky to be married to her!", //Alex is female
+		
+			//More Specific Changes
+		"Haley.DesertDate.Intro.6.M": "I just got a letter from my brother.#$b#He invited me to go with him to the Desert to visit his friend Sandy.#$b#Now that the Bus is repaired, we can all go to the Desert more often.", //Emily is male
+		"Haley.DesertDate.3.M": "All right Haley, I think it went through. Hop on!", //Haley is male - "bro" doesn't quite fit here.
+		"Haley.DesertDate.16.M": "Okay Haley, me and Sandy are going to head to her store and hang out there. You have fun in the Desert with @!", //Haley is male
+		"Haley.DesertDate.26.M": "Oh, of course!$h#$b#Here, take some ice cold milk. It'll keep you refreshed in the heat.#$b#I'll give it to you free of charge, since you're the brother of my best friend!$h", //Haley is male
+		"Emily.GemDate.3.M": "*sigh*... I wish Haley wasn't so messy..$s#$b#I agreed to let him use my room after I moved out, but the least he could do is keep it clean...$s", //Haley is male
+		
+	//Small additional line fix for Abigail in Grocery Date
+	
+	"GroceryDate.13.Abigail": "Hey, dad. Here's what we'll be buying today.", //Suggested by nomorenamesleft - one line change for consistency.
+	
+	//Dynamic Pool endings
+	
+		//Pool Fork - Date Wins
+			
+		"PoolWin.1": "You want to play pool? All right!#$b#I've been practicing since the last time we played. I'm going to beat you this time!$h",
+		
+		"PoolWin.2.Gendered": "I won't be so easy to beat this time!$h#$b#Time to show my husband what I can really do...^Time to show my wife what I can really do...",
+		"PoolWin.2.Neutral": "I won't be so easy to beat this time!$h#$b#Time to show my spouse what I can really do...",
+		
+		"PoolWin.3": "Take this!",
+		"PoolWin.4": "The cue ball scatters the other balls, sinking a few of the solid colors into the pockets in the process.",
+		"PoolWin.5": "Yes!",
+		"PoolWin.6": "It was a close match, but [CharacterName {{Date}}] managed to win! I guess I better keep practicing...",
+		
+		"PoolWin.7": "I can't believe I won! I guess all my practice paid off!$h",
+		"PoolWin.8": "Hey, @. How about we go home and I show you a few of the moves I learned?$l",
+		"PoolWin.9": "Wow... That was great, @...$l#$b#Ha, I'm exhausted...$l",
+		
+		//Pool Fork - Player Wins
+		
+		"PoolLose.1": "You want to play pool? All right!#$b#I've been practicing since the last time we played. I'm going to beat you this time!$h",
+		
+		"PoolLose.2.Gendered": "I won't be so easy to beat this time!$h#$b#Time to show my husband what I can really do...^Time to show my wife what I can really do...",
+		"PoolLose.2.Neutral": "I won't be so easy to beat this time!$h#$b#Time to show my spouse what I can really do...",
+		
+		"PoolLose.3": "Take this!",
+		"PoolLose.4": "The cue ball only brushes against a few of the other billiard balls and goes into a pocket.",
+		"PoolLose.5": "Oops...",
+		"PoolLose.6": "[CharacterName {{Date}}] tried their hardest, but I managed to beat them! We had a great time playing pool together.",
+		
+		"PoolLose.7": "I'll beat you next time, honey. Just you wait!$h",
+		"PoolLose.8": "Hey, @. How about we go home and you can teach me some of your skills?$l",
+		"PoolLose.9": "Wow... That was great, @...$l#$b#Ha, I'm exhausted...$l",
+		
+		"SaloonDate.End.PoolFork": "I had a great time playing pool with you, honey. Let's do that again sometime!$l",
+		
+	//Date Reminders!
+		
+		"SaloonReminder": "[CharacterName {{Date}}] is waiting for you at the Saloon...",
+		"PicnicReminder": "[CharacterName {{Date}}] is waiting for you in the Forest...",
+		"LibraryReminder": "[CharacterName {{Date}}] is waiting for you at the Museum...",
+		"BeachReminder": "[CharacterName {{Date}}] is waiting for you in the Beach...",
+		"GroceryReminder": "[CharacterName {{Date}}] is waiting for you at the general store...",
+		"CampingReminder": "[CharacterName {{Date}}] is waiting for you in the Forest! Make sure to finish your farmwork before going...",
+		"EmilyReminder.": "[CharacterName {{Date}}] is waiting for you in at their old home...",
+		"EmilyReminder.F": "[CharacterName {{Date}}] is waiting for you in at her old home...",
+		"EmilyReminder.M": "[CharacterName {{Date}}] is waiting for you in at his old home...",
+		"HaleyReminder": "[CharacterName {{Date}}] is waiting for you at the Bus Stop...",
+		"AlexReminder": "[CharacterName {{Date}}] is waiting for you at the Bus Stop...",
+		"MaruReminder": "[CharacterName {{Date}}] is waiting for you in the Backwoods! Make sure to finish your farmwork before going...",
+		
+		"MissedPicnic": "You missed your picnic date with [CharacterName {{Date}}]!",
+		"MissedBeach": "You missed your beach date with [CharacterName {{Date}}]!",
+		"MissedGrocery": "You missed your grocery date with [CharacterName {{Date}}]!",
+		"MissedHaley": "You missed your Desert date with [CharacterName {{Date}}]!",
+		"MissedAlex": "You missed your Gridball date with [CharacterName {{Date}}]!",
+}

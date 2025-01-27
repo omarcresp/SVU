@@ -1,0 +1,1761 @@
+{
+  "Changes": [
+	/* add item  images*/
+      {
+        "LogName": "Load seeds images",
+        "Action": "Load",
+        "Target": "Mods/{{ModID}}/Seeds",
+        "FromFile": "Assets/Seeds.png"
+      },
+      {
+        "LogName": "Load plants images",
+        "Action": "Load",
+        "Target": "Mods/{{ModID}}/Plants",
+        "FromFile": "Assets/Plants.png"
+      },
+      {
+        "LogName": "Load crops images",
+        "Action": "Load",
+        "Target": "Mods/{{ModID}}/Crops",
+        "FromFile": "Assets/Crops.png"
+      },
+      {
+        "LogName": "Load giant crops images",
+        "Action": "Load",
+        "Target": "Mods/{{ModID}}/GiantCrops",
+        "FromFile": "Assets/GiantCrops.png"
+      },
+      {
+        "LogName": "Load fruit trees images",
+        "Action": "Load",
+        "Target": "Mods/{{ModID}}/FruitTrees",
+        "FromFile": "Assets/FruitTrees.png"
+      },
+      /*Seeds*/
+      {
+        "LogName": "Seeds",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "{{ModID}}_CornflowerSeeds": {
+            "Name": "Cornflower Seeds",
+            "DisplayName": "{{i18n: SereneMeadowCornFlowerSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowCornFlowerSeeds_Description_Translated}}",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 5,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 0,
+            "ContextTags": [
+              "season_summer",
+              "season_fall",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_BabyBooSquashSeeds": {
+            "Name": "Baby Boo Squash Seeds",
+            "DisplayName": "{{i18n: SereneMeadowBabyBooSquashSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowBabyBooSquashSeeds_Description_Translated}}",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 44,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 1,
+            "ContextTags": [
+              "season_fall",
+              "lumisteria.crop_tier_2",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_BorageSeeds": {
+            "Name": "Borage Seeds",
+            "DisplayName": "{{i18n: SereneMeadowBorageSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowBorageSeeds_Description_Translated}}",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 12,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 2,
+            "ContextTags": [
+              "season_spring",
+              "season_summer",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_BlueFlameSeeds": {
+            "Name": "Blue Flame Seeds",
+            "DisplayName": "{{i18n: SereneMeadowBlueFlameSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowBlueFlameSeeds_Description_Translated}}",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 90,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 3,
+            "ContextTags": [
+              "season_spring",
+              "lumisteria.crop_tier_3",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_ForgetMeNotSeeds": {
+            "Name": "Forget Me Not",
+            "DisplayName": "{{i18n: SereneMeadowForgetMeNotSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowForgetMeNotSeeds_Description_Translated}}",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 20,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 4,
+            "ContextTags": [
+              "season_spring",
+              "lumisteria.crop_tier_2",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_ButterflyLavenderSeeds": {
+            "Name": "Butterfly Lavender Seeds",
+            "DisplayName": "{{i18n: SereneMeadowButterflyLavenderSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowButterflyLavenderSeeds_Description_Translated}}",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 30,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 5,
+            "ContextTags": [
+              "season_summer",
+              "lumisteria.crop_tier_2",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_SnowdropSeeds": {
+            "Name": "Giant Snowdrop Seeds",
+            "DisplayName": "{{i18n: SereneMeadowSnowdropSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowSnowdropSeeds_Description_Translated}}",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 25,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 6,
+            "ContextTags": [
+              "season_winter",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_SpringBellsSeeds": {
+            "Name": "Giant Spring Bells Seeds",
+            "DisplayName": "{{i18n: SereneMeadowSpringBellsSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowSpringBellsSeeds_Description_Translated}}",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 12,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 7,
+            "ContextTags": [
+              "season_spring",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_CalendulaSeeds": {
+            "Name": "Golden Calendula Seeds",
+            "DisplayName": "{{i18n: SereneMeadowCalendulaSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowCalendulaSeeds_Description_Translated}}",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 10,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 8,
+            "ContextTags": [
+              "season_summer",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_WinterPansySeeds": {
+            "Name": "Lilac Pansy Seeds",
+            "DisplayName": "{{i18n: SereneMeadowTODOSeeds_Translated}}",
+            "Description": "{{i18n: SereneMeadowTODOSeeds_Description_Translated}}",
+            "DisplayName": "Lilac Pansy Seeds",
+            "Description": "Plant them in winter. Take 6 days to produce a beautiful flower.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 12,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 9,
+            "ContextTags": [
+              "season_winter",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_ClematisStarter": {
+            "Name": "Pink Clematis Starter",
+            "DisplayName": "Pink Clematis Starter",
+            "Description": "Plant them in fall. Take 13 days to produce a flower and continue to produce after that.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 25,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 10,
+            "ContextTags": [
+              "season_fall",
+              "lumisteria.crop_tier_2",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_HollyhockSeeds": {
+            "Name": "Pink Hollyhock Seeds",
+            "DisplayName": "Pink Hollyhock Seeds",
+            "Description": "Plant them in spring, summer or fall. Take 18 days to produce a flower, and continue to produce after that",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 60,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 11,
+            "ContextTags": [
+              "season_spring",
+              "season_summer",
+              "season_fall",
+              "lumisteria.crop_tier_2",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_PurpleFlameSeeds": {
+            "Name": "Purple Flame Seeds",
+            "DisplayName": "Purple Flame Seeds",
+            "Description": "Plant them in fall. Take 8 days to produce a beautiful flower.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 90,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 12,
+            "ContextTags": [
+              "season_fall",
+              "lumisteria.crop_tier_3",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_IrisSeeds": {
+            "Name": "Purple Iris Seeds",
+            "DisplayName": "Purple Iris Seeds",
+            "Description": "Plant them in spring. Take 7 days to produce a beautiful flower.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 25,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 13,
+            "ContextTags": [
+              "season_spring",
+              "lumisteria.crop_tier_2",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_SpringPansySeeds": {
+            "Name": "Purple Pansy Seeds",
+            "DisplayName": "Purple Pansy Seeds",
+            "Description": "Plant them in spring. Take 6 days to produce a beautiful flower.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 12,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 14,
+            "ContextTags": [
+              "season_spring",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_RomanescoCabbageSeeds": {
+            "Name": "Romanesco Cabbage Seeds",
+            "DisplayName": "Romanesco Cabbage Seeds",
+            "Description": "Plant them in fall or winter. Take 14 days to produce.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 40,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 15,
+            "ContextTags": [
+              "season_fall",
+              "lumisteria.crop_tier_3",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_FoxgloveSeeds": {
+            "Name": "Sugar Plum Foxglove Seeds",
+            "DisplayName": "Sugar Plum Foxglove Seeds",
+            "Description": "Plant them in summer. Take 11 days to produce a flower.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 45,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 16,
+            "ContextTags": [
+              "season_fall",
+              "lumisteria.crop_tier_2",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_TallMallowSeeds": {
+            "Name": "Tall Mallow Seeds",
+            "DisplayName": "Tall Mallow Seeds",
+            "Description": "Plant them in summer. Take 10 days to produce a flower and continue to produce after that.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 25,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 17,
+            "ContextTags": [
+              "season_summer",
+              "lumisteria.crop_tier_2",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_WinterIrisBulb": {
+            "Name": "Winter Blue Iris Bulb",
+            "DisplayName": "Winter Blue Iris Bulb",
+            "Description": "Plant them in winter. Take 14 days to produce a tiny beautiful flower.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 75,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 18,
+            "ContextTags": [
+              "season_winter",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_DahliaSeeds": {
+            "Name": "Dahlia Seeds",
+            "DisplayName": "Dahlia Seeds",
+            "Description": "Plant them in spring, grow during spring and summer. Take 15 days to produce a flower, and continue to produce after that.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 60,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 19,
+            "ContextTags": [
+              "season_spring",
+              "lumisteria.crop_tier_2",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_VoidLilySeeds": {
+            "Name": "Void Lily Seeds",
+            "DisplayName": "Void Lily Seeds",
+            "Description": "Plant them in summer, grow during summer and fall. Take 20 days to produce a flower.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 250,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 20,
+            "ContextTags": [
+              "season_summer",
+              "lumisteria.crop_tier_3",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_WillowherbSeeds": {
+            "Name": "Willowherb Seeds",
+            "DisplayName": "Willowherb Seeds",
+            "Description": "Plant them in fall. Take 12 days to produce flowers, then regrow after that.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 84,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 21,
+            "ContextTags": [
+              "season_fall",
+              "lumisteria.crop_tier_3",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_SpottedOrchisSeeds": {
+            "Name": "Spotted Orchis Seeds",
+            "DisplayName": "Spotted Orchis Seeds",
+            "Description": "Plant them in spring. Take 13 days to produce a flower.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 200,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 22,
+            "ContextTags": [
+              "season_spring",
+              "lumisteria.crop_tier_3",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_GiantFernSeeds": {
+            "Name": "Giant Fern Seeds",
+            "DisplayName": "Giant Fern Seeds",
+            "Description": "Plant them in summer. Take 12 days to produce a decorative plume, and continue to produce after that.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 60,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 23,
+            "ContextTags": [
+              "season_summer",
+              "lumisteria.crop_tier_3",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_LilacSapling": {
+            "Name": "Lilac Sapling",
+            "DisplayName": "Lilac Sapling",
+            "Description": "Takes 28 days to produce a mature Lilac tree. Blossom in the spring and summer. Only grows if the 8 surrounding \"tiles\" are empty.",
+            "Type": "Basic",
+            "Category": -74,
+            "Price": 1200,
+            "Texture": "Mods/{{ModID}}/Seeds",
+            "SpriteIndex": 24,
+            "ContextTags": [
+              "season_spring",
+              "season_summer",
+              "lumisteria.sapling_tier_1",
+            ],
+            "CustomFields": {}
+          },
+        },
+      },
+      /*Plants*/
+      {
+        "LogName": "Plants",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "{{ModID}}_Cornflower": {
+            "Name": "Azure Cornflower",
+            "DisplayName": "Azure Cornflower",
+            "Description": "A flower that often grow in field of wheat.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 28,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 0,
+            "Edibility": 1,
+            "ContextTags": [
+              "flower_item",
+              "color_blue",
+              "season_summer",
+              "season_fall",
+              "forage_item"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_BabyBooSquash": {
+            "Name": "Baby Boo Squash",
+            "DisplayName": "Baby Boo Squash",
+            "Description": "A tiny white squash.",
+            "Type": "Basic",
+            "Category": -75,
+            "Price": 88,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 1,
+            "Edibility": 14,
+            "ContextTags": [
+              "color_white",
+              "season_fall",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_Borage": {
+            "Name": "Blue Borage",
+            "DisplayName": "Blue Borage",
+            "Description": "A star-shaped blue flower and edible leaves.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 60,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 2,
+            "Edibility": 15,
+            "ContextTags": [
+              "flower_item",
+              "edible_flower_item",
+              "color_blue",
+              "season_spring",
+              "season_summer",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_BlueFlame": {
+            "Name": "Blue Flame",
+            "DisplayName": "Blue Flame",
+            "Description": "A vivid blue flower with the shape of a flame",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 320,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 3,
+            "Edibility": -10,
+            "ContextTags": [
+              "flower_item",
+              "color_blue",
+              "season_spring",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_ForgetMeNot": {
+            "Name": "Blue Forget Me Not",
+            "DisplayName": "Blue Forget Me Not",
+            "Description": "A flower with a sweet meaning.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 60,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 4,
+            "Edibility": 0,
+            "ContextTags": [
+              "flower_item",
+              "color_blue",
+              "season_spring",
+              "forage_item"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_ButterflyLavender": {
+            "Name": "Butterfly Lavender",
+            "DisplayName": "Butterfly Lavender",
+            "Description": "A flower less fragrant than the usual lavender cultivar, but with pretty petals like a butterfly.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 95,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 5,
+            "Edibility": 15,
+            "ContextTags": [
+              "flower_item",
+              "color_purple",
+              "season_summer"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_Snowdrop": {
+            "Name": "Giant Snowdrop",
+            "DisplayName": "Giant Snowdrop",
+            "Description": "A flower able to grow even when there is snow.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 110,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 6,
+            "Edibility": -300,
+            "ContextTags": [
+              "flower_item",
+              "color_white",
+              "season_winter"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_SpringBells": {
+            "Name": "Giant Spring Bells",
+            "DisplayName": "Giant Spring Bells",
+            "Description": "A bell-shaped white flower, symbol of spring.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 60,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 7,
+            "Edibility": -40,
+            "ContextTags": [
+              "flower_item",
+              "color_white",
+              "season_spring"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_Calendula": {
+            "Name": "Golden Calendula",
+            "DisplayName": "Golden Calendula",
+            "Description": "A golden flower like a tiny sun.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 60,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 8,
+            "Edibility": 15,
+            "ContextTags": [
+              "flower_item",
+              "edible_flower_item",
+              "color_yellow",
+              "season_summer"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_WinterPansy": {
+            "Name": "Lilac Pansy",
+            "DisplayName": "Lilac Pansy",
+            "Description": "A delicate flower with a subtle fragrance, able to grow despite the cold.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 50,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 9,
+            "Edibility": 10,
+            "ContextTags": [
+              "flower_item",
+              "edible_flower_item",
+              "color_pink",
+              "season_winter",
+              "forage_item"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_Clematis": {
+            "Name": "Pink Clematis",
+            "DisplayName": "Pink Clematis",
+            "Description": "The flower of a sturdy climbing plant.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 70,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 10,
+            "Edibility": -300,
+            "ContextTags": [
+              "flower_item",
+              "color_pink",
+              "season_fall"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_Hollyhock": {
+            "Name": "Pink Hollyhock",
+            "DisplayName": "Pink Hollyhock",
+            "Description": "A flower of a delicate pink.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 60,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 11,
+            "Edibility": 12,
+            "ContextTags": [
+              "flower_item",
+              "edible_flower_item",
+              "color_pink",
+              "season_spring",
+              "season_summer",
+              "season_fall"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_PurpleFlame": {
+            "Name": "Purple Flame",
+            "DisplayName": "Purple Flame",
+            "Description": "A vivid purple flower with the shape of a flame",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 320,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 12,
+            "Edibility": -300,
+            "ContextTags": [
+              "flower_item",
+              "color_purple",
+              "season_fall"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_Iris": {
+            "Name": "Purple Iris",
+            "DisplayName": "Purple Iris",
+            "Description": "A decorative flower also used in perfumes.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 110,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 13,
+            "Edibility": -300,
+            "ContextTags": [
+              "flower_item",
+              "color_purple",
+              "season_spring"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_SpringPansy": {
+            "Name": "Purple Pansy",
+            "DisplayName": "Purple Pansy",
+            "Description": "A delicate flower with a subtle fragrance.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 50,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 14,
+            "Edibility": 10,
+            "ContextTags": [
+              "flower_item",
+              "edible_flower_item",
+              "color_purple",
+              "season_spring",
+              "forage_item"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_RomanescoCabbage": {
+            "Name": "Romanesco Cabbage",
+            "DisplayName": "Romanesco Cabbage",
+            "Description": "A variety of cabbage, growing following a fractal pattern.",
+            "Type": "Basic",
+            "Category": -75,
+            "Price": 200,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 15,
+            "Edibility": 25,
+            "ContextTags": [
+              "color_green",
+              "season_fall",
+              "season_winter"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_Foxglove": {
+            "Name": "Sugar Plum Foxglove",
+            "DisplayName": "Sugar Plum Foxglove",
+            "Description": "A beautiful but toxic flower. Be careful with childrens and pets.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 170,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 16,
+            "Edibility": -100,
+            "ContextTags": [
+              "flower_item",
+              "color_pink",
+              "season_summer"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_TallMallow": {
+            "Name": "Tall Mallow",
+            "DisplayName": "Tall Mallow",
+            "Description": "A flower with petals sometimes used in herbal teas.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 36,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 17,
+            "Edibility": 15,
+            "ContextTags": [
+              "flower_item",
+              "edible_flower_item",
+              "color_purple",
+              "season_summer"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_WinterIris": {
+            "Name": "Winter Blue Iris",
+            "DisplayName": "Winter Blue Iris",
+            "Description": "A slightly perfumed flower, blossoming in winter.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 380,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 18,
+            "Edibility": -300,
+            "ContextTags": [
+              "flower_item",
+              "color_blue",
+              "season_winter"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_Dahlia": {
+            "Name": "Dahlia",
+            "DisplayName": "Dahlia",
+            "Description": "It has delicate touches of color.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 220,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 19,
+            "Edibility": 0,
+            "ContextTags": [
+              "flower_item",
+              "color_white",
+              "season_spring",
+              "season_summer"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_VoidLily": {
+            "Name": "Void Lily",
+            "DisplayName": "Void Lily",
+            "Description": "Rumors make them the favorite flowers of witches, because of their colors. But no one ever came with proofs...",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 520,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 20,
+            "Edibility": -65,
+            "ContextTags": [
+              "flower_item",
+              "color_purple",
+              "season_summer",
+              "season_fall",
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_WillowherbFlower": {
+            "Name": "Willowherb Flower",
+            "DisplayName": "Willowherb Flower",
+            "Description": "A wildflower. Would it be less pretty, it would be considered a weed.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 42,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 21,
+            "Edibility": -300,
+            "ContextTags": [
+              "flower_item",
+              "color_pink",
+              "season_fall"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_SpottedOrchis": {
+            "Name": "Spotted Orchis",
+            "DisplayName": "Spotted Orchis",
+            "Description": "An orchid with spots on flowers and leaves.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 387,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 22,
+            "Edibility": -300,
+            "ContextTags": [
+              "flower_item",
+              "color_purple",
+              "season_spring"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_GiantFernPlume": {
+            "Name": "Giant Fern Plume",
+            "DisplayName": "Giant Fern Plume",
+            "Description": "It's used for decoration by florists.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 102,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 23,
+            "Edibility": -300,
+            "ContextTags": [
+              "flower_item",
+              "color_gold",
+              "season_summer"
+            ],
+            "CustomFields": {}
+          },
+          "{{ModID}}_Lilac": {
+            "Name": "Lilac",
+            "DisplayName": "Lilac",
+            "Description": "It's pretty and smell good.",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 82,
+            "Texture": "Mods/{{ModID}}/Plants",
+            "SpriteIndex": 24,
+            "Edibility": -300,
+            "ContextTags": [
+              "flower_item",
+              "color_purple",
+              "season_spring",
+              "season_summer"
+            ],
+            "CustomFields": {}
+          },
+        },
+      },
+      {
+        "LogName": "Crops",
+        "Action": "EditData",
+        "Target": "Data/Crops",
+        "Entries": {
+          "{{ModID}}_CornflowerSeeds": {
+            "Seasons": [
+              "Summer",
+              "Fall"
+            ],
+            "DaysInPhase": [//4
+              1,
+              1,
+              1,
+              1
+            ],
+            "HarvestItemId": "{{ModID}}_Cornflower",
+            "HarvestMaxIncreasePerFarmingLevel": 0.0,
+            "HarvestMethod": "Grab",
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 0,
+            "CustomFields": {}
+          },
+          "{{ModID}}_BabyBooSquashSeeds": {
+            "Seasons": [
+              "Fall"
+            ],
+            "DaysInPhase": [//14
+              2,
+              2,
+              3,
+              3,
+              4
+            ],
+            "RegrowDays": 5,
+            "HarvestItemId": "{{ModID}}_BabyBooSquash",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 2,
+            "HarvestMaxIncreasePerFarmingLevel": 0.0,
+            "TintColors": [],
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 1,
+            "CustomFields": {}
+          },
+          "{{ModID}}_BorageSeeds": {
+            "Seasons": [
+              "Spring",
+              "Summer"
+            ],
+            "DaysInPhase": [//8
+              1,
+              1,
+              2,
+              2,
+              2
+            ],
+            "HarvestItemId": "{{ModID}}_Borage",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "HarvestMaxIncreasePerFarmingLevel": 0.2,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 2,
+            "CustomFields": {}
+          },
+          "{{ModID}}_BlueFlameSeeds": {
+            "Seasons": [
+              "Spring"
+            ],
+            "DaysInPhase": [//8
+              1,
+              2,
+              2,
+              3
+            ],
+            "HarvestItemId": "{{ModID}}_BlueFlame",
+            "HarvestMaxIncreasePerFarmingLevel": 0.0,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 3,
+            "CustomFields": {}
+          },
+          "{{ModID}}_ForgetMeNotSeeds": {
+            "Seasons": [
+              "Spring"
+            ],
+            "DaysInPhase": [//5
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "RegrowDays": -1,
+            "HarvestItemId": "{{ModID}}_ForgetMeNot",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 2,
+            "HarvestMaxIncreasePerFarmingLevel": 0.0,
+            "ExtraHarvestChance": 0.1,
+            "HarvestMethod": "Grab",
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 4,
+            "CustomFields": {}
+          },
+          "{{ModID}}_ButterflyLavenderSeeds": {
+            "Seasons": [
+              "Summer"
+            ],
+            "DaysInPhase": [//9
+              1,
+              2,
+              2,
+              2,
+              2
+            ],
+            "RegrowDays": -1,
+            "HarvestItemId": "{{ModID}}_ButterflyLavender",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 3,
+            "HarvestMaxIncreasePerFarmingLevel": 0.1,
+            "ExtraHarvestChance": 0.0,
+            "HarvestMethod": "Grab",
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 5,
+            "CustomFields": {}
+          },
+          "{{ModID}}_SnowdropSeeds": {
+            "Seasons": [
+              "Winter"
+            ],
+            "DaysInPhase": [//9
+              1,
+              2,
+              2,
+              2,
+              2
+            ],
+            "RegrowDays": -1,
+            "HarvestItemId": "{{ModID}}_Snowdrop",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 2,
+            "HarvestMaxIncreasePerFarmingLevel": 0.0,
+            "ExtraHarvestChance": 0.08,
+            "HarvestMethod": "Grab",
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 6,
+            "CustomFields": {}
+          },
+          "{{ModID}}_SpringBellsSeeds": {
+            "Seasons": [
+              "Spring"
+            ],
+            "DaysInPhase": [//10
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "RegrowDays": -1,
+            "HarvestItemId": "{{ModID}}_SpringBells",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "ExtraHarvestChance": 0.05,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 7,
+            "CustomFields": {}
+          },
+          "{{ModID}}_CalendulaSeeds": {
+            "Seasons": [
+              "Summer"
+            ],
+            "DaysInPhase": [//7
+              1,
+              1,
+              1,
+              2,
+              2
+            ],
+            "HarvestItemId": "{{ModID}}_Calendula",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "HarvestMaxIncreasePerFarmingLevel": 0.2,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 8,
+            "CustomFields": {}
+          },
+          "{{ModID}}_WinterPansySeeds": {
+            "Seasons": [
+              "Winter"
+            ],
+            "DaysInPhase": [//6
+              1,
+              1,
+              2,
+              2
+            ],
+            "HarvestItemId": "{{ModID}}_WinterPansy",
+            "HarvestMinStack": 2,
+            "HarvestMaxStack": 3,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 9,
+            "CustomFields": {}
+          },
+          "{{ModID}}_ClematisStarter": {
+            "Seasons": [
+              "Fall"
+            ],
+            "DaysInPhase": [//13
+              2,
+              2,
+              2,
+              3,
+              4
+            ],
+            "RegrowDays": 5,
+            "IsRaised": true,
+            "HarvestItemId": "{{ModID}}_Clematis",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 10,
+            "CustomFields": {}
+          },
+          "{{ModID}}_HollyhockSeeds": {
+            "Seasons": [
+              "Spring",
+              "Summer",
+              "Fall"
+            ],
+            "DaysInPhase": [//18
+              3,
+              3,
+              4,
+              4,
+              4
+            ],
+            "RegrowDays": 5,
+            "PlantableLocationRules": null,
+            "HarvestItemId": "{{ModID}}_Hollyhock",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 11,
+            "CustomFields": {}
+          },
+          "{{ModID}}_PurpleFlameSeeds": {
+            "Seasons": [
+              "Fall"
+            ],
+            "DaysInPhase": [//8
+              1,
+              2,
+              2,
+              3
+            ],
+            "HarvestItemId": "{{ModID}}_PurpleFlame",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 12,
+            "CustomFields": {}
+          },
+          "{{ModID}}_IrisSeeds": {
+            "Seasons": [
+              "Spring"
+            ],
+            "DaysInPhase": [//7
+              1,
+              1,
+              1,
+              2,
+              2
+            ],
+            "HarvestItemId": "{{ModID}}_Iris",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 13,
+            "CustomFields": {}
+          },
+          "{{ModID}}_SpringPansySeeds": {
+            "Seasons": [
+              "Spring"
+            ],
+            "DaysInPhase": [//6
+              1,
+              1,
+              2,
+              2
+            ],
+            "HarvestItemId": "{{ModID}}_SpringPansy",
+            "HarvestMinStack": 2,
+            "HarvestMaxStack": 3,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 14,
+            "CustomFields": {}
+          },
+          "{{ModID}}_RomanescoCabbageSeeds": {
+            "Seasons": [
+              "Fall",
+              "Winter"
+            ],
+            "DaysInPhase": [//14
+              2,
+              2,
+              3,
+              3,
+              4
+            ],
+            "HarvestItemId": "{{ModID}}_RomanescoCabbage",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 15,
+            "CustomFields": {}
+          },
+          "{{ModID}}_FoxgloveSeeds": {
+            "Seasons": [
+              "Summer"
+            ],
+            "DaysInPhase": [//11
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            "HarvestItemId": "{{ModID}}_Foxglove",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 16,
+            "CustomFields": {}
+          },
+          "{{ModID}}_TallMallowSeeds": {
+            "Seasons": [
+              "Summer"
+            ],
+            "DaysInPhase": [//10
+              1,
+              1,
+              2,
+              2,
+              4
+            ],
+            "RegrowDays": 5,
+            "HarvestItemId": "{{ModID}}_TallMallow",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 17,
+            "CustomFields": {}
+          },
+          "{{ModID}}_WinterIrisBulb": {
+            "Seasons": [
+              "Winter"
+            ],
+            "DaysInPhase": [
+              2,
+              2,
+              3,
+              3,
+              4
+            ],
+            "HarvestItemId": "{{ModID}}_WinterIris",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 18,
+            "CustomFields": {}
+          },
+          "{{ModID}}_DahliaSeeds": {
+            "Seasons": [
+              "Spring",
+              "Summer",
+            ],
+            "DaysInPhase": [//15
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "RegrowDays": 5,
+					"PlantableLocationRules": [
+						{
+							"Id": "DenySummer",
+							"Condition": "LOCATION_SEASON Here Summer, LOCATION_IS_OUTDOORS Here, !LOCATION_CONTEXT Here Island",
+							"PlantedIn": "Any",
+							"Result": "Deny",
+							"DeniedMessage": "This plant can't be planted in summer."
+						}
+					],
+            "HarvestItemId": "{{ModID}}_Dahlia",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 19,
+            "CustomFields": {}
+          },
+          "{{ModID}}_VoidLilySeeds": {
+            "Seasons": [
+              "Summer",
+              "Fall",
+            ],
+            "DaysInPhase": [//20
+              5,
+              5,
+              5,
+              5
+            ],
+            "RegrowDays": -1,
+					"PlantableLocationRules": [
+						{
+							"Id": "DenyFall",
+							"Condition": "LOCATION_SEASON Here Fall, LOCATION_IS_OUTDOORS Here, !LOCATION_CONTEXT Here Island",
+							"PlantedIn": "Any",
+							"Result": "Deny",
+							"DeniedMessage": "This plant can't be planted in fall."
+						}
+					],
+            "HarvestItemId": "{{ModID}}_VoidLily",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "ExtraHarvestChance": 0.05,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 20,
+            "CustomFields": {}
+          },
+          "{{ModID}}_WillowherbSeeds": {
+            "Seasons": [
+              "Fall",
+            ],
+            "DaysInPhase": [//12
+              2,
+              3,
+              2,
+              3,
+              2
+            ],
+            "RegrowDays": 5,
+            "HarvestItemId": "{{ModID}}_WillowherbFlower",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 3,
+            "ExtraHarvestChance": 0.06,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 21,
+            "CustomFields": {}
+          },
+          "{{ModID}}_SpottedOrchisSeeds": {
+            "Seasons": [
+              "Spring",
+            ],
+            "DaysInPhase": [//13
+              2,
+              3,
+              3,
+              3,
+              2
+            ],
+            "RegrowDays": -1,
+            "HarvestItemId": "{{ModID}}_SpottedOrchis",
+            "HarvestMinStack": 1,
+            "ExtraHarvestChance": 0.06,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 22,
+            "CustomFields": {}
+          },
+          "{{ModID}}_GiantFernSeeds": {
+            "Seasons": [
+              "Summer"
+            ],
+            "DaysInPhase": [//10
+              1,
+              1,
+              2,
+              2,
+              4
+            ],
+            "RegrowDays": 5,
+            "HarvestItemId": "{{ModID}}_GiantFernPlume",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 1,
+            "ExtraHarvestChance": 0.05,
+            "Texture": "Mods/{{ModID}}/Crops",
+            "SpriteIndex": 23,
+            "CustomFields": {}
+          },
+        },
+      },
+      //Giant crops
+      {
+        "LogName": "Giant Crops",
+        "Action": "EditData",
+        "Target": "Data/GiantCrops",
+        "Entries": {
+          "{{ModID}}_GiantCalendula": {
+            "FromItemId": "(O){{ModID}}_Calendula",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_Calendula",
+                "ItemId": "(O){{ModID}}_Calendula",
+                "MinStack": 18,
+                "MaxStack": 22,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_CalendulaSeeds",
+                "ItemId": "(O){{ModID}}_CalendulaSeeds",
+                "MinStack": 2,
+                "MaxStack": 6,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 0,
+              "Y": 0
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 3
+            },
+            "Health": 3,
+            "Chance": 0.01,
+          },
+          "{{ModID}}_GiantSpringPansy": {
+            "FromItemId": "(O){{ModID}}_SpringPansy",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_SpringPansy",
+                "ItemId": "(O){{ModID}}_SpringPansy",
+                "MinStack": 18,
+                "MaxStack": 22,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_SpringPansySeeds",
+                "ItemId": "(O){{ModID}}_SpringPansySeeds",
+                "MinStack": 2,
+                "MaxStack": 6,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_WinterPansySeeds",
+                "ItemId": "(O){{ModID}}_WinterPansySeeds",
+                "MinStack": 2,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 48,
+              "Y": 0
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 3
+            },
+            "Health": 3,
+            "Chance": 0.01,
+          },
+          "{{ModID}}_GiantWinterPansy": {
+            "FromItemId": "(O){{ModID}}_WinterPansy",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_WinterPansy",
+                "ItemId": "(O){{ModID}}_WinterPansy",
+                "MinStack": 18,
+                "MaxStack": 22,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_WinterPansySeeds",
+                "ItemId": "(O){{ModID}}_WinterPansySeeds",
+                "MinStack": 2,
+                "MaxStack": 6,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_SpringPansySeeds",
+                "ItemId": "(O){{ModID}}_SpringPansySeeds",
+                "MinStack": 2,
+              },
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 96,
+              "Y": 0
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 3
+            },
+            "Health": 3,
+            "Chance": 0.01,
+          },
+          "{{ModID}}_GiantWinterIris": {
+            "FromItemId": "(O){{ModID}}_WinterIris",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_WinterIris",
+                "ItemId": "(O){{ModID}}_WinterIris",
+                "MinStack": 18,
+                "MaxStack": 22,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_WinterIrisBulb",
+                "ItemId": "(O){{ModID}}_WinterIrisBulb",
+                "MinStack": 2,
+                "MaxStack": 6,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 144,
+              "Y": 0
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 3
+            },
+            "Health": 3,
+            "Chance": 0.01,
+          },
+          "{{ModID}}_GiantForgetMeNot": {
+            "FromItemId": "(O){{ModID}}_ForgetMeNot",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_ForgetMeNot",
+                "ItemId": "(O){{ModID}}_ForgetMeNot",
+                "MinStack": 18,
+                "MaxStack": 22,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_ForgetMeNotSeeds",
+                "ItemId": "(O){{ModID}}_ForgetMeNotSeeds",
+                "MinStack": 2,
+                "MaxStack": 6,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 192,
+              "Y": 0
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 3
+            },
+            "Health": 3,
+            "Chance": 0.01,
+          },
+          "{{ModID}}_GiantSpringBells": {
+            "FromItemId": "(O){{ModID}}_SpringBells",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_SpringBells",
+                "ItemId": "(O){{ModID}}_SpringBells",
+                "MinStack": 18,
+                "MaxStack": 22,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_SpringBellsSeeds",
+                "ItemId": "(O){{ModID}}_SpringBellsSeeds",
+                "MinStack": 2,
+                "MaxStack": 6,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 0,
+              "Y": 64
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 3
+            },
+            "Health": 3,
+            "Chance": 1.0,
+          },
+          "{{ModID}}_GiantSnowDrop": {
+            "FromItemId": "(O){{ModID}}_Snowdrop",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_Snowdrop",
+                "ItemId": "(O){{ModID}}_Snowdrop",
+                "MinStack": 15,
+                "MaxStack": 21,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_SnowdropSeeds",
+                "ItemId": "(O){{ModID}}_SnowdropSeeds",
+                "MinStack": 1,
+                "MaxStack": 3,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 48,
+              "Y": 64
+            },
+            "TileSize": {
+              "X": 2,
+              "Y": 3
+            },
+            "Health": 3,
+            "Chance": 0.2,
+			"Condition": "ANY \"SYNCED_RANDOM day {{ModID}}_GiantChance 0.4\" \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\"",
+          },
+          "{{ModID}}_GiantBorage": {
+            "FromItemId": "(O){{ModID}}_Borage",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_Borage",
+                "ItemId": "(O){{ModID}}_Borage",
+                "MinStack": 15,
+                "MaxStack": 18,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_BorageSeeds",
+                "ItemId": "(O){{ModID}}_BorageSeeds",
+                "MinStack": 1,
+                "MaxStack": 3,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 80,
+              "Y": 64
+            },
+            "TileSize": {
+              "X": 2,
+              "Y": 2
+            },
+            "Health": 2,
+            "Chance": 0.01,
+          },
+          "{{ModID}}_GiantBlueFlame": {
+            "FromItemId": "(O){{ModID}}_BlueFlame",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_BlueFlame",
+                "ItemId": "(O){{ModID}}_BlueFlame",
+                "MinStack": 15,
+                "MaxStack": 18,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_BlueFlameSeeds",
+                "ItemId": "(O){{ModID}}_BlueFlameSeeds",
+                "MinStack": 1,
+                "MaxStack": 3,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 112,
+              "Y": 64
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 2
+            },
+            "Health": 2,
+            "Chance": 0.02,
+			"Condition": "ANY \"SYNCED_RANDOM day {{ModID}}_GiantChance 0.4\" \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\"",
+          },
+          "{{ModID}}_MediumSpringBells": {
+            "FromItemId": "(O){{ModID}}_SpringBells",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_SpringBells",
+                "ItemId": "(O){{ModID}}_SpringBells",
+                "MinStack": 15,
+                "MaxStack": 19,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_SpringBellsSeeds",
+                "ItemId": "(O){{ModID}}_SpringBellsSeeds",
+                "MinStack": 1,
+                "MaxStack": 3,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 160,
+              "Y": 64
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 2
+            },
+            "Health": 2,
+            "Chance": 0.01,
+			"Condition": "ANY \"SYNCED_RANDOM day {{ModID}}_GiantChance 0.4\" \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\"",
+          },
+          "{{ModID}}_GiantPurpleFlame": {
+            "FromItemId": "(O){{ModID}}_PurpleFlame",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_PurpleFlame",
+                "ItemId": "(O){{ModID}}_PurpleFlame",
+                "MinStack": 15,
+                "MaxStack": 19,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_PurpleFlameSeeds",
+                "ItemId": "(O){{ModID}}_PurpleFlameSeeds",
+                "MinStack": 1,
+                "MaxStack": 3,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 112,
+              "Y": 64
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 2
+            },
+            "Health": 2,
+            "Chance": 0.01,
+          },
+          "{{ModID}}_GiantFoxglove": {
+            "FromItemId": "(O){{ModID}}_Foxglove",
+            "HarvestItems": [
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_Foxglove",
+                "ItemId": "(O){{ModID}}_Foxglove",
+                "MinStack": 15,
+                "MaxStack": 19,
+              },
+              {
+                "Chance": 1.0,
+                "Id": "{{ModID}}_FoxgloveSeeds",
+                "ItemId": "(O){{ModID}}_FoxgloveSeeds",
+                "MinStack": 1,
+                "MaxStack": 3,
+              }
+            ],
+            "Texture": "Mods\\{{ModID}}\\GiantCrops",
+            "TexturePosition": {
+              "X": 0,
+              "Y": 128
+            },
+            "TileSize": {
+              "X": 3,
+              "Y": 2
+            },
+            "Health": 2,
+            "Chance": 0.01,
+          },
+        },
+      },
+		{
+			"LogName": "Adding Fruit Trees",
+			"Action": "EditData",
+			"Target": "Data/FruitTrees",
+			"Entries": {
+				"{{ModID}}_LilacSapling": {
+					"DisplayName": "{{i18n: SereneMeadowLilacSapling_Translated}}",
+					"Seasons": [
+						"spring",
+						"summer",
+					],
+					"Fruit": [
+						{
+							"Chance": 1,
+							"Id": "{{ModID}}_Lilac",
+							"ItemId": "{{ModID}}_Lilac",
+						},
+					],
+					"Texture": "Mods\\{{ModID}}\\fruitTrees",
+					"TextureSpriteRow": 0
+				},
+			},
+		},
+  ]
+}

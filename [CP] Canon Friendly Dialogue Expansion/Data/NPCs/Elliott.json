@@ -1,0 +1,246 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Elliott_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Elliott",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)715": "{{i18n: CFE_Elliott_Lobster}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Elliott_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Elliott",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Elliott_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Elliott_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Elliott_Pearl}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Elliott_RabbitsFoot}}",
+        "AcceptGift_(O)732": "{{i18n: CFE_Elliott_CrabCakes}}",
+        "AcceptGift_(O)637": "{{i18n: CFE_Elliott_Pomegranate}}",
+        "AcceptGift_(O)218": "{{i18n: CFE_Elliott_TomKhaSoup}}"
+      },
+      "When": { "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Elliott_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Elliott": "{{i18n: CFE_Elliott_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Elliott_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Elliott",
+      "Entries": {
+        //special dialogue
+        //
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Elliott_spring1y2}}",
+        "summer_27_1": "{{i18n: CFE_Elliott_summer27}}",
+        "summer_27_2": "{{i18n: CFE_Elliott_summer27}}",
+        "winter_15_1": "{{i18n: CFE_Elliott_winter15}}",
+        "winter_15_2": "{{i18n: CFE_Elliott_winter15}}",
+        "winter_28_1": "{{i18n: CFE_Elliott_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Elliott_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Elliott_summerMon10}}",
+        "summer_Tue10": "{{i18n: CFE_Elliott_summerTue10}}",
+        "summer_Tue4": "{{i18n: CFE_Elliott_summerTue4}}",
+        "summer_Tue2": "{{i18n: CFE_Elliott_summerTue2}}",
+        "summer_Wed10": "{{i18n: CFE_Elliott_summerWed10}}",
+        "summer_Wed6": "{{i18n: CFE_Elliott_summerWed6}}",
+        "summer_Wed4": "{{i18n: CFE_Elliott_summerWed4}}",
+        "summer_Thu10": "{{i18n: CFE_Elliott_summerThu10}}",
+        "summer_Thu6": "{{i18n: CFE_Elliott_summerThu6}}",
+        "summer_Thu4": "{{i18n: CFE_Elliott_repeated_4}}",
+        "summer_Thu2": "{{i18n: CFE_Elliott_summerThu2}}",
+        "summer_Fri6": "{{i18n: CFE_Elliott_summerFri6}}",
+        "summer_Fri4": "{{i18n: CFE_Elliott_summerFri4}}",
+        "summer_Fri2": "{{i18n: CFE_Elliott_summerFri2}}",
+        "summer_Sat8": "{{i18n: CFE_Elliott_summerSat8}}",
+        "summer_Sat6": "{{i18n: CFE_Elliott_summerSat6}}",
+        "summer_Sat4": "{{i18n: CFE_Elliott_summerSat4}}",
+        "summer_Sun10": "{{i18n: CFE_Elliott_repeated_5}}",
+        "summer_Sun6": "{{i18n: CFE_Elliott_summerSun6}}",
+        "summer_Sun4": "{{i18n: CFE_Elliott_summerSun4}}",
+
+        "fall_Mon10": "{{i18n: CFE_Elliott_fallMon10}}",
+        "fall_Mon6": "{{i18n: CFE_Elliott_fallMon6}}",
+        "fall_Tue4": "{{i18n: CFE_Elliott_fallTue4}}",
+        "fall_Wed6": "{{i18n: CFE_Elliott_repeated_6}}",
+        "fall_Wed4": "{{i18n: CFE_Elliott_fallWed4}}",
+        "fall_Wed2": "{{i18n: CFE_Elliott_repeated_6}}",
+        "fall_Thu10": "{{i18n: CFE_Elliott_fallThu10}}",
+        "fall_Thu6": "{{i18n: CFE_Elliott_fallThu6}}",
+        "fall_Thu4": "{{i18n: CFE_Elliott_fallThu4}}",
+        "fall_Thu2": "{{i18n: CFE_Elliott_fallThu2}}",
+        "fall_Fri8": "{{i18n: CFE_Elliott_fallFri8}}",
+        "fall_Fri6": "{{i18n: CFE_Elliott_fallFri6}}",
+        "fall_Fri4": "{{i18n: CFE_Elliott_fallFri4}}",
+        "fall_Sat10": "{{i18n: CFE_Elliott_fallSat10}}",
+        "fall_Sat8": "{{i18n: CFE_Elliott_fallSat8}}",
+        "fall_Sat6": "{{i18n: CFE_Elliott_fallSat6}}",
+        "fall_Sat4": "{{i18n: CFE_Elliott_fallSat4}}",
+        "fall_Sun8": "{{i18n: CFE_Elliott_fallSun8}}",
+        "fall_Sun6": "{{i18n: CFE_Elliott_fallSun6}}",
+        "fall_Sun4": "{{i18n: CFE_Elliott_fallSun4}}",
+
+        "winter_Mon4": "{{i18n: CFE_Elliott_winterMon4}}",
+        "winter_Mon4_old": "{{i18n: CFE_Elliott_winter_Mon4_old}}",
+        "winter_Mon4_060": "{{i18n: CFE_Elliott_winter_Mon4_060}}",
+        "winter_Mon4_061": "{{i18n: CFE_Elliott_winter_Mon4_061}}",
+        "winter_Mon4_062": "{{i18n: CFE_Elliott_winter_Mon4_062}}",
+        "winter_Mon4_063": "{{i18n: CFE_Elliott_winter_Mon4_063}}",
+        "winter_Tue8": "{{i18n: CFE_Elliott_repeated_7}}",
+        "winter_Tue6": "{{i18n: CFE_Elliott_winterTue6}}",
+        "winter_Tue4": "{{i18n: CFE_Elliott_winterTue4}}",
+        "winter_Wed8": "{{i18n: CFE_Elliott_repeated_1}}",
+        "winter_Wed6": "{{i18n: CFE_Elliott_winterWed6}}",
+        "winter_Wed4": "{{i18n: CFE_Elliott_winterWed4}}",
+        "winter_Thu10": "{{i18n: CFE_Elliott_winterThu10}}",
+        "winter_Thu8": "{{i18n: CFE_Elliott_winterThu8}}",
+        "winter_Thu6": "{{i18n: CFE_Elliott_winterThu6}}",
+        "winter_Fri10": "{{i18n: CFE_Elliott_repeated_5}}",
+        "winter_Fri8": "{{i18n: CFE_Elliott_repeated_4}}",
+        "winter_Fri6": "{{i18n: CFE_Elliott_winterFri6}}",
+        "winter_Fri4": "{{i18n: CFE_Elliott_repeated_4}}",
+        "winter_Sat4": "{{i18n: CFE_Elliott_repeated_7}}",
+        "winter_Sun8": "{{i18n: CFE_Elliott_winterSun8}}",
+        "winter_Sun6": "{{i18n: CFE_Elliott_winterSun6}}",
+
+        "Mon10": "{{i18n: CFE_Elliott_Mon10}}",
+        "Mon6": "{{i18n: CFE_Elliott_repeated_1}}",
+        "Mon4": "{{i18n: CFE_Elliott_Mon4}}",
+        "Mon2": "{{i18n: CFE_Elliott_Mon2}}",
+        "Tue10": "{{i18n: CFE_Elliott_Tue10}}",
+        "Tue8": "{{i18n: CFE_Elliott_repeated_2}}",
+        "Tue2": "{{i18n: CFE_Elliott_Tue2}}",
+        "Wed4": "{{i18n: CFE_Elliott_Wed4}}",
+        "Wed2": "{{i18n: CFE_Elliott_Wed2}}",
+        "Thu10": "{{i18n: CFE_Elliott_Thu10}}",
+        "Fri10": "{{i18n: CFE_Elliott_Fri10}}",
+        "Fri8": "{{i18n: CFE_Elliott_Fri8}}",
+        "Fri2": "{{i18n: CFE_Elliott_Fri2}}",
+        "Sat8": "{{i18n: CFE_Elliott_Sat8}}",
+        "Sat6": "{{i18n: CFE_Elliott_Sat6}}",
+        "Sat4": "{{i18n: CFE_Elliott_repeated_3}}",
+        "Sat2": "{{i18n: CFE_Elliott_Sat2}}",
+        "Sun8": "{{i18n: CFE_Elliott_repeated_3}}",
+        "Sun4": "{{i18n: CFE_Elliott_Sun4}}",
+        "Sun2": "{{i18n: CFE_Elliott_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "winter_Wed": "{{i18n: CFE_Elliott_repeated_2}}"
+      },
+      "When": { "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Elliott_Marriage_GenericDialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Elliott": "{{i18n: CFE_Elliott_Married_spouseRoom_{{random: 1,2,3,4,5}}}}"
+      },
+      "When": { "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Elliott_Marriage",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueElliott",
+      "Entries": {
+        //these lines follow different priority rules than unmarried dialogue does, with different options having different % likelihoods to show up each day when the right conditions are met.
+
+        //Weather specific dialogue
+        //note that Indoor_Day is the key for any weather besides rain, even when the Elliott is outside. Day means prior to 6pm. Indoor_Night is specific to inside the farmhouse when it's not raining after 6pm.
+        "Rainy_Day_0": "{{i18n: CFE_Elliott_Married_RainyDay_{{Random: 1,2}}}}",
+        "Rainy_Day_1": "{{i18n: CFE_Elliott_Married_RainyDay_{{Random: 3,4}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Elliott_Married_RainyDay_5}}",
+        "Rainy_Day_3": "{{i18n: CFE_Elliott_Married_RainyDay_{{Random: 6,7}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Elliott_Married_RainyDay_{{Random: 8,9}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Elliott_Married_RainyNight_1}}",
+        "Rainy_Night_1": "{{i18n: CFE_Elliott_Married_RainyNight_{{Random: 2,3}}{{GenderNeutralCompat}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Elliott_Married_RainyNight_{{Random: 4,5}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Elliott_Married_RainyNight_{{Random: 6,7}}{{GenderNeutralCompat}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Elliott_Married_RainyNight_{{Random: 8,9}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Elliott_Married_IndoorDay_{{Random: 1,2,3}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Elliott_Married_IndoorDay_{{Random: 4,5,6}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Elliott_Married_IndoorDay_{{Random: 7,8,9}}{{GenderNeutralCompat}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Elliott_Married_IndoorDay_{{Random: 10,11,12}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Elliott_Married_IndoorDay_{{Random: 13,14,15}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Elliott_Married_IndoorNight_{{Random: 1,2}}{{GenderNeutralCompat}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Elliott_Married_IndoorNight_{{Random: 3,4}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Elliott_Married_IndoorNight_{{Random: 5,6}}}}",
+        "Indoor_Night_3": "{{i18n: CFE_Elliott_Married_IndoorNight_{{Random: 7,8}}}}",
+        "Indoor_Night_4": "{{i18n: CFE_Elliott_Married_IndoorNight_{{Random: 9,10}}}}",
+
+        //locational specific dialogue
+        //funleave and return only show up on Mondays or Fridays (except for characters with jobs), and only while the Elliott is leaving or entering the farmhouse. fun return will not display once the Elliott has reached their target location.
+        //Kid dialogue only displays when the Elliott is standing in the farmhouse kitchen
+        //Kid dialogue only displays when the Elliott is standing in the farmhouse kitchen
+        //Outdoor Dialogue only displays on the farm. _num has an 80% chance of being displayed, _Elliott has a 20% chance. _Elliott is currently unused here
+
+        "funLeave_Elliott": "{{i18n: CFE_Elliott_Married_funLeave_{{Random: 1,2}}}}",
+        "funReturn_Elliott": "{{i18n: CFE_Elliott_Married_funReturn_{{Random: 1,2}}}}",
+
+        "OneKid_0": "{{i18n: CFE_Elliott_Married_OneKid_{{Random: 1,2}}}}",
+        "OneKid_1": "{{i18n: CFE_Elliott_Married_OneKid_{{Random: 3,4}}}}",
+        "OneKid_2": "{{i18n: CFE_Elliott_Married_OneKid_{{Random: 5,6}}}}",
+        "OneKid_3": "{{i18n: CFE_Elliott_Married_OneKid_{{Random: 7,8}}}}",
+        "TwoKids_0": "{{i18n: CFE_Elliott_Married_TwoKids_{{Random: 1,2}}}}",
+        "TwoKids_1": "{{i18n: CFE_Elliott_Married_TwoKids_{{Random: 3,4}}}}",
+        "TwoKids_2": "{{i18n: CFE_Elliott_Married_TwoKids_{{Random: 5,6}}}}",
+        "TwoKids_3": "{{i18n: CFE_Elliott_Married_TwoKids_{{Random: 7,8}}}}",
+
+        "Outdoor_0": "{{i18n: CFE_Elliott_Married_Outdoor_{{Random: 1,2}}}}",
+        "Outdoor_1": "{{i18n: CFE_Elliott_Married_Outdoor_{{Random: 3,4}}}}",
+        "Outdoor_2": "{{i18n: CFE_Elliott_Married_Outdoor_{{Random: 5,6}}}}",
+        "Outdoor_3": "{{i18n: CFE_Elliott_Married_Outdoor_{{Random: 7,8}}}}",
+        "Outdoor_4": "{{i18n: CFE_Elliott_Married_Outdoor_{{Random: 9,10}}}}",
+
+        "patio_Elliott": "{{i18n: CFE_Elliott_Married_patio_{{Random: 1,2,3}}}}",
+
+        //Date Specific Dialogue
+        "spring_3": "{{i18n: CFE_Elliott_Married_spring3}}",
+        "spring_15": "{{i18n: CFE_Elliott_Married_spring15}}",
+        "spring_18": "{{i18n: CFE_Elliott_Married_spring18}}",
+        "spring_28": "{{i18n: CFE_Elliott_Married_spring28}}",
+
+        "summer_6": "{{i18n: CFE_Elliott_Married_summer6}}",
+        "summer_15": "{{i18n: CFE_Elliott_Married_summer15}}",
+        "summer_18": "{{i18n: CFE_Elliott_Married_summer18}}",
+        "summer_22": "{{i18n: CFE_Elliott_Married_summer22}}",
+
+        "fall_5": "{{i18n: CFE_Elliott_Married_fall5}}",
+        "fall_8": "{{i18n: CFE_Elliott_Married_fall8}}",
+        "fall_20": "{{i18n: CFE_Elliott_Married_fall20}}",
+        "fall_23": "{{i18n: CFE_Elliott_Married_fall23}}",
+
+        "winter_4": "{{i18n: CFE_Elliott_Married_winter4}}",
+        "winter_12": "{{i18n: CFE_Elliott_Married_winter12}}",
+        "winter_16": "{{i18n: CFE_Elliott_Married_winter16}}",
+        "winter_21": "{{i18n: CFE_Elliott_Married_winter21}}"
+
+        //Seasonal Dialogue
+        //shown at 9+ hearts, with a 5% chance each day
+        //currently unused. key looks like "fall_Elliott"
+
+        //Affection Specific Dialogue
+      },
+      "When": { "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

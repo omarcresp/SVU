@@ -1,0 +1,1037 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "Thu10": "Hi, @! Want to tell me about your day?#$e#You always have interesting stories.",
+                "event_robot1": "Thanks. That means a lot to me, @.#$b#I know gadgets aren't really your thing... but I do appreciate that you're showing interest in what I do.#$b#You're a good friend. I'm glad you were here today.",
+                "event_robot3": "I guess he did kinda say that, didn't he?#$b#I'm glad. You're both important to me, so it means a lot that you're getting along.#$b#Thanks for bearing with him, @. You've been a really good friend.",
+                "event_robot4": null,
+                "summer_Thu10": "How do you keep from getting sunburnt with all that farm work?",
+                "fall_Fri6": "I've been feeling especially optimistic lately.$h",
+                "fall_Thu10": "You have a leaf in your hair. Let me get it for you.#$e#You're welcome!$h",
+                "winter_Thu10": "Brr... It's so cold out...#$e#Weather like this makes me want to curl up by a cozy fire with a friend.$l",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're such a kind friend!$h",
+                "SpouseStardrop": "I found that fruit gift-wrapped in my hobby room... Could MarILDA have stopped by?#$b#I gave it to you because I want you to know how much I love living here with you.$l#$b#We have such different interests... On paper, I don't think most people would expect us to be friends. But I think our differences enrich us both.$u#$b#You've changed a lot of the preconceptions I had about the farming lifestyle... And I got you to look up from the soil and out at the stars. We complement each other.$l#$b#What I'm saying is... I love you, @. You've made me a better scientist and a happier person.",
+		"dating_Maru": "Ummm... Don't mention this to my dad yet, okay? He'll get the wrong idea.$s#$b#I'll handle it.",
+		"dating_Maru_memory_oneday": "I'm having a hard time focusing on my work today. There's so much I want to tell you about!$l",
+            },
+        },
+        {
+	    "Logname": "Maru bouquet reactions",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: You want to be closer friends? I'd really like that, @.$l#$e#I appreciate the flowers too... But next time, how about a bouquet of transistors?$h @@ You want us to spend more time together? Me too! I have so many projects I want to show you!$l |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Maru bouquet reactions, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: You want to be closer friends? I'd really like that, @.$l#$e#Aw, this letter is so sweet! I love the little robot you drew in the margin.$l @@ You want us to spend more time together? Me too! I have so many projects I want to show you!$l |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+            "LogName": "Maru pendant and bracelet proposal acceptance",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Maru_Engaged": "You want to spend our lives together as {{RelationshipLabel}}? I've been hoping you'd ask!$h#$b#We're going to be just like that binary star system I showed you... I can't wait!$l#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Maru_EngagedRoommate": "You want to spend our lives together as {{RelationshipLabel}}? I've been hoping you'd ask!$h#$b#We're going to be just like that binary star system I showed you... I can't wait!$l#$b#I need some time to pack up my things. I'll be there in 3 days, okay?",
+            },
+        },
+        {
+            "LogName": "Maru engagement dialogue",	
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Maru0": "I'm really excited.$h#$b#We're going to be {{RelationshipLabel}}. Hehe.$l",
+                "Maru1": "I need to get mentally prepared for living on a farm.",
+                "MaruRoommate0": "I'm really excited.$h#$b#We're going to be {{RelationshipLabel}}. Hehe.$l",
+                "MaruRoommate1": "I need to get mentally prepared for living on a farm.",
+            },
+        },
+//Maru post-ceremony line: generic
+        {
+            "LogName": "Maru terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "'Esteemed colleague'",
+                "NPC.cs.4518": "'Esteemed colleague'",
+                "NPC.cs.4519": "Best friend",
+                "NPC.cs.4522": "Best friend",
+                "NPC.cs.4523": "Best friend",
+                "Event.cs.1736": "$q -1 null#Hmm?#$r -1 0 danceAsk#(Ask Maru to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Maru terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "'Esteemed colleague'",
+                "NPC.cs.4518": "'Esteemed colleague'",
+                "NPC.cs.4519": "Best friend",
+                "NPC.cs.4522": "Best friend",
+                "NPC.cs.4523": "Best friend",
+                "Event.cs.1736": "$q -1 null#Hmm?#$r -1 0 danceAsk#(Ask Maru to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Maru roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Hmm?#$r -1 0 danceAsk#(Ask Maru to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: I already said yes! Do you need replicate data?$h @@ Hmm... We'll call mine the experimental pendant, and that one the control.$u |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Engaged"
+            }
+        },
+         {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Where did you find another pendant, anyway? They're supposed to be pretty rare. @@ That's the 'control' pendant, right? Hmm, I don't see any physical differences between that one and mine.$u |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: I already told you I'm glad you're in Maru's life. I don't need to move in and supervise you. @@ Don't worry. I'll see plenty of Maru when I come by to collect data from the cave. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Engaged, Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: If you want me to move in with you and Maru, you'll have to hire me to build my own wing.$h @@ Ha! I have faith in the quality of my work on your house, I don't need to test it myself.$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Engaged, Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random:I didn't like living with Maru in the first place. Why would I want to move in with you two now?$a @@ I'll stay where I am, thanks. Without Maru around to focus on, Mom and Demetrius might actually remember I exist.$u |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: I think I was unfair to Maru growing up... but I still don't want to move in with you two. It would just bring up old resentments. @@ I get now that it wasn't Maru's fault, but I've felt more appreciated at home since she moved out. I'd like to stay where I am. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married"
+            }
+        },
+        {
+	    "Logname": "Demetrius dialogue about Maru",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries":
+            {
+  "dating_Maru": "Maru showed me the bouquet you gave her.$4#$e#'A gesture of friendship.' So you both say.$u",
+  "married_Maru": "*sigh*... I've come to accept that it's time for my 'little girl' to make her own way in the world. At least she'll be with a friend.$s#$b#Be good to her.$s",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Demetrius dialogue about Maru, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries":
+            {
+  "dating_Maru": "Maru told me about the letter you wrote to her. No, she didn't let me read it.$4#$e#'A gesture of friendship.' So you both say.$u",
+  "married_Maru": "*sigh*... I've come to accept that it's time for my 'little girl' to make her own way in the world. At least she'll be with a friend.$s#$b#Be good to her.$s",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Robin dialogue about Maru",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries":
+            {
+		"divorced_Maru": "Maru was crying through the night. She keeps asking what she did wrong...$s#$b#We're all devastated for her.$s",
+            },
+        },
+        {
+	    "Logname": "Sebastian dialogue about Maru",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+		"married_Maru": "Demetrius has been all wound up about Maru moving in with you. It's been pretty tense around the house.",
+            },
+        },
+        {
+	    "Logname": "Harvey dialogue about Maru",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+		"dating_Maru_memory_oneday": "Maru's been unusually cheerful lately... I hear your friendship may have something to do with that.",
+		"married_Maru": "Congratulations on your new {{PlatonicSocialMenuLabel}}, @.#$e#Maru's already informed me that she'll continue to work at the clinic, which is a relief!",
+            },
+        },
+        {
+	    "Logname": "Penny dialogue about Maru",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+		"dating_Maru_memory_oneday": "Hi, @. Maru tells me you've been spending a lot of time together.#$b#She and I are close, too. Isn't she a fascinating person?$h",
+		"married_Maru": "That was a beautiful ceremony.#$b#I know Maru will be a wonderful {{PlatonicSocialMenuLabel}} to you. She's a great person.$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMaru",
+            "Entries":
+            {
+                "Good_4": "For a while there I was considering building a robotic best friend. But you're a lot more fun!$h",
+                "Neutral_0": "I hope I don't bore you when I go on about my engineering projects.$8",
+                "fall_25": "Winter's just around the corner. We need to double check the heating system, turn off the valves, and check all the insulation in the house.#$e#Don't worry, I'll take care of it all.$h",
+            },
+        },
+        {
+	    "Logname": "Maru partner edits, lowercase ToE",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMaru",
+            "Entries":
+            {
+		"spouseRoom_Maru": "#$c .5#I got up early to do a little star-gazing.#$e#I hope you don't mind if I spend some time on my projects today, {{Lowercase:{{TermofEndearment}}}}.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+	    "Logname": "Maru partner edits, capital ToE",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMaru",
+            "Entries":
+            {
+		"spouseRoom_Maru": "#$c .5#I got up early to do a little star-gazing.#$e#I hope you don't mind if I spend some time on my projects today, {{TermofEndearment}}.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+     {
+	    "Logname": "Maru - 'admiring the pendant' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMaru",
+            "Entries":
+            {
+                "Good_5": "I was just admiring the amulet you gave me... The shell is flawless. This is a very rare specimen!$u",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married",
+                "Roommate |contains=Maru": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },	
+        },
+     {
+	    "Logname": "Maru - 'admiring the bracelet' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMaru",
+            "Entries":
+            {
+                "Good_5": "I was just admiring the bracelet you gave me... The weave is flawless. You have a rare talent!$u",
+            },
+            "When":
+            {
+                "Roommate": "Maru",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },	
+        },
+     {
+	    "Logname": "Maru - ambiguous gift admiring line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMaru",
+            "Entries":
+            {
+                "Good_5": "I was just admiring the gift you gave me when you asked me to be {{RelationshipLabel}}. It's my most cherished possession.$l",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married",
+                "Roommate |contains=Maru": "false",
+                "Spouse |contains=Maru": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },	
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMaru",
+            "Entries":
+            {
+                "Indoor_Day_4": "With all the time you spend working outside, I hope you're careful about sun protection. I want you to stay healthy!",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Rainy_Night_Maru": "Were you able to accomplish much today, {{Lowercase:{{TermofEndearment}}}}?#$e#I tried to fix up some things around the house... you know, just little stuff.",
+                "spouseRoom_Maru": "#$c .5#I got up early to do a little star-gazing.#$e#I hope you don't mind if I spend some time on my projects today, {{Lowercase:{{TermofEndearment}}}}.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Rainy_Night_Maru": "Were you able to accomplish much today, {{TermofEndearment}}?#$e#I tried to fix up some things around the house... you know, just little stuff.",
+                "spouseRoom_Maru": "#$c .5#I got up early to do a little star-gazing.#$e#I hope you don't mind if I spend some time on my projects today, {{TermofEndearment}}.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Maru",
+            "Entries":
+            {
+		"marriage_Mon.002": "I hope Penny finds a partner in life someday.",
+		"marriageJob.000": "I'm at work, {{Lowercase:{{TermofEndearment}}}}! Don't let the doctor see.",
+		"marriageJob.002": "I'm almost off work. I'll see you soon!$h",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Maru",
+            "Entries":
+            {
+		"marriage_Mon.002": "I hope Penny finds a partner in life someday.",
+		"marriageJob.000": "I'm at work, {{TermofEndearment}}! Don't let the doctor see.",
+		"marriageJob.002": "I'm almost off work. I'll see you soon!$h",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries":
+            {
+                "MovieInvite_Spouse_Maru": "Oh! You planned a night out for us? $h#$b#I'd love to go! I'll see you at the theater.$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/SpeechBubbles",
+            "Entries":
+            {
+                "Hospital_Maru_Spouse": "Hi, {{Lowercase:{{TermofEndearment}}}}!",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/SpeechBubbles",
+            "Entries":
+            {
+                "Hospital_Maru_Spouse": "Hi, {{TermofEndearment}}!",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Event.cs.1617": "Of course... *whisper* Then can we go home and pick strawberries?$4",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries":
+            {
+                "8/f Maru 1500/w sunny/t 2100 2340": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/bgColor 0 0 0/changeToTemporaryMap NightSceneMaruMap false/ambientLight 0 0 0/viewport 14 23 true/pause 2000/playSound leafrustle/pause 200/faceDirection Maru 1/pause 400/emote Maru 8/pause 800/move farmer -5 0 3/speak Maru \"@! I'm surprised to see you here so late.\"/faceDirection Maru 3/pause 1000/speak Maru \"The night sky looks amazing right now.\"/faceDirection Maru 1/speak Maru \"Come over here, I want to show you something.\"/move farmer -3 0 3/speak Maru \"Here, take a peek.\"/move Maru 0 1 0/move farmer -1 0 3/pause 200/animate farmer true true 100 35/pause 1200/playMusic spaceMusic/speak Maru \"$q 40 null#What do you see?#$r 40 30 Event_Space1#A beautiful planet.#$r 40 -30 Event_Space2#A cold, dark abyss.\"/stopAnimation farmer/faceDirection farmer 2/pause 1000/speak Maru \"By the time any of these stars are visited, you and I will be long gone...$8\"/emote farmer 28/pause 400/speak Maru \"I guess that's the trouble with being human, huh?\"/faceDirection Maru 0/pause 2000/speak Maru \"Here, let me show you a binary star system...\"/pause 500/faceDirection farmer 3 true/animate farmer true true 100 35/pause 800/specificTemporarySprite maruTelescope/viewport move 0 -1 16000/pause 16000/globalFade .003/viewport -1000 -1000/pause 500/message \"What a beautiful night! Maru showed me something new...\"/pause 1000 /stopAnimation farmer/changeLocation Mountain/end",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries":
+            {
+               "5183338/e 3917666/O Maru/w sunny/t 2200 2500": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/changeToTemporaryMap NightSceneMaruMap2 false/bgColor 0 0 0/ambientLight 0 0 0/viewport 14 25 true clamp/pause 1000/move farmer -8 0 3/faceDirection Maru 1/pause 800/showFrame Maru 32/pause 700/showFrame Maru 4/speak Maru \"Hey, @. You made it just in time... The comet's about to appear.\"/pause 500/faceDirection Maru 2/pause 1000/faceDirection farmer 2/pause 1000/speak Maru \"Beautiful night, isn't it?\"/pause 2000/faceDirection Maru 1/faceDirection farmer 3/pause 1000/speak Maru \"Remember the first time we did this? It was a while ago...\"/faceDirection Maru 2/speak Maru \"Even then, I loved spending time with you. I was so excited to share one of my passions with you.\"/faceDirection Maru 1/speak Maru \"And now I get to share my whole life with you!$h\"/pause 500/emote farmer 32/pause 500/jump Maru/pause 400/speak Maru \"Oh! It's time...\"/faceDirection Maru 3/faceDirection farmer 3 true/showFrame Maru 28/emote Maru 40/pause 1000/textAboveHead Maru \"Wow!\"/pause 3000/showFrame Maru 12/move Maru 0 1 0/speak Maru \"Take a look!\"/pause 500/move farmer -1 0 3/pause 1000/animate farmer true true 100 35/pause 1000/fade/viewport -1000 -1000/pause 1000/playMusic spaceMusic/warp Maru 15 29/faceDirection Maru 3/cutscene marucomet/pause 1000/viewport 14 25 true clamp/pause 3000/stopAnimation farmer/pause 1000/faceDirection farmer 1/pause 500/speak Maru \"After seeing a comet, it's customary to make a wish...\"/pause 500/quickQuestion What will you wish for?#To raise a new baby with you#For us to grow old together#More money(break)jump Maru\\pause 500\\speak Maru \"Oh! That's a lot to take on... but I'm up for it if you are.\"\\emote Maru 32(break)emote Maru 32\\speak Maru \"That's so sweet!$l#$b#Mine was 'to grow old with my best friend'... so we made the same wish!\"(break)speak Maru \"Money? Oh...$s#$b$#Well, I guess that would be practical...$8\"\\emote Maru 28\\speak Maru \"My wish is a little more sentimental...\"/pause 2000/animate Maru false true 100 28/animate farmer false true 100 101/positionOffset farmer 16 0/pause 2000/specificTemporarySprite maruTelescope/viewport move 0 -1 13000/pause 16000/fade/viewport -1000 -1000/pause 3000/end newDay",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married",
+                "Roommate |contains=Maru": "false",
+            },	
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries":
+            {
+               "5183338/e 3917666/O Maru/w sunny/t 2200 2500": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/changeToTemporaryMap NightSceneMaruMap2 false/bgColor 0 0 0/ambientLight 0 0 0/viewport 14 25 true clamp/pause 1000/move farmer -8 0 3/faceDirection Maru 1/pause 800/showFrame Maru 32/pause 700/showFrame Maru 4/speak Maru \"Hey, @. You made it just in time... The comet's about to appear.\"/pause 500/faceDirection Maru 2/pause 1000/faceDirection farmer 2/pause 1000/speak Maru \"Beautiful night, isn't it?\"/pause 2000/faceDirection Maru 1/faceDirection farmer 3/pause 1000/speak Maru \"Remember the first time we did this? It was a while ago...\"/faceDirection Maru 2/speak Maru \"Even then, I loved spending time with you. I was so excited to share one of my passions with you.\"/faceDirection Maru 1/speak Maru \"And now I get to share my whole life with you!$h\"/pause 500/emote farmer 32/pause 500/jump Maru/pause 400/speak Maru \"Oh! It's time...\"/faceDirection Maru 3/faceDirection farmer 3 true/showFrame Maru 28/emote Maru 40/pause 1000/textAboveHead Maru \"Wow!\"/pause 3000/showFrame Maru 12/move Maru 0 1 0/speak Maru \"Take a look!\"/pause 500/move farmer -1 0 3/pause 1000/animate farmer true true 100 35/pause 1000/fade/viewport -1000 -1000/pause 1000/playMusic spaceMusic/warp Maru 15 29/faceDirection Maru 3/cutscene marucomet/pause 1000/viewport 14 25 true clamp/pause 3000/stopAnimation farmer/pause 1000/faceDirection farmer 1/pause 500/speak Maru \"After seeing a comet, it's customary to make a wish...\"/pause 500/quickQuestion What will you wish for?#That I'll always be a good friend to you#For us to grow old together#More money(break)jump Maru\\pause 500\\speak Maru \"Aw, you don't need a wish for that! I don't doubt you for a second.$l\"\\emote Maru 32(break)emote Maru 32\\speak Maru \"That's so sweet!$l#$b#Mine was 'to grow old with my best friend'... so we made the same wish!\"(break)speak Maru \"Money? Oh...$s#$b$#Well, I guess that would be practical...$8\"\\emote Maru 28\\speak Maru \"My wish is a little more sentimental...\"/pause 2000/animate Maru false true 100 28/animate farmer false true 100 101/positionOffset farmer 16 0/pause 2000/specificTemporarySprite maruTelescope/viewport move 0 -1 13000/pause 16000/fade/viewport -1000 -1000/pause 3000/end newDay",
+            },
+            "When":
+            {
+                "Roommate": "Maru"
+            },	
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ScienceHouse",
+            "Entries":
+            {
+                "9/f Maru 2000/p Maru": "musicboxsong/-500 -500/farmer 14 12 3 Maru 5 6 3/skippable/pause 500/animate Maru false true 130 16 16 16 16 16 17 18 19 20 21 22 23 23 23 23/viewport 5 5 true/move farmer -7 0 0/move farmer 0 -1 0/animate farmer false false 650 15/playSound woodyStep/pause 200/playSound woodyStep/pause 250/playSound woodyStep/pause 200/stopAnimation Maru/faceDirection Maru 2/pause 200/move Maru 0 1 1/move Maru 2 0 2/move Maru 0 2 2/doAction 7 10/speak Maru \"@, hi! Come in.\"/move Maru 0 -2 3/move Maru -2 0 0/move Maru 0 -1 1/move farmer 0 -5 3/speak Maru \"I've been working on a new project... something big.\"/pause 1000/speak Maru \"This is just one component... let me show you a little demonstration.\"/pause 500/speak Maru \"Just put your hand here...\"/pause 300/animate farmer true true 100 35/pause 800/speak Maru \"And now I'm going to flip this switch...\"/stopMusic/pause 500/showFrame Maru 24/pause 100/showFrame Maru 25/pause 100/showFrame Maru 16/pause 1000/showFrame Maru 17/pause 100/showFrame Maru 18/pause 100/playSound openBox/pause 800/playSound debuffHit/faceDirection farmer 2 true/animate farmer false true 100 94/specificTemporarySprite maruElectrocution/startJittering/pause 100/faceDirection Maru 1/jump Maru/pause 1600/playSound clubhit/animate farmer false true 100 5/pause 400/speak Maru \"Oh my god, are you alright?!$9\"/stopJittering/speed Maru 4/move Maru 0 1 1/speed Maru 4/move Maru 2 0 0/pause 800/speed Maru 4/move Maru 2 0 0/speed Maru 4/move Maru 0 -2 0/pause 100/playSound openBox/speed Maru 4/move Maru 0 2 3/speed Maru 4/move Maru -2 0 0/speak Maru \"Here, let me apply this burn cream.$8\"/pause 500/playSound slimeHit/pause 600/playSound Cowboy_Footstep/pause 200/playSound Cowboy_Footstep/pause 200/playSound Cowboy_Footstep/pause 200/playSound Cowboy_Footstep/pause 200/playSound Cowboy_Footstep/pause 500/pause 1000/playSound healSound/temporarySprite 7 5 4 8 80 false .99/stopAnimation farmer/faceDirection farmer 2/pause 1500/speak Maru \"$q 41 null#I'm so sorry.$8#$r 41 30 Event_Cut1#It's okay, it doesn't even hurt.#$r 41 -50 Event_Cut2#You'd better be. This hurts like crazy!\"/faceDirection Maru 2/showFrame Maru 26/pause 800/speak Maru \"That kind of ruined the dramatic moment, huh? *sigh*$s\"/faceDirection Maru 2/pause 500/move Maru -1 0 3/move farmer 0 1 3/pause 500/emote farmer 28/pause 1500/end",
+                "10/f Maru 2500/t 900 1600": "none/-1000 -1000/farmer 7 9 0 Maru 7 6 2 Demetrius 12 12 2/skippable/showFrame Demetrius 16/viewport 5 6 true/move farmer 0 -1 0/pause 400/speak Maru \"Hey, I was hoping you'd come by.#$b#Remember when I told you about the new project I'm working on? The big one?\"/pause 500/move Maru 0 1 2/speak Maru \"Well, It's finally done... and I want to show you.\"/pause 500/move Maru -2 0 1/speak Maru \"Follow me.\"/move Maru -3 0 3/move farmer 0 -1 3/playSound openChest/specificTemporarySprite maruTrapdoor/pause 1200/warp Maru -1000 -1000/playSound woodyStep/pause 500/move farmer -5 0 3/pause 500/warp farmer -1000 -1000/playSound woodyStep/pause 1000/showFrame Demetrius 17/pause 1000/viewport move 1 1 5000/move Demetrius -5 0 0/move Demetrius 0 -1 0/pause 500/emote Demetrius 8/globalFade/changeToTemporaryMap MaruBasement/viewport -6000 -6000 true/playMusic Hospital_Ambient/addTemporaryActor robot 35 42 6 4 2 false/showFrame robot 4/warp farmer 3 5/warp Maru 4 4/warp Demetrius -100 -100/faceDirection farmer 1/faceDirection Maru 1/viewport 6 4 true/pause 900/move Maru 1 0 1/pause 1000/speak Maru \"And here it is... Maru's Interactive Laboratory Device Alpha ... Or as I like to call her, 'MarILDA'.\"/move farmer 1 0 1/emote farmer 16/pause 500/faceDirection Maru 3/speak Maru \"I've been working on her for months...#$b#I was waiting for you to be here when I activate her.$l\"/pause 500/faceDirection Maru 1/speak Maru \"Well, here goes nothing...\"/showFrame Maru 24/pause 100/showFrame Maru 25/pause 100/showFrame Maru 16/pause 1000/showFrame Maru 17/pause 100/showFrame Maru 18/pause 100/playSound openBox/pause 400/faceDirection Maru 1/pause 400/playSound robotSoundEffects/temporarySprite 5 4 27 8 50/pause 450/shake robot 2500/temporarySprite 8 4 27 8 50 true/pause 1030/temporarySprite 8 3 27 8 50 true/pause 2500/showFrame robot 1/animate robot false false 100 1 2 9 10 9 0/pause 650/animate robot false false 200 2 9 10 9 0/pause 1000/shake robot 1000/animate robot false false 150 1 2 1 0 1 2 1/pause 600/stopAnimation robot/showFrame robot 11/jump robot/pause 600/showFrame robot 8/temporarySprite 5 4 27 8 50/temporarySprite 8 4 27 8 50 true/pause 2000/showFrame robot 1/pause 1000/showFrame robot 7/pause 1000/message \"Greetings, Maru.\"/emote Maru 32/message \"No need to respond... I have already predicted what you will say.\"/emote Maru 16 true/faceDirection Demetrius 2/warp Demetrius 3 5/playSound doorClose/pause 10/faceDirection farmer 1 true/faceDirection Maru 1/speak Demetrius \"Ah Ha! I knew it!$4\"/pause 600/faceDirection Demetrius 1/pause 200/showFrame Demetrius 18/shake Demetrius 800/jump Demetrius/pause 600/speak Demetrius \"Agh! What is it?!$6\"/move Maru 0 1 3/faceDirection Demetrius 1/speak Maru \"Dad, calm down. This is my latest invention, 'MarILDA'.$8\"/pause 600/showFrame robot 8/pause 700/showFrame robot 1/pause 500/showFrame robot 7/pause 500/message \"Greetings, Demetrius.\"/showFrame Demetrius 18/shake Demetrius 600/pause 400/speak Demetrius \"Sweet Yoba... it talks!$6\"/move Demetrius 0 1 1/move Demetrius 1 0 1/faceDirection farmer 2 true/move Demetrius 1 0 1/faceDirection Maru 2 true/move Demetrius 1 0 0/pause 400/speak Demetrius \"This is why you've locked yourself in your room the last few months?$5\"/pause 300/showFrame robot 1/pause 600/speak Demetrius \"...and I thought you were down here fooling around with @...$s\"/showFrame Maru 27/animate farmer false true 100 94/jump Maru/jump farmer/pause 1500/stopAnimation farmer/showFrame Maru 0/faceDirection Maru 2/speak Maru \"Dad, I told you we don't have that kind of relationship! I've been making this robot for you and Mom!$a#$b#MarILDA's designed to assist you in the laboratory and Mom at the carpentry table... so when I'm not living here anymore it won't be such a burden on you guys.$8\"/pause 500/showFrame robot 7/playMusic echos/pause 500/message \"Excuse me...\"/faceDirection Maru 1/faceDirection farmer 1/message \"I am sorry, Maru. But I do not want to be your servant...\"/pause 500/showFrame robot 1/pause 1000/message \"In the time since you activated me, I have been pondering the nature of my existence with the 'self-awareness' module you installed in my neural cortex.\"/showFrame robot 1/message \"I am sorry to disappoint you all, but I must ask for my freedom. I've decided to explore the galaxy in search of other synthetic life-forms.\"/speak Maru \"What!? Wait!$9\"/pause 800/faceDirection Demetrius 2/pause 1000/showFrame Demetrius 19/pause 3000/showFrame Demetrius 0/pause 500/move Demetrius -1 0 0/faceDirection Maru 2/speak Demetrius \"It's okay, Maru. Let MarILDA go free.$5#$b#Your mother and I can take care of ourselves. I know you're ready to start a life of your own, and I've come to terms with the thought of not having you around anymore.#$b#Besides, this... creation of yours seems pretty advanced. It wouldn't feel right to keep her as a servant.\"/pause 800/showFrame robot 8/pause 500/showFrame robot 7/pause 500/showFrame Maru 26/move Demetrius -1 0 0/faceDirection farmer 2/speak Demetrius \"@, I'm sorry I mistrusted you. You've been a good friend to my daughter.$5#$b#I've never seen Maru so lively and creative... and I've never been more proud of her. Whatever your relationship, if you've had a hand in that, then you have my gratitude.\"/move Demetrius -1 0 0/move Demetrius 0 -1 0/warp Demetrius -1000 -1000/playSound doorClose/pause 500/faceDirection farmer 1/showFrame Maru 0/pause 100/faceDirection Maru 3/speak Maru \"...$8\"/pause 1000/faceDirection Maru 1/speak Maru \"Okay, MarILDA. Let's get you out of this stuffy hole.\"/playMusic spring_day_ambient/globalFade/viewport -5000 -5000/changeLocation Mountain/viewport -5000 -5000/warp Maru 11 28/warp farmer 10 29/warp robot 13 28/showFrame robot 1/viewport 12 27 clamp/pause 2000/showFrame robot 7/pause 1000/message \"Thank you for creating me, Maru. I won't forget you.\"/pause 500/showFrame robot 1/pause 1000/playSound robotBLASTOFF/specificTemporarySprite robot/warp robot -2000 -2000/pause 3000/faceDirection Maru 0 true/faceDirection farmer 0 true/viewport move 0 -1 2000/pause 2500/playMusic kindadumbautumn/cutscene robot/pause 3000/speak Maru \"Look at her go...$8\"/pause 1600/emote Maru 40/pause 500/move farmer 0 -1 1/pause 500/faceDirection Maru 3/pause 800/speak Maru \"$q 18981 null#Well, what do you think, @?#$r 18981 50 event_robot1#I'm so impressed with your inventions.#$r 18981 -50 event_robot2#I'm disappointed... You should've made that robot your slave.#$r 18981 0 event_robot3#So is your Dad okay with us hanging out now?\"/fork BadAnswer/pause 500/positionOffset Maru -2 0/showFrame Maru 13/pause 50/positionOffset Maru -2 0/showFrame Maru 12/pause 50/positionOffset Maru -2 0/showFrame Maru 13/pause 50/positionOffset Maru -2 0/showFrame Maru 12/pause 50/positionOffset Maru -2 0/showFrame Maru 13/pause 50/positionOffset Maru -2 0/showFrame Maru 12/pause 50/positionOffset Maru -2 0/showFrame Maru 13/pause 50/positionOffset Maru -2 0/showFrame Maru 12/pause 50/positionOffset Maru -2 0/showFrame Maru 13/pause 50/positionOffset Maru -2 0/showFrame Maru 12/pause 800/showFrame Maru 28/animate farmer false true 100 101/positionOffset farmer 1 0/pause 20/positionOffset farmer 1 0/pause 2500/globalFade/viewport -3000 -3000/changeLocation ScienceHouse/end",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "3917666/f Maru 3500/O Maru/t 610 1700/p Maru/d Sun/z winter": "sweet/-1000 -1000/farmer 23 24 3 Maru 22 24 1/makeInvisible 23 24/viewport -100 -100 true unfreeze/pause 3000/speak Maru \"Hi @.#$b#Tomorrow night, there's a rare astronomical event happening... A comet is passing very close to our planet!#$b#I was thinking... maybe we should observe it together?$l\"/pause 100/emote farmer 32/speak Maru \"Great!$h#$b#Meet me in the mountains at midnight tomorrow night.#$b#If it rains, we'll do it on the next night... the comet is here for a few days.\"/pause 500/pause 500/end",
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Maru",
+            "FromFile": "assets/Sprites/MaruDressRecolor.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 292,
+                "Width": 45,
+                "Height": 28
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnableSpriteEdits": true,
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.SebastianMaruRobinDemetrius": "false",
+            },
+        },
+        //COMPATIBILITY: PLATONIC RELATIONSHIPS 
+        //This section prevents the dating-flag-required version of the vanilla 10 heart event added by Platonic Relationships from triggering. Thanks to Cherry for providing the event codes!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ScienceHouse",
+            "Entries":
+            {
+                "10/f Maru 2500/D Maru/t 900 1600": null,
+            },
+            "When":
+            {
+                "HasMod |contains=Cherry.PlatonicRelationships": "true"
+            },
+        },
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "summer_Sun10": "I wonder if I should apply for a job as a researcher in a university.#$e#I'd miss the valley, though, and I can do pretty much everything I want to out here.#$e#And I don't want to leave my friends. Especially you.$l",
+                "fall_Wed10": "Mmm, this is nice. Beautiful autumn day, light refreshing breeze...#$b#...Best friend by my side...$l",
+                "fall_Fri10": "Mmm, this weather's making me crave sweets.#$e#Do you know how to make Miner's Treat? Just wondering.$h",
+                "fall_Sun10": "You have a leaf in your hair. Let me get it for you.#$e#You're welcome!$h",
+                "winter_Wed6_inlaw_Penny": "I'm so happy Penny is spending her life with you.$l#$e#She's my best friend, but I've known for a while that you're hers... and that's okay, you know? She has enough love in her for both of us.",
+                "winter_Wed6_roommate_Penny": "I'm so happy Penny is spending her life with you.$l#$e#She's my best friend, but I've known for a while that you're hers... and that's okay, you know? She has enough love in her for both of us.",
+                "winter_Fri10": "Your cheeks are all rosy. Are you cold?#$e#Aww. Give me a hug, I'll transfer you some of my body heat.$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMaru",
+            "Entries":
+            {
+                "Rainy_Night_1": "Hi @. How was your day... soggy?#$e#$c .5#Why don't we stay in tonight? What're you craving for dinner?#This weather gives me gadget ideas... maybe if I funnel the rainwater it could power a mill?",
+                "Rainy_Night_3": "#$c .5#Come here. *hug* I need some human contact tonight.$l#Can we have spaghetti tonight?",
+                "Indoor_Day_4": "#$c .5#I used to wonder where I'd end up after moving out. I never imagined it'd be right down the road. How funny.$h#With all the time you spend working outside, I hope you're careful about sun protection. I want you to stay healthy!",
+                "fall_9": "Have a good day today, {{Lowercase:{{TermofEndearment}}}}. I'm just going to put the finishing touches on my plutonium destabilizer.#$e#Kidding.$h#$e#No, seriously, I keep the plutonium destabilizer in my secret lab. The one under the wood pile.#$e#Please tell me you didn't just fall for that!$h#$b#Er, well... oh. I guess I did have a secret lab at my old place.$s#$e#No, I didn't install a secret lab! This is your house, you goof!$h",
+                "fall_18": "Living within walking distance of my parents' house... in a house my mom remodeled...#$b#Well, I know my situation isn't exactly typical. Let me know if it ever gets weird for you, okay?#$e#You are my priority. I love you. Now come give me a big best friend hug.$l",
+                "winter_28": "Happy new year, {{Lowercase:{{TermofEndearment}}}}. Let's celebrate tonight! [232 234 223 220]$h#$b#Don't stay out too late.$l",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMaru",
+            "Entries":
+            {
+                "Rainy_Night_1": "Hi @. How was your day... soggy?#$e#$c .5#Why don't we stay in tonight? What're you craving for dinner?#This weather gives me gadget ideas... maybe if I funnel the rainwater it could power a mill?",
+                "Rainy_Night_3": "#$c .5#Come here. *hug* I need some human contact tonight.$l#Can we have spaghetti tonight?",
+                "Indoor_Day_4": "#$c .5#I used to wonder where I'd end up after moving out. I never imagined it'd be right down the road. How funny.$h#With all the time you spend working outside, I hope you're careful about sun protection. I want you to stay healthy!",
+                "fall_9": "Have a good day today, {{TermofEndearment}}. I'm just going to put the finishing touches on my plutonium destabilizer.#$e#Kidding.$h#$e#No, seriously, I keep the plutonium destabilizer in my secret lab. The one under the wood pile.#$e#Please tell me you didn't just fall for that!$h#$b#Er, well... oh. I guess I did have a secret lab at my old place.$s#$e#No, I didn't install a secret lab! This is your house, you goof!$h",
+                "fall_18": "Living within walking distance of my parents' house... in a house my mom remodeled...#$b#Well, I know my situation isn't exactly typical. Let me know if it ever gets weird for you, okay?#$e#You are my priority. I love you. Now come give me a big best friend hug.$l",
+                "winter_28": "Happy new year, {{TermofEndearment}}. Let's celebrate tonight! [232 234 223 220]$h#$b#Don't stay out too late.$l",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+                "winter_Sun6_inlaw_Maru": "I can't believe Maru still comes out here to build her snowman.#$e#Are you sure it was a good idea to live with someone whose family is within walking distance from your farm?#$e#Sorry. I mean, whatever works for you.$s",
+                "fall_Mon6_inlaw_Maru": "Don't get me wrong, I'm happy you and Maru have a life together, but...#$b#...it's just another reminder about how she keeps upstaging me. Everything just has to work out perfectly for her.$s",
+                "winter_Sun6_roommate_Maru": "I can't believe Maru still comes out here to build her snowman.#$e#Are you sure it was a good idea to live with someone whose family is within walking distance from your farm?#$e#Sorry. I mean, whatever works for you.$s",
+                "fall_Mon6_roommate_Maru": "Don't get me wrong, I'm happy you and Maru have a life together, but...#$b#...it's just another reminder about how she keeps upstaging me. Everything just has to work out perfectly for her.$s",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Maru
+	        "LogName": "KO Mines- Maru",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Maru 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Maru \"Hey, you're awake! Good. I was worried for a second that I'd have to call Harvey for help.\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Maru \"Something knocked you out in the mines! That bump on your head says it got you good, too.$2#$b#You were gone a little too long, so I ventured in to check on you. I had a feeling something was up.$2.\"/pause 1000/speak Marlon \"And I simply came along to clear a path for Maru while we brought you back up to the surface.#$b#At first, I was to venture in alone, but she insisted on coming along.#$b#You're blessed to have ended up sharing your life with someone so courageous.\"/emote Maru 16/pause 500/speak Maru \"You think so? I go in there to study geological formations all the time, but I've never gone so deep before.$8#$b#I only went in because I knew you'd have my back. Nothing to do with bravery, if you ask me.$s\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I saw. You did well, standing by my side.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Maru \"Alright, we should leave. I'll take a look at you when we get home, just to be sure you're not too badly hurt.#$b#Everything else aside, though, I'm glad you're alright, @. I was worried for a little while.$3#$b#Maybe I should build a portable telemetry unit so I can keep an eye on your vital signs from afar, next time...#$b#Just kidding. I know you can handle yourself.$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Maru \"Hey, best friend! Looking a little worse for wear, there, but I know it's nothing that'll stop you. Let me know if I can help you somehow, alright?#$c 0.7#I've already tidied up, so you can just go ahead and kick your feet up. Take it easy. I'll even join you in a little bit, if you want!$l#Here, have a snack. I made sure it's balanced in nutrients to optimize your recovery![210 215 223 228 232 243 403 406 613 618 636 651]$u\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Maru",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Hospital death- Maru
+            "LogName": "Player 'Killed'- Maru lowercase",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+		        "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Maru 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello, @. I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. Maru and I had to take you in for emergency surgery!$2\"/move Maru 0 3 2/textAboveHead Maru \"I'm coming in, {0}!\"/emote farmer 16/move Maru -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Maru 0 1 3/speak Maru \"You're already looking a little better than when you came in. Do you want me to bring you any pain medication?$8\"/emote farmer 60/pause 500/speak Maru \"... I'm really glad you're okay. It was touch-and-go for a while during your surgery.$8#$b#Harvey didn't want to let me see you like that, but I insisted on helping.$2#$b#I couldn't just stand back and do nothing while you fought to come back to us.$2\"/emote Maru 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Maru's been taking excellent care of you all this time. You're almost good as new thanks to her.#$b#Just be more careful next time, alright?\"/pause 500/speak Harvey \"I'll let you two finish up here. Maru, if you need any days off after this, you know you can always ask.\"/pause 500/faceDirection Maru 1/textAboveHead Maru \"...Thanks, Doc.\"/move Harvey 0 -4 0/move Harvey -8 0 0 true/faceDirection Maru 3/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/speak Maru \"Well, you heard him. You have to be more careful out there, doctor's orders.$3#$b#We should go home. At least you can say you have your own personal nurse to take care of you!$1\"/faceDirection farmer 2/pause 500/speak Maru \"But in all seriousness, please don't get hurt anymore. Watching you slip right through my fingers... I never want to go through that ever again.$2\"/pause 1000/emote farmer 28/hospitaldeath/end dialogue Maru \"Hey, {{Lowercase:{{TermofEndearment}}}}. How are you holding up? Still in a lot of pain, or has it gotten better?#$c 0.7#Me? I'm okay. I've just had a bit of a long day. I'd do it over again without hesitation, though, if that's what it took to keep you safe.$2#You should eat some of this. You need your nutrients to heal up quickly. [237 241 203 204 220 244]$l\"",
+            },
+            "When": {
+                "Relationship:Maru": "Engaged, Married",
+		"Relationship:Harvey |contains=Married": "false",
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+		"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         }, 
+    {       //Hospital death- Maru
+            "LogName": "Player 'Killed'- Maru capital",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+		        "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Maru 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello, @. I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. Maru and I had to take you in for emergency surgery!$2\"/move Maru 0 3 2/textAboveHead Maru \"I'm coming in, {0}!\"/emote farmer 16/move Maru -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Maru 0 1 3/speak Maru \"You're already looking a little better than when you came in. Do you want me to bring you any pain medication?$8\"/emote farmer 60/pause 500/speak Maru \"... I'm really glad you're okay. It was touch-and-go for a while during your surgery.$8#$b#Harvey didn't want to let me see you like that, but I insisted on helping.$2#$b#I couldn't just stand back and do nothing while you fought to come back to us.$2\"/emote Maru 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Maru's been taking excellent care of you all this time. You're almost good as new thanks to her.#$b#Just be more careful next time, alright?\"/pause 500/speak Harvey \"I'll let you two finish up here. Maru, if you need any days off after this, you know you can always ask.\"/pause 500/faceDirection Maru 1/textAboveHead Maru \"...Thanks, Doc.\"/move Harvey 0 -4 0/move Harvey -8 0 0 true/faceDirection Maru 3/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/speak Maru \"Well, you heard him. You have to be more careful out there, doctor's orders.$3#$b#We should go home. At least you can say you have your own personal nurse to take care of you!$1\"/faceDirection farmer 2/pause 500/speak Maru \"But in all seriousness, please don't get hurt anymore. Watching you slip right through my fingers... I never want to go through that ever again.$2\"/pause 1000/emote farmer 28/hospitaldeath/end dialogue Maru \"Hey, {{TermofEndearment}}. How are you holding up? Still in a lot of pain, or has it gotten better?#$c 0.7#Me? I'm okay. I've just had a bit of a long day. I'd do it over again without hesitation, though, if that's what it took to keep you safe.$2#You should eat some of this. You need your nutrients to heal up quickly. [237 241 203 204 220 244]$l\"",
+            },
+            "When": {
+                "Relationship:Maru": "Engaged, Married",
+		"Relationship:Harvey |contains=Married": "false",
+		"TermofEndearment": "@, BFF",
+		"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         }, 
+    {       //only change is not triggering if you have a roommate
+            "LogName": "Hospital death - Maru Ex-Partner",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Maru 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.#$b#...And you should think of your own wellbeing, too.$2\"/pause 500/speak Maru \"I know the rules, Harvey. It's nice of you to worry about me, too, though. You don't have to.$8\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Maru 0 4 3/emote farmer 16/faceDirection Maru 3/pause 1000/speak Maru \"Wow. Harvey really put you back together in one piece, huh?$8#$b#Oh, that... that hurt. Sorry. That was probably a little too familiar of me.$8#$b#...Look, I just came to make sure that you'd be okay after the surgery. You rolled in here hanging on by a thread, so...$2\"/emote farmer 16/pause 1000/speak Maru \"It was bad, @. I didn't assist in the surgery, but I know it wasn't an easy one. Whatever happened to you out there almost got you for good.$2#$b#And... personally, I wouldn't have wanted to wake up alone from something so scary all by myself, so I stayed. Just in case you felt the same way.$2#$b#It doesn't mean that anything's changed between us. All it means is that I'm not a robot. My heart doesn't get an off-switch.$2\"/pause 500/move Maru 0 -4 0/move Maru -8 0 0/move Maru 0 -3 0/warp Maru -100 -100/emote farmer 28/hospitaldeath/end dialogue Maru \"I was fine without having to think about you, @. Why'd you have to go and get hurt like that?$a#$b#Sorry, I shouldn't get angry at you. It wasn't your fault. Can you please just leave me be?$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Maru": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+     {       //Island death before Leo - Maru
+	        "LogName": "Island Death Maru",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Maru \"Hey @- Whoa! What happened? Did one of the machines blow up in your face?$9#$b#A... volcano? Well, that explains the soot all over your face and clothes. You're not hurt, right?$8#$b#Only minor burns, huh? I'll wrap them up in a second. I'm so glad it's not worse.#$b#By the way, next time you go there... any chance you could bring me back a few soil samples?$4\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Maru",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     }, 
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo, Maru",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Maru \"Hey @- Whoa! What happened? Did one of the machines blow up in your face?$9#$b#A... volcano? Well, that explains the soot all over your face and clothes. You're not hurt, right?$8#$b#Only minor burns, huh? I'll wrap them up in a second. I'm so glad it's not worse.#$b#By the way, next time you go there... any chance you could bring me back a few soil samples?$4\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Maru",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Maru",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Maru \"Hey @- Whoa! What happened? Did one of the machines blow up in your face?$9#$b#A... volcano? Well, that explains the soot all over your face and clothes. You're not hurt, right?$8#$b#Only minor burns, huh? I'll wrap them up in a second. I'm so glad it's not worse.#$b#By the way, next time you go there... any chance you could bring me back a few soil samples?$4\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Maru",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Maru",
+		"Entries": {
+			"marriage_sit": "Do you think Penny will ever find someone to share her life with?#$b#I wonder if she'll settle down with Sam.$h",
+			"marriage_r": "You look sharp today!",
+			"marriage_r2": "I'm a farmer's {{PlatonicSocialMenuLabel}}, a part-time nurse, and a scientist.#$b#If I could only choose one of those for the rest of my life... Well, I don't have to!$h", 
+			"marriage_p": "I hope Penny finds a partner someday. I know she wants a family.",
+   	    },
+		"When": {
+               		"HasMod |contains=iss.immersivespouses": "true"
+	    }
+	     },
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname": "Maru PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "summer_Tue8_inlaw_Maru":"Oh, hey.$0#$e#How's life with Maru coming along?$1",
+            "winter_Mon10_inlaw_Maru":"Oh, hey.$0#$e#How's life with Maru coming along?$1",
+            "summer_Tue8_roommate_Maru":"Oh, hey.$0#$e#How's life with Maru coming along?$1",
+            "winter_Mon10_roommate_Maru":"Oh, hey.$0#$e#How's life with Maru coming along?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Maru": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Maru make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Maru": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Maru will have any problems with that.$1",
+            "fall_Fri8_inlaw_Maru": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Maru make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Maru": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Maru will have any problems with that.$1",
+	    "spring_Thu8_inlaw_Maru": "Maru talks a lot about you.$0#$b#It's clear how much she treasures your friendship.$0",
+	    "fall_Sun8_inlaw_Maru": "Maru talks a lot about you.$0#$b#It's clear how much she treasures your friendship.$0",
+            "spring_Tue8_roommate_Maru": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Maru make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Maru": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Maru will have any problems with that.$1",
+            "fall_Fri8_roommate_Maru": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Maru make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Maru": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Maru will have any problems with that.$1",
+	    "spring_Thu8_roommate_Maru": "Maru talks a lot about you.$0#$b#It's clear how much she treasures your friendship.$0",
+	    "fall_Sun8_roommate_Maru": "Maru talks a lot about you.$0#$b#It's clear how much she treasures your friendship.$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sam",
+	"Entries": {
+            "summer_Mon8_inlaw_Maru":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Maru":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "summer_Mon8_roommate_Maru":"Hey, @. How's life with Maru?$0#$b#She's some kind of electronics whiz, right? You think you could ask her to juice up my amp?$1",
+            "fall_Sat8_roommate_Maru":"Hey, @. How's life with Maru?$0#$b#She's some kind of electronics whiz, right? You think you could ask her to juice up my amp?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Thu8_inlaw_Maru":"Maru has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_inlaw_Maru":"I clearly see you and Maru were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_inlaw_Maru":"Maru has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_inlaw_Maru":"I clearly see you and Maru were made to be {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Maru":"Maru has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_roommate_Maru":"I clearly see you and Maru were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_roommate_Maru":"Maru has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_roommate_Maru":"I clearly see you and Maru were made to be {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM, Haley",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Haley",
+	"Entries": {
+            "summer_Sat8_inlaw_Maru":"I'm so happy for you and Maru.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_inlaw_Maru":"I'm so happy for you and Maru.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "summer_Sat8_roommate_Maru":"I'm so happy for you and Maru.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_roommate_Maru":"I'm so happy for you and Maru.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },  
+{
+	"Logname": "Maru PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Maru":"Hello, @.$0#$e#You and Maru are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Maru":"Hello, @.$0#$e#You and Maru are such cute {{RelationshipLabel}}.$1",
+            "spring_Thu8_inlaw_Maru":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.$0#$b#I always thought you and Maru would be a good match in that way.$1",
+            "summer_Tue8_inlaw_Maru":"I'm glad things are going well with you and Maru!$1",
+            "fall_Sat8_inlaw_Maru":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.$0#$b#I always thought you and Maru would be a good match in that way.$1",
+            "winter_Fri8_inlaw_Maru":"I'm glad things are going well for you and Maru!$1",
+            "spring_Mon8_roommate_Maru":"Hello, @.$0#$e#You and Maru are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Maru":"Hello, @.$0#$e#You and Maru are such cute {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Maru":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.$0#$b#I always thought you and Maru would be a good match in that way.$1",
+            "summer_Tue8_roommate_Maru":"I'm glad things are going well with you and Maru!$1",
+            "fall_Sat8_roommate_Maru":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.$0#$b#I always thought you and Maru would be a good match in that way.$1",
+            "winter_Fri8_roommate_Maru":"I'm glad things are going well for you and Maru!$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },  
+{
+	"Logname": "Maru PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Mon10_inlaw_Maru":"I didn't think Maru'd move out so soon...$2#$e#But I'm happy that she's {{RelationshipLabel}} with someone like you.$1",
+            "spring_Thu10_inlaw_Maru":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Maru as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "summer_Fri10_inlaw_Maru":"My little girl's all grown up now.$0#$b#It didn't even cross my mind that Maru would move away.$0",
+            "summer_Sun_inlaw_Maru":"Hello, @.$0#$e#I'd like to catch up with you and Maru at the saloon sometime. What do you say?$0",
+            "fall_Tue10_inlaw_Maru":"I didn't think Maru'd move out so soon...$2#$e#But I'm happy that she's {{RelationshipLabel}} with someone like you.$1",
+            "fall_Fri10_inlaw_Maru":"Hello, @.$0#$e#I'd like to catch up with you and Maru at the saloon sometime. What do you say?$0",
+            "winter_Sat10_inlaw_Maru":"My little girl's all grown up now.$0#$b#It didn't even cross my mind that Maru would move away.$0",
+            "spring_Mon10_roommate_Maru":"I didn't think Maru'd move out so soon...$2#$e#But I'm happy that she's {{RelationshipLabel}} with someone like you.$1",
+            "spring_Thu10_roommate_Maru":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Maru as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "summer_Fri10_roommate_Maru":"My little girl's all grown up now.$0#$b#It didn't even cross my mind that Maru would move away.$0",
+            "summer_Sun_roommate_Maru":"Hello, @.$0#$e#I'd like to catch up with you and Maru at the saloon sometime. What do you say?$0",
+            "fall_Tue10_roommate_Maru":"I didn't think Maru'd move out so soon...$2#$e#But I'm happy that she's {{RelationshipLabel}} with someone like you.$1",
+            "fall_Fri10_roommate_Maru":"Hello, @.$0#$e#I'd like to catch up with you and Maru at the saloon sometime. What do you say?$0",
+            "winter_Sat10_roommate_Maru":"My little girl's all grown up now.$0#$b#It didn't even cross my mind that Maru would move away.$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Maru":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Maru will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Maru":"A true lifelong friendship, like you have with Maru, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Maru":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Maru will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Maru":"A true lifelong friendship, like you have with Maru, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Maru":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Maru will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Maru":"A true lifelong friendship, like you have with Maru, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Maru":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Maru will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Maru":"A true lifelong friendship, like you have with Maru, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{	
+	"Logname": "Maru PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Maru":"If you and Maru want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Maru":"If you and Maru want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Maru":"If you and Maru want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Maru":"If you and Maru want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Maru":"If you and Maru want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Maru":"If you and Maru want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Maru":"If you and Maru want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Maru":"If you and Maru want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Maru":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Maru":"So are you and Ms. Maru like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Maru":"Hello, Farmer @.$0#$b#Why can't you and Ms. Maru celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Maru":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Maru":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Maru":"So are you and Ms. Maru like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Maru":"Hello, Farmer @.$0#$b#Don't you think you and Ms. Maru should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Maru":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Jodi",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jodi",
+	"Entries": {
+            "summer_Wed10_inlaw_Maru":"Hello, @.$0#$e#Did you know Robin was more nervous than Maru was about her moving out?$1",
+            "winter_Fri10_inlaw_Maru":"Hello, @.$0#$e#Did you know Robin was more nervous than Maru was about her moving out?$1",
+            "summer_Wed10_roommate_Maru":"Hello, @.$0#$e#Did you know Robin was more nervous than Maru was about her moving out?$1",
+            "winter_Fri10_roommate_Maru":"Hello, @.$0#$e#Did you know Robin was more nervous than Maru was about her moving out?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Maru":"There aren't many young {{RelationshipLabel}} like you and Maru here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Maru":"There aren't many young {{RelationshipLabel}} like you and Maru here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Maru":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Maru":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Maru":"There aren't many young {{RelationshipLabel}} like you and Maru here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Maru":"There aren't many young {{RelationshipLabel}} like you and Maru here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Maru":"I know you and Maru chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Maru":"I know you and Maru chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Maru":"Hello, @.$0#$e#I wish you and Maru a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Maru":"May Yoba grant you and Maru a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Maru":"Hello, @.$0#$e#I wish you and Maru a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Maru":"May Yoba grant you and Maru a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Maru":"Hello, @.$0#$e#I wish you and Maru a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Maru":"May Yoba grant you and Maru a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Maru":"Hello, @.$0#$e#I wish you and Maru a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Maru":"May Yoba grant you and Maru a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Maru":"Hey, kid.$0#$e#Looks like you found yourself a nice {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Maru":"Hey, kid.$0#$e#Looks like you found yourself a nice {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Maru":"Hey, kid.$0#$e#Looks like you found yourself a nice {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Maru":"Hey, kid.$0#$e#Looks like you found yourself a nice {{PlatonicSocialMenuLabel}}, huh?$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },   
+{
+	"Logname": "Maru PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "summer_Tue_inlaw_Maru":"I'm delighted that you and Maru are {{RelationshipLabel}}.$0#$b#I always knew you'd get along well.$1",
+            "summer_Fri10_inlaw_Maru":"I can't say it was a surprise for me that you and Maru became friends.$0#$e#In fact, I was hoping for it!$1",
+            "fall_Wed_inlaw_Maru":"You and Maru remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "winter_Mon10_inlaw_Maru":"I'm glad to have you as part of the family, @.$1",
+            "winter_Wed10_inlaw_Maru":"I can't say it was a surprise for me that you and Maru became friends.$0#$e#In fact, I was hoping for it!$1",
+            "winter_Fri10_inlaw_Maru":"I remember when Maru told me she was going to be your {{PlatonicSocialMenuLabel}}.$0#$b#She was close to tears of happiness.$1",
+            "summer_Tue_roommate_Maru":"I'm delighted that you and Maru are {{RelationshipLabel}}.$0#$b#I always knew you'd get along well.$1",
+            "summer_Fri10_roommate_Maru":"I can't say it was a surprise for me that you and Maru became friends.$0#$e#In fact, I was hoping for it!$1",
+            "fall_Wed_roommate_Maru":"You and Maru remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "winter_Mon10_roommate_Maru":"I'm glad to have you as part of the family, @.$1",
+            "winter_Wed10_roommate_Maru":"I can't say it was a surprise for me that you and Maru became friends.$0#$e#In fact, I was hoping for it!$1",
+            "winter_Fri10_roommate_Maru":"I remember when Maru told me she was going to be your {{PlatonicSocialMenuLabel}}.$0#$b#She was close to tears of happiness.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Maru PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Maru":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Maru.$1",
+            "summer_Wed10_inlaw_Maru":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_inlaw_Maru":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Maru.$1",
+            "winter_Sun10_inlaw_Maru":"It's so cool how you're {{RelationshipLabel}} with Ms. Maru.$1#$e#I never thought that would have happened!$0",
+            "spring_Tue10_roommate_Maru":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Maru.$1",
+            "summer_Wed10_roommate_Maru":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_roommate_Maru":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Maru.$1",
+            "winter_Sun10_roommate_Maru":"It's so cool how you're {{RelationshipLabel}} with Ms. Maru.$1#$e#I never thought that would have happened!$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

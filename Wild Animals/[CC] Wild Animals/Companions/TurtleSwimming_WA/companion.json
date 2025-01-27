@@ -1,0 +1,98 @@
+{
+	"Name": "TurtleSwimming_WA",
+	"Type": "Walking",
+	"EnableSpawnAtDayStart": false,
+	"EnableCharacterCollision": true,
+	"EnableFarmerCollision": false,
+	"TravelSpeed": 1,
+	"MaxIdleDistance": -1,
+	"MaxDistanceBeforeTeleport": -1,
+	"IdleBehavior": "Wander",
+	"AppearUnderwater": true,
+	"FrameSizeWidth": 32,
+	"FrameSizeHeight": 32,
+	"TileSheetPath": "Characters\\Turtle_WA",
+
+	// This plays when the companion travels upwards
+	"UpAnimation": {
+		"StartingFrame": 32,
+		"NumberOfFrames": 4,
+		"Duration": 500,
+	"IdleAnimation": {
+		"StartingFrame": 32,
+		"NumberOfFrames": 4,
+		"Duration": 500
+	}
+	},
+	// This plays when the companion travels downwards
+	"DownAnimation": {
+		"StartingFrame": 24,
+		"NumberOfFrames": 4,
+		"Duration": 500,
+	"IdleAnimation": {
+		"StartingFrame": 24,
+		"NumberOfFrames": 4,
+		"Duration": 500
+	}
+	},
+	// This plays when the companion travels left
+	"LeftAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 28,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 29,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 30,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 31,
+		"Duration": 500,
+		"Flip": true
+		}
+		],
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 28,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 29,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 30,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 31,
+		"Duration": 500,
+		"Flip": true
+		}
+		],
+    }
+  },
+	// This plays when the companion travels right
+	"RightAnimation": {
+		"StartingFrame": 28,
+		"NumberOfFrames": 4,
+		"Duration": 500,
+	"IdleAnimation": {
+		"StartingFrame": 28,
+		"NumberOfFrames": 4,
+		"Duration": 500
+	}
+	}
+}

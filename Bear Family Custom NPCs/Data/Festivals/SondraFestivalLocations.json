@@ -1,0 +1,389 @@
+{
+	"Changes": [
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//Sondra
+
+		//Egg Festival
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 51 76 1",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 51 76 3",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 51 76 1",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 51 76 3",
+					"Delimiter": "/"
+				}
+			]
+		},
+
+		// Flower Dance
+		{
+
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 53 46 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 53 46 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 51 46 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 51 46 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+
+
+		// Luau
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 43 45 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 43 45 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 43 45 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 43 45 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+
+
+		// Dance of the Moonlight Jellies
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{ // I have not added a MainEvent to this one, since the waterfront area is V crowded already and very little of the map is visible.
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 87 44 2", //11 16 2
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{ // I have not added a MainEvent to this one, since the waterfront area is V crowded already and very little of the map is visible.
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 87 44 2", //11 16 2 //97 43 2
+					"Delimiter": "/"
+				}
+			]
+		},
+
+		// Stardew Fair
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Sondra 41 72 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "MadDog.HashtagBearFam.Sondra 15 38 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Query: {{Year}} % 2 = 0": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Sondra 46 35 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "MadDog.HashtagBearFam.Sondra 15 38 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Query: {{Year}} % 2 = 0": true
+			}
+		},
+
+		// Spirit's Eve
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 10 53 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 10 53 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 10 53 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Year": "1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
+			}
+		},
+		/*
+		// Ice Festival - Sondra stays home with Gudrun
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 59 28 1",
+					"Delimiter": "/"
+				},
+		// Note the spelling of "Main-Event" here differs from the others
+				{	"Operation": "Append",
+					"Target": [ "Entries", "Main-Event_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 59 28 1",
+					"Delimiter": "/"
+				}
+			]
+		},*/
+
+		// Winter Star
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 25 61 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 25 61 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		//bonus festivals
+		{
+			"LogName": "Love Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/Winter6",
+			"When": {
+				"HasMod": "AvalonMFX.LoveFestival",
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Sondra 25 98 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Fields", "set-up", 5 ],
+					"Value": "/positionOffset MadDog.HashtagBearFam.Sondra 0 -1/animate MadDog.HashtagBearFam.Sondra false true 100 42 42 42"
+				}
+			]
+		}
+		/*,
+		
+		//RSV Ember of Resolutions
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": { "HasMod": "Rafseazz.RSVCP" },
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 25 40 2",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 29 42 1",
+					"Delimiter": "/"
+				}
+			]
+		},
+		//RSV Gathering Festival
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"When": { "HasMod": "Rafseazz.RSVCP" },
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 91 60 2",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Sondra 91 60 2",
+					"Delimiter": "/"
+				}
+			]
+		}*/
+	]
+}

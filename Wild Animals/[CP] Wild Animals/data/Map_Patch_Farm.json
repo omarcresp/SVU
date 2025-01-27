@@ -1,0 +1,548 @@
+{
+//	"Format": "2.0.0",
+
+	"Changes": [
+
+	// BACKWOODS ANIMALS
+	// DAY
+	{
+		"LogName": "Add wild animals in the farm (near backwoods) 1",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BW}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BW}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Squirrel_Timid_WA"
+               },
+            },
+         ],
+		"When": {
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year": "1",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm (near backwoods) 2",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BW}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BW}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, QuailHen_WA, QuailCock_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"IsCommunityCenterComplete": "false",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm (near backwoods) 3",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BW}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BW}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, QuailHen_WA, QuailCock_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"IsCommunityCenterComplete": "true",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	// NIGHT
+	{
+		"LogName": "Add wild animals in the farm at night (near backwoods) 1",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BW}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BW}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Opossum_Timid_WA, Opossum_Timid_WA, Squirrel_Timid_WA, Squirrel_Timid_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			"Year": "1",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm at night (near backwoods) 2",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BW}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BW}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Opossum_Timid_WA, Opossum_WA, OpossumJoeys_WA, Squirrel_Timid_WA, Squirrel_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"IsCommunityCenterComplete": "false",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm at night (near backwoods) 3",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BW}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BW}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Opossum_Timid_WA, Opossum_WA, OpossumJoeys_WA, Squirrel_Timid_WA, Squirrel_WA, Weasel_Timid_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"IsCommunityCenterComplete": "true",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	// RAIN
+	{
+		"LogName": "Add wild animals in the farm during the rain (near backwoods)",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BW}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BW}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Frog_WA"
+               },
+            },
+         ],
+		"When": {
+			"Weather": "Rain",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	// BUSSTOP ANIMALS
+	// DAY
+	{
+		"LogName": "Add wild animals in the farm (near bus stop) 1",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BS}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BS}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Squirrel_Timid_WA"
+               },
+            },
+         ],
+		"When": {
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year": "1",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm (near bus stop) 2",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BS}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BS}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_Timid_WA, Rat_WA, Rat_WA, Raccoon_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"IsCommunityCenterComplete": "false",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm (near bus stop) 3",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BS}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BS}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Rat_WA, Rat_WA, Raccoon_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"IsCommunityCenterComplete": "true",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	// NIGHT
+	{
+		"LogName": "Add wild animals in the farm at night (near bus stop) 1",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BS}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BS}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Raccoon_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			"Year": "1",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm at night (near bus stop) 2",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BS}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BS}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Raccoon_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"IsCommunityCenterComplete": "false",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm at night (near bus stop) 3",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BS}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BS}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Raccoon_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"IsCommunityCenterComplete": "true",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	// RAIN
+	{
+		"LogName": "Add wild animals in the farm during the rain (near bus stop)",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_BS}}}}", "Y": "{{Query:{{FVYCoordinatesToken_BS}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Frog_WA"
+               },
+            },
+         ],
+		"When": {
+			"Weather": "Rain",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	// FOREST ANIMALS
+	// DAY
+	{
+		"LogName": "Add wild animals in the farm (near forest) 1",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1 |key=NearForestAnimals}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Squirrel_Timid_WA, Squirrel_Timid_WA, Skunk_Timid_WA, Rabbit_Timid_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Coordinates (Forest)": "Standard, Meadowlands, Custom",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year": "1",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm (near forest) 2",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1 |key=NearForestAnimals}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Squirrel_Timid_WA, Squirrel_Timid_WA, Skunk_Timid_WA, Rabbit_Timid_WA, Fox_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Coordinates (Forest)": "Standard, Meadowlands, Custom",
+			"IsCommunityCenterComplete": "false",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm (near forest) 3",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1 |key=NearForestAnimals}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Squirrel_Timid_WA, Squirrel_WA, Skunk_Timid_WA, Rabbit_Timid_WA, Rabbit_WA, Fox_WA, DeerDoe_WA, DeerFawn_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Coordinates (Forest)": "Standard, Meadowlands, Custom",
+			"IsCommunityCenterComplete": "true",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm (near forest) 4",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 0 |key=NearForestAnimals}} SmolHooman.WildAnimalsCC.{{Random: Junimo_WA, Junimo_WA, Junimo_WA, Junimo_Friendly_WA, Junimo_Bounce_WA, JunimoMarshmallow_WA, JunimoMarshmallow_Friendly_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Coordinates (Forest)": "Standard, Meadowlands, Custom",
+			"Allow WA Junimo sprite changes": "true",
+			"IsCommunityCenterComplete": "true",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm (near forest) 5",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 0 |key=NearForestAnimals}} SmolHooman.WildAnimalsCC.{{Random: JunimoVanilla_WA, JunimoVanilla_WA, JunimoVanilla_WA, JunimoVanilla_Friendly_WA, JunimoVanilla_Bounce_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Coordinates (Forest)": "Standard, Meadowlands, Custom",
+			"Allow WA Junimo sprite changes": "false",
+			"IsCommunityCenterComplete": "true",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	// NIGHT
+	{
+		"LogName": "Add wild animals in the farm at night (near forest) 1",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Bobcat_WA, Raccoon_WA, Raccoon_WA, Skunk_Timid_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Coordinates (Forest)": "Standard, Meadowlands, Custom",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			"Year": "1",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm at night (near forest) 2",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Bobcat_WA, Raccoon_WA, Raccoon_WA, Wolf_WA, Skunk_Timid_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Coordinates (Forest)": "Standard, Meadowlands, Custom",
+			"IsCommunityCenterComplete": "false",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild animals in the farm at night (near forest) 3",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Bobcat_WA, Raccoon_WA, Raccoon_WA, Wolf_WA, Skunk_Timid_WA, Hedgehog_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Coordinates (Forest)": "Standard, Meadowlands, Custom",
+			"IsCommunityCenterComplete": "true",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	// RAIN
+	{
+		"LogName": "Add wild animals in the farm during the rain (near forest)",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Frog_WA"
+               },
+            },
+         ],
+		"When": {
+			"Coordinates (Forest)": "Standard, Meadowlands, Custom",
+			"Weather": "Rain",
+			},
+		"Update": "OnLocationChange"
+	},
+
+// 	BEACH FARM EXCLUSIVES
+	{
+		"LogName": "Add wild pelicans/seagulls in the farm",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 98, 101, 68 |key=beachfarm birds coordinate}}",
+					"Y": "{{Random: 52, 90, 92 |key=beachfarm birds coordinate}}"
+				},
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: PelicanSwimming_WA, PelicanSwimming_WA, SeagullSwimming_WA, SeagullSwimming_WA, SeagullSwimming_WA, PelicanPouchSwimming_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Pelicans + Seagulls": true,
+			"Coordinates (Forest)": "Beach",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind, Rain",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild crabs in the farm",
+		"Action": "EditMap",
+		"Target": "Maps/{{FarmMap}}",
+		"MapTiles": [
+            {
+               "Position": { "X": "{{Query:{{FVXCoordinatesToken_F}}}}", "Y": "{{Query:{{FVYCoordinatesToken_F}}}}" },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Crab_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Crabs": true,
+			"Coordinates (Forest)": "Beach",
+			"Weather": "Sun, Wind, Rain",
+			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	]
+}

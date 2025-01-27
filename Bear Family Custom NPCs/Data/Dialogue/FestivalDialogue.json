@@ -1,0 +1,1814 @@
+{
+  "Changes": [
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*
+    
+  _____              _____         _   _            _ 
+ | ____|__ _  __ _  |  ___|__  ___| |_(_)_   ____ _| |
+ |  _| / _` |/ _` | | |_ / _ \/ __| __| \ \ / / _` | |
+ | |__| (_| | (_| | |  _|  __/\__ \ |_| |\ V / (_| | |
+ |_____\__, |\__, | |_|  \___||___/\__|_| \_/ \__,_|_|
+       |___/ |___/                                    
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "LogName": "Egg Festival - Sigurd - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:EggFest.Sigurd.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Sigurd - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:EggFest.Sigurd.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "4, 8"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Sigurd - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:EggFest.Sigurd.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "9, 10"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Sigurd - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:EggFest.Sigurd.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{SigurdSpousePetName}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Sondra - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:EggFest.Sondra.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Sondra - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:EggFest.Sondra.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "4, 8"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Sondra - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:EggFest.Sondra.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "9, 10"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:EggFest.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:EggFest.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:EggFest.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:EggFest.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{GunnarSpousePetName}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:EggFest.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:EggFest.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:EggFest.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Egg Festival - Teren - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:EggFest.Teren.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true
+      }
+    },
+    {
+      "LogName": "Egg Festival - Teren - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:EggFest.Teren.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "4, 8"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Teren - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:EggFest.Teren.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "9, 10"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Teren - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:EggFest.Teren.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Relationship:MadDog.HashtagBearFam.Teren": "Dating, Engaged, Married"
+      }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*
+    
+  _____ _                          ____                       
+ |  ___| | _____      _____ _ __  |  _ \  __ _ _ __   ___ ___ 
+ | |_  | |/ _ \ \ /\ / / _ \ '__| | | | |/ _` | '_ \ / __/ _ \
+ |  _| | | (_) \ V  V /  __/ |    | |_| | (_| | | | | (_|  __/
+ |_|   |_|\___/ \_/\_/ \___|_|    |____/ \__,_|_| |_|\___\___|
+                                                              
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "LogName": "Flower Dance - Sigurd - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:FlowerDance.Sigurd.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Sigurd - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:FlowerDance.Sigurd.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "4, 8"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Sigurd - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:FlowerDance.Sigurd.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "9, 10"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Sigurd - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:FlowerDance.Sigurd.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Sondra - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:FlowerDance.Sondra.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA}}}}"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Sondra - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:FlowerDance.Sondra.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "4, 8"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Sondra - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:FlowerDance.Sondra.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "9, 10"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:FlowerDance.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:FlowerDance.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:FlowerDance.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:FlowerDance.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:FlowerDance.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:FlowerDance.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:FlowerDance.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Flower Dance - Teren - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:FlowerDance.Teren.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true
+      }
+    },
+    {
+      "LogName": "Flower Dance - Teren - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:FlowerDance.Teren.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "4, 8"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Teren - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:FlowerDance.Teren.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "9, 10"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Teren - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:FlowerDance.Teren.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Relationship:MadDog.HashtagBearFam.Teren": "Dating, Engaged, Married"
+      }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*
+    
+  _                      
+ | |   _   _  __ _ _   _ 
+ | |  | | | |/ _` | | | |
+ | |__| |_| | (_| | |_| |
+ |_____\__,_|\__,_|\__,_|
+                         
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "LogName": "Luau - Sondra - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:Luau.Sondra.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA}}}}"
+      }
+    },
+    {
+      "LogName": "Luau - Sondra - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:Luau.Sondra.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "4, 8"
+      }
+    },
+    {
+      "LogName": "Luau - Sondra - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:Luau.Sondra.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "9, 10"
+      }
+    },
+    {
+      "LogName": "Luau - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Luau.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Luau - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Luau.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Luau - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Luau.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Luau - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Luau.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Luau - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Luau.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Luau - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Luau.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Luau - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Luau.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Luau - Teren - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:Luau.Teren.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true
+      }
+    },
+    {
+      "LogName": "Luau - Teren - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:Luau.Teren.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "4, 8"
+      }
+    },
+    {
+      "LogName": "Luau - Teren - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:Luau.Teren.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "9, 10"
+      }
+    },
+    {
+      "LogName": "Luau - Teren - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:Luau.Teren.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Relationship:MadDog.HashtagBearFam.Teren": "Dating, Engaged, Married"
+      }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*
+    
+  __  __                   _ _       _     _         _      _ _ _           
+ |  \/  | ___   ___  _ __ | (_) __ _| |__ | |_      | | ___| | (_) ___  ___ 
+ | |\/| |/ _ \ / _ \| '_ \| | |/ _` | '_ \| __|  _  | |/ _ \ | | |/ _ \/ __|
+ | |  | | (_) | (_) | | | | | | (_| | | | | |_  | |_| |  __/ | | |  __/\__ \
+ |_|  |_|\___/ \___/|_| |_|_|_|\__, |_| |_|\__|  \___/ \___|_|_|_|\___||___/
+                               |___/                                        
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "LogName": "Jellies - Sigurd - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:Jellies.Sigurd.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Jellies - Sigurd - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:Jellies.Sigurd.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "4, 8"
+      }
+    },
+    {
+      "LogName": "Jellies - Sigurd - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:Jellies.Sigurd.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "9, 10"
+      }
+    },
+    {
+      "LogName": "Jellies - Sigurd - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:Jellies.Sigurd.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Jellies - Sondra - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:Jellies.Sondra.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA}}}}"
+      }
+    },
+    {
+      "LogName": "Jellies - Sondra - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:Jellies.Sondra.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "4, 8"
+      }
+    },
+    {
+      "LogName": "Jellies - Sondra - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:Jellies.Sondra.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "9, 10"
+      }
+    },
+    {
+      "LogName": "Jellies - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Jellies.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Jellies - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Jellies.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Jellies - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Jellies.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Jellies - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Jellies.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Jellies - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Jellies.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Jellies - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Jellies.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Jellies - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Jellies.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Jellies - Teren - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:Jellies.Teren.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true
+      }
+    },
+    {
+      "LogName": "Jellies - Teren - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:Jellies.Teren.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "4, 8"
+      }
+    },
+    {
+      "LogName": "Jellies - Teren - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:Jellies.Teren.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "9, 10"
+      }
+    },
+    {
+      "LogName": "Jellies - Teren - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:Jellies.Teren.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Relationship:MadDog.HashtagBearFam.Teren": "Dating, Engaged, Married"
+      }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*
+    
+  ____      _ _                   _____     _      
+ |  _ \ ___| (_) ___ __ _ _ __   |  ___|_ _(_)_ __ 
+ | |_) / _ \ | |/ __/ _` | '_ \  | |_ / _` | | '__|
+ |  __/  __/ | | (_| (_| | | | | |  _| (_| | | |   
+ |_|   \___|_|_|\___\__,_|_| |_| |_|  \__,_|_|_|   
+                                                   
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "LogName": "PelicanFair - Sigurd - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:PelicanFair.Sigurd.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Sigurd - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:PelicanFair.Sigurd.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "4, 8"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Sigurd - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:PelicanFair.Sigurd.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "9, 10"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Sigurd - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:PelicanFair.Sigurd.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{SigurdSpousePetName}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Sondra - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:PelicanFair.Sondra.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Sondra - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:PelicanFair.Sondra.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "4, 8"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Sondra - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:PelicanFair.Sondra.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "9, 10"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:PelicanFair.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:PelicanFair.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:PelicanFair.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}{{PlayerJobTitle}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:PelicanFair.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:PelicanFair.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:PelicanFair.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:PelicanFair.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}{{CrossModCompatTokens}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "PelicanFair - Teren - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:PelicanFair.Teren.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true
+      }
+    },
+    {
+      "LogName": "PelicanFair - Teren - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:PelicanFair.Teren.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "4, 8"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Teren - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:PelicanFair.Teren.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "9, 10"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Teren - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:PelicanFair.Teren.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{TerenSpousePetName}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Relationship:MadDog.HashtagBearFam.Teren": "Dating, Engaged, Married"
+      }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*
+   
+  ____        _      _ _   _       _____           
+ / ___| _ __ (_)_ __(_) |_( )___  | ____|_   _____ 
+ \___ \| '_ \| | '__| | __|// __| |  _| \ \ / / _ \
+  ___) | |_) | | |  | | |_  \__ \ | |___ \ V /  __/
+ |____/| .__/|_|_|  |_|\__| |___/ |_____| \_/ \___|
+       |_|                                         
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "LogName": "SpiritsEve - Sigurd",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:SpiritsEve.Sigurd.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}{{CrossModCompatTokens}}}}",
+        "MadDog.HashtagBearFam.Sigurd_y2": "{{i18n:SpiritsEve.Sigurd.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "SpiritsEve - Sondra",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:SpiritsEve.Sondra.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Sondra_y2": "{{i18n:SpiritsEve.Sondra.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "SpiritsEve - Gunnar",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:SpiritsEve.Gunnar.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gunnar_y2": "{{i18n:SpiritsEve.Gunnar.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "SpiritsEve - Gudrun",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:SpiritsEve.Gudrun.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gudrun_y2": "{{i18n:SpiritsEve.Gudrun.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "SpiritsEve - Teren",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:SpiritsEve.Teren.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Teren_y2": "{{i18n:SpiritsEve.Teren.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true
+      }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*
+    
+  ___           _____         _   _            _ 
+ |_ _|___ ___  |  ___|__  ___| |_(_)_   ____ _| |
+  | |/ __/ _ \ | |_ / _ \/ __| __| \ \ / / _` | |
+  | | (_|  __/ |  _|  __/\__ \ |_| |\ V / (_| | |
+ |___\___\___| |_|  \___||___/\__|_| \_/ \__,_|_|
+                                                 
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "LogName": "Ice Festival - Sigurd - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:IceFish.Sigurd.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}}}"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Sigurd - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:IceFish.Sigurd.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "4, 8"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Sigurd - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:IceFish.Sigurd.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "9, 10"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Sigurd - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:IceFish.Sigurd.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:IceFish.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}}}"
+      },
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Ice Festival - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:IceFish.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Ice Festival - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:IceFish.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Ice Festival - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:IceFish.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Ice Festival - Teren - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:IceFish.Teren.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true
+      }
+    },
+    {
+      "LogName": "Ice Festival - Teren - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:IceFish.Teren.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "4, 8"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Teren - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:IceFish.Teren.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "9, 10"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Teren - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:IceFish.Teren.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Relationship:MadDog.HashtagBearFam.Teren": "Dating, Engaged, Married"
+      }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*
+    
+ __        ___       _              ____  _             
+ \ \      / (_)_ __ | |_ ___ _ __  / ___|| |_ __ _ _ __ 
+  \ \ /\ / /| | '_ \| __/ _ \ '__| \___ \| __/ _` | '__|
+   \ V  V / | | | | | ||  __/ |     ___) | || (_| | |   
+    \_/\_/  |_|_| |_|\__\___|_|    |____/ \__\__,_|_|   
+                                                        
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "LogName": "Winter Star - Sigurd - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:WinterFest.Sigurd.Relationship.LowHearts.NoGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false
+      }
+    },
+    {
+      "LogName": "Winter Star - Sigurd - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:WinterFest.Sigurd.Relationship.MidHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "4, 8"
+      }
+    },
+    {
+      "LogName": "Winter Star - Sigurd - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:WinterFest.Sigurd.Relationship.HighHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "9, 10"
+      }
+    },
+    {
+      "LogName": "Winter Star - Sigurd - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:WinterFest.Sigurd.Relationship.Together.NoGifts.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married"
+      }
+    },
+
+    {
+      "LogName": "Winter Star - Sigurd - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:WinterFest.Sigurd.Relationship.LowHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Sigurd - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:WinterFest.Sigurd.Relationship.MidHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "4, 8"
+      }
+    },
+    {
+      "LogName": "Winter Star - Sigurd - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:WinterFest.Sigurd.Relationship.HighHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Sigurd": "9, 10"
+      }
+    },
+    {
+      "LogName": "Winter Star - Sigurd - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:WinterFest.Sigurd.Relationship.Together.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married"
+      }
+    },
+
+    {
+      "LogName": "Winter Star - Sondra - 0 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:WinterFest.Sondra.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      }
+    },
+    {
+      "LogName": "Winter Star - Sondra - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:WinterFest.Sondra.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "4, 8"
+      }
+    },
+    {
+      "LogName": "Winter Star - Sondra - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:WinterFest.Sondra.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Sondra": "9, 10"
+      }
+    },
+
+    {
+      "LogName": "Winter Star - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.LowHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.MidHearts.NoGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.HighHearts.NoGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.Together.NoGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+
+    {
+      "LogName": "Winter Star - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.LowHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.MidHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.HighHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.Together.YesGifts.{{Random:1++2|inputSeparator=++}}{{GunnarSpousePetName}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.LowHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.MidHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.HighHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.LowHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.MidHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.HighHearts.YesGifts.{{Random:1++2|inputSeparator=++}}{{PlayerJobTitle}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Teren - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:WinterFest.Teren.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Nom0ri.RomRas}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Teren - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:WinterFest.Teren.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "4, 8"
+      }
+    },
+    {
+      "LogName": "Winter Star - Teren - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:WinterFest.Teren.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Hearts:MadDog.HashtagBearFam.Teren": "9, 10"
+      }
+    },
+    {
+      "LogName": "Winter Star - Teren - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:WinterFest.Teren.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true,
+        "Relationship:MadDog.HashtagBearFam.Teren": "Dating, Engaged, Married"
+      }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*
+    
+  ____                          _____         _   _            _     
+ | __ )  ___  _ __  _   _ ___  |  ___|__  ___| |_(_)_   ____ _| |___ 
+ |  _ \ / _ \| '_ \| | | / __| | |_ / _ \/ __| __| \ \ / / _` | / __|
+ | |_) | (_) | | | | |_| \__ \ |  _|  __/\__ \ |_| |\ V / (_| | \__ \
+ |____/ \___/|_| |_|\__,_|___/ |_|  \___||___/\__|_| \_/ \__,_|_|___/
+                                                                                                                  
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*   
+    
+  _                     _____         _   _            _ 
+ | |    _____   _____  |  ___|__  ___| |_(_)_   ____ _| |
+ | |   / _ \ \ / / _ \ | |_ / _ \/ __| __| \ \ / / _` | |
+ | |__| (_) \ V /  __/ |  _|  __/\__ \ |_| |\ V / (_| | |
+ |_____\___/ \_/ \___| |_|  \___||___/\__|_| \_/ \__,_|_|
+                                                                                                                                                                
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //love festival
+    {
+      "LogName": "Love Festival",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Winter6",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:LoveFestival.Sondra.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:LoveFestival.Gudrun.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:LoveFestival.Sigurd.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:LoveFestival.Gunnar.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Teren": "{{i18n:LoveFestival.Teren.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    //romanced NPCs
+    {
+      "LogName": "Love Festival - Sig Romance",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Winter6",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:LoveFestival.Sigurd.{{SigRomanceDialogueType}}.{{Random:1++2|inputSeparator=++}}{{SigurdSpousePetName}}}}"
+      },
+      "When": {
+        //"SigRomanceAll": false,
+        //"HasFlag": "SigDateable"
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Love Festival - Gun Romance",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Winter6",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:LoveFestival.Gunnar.{{GunnarRomanceDialogueType}}.{{Random:1++2|inputSeparator=++}}{{GunnarSpousePetName}}}}"
+      },
+      "When": {
+        //"GunnarRomanceAll": false,
+        //"HasFlag": "GunnarDateable"
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "LogName": "Love Festival - Teren Romance",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Winter6",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:LoveFestival.Teren.{{TerenRomanceDialogueType}}.{{Random:1++2|inputSeparator=++}}{{TerenSpousePetName}}}}"
+      },
+      "When": {
+        //"TerenRomanceAll": false,
+        //"HasFlag": "TerenDateable"
+        "Relationship:MadDog.HashtagBearFam.Teren": "Dating, Engaged, Married"
+      }
+    },
+    //RHs enabled
+    {
+      "LogName": "Love Festival - RH Enabled with Dylan",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Winter6",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:LoveFestival.Sigurd.PartnerDylan.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP",
+        "EnableRivalHeartsSigDylan": true
+      }
+    },
+    {
+      "LogName": "Love Festival - RH Enabled with Eli",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Winter6",
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "{{i18n:LoveFestival.Teren.PartnerEli.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP",
+        "EnableRivalHeartsTerenEli": true
+      }
+    },
+    {
+      "LogName": "Love Festival - RH Enabled",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Winter6",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:LoveFestival.Sigurd.PartnerTeren.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Teren": "{{i18n:LoveFestival.Teren.PartnerSigurd.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "EnableRivalHeartsTerenSig": true
+      }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*   
+    
+  _____         _     _               _____         _   _            _ 
+ |  ___|_ _ ___| |__ (_) ___  _ __   |  ___|__  ___| |_(_)_   ____ _| |
+ | |_ / _` / __| '_ \| |/ _ \| '_ \  | |_ / _ \/ __| __| \ \ / / _` | |
+ |  _| (_| \__ \ | | | | (_) | | | | |  _|  __/\__ \ |_| |\ V / (_| | |
+ |_|  \__,_|___/_| |_|_|\___/|_| |_| |_|  \___||___/\__|_| \_/ \__,_|_|
+                                                                                                                                                                 
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //fashion festival
+    {
+      "LogName": "Fashion Festival - Sig brings Gudrun",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Spring19",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:FashionFestival.Gudrun.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:FashionFestival.Sigurd.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasMod": "UNA.FF.CP",
+        "HasFlag |contains=BearFamExtraMembers": true
+      }
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*   
+    
+ 
+  _____ _                             _          _____         _   _            _ 
+ |  ___(_)_ __ _____      _____  _ __| | _____  |  ___|__  ___| |_(_)_   ____ _| |
+ | |_  | | '__/ _ \ \ /\ / / _ \| '__| |/ / __| | |_ / _ \/ __| __| \ \ / / _` | |
+ |  _| | | | |  __/\ V  V / (_) | |  |   <\__ \ |  _|  __/\__ \ |_| |\ V / (_| | |
+ |_|   |_|_|  \___| \_/\_/ \___/|_|  |_|\_\___/ |_|  \___||___/\__|_| \_/ \__,_|_|
+                                                                                                                                                                                    
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*   
+    
+  ____              __ _               _____         _   _            _ 
+ / ___| _   _ _ __ / _(_)_ __   __ _  |  ___|__  ___| |_(_)_   ____ _| |
+ \___ \| | | | '__| |_| | '_ \ / _` | | |_ / _ \/ __| __| \ \ / / _` | |
+  ___) | |_| | |  |  _| | | | | (_| | |  _|  __/\__ \ |_| |\ V / (_| | |
+ |____/ \__,_|_|  |_| |_|_| |_|\__, | |_|  \___||___/\__|_| \_/ \__,_|_|
+                               |___/                                    
+                                                                                                                                                                   
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*   
+   
+  ____  _     _                 _     _        _____         _       
+ |  _ \(_) __| | __ _  ___  ___(_) __| | ___  |  ___|__  ___| |_ ___ 
+ | |_) | |/ _` |/ _` |/ _ \/ __| |/ _` |/ _ \ | |_ / _ \/ __| __/ __|
+ |  _ <| | (_| | (_| |  __/\__ \ | (_| |  __/ |  _|  __/\__ \ |_\__ \
+ |_| \_\_|\__,_|\__, |\___||___/_|\__,_|\___| |_|  \___||___/\__|___/
+                |___/                                                                                                                                                                                                             
+
+    */
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //rsv fests - currently not used
+    /*{
+			"LogName": "RSV Ember of Resolutions",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"Entries": {
+				"MadDog.HashtagBearFam.Sigurd": "{{i18n:RSVEmber.Sigurd.{{Random:1++2|inputSeparator=++}}}}",
+				"MadDog.HashtagBearFam.Sondra": "{{i18n:RSVEmber.Sondra.{{Random:1++2|inputSeparator=++}}}}",
+				"MadDog.HashtagBearFam.Gunnar": "{{i18n:RSVEmber.Gunnar.{{Random:1++2|inputSeparator=++}}}}",
+				"MadDog.HashtagBearFam.Gudrun": "{{i18n:RSVEmber.Gudrun.{{Random:1++2|inputSeparator=++}}}}",
+				"MadDog.HashtagBearFam.Teren": "{{i18n:RSVEmber.Teren.{{Random:1++2|inputSeparator=++}}}}"
+			},
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			}
+		},
+		{
+			"LogName": "RSV Gathering Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"Entries": {
+				"MadDog.HashtagBearFam.Sigurd": "{{i18n:RSVGatheringFest.Sigurd.{{Random:1++2|inputSeparator=++}}}}",
+				"MadDog.HashtagBearFam.Sondra": "{{i18n:RSVGatheringFest.Sondra.{{Random:1++2|inputSeparator=++}}}}",
+				"MadDog.HashtagBearFam.Gunnar": "{{i18n:RSVGatheringFest.Gunnar.{{Random:1++2|inputSeparator=++}}}}",
+				"MadDog.HashtagBearFam.Gudrun": "{{i18n:RSVGatheringFest.Gudrun.{{Random:1++2|inputSeparator=++}}}}",
+				"MadDog.HashtagBearFam.Teren": "{{i18n:RSVGatheringFest.Teren.{{Random:1++2|inputSeparator=++}}}}"
+			},
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			}
+		}*/
+  ]
+}

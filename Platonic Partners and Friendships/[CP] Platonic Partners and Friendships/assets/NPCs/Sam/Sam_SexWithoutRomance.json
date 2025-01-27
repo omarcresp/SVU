@@ -1,0 +1,1399 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "breakUp": "Wait... what?!$8#$b#I thought we were doing okay... I guess I was way off... alright, then.$9#$b#Yeah, sure... we can just be casual friends.$9",
+                "divorced": "I'm sorry, @. I don't think I can go back to being 'regular' friends.$s",
+                "Wed6": "I've been friends with Sebastian for a while. He's a pretty cool guy.#$e#If you two and Abby weren't around I wouldn't really have any friends in town.",
+                "Wed10": "Hey, you look like you're full of energy today!",
+                "Fri10": "The older I get the more attached I feel to the valley.#$b#Although that could just be because my best friend is here.$10#$e#So, how are you doing today?$h",
+                "fall_Fri10": "I think I've grown to like the country more than the city.$h#$b#Although that could just be because my best friend is here.$10#$e#So, how are you doing today?$h",
+                "SpouseGiftJealous": "I heard you gave {0} a gift today.#$e#That was seriously cool of you!$h",
+                "SpouseStardrop": "A fan tossed that fruit onstage at one of my old band's gigs. I could tell it was something special, so I've been saving it ever since.#$b#I gave it to you because... I wanted to help out, I guess.$h#$b#Even if it's just by giving you the energy to do even more of the work around here... heh.$10#$b#Seriously, though... I know I don't always step up when it comes to that stuff. I still have a lot of bad habits to break.$s#$b#But I'll tell you one thing you can count on from me. I'll be by your side for the rest of our lives.#$b#I think for my dad, being responsible for our family meant fighting for us... even if he had leave us to do it.$s#$b#I'm still figuring out what responsibility means to me, but I think it starts with just... being here. And that's exactly what I'm gonna do.$u#$b#I love you, @. I love the little family we've made together. I'm not going anywhere.$l",
+		"dating_Sam": "So, what kind of friendship stuff do you wanna do? Want me to teach you some skateboard tricks?",
+		"dating_Sam_memory_oneday": "I've been thinking that it would be fun to hang with the whole crew sometime. You know, me and Abby and Sebastian... and you!$10",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "breakUp": "Wait... what?!$8#$b#I thought we were doing okay... I guess I was way off... alright, then.$9#$b#Yeah, sure... we can just be casual friends.$9",
+                "divorced": "I'm sorry, @. I don't think I can go back to being 'regular' friends.$s",
+                "Wed6": "I've been friends with Sebastian for a while. He's a pretty cool guy.#$e#If you two and Abby weren't around I wouldn't really have any friends in town.",
+                "Wed10": "Hey, you look like you're full of energy today!",
+                "Fri10": "The older I get the more attached I feel to the valley.#$b#Although that could just be because my best friend is here.$10#$e#So, how are you doing today?$h",
+                "fall_Fri10": "I think I've grown to like the country more than the city.$h#$b#Although that could just be because my best friend is here.$10#$e#So, how are you doing today?$h",
+                "NPC.cs.3962": "You want us to hang out more? Sweet!$h#$e#Hey, do you play any instruments? ...Hmm, a mini-harp might not work with the band's sound.",
+                "NPC.cs.3963": "Wow! You got me all these fancy flowers just to say you want to be better friends?#$e#I'm totally on board. But next time, how about a 'friendship pizza'?$h",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#That was seriously cool of you!$h",
+                "SpouseStardrop": "A fan tossed that fruit onstage at one of my old band's gigs. I could tell it was something special, so I've been saving it ever since.#$b#I gave it to you because... I wanted to help out, I guess.$h#$b#Even if it's just by giving you the energy to do even more of the work around here... heh.$10#$b#Seriously, though... I know I don't always step up when it comes to that stuff. I still have a lot of bad habits to break.$s#$b#But I'll tell you one thing you can count on from me. I'll be by your side for the rest of our lives.#$b#I think for my dad, being responsible for our family meant fighting for us... even if he had leave us to do it.$s#$b#I'm still figuring out what responsibility means to me, but I think it starts with just... being here. And that's exactly what I'm gonna do.$u#$b#I love you, @. I love the little family we've made together. I'm not going anywhere.",
+		"dating_Sam": "So, what kind of friendship stuff do you wanna do? Want me to teach you some skateboard tricks?",
+		"dating_Sam_memory_oneday": "I've been thinking that it would be fun to hang with the whole crew sometime. You know, me and Abby and Sebastian... and you!$10",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+	    "Logname": "Sam bouquet reactions",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: You want us to hang out more? Sweet!$h#$e#Hey, do you play any instruments? ...Hmm, a mini-harp might not work with the band's sound. @@ Wow! You got me all these fancy flowers just to say you want to be better friends?#$e#I'm totally on board. But next time, how about a 'friendship pizza'?$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Sam bouquet reactions, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: You want us to hang out more? Sweet!$h#$e#Hey, do you play any instruments? ...Hmm, a mini-harp might not work with the band's sound. @@ Wow! You wrote all this nice stuff just to say you want to be better friends?#$e#I'm totally on board. But next time, how about a 'friendship pizza'?$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "fall_12": "$1 JodiBirthday#Hey, my mom's birthday surprise went really well. She about cried when she realized I cooked the eggs myself! Thanks again for your help, @.$h#$e#Yesterday was my mom's birthday. I try to make those special for her every year now."
+            },
+            "When":
+            {
+                "HasSeenEvent": "233104"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+            "Entries":
+            {
+                "fall_12": "$1 JodiBirthday#Sam did the sweetest thing for my birthday yesterday... He brought me breakfast in bed! Don't tell him, but until then I wasn't sure he knew how to work the stove.$h#$e#These days, I look forward to my birthdays more than I used to. Sam really goes the extra mile."
+            },
+            "When":
+            {
+                "HasSeenEvent": "233104"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries":
+            {
+                "Sam": "$1 JodiBirthday#Hey, my mom's birthday surprise went really well. She about cried when she realized I cooked the eggs myself! Thanks again for your help, @.$h#$e#Yesterday was my mom's birthday. I try to make those special for her every year now.",
+                "Jodi": "$1 JodiBirthday#Sam did the sweetest thing for my birthday yesterday... He brought me breakfast in bed! Don't tell him, but until then I wasn't sure he knew how to work the stove.$h#$e#These days, I look forward to my birthdays more than I used to. Sam really goes the extra mile."
+            },
+            "When":
+            {
+                "Season": "Fall",
+                "Day": "12",
+                "HasSeenEvent": "233104"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries":
+            {
+                "fall_12": "$1 JodiBirthday#Yesterday was Mom's birthday. Sam made a big mess in the kitchen, but he cleaned it up before she saw.#$e#Sam let me help with Mom's birthday breakfast yesterday! I got eggs all over me.$h"
+            },
+            "When":
+            {
+                "HasSeenEvent": "233104"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kent",
+            "Entries":
+            {
+                "fall_12": "My wife's birthday was yesterday. Seeing Sam go out of his way for her made me feel slightly better about how many of those I've missed."
+            },
+            "When":
+            {
+                "HasSeenEvent": "233104"
+            }
+        },
+        {
+            "LogName": "Sam pendant and bracelet proposal acceptance",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Sam_Engaged": "!!! Seriously? You and me, {{RelationshipLabel}}?$8#$b#No way! I mean, yes way! This is so cool!$10#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Sam_EngagedRoommate": "!!! Seriously? You and me, {{RelationshipLabel}}?$8#$b#No way! I mean, yes way! This is so cool!$10#$b#I need some time to pack up my things. I'll be there in 3 days, okay?",
+            },
+        },
+        {
+            "LogName": "Sam engagement dialogue, love portraits",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Sam0": "I'm really happy we're going to be {{RelationshipLabel}}, @.$l#$e#I'm excited.$h",
+                "Sam1": "I never dreamed this would happen. I'm so lucky.$l#$e#I can't wait for the ceremony. Which reminds me, I still need to plan out all the music!$8",
+                "SamRoommate0": "I'm really happy we're going to be {{RelationshipLabel}}, @.$l#$e#I'm excited.$h",
+                "SamRoommate1": "I never dreamed this would happen. I'm so lucky.$l#$e#I can't wait to move in. Which reminds me, I still need to haul over all my music equipment!$8",
+            },
+            "When":
+            {
+                "UseLovePortraits": true
+            }
+        },
+        {
+           "LogName": "Sam engagement dialogue, no love portraits",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Sam0": "I'm really happy we're going to be {{RelationshipLabel}}, @.#$e#I'm excited.$h",
+                "Sam1": "I never dreamed this would happen. I'm so lucky.#$e#I can't wait for the ceremony. Which reminds me, I still need to plan out all the music!$8",
+                "SamRoommate0": "I'm really happy we're going to be {{RelationshipLabel}}, @.#$e#I'm excited.$h",
+                "SamRoommate1": "I never dreamed this would happen. I'm so lucky.#$e#I can't wait to move in. Which reminds me, I still need to haul over all my music equipment!$8",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Game1.cs.2782": "What an awesome ceremony. Did you see how stoked Vincent was to be pendant-bearer?$h#$e#Well, time to kick back and relax!",
+            },
+            "When":
+            {
+                "Spouse": "Sam"
+            },
+        },
+        {
+            "LogName": "Sam terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Bud",
+                "NPC.cs.4518": "Bud",
+                "NPC.cs.4519": "Bud",
+                "NPC.cs.4522": "Bud",
+                "NPC.cs.4523": "Bud",
+                "Event.cs.1736": "$q -1 null#Uh oh...#$r -1 0 danceAsk#(Ask Sam to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Sam": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Sam terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Bud",
+                "NPC.cs.4518": "Bud",
+                "NPC.cs.4519": "Bud",
+                "NPC.cs.4522": "Bud",
+                "NPC.cs.4523": "Bud",
+                "Event.cs.1736": "$q -1 null#Uh oh...#$r -1 0 danceAsk#(Ask Sam to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Sam": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Sam roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Uh oh...#$r -1 0 danceAsk#(Ask Sam to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Sam": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Huh? I don't get it. You already gave me one of those.$7 @@ Do you think these pendants would make a cool sound if I tapped them together? ...Yeah, that's probably a bad idea.$10 |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Sam": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Aww, c'mon. I know I lose things... like, a lot... but I never take my pendant off! You didn't need to buy a spare.$s @@ I don't think I should wear two pendants. They'd clink together when I do kickflips. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Sam": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: ...Is this a comment on my parenting style? I know I used to baby Sam a little, but do you really think I'd try to follow him to your house?$3 @@ Um... I already have a home. I might even get to sleep in the biggest bedroom once I clear Sam's things out of it...$4 |inputSeparator=@@}}",
+             },
+            "When":
+            {
+                "Relationship:Sam": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: ...Is this a comment on my parenting style? I know I used to baby Sam a little, but do you really think I'd try to follow him to your house?$3 @@ Um... I already have a home. I might even get to sleep in the biggest bedroom, if I ever get around to clearing Sam's things out of it...$4 |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Sam": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kent",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: ...Are you implying I should spend more time with my son? Sam's a grown man. If he wants to get a beer with me, he can tell me himself.$2 @@ No, I am not going to leave my wife and younger son to move in with you and Sam. Why would you even ask that? |inputSeparator=@@}}",
+                "Thu_inlaw_Sam": "Hey, @. How are you and Sam doing?",
+                "Thu_roommate_Sam": "Hey, @. How are you and Sam doing?",
+            },
+            "When":
+            {
+                "Relationship:Sam": "Engaged, Married"
+            }
+        },
+{
+	"Logname":"Abigail low heart dialogue about Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Abigail",
+	"Entries": {
+		"dating_Sam": "Sam says you two are good friends now. He seemed really happy about it.$h#$b#He's a great guy! We've been friends for a long time. You'd better be nice to him, or you'll see my bad side!",
+  "married_Sam": "Haha... I can't believe Sam finally moved out of his parents' house. Who would've thought? Not that I can talk.$h#$e#Joking aside, you picked a great {{PlatonicSocialMenuLabel}}.",
+           },
+            "When":
+            {
+		"Hearts:Abigail": "0, 1, 2, 3, 4, 5",
+            }
+       },
+{
+	"Logname":"Abigail low heart dialogue about Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Abigail",
+	"Entries": {
+		"dating_Sam": "Sam says you two are good friends now. He's a great guy, right?$h#$b#He and I have been friends for a long time. We should all hang out together sometime!",
+  "married_Sam": "Haha... I can't believe Sam finally moved out of his parents' house. Who would've thought? Not that I can talk.$h#$e#Joking aside, I think you two will be great {{RelationshipLabel}}.",
+           },
+            "When":
+            {
+		"Hearts:Abigail": "6, 7, 8, 9, 10",
+            }
+       },
+{
+	"Logname":"Jodi dialogue about Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jodi",
+	"Entries": {
+		"dating_Sam_memory_oneday": "I heard you and Sam are spending a lot of time together. Hopefully he won't cause you any trouble!$h",
+		"married_Sam": "I'm so happy for you and Sam. I think you two are perfect {{RelationshipLabel}}!#$e#I never thought I'd say it... but I'll miss those awful noises from Sam's guitar...$s",
+           },
+       },
+{
+	"Logname":"Kent dialogue about Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Kent",
+	"Entries": {
+		"married_Sam": "It makes a father proud to see his boy building a life of his own. You have my heartfelt gratitude.$h",
+           },
+       },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Good_1": "Do you ever think about that night you came to see the band perform? That's a really good memory for me.$l",
+                "Good_2": "You know, I think I had a feeling we'd have a life together from the very beginning. There's just something special between us.$l",
+                "Good_3": "You look great today. Did you do something with your hair?",
+                "Good_4": "{{TermofEndearment}}, I was just gonna write you a song on the guitar. But now you're here and I feel relaxed.#$e#I mainly feel like playing guitar when I'm lonely.",
+                "Good_5": "{{TermofEndearment}}, talk to me! I'm always interested to hear about your day.",
+                "spring_23": "Oh... tomorrow's the flower dance, isn't it? You sure you don't want to skip it?#$e#Well, it's worth going if it makes you happy.",
+                "TwoKids_0": "I woke up early, fed the kids and changed their diapers! We're all set. You can just focus on raking in that sweet money.$h#$e#I'm just kidding... I didn't move in with you for the money.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Good_1": "Do you ever think about that night you came to see the band perform? That's a really good memory for me.$u",
+                "Good_2": "You know, I think I had a feeling we'd have a life together from the very beginning. There's just something special between us.",
+                "Good_3": "You look great today. Did you do something with your hair?",
+                "Good_4": "{{TermofEndearment}}, I was just gonna write you a song on the guitar. But now you're here and I feel relaxed.#$e#I mainly feel like playing guitar when I'm lonely.",
+                "Good_5": "{{TermofEndearment}}, talk to me! I'm always interested to hear about your day.",
+                "spring_23": "Oh... tomorrow's the flower dance, isn't it? You sure you don't want to skip it?#$e#Well, it's worth going if it makes you happy.",
+                "TwoKids_0": "I woke up early, fed the kids and changed their diapers! We're all set. You can just focus on raking in that sweet money.$h#$e#I'm just kidding... I didn't move in with you for the money.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Rainy_Day_1": "Do you think Sebastian and Abby will ever hook up?#$e#Sebastian is definitely into her, but I think she'd have to make the first move.",
+                "Indoor_Day_2": "Hey. I know I joke around a lot, but I want you to know that you'll always be my best friend. I seriously love you, @.$l",
+                "Indoor_Night_4": "Ready to hit the hay?",
+                "Outdoor_4": "Ha, you're all muddy. You're really selling the classic farmer look!$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Rainy_Day_1": "Do you think Sebastian and Abby will ever hook up?#$e#Sebastian is definitely into her, but I think she'd have to make the first move.",
+                "Indoor_Day_2": "Hey. I know I joke around a lot, but I want you to know that you'll always be my best friend. I seriously love you, @.",
+                "Indoor_Night_4": "Ready to hit the hay?",
+                "Outdoor_4": "Ha, you're all muddy. You're really selling the classic farmer look!$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "OneKid_3": "I think we should consider a second kid. Vincent keeps asking when he gets to be a 'double uncle.'$h",
+            },
+            "When":
+            {
+		"AlwaysAdopt": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Indoor_Day_1": "Hey, look what I made for you! [194 211]$h#$e#Sorry... I only know how to cook instant pancakes and eggs.$10#$e#But at least I learned my fried egg technique from a master!",
+            },
+            "When":
+            {
+                "HasSeenEvent": "233104",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Outdoor_Sam": "Hey, look at those puffy clouds in the sky, {{Lowercase:{{TermofEndearment}}}}!$h#$e#I'm going to watch those for a while, if you don't mind.",
+                "winter_Sam": "I still care about music, but our household comes first. I don't want to put everything on you like I used to do with my mom.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Outdoor_Sam": "Hey, look at those puffy clouds in the sky, {{TermofEndearment}}!$h#$e#I'm going to watch those for a while, if you don't mind.",
+                "winter_Sam": "I still care about music, but our household comes first. I don't want to put everything on you like I used to do with my mom.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries":
+            {
+		"marriage_Fri.001": "Sorry, {{Lowercase:{{TermofEndearment}}}}. I'm trying to concentrate here... $7",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries":
+            {
+		"marriage_Fri.001": "Sorry, {{TermofEndearment}}. I'm trying to concentrate here... $7",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Sam": "I feel like I've changed a lot from when we first met... you know?#$b#...you might call it 'maturity'... hehe.$10#$b#But I'm at a place, now, where I'm actually really excited about our future together...$l#$b#Even if that means just doing normal stuff, like... uh... buying groceries and taking the trash out... hah...$10",
+            },
+            "When":
+            {
+                "UseLovePortraits": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Sam": "I feel like I've changed a lot from when we first met... you know?#$b#...you might call it 'maturity'... hehe.$10#$b#But I'm at a place, now, where I'm actually really excited about our future together...#$b#Even if that means just doing normal stuff, like... uh... buying groceries and taking the trash out... hah...$10",
+            },
+            "When":
+            {
+                "UseLovePortraits": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Event.cs.1625": "Aw, I gotta put on that dorky suit again?$8#$b#...Well, if you're double daring me, I have no choice.$n",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "samMessage": "{{Lowercase:@}},^i need your help with something. meet me at my house sometime between 10 and 5? ^   -Sam[#]Sam's Note",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+                "233104/f Sam 2500/t 2000 2400/w sunny/n samMessage": null
+            },
+        },
+        //Credit and thanks to tenthousandcats for the idea of this event!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/SamHouse",
+            "Entries":
+            {
+                "233104/f Sam 2500/t 1000 1700/n samMessage": "playful/-1000 -1000/farmer 20 14 3 Sam 19 14 1 Jodi 6 13 0/skippable/viewport 18 14 true/viewport move 5 0 2000/pause 1000/speak Sam \"Hey, @. Thanks for coming to talk with me in private.\"/faceDirection Sam 3/faceDirection sam 2/speak Sam \"Mom should be heading out soon...\"/pause 200/faceDirection Sam 1/pause 100/speak Sam \"So the reason I asked you here is... I've been thinking about how much my mom does for me, and how much stress she's under.$7#$b#I don't think I help out as much as I should... Family should be there for each other, right?$s#$b#So I had an idea... I'm going to make her next birthday really special!#$b#I'm gonna clean the whole house, get her an extra-nice gift, and surprise her with breakfast in bed.$h#$b#I want it to be perfect, so I was hoping you could help me with a couple of things.#$b#First off, you're like, an expert on gift-giving... What do you think I should get for her?\"/quickQuestion #Everyone loves pearls.#Jodi loves chocolate cake.#(Lie) Jodi loves spice berries.(break)speak Sam \"Pearls?! Those are seriously hard to find!$8#$b#But that *would* be a really special gift... I'll ask Willy for tips on finding one.\"(break)speak Sam \"That's a great idea! Especially for a birthday gift!#$b#I'm pretty sure I can make a cake from a box mix. How hard can it be?$10\"(break)speak Sam \"Come on, @, I'm looking for serious advice. Everyone knows my mom hates spice berries.$s#$b#...Oh, I think I get your point. It'll be more meaningful if I come up with something myself, right?\"/move Jodi 0 2 1 true/emote Sam 32/pause 100/speak Sam \"Thanks, @.#$b#So, the uh... The second thing I need help with is a little embarrassing...$10\"/move Jodi 6 0 0/playSound woodyStep/faceDirection Sam 3/playSound woodyStep/showFrame Sam 33/jump Sam/pause 800/speak Jodi \"Sam? Can I come in?\"/move Sam -1 0 3/faceDirection Sam 1/speak Sam \"Oh no! Don't say anything about the surprise!$8\"/faceDirection Sam 3/speak Sam \"Uh, sure, Mom! Come on in!\"/doAction 12 14/faceDirection Sam 3 true/move Jodi 0 -2 1 false/move Jodi 2 0 1/speak Jodi \"Hi, @.#$b#Sam, honey, did you want me to fix some snacks for you two?\"/speak Sam \"Thanks, but we're fine! I don't want to throw off your schedule.$h#$b#You were, um... planning to go out and run errands for the next one to three hours, right?$10\"/emote Jodi 20/pause 300/speak Jodi \"*giggle* Okay, I get the picture. I won't embarrass you in front of your friend.$h#$b#I'll see you tonight. Love you!\"/speak Sam \"Heh... Love you too, Mom.$10\"/move Jodi -2 0 2/move Jodi 0 2 0/move Jodi -9 0 2 true/emote Sam 28/speak Sam \"Whew... That was close. I don't think she caught on.#$b#It was really thoughtful of her to offer us snacks, right? I'm trying not to take that stuff for granted.\"/emote farmer 20/move Sam 1 0 1/speak Sam \"So, the other part... The breakfast in bed...#$b#@... could you... teach me how to fry an egg?$10\"/emote farmer 8/speak Sam \"I never learned! Mom does all the cooking! I can't just serve her instant pancakes for her birthday... Please, @?$s\"/pause 400/jump farmer/pause 800/speak Sam \"I knew you'd come through for me! Let's head to the kitchen as soon as Mom leaves.\"/playMusic none/pause 1000/speak Sam \"Hey, @? As long as I'm showing appreciation...$s\"/playMusic musicboxsong/pause 500/speak Sam \"It means a lot to me that you're helping me out. The truth is, I really look up to you.$l#$b#And not just because you can cook. Like, do you get how amazing your whole deal is? One day you just decided 'I'm a farmer now,' and you're already totally crushing it.$h#$b#What I mean is, I'm really glad we're friends, and I... I hope you feel the same way.$10\"/pause 500/animate farmer true true 150 6 7 6 8/positionOffset farmer -2 0/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/pause 800/animate farmer true true 100 101/pause 700/positionOffset Sam 6 0/showFrame Sam 38/pause 3000/playSound doorClose/pause 300/showFrame Sam 4/showFrame farmer 6/positionOffset farmer 2 0/positionOffset Sam -3 0/pause 30/positionOffset farmer 2 0/positionOffset Sam -3 0/pause 30/positionOffset farmer 2 0/pause 30/positionOffset farmer 2 0/pause 30/positionOffset farmer 2 0/pause 30/positionOffset farmer 2 0/pause 30/positionOffset farmer 2 0/pause 30/pause 200/speak Sam \"She's gone! Okay, let's go break some eggs...\"/move Sam -5 0 3 true/pause 50/globalFade/viewport -1000 -1000/pause 2000/end dialogue Sam \"I hope Mom doesn't notice how many eggs we went through.$h\"",
+                "stayPut": null,
+                "rejectSam": null,
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/SamHouse",
+            "Entries":
+            {
+                "233104/f Sam 2500/t 1000 1700/n samMessage": "playful/-1000 -1000/farmer 20 14 3 Sam 19 14 1 Jodi 6 13 0/skippable/viewport 18 14 true/viewport move 5 0 2000/pause 1000/speak Sam \"Hey, @. Thanks for coming to talk with me in private.\"/faceDirection Sam 3/faceDirection Sam 2/speak Sam \"Mom should be heading out soon...\"/pause 200/faceDirection Sam 1/pause 100/speak Sam \"So the reason I asked you here is... I've been thinking about how much my mom does for me, and how much stress she's under.$7#$b#I don't think I help out as much as I should... Family should be there for each other, right?$s#$b#So I had an idea... I'm going to make her next birthday really special!#$b#I'm gonna clean the whole house, get her an extra-nice gift, and surprise her with breakfast in bed.$h#$b#I want it to be perfect, so I was hoping you could help me with a couple of things.#$b#First off, you're like, an expert on gift-giving... What do you think I should get for her?\"/quickQuestion #Everyone loves pearls.#Jodi loves chocolate cake.#(Lie) Jodi loves spice berries.(break)speak Sam \"Pearls?! Those are seriously hard to find!$8#$b#But that *would* be a really special gift... I'll ask Willy for tips on finding one.\"(break)speak Sam \"That's a great idea! Especially for a birthday gift!#$b#I'm pretty sure I can make a cake from a box mix. How hard can it be?$10\"(break)speak Sam \"Come on, @, I'm looking for serious advice. Everyone knows my mom hates spice berries.$s#$b#...Oh, I think I get your point. It'll be more meaningful if I come up with something myself, right?\"/move Jodi 0 2 1 true/emote Sam 32/pause 100/speak Sam \"Thanks, @.#$b#So, the uh... The second thing I need help with is a little embarrassing...$10\"/move Jodi 6 0 0/playSound woodyStep/faceDirection Sam 3/playSound woodyStep/showFrame Sam 33/jump Sam/pause 800/speak Jodi \"Sam? Can I come in?\"/move Sam -1 0 3/faceDirection Sam 1/speak Sam \"Oh no! Don't say anything about the surprise!$8\"/faceDirection Sam 3/speak Sam \"Uh, sure, Mom! Come on in!\"/doAction 12 14/faceDirection Sam 3 true/move Jodi 0 -2 1 false/move Jodi 2 0 1/speak Jodi \"Hi, @.#$b#Sam, honey, did you want me to fix some snacks for you two?\"/speak Sam \"Thanks, but we're fine! I don't want to throw off your schedule.$h#$b#You were, um... planning to go out and run errands for the next one to three hours, right?$10\"/emote Jodi 20/pause 300/speak Jodi \"*giggle* Okay, I get the picture. I won't embarrass you in front of your friend.$h#$b#I'll see you tonight. Love you!\"/speak Sam \"Heh... Love you too, Mom.$10\"/move Jodi -2 0 2/move Jodi 0 2 0/move Jodi -9 0 2 true/emote Sam 28/speak Sam \"Whew... That was close. I don't think she caught on.#$b#It was really thoughtful of her to offer us snacks, right? I'm trying not to take that stuff for granted.\"/emote farmer 20/move Sam 1 0 1/speak Sam \"So, the other part... The breakfast in bed...#$b#@... could you... teach me how to fry an egg?$10\"/emote farmer 8/speak Sam \"I never learned! Mom does all the cooking! I can't just serve her instant pancakes for her birthday... Please, @?$s\"/pause 400/jump farmer/pause 800/speak Sam \"I knew you'd come through for me! Let's head to the kitchen as soon as Mom leaves.\"/playMusic none/pause 1000/speak Sam \"Hey, @? As long as I'm showing appreciation...$s\"/playMusic musicboxsong/pause 500/speak Sam \"It means a lot to me that you're helping me out. The truth is, I really look up to you.$l#$b#And not just because you can cook. Like, do you get how amazing your whole deal is? One day you just decided 'I'm a farmer now,' and you're already totally crushing it.$h#$b#What I mean is, I'm really glad we're friends, and I... I hope you feel the same way.$10\"/pause 500/animate farmer true true 150 6 7 6 8/positionOffset farmer -2 0/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/pause 800/animate farmer true true 100 101/pause 700/positionOffset Sam 6 0/showFrame Sam 38/pause 3000/playSound doorClose/pause 300/showFrame Sam 4/showFrame farmer 6/faceDirection farmer 3/positionOffset farmer 2 0/positionOffset Sam -3 0/pause 30/positionOffset farmer 4 0/positionOffset Sam -3 0/pause 30/positionOffset farmer 4 0/pause 30/positionOffset farmer 4 0/pause 30/pause 200/speak Sam \"She's gone! Okay, let's go break some eggs...\"/move Sam -5 0 3 true/move farmer -5 0 3 true/pause 50/globalFade/viewport -1000 -1000/pause 2000/end dialogue Sam \"I hope Mom doesn't notice how many eggs we went through.$h\"",
+                "stayPut": null,
+                "rejectSam": null,
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/SamHouse",
+            "Entries":
+            {
+                "233104/f Sam 2500/t 1000 1700/n samMessage": "playful/-1000 -1000/farmer 20 14 3 Sam 19 14 1 Jodi 6 13 0/skippable/viewport 18 14 true/viewport move 5 0 2000/pause 1000/speak Sam \"Hey, @. Thanks for coming to talk with me in private.\"/faceDirection Sam 3/faceDirection sam 2/speak Sam \"Mom should be heading out soon...\"/pause 200/faceDirection Sam 1/pause 100/speak Sam \"So the reason I asked you here is... I've been thinking about how much my mom does for me, and how much stress she's under.$7#$b#I don't think I help out as much as I should... Family should be there for each other, right?$s#$b#So I had an idea... I'm going to make her next birthday really special!#$b#I'm gonna clean the whole house, get her an extra-nice gift, and surprise her with breakfast in bed.$h#$b#I want it to be perfect, so I was hoping you could help me with a couple of things.#$b#First off, you're like, an expert on gift-giving... What do you think I should get for her?\"/quickQuestion #Everyone loves pearls.#Jodi loves chocolate cake.#(Lie) Jodi loves spice berries.(break)speak Sam \"Pearls?! Those are seriously hard to find!$8#$b#But that *would* be a really special gift... I'll ask Willy for tips on finding one.\"(break)speak Sam \"That's a great idea! Especially for a birthday gift!#$b#I'm pretty sure I can make a cake from a box mix. How hard can it be?$10\"(break)speak Sam \"Come on, @, I'm looking for serious advice. Everyone knows my mom hates spice berries.$s#$b#...Oh, I think I get your point. It'll be more meaningful if I come up with something myself, right?\"/move Jodi 0 2 1 true/emote Sam 32/pause 100/speak Sam \"Thanks, @.#$b#So, the uh... The second thing I need help with is a little embarrassing...$10\"/move Jodi 6 0 0/playSound woodyStep/faceDirection Sam 3/playSound woodyStep/showFrame Sam 33/jump Sam/pause 800/speak Jodi \"Sam? Can I come in?\"/move Sam -1 0 3/faceDirection Sam 1/speak Sam \"Oh no! Don't say anything about the surprise!$8\"/faceDirection Sam 3/speak Sam \"Uh, sure, Mom! Come on in!\"/doAction 12 14/faceDirection Sam 3 true/move Jodi 0 -2 1 false/move Jodi 2 0 1/speak Jodi \"Hi, @.#$b#Sam, honey, did you want me to fix some snacks for you two?\"/speak Sam \"Thanks, but we're fine! I don't want to throw off your schedule.$h#$b#You were, um... planning to go out and run errands for the next one to three hours, right?$10\"/emote Jodi 20/pause 300/speak Jodi \"*giggle* Okay, I get the picture. I won't embarrass you in front of your friend.$h#$b#I'll see you tonight. Love you!\"/speak Sam \"Heh... Love you too, Mom.$10\"/move Jodi -2 0 2/move Jodi 0 2 0/move Jodi -9 0 2 true/emote Sam 28/speak Sam \"Whew... That was close. I don't think she caught on.#$b#It was really thoughtful of her to offer us snacks, right? I'm trying not to take that stuff for granted.\"/emote farmer 20/move Sam 1 0 1/speak Sam \"So, the other part... The breakfast in bed...#$b#@... could you... teach me how to fry an egg?$10\"/emote farmer 8/speak Sam \"I never learned! Mom does all the cooking! I can't just serve her instant pancakes for her birthday... Please, @?$s\"/pause 400/jump farmer/pause 800/speak Sam \"I knew you'd come through for me! Let's head to the kitchen as soon as Mom leaves.\"/playMusic none/pause 1000/speak Sam \"Hey, @? As long as I'm showing appreciation...$s\"/playMusic musicboxsong/pause 500/speak Sam \"It means a lot to me that you're helping me out. The truth is, I really look up to you.#$b#And not just because you can cook. Like, do you get how amazing your whole deal is? One day you just decided 'I'm a farmer now,' and you're already totally crushing it.$h#$b#What I mean is, I'm really glad we're friends, and I... I hope you feel the same way.$10\"/pause 500/animate farmer true true 150 6 7 6 8/positionOffset farmer -2 0/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/pause 800/animate farmer true true 100 101/pause 700/positionOffset Sam 6 0/showFrame Sam 38/pause 3000/playSound doorClose/pause 300/showFrame Sam 4/showFrame farmer 6/faceDirection farmer 3/positionOffset farmer 2 0/positionOffset Sam -3 0/pause 30/positionOffset farmer 4 0/positionOffset Sam -3 0/pause 30/positionOffset farmer 4 0/pause 30/positionOffset farmer 4 0/pause 30/pause 200/speak Sam \"She's gone! Okay, let's go break some eggs...\"/move Sam -5 0 3 true/pause 50/globalFade/viewport -1000 -1000/pause 2000/end dialogue Sam \"I hope Mom doesn't notice how many eggs we went through.$h\"",
+                "stayPut": null,
+                "rejectSam": null,
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "3918600/f Sam 3500/O Sam/t 610 1700/p Sam/L": "distantBanjo/-1000 -1000/farmer 50 24 1 Sam 53 24 0/addConversationTopic samJob1 2/skippable/makeInvisible 52 24/makeInvisible 51 24/makeInvisible 50 24/viewport -100 -100 true unfreeze/pause 3000/emote Sam 28/pause 500/move farmer 2 0 1/emote farmer 8/faceDirection Sam 3/pause 400/speak Sam \"Oh, hey @. You look like you've been working hard out there!\"/pause 100/faceDirection Sam 0/emote Sam 40/pause 500/speak Sam \"Hey, I was just thinking...$s#$b#You know, I really like living here with you. I mean... I love it!#$b#But, I feel like I've gotten really lazy. I just bum around aimlessly every day.$s\"/pause 500/emote farmer 32/faceDirection Sam 3/speak Sam \"Oh, I know you don't mind! You make enough money on the farm that I don't really need to work, and I really appreciate that!#$b#But I want to feel like I'm contributing to something... know what I mean?\"/faceDirection Sam 0/pause 400/speak Sam \"So... I think I'm gonna try to find some work... something to do with music.#$b#That's always been what I love the most!#$b#Oh, uh... besides my best friend, of course!$h#$b#Heh...$10\"/faceDirection Sam 3/speak Sam \"Anyway... I'll let you know how it goes!\"/emote farmer 56/pause 500/end",
+                "3918601/e 3918600/O Sam/t 610 1700/A samJob1/p Sam/L": "distantBanjo/-1000 -1000/farmer 52 24 1 Sam 53 24 0/addConversationTopic samJob2 2/skippable/makeInvisible 52 24/animate Sam false true 400 43 51/viewport -100 -100 true unfreeze/pause 4000/stopAnimation Sam/showFrame Sam 39/pause 400/jump Sam/emote Sam 16/pause 500/speak Sam \"Hey @, listen to this!$8\"/pause 500/stopAnimation Sam/animate Sam false true 400 43 51/pause 500/speak Sam \"'Dear Sam, we are pleased to offer you a position as 'junior composer' at Zuzu Broadcasting Group, TV division...'$6#$b#Wow! Music for a TV show! How cool is that?!$h\"/pause 500/emote Sam 40/pause 1000/textAboveHead Sam \"Oh...\"/animate Sam false true 400 43 51/pause 1000/speak Sam \"Oh... Hold on...$s#$b#... It's a TV show for little kids... 'The Happy Junimo Show'$s\"/emote Sam 28/pause 1000/speak Sam \"Not exactly what I had in mind...$s\"/stopAnimation Sam/showFrame Sam 0/pause 300/faceDirection Sam 3/pause 1000/quickQuestion #Just think of this as a stepping stone in your career...#Just think of how happy you'll make the children!#I'm sorry...(break)pause 100\\speak Sam \"Hmm... Yeah, I guess that's one way to look at it.$7\"(break)pause 100\\speak Sam \"I mean... you're right, someone's gotta make children's music. But it's not exactly a 'dream job'...$7\"(break)pause 100\\speak Sam \"Ah well... that's okay. I'll make the best of it, like I always do.$7\"/pause 1000/faceDirection Sam 0/speak Sam \"I guess I'd better start 'thinking like a kid'...\"/quickQuestion #That should be easy for you...#You could ask your little brother for help!(break)animate Sam false true 100 33\\shake Sam 4000\\pause 500\\textAboveHead Sam \"Hey!\"\\faceDirection farmer 2 true\\animate farmer false true 200 102 103(break)pause 100\\speak Sam \"Hmm... That's not a bad idea. At the very least, I could play him my songs and see if he likes them.#$b#Thanks for the advice, @.\"/pause 2000/end dialogue Sam \"I'll be working on this for a few days.\"",
+            },
+        },
+        {
+	    "Logname":"Sam no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam",
+            "FromFile": "assets/Portraits/SamNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.SamVincentJodiKent": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname":"Sam no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam_Winter",
+            "FromFile": "assets/Portraits/SamNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.SamVincentJodiKent": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname":"Sam no blush portrait edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam",
+            "FromFile": "assets/Portraits/SamNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+	    "Logname":"Sam no blush portrait edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam_Winter",
+            "FromFile": "assets/Portraits/SamNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        //COMPATIBILITY: PLATONIC RELATIONSHIPS
+        //This section prevents the dating-flag-required version of the vanilla 10 heart mail added by Platonic Relationships from triggering. Thanks to Cherry for providing the event codes!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "2346092/f Sam 2502/x samMessage": "null",
+                "2346092/f Sam 2502/D Sam/x samMessage": null
+            },
+            "When":
+            {
+                "HasMod |contains=Cherry.PlatonicRelationships": "true"
+            },
+        },
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "summer_Mon10": "Getting to play in Zuzu City was a dream come true, but I feel like I've gotten that out of my system.#$e#I kind of want to focus on my friendships in town for now.$l",
+                "summer_Tue10": "Maybe I should learn how to cook more kinds of food.#$b#You wouldn't mind being my taste tester, right?$h",
+                "summer_Fri10": "I've been writing a song lately.#$e#It's uh... it's about friendship.#$e#You're not gonna laugh at me, are you?$10",
+                "fall_Wed10": "It's tough for me to focus on writing lyrics lately. I think some of my muse came from feeling isolated in this town.#$e#But that's not really an issue anymore.$l",
+                "winter_Tue8": "Penny and I used to hang out a lot when we first moved here.#$e#We still hang out occasionally, and we've got this weird, almost... flirty? ...thing going.$10#$e#At least, sometimes it seems that way. But other times I feel like she still thinks of me as a kid.$s",
+                "winter_Wed10": "Hey, you aren't hiring at your farm or anything, are you?$10",
+                "winter_Fri10": "@! It's so good to see you! Give me a hug.#$e#Huh? 'Not normally a hugger'? I am when it's this cold!$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "summer_Mon10": "Getting to play in Zuzu City was a dream come true, but I feel like I've gotten that out of my system.#$e#I kind of want to focus on my friendships in town for now.",
+                "summer_Tue10": "Maybe I should learn how to cook more kinds of food.#$b#You wouldn't mind being my taste tester, right?$h",
+                "summer_Fri10": "I've been writing a song lately.#$e#It's uh... it's about friendship.#$e#You're not gonna laugh at me, are you?$10",
+                "fall_Wed10": "It's tough for me to focus on writing lyrics lately. I think some of my muse came from feeling isolated in this town.#$e#But that's not really an issue anymore.",
+                "winter_Tue8": "Penny and I used to hang out a lot when we first moved here.#$e#We still hang out occasionally, and we've got this weird, almost... flirty? ...thing going.$10#$e#At least, sometimes it seems that way. But other times I feel like she still thinks of me as a kid.$s",
+                "winter_Wed10": "Hey, you aren't hiring at your farm or anything, are you?$10",
+                "winter_Fri10": "@! It's so good to see you! Give me a hug.#$e#Huh? 'Not normally a hugger'? I am when it's this cold!$h",
+                "fall_Mon10_1": "You're the best, @. I can't wait for my dad to meet you when he gets back.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Rainy_Day_1": "#$c .5#Do you think Sebastian and Abigail will ever hook up? Sebastian is definitely into her, but I think she'd have to make the first move.#Sebastian's a few years older than me. I never expected I'd be the first of us to partner up with someone.",
+                "Rainy_Night_2": "Earlier, I listened to our live recording from that show we played. Remember that? Man, was that sloppy.#$b#It made me a little nervous that you were there, I didn't want to mess up and have you think I was a loser!$10",
+                "Indoor_Day_2": "#$c .5#Oh! 'Morning. Does my hair look okay today?#Hey. I know I joke around a lot, but I want you to know that you'll always be my best friend. I seriously love you, @.$l",
+                "Indoor_Night_2": "#$c .5#Hey, sorry I didn't clean up much today. You know I'm sloppy... that's why you like me, right?$h#Me? Oh, I got caught up on some shows today. I'm feelin' a bit stir crazy; they were kinda intense.",
+                "Indoor_Night_4": "#$c .5#Ready to hit the hay?#Want me to play you a guitar lullaby? I'm in no rush to fall asleep, myself, but you're probably pretty tired.",
+                "Outdoor_4": "#$c .5#Ha, you're all muddy. You're really selling the classic farmer look!$h#Hoo... I was thinking I didn't sleep so well last night. But just stepping out here makes me feel awake all the sudden!",
+                "summer_12": "It was nice seeing Penny at the festival yesterday. I don't see her as often these days.#$e#Plus, I don't think her and I dating is in the cards anymore, you know? She's looking for a long-term commitment, and I already have that with you.$l#$b#So there's less awkwardness hanging in the air between us now.$10",
+                "fall_9": "I keep getting the sense that some people think we partnered up too young.$7#$b#Look, I get how they could think that, but I just want to let you know that for me, this is real.$s#$b#We can do this, right? I'm on board... you're on board...#$e#We're gonna conquer the world together.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Rainy_Day_1": "#$c .5#Do you think Sebastian and Abigail will ever hook up? Sebastian is definitely into her, but I think she'd have to make the first move.#Sebastian's a few years older than me. I never expected I'd be the first of us to partner up with someone.",
+                "Rainy_Night_2": "Earlier, I listened to our live recording from that show we played. Remember that? Man, was that sloppy.#$b#It made me a little nervous that you were there, I didn't want to mess up and have you think I was a loser!$10",
+                "Indoor_Day_2": "#$c .5#Oh! 'Morning. Does my hair look okay today?#Hey. I know I joke around a lot, but I want you to know that you'll always be my best friend. I seriously love you, @.",
+                "Indoor_Night_2": "#$c .5#Hey, sorry I didn't clean up much today. You know I'm sloppy... that's why you like me, right?$h#Me? Oh, I got caught up on some shows today. I'm feelin' a bit stir crazy; they were kinda intense.",
+                "Indoor_Night_4": "#$c .5#Ready to hit the hay?#Want me to play you a guitar lullaby? I'm in no rush to fall asleep, myself, but you're probably pretty tired.",
+                "Outdoor_4": "#$c .5#Ha, you're all muddy. You're really selling the classic farmer look!$h#Hoo... I was thinking I didn't sleep so well last night. But just stepping out here makes me feel awake all the sudden!",
+                "summer_12": "It was nice seeing Penny at the festival yesterday. I don't see her as often these days.#$e#Plus, I don't think us dating is in the cards anymore, you know? She's looking for a long-term commitment, and I already have that with you.#$b#So there's less awkwardness hanging in the air between us now.$10",
+                "fall_9": "I keep getting the sense that some people think we partnered up too young.$7#$b#Look, I get how they could think that, but I just want to let you know that for me, this is real.$s#$b#We can do this, right? I'm on board... you're on board...#$e#We're gonna conquer the world together.",
+                "winter_14": "If you're not as busy this season, is there a day that we can just spend lounging around? I really kinda miss you.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "OneKid_3": "#$c .5#I think we should consider a second kid. Vincent keeps asking when he gets to be a 'double uncle.'$h#Sure, being a dad is way more exhausting than I imagined, but I'm up for the challenge!$h",
+            },
+            "When":
+            {
+                "AlwaysAdopt": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Indoor_Day_1": "Hey, look what I made for you! [194 211]$h#$e#Sorry... I only know how to cook instant pancakes and eggs.$10#$e#But I'm an instant pancake connoisseur... and I learned my fried egg technique from a master!$h",
+            },
+            "When":
+            {
+                "HasSeenEvent": "233104",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kent",
+            "Entries":
+            {
+                "Mon_inlaw_Sam": "You and Sam becoming {{RelationshipLabel}} came as quite a surprise.#$e#Welcome to the family.",
+                "Mon_inlaw_Sam4": "Hey. Maybe we should catch up at the saloon sometime.#$b#I'd like to pick your brain on how to connect with Sam... I think you know him better than I do at this point.$s",
+                "Mon_inlaw_Sam8": "I'm glad to have you as part of the family, @. Jodi tells me you're a good influence on Sam.$h",
+                "Mon_roommate_Sam": "You and Sam becoming {{RelationshipLabel}} came as quite a surprise.#$e#Welcome to the family.",
+                "Mon_roommate_Sam4": "Hey. Maybe we should catch up at the saloon sometime.#$b#I'd like to pick your brain on how to connect with Sam... I think you know him better than I do at this point.$s",
+                "Mon_roommate_Sam8": "I'm glad to have you as part of the family, @. Jodi tells me you're a good influence on Sam.$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries":
+            {
+                "winter_Wed_inlaw_Sam": "So you and my brother love each other, but you're not 'in love?'$3#$e#That makes sense. I only wanna marry Miss Penny, but I love lots of other people.$h",
+                "Wed_inlaw_Sam": "How's my brother doing?#$e#We're sort of related now, aren't we?$h",
+                "winter_Wed_roommate_Sam": "So you and my brother love each other, but you're not 'in love?'$3#$e#That makes sense. I only wanna marry Miss Penny, but I love lots of other people.$h",
+                "Wed_roommate_Sam": "How's my brother doing?#$e#We're sort of related now, aren't we?$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Sam
+	        "LogName": "KO Mines- Sam, love portraits true",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Sam 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Sam \"There you are! Easy there. Are you feeling okay?\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Sam \"I was jamming to my favorite tune when suddenly, I felt like something had gone terribly wrong.#$b#I really felt like I had to check on you. Turns out I was right on the money.$2\"/pause 1000/speak Marlon \"And I simply came along to clear a path for Sam while we brought you back up to the surface.#$b#At first, I was to venture in alone, but he insisted on coming along.#$b#You're blessed to have ended up sharing your life with someone so courageous.\"/emote Sam 16/pause 500/speak Sam \"You sure about that, pops? I really didn't end up doing much more than piggybacking @ back up here.$s#$b#I wouldn't go as far as to say I was 'courageous'...$10\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I saw. You did well, standing by my side.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Sam \"Hey, @... Not going to lie, the bad feeling put me on edge, especially when we couldn't find you fast.$2#$b#But I know that exploring the mines is your 'thing', so I won't ask you to stop going back.#$b#Besides, I know that skill isn't the issue with someone tough like you. I'll be rooting for you to have better luck next time!$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Sam \"Hey @, good timing. I just finished picking up around the house so you can just kick back, take it easy, and rest up. You fought hard today.$l#$c 0.7#Sometimes, I still don't believe I'm sharing my life with someone like you. Cool, strong, and stubborn. It's part of your charm, though!$1#And because I'm an amazing {{PlatonicSocialMenuLabel}}, I got you a snack you could refuel on while you relax. Enjoy![210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Sam",
+			"UseLovePortraits": "true",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Mine death with Sam
+	        "LogName": "KO Mines- Sam, love portraits false",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Sam 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Sam \"There you are! Easy there. Are you feeling okay?\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Sam \"I was jamming to my favorite tune when suddenly, I felt like something had gone terribly wrong.#$b#I really felt like I had to check on you. Turns out I was right on the money.$2\"/pause 1000/speak Marlon \"And I simply came along to clear a path for Sam while we brought you back up to the surface.#$b#At first, I was to venture in alone, but Sam insisted on coming along.#$b#You're blessed to have ended up sharing your life with someone so courageous.\"/emote Sam 16/pause 500/speak Sam \"You sure about that, pops? I really didn't end up doing much more than piggybacking @ back up here.$s#$b#I wouldn't go as far as to say I was 'courageous'...$10\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I saw. You did well, standing by my side.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Sam \"Hey, @... Not going to lie, the bad feeling put me on edge, especially when we couldn't find you fast.$2#$b#But I know that exploring the mines is your 'thing', so I won't ask you to stop going back.#$b#Besides, I know that skill isn't the issue with someone tough like you. I'll be rooting for you to have better luck next time!$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Sam \"Hey @, good timing. I just finished picking up around the house so you can just kick back, take it easy, and rest up. You fought hard today.#$c 0.7#Sometimes, I still don't believe I'm sharing my life with someone like you. Cool, strong, and stubborn. It's part of your charm, though!$1#And because I'm an amazing {{PlatonicSocialMenuLabel}}, I got you a snack you could refuel on while you relax. Enjoy![210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Sam",
+			"UseLovePortraits": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+//hospital and divorced: no edits needed except roommate stuff
+    {       //Hospital Death- Sam
+            "LogName": "Player 'Killed'- Sam",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+"PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Sam 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Sam 5/move Sam 0 3 2/textAboveHead Sam \"{0}!\"/emote farmer 16/move Sam -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Sam 0 1 3/speak Sam \"Oh man, am I glad you're awake! You really scared me for a while there.$2\"/emote farmer 60/pause 500/speak Sam \"I wasn't sure what to expect when I was called here in such a rush, but when I heard the doc had to take you in for surgery, my heart nearly exploded.$2#$b#I waited out here the whole time, but I couldn't stop shaking.$2#$b#Deep down, though, I had to believe that you'd be okay. You're a fighter like that.\"/emote Sam 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Sam 3/speak Sam \"For real, I'm glad you're better. Still, please be more careful the next time you go out there.#$b#I know I'm reckless sometimes, but that doesn't even hold a candle to the kind of stuff you get up to. I trust you, @, but it still scares me sometimes.#$b#Anyway. I'm glad you're safe. And, on the bright side... that scar does look pretty cool on you!$1\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Sam \"Don't work too hard today, alright? You're still not back to your usual and it won't help if you fall over in the fields.$2#$c 0.7#And don't hesitate to tell me if there's something you need. I can always run out and get whatever it is.#$b#Here. I picked this up from the Saloon on my way back. It might help you recover faster. [237 241 203 204 220 244 272]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Sam",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //Hospital death- Sam ex
+            "LogName": "Player 'Killed'- Sam Ex-Partner",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Sam 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"@ is ready to see you.#$b#It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.#$b#...And you should think of your own wellbeing, too.$2\"/pause 500/speak Sam \"Thanks for that, doc. It means a lot. I won't be long, I promise.$2\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Sam 0 4 3/emote farmer 16/faceDirection Sam 3/pause 1000/speak Sam \"Hey. I honestly expected you to look worse, after all that.#$b#No, wait! I wasn't wishing you harm, I was just saying...$8#$b#...$2#$b#I didn't think you'd make it when I saw you roll in here on the stretcher. That's all.$2\"/emote farmer 16/pause 1000/speak Sam \"It looked bad. Whatever got you out there seriously didn't miss.$2#$b#And... I just felt bad letting you go through something so scary all alone.$2#$b#... I'm going to leave. I shouldn't have come to talk to you after you woke up. Bye, @.$2\"/pause 500/move Sam 0 -4 0/move Sam -8 0 0/move Sam 0 -3 0/warp Sam -100 -100/emote farmer 28/hospitaldeath/end dialogue Sam \"Listen, I'm not trying to be friends again. I don't think I can.$2#$b#If you thought I wouldn't care if you died, though... you don't know me at all.$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Sam": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+     {       //Island death before Leo - Sam
+	        "LogName": "Island Death Sam",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Sam \"Heya! Welcome ho-$1#$b#@! What happened!?$8#$b#You're covered in ash and your clothes are all burnt! Are you hurt?$2#$b#No? Oh, that's a relief... Come on, don't give your {{PlatonicSocialMenuLabel}} a heart attack like that...$2#$b#Be careful, okay? I don't want anything to happen to you anymore... Even if you do look pretty cool.\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Sam",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     }, 
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo, Sam",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Sam \"Heya! Welcome ho-$1#$b#@! What happened!?$8#$b#You're covered in ash and your clothes are all burnt! Are you hurt?$2#$b#No? Oh, that's a relief... Come on, don't give your {{PlatonicSocialMenuLabel}} a heart attack like that...$2#$b#Be careful, okay? I don't want anything to happen to you anymore... Even if you do look pretty cool.\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Sam",
+			"Relationship:Willy |contains=Engaged Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Penny",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Sam \"Heya! Welcome ho-$1#$b#@! What happened!?$8#$b#You're covered in ash and your clothes are all burnt! Are you hurt?$2#$b#No? Oh, that's a relief... Come on, don't give your {{PlatonicSocialMenuLabel}} a heart attack like that...$2#$b#Be careful, okay? I don't want anything to happen to you anymore... Even if you do look pretty cool.\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Sam",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+                "marriage_beach4": "%Sam looks deep in thought.#$b#...$3#$b#@! Oh wow, I was just thinking about you! Good to see you.$h",
+                "marriage_b4": "Look, Vincent, it's {{Auncle}} @!#$b#Hey, now both of my favorite people are here!$h",
+                "marriage_b5": "Hey, come here and give me a hug.#$b#Don't look at me like that, Vincent. You hug your friends too.$10",
+                "marriage_b8a": "Hey, good to see you, always.#$b#{{Random: Stick around for awhile., Though I think Vincent is more excited than me. It's blowing his mind that you're basically family now.$h}}",
+                "marriage_fallb2": "%Sam smiles at you, but doesn't try to fill the silence. He seems content just to enjoy your company.",
+                "marriage_fallb5a": "%Sam looks deep in thought.#$b#Hey, don't worry about me. I'm just thinking about {{Random: food., how happy I've been since I moved in with you.$l}}$3",                          
+                "marriage_guitar6": "Feels just like old times!$h#$b#Time flies, huh? Still can't believe we're {{RelationshipLabel}}.",
+                "marriage_SatA": "I was just thinking... Remember that time you taught me to fry an egg?#$b#I can't believe you didn't get sick from eating all the ones I messed up. You really have an iron stomach, huh?$h#$b#If you're ever REALLY hungry, maybe we could tackle pizza next.$10",
+                "marriage_SatA2": "Where's Sebastian? I knew I should've brought a comic with me...$7#$b#Mind keeping me company until he gets here?",          
+                "marriage_SatA5": "Give me your thoughts on these lyrics. I had you in mind writing it. What do you think?$6#$b#%Sam shows you his lyrics. At least it's not another sappy friendship song.#$b#Sweet. I hope Sebastian doesn't mind.",
+                "marriage_SatA6": "I know I can sound careless at times... So I want you to know that you're still my best friend and I don't ever take that for granted. I seriously love you, @.$l",   
+                "marriage_vincent2": "Oh, hi @. Vincent was just talking about you. He tells me you're the coolest grown-up in town.#$b#What about me, sport? Did you forget about me?$h#$b#Although he's not wrong...$l",
+                "marriage_doctorafter": "I had a real good game going while I was waiting.#$b#Huh?#$b#Oh, yeah. Dr. Harvey said everything looks fine so you don't have to worry about a thing.$h#$b#See you back home soon.",    
+                "marriage_nm": "Hey, take this.#$b#%Sam drapes a jacket over your shoulders.#$b#It's chilly tonight. I know you can handle it, but I've got your back so you don't have to.$u",
+                "marriage_16": "Oh, you got some mud on your face. Lemme get that for you.#$b#There you go. You're going to turn heads here, you know. You're sort of like a mini celebrity.$h",
+            },
+            "When": {
+		"UseLovePortraits": "true",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+                "marriage_beach4": "%Sam looks deep in thought.#$b#...$3#$b#@! Oh wow, I was just thinking about you! Good to see you.$h",
+                "marriage_b4": "Look, Vincent, it's {{Auncle}} @!#$b#Hey, now both of my favorite people are here!$h",
+                "marriage_b5": "Hey, come here and give me a hug.#$b#Don't look at me like that, Vincent. You hug your friends too.$10",
+                "marriage_b8a": "Hey, good to see you, always.#$b#{{Random: Stick around for awhile., Though I think Vincent is more excited than me. It's blowing his mind that you're basically family now.$h}}",
+                "marriage_fallb2": "%Sam smiles at you, but doesn't try to fill the silence. He seems content just to enjoy your company.",
+                "marriage_fallb5a": "%Sam looks deep in thought.#$b#Hey, don't worry about me. I'm just thinking about {{Random: food., how happy I've been since I moved in with you.}}$3",                          
+                "marriage_guitar6": "Feels just like old times!$h#$b#Time flies, huh? Still can't believe we're {{RelationshipLabel}}.",
+                "marriage_SatA": "I was just thinking... Remember that time you taught me to fry an egg?#$b#I can't believe you didn't get sick from eating all the ones I messed up. You really have an iron stomach, huh?$h#$b#If you're ever REALLY hungry, maybe we could tackle pizza next.$10",
+                "marriage_SatA2": "Where's Sebastian? I knew I should've brought a comic with me...$7#$b#Mind keeping me company until he gets here?",          
+                "marriage_SatA5": "Give me your thoughts on these lyrics. I had you in mind writing it. What do you think?$6#$b#%Sam shows you his lyrics. At least it's not another sappy friendship song.#$b#Sweet. I hope Sebastian doesn't mind.",
+                "marriage_SatA6": "I know I can sound careless at times... So I want you to know that you're still my best friend and I don't ever take that for granted. I seriously love you, @.",   
+                "marriage_vincent2": "Oh, hi @. Vincent was just talking about you. He tells me you're the coolest grown-up in town.#$b#What about me, sport? Did you forget about me?$h#$b#Although he's not wrong...$u",
+                "marriage_doctorafter": "I had a real good game going while I was waiting.#$b#Huh?#$b#Oh, yeah. Dr. Harvey said everything looks fine so you don't have to worry about a thing.$h#$b#See you back home soon.",    
+                "marriage_nm": "Hey, take this.#$b#%Sam drapes a jacket over your shoulders.#$b#It's chilly tonight. I know you can handle it, but I've got your back so you don't have to.$u",
+                "marriage_16": "Oh, you got some mud on your face. Lemme get that for you.#$b#There you go. You're going to turn heads here, you know. You're sort of like a mini celebrity.$h",
+            },
+            "When": {
+		"UseLovePortraits": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+                "marriage_gm": "Hi, {{Lowercase:{{TermofEndearment}}}}. I'd co-op with you if I had another one of these.#$b#Sorry!$h",
+		},
+		"When": {
+                	"TermofEndearment |contains=@": "false",
+               	 	"TermofEndearment |contains=BFF": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+                "marriage_gm": "Hi, {{TermofEndearment}}. I'd co-op with you if I had another one of these.#$b#Sorry!$h",
+		},
+		"When": {
+                	"TermofEndearment": "@, BFF",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+                "marriage_w": "Hey, what're you doing here? Surely not visiting me, right?#$b#Thanks, {{Lowercase:{{TermofEndearment}}}}.$h",
+                "marriage_w4": "Hi, {{Lowercase:{{TermofEndearment}}}}! I was just admiring all these gems and fossils on display.#$b#Gunther told me you collected them all by yourself!$h"
+            },
+            "When": {
+                "IsCommunityCenterComplete": true,
+                "TermofEndearment |contains=@": "false",
+               	"TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+                "marriage_w": "Hey, what're you doing here? Surely not visiting me, right?#$b#Thanks, {{TermofEndearment}}.$h",
+                "marriage_w4": "Hi, {{TermofEndearment}}! I was just admiring all these gems and fossils on display.#$b#Gunther told me you collected them all by yourself!$h"
+            },
+            "When": {
+                "IsCommunityCenterComplete": true,
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+                "marriage_w4": "We shouldn't be talking, Morris has the eyes of a hawk. I miss you, I'll see you after."
+            },
+            "When": {
+                "IsCommunityCenterComplete": false,
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname":"Sam PRMM, Abigail",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Abigail",
+	"Entries": {
+            "spring_Thu8_inlaw_Sam":"If I'm honest with you, I never thought I'd see Sam move out of his parents' place.$0",
+            "summer_Wed8_inlaw_Sam":"When you first moved here, I made a bet with Sebastian that you and Sam would hit it off.$0#$b#I won!$1",
+            "fall_Mon8_inlaw_Sam":"If I'm honest with you, I never thought I'd see Sam move out of his parents' place.$0",
+            "winter_Thu8_inlaw_Sam":"When you first moved here, I made a bet with Sebastian that you and Sam would hit it off.$0#$b#I won!$1",
+            "spring_Thu8_roommate_Sam":"If I'm honest with you, I never thought I'd see Sam move out of his parents' place.$0",
+            "summer_Wed8_roommate_Sam":"When you first moved here, I made a bet with Sebastian that you and Sam would hit it off.$0#$b#I won!$1",
+            "fall_Mon8_roommate_Sam":"If I'm honest with you, I never thought I'd see Sam move out of his parents' place.$0",
+            "winter_Thu8_roommate_Sam":"When you first moved here, I made a bet with Sebastian that you and Sam would hit it off.$0#$b#I won!$1",
+           },
+		"When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "summer_Tue8_inlaw_Sam":"Oh, hey.$0#$e#How's life with Sam coming along?$1",
+            "winter_Mon10_inlaw_Sam":"Oh, hey.$0#$e#How's life with Sam coming along?$1",
+            "summer_Tue8_roommate_Sam":"Oh, hey.$0#$e#How's life with Sam coming along?$1",
+            "winter_Mon10_roommate_Sam":"Oh, hey.$0#$e#How's life with Sam coming along?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Sam": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Sam make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Sam": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Sam will have any problems with that.$1",
+            "fall_Fri8_inlaw_Sam": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Sam make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Sam": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Sam will have any problems with that.$1",
+            "spring_Tue8_roommate_Sam": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Sam make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Sam": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Sam will have any problems with that.$1",
+            "fall_Fri8_roommate_Sam": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Sam make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Sam": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Sam will have any problems with that.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Sebastian",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sebastian",
+	"Entries": {
+            "summer_Fri8_inlaw_Sam":"I'm happy Sam has a friend in you, but I hope he doesn't forget about me.$0",
+            "winter_Sun8_inlaw_Sam":"I'm happy Sam has a friend in you, but I hope he doesn't forget about me.$0",
+            "summer_Fri8_roommate_Sam":"I'm happy Sam has a friend in you, but I hope he doesn't forget about me.$0",
+            "winter_Sun8_roommate_Sam":"I'm happy Sam has a friend in you, but I hope he doesn't forget about me.$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Thu8_inlaw_Sam":"Sam has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_inlaw_Sam":"I clearly see you and Sam were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_inlaw_Sam":"Sam has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_inlaw_Sam":"I clearly see you and Sam were made to be {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Sam":"Sam has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_roommate_Sam":"I clearly see you and Sam were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_roommate_Sam":"Sam has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_roommate_Sam":"I clearly see you and Sam were made to be {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Haley",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Haley",
+	"Entries": {
+            "summer_Sat8_inlaw_Sam":"I'm so happy for you and Sam.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_inlaw_Sam":"I'm so happy for you and Sam.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "summer_Sat8_roommate_Sam":"I'm so happy for you and Sam.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_roommate_Sam":"I'm so happy for you and Sam.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Sam":"Hello, @.$0#$e#You and Sam are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Sam":"Hello, @.$0#$e#You and Sam are such cute {{RelationshipLabel}}.$1",
+            "spring_Mon8_roommate_Sam":"Hello, @.$0#$e#You and Sam are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Sam":"Hello, @.$0#$e#You and Sam are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Caroline",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Caroline",
+	"Entries": {
+            "summer_Wed10_inlaw_Sam":"Hello, @.$0#$e#Did you know Jodi was more nervous than Sam was about him moving out?$1",
+            "winter_Fri10_inlaw_Sam":"Hello, @.$0#$e#Did you know Jodi was more nervous than Sam was about him moving out?$1",
+            "summer_Wed10_roommate_Sam":"Hello, @.$0#$e#Did you know Jodi was more nervous than Sam was about him moving out?$1",
+            "winter_Fri10_roommate_Sam":"Hello, @.$0#$e#Did you know Jodi was more nervous than Sam was about him moving out?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Sam":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Sam as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Sam":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Sam as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Sam":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Sam as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Sam":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Sam as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Sam":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Sam will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Sam":"A true lifelong friendship, like you have with Sam, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Sam":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Sam will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Sam":"A true lifelong friendship, like you have with Sam, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Sam":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Sam will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Sam":"A true lifelong friendship, like you have with Sam, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Sam":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Sam will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Sam":"A true lifelong friendship, like you have with Sam, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{	
+	"Logname": "Sam PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Sam":"If you and Sam want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Sam":"If you and Sam want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Sam":"If you and Sam want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Sam":"If you and Sam want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Sam":"If you and Sam want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Sam":"If you and Sam want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Sam":"If you and Sam want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Sam":"If you and Sam want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Sam":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Sam":"So are you and Mister Sam like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Sam":"Hello, Farmer @.$0#$b#Why can't you and Mister Sam celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Sam":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Sam":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Sam":"So are you and Mister Sam like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Sam":"Hello, Farmer @.$0#$b#Don't you think you and Mister Sam should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Sam":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Jodi",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jodi",
+	"Entries": {
+            "spring_Mon10_inlaw_Sam":"It feels like just yesterday when Sam was a little baby.$0#$b#And now he's your {{PlatonicSocialMenuLabel}}!$1",
+            "summer_Tue10_inlaw_Sam":"When did Sam grow up so much?$0#$e#It seems like yesterday when I used to take him to the playground.$0#$b#I kind of miss those days.$0#$e#At least now he's {{RelationshipLabel}} with a wonderful farmer.$1",
+            "fall_Sun10_inlaw_Sam":"It feels like just yesterday when Sam was a little baby.$0#$b#And now he's your {{PlatonicSocialMenuLabel}}!$1",
+            "winter_Wed10_inlaw_Sam":"When did Sam grow up so much?$0#$e#It seems like yesterday when I used to take him to the playground.$0#$b#I kind of miss those days.$0#$e#At least now he's {{RelationshipLabel}} with a wonderful farmer.$1",
+            "spring_Mon10_roommate_Sam":"It feels like just yesterday when Sam was a little baby.$0#$b#And now he's your {{PlatonicSocialMenuLabel}}!$1",
+            "summer_Tue10_roommate_Sam":"When did Sam grow up so much?$0#$e#It seems like yesterday when I used to take him to the playground.$0#$b#I kind of miss those days.$0#$e#At least now he's {{RelationshipLabel}} with a wonderful farmer.$1",
+            "fall_Sun10_roommate_Sam":"It feels like just yesterday when Sam was a little baby.$0#$b#And now he's your {{PlatonicSocialMenuLabel}}!$1",
+            "winter_Wed10_roommate_Sam":"When did Sam grow up so much?$0#$e#It seems like yesterday when I used to take him to the playground.$0#$b#I kind of miss those days.$0#$e#At least now he's {{RelationshipLabel}} with a wonderful farmer.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Kent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Kent",
+	"Entries": {
+            "spring_Tue_inlaw_Sam":"Sam was just a child when I left...$0#$b#...and now he has his own life with you.$0",
+            "spring_Fri10_inlaw_Sam":"Sometimes it's difficult not to think of Sam as the little kid he was when I left.$0#$b#I'd have never imagined that he'd move out so soon.$0",
+            "spring_Sat10_inlaw_Sam":"Seeing your friendship with Sam grow so quickly was surprising at first for Jodi and me.$0#$b#But now you're part of the family.$1",
+            "summer_Wed10_inlaw_Sam":"All those years I couldn't be there for Sam, I prayed he'd surround himself with good people.$0#$b#I'm glad he has you as a friend, @.$1",
+            "summer_Sat_inlaw_Sam":"I hope I've made you feel welcome in our family, @.$1",
+            "fall_Mon10_inlaw_Sam":"Seeing your friendship with Sam grow so quickly was surprising at first for Jodi and me.$0#$b#But now you're part of the family.$1",
+            "fall_Thu10_inlaw_Sam":"Hey. Maybe we should catch up at the saloon sometime.#$b#I'd like to pick your brain on how to connect with Sam... I think you know him better than I do at this point.$s",
+            "fall_Sun10_inlaw_Sam":"Sometimes it's difficult not to think of Sam as the little kid he was when I left.$0#$b#I'd have never imagined that he'd move out so soon.$0",
+            "winter_Mon10_inlaw_Sam":"All those years I couldn't be there for Sam, I prayed he'd surround himself with good people.$0#$b#I'm glad he has you as a friend, @.$1",
+            "winter_Thu10_inlaw_Sam":"I didn't expect Sam would move out so soon.$0#$e#Maybe I should have spent more time with him when I could...$2",
+            "spring_Tue_roommate_Sam":"Sam was just a child when I left...$0#$b#...and now he has his own life with you.$0",
+            "spring_Fri10_roommate_Sam":"Sometimes it's difficult not to think of Sam as the little kid he was when I left.$0#$b#I'd have never imagined that he'd move out so soon.$0",
+            "spring_Sat10_roommate_Sam":"Seeing your friendship with Sam grow so quickly was surprising at first for Jodi and me.$0#$b#But now you're part of the family.$1",
+            "summer_Wed10_roommate_Sam":"All those years I couldn't be there for Sam, I prayed he'd surround himself with good people.$0#$b#I'm glad he has you as a friend, @.$1",
+            "summer_Sat_roommate_Sam":"I hope I've made you feel welcome in our family, @.$1",
+            "fall_Mon10_roommate_Sam":"Seeing your friendship with Sam grow so quickly was surprising at first for Jodi and me.$0#$b#But now you're part of the family.$1",
+            "fall_Thu10_roommate_Sam":"Hey. Maybe we should catch up at the saloon sometime.#$b#I'd like to pick your brain on how to connect with Sam... I think you know him better than I do at this point.$s",
+            "fall_Sun10_roommate_Sam":"Sometimes it's difficult not to think of Sam as the little kid he was when I left.$0#$b#I'd have never imagined that he'd move out so soon.$0",
+            "winter_Mon10_roommate_Sam":"All those years I couldn't be there for Sam, I prayed he'd surround himself with good people.$0#$b#I'm glad he has you as a friend, @.$1",
+            "winter_Thu10_roommate_Sam":"I didn't expect Sam would move out so soon.$0#$e#Maybe I should have spent more time with him when I could...$2",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Lewis",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Sam":"There aren't many young {{RelationshipLabel}} like you and Sam here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Sam":"There aren't many young {{RelationshipLabel}} like you and Sam here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Sam":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Sam":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Sam":"There aren't many young {{RelationshipLabel}} like you and Sam here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Sam":"There aren't many young {{RelationshipLabel}} like you and Sam here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Sam":"I know you and Sam chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Sam":"I know you and Sam chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Sam":"Hello, @.$0#$e#I wish you and Sam a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Sam":"May Yoba grant you and Sam a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Sam":"Hello, @.$0#$e#I wish you and Sam a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Sam":"May Yoba grant you and Sam a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Sam":"Hello, @.$0#$e#I wish you and Sam a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Sam":"May Yoba grant you and Sam a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Sam":"Hello, @.$0#$e#I wish you and Sam a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Sam":"May Yoba grant you and Sam a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Sam":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Sam":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Sam":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Sam":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },   
+{
+	"Logname": "Sam PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Sam":"You and Sam remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Sam":"You and Sam remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Sam":"You and Sam remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Sam":"You and Sam remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Sam PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Sam":"Do you like suncatchers?$3#$e#I want make a gift for you and Sam.$1",
+            "spring_Thu10_inlaw_Sam":"How's my brother doing?#$e#We're sort of related now, aren't we?$h",
+            "summer_Wed10_inlaw_Sam":"It's so cool how you're {{RelationshipLabel}} with my brother.$1#$e#I never thought that would have happened!$0",
+            "fall_Mon10_inlaw_Sam":"Do you like suncatchers?$3#$e#I want make a gift for you and Sam.$1",
+            "fall_Fri10_inlaw_Sam":"How's my brother doing?#$e#We're sort of related now, aren't we?$h",
+            "winter_Sun10_inlaw_Sam":"It's so cool how you're {{RelationshipLabel}} my brother.$1#$e#I never thought that would have happened!$0",
+
+            "spring_Tue10_roommate_Sam":"Do you like suncatchers?$3#$e#I want make a gift for you and Sam.$1",
+            "spring_Thu10_roommate_Sam":"How's my brother doing?#$e#We're sort of related now, aren't we?$h",
+            "summer_Wed10_roommate_Sam":"It's so cool how you're {{RelationshipLabel}} with my brother.$1#$e#I never thought that would have happened!$0",
+            "fall_Mon10_roommate_Sam":"Do you like suncatchers?$3#$e#I want make a gift for you and Sam.$1",
+            "fall_Fri10_roommate_Sam":"How's my brother doing?#$e#We're sort of related now, aren't we?$h",
+            "winter_Sun10_roommate_Sam":"It's so cool how you're {{RelationshipLabel}} my brother.$1#$e#I never thought that would have happened!$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

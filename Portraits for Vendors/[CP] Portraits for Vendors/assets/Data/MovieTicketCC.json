@@ -1,0 +1,35 @@
+{
+	"Changes":[
+		{
+			"LogName": "Box Office in CC Theater",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "BoxOffice", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/MovieTicketCC_Default"},
+		},
+// VENDOR ROTATION	
+		{
+			"LogName": "CC Ticket Portrait Shift",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "BoxOffice", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/MovieTicketCC_{{Ticket}}"},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": false
+			}
+		},
+		{
+			"LogName": "CC Ticket Portrait Shift SVE",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "BoxOffice", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/MovieTicketCC_Naufal"},
+			"When": {
+				"DayOfWeek": "Tuesday, Thursday, Saturday",
+			    "MovieShift": true,
+				"HasMod": "FlashShifter.StardewValleyExpandedCP, LemurKat.JulietHouse.NPC"
+			}
+		},	
+	],
+}

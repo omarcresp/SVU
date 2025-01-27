@@ -1,0 +1,55 @@
+{
+	"Changes": [
+
+		// **** EMILY GEM DATE ****
+
+		//Date Initiation
+		{
+			"LogName": "Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116015/f Emily {{MinFriendship}}/O Emily/t 500 1900": "EmilyTheme/-10000 -1000/farmer -100 -100 2 Emily -100 -100 2/skippable/warp Emily -100 -100/warp farmer -100 -100/faceDirection Emily 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp Emily 64 15/pause 1500/showFrame Emily 52/textAboveHead Emily \"{{i18n:Emily.GemDate.Intro.1}}\"/pause 2500/showFrame Emily 0/pause 300/move Emily 0 2 2/textAboveHead Emily \"{{i18n:Emily.GemDate.Intro.2}}\"/pause 2000/faceDirection farmer 1 true/pause 100/pause 500/move Emily 0 -1 0/playSound doorClose/faceDirection farmer 2 true/warp farmer 64 15/pause 300/emote farmer 16/pause 300/speak Emily \"{{i18n:Emily.GemDate.Intro.3}}\"/pause 500/emote farmer 8/pause 500/speak Emily \"{{i18n:Emily.GemDate.Intro.4}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.Intro.5}}\"/pause 500/emote farmer 32/emote Emily 40/pause 250/speak Emily \"{{i18n:Emily.GemDate.Intro.6}}\"/pause 250/emote farmer 8/pause 200/speak Emily \"{{i18n:Emily.GemDate.Intro.7.{{Gender}} }}\"/pause 500/emote farmer 40/pause 500/speak Emily \"{{i18n:Emily.GemDate.Intro.8}}\"/pause 1000/question fork0 \"{{i18n:AcceptDate.Choice | Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork dateYes/playMusic none/pause 1000/emote Emily 28/speak Emily \"{{i18n:Emily.GemDate.Intro.Refusal.9}}\"/pause 500/faceDirection Emily 3 true/pause 1000/emote Emily 40/pause 400/faceDirection Emily 0/pause 400/speak Emily \"{{i18n:Emily.GemDate.Intro.Refusal.10}}\"/pause 800/move farmer 1 0 3/move Emily 0 -1 1/pause 500/speak Emily \"{{i18n:Emily.GemDate.Intro.Refusal.11}}\"/pause 500/faceDirection Emily 0/pause 500/playSound doorClose/warp Emily -100 -100/pause 2000/end dialogue Emily \"{{i18n:Emily.GemDate.Intro.Refusal.End}}\"",
+
+				"dateYes": "pause 200/addMailReceived emilyGemDateAgree/emote Emily 20/pause 500/speak Emily \"{{i18n:Emily.GemDate.Intro.9}}\"/emote farmer 32/pause 500/move farmer 1 0 3/move Emily 0 -1 1/playSound doorClose/warp Emily -100 -100/pause 500/move farmer -1 0 0/move farmer 0 2 2 true/end dialogue Emily \"{{i18n:Emily.GemDate.Intro.End}}\"",
+
+			},
+			"When": {
+				"Date": "Emily",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": true,
+				"UniqueDateType": "emilyGem",
+			},
+		},
+		
+		//Emily Gem Date - Suggestive
+		
+		{
+			"LogName": "Emily Gem Date",
+			"Action": "EditData",
+			"Target": "Data/Events/HaleyHouse",
+			"Entries": {
+				"1116016/n emilyGemDateAgree": "EmilyTheme/17 6/farmer 16 20 0 Emily 18 7 3/skippable/addTemporaryActor Placeholder1DN 16 32 22 6 2/temporaryAnimatedSprite Maps\\springobjects 272 48 16 16 7777 1 7777777 17 6 false false 65 0 1 0 0 0/pause 2500/shake Emily 150/playSound trashcan/removeObject 17 6/pause 500/textAboveHead Emily \"{{i18n:Emily.GemDate.1}}\"/pause 750/speak Emily \"{{i18n:Emily.GemDate.2}}\"/pause 200/emote Emily 28/pause 250/speak Emily \"{{i18n:Emily.GemDate.3}}\"/pause 500/emote Placeholder1DN 16 true/playSound money/pause 600/emote Emily 16/move Emily 4 0 0/pause 200/emote Emily 40/pause 200/message \"{{i18n:Emily.GemDate.4}}\"/pause 300/speak Emily \"{{i18n:Emily.GemDate.5}}\"/pause 500/shake Emily 150/playSound mouseClick/pause 500/message \"{{i18n:Emily.GemDate.6}}\"/pause 300/message \"{{i18n:Emily.GemDate.7}}\"/pause 400/emote Emily 32/pause 300/message \"{{i18n:Emily.GemDate.8}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.9}}\"/pause 500/message \"{{i18n:Emily.GemDate.10 |PlayerName={{PlayerName}} }}\"/pause 200/message \"{{i18n:Emily.GemDate.11}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.12}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.13}}\"/pause 500/shake Emily 150/playSound mouseClick/speak Emily \"{{i18n:Emily.GemDate.14}}\"/move farmer 0 -7 0 true/pause 500/speak Emily \"{{i18n:Emily.GemDate.15.{{Gender}} }}\"/doAction 16 12/pause 300/faceDirection Emily 3/emote Emily 16 true/move farmer 0 -5 1/pause 200/friendship Emily {{FriendBonus}}/speak Emily \"{{i18n:Emily.GemDate.16}}\"/pause 300/emote farmer 32/pause 200/move farmer 2 0 0/move farmer 0 -1 1/move farmer 3 0 1/pause 200/speak Emily \"{{i18n:Emily.GemDate.17}}\"/pause 300/emote farmer 60/speak Emily \"{{i18n:Emily.GemDate.18}}\"/pause 300/emote farmer 20/pause 200/speak Emily \"{{i18n:Emily.GemDate.19}}\"/pause 200/emote farmer 8/pause 300/move farmer -1 0 0/move farmer 0 -1 2/move Emily -4 0 2/faceDirection farmer 3 true/move Emily 0 1 3/move Emily -5 0 3/pause 700/shake Emily 250/playSound pickUpItem/pause 250/move Emily 1 0 0/move Emily 0 -3 1/move Emily 3 0 2/pause 300/shake Emily 250/playSound pickUpItem/addObject 17 6 {{Random:60, 62, 64, 68, 70, 72 |key=emilyGem}} 1/pause 300/move farmer -2 0 3/textAboveHead Emily \"{{i18n:Emily.GemDate.20}}\"/move farmer 0 -2 3/move farmer -2 0 2/move farmer 0 1 2 true/speak Emily \"{{i18n:Emily.GemDate.21}}\"/pause 300/emote farmer 8/pause 200/speak Emily \"{{i18n:Emily.GemDate.22}}\"/pause 200/emote farmer 20/pause 500/speak Emily \"{{i18n:Emily.GemDate.23}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.24}}\"/pause 400/faceDirection Emily 3/faceDirection farmer 1/pause 500/speak Emily \"{{i18n:Emily.GemDate.25}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.26}}\"/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"{{i18n:Emily.GemDate.27}}\"/pause 300/shake Emily 250/playSound pickUpItem/removeObject 17 6/pause 700/faceDirection Emily 3/pause 500/shake Emily 250/playSound pickUpItem/speak Emily \"[{{Random:60, 62, 64, 68, 70, 72 |key=emilyGem}}] {{i18n:Emily.GemDate.28.{{Gender}} }}\"/pause 300/emote farmer 32/pause 300/speak Emily \"{{i18n:Emily.GemDate.29}}\"/pause 1000/animate Emily false true 100 33/animate farmer false true 100 101/playSound pickUpItem/pause 2000/stopAnimation farmer/stopAnimation Emily/pause 700/emote Emily 20/pause 500/faceDirection Emily 2/pause 900/emote Emily 40/pause 200/faceDirection Emily 3/pause 200/speak Emily \"{{i18n:Emily.GemDate.30.Suggestive}}\"/pause 200/emote farmer 8/pause 200/speak Emily \"{{i18n:Emily.GemDate.31.Suggestive}}\"/pause 400/emote farmer 16/speed farmer 7/move farmer 0 -1 1/move farmer 5 0 3/move Emily 0 -1 1/move Emily 2 0 1 true/globalFade/viewport -1000 -1000/changePortrait Emily Beach/pause 400/playSound doorClose/pause 3000/speak Emily \"{{i18n:Emily.GemDate.32.Suggestive}}\"/end dialogueWarpOut Emily \"{{i18n:Emily.GemDate.End.Suggestive}}\"",
+			},
+			"When": {
+				"Date": "Emily",
+				"SuggestiveEndings": "enabled",
+			},
+		},
+		
+		//Emily Gem Date - Non Suggestive
+		
+		{
+			"LogName": "Emily Gem Date",
+			"Action": "EditData",
+			"Target": "Data/Events/HaleyHouse",
+			"Entries": {
+				"1116016/n emilyGemDateAgree": "EmilyTheme/17 6/farmer 16 20 0 Emily 18 7 3/skippable/addTemporaryActor Placeholder1DN 16 32 22 6 2/temporaryAnimatedSprite Maps\\springobjects 272 48 16 16 7777 1 7777777 17 6 false false 65 0 1 0 0 0/pause 2500/shake Emily 150/playSound trashcan/removeObject 17 6/pause 500/textAboveHead Emily \"{{i18n:Emily.GemDate.1}}\"/pause 750/speak Emily \"{{i18n:Emily.GemDate.2}}\"/pause 200/emote Emily 28/pause 250/speak Emily \"{{i18n:Emily.GemDate.3}}\"/pause 500/emote Placeholder1DN 16 true/playSound money/pause 600/emote Emily 16/move Emily 4 0 0/pause 200/emote Emily 40/pause 200/message \"{{i18n:Emily.GemDate.4}}\"/pause 300/speak Emily \"{{i18n:Emily.GemDate.5}}\"/pause 500/shake Emily 150/playSound mouseClick/pause 500/message \"{{i18n:Emily.GemDate.6}}\"/pause 300/message \"{{i18n:Emily.GemDate.7}}\"/pause 400/emote Emily 32/pause 300/message \"{{i18n:Emily.GemDate.8}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.9}}\"/pause 500/message \"{{i18n:Emily.GemDate.10 |PlayerName={{PlayerName}} }}\"/pause 200/message \"{{i18n:Emily.GemDate.11}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.12}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.13}}\"/pause 500/shake Emily 150/playSound mouseClick/speak Emily \"{{i18n:Emily.GemDate.14}}\"/move farmer 0 -7 0 true/pause 500/speak Emily \"{{i18n:Emily.GemDate.15.{{Gender}} }}\"/doAction 16 12/pause 300/faceDirection Emily 3/emote Emily 16 true/move farmer 0 -5 1/pause 200/friendship Emily {{FriendBonus}}/speak Emily \"{{i18n:Emily.GemDate.16}}\"/pause 300/emote farmer 32/pause 200/move farmer 2 0 0/move farmer 0 -1 1/move farmer 3 0 1/pause 200/speak Emily \"{{i18n:Emily.GemDate.17}}\"/pause 300/emote farmer 60/speak Emily \"{{i18n:Emily.GemDate.18}}\"/pause 300/emote farmer 20/pause 200/speak Emily \"{{i18n:Emily.GemDate.19}}\"/pause 200/emote farmer 8/pause 300/move farmer -1 0 0/move farmer 0 -1 2/move Emily -4 0 2/faceDirection farmer 3 true/move Emily 0 1 3/move Emily -5 0 3/pause 700/shake Emily 250/playSound pickUpItem/pause 250/move Emily 1 0 0/move Emily 0 -3 1/move Emily 3 0 2/pause 300/shake Emily 250/playSound pickUpItem/addObject 17 6 {{Random:60, 62, 64, 68, 70, 72 |key=emilyGem}} 1/pause 300/move farmer -2 0 3/textAboveHead Emily \"{{i18n:Emily.GemDate.20}}\"/move farmer 0 -2 3/move farmer -2 0 2/move farmer 0 1 2 true/speak Emily \"{{i18n:Emily.GemDate.21}}\"/pause 300/emote farmer 8/pause 200/speak Emily \"{{i18n:Emily.GemDate.22}}\"/pause 200/emote farmer 20/pause 500/speak Emily \"{{i18n:Emily.GemDate.23}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.24}}\"/pause 400/faceDirection Emily 3/faceDirection farmer 1/pause 500/speak Emily \"{{i18n:Emily.GemDate.25}}\"/pause 500/speak Emily \"{{i18n:Emily.GemDate.26}}\"/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"{{i18n:Emily.GemDate.27}}\"/pause 300/shake Emily 250/playSound pickUpItem/removeObject 17 6/pause 700/faceDirection Emily 3/pause 500/shake Emily 250/playSound pickUpItem/speak Emily \"[{{Random:60, 62, 64, 68, 70, 72 |key=emilyGem}}] {{i18n:Emily.GemDate.28.{{Gender}} }}\"/pause 300/emote farmer 32/pause 300/speak Emily \"{{i18n:Emily.GemDate.29}}\"/pause 1000/animate Emily false true 100 33/animate farmer false true 100 101/playSound pickUpItem/pause 2000/stopAnimation farmer/stopAnimation Emily/pause 700/emote Emily 20/pause 500/speak Emily \"{{i18n:Emily.GemDate.30}}\"/pause 500/emote farmer 60 true/globalFade/viewport -1000 1000/pause 1000/message \"{{i18n:Emily.GemDate.31}}\"/end dialogueWarpOut Emily \"{{i18n:Emily.GemDate.End}}\"",
+			},
+			"When": {
+				"Date": "Emily",
+				"SuggestiveEndings": "disabled",
+			},
+		},
+	],
+}

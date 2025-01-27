@@ -1,0 +1,48 @@
+{
+  "Changes": [
+    {
+      "LogName": "Haley Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Haley",
+      "Entries": {
+			"3": "000 Lumisteria.MtVapius_AsterHouse 22 22 3/630 Lumisteria.MtVapius_AsterHouse 8 19 1 \"Strings\\schedules\\Haley:Lumisteria.MtVapius_HaleyVisitingAsterHouse.000\"/750 Lumisteria.MtVapius_Hamlet 78 25 2 \"Strings\\schedules\\Haley:Lumisteria.MtVapius_HaleyVisitingAsterBench.000\"/1100 Lumisteria.MtVapius_Hamlet 44 6 3 \"Strings\\schedules\\Haley:Lumisteria.MtVapius_HaleyVisitingHamletPond.000\"/1800 HaleyHouse 5 7 0/2230 HaleyHouse 1 5 3 haley_sleep",
+			"17": "000 Lumisteria.MtVapius_AsterHouse 22 22 3/630 Lumisteria.MtVapius_AsterHouse 8 19 1 \"Strings\\schedules\\Haley:Lumisteria.MtVapius_HaleyVisitingAsterHouse.000\"/750 Lumisteria.MtVapius_Hamlet 78 25 2 \"Strings\\schedules\\Haley:Lumisteria.MtVapius_HaleyVisitingAsterBench.000\"/1100 Lumisteria.MtVapius_Hamlet 44 6 3 \"Strings\\schedules\\Haley:Lumisteria.MtVapius_HaleyVisitingHamletPond.000\"/1800 HaleyHouse 5 7 0/2230 HaleyHouse 1 5 3 haley_sleep",
+
+      },
+      "When":
+      {   
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Arrival",
+      }
+    },
+    {
+      "LogName": "Pam Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Pam",
+      "Entries": {
+		    "bus": "800 Trailer 15 4 2 pam_sit_down/830 BusStop 21 10 2/1700 Lumisteria.MtVapius_TrainStationIndoor 4 8 1/2400 Lumisteria.MtVapius_TrainStationIndoorSecondFloor 3 4 2 pam_sleep",
+
+      },
+      "When":
+      {   
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_PamVisiting",
+		"HasConversationTopic": "Lumisteria.MtVapius.PamVisit",
+      }
+    },
+    {
+      "LogName": "Pam Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Pam",
+      "Entries": {
+		    "bus": "800 Trailer 15 4 2 pam_sit_down/830 BusStop 21 10 2/1700 Lumisteria.MtVapius_TrainStationIndoor 4 8 1/2400 Lumisteria.MtVapius_TrainStationIndoorSecondFloor 3 4 2 pam_sleep",
+
+      },
+      "When":
+      {   
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_PamVisiting",
+		"HasConversationTopic |contains=Lumisteria.MtVapius.PamVisit": false,
+        "Query: {{Random: {{Range:1,101}} }} <= 30": true,
+		
+      }
+    },
+  ]
+}

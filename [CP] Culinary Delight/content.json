@@ -1,0 +1,65 @@
+{
+    "Format": "2.3.0",
+    "ConfigSchema": { 
+	//Config Options
+		"flexible_recipes": { 
+			"AllowValues": "On, Off",
+			"Default": "On",
+			"Description": "Whether recipes can accept inputs from multiple installed mods."
+		},
+        "alternate_unlock_maki": { 
+			"AllowValues": "On, Off",
+			"Default": "Off",
+			"Description": "Turn this on if you don't have ItemExtensions or if you want the alternate recipe unlock method for Fresh Salmon Maki."
+		},
+        "alternate_unlock_unknowable": { 
+			"AllowValues": "On, Off",
+			"Default": "Off",
+			"Description": "Turn this on if you don't have SpaceCore or if you want the alternate recipe unlock method for the Unknowable Dish."
+		}
+    },
+    "DynamicTokens": [
+        {
+            "Name": "DSVElliottCompat",
+            "Value": "false"
+        },
+        {
+            "Name": "DSVElliottCompat",
+            "Value": "true",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:JewishElliott": "True"
+            }
+        },
+        {
+            "Name": "SVEWizardCompat",
+            "Value": "false"
+        },
+        {
+            "Name": "SVEWizardCompat",
+            "Value": "true",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        }
+    ],
+    "Changes": [
+
+        {
+            "Action": "Include",
+            "FromFile": "data/objects.json, data/gift_tastes.json,  data/gift_dialogue.json, data/trash.json, data/treasure.json, data/recipes.json, data/recipe_replacements.json, data/mail.json, data/shops.json, data/trigger_actions.json, data/object_replacements.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Dishes",
+            "FromFile": "assets/foods.png"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/dsv_compatibility.json",
+            "When": {
+                "HasMod": "DSV.Core"
+            }
+        },
+    ]
+}

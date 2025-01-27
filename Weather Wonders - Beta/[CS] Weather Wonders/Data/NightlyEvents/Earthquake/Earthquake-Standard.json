@@ -1,0 +1,35 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Earthquake Nightly Event (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.morenightlyevents/Events",
+      "Entries": {
+        "Kana.WeatherWonders_Earthquake": {
+          "Id": "Kana.WeatherWonders_Earthquake",
+          "Type": "Message",
+          "Conditions": [
+            {
+              "Condition": "TRUE",
+              "Chance": 0.01,
+              "Weight": 1,
+              "IsExclusive": false
+            }
+          ],
+          "Priority": 10,
+          "TargetMap": "Farm",
+          "SoundName": "thunder_small",
+          "Message": "{{i18n: Nightly.Earthquake.Message}}",
+          "MessageDelay": 5000,
+          "SideEffects": [
+            {
+              "Actions": [
+                "AddMail Host Kana.WeatherWonders_EarthquakeNightlyEvent Received"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

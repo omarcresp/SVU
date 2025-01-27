@@ -1,0 +1,57 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "NCarigon.BushBloomMod/Schedules",
+            "Entries": {
+                // Id here *should* match the default of 'ModDirectoryName/StartSeason_ShakeOff'
+                // but can technically be anything you want. Can also overwrite existing
+                // schedules by using the same id.
+                "Lumisteria.MtVapius/summer_rosemary": {
+                    "ShakeOff": "Lumisteria.MtVapius_Rosemary",
+                    "StartSeason": "summer",
+                    "StartDay": 3,
+					"EndSeason": "summer",
+					"EndDay": 18,
+					"Chance": 0.05,
+					"Locations": [ "Lumisteria.MtVapius_TrainStation", "Lumisteria.MtVapius_Hamlet", "Lumisteria.MtVapius_Cliff" ],
+                },
+                "Lumisteria.MtVapius/winter_nevaril": {
+                    "ShakeOff": "Lumisteria.MtVapius_Nevaril",
+                    "StartSeason": "winter",
+                    "StartDay": 18,
+					"EndSeason": "winter",
+					"EndDay": 25,
+					"Chance": 0.1,
+					"Weather": [ "Snow" ],
+					"DestroyWeather": [ "Sun" ],
+					"Locations": ["Lumisteria.MtVapius_Cliff", "Lumisteria.MtVapius_Orchard", "Lumisteria.MtVapius_Clearing"],
+                },
+                "Lumisteria.MtVapius/fall_seabuckthorn": {
+                    "ShakeOff": "Lumisteria.MtVapius_SeaBuckthornBerry",
+                    "StartSeason": "fall",
+                    "StartDay": 24,
+					"EndSeason": "winter",
+					"EndDay": 7,
+					"Chance": 0.07,
+					"Locations": ["Lumisteria.MtVapius_Cliff", "Lumisteria.MtVapius_Orchard"],
+                }
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "NCarigon.BushBloomMod/Textures/Lumisteria.MtVapius/summer_rosemary",
+            "FromFile": "assets/images/bushes/rosemary.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "NCarigon.BushBloomMod/Textures/Lumisteria.MtVapius/winter_nevaril",
+            "FromFile": "assets/images/bushes/nevaril.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "NCarigon.BushBloomMod/Textures/Lumisteria.MtVapius/fall_seabuckthorn",
+            "FromFile": "assets/images/bushes/seabuckthorn.png"
+        },
+    ]
+}

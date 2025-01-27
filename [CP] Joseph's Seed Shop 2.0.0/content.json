@@ -1,0 +1,702 @@
+{
+    "Format": "2.0.0",
+    "DynamicTokens": [
+    
+	// Standard Dynamic Seasonal Tokens
+
+        {
+            "Name": "WeatherVariant", // Sun + Wind
+            "Value": "_Sun",
+            "When":
+            {
+               "Weather": "Sun, Wind",
+            },
+        },
+        {
+            "Name": "WeatherVariant", // Rain + Storm
+            "Value": "_Rain",
+            "When":
+            {
+				"Weather": "Rain, Storm",
+            },
+        },
+		
+	//Standard Dynamic Mod Tokens
+	
+        {
+            "Name": "ModVariant", // Vanilla
+            "Value": "_Vanilla",
+            "When":
+            {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+            },
+        },
+		
+        {
+            "Name": "ModVariant", // Stardew Valley Expanded
+            "Value": "_SVE",
+            "When":
+            {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+            },
+        },
+	],
+
+    "Changes": [ 
+	
+	//Fall Seed Shop
+	{
+        "LogName": "Seed Shop- Fall - Closed Day -",
+        "Action": "Load",
+        "Target": "SeedShop_Fall_Closed{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Fall_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Fall_Closed{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "fall",
+                "Time": "{{Range: 0610, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+		{
+        "LogName": "Seed Shop- Fall - Closed Night",
+        "Action": "Load",
+        "Target": "SeedShop_Fall_Closed{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Fall_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Fall_Closed{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "fall",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+		{
+        "LogName": "Seed Shop- Fall - Open - Week 1",
+        "Action": "Load",
+        "Target": "SeedShop_Fall_Open_Week1{{WeatherVariant}}{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Fall_Week1{{WeatherVariant}}.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Fall_Open_Week1{{WeatherVariant}}{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+		{
+        "LogName": "Seed Shop- Fall - Open - Week 2",
+        "Action": "Load",
+        "Target": "SeedShop_Fall_Open_Week2{{WeatherVariant}}{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Fall_Week2{{WeatherVariant}}.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Fall_Open_Week2{{WeatherVariant}}{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20,21",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+	//Spring Seed Shop
+	
+	{
+        "LogName": "Seed Shop- Spring - Closed Day -",
+        "Action": "Load",
+        "Target": "SeedShop_Spring_Closed{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Default_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Spring_Closed{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "spring",
+                "Time": "{{Range: 0610, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+		{
+        "LogName": "Seed Shop- Spring - Closed Night",
+        "Action": "Load",
+        "Target": "SeedShop_Spring_Closed{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Default_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Spring_Closed{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "spring",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+		{
+        "LogName": "Seed Shop- Spring - Open - Week 1",
+        "Action": "Load",
+        "Target": "SeedShop_Spring_Open_Week1{{WeatherVariant}}{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Spring_Week1{{WeatherVariant}}.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Spring_Open_Week1{{WeatherVariant}}{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+		{
+        "LogName": "Seed Shop- Spring - Open - Week 2",
+        "Action": "Load",
+        "Target": "SeedShop_Spring_Open_Week2{{WeatherVariant}}{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Spring_Week2{{WeatherVariant}}.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Spring_Open_Week2{{WeatherVariant}}{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20,21",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+	//Summer Seed Shop
+	
+	{
+        "LogName": "Seed Shop- Summer - Closed Day - Normal",
+        "Action": "Load",
+        "Target": "SeedShop_Summer_Closed{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Default_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Summer_Closed{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "summer",
+				"Weather": "Sun, Wind, Rain, Storm", 
+                "Time": "{{Range: 0610, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+		{
+        "LogName": "Seed Shop- Summer - Closed Night - Normal",
+        "Action": "Load",
+        "Target": "SeedShop_Summer_Closed{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Default_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Summer_Closed{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "summer",
+				"Weather": "Sun, Wind, Rain, Storm",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+//Summer Normal - Week 1
+
+	//Sun
+		{
+        "LogName": "Seed Shop- Summer - Open - Week 1 - Sun",
+        "Action": "Load",
+        "Target": "SeedShop_Summer_Open_Week1_Sun{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Summer_Week1_Sun.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Summer_Open_Week1_Sun{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "summer",
+				"Weather": "Sun, Wind",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+	
+	//Rain
+		{
+        "LogName": "Seed Shop- Summer - Open - Week 1 - Rain",
+        "Action": "Load",
+        "Target": "SeedShop_Summer_Open_Week1_Rain{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Summer_Week1_Rain.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Summer_Open_Week1_Rain{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "summer",
+				"Weather": "Rain, Storm",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+	
+	//Green Rain
+	
+	{
+        "LogName": "Seed Shop- Summer - Closed - Green Rain",
+        "Action": "Load",
+        "Target": "SeedShop_Summer_Closed_GreenRain{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Default_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Summer_Closed_GreenRain{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "summer",
+				"Weather": "GreenRain", 
+                "Time": "{{Range: 0610, 2600}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+	//Summer Week 2
+	
+		{
+        "LogName": "Seed Shop- Summer - Open - Week 2",
+        "Action": "Load",
+        "Target": "SeedShop_Summer_Open_Week2{{WeatherVariant}}{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Summer_Week2{{WeatherVariant}}.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Summer_Open_Week2{{WeatherVariant}}{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20,21",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 28,
+            "Y": 52,
+            "Width": 5,
+            "Height": 6
+        },
+
+    },
+	
+	
+     //Truck Fall
+	{
+        "LogName": "Joseph's Truck- Fall",
+        "Action": "Load",
+        "Target": "SeedShop_Truck_Fall{{WeatherVariant}}{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Truck_Fall{{WeatherVariant}}.png",
+    },
+    {
+        "LogName": "Joseph's Truck Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Truck_Fall{{WeatherVariant}}{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "fall",
+                "Time": "{{Range: 0610, 2600}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 11,
+            "Y": 59,
+            "Width": 4,
+            "Height": 7
+        },
+	},
+	
+	//Truck Spring
+	
+	{
+        "LogName": "Joseph's Truck- Spring",
+        "Action": "Load",
+        "Target": "SeedShop_Truck_Spring{{WeatherVariant}}{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Truck_Spring{{WeatherVariant}}.png",
+    },
+    {
+        "LogName": "Joseph's Truck Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Truck_Spring{{WeatherVariant}}{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "spring",
+                "Time": "{{Range: 0610, 2600}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 11,
+            "Y": 59,
+            "Width": 4,
+            "Height": 7
+        },
+	},
+	
+	//Truck Summer - Sun
+	
+	{
+        "LogName": "Joseph's Truck- Summer -Sun",
+        "Action": "Load",
+        "Target": "SeedShop_Truck_Summer_Sun{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Truck_Summer_Sun.png",
+    },
+    {
+        "LogName": "Joseph's Truck Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Truck_Summer_Sun{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "summer",
+				"Weather": "Sun, Wind",
+                "Time": "{{Range: 0610, 2600}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 11,
+            "Y": 59,
+            "Width": 4,
+            "Height": 7
+        },
+	},
+	
+	//Truck Summer - Rain
+	
+	{
+        "LogName": "Joseph's Truck- Summer - Rain",
+        "Action": "Load",
+        "Target": "SeedShop_Truck_Summer_Rain{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Truck_Summer_Rain.png",
+    },
+    {
+        "LogName": "Joseph's Truck Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Truck_Summer_Rain{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7,20,21",
+                "Season": "summer",
+				"Weather": "Rain, Storm",
+                "Time": "{{Range: 0610, 2600}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 11,
+            "Y": 59,
+            "Width": 4,
+            "Height": 7
+        },
+	},
+	
+	//Truck Summer - Green Rain
+	
+	{
+        "LogName": "Joseph's Truck- Summer - Green Rain",
+        "Action": "Load",
+        "Target": "SeedShop_Truck_Summer_GreenRain{{ModVariant}}",
+        "FromFile": "assets/Maps/Joseph_Truck_Summer_Rain.png",
+    },
+    {
+        "LogName": "Joseph's Truck Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/SeedShop_Truck_Summer_GreenRain{{ModVariant}}.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "summer",
+				"Weather": "GreenRain",
+                "Time": "{{Range: 0610, 2600}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 11,
+            "Y": 59,
+            "Width": 4,
+            "Height": 7
+        },
+	},
+	
+//Strings
+
+	{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"Joseph.Closed": "{{i18n:seedshop-closed-message}}",
+				"Joseph.Closed.GreenRain": "{{i18n:seedshop-closed-message-green-rain}}",
+				"Joseph.1": "{{i18n:seedshop-jumping-produce-message}}",
+				"Joseph.2.Sun": "{{i18n:seedshop-truck-sun-message}}",
+				"Joseph.2.Rain": "{{i18n:seedshop-truck-rain-message}}",
+				"Joseph.3": "{{i18n:seedshop-truck-basket-message}}",
+				"Joseph.4.GreenRain": "{{i18n:seedshop-truck-greenrain-message}}",
+				"Joseph.5.GreenRain": "{{i18n:seedshop-truck-greenrain-message-2}}",
+				},
+	},
+
+// INCLUDES
+
+
+	
+	//Objects
+	
+    {
+      "Action": "Include",
+      "FromFile": "code/Items/Objects/Cooking.json, code/Items/Objects/Crops.json, code/Items/Objects/Dried.json, code/Items/Objects/Forage.json, code/Items/Objects/Keg.json, code/Items/Objects/Meat.json, code/Items/Objects/OilMaker.json, code/Items/Objects/PreservesJar.json, code/Items/Objects/Seeds.json, code/Items/Objects/UniversalGiftTastes.json",
+    },
+	
+	//Cooking Recipes with JA
+   {
+      "Action": "Include",
+	  "FromFile": "code/Items/Recipes/CookingRecipes.json",
+    },
+	
+	//Crops + Trees
+	
+	{
+		"Action": "Include", 
+		"FromFile": "code/Items/Crops/GrowingCrops.json, code/Items/Trees/Trees.json",
+	},
+
+	//Mail + TriggerActions
+	
+	{
+		"Action": "Include", 
+		"FromFile": "code/Items/Mail/Mail.json, code/Data/TriggerActions.json",
+	},
+	
+	//Shops
+	
+	{
+		"Action": "Include", 
+		"FromFile": "code/Shops/Joseph.json, code/Shops/RecipeCatalogue.json",
+	},
+	
+	
+  ]
+}

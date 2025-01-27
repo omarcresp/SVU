@@ -1,0 +1,416 @@
+{
+  "Changes": [
+    {
+      "LogName": "Editing Traveler Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Traveler",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModID}}_TravelerShop.RandomSeedSun": {
+          "Condition": "DAY_OF_WEEK Sunday",
+          "Id": "{{ModID}}_CartShop.RandomSeedSun",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target {{ModID}}_",
+          "AvailableStock": 3,
+          "AvailableStockLimit": "Player",
+          "MaxItems": "{{Random:1,1,1,2}}",
+          "Price": -1,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "RandomAmount": [
+                0.8,
+                1,
+                1.5,
+                1.8,
+                2,
+                2.5,
+              ]
+            }
+          ]
+        },
+        "{{ModID}}_TravelerShop.RandomSeedSat": {
+          "Condition": "DAY_OF_WEEK Saturday, !SYNCED_RANDOM day lumisteria.travelershop_uncommon 0.3",
+          "Id": "{{ModID}}_CartShop.RandomSeedSat",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target {{ModID}}_",
+          "AvailableStock": 3,
+          "AvailableStockLimit": "Player",
+          "MaxItems": "{{Random:1,1,1,2}}",
+          "Price": -1,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "RandomAmount": [
+                0.8,
+                1,
+                1.5,
+                1.8,
+                2,
+                2.5,
+              ]
+            }
+          ]
+        },
+      },
+    },
+    {
+      "LogName": "Editing Casino Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Casino",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModID}}_Casino.Tier1": {
+          "Id": "{{ModID}}_Casino.Tier1",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target {{ModID}}_, !ITEM_CONTEXT_TAG Target lumisteria.crop_tier_2, !ITEM_CONTEXT_TAG Target lumisteria.crop_tier_3, !ITEM_CONTEXT_TAG Target lumisteria.sapling_tier_1",
+          "AvailableStock": 3,
+          "AvailableStockLimit": "Player",
+          "MaxItems": 1,
+          "Price": 1000,
+        },
+        "{{ModID}}_Casino.Tier2": {
+          "Id": "{{ModID}}_Casino.Tier2",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target {{ModID}}_, ITEM_CONTEXT_TAG Target lumisteria.crop_tier_2",
+          "AvailableStock": 3,
+          "AvailableStockLimit": "Player",
+          "MaxItems": 1,
+          "Price": 3000,
+        },
+        "{{ModID}}_Casino.Tier3": {
+          "Id": "{{ModID}}_Casino.Tier3",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target {{ModID}}_, ITEM_CONTEXT_TAG Target lumisteria.crop_tier_3",
+          "AvailableStock": 3,
+          "AvailableStockLimit": "Player",
+          "MaxItems": 1,
+          "Price": 8000,
+        },
+        "{{ModID}}_Casino.Sapling.Tier1": {
+          "Id": "{{ModID}}_Casino.Sapling.Tier1",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target {{ModID}}_, ITEM_CONTEXT_TAG Target lumisteria.sapling_tier_1",
+          "AvailableStock": 3,
+          "AvailableStockLimit": "Player",
+          "MaxItems": 1,
+          "Price": 30000,
+        },
+      },
+    },
+    {
+      "LogName": "Editing Hospital Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Hospital",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModID}}_HospitalShop.CalendulaSeeds.PriceTeaLeaves": {
+          "Id": "{{ModID}}_HospitalShop.CalendulaSeeds.PriceTeaLeaves",
+          "ItemId": "(O){{ModID}}_CalendulaSeeds",
+          "Price": 0,
+          "TradeItemId": "(O)815", //Tea Leaves
+          "TradeItemAmount": 1,
+          "MinStack": 2,
+          "AvailableStock": 6,
+        },
+        "{{ModID}}_HospitalShop.CalendulaSeeds.PriceCoffeeBeans": {
+          "Id": "{{ModID}}_HospitalShop.CalendulaSeeds.PriceCoffeeBeans",
+          "ItemId": "(O){{ModID}}_CalendulaSeeds",
+          "Price": 0,
+          "TradeItemId": "(O)433", //Coffee Beans
+          "TradeItemAmount": 1,
+          "AvailableStock": 6,
+        },
+        "{{ModID}}_HospitalShop.ButterflyLavenderSeeds.PriceTeaLeaves": {
+          "Id": "{{ModID}}_HospitalShop.ButterflyLavenderSeeds.PriceTeaLeaves",
+          "ItemId": "(O){{ModID}}_ButterflyLavenderSeeds",
+          "Price": 0,
+          "TradeItemId": "(O)815", //Tea Leaves
+          "TradeItemAmount": 1,
+          "AvailableStock": 6,
+        },
+        "{{ModID}}_HospitalShop.ButterflyLavenderSeeds.PriceCoffeeBeans": {
+          "Id": "{{ModID}}_HospitalShop.ButterflyLavenderSeeds.PriceCoffeeBeans",
+          "ItemId": "(O){{ModID}}_ButterflyLavenderSeeds",
+          "Price": 0,
+          "TradeItemId": "(O)433", //Coffee Beans
+          "TradeItemAmount": 4,
+          "AvailableStock": 6,
+        },
+        "{{ModID}}_HospitalShop.FoxgloveSeeds.PriceTeaLeaves": {
+          "Condition": "Season Fall, PLAYER_HEARTS Current Harvey 2",
+          "Id": "{{ModID}}_HospitalShop.FoxgloveSeeds.PriceTeaLeaves",
+          "ItemId": "(O){{ModID}}_FoxgloveSeeds",
+          "Price": 0,
+          "TradeItemId": "(O)815", //Tea Leaves
+          "TradeItemAmount": 2,
+          "AvailableStock": 6,
+        },
+        "{{ModID}}_HospitalShop.FoxgloveSeeds.PriceCoffeeBeans": {
+          "Condition": "Season Fall, PLAYER_HEARTS Current Harvey 2",
+          "Id": "{{ModID}}_HospitalShop.FoxgloveSeeds.PriceCoffeeBeans",
+          "ItemId": "(O){{ModID}}_FoxgloveSeeds",
+          "Price": 0,
+          "TradeItemId": "(O)433", //Coffee Beans
+          "TradeItemAmount": 6,
+          "AvailableStock": 6,
+        },
+      },
+    },
+    {
+      "LogName": "Editing AnimalShop Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "AnimalShop",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModID}}_MarnieShop.ForgetMeNotSeeds": {
+          "Condition": "Season Spring, PLAYER_HEARTS Current Marnie 2",
+          "Id": "{{ModID}}_MarnieShop.ForgetMeNotSeeds",
+          "ItemId": "(O){{ModID}}_ForgetMeNotSeeds",
+        },
+        "{{ModID}}_MarnieShop.BorageSeeds": {
+          "Condition": "Season Spring Summer",
+          "Id": "{{ModID}}_MarnieShop.BorageSeeds",
+          "ItemId": "(O){{ModID}}_BorageSeeds",
+        },
+        "{{ModID}}_MarnieShop.CornflowerSeeds": {
+          "Condition": "Season Summer Fall",
+          "Id": "{{ModID}}_MarnieShop.CornflowerSeeds",
+          "ItemId": "(O){{ModID}}_CornflowerSeeds",
+        },
+        "{{ModID}}_MarnieShop.TallMallowSeeds": {
+          "Condition": "Season Summer, PLAYER_HEARTS Current Marnie 2",
+          "Id": "{{ModID}}_MarnieShop.TallMallowSeeds",
+          "ItemId": "(O){{ModID}}_TallMallowSeeds",
+        },
+        "{{ModID}}_MarnieShop.ClematisStarter": {
+          "Condition": "Season Fall, PLAYER_HEARTS Current Marnie 2",
+          "Id": "{{ModID}}_MarnieShop.ClematisStarter",
+          "ItemId": "(O){{ModID}}_ClematisStarter",
+        },
+        "{{ModID}}_MarnieShop.GiantFernSeeds": {
+          "Condition": "Season Summer, PLAYER_HEARTS Current Marnie 4",
+          "Id": "{{ModID}}_MarnieShop.GiantFernSeeds",
+          "ItemId": "(O){{ModID}}_GiantFernSeeds",
+        },
+        "{{ModID}}_MarnieShop.LilacSapling": {
+          "Condition": "PLAYER_HEARTS Current Marnie 4",
+          "Id": "{{ModID}}_MarnieShop.LilacSapling",
+          "ItemId": "(O){{ModID}}_LilacSapling",
+        },
+      },
+      "MoveEntries": [
+        {
+          "Id": "{{ModID}}_MarnieShop.ForgetMeNotSeeds",
+          "BeforeId": "(O)178"
+        },
+        {
+          "Id": "{{ModID}}_MarnieShop.BorageSeeds",
+          "BeforeId": "(O)178"
+        },
+        {
+          "Id": "{{ModID}}_MarnieShop.CornflowerSeeds",
+          "BeforeId": "(O)178"
+        },
+        {
+          "Id": "{{ModID}}_MarnieShop.TallMallowSeeds",
+          "BeforeId": "(O)178"
+        },
+        {
+          "Id": "{{ModID}}_MarnieShop.ClematisStarter",
+          "BeforeId": "(O)178"
+        },
+        {
+          "Id": "{{ModID}}_MarnieShop.GiantFernSeeds",
+          "BeforeId": "(O)178"
+        },
+        {
+          "Id": "{{ModID}}_MarnieShop.LilacSapling",
+          "BeforeId": "(O)178"
+        },
+      ]
+    },
+    {
+      "LogName": "Editing Pierre Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModID}}_PierreShop.SpringPansySeeds": {
+          "Condition": "SEASON Spring",
+          "Id": "{{ModID}}_PierreShop.SpringPansySeeds",
+          "ItemId": "(O){{ModID}}_SpringPansySeeds",
+        },
+        "{{ModID}}_PierreShop.SpringBellsSeeds": {
+          "Condition": "SEASON Spring",
+          "Id": "{{ModID}}_PierreShop.SpringBellsSeeds",
+          "ItemId": "(O){{ModID}}_SpringBellsSeeds",
+        },
+        "{{ModID}}_PierreShop.IrisSeeds": {
+          "Condition": "SEASON Spring",
+          "Id": "{{ModID}}_PierreShop.IrisSeeds",
+          "ItemId": "(O){{ModID}}_IrisSeeds",
+          "AvailableStock": 3,
+        },
+        "{{ModID}}_PierreShop.BlueFlameSeeds": {
+          "Condition": "SEASON Spring, PLAYER_HEARTS Current Caroline 4",
+          "Id": "{{ModID}}_PierreShop.BlueFlameSeeds",
+          "ItemId": "(O){{ModID}}_BlueFlameSeeds",
+          "AvailableStock": 3,
+        },
+        "{{ModID}}_PierreShop.HollyhockSeeds": {
+          "Condition": "SEASON Spring Summer Fall, PLAYER_HEARTS Current Caroline 4",
+          "Id": "{{ModID}}_PierreShop.HollyhockSeeds",
+          "ItemId": "(O){{ModID}}_HollyhockSeeds",
+          "AvailableStock": 3,
+        },
+        "{{ModID}}_PierreShop.BabyBooSquashSeeds": {
+          "Condition": "SEASON Fall, PLAYER_HEARTS Current Caroline 4",
+          "Id": "{{ModID}}_PierreShop.BabyBooSquashSeeds",
+          "ItemId": "(O){{ModID}}_BabyBooSquashSeeds",
+          "AvailableStock": 3,
+        },
+        "{{ModID}}_PierreShop.PurpleFlameSeeds": {
+          "Condition": "SEASON Fall, PLAYER_HEARTS Current Caroline 4",
+          "Id": "{{ModID}}_PierreShop.PurpleFlameSeeds",
+          "ItemId": "(O){{ModID}}_PurpleFlameSeeds",
+          "AvailableStock": 3,
+        },
+        "{{ModID}}_PierreShop.RomanescoCabbageSeeds": {
+          "Condition": "SEASON Fall, PLAYER_HEARTS Current Caroline 4",
+          "Id": "{{ModID}}_PierreShop.RomanescoCabbageSeeds",
+          "ItemId": "(O){{ModID}}_RomanescoCabbageSeeds",
+          "AvailableStock": 3,
+        },
+        "{{ModID}}_PierreShop.SnowdropSeeds": {
+          "Condition": "SEASON Winter",
+          "Id": "{{ModID}}_PierreShop.SnowdropSeeds",
+          "ItemId": "(O){{ModID}}_SnowdropSeeds",
+          "AvailableStock": 3,
+        },
+        "{{ModID}}_PierreShop.WinterPansySeeds": {
+          "Condition": "SEASON Winter",
+          "Id": "{{ModID}}_PierreShop.WinterPansySeeds",
+          "ItemId": "(O){{ModID}}_WinterPansySeeds",
+          "AvailableStock": 3,
+        },
+        "{{ModID}}_PierreShop.LilacSapling": {
+          "Condition": "PLAYER_HEARTS Current Caroline 4",
+          "Id": "{{ModID}}_PierreShop.LilacSapling",
+          "ItemId": "(O){{ModID}}_LilacSapling",
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "RandomAmount": [
+                1.5,
+              ]
+            }
+          ]
+        },
+      },
+      "MoveEntries": [
+        {
+          "Id": "{{ModID}}_PierreShop.SpringPansySeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.SpringBellsSeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.IrisSeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.BlueFlameSeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.HollyhockSeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.BabyBooSquashSeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.PurpleFlameSeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.RomanescoCabbageSeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.SnowdropSeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.WinterPansySeeds",
+          "BeforeId": "GrassStarter"
+        },
+        {
+          "Id": "{{ModID}}_PierreShop.LilacSapling",
+          "BeforeId": "GrassStarter"
+        },
+      ]
+    },
+    {
+      "LogName": "Editing Sandy Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Sandy",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModID}}_SandyShop.WinterIrisBulb": {
+          "Condition": "DAY_OF_WEEK Tuesday",
+          "Id": "{{ModID}}_SandyShop.WinterIrisBulb",
+          "ItemId": "(O){{ModID}}_WinterIrisBulb",
+        },
+        "{{ModID}}_SandyShop.DahliaSeeds": {
+          "Condition": "DAY_OF_WEEK Friday",
+          "Id": "{{ModID}}_SandyShop.DahliaSeeds",
+          "ItemId": "(O){{ModID}}_DahliaSeeds",
+        },
+      },
+    },
+    {
+      "LogName": "Editing Krobus Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "ShadowShop",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModID}}_KrobusShop.VoidLily": {
+          "Condition": "SYNCED_RANDOM day lumisteria.krobusshop_uncommon 0.3, DAY_OF_WEEK Saturday",
+          "Id": "{{ModID}}_KrobusShop.VoidLily",
+          "ItemId": "{{ModID}}_VoidLily",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "Price": 8000,
+        },
+      },
+    },
+  ]
+}

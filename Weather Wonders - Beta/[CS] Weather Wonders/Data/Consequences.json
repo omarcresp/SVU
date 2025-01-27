@@ -1,0 +1,291 @@
+{
+  "Changes": [
+    // Acid Rain
+    {
+      "LogName": "Load WW's Acid Rain Consequences",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Kana.WeatherWonders_DamageCrops": {
+          "Id": "Kana.WeatherWonders_DamageCrops",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_AcidRain",
+          "Actions": ["leclair.cloudyskies_KillCrops -c 0.025 Context Default"]
+        },
+        "Kana.WeatherWonders_DamageCropsReset": {
+          "Id": "Kana.WeatherWonders_DamageCropsReset",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_AcidRain",
+          "Actions": [
+            "MarkActionApplied All Kana.WeatherWonders_DamageCrops false"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "AcidRainDamageCrops": true,
+        "AcidRain": true
+      }
+    },
+    // Muddy Rain
+    {
+      "LogName": "Load WW's Muddy Rain Consequences",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Kana.WeatherWonders_FertilizeDirt": {
+          "Id": "Kana.WeatherWonders_FertilizeDirt",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_MuddyRain",
+          "Actions": [
+            "leclair.cloudyskies_FertilizeDirt -c 0.15 (O)369 Context Default"
+          ]
+        },
+        "Kana.WeatherWonders_FertilizeDirtReset": {
+          "Id": "Kana.WeatherWonders_FertilizeDirtReset",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_MuddyRain",
+          "Actions": [
+            "MarkActionApplied All Kana.WeatherWonders_FertilizeDirt false"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "MuddyRainFertilizeDirt": true,
+        "MuddyRain": true
+      }
+    },
+    // Heatwave
+    {
+      "LogName": "Load WW's Heatwave Consequences",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Kana.WeatherWonders_UnWaterDirt": {
+          "Id": "Kana.WeatherWonders_UnWaterDirt",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_Heatwave",
+          "Actions": ["leclair.cloudyskies_UnWaterDirt -c 1 Context Default"]
+        },
+        "Kana.WeatherWonders_UnWaterDirtReset": {
+          "Id": "Kana.WeatherWonders_UnWaterDirtReset",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_Heatwave",
+          "Actions": [
+            "MarkActionApplied All Kana.WeatherWonders_UnWaterDirt false"
+          ],
+          "MarkActionApplied": false
+        },
+        "Kana.WeatherWonders_UnWaterPets": {
+          "Id": "Kana.WeatherWonders_UnWaterPets",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_Heatwave",
+          "Actions": ["leclair.cloudyskies_UnWaterPets -c 1 Context Default"]
+        },
+        "Kana.WeatherWonders_UnWaterPetsReset": {
+          "Id": "Kana.WeatherWonders_UnWaterPetsReset",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_Heatwave",
+          "Actions": [
+            "MarkActionApplied All Kana.WeatherWonders_UnWaterPets false"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "HeatwaveDryWater": true,
+        "Heatwave": true
+      }
+    },
+    // Deluge
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Kana.WeatherWonders_DelugeSpawnDebrisDefault": {
+          "Id": "Kana.WeatherWonders_DelugeSpawnDebrisDefault",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_Deluge",
+          "Actions": [
+            "AddMail Host Kana.WeatherWonders_DelugeSpawnDebrisDefault Received"
+          ]
+        },
+        "Kana.WeatherWonders_DelugeSpawnDebrisDefaultReset": {
+          "Id": "Kana.WeatherWonders_DelugeSpawnDebrisDefaultReset",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_Deluge",
+          "Actions": [
+            "RemoveMail Host Kana.WeatherWonders_DelugeSpawnDebrisDefault Received",
+            "MarkActionApplied All Kana.WeatherWonders_DelugeSpawnDebrisDefault false"
+          ],
+          "MarkActionApplied": false
+        },
+        "Kana.WeatherWonders_DelugeSpawnDebrisIsland": {
+          "Id": "Kana.WeatherWonders_DelugeSpawnDebrisIsland",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER IslandWest Kana.WeatherWonders_Deluge",
+          "Actions": [
+            "AddMail Host Kana.WeatherWonders_DelugeSpawnDebrisIsland Received"
+          ]
+        },
+        "Kana.WeatherWonders_DelugeSpawnDebrisIslandReset": {
+          "Id": "Kana.WeatherWonders_DelugeSpawnDebrisIslandReset",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER IslandWest Kana.WeatherWonders_Deluge",
+          "Actions": [
+            "RemoveMail Host Kana.WeatherWonders_DelugeSpawnDebrisIsland Received",
+            "MarkActionApplied All Kana.WeatherWonders_DelugeSpawnDebrisIsland false"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "DelugeSpawnDebris": true,
+        "Deluge": true
+      }
+    },
+    // Earthquake
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Kana.WeatherWonders_EarthquakeSpawnNodes": {
+          "Id": "Kana.WeatherWonders_EarthquakeSpawnNodes",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_MAIL Host Kana.WeatherWonders_EarthquakeNightlyEvent",
+          "Actions": [
+            "AddMail Host Kana.WeatherWonders_EarthquakeSpawnNodes Received"
+          ]
+        },
+        "Kana.WeatherWonders_EarthquakeSpawnNodesReset": {
+          "Id": "Kana.WeatherWonders_EarthquakeSpawnNodesReset",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Host Kana.WeatherWonders_EarthquakeSpawnNodes",
+          "Actions": [
+            "RemoveMail Host Kana.WeatherWonders_EarthquakeNightlyEvent Received",
+            "RemoveMail Host Kana.WeatherWonders_EarthquakeSpawnNodes Received",
+            "MarkActionApplied All Kana.WeatherWonders_EarthquakeSpawnNodes false"
+          ],
+          "MarkActionApplied": false
+        }
+      }
+    },
+    // Gale
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Kana.WeatherWonders_GaleBreakTrees": {
+          "Id": "Kana.WeatherWonders_GaleBreakTrees",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_MAIL Host Kana.WeatherWonders_GaleNightlyEvent",
+          "Actions": [
+            "AddMail Host Kana.WeatherWonders_GaleBreakTrees Received"
+          ]
+        },
+        "Kana.WeatherWonders_GaleBreakTreesReset": {
+          "Id": "Kana.WeatherWonders_GaleBreakTreesReset",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Host Kana.WeatherWonders_GaleBreakTrees",
+          "Actions": [
+            "RemoveMail Host Kana.WeatherWonders_GaleNightlyEvent Received",
+            "RemoveMail Host Kana.WeatherWonders_GaleBreakTrees Received",
+            "MarkActionApplied All Kana.WeatherWonders_GaleBreakTrees false"
+          ],
+          "MarkActionApplied": false
+        }
+      }
+    },
+    // Blood Moon
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Kana.WeatherWonders_BloodMoonSpawnMonsters": {
+          "Id": "Kana.WeatherWonders_BloodMoonSpawnMonsters",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_BloodMoon",
+          "Actions": [
+            "AddMail Host Kana.WeatherWonders_BloodMoonSpawnMonsters Received"
+          ]
+        },
+        "Kana.WeatherWonders_BloodMoonSpawnMonstersReset": {
+          "Id": "Kana.WeatherWonders_BloodMoonSpawnMonstersReset",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_BloodMoon",
+          "Actions": [
+            "RemoveMail Host Kana.WeatherWonders_BloodMoonSpawnMonsters Received",
+            "MarkActionApplied All Kana.WeatherWonders_BloodMoonSpawnMonsters false"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "BloodMoonSpawnMonsters": true,
+        "BloodMoon": true
+      }
+    },
+    // Harvest Moon
+    {
+      "LogName": "Load WW's Harvest Moon Consequences",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Kana.WeatherWonders_GrowCrops": {
+          "Id": "Kana.WeatherWonders_GrowCrops",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_HarvestMoon",
+          "Actions": [
+            "leclair.cloudyskies_GrowCrops -c 0.4 -d 2 --max-days 5 Context Default"
+          ]
+        },
+        "Kana.WeatherWonders_GrowCropsReset": {
+          "Id": "Kana.WeatherWonders_GrowCropsReset",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_HarvestMoon",
+          "Actions": [
+            "MarkActionApplied All Kana.WeatherWonders_GrowCrops false"
+          ],
+          "MarkActionApplied": false
+        },
+        "Kana.WeatherWonders_GrowFruitTrees": {
+          "Id": "Kana.WeatherWonders_GrowFruitTrees ",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_HarvestMoon",
+          "Actions": [
+            "leclair.cloudyskies_GrowFruitTrees -c 0.7 --days 10 --max-fruit 3 Context Default"
+          ]
+        },
+        "Kana.WeatherWonders_GrowFruitTreesReset": {
+          "Id": "Kana.WeatherWonders_GrowFruitTreesReset",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_HarvestMoon",
+          "Actions": [
+            "MarkActionApplied All Kana.WeatherWonders_GrowFruitTrees false"
+          ],
+          "MarkActionApplied": false
+        },
+        "Kana.cloudyskies_GrowTrees": {
+          "Id": "Kana.cloudyskies_GrowTrees ",
+          "Trigger": "DayEnding",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_HarvestMoon",
+          "Actions": [
+            "leclair.cloudyskies_GrowTrees -c 0.3 -s 1 --max-stage 2 Context Default"
+          ]
+        },
+        "Kana.cloudyskies_GrowTreesReset": {
+          "Id": "Kana.cloudyskies_GrowTreesReset",
+          "Trigger": "DayStarted",
+          "Condition": "WEATHER Farm Kana.WeatherWonders_HarvestMoon",
+          "Actions": ["MarkActionApplied All Kana.cloudyskies_GrowTrees false"],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "HarvestMoonBoostGrow": true,
+        "HarvestMoon": true
+      }
+    }
+  ]
+}

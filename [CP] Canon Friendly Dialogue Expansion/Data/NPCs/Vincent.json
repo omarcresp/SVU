@@ -1,0 +1,136 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Vincent_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Vincent",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)221": "{{i18n: CFE_Vincent_PinkCake}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Vincent}}' = 'true' OR ('{{CFE_Vincent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Vincent_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Vincent",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Vincent_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Vincent_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Vincent_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Vincent_PrismaticShard}}",
+        "AcceptGift_(O)612": "{{i18n: CFE_Vincent_CranberryCandy}}",
+        "AcceptGift_(O)903": "{{i18n: CFE_Vincent_GingerAle}}",
+        "AcceptGift_(O)398": "{{i18n: CFE_Vincent_Grape{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+        "AcceptGift_(O)721": "{{i18n: CFE_Vincent_Snail}}"
+      },
+      "When": { "Query: '{{CFE_Vincent}}' = 'true' OR ('{{CFE_Vincent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    /*{
+      "LogName": "CFE_Vincent_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": { //left for future use }, 
+      "When": { "Query: '{{CFE_Vincent}}' = 'true' OR ('{{CFE_Vincent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },       
+ */
+    {
+      "LogName": "CFE_Vincent_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Vincent",
+      "Entries": {
+        //date specific dialogue
+        "spring_1_2": "{{i18n: CFE_Vincent_spring1}}",
+        "spring_12_1": "{{i18n: CFE_Vincent_spring12}}",
+        "spring_12_2": "{{i18n: CFE_Vincent_spring12}}",
+
+        "fall_26_1": "{{i18n: CFE_Vincent_fall26}}",
+        "fall_26_2": "{{i18n: CFE_Vincent_fall26}}",
+
+        "winter_24_1": "{{i18n: CFE_Vincent_winter24}}",
+        "winter_24_2": "{{i18n: CFE_Vincent_winter24}}",
+        "winter_28_1": "{{i18n: CFE_Vincent_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Vincent_winter28}}",
+
+        //heart specific dialogue
+        "summer_Mon10": "{{i18n: CFE_Vincent_summerMon10}}",
+        "summer_Tue4": "{{i18n: CFE_Vincent_summerTue4}}",
+        "summer_Wed6": "{{i18n: CFE_Vincent_summerWed6}}",
+        "summer_Thu10": "{{i18n: CFE_Vincent_summerThu10}}",
+        "summer_Fri10": "{{i18n: CFE_Vincent_summerFri10}}",
+        "summer_Sun10": "{{i18n: CFE_Vincent_repeated_1}}",
+
+        "fall_Mon10": "{{i18n: CFE_Vincent_fallMon10}}",
+        "fall_Wed8": "{{i18n: CFE_Vincent_fallWed8}}",
+        "fall_Thu8": "{{i18n: CFE_Vincent_fallThu8}}",
+        "fall_Thu4": "{{i18n: CFE_Vincent_fallThu4}}",
+        "fall_Sat10_1": "{{i18n: CFE_Vincent_repeated_2}}",
+        "fall_Sat10_2": "{{i18n: CFE_Vincent_fallSat10y2}}",
+        "fall_Sun4": "{{i18n: CFE_Vincent_fallSun4}}",
+
+        "winter_Tue4": "{{i18n: CFE_Vincent_winterTue4}}",
+        "winter_Thu10": "{{i18n: CFE_Vincent_winterThu10}}",
+        "winter_Fri10": "{{i18n: CFE_Vincent_winterFri10}}",
+        "winter_Sat10": "{{i18n: CFE_Vincent_winterSat10}}",
+        "winter_Sun10": "{{i18n: CFE_Vincent_repeated_3}}",
+
+        "Mon10_1": "{{i18n: CFE_Vincent_Mon10y1{{GenderNeutralCompat}}}}",
+        "Mon10_2": "{{i18n: CFE_Vincent_Mon10y2}}",
+        "Mon8_1": "{{i18n: CFE_Vincent_Mon8_1}}",
+        "Mon8_2": "{{i18n: CFE_Vincent_Mon8_{{Random: 1,2}}}}",
+        "Mon2": "{{i18n: CFE_Vincent_Mon2}}",
+        "Tue8_inlaw_Penny": "{{i18n: CFE_Vincent_Tue8inlawPenny}}",
+        "Tue8": "{{i18n: CFE_Vincent_repeated_4{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+        "Tue6_1": "{{i18n: CFE_Vincent_repeated_4{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+        "Tue6_2": "{{i18n: CFE_Vincent_Tue6y2}}",
+        "Tue4": "{{i18n: CFE_Vincent_repeated_1}}",
+        "Tue2": "{{i18n: CFE_Vincent_repeated_3}}",
+        "Wed8": "{{i18n: CFE_Vincent_Wed8}}",
+        "Wed6": "{{i18n: CFE_Vincent_Wed6}}",
+        "Wed4": "{{i18n: CFE_Vincent_Wed4}}",
+        "Thu8": "{{i18n: CFE_Vincent_Thu8}}",
+        "Thu6": "{{i18n: CFE_Vincent_Thu6}}",
+        "Thu4": "{{i18n: CFE_Vincent_repeated_3}}",
+        "Fri8": "{{i18n: CFE_Vincent_Fri8}}",
+        "Fri4": "{{i18n: CFE_Vincent_Fri4}}",
+        "Fri2": "{{i18n: CFE_Vincent_Fri2}}",
+        "Sat10_1": "{{i18n: CFE_Vincent_repeated_2}}",
+        "Sat10_2": "{{i18n: CFE_Vincent_Sat10y2}}",
+        "Sat8_2": "{{i18n: CFE_Vincent_Sat8y2}}",
+        "Sat6_1": "{{i18n: CFE_Vincent_Sat6y1}}",
+        "Sat6_2": "{{i18n: CFE_Vincent_repeated_5}}",
+        "Sat4_1": "{{i18n: CFE_Vincent_Sat4y1}}",
+        "Sat4_2": "{{i18n: CFE_Vincent_Sat4y2}}",
+        "Sat2": "{{i18n: CFE_Vincent_Sat2}}",
+        "Sun8": "{{i18n: CFE_Vincent_Sun8}}",
+        "Sun4": "{{i18n: CFE_Vincent_Sun4}}",
+
+        //generic weekday dialogue
+        "summer_Tue": "{{i18n: CFE_Vincent_summerTue{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+        "summer_Wed": "{{i18n: CFE_Vincent_summerWed}}",
+        "summer_Sat": "{{i18n: CFE_Vincent_summerSat}}",
+
+        "fall_Tue": "{{i18n: CFE_Vincent_fallTue}}",
+        "fall_Wed_inlaw_Sam": "{{i18n: CFE_Vincent_WedinlawSam}}",
+        "fall_Wed": "{{i18n: CFE_Vincent_fallWed}}",
+        "fall_Fri": "{{i18n: CFE_Vincent_fallFri}}",
+
+        "winter_Mon": "{{i18n: CFE_Vincent_winterMon}}",
+        "winter_Wed_inlaw_Sam": "{{i18n: CFE_Vincent_winterWedinlawSam}}",
+        "winter_Wed": "{{i18n: CFE_Vincent_winterWed}}",
+        "winter_Fri": "{{i18n: CFE_Vincent_winterFri}}",
+
+        "Wed_inlaw_Sam": "{{i18n: CFE_Vincent_WedinlawSam}}",
+        "Fri": "{{i18n: CFE_Vincent_Fri}}",
+        "Sat_1": "{{i18n: CFE_Vincent_Saty1}}",
+        "Sat_2": "{{i18n: CFE_Vincent_repeated_5}}"
+      },
+      "When": {
+        "Query: '{{CFE_Vincent}}' = 'true' OR ('{{CFE_Vincent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    }
+  ]
+}

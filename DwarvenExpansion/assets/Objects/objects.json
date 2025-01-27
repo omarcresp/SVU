@@ -1,0 +1,1883 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_CarrotMash": {
+                    "Name": "Carrot Mash",
+                    "DisplayName": "{{i18n:CarrotMash.DisplayName}}",
+                    "Description": "{{i18n:CarrotMash.Description}}",
+                    "Price": 25,
+                    "Type": "Basic",
+                    "Category": -25,
+                    "Edibility": -300,
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}_Drinks_DwarvenSpirits": {
+                    "Name": "Dwarven Spirits",
+                    "DisplayName": "{{i18n:Drinks_DwarvenSpirits.DisplayName}}",
+                    "Description": "{{i18n:Drinks_DwarvenSpirits.Description}}",
+                    "Price": 50,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 300,
+                            "CustomAttributes": {
+                                "LuckLevel": 1
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "alcohol_item",
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 1
+                },
+                "{{ModId}}_Drinks_DwarfSunrise": {
+                    "Name": "Dwarf Sunrise",
+                    "DisplayName": "{{i18n:Drinks_DwarfSunrise.DisplayName}}",
+                    "Description": "{{i18n:Drinks_DwarfSunrise.Description}}",
+                    "Price": 150,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Edibility": 15,
+                    "IsDrink": true,
+                    "Buffs": [],
+                    "ContextTags": [
+                        "alcohol_item",
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 3
+                },
+                "{{ModId}}_Drinks_DuskyDwarf": {
+                    "Name": "Dusky Dwarf",
+                    "DisplayName": "{{i18n:Drinks_DuskyDwarf.DisplayName}}",
+                    "Description": "{{i18n:Drinks_DuskyDwarf.Description}}",
+                    "Price": 200,
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [],
+                    "ContextTags": [
+                        "alcohol_item",
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 4
+                },
+                "{{ModId}}_Drinks_InfusedSpirits": {
+                    "Name": "Infused Dwarven Spirits",
+                    "DisplayName": "{{i18n:Drinks_InfusedSpirits.DisplayName}}",
+                    "Description": "{{i18n:Drinks_InfusedSpirits.Description}}",
+                    "Price": 200,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 150,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 300,
+                            "CustomAttributes": {
+                                "LuckLevel": 2
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "alcohol_item",
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 2
+                },
+                "{{ModId}}_Potions_DistilledSunlight": {
+                    "Name": "Distilled Sunlight",
+                    "DisplayName": "{{i18n:Potions_DistilledSunlight.DisplayName}}",
+                    "Description": "{{i18n:Potions_DistilledSunlight.Description}}",
+                    "Price": 800,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 110,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 120,
+                            "CustomAttributes": {
+                                "Speed": 3
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 18
+                },
+                "{{ModId}}_Potions_FarmersDraught": {
+                    "Name": "Farmers Draught",
+                    "DisplayName": "{{i18n:Potions_FarmersDraught.DisplayName}}",
+                    "Description": "{{i18n:Potions_FarmersDraught.Description}}",
+                    "Price": 350,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 60,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 360,
+                            "CustomAttributes": {
+                                "FarmingLevel": 3
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 21
+                },
+                "{{ModId}}_Potions_FishermansBrew": {
+                    "Name": "Fishermans Brew",
+                    "DisplayName": "{{i18n:Potions_FishermansBrew.DisplayName}}",
+                    "Description": "{{i18n:Potions_FishermansBrew.Description}}",
+                    "Price": 200,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 55,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 360,
+                            "CustomAttributes": {
+                                "FishingLevel": 3
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 19
+                },
+                "{{ModId}}_Potions_MinersDrink": {
+                    "Name": "Miners Drink",
+                    "DisplayName": "{{i18n:Potions_MinersDrink.DisplayName}}",
+                    "Description": "{{i18n:Potions_MinersDrink.Description}}",
+                    "Price": 240,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 55,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 360,
+                            "CustomAttributes": {
+                                "MiningLevel": 3
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 20
+                },
+                "{{ModId}}_Potions_OnePerfectDay": {
+                    "Name": "One Perfect Day",
+                    "DisplayName": "{{i18n:Potions_OnePerfectDay.DisplayName}}",
+                    "Description": "{{i18n:Potions_OnePerfectDay.Description}}",
+                    "Price": 5000,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 400,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 1080,
+                            "CustomAttributes": {
+                                "FarmingLevel": 3,
+                                "ForagingLevel": 3,
+                                "MiningLevel": 3,
+                                "FishingLevel": 3,
+                                "LuckLevel": 3,
+                                "Attack": 4,
+                                "Defense": 5,
+                                "MagnetRadius": 96,
+                                "Speed": 3,
+                                "MaxStamina": 150,
+                                "MaxHealth": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 16
+                },
+                "{{ModId}}_Potions_ShadowedElixir": {
+                    "Name": "Shadowed Elixir",
+                    "DisplayName": "{{i18n:Potions_ShadowedElixir.DisplayName}}",
+                    "Description": "{{i18n:Potions_ShadowedElixir.Description}}",
+                    "Price": 1200,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 80,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 360,
+                            "CustomAttributes": {
+                                "Defense": 3,
+                                "MaxStamina": 50,
+                                "MaxHealth": 10
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 17
+                },
+                "{{ModId}}_Potions_SwordsmansElixir": {
+                    "Name": "Swordsmans Elixir",
+                    "DisplayName": "{{i18n:Potions_SwordsmansElixir.DisplayName}}",
+                    "Description": "{{i18n:Potions_SwordsmansElixir.Description}}",
+                    "Price": 465,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 125,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 360,
+                            "CustomAttributes": {
+                                "Attack": 3
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 22
+                },
+                "{{ModId}}_Potions_WoodmansTonic": {
+                    "Name": "Woodmans Tonic",
+                    "DisplayName": "{{i18n:Potions_WoodmansTonic.DisplayName}}",
+                    "Description": "{{i18n:Potions_WoodmansTonic.Description}}",
+                    "Price": 260,
+                    "Type": "Crafting",
+                    "Category": -26,
+                    "Edibility": 45,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "loss",
+                            "Duration": 360,
+                            "CustomAttributes": {
+                                "ForagingLevel": 3
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 23
+                },
+                "{{ModId}}_OreCluster_Copper": {
+                    "Name": "Copper Cluster",
+                    "DisplayName": "{{i18n:OreCluster_Copper.DisplayName}}",
+                    "Description": "{{i18n:OreCluster_Copper.Description}}",
+                    "Type": "Minerals",
+                    "Price": 25,
+                    "Category": "-15",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_orecluster",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 224
+                },
+                "{{ModId}}_OreCluster_Iron": {
+                    "Name": "Iron Cluster",
+                    "DisplayName": "{{i18n:OreCluster_Iron.DisplayName}}",
+                    "Description": "{{i18n:OreCluster_Iron.Description}}",
+                    "Type": "Minerals",
+                    "Price": 75,
+                    "Category": "-15",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_orecluster",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 225
+                },
+                "{{ModId}}_OreCluster_Gold": {
+                    "Name": "Gold Cluster",
+                    "DisplayName": "{{i18n:OreCluster_Gold.DisplayName}}",
+                    "Description": "{{i18n:OreCluster_Gold.Description}}",
+                    "Type": "Minerals",
+                    "Price": 125,
+                    "Category": "-15",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_orecluster",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 226
+                },
+                "{{ModId}}_OreCluster_Iridium": {
+                    "Name": "Iridium Cluster",
+                    "DisplayName": "{{i18n:OreCluster_Iridium.DisplayName}}",
+                    "Description": "{{i18n:OreCluster_Iridium.Description}}",
+                    "Type": "Minerals",
+                    "Price": 500,
+                    "Category": "-15",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_orecluster",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 227
+                },
+                "{{ModId}}_MineralDust_CopperDust": {
+                    "Name": "Copper Dust",
+                    "DisplayName": "{{i18n:MineralDust_CopperDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_CopperDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 5,
+                    "Category": "-15",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_oredust"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 176
+                },
+                "{{ModId}}_MineralDust_IronDust": {
+                    "Name": "Iron Dust",
+                    "DisplayName": "{{i18n:MineralDust_IronDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_IronDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 10,
+                    "Category": "-15",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_oredust"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 177
+                },
+                "{{ModId}}_MineralDust_GoldDust": {
+                    "Name": "Gold Dust",
+                    "DisplayName": "{{i18n:MineralDust_GoldDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_GoldDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 25,
+                    "Category": "-15",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_oredust"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 178
+                },
+                "{{ModId}}_MineralDust_IridiumDust": {
+                    "Name": "Iridium Dust",
+                    "DisplayName": "{{i18n:MineralDust_IridiumDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_IridiumDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 100,
+                    "Category": "-15",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_oredust"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 179
+                },
+                "{{ModId}}_MineralDust_EmeraldDust": {
+                    "Name": "Emerald Dust",
+                    "DisplayName": "{{i18n:MineralDust_EmeraldDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_EmeraldDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 250,
+                    "Category": "-2",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_gemdust",
+                        "{{ModId}}_gemquality_high"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 182
+                },
+                "{{ModId}}_MineralDust_AquamarineDust": {
+                    "Name": "Aquamarine Dust",
+                    "DisplayName": "{{i18n:MineralDust_AquamarineDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_AquamarineDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 180,
+                    "Category": "-2",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_gemdust",
+                        "{{ModId}}_gemquality_medium"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 185
+                },
+                "{{ModId}}_MineralDust_RubyDust": {
+                    "Name": "Ruby Dust",
+                    "DisplayName": "{{i18n:MineralDust_RubyDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_RubyDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 250,
+                    "Category": "-2",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_gemdust",
+                        "{{ModId}}_gemquality_high"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 183
+                },
+                "{{ModId}}_MineralDust_AmethystDust": {
+                    "Name": "Amethyst Dust",
+                    "DisplayName": "{{i18n:MineralDust_AmethystDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_AmethystDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 100,
+                    "Category": "-2",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_gemdust",
+                        "{{ModId}}_gemquality_low"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 186
+                },
+                "{{ModId}}_MineralDust_TopazDust": {
+                    "Name": "Topaz Dust",
+                    "DisplayName": "{{i18n:MineralDust_TopazDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_TopazDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 80,
+                    "Category": "-2",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_gemdust",
+                        "{{ModId}}_gemquality_low"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 187
+                },
+                "{{ModId}}_MineralDust_JadeDust": {
+                    "Name": "Jade Dust",
+                    "DisplayName": "{{i18n:MineralDust_JadeDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_JadeDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 200,
+                    "Category": "-2",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_gemdust",
+                        "{{ModId}}_gemquality_medium"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 184
+                },
+                "{{ModId}}_MineralDust_DiamondDust": {
+                    "Name": "Diamond Dust",
+                    "DisplayName": "{{i18n:MineralDust_DiamondDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_DiamondDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 750,
+                    "Category": "-2",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_gemdust",
+                        "{{ModId}}_gemquality_perfect"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 181
+                },
+                "{{ModId}}_MineralDust_PrismaticDust": {
+                    "Name": "Prismatic Dust",
+                    "DisplayName": "{{i18n:MineralDust_PrismaticDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_PrismaticDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 2000,
+                    "Category": "-2",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_gemdust",
+                        "{{ModId}}_gemquality_perfect"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 180
+                },
+                "{{ModId}}_MineralDust_GemstoneDust": {
+                    "Name": "Gemstone Dust",
+                    "DisplayName": "{{i18n:MineralDust_GemstoneDust.DisplayName}}",
+                    "Description": "{{i18n:MineralDust_GemstoneDust.Description}}",
+                    "Type": "Minerals",
+                    "Price": 80,
+                    "Category": "-2",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_mineraldust",
+                        "not_museum_donatable",
+                        "{{ModId}}_gemdust",
+                        "{{ModId}}_gemquality_low"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 180
+                },
+                "{{ModId}}_Jewelry_N_Aerinite": {
+                    "Name": "Aerinite Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Aerinite.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Aerinite.Description}}",
+                    "Type": "Basic",
+                    "Price": 1125,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 116
+                },
+                "{{ModId}}_Jewelry_N_Alamite": {
+                    "Name": "Alamite Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Alamite.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Alamite.Description}}",
+                    "Type": "Basic",
+                    "Price": 1200,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 97
+                },
+                "{{ModId}}_Jewelry_N_Celestine": {
+                    "Name": "Celestine Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Celestine.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Celestine.Description}}",
+                    "Type": "Basic",
+                    "Price": 1125,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 98
+                },
+                "{{ModId}}_Jewelry_N_Dolomite": {
+                    "Name": "Dolomite Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Dolomite.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Dolomite.Description}}",
+                    "Type": "Basic",
+                    "Price": 1650,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 99
+                },
+                "{{ModId}}_Jewelry_N_EarthCrystal": {
+                    "Name": "Earth Crystal Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_EarthCrystal.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_EarthCrystal.Description}}",
+                    "Type": "Basic",
+                    "Price": 900,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 100
+                },
+                "{{ModId}}_Jewelry_N_FireOpal": {
+                    "Name": "Fire Opal Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_FireOpal.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_FireOpal.Description}}",
+                    "Type": "Basic",
+                    "Price": 1800,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 101
+                },
+                "{{ModId}}_Jewelry_N_FireQuartz": {
+                    "Name": "Fire Quartz Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_FireQuartz.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_FireQuartz.Description}}",
+                    "Type": "Basic",
+                    "Price": 1050,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 103
+                },
+                "{{ModId}}_Jewelry_N_Fluorapatite": {
+                    "Name": "Fluorapatite Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Fluorapatite.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Fluorapatite.Description}}",
+                    "Type": "Basic",
+                    "Price": 1350,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 105
+                },
+                "{{ModId}}_Jewelry_N_FrozenTear": {
+                    "Name": "Frozen Tear Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_FrozenTear.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_FrozenTear.Description}}",
+                    "Type": "Basic",
+                    "Price": 975,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 106
+                },
+                "{{ModId}}_Jewelry_N_Geminite": {
+                    "Name": "Geminite Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Geminite.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Geminite.Description}}",
+                    "Type": "Basic",
+                    "Price": 1200,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 107
+                },
+                "{{ModId}}_Jewelry_N_Gold": {
+                    "Name": "Gold Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Gold.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Gold.Description}}",
+                    "Type": "Basic",
+                    "Price": 810,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 96
+                },
+                "{{ModId}}_Jewelry_N_Helvite": {
+                    "Name": "Helvite Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Helvite.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Helvite.Description}}",
+                    "Type": "Basic",
+                    "Price": 2100,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 108
+                },
+                "{{ModId}}_Jewelry_N_Kyanite": {
+                    "Name": "Kyanite Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Kyanite.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Kyanite.Description}}",
+                    "Type": "Basic",
+                    "Price": 1500,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 109
+                },
+                "{{ModId}}_Jewelry_N_LemonStone": {
+                    "Name": "Lemon Stone Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_LemonStone.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_LemonStone.Description}}",
+                    "Type": "Basic",
+                    "Price": 1500,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 110
+                },
+                "{{ModId}}_Jewelry_N_Malachite": {
+                    "Name": "Malachite Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Malachite.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Malachite.Description}}",
+                    "Type": "Basic",
+                    "Price": 1500,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 111
+                },
+                "{{ModId}}_Jewelry_N_Obsidian": {
+                    "Name": "Obsidian Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Obsidian.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Obsidian.Description}}",
+                    "Type": "Basic",
+                    "Price": 1350,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 112
+                },
+                "{{ModId}}_Jewelry_N_Opal": {
+                    "Name": "Opal Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Opal.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Opal.Description}}",
+                    "Type": "Basic",
+                    "Price": 1200,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 102
+                },
+                "{{ModId}}_Jewelry_N_Orpiment": {
+                    "Name": "Orpiment Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Orpiment.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Orpiment.Description}}",
+                    "Type": "Basic",
+                    "Price": 990,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 115
+                },
+                "{{ModId}}_Jewelry_N_Quartz": {
+                    "Name": "Quartz Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Quartz.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Quartz.Description}}",
+                    "Type": "Basic",
+                    "Price": 825,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 104
+                },
+                "{{ModId}}_Jewelry_N_StarShards": {
+                    "Name": "Star Shards Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_StarShards.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_StarShards.Description}}",
+                    "Type": "Basic",
+                    "Price": 2250,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 113
+                },
+                "{{ModId}}_Jewelry_N_Tigerseye": {
+                    "Name": "Tigerseye Necklace",
+                    "DisplayName": "{{i18n:Jewelry_N_Tigerseye.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_N_Tigerseye.Description}}",
+                    "Type": "Basic",
+                    "Price": 1575,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_minerals",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 114
+                },
+                "{{ModId}}_Jewelry_R_Amethyst": {
+                    "Name": "Gold Amethyst Ring",
+                    "DisplayName": "{{i18n:Jewelry_R_Amethyst.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_R_Amethyst.Description}}",
+                    "Type": "Basic",
+                    "Price": 1050,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 149
+                },
+                "{{ModId}}_Jewelry_R_Aquamarine": {
+                    "Name": "Gold Aquamarine Ring",
+                    "DisplayName": "{{i18n:Jewelry_R_Aquamarine.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_R_Aquamarine.Description}}",
+                    "Type": "Basic",
+                    "Price": 1290,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 148
+                },
+                "{{ModId}}_Jewelry_R_Diamond": {
+                    "Name": "Gold Diamond Ring",
+                    "DisplayName": "{{i18n:Jewelry_R_Diamond.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_R_Diamond.Description}}",
+                    "Type": "Basic",
+                    "Price": 3000,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 144
+                },
+                "{{ModId}}_Jewelry_R_Emerald": {
+                    "Name": "Gold Emerald Ring",
+                    "DisplayName": "{{i18n:Jewelry_R_Emerald.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_R_Emerald.Description}}",
+                    "Type": "Basic",
+                    "Price": 1500,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 145
+                },
+                "{{ModId}}_Jewelry_R_Jade": {
+                    "Name": "Gold Jade Ring",
+                    "DisplayName": "{{i18n:Jewelry_R_Jade.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_R_Jade.Description}}",
+                    "Type": "Basic",
+                    "Price": 1350,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 147
+                },
+                "{{ModId}}_Jewelry_R_Ruby": {
+                    "Name": "Gold Ruby Ring",
+                    "DisplayName": "{{i18n:Jewelry_R_Ruby.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_R_Ruby.Description}}",
+                    "Type": "Basic",
+                    "Price": 1500,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 146
+                },
+                "{{ModId}}_Jewelry_R_Topaz": {
+                    "Name": "Gold Topaz Ring",
+                    "DisplayName": "{{i18n:Jewelry_R_Topaz.DisplayName}}",
+                    "Description": "{{i18n:Jewelry_R_Topaz.Description}}",
+                    "Type": "Basic",
+                    "Price": 990,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_jewelry",
+                        "crystalarium_banned",
+                        "category_gem",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 150
+                },
+                "{{ModId}}_Misc_NecklaceMold": {
+                    "Name": "Necklace Mold",
+                    "DisplayName": "{{i18n:Misc_NecklaceMold.DisplayName}}",
+                    "Description": "{{i18n:Misc_NecklaceMold.Description}}",
+                    "Type": "Basic",
+                    "Price": 20,
+                    "Category": "-20",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 117
+                },
+                "{{ModId}}_Misc_GoldenChickenStatue": {
+                    "Name": "Golden Chicken Statue",
+                    "DisplayName": "{{i18n:Misc_GoldenChickenStatue.DisplayName}}",
+                    "Description": "{{i18n:Misc_GoldenChickenStatue.Description}}",
+                    "Type": "Basic",
+                    "Price": 900,
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 151
+                },
+                "{{ModId}}_Food_SunshineStew": {
+                    "Name": "Sunshine Stew",
+                    "DisplayName": "{{i18n:Food_SunshineStew.DisplayName}}",
+                    "Description": "{{i18n:Food_SunshineStew.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 345,
+                    "Edibility": 60,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 62,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 1200,
+                            "CustomAttributes": {
+                                "Speed": 1
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_StonefishSuprise": {
+                    "Name": "Stonefish Suprise",
+                    "DisplayName": "{{i18n:Food_StonefishSuprise.DisplayName}}",
+                    "Description": "{{i18n:Food_StonefishSuprise.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 539,
+                    "Edibility": 43,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 64,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 600,
+                            "CustomAttributes": {
+                                "Defense": 2
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_ShadowedStew": {
+                    "Name": "Shadowed Stew",
+                    "DisplayName": "{{i18n:Food_ShadowedStew.DisplayName}}",
+                    "Description": "{{i18n:Food_ShadowedStew.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 1243,
+                    "Edibility": 128,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 63,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 600,
+                            "CustomAttributes": {
+                                "MiningLevel": 3,
+                                "Defense": 3,
+                                "Attack": 3,
+                                "MaxHealth": -20
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_RockCrabSalad": {
+                    "Name": "Rock Crab Salad",
+                    "DisplayName": "{{i18n:Food_RockCrabSalad.DisplayName}}",
+                    "Description": "{{i18n:Food_RockCrabSalad.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 143,
+                    "Edibility": 28,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 66
+                },
+                "{{ModId}}_Food_RoastedCaveFish": {
+                    "Name": "Roasted Cave Fish",
+                    "DisplayName": "{{i18n:Food_RoastedCaveFish.DisplayName}}",
+                    "Description": "{{i18n:Food_RoastedCaveFish.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 182,
+                    "Edibility": 50,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 65
+                },
+                "{{ModId}}_Food_MashedCarrots": {
+                    "Name": "Mashed Carrots",
+                    "DisplayName": "{{i18n:Food_MashedCarrots.DisplayName}}",
+                    "Description": "{{i18n:Food_MashedCarrots.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 83,
+                    "Edibility": 40,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 61
+                },
+                "{{ModId}}_Food_LavaEelPie": {
+                    "Name": "Lava Eel Pie",
+                    "DisplayName": "{{i18n:Food_LavaEelPie.DisplayName}}",
+                    "Description": "{{i18n:Food_LavaEelPie.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 1359,
+                    "Edibility": 150,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 60,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 180,
+                            "CustomAttributes": {
+                                "Speed": 2,
+                                "LuckLevel": 2,
+                                "MagnetRadius": 64
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_IcePipSoup": {
+                    "Name": "Ice Pip Soup",
+                    "DisplayName": "{{i18n:Food_IcePipSoup.DisplayName}}",
+                    "Description": "{{i18n:Food_IcePipSoup.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 1139,
+                    "Edibility": 160,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 59,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 600,
+                            "CustomAttributes": {
+                                "MaxStamina": 75
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_FriedBatWings": {
+                    "Name": "Fried Bat Wings",
+                    "DisplayName": "{{i18n:Food_FriedBatWings.DisplayName}}",
+                    "Description": "{{i18n:Food_FriedBatWings.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 171,
+                    "Edibility": 11,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 57
+                },
+                "{{ModId}}_Food_CaveSoup": {
+                    "Name": "Cave Soup",
+                    "DisplayName": "{{i18n:Food_CaveSoup.DisplayName}}",
+                    "Description": "{{i18n:Food_CaveSoup.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 99,
+                    "Edibility": 33,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 58
+                },
+                "{{ModId}}_Food_CaveChowder": {
+                    "Name": "Cave Chowder",
+                    "DisplayName": "{{i18n:Food_CaveChowder.DisplayName}}",
+                    "Description": "{{i18n:Food_CaveChowder.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 176,
+                    "Edibility": 44,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 56,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 180,
+                            "CustomAttributes": {
+                                "MiningLevel": 1,
+                                "MagnetRadius": 32
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_MeatyStew": {
+                    "Name": "Meaty Stew",
+                    "DisplayName": "{{i18n:Food_MeatyStew.DisplayName}}",
+                    "Description": "{{i18n:Food_MeatyStew.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 85,
+                    "Edibility": 40,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 67,
+                    "Buffs": []
+                },
+                "{{ModId}}_Food_CaveCarrotAuGratin": {
+                    "Name": "Cave Carrot Au Gratin",
+                    "DisplayName": "{{i18n:Food_CaveCarrotAuGratin.DisplayName}}",
+                    "Description": "{{i18n:Food_CaveCarrotAuGratin.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 578,
+                    "Edibility": 128,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 51,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 180,
+                            "CustomAttributes": {
+                                "MiningLevel": 1
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_CaveCarrotStew": {
+                    "Name": "Cave Carrot Stew",
+                    "DisplayName": "{{i18n:Food_CaveCarrotStew.DisplayName}}",
+                    "Description": "{{i18n:Food_CaveCarrotStew.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 589,
+                    "Edibility": 126,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 55,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 180,
+                            "CustomAttributes": {
+                                "MagnetRadius": 32
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_CaveCarrotSoup": {
+                    "Name": "Cave Carrot Soup",
+                    "DisplayName": "{{i18n:Food_CaveCarrotSoup.DisplayName}}",
+                    "Description": "{{i18n:Food_CaveCarrotSoup.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 171,
+                    "Edibility": 73,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 54,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 180,
+                            "CustomAttributes": {
+                                "MagnetRadius": 16
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_CaveCarrotRoast": {
+                    "Name": "Cave Carrot Roast",
+                    "DisplayName": "{{i18n:Food_CaveCarrotRoast.DisplayName}}",
+                    "Description": "{{i18n:Food_CaveCarrotRoast.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 121,
+                    "Edibility": 36,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 53
+                },
+                "{{ModId}}_Food_CaveCarrotBrulee": {
+                    "Name": "Cave Carrot Brulee",
+                    "DisplayName": "{{i18n:Food_CaveCarrotBrulee.DisplayName}}",
+                    "Description": "{{i18n:Food_CaveCarrotBrulee.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 440,
+                    "Edibility": 63,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 52,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 180,
+                            "CustomAttributes": {
+                                "LuckLevel": 1
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_Cavatouille": {
+                    "Name": "Cavatouille",
+                    "DisplayName": "{{i18n:Food_Cavatouille.DisplayName}}",
+                    "Description": "{{i18n:Food_Cavatouille.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 625,
+                    "Edibility": 83,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine",
+                        "{{ModId}}_fine_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 50,
+                    "Buffs": [
+                        {
+                            "Id": "eat",
+                            "Duration": 1200,
+                            "CustomAttributes": {
+                                "MiningLevel": 1,
+                                "MagnetRadius": 32
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_Food_BugMeatStew": {
+                    "Name": "Bug Meat Stew",
+                    "DisplayName": "{{i18n:Food_BugMeatStew.DisplayName}}",
+                    "Description": "{{i18n:Food_BugMeatStew.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 99,
+                    "Edibility": 32,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine_purchasable_recipe"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 49
+                },
+                "{{ModId}}_Food_BugMeatSoup": {
+                    "Name": "Bug Meat Soup",
+                    "DisplayName": "{{i18n:Food_BugMeatSoup.DisplayName}}",
+                    "Description": "{{i18n:Food_BugMeatSoup.Description}}",
+                    "Type": "Cooking",
+                    "Category": "-7",
+                    "Price": 50,
+                    "Edibility": 10,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "{{ModId}}_dwarven_cuisine",
+                        "{{ModId}}_basic_dwarven_cuisine"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 48
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "DwarfCooking": "{{i18n:Mail.Dwarf.DwarfCooking.LetterText}}^%item cookingRecipe %%[#]{{i18n:Mail.Dwarf.DwarfCooking.LetterName}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Love"
+                    ],
+                    "Value": "{{ModId}}_Jewelry_R_Diamond {{ModId}}_Potions_OnePerfectDay",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Like"
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew {{ModId}}_Jewelry_R_Topaz {{ModId}}_Jewelry_R_Ruby {{ModId}}_Jewelry_R_Jade {{ModId}}_Jewelry_R_Emerald {{ModId}}_Jewelry_R_Aquamarine {{ModId}}_Jewelry_R_Amethyst {{ModId}}_Jewelry_N_Celestine {{ModId}}_Jewelry_N_Aerinite {{ModId}}_Jewelry_N_Alamite",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Neutral"
+                    ],
+                    "Value": "{{ModId}}_Food_MashedCarrots {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirits",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Dislike"
+                    ],
+                    "Value": "{{ModId}}_Food_StonefishSuprise {{ModId}}_Food_ShadowedStew {{ModId}}_Food_RockCrabSalad {{ModId}}_Food_RoastedCaveFish {{ModId}}_Food_LavaEelPie {{ModId}}_Food_IcePipSoup {{ModId}}_Food_CaveSoup {{ModId}}_Food_CaveCarrotAuGratin {{ModId}}_Food_CaveCarrotRoast {{ModId}}_Food_CaveCarrotBrulee {{ModId}}_Food_Cavatouille {{ModId}}_Food_BugMeatStew {{ModId}}_Potions_WoodmansTonic {{ModId}}_Potions_SwordsmansElixir {{ModId}}_Potions_ShadowedElixir {{ModId}}_Potions_MinersDrink",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Hate"
+                    ],
+                    "Value": "{{ModId}}_Food_FriedBatWings {{ModId}}_Food_BugMeatSoup {{ModId}}_CarrotMash",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Clint",
+                        1
+                    ],
+                    "Value": "{{ModId}}_Food_ShadowedStew {{ModId}}_Food_RockCrabSalad {{ModId}}_Food_RoastedCaveFish {{ModId}}_Jewelry_R_Topaz {{ModId}}_Jewelry_R_Ruby {{ModId}}_Jewelry_R_Jade {{ModId}}_Jewelry_R_Emerald {{ModId}}_Jewelry_R_Aquamarine {{ModId}}_Jewelry_R_Amethyst",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Clint",
+                        3
+                    ],
+                    "Value": "{{ModId}}_Food_LavaEelPie {{ModId}}_Food_CaveSoup {{ModId}}_Food_CaveChowder {{ModId}}_Potions_SwordsmansElixir {{ModId}}_Potions_MinersDrink",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Dwarf",
+                        1
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew {{ModId}}_Food_StonefishSuprise {{ModId}}_Food_ShadowedStew {{ModId}}_Food_RockCrabSalad {{ModId}}_Food_RoastedCaveFish {{ModId}}_Food_MashedCarrots {{ModId}}_Food_LavaEelPie {{ModId}}_Food_IcePipSoup {{ModId}}_Food_FriedBatWings {{ModId}}_Food_CaveSoup {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotAuGratin {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Food_CaveCarrotRoast {{ModId}}_Food_CaveCarrotBrulee {{ModId}}_Food_Cavatouille {{ModId}}_Food_BugMeatStew {{ModId}}_Food_BugMeatSoup {{ModId}}_Jewelry_R_Topaz {{ModId}}_Jewelry_R_Ruby {{ModId}}_Jewelry_R_Jade {{ModId}}_Jewelry_R_Emerald {{ModId}}_Jewelry_R_Aquamarine {{ModId}}_Jewelry_R_Amethyst {{ModId}}_Potions_WoodmansTonic {{ModId}}_Potions_SwordsmansElixir {{ModId}}_Potions_ShadowedElixir {{ModId}}_Potions_MinersDrink {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirits",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gus",
+                        3
+                    ],
+                    "Value": "{{ModId}}_Food_StonefishSuprise {{ModId}}_Food_RockCrabSalad {{ModId}}_Food_LavaEelPie {{ModId}}_Food_IcePipSoup {{ModId}}_Food_CaveChowder {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirits",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Haley",
+                        1
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Haley",
+                        3
+                    ],
+                    "Value": "{{ModId}}_Food_StonefishSuprise {{ModId}}_Food_ShadowedStew {{ModId}}_Food_RockCrabSalad {{ModId}}_Food_LavaEelPie {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Haley",
+                        7
+                    ],
+                    "Value": "{{ModId}}_Food_RoastedCaveFish {{ModId}}_Food_IcePipSoup {{ModId}}_Food_CaveSoup {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotAuGratin {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Food_CaveCarrotBrulee {{ModId}}_Food_Cavatouille {{ModId}}_Food_BugMeatStew {{ModId}}_Potions_SwordsmansElixir {{ModId}}_Potions_ShadowedElixir {{ModId}}_Potions_MinersDrink {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirits",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Jas",
+                        3
+                    ],
+                    "Value": "{{ModId}}_Food_StonefishSuprise {{ModId}}_Food_FriedBatWings",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Jas",
+                        5
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew {{ModId}}_Food_LavaEelPie {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirit",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Krobus",
+                        1
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew {{ModId}}_Food_StonefishSuprise {{ModId}}_Food_RoastedCaveFish {{ModId}}_Food_LavaEelPie {{ModId}}_Food_IcePipSoup {{ModId}}_Food_FriedBatWings {{ModId}}_Food_CaveSoup {{ModId}}_Food_Cavatouille",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Krobus",
+                        3
+                    ],
+                    "Value": "{{ModId}}_Food_MashedCarrots {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotAuGratin {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Food_CaveCarrotRoast {{ModId}}_Food_CaveCarrotBrulee {{ModId}}_Food_BugMeatStew {{ModId}}_Food_BugMeatSoup",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Krobus",
+                        7
+                    ],
+                    "Value": "{{ModId}}_Food_ShadowedStew {{ModId}}_Food_RockCrabSalad {{ModId}}_Potions_WoodmansTonic {{ModId}}_Potions_ShadowedElixir {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirits",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Linus",
+                        3
+                    ],
+                    "Value": "{{ModId}}_Food_StonefishSuprise {{ModId}}_Food_ShadowedStew {{ModId}}_Food_RockCrabSalad {{ModId}}_Food_RoastedCaveFish {{ModId}}_Food_MashedCarrots {{ModId}}_Food_IcePipSoup {{ModId}}_Food_FriedBatWings {{ModId}}_Food_CaveSoup {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotAuGratin {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Food_CaveCarrotRoast {{ModId}}_Food_CaveCarrotBrulee {{ModId}}_Food_Cavatouille {{ModId}}_Food_BugMeatStew {{ModId}}_Food_BugMeatSoup {{ModId}}_Potions_WoodmansTonic {{ModId}}_Potions_SwordsmansElixir {{ModId}}_Potions_ShadowedElixir {{ModId}}_Potions_MinersDrink {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirits",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Linus",
+                        5
+                    ],
+                    "Value": "{{ModId}}_Jewelry_N_Aerinite",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Pam",
+                        3
+                    ],
+                    "Value": "{{ModId}}_Food_StonefishSuprise {{ModId}}_Food_RoastedCaveFish {{ModId}}_Food_LavaEelPie {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotAuGratin {{ModId}}_Potions_WoodmansTonic {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirits",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Penny",
+                        7
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew {{ModId}}_Food_LavaEelPie {{ModId}}_Food_IcePipSoup {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Food_BugMeatStew {{ModId}}_Potions_ShadowedElixir {{ModId}}_Potions_MinersDrink {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirits",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Pierre",
+                        5
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight {{ModId}}_Jewelry_N_Aerinite",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Robin",
+                        1
+                    ],
+                    "Value": "{{ModId}}_Food_LavaEelPie {{ModId}}_Potions_WoodmansTonic",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Vincent",
+                        3
+                    ],
+                    "Value": "{{ModId}}_Food_ShadowedStew {{ModId}}_Food_LavaEelPie {{ModId}}_Food_FriedBatWings",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Vincent",
+                        5
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight {{ModId}}_Drinks_InfusedSpirit {{ModId}}_Drinks_DwarvenSpirit",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Willy",
+                        1
+                    ],
+                    "Value": "{{ModId}}_Food_StonefishSuprise {{ModId}}_Food_RoastedCaveFish {{ModId}}_Food_LavaEelPie {{ModId}}_Food_IcePipSoup {{ModId}}_Food_CaveCarrotStew {{ModId}}_Potions_FishermansBrew",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Willy",
+                        9
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew {{ModId}}_Food_FriedBatWings {{ModId}}_Food_CaveSoup {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotAuGratin {{ModId}}_Food_CaveCarrotRoast {{ModId}}_Food_CaveCarrotBrulee {{ModId}}_Food_BugMeatStew {{ModId}}_Food_BugMeatSoup {{ModId}}_Potions_WoodmansTonic {{ModId}}_Potions_SwordsmansElixir {{ModId}}_Potions_ShadowedElixir",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Wizard",
+                        1
+                    ],
+                    "Value": "{{ModId}}_Food_SunshineStew {{ModId}}_Food_RoastedCaveFish {{ModId}}_Food_LavaEelPie {{ModId}}_Potions_SwordsmansElixir {{ModId}}_Potions_FishermansBrew {{ModId}}_Potions_FarmersDraught {{ModId}}_Potions_DistilledSunlight {{ModId}}_Drinks_InfusedSpirit",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Wizard",
+                        3
+                    ],
+                    "Value": "{{ModId}}_Food_ShadowedStew {{ModId}}_Food_CaveSoup {{ModId}}_Food_CaveChowder {{ModId}}_Food_CaveCarrotAuGratin {{ModId}}_Food_CaveCarrotStew {{ModId}}_Food_CaveCarrotSoup {{ModId}}_Food_CaveCarrotRoast {{ModId}}_Food_CaveCarrotBrulee {{ModId}}_Food_Cavatouille {{ModId}}_Drinks_DwarvenSpirits",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Wizard",
+                        9
+                    ],
+                    "Value": "{{ModId}}_Food_StonefishSuprise {{ModId}}_Food_IcePipSoup {{ModId}}_Food_FriedBatWings {{ModId}}_Food_BugMeatStew {{ModId}}_Food_BugMeatSoup {{ModId}}_Potions_WoodmansTonic {{ModId}}_Potions_ShadowedElixir",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

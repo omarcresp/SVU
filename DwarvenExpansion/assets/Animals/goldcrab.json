@@ -1,0 +1,300 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/GoldCrabAdult",
+			"FromFile": "assets/Animals/GoldCrabFarmAnimal.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/GoldCrabBaby",
+			"FromFile": "assets/Animals/GoldCrabFarmAnimalBaby.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/GoldCrabSheared",
+			"FromFile": "assets/Animals/GoldCrabFarmAnimalSheared.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Animals_CrabEgg_Gold": {
+					"Name": "Gold Crab Egg",
+					"DisplayName": "{{i18n:Animals_CrabEgg_Gold.DisplayName}}",
+					"Description": "{{i18n:Animals_CrabEgg_Gold.Description}}",
+					"Type": "Basic",
+					"Category": "-20",
+					"Price": 90,
+					"Edibility": -20,
+					"ContextTags": [
+						"{{ModId}}",
+						"{{ModId}}_CrabEgg"
+					],
+					"Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 242,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": [
+						{
+							"Chance": 0.05,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O)717",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 2,
+							"MaxStack": 2,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.1575,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O)717",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.375,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O){{ModId}}_OreCluster_Gold",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 2,
+							"MaxStack": 4,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 1.0,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O)384",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 5,
+							"MaxStack": 10,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					]
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Animals_CrabEgg_Gold": {
+                    "ID": "{{ModId}}_Animals_CrabEgg_Gold",
+                    "ItemId": "(O){{ModId}}_Animals_CrabEgg_Gold",
+                    "MaxItems": 1,
+                    "IsRecipe": false,
+                    "AvoidRepeat": true,
+                    "Price": "750",
+                    "AvailableStock": 1,
+					"Condition": "SYNCED_RANDOM day gold_crab_egg 0.2 @addDailyLuck"
+                }
+            },
+			"When": {
+                "BuyCrabEggsAtMarlons": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "SalableItemTags"
+            ],
+            "Entries": {
+                "#-1": "{{ModId}}_Animals_CrabEgg_Gold"
+            }
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lava Crab",
+						6
+					],
+					"Value": "{{ModId}}_Animals_CrabEgg_Gold .05",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Hate"
+					],
+					"Value": "{{ModId}}_Animals_CrabEgg_Gold",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}_GoldCrab": {
+					"DisplayName": "{{i18n:GoldCrab.DisplayName}}",
+					"House": "{{ModId}}_CaveCoop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": 800,
+					"SellPrice": 1600,
+					"ShopTexture": "Mods/DwarvenExpansion/Animals/ShopImages",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 48,
+						"Width": 32,
+						"Height": 16
+					},
+					"ShopDisplayName": "{{i18n:GoldCrab.ShopDisplayName}}",
+					"ShopDescription": "{{i18n:GoldCrab.ShopDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n:GoldCrab.ShopMissingBuildingDescription}}",
+					"RequiredBuilding": "{{ModId}}_BigCaveCoop",
+					"UnlockCondition": "MINE_LOWEST_LEVEL_REACHED 100",
+					"EggItemIds": [
+						"{{ModId}}_Animals_CrabEgg_Gold"
+					],
+					"IncubationTime": 8640,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{i18n:GoldCrab.BirthText}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": true,
+					"DaysToProduce": 2,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+					"ProduceItemIds": [
+						{
+							"Id": "Egg",
+							"ItemId": "{{ModId}}_Animals_CrabEgg_Gold",
+							"Condition": "RANDOM 0.05"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "384"
+						}
+					],
+					"DeluxeProduceItemIds": [	
+						{
+							"Id": "Egg",
+							"ItemId": "{{ModId}}_Animals_CrabEgg_Gold",
+							"Condition": "RANDOM 0.3"
+						},					
+						{
+							"Id": "Default",
+							"ItemId": "{{ModId}}_OreCluster_Gold"
+						}
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": -1,
+					"ProfessionForQualityBoost": -1,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "stoneCrack",
+					"BabySound": "stoneCrack",
+					"Texture": "Mods/DwarvenExpansion/Animals/GoldCrabAdult",
+					"HarvestedTexture": "Mods/DwarvenExpansion/Animals/GoldCrabSheared",
+					"BabyTexture": "Mods/DwarvenExpansion/Animals/GoldCrabBaby",
+					"UseFlippedRightForLeft": false,
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": -16
+					},
+					"SwimOffset": {
+						"X": 0,
+						"Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 1,
+					"HappinessDrain": 7,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": [],
+					"ShowInSummitCredits": false,
+					"CustomFields": {
+						"meatIndex": "717"
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "When": {
+                "HasMod |contains=spacechase0.SpaceCore": true,
+                "alternate_unlock_unknowable": "Off"
+            },
+            "TargetField": ["BeforeAll"],
+            "Entries": {
+                "{{ModId}}_garbage_recipe":{
+                    "IgnoreBaseChance": true,
+                    "IsMegaSuccess": true,
+                    "IsDoubleMegaSuccess": true,
+                    "AddToInventoryDirectly": true,
+                    "CreateMultipleDebris": false,
+                    "Condition": "!PLAYER_HAS_COOKING_RECIPE Current {{ModId}}_unknowable_dish, PLAYER_STAT Current trashCansChecked 50, RANDOM .05",
+                    "Id": "{{ModId}}_garbage_recipe",
+                    "ItemId": "{{ModId}}_unknowable_recipe",
+                    "RandomItemId": null,
+                    "MaxItems": null,
+                    "MinStack": -1,
+                    "MaxStack": -1,
+                    "Quality": -1,
+                    "ObjectInternalName": null,
+                    "ObjectDisplayName": null,
+                    "ToolUpgradeLevel": -1,
+                    "StackModifiers": null,
+                    "StackModifierMode": "Stack",
+                    "QualityModifiers": null,
+                    "QualityModifierMode": "Stack",
+                    "ModData": null,
+                    "PerItemCondition": null
+                }
+            }
+        }
+    ]
+}

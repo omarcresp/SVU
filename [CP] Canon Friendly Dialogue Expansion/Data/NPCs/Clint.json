@@ -1,0 +1,126 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Clint_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        "AcceptGift_(O)74": "{{i18n: CFE_Clint_PrismaticShard}}",
+        "AcceptGift_(O)60": "{{i18n: CFE_Clint_Emerald}}",
+        "AcceptGift_(O)62": "{{i18n: CFE_Clint_Aquamarine}}",
+        "AcceptGift_(O)64": "{{i18n: CFE_Clint_Ruby}}",
+        "AcceptGift_(O)66": "{{i18n: CFE_Clint_Amethyst}}",
+        "AcceptGift_(O)68": "{{i18n: CFE_Clint_Topaz}}",
+        "AcceptGift_(O)70": "{{i18n: CFE_Clint_Jade}}"
+        //any keys that overlap go here
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Clint}}' = 'true' OR ('{{CFE_Clint}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Clint_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        "AcceptGift_(O)279": "{{i18n: CFE_Clint_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Clint_Pearl}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Clint_RabbitsFoot}}",
+        "AcceptGift_(O)749": "{{i18n: CFE_Clint_OmniGeode}}",
+        "AcceptGift_(O)336": "{{i18n: CFE_Clint_GoldBar}}",
+        "AcceptGift_(O)337": "{{i18n: CFE_Clint_IridiumBar}}",
+        "AcceptGift_(O)605": "{{i18n: CFE_Clint_ArtichokeDip}}",
+        "AcceptGift_(O)649": "{{i18n: CFE_Clint_FiddleheadRisotto}}"
+      },
+      "When": { "Query: '{{CFE_Clint}}' = 'true' OR ('{{CFE_Clint}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Clint_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Clint": "{{i18n: CFE_Clint_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Clint}}' = 'true' OR ('{{CFE_Clint}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+
+    },
+    {
+      "LogName": "CFE_Clint_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Clint_spring1y2}}",
+        "winter_28_1": "{{i18n: CFE_Clint_winter28y1}}",
+        "winter_28_2": "{{i18n: CFE_Clint_winter28y2}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Clint_summerMon10}}",
+        "summer_Tue4": "{{i18n: CFE_Clint_summerTue4}}",
+        "summer_Wed8": "{{i18n: CFE_Clint_summerWed8}}",
+        "summer_Thu10": "{{i18n: CFE_Clint_summerThu10}}",
+        "summer_Fri6": "{{i18n: CFE_Clint_summerFri6}}",
+        "summer_Sat10": "{{i18n: CFE_Clint_summerSat10}}",
+        "summer_Sun6": "{{i18n: CFE_Clint_summerSun6}}",
+
+        "fall_Mon8": "{{i18n: CFE_Clint_fallMon8}}",
+        "fall_Tue8": "{{i18n: CFE_Clint_fallTue8}}",
+        "fall_Tue2": "{{i18n: CFE_Clint_repeated_1}}",
+        "fall_Wed10": "{{i18n: CFE_Clint_fallWed10}}",
+        "fall_Thu6": "{{i18n: CFE_Clint_fallThu6}}",
+        "fall_Fri10": "{{i18n: CFE_Clint_repeated_1}}",
+        "Fall_Sat10": "{{i18n: CFE_Clint_fallSat10}}",
+        "Fall_Sun8": "{{i18n: CFE_Clint_fallSun8}}",
+
+        "winter_Mon4": "{{i18n: CFE_Clint_winterMon4}}",
+        "winter_Tue8": "{{i18n: CFE_Clint_winterTue8}}",
+        "winter_Wed8": "{{i18n: CFE_Clint_winterWed8}}",
+        "winter_Thu10": "{{i18n: CFE_Clint_winterThu10}}",
+        "winter_Fri8": "{{i18n: CFE_Clint_winterFri8}}",
+        "winter_Sat4": "{{i18n: CFE_Clint_winterSat4}}",
+        "winter_Sun10": "{{i18n: CFE_Clint_winterSun10}}",
+
+        "Mon10": "{{i18n: CFE_Clint_Mon10}}",
+        "Mon8": "{{i18n: CFE_Clint_Mon8}}",
+        "Mon6": "{{i18n: CFE_Clint_Mon6}}",
+        "Mon2": "{{i18n: CFE_Clint_Mon2}}",
+        "Tue10": "{{i18n: CFE_Clint_Tue10}}",
+        "Tue8": "{{i18n: CFE_Clint_Tue8}}",
+        "Tue6": "{{i18n: CFE_Clint_Tue6}}",
+        "Tue4": "{{i18n: CFE_Clint_Tue4}}",
+        "Tue2": "{{i18n: CFE_Clint_Tue2}}",
+        "Wed10": "{{i18n: CFE_Clint_Wed10}}",
+        "Wed8": "{{i18n: CFE_Clint_Wed8}}",
+        "Wed4": "{{i18n: CFE_Clint_Wed4}}",
+        "Wed2": "{{i18n: CFE_Clint_Wed2}}",
+        "Thu10": "{{i18n: CFE_Clint_Thu10}}",
+        "Thu6": "{{i18n: CFE_Clint_Thu6}}",
+        "Thu4": "{{i18n: CFE_Clint_Thu4}}",
+        "Fri8": "{{i18n: CFE_Clint_Fri8}}",
+        "Fri4": "{{i18n: CFE_Clint_Fri4}}",
+        "Sat10": "{{i18n: CFE_Clint_Sat10}}",
+        "Sat4": "{{i18n: CFE_Clint_Sat4}}",
+        "Sat2": "{{i18n: CFE_Clint_Sat2}}",
+        "Sun10": "{{i18n: CFE_Clint_Sun10}}",
+        "Sun6": "{{i18n: CFE_Clint_Sun6}}",
+        "Sun2": "{{i18n: CFE_Clint_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Thu_inlaw_Emily": "{{i18n: CFE_Clint_summerThuinlawEmily}}",
+
+        "fall_Mon_inlaw_Emily": "{{i18n: CFE_Clint_fallMoninlawEmily}}",
+        "fall_Mon": "{{i18n: CFE_Clint_fallMon}}",
+        "fall_Thu": "{{i18n: CFE_Clint_fallThu}}",
+
+        "winter_Sun_inlaw_Emily": "{{i18n: CFE_Clint_winterSuninlawEmily}}",
+
+        "Mon_inlaw_Emily": "{{i18n: CFE_Clint_MoninlawEmily}}",
+        "Thu": "{{i18n: CFE_Clint_Thu}}"
+      },
+      "When": { "Query: '{{CFE_Clint}}' = 'true' OR ('{{CFE_Clint}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

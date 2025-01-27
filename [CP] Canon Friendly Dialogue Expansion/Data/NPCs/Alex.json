@@ -1,0 +1,280 @@
+{
+  "Changes": [
+    /* {
+      "LogName": "CFE_Alex_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Alex",
+      "Entries": {
+        //any keys that overlap go here
+      },
+      "When": {
+     "ModdedDialogCompat": "true",
+     "Query: '{{CFE_Alex}}' = 'true' OR ('{{CFE_Alex}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+    }
+    }, */
+    {
+      "LogName": "CFE_Alex_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Alex",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Alex_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Alex_RockCandy}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Alex_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Alex_RabbitsFoot}}",
+
+        "AcceptGift_(O)201": "{{i18n: CFE_Alex_CompleteBreakfast}}",
+        "AcceptGift_(O)212": "{{i18n: CFE_Alex_SalmonDinner}}"
+      },
+      "When": { "Query: '{{CFE_Alex}}' = 'true' OR ('{{CFE_Alex}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Alex_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Alex": "{{i18n: CFE_Alex_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Alex}}' = 'true' OR ('{{CFE_Alex}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Alex_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Alex",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Alex_spring1y2}}",
+        "spring_23_1": "{{i18n: CFE_Alex_spring23y1}}",
+
+        "summer_10_1": "{{i18n: CFE_Alex_summer10}}",
+        "summer_10_2": "{{i18n: CFE_Alex_summer10}}",
+
+        "fall_15_1": "{{i18n: CFE_Alex_fall15}}",
+        "fall_15_2": "{{i18n: CFE_Alex_fall15}}",
+        "fall_26_1": "{{i18n: CFE_Alex_fall26}}",
+        "fall_26_2": "{{i18n: CFE_Alex_fall26}}",
+
+        "winter_24_1": "{{i18n: CFE_Alex_winter24}}",
+        "winter_24_2": "{{i18n: CFE_Alex_winter24}}",
+        "winter_28_1": "{{i18n: CFE_Alex_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Alex_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Alex_summerMon10}}",
+        "summer_Mon8": "{{i18n: CFE_Alex_repeated_6}}",
+        "summer_Mon6": "{{i18n: CFE_Alex_summerMon6}}",
+        "summer_Mon4": "{{i18n: CFE_Alex_summerMon4}}",
+        "summer_Mon2": "{{i18n: CFE_Alex_summerMon2}}",
+        "summer_Tue8": "{{i18n: CFE_Alex_summerTue8}}",
+        "summer_Tue6": "{{i18n: CFE_Alex_summerTue6}}",
+        "summer_Tue4": "{{i18n: CFE_Alex_summerTue4}}",
+        "summer_Wed8": "{{i18n: CFE_Alex_summerWed8}}",
+        "summer_Wed6": "{{i18n: CFE_Alex_summerWed6}}",
+        "summer_Thu10": "{{i18n: CFE_Alex_summerThu10}}",
+        "summer_Thu8": "{{i18n: CFE_Alex_repeated_7}}",
+        "summer_Thu6": "{{i18n: CFE_Alex_summerThu6}}",
+        "summer_Fri10": "{{i18n: CFE_Alex_summerFri10}}",
+        "summer_Fri4": "{{i18n: CFE_Alex_summerFri4}}",
+        "summer_Fri2": "{{i18n: CFE_Alex_summerFri2}}",
+        "summer_Sat6": "{{i18n: CFE_Alex_summerSat6}}",
+        "summer_Sat4": "{{i18n: CFE_Alex_summerSat4}}",
+        "summer_Sat2": "{{i18n: CFE_Alex_summerSat2}}",
+        "summer_Sun10": "{{i18n: CFE_Alex_summerSun10}}",
+        "summer_Sun6": "{{i18n: CFE_Alex_repeated_1}}",
+        "summer_Sun6_inlaw_Haley": "{{i18n: CFE_Alex_repeated_5}}",
+        "summer_Sun4": "{{i18n: CFE_Alex_summerSun4}}",
+        "summer_Sun2": "{{i18n: CFE_Alex_summerSun2}}",
+
+        "fall_Mon10": "{{i18n: CFE_Alex_fallMon10}}",
+        "fall_Mon6": "{{i18n: CFE_Alex_fallMon6}}",
+        "fall_Mon2": "{{i18n: CFE_Alex_fallMon2}}",
+        "fall_Tue8": "{{i18n: CFE_Alex_fallTue8}}",
+        "fall_Tue6": "{{i18n: CFE_Alex_fallTue6}}",
+        "fall_Tue4": "{{i18n: CFE_Alex_fallTue4}}",
+        "fall_Wed8": "{{i18n: CFE_Alex_fallWed8}}",
+        "fall_Thu10": "{{i18n: CFE_Alex_fallThu10}}",
+        "fall_Thu6": "{{i18n: CFE_Alex_fallThu6}}",
+        "fall_Thu4": "{{i18n: CFE_Alex_fallThu4{{GenderNeutralCompat}}}}",
+        "fall_Thu2": "{{i18n: CFE_Alex_fallThu2}}",
+        "fall_Fri10": "{{i18n: CFE_Alex_fallFri10}}",
+        "fall_Fri8": "{{i18n: CFE_Alex_repeated_9}}",
+        "fall_Fri6": "{{i18n: CFE_Alex_fallFri6}}",
+        "fall_Fri2": "{{i18n: CFE_Alex_fallFri2}}",
+        "fall_Sat8": "{{i18n: CFE_Alex_fallSat8}}",
+        "fall_Sat6": "{{i18n: CFE_Alex_fallSat6}}",
+        "fall_Sat4": "{{i18n: CFE_Alex_fallSat4}}",
+        "fall_Sat2": "{{i18n: CFE_Alex_repeated_3}}",
+        "fall_Sat8_inlaw_Haley": "{{i18n: CFE_Alex_repeated_4}}",
+        "fall_Sun10": "{{i18n: CFE_Alex_fallSun10}}",
+        "fall_Sun8": "{{i18n: CFE_Alex_fallSun8}}",
+        "fall_Sun6": "{{i18n: CFE_Alex_fallSun6}}",
+        "fall_Sun4": "{{i18n: CFE_Alex_fallSun4}}",
+
+        "winter_Mon10": "{{i18n: CFE_Alex_winterMon10}}",
+        "winter_Mon8": "{{i18n: CFE_Alex_winterMon8}}",
+        "winter_Mon6": "{{i18n: CFE_Alex_winterMon6{{GenderNeutralCompat}}}}",
+        "winter_Mon4": "{{i18n: CFE_Alex_winterMon4}}",
+        "winter_Mon2": "{{i18n: CFE_Alex_winterMon2}}",
+        "winter_Tue10": "{{i18n: CFE_Alex_winterTue10}}",
+        "winter_Tue6": "{{i18n: CFE_Alex_winterTue6}}",
+        "winter_Tue4": "{{i18n: CFE_Alex_winterTue4}}",
+        "winter_Wed10": "{{i18n: CFE_Alex_winterWed10}}",
+        "winter_Wed8": "{{i18n: CFE_Alex_repeated_7}}",
+        "winter_Wed6": "{{i18n: CFE_Alex_winterWed6{{GenderNeutralCompat}}}}",
+        "winter_Wed4": "{{i18n: CFE_Alex_winterWed4}}",
+        "winter_Thu10": "{{i18n: CFE_Alex_winterThu10}}",
+        "winter_Thu8": "{{i18n: CFE_Alex_winterThu8}}",
+        "winter_Thu6": "{{i18n: CFE_Alex_winterThu6}}",
+        "winter_Thu4": "{{i18n: CFE_Alex_winterThu4}}",
+        "winter_Fri10": "{{i18n: CFE_Alex_winterFri10}}",
+        "winter_Fri6": "{{i18n: CFE_Alex_winterFri6}}",
+        "winter_Sat10": "{{i18n: CFE_Alex_winterSat10}}",
+        "winter_Sat4": "{{i18n: CFE_Alex_winterSat4}}",
+        "winter_Sat2": "{{i18n: CFE_Alex_winterSat2}}",
+        "winter_Sun8": "{{i18n: CFE_Alex_winterSun8}}",
+        "winter_Sun6": "{{i18n: CFE_Alex_repeated_8}}",
+        "winter_Sun4": "{{i18n: CFE_Alex_winterSun4}}",
+        "winter_Sun2": "{{i18n: CFE_Alex_repeated_8}}",
+
+        "Mon8": "{{i18n: CFE_Alex_repeated_9}}",
+        "Mon6": "{{i18n: CFE_Alex_Mon6}}",
+        "Mon4": "{{i18n: CFE_Alex_Mon4}}",
+        "Tue10": "{{i18n: CFE_Alex_Tue10}}",
+        "Tue8": "{{i18n: CFE_Alex_Tue8}}",
+        "Tue6": "{{i18n: CFE_Alex_Tue6}}",
+        "Tue4": "{{i18n: CFE_Alex_Tue4}}",
+        "Tue2": "{{i18n: CFE_Alex_Tue2}}",
+        "Wed10": "{{i18n: CFE_Alex_Wed10}}",
+        "Wed8": "{{i18n: CFE_Alex_Wed8}}",
+        "Wed6": "{{i18n: CFE_Alex_Wed6}}",
+        "Wed4": "{{i18n: CFE_Alex_Wed4}}",
+        "Thu8": "{{i18n: CFE_Alex_Thu8}}",
+        "Thu6": "{{i18n: CFE_Alex_Thu6}}",
+        "Thu4": "{{i18n: CFE_Alex_Thu4}}",
+        "Thu2": "{{i18n: CFE_Alex_Thu2}}",
+        "Fri10": "{{i18n: CFE_Alex_Fri10}}",
+        "Fri8": "{{i18n: CFE_Alex_Fri8{{GenderNeutralCompat}}}}",
+        "Fri6": "{{i18n: CFE_Alex_repeated_1}}",
+        "Fri2": "{{i18n: CFE_Alex_Fri2}}",
+        "Sat10": "{{i18n: CFE_Alex_Sat10}}",
+        "Sat8_inlaw_Haley": "{{i18n: CFE_Alex_repeated_4}}",
+        "Sat8": "{{i18n: CFE_Alex_Sat8}}",
+        "Sat6": "{{i18n: CFE_Alex_Sat6}}",
+        "Sat4": "{{i18n: CFE_Alex_Sat4}}",
+        "Sat2": "{{i18n: CFE_Alex_repeated_3}}",
+        "Sun6_inlaw_Haley": "{{i18n: CFE_Alex_repeated_5}}",
+        "Sun10": "{{i18n: CFE_Alex_Sun10}}",
+        "Sun8": "{{i18n: CFE_Alex_repeated_6}}",
+        "Sun6": "{{i18n: CFE_Alex_Sun6}}",
+
+        //Generic Weekday Dialogue
+        "summer_Sun_inlaw_Haley": "{{i18n: CFE_Alex_summerSuninlawHaley}}",
+        "summer_Sun": "{{i18n: CFE_Alex_summerSun{{GenderNeutralCompat}}}}",
+        "fall_Tue": "{{i18n: CFE_Alex_fallTue}}",
+        "fall_Sat_inlaw_Haley": "{{i18n: CFE_Alex_repeated_2}}",
+
+        "Sat_inlaw_Haley": "{{i18n: CFE_Alex_repeated_2}}"
+      },
+      "When": { "Query: '{{CFE_Alex}}' = 'true' OR ('{{CFE_Alex}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Alex_Marriage_GenericDialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Alex": "{{i18n: CFE_Alex_Married_spouseRoom_{{random: 1,2,3,4,5}}}}"
+      },
+      "When": { "Query: '{{CFE_Alex}}' = 'true' OR ('{{CFE_Alex}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Alex_Marriage",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueAlex",
+      "Entries": {
+        //these lines follow different priority rules than unmarried dialogue does, with different options having different % likelihoods to show up each day when the right conditions are met.
+
+        //Weather specific dialogue
+        //note that Indoor_Day is the key for any weather besides rain, even when the Alex is outside. Day means prior to 6pm. Indoor_Night is specific to inside the farmhouse when it's not raining after 6pm.
+        "Rainy_Day_0": "{{i18n: CFE_Alex_Married_RainyDay_{{Random: 1,2}}}}",
+        "Rainy_Day_1": "{{i18n: CFE_Alex_Married_RainyDay_{{Random: 3,4}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Alex_Married_RainyDay_{{Random: 5,6}}}}",
+        "Rainy_Day_3": "{{i18n: CFE_Alex_Married_RainyDay_{{Random: 7,8}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Alex_Married_RainyDay_{{Random: 9,10}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Alex_Married_RainyNight_{{Random: 1,2}}}}",
+        "Rainy_Night_1": "{{i18n: CFE_Alex_Married_RainyNight_{{Random: 3,4}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Alex_Married_RainyNight_{{Random: 5,6}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Alex_Married_RainyNight_{{Random: 7,8}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Alex_Married_RainyNight_{{Random: 9,10}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Alex_Married_IndoorDay_{{Random: 1,2,3}}{{GenderNeutralCompat}} |SpouseNoun={{lowercase:{{Random:{{GNMTSpouseNoun}}}}}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Alex_Married_IndoorDay_{{Random: 4,5,6}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Alex_Married_IndoorDay_{{Random: 7,8,9}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Alex_Married_IndoorDay_{{Random: 10,11,12}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Alex_Married_IndoorDay_{{Random: 13,14,15}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Alex_Married_IndoorNight_{{Random: 1,2}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Alex_Married_IndoorNight_{{Random: 3,4}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Alex_Married_IndoorNight_{{Random: 5,6}}}}",
+        "Indoor_Night_3": "{{i18n: CFE_Alex_Married_IndoorNight_{{Random: 7,8}}}}",
+        "Indoor_Night_4": "{{i18n: CFE_Alex_Married_IndoorNight_{{Random: 9,10}}}}",
+
+        //locational specific dialogue
+        //funleave and return only show up on Mondays or Fridays (except for characters with jobs), and only while the Alex is leaving or entering the farmhouse. fun return will not display once the Alex has reached their target location.
+        //Kid dialogue only displays when the Alex is standing in the farmhouse kitchen
+        //Kid dialogue only displays when the Alex is standing in the farmhouse kitchen
+        //Outdoor Dialogue only displays on the farm. _num has an 80% chance of being displayed, _Alex has a 20% chance. _Alex is currently unused here
+
+        "funLeave_Alex": "{{i18n: CFE_Alex_Married_funLeave_{{Random: 1,2}}}}",
+        "funReturn_Alex": "{{i18n: CFE_Alex_Married_funReturn_{{Random: 1,2}}}}",
+
+        "OneKid_0": "{{i18n: CFE_Alex_Married_OneKid_{{Random: 1,2}}}}",
+        "OneKid_1": "{{i18n: CFE_Alex_Married_OneKid_{{Random: 3,4}}}}",
+        "OneKid_2": "{{i18n: CFE_Alex_Married_OneKid_{{Random: 5,6}}}}",
+        "OneKid_3": "{{i18n: CFE_Alex_Married_OneKid_{{Random: 7,8}}}}",
+        "TwoKids_0": "{{i18n: CFE_Alex_Married_TwoKids_{{Random: 1,2}}}}",
+        "TwoKids_1": "{{i18n: CFE_Alex_Married_TwoKids_{{Random: 3,4}}}}",
+        "TwoKids_2": "{{i18n: CFE_Alex_Married_TwoKids_{{Random: 5,6}}}}",
+        "TwoKids_3": "{{i18n: CFE_Alex_Married_TwoKids_{{Random: 7,8}}}}",
+
+        "Outdoor_0": "{{i18n: CFE_Alex_Married_Outdoor_{{Random: 1,2}}}}",
+        "Outdoor_1": "{{i18n: CFE_Alex_Married_Outdoor_{{Random: 3,4}}}}",
+        "Outdoor_2": "{{i18n: CFE_Alex_Married_Outdoor_{{Random: 5,6}}}}",
+        "Outdoor_3": "{{i18n: CFE_Alex_Married_Outdoor_{{Random: 7,8}}{{GenderNeutralCompat}} |Adjective={{lowercase:{{Random:{{GNMTAdjective}}}}}}}}",
+        "Outdoor_4": "{{i18n: CFE_Alex_Married_Outdoor_{{Random: 9,10}}}}",
+
+        "patio_Alex": "{{i18n: CFE_Alex_Married_patio_{{Random: 1,2,3}}}}",
+
+        //Date Specific Dialogue
+        "spring_3": "{{i18n: CFE_Alex_Married_spring3}}",
+        "spring_15": "{{i18n: CFE_Alex_Married_spring15}}",
+        "spring_27": "{{i18n: CFE_Alex_Married_spring27}}",
+
+        "summer_3": "{{i18n: CFE_Alex_Married_summer3}}",
+        "summer_12": "{{i18n: CFE_Alex_Married_summer12}}",
+        "summer_15": "{{i18n: CFE_Alex_Married_summer15}}",
+        "summer_20": "{{i18n: CFE_Alex_Married_summer20}}",
+
+        "fall_3": "{{i18n: CFE_Alex_Married_fall3}}",
+        "fall_7": "{{i18n: CFE_Alex_Married_fall7}}",
+        "fall_11": "{{i18n: CFE_Alex_Married_fall11}}",
+        "fall_22": "{{i18n: CFE_Alex_Married_fall22}}",
+
+        "winter_10": "{{i18n: CFE_Alex_Married_winter10}}",
+        "winter_15": "{{i18n: CFE_Alex_Married_winter15}}",
+        "winter_22": "{{i18n: CFE_Alex_Married_winter22}}"
+
+        //Seasonal Dialogue
+        //shown at 9+ hearts, with a 5% chance each day
+        //currently unused. key looks like "fall_Alex"
+
+        //Affection Specific Dialogue
+        //only shown inside the farmhouse between 11 and 6pm, or at the start of day if no other dialogue is chosen first.
+        //Bad or Neutral responses are randomly chosen between if the player has less than 9 hearts, Good or Neutral responses have a 50/50 chance with 10+ hearts, and the likelihood of a Good response goes up to 87% with 11+ hearts
+        //currently unused. key looks like "Bad_3"
+      },
+      "When": { "Query: '{{CFE_Alex}}' = 'true' OR ('{{CFE_Alex}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

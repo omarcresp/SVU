@@ -1,0 +1,33 @@
+{
+  "Changes": [
+    {
+      "LogName": "Blank Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/HeliaDiamantiVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    {
+      "LogName": "Default Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/HeliaDiamantiVMV",
+      "Entries": {
+        "Sat": "a900 Lumisteria.MtVapius_Hamlet 40 85 2 square_3_0/1300 Lumisteria.MtVapius_Hamlet 34 86 2/1500 Lumisteria.MtVapius_Hamlet 40 85 2/1800 Lumisteria.MtVapius_Inn 9 29 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
+        "spring": "900 Lumisteria.MtVapius_Faycombe 28 15 2/1800 Lumisteria.MtVapius_Faycombe 33 26 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
+      }
+    },
+    {
+      "LogName": "Conditional Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/HeliaDiamantiVMV",
+      "Entries": {
+        "winter_Mon": "900 Lumisteria.MtVapius_Faycombe 28 15 2/1500 Saloon 17 20 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
+        "summer_Mon": "900 Lumisteria.MtVapius_Faycombe 28 15 2/1100 town 27 36 3/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
+        "fall_Mon": "900 Lumisteria.MtVapius_Faycombe 28 15 2/1100 town 45 100 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
+      },
+      "When":
+      {   
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Town_HeliaVisitsHarvey",
+      }
+    },
+  ]
+}

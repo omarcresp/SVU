@@ -1,0 +1,423 @@
+{
+    "Format": "2.4.0",
+    "ConfigSchema": {
+        "EnabledMachines": {
+            "AllowValues": "GemPolisher, Pulverizer, DwarvenStill, AlchemyBench, JewelryMaker, SlowburnCharcoalKiln, ImprovedMushroomBox, Claymixer",
+            "AllowMultiple": true,
+            "AllowBlank": true,
+            "Default": "GemPolisher, Pulverizer, DwarvenStill, AlchemyBench, JewelryMaker, SlowburnCharcoalKiln, ImprovedMushroomBox, Claymixer"
+        },
+        "EnabledBuildings": {
+            "AllowValues": "CaveCoop, CaveShed, DwarvenFurnace, Cavern",
+            "AllowMultiple": true,
+            "AllowBlank": true,
+            "Default": "CaveCoop, CaveShed, DwarvenFurnace, Cavern"
+        },
+        "EnabledCookingRecipes": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "EnabledAnimals": {
+            "AllowValues": "Grub,CopperCrab,IronCrab,GoldCrab,IridiumCrab,Molerat,PaleSalamander,Badger",
+            "AllowMultiple": true,
+            "AllowBlank": true,
+            "Default": "Grub,CopperCrab,IronCrab,GoldCrab,IridiumCrab,Molerat,PaleSalamander,Badger"
+        },
+        "BuyCrabEggsAtMarlons": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "EnableDwarfMagic": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "EnableTools": {
+            "AllowValues": "DwarvenPickaxe",
+            "AllowMultiple": true,
+            "AllowBlank": true,
+            "Default": "DwarvenPickaxe"
+        },
+        "EnableOreDust": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "EnableBaseTransmutationRecipes": {
+            "AllowValues": "true, false",
+            "Default": true
+        },
+        "EnablePrismaticTransmutationRecipes": {
+            "AllowValues": "true, false",
+            "Default": true
+        },
+        "CopperToIronLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "4"
+        },
+        "IronToCopperLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "3"
+        },
+        "IronToGoldLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "6"
+        },
+        "GoldToIronLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "5"
+        },
+        "GoldToIridiumLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "8"
+        },
+        "IridiumToGoldLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "7"
+        },
+        "IridiumToRadioactiveLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "10"
+        },
+        "RadioactiveToIridiumLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "9"
+        },
+        "IridiumToPrismaticLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "10"
+        },
+        "PrismaticToIridiumLevel": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "9"
+        },
+        "CopperToIronCost": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "3"
+        },
+        "IronToCopperOutput": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "2"
+        },
+        "IronToGoldCost": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "3"
+        },
+        "GoldToIronOutput": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "2"
+        },
+        "GoldToIridiumCost": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "5"
+        },
+        "IridiumToGoldOutput": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "3"
+        },
+        "IridiumToRadioactiveCost": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "3"
+        },
+        "RadioactiveToIridiumOutput": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "2"
+        },
+        "IridiumToPrismaticCost": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "3"
+        },
+        "PrismaticToIridiumOutput": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "2"
+        },
+        "OreRequiredForDust": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10",
+            "Default": "10"
+        }
+    },
+    "DynamicTokens": [
+        {
+            "Name": "HasTranslationGuide",
+            "Value": "false"
+        },
+        {
+            "Name": "HasTranslationGuide",
+            "Value": "true",
+            "When": {
+                "HasWalletItem": "DwarvishTranslationGuide"
+            }
+        }
+    ],
+    "CustomLocations": [
+        {
+            "Name": "mytigio.dwarven_expansion_Locations_CoopCave",
+            "FromMapFile": "assets/Maps/CoopCave/SmallCoopCave.tmx"
+        },
+        {
+            "Name": "mytigio.dwarven_expansion_Locations_BigCoopCave",
+            "FromMapFile": "assets/Maps/CoopCave/BigCoopCave.tmx"
+        },
+        {
+            "Name": "mytigio.dwarven_expansion_Locations_DeluxeCoopCave",
+            "FromMapFile": "assets/Maps/CoopCave/DeluxeCoopCave.tmx"
+        },
+        {
+            "Name": "mytigio.dwarven_expansion_Locations_ShedCave",
+            "FromMapFile": "assets/Maps/ShedCave/ShedCave.tmx"
+        },
+        {
+            "Name": "mytigio.dwarven_expansion_Locations_LargeShedCave",
+            "FromMapFile": "assets/Maps/ShedCave/LargeShedCave.tmx"
+        },
+        {
+            "Name": "mytigio.dwarven_expansion_Locations_Cavern",
+            "FromMapFile": "assets/Maps/Cavern/Cavern.tmx"
+        }
+    ],
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Mods/DwarvenExpansion/ObjectSpritesheet",
+            "FromFile": "assets/Objects/ObjectsTilesheet.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/DwarvenExpansion/BigCraftablesSpritesheet",
+            "FromFile": "assets/BigCraftables/BigCraftablesSpritesheet.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/DwarvenExpansion/Animals/ShopImages",
+            "FromFile": "assets/Animals/animalShopImages.png"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Objects/objects.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Objects/recipes.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Objects/magicRecipes.json",
+            "When": {
+                "EnableDwarfMagic": "true"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Tools/DwarvenPickaxe/object.json",
+            "When": {
+                "EnableTools": "DwarvenPickaxe"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Animals/grub.json",
+            "When": {
+                "EnabledAnimals": "Grub"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Animals/nakedmolerat.json",
+            "When": {
+                "EnabledAnimals": "Molerat"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Animals/badger.json",
+            "When": {
+                "EnabledAnimals": "Badger"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Animals/palesalamander.json",
+            "When": {
+                "EnabledAnimals": "PaleSalamander"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Buildings/Cavern/building.json",
+            "When": {
+                "EnabledBuildings": "Cavern"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Buildings/CaveCoop/building.json",
+            "When": {
+                "EnabledBuildings": "CaveCoop"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Buildings/BigCaveCoop/building.json",
+            "When": {
+                "EnabledBuildings": "CaveCoop"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Buildings/DeluxeCaveCoop/building.json",
+            "When": {
+                "EnabledBuildings": "CaveCoop"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Buildings/CaveShed/building.json",
+            "When": {
+                "EnabledBuildings": "CaveShed"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Buildings/DwarvenFurnace/building.json",
+            "When": {
+                "EnabledBuildings": "DwarvenFurnace"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Buildings/LargeCaveShed/building.json",
+            "When": {
+                "EnabledBuildings": "CaveShed"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Animals/coppercrab.json",
+            "When": {
+                "EnabledAnimals": "CopperCrab"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Animals/ironcrab.json",
+            "When": {
+                "EnabledAnimals": "IronCrab"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Animals/goldcrab.json",
+            "When": {
+                "EnabledAnimals": "GoldCrab"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Animals/iridiumcrab.json",
+            "When": {
+                "EnabledAnimals": "IridiumCrab"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Fields": {
+                "Coop": {
+                    "AllowAnimalPregnancy": true
+                }
+            },
+            "When": {
+                "EnabledAnimals": "CopperCrab,IronCrab,GoldCrab,IridiumCrab"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Fields": {
+                "Big Coop": {
+                    "AllowAnimalPregnancy": true
+                }
+            },
+            "When": {
+                "EnabledAnimals": "CopperCrab,IronCrab,GoldCrab,IridiumCrab"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Fields": {
+                "Deluxe Coop": {
+                    "AllowAnimalPregnancy": true
+                }
+            },
+            "When": {
+                "EnabledAnimals": "CopperCrab,IronCrab,GoldCrab,IridiumCrab"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/BigCraftables/GemPolisher/big-craftable.json",
+            "When": {
+                "EnabledMachines": "GemPolisher"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/BigCraftables/SlowburnCharcoalKiln/big-craftable.json",
+            "When": {
+                "EnabledMachines": "SlowburnCharcoalKiln"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/BigCraftables/CaveIncubator/big-craftable.json",
+            "When": {
+                "EnabledBuildings": "CaveCoop"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/BigCraftables/Pulverizer/big-craftable.json",
+            "When": {
+                "EnabledMachines": "Pulverizer"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/BigCraftables/DwarvenStill/big-craftable.json",
+            "When": {
+                "EnabledMachines": "DwarvenStill"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/BigCraftables/AlchemyBench/big-craftable.json",
+            "When": {
+                "EnabledMachines": "AlchemyBench"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/BigCraftables/JewelryMaker/big-craftable.json",
+            "When": {
+                "EnabledMachines": "JewelryMaker"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/BigCraftables/ImprovedMushroomBox/big-craftable.json",
+            "When": {
+                "EnabledMachines": "ImprovedMushroomBox"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/BigCraftables/Claymixer/big-craftable.json",
+            "When": {
+                "EnabledMachines": "Claymixer"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Events/events.json"
+        }
+    ]
+}

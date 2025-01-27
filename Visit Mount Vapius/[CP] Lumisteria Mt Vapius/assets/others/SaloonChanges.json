@@ -1,0 +1,102 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Saloon",
+				"Items"
+			],
+			"Entries": {
+				"(O)346": null,
+				"Lumisteria.CheeseSaloonThu": {
+					"Id": "Lumisteria.CheeseSaloonThu",
+					"RandomItemId": [
+						"(O)Lumisteria.MtVapius_EweCheese",
+						"(O)Lumisteria.MtVapius_SaltspringCheese",
+						"(O)Lumisteria.MtVapius_SkyshardSharpCheese",
+						"(O)Lumisteria.MtVapius_BlueVapiusCheese",
+						"(O)Lumisteria.MtVapius_FaycombeCheese",
+						"(O)Lumisteria.MtVapius_QueryngesCheese",
+						"(O)Lumisteria.MtVapius_HighPlateauCheese",
+					],
+					"PriceModifiers": [
+						{
+							"Id": "Multiply",
+							"Modification": "Multiply",
+							"Amount": 0.0,
+							"RandomAmount": [
+								1.2,
+								1.5,
+								2.0
+							]
+						}
+					],
+					"AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+				},
+				"Lumisteria.CheeseDishSaloonThu": {
+					"Id": "Lumisteria.CheeseDishSaloonThu",
+					"RandomItemId": [
+						"(O)Lumisteria.MtVapius_Cooking_TroutAndToast",
+						"(O)Lumisteria.MtVapius_Cooking_Fougasse",
+						"(O)Lumisteria.MtVapius_Cooking_CheeseFritters",
+						"(O)Lumisteria.MtVapius_Cooking_Quiche",
+						"(O)215",
+					],
+					"PriceModifiers": [
+						{
+							"Id": "Multiply",
+							"Modification": "Multiply",
+							"Amount": 0.0,
+							"RandomAmount": [
+								1.2,
+								1.5,
+								2.0
+							]
+						}
+					],
+					"AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+				},
+				"Lumisteria.CheeseExtraSaloonThu": {
+					"Id": "Lumisteria.CheeseExtraSaloonThu",
+					"RandomItemId": [
+						"(O)398",
+						"(O)340",
+						"(O)344",
+					],
+					"PriceModifiers": [
+						{
+							"Id": "Multiply",
+							"Modification": "Multiply",
+							"Amount": 0.0,
+							"RandomAmount": [
+								1.2,
+								1.5,
+								2.0
+							]
+						}
+					],
+					"AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+				}
+			},
+			"When": {
+				"DayOfWeek": "Thursday",
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_CheeseNightAtSaloonMail"
+			},
+			"MoveEntries": [
+				{
+					"Id": "Lumisteria.CheeseExtraSaloonThu",
+					"BeforeId": "(O)196"
+				},
+				{
+					"Id": "Lumisteria.CheeseDishSaloonThu",
+					"BeforeId": "Lumisteria.CheeseExtraSaloonThu"
+				},
+				{
+					"Id": "Lumisteria.CheeseSaloonThu",
+					"BeforeId": "Lumisteria.CheeseDishSaloonThu"
+				},
+			]
+		}
+	]
+}

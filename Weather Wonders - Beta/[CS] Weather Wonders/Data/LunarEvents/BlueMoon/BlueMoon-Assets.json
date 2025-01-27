@@ -1,0 +1,56 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Blue Moon Music",
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Kana.WeatherWonders_BlueMoonMusic": {
+          "ID": "Kana.WeatherWonders_BlueMoonMusic",
+          "Category": "Music",
+          "FilePaths": ["{{AbsoluteFilePath: assets/BlueMoonMusic.ogg}}"],
+          "StreamedVorbis": false,
+          "Looped": false
+        }
+      }
+    },
+    {
+      "LogName": "Load WW's Blue Moon Sound Effect",
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Kana.WeatherWonders_BlueMoonSoundEffect": {
+          "ID": "Kana.WeatherWonders_BlueMoonSoundEffect",
+          "Category": "Sound",
+          "FilePaths": ["{{AbsoluteFilePath: assets/BlueMoonSoundEffect.ogg}}"],
+          "StreamedVorbis": false,
+          "Looped": false
+        }
+      },
+      "When": {
+        "BlueMoonSoundEffect": true,
+        "Weather": "Kana.WeatherWonders_BlueMoon"
+      }
+    },
+    {
+      "LogName": "Load WW's Blue Moon Weather Music",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "TargetField": ["Kana.WeatherWonders_BlueMoon"],
+      "Update": "OnLocationChange",
+      "Entries": {
+        "SoftMusicOverrides": [
+          {
+            "ID": "Kana.WeatherWonders_BlueMoonMusic",
+            "Track": "Kana.WeatherWonders_BlueMoonMusic",
+            "Condition": "TIME 2000 2600",
+            "Looped": false
+          }
+        ]
+      },
+      "When": {
+        "BlueMoonMusic": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+ "Changes": [
+ 
+        {
+            "Action": "EditData",
+            "Target": "Data/FruitTrees",
+            "Entries": { 
+			
+			//Pussy Willow Tree
+
+						  "Elaho.JosephsSeedShopCP_Pussy_Willow_Sapling": {
+							"PlantableLocationRules": [
+								{	
+								"Id": "Elaho.JosephsSeedShopCP_Pussy_Willow_Sapling_Greenhouse",
+								"Result": "Deny",
+								"Condition": "LOCATION_NAME Greenhouse",
+								"DeniedMessage": "Must be planted outside.",
+								},
+								{	
+								"Id": "Elaho.JosephsSeedShopCP_Pussy_Willow_Sapling_Farm",
+								"Result": "Default",
+								"Condition": "LOCATION_NAME Farm",
+								},
+							],
+							"DisplayName": "{{i18n:pussy-willow-sapling-JSS.name}}",
+							"Seasons": [
+							  "Winter"
+							],
+							"Fruit": [
+							  {
+								"Season": "Winter",
+								"Chance": 1.0,
+								"Condition": null,
+								"Id": "Default",
+								"ItemId": "Elaho.JosephsSeedShopCP_Pussy_Willow",
+								"RandomItemId": null,
+								"MaxItems": null,
+								"MinStack": -1,
+								"MaxStack": -1,
+								"Quality": -1,
+								"ObjectInternalName": null,
+								"ObjectDisplayName": null,
+								"ToolUpgradeLevel": -1,
+								"IsRecipe": false,
+								"StackModifiers": null,
+								"StackModifierMode": "Stack",
+								"QualityModifiers": null,
+								"QualityModifierMode": "Stack",
+								"ModData": null,
+								"PerItemCondition": null
+							  }
+							],
+							"Texture": "Mods\\Elaho.JosephsSeedShopCP\\Pussy Willow Tree",
+							"TextureSpriteRow": 0,
+							"CustomFields": null
+						  },
+					},
+		},
+	
+				//Tree Sprites
+					   {
+				"Action": "Load",
+				"Target": "Mods\\Elaho.JosephsSeedShopCP\\Pussy Willow Tree",
+				"FromFile": "assets/Items/Trees/PussyWillowTree.png"
+			},
+	]
+}
+
+				
+				

@@ -1,0 +1,414 @@
+{
+	"Changes": [
+		// FESTIVAL DIALOGUE
+		{
+			"LogName": "SBV Festival Dialogue Edits",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"AichaSBV": "{{i18n:SWS.Compat.SBV.Aicha.Festival}}",
+				"AminaSBV": "{{i18n:SWS.Compat.SBV.Amina.Festival}}",
+				"AriSBV": "{{i18n:SWS.Compat.SBV.Ari.Festival}}",
+				"EliasSBV": "{{i18n:SWS.Compat.SBV.Elias.Festival}}",
+				"EzraSBV": "{{i18n:SWS.Compat.SBV.Ezra.Festival |RandomFashion={{EzraRandomFashion}}}}",
+				"ImanSBV": "{{i18n:SWS.Compat.SBV.Iman.Festival}}",
+				"MaiaSBV": "{{i18n:SWS.Compat.SBV.Maia.Festival}}",
+				"MiyoungSBV": "{{i18n:SWS.Compat.SBV.Miyoung.Festival}}",
+				"MoonSBV": "{{i18n:SWS.Compat.SBV.Moon.Festival}}",
+				"OpheliaSBV": "{{i18n:SWS.Compat.SBV.Ophelia.Festival}}",
+				"SilasSBV": "{{i18n:SWS.Compat.SBV.Silas.Festival}}"
+			}
+		},
+		// DAILY DIALOGUE
+		{
+			"LogName": "SBV Moon Daily Dialogue Edit",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MoonSBV",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.SBV.Moon.Regular}}"
+			}
+		},
+		{
+			"LogName": "SBV Rei Daily Dialogue Edit",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/ReihanaSBV",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.SBV.Reihana.Regular}}"
+			}
+		},
+		{
+			"LogName": "SBV Aicha Marriage Daily Dialogue Edit",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/AichaSBV",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.SBV.Aicha.Regular}}"
+			}
+		},
+		{
+			"LogName": "SBV Amina Daily Dialogue Edit",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/AminaSBV",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.SBV.Amina.Regular}}"
+			}
+		},
+		{
+			"LogName": "SBV Ari Daily Dialogue Edit",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/AriSBV",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.SBV.Ari.Regular}}"
+			}
+		},
+		{
+			"LogName": "SBV Nadia Daily Dialogue Edit",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/NadiaSBV",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.SBV.Nadia.Regular}}"
+			}
+		},
+        {
+            "LogName": "SBV Festivals Edits - Small Rug",
+            "Action": "EditImage",
+            "Target": "Maps/SBVFestivals",
+            "FromFile": "Assets/{{SaturationLevel}}/SBV_Small_Rug.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 64,
+                "Height": 32
+            },
+            "PatchMode": "Replace",
+			"When":{
+				"DayEvent": "feast of the winter star"
+			}
+        },
+        {
+            "LogName": "SBV Festivals Edits - Big Rug",
+            "Action": "EditImage",
+            "Target": "Maps/SBVFestivals",
+            "FromFile": "Assets/{{SaturationLevel}}/SBV_Big_Rug.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 336,
+                "Width": 160,
+                "Height": 160
+            },
+            "PatchMode": "Replace",
+			"When":{
+				"DayEvent": "feast of the winter star"
+			}
+        },
+		// GIFT CHANGES
+		{
+			"LogName": "SWS SBV Aicha Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "AichaSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_SolarEssence": null,
+				"skellady.SBVCP_VoidEssence": null,
+				"skellady.SBVCP_AppleSapling": null,
+				"skellady.SBVCP_NapalmRing": null,
+				"{{ModId}}_Aicha_ChocoChipCookies": {
+					"Id": "{{ModId}}_Aicha_ChocoChipCookies",
+					"ItemId": "(O)skellady.SBVCP_ChocoChipCookies"
+				},
+				"{{ModId}}_Aicha_MossSoup": {
+					"Id": "{{ModId}}_Aicha_MossSoup",
+					"ItemId": "(O)MossSoup"
+				},
+				"{{ModId}}_Aicha_MapleBar": {
+					"Id": "{{ModId}}_Aicha_MapleBar",
+					"ItemId": "(O)731"
+				},
+				"{{ModId}}_Aicha_StrangeBun": {
+					"Id": "{{ModId}}_Aicha_StrangeBun",
+					"ItemId": "(O)203"
+				}
+			}
+		},
+		{
+			"LogName": "SWS SBV Amina Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "AminaSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_FairyRose": null,
+				"skellady.SBVCP_StrangeDoll1": null,
+				"skellady.SBVCP_StrangeDoll2": null,
+				"{{ModId}}_Amina_CranberryCandy": {
+					"Id": "{{ModId}}_Amina_CranberryCandy",
+					"ItemId": "(O)612"
+				},
+				"{{ModId}}_Amina_ChocolateCake": {
+					"Id": "{{ModId}}_Amina_ChocolateCake",
+					"ItemId": "(O)220"
+				},
+				"{{ModId}}_Amina_Pancakes": {
+					"Id": "{{ModId}}_Amina_Pancakes",
+					"ItemId": "(O)211"
+				}
+			}
+		},
+		{
+			"LogName": "SWS SBV Ari Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "AriSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_AriFertilizer": null,
+				"skellady.SBVCP_AriSunberry": null,
+				"skellady.SBVCP_Carob": null,
+				"{{ModId}}_Ari_VegetableMedley": {
+					"Id": "{{ModId}}_Ari_VegetableMedley",
+					"ItemId": "(O)200"
+				}
+			}
+		},
+		{
+			"LogName": "SWS SBV Ari Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "AriSBV", "WinterStarGifts" ],
+			"Entries": {
+				"{{ModId}}_Ari_MakiRoll": {
+					"Id": "{{ModId}}_Ari_MakiRoll",
+					"ItemId": "(O)228"
+				},
+				"{{ModId}}_Ari_Sashimi": {
+					"Id": "{{ModId}}_Ari_Sashimi",
+					"ItemId": "(O)227"
+				},
+				"{{ModId}}_Ari_CrabCakes": {
+					"Id": "{{ModId}}_Ari_CrabCakes",
+					"ItemId": "(O)732"
+				},
+				"{{ModId}}_Ari_CarpSurprise": {
+					"Id": "{{ModId}}_Ari_CarpSurprise",
+					"ItemId": "(O)209"
+				}
+			},
+			"When": {
+				"VegetarianFoodOnly": "False"
+			}
+		},
+		{
+			"LogName": "SWS SBV Blake Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "BlakeSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_BlakePickles": null,
+				"skellady.SBVCP_RainbowShell": null
+			}
+		},
+		{
+			"LogName": "SWS SBV Diala Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "DialaSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_DialaGems": null
+			}
+		},
+		{
+			"LogName": "SWS SBV Derya Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "DeryaSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_DeryaCola": null,
+				"skellady.SBVCP_DeryaCoffee": null
+			}
+		},
+		{
+			"LogName": "SWS SBV Elias Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "EliasSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_EliasBait": null,
+				"skellady.SBVCP_EliasTackles": null,
+				"skellady.SBVCP_Carob": null
+			}
+		},
+		{
+			"LogName": "SWS SBV Elias Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "EliasSBV", "WinterStarGifts" ],
+			"Entries": {
+				"{{ModId}}_Elias_Chowder": {
+					"Id": "{{ModId}}_Elias_Chowder",
+					"ItemId": "(O)727"
+				},
+				"{{ModId}}_Elias_CrabCakes": {
+					"Id": "{{ModId}}_Ari_CrabCakes",
+					"ItemId": "(O)732"
+				},
+				"{{ModId}}_Elias_CarpSurprise": {
+					"Id": "{{ModId}}_Ari_CarpSurprise",
+					"ItemId": "(O)209"
+				}
+			},
+			"When": {
+				"VegetarianFoodOnly": "False"
+			}
+		},
+		{
+			"LogName": "SWS SBV Iman Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "ImanSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_BatteryPack": null,
+				"skellady.SBVCP_TeaLeaves": null,
+				"skellady.SBVCP_IridiumBar": null,
+				"{{ModId}}_Iman_Hashbrowns": {
+					"Id": "{{ModId}}_Iman_Hashbrowns",
+					"ItemId": "(O)210"
+				}
+			}
+		},
+		{
+			"LogName": "SWS SBV Jumana Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "JumanaSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_Bouquet": null,
+				"skellady.SBVCP_HyacinthSeeds": null,
+				"skellady.SBVCP_ArfajSeeds": null,
+				"skellady.SBVCP_CyclamenSeeds": null,
+				"skellady.SBVCP_CallaLilySeeds": null,
+				"skellady.SBVCP_WildMustardSeeds": null,
+				"skellady.SBVCP_Arfaj": null,
+				"skellady.SBVCP_Hyacinth": null,
+				"skellady.SBVCP_Sunflower": null,
+				"{{ModId}}_Jumana_CheeseCauliflower": {
+					"Id": "{{ModId}}_Jumana_CheeseCauliflower",
+					"ItemId": "(O)197"
+				},
+				"{{ModId}}_Jumana_PepperPoppers": {
+					"Id": "{{ModId}}_Jumana_PepperPoppers",
+					"ItemId": "(O)215"
+				},
+				"{{ModId}}_Jumana_BlueberryTart": {
+					"Id": "{{ModId}}_Jumana_BlueberryTart",
+					"ItemId": "(O)234"
+				}
+			}
+		},
+		{
+			"LogName": "SWS SBV Lyenne Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "LyenneSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_TripleShotEspresso": null,
+				"skellady.SBVCP_TeaSet": null,
+				"{{ModId}}_Lyenne_Spaghetti": {
+					"Id": "{{ModId}}_Lyenne_Spaghetti",
+					"ItemId": "(O)224"
+				}
+			}
+		},
+		{
+			"LogName": "SWS SBV Maia Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "MaiaSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_IronBar": null,
+				"skellady.SBVCP_GoldBar": null,
+				"skellady.SBVCP_IridiumBar": null,
+				"skellady.SBVCP_ObsidianEdge": null,
+				"skellady.SBVCP_SunberryGeode": null,
+				"{{ModId}}_Maia_PoppyseedMuffin": {
+					"Id": "{{ModId}}_Maia_PoppyseedMuffin",
+					"ItemId": "(O)651"
+				},
+				"{{ModId}}_Maia_Cookie": {
+					"Id": "{{ModId}}_Maia_Cookie",
+					"ItemId": "(O)223"
+				},
+				"{{ModId}}_Maia_BlueberryTart": {
+					"Id": "{{ModId}}_Maia_BlueberryTart",
+					"ItemId": "(O)234"
+				}
+			}
+		},
+		{
+			"LogName": "SWS SBV Miyoung Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "MiyoungSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_RandomSeeds": null,
+				"skellady.SBVCP_TeaSetMiyoung": null
+			}
+		},
+		{
+			"LogName": "SWS SBV Moon Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "MoonSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_MoonGems": null,
+				"skellady.SBVCP_MoonPrismaticShard": null,
+				"{{ModId}}_Moon_Pancakes": {
+					"Id": "{{ModId}}_Moon_Pancakes",
+					"ItemId": "(O)211"
+				}
+			}
+		},
+		{
+			"LogName": "SWS SBV Ophelia Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "OpheliaSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_NautilusShell": null,
+				"skellady.SBVCP_PurpleMushroom": null,
+				"skellady.SBVCP_TruffleOil": null,
+				"skellady.SBVCP_SlimeCharmer": null,
+				"{{ModId}}_Ophelia_StirFry": {
+					"Id": "{{ModId}}_Ophelia_StirFry",
+					"ItemId": "(O)606"
+				},
+				"{{ModId}}_Ophelia_TropicalCurry": {
+					"Id": "{{ModId}}_Ophelia_TropicalCurry",
+					"ItemId": "(O)907"
+				},
+				"{{ModId}}_Ophelia_MangoStickyRice": {
+					"Id": "{{ModId}}_Ophelia_MangoStickyRice",
+					"ItemId": "(O)905"
+				}
+			}
+		},
+		{
+			"LogName": "SWS SBV Silas Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "SilasSBV", "WinterStarGifts" ],
+			"Entries": {
+				"skellady.SBVCP_RandomGeode": null,
+				"skellady.SBVCP_RandomSeeds": null,
+				"{{ModId}}_Silas_PoppyseedMuffin": {
+					"Id": "{{ModId}}_Silas_PoppyseedMuffin",
+					"ItemId": "(O)651"
+				},
+				"{{ModId}}_Silas_Cookie": {
+					"Id": "{{ModId}}_Silas_Cookie",
+					"ItemId": "(O)223"
+				},
+				"{{ModId}}_Silas_RhubarbPie": {
+					"Id": "{{ModId}}_Silas_RhubarbPie",
+					"ItemId": "(O)222"
+				}
+			}
+		}
+	]
+}

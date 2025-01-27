@@ -1,0 +1,188 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "SpouseStardrop": "A clinical researcher I know told me that that fruit has powerful medicinal properties.#$b#I wanted you to have it... well, because I want you to be healthy, of course, but also as an expression of everything I feel for you.$l#$b#@... I'm someone who very easily falls into a routine. Into a rut, if I'm honest.$s#$b#Even living in this close-knit community, I used to feel so isolated... but I could never work up the nerve to make any changes to my lifestyle.$s#$b#But then I met this amazing, vibrant, courageous person...#$b#The kind of person willing to take risks to find happiness, even if it meant starting a whole new life...#$b#The kind of person who could show me how to fly.$l#$b#I love you, @. I've never loved anyone like you. Our relationship has changed my life for the better in every way.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "SpouseStardrop": "A clinical researcher I know told me that that fruit has powerful medicinal properties.#$b#I wanted you to have it... well, because I want you to be healthy, of course, but also as an expression of everything I feel for you.#$b#@... I'm someone who very easily falls into a routine. Into a rut, if I'm honest.$s#$b#Even living in this close-knit community, I used to feel so isolated... but I could never work up the nerve to make any changes to my lifestyle.$s#$b#But then I met this amazing, vibrant, courageous person...#$b#The kind of person willing to take risks to find happiness, even if it meant starting a whole new life...#$b#The kind of person who could show me how to fly.#$b#I love you, @. I've never loved anyone like you. Our relationship has changed my life for the better in every way.",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false",
+            },
+        },
+        {
+            "LogName": "Harvey terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Harvey": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Harvey terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Harvey": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "winter_1": "The air is very dry during winter. That's why our skin tends to become irritated.#$e#Truffle oil is an excellent remedy for that.",
+                "Indoor_Night_0": "You look exhausted, you poor thing. Why don't you sit down and let me bring you something to drink?",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Indoor_Night_Harvey": "You look like you could use a full night's sleep tonight.#$e#Doctor's orders... It's good for your brain!",
+                "Outdoor_Harvey": "This is so much nicer than being cooped up in the clinic all day.#$e#I love watching you on the farm. You throw yourself into the work so completely. It's a good reminder of the simple joy of physical exertion.",
+            },
+        },
+        {
+	    "Logname": "Harvey no blush edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey",
+            "FromFile": "assets/Portraits/HarveyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.HarveyGusLewis": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        {
+	    "Logname": "Harvey no blush edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey_Winter",
+            "FromFile": "assets/Portraits/HarveyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.HarveyGusLewis": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Harvey no blush edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey",
+            "FromFile": "assets/Portraits/HarveyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        {
+	    "Logname": "Harvey no blush edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey_Winter",
+            "FromFile": "assets/Portraits/HarveyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+//CFDE
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "winter_1": "The air is very dry during winter. That's why our skin tends to become irritated.#$e#Truffle oil is an excellent remedy for that.",
+                "Indoor_Night_0": "#$c .5#I got in a little bit of exercise today. Did you? ...Er, well, of course you did.#You look exhausted, you poor thing. Why don't you sit down and let me bring you something to drink?",
+                "Indoor_Night_3": "#$c .5#Sometimes, my brain turns on at this hour. I've developed a pretty good habit, though, of resisting staying up late.#It's stressful to be a doctor, so it's really great to live somewhere as relaxing as %farm Farm.",
+                "Rainy_Night_2": "#$c .5#This weather is perfect for a quiet night in.#You look a little soggy, @. Why don't you warm yourself by the fire?",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+    ]
+}

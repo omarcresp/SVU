@@ -1,0 +1,49 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "SA.Goldie": {
+          "Name": "[SA.Goldie_Name]",
+          "Requester": null,
+          "Duration": "ThreeDays",
+          "Repeatable": "True",
+          "RequiredTags": "",
+          "OrderType": "Esca.EMP/StardewAquarium/AquariumOrders",
+          "SpecialRule": "",
+          "Text": "[SA.Goldie_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Deliver",
+              "Text": "[SA.Goldie_Objective_0_Text]",
+              "RequiredCount": "10",
+              "Data": {
+                "AcceptedContextTags": "item_bait",
+                "TargetName": "Goldie"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "500"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SA.Goldie.Mail",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

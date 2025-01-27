@@ -1,0 +1,155 @@
+{
+	"Changes": [
+	
+	{
+		  "Action": "EditData",
+		  "Target": "Mods/mistyspring.ItemExtensions/Treasure",
+		  "Entries": {
+			"Lumisteria.MtVapius_OwlCarving": {
+				"ItemId": "(O)Lumisteria.MtVapius_OwlCarving",
+				"Chance": 0.06,
+				"MinStack": 1,
+				"MaxStack": 1
+			},
+			"Lumisteria.MtVapius_WeirdCoins": {
+				"ItemId": "(O)Lumisteria.MtVapius_WeirdCoins",
+				"Chance": 0.08,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"MinStack": 5,
+				"MaxStack": 10
+			},
+			"Lumisteria.MtVapius_WeirdCoinsExtra": {
+				"ItemId": "(O)Lumisteria.MtVapius_WeirdCoins",
+				"Chance": 0.01,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"MinStack": 10,
+				"MaxStack": 20
+			},
+			"Lumisteria.MtVapius_WeirdCoinsRareAnywhere": {
+				"ItemId": "(O)Lumisteria.MtVapius_WeirdCoins",
+				"Chance": 0.02,
+				"MinStack": 5,
+				"MaxStack": 10
+			},
+			"Lumisteria.MtVapius_MarineItem": {
+				"ItemId": "RANDOM_ITEMS (O)",
+				"Chance": 0.02,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"PerItemCondition": "ITEM_CONTEXT_TAG Target marine_item mt_vapius, !ITEM_CONTEXT_TAG Target moonslime_artifact",
+				"MinStack": 1,
+				"MaxStack": 1
+			},
+			"Lumisteria.MtVapius_Tier1Gems": {
+				"ItemId": "RANDOM_ITEMS (O)",
+				"Chance": 0.03,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"PerItemCondition": "ITEM_CONTEXT_TAG Target lumisteria.gem_tier_1 mt_vapius",
+				"MinStack": 1,
+				"MaxStack": 3
+			},
+			"Lumisteria.MtVapius_Tier2Gems": {
+				"ItemId": "RANDOM_ITEMS (O)",
+				"Chance": 0.01,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"PerItemCondition": "ITEM_CONTEXT_TAG Target lumisteria.gem_tier_2 mt_vapius",
+				"MinStack": 1,
+				"MaxStack": 2
+			},
+			"Lumisteria.MtVapius_Artifacts": {
+				"ItemId": "RANDOM_ITEMS (O)",
+				"Chance": 0.07,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Forest",
+				"PerItemCondition": "ITEM_CONTEXT_TAG Target mt_vapius_fishingtreasure, !ITEM_CONTEXT_TAG Target moonslime_artifact",
+				"MinStack": 1,
+				"MaxStack": 1
+			},
+			"Lumisteria.MtVapius_RareArtifactTrove": {
+				"ItemId": "(O)Lumisteria.MtVapius_Treasures_ArtifactTrove",
+				"Chance": 0.005,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"MinStack": 1,
+				"MaxStack": 1
+			},
+			"Lumisteria.MtVapius_RiverJelly": {
+				"ItemId": "(O)RiverJelly",
+				"Chance": 0.08,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest, LOCATION_IS_OUTDOORS Here",
+				"MinStack": 1,
+				"MaxStack": 3
+			},
+			"Lumisteria.MtVapius_CaveJelly": {
+				"ItemId": "(O)CaveJelly",
+				"Chance": 0.05,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest, LOCATION_IS_INDOORS Here",
+				"MinStack": 1,
+				"MaxStack": 3
+			},
+			"Lumisteria.MtVapius_MountainMeadowSeeds": {
+				"ItemId": "(O)Lumisteria.MtVapius_MountainMeadowSeeds",
+				"Chance": 0.05,
+				"Condition": "PLAYER_FORAGING_LEVEL Current 6",
+				"MinStack": 2,
+				"MaxStack": 3
+			},
+		  }
+		},
+	{
+		  "Action": "EditData",
+		  "Target": "Mods/mistyspring.ItemExtensions/Panning",
+		  "Entries": {
+			"Lumisteria.MtVapius_WeirdCoins": {
+				"ItemId": "(O)Lumisteria.MtVapius_WeirdCoins",
+				"Chance": 0.1,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"MinStack": 5,
+				"MaxStack": 10
+			},
+			"Lumisteria.MtVapius_WeirdCoinsExtra": {
+				"ItemId": "(O)Lumisteria.MtVapius_WeirdCoins",
+				"Chance": 0.04,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"MinStack": 10,
+				"MaxStack": 20
+			},
+			"Lumisteria.MtVapius_WeirdCoinsRareAnywhere": {
+				"ItemId": "(O)Lumisteria.MtVapius_WeirdCoins",
+				"Chance": 0.02,
+				"MinStack": 5,
+				"MaxStack": 10
+			},
+			"Lumisteria.MtVapius_Tier1Gems": {
+				"ItemId": "RANDOM_ITEMS (O)",
+				"Chance": 0.05,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"PerItemCondition": "ITEM_CONTEXT_TAG Target lumisteria.gem_tier_1 mt_vapius",
+				"MinStack": 1,
+				"MaxStack": 3
+			},
+			"Lumisteria.MtVapius_Tier2Gems": {
+				"ItemId": "RANDOM_ITEMS (O)",
+				"Chance": 0.02,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"PerItemCondition": "ITEM_CONTEXT_TAG Target lumisteria.gem_tier_2 mt_vapius",
+				"MinStack": 1,
+				"MaxStack": 2
+			},
+			"Lumisteria.MtVapius_ReedSeeds": {
+				"ItemId": "(O)Lumisteria.MtVapius_ReedSeeds",
+				"Chance": 0.05,
+				"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
+				"MinStack": 1,
+				"MaxStack": 4
+			},
+			"Lumisteria.MtVapius_ReedSeedsMarsh": {
+				"ItemId": "(O)Lumisteria.MtVapius_ReedSeeds",
+				"Chance": 0.05,
+				"Condition": "LOCATION_NAME Here Lumisteria.MtVapius_ForestCaveMarsh",
+				"MinStack": 2,
+				"MaxStack": 4
+			},
+		  }
+		},
+	
+	]
+	
+}

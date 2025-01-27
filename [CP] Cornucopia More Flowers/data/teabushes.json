@@ -1,0 +1,76 @@
+{
+    "Changes": [
+		//Extended flowers crops
+		{
+        "LogName": "Add to Custom Bush Framework",
+			"Action": "EditData",
+			"Target": "furyx639.CustomBush/Data",
+			"When": 
+				{
+					"Enable Extended Flowers Pack": true
+				},
+			"Entries": {
+				"(O)Cornucopia_CalicoRoseSeeds": {
+					"DisplayName": "{{i18n:CalicoRose_name}}",
+					"Description": "{{i18n:CalicoRoseSeeds_description}}",
+					"AgeToProduce": 20,
+					"DayToBeginProducing": 0,
+					"Seasons": ["summer"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 5 10 15 20 25",
+							"ItemId": "(O)Cornucopia_CalicoRose",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreFlowers/teabushes",
+					"IndoorTexture": "Cornucopia.MoreFlowers/teabushes_indoors",
+					"TextureSpriteRow": 2,
+				},
+				"(O)Cornucopia_CamelliaSeeds": {
+					"DisplayName": "{{i18n:Camellia_name}}",
+					"Description": "{{i18n:CamelliaSeeds_description}}",
+					"AgeToProduce": 12,
+					"DayToBeginProducing": 0,
+					"Seasons": ["spring"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 3 6 9 12 15 18 21 24 27",
+							"ItemId": "(O)Cornucopia_Camellia",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 2,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreFlowers/teabushes",
+					"IndoorTexture": "Cornucopia.MoreFlowers/teabushes_indoors",
+					"TextureSpriteRow": 6,
+				},
+				"(O)Cornucopia_LilacSeeds": {
+					"DisplayName": "{{i18n:Lilac_name}}",
+					"Description": "{{i18n:LilacSeeds_description}}",
+					"AgeToProduce": 12,
+					"DayToBeginProducing": 0,
+					"Seasons": ["spring", "summer"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 3 6 9 12 15 18 21 24 27",
+							"ItemId": "(O)Cornucopia_Lilac",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreFlowers/teabushes",
+					"IndoorTexture": "Cornucopia.MoreFlowers/teabushes_indoors",
+					"TextureSpriteRow": 4,
+				}
+			}
+	    },
+	]
+}

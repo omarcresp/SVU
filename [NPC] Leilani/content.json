@@ -1,0 +1,485 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "Version": {
+      "AllowValues": "antisocial, hardmode",
+      "Description": "whether is antisocial (meaning she won't appear in the social menu, can't be gifted, etc) or behaves like a normal NPC",
+      "Default": "antisocial"
+    }
+  },
+    "DynamicTokens": [
+    {
+      "Name": "BlankFile",
+      "Value": "assets/Data/blank.json"
+    }
+  ],
+  "CustomLocations": [
+    {
+      "Name": "Custom_Ridgeside_PikaHouseBirthday",
+      "FromMapFile": "assets/Maps/PikaHouseBirthday.tmx"
+    }
+  ],
+  "Changes": [
+    {
+      "Log Name": "Leilani Disposition - social",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Leilani": {
+          "DisplayName": "Leilani",
+          "BirthSeason": "Summer",
+          "BirthDay": 23,
+          "HomeRegion": "Other",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "LoveInterest": "Pika",
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": true,
+          "CanVisitIsland": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "DumpsterDiveFriendshipEffect": -25,
+          "DumpsterDiveEmote": null,
+          "FriendsAndFamily": {
+            "Pika": "{{i18n:Leilanidispo.Pika}}",
+            "Keahi": "{{i18n:Leilanidispo.Keahi}}"
+          },
+          "FlowerDanceCanDance": null,
+          "WinterStarGifts": [],
+          "WinterStarParticipant": null,
+          "UnlockConditions": null,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "Custom_Ridgeside_RSVHiddenWarp2",
+              "Tile": {
+                "X": 5,
+                "Y": 5
+              },
+              "Direction": "up"
+            }
+          ],
+          "TextureName": null,
+          "Appearance": [
+            {
+              "Id": "Regular",
+              "Condition": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani",
+              "Sprite": "Characters/Leilani",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Luau",
+              "Condition": "IS_EVENT festival_summer11",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani_Luau",
+              "Sprite": "Characters/Leilani_Luau",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            },
+            {
+              "Id": "Potluck",
+              "Condition": "IS_EVENT festival_summer11, {{HasMod|contains=LenneDalben.PelicanTownPotluck}}",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani_Luau",
+              "Sprite": "Characters/Leilani_Luau",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            },
+            {
+              "Id": "Moonlight Jellies",
+              "Condition": "IS_EVENT festival_summer28",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani_MoonlightJellies",
+              "Sprite": "Characters/Leilani_MoonlightJellies",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            },
+            {
+              "Id": "Rain - Outdoor",
+              "Condition": "WEATHER Target Rain Storm GreenRain",
+              "Indoors": false,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani_Rain_Outdoor",
+              "Sprite": "Characters/Leilani_Rain_Outdoor",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            },
+            {
+              "Id": "Rain - Indoor",
+              "Condition": "WEATHER Target Rain Storm GreenRain",
+              "Indoors": true,
+              "Outdoors": false,
+              "Portrait": "Portraits/Leilani_Rain_Indoor",
+              "Sprite": "Characters/Leilani_Rain_Indoor",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Log Name": "Leilani Disposition - antisocial",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "When": {
+        "Version": "antisocial"
+      },
+      "Entries": {
+        "Leilani": {
+          "DisplayName": "Leilani",
+          "BirthSeason": "Summer",
+          "BirthDay": 23,
+          "HomeRegion": "Other",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "LoveInterest": "Pika",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanSocialize": false,
+          "CanReceiveGifts": false,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": true,
+          "CanVisitIsland": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "DumpsterDiveFriendshipEffect": -25,
+          "DumpsterDiveEmote": null,
+          "FriendsAndFamily": {
+            "Pika": "{{i18n:Leilanidispo.Pika}}",
+            "Keahi": "{{i18n:Leilanidispo.Keahi}}"
+          },
+          "FlowerDanceCanDance": null,
+          "WinterStarGifts": [],
+          "WinterStarParticipant": null,
+          "UnlockConditions": null,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "Custom_Ridgeside_RSVHiddenWarp2",
+              "Tile": {
+                "X": 5,
+                "Y": 5
+              },
+              "Direction": "up"
+            }
+          ],
+          "TextureName": null,
+          "Appearance": [
+            {
+              "Id": "Regular",
+              "Condition": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani",
+              "Sprite": "Characters/Leilani",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Luau",
+              "Condition": "IS_EVENT festival_summer11",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani_Luau",
+              "Sprite": "Characters/Leilani_Luau",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            },
+            {
+              "Id": "Potluck",
+              "Condition": "IS_EVENT festival_summer11, {{HasMod|contains=LenneDalben.PelicanTownPotluck}}",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani_Luau",
+              "Sprite": "Characters/Leilani_Luau",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            },
+            {
+              "Id": "Moonlight Jellies",
+              "Condition": "IS_EVENT festival_summer28",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani_MoonlightJellies",
+              "Sprite": "Characters/Leilani_MoonlightJellies",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            },
+            {
+              "Id": "Rain - Outdoor",
+              "Condition": "WEATHER Target Rain Storm GreenRain",
+              "Indoors": false,
+              "Outdoors": true,
+              "Portrait": "Portraits/Leilani_Rain_Outdoor",
+              "Sprite": "Characters/Leilani_Rain_Outdoor",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            },
+            {
+              "Id": "Rain - Indoor",
+              "Condition": "WEATHER Target Rain Storm GreenRain",
+              "Indoors": true,
+              "Outdoors": false,
+              "Portrait": "Portraits/Leilani_Rain_Indoor",
+              "Sprite": "Characters/Leilani_Rain_Indoor",
+              "IsIslandAttire": false,
+              "Precedence": -101,
+              "Weight": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Edits to Pika and Keahi's Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "When": {
+        "Version": "hardmode"
+      },
+      "Fields": {
+        "Keahi": {
+          "FriendsAndFamily": {
+            "Pika": "{{i18n:Keahidispo.Pika}}",
+            "Leilani": "{{i18n:Keahidispo.Leilani}}"
+          }
+        },
+        "Pika": {
+          "Keahi": "{{i18n:Pikadispo.Keahi}}",
+          "Leilani": "{{i18n:Pikadispo.Leilani}}"
+        }
+      }
+    },
+    {
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "leilani_dishes": "16/16 17/16",
+        "leilani_sleep": "27/27/27",
+        "leilani_read": "20/21 21 21 21 21 21 21 21 21 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20/20",
+        "leilani_exercise": "22/22 22 22 22 22 23 23 24 24 25 25 24 24 23 23 22 22/22"
+      }
+    },
+    {
+      "LogName": "NPCGiftTastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Leilani": "{{i18n:gifttastes.1}}/394 564/{{i18n:gifttastes.2}}/18 22 100 101 103 105 106 109 115 119 120 123 376/{{i18n:gifttastes.3}}//{{i18n:gifttastes.4}}//{{i18n:gifttastes.5}}/111 112 113/"
+      }
+    },
+    {
+      "LogName": "Leilani Festival Locations - Luau",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "When": {
+        "HasSeenEvent |contains=937501": "true",
+        "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": false
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Leilani 52 20 0",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Leilani Festival Locations - Luau RSV Expanded Map",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "When": {
+        "HasSeenEvent |contains=937501": "true",
+        "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Leilani 84 10 2",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Leilani Festival Locations - Jellies",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "When": {
+        "HasSeenEvent": "937501"
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Leilani 9 12 3",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Regular Sprite and Portrait",
+      "Action": "Load",
+      "Target": "Characters/Leilani, Portraits/Leilani",
+      "FromFile": "assets/{{TargetPathOnly}}/leilani.png"
+    },
+    {
+      "LogName": "Luau Sprites and Portraits",
+      "Action": "Load",
+      "Target": "Characters/Leilani_Luau, Portraits/Leilani_Luau",
+      "FromFile": "assets/{{TargetPathOnly}}/leilani_luau.png"
+    },
+    {
+      "LogName": "Moonlight Jellies Sprites and Portraits",
+      "Action": "Load",
+      "Target": "Characters/Leilani_MoonlightJellies, Portraits/Leilani_MoonlightJellies",
+      "FromFile": "assets/{{TargetPathOnly}}/leilani_moonlightjellies.png"
+    },
+    {
+      "LogName": "Rain Sprites and Portraits - Outdoor",
+      "Action": "Load",
+      "Target": "Characters/Leilani_Rain_Outdoor, Portraits/Leilani_Rain_Outdoor",
+      "FromFile": "assets/{{TargetPathOnly}}/leilani_rain_outdoor.png"
+    },
+    {
+      "LogName": "Rain Sprites and Portraits - Indoor",
+      "Action": "Load",
+      "Target": "Characters/Leilani_Rain_Indoor, Portraits/Leilani_Rain_Indoor",
+      "FromFile": "assets/{{TargetPathOnly}}/leilani_rain_indoor.png"
+    },
+	    {
+      "LogName": "Leilani Blank Schedule",
+      "Action": "Load",
+      "Target": "Characters/Schedules/Leilani",
+      "FromFile": "{{BlankFile}}"
+    },
+    {
+      "LogName": "Basic Schedule",
+      "Action": "Include",
+      "FromFile": "assets/Schedule/beforeintroschedule.json",
+      "When": {
+        "HasSeenEvent |contains=937501": false
+      }
+    },
+    {
+      "LogName": "Summer Schedule",
+      "Action": "Include",
+      "FromFile": "assets/Schedule/schedule.json",
+      "When": {
+        "HasSeenEvent": "937501"
+      }
+    },
+    {
+      "LogName": "Additional Schedule Changes",
+      "Action": "Include",
+      "FromFile": "assets/Schedule/otherschedules.json"
+    },
+    {
+      "LogName": "Blank Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Leilani",
+      "FromFile": "{{BlankFile}}"
+    },
+    {
+      "LogName": "Main Dialogue - antisocial",
+      "Action": "Include",
+      "When": {
+        "Version": "antisocial"
+      },
+      "FromFile": "assets/Dialogue/Leilani.json"
+    },
+    {
+      "LogName": "Main Dialogue - Hardmode",
+      "Action": "Include",
+      "When": {
+        "Version": "hardmode"
+      },
+      "FromFile": "assets/Dialogue/Leilanifullversion.json"
+    },
+    {
+      "LogName": "Additional Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/otherdialogue.json"
+    },
+    {
+      "LogName": "Events",
+      "Action": "Include",
+      "FromFile": "assets/Events/events.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "rsv.pika4": "{{i18n:LeilaniStrings.rsv.pika4}}",
+        "rsv.pika6": "{{i18n:LeilaniStrings.rsv.pika6}}"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Ridgeside_PikaHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 3
+          },
+          "Layer": "Front2",
+          "SetTilesheet": "indoor",
+          "SetIndex": "757"
+        }
+      ]
+    }
+  ]
+}

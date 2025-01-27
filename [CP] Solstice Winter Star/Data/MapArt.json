@@ -1,0 +1,133 @@
+{
+    "Changes": [
+        // FESTIVAL EDITS
+        {
+            "LogName": "Festivals Edits - Rug",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "Assets/{{SaturationLevel}}/{{TargetWithoutPath}}_Winter_Star_Rug.png",
+            "ToArea": {
+                "X": 1,
+                "Y": 208,
+                "Width": 62,
+                "Height": 32
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Festivals Edits - Present Boxes & Candles",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "Assets/{{SaturationLevel}}/{{TargetWithoutPath}}_Winter_Star_Candles.png",
+            "ToArea": {
+                "X": 384,
+                "Y": 352,
+                "Width": 64,
+                "Height": 16
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Festivals Edits - Garlands, Tables & Candy Canes",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "Assets/{{SaturationLevel}}/{{TargetWithoutPath}}_Winter_Star_Table.png",
+            "ToArea": {
+                "X": 288,
+                "Y": 368,
+                "Width": 160,
+                "Height": 80
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Festivals Edits - Pierre's Stall",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "Assets/{{SaturationLevel}}/{{TargetWithoutPath}}_Pierre_Stall.png",
+            "ToArea": {
+                "X": 449,
+                "Y": 439,
+                "Width": 63,
+                "Height": 28
+            },
+            "PatchMode": "Replace"
+        },
+        /*{
+            "LogName": "Festivals Edits - Tree Top",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "Assets/{{SaturationLevel}}/{{TargetWithoutPath}}_Tree_Top.png",
+            "ToArea": {
+                "X": 144,
+                "Y": 288,
+                "Width": 33,
+                "Height": 32
+            },
+            "PatchMode": "Replace"
+        },*/
+        // CURSORS EDITS
+        {
+            "LogName": "Cursors Edits - Gift Box",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Assets/{{SaturationLevel}}/{{TargetWithoutPath}}_Tupperware.png",
+            "ToArea": {
+                "X": 288,
+                "Y": 1231,
+                "Width": 96,
+                "Height": 16
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Cursors Edits - Santa",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Assets/{{TargetWithoutPath}}_WinterShootingStar.png",
+            "ToArea": {
+                "X": 639,
+                "Y": 803,
+                "Width": 65,
+                "Height": 10
+            },
+            "PatchMode": "Replace"
+        },
+        // MAP EDITS
+        {
+            "LogName": "Town Edits - Wreaths & Tinsel",
+            "Action": "EditImage",
+            "Target": "Maps/winter_town, Maps/winter_outdoorsTileSheet",
+            "FromFile": "Assets/{{SaturationLevel}}/{{TargetWithoutPath}}_Overlay.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod |contains= Gweniaczek.WayBackPT, yri.ProjectYellogTownOverhaul, Elle.TownBuildings": false
+            }
+        },
+        {
+            "LogName": "Town Edits - Christmas Tree",
+            "Action": "EditImage",
+            "Target": "Maps/winter_town",
+            "FromFile": "Assets/{{SaturationLevel}}/{{TargetWithoutPath}}_Wishing_Tree.png",
+            "ToArea": {
+                "X": 368,
+                "Y": 432,
+                "Width": 48,
+                "Height": 80
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Winter Star Tree Map Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas, Maps/Town-Christmas2",
+            "FromFile": "Assets/Town-SWS-WinterStar.tmx",
+            "ToArea": {
+                "X": 28,
+                "Y": 61,
+                "Width": 4,
+                "Height": 7
+            }
+        }
+    ]
+}

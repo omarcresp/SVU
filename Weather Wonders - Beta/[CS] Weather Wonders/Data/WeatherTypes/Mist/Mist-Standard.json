@@ -1,0 +1,56 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Mist Weather (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_Mist": {
+          "Id": "Kana.WeatherWonders_Mist",
+          "DisplayName": "{{i18n: Weather.Mist}}",
+          "SoftMusicOverrides": [{}],
+          "Forecast": "{{i18n: Weather.Mist.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "IconSource": {
+            "X": 36,
+            "Y": 0
+          },
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 26
+          },
+          "UseNightTiles": false,
+          "SpawnCritters": true,
+          "SpawnFrogs": true,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "MistFog1",
+              "Type": "TextureScroll",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/Fog",
+              "Speed": "{{ScrollSpeedMist1}}",
+              "Scale": 2,
+              "Opacity": "{{LayerOpacityMist1}}",
+              "Color": "White",
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "MistFog1",
+              "Type": "TextureScroll",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/Fog",
+              "Speed": "{{ScrollSpeedMist2}}",
+              "Scale": 2,
+              "Opacity": "{{LayerOpacityMist2}}",
+              "Color": "White",
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": []
+        }
+      }
+    }
+  ]
+}

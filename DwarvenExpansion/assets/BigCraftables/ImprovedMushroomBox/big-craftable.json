@@ -1,0 +1,174 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_ImprovedMushroomBox": {
+                    "Name": "Improved Mushroom Box",
+                    "DisplayName": "{{i18n:ImprovedMushroomBox.DisplayName}}",
+                    "Description": "{{i18n:ImprovedMushroomBox.Description}}",
+                    "Price": 0,
+                    "Fragility": 0,
+                    "CanBePlacedIndoors": true,
+                    "CanBePlacedOutdoors": false,
+                    "IsLamp": false,
+                    "Texture": "Mods/DwarvenExpansion/BigCraftablesSpritesheet",
+                    "SpriteIndex": 16
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "Improved Mushroom Box": "709 20 371 20 369 10/Home/{{ModId}}_ImprovedMushroomBox/true/Mining 7/"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Dwarf",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Pulverizer": {
+                    "ID": "{{ModId}}_ImprovedMushroomBox",
+                    "ItemId": "(BC){{ModId}}_ImprovedMushroomBox",
+                    "Condition": "PLAYER_MINING_LEVEL Current 7",
+                    "Price": "3000",
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_ImprovedMushroomBox": {
+                    "OutputRules": [
+                        {
+                            "Id": "Default",
+                            "Triggers": [
+                                {
+                                    "Id": "Edible_Mushrooms",
+                                    "Trigger": "ItemPlacedInMachine, OutputCollected",
+                                    "RequiredTags": [
+                                        "edible_mushroom"
+                                    ],
+                                    "RequiredCount": 1
+                                },
+                                {
+                                    "Id": "Red_Mushrooms",
+                                    "Trigger": "ItemPlacedInMachine, OutputCollected",
+                                    "RequiredItemId": 420,
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Output",
+                                    "ItemId": "DROP_IN_ID"
+                                }
+                            ],
+                            "MinutesUntilReady": "4320"
+                        }
+                    ],
+                    "PreventTimePass": [
+                        "Outside"
+                    ],
+                    "ReadyTimeModifiers": [
+                        {
+                            "Id": "Common_Mushroom",
+                            "Modification": "Set",
+                            "Amount": 1440,
+                            "Condition": "ITEM_ID Input 404"
+                        },
+                        {
+                            "Id": "Red_Mushroom",
+                            "Modification": "Set",
+                            "Amount": 2880,
+                            "Condition": "ITEM_ID Input 420"
+                        },
+                        {
+                            "Id": "Purple_Mushroom",
+                            "Modification": "Set",
+                            "Amount": 5760,
+                            "Condition": "ITEM_ID Input 422"
+                        },
+                        {
+                            "Id": "Magma_Cap",
+                            "Modification": "Set",
+                            "Amount": 8640,
+                            "Condition": "ITEM_ID Input 851"
+                        }
+                    ],
+                    "AllowLoadWhenFull": false,
+                    "LoadEffects": [],
+                    "WorkingEffects": [
+                        {
+                            "Condition": "ITEM_ID Input 404",
+                            "Frames": [
+                                2
+                            ],
+                            "Interval": 100
+                        },
+                        {
+                            "Condition": "ITEM_ID Input 404",
+                            "Frames": [
+                                2
+                            ],
+                            "Interval": 100
+                        },
+                        {
+                            "Condition": "ITEM_ID Input 404",
+                            "Frames": [
+                                2
+                            ],
+                            "Interval": 100
+                        },
+                        {
+                            "Condition": "ITEM_ID Input 420",
+                            "Frames": [
+                                3
+                            ],
+                            "Interval": 100
+                        },
+                        {
+                            "Condition": "ITEM_ID Input 281",
+                            "Frames": [
+                                4
+                            ],
+                            "Interval": 100
+                        },
+                        {
+                            "Condition": "ITEM_ID Input 257",
+                            "Frames": [
+                                5
+                            ],
+                            "Interval": 100
+                        },
+                        {
+                            "Condition": "ITEM_ID Input 422",
+                            "Frames": [
+                                6
+                            ],
+                            "Interval": 100
+                        },
+                        {
+                            "Condition": "ITEM_ID Input 851",
+                            "Frames": [
+                                7
+                            ],
+                            "Interval": 100
+                        }
+                    ],
+                    "WorkingEffectChance": 1,
+                    "WobbleWhileWorking": true
+                }
+            }
+        }
+    ]
+}

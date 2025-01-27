@@ -1,0 +1,34 @@
+/*
+
+These patches migrate older save data to reflect the latest mod version.
+
+*/
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_MigrateLegacyData": {
+          "Id": "{{ModId}}_MigrateLegacyData",
+          "Trigger": "DayStarted",
+          "Actions": [
+            // events
+            "Pathoschild.ContentPatcher_MigrateIds Events 6372001 {{ModId}}_Intro 6372002 {{ModId}}_Completed 6372003 {{ModId}}_RazorTroutDonation 6372004 {{ModId}}_MantaRay 6372005 {{ModId}}_SpiritFish 6372006 {{ModId}}_SpiritFish 6372007 {{ModId}}_SpiritRitual",
+
+            // mail
+            "Pathoschild.ContentPatcher_MigrateIds Mail StardewAquarium.Open {{ModId}}_AquariumOpen StardewAquarium.OpenLater {{ModId}}_AquariumOpenLater",
+
+            // items (pre-1.6 Json Assets, 1.6+ Json Assets, and items previously added by the C# component)
+            "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Stardew Aquarium Trophy\" (BC){{ModId}}_Trophy \"JsonAssets:clothing:Pufferchick Shirt\" (S){{ModId}}_PufferchickShirt \"JsonAssets:hats:Angler Mask\" (H){{ModId}}_AnglerMask \"JsonAssets:hats:Crimsonfish Mask\" (H){{ModId}}_CrimsonfishMask \"JsonAssets:hats:Glacierfish Mask\" (H){{ModId}}_GlacierfishMask \"JsonAssets:hats:Legend Mask\" (H){{ModId}}_LegendMask \"JsonAssets:hats:Mutant Carp Mask\" (H){{ModId}}_MutantCarpMask \"JsonAssets:hats:Pufferchick Mask\" (H){{ModId}}_PufferchickMask \"JsonAssets:hats:The Curator's Mask\" (H){{ModId}}_TheCuratorsHat \"JsonAssets:objects:Fish Bowl\" (F){{ModId}}_FishBowl \"JsonAssets:objects:Legendary Bait\" (O){{ModId}}_LegendaryBait \"JsonAssets:objects:Pufferchick\" (O){{ModId}}_Pufferchick",
+            "Pathoschild.ContentPatcher_MigrateIds Items (BC)Gervig91.StardewAquariumJA_Stardew_Aquarium_Trophy (BC){{ModId}}_Trophy (H)Gervig91.StardewAquariumJA_Angler_Mask (H){{ModId}}_AnglerMask (H)Gervig91.StardewAquariumJA_Crimsonfish_Mask (H){{ModId}}_CrimsonfishMask (H)Gervig91.StardewAquariumJA_Glacierfish_Mask (H){{ModId}}_GlacierfishMask (H)Gervig91.StardewAquariumJA_Legend_Mask (H){{ModId}}_LegendMask (H)Gervig91.StardewAquariumJA_Mutant_Carp_Mask (H){{ModId}}_MutantCarpMask (H)Gervig91.StardewAquariumJA_Pufferchick_Mask (H){{ModId}}_PufferchickMask (H)Gervig91.StardewAquariumJA_The_Curator's_Hat (H){{ModId}}_TheCuratorsHat (O)Gervig91.StardewAquariumJA_Fish_Bowl (F){{ModId}}_FishBowl",
+            "Pathoschild.ContentPatcher_MigrateIds Items (O)Cherry.StardewAquarium_LegendaryBait (O){{ModId}}_LegendaryBait (O)Cherry.StardewAquarium_Pufferchick (O){{ModId}}_Pufferchick (S)Cherry.StardewAquarium_PufferchickShirt (S){{ModId}}_PufferchickShirt"
+          ],
+          "HostOnly": true
+        }
+      }
+    }
+  ]
+}

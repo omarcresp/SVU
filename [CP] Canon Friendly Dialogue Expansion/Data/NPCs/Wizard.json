@@ -1,0 +1,101 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Wizard_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)422": "{{i18n: CFE_Wizard_PurpleMushroom}}",
+        "AcceptGift_(O)155": "{{i18n: CFE_Wizard_SuperCucumber}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Wizard}}' = 'true' OR ('{{CFE_Wizard}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Wizard_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        // we can also add reveal gift taste code to these now that they use i18n.
+        "AcceptGift_(O)373": "{{i18n: CFE_Wizard_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Wizard_RockCandy}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Wizard_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Wizard_RabbitsFoot}}",
+        "AcceptGift_(O)768": "{{i18n: CFE_Wizard_SolarEssence}}",
+        "AcceptGift_(O)769": "{{i18n: CFE_Wizard_VoidEssence}}"
+      },
+      "When": { "Query: '{{CFE_Wizard}}' = 'true' OR ('{{CFE_Wizard}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Wizard_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Wizard": "{{i18n: CFE_Wizard_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Wizard}}' = 'true' OR ('{{CFE_Wizard}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Wizard_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Wizard_spring1y2}}",
+
+        "fall_26_1": "{{i18n: CFE_Wizard_fall26}}",
+        "fall_26_2": "{{i18n: CFE_Wizard_fall26}}",
+
+        "winter_28_1": "{{i18n: CFE_Wizard_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Wizard_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Wizard_repeated_1}}",
+        "summer_Mon4": "{{i18n: CFE_Wizard_summerMon4}}",
+        "summer_Tue10": "{{i18n: CFE_Wizard_repeated_4}}",
+        "summer_Tue8": "{{i18n: CFE_Wizard_repeated_3}}",
+        "summer_Wed10": "{{i18n: CFE_Wizard_summerWed10}}",
+        "summer_Fri6": "{{i18n: CFE_Wizard_summerFri6}}",
+
+        "fall_Mon8": "{{i18n: CFE_Wizard_fallMon8}}",
+        "fall_Mon2": "{{i18n: CFE_Wizard_fallMon2}}",
+        "fall_Tue10": "{{i18n: CFE_Wizard_fallTue10}}",
+        "fall_Tue8": "{{i18n: CFE_Wizard_repeated_3}}",
+        "fall_Thu10": "{{i18n: CFE_Wizard_fallThu10}}",
+        "fall_Fri10": "{{i18n: CFE_Wizard_repeated_2}}",
+
+        "winter_Mon4": "{{i18n: CFE_Wizard_winterMon4}}",
+        "winter_Tue10": "{{i18n: CFE_Wizard_repeated_4}}",
+        "winter_Wed4": "{{i18n: CFE_Wizard_winterWed4}}",
+        "winter_Thu10": "{{i18n: CFE_Wizard_winterThu10}}",
+        "winter_Fri10": "{{i18n: CFE_Wizard_winterFri10}}",
+        "winter_Sat10": "{{i18n: CFE_Wizard_winterSat10}}",
+        "winter_Sat6": "{{i18n: CFE_Wizard_winterSat6}}",
+
+        "Mon6": "{{i18n: CFE_Wizard_Mon6}}",
+        "Mon2": "{{i18n: CFE_Wizard_Mon2}}",
+        "Tue2": "{{i18n: CFE_Wizard_Tue2}}",
+        "Wed8": "{{i18n: CFE_Wizard_Wed8}}",
+        "Wed4": "{{i18n: CFE_Wizard_Wed4}}",
+        "Wed2": "{{i18n: CFE_Wizard_Wed2}}",
+        "Thu8": "{{i18n: CFE_Wizard_Thu8}}",
+        "Thu4": "{{i18n: CFE_Wizard_repeated_2}}",
+        "Fri4": "{{i18n: CFE_Wizard_Fri4}}",
+        "Fri2": "{{i18n: CFE_Wizard_Fri2}}",
+        "Sat8": "{{i18n: CFE_Wizard_Sat8}}",
+        "Sun10": "{{i18n: CFE_Wizard_Sun10}}",
+        "Sun6": "{{i18n: CFE_Wizard_Sun6}}",
+        "Sun4": "{{i18n: CFE_Wizard_repeated_1}}",
+
+        //Generic Weekday Dialogue
+        "summer_Fri": "{{i18n: CFE_Wizard_repeated_5}}",
+        "fall_Wed": "{{i18n: CFE_Wizard_repeated_5}}",
+        "Fri": "{{i18n: CFE_Wizard_Fri}}"
+      },
+      "When": { "Query: '{{CFE_Wizard}}' = 'true' OR ('{{CFE_Wizard}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

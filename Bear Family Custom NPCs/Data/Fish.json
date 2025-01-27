@@ -1,0 +1,458 @@
+{
+  "Changes": [
+    //add fish
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Krakenling": {
+          "Name": "MadDog.HashtagBearFam_Krakenling",
+          "DisplayName": "{{i18n:MadDog.BearFam.Krakenling}}",
+          "Description": "{{i18n:MadDog.BearFam.KrakenlingDescription}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFishFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFishFromPerfection}}",
+          "Price": 125,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Texture": "{{InternalAssetKey: assets/MadDog.BearFamObjects.png}}",
+          "SpriteIndex": 38,
+          "ContextTags": [
+            "color_purple",
+            "fish_krakenling",
+            "fish_cave"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Lyngbakr": {
+          "Name": "MadDog.HashtagBearFam_Lyngbakr",
+          "DisplayName": "{{i18n:MadDog.BearFam.Lyngbakr}}",
+          "Description": "{{i18n:MadDog.BearFam.LyngbakrDescription}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFishFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFishFromPerfection}}",
+          "Price": 200,
+          "Edibility": 5,
+          "IsDrink": false,
+          "Texture": "{{InternalAssetKey: assets/MadDog.BearFamObjects.png}}",
+          "SpriteIndex": 39,
+          "ContextTags": [
+            "color_blue",
+            "fish_lyngbakr",
+            "fish_cave"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Hafgufa": {
+          "Name": "MadDog.HashtagBearFam_Hafgufa",
+          "DisplayName": "{{i18n:MadDog.BearFam.Hafgufa}}",
+          "Description": "{{i18n:MadDog.BearFam.HafgufaDescription}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFishFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFishFromPerfection}}",
+          "Price": 85,
+          "Edibility": -20,
+          "IsDrink": false,
+          "Texture": "{{InternalAssetKey: assets/MadDog.BearFamObjects.png}}",
+          "SpriteIndex": 40,
+          "ContextTags": [
+            "color_brown",
+            "fish_hafgufa",
+            "fish_cave"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Jojellyfish": {
+          "Name": "MadDog.HashtagBearFam_Jojellyfish",
+          "DisplayName": "{{i18n:MadDog.BearFam.Jojellyfish}}",
+          "Description": "{{i18n:MadDog.BearFam.JojellyfishDescription}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFishFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFishFromPerfection}}",
+          "Price": 105,
+          "Edibility": -5,
+          "IsDrink": false,
+          "Texture": "{{InternalAssetKey: assets/MadDog.BearFamObjects.png}}",
+          "SpriteIndex": 41,
+          "ContextTags": [
+            "color_blue",
+            "fish_jojellyfish",
+            "fish_cave"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Colacrab": {
+          "Name": "MadDog.HashtagBearFam_Colacrab",
+          "DisplayName": "{{i18n:MadDog.BearFam.Colacrab}}",
+          "Description": "{{i18n:MadDog.BearFam.ColacrabDescription}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFishFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFishFromPerfection}}",
+          "Price": 95,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Texture": "{{InternalAssetKey: assets/MadDog.BearFamObjects.png}}",
+          "SpriteIndex": 42,
+          "ContextTags": [
+            "color_red",
+            "fish_colacrab",
+            "fish_cave"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Define fish",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "MadDog.HashtagBearFam_Krakenling": "Krakenling/50/sinker/12/30/600 1300/spring summer fall winter/both/688 .6 684 .1/3/.5/.5/0", //name/how often it darts/how it darts/min size/max size/time/seasons unused/weather/location unused/max water depth for catch/spawn multiplier/depth multiplier/min finishing level
+        "MadDog.HashtagBearFam_Lyngbakr": "Lyngbakr/45/floater/8/38/1400 2400/spring summer/rainy/688 .6 684 .1/2/.5/.5/0",
+        "MadDog.HashtagBearFam_Hafgufa": "Hafgufa/40/floater/6/25/1400 2400/fall winter/sunny/688 .6 684 .1/2/.5/.5/0",
+        "MadDog.HashtagBearFam_Jojellyfish": "Jojellyfish/45/sinker/6/32/1000 1600/spring summer fall winter/both/688 .6 684 .1/2/.5/.5/0",
+        "MadDog.HashtagBearFam_Colacrab": "Cola Crab/25/sinker/2/10/1400 2000/spring summer fall winter/both/688 .6 684 .1/1/.5/.5/0"
+      }
+    },
+    {
+      "LogName": "Aquarium Data",
+      "Action": "EditData",
+      "Target": "Data/AquariumFish",
+      "Entries": {
+        "MadDog.HashtagBearFam_Krakenling": "0/cephalopod/0/0 1/2 2 3 3/3 4/Mods\\MadDog.HashtagBearfam\\maddogaquariumfish",
+        "MadDog.HashtagBearFam_Lyngbakr": "5/fish/5////Mods\\MadDog.HashtagBearfam\\maddogaquariumfish",
+        "MadDog.HashtagBearFam_Hafgufa": "6/fish/6////Mods\\MadDog.HashtagBearfam\\maddogaquariumfish",
+        "MadDog.HashtagBearFam_Colacrab": "7/crawl/7////Mods\\MadDog.HashtagBearfam\\maddogaquariumfish/13 13",
+        "MadDog.HashtagBearFam_Jojellyfish": "10/cephalopod/10/10 11/11 12 12 13 13 13 13 12 12/11 14/Mods\\MadDog.HashtagBearfam\\maddogaquariumfish"
+      }
+    },
+    {
+      "LogName": "Aquarium Sprites",
+      "Action": "Load",
+      "Target": "Mods/MadDog.HashtagBearfam/maddogaquariumfish",
+      "FromFile": "assets/MadDog.BearFamAquariumFish.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "MadDog.HashtagBearFam_Krakenling": {
+          "ID": "MadDog.HashtagBearFam_Krakenling",
+          "RequiredTags": [
+            "fish_krakenling"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemID": "(O)749", //omnigeode
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O)636", //peach
+              "MinQuantity": 15,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": 0.2,
+              "ItemID": "(O)631", //peach sapling
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.7,
+              "ItemID": "(O)812", //roe
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "3": [
+              "(O)171 5", //broken CD
+              "(O)172 3", //soggy newspaper
+              "(O)300 1" // amaranth
+            ],
+            "5": [
+              "(O)636 2", // peach 
+              "(O)276 2", //pumpkin
+              "(O)787 1" //battery
+            ],
+            "7": [
+              "(O)167 10", //joja cola
+              "(O)MadDog.HashtagBearfam.PumpkinJoja 3", //pumpkin joja
+              "(O)MadDog.HashtagBearfam.PeachJoja 3" //peach joja
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "MadDog.HashtagBearFam_Lyngbakr": {
+          "ID": "MadDog.HashtagBearFam_Lyngbakr",
+          "RequiredTags": [
+            "fish_lyngbakr"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 8,
+              "Chance": 0.1,
+              "ItemID": "(O)749", //omnigeode
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.3,
+              "ItemID": "(O)710", //crab pot
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.3,
+              "ItemID": "(O)732", //crab cakes
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.7,
+              "ItemID": "(O)812", //roe
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)372 5", //clam
+              "(O)717 1" //crab
+            ],
+            "6": [
+              "(O)721 3", //snail
+              "(O)403 3" //field snack
+            ],
+            "8": [
+              "(O)726 3", //pine tar
+              "(O)334 3" //copper bar
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "MadDog.HashtagBearFam_Hafgufa": {
+          "ID": "MadDog.HashtagBearFam_Hafgufa",
+          "RequiredTags": [
+            "fish_hafgufa"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 8,
+              "Chance": 0.1,
+              "ItemID": "(O)749", //omnigeode
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.3,
+              "ItemID": "(O)693", //treasure bobber
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.3,
+              "ItemID": "(O)456", //algae soup
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.7,
+              "ItemID": "(O)812", //roe
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)384 1", //gold ore
+              "(O)419 5" //vingear
+            ],
+            "6": [
+              "(O)153 5", //green algae
+              "(O)157 2", //white algae
+              "(O)766 10" //slime
+            ],
+            "8": [
+              "(O)68 3", //topaz
+              "(O)88 3" //coconut
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "MadDog.HashtagBearFam_Jojellyfish": {
+          "ID": "MadDog.HashtagBearFam_Jojellyfish",
+          "RequiredTags": [
+            "fish_jojellyfish"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemID": "(O)749", //omnigeode
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.2,
+              "ItemID": "(O)167", //joja cola
+              "MinQuantity": 2,
+              "MaxQuantity": 6
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O)348", //wine
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": 0.2,
+              "ItemID": "(O)369", //quality fertilizer
+              "MinQuantity": 4,
+              "MaxQuantity": 8
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.7,
+              "ItemID": "(O)812", //roe
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "3": [
+              "(O)771 15", //fiber
+              "(O)92 25" //sap
+            ],
+            "7": [
+              "(O)721 2",
+              "(O)113 1" //chicken statue
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "MadDog.HashtagBearFam_Colacrab": {
+          "ID": "MadDog.HashtagBearFam_Colacrab",
+          "RequiredTags": [
+            "fish_colacrab"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemID": "(O)749", //omnigeode
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O)681", //rain totem
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": 0.2,
+              "ItemID": "(O)441", //explosive ammo g
+              "MinQuantity": 3,
+              "MaxQuantity": 7
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.7,
+              "ItemID": "(O)812", //roe
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "3": [
+              "(O)397 3", //sea urchin
+              "(O)814  1" //squid ink
+            ],
+            "7": [
+              "(O)167 10", //joja cola
+              "(O)154 3" //sea cucumber
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Forest",
+        "ArtifactSpots"
+      ],
+      "Entries": {
+        "{{ModId}}_RandomSeedForest": {
+          "Chance": 0.08,
+          "ApplyGenerousEnchantment": true,
+          "OneDebrisPerDrop": true,
+          "Precedence": -100,
+          "ContinueOnDrop": true,
+          "Id": "{{ModId}}_RandomSeedForest",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target {{ModId}}_",
+          "MinStack": 1,
+          "MaxStack": 2,
+        },
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Mountain",
+        "ArtifactSpots"
+      ],
+      "Entries": {
+        "{{ModId}}_RandomSeedMountain": {
+          "Chance": 0.08,
+          "ApplyGenerousEnchantment": true,
+          "OneDebrisPerDrop": true,
+          "Precedence": -100,
+          "ContinueOnDrop": true,
+          "Id": "{{ModId}}_RandomSeedMountain",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target {{ModId}}_",
+          "MinStack": 1,
+          "MaxStack": 2,
+        },
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Default",
+        "ArtifactSpots"
+      ],
+      "Entries": {
+        "{{ModId}}_RandomSeedEverywhere": {
+          "Chance": 0.03,
+          "ApplyGenerousEnchantment": true,
+          "OneDebrisPerDrop": true,
+          "Precedence": -100,
+          "ContinueOnDrop": true,
+          "Id": "{{ModId}}_RandomSeedEverywhere",
+          "Condition": "!LOCATION_CONTEXT Target Desert Island",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target {{ModId}}_, ITEM_CONTEXT_TAG Target lumisteria.crop_tier_1",
+        },
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Default",
+        "ArtifactSpots"
+      ],
+      "Entries": {
+        "{{ModId}}_MixedSeedEverywhere": {
+          "Chance": 0.05,
+          "ApplyGenerousEnchantment": true,
+          "OneDebrisPerDrop": true,
+          "Precedence": -100,
+          "ContinueOnDrop": true,
+          "Id": "{{ModId}}_MixedSeedEverywhere",
+          "Condition": "!LOCATION_CONTEXT Target Desert Island, {{HasMod |contains=mistyspring.ItemExtensions}}",
+          "ItemId": "(O){{ModID}}_MeadowMixedSeeds",
+        },
+      }
+    },
+  ]
+}

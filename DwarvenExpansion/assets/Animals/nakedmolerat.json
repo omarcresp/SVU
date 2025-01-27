@@ -1,0 +1,122 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/NakedMoleRat",
+			"FromFile": "assets/Animals/NakedMoleRat.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/NakedMoleRatBaby",
+			"FromFile": "assets/Animals/NakedMoleRatBaby.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Meat_Molerat": {
+                    "Name": "Molerat Meat",
+                    "DisplayName": "{{i18n:Meat_Molerat.DisplayName}}",
+                    "Description": "{{i18n:Meat_Molerat.Description}}",
+                    "Type": "Basic",
+                    "Category": "-14",
+                    "Price": 80,
+                    "Edibility": 10,
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 245
+                }
+			}
+		},       	
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}_GiantNakedMoleRat": {
+					"DisplayName": "{{i18n:GiantNakedMoleRat.DisplayName}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": 600,
+					"SellPrice": 1200,
+					"ShopTexture": "Mods/DwarvenExpansion/Animals/ShopImages",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 80,
+						"Width": 32,
+						"Height": 16
+					},
+					"ShopDisplayName": "{{i18n:GiantNakedMoleRat.ShopDisplayName}}",
+					"ShopDescription": "{{i18n:GiantNakedMoleRat.ShopDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n:GiantNakedMoleRat.ShopMissingBuildingDescription}}",
+					"RequiredBuilding": "Barn",
+					"UnlockCondition": "PLAYER_HEARTS ANY Dwarf 3",
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{i18n:GiantNakedMoleRat.BirthText}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": true,
+					"DaysToProduce": 1,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Milk Pail",
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"ItemId": "184"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"ItemId": "184"
+						}
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "rabbit",
+					"BabySound": "rabbit",
+					"Texture": "Mods/DwarvenExpansion/Animals/NakedMoleRat",
+					"HarvestedTexture": null,
+					"BabyTexture": "Mods/DwarvenExpansion/Animals/NakedMoleRatBaby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0
+					},
+					"SwimOffset": {
+						"X": 0,
+						"Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 1,
+					"HappinessDrain": 7,
+					"UpDownPetHitboxTileSize": "1, 1.75",
+					"LeftRightPetHitboxTileSize": "1.75, 1.25",
+					"BabyUpDownPetHitboxTileSize": "1, 1.75",
+					"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+					"StatToIncrementOnProduce": [],
+					"ShowInSummitCredits": false,
+					"CustomFields": {
+						"meatIndex": "{{ModId}}_Meat_Molerat"
+					}
+				}
+			}
+		}
+	]
+}

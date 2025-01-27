@@ -1,0 +1,242 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Sam_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",
+      "Entries": {
+        "AcceptGift_(O)90": "{{i18n: CFE_Sam_CactusFruit}}"
+        //any keys that overlap go here
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Sam_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Sam_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Sam_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Sam_Pearl}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Sam_RabbitsFoot}}",
+        "AcceptGift_(O)731": "{{i18n: CFE_Sam_MapleBar{{GenderNeutralCompat}}}}",
+        "AcceptGift_(O)562": "{{i18n: CFE_Sam_TigersEye}}"
+      },
+      "When": { "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Sam_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Sam": "{{i18n: CFE_Sam_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "Sam",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Sam_spring1y2}}",
+        "spring_12_1": "{{i18n: CFE_Sam_spring12}}",
+        "spring_12_2": "{{i18n: CFE_Sam_spring12}}",
+        "spring_21_1": "{{i18n: CFE_Sam_spring21}}",
+        "spring_21_2": "{{i18n: CFE_Sam_spring21}}",
+        "spring_23_1": "{{i18n: CFE_Sam_spring23}}",
+        "spring_23_2": "{{i18n: CFE_Sam_spring23}}",
+
+        "summer_10_1": "{{i18n: CFE_Sam_summer10}}",
+        "summer_10_2": "{{i18n: CFE_Sam_summer10}}",
+
+        "fall_7_1": "{{i18n: CFE_Sam_fall7}}",
+        "fall_7_2": "{{i18n: CFE_Sam_fall7}}",
+        "fall_9_1": "{{i18n: CFE_Sam_fall9}}",
+        "fall_9_2": "{{i18n: CFE_Sam_fall9}}",
+        "fall_16_1": "{{i18n: CFE_Sam_fall16}}",
+        "fall_16_2": "{{i18n: CFE_Sam_fall16}}",
+        "fall_23_1": "{{i18n: CFE_Sam_fall23}}",
+        "fall_23_2": "{{i18n: CFE_Sam_fall23}}",
+        "fall_26_1": "{{i18n: CFE_Sam_fall26}}",
+        "fall_26_2": "{{i18n: CFE_Sam_fall26}}",
+
+        "winter_7_1": "{{i18n: CFE_Sam_winter7}}",
+        "winter_7_2": "{{i18n: CFE_Sam_winter7}}",
+        "winter_24_1": "{{i18n: CFE_Sam_winter24}}",
+        "winter_24_2": "{{i18n: CFE_Sam_winter24}}",
+        "winter_28_1": "{{i18n: CFE_Sam_winter28y1}}",
+        "winter_28_2": "{{i18n: CFE_Sam_winter28y2}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Sam_summerMon10}}",
+        "summer_Tue10": "{{i18n: CFE_Sam_summerTue10}}",
+        "summer_Tue6": "{{i18n: CFE_Sam_summerTue6}}",
+        "summer_Wed6": "{{i18n: CFE_Sam_summerWed6}}",
+        "summer_Thu6_1": "{{i18n: CFE_Sam_summerThu6y1}}",
+        "summer_Thu6_2": "{{i18n: CFE_Sam_summerThu6y2}}",
+        "summer_Thu4": "{{i18n: CFE_Sam_summerThu4}}",
+        "summer_Fri10": "{{i18n: CFE_Sam_summerFri10}}",
+        "summer_Fri6": "{{i18n: CFE_Sam_summerFri6}}",
+        "summer_Fri4": "{{i18n: CFE_Sam_summerFri4}}",
+        "summer_Sun10": "{{i18n: CFE_Sam_summerSun10}}",
+        "summer_Sun8": "{{i18n: CFE_Sam_summerSun8}}",
+        "summer_Sun6": "{{i18n: CFE_Sam_summerSun6}}",
+        "summer_Sun4": "{{i18n: CFE_Sam_summerSun4}}",
+        "summer_Sun2": "{{i18n: CFE_Sam_summerSun2}}",
+
+        "fall_Mon10_1": "{{i18n: CFE_Sam_fallMon10y1}}",
+        "fall_Mon10_2": "{{i18n: CFE_Sam_fallMon10y2}}",
+        "fall_Mon6_1": "{{i18n: CFE_Sam_fallMon6y1}}",
+        "fall_Mon6_2": "{{i18n: CFE_Sam_fallMon6y{{Random: 1,2}}}}",
+        "fall_Mon2": "{{i18n: CFE_Sam_fallMon2}}",
+        "fall_Tue8": "{{i18n: CFE_Sam_fallTue8}}",
+        "fall_Tue6": "{{i18n: CFE_Sam_fallTue6}}",
+        "fall_Wed10": "{{i18n: CFE_Sam_fallWed10}}",
+        "fall_Wed8": "{{i18n: CFE_Sam_fallWed8}}",
+        "fall_Thu6_1": "{{i18n: CFE_Sam_fallThu6y1}}",
+        "fall_Thu6_2": "{{i18n: CFE_Sam_fallThu6y2}}",
+        "fall_Thu4": "{{i18n: CFE_Sam_repeated_1}}",
+        "fall_Fri8": "{{i18n: CFE_Sam_fallFri8}}",
+        "fall_Fri6": "{{i18n: CFE_Sam_fallFri6}}",
+        "fall_Sat8": "{{i18n: CFE_Sam_fallSat8}}",
+        "fall_Sat4": "{{i18n: CFE_Sam_fallSat4}}",
+        "fall_Sat2": "{{i18n: CFE_Sam_repeated_1}}",
+        "fall_Sun8": "{{i18n: CFE_Sam_fallSun8}}",
+        "fall_Sun6": "{{i18n: CFE_Sam_fallSun6}}",
+        "fall_Sun2": "{{i18n: CFE_Sam_fallSun2}}",
+
+        "winter_Mon10": "{{i18n: CFE_Sam_winterMon10}}",
+        "winter_Mon8": "{{i18n: CFE_Sam_winterMon8}}",
+        "winter_Mon4": "{{i18n: CFE_Sam_winterMon4}}",
+        "winter_Mon2": "{{i18n: CFE_Sam_winterMon2}}",
+        "winter_Tue8_inlaw_Penny": "{{i18n: CFE_Sam_winterTue8inlawPenny}}",
+        "winter_Tue8": "{{i18n: CFE_Sam_winterTue8}}",
+        "winter_Wed10": "{{i18n: CFE_Sam_winterWed10}}",
+        "winter_Wed6": "{{i18n: CFE_Sam_winterWed6}}",
+        "winter_Thu4_1": "{{i18n: CFE_Sam_winterThu4y1}}",
+        "winter_Thu4_2": "{{i18n: CFE_Sam_winterThu4y2}}",
+        "winter_Fri10": "{{i18n: CFE_Sam_winterFri10}}",
+        "winter_Fri8": "{{i18n: CFE_Sam_winterFri8}}",
+        "winter_Fri6": "{{i18n: CFE_Sam_winterFri6}}",
+        "winter_Fri4": "{{i18n: CFE_Sam_winterFri4}}",
+        "winter_Sat6": "{{i18n: CFE_Sam_winterSat6}}",
+        "winter_Sun10": "{{i18n: CFE_Sam_winterSun10}}",
+        "winter_Sun6": "{{i18n: CFE_Sam_winterSun6}}",
+        "winter_Sun4": "{{i18n: CFE_Sam_winterSun4}}",
+
+        "Mon4": "{{i18n: CFE_Sam_Mon4}}",
+        "Tue8": "{{i18n: CFE_Sam_Tue8}}",
+        "Tue4_1": "{{i18n: CFE_Sam_Tue4y1}}",
+        "Tue4_2": "{{i18n: CFE_Sam_Tue4y{{Random: 1,2}}}}",
+        "Tue2": "{{i18n: CFE_Sam_Tue2}}",
+        "Thu8_1": "{{i18n: CFE_Sam_Thu8y1}}",
+        "Thu8_2": "{{i18n: CFE_Sam_Thu8y{{Random: 1,2}}}}",
+        "Thu4_1": "{{i18n: CFE_Sam_Thu4y1}}",
+        "Thu4_2": "{{i18n: CFE_Sam_Thu4y2}}",
+        "Thu2_2": "{{i18n: CFE_Sam_Thu2y2}}",
+        "Fri10": "{{i18n: CFE_Sam_Fri10}}",
+        "Fri2": "{{i18n: CFE_Sam_Fri2}}",
+        "Sat8_1": "{{i18n: CFE_Sam_repeated_2}}",
+        "Sat8_2": "{{i18n: CFE_Sam_Sat8y2}}",
+        "Sat6": "{{i18n: CFE_Sam_repeated_2}}",
+        "Sat4": "{{i18n: CFE_Sam_Sat4}}",
+        "Sat2": "{{i18n: CFE_Sam_Sat2}}",
+        "Sun8": "{{i18n: CFE_Sam_Sun8}}",
+        "Sun4": "{{i18n: CFE_Sam_Sun4}}",
+        "Sun2": "{{i18n: CFE_Sam_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Mon": "{{i18n: CFE_Sam_summerMon}}",
+        "Thu_2": "{{i18n: CFE_Sam_Thuy2}}"
+      },
+      "When": { "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Sam_Married_spouseRoom",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Sam": "{{i18n: CFE_Sam_Married_spouseRoom_{{random: 1,2,3,4,5}}}}"
+      },
+      "When": { "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "Sam Marriage",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueSam",
+      "Entries": {
+        //weather specific dialogue
+        "Rainy_Day_0": "{{i18n: CFE_Sam_Married_RainyDay_{{Random: 1,2}}}}",
+        "Rainy_Day_1": "{{i18n: CFE_Sam_Married_RainyDay_{{Random: 3,4}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Sam_Married_RainyDay_{{Random: 5,6}}}}",
+        "Rainy_Day_3": "{{i18n: CFE_Sam_Married_RainyDay_{{Random: 7,8}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Sam_Married_RainyDay_{{Random: 9,10}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Sam_Married_RainyNight_1}}",
+        "Rainy_Night_1": "{{i18n: CFE_Sam_Married_RainyNight_{{Random: 2,3}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Sam_Married_RainyNight_{{Random: 4,5}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Sam_Married_RainyNight_{{Random: 6,7}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Sam_Married_RainyNight_{{Random: 8,9}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Sam_Married_IndoorDay_{{Random: 1,2,3}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Sam_Married_IndoorDay_{{Random: 4,5,6}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Sam_Married_IndoorDay_{{Random: 7,8,9}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Sam_Married_IndoorDay_{{Random: 10,11,12}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Sam_Married_IndoorDay_{{Random: 13,14,15}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Sam_Married_IndoorNight_{{Random: 1,2}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Sam_Married_IndoorNight_{{Random: 3,4}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Sam_Married_IndoorNight_{{Random: 5,6}}}}",
+        "Indoor_Night_3": "{{i18n: CFE_Sam_Married_IndoorNight_{{Random: 7,8}}}}",
+        "Indoor_Night_4": "{{i18n: CFE_Sam_Married_IndoorNight_{{Random: 9,10}}}}",
+
+        //locational specific dialogue
+        "funLeave_Sam": "{{i18n: CFE_Sam_Married_funLeave_{{Random: 1,2}}}}",
+        "funReturn_Sam": "{{i18n: CFE_Sam_Married_funReturn_{{Random: 1,2}}}}",
+
+        "OneKid_0": "{{i18n: CFE_Sam_Married_OneKid_{{Random: 1,2}}}}",
+        "OneKid_1": "{{i18n: CFE_Sam_Married_OneKid_{{Random: 3,4}}}}",
+        "OneKid_2": "{{i18n: CFE_Sam_Married_OneKid_{{Random: 5,6}}}}",
+        "OneKid_3": "{{i18n: CFE_Sam_Married_OneKid_{{Random: 7,8}}}}",
+
+        "TwoKids_0": "{{i18n: CFE_Sam_Married_TwoKids_{{Random: 1,2}}}}",
+        "TwoKids_1": "{{i18n: CFE_Sam_Married_TwoKids_{{Random: 3,4}}}}",
+        "TwoKids_2": "{{i18n: CFE_Sam_Married_TwoKids_{{Random: 5,6}}}}",
+        "TwoKids_3": "{{i18n: CFE_Sam_Married_TwoKids_{{Random: 7,8}}}}",
+
+        "Outdoor_0": "{{i18n: CFE_Sam_Married_Outdoor_{{Random: 1,2}}}}",
+        "Outdoor_1": "{{i18n: CFE_Sam_Married_Outdoor_{{Random: 3,4}}}}",
+        "Outdoor_2": "{{i18n: CFE_Sam_Married_Outdoor_{{Random: 5,6}}}}",
+        "Outdoor_3": "{{i18n: CFE_Sam_Married_Outdoor_{{Random: 7,8}}}}",
+        "Outdoor_4": "{{i18n: CFE_Sam_Married_Outdoor_{{Random: 9,10}}}}",
+
+        "patio_Sam": "{{i18n: CFE_Sam_Married_patio_{{Random: 1,2,3}}}}",
+
+        //date specific dialogue
+        "spring_3": "{{i18n: CFE_Sam_Married_spring3}}",
+        "spring_8": "{{i18n: CFE_Sam_Married_spring8}}",
+        "spring_16": "{{i18n: CFE_Sam_Married_spring16}}",
+        "spring_25": "{{i18n: CFE_Sam_Married_spring25}}",
+        "summer_5": "{{i18n: CFE_Sam_Married_summer5}}",
+        "summer_12": "{{i18n: CFE_Sam_Married_summer12}}",
+        "summer_17": "{{i18n: CFE_Sam_Married_summer17}}",
+        "fall_4": "{{i18n: CFE_Sam_Married_fall4}}",
+        "fall_9": "{{i18n: CFE_Sam_Married_fall9}}",
+        "fall_13": "{{i18n: CFE_Sam_Married_fall13}}",
+        "fall_23": "{{i18n: CFE_Sam_Married_fall23}}",
+        "winter_3": "{{i18n: CFE_Sam_Married_winter3}}",
+        "winter_14": "{{i18n: CFE_Sam_Married_winter14}}",
+        "winter_20": "{{i18n: CFE_Sam_Married_winter20}}",
+        "winter_26": "{{i18n: CFE_Sam_Married_winter26}}"
+
+        //season specific dialogue
+        //affection specific dialogue
+      },
+      "When": { "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

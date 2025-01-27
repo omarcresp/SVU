@@ -1,0 +1,407 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Buildings/DwarvenFurnace",
+			"FromFile": "assets/Buildings/DwarvenFurnace/DwarvenFurnace.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"Entries": {
+				"{{ModId}}_DwarvenFurnace": {
+					"Name": "{{i18n:DwarvenFurnace.Name}}",
+					"Description": "{{i18n:DwarvenFurnace.Description}}",
+					"Texture": "Mods/DwarvenExpansion/Buildings/DwarvenFurnace",
+					"DrawShadow": false,
+					"SourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 64,
+						"Height": 128
+					},
+					"SeasonOffset": {
+						"X": 0,
+						"Y": 0
+					},
+					"DrawOffset": "0,0",
+					"SortTileOffset": 2.0,
+					"FadeWhenBehind": true,
+					"Size": {
+						"X": 4,
+						"Y": 4
+					},
+					"UpgradeSignTile": "2, 2",
+					"UpgradeSignHeight": 28.0,
+					"Builder": "Wizard",
+					"BuildCondition": null,
+					"BuildDays": 0,
+					"BuildCost": 40000,
+					"BuildMaterials": [
+						{
+							"ItemId": "(O)337",
+							"Amount": 20
+						},
+						{
+							"ItemId": "(O){{ModId}}_MineralDust_PrismaticDust",
+							"Amount": 5
+						},
+						{
+							"ItemId": "(O)768",
+							"Amount": 200
+						}
+					],
+					"MagicalConstruction": true,
+					"BuildMenuDrawOffset": {
+						"X": 0,
+						"Y": 0
+					},
+					"HumanDoor": {
+						"X": -1,
+						"Y": -1
+					},
+					"AnimalDoor": {
+						"X": -1,
+						"Y": -1,
+						"Width": 0,
+						"Height": 0
+					},
+					"CollisionMap": "XXXX\nXXXX\nXOOX\nOOOO",
+					"AnimalDoorOpenDuration": 0,
+					"AnimalDoorOpenSound": null,
+					"AnimalDoorCloseDuration": 0,
+					"AnimalDoorCloseSound": null,
+					"NonInstancedIndoorLocation": null,
+					"IndoorMap": null,
+					"IndoorMapType": null,
+					"MaxOccupants": 4,
+					"ValidOccupantTypes": [],
+					"AllowAnimalPregnancy": false,
+					"IndoorItemMoves": null,
+					"IndoorItems": null,
+					"AddMailOnBuild": null,
+					"Metadata": {},
+					"ModData": {},
+					"HayCapacity": 0,
+					"Chests": [
+						{
+							"Id": "Input",
+							"Type": "Load",
+							"Sound": "Ship",
+							"InvalidItemMessage": "[LocalizedText Strings\\\\Buildings:CantMill]",
+							"InvalidItemMessageCondition": null,
+							"InvalidCountMessage": "[LocalizedText Strings\\\\StringsFromCSFiles:BlueprintsMenu.cs.10002]",
+							"ChestFullMessage": "[LocalizedText Strings\\\\Buildings:MillFull]",
+							"DisplayTile": "-1, -1",
+							"DisplayHeight": 0.0
+						},
+						{
+							"Id": "Output",
+							"Type": "Collect",
+							"Sound": null,
+							"InvalidItemMessage": null,
+							"InvalidItemMessageCondition": null,
+							"InvalidCountMessage": null,
+							"ChestFullMessage": null,
+							"DisplayTile": "3, 2",
+							"DisplayHeight": 0.5
+						}
+					],
+					"DefaultAction": null,
+					"AdditionalTilePropertyRadius": 0,
+					"AllowsFlooringUnderneath": true,
+					"ActionTiles": [
+						{
+							"Id": "Default_OpenInputChest",
+							"Tile": {
+								"X": 0,
+								"Y": 2
+							},
+							"Action": "BuildingChest Input"
+						},
+						{
+							"Id": "Default_OpenOutputChest",
+							"Tile": {
+								"X": 3,
+								"Y": 2
+							},
+							"Action": "BuildingChest Output"
+						}
+					],
+					"TileProperties": [],
+					"ItemConversions": [
+						{
+							"Id": "ProcessCopper",
+							"RequiredTags": [
+								"id_o_378"
+							],
+							"RequiredCount": 5,
+							"MaxDailyConversions": 100,
+							"SourceChest": "Input",
+							"DestinationChest": "Output",
+							"ProducedItems": [
+								{
+									"Condition": null,
+									"Id": "(O)334",
+									"ItemId": "(O)334",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": null,
+									"ObjectDisplayName": null,
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							]
+						},
+						{
+							"Id": "ProcessIron",
+							"RequiredTags": [
+								"id_o_380"
+							],
+							"RequiredCount": 5,
+							"MaxDailyConversions": 30,
+							"SourceChest": "Input",
+							"DestinationChest": "Output",
+							"ProducedItems": [
+								{
+									"Condition": null,
+									"Id": "(O)335",
+									"ItemId": "(O)335",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": null,
+									"ObjectDisplayName": null,
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							]
+						},
+						{
+							"Id": "ProcessGold",
+							"RequiredTags": [
+								"id_o_384"
+							],
+							"RequiredCount": 5,
+							"MaxDailyConversions": 10,
+							"SourceChest": "Input",
+							"DestinationChest": "Output",
+							"ProducedItems": [
+								{
+									"Condition": null,
+									"Id": "(O)336",
+									"ItemId": "(O)336",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": null,
+									"ObjectDisplayName": null,
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							]
+						},
+						{
+							"Id": "ProcessIridium",
+							"RequiredTags": [
+								"id_o_386"
+							],
+							"RequiredCount": 5,
+							"MaxDailyConversions": 6,
+							"SourceChest": "Input",
+							"DestinationChest": "Output",
+							"ProducedItems": [
+								{
+									"Condition": null,
+									"Id": "(O)337",
+									"ItemId": "(O)337",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": null,
+									"ObjectDisplayName": null,
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							]
+						},
+						{
+							"Id": "ProcessRadioactive",
+							"RequiredTags": [
+								"id_o_909"
+							],
+							"RequiredCount": 5,
+							"MaxDailyConversions": 6,
+							"SourceChest": "Input",
+							"DestinationChest": "Output",
+							"ProducedItems": [
+								{
+									"Condition": null,
+									"Id": "(O)910",
+									"ItemId": "(O)910",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": null,
+									"ObjectDisplayName": null,
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							]
+						},
+						{
+							"Id": "ProcessQuartz",
+							"RequiredTags": [
+								"id_o_80"
+							],
+							"RequiredCount": 1,
+							"MaxDailyConversions": 32,
+							"SourceChest": "Input",
+							"DestinationChest": "Output",
+							"ProducedItems": [
+								{
+									"Condition": null,
+									"Id": "(O)338",
+									"ItemId": "(O)338",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 1,
+									"MaxStack": 1,
+									"Quality": -1,
+									"ObjectInternalName": null,
+									"ObjectDisplayName": null,
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							]
+						},
+						{
+							"Id": "ProcessFireQuartz",
+							"RequiredTags": [
+								"id_o_82"
+							],
+							"RequiredCount": 1,
+							"MaxDailyConversions": 32,
+							"SourceChest": "Input",
+							"DestinationChest": "Output",
+							"ProducedItems": [
+								{
+									"Condition": null,
+									"Id": "(O)338",
+									"ItemId": "(O)338",
+									"RandomItemId": null,
+									"MaxItems": null,
+									"MinStack": 3,
+									"MaxStack": 3,
+									"Quality": -1,
+									"ObjectInternalName": null,
+									"ObjectDisplayName": null,
+									"ToolUpgradeLevel": -1,
+									"IsRecipe": false,
+									"StackModifiers": null,
+									"StackModifierMode": "Stack",
+									"QualityModifiers": null,
+									"QualityModifierMode": "Stack",
+									"ModData": null,
+									"PerItemCondition": null
+								}
+							]
+						}
+					],
+					"DrawLayers": [
+						{
+							"Id": "Glowing_Fire",
+							"Texture": null,
+							"SourceRect": {
+								"X": 64,
+								"Y": 0,
+								"Width": 32,
+								"Height": 32
+							},
+							"DrawPosition": "16, 48",
+							"DrawInBackground": false,
+							"SortTileOffset": 1.0,
+							"OnlyDrawIfChestHasContents": "Input",
+							"FrameDuration": 150,
+							"FrameCount": 6,
+							"FramesPerRow": 2,
+							"AnimalDoorOffset": {
+								"X": 0,
+								"Y": 0
+							}
+						},
+						{
+							"Id": "Smoke",
+							"Texture": null,
+							"SourceRect": {
+								"X": 64,
+								"Y": 96,
+								"Width": 16,
+								"Height": 16
+							},
+							"DrawPosition": "25, -11",
+							"DrawInBackground": false,
+							"SortTileOffset": 0,
+							"OnlyDrawIfChestHasContents": "Input",
+							"FrameDuration": 150,
+							"FrameCount": 4,
+							"FramesPerRow": 4,
+							"AnimalDoorOffset": {
+								"X": 0,
+								"Y": 0
+							}
+						}
+					],
+					"CustomFields": null
+				}
+			}
+		}
+	]
+}

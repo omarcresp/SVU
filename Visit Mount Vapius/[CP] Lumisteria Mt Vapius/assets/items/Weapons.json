@@ -1,0 +1,48 @@
+{
+	"Changes": [
+		{
+			"LogName": "Weapons",
+			"Action": "EditData",
+			"Target": "Data/Weapons",
+			"Entries": {
+				"Lumisteria.MtVapius_MoltenLavaKatana": {
+					"Name": "Lumisteria.MtVapius_MoltenLavaKatana",
+					"DisplayName": "Molten [LocalizedText Strings\\Weapons:LavaKatana_Name]",
+					"Description": "[LocalizedText Strings\\Weapons:LavaKatana_Description]",
+					"MinDamage": 60,
+					"MaxDamage": 70,
+					"Knockback": 1.2,
+					"Speed": 0,
+					"Precision": 0,
+					"Defense": 4,
+					"Type": 0,
+					"MineBaseLevel": -1,
+					"MineMinLevel": -1,
+					"AreaOfEffect": 2,
+					"CritChance": 0.015,
+					"CritMultiplier": 3.5,
+					"CanBeLostOnDeath": false,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Weapons",
+					"SpriteIndex": 0,
+					"Projectiles": [
+						{
+							"Id": "Lumisteria.MtVapius_LavaBall",
+							"Damage": 15,
+							"Explodes": true,
+							"CollisionSound": "fireball",
+							"SpriteIndex": "10",
+						},
+					],
+					"CustomFields": {}
+				},
+			}
+		},
+		/* add weapon  images*/
+		{
+			"LogName": "Load images",
+			"Action": "Load",
+			"Target": "Mods/Lumisteria.MtVapius/Weapons",
+			"FromFile": "assets/images/items/{{TargetWithoutPath}}.png"
+		},
+	]
+}

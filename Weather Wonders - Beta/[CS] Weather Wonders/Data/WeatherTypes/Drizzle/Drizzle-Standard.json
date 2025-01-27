@@ -1,0 +1,93 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Drizzle Weather (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_Drizzle": {
+          "Id": "Kana.WeatherWonders_Drizzle",
+          "DisplayName": "{{i18n: Weather.Drizzle}}",
+          "Forecast": "{{i18n: Weather.Drizzle.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "IconSource": {
+            "X": 60,
+            "Y": 0
+          },
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 39
+          },
+          "MusicOverride": "Kana.WeatherWonders_DrizzleSound",
+          "MusicFrequencyOutside": 100,
+          "MusicFrequencyInside": 15,
+          "IsRaining": true,
+          "UseNightTiles": true,
+          "SpawnCritters": true,
+          "SpawnFrogs": true,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "DrizzleParticles1",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "TileSheets/rain",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 3,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-16, 32",
+              "Count": 15,
+              "Color": null,
+              "Opacity": 1,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "DrizzleParticles2",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "TileSheets/rain",
+              "Source": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 3,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-16, 32",
+              "Count": 15,
+              "Color": null,
+              "Opacity": 1,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": [
+            {
+              "Id": "DrizzleTint1",
+              "AmbientColor": "255, 200, 80",
+              "AmbientOutdoorOpacity": null,
+              "LightingTint": "orangered",
+              "LightingTintOpacity": 0.35,
+              "PostLightingTint": "blue",
+              "PostLightingTintOpacity": 0.1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

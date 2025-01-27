@@ -1,0 +1,78 @@
+{
+    "Changes": [
+        
+        {
+            "LogName": "Add Catalogue to Furniture Data",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{CatalogueItemName}}": "CatalogueItemName/other/1 2/1 1/0/100/2/{{i18n:TICA.CMB.TeasCozyModernBathroomFurnitureCatalogue}}/0/Mods\\{{ModId}}\\furniture_bathsuite/false/cmb_bathroom"
+            }
+        },
+        
+        {
+            "LogName": "Add Catalogue Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "{{CatalogueShopId}}": {
+                    "PriceModifiers": null,
+                    "PriceModifierMode": "Stack",
+                    "Items": [
+                        {
+                            "Price": 0,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Default",
+                            "ItemId": "ALL_ITEMS (F)",
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_cmb"
+                        }
+                    ],
+                    "CustomFields": {
+                        "HappyHomeDesigner/Catalogue": "true"
+                    }
+                }
+            }
+        },
+        //Add Catalogue Tile Actions (Calcifer)
+        {
+            "Action": "EditData",
+            "Target": "sophie.Calcifer/FurnitureActions",
+            "Entries": {
+                "(F){{CatalogueItemName}}": {
+                    "TileActions": [
+                        {
+                            "TileAction": "OpenShop {{CatalogueShopId}}"
+                        }
+                    ]
+                }
+            }
+        },
+        // Catalogue Listing at Robin's
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{CatalogueItemName}}": {
+                    "Id": "{{CatalogueItemName}}",
+                    "ItemId": "(F){{CatalogueItemName}}",
+                    "Price": 50000
+                }
+            }
+        }
+    ]
+}

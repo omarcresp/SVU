@@ -1,0 +1,1312 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "Mon10": "Oh! Hi, @.#$e#Do you have any medical questions? Or you can just tell me about your day.",
+                "Thu8": "It's a lot of work, being a doctor. I don't eat as well as I should.$s#$e#If I didn't live alone I think it would be easier.$s",
+                "Fri10": "I finished some new model aircraft I'd love to show you. Stop by my place anytime you like.",
+                "SpouseGiftJealous": "I heard you gave {0} a gift today.#$e#You're such a kind friend!$h",
+                "SpouseStardrop": "A clinical researcher I know told me that that fruit has powerful medicinal properties.#$b#I wanted you to have it... well, because I want you to be healthy, of course, but also as an expression of everything I feel for you.$l#$b#@... I'm someone who very easily falls into a routine. Into a rut, if I'm honest.$s#$b#Even living in this close-knit community, I used to feel so isolated... but I could never work up the nerve to make any changes to my lifestyle.$s#$b#But then I met this amazing, vibrant, courageous person...#$b#The kind of person willing to take risks to find happiness, even if it meant starting a whole new life...#$b#The kind of person who could show me how to fly.$l#$b#I love you, @. I've never had a friend like you. Becoming {{RelationshipLabel}} with you has changed my life for the better in every way.$l",
+  "dating_Harvey": "It's been a long time since someone has said they thought of me as a friend.$l",
+  "dating_Harvey_memory_oneday": "It's hard to focus on work these days. I just want to sit and talk with you for hours.#$e#I think I was lonelier than I realized before you came to town.$s",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "Mon10": "Oh! Hi, @.#$e#Do you have any medical questions? Or you can just tell me about your day.",
+                "Thu8": "It's a lot of work, being a doctor. I don't eat as well as I should.$s#$e#If I didn't live alone I think it would be easier.$s",
+                "Fri10": "I finished some new model aircraft I'd love to show you. Stop by my place anytime you like.",
+                "Tue8": "Don't overwork yourself, @. Doctor's orders!#$e#Your health is important to me.",
+                "Sat8": "*Sigh*... I'm starting to feel kind of old...#$e#The older you get the more memories you're burdened with. It can be overwhelming.$s#$e#I think I'll stay younger with you around.",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're such a kind friend!$h",
+                "SpouseStardrop": "A clinical researcher I know told me that that fruit has powerful medicinal properties.#$b#I wanted you to have it... well, because I want you to be healthy, of course, but also as an expression of everything I feel for you.#$b#@... I'm someone who very easily falls into a routine. Into a rut, if I'm honest.$s#$b#Even living in this close-knit community, I used to feel so isolated... but I could never work up the nerve to make any changes to my lifestyle.$s#$b#But then I met this amazing, vibrant, courageous person...#$b#The kind of person willing to take risks to find happiness, even if it meant starting a whole new life...#$b#The kind of person who could show me how to fly.#$b#I love you, @. I've never had a friend like you. Becoming {{RelationshipLabel}} with you has changed my life for the better in every way.",
+		"dating_Harvey": "It's been a long time since someone has said they thought of me as a friend.",
+		"dating_Harvey_memory_oneday": "It's hard to focus on work these days. I just want to sit and talk with you for hours.#$e#I think I was lonelier than I realized before you came to town.$s",
+		"married_Harvey": "This is the happiest moment of my life...$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+	    "Logname": "Harvey bouquet reactions, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: A bouquet? Oh my goodness... I didn't realize anyone here valued my company that much.$8#$e#I would love to be closer friends, @.$l @@ These flowers mean... you want to be closer friends?$8#$e#I couldn't be more touched. I would love to know you better, @.$l |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Harvey bouquet reactions, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: A bouquet? Oh my goodness... I didn't realize anyone here valued my company that much.$8#$e#I would love to be closer friends, @. @@ These flowers mean... you want to be closer friends?$8#$e#I couldn't be more touched. I would love to know you better, @. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Harvey bouquet reactions, love portraits true, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: This letter... Oh my goodness. I didn't realize anyone here valued my company this much.$l#$e#I would love to be closer friends, @.$l @@ This letter says... you want to be closer friends?$l#$e#I couldn't be more touched. I would love to know you better, @.$l |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+	    "Logname": "Harvey bouquet reactions, love portraits false, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: This letter... Oh my goodness. I didn't realize anyone here valued my company this much.$8#$e#I would love to be closer friends, @. @@ This letter says... you want to be closer friends?$8#$e#I couldn't be more touched. I would love to know you better, @. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+            "LogName": "Harvey pendant and bracelet proposal acceptance, love portraits",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Harvey_Engaged": "A... A mermaid's pendant? But that means...$8#$b#Oh, @... You've made me so happy. There's nothing I want more than to live with you as {{RelationshipLabel}}.$l#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Harvey_EngagedRoommate": "A... A friendship bracelet? But that means...$8#$b#Oh, @... You've made me so happy. There's nothing I want more than to live with you as {{RelationshipLabel}}.$l#$b#I need some time to pack up my things. I'll be there in 3 days, okay?",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "LogName": "Harvey pendant and bracelet proposal acceptance, no love portraits",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Harvey_Engaged": "A... A mermaid's pendant? But that means...$8#$b#Oh, @... You've made me so happy. There's nothing I want more than to live with you as {{RelationshipLabel}}.#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Harvey_EngagedRoommate": "A... A friendship bracelet? But that means...$8#$b#Oh, @... You've made me so happy. There's nothing I want more than to live with you as {{RelationshipLabel}}.#$b#I need some time to pack up my things. I'll be there in 3 days, okay?",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "LogName": "Harvey engagement dialogue, love portraits",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Harvey0": "Oh my goodness! I have so much to prepare before the ceremony! I'm nervous.$l#$e#I'll be relieved after we're all settled in on your farm.$h",
+                "HarveyRoommate0": "Oh my goodness! I have so much to prepare before the move! I'm nervous.$l#$e#I'll be relieved after we're all settled in on your farm.$h",
+                "HarveyRoommate1": "I'm really happy.$h#$e#This was always my secret wish.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "LogName": "Harvey engagement dialogue, no love portraits",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Harvey0": "Oh my goodness! I have so much to prepare before the ceremony! I'm nervous.$7#$e#I'll be relieved after we're all settled in on your farm.$h",
+                "HarveyRoommate0": "Oh my goodness! I have so much to prepare before the move! I'm nervous.$7#$e#I'll be relieved after we're all settled in on your farm.$h",
+                "Harvey1": "I'm really happy.$h#$e#This was always my secret wish.",
+                "HarveyRoommate1": "I'm really happy.$h#$e#This was always my secret wish.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+//Harvey post-ceremony line: generic
+        {
+            "LogName": "Harvey terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life is certainly different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "My dear friend",
+                "NPC.cs.4518": "My dear friend",
+                "NPC.cs.4519": "My dear friend",
+                "NPC.cs.4522": "My dear friend",
+                "NPC.cs.4523": "My dear friend",
+                "Event.cs.1736": "$q -1 null#Yes, @?#$r -1 0 danceAsk#(Ask Harvey to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Harvey": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Harvey terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life is certainly different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "My dear friend",
+                "NPC.cs.4518": "My dear friend",
+                "NPC.cs.4519": "My dear friend",
+                "NPC.cs.4522": "My dear friend",
+                "NPC.cs.4523": "My dear friend",
+                "Event.cs.1736": "$q -1 null#Yes, @?#$r -1 0 danceAsk#(Ask Harvey to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Harvey": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Harvey roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Yes, @?#$r -1 0 danceAsk#(Ask Harvey to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Harvey": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Er... we already had this conversation, didn't we?$s @@ I thought the tradition in Stardew Valley was to gift *one* pendant... did I misunderstand?$s |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Harvey": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: I appreciate the thought, but the only pendant I want to wear is the one you gave me when you asked to be {{RelationshipLabel}}. @@ hank you, but I think two pendants and a stethoscope would be too many neck accessories. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Harvey": "Married"
+            }
+        },
+        {
+	    "Logname": "Maru dialogue about Harvey",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+		"married_Harvey": "You always seemed far too healthy to be at the clinic so often. Now I get it!",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+                "Harvey": "@! I'm glad you came. It's nice not to have to worry about working up the courage to ask someone to dance with me.$h",
+            },
+            "When":
+            {
+                "Relationship:Harvey": "Engaged, Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "Indoor_Day_0": "I think we're all striving to reach some kind of balance in life. An equilibrium of complexity.#$e#For me, moving here was exactly what I needed to find that balance.$l",
+                "Good_2": "I was drawn to you from the moment you moved here. Intimidated, too... but somehow I knew that being in your life would enrich mine.$l",
+                "Good_3": "You look hale and healthy today! I'm glad.$l",
+                "Outdoor_2": "I may not be the most exciting guy, but I'll be a loyal friend to you for the rest of my life.$l",
+                "TwoKids_3": "My life is devoted to you and the children now, and I'm very happy about it. I always dreamed of having a wonderful family.$l#$e#You know, @... Before we met, I thought being a bachelor was the reason I felt lonely and unfulfilled.$s#$e#But since we've been {{RelationshipLabel}}, there's no doubt in my mind... What we have together is exactly what I need. I love you so much.$l",
+                "Good_0": "@...I still can't believe we're {{RelationshipLabel}}...$l",
+                "funReturn_Harvey": "I had a nice day. It's refreshing to spend some time alone now and then. Did you have a good day, @?",
+                "Outdoor_3": "@... you mean the world to me.$l",
+                "Rainy_Day_2": "I woke up early, but I made sure not to wake you. You need your rest!",
+                "spring_23": "W...Will you dance with me at the festival tomorrow?$s#$e#It's always a little embarrassing.$7",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "Indoor_Day_0": "I think we're all striving to reach some kind of balance in life. An equilibrium of complexity.#$e#For me, moving here was exactly what I needed to find that balance.",
+                "Good_2": "I was drawn to you from the moment you moved here. Intimidated, too... but somehow I knew that being in your life would enrich mine.",
+                "Good_3": "You look hale and healthy today! I'm glad.$h",
+                "Outdoor_2": "I may not be the most exciting guy, but I'll be a loyal friend to you for the rest of my life.",
+                "TwoKids_3": "My life is devoted to you and the children now, and I'm very happy about it. I always dreamed of having a wonderful family.#$e#You know, @... Before we met, I thought being a bachelor was the reason I felt lonely and unfulfilled.$s#$e#But since we've been {{RelationshipLabel}}, there's no doubt in my mind... What we have together is exactly what I need. I love you so much.",
+                "Good_0": "@...I still can't believe we're {{RelationshipLabel}}...$h",
+                "funReturn_Harvey": "I had a nice day. It's refreshing to spend some time alone now and then. Did you have a good day, @?",
+                "Outdoor_3": "@... you mean the world to me.",
+                "Good_1": "You rescued me from a life of loneliness, and filled the emptiness in my heart. Thank you.",
+                "Rainy_Day_2": "I woke up early, but I made sure not to wake you. You need your rest!",
+                "spring_23": "W...Will you dance with me at the festival tomorrow?$s#$e#It's always a little embarrassing.$7",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "Rainy_Night_0": "How was your day, {{Lowercase:{{TermofEndearment}}}}? I was going to do the dishes but I got absorbed in the latest issue of \"Knee Surgery Enthusiast\".",
+                "Rainy_Night_2": "You look a little soggy, {{Lowercase:{{TermofEndearment}}}}. Why don't you warm yourself by the fire?",
+
+                "summer_1": "Make sure you don't get sunburnt, {{Lowercase:{{TermofEndearment}}}}! It's very dangerous for your skin.$8#$e#As your doctor and friend, I consider your health and safety my top priority!",
+                "fall_1": "Make sure and diversify your harvests this fall, {{Lowercase:{{TermofEndearment}}}}.#$e#Or just grow cranberries... It's really up to you. What do I know?",
+                "Rainy_Night_4": "I made us a nice healthy dinner. Only fresh, wholesome ingredients from the valley! [212 214 225 209 200]$h#$e#Enjoy, {{Lowercase:{{TermofEndearment}}}}.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "Rainy_Night_0": "How was your day, {{TermofEndearment}}? I was going to do the dishes but I got absorbed in the latest issue of \"Knee Surgery Enthusiast\".",
+                "Rainy_Night_2": "You look a little soggy, {{TermofEndearment}}. Why don't you warm yourself by the fire?",
+                "summer_1": "Make sure you don't get sunburnt, {{TermofEndearment}}! It's very dangerous for your skin.$8#$e#As your doctor and friend, I consider your health and safety my top priority!",
+                "fall_1": "Make sure and diversify your harvests this fall, {{TermofEndearment}}.#$e#Or just grow cranberries... It's really up to you. What do I know?",
+                "Rainy_Night_4": "I made us a nice healthy dinner. Only fresh, wholesome ingredients from the valley! [212 214 225 209 200]$h#$e#Enjoy, {{TermofEndearment}}.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Rainy_Day_Harvey": "Make sure you stay dry today, {{Lowercase:{{TermofEndearment}}}}. I don't want you to become hypothermic.",
+                "jobReturn_Harvey": "#$c .5#*Phew*... I'm exhausted...$s#Hi, {{Lowercase:{{TermofEndearment}}}}. How was your day?#$e#My patients are still healthy, so it was a good day.",
+                "summer_Harvey": "Make sure you don't get sunburnt, @... That can really damage your skin.",
+                "spouseRoom_Harvey": "#$c .5#No air-traffic this morning. But it's still fun to break out the equipment now and then.#$e#I'm working on a new model plane. It's so much more relaxing here than in my old apartment.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Rainy_Day_Harvey": "Make sure you stay dry today, {{TermofEndearment}}. I don't want you to become hypothermic.",
+                "jobReturn_Harvey": "#$c .5#*Phew*... I'm exhausted...$s#Hi, {{TermofEndearment}}. How was your day?#$e#My patients are still healthy, so it was a good day.",
+                "summer_Harvey": "Make sure you don't get sunburnt, @... That can really damage your skin.",
+                "spouseRoom_Harvey": "#$c .5#No air-traffic this morning. But it's still fun to break out the equipment now and then.#$e#I'm working on a new model plane. It's so much more relaxing here than in my old apartment.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries":
+            {
+                "Harvey_spouse": "Hi, @. I was hoping you'd find me here!$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries":
+            {
+                "Harvey_spouse": "I'm dreaming of our warm fire back home...",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+                "Harvey_spouse": "I'm feeling a little overwhelmed... thank goodness for this crisp air...$8",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Harvey",
+            "Entries":
+            {
+		"marriageJob.000": "Hi, {{Lowercase:{{TermofEndearment}}}}. What are you doing at the clinic?#$e#Ah, you just came to see me. That's nice.$h",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Harvey",
+            "Entries":
+            {
+		"marriageJob.000": "Hi, {{TermofEndearment}}. What are you doing at the clinic?#$e#Ah, you just came to see me. That's nice.$h",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries":
+            {
+                "MovieInvite_Spouse_Harvey": "Movie tickets? Well... yes, I'd love to go with you!$h#$e#It's good to do things like this. I don't want life as {{RelationshipLabel}} to get boring for you!",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Harvey": "When I'm next to you, I'm not even scared of falling off this cliff and dashing onto the sharp rocks below...$l\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"...$8#$b#...I'm all right. I still have those moments where the fear spikes, but it's easier to get past them than it used to be.#$b#And that's all thanks to you. I... I love and admire you very much, @.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Harvey": "When I'm next to you, I'm not even scared of falling off this cliff and dashing onto the sharp rocks below...\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"...$8#$b#...I'm all right. I still have those moments where the fear spikes, but it's easier to get past them than it used to be.#$b#And that's all thanks to you. I... I love and admire you very much, @.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Event.cs.1627": "I've been looking forward to it! Fresh air, exercise, and a friend to share them with... days like this are good for the body and soul!$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "harveyBalloon": "@,^I need to ask you for a favor. Could you meet me by the railroad tracks? ^   -Harvey[#]Harvey's Favor",
+            },
+            "When":
+            {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Railroad",
+            "Entries":
+            {
+                "528052/f Harvey 2500/t 900 1700/n harveyBalloon": "playful/26 38/Harvey 24 41 0 farmer 24 50 0/skippable/move farmer 0 -8 0/faceDirection Harvey 2/speak Harvey \"There you are... just in time!\"/faceDirection Harvey 0/jump Harvey/pause 800/speak Harvey \"Look, here it comes!$8\"/emote farmer 8/move Harvey -1 0 1/move farmer -2 0 0/move farmer 0 -1 1/addTemporaryActor Marcello 16 32 25 19 2 true/positionOffset Marcello 36 558/animate Marcello false true 400 16 17/specificTemporarySprite marcelloLand/null/pause 1000/stopAnimation Marcello/pause 500/message \"Marcello's Balloon Rentals at your service!\"/pause 1000/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/jump Marcello 12/move Marcello 0 3 3/move Marcello -2 0 0/faceDirection Harvey 2/faceDirection farmer 2/message \"Marcello: It's all yours for two hours.\"/faceDirection Marcello 3/faceDirection Marcello 2/message \"Marcello: Now... I was told there's a saloon somewhere around here?\"/move Marcello 0 9 1/warp Marcello -100 -100/faceDirection farmer 1/faceDirection Harvey 3/pause 500/speak Harvey \"I saw an ad in the paper for these balloon rides, and I realized this could be the perfect exposure therapy for my fear of heights.#$b#But I need a friend with me for moral support... and to land the balloon if I panic.$s#$b#If you're willing, I'd like that friend to be you. There's no one I trust more.$l\"/pause 800/emote farmer 32/pause 500/speak Harvey \"Okay... you first.\"/pause 400/move farmer 0 1 1/faceDirection Harvey 1/move farmer 3 0 0/move farmer 0 -1 0/jump farmer 14/move farmer 0 -1 2/move Harvey 0 1 1/move Harvey 3 0 0/move Harvey 0 -1 0/jump Harvey 14/move Harvey 0 -1 2/pause 1000/showFrame Harvey 29/pause 300/playSound openBox/pause 300/showFrame Harvey 0/pause 400/playSound furnace/playMusic none/cutscene balloonDepart/viewport move 0 -1 6000/pause 2000/showFrame Harvey 30/jump Harvey 5/shake Harvey 7000/pause 7000/globalFade/viewport -2000 -2000/playMusic 50s/pause 2000/cutscene clearTempSprites/changeToTemporaryMap HarveyBalloon/cutscene balloonChangeMap/viewport -2000 -2000/warp farmer 22 36/warp Harvey 22 36/positionOffset farmer 24 570/positionOffset Harvey 96 554/positionOffset farmer -8 -8/positionOffset Harvey -24 -8/showFrame Harvey 32/pause 1000/shake Harvey 19000/viewport 23 39 clamp true/viewport move 0 -1 17000/pause 18000/faceDirection farmer 1/showFrame Harvey 33/pause 1000/jump Harvey/showFrame Harvey 30/pause 800/showFrame Harvey 12/animate Harvey false true 100 12 13 14 15/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/stopAnimation Harvey/showFrame Harvey 31/positionOffset Harvey -4 0/playSound fishSlap/eyes 1 -2000/pause 2000/speak Harvey \"We... We're up so high... *gulp*$8\"/shake Harvey 2000/pause 800/speak Harvey \"I'm sorry to cling to you like this... I know that's why you're here, but I feel like a trembling coward.$7\"/emote Harvey 28/pause 500/speak Harvey \"Well, you've got more than enough courage to make up for me, @. That's... that's something I really admire about you.$11\"/pause 1000/speak Harvey \"Okay, I'm going to open my eyes and look down... don't let go of my hand.$8\"/pause 800/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 0/pause 30/positionOffset Harvey 4 0/pause 30/faceDirection farmer 2/showFrame Harvey 0/pause 500/showFrame Harvey 33/pause 500/shake Harvey 4000/pause 500/showFrame Harvey 30/pause 2000/showFrame Harvey 33/pause 3500/speak Harvey \"I... I think I can do it now.$8\"/specificTemporarySprite balloonBirds/faceDirection farmer 2/pause 3000/faceDirection Harvey 1/faceDirection farmer 1/emote farmer 16 true/emote Harvey 16/pause 4000/faceDirection farmer 0/faceDirection Harvey 2/pause 10000/speak Harvey \"Hey, this is incredible! I think I can see Mayor Lewis standing in the town square!$h\"/faceDirection farmer 2/pause 3000/speak Harvey \"Oh dear... our time's almost up.$s\"/pause 600/faceDirection farmer 1/playMusic none/pause 1500/speak Harvey \"The view from up here is as beautiful as I always imagined... \"/playMusic musicboxsong/pause 400/faceDirection Harvey 2/pause 500/faceDirection Harvey 3/speak Harvey \"@... You don't know what this means to me. Flying, even as a passenger, was a dream I'd given up on long ago...#$b#...but thanks to you, I finally got to experience it. I'll never forget this.$l\"/specificTemporarySprite balloonBirds 2/pause 1000/showFrame Harvey 31/pause 500/showFrame 101/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 -2/pause 30/positionOffset Harvey -1 -2/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/pause 4000/globalFade/viewport -1000 -1000/pause 3500/speak Harvey \"A perfect landing! It's good to be on solid ground.$h#$b#Thanks again, @. This was a good start for me... and it should get a little easier every time.\"/pause 2000/end dialogue Harvey \"I haven't had such a wonderful day for as long as I can remember.$l\"",
+                "afraid": null,
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Railroad",
+            "Entries":
+            {
+                "528052/f Harvey 2500/t 900 1700/n harveyBalloon": "playful/26 38/Harvey 24 41 0 farmer 24 50 0/skippable/move farmer 0 -8 0/faceDirection Harvey 2/speak Harvey \"There you are... just in time!\"/faceDirection Harvey 0/jump Harvey/pause 800/speak Harvey \"Look, here it comes!$8\"/emote farmer 8/move Harvey -1 0 1/move farmer -2 0 0/move farmer 0 -1 1/addTemporaryActor Marcello 16 32 25 19 2 true/positionOffset Marcello 36 558/animate Marcello false true 400 16 17/specificTemporarySprite marcelloLand/null/pause 1000/stopAnimation Marcello/pause 500/message \"Marcello's Balloon Rentals at your service!\"/pause 1000/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/jump Marcello 12/move Marcello 0 3 3/move Marcello -2 0 0/faceDirection Harvey 2/faceDirection farmer 2/message \"Marcello: It's all yours for two hours.\"/faceDirection Marcello 3/faceDirection Marcello 2/message \"Marcello: Now... I was told there's a saloon somewhere around here?\"/move Marcello 0 9 1/warp Marcello -100 -100/faceDirection farmer 1/faceDirection Harvey 3/pause 500/speak Harvey \"I saw an ad in the paper for these balloon rides, and I realized this could be the perfect exposure therapy for my fear of heights.#$b#But I need a friend with me for moral support... and to land the balloon if I panic.$s#$b#If you're willing, I'd like that friend to be you. There's no one I trust more.\"/pause 800/emote farmer 32/pause 500/speak Harvey \"Okay... you first.\"/pause 400/move farmer 0 1 1/faceDirection Harvey 1/move farmer 3 0 0/move farmer 0 -1 0/jump farmer 14/move farmer 0 -1 2/move Harvey 0 1 1/move Harvey 3 0 0/move Harvey 0 -1 0/jump Harvey 14/move Harvey 0 -1 2/pause 1000/showFrame Harvey 29/pause 300/playSound openBox/pause 300/showFrame Harvey 0/pause 400/playSound furnace/playMusic none/cutscene balloonDepart/viewport move 0 -1 6000/pause 2000/showFrame Harvey 30/jump Harvey 5/shake Harvey 7000/pause 7000/globalFade/viewport -2000 -2000/playMusic 50s/pause 2000/cutscene clearTempSprites/changeToTemporaryMap HarveyBalloon/cutscene balloonChangeMap/viewport -2000 -2000/warp farmer 22 36/warp Harvey 22 36/positionOffset farmer 24 570/positionOffset Harvey 96 554/positionOffset farmer -8 -8/positionOffset Harvey -24 -8/showFrame Harvey 32/pause 1000/shake Harvey 19000/viewport 23 39 clamp true/viewport move 0 -1 17000/pause 18000/faceDirection farmer 1/showFrame Harvey 33/pause 1000/jump Harvey/showFrame Harvey 30/pause 800/showFrame Harvey 12/animate Harvey false true 100 12 13 14 15/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/stopAnimation Harvey/showFrame Harvey 31/positionOffset Harvey -4 0/playSound fishSlap/eyes 1 -2000/pause 2000/speak Harvey \"We... We're up so high... *gulp*$8\"/shake Harvey 2000/pause 800/speak Harvey \"I'm sorry to cling to you like this... I know that's why you're here, but I feel like a trembling coward.$7\"/emote Harvey 28/pause 500/speak Harvey \"Well, you've got more than enough courage to make up for me, @. That's... that's something I really admire about you.$11\"/pause 1000/speak Harvey \"Okay, I'm going to open my eyes and look down... don't let go of my hand.$8\"/pause 800/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 0/pause 30/positionOffset Harvey 4 0/pause 30/faceDirection farmer 2/showFrame Harvey 0/pause 500/showFrame Harvey 33/pause 500/shake Harvey 4000/pause 500/showFrame Harvey 30/pause 2000/showFrame Harvey 33/pause 3500/speak Harvey \"I... I think I can do it now.$8\"/specificTemporarySprite balloonBirds/faceDirection farmer 2/pause 3000/faceDirection Harvey 1/faceDirection farmer 1/emote farmer 16 true/emote Harvey 16/pause 4000/faceDirection farmer 0/faceDirection Harvey 2/pause 10000/speak Harvey \"Hey, this is incredible! I think I can see Mayor Lewis standing in the town square!$h\"/faceDirection farmer 2/pause 3000/speak Harvey \"Oh dear... our time's almost up.$s\"/pause 600/faceDirection farmer 1/playMusic none/pause 1500/speak Harvey \"The view from up here is as beautiful as I always imagined... \"/playMusic musicboxsong/pause 400/faceDirection Harvey 2/pause 500/faceDirection Harvey 3/speak Harvey \"@... You don't know what this means to me. Flying, even as a passenger, was a dream I'd given up on long ago...#$b#...but thanks to you, I finally got to experience it. I'll never forget this.\"/specificTemporarySprite balloonBirds 2/pause 1000/showFrame Harvey 31/pause 500/showFrame 101/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 -2/pause 30/positionOffset Harvey -1 -2/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/pause 4000/globalFade/viewport -1000 -1000/pause 3500/speak Harvey \"A perfect landing! It's good to be on solid ground.$h#$b#Thanks again, @. This was a good start for me... and it should get a little easier every time.\"/pause 2000/end dialogue Harvey \"I haven't had such a wonderful day for as long as I can remember.$h\"",
+                "afraid": null,
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "3917626/f Harvey 3500/O Harvey/t 2000 2400/p Harvey/L": "harveys_theme_jazz/-1000 -1000/farmer -100 -100 0 Harvey 22 24 0/skippable/ambientLight 0 0 0/makeInvisible 19 24 6 1/specificTemporarySprite harveyKitchenSetup/viewport 22 24 true/pause 3000/showFrame Harvey 19/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 750/showFrame Harvey 53/pause 100/playSound sipTea/pause 1000/textAboveHead Harvey \"Needs salt...\"/stopAnimation Harvey/pause 800/move Harvey -1 0 0/pause 2000/showFrame Harvey 19/playSound bubbles/pause 1000/playSound bubbles/pause 2000/stopAnimation Harvey/move Harvey 1 0 0/pause 2000/playSound furnace/specificTemporarySprite harveyKitchenFlame/pause 500/jump Harvey/pause 500/textAboveHead Harvey \"It's burning!\"/pause 500/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 100/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 3000/move Harvey 2 0 0/pause 500/showFrame Harvey 19/playSound openChest/pause 1000/textAboveHead Harvey \"Hmm...\"/pause 3000/stopAnimation Harvey/move Harvey -2 0 0/pause 500/showFrame Harvey 19/textAboveHead Harvey \"A little bit of this...\"/playSound dropItemInWater/pause 2000/stopAnimation Harvey/move Harvey -3 0 0/pause 1000/showFrame Harvey 19/playSound coin/pause 500/stopAnimation Harvey/move Harvey 3 0 0/pause 250/showFrame Harvey 19/pause 500/textAboveHead Harvey \"Some of this...\"/pause 600/playSound slosh/pause 2000/showFrame Harvey 53/pause 200/playSound sipTea/pause 2000/showFrame Harvey 4/jump Harvey/textAboveHead Harvey \"Presto!\"/pause 2000/warp farmer 27 30/playSound doorClose/move farmer 0 -1 0/pause 500/stopAnimation Harvey/faceDirection Harvey 2/speak Harvey \"Ah... You're right on time, @!$h#$b#Let me just set the table...\"/pause 300/fade/viewport -1000 -1000/pause 2000/playMusic none/pause 3000/makeInvisible 20 24 4 2/ambientLight 180 180 0/playMusic kindadumbautumn/showFrame Harvey 51/positionOffset Harvey -8 0/faceDirection farmer 1/showFrame 117/specificTemporarySprite harveyDinnerSet/pause 4000/speak Harvey \"You've been working so hard on the farm... I wanted to make you a special dinner.\"/emote farmer 32/speak Harvey \"It's my very own 'angel hair pasta primavera'... with clams!$h\"/animate Harvey false true 300 51 52/pause 300/playSound eat/pause 600/playSound eat/pause 600/playSound eat/pause 500/animate Harvey false true 100 51/quickQuestion #It tastes heavenly#It tastes healthy#It tastes watery#It tastes burnt#It tastes like actual hair#It tastes like fungus(break)speak Harvey \"Heavenly, huh? That must be the 'angel hair'!$h#$b#I'm glad you like it! You deserve the best.$l\"(break)speak Harvey \"Oh yes, I forgot to mention... it's 'whole wheat' pasta. And it's brimming with fresh vegetables.#$b#It's important that you eat healthy food! I want you to live forever...$l\"(break)speak Harvey \"Oh... I see. I knew I needed to add more salt.$s#$b#Well, at least you'll be well hydrated.$s\"(break)emote Harvey 28\\speak Harvey \"Oh... I thought I gave myself the burnt one.$s#$b#Um, I lost track of one the pans and it caught fire... Sorry, {{Lowercase:{{TermofEndearment}}}}.$s\"(break)jump Harvey\\pause 500\\speak Harvey \"Oh dear. I guess a piece of my moustache may have fallen into the pasta...$8#$b#Well! Extra fiber, right? Heh... Sorry, {{Lowercase:{{TermofEndearment}}}}.$7\"(break)jump Harvey\\pause 400\\speak Harvey \"Oh! Eh... Must've been the truffle oil I drizzled on top...$8#$b#You meant delicious, edible fungus... right, {{Lowercase:{{TermofEndearment}}}}? Of course... Heh.$7\"/pause 2000/animate Harvey false true 300 51 52/speak Harvey \"So, tell me about your day...\"/quickQuestion #I tended the farm#I dug around in the caves#I spent the day fishing#I socialized in town#I did a little of everything#I can't remember#I didn't do anything(break)speak Harvey \"Yes, I can still see the dirt in your hair! I really appreciate all the hard work you do, {{Lowercase:{{TermofEndearment}}}}.\"(break)speak Harvey \"That sounds dangerous... are you sure that's safe?$8#$b#I don't want to see you on the operating table anytime soon...$s#$b#Although I have to say, I admire how courageous you are...$l\"(break)speak Harvey \"A peaceful day by the water, huh? That sounds very relaxing.#$b#I'm glad you're having fun out there!$h\"(break)speak Harvey \"Ah, that's good. Having an active social life is healthy for the brain.#$b#But remember, I'm always here for you if you need someone to talk to!$l\"(break)speak Harvey \"That makes sense. There's lots to do in this valley! ...And I know how hard you work.#$b#Just remember to take breaks! When you're so busy, it's easy to get burnt out from exhaustion.\"(break)speak Harvey \"Ah... I have that problem, too. The boundary between days can blur together... it's hard to keep track of everything!\"(break)speak Harvey \"Took the day off, huh? I'm glad to hear it.#$b#Well, with a day off and a hearty dinner you'll be fully re-charged for tomorrow.\"/pause 1000/stopAnimation Harvey/showFrame Harvey 51/speak Harvey \"Whew... I'm stuffed! That was great...\"/emote farmer 20/pause 1000/playMusic nightTime/speak Harvey \"I'll take care of the dishes...\"/pause 400/emote farmer 60/pause 250/speak Harvey \"Don't feel bad... I like to do nice things for you! It makes me happy.\"/pause 1000/speak Harvey \"I know I say this a lot, but... us becoming {{RelationshipLabel}} was the best thing that ever happened to me!$l\"/emote farmer 32/pause 1000/fade/viewport -100 -100/end dialogue Harvey \"That was filling. I'm gonna sleep well...\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "3917626/f Harvey 3500/O Harvey/t 2000 2400/p Harvey/L": "harveys_theme_jazz/-1000 -1000/farmer -100 -100 0 Harvey 22 24 0/skippable/ambientLight 0 0 0/makeInvisible 19 24 6 1/specificTemporarySprite harveyKitchenSetup/viewport 22 24 true/pause 3000/showFrame Harvey 19/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 750/showFrame Harvey 53/pause 100/playSound sipTea/pause 1000/textAboveHead Harvey \"Needs salt...\"/stopAnimation Harvey/pause 800/move Harvey -1 0 0/pause 2000/showFrame Harvey 19/playSound bubbles/pause 1000/playSound bubbles/pause 2000/stopAnimation Harvey/move Harvey 1 0 0/pause 2000/playSound furnace/specificTemporarySprite harveyKitchenFlame/pause 500/jump Harvey/pause 500/textAboveHead Harvey \"It's burning!\"/pause 500/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 100/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 3000/move Harvey 2 0 0/pause 500/showFrame Harvey 19/playSound openChest/pause 1000/textAboveHead Harvey \"Hmm...\"/pause 3000/stopAnimation Harvey/move Harvey -2 0 0/pause 500/showFrame Harvey 19/textAboveHead Harvey \"A little bit of this...\"/playSound dropItemInWater/pause 2000/stopAnimation Harvey/move Harvey -3 0 0/pause 1000/showFrame Harvey 19/playSound coin/pause 500/stopAnimation Harvey/move Harvey 3 0 0/pause 250/showFrame Harvey 19/pause 500/textAboveHead Harvey \"Some of this...\"/pause 600/playSound slosh/pause 2000/showFrame Harvey 53/pause 200/playSound sipTea/pause 2000/showFrame Harvey 4/jump Harvey/textAboveHead Harvey \"Presto!\"/pause 2000/warp farmer 27 30/playSound doorClose/move farmer 0 -1 0/pause 500/stopAnimation Harvey/faceDirection Harvey 2/speak Harvey \"Ah... You're right on time, @!$h#$b#Let me just set the table...\"/pause 300/fade/viewport -1000 -1000/pause 2000/playMusic none/pause 3000/makeInvisible 20 24 4 2/ambientLight 180 180 0/playMusic kindadumbautumn/showFrame Harvey 51/positionOffset Harvey -8 0/faceDirection farmer 1/showFrame 117/specificTemporarySprite harveyDinnerSet/pause 4000/speak Harvey \"You've been working so hard on the farm... I wanted to make you a special dinner.\"/emote farmer 32/speak Harvey \"It's my very own 'angel hair pasta primavera'... with clams!$h\"/animate Harvey false true 300 51 52/pause 300/playSound eat/pause 600/playSound eat/pause 600/playSound eat/pause 500/animate Harvey false true 100 51/quickQuestion #It tastes heavenly#It tastes healthy#It tastes watery#It tastes burnt#It tastes like actual hair#It tastes like fungus(break)speak Harvey \"Heavenly, huh? That must be the 'angel hair'!$h#$b#I'm glad you like it! You deserve the best.$l\"(break)speak Harvey \"Oh yes, I forgot to mention... it's 'whole wheat' pasta. And it's brimming with fresh vegetables.#$b#It's important that you eat healthy food! I want you to live forever...$l\"(break)speak Harvey \"Oh... I see. I knew I needed to add more salt.$s#$b#Well, at least you'll be well hydrated.$s\"(break)emote Harvey 28\\speak Harvey \"Oh... I thought I gave myself the burnt one.$s#$b#Um, I lost track of one the pans and it caught fire... Sorry, {{TermofEndearment}}}.$s\"(break)jump Harvey\\pause 500\\speak Harvey \"Oh dear. I guess a piece of my moustache may have fallen into the pasta...$8#$b#Well! Extra fiber, right? Heh... Sorry, {{TermofEndearment}}.$7\"(break)jump Harvey\\pause 400\\speak Harvey \"Oh! Eh... Must've been the truffle oil I drizzled on top...$8#$b#You meant delicious, edible fungus... right, {{TermofEndearment}}? Of course... Heh.$7\"/pause 2000/animate Harvey false true 300 51 52/speak Harvey \"So, tell me about your day...\"/quickQuestion #I tended the farm#I dug around in the caves#I spent the day fishing#I socialized in town#I did a little of everything#I can't remember#I didn't do anything(break)speak Harvey \"Yes, I can still see the dirt in your hair! I really appreciate all the hard work you do, {{TermofEndearment}}.\"(break)speak Harvey \"That sounds dangerous... are you sure that's safe?$8#$b#I don't want to see you on the operating table anytime soon...$s#$b#Although I have to say, I admire how courageous you are...$l\"(break)speak Harvey \"A peaceful day by the water, huh? That sounds very relaxing.#$b#I'm glad you're having fun out there!$h\"(break)speak Harvey \"Ah, that's good. Having an active social life is healthy for the brain.#$b#But remember, I'm always here for you if you need someone to talk to!$l\"(break)speak Harvey \"That makes sense. There's lots to do in this valley! ...And I know how hard you work.#$b#Just remember to take breaks! When you're so busy, it's easy to get burnt out from exhaustion.\"(break)speak Harvey \"Ah... I have that problem, too. The boundary between days can blur together... it's hard to keep track of everything!\"(break)speak Harvey \"Took the day off, huh? I'm glad to hear it.#$b#Well, with a day off and a hearty dinner you'll be fully re-charged for tomorrow.\"/pause 1000/stopAnimation Harvey/showFrame Harvey 51/speak Harvey \"Whew... I'm stuffed! That was great...\"/emote farmer 20/pause 1000/playMusic nightTime/speak Harvey \"I'll take care of the dishes...\"/pause 400/emote farmer 60/pause 250/speak Harvey \"Don't feel bad... I like to do nice things for you! It makes me happy.\"/pause 1000/speak Harvey \"I know I say this a lot, but... us becoming {{RelationshipLabel}} was the best thing that ever happened to me!$l\"/emote farmer 32/pause 1000/fade/viewport -100 -100/end dialogue Harvey \"That was filling. I'm gonna sleep well...\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "3917626/f Harvey 3500/O Harvey/t 2000 2400/p Harvey/L": "harveys_theme_jazz/-1000 -1000/farmer -100 -100 0 Harvey 22 24 0/skippable/ambientLight 0 0 0/makeInvisible 19 24 6 1/specificTemporarySprite harveyKitchenSetup/viewport 22 24 true/pause 3000/showFrame Harvey 19/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 750/showFrame Harvey 53/pause 100/playSound sipTea/pause 1000/textAboveHead Harvey \"Needs salt...\"/stopAnimation Harvey/pause 800/move Harvey -1 0 0/pause 2000/showFrame Harvey 19/playSound bubbles/pause 1000/playSound bubbles/pause 2000/stopAnimation Harvey/move Harvey 1 0 0/pause 2000/playSound furnace/specificTemporarySprite harveyKitchenFlame/pause 500/jump Harvey/pause 500/textAboveHead Harvey \"It's burning!\"/pause 500/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 100/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 3000/move Harvey 2 0 0/pause 500/showFrame Harvey 19/playSound openChest/pause 1000/textAboveHead Harvey \"Hmm...\"/pause 3000/stopAnimation Harvey/move Harvey -2 0 0/pause 500/showFrame Harvey 19/textAboveHead Harvey \"A little bit of this...\"/playSound dropItemInWater/pause 2000/stopAnimation Harvey/move Harvey -3 0 0/pause 1000/showFrame Harvey 19/playSound coin/pause 500/stopAnimation Harvey/move Harvey 3 0 0/pause 250/showFrame Harvey 19/pause 500/textAboveHead Harvey \"Some of this...\"/pause 600/playSound slosh/pause 2000/showFrame Harvey 53/pause 200/playSound sipTea/pause 2000/showFrame Harvey 4/jump Harvey/textAboveHead Harvey \"Presto!\"/pause 2000/warp farmer 27 30/playSound doorClose/move farmer 0 -1 0/pause 500/stopAnimation Harvey/faceDirection Harvey 2/speak Harvey \"Ah... You're right on time, @!$h#$b#Let me just set the table...\"/pause 300/fade/viewport -1000 -1000/pause 2000/playMusic none/pause 3000/makeInvisible 20 24 4 2/ambientLight 180 180 0/playMusic kindadumbautumn/showFrame Harvey 51/positionOffset Harvey -8 0/faceDirection farmer 1/showFrame 117/specificTemporarySprite harveyDinnerSet/pause 4000/speak Harvey \"You've been working so hard on the farm... I wanted to make you a special dinner.\"/emote farmer 32/speak Harvey \"It's my very own 'angel hair pasta primavera'... with clams!$h\"/animate Harvey false true 300 51 52/pause 300/playSound eat/pause 600/playSound eat/pause 600/playSound eat/pause 500/animate Harvey false true 100 51/quickQuestion #It tastes heavenly#It tastes healthy#It tastes watery#It tastes burnt#It tastes like actual hair#It tastes like fungus(break)speak Harvey \"Heavenly, huh? That must be the 'angel hair'!$h#$b#I'm glad you like it! You deserve the best.\"(break)speak Harvey \"Oh yes, I forgot to mention... it's 'whole wheat' pasta. And it's brimming with fresh vegetables.#$b#It's important that you eat healthy food! I want you to live forever...\"(break)speak Harvey \"Oh... I see. I knew I needed to add more salt.$s#$b#Well, at least you'll be well hydrated.$s\"(break)emote Harvey 28\\speak Harvey \"Oh... I thought I gave myself the burnt one.$s#$b#Um, I lost track of one the pans and it caught fire... Sorry, {{Lowercase:{{TermofEndearment}}}}.$s\"(break)jump Harvey\\pause 500\\speak Harvey \"Oh dear. I guess a piece of my moustache may have fallen into the pasta...$8#$b#Well! Extra fiber, right? Heh... Sorry, {{Lowercase:{{TermofEndearment}}}}.$7\"(break)jump Harvey\\pause 400\\speak Harvey \"Oh! Eh... Must've been the truffle oil I drizzled on top...$8#$b#You meant delicious, edible fungus... right, {{Lowercase:{{TermofEndearment}}}}? Of course... Heh.$7\"/pause 2000/animate Harvey false true 300 51 52/speak Harvey \"So, tell me about your day...\"/quickQuestion #I tended the farm#I dug around in the caves#I spent the day fishing#I socialized in town#I did a little of everything#I can't remember#I didn't do anything(break)speak Harvey \"Yes, I can still see the dirt in your hair! I really appreciate all the hard work you do, {{Lowercase:{{TermofEndearment}}}}.\"(break)speak Harvey \"That sounds dangerous... are you sure that's safe?$8#$b#I don't want to see you on the operating table anytime soon...$s#$b#Although I have to say, I admire how courageous you are...\"(break)speak Harvey \"A peaceful day by the water, huh? That sounds very relaxing.#$b#I'm glad you're having fun out there!$h\"(break)speak Harvey \"Ah, that's good. Having an active social life is healthy for the brain.#$b#But remember, I'm always here for you if you need someone to talk to!\"(break)speak Harvey \"That makes sense. There's lots to do in this valley! ...And I know how hard you work.#$b#Just remember to take breaks! When you're so busy, it's easy to get burnt out from exhaustion.\"(break)speak Harvey \"Ah... I have that problem, too. The boundary between days can blur together... it's hard to keep track of everything!\"(break)speak Harvey \"Took the day off, huh? I'm glad to hear it.#$b#Well, with a day off and a hearty dinner you'll be fully re-charged for tomorrow.\"/pause 1000/stopAnimation Harvey/showFrame Harvey 51/speak Harvey \"Whew... I'm stuffed! That was great...\"/emote farmer 20/pause 1000/playMusic nightTime/speak Harvey \"I'll take care of the dishes...\"/pause 400/emote farmer 60/pause 250/speak Harvey \"Don't feel bad... I like to do nice things for you! It makes me happy.\"/pause 1000/speak Harvey \"I know I say this a lot, but... becoming {{RelationshipLabel}} with you was the best thing that ever happened to me!$h\"/emote farmer 32/pause 1000/fade/viewport -100 -100/end dialogue Harvey \"That was filling. I'm gonna sleep well...\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "3917626/f Harvey 3500/O Harvey/t 2000 2400/p Harvey/L": "harveys_theme_jazz/-1000 -1000/farmer -100 -100 0 Harvey 22 24 0/skippable/ambientLight 0 0 0/makeInvisible 19 24 6 1/specificTemporarySprite harveyKitchenSetup/viewport 22 24 true/pause 3000/showFrame Harvey 19/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 750/showFrame Harvey 53/pause 100/playSound sipTea/pause 1000/textAboveHead Harvey \"Needs salt...\"/stopAnimation Harvey/pause 800/move Harvey -1 0 0/pause 2000/showFrame Harvey 19/playSound bubbles/pause 1000/playSound bubbles/pause 2000/stopAnimation Harvey/move Harvey 1 0 0/pause 2000/playSound furnace/specificTemporarySprite harveyKitchenFlame/pause 500/jump Harvey/pause 500/textAboveHead Harvey \"It's burning!\"/pause 500/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 100/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 3000/move Harvey 2 0 0/pause 500/showFrame Harvey 19/playSound openChest/pause 1000/textAboveHead Harvey \"Hmm...\"/pause 3000/stopAnimation Harvey/move Harvey -2 0 0/pause 500/showFrame Harvey 19/textAboveHead Harvey \"A little bit of this...\"/playSound dropItemInWater/pause 2000/stopAnimation Harvey/move Harvey -3 0 0/pause 1000/showFrame Harvey 19/playSound coin/pause 500/stopAnimation Harvey/move Harvey 3 0 0/pause 250/showFrame Harvey 19/pause 500/textAboveHead Harvey \"Some of this...\"/pause 600/playSound slosh/pause 2000/showFrame Harvey 53/pause 200/playSound sipTea/pause 2000/showFrame Harvey 4/jump Harvey/textAboveHead Harvey \"Presto!\"/pause 2000/warp farmer 27 30/playSound doorClose/move farmer 0 -1 0/pause 500/stopAnimation Harvey/faceDirection Harvey 2/speak Harvey \"Ah... You're right on time, @!$h#$b#Let me just set the table...\"/pause 300/fade/viewport -1000 -1000/pause 2000/playMusic none/pause 3000/makeInvisible 20 24 4 2/ambientLight 180 180 0/playMusic kindadumbautumn/showFrame Harvey 51/positionOffset Harvey -8 0/faceDirection farmer 1/showFrame 117/specificTemporarySprite harveyDinnerSet/pause 4000/speak Harvey \"You've been working so hard on the farm... I wanted to make you a special dinner.\"/emote farmer 32/speak Harvey \"It's my very own 'angel hair pasta primavera'... with clams!$h\"/animate Harvey false true 300 51 52/pause 300/playSound eat/pause 600/playSound eat/pause 600/playSound eat/pause 500/animate Harvey false true 100 51/quickQuestion #It tastes heavenly#It tastes healthy#It tastes watery#It tastes burnt#It tastes like actual hair#It tastes like fungus(break)speak Harvey \"Heavenly, huh? That must be the 'angel hair'!$h#$b#I'm glad you like it! You deserve the best.\"(break)speak Harvey \"Oh yes, I forgot to mention... it's 'whole wheat' pasta. And it's brimming with fresh vegetables.#$b#It's important that you eat healthy food! I want you to live forever...\"(break)speak Harvey \"Oh... I see. I knew I needed to add more salt.$s#$b#Well, at least you'll be well hydrated.$s\"(break)emote Harvey 28\\speak Harvey \"Oh... I thought I gave myself the burnt one.$s#$b#Um, I lost track of one the pans and it caught fire... Sorry, {{TermofEndearment}}}.$s\"(break)jump Harvey\\pause 500\\speak Harvey \"Oh dear. I guess a piece of my moustache may have fallen into the pasta...$8#$b#Well! Extra fiber, right? Heh... Sorry, {{TermofEndearment}}.$7\"(break)jump Harvey\\pause 400\\speak Harvey \"Oh! Eh... Must've been the truffle oil I drizzled on top...$8#$b#You meant delicious, edible fungus... right, {{TermofEndearment}}? Of course... Heh.$7\"/pause 2000/animate Harvey false true 300 51 52/speak Harvey \"So, tell me about your day...\"/quickQuestion #I tended the farm#I dug around in the caves#I spent the day fishing#I socialized in town#I did a little of everything#I can't remember#I didn't do anything(break)speak Harvey \"Yes, I can still see the dirt in your hair! I really appreciate all the hard work you do, {{TermofEndearment}}.\"(break)speak Harvey \"That sounds dangerous... are you sure that's safe?$8#$b#I don't want to see you on the operating table anytime soon...$s#$b#Although I have to say, I admire how courageous you are...\"(break)speak Harvey \"A peaceful day by the water, huh? That sounds very relaxing.#$b#I'm glad you're having fun out there!$h\"(break)speak Harvey \"Ah, that's good. Having an active social life is healthy for the brain.#$b#But remember, I'm always here for you if you need someone to talk to!\"(break)speak Harvey \"That makes sense. There's lots to do in this valley! ...And I know how hard you work.#$b#Just remember to take breaks! When you're so busy, it's easy to get burnt out from exhaustion.\"(break)speak Harvey \"Ah... I have that problem, too. The boundary between days can blur together... it's hard to keep track of everything!\"(break)speak Harvey \"Took the day off, huh? I'm glad to hear it.#$b#Well, with a day off and a hearty dinner you'll be fully re-charged for tomorrow.\"/pause 1000/stopAnimation Harvey/showFrame Harvey 51/speak Harvey \"Whew... I'm stuffed! That was great...\"/emote farmer 20/pause 1000/playMusic nightTime/speak Harvey \"I'll take care of the dishes...\"/pause 400/emote farmer 60/pause 250/speak Harvey \"Don't feel bad... I like to do nice things for you! It makes me happy.\"/pause 1000/speak Harvey \"I know I say this a lot, but... becoming {{RelationshipLabel}} with you was the best thing that ever happened to me!$h\"/emote farmer 32/pause 1000/fade/viewport -100 -100/end dialogue Harvey \"That was filling. I'm gonna sleep well...\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+	    "Logname": "Harvey no blush edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey",
+            "FromFile": "assets/Portraits/HarveyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.HarveyGusLewis": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        {
+	    "Logname": "Harvey no blush edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey_Winter",
+            "FromFile": "assets/Portraits/HarveyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.HarveyGusLewis": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Harvey no blush edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey",
+            "FromFile": "assets/Portraits/HarveyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        {
+	    "Logname": "Harvey no blush edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey_Winter",
+            "FromFile": "assets/Portraits/HarveyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        //COMPATIBILITY: STARDEW VALLEY EXPANDED
+        //This section uses (with FlashShifter's permission--thank you!) portions of the event string for SVE's version of Harvey's 10-heart event, which takes place in a different location. This prevents SVE's map changes from conflicting with the platonic event. 
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "harveyBalloon": "@,^I need to ask you for a favor. Could you meet in me Grampleton Fields, across Shearwater Bridge? ^   -Harvey[#]Harvey's Favor",
+            },
+            "When":
+            {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Railroad",
+            "Entries":
+            {
+                "528052/f Harvey 2500/t 900 1700/n harveyBalloon": null,
+                "afraid": null,
+            },
+            "When":
+            {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+                "528013/f Harvey 2500/t 600 1700/n harveyBalloon": "continue/-300 -300/Harvey -100 -100 0 farmer 90 72 1/skippable/viewport 90 72 true/viewport move 2 0 6000 true/move farmer 12 0 1 true/pause 3500/globalFade/viewport -1000 -1000/changeLocation Custom_ShearwaterBridge/warp farmer 20 21/viewport 20 21 true/viewport move 2 0 6000 true/move farmer 12 0 1 true/pause 3500/globalFade/viewport -1000 -1000/halt/changeLocation Custom_GrampletonFields_Small/playMusic playful/warp farmer 16 42/faceDirection farmer 1/warp Harvey 24 41/faceDirection Harvey 0/viewport 24 40 true/move farmer 8 0 0/pause 500/faceDirection Harvey 3 true/pause 200/faceDirection Harvey 2/pause 250/speak Harvey \"There you are... just in time!\"/faceDirection Harvey 0/jump Harvey/pause 800/speak Harvey \"Look, here it comes!$8\"/emote farmer 8/move Harvey -1 0 1/move farmer -2 0 0/move farmer 0 -1 1/addTemporaryActor Marcello 16 32 25 19 2 true/positionOffset Marcello 36 558/animate Marcello false true 400 16 17/specificTemporarySprite marcelloLand/null/pause 1000/stopAnimation Marcello/pause 500/message \"Marcello's Balloon Rentals at your service!\"/pause 1000/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/jump Marcello 12/move Marcello 0 3 3/move Marcello -2 0 0/faceDirection Harvey 2/faceDirection farmer 2/message \"Marcello: It's all yours for two hours.\"/faceDirection Marcello 3/faceDirection Marcello 3/message \"Marcello: Now... I was told there's a saloon back in town?\"/pause 600/globalFade/viewport -1000 -1000 true/warp Marcello -100 -100/viewport 24 40 true/faceDirection farmer 1/faceDirection Harvey 3/pause 500/speak Harvey \"I saw an ad in the paper for these balloon rides, and I realized this could be the perfect exposure therapy for my fear of heights.#$b#But I need a friend with me for moral support... and to land the balloon if I panic.$s#$b#If you're willing, I'd like that friend to be you. There's no one I trust more.$l\"/pause 800/emote farmer 32/pause 500/speak Harvey \"Okay... you first.\"/pause 400/move farmer 0 1 1/faceDirection Harvey 1/move farmer 3 0 0/move farmer 0 -1 0/jump farmer 14/move farmer 0 -1 2/move Harvey 0 1 1/move Harvey 3 0 0/move Harvey 0 -1 0/jump Harvey 14/move Harvey 0 -1 2/pause 1000/showFrame Harvey 29/pause 300/playSound openBox/pause 300/showFrame Harvey 0/pause 400/playSound furnace/playMusic none/cutscene balloonDepart/viewport move 0 -1 6000/pause 2000/showFrame Harvey 30/jump Harvey 5/shake Harvey 7000/pause 7000/globalFade/viewport -2000 -2000/playMusic 50s/pause 2000/cutscene clearTempSprites/changeToTemporaryMap HarveyBalloon/cutscene balloonChangeMap/viewport -2000 -2000/warp farmer 22 36/warp Harvey 22 36/positionOffset farmer 24 570/positionOffset Harvey 96 554/positionOffset farmer -8 -8/positionOffset Harvey -24 -8/showFrame Harvey 32/pause 1000/shake Harvey 19000/viewport 23 39 clamp true/viewport move 0 -1 17000/pause 18000/faceDirection farmer 1/showFrame Harvey 33/pause 1000/jump Harvey/showFrame Harvey 30/pause 800/showFrame Harvey 12/animate Harvey false true 100 12 13 14 15/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/stopAnimation Harvey/showFrame Harvey 31/positionOffset Harvey -4 0/playSound fishSlap/eyes 1 -2000/pause 2000/speak Harvey \"We... We're up so high... *gulp*$8\"/shake Harvey 2000/pause 800/speak Harvey \"I'm sorry to cling to you like this... I know that's why you're here, but I feel like a trembling coward.$7\"/emote Harvey 28/pause 500/speak Harvey \"Well, you've got more than enough courage to make up for me, @. That's... that's something I really admire about you.$11\"/pause 1000/speak Harvey \"Okay, I'm going to open my eyes and look down... don't let go of my hand.$8\"/pause 800/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 0/pause 30/positionOffset Harvey 4 0/pause 30/faceDirection farmer 2/showFrame Harvey 0/pause 500/showFrame Harvey 33/pause 500/shake Harvey 4000/pause 500/showFrame Harvey 30/pause 2000/showFrame Harvey 33/pause 3500/speak Harvey \"I... I think I can do it now.$8\"/specificTemporarySprite balloonBirds/faceDirection farmer 2/pause 3000/faceDirection Harvey 1/faceDirection farmer 1/emote farmer 16 true/emote Harvey 16/pause 4000/faceDirection farmer 0/faceDirection Harvey 2/pause 10000/speak Harvey \"Hey, this is incredible! I think I can see Mayor Lewis standing in the town square!$h\"/faceDirection farmer 2/pause 3000/speak Harvey \"Oh dear... our time's almost up.$s\"/pause 600/faceDirection farmer 1/playMusic none/pause 1500/speak Harvey \"The view from up here is as beautiful as I always imagined... \"/playMusic musicboxsong/pause 400/faceDirection Harvey 2/pause 500/faceDirection Harvey 3/speak Harvey \"@... You don't know what this means to me. Flying, even as a passenger, was a dream I'd given up on long ago...#$b#...but thanks to you, I finally got to experience it. I'll never forget this.$l\"/specificTemporarySprite balloonBirds 2/pause 1000/showFrame Harvey 31/pause 500/showFrame 101/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 -2/pause 30/positionOffset Harvey -1 -2/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/pause 4000/globalFade/viewport -1000 -1000/pause 3500/speak Harvey \"A perfect landing! It's good to be on solid ground.$h#$b#Thanks again, @. This was a good start for me... and it should get a little easier every time.\"/pause 2000/end dialogue Harvey \"I haven't had such a wonderful day for as long as I can remember.$l\"",
+                "afraid": null,
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+                "528013/f Harvey 2500/t 600 1700/n harveyBalloon": "continue/-300 -300/Harvey -100 -100 0 farmer 90 72 1/skippable/viewport 90 72 true/viewport move 2 0 6000 true/move farmer 12 0 1 true/pause 3500/globalFade/viewport -1000 -1000/changeLocation Custom_ShearwaterBridge/warp farmer 20 21/viewport 20 21 true/viewport move 2 0 6000 true/move farmer 12 0 1 true/pause 3500/globalFade/viewport -1000 -1000/halt/changeLocation Custom_GrampletonFields_Small/playMusic playful/warp farmer 16 42/faceDirection farmer 1/warp Harvey 24 41/faceDirection Harvey 0/viewport 24 40 true/move farmer 8 0 0/pause 500/faceDirection Harvey 3 true/pause 200/faceDirection Harvey 2/pause 250/speak Harvey \"There you are... just in time!\"/faceDirection Harvey 0/jump Harvey/pause 800/speak Harvey \"Look, here it comes!$8\"/emote farmer 8/move Harvey -1 0 1/move farmer -2 0 0/move farmer 0 -1 1/addTemporaryActor Marcello 16 32 25 19 2 true/positionOffset Marcello 36 558/animate Marcello false true 400 16 17/specificTemporarySprite marcelloLand/null/pause 1000/stopAnimation Marcello/pause 500/message \"Marcello's Balloon Rentals at your service!\"/pause 1000/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/jump Marcello 12/move Marcello 0 3 3/move Marcello -2 0 0/faceDirection Harvey 2/faceDirection farmer 2/message \"Marcello: It's all yours for two hours.\"/faceDirection Marcello 3/faceDirection Marcello 3/message \"Marcello: Now... I was told there's a saloon back in town?\"/pause 600/globalFade/viewport -1000 -1000 true/warp Marcello -100 -100/viewport 24 40 true/faceDirection farmer 1/faceDirection Harvey 3/pause 500/speak Harvey \"I saw an ad in the paper for these balloon rides, and I realized this could be the perfect exposure therapy for my fear of heights.#$b#But I need a friend with me for moral support... and to land the balloon if I panic.$s#$b#If you're willing, I'd like that friend to be you. There's no one I trust more.\"/pause 800/emote farmer 32/pause 500/speak Harvey \"Okay... you first.\"/pause 400/move farmer 0 1 1/faceDirection Harvey 1/move farmer 3 0 0/move farmer 0 -1 0/jump farmer 14/move farmer 0 -1 2/move Harvey 0 1 1/move Harvey 3 0 0/move Harvey 0 -1 0/jump Harvey 14/move Harvey 0 -1 2/pause 1000/showFrame Harvey 29/pause 300/playSound openBox/pause 300/showFrame Harvey 0/pause 400/playSound furnace/playMusic none/cutscene balloonDepart/viewport move 0 -1 6000/pause 2000/showFrame Harvey 30/jump Harvey 5/shake Harvey 7000/pause 7000/globalFade/viewport -2000 -2000/playMusic 50s/pause 2000/cutscene clearTempSprites/changeToTemporaryMap HarveyBalloon/cutscene balloonChangeMap/viewport -2000 -2000/warp farmer 22 36/warp Harvey 22 36/positionOffset farmer 24 570/positionOffset Harvey 96 554/positionOffset farmer -8 -8/positionOffset Harvey -24 -8/showFrame Harvey 32/pause 1000/shake Harvey 19000/viewport 23 39 clamp true/viewport move 0 -1 17000/pause 18000/faceDirection farmer 1/showFrame Harvey 33/pause 1000/jump Harvey/showFrame Harvey 30/pause 800/showFrame Harvey 12/animate Harvey false true 100 12 13 14 15/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/positionOffset Harvey -4 2/pause 30/stopAnimation Harvey/showFrame Harvey 31/positionOffset Harvey -4 0/playSound fishSlap/eyes 1 -2000/pause 2000/speak Harvey \"We... We're up so high... *gulp*$8\"/shake Harvey 2000/pause 800/speak Harvey \"I'm sorry to cling to you like this... I know that's why you're here, but I feel like a trembling coward.$7\"/emote Harvey 28/pause 500/speak Harvey \"Well, you've got more than enough courage to make up for me, @. That's... that's something I really admire about you.$11\"/pause 1000/speak Harvey \"Okay, I'm going to open my eyes and look down... don't let go of my hand.$8\"/pause 800/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 -2/pause 30/positionOffset Harvey 4 0/pause 30/positionOffset Harvey 4 0/pause 30/faceDirection farmer 2/showFrame Harvey 0/pause 500/showFrame Harvey 33/pause 500/shake Harvey 4000/pause 500/showFrame Harvey 30/pause 2000/showFrame Harvey 33/pause 3500/speak Harvey \"I... I think I can do it now.$8\"/specificTemporarySprite balloonBirds/faceDirection farmer 2/pause 3000/faceDirection Harvey 1/faceDirection farmer 1/emote farmer 16 true/emote Harvey 16/pause 4000/faceDirection farmer 0/faceDirection Harvey 2/pause 10000/speak Harvey \"Hey, this is incredible! I think I can see Mayor Lewis standing in the town square!$h\"/faceDirection farmer 2/pause 3000/speak Harvey \"Oh dear... our time's almost up.$s\"/pause 600/faceDirection farmer 1/playMusic none/pause 1500/speak Harvey \"The view from up here is as beautiful as I always imagined... \"/playMusic musicboxsong/pause 400/faceDirection Harvey 2/pause 500/faceDirection Harvey 3/speak Harvey \"@... You don't know what this means to me. Flying, even as a passenger, was a dream I'd given up on long ago...#$b#...but thanks to you, I finally got to experience it. I'll never forget this.\"/specificTemporarySprite balloonBirds 2/pause 1000/showFrame Harvey 31/pause 500/showFrame 101/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 -2/pause 30/positionOffset Harvey -1 -2/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/positionOffset Harvey -1 0/pause 30/pause 4000/globalFade/viewport -1000 -1000/pause 3500/speak Harvey \"A perfect landing! It's good to be on solid ground.$h#$b#Thanks again, @. This was a good start for me... and it should get a little easier every time.\"/pause 2000/end dialogue Harvey \"I haven't had such a wonderful day for as long as I can remember.$h\"",
+                "afraid": null,
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        //COMPATIBILITY: PLATONIC RELATIONSHIPS
+        //This section prevents the dating-flag-required version of the vanilla 10 heart mail added by Platonic Relationships from triggering. Thanks to Cherry for providing the event codes!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "2346093/f Harvey 2502/x harveyBalloon": "null",
+                "2346093/f Harvey 2502/D Harvey/x harveyBalloon": null
+            },
+            "When":
+            {
+                "HasMod |contains=Cherry.PlatonicRelationships": "true"
+            },
+        },
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "Thu10": "It's a lot of work, being a doctor. I don't eat as well as I should.$s#$e#If I didn't live alone I think it would be easier.$s",
+                "summer_Thu10": "I wasn't sure if I would ever make any meaningful friendships here.#$e#But then, out of everywhere in the world, you moved to Stardew Valley... It's enough to make even someone like me feel a sense of destiny about it.$l",
+                "summer_Fri10": "I went into this profession anticipating that it might be dehumanizing.#$e#What I've found has been quite the opposite.",
+                "fall_Sat10": "What, me and Maru? No, of course not.$8#$e#I'm... I'm very fond of her, but she's my employee. I would never want to make her feel pressured.$s",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "Thu10": "It's a lot of work, being a doctor. I don't eat as well as I should.$s#$e#If I didn't live alone I think it would be easier.$s",
+                "summer_Thu10": "I wasn't sure if I would ever make any meaningful friendships here.#$e#But then, out of everywhere in the world, you moved to Stardew Valley... It's enough to make even someone like me feel a sense of destiny about it.",
+                "summer_Fri10": "I went into this profession anticipating that it might be dehumanizing.#$e#What I've found has been quite the opposite.",
+                "fall_Sat10": "What, me and Maru? No, of course not.$8#$e#I'm... I'm very fond of her, but she's my employee. I would never want to make her feel pressured.$s",
+                "Tue10": "Don't overwork yourself, @. Doctor's orders!#$e#Your health is important to me.",
+                "winter_Sat10": "*Sigh*... I'm starting to feel kind of old...#$e#The older you get the more memories you're burdened with. It can be overwhelming.$s#$e#I think I'll stay younger with you around.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "Good_2": "I was drawn to you from the moment you moved here. Intimidated, too... but somehow I knew that being part of your life would enrich mine.$l",
+                "Good_3": "You look hale and healthy today! I'm glad.$l",
+                "Good_0": "@...I still can't believe we're {{RelationshipLabel}}...$l",
+                "Rainy_Night_4": "#$c .5#I'll never forget how you helped me through those first terrifying minutes of our balloon ride.$l#I took it easy today... spent some time reading books, fiddled with my radio, and worked on a model airplane. Not a bad day at all!",
+                "Indoor_Day_0": "I think we're all striving to reach some kind of balance in life. An equilibrium of complexity.#$e#$c .5#For one thing, just taking the walk into work helps me a lot. I got so lazy when I just had to roll out of bed and head downstairs.#For me, moving here was exactly what I needed to find that balance.$l",
+                "Outdoor_2": "#$c .5#I may not be the most exciting guy, but I'll be a loyal friend to you for the rest of my life.$l#This is perfect. The sun's not too bright yet, and I don't even need my sunglasses.",
+                "Outdoor_3": "#$c .5#Would I get mornings like this, living just about anywhere else? ...I don't think so.$h#@... you mean the world to me.$l",
+                "TwoKids_3": "My life is devoted to you and the children now, and I'm very happy about it. I always dreamed of having a wonderful family.$l#$e#You know, @... Before we met, I thought being a bachelor was the reason I felt lonely and unfulfilled.$s#$e#But since we've been {{RelationshipLabel}}, there's no doubt in my mind... What we have together is exactly what I need. I love you so much.$l",
+                "funReturn_Harvey": "#$c .5#Oh! Good timing. I just got home, too. How was your day?#I had a nice day. It's refreshing to spend some time alone now and then. Did you have a good day, @?",
+                "spring_25": "Seeing you dash around with all that energy has actually motivated me to go for jogs more than I used to.#$e#No more dance aerobics, though. I just felt too self-conscious exercising in front of my patients.$s",
+                "summer_17": "@, of course, I don't demand that you have the exact same moral philosophy that I do.$h#$b#You love me, and I love you, and that's all I need from you.$l",
+                "Rainy_Day_2": "#$c .5#I woke up early, but I made sure not to wake you. You need your rest!#Ohh... I know if I offer you a raincoat, you'll just say no, won't you?$s",
+                "spring_23": "W...Will you dance with me at the festival tomorrow?$s#$e#It's always a little embarrassing.$7",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "Good_2": "I was drawn to you from the moment you moved here. Intimidated, too... but somehow I knew that being part of your life would enrich mine.",
+                "Good_3": "You look hale and healthy today! I'm glad.$h",
+                "Good_0": "@...I still can't believe we're {{RelationshipLabel}}...$h",
+                "Good_1": "You rescued me from a life of loneliness, and filled the emptiness in my heart. Thank you.",
+                "Rainy_Night_4": "#$c .5#I'll never forget how you helped me through those first terrifying minutes of our balloon ride.#I took it easy today... spent some time reading books, fiddled with my radio, and worked on a model airplane. Not a bad day at all!",
+                "Indoor_Day_0": "I think we're all striving to reach some kind of balance in life. An equilibrium of complexity.#$e#$c .5#For one thing, just taking the walk into work helps me a lot. I got so lazy when I just had to roll out of bed and head downstairs.#For me, moving here was exactly what I needed to find that balance.",
+                "Outdoor_2": "#$c .5#I may not be the most exciting guy, but I'll be a loyal friend to you for the rest of my life.#This is perfect. The sun's not too bright yet, and I don't even need my sunglasses.",
+                "Outdoor_3": "#$c .5#Would I get mornings like this, living just about anywhere else? ...I don't think so.$h#@... you mean the world to me.",
+                "TwoKids_3": "My life is devoted to you and the children now, and I'm very happy about it. I always dreamed of having a wonderful family.#$e#You know, @... Before we met, I thought being a bachelor was the reason I felt lonely and unfulfilled.$s#$e#But since we've been {{RelationshipLabel}}, there's no doubt in my mind... What we have together is exactly what I need. I love you so much.",
+                "funReturn_Harvey": "#$c .5#Oh! Good timing. I just got home, too. How was your day?#I had a nice day. It's refreshing to spend some time alone now and then. Did you have a good day, @?",
+                "spring_25": "Seeing you dash around with all that energy has actually motivated me to go for jogs more than I used to.#$e#No more dance aerobics, though. I just felt too self-conscious exercising in front of my patients.$s",
+                "summer_17": "@, of course, I don't demand that you have the exact same moral philosophy that I do.$h#$b#You love me, and I love you, and that's all I need from you.",
+                "summer_4": "The weather reports are already saying next week's going to be hotter, even if it rains. Be careful out there!#$e#Oh, I trust you'll be fine. Just... allow me this?",
+                "fall_4": "I have an oath not to share medical records with anyone. And yes, that even means you.#$e#Well, at least you know I'm good at keeping promises.$h#$b#And of course, I have a lifelong promise to keep to you.",
+                "winter_16": "When you opened that letter from your grandfather... you know, the one you told me about?#$b#It's strange to think how I didn't even know you then, but that moment changed the direction of my life forever.#$e#It makes you think... what else is going on in the world right now, that we don't know about, but will change our lives forever?",
+                "Rainy_Day_2": "#$c .5#I woke up early, but I made sure not to wake you. You need your rest!#Ohh... I know if I offer you a raincoat, you'll just say no, won't you?$s",
+                "spring_23": "W...Will you dance with me at the festival tomorrow?$s#$e#It's always a little embarrassing.$7",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "summer_1": "Make sure you don't get sunburnt, {{Lowercase:{{TermofEndearment}}}}! It's very dangerous for your skin.$8#$e#As your doctor and friend, I consider your health and safety my top priority!",
+                "fall_1": "Make sure and diversify your harvests this fall, {{Lowercase:{{TermofEndearment}}}}.#$e#Or just grow cranberries... It's really up to you. What do I know?",
+                "Rainy_Night_4": "I made us a nice healthy dinner. Only fresh, wholesome ingredients from the valley! [212 214 225 209 200]$h#$e#Enjoy, {{Lowercase:{{TermofEndearment}}}}.",
+                "Rainy_Night_0": "#$c .5#Just a little secret, but... I had a couple pieces of candy this evening. Everything in moderation, including moderation, right?$h#How was your day, {{Lowercase:{{TermofEndearment}}}}? I was going to do the dishes but I got absorbed in the latest issue of \"Knee Surgery Enthusiast\".",
+                "Indoor_Night_1": "I made us a nice healthy dinner. Only fresh, wholesome ingredients from the valley! [212 214 225 209 200]$h#$e#This is one of my favorites. Enjoy!",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "summer_1": "Make sure you don't get sunburnt, {{TermofEndearment}}! It's very dangerous for your skin.$8#$e#As your doctor and friend, I consider your health and safety my top priority!",
+                "fall_1": "Make sure and diversify your harvests this fall, {{TermofEndearment}}.#$e#Or just grow cranberries... It's really up to you. What do I know?",
+                "Rainy_Night_4": "I made us a nice healthy dinner. Only fresh, wholesome ingredients from the valley! [212 214 225 209 200]$h#$e#Enjoy, {{TermofEndearment}}.",
+                "Rainy_Night_0": "#$c .5#Just a little secret, but... I had a couple pieces of candy this evening. Everything in moderation, including moderation, right?$h#How was your day, {{TermofEndearment}}? I was going to do the dishes but I got absorbed in the latest issue of \"Knee Surgery Enthusiast\".",
+                "Indoor_Night_1": "I made us a nice healthy dinner. Only fresh, wholesome ingredients from the valley! [212 214 225 209 200]$h#$e#This is one of my favorites. Enjoy!",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+	    "Logname": "Harvey dialogue, aro yes, ace no, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries":
+            {
+                "Rainy_Night_2": "#$c .5#You look a little soggy, @. Why don't you warm yourself by the fire?#Hey... Let's go to bed early...$l",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Harvey
+	        "LogName": "KO Mines- Harvey",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Harvey 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Harvey \"Good! @, can you tell me where we are? How many fingers am I holding up?\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Harvey \"Sorry. My mind immediately goes into medicine-mode when I see you get hurt. You look alright, however.$2#$b#That's a relief. As a clinician, sometimes I get a gut feeling that something is wrong, and usually, the gut feeling is right.#$b#That's what led me to believe that you were in trouble.\"/pause 1000/speak Marlon \"Harvey came to get me as soon as possible. I ventured into the mines to find you as requested.#$b#He was quite worried about you. You're blessed to have ended up sharing your life with someone so compassionate.\"/emote Harvey 16/pause 500/speak Harvey \"Well, compassion comes simply with being @'s {{PlatonicSocialMenuLabel}}, as well as with the oath I took as a physician. It's nothing remarkable.$8\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I observed. You did well to fetch me.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Harvey \"Let's go. Marlon beat me to it, but I also think you should rest.$2#$b#Maybe I should come with you whenever you're in dangerous places, just as a safeguard.#$b#... No, I know that's not right. I know that my place in this life is neither sky high, nor deep underground.#$b#Although... I'd never have to worry about heights if I went down there...$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Harvey \"{{TermofEndearment}}, I'm glad to see you doing well. My day wasn't nearly as eventful as yours, unfortunately. Or... fortunately?$c 0.7#I'll prepare you a warm cinnamon and clove infusion while you clean up. Clove is a natural painkiller, you know!$1#Oh, I also prepared a snack for you. You should have something light to let your body start the mending process.[210 215 223 228 232 243 403 406 613 618 636 651]\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Harvey",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {        //Hospital death- Harvey
+            "LogName": "Player 'Killed'- Harvey lowercase",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 9 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Are you awake in there...?\"/viewport 20 12 true/pause 1000/speak Harvey \"I'm coming in for your checkup, {{Lowercase:{{TermofEndearment}}}}.\"/move Harvey 1 0 2/move Harvey 0 3 3/faceDirection farmer 1/textAboveHead Harvey \"My goodness, look at you...\"/move Harvey -1 0 3/pause 1500/speak Harvey \"Ahem... Well, all seems in order. When you were first brought here, you were badly injured and unconscious. I had to take you in for emergency surgery.\"/emote farmer 16/pause 500/speak Harvey \"I was terrified, to tell you the truth. To have your life in my hands, not knowing if I'd be able to save it...$2#$b#It was one of the most stressful moments of my career.$2\"/emote Harvey 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Alright. Let's be positive about this. You pulled through, just like I knew you would.$1\"/pause 500/speak Harvey \"Just please be more careful in the future. I don't think I can ever see you like that again.$2\"/pause 500/move Harvey 1 0 0/move Harvey 0 -4 0/pause 500/faceDirection Harvey 3/speak Harvey \"@ is fine... So why am I still shaking like this...?$s\"/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Harvey \"Don't overexert yourself today, {{Lowercase:{{TermofEndearment}}}}. You're still recovering from both your injuries and the surgery.$2#$c 0.7#You'll tell me if there's something you need, right?$2#Here, take this. I just read a study that said it's proven to shorten surgical recovery times. [237 241 203 204 220 244 272]\"",
+            },
+            "When": {
+                "Merge: {{Roommate}}, {{Spouse}}": "Harvey",
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+		"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+    {        //Hospital death- Harvey
+            "LogName": "Player 'Killed'- Harvey capital",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 9 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Are you awake in there...?\"/viewport 20 12 true/pause 1000/speak Harvey \"I'm coming in for your checkup, {{TermofEndearment}}.\"/move Harvey 1 0 2/move Harvey 0 3 3/faceDirection farmer 1/textAboveHead Harvey \"My goodness, look at you...\"/move Harvey -1 0 3/pause 1500/speak Harvey \"Ahem... Well, all seems in order. When you were first brought here, you were badly injured and unconscious. I had to take you in for emergency surgery.\"/emote farmer 16/pause 500/speak Harvey \"I was terrified, to tell you the truth. To have your life in my hands, not knowing if I'd be able to save it...$2#$b#It was one of the most stressful moments of my career.$2\"/emote Harvey 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Alright. Let's be positive about this. You pulled through, just like I knew you would.$1\"/pause 500/speak Harvey \"Just please be more careful in the future. I don't think I can ever see you like that again.$2\"/pause 500/move Harvey 1 0 0/move Harvey 0 -4 0/pause 500/faceDirection Harvey 3/speak Harvey \"@ is fine... So why am I still shaking like this...?$s\"/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Harvey \"Don't overexert yourself today, {{TermofEndearment}}. You're still recovering from both your injuries and the surgery.$2#$c 0.7#You'll tell me if there's something you need, right?$2#Here, take this. I just read a study that said it's proven to shorten surgical recovery times. [237 241 203 204 220 244 272]\"",
+            },
+            "When": {
+                "Merge: {{Roommate}}, {{Spouse}}": "Harvey",
+		"TermofEndearment": "@, BFF",
+		"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+    {        
+            "LogName": "Post surgery bill when partnered to Harvey",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+		"Event.cs.1068": "Harvey was obligated to charge me {0}g for the hospital visit. ",
+		"Event.cs.1070": "I have no money, so Harvey saved my life free of charge.",            
+   },
+            "When": {
+                "Merge: {{Roommate}}, {{Spouse}}": "Harvey",
+		"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+    {       //Ex Event- Harvey
+            "LogName": "Player 'Killed'- Ex-partner Harvey",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 1000/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"I know you might not want to hear it from me, @, but... I'm glad you're okay.#$b#I say this not just as your doctor, but also as... as someone you once called a friend.$2\"/move Harvey 1 0 1/pause 1000/speak Harvey \"...Never mind. Above all, I am a professional.#$b#As Harvey, I still have trouble looking you in the eye. But as your doctor, it's my duty to treat you, and I hope you never doubt how seriously I take that responsibility.$2#$b#...Anyway. You're cleared to return home, if you want. Take care, @.$2\"/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -3 0/warp Harvey -100 -100/pause 500/message \"I'd better return home and rest...\"/emote farmer 28/hospitaldeath/end dialogue Harvey \"I took an oath as a physician to treat my patients regardless of who they are and what they've done.#$b#Wherever we find ourselves in the future, @... I hope you know that my personal feelings will never get in the way of the care I provide.$2\"",
+            },
+                "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Harvey": "Divorced",
+            }
+         },
+     {       //Island death before Leo
+	        "LogName": "Island Death Harvey",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Harvey \"{{TermofEndearment}}, what happened to you? You're covered in soot and burns, goodness!$8#$b#Hold on, let me get a washcloth and some supplies so we can clean you up.$8#$b#... Oh, you're alright? I suppose it does look worse than it actually is...$2#$b#Sorry. I had a knee-jerk reaction. I'm glad you're okay.\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Harvey",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     }, 
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo, Harvey",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Harvey \"{{TermofEndearment}}, what happened to you? You're covered in soot and burns, goodness!$8#$b#Hold on, let me get a washcloth and some supplies so we can clean you up.$8#$b#... Oh, you're alright? I suppose it does look worse than it actually is...$2#$b#Sorry. I had a knee-jerk reaction. I'm glad you're okay.\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Harvey",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Harvey",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Harvey \"{{TermofEndearment}}, what happened to you? You're covered in soot and burns, goodness!$8#$b#Hold on, let me get a washcloth and some supplies so we can clean you up.$8#$b#... Oh, you're alright? I suppose it does look worse than it actually is...$2#$b#Sorry. I had a knee-jerk reaction. I'm glad you're okay.\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Harvey",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueHarvey",
+		"Entries": {	
+			"winter_15": "{{TermofEndearment}}, I think I'll head down to the Night Market tonight.#$e#Would you like to come? I've never gone with someone before.$h"
+		},
+            "When": {
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Harvey",
+		"Entries": {
+			"marriage_saloon3": "Even though I'm the local doctor, I don't have many friends, do I?$s#$b#Maybe it's just hard to be friends with someone who knows everything about your health.$s#$b#But you... you never hesitated to talk to me. I'm really grateful for that.$l",
+			"marriage_saloon6": "@, you're soaked!$8#$b#Come sit with me and warm up.",
+			"marriage_clinic4": "@, it's nice of you to pay me a visit at work!$h#$b#Your company is greatly appreciated.$l",
+			"marriage_saloon": "Hi, @! I come here to relax when it rains.#$b#So, how was your day? Hope you stayed dry.$h",
+			"marriage_radio2": "I thought I just heard something...$10#$b#Oh, it's you! Hi, @!$h",
+			"marriage_clinic": "Aside from their yearly appointments, people barely come in here. I don't think anyone would would notice if I took the day off.#$b#Still, Mayor Lewis is using our tax money on this clinic so it's my duty to be here regardless.#$b#That's just the life of a doctor.$h",
+            },
+            "When": {
+                "UseLovePortraits": "true",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Harvey",
+		"Entries": {
+			"marriage_saloon3": "Even though I'm the local doctor, I don't have many friends, do I?$s#$b#Maybe it's just hard to be friends with someone who knows everything about your health.$s#$b#But you... you never hesitated to talk to me. I'm really grateful for that.",
+			"marriage_saloon6": "@, you're soaked!$8#$b#Come sit with me and warm up.",
+			"marriage_clinic4": "@, it's nice of you to pay me a visit at work!$h#$b#Your company is greatly appreciated.",
+			"marriage_saloon": "Hi, @! I come here to relax when it rains.#$b#So, how was your day? Hope you stayed dry.$h",
+			"marriage_radio2": "I thought I just heard something...$10#$b#Oh, it's you! Hi, @!$h",
+			"marriage_clinic": "Aside from their yearly appointments, people barely come in here. I don't think anyone would would notice if I took the day off.#$b#Still, Mayor Lewis is using our tax money on this clinic so it's my duty to be here regardless.#$b#That's just the life of a doctor.$h",
+			"marriage_read4": "My throat's parched, I need a drink.#$b#Want to go down to the saloon together?$h",
+			"marriage_nm": "My favorite part of the Night Market?#$b#Well of course, it's the free coffee!$h#$b#Well... it was the free coffee. Now it's spending time with you.",
+			"marriage_16": "So many visitors, I hope no one gets sick...$8#$b#Uh... I-I'd like to head in with you if that's okay. I don't know where to go.$s",
+			"marriage_25": "I was planning to help set up, but it looks like they're already done.$s#$b#When you're ready, I'll go in with you."
+            },
+            "When": {
+                "UseLovePortraits": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Harvey",
+		"Entries": {
+			"marriage_read3": "I'm gonna finish this chapter before it gets too dark to see.#$b#I'll see you back home soon, {{Lowercase:{{TermofEndearment}}}}.",
+			"marriage_saloon5": "Be careful working in the rain, {{Lowercase:{{TermofEndearment}}}}. Especially now when it's dark outside.#$b#Hey, Doctor's orders! I don't want to see you slip and hurt yourself.$h",
+			"marriage_13": "In my old apartment I could peek out my window and see where they were hiding all the eggs.#$b#I know most of the reused hiding spots by now.#$b#I'm sorry, {{Lowercase:{{TermofEndearment}}}}, but if I tell you then I have to tell everyone else.$h",
+            },
+            "When": {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Harvey",
+		"Entries": {
+			"marriage_read3": "I'm gonna finish this chapter before it gets too dark to see.#$b#I'll see you back home soon, {{TermofEndearment}}.",
+			"marriage_saloon5": "Be careful working in the rain, {{TermofEndearment}}. Especially now when it's dark outside.#$b#Hey, Doctor's orders! I don't want to see you slip and hurt yourself.$h",
+			"marriage_13": "In my old apartment I could peek out my window and see where they were hiding all the eggs.#$b#I know most of the reused hiding spots by now.#$b#I'm sorry, {{TermofEndearment}}, but if I tell you then I have to tell everyone else.$h",
+            },
+            "When": {
+              	"TermofEndearment": "@, BFF",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname": "Harvey PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "summer_Tue8_inlaw_Harvey":"Oh, hey.$0#$e#How's life with Harvey coming along?$1",
+            "winter_Mon10_inlaw_Harvey":"Oh, hey.$0#$e#How's life with Harvey coming along?$1",
+            "summer_Tue8_roommate_Harvey":"Oh, hey.$0#$e#How's life with Harvey coming along?$1",
+            "winter_Mon10_roommate_Harvey":"Oh, hey.$0#$e#How's life with Harvey coming along?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sam",
+	"Entries": {
+            "summer_Mon8_inlaw_Harvey":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Harvey":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "summer_Mon8_roommate_Harvey":"Hey, @. How's life with Harvey?$0#$b#You should get him to learn an instrument so I can come over and jam with you two.$1",
+            "fall_Sat8_roommate_Harvey":"Hey, @. How's life with Harvey?$0#$b#You should get him to learn an instrument so I can come over and jam with you two.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Thu8_inlaw_Harvey":"Harvey has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_inlaw_Harvey":"I clearly see you and Harvey were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_inlaw_Harvey":"Harvey has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_inlaw_Harvey":"I clearly see you and Harvey were made to be {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Harvey":"Harvey has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_roommate_Harvey":"I clearly see you and Harvey were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_roommate_Harvey":"Harvey has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_roommate_Harvey":"I clearly see you and Harvey were made to be {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Haley",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Haley",
+	"Entries": {
+            "summer_Sat8_inlaw_Harvey":"I'm so happy for you and Harvey.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_inlaw_Harvey":"I'm so happy for you and Harvey.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "summer_Sat8_roommate_Harvey":"I'm so happy for you and Harvey.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_roommate_Harvey":"I'm so happy for you and Harvey.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Maru",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Maru",
+	"Entries": {
+            "spring_Sun8_inlaw_Harvey":"Harvey used to seem so lonely. I'm glad you two ended up as {{RelationshipLabel}}!$1",
+            "summer_Mon8_inlaw_Harvey": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Harvey will have any problems with that.$1",
+            "fall_Sat8_inlaw_Harvey":"Harvey used to seem so lonely. I'm glad you two ended up as {{RelationshipLabel}}!$1",
+            "winter_Thu8_inlaw_Harvey": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Harvey will have any problems with that.$1",
+            "spring_Sun8_roommate_Harvey":"Harvey used to seem so lonely. I'm glad you two ended up as {{RelationshipLabel}}!$1",
+            "summer_Mon8_roommate_Harvey": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Harvey will have any problems with that.$1",
+            "fall_Sat8_roommate_Harvey":"Harvey used to seem so lonely. I'm glad you two ended up as {{RelationshipLabel}}!$1",
+            "winter_Thu8_roommate_Harvey": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Harvey will have any problems with that.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Harvey":"Hello, @.$0#$e#You and Harvey are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Harvey":"Hello, @.$0#$e#You and Harvey are such cute {{RelationshipLabel}}.$1",
+            "spring_Mon8_roommate_Harvey":"Hello, @.$0#$e#You and Harvey are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Harvey":"Hello, @.$0#$e#You and Harvey are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Caroline",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Caroline",
+	"Entries": {
+            "spring_Tue8_inlaw_Harvey": "The best love, and I don't just mean romantic love, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Harvey make great {{RelationshipLabel}}.$1",
+            "fall_Fri8_inlaw_Harvey": "The best love, and I don't just mean romantic love, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Harvey make great {{RelationshipLabel}}.$1",
+            "spring_Tue8_roommate_Harvey": "The best love, and I don't just mean romantic love, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Harvey make great {{RelationshipLabel}}.$1",
+            "fall_Fri8_roommate_Harvey": "The best love, and I don't just mean romantic love, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Harvey make great {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Harvey":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Harvey as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Harvey":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Harvey as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Harvey":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Harvey as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Harvey":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Harvey as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Harvey":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Harvey will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Harvey":"A true lifelong friendship, like you have with Harvey, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Harvey":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Harvey will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Harvey":"A true lifelong friendship, like you have with Harvey, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Harvey":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Harvey will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Harvey":"A true lifelong friendship, like you have with Harvey, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Harvey":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Harvey will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Harvey":"A true lifelong friendship, like you have with Harvey, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Harvey":"If you and Harvey want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Harvey":"If you and Harvey want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Harvey":"If you and Harvey want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Harvey":"If you and Harvey want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Harvey":"If you and Harvey want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Harvey":"If you and Harvey want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Harvey":"If you and Harvey want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Harvey":"If you and Harvey want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Harvey":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Harvey":"So are you and Mister Harvey like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Harvey":"Hello, Farmer @.$0#$b#Why can't you and Mister Harvey celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Harvey":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Harvey":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Harvey":"So are you and Mister Harvey like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Harvey":"Hello, Farmer @.$0#$b#Don't you think you and Mister Harvey should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Harvey":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Lewis",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Harvey":"There aren't many {{RelationshipLabel}} like you and Harvey here in Pelican Town.$0#$e#It's always nice to see people find their chosen family.$1",
+            "summer_Sun10_inlaw_Harvey":"There aren't many {{RelationshipLabel}} like you and Harvey here in Pelican Town.$0#$e#It's always nice to see people find their chosen family.$1",
+            "fall_Sat10_inlaw_Harvey":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Harvey":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Harvey":"There aren't many {{RelationshipLabel}} like you and Harvey here in Pelican Town.$0#$e#It's always nice to see people find their chosen family.$1",
+            "summer_Sun10_roommate_Harvey":"There aren't many {{RelationshipLabel}} like you and Harvey here in Pelican Town.$0#$e#It's always nice to see people find their chosen family.$1",
+            "fall_Sat10_roommate_Harvey":"I know you and Harvey chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Harvey":"I know you and Harvey chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Harvey":"Hello, @.$0#$e#I wish you and Harvey a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Harvey":"May Yoba grant you and Harvey a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Harvey":"Hello, @.$0#$e#I wish you and Harvey a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Harvey":"May Yoba grant you and Harvey a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Harvey":"Hello, @.$0#$e#I wish you and Harvey a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Harvey":"May Yoba grant you and Harvey a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Harvey":"Hello, @.$0#$e#I wish you and Harvey a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Harvey":"May Yoba grant you and Harvey a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Harvey PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Harvey":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Harvey":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Harvey":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Harvey":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },   
+{
+	"Logname": "Harvey PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Harvey":"You and Harvey remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Harvey":"You and Harvey remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Harvey":"You and Harvey remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Harvey":"You and Harvey remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },    
+{
+	"Logname": "Harvey PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Harvey":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Harvey.$1",
+            "summer_Wed10_inlaw_Harvey":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_inlaw_Harvey":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Harvey.$1",
+            "winter_Sun10_inlaw_Harvey":"It's so cool how you're {{RelationshipLabel}} with Mister Harvey.$1#$e#I never thought that would have happened!$0",
+            "spring_Tue10_roommate_Harvey":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Harvey.$1",
+            "summer_Wed10_roommate_Harvey":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_roommate_Harvey":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Harvey.$1",
+            "winter_Sun10_roommate_Harvey":"It's so cool how you're {{RelationshipLabel}} with Mister Harvey.$1#$e#I never thought that would have happened!$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

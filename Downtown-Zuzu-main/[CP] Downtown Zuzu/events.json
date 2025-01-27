@@ -1,0 +1,112 @@
+{
+  "Changes": [
+    // plane events start here
+    {
+      "Action": "Load",
+      "Target": "Characters/zuzuPlane",
+      "FromFile": "events/Plane.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_PlaneSky",
+      "FromFile": "events/PlaneSkyEvent.json"
+
+    },
+    /* festival files */
+
+    // zuzu block party
+    {
+      "LogName": "Loading Zuzu Block Party data...",
+      "Action": "Load",
+      "Target": "Data/Festivals/spring9",
+      "FromFile": "events/Festivals/ZuzuBlockParty.json"
+    },
+    {
+      "LogName": "Adding Zuzu Block Party date...",
+      "Action": "EditData",
+      "Target": "Data/Festivals/FestivalDates",
+      "Entries": {
+        "spring9": "Zuzu Block Party"
+      }
+    },
+    {
+      "LogName": "Adding Token Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring9",
+      "Entries": {
+        "DTZ.DowntownZuzuCP_Callum": "Hey, @. I'm just helping out David with the food!$h",
+        "DTZ.DowntownZuzuCP_Callum_spouse": "Hey, @! How are you?$h#$b#I hope you're enjoying the festival!$l#$b#Oh, I'm just helping David with the burgers.$h",
+        "DTZ.DowntownZuzuCP_David_spouse": "Hey darling. How are you? Hope you're enjoying the festival.$h#$b#Don't the burgers smell delicious?$l"
+      }
+    },
+    //Custom_DTZ_JojaMini events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_JojaMini",
+      "FromFile": "events/Custom_DTZ_JojaMini.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/calBoss",
+      "FromFile": "events/calBoss.png"
+    },
+    //Custom_DTZ_ZuzuCityOasis1 events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_ZuzuCityOasis1",
+      "FromFile": "events/Custom_DTZ_ZuzuCityOasis1.json"
+    },
+    //Custom_DTZ_Apartment1a events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_Apartment1a",
+      "FromFile": "events/Custom_DTZ_Apartment1a.json"
+    },
+    //Custom_DTZ_JojaHQ events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_JojaHQ",
+      "FromFile": "events/Custom_DTZ_JojaHQ.json"
+    },
+    //Custom_DTZ_Forest2 events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_Forest2",
+      "FromFile": "events/Custom_DTZ_Forest2.json"
+    },
+    //Custom_DTZ_SancInt events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_SancInt",
+      "FromFile": "events/Custom_DTZ_SancInt.json"
+    },
+    //Custom_DTZ_SancInt events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_ZuzuCity1",
+      "FromFile": "events/Custom_DTZ_ZuzuCity1.json"
+    },
+    //Custom_DTZ_JojaCEO events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_JojaCEO",
+      "FromFile": "events/Custom_DTZ_JojaCEO.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/JojaSecurity1",
+      "FromFile": "events/JojaSecurity1.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/JojaSecurity2",
+      "FromFile": "events/JojaSecurity2.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_JojaCEOScattered",
+      "FromFile": "events/Custom_DTZ_JojaCEOScattered.json"
+    }
+
+  ]
+}

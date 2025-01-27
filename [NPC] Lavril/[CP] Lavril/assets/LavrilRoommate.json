@@ -1,0 +1,61 @@
+{
+    "Changes": [
+      {
+        "Action": "EditData",
+        "Target": "Data/ObjectContextTags",
+        "TextOperations": [
+          // Adding roommate proposal code to golden pumpkin as placeholder
+          {
+            "Operation": "Append",
+            "Target": [
+              "Entries",
+              "Golden Pumpkin"
+            ],
+            "Value": "propose_roommate_lavril",
+            "Delimiter": ", ",
+            "When": {
+              "HasSeenEvent |contains=63078002": "true"
+            }
+          }
+        ]
+      },
+
+       {
+            "LogName": "Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+        "Entries": {
+          "LavrilRoommate0": "I... I always wanted a dad.$4^I... I always wanted a mom.$4#$b#Umm... I, uh, I mean--!$13#$b#Ahahaha, I'm going to go crawl into a hole for the next few days. Ahhh, this is so embarrassing.$17#$b#What I want to say is... Thank you, @.$19",
+          "LavrilRoommate1": "We need to do some housekeeping before we go. Make sure everything's alright at home...$10#$b#Before coming home-home, you know?$12"
+        }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "Lavril_EngagedRoommate": "I... I always wanted a dad.$4^I... I always wanted a mom.$4#$b#Umm... I, uh, I mean--!$13#$b#Ahahaha, I'm going to go crawl into a hole for the next few days. Ahhh, this is so embarrassing.$17#$b#What I want to say is... Thank you, @.$19"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Characters/Lavril",
+            "Entries": {
+                "MovieInvite_NoTheater": "Umm... No thanks. We just want to lay in bed all day.$u"
+            }
+        },
+        //Roommate Room
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Lavril": "Arknir27_Lavril_SpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Arknir27_Lavril_SpouseRoom",
+            "FromFile": "assets/Maps/LavrilAdoptedRoom.tmx"
+        }
+    ]
+}

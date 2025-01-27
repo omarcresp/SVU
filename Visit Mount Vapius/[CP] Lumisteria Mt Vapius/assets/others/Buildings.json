@@ -1,0 +1,524 @@
+{
+  "Changes": [
+    {
+      "LogName": "Mount Vapius Buildings",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Entries": {
+        "Lumisteria.MtVapius_ImprovedWell": {
+          "ID": "Lumisteria.MtVapius_ImprovedWell",
+          "Name": "{{i18n: MtVapiusImprovedWell_Translated}}",
+          "Description": "{{i18n: MtVapiusImprovedWell_Description_Translated}}",
+          "Texture": "Mods\\Lumisteria.MtVapius\\ImprovedWell",
+          "Skins": [
+            {
+              "ID": "Lumisteria.MtVapius_ImprovedWellClassic",
+              "Name": "{{i18n: MtVapiusImprovedWell_Translated}}",
+              "Description": "{{i18n: MtVapiusImprovedWell_Description_Translated}}",
+              "Texture": "Buildings\\Well",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_ImprovedWellInn",
+              "Name": "{{i18n: MtVapiusImprovedWell_Translated}}",
+              "Description": "{{i18n: MtVapiusImprovedWell_Description_Translated}}",
+              "Texture": "Mods\\Lumisteria.MtVapius\\ImprovedWell_S01",
+            },
+          ],
+          "DrawShadow": true,
+          "UpgradeSignTile": "1, 2",
+          "UpgradeSignHeight": 16.0,
+          "Size": {
+            "X": 3,
+            "Y": 3
+          },
+          "FadeWhenBehind": true,
+          "ConvertBuildingOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "UpgradeOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SeasonOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "DrawOffset": "0, 0",
+          "SortTileOffset": 0.0,
+          "CollisionMap": "\r\n    XXX\r\n    X0X\r\n\tXXX\r\n\t",
+          "Builder": "Robin",
+          "BuildCondition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_ImprovedWellMail",
+          "BuildDays": 1,
+          "BuildCost": 500,
+          "BuildMaterials": [
+            {
+              "ID": "Iron Bar",
+              "ItemID": "(O)335",
+              "Amount": 3
+            }
+          ],
+          "BuildingToUpgrade": "Well",
+          "HumanDoor": {
+            "X": -1,
+            "Y": -1
+          },
+          "ModData": {},
+          "AdditionalTilePropertyRadius": 0,
+          "TileProperties": [
+            {
+              "Id": "WaterTiles",
+              "Name": "Water",
+              "Value": "I",
+              "Layer": "Back",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 3,
+                "Height": 3
+              }
+            },
+          ],
+        },
+        "Lumisteria.MtVapius_FruitPress": {
+          "LogName": "Fruit Press",
+          "ID": "Lumisteria.MtVapius_FruitPress",
+          "Name": "{{i18n: MtVapiusFruitPress_Translated}}",
+          "Description": "{{i18n: MtVapiusFruitPress_Description_Translated}}",
+          "Texture": "Mods\\Lumisteria.MtVapius\\FruitPress",
+          "Skins": [],
+          "DrawShadow": true,
+          "UpgradeSignTile": "1, 1",
+          "UpgradeSignHeight": 24.0,
+          "Size": {
+            "X": 4,
+            "Y": 2
+          },
+          "FadeWhenBehind": true,
+          //"AdditionalPlacementTiles": null,
+          "Builder": "Robin",
+          "BuildCondition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_FruitPressMail, !BUILDINGS_CONSTRUCTED Target Lumisteria.MtVapius_FruitPress 1 255",
+          "BuildDays": 2,
+          "BuildCost": 3000,
+          "BuildMaterials": [
+            {
+              "ID": "Wood",
+              "ItemID": "(O)388",
+              "Amount": 100
+            },
+            {
+              "ID": "Glass Shards",
+              "ItemID": "(O)118",
+              "Amount": 3
+            },
+            {
+              "ID": "Lumisteria.MtVapius_Fabric_NightSilk",
+              "ItemID": "(O)Lumisteria.MtVapius_Fabric_NightSilk",
+              "Amount": 1
+            }
+          ],
+          "HumanDoor": {
+            "X": -1,
+            "Y": -1
+          },
+          "ModData": {},
+          "Chests": [
+            {
+              "ID": "Input",
+              "Type": "Load",
+              "Sound": "Ship",
+              "InvalidItemMessage": "[LocalizedText Strings\\\\Buildings:CantMill]",
+              "InvalidCountMessage": "[LocalizedText Strings\\\\StringsFromCSFiles:BlueprintsMenu.cs.10002]",
+              "ChestFullMessage": "[LocalizedText Strings\\\\Buildings:MillFull]",
+              "DisplayHeight": 0.0
+            },
+            {
+              "ID": "Output",
+              "Type": "Collect",
+              //"InvalidItemMessage": null,
+              //"InvalidCountMessage": null,
+              //"ChestFullMessage": null,
+              "DisplayTile": "3, 1",
+              "DisplayHeight": 1.5
+            }
+          ],
+          "AdditionalTilePropertyRadius": 0,
+          "ActionTiles": [
+            {
+              "Id": "Default_OpenInputChest",
+              "Tile": {
+                "X": 1,
+                "Y": 1
+              },
+              "Action": "BuildingChest Input"
+            },
+            {
+              "Id": "Default_OpenOutputChest",
+              "Tile": {
+                "X": 3,
+                "Y": 1
+              },
+              "Action": "BuildingChest Output"
+            }
+          ],
+          "TileProperties": [],
+          "ItemConversions": [
+            {
+              "ID": "Lumisteria.MtVapius.FruitPressUnmilledRice",
+              "RequiredTags": [
+                "id_(o)271"
+              ],
+              "RequiredCount": 1,
+              "MaxDailyConversions": 20,
+              "SourceChest": "Input",
+              "DestinationChest": "Output",
+              "ProducedItems": [
+                {
+                  "ItemID": "(O)419",
+                  "MinCount": 1,
+                  "MaxCount": 2,
+                  "Chance": 1.0,
+                  //"Condition": null
+                }
+              ]
+            },
+            {
+              "ID": "Lumisteria.MtVapius.FruitPressPlum",
+              "RequiredTags": [
+                "id_(o)406"
+              ],
+              "RequiredCount": 1,
+              "MaxDailyConversions": 20,
+              "SourceChest": "Input",
+              "DestinationChest": "Output",
+              "ProducedItems": [
+                {
+                  "ItemID": "(O)419",
+                  "MinCount": 2,
+                  "MaxCount": 3,
+                  "Chance": 1.0,
+                  //"Condition": null
+                }
+              ]
+            },
+            {
+              "ID": "Lumisteria.MtVapius.FruitPressFruits",
+              "RequiredTags": [
+                "category_fruits"
+              ],
+              "RequiredCount": 1,
+              "MaxDailyConversions": 20,
+              "SourceChest": "Input",
+              "DestinationChest": "Output",
+              "ProducedItems": [
+                {
+                  "ItemID": "(O)348",
+                  "MinCount": 1,
+                  "MaxCount": 1,
+                  "Chance": 1.0,
+                  //"Condition": null
+                }
+              ]
+            },
+            {
+              "ID": "Lumisteria.MtVapius.FruitPressVegetable",
+              "RequiredTags": [
+                "category_vegetable"
+              ],
+              "RequiredCount": 1,
+              "MaxDailyConversions": 20,
+              "SourceChest": "Input",
+              "DestinationChest": "Output",
+              "ProducedItems": [
+                {
+                  "ItemID": "(O)350",
+                  "MinCount": 1,
+                  "MaxCount": 1,
+                  "Chance": 1.0,
+                  //"Condition": null
+                }
+              ]
+            }
+          ]
+        },
+        "Lumisteria.MtVapius_AgingCave": {
+          "Name": "{{i18n: MtVapiusAgingCave_Translated}}",
+          "Description": "{{i18n: MtVapiusAgingCave_Description_Translated}}",
+          "Texture": "Mods\\Lumisteria.MtVapius\\AgingCave",
+          "Skins": [],
+          "DrawShadow": true,
+          "UpgradeSignTile": "4.8125, 2",
+          "UpgradeSignHeight": 20.0,
+          "Size": {
+            "X": 6,
+            "Y": 3
+          },
+          "SortTileOffset": 1.0,
+          "CollisionMap": "\n          XXXXXX\n          XXXXXX\n          XXXXOX\n        ",
+          "FadeWhenBehind": true,
+          "Builder": "Robin",
+          "BuildCondition": "!{{HamletProgress|contains={{Range: 0, 10}}}}, !BUILDINGS_CONSTRUCTED Target Lumisteria.MtVapius_AgingCave 3 255, LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+          "BuildDays": 3,
+          "BuildCost": 8000,
+          "BuildMaterials": [
+            {
+              "ItemId": "(O)390",
+              "Amount": 150
+            },
+            {
+              "ItemId": "(O)86",
+              "Amount": 5
+            },
+            {
+              "ItemId": "(O)Lumisteria.MtVapius_Heliodor",
+              "Amount": 1
+            }
+          ],
+          "HumanDoor": {
+            "X": 4,
+            "Y": 1
+          },
+          //"NonInstancedIndoorLocation": null,
+          "IndoorMap": "Lumisteria.MtVapius_AgingCave",
+          "IndoorMapType": "StardewValley.Shed",
+          //"IndoorItemMoves": null,
+          "IndoorItems": [
+            {
+              "Id": "First_MaturingShelves",
+              "ItemId": "(BC)Lumisteria.MtVapius_MaturingShelves",
+              "Tile": {
+                "X": 1,
+                "Y": 12
+              },
+              "Indestructible": false
+            },
+            {
+              "Id": "Second_MaturingShelves",
+              "ItemId": "(BC)Lumisteria.MtVapius_MaturingShelves",
+              "Tile": {
+                "X": 2,
+                "Y": 12
+              },
+              "Indestructible": false
+            },
+            {
+              "Id": "Third_MaturingShelves",
+              "ItemId": "(BC)Lumisteria.MtVapius_MaturingShelves",
+              "Tile": {
+                "X": 3,
+                "Y": 12
+              },
+              "Indestructible": false
+            },
+          ],
+        },
+        "Lumisteria.MtVapius_DeluxeSlimeHutch": {
+          "Name": "[LocalizedText Strings\\Buildings:SlimeHutch_Name]",
+          "Description": "[LocalizedText Strings\\Buildings:SlimeHutch_Description]",
+          "Texture": "Mods\\Lumisteria.MtVapius\\DeluxeSlimeHutch",
+          "Skins": [
+            {
+              "Id": "Lumisteria.MtVapius_DeluxeSlimeHutch_Refuge",
+              "Name": "[LocalizedText Strings\\Buildings:SlimeHutch_Name]",
+              "Description": "[LocalizedText Strings\\Buildings:SlimeHutch_Description]",
+              "Texture": "Mods\\Lumisteria.MtVapius\\DeluxeSlimeHutch_S01",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_DeluxeSlimeHutch_Classic",
+              "Name": "[LocalizedText Strings\\Buildings:SlimeHutch_Name]",
+              "Description": "[LocalizedText Strings\\Buildings:SlimeHutch_Description]",
+              "Texture": "Buildings\\Slime Hutch",
+            },
+          ],
+          "DrawShadow": true,
+          "UpgradeSignTile": "3.5, 5",
+          "UpgradeSignHeight": 12.0,
+          "Size": {
+            "X": 7,
+            "Y": 4
+          },
+          "FadeWhenBehind": true,
+          "ConvertBuildingOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 112,
+            "Height": 112
+          },
+          "SeasonOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "DrawOffset": "0, 0",
+          "SortTileOffset": 0.0,
+          "Builder": "Robin",
+          "BuildCondition": null,
+          "BuildDays": 2,
+          "BuildCost": 5000,
+          "BuildMaterials": [
+            {
+              "ItemId": "(O)390",
+              "Amount": 100
+            },
+            {
+              "ItemId": "(O)Lumisteria.MtVapius_Amber",
+              "Amount": 10
+            },
+            {
+              "ItemId": "(O)Lumisteria.MtVapius_Labradorite",
+              "Amount": 1
+            }
+          ],
+          "BuildingToUpgrade": "Slime Hutch",
+          "MagicalConstruction": false,
+          "HumanDoor": {
+            "X": 3,
+            "Y": 3
+          },
+          "IndoorMap": "Lumisteria.MtVapius_DeluxeSlimeHutch",
+          "IndoorMapType": "StardewValley.SlimeHutch",
+          "MaxOccupants": 50,
+          "ValidOccupantTypes": [
+            "Slime"
+          ],
+			"AllowsFlooringUnderneath": true,
+          //"IndoorItems": null,
+        },
+        "Lumisteria.MtVapius_OrchardHouse": {
+          "Name": "{{i18n: MtVapiusOrchardHouse_Translated}}",
+          "Description": "{{i18n: MtVapiusOrchardHouse_Description_Translated}}",
+          "Texture": "Mods\\Lumisteria.MtVapius\\OrchardHouse",
+          "Skins": [],
+          "DrawShadow": true,
+          //"UpgradeSignTile": "4.8125, 2",
+          //"UpgradeSignHeight": 20.0,
+          "Size": {
+            "X": 9,
+            "Y": 4
+          },
+          //"SortTileOffset": 1.0,
+          "CollisionMap": "\n          XXXXXXXXX\n          XXXXXXXXX\n          XXXXXXXXX\n          OOXXXXXOO\n        ",
+          "FadeWhenBehind": true,
+          "Builder": "Robin",
+          "BuildCondition": "!BUILDINGS_CONSTRUCTED Target Lumisteria.MtVapius_OrchardHouse 1 255, LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+          "BuildDays": 4,
+          "BuildCost": 1000,
+          "BuildMaterials": [
+            {
+              "ItemId": "(O)390",
+              "Amount": 150
+            },
+            {
+              "ItemId": "(O)709",
+              "Amount": 50
+            },
+            {
+              "ItemId": "(O)Lumisteria.MtVapius_Amber",
+              "Amount": 5
+            },
+          ],
+          "HumanDoor": {
+            "X": 4,
+            "Y": 4
+          },
+          //"NonInstancedIndoorLocation": null,
+          "IndoorMap": "Lumisteria.MtVapius_OrchardHouse",
+          "IndoorMapType": "StardewValley.Locations.DecoratableLocation",
+        },
+        "Lumisteria.MtVapius_Obelisk": {
+          "ID": "Lumisteria.MtVapius_Obelisk",
+          "Name": "{{i18n: MtVapiusObelisk_Translated}}",
+          "Description": "{{i18n: MtVapiusObelisk_Description_Translated}}",
+          "Texture": "Mods\\Lumisteria.MtVapius\\mtvapiusobelisk",
+          "Skins": [],
+          "DrawShadow": true,
+          "UpgradeSignTile": "1, 1",
+          "UpgradeSignHeight": 16.0,
+          "Size": {
+            "X": 3,
+            "Y": 2
+          },
+          "FadeWhenBehind": true,
+          "Builder": "Wizard",
+          "BuildCondition": "PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestJunimoClearing",
+          "BuildDays": 0,
+          "BuildCost": 200000,
+          "BuildMaterials": [
+            {
+              "ID": "Iridium Bar",
+              "ItemID": "(O)337",
+              "Amount": 5
+            },
+            {
+              "ID": "Lumisteria.MtVapius_Amber",
+              "ItemID": "(O)Lumisteria.MtVapius_Amber",
+              "Amount": 10
+            },
+            {
+              "ID": "Lumisteria.MtVapius_MoonPods",
+              "ItemID": "(O)Lumisteria.MtVapius_MoonPods",
+              "Amount": 10
+            }
+          ],
+          "DefaultAction": "ObeliskWarp Lumisteria.MtVapius_Hamlet 16 61 false",
+        }
+      }
+    },
+    {
+      "LogName": "Editing Skin Farmhouse",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "TargetField": [
+        "Farmhouse",
+        "Skins",
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_Farmhouse_Inn": {
+          "Id": "Lumisteria.MtVapius_Farmhouse_Inn",
+          "Texture": "Mods/Lumisteria.MtVapius/Farmhouse_S01",
+          "Condition": "PLAYER_FARMHOUSE_UPGRADE Current 2",
+        },
+      },
+    },
+    {
+      "LogName": "Editing Skin Deluxe Barn",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "TargetField": [
+        "Deluxe Barn",
+        "Skins",
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_DeluxeBarn_Inn": {
+          "Id": "Lumisteria.MtVapius_DeluxeBarn_Inn",
+          "Texture": "Mods/Lumisteria.MtVapius/DeluxeBarn_S01",
+        },
+      },
+    },
+    {
+      "LogName": "Adding Paint Data",
+      "Action": "EditData",
+      "Target": "Data/PaintData",
+      "Entries": {
+        "Lumisteria.MtVapius_AgingCave": "Building/-45 -10/Roof/-20 5/Trim/-25 0",
+        "Lumisteria.MtVapius_ImprovedWell": "Building/-45 -10/Roof/-20 5/Trim/-25 0",
+        "Lumisteria.MtVapius_DeluxeSlimeHutch": "Building/-15 0/Roof/-10 5/Trim/-10 5",
+      },
+    },
+    /* add buildings  images*/
+    {
+      "Action": "Load",
+      "Target": "Mods/Lumisteria.MtVapius/AgingCave, Mods/Lumisteria.MtVapius/AgingCave_PaintMask, Mods/Lumisteria.MtVapius/FruitPress, Mods/Lumisteria.MtVapius/mtvapiusobelisk, Mods/Lumisteria.MtVapius/OrchardHouse, Mods/Lumisteria.MtVapius/OrchardHouse_PaintMask, Mods/Lumisteria.MtVapius/ImprovedWell, Mods/Lumisteria.MtVapius/ImprovedWell_PaintMask, Mods/Lumisteria.MtVapius/DeluxeSlimeHutch, Mods/Lumisteria.MtVapius/DeluxeSlimeHutch_PaintMask",
+      "FromFile": "assets/images/buildings/{{TargetWithoutPath}}.png"
+    },
+    /* add skin and mask  images*/
+    {
+      "Action": "Load",
+      "Target": "Mods/Lumisteria.MtVapius/DeluxeSlimeHutch_S01, Mods/Lumisteria.MtVapius/DeluxeSlimeHutch_S01_PaintMask, Mods/Lumisteria.MtVapius/Farmhouse_S01, Mods/Lumisteria.MtVapius/Farmhouse_S01_PaintMask, Mods/Lumisteria.MtVapius/DeluxeBarn_S01, Mods/Lumisteria.MtVapius/DeluxeBarn_S01_PaintMask, Mods/Lumisteria.MtVapius/ImprovedWell_S01, Mods/Lumisteria.MtVapius/ImprovedWell_S01_PaintMask",
+      "FromFile": "assets/images/buildings/{{TargetWithoutPath}}.png"
+    }
+  ]
+}

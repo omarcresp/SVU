@@ -1,0 +1,211 @@
+/*
+
+These patches add the custom items used by the mod.
+
+*/
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+
+  "Changes": [
+    /*********
+    ** Item data
+    *********/
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModId}}_Trophy": {
+          "Name": "Stardew Aquarium Trophy",
+          "DisplayName": "{{i18n: items.trophy.name}}",
+          "Description": "{{i18n: items.trophy.description}}",
+          "Price": 1,
+          "Texture": "Mods/{{ModId}}/BigCraftables",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/hats",
+      "Entries": {
+        "{{ModId}}_AnglerMask": "Angler Mask/{{i18n: items.anglerMask.description}}/false/true/none/{{i18n: items.anglerMask.name}}/0/Mods\\{{ModId}}\\Hats",
+        "{{ModId}}_CrimsonfishMask": "Crimsonfish Mask/{{i18n: items.crimsonfishMask.description}}/false/true/none/{{i18n: items.crimsonfishMask.name}}/1/Mods\\{{ModId}}\\Hats",
+        "{{ModId}}_GlacierfishMask": "Glacierfish Mask/{{i18n: items.glacierfishMask.description}}/false/true/none/{{i18n: items.glacierfishMask.name}}/2/Mods\\{{ModId}}\\Hats",
+        "{{ModId}}_LegendMask": "Legend Mask/{{i18n: items.legendMask.description}}/false/true/none/{{i18n: items.legendMask.name}}/3/Mods\\{{ModId}}\\Hats",
+        "{{ModId}}_MutantCarpMask": "Mutant Carp Mask/{{i18n: items.mutantCarpMask.description}}/false/true/none/{{i18n: items.mutantCarpMask.name}}/4/Mods\\{{ModId}}\\Hats",
+        "{{ModId}}_PufferchickMask": "Pufferchick Mask/{{i18n: items.pufferchickMask.description}}/false/true/none/{{i18n: items.pufferchickMask.name}}/5/Mods\\{{ModId}}\\Hats",
+        "{{ModId}}_TheCuratorsHat": "The Curator's Hat/{{i18n: items.theCuratorsHat.description}}/false/true/none/{{i18n: items.theCuratorsHat.name}}/6/Mods\\{{ModId}}\\Hats"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "{{ModId}}_FishBowl": "{{i18n: items.fishBowl.name}}/Decor/1 1/1 1/1/200/2/{{i18n: items.fishBowl.description}}/0/Mods\\{{ModId}}\\Objects"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_LegendaryBait": {
+          "Name": "Legendary Bait",
+          "DisplayName": "{{i18n: items.legendary-bait.name}}",
+          "Description": "{{i18n: items.legendary-bait.description}}",
+          "Type": "Basic",
+          "Category": -21, // bait
+          "Price": 10,
+
+          "ContextTags": [ "fish_legendary" ],
+          "CanBeGivenAsGift": false,
+          "CanBeTrashed": false,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+
+          "Texture": "Mods/{{ModId}}/Objects",
+          "SpriteIndex": 1
+        },
+        "{{ModId}}_Pufferchick": {
+          "Name": "Pufferchick",
+          "DisplayName": "{{i18n: items.pufferchick.name}}",
+          "Description": "{{i18n: items.pufferchick.description}}",
+          "Type": "Fish",
+          "Category": -4, // fish
+          "Price": 2000,
+
+          "Edibility": -200, // poisonous
+          "ContextTags": [ "fish_legendary" ],
+
+          "Texture": "Mods/{{ModId}}/Objects",
+          "SpriteIndex": 2
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shirts",
+      "Entries": {
+        "{{ModId}}_PufferchickShirt": {
+          "Name": "Pufferchick Shirt",
+          "DisplayName": "{{i18n: items.pufferchickShirt.name}}",
+          "Description": "{{i18n: items.pufferchickShirt.description}}",
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Shirts",
+          "SpriteIndex": 0
+        }
+      }
+    },
+
+
+    /*********
+    ** Fish data
+    *********/
+    {
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "{{ModId}}_Pufferchick": "Pufferchick/95/mixed/28/28/0 2600/spring summer fall winter/both/688 .05/5/0/0/0/false"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/AquariumFish",
+      "Entries": {
+        "{{ModId}}_Pufferchick": "0/float/////Mods\\{{ModId}}\\AquariumFish"
+      }
+    },
+    {
+      "LogName": "Pufferchick Legendary Fish Pond Color",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "TargetField": ["LegendaryFish", "WaterColor",],
+      "Entries": {
+        "{{ModId}}_Pufferchick": {
+          "Id": "{{ModId}}_Pufferchick",
+          "Color": "255 150 0",
+          "Condition": "ITEM_ID Input {{ModId}}_Pufferchick"
+        },
+      },
+      "MoveEntries": [
+        { "Id": "{{ModId}}_Pufferchick", "ToPosition": "Top" }
+      ]
+    },
+
+
+    /*********
+    ** Sprites
+    *********/
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/AquariumFish",
+      "FromFile": "assets/aquarium-fish.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/BigCraftables",
+      "FromFile": "assets/big-craftables.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Hats",
+      "FromFile": "assets/hats.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Objects",
+      "FromFile": "assets/objects.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Shirts",
+      "FromFile": "assets/shirts.png"
+    },
+
+
+    /*********
+    ** Sprite animations
+    *********/
+    {
+    "LogName": "0 Fish Bowl Animation",
+    "Action": "EditData",
+    "Target": "spacechase0.SpaceCore/TextureOverrides",
+    "When": {"LegendaryFishAnimation": true},
+    "Entries": {
+      "Gervig91.StardewAquariumCP.FishBowlAnimation": {
+        "TargetTexture": "Mods/{{ModId}}/Objects",
+        "TargetRect": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+        "SourceTexture": "{{InternalAssetKey:assets/Animations/fishbowl.png}}:0..27@10"
+        }
+      }
+    },
+    {
+    "LogName": "0 Pufferchick Animation",
+    "Action": "EditData",
+    "Target": "spacechase0.SpaceCore/TextureOverrides",
+    "When": {"LegendaryFishAnimation": true},
+    "Entries": {
+      "Gervig91.StardewAquariumCP.PufferchickAnimation": {
+        "TargetTexture": "Mods/{{ModId}}/Objects",
+        "TargetRect": { "X": 32, "Y": 0, "Width": 16, "Height": 16 },
+        "SourceTexture": "{{InternalAssetKey:assets/Animations/pufferchick.png}}:0..4@10"
+        }
+      }
+    },
+    /*
+    {
+      "LogName": "0 Spicy Lava Eel Animation",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/Objects",
+      "FromFile": "assets/Animations/spicy_lava_eel.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea":{ "X": 16, "Y": 0, "Width": 16, "Height": 16 },
+      "AnimationFrameTime": 20,
+      "AnimationFrameCount": 4,
+      "When": {
+        "HasMod": "spacechase0.ContentPatcherAnimations",
+        "SpicyLavaEelAnimation": "true"
+      }
+    },
+    */
+  ]
+}

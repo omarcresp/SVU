@@ -1,0 +1,898 @@
+{
+    "Changes": [
+        {
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/Nodes",
+			"FromFile": "assets/Resources/Nodes.png"
+		},
+        {
+            "Action": "EditData",
+            "Target": "Mods/mistyspring.ItemExtensions/Resources",
+            "Entries": {
+                "CoalGeology": {
+                    "SpriteIndex": 0,
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 7,
+                    "Exp": 7,
+                    "ItemDropped": "(O)382",
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 3, 
+
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)382", //Coal Ore
+                            "Condition": "PLAYER_HAS_PROFESSION Current 18",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        }
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "81/120, 121/170, 201/220, 241/270, 301/320, 340/77376",
+                            "SpawnFrequency": "{{Query: {{Coal.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Coal.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "LimestoneGeology": {
+                    "SpriteIndex": 1,
+                    "ItemDropped": "(O)571",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 8,
+                    "Exp": 4,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1, 
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)881", //Bone Fragment
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 3}} + 0.35 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 4 1",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                        },
+                        {
+                            "ItemId": "(O)881", //Bone Fragment
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 3}} + 0.35 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 4 2",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                        },
+                        {
+                            "ItemId": "(O)881", //Bone Fragment
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 3}} + 0.35 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 4 3",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                        },
+                        {
+                            "ItemId": "(O)380",//Iron Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.15 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 4 4",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                        },
+                        {
+                            "ItemId": "(O)380",//Iron Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.45 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 4 4, PLAYER_HAS_PROFESSION Current 18",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        }
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "31/40, 46/55, 61/65, 71/80",
+                            "SpawnFrequency": "{{Query: {{Limestone.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Limestone.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "MudstoneGeology": {
+                    "SpriteIndex": 2,
+                    "ItemDropped": "(O)574",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 8,
+                    "Exp": 4,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 0, 
+                    "MaxDrops": 0, 
+
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)574", //Mudstone
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1",
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "ItemId": "(O)378", //Copper Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.15 }}", 
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1",
+                            "MinStack": 1,
+                            "MaxStack": 3
+                        },
+                        {
+                            "ItemId": "(O)378", //Copper Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.15 }}", 
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1, PLAYER_HAS_PROFESSION Current 18",
+                            "MinStack": 1,
+                            "MaxStack": 3
+                        },
+                        {
+                            "ItemId": "(O)330", //Clay
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 2",
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "ItemId": "(O)330", //Clay
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 3",
+                            "MinStack": 1,
+                            "MaxStack": 3
+                        }
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "11/30, 121/140",
+                            "SpawnFrequency": "{{Query: {{Mudstone.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Mudstone.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "SandstoneGeology": {
+                    "SpriteIndex": 3,
+                    "ItemDropped": "(O)568",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 9,
+                    "Exp": 7,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 0, 
+                    "MaxDrops": 0, 
+
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)568", //Sandstone
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 4 1",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)80", //Quartz
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 4 2",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)80", //Quartz
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 4 3",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)80", //Quartz
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 4 4",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        }
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "21/30, 121/130, 151/155",
+                            "SpawnFrequency": "{{Query: {{Sandstone.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Sandstone.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "GraniteGeology": {
+                    "SpriteIndex": 4,
+                    "ItemDropped": "(O)569",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 10,
+                    "Exp": 11,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 0, 
+                    "MaxDrops": 0, 
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)535", //Geode
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)378", //Copper Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.55 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1",
+                            "MinDrops": 1, 
+                            "MaxDrops": 3
+                        },
+                        {
+                            "ItemId": "(O)378", //Copper Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.75 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1, PLAYER_HAS_PROFESSION Current 18",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)86", //Earth Crystal
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 2",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)535", //Geode
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.45 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 2, PLAYER_HAS_PROFESSION Current 19",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)569", //Granite
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 3",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        }
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "31/40, 131/140, 171/175, 191/210, 221/245, 261/280, 301/330, 361/77376",
+                            "SpawnFrequency": "{{Query: {{Granite.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Granite.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "SlateGeology": {
+                    "SpriteIndex": 5,
+                    "ItemDropped": "(O)576",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 11,
+                    "Exp": 15,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 0, 
+                    "MaxDrops": 0,
+
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)536", //Frozen Geode
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)380", //Iron Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.55 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1",
+                            "MinDrops": 1, 
+                            "MaxDrops": 3
+                        },
+                        {
+                            "ItemId": "(O)380", //Iron Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.75 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1, PLAYER_HAS_PROFESSION Current 18",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)84", //Frozen Tear
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 2",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)536", //Frozen Geode
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.45 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 2, PLAYER_HAS_PROFESSION Current 19",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)576", //Slate
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 3",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        }
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "71/80, 131/145, 161/170, 191/200, 231/260, 281/290, 311/320, 351/77376",
+                            "SpawnFrequency": "{{Query: {{Slate.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Slate.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "MarbleGeology": {
+                    "SpriteIndex": 6,
+                    "ItemDropped": "(O)567",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 12,
+                    "Exp": 17,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 0, 
+                    "MaxDrops": 0,
+
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)567", //Marble
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 2 1",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        },
+                        {
+                            "ItemId": "(O)571", //Limestone
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 2 2",
+                            "MinStack": 1,
+                            "MaxStack": 5,
+                        },
+                        {
+                            "ItemId": "(O)571", //Limestone
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 3}} + 0.5 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 2 2, PLAYER_HAS_PROFESSION Current 19",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        },
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "71/80, 86/90, 96/100, 106/120",
+                            "SpawnFrequency": "{{Query: {{Marble.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Marble.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "HematiteGeology": {
+                    "SpriteIndex": 7,
+                    "ItemDropped": "(O)573",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 13,
+                    "Exp": 7,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 0, 
+                    "MaxDrops": 0,
+
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)567", //Sandstone
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        },
+                        {
+                            "ItemId": "(O)573", //Hematite
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 2",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        },
+                        {
+                            "ItemId": "(O)573", //Hematite
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 3",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        }
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "41/45, 51/60, 71/90",
+                            "SpawnFrequency": "{{Query: {{Hematite.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Hematite.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "BasaltGeology": {
+                    "SpriteIndex": 8,
+                    "ItemDropped": "(O)570",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 14,
+                    "Exp": 8,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 0, 
+                    "MaxDrops": 0,
+
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)537", //Magma Geode
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)384", //Gold Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.55 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1",
+                            "MinDrops": 1, 
+                            "MaxDrops": 3
+                        },
+                        {
+                            "ItemId": "(O)384", //Gold Ore
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.75 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 1, PLAYER_HAS_PROFESSION Current 18",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)82", //Fire Quartz
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 2",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)537", //Magma Geode
+                            "Chance": "{{Query: {{Query: {{DailyLuck}} * 2}} + 0.45 }}",
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 2, PLAYER_HAS_PROFESSION Current 19",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        },
+                        {
+                            "ItemId": "(O)570", //Basalt
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 3 3",
+                            "MinDrops": 1, 
+                            "MaxDrops": 1
+                        }
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "91/100, 106/110, 116/120, 166/170, 181/190, 241/250, 271/275, 286/295, 301/310, 331/335, 361/77376",
+                            "SpawnFrequency": "{{Query: {{Basalt.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Basalt.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "ObsidianStone": {
+                    "SpriteIndex": 9,
+                    "ItemDropped": "(O)575",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 5,
+                    "Exp": 24,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 0, 
+                    "MaxDrops": 0,
+                    "ExtraItems":
+                    [
+                        {
+                            "ItemId": "(O)382", //Coal
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 5 1",
+                            "MinStack": 7,
+                            "MaxStack": 10,
+                        },
+                        {
+                            "ItemId": "(O)575", //Obsidian
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 5 2",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        },
+                        {
+                            "ItemId": "(O)575", //Obsidian
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 5 3",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        },
+                        {
+                            "ItemId": "(O)575", //Obsidian
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 5 4",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        },
+                        {
+                            "ItemId": "(O)575", //Obsidian
+                            "Condition": "SYNCED_CHOICE tick itemChosen 1 5 5",
+                            "MinStack": 1,
+                            "MaxStack": 1,
+                        }
+                    ],
+                    "MineSpawns": [
+                        {
+                            "Floors": "71/120",
+                            "SpawnFrequency": "{{Query: {{Obsidian.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Obsidian.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+
+                "Hornblende": {
+                    "SpriteIndex": 10,
+                    "ItemDropped": "(O){{ModId}}_Hornblende",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 10,
+                    "Exp": 7,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1, 
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "16/30, 36/40, 121/155, 166/170, 186/195 , 201/210, 226/230, 246/255, 261/270, 281/290, 311/77376",
+                            "SpawnFrequency": "{{Query: {{Hornblende.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Hornblende.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Gneiss": {
+                    "SpriteIndex": 11,
+                    "ItemDropped": "(O){{ModId}}_Gneiss",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 13,
+                    "Exp": 7,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1, 
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "61/70, 76/80, 131/155, 166/170, 186/195 , 201/210, 226/230, 246/255, 261/270, 281/290, 311/77376",
+                            "SpawnFrequency": "{{Query: {{Gneiss.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Gneiss.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Schist": {
+                    "SpriteIndex": 12,
+                    "ItemDropped": "(O){{ModId}}_Schist",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 14,
+                    "Exp": 7,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1, 
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "81/85, 91/105, 111/120, 146/155, 166/170, 186/195 , 201/210, 226/230, 246/255, 261/270, 281/290, 311/77376",
+                            "SpawnFrequency": "{{Query: {{Schist.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Schist.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Halite": {
+                    "SpriteIndex": 13,
+                    "ItemDropped": "(O){{ModId}}_Halite",
+                    
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 11,
+                    "Exp": 17,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1,
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "116/120, 146/155, 166/170, 186/195 , 201/210, 226/230, 246/255, 261/270, 281/290, 311/77376",
+                            "SpawnFrequency": "{{Query: {{Halite.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Halite.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+
+                "Olivine": {
+                    "SpriteIndex": 20, 
+                    "ItemDropped": "(O){{ModId}}_Olivine",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 9,
+                    "Exp": 7,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1, 
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "21/25, 31/40, 131/145, 156/160, 181/190, 206/225, 256/265, 276/280, 296/300, 316/77376",
+                            "SpawnFrequency": "{{Query: {{Olivine.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Olivine.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Peridot": {
+                    "SpriteIndex": 21, 
+                    "ItemDropped": "(O){{ModId}}_Peridot", 
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 9, 
+                    "Exp": 11,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1,
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "6/10, 16/20, 26/30, 36/40",
+                            "SpawnFrequency": "{{Query: {{Peridot.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Peridot.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Lapis": {
+                    "SpriteIndex": 22,
+                    "ItemDropped": "(O){{ModId}}_Lapis_Lazuli", 
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 14,
+                    "Exp": 25,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1,
+                    
+                    "MineSpawns": [
+                        {
+                            "Floors": "71/80, 121/130, 141/145, 156/170, 176/180, 191/206, 211/220, 231/255, 266/270, 286/295, 301/311, 321/77376",
+                            "SpawnFrequency": "{{Query: {{Lapis.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Lapis.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Zircon": {
+                    "SpriteIndex": 23,
+                    "ItemDropped": "(O){{ModId}}_Zircon",
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 15,
+                    "Exp": 15,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1,
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "91/95, 106/115, 131/140, 155/77376",
+                            "SpawnFrequency": "{{Query: {{Zircon.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Zircon.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]                
+                },
+                "Onyx": {
+                    "SpriteIndex": 24, 
+                    "ItemDropped": "(O){{ModId}}_Onxy", 
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 9,
+                    "Exp": 14,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1, 
+                    "MineSpawns": [
+                        {
+                            "Floors": "31/50, 121/130, 146/155, 181/77376",
+                            "SpawnFrequency": "{{Query: {{Oynx.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Oynx.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Vanadinite": {
+                    "SpriteIndex": 25,
+                    "ItemDropped": "(O){{ModId}}_Vanadinite", 
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 15,
+                    "Exp": 19,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1,
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "1/5, 11/15, 21/30",
+                            "SpawnFrequency": "{{Query: {{Vanadinite.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Vanadinite.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Sapphire": {
+                    "SpriteIndex": 26,
+                    "ItemDropped": "(O){{ModId}}_Sapphire", 
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 16,
+                    "Exp": 25,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1,
+                    
+                    "MineSpawns": [
+                        {
+                            "Floors": "71/80, 126/136, 141/145, 156/170, 176/180, 191/206, 211/220, 231/255, 266/270, 286/295, 301/311, 321/77376",
+                            "SpawnFrequency": "{{Query: {{Sapphire.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Sapphire.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Rhodochrosite": {
+                    "SpriteIndex": 27, 
+                    "ItemDropped": "(O){{ModId}}_Rhodochrosite", 
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 15,
+                    "Exp": 35,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1,
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "91/77376",
+                            "SpawnFrequency": "{{Query: {{Rhodochrosite.Spawn}} + {{Query: {{DailyLuck}} / 1000}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Rhodochrosite.Growth}} + {{Query: {{DailyLuck}} / 100000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Sunstone": {
+                    "SpriteIndex": 28, 
+                    "ItemDropped": "(O){{ModId}}_Sunstone", 
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 18,
+                    "Exp": 16,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1,
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "121/77376",
+                            "SpawnFrequency": "{{Query: {{Sunstone.Spawn}} + {{Query: {{DailyLuck}} / 1000}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Sunstone.Growth}} + {{Query: {{DailyLuck}} / 100000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+                "Prismatic": {
+                    "SpriteIndex": 39, 
+                    "ItemDropped": "(O){{ModId}}_Prismatic_Pieces", 
+
+                    "Texture": "Mods\\{{ModId}}\\Nodes",
+                    "Debris": "stone",
+
+                    "Tool": "Pickaxe", 
+                    "Health": 35,
+                    "Exp": 17,
+
+                    "MinToolLevel": 0, 
+                    "MinDrops": 1, 
+                    "MaxDrops": 1,
+
+                    "MineSpawns": [
+                        {
+                            "Floors": "121/77376",
+                            "SpawnFrequency": "{{Query: {{Prismatic.Spawn}} + {{Query: {{DailyLuck}} / 1000}} }}", 
+                            "AdditionalChancePerLevel": "{{Query: {{Prismatic.Growth}} + {{Query: {{DailyLuck}} / 100000}} }}",
+                            "Type": "All" 
+                        }
+                    ]
+                },
+            },
+        },
+    ],
+}

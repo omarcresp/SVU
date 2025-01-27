@@ -1,0 +1,684 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_Pulverizer": {
+                    "Name": "Dwarven Pulverizer",
+                    "DisplayName": "{{i18n:Pulverizer.DisplayName}}",
+                    "Description": "{{i18n:Pulverizer.Description}}",
+                    "Price": 0,
+                    "Fragility": 0,
+                    "CanBePlacedIndoors": true,
+                    "CanBePlacedOutdoors": true,
+                    "IsLamp": false,
+                    "Texture": "Mods/DwarvenExpansion/BigCraftablesSpritesheet",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "Dwarven Pulverizer": "390 10 334 2 388 2/Home/{{ModId}}_Pulverizer/true/Mining 4/"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Dwarf",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Pulverizer": {
+                    "ID": "{{ModId}}_Pulverizer",
+                    "ItemId": "(BC){{ModId}}_Pulverizer",
+                    "Condition": "PLAYER_MINING_LEVEL Current 4",
+                    "Price": "1000",
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Objects",
+            "Entries": {
+                "{{ModId}}_Gemstone_Dust_Object_Display_Name": "{{i18n:Pulverizer.Output.Gemstone_Dust.ObjectDisplayName}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_Pulverizer": {
+                    "OutputRules": [
+                        {
+                            "Id": "Stone_Recycling",
+                            "Triggers": [
+                                {
+                                    "Id": "Stone_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": 390,
+                                    "RequiredCount": 40
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Gold_Output",
+                                    "ItemId": "384",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                },
+                                {
+                                    "Id": "Coal_Output_1",
+                                    "ItemId": "382",
+                                    "MinStack": 5,
+                                    "MaxStack": 9
+                                },
+                                {
+                                    "Id": "Coal_Output_2",
+                                    "ItemId": "382",
+                                    "MinStack": 4,
+                                    "MaxStack": 10
+                                },
+                                {
+                                    "Id": "Coal_Output_3",
+                                    "ItemId": "382",
+                                    "MinStack": 6,
+                                    "MaxStack": 7
+                                },
+                                {
+                                    "Id": "Silver_Output_1",
+                                    "ItemId": "380",
+                                    "MinStack": 2,
+                                    "MaxStack": 4
+                                },
+                                {
+                                    "Id": "Silver_Output_2",
+                                    "ItemId": "380",
+                                    "MinStack": 2,
+                                    "MaxStack": 4
+                                },
+                                {
+                                    "Id": "Copper_Output_1",
+                                    "ItemId": "378",
+                                    "MinStack": 3,
+                                    "MaxStack": 5
+                                },
+                                {
+                                    "Id": "Copper_Output_2",
+                                    "ItemId": "378",
+                                    "MinStack": 3,
+                                    "MaxStack": 5
+                                },
+                                {
+                                    "Id": "Copper_Output_3",
+                                    "ItemId": "378",
+                                    "MinStack": 3,
+                                    "MaxStack": 5
+                                },
+                                {
+                                    "Id": "Clay_Output_1",
+                                    "ItemId": "330",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                },
+                                {
+                                    "Id": "Clay_Output_2",
+                                    "ItemId": "330",
+                                    "MinStack": 2,
+                                    "MaxStack": 5
+                                },
+                                {
+                                    "Id": "Mineral_Output",
+                                    "RandomItemId": [
+                                        "571",
+                                        "574",
+                                        "568",
+                                        "569",
+                                        "542",
+                                        "556",
+                                        "555",
+                                        "576",
+                                        "552",
+                                        "549",
+                                        "566",
+                                        "548",
+                                        "538"
+                                    ],
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "120"
+                        },
+                        {
+                            "Id": "Golden_Mask",
+                            "Triggers": [
+                                {
+                                    "Id": "Golden_Mask",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": 124,
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Gold_Output",
+                                    "ItemId": "384",
+                                    "MinStack": 5,
+                                    "Quality": 2
+                                }
+                            ],
+                            "MinutesUntilReady": "360"
+                        },
+                        {
+                            "Id": "Golden_Relic",
+                            "Triggers": [
+                                {
+                                    "Id": "Golden_Relic",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": 125,
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Gold_Output",
+                                    "ItemId": "{{ModId}}_OreCluster_Gold",
+                                    "MinStack": 3,
+                                    "Quality": 2
+                                }
+                            ],
+                            "MinutesUntilReady": "360"
+                        },
+                        {
+                            "Id": "Golden_Pumpkin",
+                            "Triggers": [
+                                {
+                                    "Id": "Golden_Pumpkin",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": 373,
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Gold_Output",
+                                    "ItemId": "{{ModId}}_OreCluster_Gold",
+                                    "MinStack": 12,
+                                    "Quality": 2
+                                }
+                            ],
+                            "MinutesUntilReady": "360"
+                        },
+                        {
+                            "Id": "Rusty_Cog",
+                            "Triggers": [
+                                {
+                                    "Id": "Rusty_Cog",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": 112,
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Copper_Ore",
+                                    "ItemId": "378",
+                                    "MinStack": 5
+                                }
+                            ],
+                            "MinutesUntilReady": "30"
+                        },
+                        {
+                            "Id": "Rusty_Spur",
+                            "Triggers": [
+                                {
+                                    "Id": "Rusty_Spur",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": 111,
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Copper_Ore",
+                                    "ItemId": "378",
+                                    "MinStack": 5
+                                }
+                            ],
+                            "MinutesUntilReady": "30"
+                        },
+                        {
+                            "Id": "Carrot_Mash",
+                            "Triggers": [
+                                {
+                                    "Id": "Cave_Carrot",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "78",
+                                    "RequiredCount": 1
+                                },
+                                {
+                                    "Id": "Carrot",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "Carrot",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Iridium_Quality_Input",
+                                    "ItemId": "{{ModId}}_CarrotMash",
+                                    "MinStack": 6,
+                                    "Condition": "ITEM_QUALITY Input 4 4"
+                                },
+                                {
+                                    "Id": "Gold_Quality_Input",
+                                    "ItemId": "{{ModId}}_CarrotMash",
+                                    "MinStack": 4,
+                                    "Condition": "ITEM_QUALITY Input 2 2"
+                                },
+                                {
+                                    "Id": "Silver_Quality_Input",
+                                    "ItemId": "{{ModId}}_CarrotMash",
+                                    "MinStack": 3,
+                                    "Condition": "ITEM_QUALITY Input 1 1"
+                                },
+                                {
+                                    "Id": "Basic_Quality_Input",
+                                    "ItemId": "{{ModId}}_CarrotMash",
+                                    "MinStack": 2,
+                                    "Condition": "ITEM_QUALITY Input 0 0"
+                                }
+                            ],
+                            "MinutesUntilReady": "30"
+                        },
+                        {
+                            "Id": "Copper_Cluster",
+                            "Triggers": [
+                                {
+                                    "Id": "OreCluster_Copper",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}_OreCluster_Copper",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Iridium_Quality_Input",
+                                    "ItemId": "378",
+                                    "MinStack": 6,
+                                    "Condition": "ITEM_QUALITY Input 4 4"
+                                },
+                                {
+                                    "Id": "Gold_Quality_Input",
+                                    "ItemId": "378",
+                                    "MinStack": 5,
+                                    "Condition": "ITEM_QUALITY Input 2 2"
+                                },
+                                {
+                                    "Id": "Silver_Quality_Input",
+                                    "ItemId": "378",
+                                    "MinStack": 4,
+                                    "Condition": "ITEM_QUALITY Input 1 1"
+                                },
+                                {
+                                    "Id": "Basic_Quality_Input",
+                                    "ItemId": "378",
+                                    "MinStack": 3,
+                                    "Condition": "ITEM_QUALITY Input 0 0"
+                                }
+                            ],
+                            "MinutesUntilReady": "30"
+                        },
+                        {
+                            "Id": "Iron_Cluster",
+                            "Triggers": [
+                                {
+                                    "Id": "OreCluster_Iron",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}_OreCluster_Iron",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Iridium_Quality_Input",
+                                    "ItemId": "380",
+                                    "MinStack": 6,
+                                    "Condition": "ITEM_QUALITY Input 4 4"
+                                },
+                                {
+                                    "Id": "Gold_Quality_Input",
+                                    "ItemId": "380",
+                                    "MinStack": 5,
+                                    "Condition": "ITEM_QUALITY Input 2 2"
+                                },
+                                {
+                                    "Id": "Silver_Quality_Input",
+                                    "ItemId": "380",
+                                    "MinStack": 4,
+                                    "Condition": "ITEM_QUALITY Input 1 1"
+                                },
+                                {
+                                    "Id": "Basic_Quality_Input",
+                                    "ItemId": "380",
+                                    "MinStack": 3,
+                                    "Condition": "ITEM_QUALITY Input 0 0"
+                                }
+                            ],
+                            "MinutesUntilReady": "120"
+                        },
+                        {
+                            "Id": "Gold_Cluster",
+                            "Triggers": [
+                                {
+                                    "Id": "OreCluster_Gold",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}_OreCluster_Gold",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Iridium_Quality_Input",
+                                    "ItemId": "384",
+                                    "MinStack": 6,
+                                    "Condition": "ITEM_QUALITY Input 4 4"
+                                },
+                                {
+                                    "Id": "Gold_Quality_Input",
+                                    "ItemId": "384",
+                                    "MinStack": 5,
+                                    "Condition": "ITEM_QUALITY Input 2 2"
+                                },
+                                {
+                                    "Id": "Silver_Quality_Input",
+                                    "ItemId": "384",
+                                    "MinStack": 4,
+                                    "Condition": "ITEM_QUALITY Input 1 1"
+                                },
+                                {
+                                    "Id": "Basic_Quality_Input",
+                                    "ItemId": "384",
+                                    "MinStack": 3,
+                                    "Condition": "ITEM_QUALITY Input 0 0"
+                                }
+                            ],
+                            "MinutesUntilReady": "360"
+                        },
+                        {
+                            "Id": "Iridium_Cluster",
+                            "Triggers": [
+                                {
+                                    "Id": "OreCluster_Iridium",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}_OreCluster_Iridium",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Iridium_Quality_Input",
+                                    "ItemId": "386",
+                                    "MinStack": 6,
+                                    "Condition": "ITEM_QUALITY Input 4 4"
+                                },
+                                {
+                                    "Id": "Gold_Quality_Input",
+                                    "ItemId": "386",
+                                    "MinStack": 5,
+                                    "Condition": "ITEM_QUALITY Input 2 2"
+                                },
+                                {
+                                    "Id": "Silver_Quality_Input",
+                                    "ItemId": "386",
+                                    "MinStack": 4,
+                                    "Condition": "ITEM_QUALITY Input 1 1"
+                                },
+                                {
+                                    "Id": "Basic_Quality_Input",
+                                    "ItemId": "386",
+                                    "MinStack": 3,
+                                    "Condition": "ITEM_QUALITY Input 0 0"
+                                }
+                            ],
+                            "MinutesUntilReady": "480"
+                        },
+                        {
+                            "Id": "30_Minute_Dusts",
+                            "Triggers": [
+                                {
+                                    "Id": "Gem",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredTags": [
+                                        "category_gem",
+                                        "!{{ModId}}_mineraldust",
+                                        "!{{ModId}}_jewelry",
+                                        "!{{ModId}}_gem_non_dustable"
+                                    ],
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Copper_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_CopperDust",
+                                    "MinStack": "{{OreRequiredForDust}}",
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 378"
+                                },
+                                {
+                                    "Id": "Iron_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_IronDust",
+                                    "MinStack": "{{OreRequiredForDust}}",
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 380"
+                                },
+                                {
+                                    "Id": "Emerald_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_EmeraldDust",
+                                    "MinStack": 1,
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 60"
+                                },
+                                {
+                                    "Id": "Aquamarine_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_AquamarineDust",
+                                    "MinStack": 1,
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 62"
+                                },
+                                {
+                                    "Id": "Ruby_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_RubyDust",
+                                    "MinStack": 1,
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 64"
+                                },
+                                {
+                                    "Id": "Amethyst_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_AmethystDust",
+                                    "MinStack": 1,
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 66"
+                                },
+                                {
+                                    "Id": "Topaz_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_TopazDust",
+                                    "MinStack": 1,
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 68"
+                                },
+                                {
+                                    "Id": "Jade_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_JadeDust",
+                                    "MinStack": 1,
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 70"
+                                },
+                                {
+                                    "Id": "Diamond_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_DiamondDust",
+                                    "MinStack": 1,
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 72"
+                                },
+                                {
+                                    "Id": "Prismatic_Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_PrismaticDust",
+                                    "MinStack": 1,
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN_ID",
+                                    "Condition": "ITEM_ID Input 74"
+                                },
+                                {
+                                    "Id": "Gemstone_Dust",
+                                    "ObjectInternalName": "{0} Dust",
+                                    "ItemId": "{{ModId}}_MineralDust_GemstoneDust",
+                                    "ObjectDisplayName": "[LocalizedText Strings/Objects:{{ModId}}_Gemstone_Dust_Object_Display_Name %PRESERVED_DISPLAY_NAME Spirits]",
+                                    "MinStack": 1,
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN"
+                                }
+                            ],
+                            "UseFirstValidOutput": true,
+                            "MinutesUntilReady": "30"
+                        }
+                    ],
+                    "ReadyTimeModifiers": [
+                        {
+                            "Id": "OreMultiplier",
+                            "Modification": "Multiply",
+                            "Amount": "{{OreRequiredForDust}}",
+                            "Condition": "ITEM_ID Input 378 380 384 386"
+                        },
+                        {
+                            "Id": "SolarAndVoid",
+                            "Modification": "Multiply",
+                            "Amount": 2,
+                            "Condition": "ITEM_ID Input 768 308"
+                        }
+                    ],
+                    "LoadEffects": [
+                        {
+                            "Sounds": [
+                                {
+                                    "Id": "stoneCrack",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "stoneCrack",
+                                    "Delay": 50
+                                }
+                            ],
+                            "Frames": [
+                                0,
+                                1
+                            ]
+                        }
+                    ],
+                    "WorkingEffects": [
+                        {
+                            "Frames": [
+                                0,
+                                1
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 1,
+                    "WobbleWhileWorking": false
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC){{ModId}}_Pulverizer",
+                "OutputRules",
+                "30_Minute_Dusts",
+                "Triggers"
+            ],
+            "Entries": {
+                "Copper_Ore": {
+                    "Id": "Copper_Ore",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "378",
+                    "RequiredCount": "{{OreRequiredForDust}}"
+                },
+                "Iron_Ore": {
+                    "Id": "Iron_Ore",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "380",
+                    "RequiredCount": "{{OreRequiredForDust}}"
+                }
+            },
+            "When": {
+                "EnableOreDust": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC){{ModId}}_Pulverizer",
+                "OutputRules"
+            ],
+            "Entries": {
+                "120_Minute_Dusts": {
+                    "Id": "120_Minute_Dusts",
+                    "Triggers": [
+                        {
+                            "Id": "Gold_Ore",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "384",
+                            "RequiredCount": "{{OreRequiredForDust}}"
+                        },
+                        {
+                            "Id": "Iridium_Ore",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "386",
+                            "RequiredCount": "{{OreRequiredForDust}}"
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "Gold_Dust",
+                            "ItemId": "{{ModId}}_MineralDust_GoldDust",
+                            "MinStack": "{{OreRequiredForDust}}",
+                            "CopyPrice": true,
+                            "PreserveId": "DROP_IN_ID",
+                            "Condition": "ITEM_ID Input 384"
+                        },
+                        {
+                            "Id": "Iridium_Dust",
+                            "ItemId": "{{ModId}}_MineralDust_IridiumDust",
+                            "MinStack": "{{OreRequiredForDust}}",
+                            "CopyPrice": true,
+                            "PreserveId": "DROP_IN_ID",
+                            "Condition": "ITEM_ID Input 386"
+                        }
+                    ],
+                    "MinutesUntilReady": "120"
+                }
+            },
+            "When": {
+                "EnableOreDust": "true"
+            }
+        }
+    ]
+}

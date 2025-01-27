@@ -1,0 +1,148 @@
+{
+  "Changes": [
+    /*{
+      "LogName": "CFE_Jodi_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jodi",
+      "Entries": {
+        //any keys that overlap go here
+      },
+      "When": {
+     "ModdedDialogCompat": "true" 
+     "Query: '{{CFE_Jodi}}' = 'true' OR ('{{CFE_Jodi}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },*/
+    {
+      "LogName": "CFE_Jodi_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jodi",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Jodi_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Jodi_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Jodi_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Jodi_RabbitsFoot}}",
+
+        "AcceptGift_(O)220": "{{i18n: CFE_Jodi_ChocolateCake}}",
+        "AcceptGift_(O)214": "{{i18n: CFE_Jodi_CrispyBass}}",
+        "AcceptGift_(O)72": "{{i18n: CFE_Jodi_Diamond}}",
+        "AcceptGift_(O)231": "{{i18n: CFE_Jodi_EggplantParmesan}}",
+        "AcceptGift_(O)225": "{{i18n: CFE_Jodi_FriedEel}}",
+        "AcceptGift_(O)211": "{{i18n: CFE_Jodi_Pancakes}}",
+        "AcceptGift_(O)222": "{{i18n: CFE_Jodi_RhubarbPie}}",
+        "AcceptGift_(O)200": "{{i18n: CFE_Jodi_VegetableMedley}}"
+      },
+      "When": { "Query: '{{CFE_Jodi}}' = 'true' OR ('{{CFE_Jodi}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Jodi_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Jodi": "{{i18n: CFE_Jodi_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Jodi}}' = 'true' OR ('{{CFE_Jodi}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Jodi_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jodi",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Jodi_spring1y2}}",
+        "winter_24_1": "{{i18n: CFE_Jodi_winter24}}",
+        "winter_24_2": "{{i18n: CFE_Jodi_winter24}}",
+        "winter_28_1": "{{i18n: CFE_Jodi_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Jodi_winter28}}",
+
+        //Heart Specific Dialogue
+        "spring_Wed8": "{{i18n: CFE_Jodi_springWed8}}",
+        "spring_Wed4": "{{i18n: CFE_Jodi_springWed4}}",
+        "spring_Sat8": "{{i18n: CFE_Jodi_springSat8}}",
+        "spring_Sat2_inlaw_Sam": "{{i18n: CFE_Jodi_springSat2inlawSam}}",
+        "spring_Sat2": "{{i18n: CFE_Jodi_springSat2}}",
+
+        "summer_Mon4_1": "{{i18n: CFE_Jodi_repeated_1}}",
+        "summer_Mon4_2": "{{i18n: CFE_Jodi_summerMon4y2}}",
+        "summer_Tue8_1": "{{i18n: CFE_Jodi_repeated_1}}",
+        "summer_Tue8_2": "{{i18n: CFE_Jodi_summerTue8y2}}",
+        "summer_Wed8_1": "{{i18n: CFE_Jodi_summerWed8y1}}",
+        "summer_Wed8_2": "{{i18n: CFE_Jodi_summerWed8y2}}",
+        "summer_Thu6_1": "{{i18n: CFE_Jodi_summerThu6y1}}",
+        "summer_Thu6_2": "{{i18n: CFE_Jodi_summerThu6y2}}",
+        "summer_Fri6": "{{i18n: CFE_Jodi_summerFri6}}",
+        "summer_Sun10": "{{i18n: CFE_Jodi_summerSun10}}",
+
+        "fall_Mon8_1": "{{i18n: CFE_Jodi_repeated_2}}",
+        "fall_Mon8_2": "{{i18n: CFE_Jodi_fallMon8y2}}",
+        "fall_Mon4": "{{i18n: CFE_Jodi_repeated_2}}",
+        "fall_Thu4": "{{i18n: CFE_Jodi_fallThu4}}",
+        "fall_Fri6": "{{i18n: CFE_Jodi_fallFri6}}",
+        "fall_Sun8_1": "{{i18n: CFE_Jodi_repeated_3}}",
+        "fall_Sun8_2": "{{i18n: CFE_Jodi_fallSun8y2}}",
+        "fall_Sun4": "{{i18n: CFE_Jodi_fallSun4}}",
+
+        "winter_Mon10": "{{i18n: CFE_Jodi_winterMon10}}",
+        "winter_Tue10": "{{i18n: CFE_Jodi_winterTue10}}",
+        "winter_Wed4": "{{i18n: CFE_Jodi_winterWed4}}",
+        "winter_Fri8": "{{i18n: CFE_Jodi_winterFri8}}",
+        "winter_Sat10_1": "{{i18n: CFE_Jodi_winterSat10y1}}",
+        "winter_Sat10_2": "{{i18n: CFE_Jodi_winterSat10y2}}",
+        "winter_Sun8_1": "{{i18n: CFE_Jodi_repeated_3}}",
+        "winter_Sun8_2": "{{i18n: CFE_Jodi_winterSun8y2}}",
+
+        "Mon10": "{{i18n: CFE_Jodi_Mon10}}",
+        "Mon8": "{{i18n: CFE_Jodi_Mon8}}",
+        "Mon6_inlaw_Sam": "{{i18n: CFE_Jodi_Mon6inlawSam}}",
+        "Mon6": "{{i18n: CFE_Jodi_Mon6}}",
+        "Mon4": "{{i18n: CFE_Jodi_Mon4}}",
+        "Mon2_inlaw_Sam": "{{i18n: CFE_Jodi_Mon2inlawSam}}",
+        "Mon2_1": "{{i18n: CFE_Jodi_Mon2y1}}",
+        "Mon2_2": "{{i18n: CFE_Jodi_Mon2y2}}",
+        "Tue10": "{{i18n: CFE_Jodi_Tue10}}",
+        "Tue8": "{{i18n: CFE_Jodi_Tue8}}",
+        "Tue6": "{{i18n: CFE_Jodi_Tue6}}",
+        "Tue4": "{{i18n: CFE_Jodi_Tue4}}",
+        "Tue2": "{{i18n: CFE_Jodi_Tue2}}",
+        "Wed8": "{{i18n: CFE_Jodi_Wed8}}",
+        "Wed6": "{{i18n: CFE_Jodi_Wed6}}",
+        "Wed4": "{{i18n: CFE_Jodi_Wed4}}",
+        "Wed2": "{{i18n: CFE_Jodi_Wed2}}",
+        "Thu10_1": "{{i18n: CFE_Jodi_Thu10y1}}",
+        "Thu10_2": "{{i18n: CFE_Jodi_Thu10y2}}",
+        "Thu8": "{{i18n: CFE_Jodi_Thu8}}",
+        "Thu6": "{{i18n: CFE_Jodi_Thu6}}",
+        "Thu4_1": "{{i18n: CFE_Jodi_Thu4y1}}",
+        "Thu4_2": "{{i18n: CFE_Jodi_Thu4y2}}",
+        "Thu2": "{{i18n: CFE_Jodi_Thu2}}",
+        "Fri10_1": "{{i18n: CFE_Jodi_Fri10y1}}",
+        "Fri10_2": "{{i18n: CFE_Jodi_Fri10y2}}",
+        "Fri8": "{{i18n: CFE_Jodi_Fri8}}",
+        "Fri6_1": "{{i18n: CFE_Jodi_Fri6y1}}",
+        "Fri6_2": "{{i18n: CFE_Jodi_Fri6y2}}",
+        "Fri4": "{{i18n: CFE_Jodi_Fri4}}",
+        "Fri2": "{{i18n: CFE_Jodi_Fri2}}",
+        "Sat8": "{{i18n: CFE_Jodi_Sat8}}",
+        "Sat6": "{{i18n: CFE_Jodi_Sat6}}",
+        "Sat2": "{{i18n: CFE_Jodi_Sat2}}",
+        "Sun8_2": "{{i18n: CFE_Jodi_Sun8y2}}",
+        "Sun6": "{{i18n: CFE_Jodi_Sun6}}",
+        "Sun4_1": "{{i18n: CFE_Jodi_Sun4y1}}",
+        "Sun4_2": "{{i18n: CFE_Jodi_Sun4y2}}",
+        "Sun2": "{{i18n: CFE_Jodi_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Fri": "{{i18n: CFE_Jodi_summerFri}}",
+        "fall_Fri": "{{i18n: CFE_Jodi_fallFri}}",
+        "Tue": "{{i18n: CFE_Jodi_Tue}}",
+        "Sun_1": "{{i18n: CFE_Jodi_Suny1}}",
+        "Sun_old": "{{i18n: CFE_Jodi_Sun_old}}",
+        "Sun_116": "{{i18n: CFE_Jodi_Sun_116}}",
+        "Sun_117": "{{i18n: CFE_Jodi_Sun_117}}",
+        "Sun_2": "{{i18n: CFE_Jodi_Suny2}}"
+      },
+      "When": { "Query: '{{CFE_Jodi}}' = 'true' OR ('{{CFE_Jodi}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

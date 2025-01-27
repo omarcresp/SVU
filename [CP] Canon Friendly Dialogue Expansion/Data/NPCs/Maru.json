@@ -1,0 +1,271 @@
+{
+  "Changes": [
+    /*{
+      "LogName": "CFE_Maru_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        //any keys that overlap go here
+      },
+      "When": { "ModdedDialogCompat": "true",  "Query: '{{CFE_Maru}}' = 'true' OR ('{{CFE_Maru}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }, */
+    {
+      "LogName": "CFE_Maru_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Maru_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Maru_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Maru_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Maru_PrismaticShard}}",
+
+        "AcceptGift_(O)72": "{{i18n: CFE_Maru_Diamond}}",
+        "AcceptGift_(O)190": "{{i18n: CFE_Maru_Cauliflower}}",
+        "AcceptGift_(O)197": "{{i18n: CFE_Maru_CheeseCauliflower}}",
+        "AcceptGift_(O)243": "{{i18n: CFE_Maru_MinersTreat}}",
+        "AcceptGift_(O)215": "{{i18n: CFE_Maru_PepperPoppers}}",
+        "AcceptGift_(O)222": "{{i18n: CFE_Maru_RhubarbPie}}",
+        "AcceptGift_(O)400": "{{i18n: CFE_Maru_Strawberry}}"
+      },
+      "When": { "Query: '{{CFE_Maru}}' = 'true' OR ('{{CFE_Maru}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Maru_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Maru": "{{i18n: CFE_Maru_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Maru}}' = 'true' OR ('{{CFE_Maru}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Maru_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Maru_spring1y2{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+
+        "summer_1_1": "{{i18n: CFE_Maru_summer1}}",
+        "summer_1_2": "{{i18n: CFE_Maru_summer1}}",
+        "summer_27_1": "{{i18n: CFE_Maru_summer27}}",
+        "summer_27_2": "{{i18n: CFE_Maru_summer27}}",
+
+        "fall_15_1": "{{i18n: CFE_Maru_fall15}}",
+        "fall_15_2": "{{i18n: CFE_Maru_fall15}}",
+
+        "winter_1_1": "{{i18n: CFE_Maru_winter1}}",
+        "winter_1_2": "{{i18n: CFE_Maru_winter1}}",
+        "winter_7_1": "{{i18n: CFE_Maru_winter7}}",
+        "winter_7_2": "{{i18n: CFE_Maru_winter7}}",
+        "winter_28_1": "{{i18n: CFE_Maru_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Maru_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Maru_summerMon10}}",
+        "summer_Mon6": "{{i18n: CFE_Maru_summerMon6}}",
+        "summer_Mon2": "{{i18n: CFE_Maru_summerMon2}}",
+        "summer_Tue8": "{{i18n: CFE_Maru_summerTue8}}",
+        "summer_Tue6": "{{i18n: CFE_Maru_summerTue6}}",
+        "summer_Tue4_inlaw_Sebastian": "{{i18n: CFE_Maru_summerTue4inlawSebastian{{GenderNeutralCompat}} |SiblingNoun={{lowercase:{{Random:{{GNMTSiblingNoun}}}}}}}}",
+        "summer_Tue2": "{{i18n: CFE_Maru_summerTue2}}",
+        "summer_Wed10": "{{i18n: CFE_Maru_summerWed10}}",
+        "summer_Wed8": "{{i18n: CFE_Maru_summerWed8}}",
+        "summer_Wed6": "{{i18n: CFE_Maru_summerWed6}}",
+        "summer_Wed4": "{{i18n: CFE_Maru_summerWed4}}",
+        "summer_Wed2": "{{i18n: CFE_Maru_summerWed2}}",
+        "summer_Thu6": "{{i18n: CFE_Maru_summerThu6}}",
+        "summer_Thu4": "{{i18n: CFE_Maru_summerThu4}}",
+        "summer_Thu2": "{{i18n: CFE_Maru_summerThu2}}",
+        "summer_Fri10": "{{i18n: CFE_Maru_summerFri10}}",
+        "summer_Fri6": "{{i18n: CFE_Maru_summerFri6}}",
+        "summer_Fri4": "{{i18n: CFE_Maru_summerFri4}}",
+        "summer_Sat10": "{{i18n: CFE_Maru_summerSat10}}",
+        "summer_Sat8": "{{i18n: CFE_Maru_summerSat8}}",
+        "summer_Sat6": "{{i18n: CFE_Maru_summerSat6}}",
+        "summer_Sat4": "{{i18n: CFE_Maru_summerSat4}}",
+        "summer_Sat2": "{{i18n: CFE_Maru_summerSat2}}",
+        "summer_Sun10": "{{i18n: CFE_Maru_summerSun10}}",
+        "summer_Sun8": "{{i18n: CFE_Maru_summerSun8}}",
+        "summer_Sun4": "{{i18n: CFE_Maru_summerSun4}}",
+
+        "fall_Mon8": "{{i18n: CFE_Maru_fallMon8}}",
+        "fall_Mon6": "{{i18n: CFE_Maru_fallMon6}}",
+        "fall_Mon4": "{{i18n: CFE_Maru_fallMon4}}",
+        "fall_Tue10": "{{i18n: CFE_Maru_fallTue10}}",
+        "fall_Tue8": "{{i18n: CFE_Maru_fallTue8}}",
+        "fall_Tue4": "{{i18n: CFE_Maru_fallTue4}}",
+        "fall_Tue2": "{{i18n: CFE_Maru_fallTue2}}",
+        "fall_Wed10": "{{i18n: CFE_Maru_fallWed10{{GenderNeutralCompat}} |SpouseNoun={{lowercase:{{Random:{{GNMTSpouseNoun}}}}}}}}",
+        "fall_Wed8": "{{i18n: CFE_Maru_fallWed8}}",
+        "fall_Wed6": "{{i18n: CFE_Maru_fallWed6}}",
+        "fall_Wed4": "{{i18n: CFE_Maru_fallWed4}}",
+        "fall_Thu8": "{{i18n: CFE_Maru_fallThu8}}",
+        "fall_Thu4": "{{i18n: CFE_Maru_fallThu4}}",
+        "fall_Fri10": "{{i18n: CFE_Maru_fallFri10}}",
+        "fall_Fri8": "{{i18n: CFE_Maru_fallFri8}}",
+        "fall_Fri6": "{{i18n: CFE_Maru_fallFri6}}",
+        "fall_Fri4": "{{i18n: CFE_Maru_fallFri4}}",
+        "fall_Sat10": "{{i18n: CFE_Maru_fallSat10}}",
+        "fall_Sat6": "{{i18n: CFE_Maru_fallSat6}}",
+        "fall_Sat4": "{{i18n: CFE_Maru_fallSat4}}",
+        "fall_Sun10": "{{i18n: CFE_Maru_fallSun10}}",
+        "fall_Sun8": "{{i18n: CFE_Maru_fallSun8}}",
+        "fall_Sun6": "{{i18n: CFE_Maru_fallSun6}}",
+        "fall_Sun4": "{{i18n: CFE_Maru_fallSun4}}",
+        "fall_Sun2": "{{i18n: CFE_Maru_fallSun2}}",
+
+        "winter_Mon8": "{{i18n: CFE_Maru_winterMon8}}",
+        "winter_Mon6": "{{i18n: CFE_Maru_winterMon6}}",
+        "winter_Mon4": "{{i18n: CFE_Maru_winterMon4}}",
+        "winter_Mon2": "{{i18n: CFE_Maru_winterMon2}}",
+        "winter_Tue8": "{{i18n: CFE_Maru_winterTue8}}",
+        "winter_Tue6": "{{i18n: CFE_Maru_winterTue6}}",
+        "winter_Tue4": "{{i18n: CFE_Maru_winterTue4}}",
+        "winter_Wed10": "{{i18n: CFE_Maru_winterWed10}}",
+        "winter_Wed6_inlaw_Penny": "{{i18n: CFE_Maru_winterWed6inlawPenny}}",
+        "winter_Wed6": "{{i18n: CFE_Maru_winterWed6}}",
+        "winter_Wed4": "{{i18n: CFE_Maru_winterWed4}}",
+        "winter_Thu10": "{{i18n: CFE_Maru_winterThu10}}",
+        "winter_Thu8": "{{i18n: CFE_Maru_winterThu8}}",
+        "winter_Thu6": "{{i18n: CFE_Maru_winterThu6}}",
+        "winter_Thu4_inlaw_Sebastian": "{{i18n: CFE_Maru_winterThu4inlawSebastian}}",
+        "winter_Thu4": "{{i18n: CFE_Maru_winterThu4}}",
+        "winter_Fri10": "{{i18n: CFE_Maru_winterFri10}}",
+        "winter_Fri6": "{{i18n: CFE_Maru_winterFri6}}",
+        "winter_Fri4": "{{i18n: CFE_Maru_winterFri4}}",
+        "winter_Sat8": "{{i18n: CFE_Maru_winterSat8}}",
+        "winter_Sat6": "{{i18n: CFE_Maru_winterSat6}}",
+        "winter_Sat4": "{{i18n: CFE_Maru_winterSat4}}",
+        "winter_Sun10": "{{i18n: CFE_Maru_winterSun10}}",
+        "winter_Sun8": "{{i18n: CFE_Maru_winterSun8}}",
+        "winter_Sun6": "{{i18n: CFE_Maru_winterSun6}}",
+        "winter_Sun4": "{{i18n: CFE_Maru_winterSun4}}",
+        "winter_Sun2": "{{i18n: CFE_Maru_winterSun2}}",
+
+        "Mon10": "{{i18n: CFE_Maru_Mon10}}",
+        "Mon8": "{{i18n: CFE_Maru_Mon8}}",
+        "Mon6": "{{i18n: CFE_Maru_Mon6}}",
+        "Mon4": "{{i18n: CFE_Maru_Mon4}}",
+        "Mon2": "{{i18n: CFE_Maru_Mon2}}",
+        "Tue10": "{{i18n: CFE_Maru_Tue10}}",
+        "Tue8": "{{i18n: CFE_Maru_Tue8}}",
+        "Tue6_inlaw_Penny": "{{i18n: CFE_Maru_Tue6inlawPenny{{GenderNeutralCompat}}{{GenderNeutralSingular}} |AdultInformalNoun={{lowercase:{{Random:{{GNMTAdultInformalNoun}}}}}} |SubjectivePronoun={{lowercase:{{Random:{{GNMTSubjectivePronoun}}}}}}}}",
+        "Tue6": "{{i18n: CFE_Maru_Tue6}}",
+        "Tue4": "{{i18n: CFE_Maru_Tue4}}",
+        "Tue2": "{{i18n: CFE_Maru_Tue2}}",
+        "Wed8": "{{i18n: CFE_Maru_Wed8}}",
+        "Wed6": "{{i18n: CFE_Maru_Wed6}}",
+        "Wed4": "{{i18n: CFE_Maru_Wed4}}",
+        "Wed2": "{{i18n: CFE_Maru_Wed2}}",
+        "Thu10": "{{i18n: CFE_Maru_Thu10}}",
+        "Thu6": "{{i18n: CFE_Maru_Thu6}}",
+        "Thu4": "{{i18n: CFE_Maru_Thu4}}",
+        "Fri8": "{{i18n: CFE_Maru_Fri8}}",
+        "Fri6": "{{i18n: CFE_Maru_Fri6}}",
+        "Fri4": "{{i18n: CFE_Maru_Fri4}}",
+        "Fri2": "{{i18n: CFE_Maru_Fri2}}",
+        "Sat10": "{{i18n: CFE_Maru_Sat10}}",
+        "Sat8": "{{i18n: CFE_Maru_Sat8}}",
+        "Sat6": "{{i18n: CFE_Maru_Sat6}}",
+        "Sat4": "{{i18n: CFE_Maru_Sat4}}",
+        "Sat2": "{{i18n: CFE_Maru_Sat2}}",
+        "Sun10": "{{i18n: CFE_Maru_Sun10}}",
+        "Sun8": "{{i18n: CFE_Maru_Sun8}}",
+
+        //Generic Weekday Dialogue
+        "fall_Mon_inlaw_Sebastian": "{{i18n: CFE_Maru_fallMoninlawSebastian}}"
+      },
+      "When": { "Query: '{{CFE_Maru}}' = 'true' OR ('{{CFE_Maru}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Maru_Marriage_GenericDialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Maru": "{{i18n: CFE_Maru_Married_spouseRoom_{{random: 1,2,3,4,5}}}}",
+        "jobLeave_Maru": "{{i18n: CFE_Maru_Married_jobLeave_{{Random: 1,2,3,4}}}}",
+        "jobReturn_Maru": "{{i18n: CFE_Maru_Married_jobReturn_{{Random: 1,2,3,4}}}}"
+      },
+      "When": { "Query: '{{CFE_Maru}}' = 'true' OR ('{{CFE_Maru}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Maru_Marriage",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueMaru",
+      "Entries": {
+        //these lines follow different priority rules than unmarried dialogue does, with different options having different % likelihoods to show up each day when the right conditions are met.
+
+        //Weather specific dialogue
+        //note that Indoor_Day is the key for any weather besides rain, even when the Maru is outside. Day means prior to 6pm. Indoor_Night is specific to inside the farmhouse when it's not raining after 6pm.
+        "Rainy_Day_0": "{{i18n: CFE_Maru_Married_RainyDay_{{Random: 1,2}}}}",
+        "Rainy_Day_1": "{{i18n: CFE_Maru_Married_RainyDay_{{Random:3,4}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Maru_Married_RainyDay_{{Random: 5,6}}}}",
+        "Rainy_Day_3": "{{i18n: CFE_Maru_Married_RainyDay_{{Random: 7,8}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Maru_Married_RainyDay_{{Random: 9,10}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Maru_Married_RainyNight_{{Random: 1,2}}}}",
+        "Rainy_Night_1": "{{i18n: CFE_Maru_Married_RainyNight_{{Random: 3,4}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Maru_Married_RainyNight_{{Random: 5,6}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Maru_Married_RainyDay_{{Random: 7,8}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Maru_Married_RainyDay_{{Random: 9,10}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Maru_Married_IndoorDay_{{Random: 1,2,3}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Maru_Married_IndoorDay_{{Random: 4,5,6}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Maru_Married_IndoorDay_{{Random: 7,8,9}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Maru_Married_IndoorDay_{{Random: 10,11,12}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Maru_Married_IndoorDay_{{Random: 13,14,15}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Maru_Married_IndoorNight_{{Random: 1,2}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Maru_Married_IndoorNight_{{Random: 3,4}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Maru_Married_IndoorNight_{{Random: 5,6}}}}",
+        "Indoor_Night_3": "{{i18n: CFE_Maru_Married_IndoorNight_{{Random: 7,8}}}}",
+        "Indoor_Night_4": "{{i18n: CFE_Maru_Married_IndoorNight_{{Random: 9,10}}}}",
+
+        //locational specific dialogue
+        "funLeave_Maru": "{{i18n: CFE_Maru_Married_funLeave_{{Random: 1,2}}}}",
+        "funReturn_Maru": "{{i18n: CFE_Maru_Married_funReturn_{{Random: 1,2}}}}",
+
+        "OneKid_0": "{{i18n: CFE_Maru_Married_OneKid_{{Random: 1,2}}}}",
+        "OneKid_1": "{{i18n: CFE_Maru_Married_OneKid_{{Random: 3,4}}}}",
+        "OneKid_2": "{{i18n: CFE_Maru_Married_OneKid_{{Random: 5,6}}}}",
+        "OneKid_3": "{{i18n: CFE_Maru_Married_OneKid_{{Random: 7,8}}}}",
+        "TwoKids_0": "{{i18n: CFE_Maru_Married_TwoKids_{{Random: 1,2}}}}",
+        "TwoKids_1": "{{i18n: CFE_Maru_Married_TwoKids_{{Random: 3,4}}}}",
+        "TwoKids_2": "{{i18n: CFE_Maru_Married_TwoKids_{{Random: 5,6}}}}",
+        "TwoKids_3": "{{i18n: CFE_Maru_Married_TwoKids_{{Random: 7,8}}}}",
+
+        "Outdoor_0": "{{i18n: CFE_Maru_Married_Outdoor_{{Random: 1,2}}}}",
+        "Outdoor_1": "{{i18n: CFE_Maru_Married_Outdoor_{{Random: 9,10}}}}",
+        "Outdoor_2": "{{i18n: CFE_Maru_Married_Outdoor_{{Random: 3,4}}}}",
+        "Outdoor_3": "{{i18n: CFE_Maru_Married_Outdoor_{{Random: 5,6}}}}",
+        "Outdoor_4": "{{i18n: CFE_Maru_Married_Outdoor_{{Random: 7,8}}}}",
+
+        "patio_Maru": "{{i18n: CFE_Maru_Married_patio_{{Random: 1,2,3}}}}",
+
+        //Date Specific Dialogue
+        "spring_9": "{{i18n: CFE_Maru_Married_spring9}}",
+        "spring_15": "{{i18n: CFE_Maru_Married_spring15}}",
+        "spring_16": "{{i18n: CFE_Maru_Married_spring16}}",
+        "spring_26": "{{i18n: CFE_Maru_Married_spring26}}",
+
+        "summer_4": "{{i18n: CFE_Maru_Married_summer4}}",
+        "summer_9": "{{i18n: CFE_Maru_Married_summer9}}",
+        "summer_16": "{{i18n: CFE_Maru_Married_summer16}}",
+        "summer_23": "{{i18n: CFE_Maru_Married_summer23}}",
+        "summer_27": "{{i18n: CFE_Maru_Married_summer27}}",
+
+        "fall_9": "{{i18n: CFE_Maru_Married_fall9}}",
+        "fall_15": "{{i18n: CFE_Maru_Married_fall15}}",
+        "fall_18": "{{i18n: CFE_Maru_Married_fall18}}",
+        "fall_22": "{{i18n: CFE_Maru_Married_fall22}}",
+
+        "winter_11": "{{i18n: CFE_Maru_Married_winter11}}",
+        "winter_22": "{{i18n: CFE_Maru_Married_winter22}}",
+        "winter_23": "{{i18n: CFE_Maru_Married_winter23}}",
+        "winter_28": "{{i18n: CFE_Maru_Married_winter28}}"
+      },
+      "When": { "Query: '{{CFE_Maru}}' = 'true' OR ('{{CFE_Maru}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

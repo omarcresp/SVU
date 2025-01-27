@@ -1,0 +1,197 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+                "SpouseStardrop": "You might not believe this, but I was out walking in a thunderstorm and a bolt of lightning barely missed me... I found that fruit growing where it struck.#$b#I wanted you to have it because... well, I thought it might brighten your day, like you brighten all of mine.$l#$b#Sometimes it feels like I was sleepwalking before I met you. The days all blended together. I thought I was just waiting to leave the valley and start my 'real' life... $s#$b#I didn't know that what I was missing was the kind of deep connection I have with you. I didn't even realize that was something I wanted.#$b#Spending most of my time alone was what was comfortable for me... but it didn't make me happy. I've found a healthier balance now, with you.$7#$b#I love you, @. Wherever you are is exactly where I want to be.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+                "SpouseStardrop": "You might not believe this, but I was out walking in a thunderstorm and a bolt of lightning barely missed me... I found that fruit growing where it struck.#$b#I wanted you to have it because... well, I thought it might brighten your day, like you brighten all of mine.$7#$b#Sometimes it feels like I was sleepwalking before I met you. The days all blended together. I thought I was just waiting to leave the valley and start my 'real' life... $s#$b#I didn't know that what I was missing was the kind of deep connection I have with you. I didn't even realize that was something I wanted.#$b#Spending most of my time alone was what was comfortable for me... but it didn't make me happy. I've found a healthier balance now, with you.$7#$b#I love you, @. Wherever you are is exactly where I want to be.$7",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "LogName": "Sebastian terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Sebastian": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Sebastian terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Sebastian": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSebastian",
+            "Entries":
+            {
+                "Rainy_Day_4": "Hey, another rainy day... perfect.#$e#You look cold... I'll make us some coffee.$7",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+	    "Logname": "Sebastian no blush edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian",
+            "FromFile": "assets/Portraits/SebastianNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.SebastianMaruRobinDemetrius": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        {
+	    "Logname": "Sebastian no blush edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian_Winter",
+            "FromFile": "assets/Portraits/SebastianNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.SebastianMaruRobinDemetrius": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Sebastian no blush edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian",
+            "FromFile": "assets/Portraits/SebastianNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        {
+	    "Logname": "Sebastian no blush edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian_Winter",
+            "FromFile": "assets/Portraits/SebastianNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+//CFDE
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSebastian",
+            "Entries":
+            {
+                "Rainy_Day_4": "Hey, another rainy day... perfect.#$e#$c .5#You look cold... I'll make us some coffee.$7#Remember that day at the beach, when we shared my umbrella? That's a really nice memory.$7",
+                "Rainy_Night_4": "#$c .5#Maybe a witch will visit us tonight? Hah.. if only life were that interesting...#Hey, let me know when you're ready to turn in for the night. I'll plug in my headphones so I don't keep you up.$7",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+//Immersive Spouses
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSebastian",
+            "Entries": {
+                "funReturn_Sebastian": "#$c .5#Hey, you're still up. You weren't worried about me, were you?$7#Sorry I'm late. Sam didn't want to stop until he won.#$e#$c .5#I'm glad hanging with Sam is still part of my routine. I could easily spend every day with you, but I think it's good for me to maintain my friendships too.$7#These saloon nights really are fun for me, but they tire me out too. Coming back here feels like getting to a save point.$7"
+            },
+            "When": {
+                "DayOfWeek": "Friday",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sebastian",
+            "Entries": {
+                "marriage_doc2": "Hey, @... I know we don't have a lot of secrets from each other, but doctor's visits are one thing I'd like to keep private.#$b#I'll see you back home, okay?",
+            },
+            "When": {
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    ]
+}

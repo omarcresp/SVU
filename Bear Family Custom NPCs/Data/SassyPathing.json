@@ -1,0 +1,52 @@
+{
+    "Changes": [
+
+      {
+        "LogName": "Sassy spawns inside",
+        "Action": "EditMap",
+        "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+        "MapTiles": [
+          {
+            "Position": {
+              "X": "13",
+              "Y": "29"
+            },
+            "Layer": "Back",
+            "SetProperties": {
+              "CustomCompanions": "Spawn 1 MadDog.HashtagBearFamCC.SassyInside"
+            }
+          }
+        ],
+        "When": {
+          "HasSeenEvent |contains=MadDog.BearFam.16199002": true,
+          "Weather": "Sun, Wind, Snow, Rain, Storm"
+        },
+        "Season": "Spring, Summer, Fall, Winter",
+        "Update": "OnLocationChange"
+      },
+
+      {
+        "LogName": "Sassy spawns outside",
+        "Action": "EditMap",
+        "Target": "Maps/EastScarp_Village",
+        "MapTiles": [
+          {
+            "Position": {
+              "X": "46",
+              "Y": "14"
+            },
+            "Layer": "Back",
+            "SetProperties": {
+              "CustomCompanions": "Spawn 1 MadDog.HashtagBearFamCC.SassyOutside"
+            }
+          }
+        ],
+        "When": {
+          "HasSeenEvent |contains=MadDog.BearFam.16199002": true,
+          "Weather": "Sun"
+        },
+        "Season": "Spring, Summer, Fall, Winter",
+        "Update": "OnLocationChange"
+      } 
+    ]
+  }

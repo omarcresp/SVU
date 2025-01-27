@@ -1,0 +1,543 @@
+{
+	"Changes": [
+
+	// RANDOM DROPS EVENTS
+	{
+	"LogName": "Load Wild Animals Bears Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Bears_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Bears_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "grunt",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Bears_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"RandomItemId": [
+					"296",	// SALMON BERRY
+					"410",	// BLACK BERRY
+					"340",	// HONEY
+					"724",	// MAPLE SYRUP
+					"771"	// FIBER
+				],
+				"MinStack": 1,
+				"MaxStack": 10
+				}
+			],
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Crows Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Crows_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Crows_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "crow",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Crows_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"RandomItemId": [
+					"168",	// TRASH
+					"770",	// MIXED SEEDS
+					"378",	// COPPER ORE
+					"380",	// IRON ORE
+					"384"	// GOLD ORE
+				],
+				"MinStack": 3,
+				"MaxStack": 10
+				}
+			],
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Raccoons Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Raccoons_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Raccoons_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "Raccoon",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Raccoons_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"RandomItemId": [
+					"168",	// TRASH
+					"169",	// DRIFTWOOD
+					"170",	// BROKEN GLASSES
+					"171",	// BROKEN CD
+					"172"	// SOGGY NEWSPAPER
+				],
+				"MinStack": 3,
+				"MaxStack": 10
+				}
+			],
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Slimes Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Slimes_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Slimes_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "slimedead",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Slimes_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"RandomItemId": [
+					"766",	// SLIME
+					"413",	// BLUE SLIME EGG
+					"437",	// RED SLIME EGG
+					"439",	// PURPLE SLIME EGG
+					"680"	// GREEN SLIME EGG
+				],
+				"MinStack": 1,
+				"MaxStack": 6
+				}
+			],
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Squirrels Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Squirrels_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Squirrels_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "leafrustle",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Squirrels_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"RandomItemId": [
+					"309",	// ACORN
+					"310",	// MAPLE SEED
+					"311",	// PINE CONE
+					"292",	// MAHOGANY SEED
+					"MossySeed"	// MOSSY SEED
+				],
+				"MinStack": 3,
+				"MaxStack": 10
+				}
+			],
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.WildAnimals_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.WildAnimals_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "rabbit",
+			"Message": "{{i18n: SmolHooman.WildAnimals.WildAnimals_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"RandomItemId": [
+					"771",	// FIBER
+					"770",	// DRIFTWOOD
+					"390",	// STONE
+					"388",	// WOOD
+					"330"	// CLAY
+				],
+				"MinStack": 3,
+				"MaxStack": 10
+				}
+			],
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Wild Birds Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.WildBirds_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.WildBirds_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "SpringBirds",
+			"Message": "{{i18n: SmolHooman.WildAnimals.WildBirds_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"RandomItemId": [
+					"684",	// BUG MEAT
+					"774",	// WILD BAIT
+					"685",	// BAIT
+					"770",	// MIXED SEEDS
+					"MixedFlowerSeeds"	// MIXED FLOWER SEEDS
+				],
+				"MinStack": 3,
+				"MaxStack": 10
+				}
+			],
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Wild Cats Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.WildCats_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.WildCats_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "cat",
+			"Message": "{{i18n: SmolHooman.WildAnimals.WildCats_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"ItemId": "RANDOM_ITEMS (O)",
+				"PerItemCondition": "ITEM_CATEGORY Target -4",
+				"MinStack": 1,
+				"MaxStack": 10
+				}
+			],
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Wild Dogs Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.WildDogs_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.WildDogs_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "dog_bark",
+			"Message": "{{i18n: SmolHooman.WildAnimals.WildDogs_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"RandomItemId": [
+					"881",	// BONE FRAGMENT
+					"169",	// DRIFTWOOD
+					"330",	// CLAY
+					"684",	// BUG MEAT
+					"444"	// DUCK FEATHER
+				],
+				"MinStack": 1,
+				"MaxStack": 10
+				}
+			],
+		}
+	}
+	},
+
+	// RANDOM BUFFS EVENTS
+	{
+	"LogName": "Load Wild Animals Fairy Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Fairy_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Fairy_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "yoba",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Fairy_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"ItemId": "872",	// FAIRY DUST
+				"MinStack": 0,
+				"MaxStack": 3
+				}
+			],
+			"SideEffects": [
+				{
+				"Actions": [
+					"AddBuff SmolHooman.WildAnimals_FairysTouch"
+				]
+				}
+			]
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Junimos Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Junimos_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Junimos_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "junimoMeep1",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Junimos_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"ItemId": "347",	// RARE SEED
+				"MinStack": 0,
+				"MaxStack": 3
+				}
+			],
+			"SideEffects": [
+				{
+				"Actions": [
+					"AddBuff SmolHooman.WildAnimals_OneWithTheForest"
+				]
+				}
+			]
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Mysterious Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Mysterious_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Mysterious_NightEvent",
+			"Type": "Placement",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "terraria_boneSerpent",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Mysterious_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"Output": [
+				{
+				"Type": "Item",
+				"Condition": "TRUE",
+				"RandomItemId": [
+					"881",	// BONE FRAGMENT
+					"579",	// PREHISTORIC SCAPULA
+					"580",	// PREHISTORIC TIBIA
+					"581",	// PREHISTORIC SKULL
+					"582",	// SKELETAL HAND
+					"583",	// PREHISTORIC RIB
+					"584",	// PREHISTORIC VERTEBRA
+					"585"	// SKELETAL TAIL
+				],
+				"MinStack": 1,
+				"MaxStack": 3
+				}
+			],
+			"SideEffects": [
+				{
+				"Actions": [
+					"AddBuff SmolHooman.WildAnimals_Spooked"
+				]
+				}
+			]
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Skunks Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Skunks_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Skunks_NightEvent",
+			"Type": "Message",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "rabbit",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Skunks_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"SideEffects": [
+				{
+				"Actions": [
+					"AddBuff SmolHooman.WildAnimals_StinkySkunk"
+				]
+				}
+			]
+		}
+	}
+	},
+
+	{
+	"LogName": "Load Wild Animals Unicorn Nightly Event",
+	"Action": "EditData",
+	"Target": "Mods/leclair.morenightlyevents/Events",
+	"Entries": {
+		"SmolHooman.WildAnimals.Unicorn_NightEvent": {
+			"Id": "SmolHooman.WildAnimals.Unicorn_NightEvent",
+			"Type": "Message",
+			"Conditions": [
+				{
+				"Condition": "TRUE",
+				"Chance": 0.01,
+				"Weight": 1,
+				"IsExclusive": false
+				}
+			],
+			"TargetMap": "Farm",
+			"SoundName": "yoba",
+			"Message": "{{i18n: SmolHooman.WildAnimals.Unicorn_NightEventDialogue}}",
+			"MessageDelay": 1500,
+			"SideEffects": [
+				{
+				"Actions": [
+					"AddBuff SmolHooman.WildAnimals_MagicalVibes"
+				]
+				}
+			]
+		}
+	}
+	},
+	]
+}

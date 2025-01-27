@@ -1,0 +1,55 @@
+/*
+
+These patches add the achievements and UI translations used by the C# component.
+
+*/
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Achievements",
+      "Entries": {
+        "637201": "{{i18n: achievement.name}}^{{i18n:achievement.description}}^true^-1^-1"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Strings/UI",
+      "Entries": {
+        // achievement
+        "{{ModId}}_AchievementCongratulations": "{{i18n: achievement.congratulations}}",
+
+        //chat messages (must start with 'Chat_')
+        "Chat_{{ModId}}_FishDonated": "{{i18n: chat.fishDonated}}",
+        "Chat_{{ModId}}_AchievementUnlocked": "{{i18n: chat.achievementUnlocked}}",
+
+        // welcome message after the Stardew Aquarium has been completed
+        "{{ModID}}_AquariumWelcome": "{{i18n: ui.aquariumWelcome}}",
+
+        // donation menu dialogue and options
+        "{{ModId}}_DonationMenuTitle": "{{i18n: donationMenu.title}}",
+        "{{ModId}}_DonationQuestion": "{{i18n: donationMenu.question}}",
+        "{{ModId}}_OptionYes": "{{i18n: donationMenu.optionYes}}",
+        "{{ModId}}_OptionNo": "{{i18n: donationMenu.optionNo}}",
+        "{{ModId}}_More": "{{i18n: donationMenu.optionMore}}",
+        "{{ModId}}_Exit": "{{i18n: donationMenu.optionExit}}",
+        "{{ModId}}_DeclineToDonate": "{{i18n: donationMenu.declineToDonate}}",
+        "{{ModId}}_NothingToDonate": "{{i18n: donationMenu.nothingToDonate}}",
+        "{{ModId}}_MenuCloseFishDonated": "{{i18n: donationMenu.menuCloseFishDonated}}",
+        "{{ModId}}_MenuCloseNoFishDonated": "{{i18n: donationMenu.menuCloseNoFishDonated}}",
+        "{{ModId}}_Donate": "{{i18n: donationMenu.donate}}",
+        "{{ModId}}_DonateDescription": "{{i18n: donationMenu.donateDescription}}",
+
+        // collections menu title
+        "{{ModId}}_CollectionsMenu": "{{i18n: collectionsMenu.title}}",
+
+        // tank messages
+        "{{ModId}}_WhichFishInfo": "{{i18n: tank.whichFishInfo}}",
+        "{{ModId}}_EmptyTank": "{{i18n: tank.empty}}",
+
+        // ehehehe
+        "{{ModId}}_PufferchickDonated": "{{i18n: secret.pufferchickDonated}}"
+      }
+    }
+  ]
+}

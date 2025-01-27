@@ -1,0 +1,1175 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "Elaho.PaisleysBridalBoutiqueCP_PaisleyShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyorNone",
+							"Portrait": "{{InternalAssetKey: assets/Portraits/Paisley.png}}",
+                            "Dialogues": [
+							//Spring Dialogue
+                                // dialogue on sunny spring days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_SpringSun",
+                                    "Condition": "SEASON Spring, WEATHER Here Sun",
+                                    "Dialogue": "{{i18n:dialogue-spring-sun}}",
+                                },
+                                // dialogue on rainy spring days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_SpringRain",
+                                    "Condition": "SEASON Spring, WEATHER Here Rain",
+                                    "Dialogue": "{{i18n:dialogue-spring-rain}}",
+                                },
+                                // dialogue on stormy spring days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_SpringStorm",
+                                    "Condition": "SEASON Spring, WEATHER Here Storm",
+                                    "Dialogue": "{{i18n:dialogue-spring-storm}}",
+                                },
+                                // dialogue on windy spring days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_SpringWind",
+                                    "Condition": "SEASON Spring, WEATHER Here Wind",
+                                    "Dialogue": "{{i18n:dialogue-spring-wind}}",
+                                },
+                                //Summer Dialogue 
+								// dialogue on sunny summer days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_SummerSun",
+                                    "Condition": "SEASON Summer, WEATHER Here Sun",
+                                    "Dialogue": "{{i18n:dialogue-summer-sun}}",
+                                },
+                                // dialogue on rainy summer days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_SummerRain",
+                                    "Condition": "SEASON Summer, WEATHER Here Rain",
+                                    "Dialogue": "{{i18n:dialogue-summer-rain}}",
+                                },
+								// dialogue on stormy summer days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_SummerStorm",
+                                    "Condition": "SEASON Summer, WEATHER Here Storm",
+                                    "Dialogue": "{{i18n:dialogue-summer-storm}}",
+                                },
+
+							//Fall Dialogue
+	                            // dialogue on sunny fall days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_FallSun",
+                                    "Condition": "SEASON Fall, WEATHER Here Sun",
+                                    "Dialogue": "{{i18n:dialogue-fall-sun}}",
+                                },
+                                // dialogue on rainy fall days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_FallRain",
+                                    "Condition": "SEASON Fall, WEATHER Here Rain",
+                                    "Dialogue": "{{i18n:dialogue-fall-rain}}", 
+                                },
+                                // dialogue on stormy fall days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_FallStorm",
+                                    "Condition": "SEASON Fall, WEATHER Here Storm",
+                                    "Dialogue": "{{i18n:dialogue-fall-storm}}",
+                                },
+                                // dialogue on windy fall days
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_FallWind",
+                                    "Condition": "SEASON Fall, WEATHER Here Wind",
+                                    "Dialogue": "{{i18n:dialogue-fall-wind}}",
+                                },
+                                // dialogue any other time
+                                {
+                                    "Id": "Paisley_Bridal_Boutique_Default",
+                                    "Dialogue": "{{i18n:dialogue-default}}",
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+					//Always Available
+                        {
+                            "Id": "Paisley_Bridal_Boutique_Bouquet",
+                            "ItemId": "(O)458",
+							"Price": 500,
+                            "AvailableStock": 1,
+							
+                        }, 
+                        {
+                            "Id": "Paisley_Bridal_Boutique_MermaidPendant",
+                            "ItemId": "(O)460",
+							"Price": 10000,
+                            "AvailableStock": 1,
+							
+                        },
+					//Start of Hats
+					
+					//Spring Hats
+					//Flower Dance or Flowers
+                       {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Dandelion_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Dandelion_Crown",
+                            "Condition": "SEASON Spring",
+							"Price": 1000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Flower_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Flower_Crown",
+							"Condition": "SEASON Spring",
+							"Price": 1000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+						{
+							"Id": "(H)29",
+							"ItemId": "(H)29",
+							"Price": 2000,
+							"Condition": "SEASON Spring",
+							"Available Stock": 1,
+							"AvailableStockLimit": "Player"
+						  },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Hair_Lavender",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Hair_Lavender",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Hair_Marigolds",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Hair_Marigolds",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Flower_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Flower_Crown",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Silver_Flower_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Silver_Flower_Crown",
+                            "Condition": "SEASON Spring",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+							"Id": "(H)LaurelWreathCrown",
+							"ItemId": "(H)LaurelWreathCrown",
+							"Price": 5000,
+							"Condition": "SEASON Spring",
+							"Available Stock": 1,
+							"AvailableStockLimit": "Player"
+						  },
+				//Fancy Flower Crowns
+		                {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Dandelion_Crown_with_Ribbons",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Dandelion_Crown_with_Ribbons",
+                            "Condition": "SEASON Spring",
+							"Price": 1500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Hijab_with_Dandelion_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Hijab_with_Dandelion_Crown",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Hijab_with_Flower_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Hijab_with_Flower_Crown",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Ukrainian_Flower_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Ukrainian_Flower_Crown",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Velvet_Hat",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Velvet_Hat",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+				
+					//Seasonal Wedding
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Hungarian_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Hungarian_Crown",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Hungarian_Crown_with_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Hungarian_Crown_with_Veil",
+                            "Condition": "SEASON Spring",
+							"Price": 3000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Circlet",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Circlet",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Silver_Circlet",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Silver_Circlet",
+                            "Condition": "SEASON Spring",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Clan_Lockhart_Beret",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Clan_Lockhart_Beret",
+                            "Condition": "SEASON Spring",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+
+					//Summer Hats
+					//Beach Festival Hats 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Hair_Plumeria",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Hair_Plumeria",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Pink_Hair_Hibiscus",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Pink_Hair_Hibiscus",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+			                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Orange_Hair_Hibiscus",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Orange_Hair_Hibiscus",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Shell_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Shell_Crown",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Pink_Shell_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Pink_Shell_Crown",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Shell_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Shell_Crown",
+                            "Condition": "SEASON Summer",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Silver_Shell_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Silver_Shell_Crown",
+                            "Condition": "SEASON Summer",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+					//Seasonal summer wedding hats with veil
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Shell_Crown_with_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Shell_Crown_with_Veil",
+                            "Condition": "SEASON Summer",
+							"Price": 3000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Pink_Shell_Crown_with_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Pink_Shell_Crown_with_Veil",
+                            "Condition": "SEASON Summer",
+							"Price": 3000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Shell_Crown_with_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Shell_Crown_with_Veil",
+                            "Condition": "SEASON Summer",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Silver_Shell_Crown_with_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Silver_Shell_Crown_with_Veil",
+                            "Condition": "SEASON Summer",
+							"Price": 7500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+					//Fancy Wedding Hats
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Beaded_Head_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Beaded_Head_Dress",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Beaded_Headband",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Beaded_Headband",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Polish_Wedding_Hat",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Polish_Wedding_Hat",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Crown",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Hat",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Hat",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 						
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Vietnamese_Wedding_Turban",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Vietnamese_Wedding_Turban",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Vietnamese_Wedding_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Vietnamese_Wedding_Crown",
+                            "Condition": "SEASON Summer",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+					//Fall Hats
+					//No Veil or Basic
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Autumn_Harvest_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Autumn_Harvest_Crown",
+                            "Condition": "SEASON Fall",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Georgian_Wedding_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Georgian_Wedding_Crown",
+                            "Condition": "SEASON Fall",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Lace_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Lace_Veil",
+                            "Condition": "SEASON Fall",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gothic_Satin_Top_Hat",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gothic_Satin_Top_Hat",
+                            "Condition": "SEASON Fall",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Wedding_Bindi",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Wedding_Bindi",
+                            "Condition": "SEASON Fall",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 	
+					//With Veil or Fancy
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Georgian_Wedding_Crown_with_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Georgian_Wedding_Crown_with_Veil",
+                            "Condition": "SEASON Fall",
+							"Price": 3000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Sikh_Wedding_Turban",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Sikh_Wedding_Turban",
+                            "Condition": "SEASON Fall",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 		
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Wedding_Bindi_with_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Wedding_Bindi_with_Veil",
+                            "Condition": "SEASON Fall",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },	 						
+					//Always Available Wedding Hats
+						{
+							"Id": "(H)69",
+							"ItemId": "(H)69",
+							"Price": 2500,
+							"Available Stock": 1,
+							"AvailableStockLimit": "Player"
+						  },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_White_Lace_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_White_Lace_Veil",
+							"Price": 1000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Short_Hair_Sparkles",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Short_Hair_Sparkles",
+							"Price": 1500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Medium_Hair_Sparkles",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Medium_Hair_Sparkles",
+							"Price": 2000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Long_Hair_Sparkles",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Long_Hair_Sparkles",
+							"Price": 2500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Crown",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Silver_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Silver_Crown",
+							"Price": 10000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Crown_with_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Crown_with_Veil",
+							"Price": 7500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Silver_Crown_with_Veil",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Silver_Crown_with_Veil",
+							"Price": 12500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Wedding_Bow",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Wedding_Bow",
+							"Price": 1000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+						{
+							"Id": "(H)2",
+							"ItemId": "(H)2",
+							"Price": 2500,
+							"Available Stock": 1,
+							"AvailableStockLimit": "Player"
+						  },
+                        {   
+							"Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Kippah",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Kippah",
+							"Price": 1000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Kippah",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Kippah",
+							"Price": 2000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Wedding_Hijab",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Wedding_Hijab",
+							"Price": 1000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Hijab_with_Gold_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Hijab_with_Gold_Crown",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Hijab_with_Silver_Crown",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Hijab_with_Silver_Crown",
+							"Price": 10000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					//End of Hats
+
+					//Start of Shirts
+					
+					//Spring Shirts
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_White_Flower_Dance_Blouse",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_White_Flower_Dance_Blouse",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Flower_Dance_Blouse",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Flower_Dance_Blouse",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Flower_Dance_Tuxedo",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Flower_Dance_Tuxedo",
+                            "Condition": "SEASON Spring",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_White_Flower_Dance_Tuxedo",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_White_Flower_Dance_Tuxedo",
+                            "Condition": "SEASON Spring",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Celtic_Corset",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Celtic_Corset",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Hungarian_Corset",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Hungarian_Corset",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Lucky_Blue_Tuxedo",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Lucky_Blue_Tuxedo",
+                            "Condition": "SEASON Spring",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Lockhart_Sash_Corset",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Lockhart_Sash_Corset",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },	
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Lockhart_Sash_Tuxedo",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Lockhart_Sash_Tuxedo",
+                            "Condition": "SEASON Spring",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Red_Embroidered_Tunic",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Red_Embroidered_Tunic",
+                            "Condition": "SEASON Spring",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Red_Embroidered_Blouse",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Red_Embroidered_Blouse",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					//Summer Shirts
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Beaded_Tunic",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Beaded_Tunic",
+                            "Condition": "SEASON Summer",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Orange_Beaded_Tunic",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Orange_Beaded_Tunic",
+                            "Condition": "SEASON Summer",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Polish_Wedding_Corset",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Polish_Wedding_Corset",
+                            "Condition": "SEASON Summer",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Polish_Wedding_Shirt",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Polish_Wedding_Shirt",
+                            "Condition": "SEASON Summer",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Blouse",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Blouse",
+                            "Condition": "SEASON Summer",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Vest",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Vest",
+                            "Condition": "SEASON Summer",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Vietnamese_Wedding_Tunic",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Vietnamese_Wedding_Tunic",
+                            "Condition": "SEASON Summer",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Red_Vietnamese_Wedding_Tunic",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Red_Vietnamese_Wedding_Tunic",
+                            "Condition": "SEASON Summer",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					//Fall Shirts
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Lace_Corset",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Lace_Corset",
+                            "Condition": "SEASON Fall",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gothic_Tuxedo",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gothic_Tuxedo",
+                            "Condition": "SEASON Fall",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Georgian_Wedding_Corset",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Georgian_Wedding_Corset",
+                            "Condition": "SEASON Fall",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Romanian_Corset",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Romanian_Corset",
+                            "Condition": "SEASON Fall",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Embroidered_Tunic",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Embroidered_Tunic",
+                            "Condition": "SEASON Fall",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Punjabi_Wedding_Tunic",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Punjabi_Wedding_Tunic",
+                            "Condition": "SEASON Fall",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Red_Lehenga_Blouse",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Red_Lehenga_Blouse",
+                            "Condition": "SEASON Fall",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+
+					//Always Available Shirts
+					    {
+                            "Id": "1184",
+                            "ItemId": "1184",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "1185",
+                            "ItemId": "1185",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "1010",
+                            "ItemId": "1010",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_English_Wedding_Corset",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_English_Wedding_Corset",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_White_Corset_with_Gold_Necklace",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_White_Corset_with_Gold_Necklace",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_White_Corset_with_Silver_Necklace",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_White_Corset_with_Silver_Necklace",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+						    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Tallit_Tuxedo",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Tallit_Tuxedo",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },				    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Tallit_Tuxedo",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Tallit_Tuxedo",
+							"Price": 3500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },
+
+					//End of Shirts
+					
+					
+					
+					//Start of Pants
+					
+					//Spring Pants
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_White_Flower_Dance_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_White_Flower_Dance_Dress",
+                            "Condition": "SEASON Spring",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Flower_Dance_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Flower_Dance_Dress",
+                            "Condition": "SEASON Spring",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Flower_Dance_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Flower_Dance_Pants",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_White_Flower_Dance_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_White_Flower_Dance_Pants",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Celtic_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Celtic_Dress",
+                            "Condition": "SEASON Spring",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Hungarian_Wedding_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Hungarian_Wedding_Dress",
+                            "Condition": "SEASON Spring",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Lucky_Blue_Tuxedo_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Lucky_Blue_Tuxedo_Pants",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Lockhart_Sash_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Lockhart_Sash_Dress",
+                            "Condition": "SEASON Spring",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Lockhart_Sash_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Lockhart_Sash_Pants",
+                            "Condition": "SEASON Spring",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Red_Embroidered_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Red_Embroidered_Pants",
+                            "Condition": "SEASON Spring",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Red_Embroidered_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Red_Embroidered_Dress",
+                            "Condition": "SEASON Spring",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					//Summer Pants
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Tunic_Skirt",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Tunic_Skirt",
+                            "Condition": "SEASON Summer",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Polish_White_Wedding_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Polish_White_Wedding_Dress",
+                            "Condition": "SEASON Summer",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Polish_Wedding_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Polish_Wedding_Pants",
+                            "Condition": "SEASON Summer",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Dress",
+                            "Condition": "SEASON Summer",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Norwegian_Wedding_Pants",
+                            "Condition": "SEASON Summer",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Vietnamese_Wedding_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Vietnamese_Wedding_Pants",
+                            "Condition": "SEASON Summer",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+	                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Red_Vietnamese_Wedding_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Red_Vietnamese_Wedding_Pants",
+                            "Condition": "SEASON Summer",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					//Fall Pants
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Lace_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Lace_Dress",
+                            "Condition": "SEASON Fall",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gothic_Dress_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gothic_Dress_Pants",
+                            "Condition": "SEASON Fall",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Georgian_Wedding_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Georgian_Wedding_Dress",
+                            "Condition": "SEASON Fall",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Black_Romanian_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Black_Romanian_Dress",
+                            "Condition": "SEASON Fall",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+		                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Embroidered_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Embroidered_Pants",
+                            "Condition": "SEASON Fall",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Red_Lehenga_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Red_Lehenga_Dress",
+                            "Condition": "SEASON Fall",
+							"Price": 5000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					//Always Available Pants
+						{
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_White_Peplum-Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_White_Peplum-Dress",
+							"Price": 4000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        }, 
+					    {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_White_Tulle_Dress",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_White_Tulle_Dress",
+							"Price": 4000,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+                        },	
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Blue_Tallit_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Blue_Tallit_Pants",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                        {
+                            "Id": "Elaho.PaisleysBridalBoutiqueCP_Gold_Tallit_Pants",
+                            "ItemId": "Elaho.PaisleysBridalBoutiqueCP_Gold_Tallit_Pants",
+							"Price": 4500,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					//End of Pants
+						
+					],
+				},
+			},
+		}
+	]
+}

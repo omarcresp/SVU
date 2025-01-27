@@ -1,0 +1,1303 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "Resort_Marriage_Towel_2": "{{TermofEndearment}}, do you mind standing a little to the left?#$b#Thanks, the sun was making it a little bit hard to read!$h",
+                "breakUp": "...$s#$b#I... I see... *sniff* ... W... We can just be acquaintances, then.$s",
+                "Tue10": "Did you know that close friends sometimes raise children together?#$e#A farm seems like a good place for children, don't you think? Just a thought I had.$7",
+                "event_speaker_kids1": "Oh no?#$b#Well, I guess that makes sense... you're busy with other things right now.#$b#It’s different for me. I’ve always known I want a big family.",
+                "event_speaker_kids2": "Me too!$h#$b#Maybe if we have our kids around the same time, they’ll be friends with each other. Wouldn’t that be precious?$h",
+                "event_speaker_kids3": "Yes... the urge to care for something innocent and helpless. I feel that way too.",
+                "event_speaker_kids4": "Oh, really? I think you'd make a good parent.$u#$b#I’d like to have a big family. You’ll have to babysit for me someday!$7",
+                "event_speaker_kids5": "hmm...$u#$b#If everyone thought like that, humans would die out.$u",
+                "event_speaker_kids6": "Oh...$s#$b#That's sad... but I guess that kind of responsibility isn’t for everyone.$s#$b#I’d like to have a big family one day. I hope you’ll be a part of my children’s lives, even if you don’t want any of your own.$u",
+                "event_mail1": "Thank you...$u#$b#I just wish George wasn't so upset... I was only trying to help.$s",
+                "event_mail2": "Oh... I guess you're right.$s#$b#I'm sorry, Mr. Mullner. It was rude, what I did.$s",
+                "event_pool5": "Oh... But... Why...?$10#$b#No, I won’t argue. It’s your choice. I just hoped...$10#$b#...$10#$b#I'm going home.%fork$10",
+                "fall_Sun10": "@! I was just thinking about the future...#$e#Where do you picture yourself in ten years?#$e#I hope I'm a mother by then...$u",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're such a kind friend!$h",
+                "SpouseStardrop": "I found a dusty old book in the library that showed me the way to that fruit!$h#$b#I was sure you'd love it, so I gave it to you to show how much I appreciate you.#$b#It's in my nature to take care of other people... but you've shown me what it's like to feel cared for in return. I love you, @.$7",
+		"dating_Penny": "I... I don't know what to say. I'm so happy...",
+		"dating_Penny_memory_oneweek": "I'm really enjoying this book. Maybe if you read it too, we could talk about it!",
+		"dating_Penny_memory_twoweeks": "I never thought my life would be more exciting than a novel, but having a new friend makes me want to spend more time in the real world.$h#$e#Maybe you and Maru and I could all have a picnic sometime. Wouldn't that be fun?",
+            },
+        },
+        {
+	    "Logname": "Penny bouquet reactions",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: Such beautiful flowers... This means so much to me, @.$h#$e#I already treasure your friendship. I'd love to know you even better.$7 @@ *gasp* You really want to us to be closer friends?#$e#I'd...I'd be honored!$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Penny bouquet reactions, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: What you wrote in this letter... This means so much to me, @.$h#$e#I already treasure your friendship. I'd love to know you even better.$7 @@ *gasp* You really want to us to be closer friends?#$e#I'd...I'd be honored!$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "event_pool4": "I’m so glad!$6#$b#Thank you, @. I know you’ll be as wonderful a role model for them as you’ve been a friend to me.$6#$b#Could I... give you a hug?$8",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "event_pool4": "I’m so glad!$6#$b#Thank you, @. I know you’ll be as wonderful a role model for them as you’ve been a friend to me.$6#$b#Could I... give you a hug?$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "LogName": "Penny pendant and bracelet proposal acceptance",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Penny_Engaged": "...!!! You... you mean it? You want to spend our lives together as {{RelationshipLabel}}?$h#$b#*sniff* Oh, @, I'm so happy!$h#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Penny_EngagedRoommate": "...!!! You... you mean it? You want to spend our lives together as {{RelationshipLabel}}?$h#$b#*sniff* Oh, @, I'm so happy!$h#$b#I need some time to pack up my things. I'll be there in 3 days, okay?",
+            },
+        },
+        {
+            "LogName": "Penny engagement dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+		"Penny0": "@... I'm a little scared. This is such a big change!#$e#Don't worry, I'm really happy, too.$h",
+		"PennyRoommate0": "@... I'm a little scared. This is such a big change!#$e#Don't worry, I'm really happy, too.$h",
+                "Penny1": "We're going to be a little farm family, soon.$7#$e#I've thought of you as my best friend for a long time... I'm so glad you feel the same way.$h",
+                "PennyRoommate1": "We're going to be a little farm family, soon.$7#$e#I've thought of you as my best friend for a long time... I'm so glad you feel the same way.$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Another pendant...? Well, why don't I wear mine, and you wear that one? @@ But... we already agreed to be {{RelationshipLabel}}... didn't we?$u |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Are you feeling okay, hon? You don't need to ask me to live with you... I'm already here. @@ That's so sweet of you, but I don't need two pendants! Just being part of your life is enough for me.$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Married"
+            }
+        },
+        {
+	    "Logname": "Maru dialogue about Penny",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+		"married_Penny": "Hey, congratulations!$h#$b#I remember the first time Penny told me she thought you two could be friends...#$b#She was all shy about it, but I knew right away that she wouldn't say something like that if she didn't mean it!",
+            },
+        },
+//Penny post-ceremony line: generic
+        {
+            "LogName": "Penny terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Hon",
+                "NPC.cs.4518": "Hon",
+                "NPC.cs.4519": "Hon",
+                "NPC.cs.4522": "Hon",
+                "NPC.cs.4523": "Hon",
+                "Event.cs.1736": "$q -1 null#Yes, hon?#$r -1 0 danceAsk#(Ask Penny to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Penny terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Hon",
+                "NPC.cs.4518": "Hon",
+                "NPC.cs.4519": "Hon",
+                "NPC.cs.4522": "Hon",
+                "NPC.cs.4523": "Hon",
+                "Event.cs.1736": "$q -1 null#Yes, hon?#$r -1 0 danceAsk#(Ask Penny to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Penny roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Yes, hon?#$r -1 0 danceAsk#(Ask Penny to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: You're movin' in with my Penny, ain't you? She ask you to bring me along? ...Didn't think so.$s @@ Don't be weird, kid. I got my own place to live.$4 |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: I'm fine where I am, kid. Penny's got her own life with you now.$s @@ You and I both know Penny don't want me living with you two. I'm respectin' her boundaries.$4 |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Married"
+            }
+        },
+        {
+	    "Logname": "Penny Spirit's Eve dialogue, aro yes, ace yes",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries":
+            {
+                "Penny_spouse": "These vapors... You'll have to go on without me...$u",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+                "Penny_spouse": "I'm thankful to be sharing my life with my best friend.$7",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "pennySpa": "Could you meet me in the bath house some afternoon? I have something to ask you. ^   -Penny[#]Penny's Note",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Penny": "We have a beautiful home and a thriving family... it's all I've ever dreamed of, and more.$7",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialoguePenny",
+            "Entries":
+            {
+                "Good_0": "@...I still can't believe we're {{RelationshipLabel}}...",
+                "Good_1": "I had dreams of sharing my life with you for such a long time.$7",
+                "Good_2": "From the moment you moved here, I hoped we'd be friends one day...$7",
+                "Good_3": "You look great today! Did you do something different with your outfit?$h",
+                "Good_4": "This place is really starting to feel like home.$7",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialoguePenny",
+            "Entries":
+            {
+                "Rainy_Day_2": "Hi, {{Lowercase:{{TermofEndearment}}}}! I did some shopping this morning and got this for you.[186 180 770 535]#$e#I thought you could really use one of those.$11",
+                "Rainy_Day_3": "Hmm... maybe I should experiment with a new recipe. You liked the last recipe I made, didn't you, {{Lowercase:{{TermofEndearment}}}}?#$e#What was it called... 'Chili de @'?",
+                "Rainy_Night_0": "How was your day, hon? I spent my afternoon reading a novel.",
+                "Rainy_Night_2": "I was just thinking about that day we met in the bathhouse.$7#$e#I was so nervous about asking you to be a godparent. Did you feel the same way about asking to be {{RelationshipLabel}}?$7",
+                "Indoor_Night_0": "Good evening, {{Lowercase:{{TermofEndearment}}}}. Did you accomplish everything you wanted to today?#$e#If not, that's okay. We've got all the time in the world!",
+                "Outdoor_2": "Hi, @! If I knew more about farm work I'd help you out more. Sorry!#$e#I'll be thinking of you.$h",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialoguePenny",
+            "Entries":
+            {
+                "Rainy_Day_2": "Hi, {{TermofEndearment}}! I did some shopping this morning and got this for you.[186 180 770 535]#$e#I thought you could really use one of those.$11",
+                "Rainy_Day_3": "Hmm... maybe I should experiment with a new recipe. You liked the last recipe I made, didn't you, {{TermofEndearment}}?#$e#What was it called... 'Chili de @'?",
+                "Rainy_Night_0": "How was your day, hon? I spent my afternoon reading a novel.",
+                "Rainy_Night_2": "I was just thinking about that day we met in the bathhouse.$7#$e#I was so nervous about asking you to be a godparent. Did you feel the same way about asking to be {{RelationshipLabel}}?$7",
+                "Indoor_Night_0": "Good evening, {{TermofEndearment}}. Did you accomplish everything you wanted to today?#$e#If not, that's okay. We've got all the time in the world!",
+                "Outdoor_2": "Hi, @! If I knew more about farm work I'd help you out more. Sorry!#$e#I'll be thinking of you.$h",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+	    "Logname": "Penny dialogue, aro yes, ace yes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialoguePenny",
+            "Entries":
+            {
+                "Indoor_Night_4": "Ready to tuck in? I'm pretty tired myself.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Indoor_Night_Penny": "Hi there, {{Lowercase:{{TermofEndearment}}}}. Ready to spend a quiet evening at home?",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Indoor_Night_Penny": "Hi there, {{TermofEndearment}}. Ready to spend a quiet evening at home?",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Penny",
+            "Entries":
+            {
+		"marriage_Mon.002": "I wonder if Maru will find a partner in life someday?",
+		"marriageJob.000": "Hi, {{Lowercase:{{TermofEndearment}}}}. It's nice of you to visit me at work.$h",
+		"marriage_Mon.000": "Hi, {{Lowercase:{{TermofEndearment}}}}! I'm just doing some shopping.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Penny",
+            "Entries":
+            {
+		"marriage_Mon.002": "I wonder if Maru will find a partner in life someday?",
+		"marriageJob.000": "Hi, {{TermofEndearment}}. It's nice of you to visit me at work.$h",
+		"marriage_Mon.000": "Hi, {{TermofEndearment}}! I'm just doing some shopping.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries":
+            {
+                "MovieInvite_Spouse_Penny": "A movie ticket? Yes, I'd love to go with you! I'll meet you at the theater, hon.$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Event.cs.1615": "I accept!$h#$b#*whisper* Thanks for going through with the formalities, {{Lowercase:{{TermofEndearment}}}}.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Event.cs.1615": "I accept!$h#$b#*whisper* Thanks for going through with the formalities, {{TermofEndearment}}.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+	    "Logname": "Penny 8 heart, aro yes, ace yes",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "181928/f Penny 2000/t 900 1600": "50s/-1000 -1000/farmer 75 40 2 Penny 71 45 2 Jas 71 49 3 Vincent 70 49 1/skippable/specificTemporarySprite pennyFieldTrip/positionOffset Penny 0 -16/animate Jas false true 90 16 17 18 19/viewport 71 45 true/move farmer 0 5 3/pause 600/faceDirection Penny 1/pause 600/speak Penny \"Oh, @! It's perfect timing that you showed up.\"/emote farmer 8/speak Penny \"I brought the children on a little field trip into the countryside.#$b#You know all about life in the country, right?$h\"/speak Penny \"$q -1 null#So I was thinking... could you be my guest speaker today?#$r -1 10 event_speaker_yes#I'd love to!#$r -1 0 event_speaker_yes#Sure.#$r -1 -1500 event_speaker_no#No... I can't stand kids.\"/fork eventEnd/faceDirection Penny 2/faceDirection farmer 2/showFrame Penny 26/pause 500/shake Penny 500/speak Penny \"Jas! Vincent! May I have your attention please!\"/pause 80/stopAnimation Jas/faceDirection Jas 0 true/faceDirection Vincent 0/jump Vincent/jump Jas/pause 800/speed Vincent 4/speed Jas 4/move Vincent 0 -3 0 true/move Jas 0 -3 0 true/showFrame Penny 0/faceDirection Penny 2/faceDirection farmer 3/speak Penny \"I have a very special guest here to talk to you today... our very own local farmer, @.#$b#@ has first-hand experience living in the countryside, and knows all about the valley's 'natural resources'!\"/pause 500/speak Penny \"Can anyone tell me what a 'natural resource' is?\"/animate Jas false true 50 20 21/animate Vincent false true 50 16 17/playSound dwop/pause 1200/speak Penny \"Jas?\"/stopAnimation Vincent/stopAnimation Jas/speak Jas \"A natural resource is a material source of wealth that occurs in a natural state and has economic value.$4\"/faceDirection Vincent 1/speak Penny \"Very good! That's worth two star points, Jas.\"/speak Jas \"Yesss!$h\"/faceDirection Vincent 0/speak Penny \"Okay, now let's give @ our full attention.\"/move Penny -1 0 1/move farmer -4 0 2/question fork0 \"#Country life is all about farming.#Country life is all about gathering from the wild.\"/fork choseFarming/pause 500/question fork0 \"#This valley is chock-full of precious minerals.#The water around here is teeming with fresh seafood.#You'll find no better lumber south of Grampleton.\"/fork choseMinerals/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Farmer @... Um, are you dating anyone?\"/speak Penny \"Vincent! That's not an appropriate question! Behave yourself, or I'll have to take away all your star points for the day.$a\"/emote Vincent 28/switchEvent fieldTripEnd",
+                "choseFarming": "pause 500/question fork0 \"#The valley's soil is ideal for growing delicious vegetables.#The valley's air and grass are perfect for raising animals.\"/fork choseAnimals/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Um, Farmer @? If I eat your veggies will I grow up strong like my big brother Sam?#$b#He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree.$h\"/showFrame Penny 27/jump Penny/pause 800/showFrame Penny 0/faceDirection farmer 3 true/emote Penny 12/speak Penny \"Vincent! It's not good to gossip!$a\"/switchEvent fieldTripEnd/",
+                "choseAnimals": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Farmer @? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!\"/speak Penny \"Vincent! Behave yourself. @'s farm is a workplace, not a playground.$h\"/switchEvent fieldTripEnd",
+                "choseMinerals": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Farmer @? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?\"/jump Jas/pause 800/faceDirection Jas 3/emote Jas 28/animate farmer false true 100 102 103/speak Penny \"Vincent! You're scaring Jas. Let's not talk about monsters.$a\"/faceDirection Penny 1/faceDirection Jas 0/emote Penny 12/pause 400/stopAnimation farmer/pause 300/faceDirection farmer 3/emote farmer 40/faceDirection Penny 2/faceDirection farmer 2/switchEvent fieldTripEnd",
+                "fieldTripEnd": "pause 400/emote Penny 40/speak Penny \"Well, that's probably enough for today. You two run along and play.\"/speed Jas 4/move Jas 0 3 1/speed Jas 4/move Jas 9 0 3 true/faceDirection Vincent 2 true/jump Vincent/pause 800/speed Vincent 4/move Vincent 0 3 1 false/speed Vincent 4/move Vincent 9 0 1/pause 500/faceDirection Vincent 2/faceDirection Jas 2/faceDirection Penny 1/faceDirection farmer 3/speak Penny \"It's a lot of work to take care of these kids...$u#$b#But I don't really mind. I enjoy seeing them learn... and hopefully I can help them grow up to be good people.\"/faceDirection Penny 2/pause 500/faceDirection Penny 1/speak Penny \"$q -1 null#Would you ever want to be a parent, @?#$r -1 0 event_speaker_kids1#I haven't really thought about it.#$r -1 20 event_speaker_kids2#Absolutely. I want a big family.#$r -1 20 event_speaker_kids3#I guess so. It's a natural urge.#$r -1 10 event_speaker_kids4#No, I don't think I'd be good at it.#$r -1 -10 event_speaker_kids5#No, the world's crowded enough already.#$r -1 -10 event_speaker_kids6#No, I don't want to be tied down with a family.\"/viewport move 1 0 10000/pause 7000/stopMusic/globalFade/viewport -2000 -2000/speak Penny \"Well, I'm glad you showed up, @. I think the kids had a great time.$h\"/end dialogue Penny \"Thanks for making my field trip a success today.\"",
+            },
+            "When":
+            {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BathHouse_Pool",
+            "Entries":
+            {
+                "38/f Penny 2500/t 1900 2400/n pennySpa": null,
+                "38/f Penny 2500/t 1200 1800/n pennySpa": "echos/-1000 -1000/farmer 13 23 2 Penny 9 29 1/swimming farmer/swimming Penny/skippable/showFrame Penny 31/viewport 13 27 true/pause 2000/playSound slosh/move farmer 0 6 3/positionOffset farmer 0 16/pause 700/speak Penny \"There you are... I was worried you didn't get my note.$6\"/playSound slosh/move Penny 1 0 1/pause 1500/speak Penny \"This is where Mom taught me to swim. It’s one of the few happy memories I have of my childhood.$6#$b#@, I asked you here because I wanted to say...$8\"/pause 1000/playSound slosh/move Penny 2 0 1/pause 500/speak Penny \"You’ve been an incredible source of support to me. No matter how difficult things are at home, you’re always there for me.$8#$b#Sometimes as a shoulder to lean on... sometimes just as a reminder that I have value outside of looking after my mother.$8#$b#The more time I spend with you, the more I believe I can take control of my own life.$8#$b#I can have the family I’ve always dreamed of. I can give them the happy home I wish I’d had growing up.$8#$b#So…I know it’s early to be asking this, but...$6\" /faceDirection Penny 3/pause 800/faceDirection Penny 1/speak Penny \"$q -1 null#When that dream comes true... When I have children of my own... @, would you be their godparent?$8#$r -1 0 event_pool4#Of course. I’d be honored.#$r -1 -500 event_pool5#Sorry... I think you should find someone else.\"/fork pennyHeartbroken/pause 1000/showFrame Penny 32/pause 200/playSound slosh/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/eyes 1 -10000/positionOffset Penny 2 0/positionOffset farmer -2 2/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 1200/globalFade/viewport -1000 -1000/pause 2000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+                "pennyHeartbroken": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut"
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BathHouse_Pool",
+            "Entries":
+            {
+                "38/f Penny 2500/t 1900 2400/n pennySpa": null,
+                "38/f Penny 2500/t 1200 1800/n pennySpa": "echos/-1000 -1000/farmer 13 23 2 Penny 9 29 1/swimming farmer/swimming Penny/skippable/showFrame Penny 31/viewport 13 27 true/pause 2000/playSound slosh/move farmer 0 6 3/positionOffset farmer 0 16/pause 700/speak Penny \"There you are... I was worried you didn't get my note.$6\"/playSound slosh/move Penny 1 0 1/pause 1500/speak Penny \"This is where Mom taught me to swim. It’s one of the few happy memories I have of my childhood.$6#$b#@, I asked you here because I wanted to say...$6\"/pause 1000/playSound slosh/move Penny 2 0 1/pause 500/speak Penny \"You’ve been an incredible source of support to me. No matter how difficult things are at home, you’re always there for me.$6#$b#Sometimes as a shoulder to lean on... sometimes just as a reminder that I have value outside of looking after my mother.$6#$b#The more time I spend with you, the more I believe I can take control of my own life.$6#$b#I can have the family I’ve always dreamed of. I can give them the happy home I wish I’d had growing up.$6#$b#So…I know it’s early to be asking this, but...$6\" /faceDirection Penny 3/pause 800/faceDirection Penny 1/speak Penny \"$q -1 null#When that dream comes true... When I have children of my own... @, would you be their godparent?$6#$r -1 0 event_pool4#Of course. I’d be honored.#$r -1 -500 event_pool5#Sorry... I think you should find someone else.\"/fork pennyHeartbroken/pause 1000/showFrame Penny 32/pause 200/playSound slosh/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/eyes 1 -10000/positionOffset Penny 2 0/positionOffset farmer -2 2/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 1200/globalFade/viewport -1000 -1000/pause 2000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+                "pennyHeartbroken": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut"
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "4325434/f Penny 3500/O Penny/t 1500 1900/p Penny": "sweet/-1000 -1000/farmer 26 24 3 Penny 23 24 0/animate Penny false true 250 24 25/makeInvisible 20 15 5 1/makeInvisible 23 24 5 1/viewport -100 -100 true unfreeze/move farmer -2 0 3/pause 1000/stopAnimation Penny/pause 20/playSound thudStep/pause 250/faceDirection Penny 1/pause 50/animate Penny true true 100 20/pause 1000/stopAnimation Penny/faceDirection Penny 1/pause 200/speak Penny \"Welcome home, @... How was your day?\"/quickQuestion #It was fine#Not good...#It was fantastic!(break)speak Penny \"Just business as usual, huh?#$b#Well, I've got a zesty new recipe in the oven, so maybe things will get a little more exciting!$h\"(break)emote Penny 28\\speak Penny \"Oh, I'm sorry!$s#$b#Well, you're back now... I'll do my best to make you feel better.\"(break)speak Penny \"That's great! I'm glad you enjoy your work so much.$h\"/speak Penny \"I'm happy you're home.$h\"/pause 500/animate Penny false true 100 35/animate farmer true true 100 101/positionOffset farmer -8 0/positionOffset Penny 8 0/pause 1500/positionOffset Penny -8 0/stopAnimation Penny/showFrame Penny 4/stopAnimation farmer/pause 1000/speak Penny \"Oh, you smell like the outdoors... It's nice!\"/pause 1000/animate Penny false true 150 4 5 6 7/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/stopAnimation Penny/showFrame Penny 21/pause 800/speak Penny \"You know... I really appreciate the hard work you do for us.#$b#So it's important to me that when you come home, the house is nice and cozy, and everything's in order!\"/emote farmer 32/speak Penny \"So I was thinking... I'd like to re-decorate your bedroom with some of my own hand-made decor!#$b#But first, I have to ask you...$11\"/quickQuestion What style do you prefer?#Forest And Moon: Peaceful Blue#Strawberry Home#Pirate Theme#I don't want any changes!(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt0\\speak Penny \"Ah... something soothing. Okay!#$b#Just give me a few days, then.#$b#I won't touch any of your chests, but it would be nice if you could move them out of the bedroom.\"(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt1\\speak Penny \"Something warm and inviting, huh? That works for me!#$b#Just give me a few days, then.#$b#I won't touch any of your chests, but it would be nice if you could move them out of the bedroom.\"(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt2\\speak Penny \"Heh... Okay. Whatever you like, {{Lowercase:{{TermofEndearment}}}}.$h#$b#Just give me a few days, then.#$b#I won't touch any of your chests, but it would be nice if you could move them out of the bedroom.\"(break)addMailReceived noQuilt\\speak Penny \"Oh! Okay... I won't worry about it, then.$s\"/pause 500/showFrame Penny 4/playSound crystal/jump Penny/pause 500/speak Penny \"Oh! The pop-overs are ready.\"/faceDirection Penny 3/animate Penny false true 150 12 13 14 15/positionOffset Penny -4 0/pause 50/positionOffset Penny -4 0/pause 50/positionOffset Penny -4 0/pause 50/positionOffset Penny -4 0/pause 50/stopAnimation Penny/move Penny -1 0 0/faceDirection Penny 0/pause 100/showFrame Penny 29/pause 150/showFrame Penny 30/playSound openChest/pause 1300/showFrame Penny 28/playSound coin/emote farmer 32/move farmer -1 0 3/farmerEat 203/showFrame Penny 4/pause 2000/playSound gulp/emote Penny 32/pause 1000/faceDirection farmer 3/end dialogue Penny \"Make yourself comfortable, hon!$h\"",
+                "4324303/e 4325434/O Penny/A pennyRedecorating/l noQuilt/B": "spring_day_ambient/-1000 -1000/farmer 27 13 0 Penny 26 13 1/fade unfade/makeInvisible 26 13/makeInvisible 20 4/eyes 1 -10/positionOffset farmer 0 8/viewport -100 -100 true unfreeze/pause 1000/emote farmer 24/pause 3000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/speak Penny \"@... Good morning...$11\"/pause 1000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/faceDirection farmer 3/emote Penny 32/pause 500/faceDirection farmer 2/emote farmer 16/jump farmer/pause 1000/animate Penny false true 150 4 5 6 7/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/stopAnimation Penny/showFrame Penny 21/pause 500/speak Penny \"Notice anything unusually soft? I quilted this custom bedspread by hand.$11\"/eyes -1 2000/startJittering/pause 2000/stopJittering/speak Penny \"So, what do you think?$11\"/quickQuestion #Looks great!#I don't like it.(break)emote Penny 32\\speak Penny \"I'm glad you like it. The house is starting to look really cozy, isn't it?$h\"\\faceDirection Penny 2\\faceDirection farmer 2\\emote farmer 32\\faceDirection farmer 3\\faceDirection Penny 1\\pause 1000\\animate Penny false true 100 35\\animate farmer true true 100 101(break)emote Penny 28\\speak Penny \"Oh.. okay.$s#$b#I put the old furniture in a chest... feel free to change it back...$s\"\\faceDirection Penny 3/pause 3000/fade/viewport -1000 -1000/pause 500/message \"Penny's been working very hard around the house...\"/pause 500/message \"It really feels like home!\"/pause 2000/end",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "4325434/f Penny 3500/O Penny/t 1500 1900/p Penny": "sweet/-1000 -1000/farmer 26 24 3 Penny 23 24 0/animate Penny false true 250 24 25/makeInvisible 20 15 5 1/makeInvisible 23 24 5 1/viewport -100 -100 true unfreeze/move farmer -2 0 3/pause 1000/stopAnimation Penny/pause 20/playSound thudStep/pause 250/faceDirection Penny 1/pause 50/animate Penny true true 100 20/pause 1000/stopAnimation Penny/faceDirection Penny 1/pause 200/speak Penny \"Welcome home, @... How was your day?\"/quickQuestion #It was fine#Not good...#It was fantastic!(break)speak Penny \"Just business as usual, huh?#$b#Well, I've got a zesty new recipe in the oven, so maybe things will get a little more exciting!$h\"(break)emote Penny 28\\speak Penny \"Oh, I'm sorry!$s#$b#Well, you're back now... I'll do my best to make you feel better.\"(break)speak Penny \"That's great! I'm glad you enjoy your work so much.$h\"/speak Penny \"I'm happy you're home.$h\"/pause 500/animate Penny false true 100 35/animate farmer true true 100 101/positionOffset farmer -8 0/positionOffset Penny 8 0/pause 1500/positionOffset Penny -8 0/stopAnimation Penny/showFrame Penny 4/stopAnimation farmer/pause 1000/speak Penny \"Oh, you smell like the outdoors... It's nice!\"/pause 1000/animate Penny false true 150 4 5 6 7/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/stopAnimation Penny/showFrame Penny 21/pause 800/speak Penny \"You know... I really appreciate the hard work you do for us.#$b#So it's important to me that when you come home, the house is nice and cozy, and everything's in order!\"/emote farmer 32/speak Penny \"So I was thinking... I'd like to re-decorate your bedroom with some of my own hand-made decor!#$b#But first, I have to ask you...$11\"/quickQuestion What style do you prefer?#Forest And Moon: Peaceful Blue#Strawberry Home#Pirate Theme#I don't want any changes!(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt0\\speak Penny \"Ah... something soothing. Okay!#$b#Just give me a few days, then.#$b#I won't touch any of your chests, but it would be nice if you could move them out of the bedroom.\"(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt1\\speak Penny \"Something warm and inviting, huh? That works for me!#$b#Just give me a few days, then.#$b#I won't touch any of your chests, but it would be nice if you could move them out of the bedroom.\"(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt2\\speak Penny \"Heh... Okay. Whatever you like, {{TermofEndearment}}.$h#$b#Just give me a few days, then.#$b#I won't touch any of your chests, but it would be nice if you could move them out of the bedroom.\"(break)addMailReceived noQuilt\\speak Penny \"Oh! Okay... I won't worry about it, then.$s\"/pause 500/showFrame Penny 4/playSound crystal/jump Penny/pause 500/speak Penny \"Oh! The pop-overs are ready.\"/faceDirection Penny 3/animate Penny false true 150 12 13 14 15/positionOffset Penny -4 0/pause 50/positionOffset Penny -4 0/pause 50/positionOffset Penny -4 0/pause 50/positionOffset Penny -4 0/pause 50/stopAnimation Penny/move Penny -1 0 0/faceDirection Penny 0/pause 100/showFrame Penny 29/pause 150/showFrame Penny 30/playSound openChest/pause 1300/showFrame Penny 28/playSound coin/emote farmer 32/move farmer -1 0 3/farmerEat 203/showFrame Penny 4/pause 2000/playSound gulp/emote Penny 32/pause 1000/faceDirection farmer 3/end dialogue Penny \"Make yourself comfortable, hon!$h\"",
+                "4324303/e 4325434/O Penny/A pennyRedecorating/l noQuilt/B": "spring_day_ambient/-1000 -1000/farmer 27 13 0 Penny 26 13 1/fade unfade/makeInvisible 26 13/makeInvisible 20 4/eyes 1 -10/positionOffset farmer 0 8/viewport -100 -100 true unfreeze/pause 1000/emote farmer 24/pause 3000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/speak Penny \"@... Good morning...$11\"/pause 1000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/faceDirection farmer 3/emote Penny 32/pause 500/faceDirection farmer 2/emote farmer 16/jump farmer/pause 1000/animate Penny false true 150 4 5 6 7/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/stopAnimation Penny/showFrame Penny 21/pause 500/speak Penny \"Notice anything unusually soft? I quilted this custom bedspread by hand.$11\"/eyes -1 2000/startJittering/pause 2000/stopJittering/speak Penny \"So, what do you think?$11\"/quickQuestion #Looks great!#I don't like it.(break)emote Penny 32\\speak Penny \"I'm glad you like it. The house is starting to look really cozy, isn't it?$h\"\\faceDirection Penny 2\\faceDirection farmer 2\\emote farmer 32\\faceDirection farmer 3\\faceDirection Penny 1\\pause 1000\\animate Penny false true 100 35\\animate farmer true true 100 101(break)emote Penny 28\\speak Penny \"Oh.. okay.$s#$b#I put the old furniture in a chest... feel free to change it back...$s\"\\faceDirection Penny 3/pause 3000/fade/viewport -1000 -1000/pause 500/message \"Penny's been working very hard around the house...\"/pause 500/message \"It really feels like home!\"/pause 2000/end",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Penny",
+            "FromFile": "assets/Sprites/PennyDressRecolor.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 304,
+                "Width": 45,
+                "Height": 16
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnableSpriteEdits": true,
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.PennyPam": "false",
+            }
+        },
+        {
+	    "Logname": "Penny sad bathhouse portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny",
+            "FromFile": "assets/Portraits/PennyBathingSuitSad.png",
+            "ToArea":
+            {
+                "X": 9,
+                "Y": 320,
+                "Width": 50,
+                "Height": 64
+            },
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.PennyPam": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        {
+	    "Logname": "Penny no blush edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny",
+            "FromFile": "assets/Portraits/PennyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.PennyPam": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        {
+	    "Logname": "Penny no blush edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny_Winter",
+            "FromFile": "assets/Portraits/PennyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.PennyPam": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Penny no blush edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny",
+            "FromFile": "assets/Portraits/PennyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        {
+	    "Logname": "Penny no blush edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny_Winter",
+            "FromFile": "assets/Portraits/PennyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        //COMPATIBILITY: PLATONIC RELATIONSHIPS
+        //This section prevents the dating-flag-required version of the vanilla 10 heart mail added by Platonic Relationships from triggering. Thanks to Cherry for providing the event codes!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "2346096/f Penny 2505/x pennySpa": "null",
+                "2346096/f Penny 2505/D Penny/x pennySpa": null
+            },
+            "When":
+            {
+                "HasMod |contains=Cherry.PlatonicRelationships": "true"
+            },
+        },
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "Thu10": "When I was younger, I always thought one day I'd marry Sam. We barely even spend time together anymore, though.#$e#I think we're just at different stages of our lives now.$h",
+                "Sat10": "I was thinking today that the romance novels I read as a kid misled me in some ways.$u#$e#They gave the impression that affection... intimacy... mutual commitment beyond a certain point is reserved for romantic relationships.$u#$e#But now I know that isn't true. Even though we don't have those kinds of feelings for each other, I still care about you as deeply as I would if we were 'in love'.#$e#I'm realizing that the difference between romance and friendship isn't one of degree, just form. Do you think so too?",
+                "Sun10": "It's so embarrassing. I keep spacing out in the middle of teaching lessons.#$e#I get caught up thinking about all the stories I want to tell next time I see you. You won't believe what Vincent did the other day... $h",
+                "summer_Wed10": "@! Oh, hi!#$e#It's unusually hot today, isn't it? How about you catch me up on your day to take my mind off it?$h",
+                "fall_Tue10": "I walked by your farm the other evening as I dropped off Jas at her home. I saw you in the distance, and...#$b#...the landscape was beautiful, but my favorite part was how serene you looked. Like you were exactly where you wanted to be.",
+                "fall_Thu10": "Vincent asked yesterday if I was in love with you. I think he's a little jealous.$h#$e#I explained that adults have all different kinds of relationships, and that 'love' and 'in love' aren't always the same thing.#$e#I think he understood. He's bright in certain ways.",
+                "winter_Mon10": "I was reading before bed last night, but I only got through a couple chapters.#$e#I kept thinking, 'I have to tell @ about this part,' and then I'd be picturing how I'd explain it instead of reading the next part!$h",
+                "winter_Tue10": "With the Feast of the Winter Star approaching, I was counting my blessings.#$b#I'm very thankful to have gotten to know you, @. ",
+                "winter_Thu10": "Oh, hi @.#$e#Sorry, I didn't sleep much last night. I was up late reading.$u#$e#Oh, um... Since you ask, it was an anthology themed around platonic partnerships. It just seemed interesting.$h",
+                "winter_Sun10": "Sometime soon, we should go back to my place in the evening and cozy up together with a book.$h#$e#If you can make it, just try to show up before 8. I don't want my mom to come home early and make you feel unwelcome.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialoguePenny",
+            "Entries":
+            {
+                "Rainy_Day_2": "#$c .5#Hi, {{Lowercase:{{TermofEndearment}}}}! I did some shopping this morning and got this for you.[186 180 770 535]#Oh right! I picked this up yesterday, but I forgot about it.[186 180 770 535] I thought you could use one of these.",
+                "Rainy_Day_3": "Hmm... maybe I should experiment with a new recipe. You liked the last recipe I made, didn't you, {{Lowercase:{{TermofEndearment}}}}?#$e#What was it called... 'Chili de @'?",
+                "Rainy_Night_0": "#$c .5#How was your day, {{Lowercase:{{TermofEndearment}}}}? I spent my afternoon reading a novel.#I know some people find fulfillment, reading between the lines of a book for a deeper meaning. Me, I just find joy in the story itself.",
+                "Rainy_Night_1": "#$c .5#I'm sure Mom's at the saloon right now... But I don't feel so bad about it anymore. It's out of my hands.#Has my mother been nice to you lately? You and I are family now, so I guess that makes you her family too.",
+                "Rainy_Night_2": "#$c .5#I was just thinking about that night I asked you to be my future children's godparent. To think we ended up as {{RelationshipLabel}}!#Hm, I didn't finish all the grading I'd hoped. Maybe I can wing it first thing in the morning.$s",
+                "Indoor_Day_4": "#$c .5#Was I shy when we first met? It's funny to think about, now that we've come so far.$h#Just wanted to say, you look great this morning. I hope that's a confidence booster!$h",
+                "Indoor_Night_0": "#$c .5#Good evening, {{Lowercase:{{TermofEndearment}}}}. Did you accomplish everything you wanted to today? If not, that's okay. We've got all the time in the world!#When the light's dim, your eyes glimmer like reflected fireflies. It feels like one more way that you're connected to the valley.",
+                "Indoor_Night_1": "#$c .5#Hmm... skirt or pants tomorrow? Oh, who am I kidding... I always go with the skirt.#So this is my happily ever after! Not exactly the traditional kind, but I always liked stories that put a new spin on the classics.",
+                "Indoor_Night_2": "#$c .5#We should always try and remember those less fortunate than us. I'm just very grateful for what we have.#Phew. Did I mention? Over the last week, Vincent's been peppering me with little kid questions about us being {{RelationshipLabel}}.",
+                "Outdoor_0": "I only ever dreamed of living in such a beautiful place, and now it's come true.#$e#$c .5#I realize how much I was missing before you moved into town.#I was so miserable back home.$s",
+                "Outdoor_1": "#$c .5#Isn't this a perfect place to raise children? I would've been so happy growing up on a farm.#I understand that you have to get straight to work, hon. Will you be home early tonight, though?",
+                "Outdoor_2": "#$c .5#Hey. Are you going to be shipping anything unusual today?#Hi, {{Lowercase:{{TermofEndearment}}}}! If I knew more about farm work I'd help you out more. Sorry!#$e#I'll be thinking of you.$h",
+                "TwoKids_3": "#$c .5#A nice house, two wonderful kids, and a beautiful plot of land. We're so very fortunate.#With the way I grew up, I never really thought I'd amount to much. But seeing our children like this makes me feel so lucky.",
+                "fall_19": "I got to catch up with Maru yesterday. She's just as good a friend as ever.$h",
+
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialoguePenny",
+            "Entries":
+            {
+                "Rainy_Day_2": "#$c .5#Hi, {{TermofEndearment}}! I did some shopping this morning and got this for you.[186 180 770 535]#Oh right! I picked this up yesterday, but I forgot about it.[186 180 770 535] I thought you could use one of these.",
+                "Rainy_Day_3": "Hmm... maybe I should experiment with a new recipe. You liked the last recipe I made, didn't you, {{TermofEndearment}}?#$e#What was it called... 'Chili de @'?",
+                "Rainy_Night_0": "#$c .5#How was your day, {{TermofEndearment}}? I spent my afternoon reading a novel.#I know some people find fulfillment, reading between the lines of a book for a deeper meaning. Me, I just find joy in the story itself.",
+                "Rainy_Night_1": "#$c .5#I'm sure Mom's at the saloon right now... But I don't feel so bad about it anymore. It's out of my hands.#Has my mother been nice to you lately? You and I are family now, so I guess that makes you her family too.",
+                "Rainy_Night_2": "#$c .5#I was just thinking about that night I asked you to be a godparent to my future children. To think we ended up as {{RelationshipLabel}}!#Hm, I didn't finish all the grading I'd hoped. Maybe I can wing it first thing in the morning.$s",
+                "Indoor_Day_4": "#$c .5#Was I shy when we first met? It's funny to think about, now that we've come so far.$h#Just wanted to say, you look great this morning. I hope that's a confidence booster!$h",
+                "Indoor_Night_0": "#$c .5#Good evening, {{TermofEndearment}}. Did you accomplish everything you wanted to today? If not, that's okay. We've got all the time in the world!#When the light's dim, your eyes glimmer like reflected fireflies. It feels like one more way that you're connected to the valley.",
+                "Indoor_Night_1": "#$c .5#Hmm... skirt or pants tomorrow? Oh, who am I kidding... I always go with the skirt.#So this is my happily ever after! Not exactly the traditional kind, but I always liked stories that put a new spin on the classics.",
+                "Indoor_Night_2": "#$c .5#We should always try and remember those less fortunate than us. I'm just very grateful for what we have.#Phew. Did I mention? Over the last week, Vincent's been peppering me with little kid questions about us being {{RelationshipLabel}}.",
+                "Outdoor_0": "I only ever dreamed of living in such a beautiful place, and now it's come true.#$e#$c .5#I realize how much I was missing before you moved into town.#I was so miserable back home.$s",
+                "Outdoor_1": "#$c .5#Isn't this a perfect place to raise children? I would've been so happy growing up on a farm.#I understand that you have to get straight to work, hon. Will you be home early tonight, though?",
+                "Outdoor_2": "#$c .5#Hey. Are you going to be shipping anything unusual today?#Hi, {{TermofEndearment}}! If I knew more about farm work I'd help you out more. Sorry!#$e#I'll be thinking of you.$h",
+                "TwoKids_3": "#$c .5#A nice house, two wonderful kids, and a beautiful plot of land. We're so very fortunate.#With the way I grew up, I never really thought I'd amount to much. But seeing our children like this makes me feel so lucky.",
+                "fall_19": "I got to catch up with Maru yesterday. She's just as good a friend as ever.$h",
+
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+	    "Logname": "Penny dialogue, aro yes, ace yes, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialoguePenny",
+            "Entries":
+            {
+                "Indoor_Night_4": "#$c .5#Ready to tuck in? I'm pretty tired myself.#Hi, @! I can finish this chapter later if you wanted to tell me about your day.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "winter_Tue8_inlaw_Penny": "I'm glad things worked out for you and Penny! I always thought she deserved a friend like you.$h",
+                "winter_Tue8_roommate_Penny": "I'm glad things worked out for you and Penny! I always thought she deserved a friend like you.$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        {
+	    "Logname": "Vincent inlaw dialogue, CFDE",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries":
+            {
+                "Tue8_inlaw_Penny": "It's so cool how you're {{RelationshipLabel}} with my teacher.#$e#I never thought that would have happened!",
+                "Tue8_roommate_Penny": "It's so cool how you're {{RelationshipLabel}} with my teacher.#$e#I never thought that would have happened!",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        {
+	    "Logname": "Vincent inlaw dialogue, PRRM (CFDE)",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries":
+            {
+                "Tue8_inlaw_Penny": "It's so cool how you're {{RelationshipLabel}} with my teacher.#$e#I never thought that would have happened!",
+                "Tue8_roommate_Penny": "It's so cool how you're {{RelationshipLabel}} with my teacher.#$e#I never thought that would have happened!",
+            },
+            "When":
+            {
+                "HasMod |contains=nraittanna.RememberMyMarriage": "true",
+            }
+        },
+        {
+	    "Logname": "Maru inlaw dialogue, CFDE",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "Tue6_inlaw_Penny": "Penny used to talk about you all the time.#$b#She still does! You two really have a special connection.$l",
+		"winter_Wed6_inlaw_Penny":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.#$b#I always thought you and Penny would be a good match in that way.$l",
+                "Tue6_roommate_Penny": "Penny used to talk about you all the time.#$b#She still does! You two really have a special connection.$l",
+		"winter_Wed6_roommate_Penny":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.#$b#I always thought you and Penny would be a good match in that way.$l",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        {
+	    "Logname": "Maru inlaw dialogue, PRRM (CFDE)",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "Tue6_inlaw_Penny": "Penny used to talk about you all the time.#$b#She still does! You two really have a special connection.$l",
+		"winter_Wed6_inlaw_Penny":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.#$b#I always thought you and Penny would be a good match in that way.$l",
+                "Tue6_roommate_Penny": "Penny used to talk about you all the time.#$b#She still does! You two really have a special connection.$l",
+		"winter_Wed6_roommate_Penny":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.#$b#I always thought you and Penny would be a good match in that way.$l",
+            },
+            "When":
+            {
+                "HasMod |contains=nraittanna.RememberMyMarriage": "true",
+            }
+        },
+	//COMPATIBILITY: STARDEW VALLEY EXPANDED
+        {
+	    "Logname": "Penny 8 heart, aro yes, ace yes, SVE",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "181928/f Penny 2000/t 900 1600": null,
+		"181928/f Penny 2000/w sunny/t 900 1600": "50s/-1000 -1000/farmer 75 40 2 Penny 71 45 2 Jas 71 50 3 Vincent 70 50 1/skippable/specificTemporarySprite pennyFieldTrip/positionOffset Penny 0 -16/animate Jas false true 90 16 17 18 19/viewport 71 45 true/move farmer 0 5 3/pause 600/faceDirection Penny 1/pause 600/speak Penny \"Oh, @! It's perfect timing that you showed up.\"/emote farmer 8/speak Penny \"I brought the children on a little field trip into the countryside.#$b#You know all about life in the country, right?$h\"/speak Penny \"$q -1 null#So I was thinking... could you be my guest speaker today?#$r -1 10 event_speaker_yes#I'd love to!#$r -1 0 event_speaker_yes#Sure.#$r -1 -1500 event_speaker_no#No... I can't stand kids.\"/fork eventEnd/faceDirection Penny 2/faceDirection farmer 2/showFrame Penny 26/pause 500/shake Penny 500/speak Penny \"Jas! Vincent! May I have your attention please!\"/pause 80/stopAnimation Jas/faceDirection Jas 0 true/faceDirection Vincent 0/jump Vincent/jump Jas/pause 800/speed Vincent 4/speed Jas 4/move Vincent 0 -3 0 true/move Jas 0 -3 0 true/showFrame Penny 0/faceDirection Penny 2/faceDirection farmer 3/speak Penny \"I have a very special guest here to talk to you today... our very own local farmer, @.#$b#@ has first-hand experience living in the countryside, and knows all about the valley's 'natural resources'!\"/pause 500/speak Penny \"Can anyone tell me what a 'natural resource' is?\"/animate Jas false true 50 20 21/animate Vincent false true 50 16 17/playSound dwop/pause 1200/speak Penny \"Jas?\"/stopAnimation Vincent/stopAnimation Jas/speak Jas \"A natural resource is a material source of wealth that occurs in a natural state and has economic value.$4\"/faceDirection Vincent 1/speak Penny \"Very good! That's worth two star points, Jas.\"/speak Jas \"Yesss!$h\"/faceDirection Vincent 0/speak Penny \"Okay, now let's give @ our full attention.\"/move Penny -1 0 1/move farmer -4 0 2/question fork0 \"#Country life is all about farming.#Country life is all about gathering from the wild.\"/fork choseFarming/pause 500/question fork0 \"#This valley is chock-full of precious minerals.#The water around here is teeming with fresh seafood.#You'll find no better lumber south of Grampleton.\"/fork choseMinerals/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Farmer @... Um, are you dating anyone?\"/speak Penny \"Vincent! That's not an appropriate question! Behave yourself, or I'll have to take away all your star points for the day.$a\"/emote Vincent 28/switchEvent fieldTripEnd",
+                "choseFarming": "pause 500/question fork0 \"#The valley's soil is ideal for growing delicious vegetables.#The valley's air and grass are perfect for raising animals.\"/fork choseAnimals/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Um, Farmer @? If I eat your veggies will I grow up strong like my big brother Sam?#$b#He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree.$h\"/showFrame Penny 27/jump Penny/pause 800/showFrame Penny 0/faceDirection farmer 3 true/emote Penny 12/speak Penny \"Vincent! It's not good to gossip!$a\"/switchEvent fieldTripEnd/",
+                "choseAnimals": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Farmer @? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!\"/speak Penny \"Vincent! Behave yourself. @'s farm is a workplace, not a playground.$h\"/switchEvent fieldTripEnd",
+                "choseMinerals": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Farmer @? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?\"/jump Jas/pause 800/faceDirection Jas 3/emote Jas 28/animate farmer false true 100 102 103/speak Penny \"Vincent! You're scaring Jas. Let's not talk about monsters.$a\"/faceDirection Penny 1/faceDirection Jas 0/emote Penny 12/pause 400/stopAnimation farmer/pause 300/faceDirection farmer 3/emote farmer 40/faceDirection Penny 2/faceDirection farmer 2/switchEvent fieldTripEnd",
+		"fieldTripEnd": "pause 400/emote Penny 40/speak Penny \"Well, that's probably enough for today. You two run along and play.\"/speed Jas 4/move Jas 0 3 1/speed Jas 4/move Jas -7 0 1 true/faceDirection Vincent 2 true/jump Vincent/pause 800/speed Vincent 4/move Vincent 0 3 1 false/speed Vincent 4/move Vincent -5 0 1/pause 500/faceDirection Vincent 2/faceDirection Jas 2/faceDirection Penny 1/faceDirection farmer 3/speak Penny \"It's a lot of work to take care of these kids...$u#$b#But I don't really mind. I enjoy seeing them learn... and hopefully I can help them grow up to be good people.\"/faceDirection Penny 2/pause 500/faceDirection Penny 1/speak Penny \"$q -1 null#Would you ever want to be a parent, @?#$r -1 0 event_speaker_kids1#I haven't really thought about it.#$r -1 20 event_speaker_kids2#Absolutely. I want a big family.#$r -1 20 event_speaker_kids3#I guess so. It's a natural urge.#$r -1 10 event_speaker_kids4#No, I don't think I'd be good at it.#$r -1 -10 event_speaker_kids5#No, the world's crowded enough already.#$r -1 -10 event_speaker_kids6#No, I don't want to be tied down with a family.\"/viewport move 1 0 10000/pause 7000/stopMusic/globalFade/viewport -2000 -2000/speak Penny \"Well, I'm glad you showed up, @. I think the kids had a great time.$h\"/end dialogue Penny \"Thanks for making my field trip a success today.\"",            },
+            "When":
+            {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Penny 
+	        "LogName": "KO Mines- Penny lowercase",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Penny 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Penny \"Easy now, hon... Don't push yourself too hard.\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Penny \"Are you alright? I hope you're not in too much pain...$2#$b#You'll never believe this, but I was just reading when suddenly, I got a terrible feeling that you were in trouble.#$b#I had to do something about it, even if I wasn't sure why I felt that way.\"/pause 1000/speak Marlon \"Penny came to get me as soon as possible. I ventured into the mines to find you as requested.#$b#She was quite worried about you. You're blessed to have ended up sharing your life with someone so compassionate.\"/emote Penny 16/pause 500/speak Penny \"Oh, thank you.$4#$b#I was just standing by my promise to always look out for @. I don't think it's all that admirable...\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I observed. You did well to fetch me.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Penny \"Let's leave as well, @. You've had a long day already. I can cook you this new recipe I've been meaning to try, if you like!#$b#Or... Maybe I'll leave the experimental cooking for another day. I think I just want to spend some time with you instead.$3#$b#Though if you get hungry... I can always whip up some more 'Chili de @' for you in no time!$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Penny \"Hi, {{Lowercase:{{TermofEndearment}}}}. I'm glad you made it home safely. I know that a minor incident like this can't take you down, but I still can't help but worry a little.$1$c 0.7#You look like you've almost shaken it off already, though. That's a relief!$1#I know you might not have much appetite after that, but I still made you a snack. It's important that you replenish your strength.[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Penny",
+                	"TermofEndearment |contains=@": "false",
+               	 	"TermofEndearment |contains=BFF": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Mine death with Penny 
+	        "LogName": "KO Mines- Penny capital",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Penny 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Penny \"Easy now, hon... Don't push yourself too hard.\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Penny \"Are you alright? I hope you're not in too much pain...$2#$b#You'll never believe this, but I was just reading when suddenly, I got a terrible feeling that you were in trouble.#$b#I had to do something about it, even if I wasn't sure why I felt that way.\"/pause 1000/speak Marlon \"Penny came to get me as soon as possible. I ventured into the mines to find you as requested.#$b#She was quite worried about you. You're blessed to have ended up sharing your life with someone so compassionate.\"/emote Penny 16/pause 500/speak Penny \"Oh, thank you.$4#$b#I was just standing by my promise to always look out for @. I don't think it's all that admirable...\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I observed. You did well to fetch me.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Penny \"Let's leave as well, @. You've had a long day already. I can cook you this new recipe I've been meaning to try, if you like!#$b#Or... Maybe I'll leave the experimental cooking for another day. I think I just want to spend some time with you instead.$3#$b#Though if you get hungry... I can always whip up some more 'Chili de @' for you in no time!$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Penny \"Hi, {{TermofEndearment}}. I'm glad you made it home safely. I know that a minor incident like this can't take you down, but I still can't help but worry a little.$1$c 0.7#You look like you've almost shaken it off already, though. That's a relief!$1#I know you might not have much appetite after that, but I still made you a snack. It's important that you replenish your strength.[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Penny",
+			"TermofEndearment": "@, BFF",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Hospital Death- Penny
+            "LogName": "Player 'Killed'- Penny lowercase",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Penny 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Penny 5/move Penny 0 3 2/textAboveHead Penny \"{0}!\"/emote farmer 16/move Penny -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Penny 0 1 3/speak Penny \"{{TermofEndearment}}, I'm so relieved you're okay!$2\"/emote farmer 60/pause 500/speak Penny \"I was so scared when I heard you'd gotten hurt. I kept imagining a life without you, and I... I couldn't.$2\"/emote Penny 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Penny 3/speak Penny \"You know, @... On some days, life with you seems like a dream. I catch myself thinking that a friendship like ours is too good to be true.$2#$b#It would be my worst nightmare to lose you. So please, just be a little more careful. Let me dream a little longer.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Penny \"Welcome home, {{Lowercase:{{TermofEndearment}}}}. I came ahead of you to get all the household chores out of the way. Don't worry about anything but your rest, okay?#$c 0.7#To be frank, I'm still a little shaken, but... it's reassuring to have you here with me, in our home. I'm so glad you're alright.$2#I even cooked for you. Nothing too experimental, I promise. It should help you get your strength back! [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Penny",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+                	"TermofEndearment |contains=@": "false",
+               	 	"TermofEndearment |contains=BFF": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //Hospital Death- Penny
+            "LogName": "Player 'Killed'- Penny lowercase",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Penny 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Penny 5/move Penny 0 3 2/textAboveHead Penny \"{0}!\"/emote farmer 16/move Penny -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Penny 0 1 3/speak Penny \"{{TermofEndearment}}, I'm so relieved you're okay!$2\"/emote farmer 60/pause 500/speak Penny \"I was so scared when I heard you'd gotten hurt. I kept imagining a life without you, and I... I couldn't.$2\"/emote Penny 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Penny 3/speak Penny \"You know, @... On some days, life with you seems like a dream. I catch myself thinking that a friendship like ours is too good to be true.$2#$b#It would be my worst nightmare to lose you. So please, just be a little more careful. Let me dream a little longer.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Penny \"Welcome home, {{Lowercase:{{TermofEndearment}}}}. I came ahead of you to get all the household chores out of the way. Don't worry about anything but your rest, okay?#$c 0.7#To be frank, I'm still a little shaken, but... it's reassuring to have you here with me, in our home. I'm so glad you're alright.$2#I even cooked for you. Nothing too experimental, I promise. It should help you get your strength back! [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Penny",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+			"TermofEndearment": "@, BFF",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //Ex Event
+            "LogName": "Player 'Killed'- Penny Ex",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Penny 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"@ is ready to see you.#$b#It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.\"/pause 500/speak Penny \"Thank you for your kindness, Dr. Harvey. Pelican Town is lucky to have you. And... @ was lucky to have you.$3\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Penny 0 4 3/emote farmer 16/faceDirection Penny 3/pause 1000/speak Penny \"Hi there, @. I'm sorry for coming in, I just... I just wanted to be sure that you'd be okay before I left.$3#$b#Just because we're not {{RelationshipLabel}} anymore, it doesn't mean I wouldn't care about what happens to you.$2#$b#As relieved as I am, though... Seeing you again hurts more than I thought it would. I should go.$2\"/emote farmer 16/pause 1000/speak Penny \"Truth is, I just didn't want you to wake up after going through something so difficult all by yourself.$2#$b#No one should have to feel abandoned after coming so close to losing their life.$2#$b#That being said, I should think of myself, too. Being here hurts too much, so... I'll leave you to it. Be well, @. Goodbye.$2\"/pause 500/move Penny 0 -4 0/move Penny -8 0 0/move Penny 0 -3 0/warp Penny -100 -100/emote farmer 28/hospitaldeath/end dialogue Penny \"You're strong enough to have moved on from our friendship, but I'm not. Seeing you hurt like that still hurts me, too.$2#$b#...I'd rather not talk to you more than I already have, @. Please just leave me alone.$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Penny": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+     {       //Island death before Leo - Penny
+	        "LogName": "Island Death Penny",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Penny \"Oh my! What happened, @? Are you okay? Do you need to see a doctor?$3#$b#Oh, good, I'm glad. Here, leave me your clothes to wash and go clean all the soot off your face.#$b#I really do wish that you did less dangerous work, but...$3#$b#Adventure suits you, and I know it makes you happy. I won't stop you. Just... don't burn through any more clothes, please?\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Penny",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     }, 
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo, Penny",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Penny \"Oh my! What happened, @? Are you okay? Do you need to see a doctor?$3#$b#Oh, good, I'm glad. Here, leave me your clothes to wash and go clean all the soot off your face.#$b#I really do wish that you did less dangerous work, but...$3#$b#Adventure suits you, and I know it makes you happy. I won't stop you. Just... don't burn through any more clothes, please?\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Penny",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Penny",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Penny \"Oh my! What happened, @? Are you okay? Do you need to see a doctor?$3#$b#Oh, good, I'm glad. Here, leave me your clothes to wash and go clean all the soot off your face.#$b#I really do wish that you did less dangerous work, but...$3#$b#Adventure suits you, and I know it makes you happy. I won't stop you. Just... don't burn through any more clothes, please?\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Penny",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogue",
+		"Entries": {
+			"jobLeave_Penny": "I'll be out in town today, {{Lowercase:{{TermofEndearment}}}}. I hope you take the time to enjoy yourself too.$h",
+			"jobReturn_Penny": "#$c .5#Good evening. My day was fine, thanks! How was yours?$h#Hi, {{Lowercase:{{TermofEndearment}}}}! I've missed you.$h"
+		},
+		"When": {
+			"Day": "9, 23",
+                	"TermofEndearment |contains=@": "false",
+               	 	"TermofEndearment |contains=BFF": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogue",
+		"Entries": {
+			"jobLeave_Penny": "I'll be out in town today, {{TermofEndearment}}. I hope you take the time to enjoy yourself too.$h",
+			"jobReturn_Penny": "#$c .5#Good evening. My day was fine, thanks! How was yours?$h#Hi, {{TermofEndearment}}! I've missed you.$h"
+		},
+		"When": {
+			"Day": "9, 23",
+                	"TermofEndearment": "@, BFF",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Penny",
+		"Entries": {
+			"marriage_spot2": "Hi, {{Lowercase:{{TermofEndearment}}}}. Finished at the farm?#$b#Come stay with me for a little longer, then.",
+			"marriage_museum2": "It's quite soothing in here isn't it?#$b#We should find a book we're both interested in and read it together.$h",
+			"marriage_museum3": "Oh, no! Look at you you're all soaked!$s#$b#Stay here a while and dry off, won't you?",
+			"marriage_r": "Hi, {{Lowercase:{{TermofEndearment}}}}! Want to join me?$h#$b#Don't worry, I have some extra books for you.",
+			"marriage_r2": "It's hard focusing on my book when you're here. I want to tell you all about it instead of actually reading it!$h",
+			"marriage_doctorextra": "Oh, hi {{Lowercase:{{TermofEndearment}}}}. Let's talk after, I don't want to interrupt Dr. Harvey.",
+			"marriage_13": "Jas and Vincent painted some pretty eggs. They should be easy to spot.$h#$b#I'm rooting for you! But um... go easy on the kids?",
+			"marriage_16": "Good luck on your display, {{Lowercase:{{TermofEndearment}}}}. I'm still waiting for the spinning wheel to get set up.#$b#I'll earn us some tokens, don't worry.$h#$b#Unless I get banned again like last year.$s",
+			"marriage_25": "Hi, {{Lowercase:{{TermofEndearment}}}}. I didn't want to enter without you.$h#$b#The snow's lovely at least, I should spend more time out here."
+		},
+		"When": {
+                	"TermofEndearment |contains=@": "false",
+               	 	"TermofEndearment |contains=BFF": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Penny",
+		"Entries": {
+			"marriage_spot2": "Hi, {{TermofEndearment}}. Finished at the farm?#$b#Come stay with me for a little longer, then.",
+			"marriage_museum2": "It's quite soothing in here isn't it?#$b#We should find a book we're both interested in and read it together.$h",
+			"marriage_museum3": "Oh, no! Look at you you're all soaked!$s#$b#Stay here a while and dry off, won't you?",
+			"marriage_r": "Hi, {{TermofEndearment}}! Want to join me?$h#$b#Don't worry, I have some extra books for you.",
+			"marriage_r2": "It's hard focusing on my book when you're here. I want to tell you all about it instead of actually reading it!$h",
+			"marriage_doctorextra": "Oh, hi {{TermofEndearment}}. Let's talk after, I don't want to interrupt Dr. Harvey.",
+			"marriage_13": "Jas and Vincent painted some pretty eggs. They should be easy to spot.$h#$b#I'm rooting for you! But um... go easy on the kids?",
+			"marriage_16": "Good luck on your display, {{TermofEndearment}}. I'm still waiting for the spinning wheel to get set up.#$b#I'll earn us some tokens, don't worry.$h#$b#Unless I get banned again like last year.$s",
+			"marriage_25": "Hi, {{TermofEndearment}}. I didn't want to enter without you.$h#$b#The snow's lovely at least, I should spend more time out here."
+		},
+		"When": {
+                	"TermofEndearment": "@, BFF",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Logname": "Penny dialogue, aro yes, ace yes",
+		"Action": "EditData",
+		"Target": "Strings/schedules/Penny",
+		"Entries": {
+			"marriage_bus2": "That's a great gift idea! @ would-#$b#Oh, hi! Um. We weren't talking about any... surprises...$h",
+		},
+		"When": {
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+		"Logname": "Penny PRRM, Abigail",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Abigail",
+		"Entries": {
+           	 	"spring_Mon8_inlaw_Penny":"Hey, @.$0#$e#You and Penny are such cute {{RelationshipLabel}}.$1",
+            		"fall_Wed8_inlaw_Penny":"Hey, @.$0#$e#You and Penny are such cute {{RelationshipLabel}}.$1",
+           	 	"spring_Mon8_roommate_Penny":"Hey, @.$0#$e#You and Penny are such cute {{RelationshipLabel}}.$1",
+            		"fall_Wed8_roommate_Penny":"Hey, @.$0#$e#You and Penny are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "summer_Tue8_inlaw_Penny":"Oh, hey.$0#$e#How's life with Penny coming along?$1",
+            "winter_Mon10_inlaw_Penny":"Oh, hey.$0#$e#How's life with Penny coming along?$1",
+            "summer_Tue8_roommate_Penny":"Oh, hey.$0#$e#How's life with Penny coming along?$1",
+            "winter_Mon10_roommate_Penny":"Oh, hey.$0#$e#How's life with Penny coming along?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Penny": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Penny make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Penny": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Penny will have any problems with that.$1",
+            "fall_Fri8_inlaw_Penny": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Penny make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Penny": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Penny will have any problems with that.$1",
+            "spring_Tue8_roommate_Penny": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Penny make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Penny": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Penny will have any problems with that.$1",
+            "fall_Fri8_roommate_Penny": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Penny make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Penny": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Penny will have any problems with that.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sam",
+	"Entries": {
+            "summer_Mon8_inlaw_Penny":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Penny":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "spring_Fri8_inlaw_Penny":"I hear everything's going well with you and Penny living together!$1#$b#Think you could put in a good word for me with her?$10",
+            "winter_Tue8_inlaw_Penny":"I hear everything's going well with you and Penny living together!$1#$b#Think you could put in a good word for me with her?$10",
+            "summer_Mon8_roommate_Penny":"Hey, @. How's life with Penny?$0#$b#You should get her to learn an instrument so I can come over and jam with you two.$1",
+            "fall_Sat8_roommate_Penny":"Hey, @. How's life with Penny?$0#$b#You should get her to learn an instrument so I can come over and jam with you two.$1",
+            "spring_Fri8_roommate_Penny":"I hear everything's going well with you and Penny living together!$1#$b#Think you could put in a good word for me with her?$10",
+            "winter_Tue8_roommate_Penny":"I hear everything's going well with you and Penny living together!$1#$b#Think you could put in a good word for me with her?$10",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Thu8_inlaw_Penny":"Penny has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_inlaw_Penny":"I clearly see you and Penny were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_inlaw_Penny":"Penny has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_inlaw_Penny":"I clearly see you and Penny were made to be {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Penny":"Penny has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_roommate_Penny":"I clearly see you and Penny were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_roommate_Penny":"Penny has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_roommate_Penny":"I clearly see you and Penny were made to be {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Haley",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Haley",
+	"Entries": {
+            "summer_Sat8_inlaw_Penny":"I'm so happy for you and Penny.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_inlaw_Penny":"I'm so happy for you and Penny.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "summer_Sat8_roommate_Penny":"I'm so happy for you and Penny.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_roommate_Penny":"I'm so happy for you and Penny.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Maru",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Maru",
+	"Entries": {
+            "spring_Tue8_inlaw_Penny":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.#$b#I always thought you and Penny would be a good match in that way.$l",
+            "spring_Fri8_inlaw_Penny":"I'm glad things worked out with you and Penny living together!$1",
+            "summer_Thu8_inlaw_Penny":"Penny used to talk about you all the time.#$b#She still does! You two really have a special connection.$l",
+            "summer_Sun8_inlaw_Penny":"How are you and Penny?$0#$e#Oh, that's great!$1",
+            "fall_Wed8_inlaw_Penny":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.#$b#I always thought you and Penny would be a good match in that way.$l",
+            "fall_Thu8_inlaw_Penny":"I'm glad things worked out with you and Penny living together!$1",
+            "winter_Mon8_inlaw_Penny":"How are you and Penny?$0#$e#Oh, that's great!$1",
+            "winter_Sat8_inlaw_Penny":"Penny used to talk about you all the time.#$b#She still does! You two really have a special connection.$l",
+            "spring_Tue8_roommate_Penny":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.#$b#I always thought you and Penny would be a good match in that way.$l",
+            "spring_Fri8_roommate_Penny":"I'm glad things worked out with you and Penny living together!$1",
+            "summer_Thu8_roommate_Penny":"Penny used to talk about you all the time.#$b#She still does! You two really have a special connection.$l",
+            "summer_Sun8_roommate_Penny":"How are you and Penny?$0#$e#Oh, that's great!$1",
+            "fall_Wed8_roommate_Penny":"I'm so happy you wound up {{RelationshipLabel}} with my best friend.#$b#I always thought you and Penny would be a good match in that way.$l",
+            "fall_Thu8_roommate_Penny":"I'm glad things worked out with you and Penny living together!$1",
+            "winter_Mon8_roommate_Penny":"How are you and Penny?$0#$e#Oh, that's great!$1",
+            "winter_Sat8_roommate_Penny":"Penny used to talk about you all the time.#$b#She still does! You two really have a special connection.$l",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Penny":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Penny as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Penny":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Penny as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Penny":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Penny as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Penny":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Penny as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Penny":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Penny will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Penny":"A true lifelong friendship, like you have with Penny, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Penny":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Penny will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Penny":"A true lifelong friendship, like you have with Penny, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Penny":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Penny will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Penny":"A true lifelong friendship, like you have with Penny, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Penny":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Penny will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Penny":"A true lifelong friendship, like you have with Penny, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{	
+	"Logname": "Penny PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Penny":"If you and Penny want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Penny":"If you and Penny want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Penny":"If you and Penny want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Penny":"If you and Penny want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Penny":"If you and Penny want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Penny":"If you and Penny want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Penny":"If you and Penny want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Penny":"If you and Penny want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Penny":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Penny":"So are you and Miss Penny like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Penny":"Hello, Farmer @.$0#$b#Why can't you and Miss Penny celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Penny":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Penny":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Penny":"So are you and Miss Penny like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Penny":"Hello, Farmer @.$0#$b#Don't you think you and Miss Penny should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Penny":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Lewis",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Penny":"There aren't many young {{RelationshipLabel}} like you and Penny here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Penny":"There aren't many young {{RelationshipLabel}} like you and Penny here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Penny":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Penny":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Penny":"There aren't many young {{RelationshipLabel}} like you and Penny here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Penny":"There aren't many young {{RelationshipLabel}} like you and Penny here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Penny":"I know you and Penny chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Penny":"I know you and Penny chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Penny":"Hello, @.$0#$e#I wish you and Penny a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Penny":"May Yoba grant you and Penny a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Penny":"Hello, @.$0#$e#I wish you and Penny a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Penny":"May Yoba grant you and Penny a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Penny":"Hello, @.$0#$e#I wish you and Penny a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Penny":"May Yoba grant you and Penny a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Penny":"Hello, @.$0#$e#I wish you and Penny a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Penny":"May Yoba grant you and Penny a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "spring_Fri10_inlaw_Penny":"You better be treatin' Penny right. You know being your {{PlatonicSocialMenuLabel}} ain't something she takes lightly.$4",
+            "summer_Wed10_inlaw_Penny":"It's so lonely at home these days...$2#$b#Well, at least my little girl seems to be enjoying the farm life.$0",
+            "summer_Sat10_inlaw_Penny":"You know, Penny's father abandoned us when she was little.$2#$e#I'm pleased that she grew up fine and found herself a friend like you.$0",
+            "fall_Mon10_inlaw_Penny":"You better be treatin' Penny right. You know being your {{PlatonicSocialMenuLabel}} ain't something she takes lightly.$4",
+            "fall_Fri10_inlaw_Penny":"How's my baby girl's health?$0#$b#She's always been such a fragile girl.$0#$b#Hopefully the farm lifestyle puts a little color in her cheeks.$1",
+            "fall_Sat10_inlaw_Penny":"I didn't think Penny'd move out so soon...$2#$e#But I'm happy that she found a friend like you.$1",
+            "winter_Tue10_inlaw_Penny":"You know, Penny's father abandoned us when she was little.$2#$e#I'm pleased that she grew up fine and found herself a friend like you.$0",
+            "winter_Fri10_inlaw_Penny":"Hey, kid.$0#$e#Maybe you and Penny and I could all catch up at the saloon sometime.$0#$b#...Yeah, you're right. Not at the saloon.$s",
+            "winter_Sun10_inlaw_Penny":"I didn't expect Penny would move out so soon.$0#$e#Maybe I should have spent more time with her when I could...$2",
+            "spring_Fri10_roommate_Penny":"You better be treatin' Penny right. You know being your {{PlatonicSocialMenuLabel}} ain't something she takes lightly.$4",
+            "summer_Wed10_roommate_Penny":"It's so lonely at home these days...$2#$b#Well, at least my little girl seems to be enjoying the farm life.$0",
+            "summer_Sat10_roommate_Penny":"You know, Penny's father abandoned us when she was little.$2#$e#I'm pleased that she grew up fine and found herself a friend like you.$0",
+            "fall_Mon10_roommate_Penny":"You better be treatin' Penny right. You know being your {{PlatonicSocialMenuLabel}} ain't something she takes lightly.$4",
+            "fall_Fri10_roommate_Penny":"How's my baby girl's health?$0#$b#She's always been such a fragile girl.$0#$b#Hopefully the farm lifestyle puts a little color in her cheeks.$1",
+            "fall_Sat10_roommate_Penny":"I didn't think Penny'd move out so soon...$2#$e#But I'm happy that she found a friend like you.$1",
+            "winter_Tue10_roommate_Penny":"You know, Penny's father abandoned us when she was little.$2#$e#I'm pleased that she grew up fine and found herself a friend like you.$0",
+            "winter_Fri10_roommate_Penny":"Hey, kid.$0#$e#Maybe you and Penny and I could all catch up at the saloon sometime.$0#$b#...Yeah, you're right. Not at the saloon.$s",
+            "winter_Sun10_roommate_Penny":"I didn't expect Penny would move out so soon.$0#$e#Maybe I should have spent more time with her when I could...$2",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Penny":"You and Penny remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Penny":"You and Penny remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Penny":"You and Penny remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Penny":"You and Penny remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Penny PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Penny":"I asked Miss Penny about you the other day.$3#$e#I never saw her smile that big before!$1",
+            "summer_Mon10_inlaw_Penny":"Do you like suncatchers?$3#$e#I want make a gift for Miss Penny and you.$0",
+            "summer_Fri10_inlaw_Penny":"It's so cool how you're {{RelationshipLabel}} with Miss Penny.$1#$e#I never thought that would have happened!$0",
+            "fall_Wed10_inlaw_Penny":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Sat10_inlaw_Penny":"I asked Miss Penny about you the other day.$3#$e#I never saw her smile that big before!$1",
+            "winter_Thu10_inlaw_Penny":"It's so cool how you're {{RelationshipLabel}} with Miss Penny.$1#$e#I never thought that would have happened!$0",
+            "winter_Sun10_inlaw_Penny":"Do you like suncatchers?$3#$e#I want make a gift for Miss Penny and you.$0",
+            "spring_Tue10_roommate_Penny":"I asked Miss Penny about you the other day.$3#$e#I never saw her smile that big before!$1",
+            "summer_Mon10_roommate_Penny":"Do you like suncatchers?$3#$e#I want make a gift for Miss Penny and you.$0",
+            "summer_Fri10_roommate_Penny":"It's so cool how you're {{RelationshipLabel}} with Miss Penny.$1#$e#I never thought that would have happened!$0",
+            "fall_Wed10_roommate_Penny":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Sat10_roommate_Penny":"I asked Miss Penny about you the other day.$3#$e#I never saw her smile that big before!$1",
+            "winter_Thu10_roommate_Penny":"It's so cool how you're {{RelationshipLabel}} with Miss Penny.$1#$e#I never thought that would have happened!$0",
+            "winter_Sun10_roommate_Penny":"Do you like suncatchers?$3#$e#I want make a gift for Miss Penny and you.$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

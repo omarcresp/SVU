@@ -1,0 +1,30 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Acid Rain Sounds",
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Kana.WeatherWonders_AcidRainSound": {
+          "ID": "Kana.WeatherWonders_AcidRainSound",
+          "Category": "Ambient",
+          "FilePaths": ["{{AbsoluteFilePath: assets/AcidRainSound.ogg}}"],
+          "StreamedVorbis": false,
+          "Looped": true
+        }
+      }
+    },
+    {
+      "LogName": "Load WW's Acid Rain Particles",
+      "Action": "Load",
+      "Target": "Mods/Kana.WeatherWonders/AcidRainLayer",
+      "FromFile": "assets/AcidRainLayer.png"
+    },
+    {
+      "LogName": "Load WW's Acid Rain Smoke",
+      "Action": "Load",
+      "Target": "Mods/Kana.WeatherWonders/Smoke",
+      "FromFile": "assets/Smoke.png"
+    }
+  ]
+}

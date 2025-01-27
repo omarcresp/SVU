@@ -1,0 +1,287 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Mods/atravita_SpecialOrdersExtended_DurationOverride",
+      "Entries": {
+        "SA.Statue": "-1"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "SA.Statue": {
+          "Name": "[SA.Statue_Name]",
+          "Requester": null,
+          "Duration": "Week",
+          "Repeatable": "False",
+          "RequiredTags": "",
+          "OrderType": "Esca.EMP/StardewAquarium/AquariumOrders",
+          "SpecialRule": "",
+          "Text": "[SA.Statue_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "[SA.Statue.75_Objective_0_Text]",
+              "RequiredCount": "75",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_stone"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SA.Marble.5_Objective_1_Text]",
+              "RequiredCount": "5",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_marble"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SA.Pufferfish.1_Objective_2_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_pufferfish"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SA.Statue.Mail",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer": "AquariumDonated:Pufferfish",
+        "HasFlag: hostPlayer": "AquariumFishDonated:25",
+        "SpecialOrdersDifficulty": "Easy",
+        "HasSeenEvent": "{{ModId}}_SpecialOrdersIntro"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "SA.Statue": {
+          "Name": "[SA.Statue_Name]",
+          "Requester": null,
+          "Duration": "Week",
+          "Repeatable": "False",
+          "RequiredTags": "",
+          "OrderType": "Esca.EMP/StardewAquarium/AquariumOrders",
+          "SpecialRule": "",
+          "Text": "[SA.Statue_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "[SA.Statue.100_Objective_0_Text]",
+              "RequiredCount": "100",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_stone"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SA.Marble.10_Objective_1_Text]",
+              "RequiredCount": "10",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_marble"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SA.Pufferfish.1_Objective_2_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_pufferfish"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SA.Statue.Mail",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer": "AquariumDonated:Pufferfish",
+        "HasFlag: hostPlayer": "AquariumFishDonated:25",
+        "SpecialOrdersDifficulty": "Medium",
+        "HasSeenEvent": "{{ModId}}_SpecialOrdersIntro"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "SA.Statue": {
+          "Name": "[SA.Statue_Name]",
+          "Requester": null,
+          "Duration": "Week",
+          "Repeatable": "False",
+          "RequiredTags": "",
+          "OrderType": "Esca.EMP/StardewAquarium/AquariumOrders",
+          "SpecialRule": "",
+          "Text": "[SA.Statue_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "[SA.Statue.200_Objective_0_Text]",
+              "RequiredCount": "200",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_stone"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SA.Marble.15_Objective_1_Text]",
+              "RequiredCount": "15",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_marble"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SA.Pufferfish.1_Objective_2_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_pufferfish"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SA.Statue.Mail",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer": "AquariumDonated:Pufferfish",
+        "HasFlag: hostPlayer": "AquariumFishDonated:25",
+        "SpecialOrdersDifficulty": "Hard",
+        "HasSeenEvent": "{{ModId}}_SpecialOrdersIntro"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "SA.Statue": {
+          "Name": "[SA.Statue_Name]",
+          "Requester": null,
+          "Duration": "Week",
+          "Repeatable": "False",
+          "RequiredTags": "",
+          "OrderType": "Esca.EMP/StardewAquarium/AquariumOrders",
+          "SpecialRule": "",
+          "Text": "[SA.Statue_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "[SA.Statue.400_Objective_0_Text]",
+              "RequiredCount": "400",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_stone"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SA.Marble.30_Objective_1_Text]",
+              "RequiredCount": "30",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_marble"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SA.Pufferfish.1_Objective_2_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "DropBox": "StardewAquarium_Lobby",
+                "DropBoxGameLocation": "Custom_FishMuseum",
+                "DropBoxIndicatorLocation": "21 45",
+                "AcceptedContextTags": "item_pufferfish"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SA.Statue.Mail",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer": "AquariumDonated:Pufferfish",
+        "HasFlag: hostPlayer": "AquariumFishDonated:25",
+        "SpecialOrdersDifficulty": "Hell",
+        "HasSeenEvent": "{{ModId}}_SpecialOrdersIntro"
+      }
+    }
+  ]
+}

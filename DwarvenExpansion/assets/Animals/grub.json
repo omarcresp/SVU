@@ -1,0 +1,170 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/FarmGrub",
+			"FromFile": "assets/Animals/FarmGrub.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Animals_GrubLarva": {
+					"Name": "Grub Larva",
+					"DisplayName": "{{i18n:Animals_GrubLarva.DisplayName}}",
+					"Description": "{{i18n:Animals_GrubLarva.Description}}",
+					"Type": "Basic",
+					"Category": "-14",
+					"Price": 15,
+					"Edibility": -300,
+					"ContextTags": [
+						"{{ModId}}"
+					],
+					"Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 244
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+                        "Fields",
+						"Grub",
+						6
+					],
+					"Value": "{{ModId}}_Animals_GrubLarva .05",
+					"Delimiter": " "
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Fly",
+						6
+					],
+					"Value": "{{ModId}}_Animals_GrubLarva .05",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Hate"
+					],
+					"Value": "{{ModId}}_Animals_GrubLarva",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}_FarmGrub": {
+					"DisplayName": "{{i18n:FarmGrub.DisplayName}}",
+					"House": "{{ModId}}_CaveCoop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": 400,
+					"SellPrice": 800,
+					"ShopTexture": "Mods/DwarvenExpansion/Animals/ShopImages",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 32,
+						"Height": 16
+					},
+					"ShopDisplayName": "{{i18n:FarmGrub.ShopDisplayName}}",
+					"ShopDescription": "{{i18n:FarmGrub.ShopDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n:FarmGrub.ShopMissingBuildingDescription}}",
+					"RequiredBuilding": "{{ModId}}_CaveCoop",
+					"UnlockCondition": "MINE_LOWEST_LEVEL_REACHED 1",
+					"EggItemIds": [
+						"{{ModId}}_Animals_GrubLarva"
+					],
+					"IncubationTime": 1440,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{i18n:FarmGrub.BirthText}}",
+					"DaysToMature": 0,
+					"CanGetPregnant": false,
+					"DaysToProduce": 0,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+						{
+							"Id": "Larva",
+							"ItemId": "{{ModId}}_Animals_GrubLarva",
+							"Condition": "RANDOM 0.1"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "684"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Larva",
+							"ItemId": "{{ModId}}_Animals_GrubLarva",
+							"Condition": "RANDOM 0.05"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "684"
+						}						
+					],
+					"ProduceOnMature": true,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": -1,
+					"ProfessionForQualityBoost": -1,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "cavedrip",
+					"BabySound": null,
+					"Texture": "Mods/DwarvenExpansion/Animals/FarmGrub",
+					"HarvestedTexture": null,
+					"BabyTexture": "Mods/DwarvenExpansion/Animals/FarmGrub",
+					"UseFlippedRightForLeft": false,
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": -16
+					},
+					"SwimOffset": {
+						"X": 0,
+						"Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": true,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 1,
+					"HappinessDrain": 7,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": [],
+					"ShowInSummitCredits": false,
+					"CustomFields": {
+						"meatIndex": "684"
+					}
+				}
+			}
+		}
+	]
+}

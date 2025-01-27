@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="20" height="26" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="11">
+ <properties>
+  <property name="AmbientLight" value="20 20 20"/>
+  <property name="Warp" value="20 40 Farm 28 16"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="163">
+   <properties>
+    <property name="Warp" value="10 24 Farm 28 16"/>
+   </properties>
+  </tile>
+  <tile id="1885">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="1887">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1945">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1946">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2075">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2076">
+   <properties>
+    <property name="Diggable" type="bool" value="true"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2078">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="2079">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="2106">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="2107">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2108">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2109">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="20" height="26">
+  <properties>
+   <property name="AmbientLight" value="150 150 150"/>
+   <property name="AmbientNightLight" value="150 150 30"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYKAecKSiWSPVvKGAF7BTB8PMq+OgDqa1ebeAbo4H0vPYCeN4Is2rBtIxROBqEsyrIQKPmjdqHi3Mo2b+AGFSyhN6lweDxSxkM6ltHgDjIs+9
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="5" name="TileData" x="160" y="112" width="16" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="144" y="112" width="16" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="128" y="112" width="16" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Buildings" width="20" height="26">
+  <data encoding="base64" compression="zlib">
+   eJxzZGBgcAJibwqwCxA7MkBAIhD/Zmdg+AvEf3BgQnL/gDgVal4jEMtwMDDIckBobJiQnBwQtyKZZwPk23JAaGyYkJwdmnnU8C+yedJU9q81lf0bDeTnsTNgBQ1AOXsgduDALg8CcWjmUQOMmjdq3qh5o+bR2ryHVDLvBZR2JIAXQtUdJkItMeaRgkEAAKDgWmc=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="9" name="TileData" x="32" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="DropBox JunimoPlant"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Paths" width="20" height="26">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwShABQAIIAAB
+  </data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="20" height="26">
+  <data encoding="base64" compression="zlib">
+   eJxjYBj8QJqDMv1yaPqtKTQPHURTaF4cld1DKpAH2q8wwG4YBaNgFIyCoQAeAfEzHPgxVM0TPGqek2jfM8qdTDYAAArFEOM=
+  </data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="20" height="26">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwShABQAIIAAB
+  </data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

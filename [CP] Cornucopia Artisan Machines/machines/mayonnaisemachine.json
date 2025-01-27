@@ -1,0 +1,106 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"Cornucopia_GarlicMayonnaise": {
+					"Id": "Cornucopia_GarlicMayonnaise",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)248"
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Cornucopia_GarlicMayonnaiseLargeEgg",
+							"ItemId": "(O)Cornucopia_GarlicMayonnaise",
+							"Quality": 2,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
+							}
+						},
+						{
+							"Id": "Cornucopia_GarlicMayonnaiseSmallEgg",
+							"ItemId": "(O)Cornucopia_GarlicMayonnaise",
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
+							}
+						}
+					],
+					"MinutesUntilReady": 180
+				},
+				"Cornucopia_SpicyMayonnaise": {
+					"Id": "Cornucopia_SpicyMayonnaise",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)260"
+						},
+						{
+							"RequiredTags": [
+								"chili_item"
+							]
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Cornucopia_SpicyMayonnaiseLargeEgg",
+							"ItemId": "(O)Cornucopia_SpicyMayonnaise",
+							"Quality": 2,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
+							}
+						},
+						{
+							"Id": "Cornucopia_SpicyMayonnaiseSmallEgg",
+							"ItemId": "(O)Cornucopia_SpicyMayonnaise",
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
+							}
+						}
+					],
+					"MinutesUntilReady": 180
+				},
+				"Cornucopia_TruffleMayonnaise": {
+					"Id": "Cornucopia_TruffleMayonnaise",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)430"
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Cornucopia_TruffleMayonnaiseLargeEgg",
+							"ItemId": "(O)Cornucopia_TruffleMayonnaise",
+							"Quality": 2,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
+							}
+						},
+						{
+							"Id": "Cornucopia_TruffleMayonnaiseSmallEgg",
+							"ItemId": "(O)Cornucopia_TruffleMayonnaise",
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
+							}
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			}
+		}
+	]
+}

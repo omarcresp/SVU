@@ -1,0 +1,87 @@
+{
+
+   "Changes": [
+
+//★★★Hot Spring Farm Cave★★★
+
+  //◆◆◆FarmCave側の編集◆◆◆
+
+      {//●FarmCaveの編集 (Hot Spring Farm Caveが導入時)(デフォルトで閉じた状態)
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+	"FromFile": "assets/AdditionalFarmCave_entrance_close_HSFC.tmx",
+        "ToArea": { "X": 4, "Y": 1, "Width": 3, "Height": 4 },
+	"PatchMode": "ReplaceByLayer",
+	"When": {
+                  "Ts_AFC_OpenImmediately": "false",
+                },
+       },
+      {//●FarmCaveの編集 (Hot Spring Farm Caveが導入時)(友好度で開放(フラグは友好度でメールは香り))
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+	"FromFile": "assets/AdditionalFarmCave_entrance_HSFC.tmx",
+        "ToArea": { "X": 4, "Y": 1, "Width": 3, "Height": 4 },
+	"PatchMode": "ReplaceByLayer",
+	"When": {
+                  "Query: ({{Hearts:Demetrius}} >= 2) AND ({{Hearts:Robin}} >= 3)": true,
+                  "HasSeenEvent": "65",
+                  "Ts_AFC_OpenImmediately": "false",
+                },
+       },
+      {//●FarmCaveの編集 (Hot Spring Farm Caveが導入時)(ModConfigの設定で開放)
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+	"FromFile": "assets/AdditionalFarmCave_entrance_HSFC.tmx",
+        "ToArea": { "X": 4, "Y": 1, "Width": 3, "Height": 4 },
+	"PatchMode": "ReplaceByLayer",
+	"When": {
+                  "Ts_AFC_OpenImmediately": "true",
+                },
+       },
+
+      {//●FarmCaveにワープ追加 (Hot Spring Farm Caveが導入時)
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "TextOperations": [
+                            {
+                              "Operation": "Append",
+                              "Target": ["MapProperties", "Warp"],
+                              "Value": "5 2 Custom_AdditionalFarmCave 9 14",
+                              "Delimiter": " ",
+                            },
+                          ],
+	"When": { "Ts_AFC_AvoidCertainBugs": "false" },
+      },
+      {//●FarmCaveにワープ追加 2 (Hot Spring Farm Caveが導入時)
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "TextOperations": [
+                            {
+                              "Operation": "Append",
+                              "Target": ["MapProperties", "Warp"],
+                              "Value": "5 2 Custom_AdditionalFarmCave2 9 14",
+                              "Delimiter": " ",
+                            },
+                          ],
+	"When": { "Ts_AFC_AvoidCertainBugs": "true" },
+      },
+
+
+  //◆◆◆AddFarmCave側の編集◆◆◆
+
+      {//●AddFarmCaveのワープ変更 (Hot Spring Farm Caveが導入時)
+        "Action": "EditMap",
+        "Target": "Maps/Custom_AdditionalFarmCave",
+        "MapProperties": { "Warp": "9 15 FarmCave 5 4" },
+	"When": { "Ts_AFC_AvoidCertainBugs": "false" },
+      },
+      {//●AddFarmCaveのワープ変更 2 (Hot Spring Farm Caveが導入時)
+        "Action": "EditMap",
+        "Target": "Maps/Custom_AdditionalFarmCave2",
+        "MapProperties": { "Warp": "9 15 FarmCave 5 4" },
+	"When": { "Ts_AFC_AvoidCertainBugs": "true" },
+      },
+
+
+              ] //▼"Changes"の終了▼
+}

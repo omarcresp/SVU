@@ -1,0 +1,58 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Harvest Moon Music",
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Kana.WeatherWonders_HarvestMoonMusic": {
+          "ID": "Kana.WeatherWonders_HarvestMoonMusic",
+          "Category": "Music",
+          "FilePaths": ["{{AbsoluteFilePath: assets/HarvestMoonMusic.ogg}}"],
+          "StreamedVorbis": false,
+          "Looped": false
+        }
+      }
+    },
+    {
+      "LogName": "Load WW's Harvest Moon Sound Effect",
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Kana.WeatherWonders_HarvestMoonSoundEffect": {
+          "ID": "Kana.WeatherWonders_HarvestMoonSoundEffect",
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/HarvestMoonSoundEffect.ogg}}"
+          ],
+          "StreamedVorbis": false,
+          "Looped": false
+        }
+      },
+      "When": {
+        "HarvestMoonSoundEffect": true,
+        "Weather": "Kana.WeatherWonders_HarvestMoon"
+      }
+    },
+    {
+      "LogName": "Load WW's Harvest Moon Weather Music",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "TargetField": ["Kana.WeatherWonders_HarvestMoon"],
+      "Update": "OnLocationChange",
+      "Entries": {
+        "SoftMusicOverrides": [
+          {
+            "ID": "Kana.WeatherWonders_HarvestMoonMusic",
+            "Track": "Kana.WeatherWonders_HarvestMoonMusic",
+            "Condition": "TIME 2000 2600",
+            "Looped": false
+          }
+        ]
+      },
+      "When": {
+        "HarvestMoonMusic": true
+      }
+    }
+  ]
+}

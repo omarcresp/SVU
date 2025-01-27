@@ -1,0 +1,78 @@
+{
+  "Changes": [
+    {
+      "LogName": "Priya Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/PriyaFaycombeSereneVMV, Characters/PriyaFaycombeSereneVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Priya FaycombeSerene Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "PriyaFaycombeSereneVMV": {
+          "DisplayName": "{{i18n: PriyaDisplayName}}",
+          "BirthSeason": "summer",
+          "BirthDay": 3,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Child",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "SocialTab": "UnknownUntilMet",
+          "Calendar": "HiddenAlways",
+          "IntroductionsQuest": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "FriendsAndFamily": {
+            "NaveenFaycombeSereneVMV": "{{i18n: PriyaNaveenName}}",
+          },
+		  "CanSocialize": "FALSE",//PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_BusBundle
+		  "CanVisitIsland": "FALSE",
+          "SpawnIfMissing": true,
+			"Appearance": [
+			],
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_WarpRoom",
+					"Tile": { "X": 6, "Y": 10 },
+					"Direction": "down"
+				}
+			],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/PriyaFaycombeSereneVMV/Schedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "PriyaFaycombeSereneVMV": "{{i18n: PriyaGiftLoved{{GiftAnswerPriya}}}}/243 279 417 220 637 Lumisteria.MtVapius_GiantCrystalFish/{{i18n: PriyaGiftLiked{{GiftAnswerPriya}}}}/-12 104 106 392 394/{{i18n: PriyaGiftDislike{{GiftAnswerPriya}}}}/alcohol_item/{{i18n: PriyaGiftHate{{GiftAnswerPriya}}}}/395 253 424 426 ingredient_cheese/{{i18n: PriyaGiftNeutral{{GiftAnswerPriya}}}}/382/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/PriyaFaycombeSereneVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/PriyaFaycombeSereneVMV/Dialogue.json"
+    },
+  ]
+}

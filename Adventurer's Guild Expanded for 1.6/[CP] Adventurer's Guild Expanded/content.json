@@ -1,0 +1,295 @@
+{
+          "Format": "2.0.0",
+
+//Configuration
+
+"ConfigSchema": {
+
+	"AllowFestivals": {
+            "Section": "General",
+            "AllowValues": "true, false",
+            "Default": true,
+	    "Description": "Allow new NPCs to visit festivals. True by default, but can be disabled if there are tile conflicts.",
+        },
+
+	"FarmBasementEntrance": {
+            "Section": "Monster Basement Configuration",
+            "AllowValues": "true, false",
+            "Default": true,
+	    "Description": "Toggles the farmhouse entrance for the Monster Basement. If set to off, the entrance will only be at the Bus Stop.",
+        },
+// A HUGE thank you to NoraCharles for helping me out with this config section and how it works!!
+        "FarmBasementXPosition": {
+            "Section": "Monster Basement Configuration",
+            "Default": 59, 
+	    "Description": "Configure the X position for the basement. This is for the basement entrance at your farm.",
+        },
+
+        "FarmBasementYPosition": {
+            "Section": "Monster Basement Configuration",
+            "Default": 15, 
+	    "Description": "Configure the Y position for the basement. This is for the basement entrance at your farm.",
+        },
+
+        "BusStopBasementXPosition": {
+            "Section": "Monster Basement Configuration",
+            "Default": 17, 
+	    "Description": "Configure the X position for the basement. This is for the basement entrance at the bus stop.",
+        },
+
+        "BusStopBasementYPosition": {
+            "Section": "Monster Basement Configuration",
+            "Default": 4, 
+	    "Description": "Configure the Y position for the basement. This is for the basement entrance at the bus stop.",
+        },
+
+    },
+
+ "DynamicTokens": [
+
+//Daniel's Random Visits
+
+	{
+	"Name": "DanielVisit",
+	"Value": "{{Random: true, false, false, false, false, false, false, false, false, false}}",
+	},
+
+	//SVE Spirit's Eve Fix
+
+	{
+   	 "Name": "IsOddYear",
+    	 "Value": "{{Query: {{Year}} % 2 = 1}}",
+  	},
+
+	//Monster House
+	{
+   	 "Name": "sillyMovedIn",
+    	 "Value": "false",
+  	},
+
+	{
+   	 "Name": "sillyMovedIn",
+    	 "Value": "true",
+	 "When": {
+             "HasActiveQuest: anyPlayer |contains=8280021": true,
+         },
+  	},
+
+	{
+   	 "Name": "sillyMovedIn",
+    	 "Value": "true",
+	 "When": {
+             "HasSeenEvent: anyPlayer |contains=8280021, 8280022": true,
+         },
+  	},
+// A HUGE thank you to NoraCharles for helping me out with this config section and how it works!!
+        {
+   	 "Name": "FarmBPosX",
+    	 "Value": "{{FarmBasementXPosition}}",
+  	},
+        {
+   	 "Name": "FarmBPosY",
+    	 "Value": "{{FarmBasementYPosition}}",
+  	},
+        {
+   	 "Name": "BusStopBPosX",
+    	 "Value": "{{BusStopBasementXPosition}}",
+  	},
+        {
+   	 "Name": "BusStopBPosY",
+    	 "Value": "{{BusStopBasementYPosition}}",
+  	},
+
+	//sewer map changes
+	{
+   	 "Name": "sewerChanges",
+    	 "Value": "true",
+  	},
+
+	{
+   	 "Name": "sewerChanges",
+    	 "Value": "false",
+	 "When": {
+             "HasMod": "MouseyPounds.ShadowFestival",
+	     "DayEvent": "spirit's eve",
+         },
+  	},
+
+
+	//c
+	{
+   	 "Name": "ccOrjoja",
+    	 "Value": "false",
+  	},
+
+	{
+   	 "Name": "ccOrjoja",
+    	 "Value": "true",
+	 "When": {
+             "IsCommunityCenterComplete": "true",
+         },
+  	},
+
+	{
+   	 "Name": "ccOrjoja",
+    	 "Value": "true",
+	 "When": {
+             "IsJojaMartComplete": "true",
+         },
+  	},
+],
+
+"CustomLocations": [
+      // Monster House
+      {
+         "Name": "Custom_GE_MonsterHouse",
+         "FromMapFile": "Assets/Maps/MonsterHouse.tbin"
+      },
+
+	//Guild Expansion
+      {
+         "Name": "Custom_GE_MonsterResearchWing",
+         "FromMapFile": "Assets/Maps/MonsterResearchWing.tmx"
+      },
+
+	//Zinnia/Gabriel's Room
+      {
+         "Name": "Custom_GE_ZinniaRoom",
+         "FromMapFile": "Assets/Maps/ZinniaRoom.tmx"
+      },
+
+	//Flower Paradise
+      {
+         "Name": "Custom_GE_FlowerParadise",
+         "FromMapFile": "Assets/Maps/FlowerParadise.tbin"
+      },
+
+	//Zinnia Field
+      {
+         "Name": "Custom_GE_ZinniaField",
+         "FromMapFile": "Assets/Maps/ZinniaField.tbin"
+      },
+   ],
+
+"Changes": [
+
+        {
+            "Action": "Include",
+            "FromFile": "Data/Events/events.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/Events/eventdialogue.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/maps.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/shops.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/music.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/quests.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects/objects.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects/crops.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects/bigcraftables.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects/weapons.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/monsterdata.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/gifttastes.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/festivaldata.json",
+	     "When": {
+		"AllowFestivals": "true",
+	},
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/moviedata.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/recipes.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/secretnotes.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/mail.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/NPCs/HumanNPCData.json",
+	
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/NPCs/MonsterNPCData.json",
+        },
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/AdventureGuild",
+	 "FromFile": "Assets/XNBs/Blank.xnb",
+	"When": {
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP, Rafseazz.RSVCP, BlatantDecoy.BugmeatRecipes-CP": false,
+	},
+},
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/Custom_GE_MonsterResearchWing",
+	 "FromFile": "Assets/XNBs/Blank.xnb",
+	},
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/Custom_GE_FlowerParadise",
+	 "FromFile": "Assets/XNBs/Blank.xnb",
+	},
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/Custom_GE_MonsterHouse",
+	 "FromFile": "Assets/XNBs/Blank.xnb",
+	},
+
+]
+}

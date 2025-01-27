@@ -1,0 +1,329 @@
+{
+"Changes": [
+             {
+		"LogName": "Adding AGE Characters",
+		"Action": "EditData",
+		"Target": "Data/Characters",
+                "When": { 
+                    "HasSeenEvent: anyPlayer |contains=9280002": true },
+		"Entries": {
+			"Gabriel": {
+                             "DisplayName": "{{i18n:gabrielNPCnamedisplay}}",
+                             "Gender": "Male",
+                             "Age": "Adult",
+                             "Manner": "Neutral",
+                             "SocialAnxiety": "Shy",
+                             "Optimism": "Negative",
+                             "BirthSeason": "winter",
+                             "BirthDay": "22",
+                             "HomeRegion": "Town",
+                             "CanBeRomanced": true,
+                             "CanSocialize": true,
+                             "IsDarkSkinned": false,
+                             "SpawnIfMissing" : true,
+                             "IntroductionsQuest": false,
+                             "ItemDeliveryQuests": true,
+                             "CanVisitIsland": true,
+                             "Calendar": "HiddenUntilMet",
+                             "SocialTab": "HiddenUntilMet",
+                             "Home": [
+                                     {
+                                         "Id": "Default",
+                                         "Location": "Custom_GE_ZinniaRoom",
+                                         "Tile": {
+                                                 "X": 16,
+                                                 "Y": 6,
+                                                 },     
+                                         "Direction": "right"
+                                     }     
+                                   ],            
+                             "SpouseRoom": {
+                                         "MapAsset": "GESpouseRooms",
+                                         "MapSourceRect": {
+                                                 "X": 6,
+                                                 "Y": 0,
+                                                 "Width": 6,
+                                                 "Height": 9
+                                             }
+                                            }, 
+                             "SpousePatio": {
+                                         "MapAsset": "GESpousePatios",  
+                                         "MapSourceRect": {
+                                                 "X": 4,
+                                                 "Y": 0,
+                                                 "Width": 4,
+                                                 "Height": 4
+                                             }
+                                            }, 
+                                         "SpriteAnimationFrames": [
+                                                 [23],
+                                                 [23],
+                                                 [23],
+                                              ],
+                                         "SpriteAnimationPixelOffset": {
+                                                 "X": -5,
+                                                 "Y": 2,
+                                            },
+
+                             }, 
+			"Zinnia": {
+                             "DisplayName": "{{i18n:zinniaNPCnamedisplay}}",
+                             "Gender": "Female",
+                             "Age": "Teen",
+                             "Manner": "Polite",
+                             "SocialAnxiety": "Outgoing",
+                             "Optimism": "Positive",
+                             "BirthSeason": "summer",
+                             "BirthDay": "7",
+                             "HomeRegion": "Town",
+                             "CanBeRomanced": true,
+                             "CanSocialize": true,
+                             "IsDarkSkinned": false,
+                             "SpawnIfMissing" : true,
+                             "IntroductionsQuest": false,
+                             "ItemDeliveryQuests": true,
+                             "CanVisitIsland": true,
+                             "Calendar": "HiddenUntilMet",
+                             "SocialTab": "HiddenUntilMet",
+                             "Home": [
+                                     {
+                                         "Id": "Default",
+                                         "Location": "Custom_GE_ZinniaRoom",
+                                         "Tile": {
+                                                 "X": 7,
+                                                 "Y": 6,
+                                                 },     
+                                         "Direction": "left"
+                                     }     
+                                   ],            
+                             "SpouseRoom": {
+                                         "MapAsset": "GESpouseRooms",
+                                         "MapSourceRect": {
+                                                 "X": 0,
+                                                 "Y": 0,
+                                                 "Width": 6,
+                                                 "Height": 9
+                                             }
+                                            }, 
+                             "SpousePatio": {
+                                         "MapAsset": "GESpousePatios",  
+                                         "MapSourceRect": {
+                                                 "X": 0,
+                                                 "Y": 0,
+                                                 "Width": 4,
+                                                 "Height": 4
+                                             }
+                                            },
+                                         "SpriteAnimationFrames": [
+                                                 [24],
+                                                 [24],
+                                                 [24],
+                                              ],
+                                         "SpriteAnimationPixelOffset": {
+                                                 "X": 0,
+                                                 "Y": 0,
+                                             },
+                                            }
+
+                             }, 
+			"Daisy": {
+                             "DisplayName": "{{i18n:daisyNPCnamedisplay}}",
+                             "CanSocialize": false,
+                             "IntroductionsQuest": false,
+                             "SocialTab": "HiddenAlways",
+                             "EndSlideShow": "Hidden",
+                             }, 
+			"Daniel": {
+                             "DisplayName": "{{i18n:danielNPCnamedisplay}}",
+                             "CanSocialize": false,
+                             "IntroductionsQuest": false,
+                             "SocialTab": "HiddenAlways",
+                             "EndSlideShow": "Hidden",
+                             }, 
+
+                 },
+//loading empty jsons
+		        {
+			"LogName": "Load Empty Json Dialogues",
+   			"Action": "Load",
+   			"Target": "Characters/Dialogue/Zinnia, Characters/Dialogue/Gabriel, Characters/Dialogue/MarriageDialogueZinnia, Characters/Dialogue/MarriageDialogueGabriel, Characters/schedules/Gabriel, Strings/schedules/Gabriel, Characters/schedules/Zinnia, Strings/schedules/Zinnia",
+   			"FromFile": "Data/empty.json"
+  		},
+
+//*** GABRIEL ****
+
+		{
+			"LogName": "Gabriel Reg Sprites",
+			"Action": "Load",
+			"Target": "Characters/Gabriel",
+			"FromFile": "Assets/Characters/Gabriel.png",
+		},
+
+		{
+			"LogName": "Gabriel Beach Sprites",
+			"Action": "Load",
+			"Target": "Characters/Gabriel_Beach",
+			"FromFile": "Assets/Characters/Gabriel_Beach.png",
+		},
+
+		{
+			"LogName": "Gabriel Reg Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Gabriel",
+			"FromFile": "Assets/Portraits/Gabriel.png",
+		},
+
+		{
+			"LogName": "Gabriel Beach Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Gabriel_Beach",
+			"FromFile": "Assets/Portraits/Gabriel_Beach.png",
+		},
+
+		{
+			"LogName": "Gabriel Dialogue",
+			"Action": "Include",
+			"FromFile": "Data/NPCs/Gabriel/dialogue.json",
+		},
+
+		{
+            		"Action": "Include",
+			"FromFile": "Data/NPCs/Gabriel/marriagedialogue.json",
+        	},
+		{
+            		"Action": "Include",
+            		"FromFile": "Data/NPCs/Gabriel_schedule.json",
+        	},
+
+		{
+            		"Action": "EditData",
+            		"Target": "Data/NPCGiftTastes",
+            		"Entries": {
+                		"Gabriel": "{{i18n:GiftReactionGabriel.love}}/834 253 395 905 565 243 244 supert_FireSlimeSoul supert_FrozenSlimeSoul supert_SlimeSoul supert_TrueSlimeEnergy supert_Zinnia/{{i18n:GiftReactionGabriel.like}}/437 439 413 680 857 -15 156 879 -5 921 614 351 349 772 773/{{i18n:GiftReactionGabriel.dislike}}/091 -6 724 904/{{i18n:GiftReactionGabriel.hate}}/225 226 148 162/{{i18n:GiftReactionGabriel.neutral}}/-28 557 874 814/",
+            			},
+        	},
+
+       		{
+            		"Action": "EditData",
+            		"Target": "Data/EngagementDialogue",
+            		"Entries": {
+                		"Gabriel0": "{{i18n:EngagementDialogue.Gabriel.00}}",
+                		"Gabriel1": "{{i18n:EngagementDialogue.Gabriel.01}}",
+            			},
+        	},
+
+
+//**** ZINNIA *****
+
+		{
+			"LogName": "Zinnia Reg Sprites",
+			"Action": "Load",
+			"Target": "Characters/Zinnia",
+			"FromFile": "Assets/Characters/Zinnia.png",
+		},
+
+		{
+			"LogName": "Zinnia Beach Sprites",
+			"Action": "Load",
+			"Target": "Characters/Zinnia_Beach",
+			"FromFile": "Assets/Characters/Zinnia_Beach.png",
+		},
+
+		{
+			"LogName": "Zinnia Reg Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Zinnia",
+			"FromFile": "Assets/Portraits/Zinnia.png",
+		},
+
+		{
+			"LogName": "Zinnia Beach Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Zinnia_Beach",
+			"FromFile": "Assets/Portraits/Zinnia_Beach.png",
+		},
+
+		{
+			"LogName": "Zinnia Dialogue",
+			"Action": "Include",
+			"FromFile": "Data/NPCs/Zinnia/dialogue.json",
+		},
+
+		{
+            		"Action": "Include",
+			"FromFile": "Data/NPCs/Zinnia/marriagedialogue.json",
+        	},
+
+		{
+            		"Action": "EditData",
+            		"Target": "Data/NPCGiftTastes",
+            		"Entries": {
+                		"Zinnia": "{{i18n:GiftReactionZinnia.love}}/614 421 221 233 564 268 540 supert_LifeEssence supert_Zinnia/{{i18n:GiftReactionZinnia.like}}/577 578 548 872 supert_TrueSlimeEnergy/{{i18n:GiftReactionZinnia.dislike}}/80 330 852 346/{{i18n:GiftReactionZinnia.hate}}/446 148 225 226 162 286 287 288/{{i18n:GiftReactionZinnia.neutral}}/378 380 384 386 848 158/",
+            		},
+        	},
+
+        	{
+            		"Action": "EditData",
+            		"Target": "Data/EngagementDialogue",
+            		"Entries": {
+                		"Zinnia0": "{{i18n:EngagementDialogue.Zinnia.00}}",
+                		"Zinnia1": "{{i18n:EngagementDialogue.Zinnia.01}}",
+            			},
+        	},
+
+		{
+            		"Action": "Include",
+            		"FromFile": "Data/NPCs/Zinnia_schedule.json",
+        	},
+
+//*** DANIEL (NON SOCIAL NPC AS OF 1.0.0) ****
+
+		{
+			"LogName": "Daniel Sprites",
+			"Action": "Load",
+			"Target": "Characters/Daniel",
+			"FromFile": "Assets/Characters/Daniel.png",
+		},
+
+
+		{
+			"LogName": "Daniel Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Daniel",
+			"FromFile": "Assets/Portraits/Daniel.png",
+		},
+
+		{
+			"LogName": "Daniel Map Tiles",
+			"Action": "Load",
+			"Target": "Maps/Daniel",
+			"FromFile": "Assets/Maps/Daniel.png",
+		},
+
+//*** DAISY (NON SOCIAL NPC) ****
+
+
+		{
+			"LogName": "Daisy Sprites",
+			"Action": "Load",
+			"Target": "Characters/Daisy",
+			"FromFile": "Assets/Characters/Daisy.png",
+		},
+
+
+		{
+			"LogName": "Daisy Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Daisy",
+			"FromFile": "Assets/Portraits/Daisy.png",
+		},
+
+//ANIMATIONS
+
+		{
+            		"Action": "Include",
+			"FromFile": "Data/animations.json",
+        	},
+
+],
+}

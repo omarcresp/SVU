@@ -1,0 +1,55 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Leo_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leo",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)444": "{{i18n: CFE_Leo_DuckFeather}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Leo}}' = 'true' OR ('{{CFE_Leo}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Leo_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leo",
+      "Entries": {
+        "AcceptGift_(O)279": "{{i18n: CFE_Leo_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Leo_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Leo_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Leo_RabbitsFoot}}",
+
+        "AcceptGift_(O)834": "{{i18n: CFE_Leo_Mango}}",
+        "AcceptGift_(O)289": "{{i18n: CFE_Leo_OstrichEgg}}",
+        "AcceptGift_(O)906": "{{i18n: CFE_Leo_Poi}}"
+      },
+      "When": { "Query: '{{CFE_Leo}}' = 'true' OR ('{{CFE_Leo}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Leo_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leo",
+      "Entries": {
+        //Heart Specific Dialogue
+        "Mon2": "{{i18n: CFE_Leo_Mon2}}",
+        "Tue4": "{{i18n: CFE_Leo_Tue4}}",
+        "Tue2": "{{i18n: CFE_Leo_Tue2}}",
+        "Wed4": "{{i18n: CFE_Leo_Wed4}}",
+        "Thu4": "{{i18n: CFE_Leo_Thu4}}",
+        "Thu2": "{{i18n: CFE_Leo_Thu2}}",
+        "Fri2": "{{i18n: CFE_Leo_Fri2}}",
+        "Sat4": "{{i18n: CFE_Leo_Sat4}}",
+        "Sat2": "{{i18n: CFE_Leo_Sat2}}",
+        "Sun4": "{{i18n: CFE_Leo_Sun4}}",
+        "Sun2": "{{i18n: CFE_Leo_Sun2}}",
+        //Generic Weekday Dialogue
+        "summer_Mon": "{{i18n: CFE_Leo_summerMon}}"
+      },
+      "When": { "Query: '{{CFE_Leo}}' = 'true' OR ('{{CFE_Leo}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

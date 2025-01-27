@@ -1,0 +1,18 @@
+{
+	"Changes":[
+	//This document will be short. It will deal with exactly four cases for now - Alissa is married (and the relevant reactions to that), Corine is married (and Ezekiel's reaction to that), Ian is married (Sean's reaction), and a Bert reaction if Abigail is your housemate (below). Jeric and Flor do not have relevant interactions.
+	//This is also only meant to deal with GiftGift dialogues - EarlyLines are dealt with in their respective section.
+		{
+			"LogName": "Bert - Winter Star, Abigail is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Bert",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Bert.WinterStar.Abigail.Housemate.After |termOfEndearment={{PPAF.Core/ConfigValue:TermOfEndearment}} }}",
+			},
+			"When": {
+				"relationship:Abigail": "married",
+				"PPAF.Core/ConfigValue:AbigailRelationshipType": "SexWithoutRomance, FullyPlatonic",
+			},			
+		},
+	],
+}

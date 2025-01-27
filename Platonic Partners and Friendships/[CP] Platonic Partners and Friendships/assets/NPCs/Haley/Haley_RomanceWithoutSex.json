@@ -1,0 +1,215 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "SpouseStardrop": "My favorite makeup brand sent me that fruit as a loyalty reward... It's supposed to promote youth and vitality.#$b#I gave it to you because... well, because it's what I think you would have done.$l#$b#I know I used to be pretty self-centered and judgmental... I was awful to you when we first met.$s#$b#But as I got to know you, I saw how you'd stop to chat with people I never gave the time of day... Remember their birthdays... Give them gifts just to make them happy... #$b#It got me thinking about how I want to treat people. Being kind to someone I'm in love with is just a start... I'm going to look for more ways to practice generosity in my daily life.#$b#But for now... I love you, @. I hope you enjoyed the gift.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "SpouseStardrop": "My favorite makeup brand sent me that fruit as a loyalty reward... It's supposed to promote youth and vitality.#$b#I gave it to you because... well, because it's what I think you would have done.#$b#I know I used to be pretty self-centered and judgmental... I was awful to you when we first met.$s#$b#But as I got to know you, I saw how you'd stop to chat with people I never gave the time of day... Remember their birthdays... Give them gifts just to make them happy... #$b#It got me thinking about how I want to treat people. Being kind to someone I'm in love with is just a start... I'm going to look for more ways to practice generosity in my daily life.#$b#But for now... I love you, @. I hope you enjoyed the gift.",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false",
+            },
+        },
+        {
+            "LogName": "Haley terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Haley terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+
+         {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Indoor_Night_Haley": "You look like you've been working hard. Want to chat about something light to de-stress?#$e#I can tell you all about the new blouse Emily made for me!",
+                "Rainy_Night_0": "Oh, I'm glad you're back. I was bored in here by myself... Are you ready to wind down for the night?",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+                "Haley_spouse": "Me?... I'm thankful for my true love, of course!$h",
+            },
+        },
+        {
+	    "Logname": "Haley no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley",
+            "FromFile": "assets/Portraits/HaleyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname": "Haley no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley_Winter",
+            "FromFile": "assets/Portraits/HaleyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Haley no blush portrait edit, Slightly Cuter",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley",
+            "FromFile": "assets/Portraits/HaleyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+	    "Logname": "Haley no blush portrait edit, Slightly Cuter, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley_Winter",
+            "FromFile": "assets/Portraits/HaleyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+//CFDE
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Indoor_Night_Haley": "You look like you've been working hard. Want to chat about something light to de-stress?#$e#I can tell you all about the new blouse Emily made for me!",
+                "Indoor_Night_0": "#$c .5#You look like you've been working hard. Want to just relax and watch TV with me for a bit?#I never thought I'd say this, but the country lifestyle really suits me.$h",
+                "Rainy_Night_0": "#$c .5#Oh, I'm glad you're back. I was bored in here by myself... Are you ready to wind down for the night?#*giggle* When you get soaked in the rain, it's gross, but it also makes you look tough.$h",
+                "summer_22": "Emily made me a new summer outfit. It's just my style, too! That was really thoughtful of her.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                 "TwoKids_3": "#$c .5#A big house, two kids, a beautiful plot of land, and the one I love by my side... I'm not sure what else I could ask for.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+		"AlwaysAdopt": false,
+            },
+        },
+
+//Immersive Spouses
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "funLeave_Haley": "#$c .4#Good morning. Did you get plenty of beauty sleep?#Mornin'! Look at the sun shine today, bestie. It's perfect photography and farming weather!$h#$e#$c .5#Think I'll practice my photography for a while in the forest!#I'm heading out today. Don't take this the wrong way, but the fresh air in the forest is unrivaled.#$e#Stay safe, you hear?",
+                "funReturn_Haley": "#$c .5#Welcome back, did you have a productive day?#You've got some dirt on your face. Lemme get it for you... So how was your day?#$e#$c .5#If you don't mind, I'm heading straight to bed. The sun makes me so drowsy.$s#I already had dinner back at my old house. Sorry, I left the leftovers for Emily.#$e#Hmm? You love me? Well, I already know that!$h#$b#I love you too."
+            },
+            "When": {
+                "Season": "Spring, Summer",
+                "DayOfWeek": "Thursday",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    ]
+}

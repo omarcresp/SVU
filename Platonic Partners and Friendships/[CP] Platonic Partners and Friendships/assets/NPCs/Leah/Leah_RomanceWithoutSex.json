@@ -1,0 +1,173 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "SpouseStardrop": "I found that fruit growing wild! Can you believe it?$h#$b#I wanted you to have it to show how much I appreciate you.$l#$b#I'm sure you remember that when we met, it hadn't been very long since I left everything I knew to pursue a dream I wasn't sure would work out.$u#$b#My life was in this precarious, transitional state... I guess it was the same for you, back then.$u#$b#Add to that putting my art out into the world, exposing something so personal to others' interpretation and judgment... $s#$b#Of course, it all turned out well. But your support through that time meant a lot to me. *You* mean a lot to me.#$b#What I really want to say is... I love you, @. My life is richer for sharing it with you.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "SpouseStardrop": "I found that fruit growing wild! Can you believe it?$h#$b#I wanted you to have it to show how much I appreciate you.#$b#I'm sure you remember that when we met, it hadn't been very long since I left everything I knew to pursue a dream I wasn't sure would work out.$u#$b#My life was in this precarious, transitional state... I guess it was the same for you, back then.$u#$b#Add to that putting my art out into the world, exposing something so personal to others' interpretation and judgment... $s#$b#Of course, it all turned out well. But your support through that time meant a lot to me. *You* mean a lot to me.#$b#What I really want to say is... I love you, @. My life is richer for sharing it with you.",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false",
+            },
+        },
+        {
+            "LogName": "Leah terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Leah terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_4": "I love the natural aromas of the farm.",
+                "spring_1": "I'm glad it's spring. Some of my favorite ingredients only grow wild this time of year.#$e#I'm thinking dandelion-salmonberry salad topped with crumbled goat cheese... Mmm.",
+            },
+        },
+        {
+	    "Logname": "Leah no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah",
+            "FromFile": "assets/Portraits/LeahNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.LeahElliott": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname": "Leah no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah_Winter",
+            "FromFile": "assets/Portraits/LeahNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.LeahElliott": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Leah no blush portrait edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah",
+            "FromFile": "assets/Portraits/LeahNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+	    "Logname": "Leah no blush portrait edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah_Winter",
+            "FromFile": "assets/Portraits/LeahNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+//CFDE
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Rainy_Night_4": "#$c .5#This is a good night to get under the covers and stay warm.#I missed you today. I'm glad you're home.",
+                "Indoor_Night_0": "#$c .5#Something about this time of night makes me thirsty.#Got some time to spend with me tonight? I've been missing you.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+    ]
+}

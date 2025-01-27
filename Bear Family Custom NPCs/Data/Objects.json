@@ -1,0 +1,4218 @@
+{
+  "Changes": [
+
+    {
+      "LogName": "Load Other Items asset",
+      "Action": "Load",
+      "Target": "Mods/MadDogBearFam/NonWeaponEquipment",
+      "FromFile": "Assets/MadDog.BearFam_Equipment.png"
+    },
+
+    {
+      "LogName": "Load foody asset",
+      "Action": "Load",
+      "Target": "Mods/MadDogBearFam/FoodAdjacent",
+      "FromFile": "Assets/MadDog.BearFamObjects.png"
+    },
+
+    {
+      "LogName": "Load coffee asset",
+      "Action": "Load",
+      "Target": "Mods/MadDogBearFam/Coffees",
+      "FromFile": "Assets/MadDog.HashtagBearFam_Flavored_Coffees.png"
+    },
+    //items
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_BrazierSecretAlfredo": {
+          "Name": "MadDog.HashtagBearFam_BrazierSecretAlfredo",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.BrazierSecretAlfredo}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.BrazierSecretAlfredo.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 120,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 1.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 0,
+          "ContextTags": [
+            "color_sand",
+            "food_pasta",
+            "allergen_dairy",
+            "allergen_gluten",
+            "food_nonvegan"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GudrunPerfectRamen": {
+          "Name": "MadDog.HashtagBearFam_GudrunPerfectRamen",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GudrunPerfectRamen}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GudrunPerfectRamen.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 195,
+          "Edibility": 40,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 2.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 2.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 2.0,
+                "MaxStamina": 15.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 1,
+          "ContextTags": [
+            "color_yellow_green",
+            "food_soup",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarBadPotion": {
+          "Name": "MadDog.HashtagBearFam_GunnarBadPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarBadPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarBadPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 15,
+          "Edibility": 1,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": -1.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": -1.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": -1.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 2,
+          "ContextTags": [
+            "color_red",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarFirstPotion": {
+          "Name": "MadDog.HashtagBearFam_GunnarFirstPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarFirstPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarFirstPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 35,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 1.0,
+                "FishingLevel": 1.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 2.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 3,
+          "ContextTags": [
+            "color_pink",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarMysteryPotion": {
+          "Name": "MadDog.HashtagBearFam_GunnarMysteryPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarMysteryPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarMysteryPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 40,
+          "Edibility": 300,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 2.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 64.0,
+                "Speed": 0.0,
+                "Defense": 1.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 4,
+          "ContextTags": [
+            "color_jade",
+            "potion_item",
+            "gunnar_potion_item",
+            "food_nonvegan" //because of batwings
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarPerfectPotion": {
+          "Name": "MadDog.HashtagBearFam_GunnarPerfectPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarPerfectPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarPerfectPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 1000,
+          "Edibility": 150,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 600,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 25.0,
+                "MagneticRadius": 32.0,
+                "Speed": 4.0,
+                "Defense": 4.0,
+                "Attack": 4.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 5,
+          "ContextTags": [
+            "color_yellow",
+            "potion_item",
+            "gunnar_potion_item",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarPerfectRamen": {
+          "Name": "MadDog.HashtagBearFam_GunnarPerfectRamen",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarPerfectRamen}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarPerfectRamen.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 225,
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 5.0,
+                "LuckLevel": 1.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 2.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 6,
+          "ContextTags": [
+            "color_sand",
+            "food_soup",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarPhoenixDown": {
+          "Name": "MadDog.HashtagBearFam_GunnarPhoenixDown",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarPhoenixDown}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarPhoenixDown.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 2500,
+          "Edibility": 200,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 450,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 45.0,
+                "MagneticRadius": 64.0,
+                "Speed": 1.0,
+                "Defense": 1.0,
+                "Attack": 1.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 7,
+          "ContextTags": [
+            "color_red",
+            "gunnar_potion_item",
+            "food_nonvegan",
+            "medicine_item" //           "food_nonvegan" because of feather?
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarRemedyAll": {
+          "Name": "MadDog.HashtagBearFam_GunnarRemedyAll",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarRemedyAll}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarRemedyAll.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 2000,
+          "Edibility": 75,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 6.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 8,
+          "ContextTags": [
+            "color_blue",
+            "potion_item",
+            "gunnar_potion_item",
+            "food_nonvegan",
+            "allergen_shellfish"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarSecondPotion": {
+          "Name": "MadDog.HashtagBearFam_GunnarSecondPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarSecondPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarSecondPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 250,
+          "Edibility": 30,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 1.0,
+                "FishingLevel": 1.0,
+                "MiningLevel": 1.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 9,
+          "ContextTags": [
+            "color_light_cyan",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarThirdPotion": {
+          "Name": "MadDog.HashtagBearFam_GunnarThirdPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarThirdPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarThirdPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 450,
+          "Edibility": 50,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 600,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 32.0,
+                "Speed": 2.0,
+                "Defense": 2.0,
+                "Attack": 2.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 10,
+          "ContextTags": [
+            "color_purple",
+            "potion_item",
+            "gunnar_potion_item",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarWeirdPotion": {
+          "Name": "MadDog.HashtagBearFam_GunnarWeirdPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarWeirdPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarWeirdPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 175,
+          "Edibility": 1,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 450,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 2.0,
+                "MaxStamina": 100.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 1.0,
+                "Attack": 1.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 11,
+          "ContextTags": [
+            "color_dark_blue",
+            "potion_item",
+            "gunnar_potion_item",
+            "food_nonvegan",
+            "allergen_shellfish"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_NineHerbsCharm": {
+          "Name": "MadDog.HashtagBearFam_NineHerbsCharm",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.NineHerbsCharm}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.NineHerbsCharm.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 2500,
+          "Edibility": 55,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Potion",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 3.0,
+                "FishingLevel": 3.0,
+                "MiningLevel": 3.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 3.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 12,
+          "ContextTags": [
+            "color_dark_green",
+            "food_spicy",
+            "gunnar_potion_item",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_PeachJoja": {
+          "Name": "MadDog.HashtagBearFam_PeachJoja",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.PeachJoja}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.PeachJoja.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 13,
+          "ContextTags": [
+            "color_pink",
+            "drink_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_PumpkinJoja": {
+          "Name": "MadDog.HashtagBearFam_PumpkinJoja",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.PumpkinJoja}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.PumpkinJoja.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 14,
+          "ContextTags": [
+            "color_orange",
+            "drink_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_SigurdPerfectRamen": {
+          "Name": "MadDog.HashtagBearFam_SigurdPerfectRamen",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.SigurdPerfectRamen}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.SigurdPerfectRamen.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 230,
+          "Edibility": 65,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 3.0,
+                "Defense": 4.0,
+                "Attack": 5.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 15,
+          "ContextTags": [
+            "food_soup",
+            "color_sand",
+            "food_spicy",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_SondraAutumnCookie": {
+          "Name": "MadDog.HashtagBearFam_SondraAutumnCookie",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.SondraAutumnCookie}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.SondraAutumnCookie.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 145,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 2.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 16,
+          "ContextTags": [
+            "color_orange",
+            "food_sweet",
+            "food_bakery",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_SondraPerfectRamen": {
+          "Name": "MadDog.HashtagBearFam_SondraPerfectRamen",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.SondraPerfectRamen}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.SondraPerfectRamen.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 235,
+          "Edibility": 40,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 2.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 1.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 2.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 17,
+          "ContextTags": [
+            "color_sand",
+            "food_soup",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_SondraSpringtimeShortbread": {
+          "Name": "MadDog.HashtagBearFam_SondraSpringtimeShortbread",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.SondraSpringtimeShortbread}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.SondraSpringtimeShortbread.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 200,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 18,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_SondraSummerCake": {
+          "Name": "MadDog.HashtagBearFam_SondraSummerCake",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.SondraSummerCake}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.SondraSummerCake.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 225,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 2.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 19,
+          "ContextTags": [
+            "color_pink",
+            "food_sweet",
+            "food_bakery",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_SondraWinterBar": {
+          "Name": "MadDog.HashtagBearFam_SondraWinterBar",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.SondraWinterBar}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.SondraWinterBar.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 240,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 3.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 64.0,
+                "Speed": 1.0,
+                "Defense": 1.0,
+                "Attack": 0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 20,
+          "ContextTags": [
+            "color_dark_red",
+            "food_sweet",
+            "food_bakery",
+            "allergen_gluten",
+            "allergen_nut"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TriangleGrilledCheese": {
+          "Name": "MadDog.HashtagBearFam_TriangleGrilledCheese",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TriangleGrilledCheese}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TriangleGrilledCheese.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 1.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 1.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 21,
+          "ContextTags": [
+            "color_sand",
+            "food_nonvegan",
+            "allergen_dairy",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Teren Specific
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_HoneyWheatBread": {
+          "Name": "MadDog.HashtagBearFam_HoneyWheatBread",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.HoneyWheatBread}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.HoneyWheatBread.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 10,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 1.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 1.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 22,
+          "ContextTags": [
+            "color_yellow",
+            "food_bakery",
+            "food_nonvegan",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_SesameBrownBread": {
+          "Name": "MadDog.HashtagBearFam_SesameBrownBread",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.SesameBrownBread}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.SesameBrownBread.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 10,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 1.0,
+                "FishingLevel": 1.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 23,
+          "ContextTags": [
+            "color_dark_yellow",
+            "food_bakery",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_CornbreadMuffins": {
+          "Name": "MadDog.HashtagBearFam_CornbreadMuffins",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.CornbreadMuffins}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.CornbreadMuffins.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 125,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 1.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 24,
+          "ContextTags": [
+            "color_yellow",
+            "food_bakery",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RoseCupcakes": {
+          "Name": "MadDog.HashtagBearFam_RoseCupcakes",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RoseCupcakes}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RoseCupcakes.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 150,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 1.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 25,
+          "ContextTags": [
+            "color_pink",
+            "food_sweet",
+            "food_bakery",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_BananaBread": {
+          "Name": "MadDog.HashtagBearFam_BananaBread",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.BananaBread}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.BananaBread.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 150,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 1.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 26,
+          "ContextTags": [
+            "color_dark_yellow",
+            "food_sweet",
+            "food_bakery",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TTBrownies": {
+          "Name": "MadDog.HashtagBearFam_TTBrownies",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TTBrownies}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TTBrownies.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 205,
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 1.0,
+                "FishingLevel": 1.0,
+                "MiningLevel": 1.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 28,
+          "ContextTags": [
+            "color_dark_yellow",
+            "food_sweet",
+            "food_bakery",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_CookiesnCremeCake": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_CookiesnCremeCake",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CookiesnCremeCake}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CookiesnCremeCake.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 600,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 27,
+          "ContextTags": [
+            "color_dark_brown",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "allergen_dairy",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_RainbowChipCookies": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_RainbowChipCookies",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.RainbowChipCookies}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.RainbowChipCookies.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 600,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 29,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_ApricotDonut": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_ApricotDonut",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.ApricotDonut}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.ApricotDonut.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 540,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 30,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_DecadentCheesecake": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_DecadentCheesecake",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.DecadentCheesecake}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.DecadentCheesecake.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 750,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 31,
+          "ContextTags": [
+            "color_dark_brown",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "allergen_dairy",
+            "food_nonvegan"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_ZuzuPretzel": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_ZuzuPretzel",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.ZuzuPretzel}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.ZuzuPretzel.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 300,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 32,
+          "ContextTags": [
+            "color_brown",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_HazelnutCroissant": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_HazelnutCroissant",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.HazelnutCroissant}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.HazelnutCroissant.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 400,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 33,
+          "ContextTags": [
+            "color_brown",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "allergen_dairy",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_nut"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_CaramelFlan": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_CaramelFlan",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CaramelFlan}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CaramelFlan.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 550,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 37,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "allergen_dairy",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_RedVelvetCookie": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_RedVelvetCookie",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.RedVelvetCookie}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.RedVelvetCookie.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 400,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 44,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_CherryLayerCake": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_CherryLayerCake",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CherryLayerCake}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CherryLayerCake.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 690,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 49,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "allergen_dairy",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_CinnaSpiceRoll": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_CinnaSpiceRoll",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CinnaSpiceRoll}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CinnaSpiceRoll.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 420,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 50,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_PomegranateEclair": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_PomegranateEclair",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.PomegranateEclair}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.PomegranateEclair.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 570,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 51,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_PDFruitScone": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_PDFruitScone",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.PDFruitScone}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.PDFruitScone.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 800,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 52,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "allergen_dairy",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_ButtermilkCrescentRoll": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_ButtermilkCrescentRoll",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.ButtermilkCrescentRoll}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.ButtermilkCrescentRoll.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 400,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 53,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "allergen_dairy",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_RainbowCake": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_RainbowCake",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.RainbowCake}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.RainbowCake.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 600,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 61,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_SpringMacarons": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_SpringMacarons",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.SpringMacarons}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.SpringMacarons.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 350,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 65,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_SummerCakePopsicle": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_SummerCakePopsicle",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.SummerCakePopsicle}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.SummerCakePopsicle.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 390,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 66,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "allergen_dairy",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_WinterGingerBread": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_WinterGingerBread",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.WinterGingerBread}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.WinterGingerBread.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 530,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 67,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_AutumnPumpkinCookie": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_AutumnPumpkinCookie",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.AutumnPumpkinCookie}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.AutumnPumpkinCookie.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 850,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 68,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_WildPlumDonut": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_WildPlumDonut",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.WildPlumDonut}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.WildPlumDonut.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 420,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 69,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item",
+            "allergen_gluten",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+    ///
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Eli_Cookie": {
+          "Name": "MadDog.HashtagBearFam_Eli_Cookie",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Eli_Cookie}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Eli_Cookie.Description.{{EnableRivalHeartsTerenEli}}}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 500,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 16,
+          "ContextTags": [
+            "color_dark_blue",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Dylan_Tea": {
+          "Name": "MadDog.HashtagBearFam_Dylan_Tea",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Dylan_Tea}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Dylan_Tea.Description.{{EnableRivalHeartsSigDylan}}}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 500,
+          "Edibility": 25,
+          "IsDrink": true,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 17,
+          "ContextTags": [
+            "color_sea_green",
+            "food_caritas_bakery_item",
+            "food_tea"
+          ]
+        }
+      }
+    },
+
+
+    ///
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_HeartHealthCookies": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_HeartHealthCookies",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.HeartHealthCookies}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.HeartHealthCookies.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 550,
+          "Edibility": 12,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 5,
+          "ContextTags": [
+            "color_dark_brown",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_PlumRiceBalls": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_PlumRiceBalls",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.PlumRiceBalls}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.PlumRiceBalls.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 290,
+          "Edibility": 16,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 6,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_BlueberrySpongeCake": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_BlueberrySpongeCake",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.BlueberrySpongeCake}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.BlueberrySpongeCake.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 590,
+          "Edibility": 22,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 14,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenBakes_CaramelOrangeRoll": {
+          "Name": "MadDog.HashtagBearFam_TerenBakes_CaramelOrangeRoll",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CaramelOrangeRoll}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenBakes.CaramelOrangeRoll.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 350,
+          "Edibility": 23,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 15,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_bakery",
+            "food_caritas_bakery_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenMakes_MushroomSteakBurger": {
+          "Name": "MadDog.HashtagBearFam_TerenMakes_MushroomSteakBurger",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenMakes.MushroomSteakBurger}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenMakes.MushroomSteakBurger.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 600,
+          "Edibility": 52,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 7,
+          "ContextTags": [
+            "color_dark_brown",
+            "food_caritas_savory_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenMakes_TomatoCoconutBisque": {
+          "Name": "MadDog.HashtagBearFam_TerenMakes_TomatoCoconutBisque",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenMakes.TomatoCoconutBisque}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenMakes.TomatoCoconutBisque.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 320,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 8,
+          "ContextTags": [
+            "color_red",
+            "food_soup",
+            "food_caritas_savory_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenMakes_JerkVeggiesandSalsa": {
+          "Name": "MadDog.HashtagBearFam_TerenMakes_JerkVeggiesandSalsa",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenMakes.JerkVeggiesandSalsa}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenMakes.JerkVeggiesandSalsa.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 600,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 9,
+          "ContextTags": [
+            "color_sand",
+            "food_caritas_savory_item",
+            "food_spicy"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenMakes_GarlicSquoodles": {
+          "Name": "MadDog.HashtagBearFam_TerenMakes_GarlicSquoodles",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenMakes.GarlicSquoodles}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenMakes.GarlicSquoodles.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 350,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 10,
+          "ContextTags": [
+            "color_orange",
+            "food_caritas_savory_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenMakes_VeggieSkewer": {
+          "Name": "MadDog.HashtagBearFam_TerenMakes_VeggieSkewer",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenMakes.VeggieSkewer}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenMakes.VeggieSkewer.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 550,
+          "Edibility": 36,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 11,
+          "ContextTags": [
+            "color_green",
+            "food_caritas_savory_item"
+          ]
+        }
+      }
+    },
+
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenMakes_TooMuchFruitSmoothie": {
+          "Name": "MadDog.HashtagBearFam_TerenMakes_TooMuchFruitSmoothie",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenMakes.TooMuchFruitSmoothie}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenMakes.TooMuchFruitSmoothie.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 777,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 12,
+          "ContextTags": [
+            "color_green",
+            "food_caritas_bakery_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenMakes_PeachyLemonade": {
+          "Name": "MadDog.HashtagBearFam_TerenMakes_PeachyLemonade",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenMakes.PeachyLemonade}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenMakes.PeachyLemonade.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 450,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 13,
+          "ContextTags": [
+            "color_pink",
+            "food_caritas_bakery_item"
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RoseysLatkes": {
+          "Name": "MadDog.HashtagBearFam_RoseysLatkes",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RoseysLatkes}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RoseysLatkes.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 150,
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 4,
+          "ContextTags": [
+            "color_yellow",
+            "food_nonvegan",
+            "food_caritas_savory_item",
+            "allergen_gluten",
+            "allergen_dairy"
+          ]
+        }
+      }
+    },
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //fersken peach food
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeachCobbler": {
+          "Name": "MadDog.HashtagBearFam_FerskenPeachCobbler",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.FerskenPeachCobbler}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.FerskenPeachCobbler.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 505,
+          "Edibility": 35,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 2.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 2.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 35,
+          "ContextTags": [
+            "color_pink",
+            "food_sweet",
+            "food_bakery",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_SlicedPeaches": {
+          "Name": "MadDog.HashtagBearFam_SlicedPeaches",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.SlicedPeaches}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.SlicedPeaches.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 300,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 1.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 36,
+          "ContextTags": [
+            "color_pink",
+            "food_sweet"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_HoneyCakes": {
+          "Name": "MadDog.HashtagBearFam_HoneyCakes",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.HoneyCakes}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.HoneyCakes.Description{{PlayerJobTitle}}}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 545,
+          "Edibility": 40,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 1.0,
+                "Attack": 1.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 47,
+          "ContextTags": [
+            "color_blue",
+            "food_bakery",
+            "food_sweet",
+            "food_nonvegan",
+            "allergen_gluten"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach_Honey": {
+          "Name": "MadDog.HashtagBearFam_FerskenPeach_Honey",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_Honey}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_Honey.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 350,
+          "Edibility": 10,
+          "IsDrink": false,
+          "Buff": null,
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 45,
+          "ContextTags": [
+            "color_yellow",
+            "food_nonvegan",
+            "honey_item"
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_StoneBrambleJam": {
+          "Name": "MadDog.HashtagBearFam_StoneBrambleJam",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.StoneBrambleJam}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.StoneBrambleJam.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 350,
+          "Edibility": 55,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 55,
+          "ContextTags": [
+            "color_salmon",
+            "food_sweet"
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_BrambleBerryPie": {
+          "Name": "MadDog.HashtagBearFam_BrambleBerryPie",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.BrambleBerryPie}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.BrambleBerryPie.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 400,
+          "Edibility": 70,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 2.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 57,
+          "ContextTags": [
+            "color_salmon",
+            "food_bakery",
+            "food_sweet",
+            "food_nonvegan",
+            "allergen_gluten",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_DronningMaud": {
+          "Name": "MadDog.HashtagBearFam_DronningMaud",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.DronningMaud}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.DronningMaud.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 250,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 1.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 58,
+          "ContextTags": [
+            "color_sand",
+            "food_sweet",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_dairy"
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_JojaFloat": {
+          "Name": "MadDog.HashtagBearFam_JojaFloat",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.JojaFloat}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.JojaFloat.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 225,
+          "Edibility": 35,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "IconTexture": null,
+              "IconSpriteIndex": 0.0,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomFields": null,
+              "BuffId": null,
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 1.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 60,
+          "ContextTags": [
+            "color_blue",
+            "food_sweet",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_dairy"
+          ]
+        }
+      }
+    },
+
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "When": {
+        "HasMod": "DN.SnS"
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach_GingerBeer": {
+          "Name": "MadDog.HashtagBearFam_FerskenPeach_GingerBeer",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_GingerBeer}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_GingerBeer.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{GingerBeerExcludeFromPerfection}}",
+          "Price": 557,
+          "Edibility": 10,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 54,
+          "ContextTags": [
+            "color_pink",
+            "ginger_beer_item"
+          ]
+        },
+        "MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer": {
+          "Name": "MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.StoneBrambleBerry_GingerBeer}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.StoneBrambleBerry_GingerBeer.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{GingerBeerExcludeFromPerfection}}",
+          "Price": 557,
+          "Edibility": 10,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Duration": 300,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 59,
+          "ContextTags": [
+            "color_salmon",
+            "ginger_beer_item"
+          ]
+        }
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach_Mead": {
+          "Name": "MadDog.HashtagBearFam_FerskenPeach_Mead",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_Mead}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_Mead.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 1500,
+          "Edibility": 30,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Tipsy",
+              "BuffId": 17,
+              "IconTexture": "TileSheets\\BuffsIcons",
+              "IconSpriteIndex": 17,
+              "Duration": 450,
+              "IsDebuff": true,
+              "GlowColor": "#7F22007F",
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": -1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 43,
+          "ContextTags": [
+            "alcohol_item",
+            "color_gold",
+            "food_nonvegan"
+          ]
+        }
+      }
+    },
+    /////////
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach_PotentMead": {
+          "Name": "MadDog.HashtagBearFam_FerskenPeach_PotentMead",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_PotentMead}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_PotentMead.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 5000,
+          "Edibility": 30,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Tipsy",
+              "BuffId": 17,
+              "IconTexture": "TileSheets\\BuffsIcons",
+              "IconSpriteIndex": 17,
+              "Duration": 30000,
+              "IsDebuff": true,
+              "GlowColor": "#7F22007F",
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": -4.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 48,
+          "ContextTags": [
+            "alcohol_item",
+            "color_gold",
+            "food_nonvegan"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach_Mead_Tankard": {
+          "Name": "MadDog.HashtagBearFam_FerskenPeach_Mead_Tankard",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_Mead_Tankard}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.FerskenPeach_Mead_Tankard.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 750,
+          "Edibility": 25,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Tipsy",
+              "BuffId": 17,
+              "IconTexture": "TileSheets\\BuffsIcons",
+              "IconSpriteIndex": 17,
+              "Duration": 300,
+              "IsDebuff": true,
+              "GlowColor": "#7F22007F",
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": -1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 46,
+          "ContextTags": [
+            "alcohol_item",
+            "color_gold",
+            "food_nonvegan"
+          ]
+        }
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Zuzu_Mule": {
+          "Name": "MadDog.HashtagBearFam_Zuzu_Mule",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Zuzu_Mule}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Zuzu_Mule.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 950,
+          "Edibility": 25,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Tipsy",
+              "BuffId": 17,
+              "IconTexture": "TileSheets\\BuffsIcons",
+              "IconSpriteIndex": 17,
+              "Duration": 300,
+              "IsDebuff": true,
+              "GlowColor": "#7F22007F",
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": -1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 62,
+          "ContextTags": [
+            "alcohol_item",
+            "color_copper"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Honey_OldFashioned": {
+          "Name": "MadDog.HashtagBearFam_Honey_OldFashioned",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Honey_OldFashioned}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Honey_OldFashioned.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 950,
+          "Edibility": 25,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Tipsy",
+              "BuffId": 17,
+              "IconTexture": "TileSheets\\BuffsIcons",
+              "IconSpriteIndex": 17,
+              "Duration": 300,
+              "IsDebuff": true,
+              "GlowColor": "#7F22007F",
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": -1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 63,
+          "ContextTags": [
+            "alcohol_item",
+            "color_gold",
+            "food_nonvegan"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Citrus_City_Gin_Sour": {
+          "Name": "MadDog.HashtagBearFam_Citrus_City_Gin_Sour",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Citrus_City_Gin_Sour}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Citrus_City_Gin_Sour.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 950,
+          "Edibility": 25,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Tipsy",
+              "BuffId": 17,
+              "IconTexture": "TileSheets\\BuffsIcons",
+              "IconSpriteIndex": 17,
+              "Duration": 300,
+              "IsDebuff": true,
+              "GlowColor": "#7F22007F",
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": -1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\FoodAdjacent",
+          "SpriteIndex": 64,
+          "ContextTags": [
+            "alcohol_item",
+            "color_jade",
+            "food_nonvegan",
+            "allergen_egg"
+          ]
+        }
+      }
+    },
+
+    //"rings"
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Regen_WeakRingI": {
+          "Name": "MadDog.HashtagBearFam_Regen_WeakRingI",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Regen_WeakRingI}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Regen_WeakRingI.Description}}",
+          "Type": "Ring",
+          "Category": 0,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 27,
+          "ContextTags": [
+            "ring_item",
+            "color_blue"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Regen_WeakRingII": {
+          "Name": "MadDog.HashtagBearFam_Regen_WeakRingII",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Regen_WeakRingII}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Regen_WeakRingII.Description}}",
+          "Type": "Ring",
+          "Category": 0,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 28,
+          "ContextTags": [
+            "ring_item",
+            "color_purple"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Regen_WeakRingIII": {
+          "Name": "MadDog.HashtagBearFam_Regen_WeakRingIII",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Regen_WeakRingIII}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Regen_WeakRingIII.Description}}",
+          "Type": "Ring",
+          "Category": 0,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 29,
+          "ContextTags": [
+            "ring_item",
+            "color_prismatic"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Stuffed_Kraken": {
+          "Name": "MadDog.HashtagBearFam_Stuffed_Kraken",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Stuffed_Kraken}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Stuffed_Kraken.Description.{{HasSeenEvent |contains=MadDog.BearFam.16193011}}}}",
+          "Type": "Ring",
+          "Category": 0,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 6,
+          "ContextTags": [
+            "ring_item",
+            "color_dark_purple"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Stuffed_Bear": {
+          "Name": "MadDog.HashtagBearFam_Stuffed_Bear",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Stuffed_Bear}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Stuffed_Bear.Description.{{HasSeenEvent |contains=MadDog.BearFam.16192007}}}}",
+          "Type": "Ring",
+          "Category": 0,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 7,
+          "ContextTags": [
+            "ring_item",
+            "color_dark_brown"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Stuffed_Dog": {
+          "Name": "MadDog.HashtagBearFam_Stuffed_Dog",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Stuffed_Dog}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Stuffed_Dog.Description.{{HasSeenEvent |contains=MadDog.BearFam.16199008}}}}",
+          "Type": "Ring",
+          "Category": 0,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 8,
+          "ContextTags": [
+            "ring_item",
+            "color_sand"
+          ]
+        }
+      }
+    },
+    //actually not a ring
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Adventurer_Cache": {
+          "Name": "MadDog.HashtagBearFam_Adventurer_Cache",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Adventurer_Cache}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Adventurer_Cache.Description}}",
+          "Type": "Basic",
+          "Category": -20,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 16,
+          "ContextTags": [
+            "color_green"
+          ]
+        }
+      }
+    },
+
+
+
+
+    /////quest items
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Teren_Book": {
+          "Name": "MadDog.HashtagBearFam_Teren_Book",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Teren_Book}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Teren_Book.Description}}",
+          "Type": "Quest",
+          "CanBeGivenAsGift": false,
+          "CanBeTrashed": false,
+          "Category": 0,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buff": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 14,
+          "ContextTags": [
+            "prevent_loss_on_death"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_KingoftheForest_Whiskey": {
+          "Name": "MadDog.HashtagBearFam_KingoftheForest_Whiskey",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.KingoftheForest_Whiskey}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.KingoftheForest_Whiskey.Description}}",
+          "Type": "Quest",
+          "CanBeGivenAsGift": false,
+          "CanBeTrashed": false,
+          "Category": 0,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buff": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 15,
+          "ContextTags": [
+            "prevent_loss_on_death"
+          ]
+        }
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //regen potions
+    {
+      "LogName": "Load Buff Icons!",
+      "Action": "Load",
+      "Target": "Mods/MadDog.HashtagBearfam/MadDogBuffsPotions",
+      "FromFile": "assets/MadDogBearFam_BuffIcons.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion": {
+          "Name": "MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RegenPotions.GreatGospelPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RegenPotions.GreatGospelPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 5,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "MadDog.Buffs.GreatGospelPotion",
+              "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffsPotions",
+              "IconSpriteIndex": 15,
+              "IsDebuff": false,
+              "GlowColor": "LightSeaGreen",
+              "CustomFields": {
+                "spacechase0.SpaceCore/HealthRegeneration": 7,
+                "spacechase0.SpaceCore/StaminaRegeneration": 7
+              },
+              "BuffId": null,
+              "Duration": 700,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 1.0,
+                "Attack": 1.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 19,
+          "ContextTags": [
+            "color_sea_green",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RegenPotions_AngelWingPotion": {
+          "Name": "MadDog.HashtagBearFam_RegenPotions_AngelWingPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RegenPotions.AngelWingPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RegenPotions.AngelWingPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 5,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "MadDog.Buffs.AngelWingPotion",
+              "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffsPotions",
+              "IconSpriteIndex": 16,
+              "IsDebuff": false,
+              "GlowColor": "Tomato",
+              "CustomFields": {
+                "spacechase0.SpaceCore/HealthRegeneration": 15
+              },
+              "BuffId": null,
+              "Duration": 350,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 1.0,
+                "Attack": 1.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 20,
+          "ContextTags": [
+            "color_red",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion": {
+          "Name": "MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RegenPotions.TidesofFatePotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RegenPotions.TidesofFatePotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 5,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "MadDog.Buffs.TidesofFatePotion",
+              "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffsPotions",
+              "IconSpriteIndex": 17,
+              "IsDebuff": false,
+              "GlowColor": "DeepSkyBlue",
+              "CustomFields": {
+                "spacechase0.SpaceCore/StaminaRegeneration": 5
+              },
+              "BuffId": null,
+              "Duration": 600,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 5.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 21,
+          "ContextTags": [
+            "color_aqua",
+            "potion_item",
+            "gunnar_potion_item",
+            "food_nonvegan"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion": {
+          "Name": "MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RegenPotions.FreeEnergyPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RegenPotions.FreeEnergyPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 5,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "MadDog.Buffs.FreeEnergyPotion",
+              "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffsPotions",
+              "IconSpriteIndex": 18,
+              "IsDebuff": false,
+              "GlowColor": "Gold",
+              "CustomFields": {
+                "spacechase0.SpaceCore/StaminaRegeneration": 15
+              },
+              "BuffId": null,
+              "Duration": 350,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 1.0,
+                "Attack": 1.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 22,
+          "ContextTags": [
+            "color_orange",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RegenPotions_FantasiaPotion": {
+          "Name": "MadDog.HashtagBearFam_RegenPotions_FantasiaPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RegenPotions.FantasiaPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RegenPotions.FantasiaPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 5,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "MadDog.Buffs.FantasiaPotion",
+              "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffsPotions",
+              "IconSpriteIndex": 19,
+              "IsDebuff": false,
+              "GlowColor": "Fuchsia",
+              "CustomFields": {
+                "spacechase0.SpaceCore/HealthRegeneration": 25,
+                "spacechase0.SpaceCore/StaminaRegeneration": 25
+              },
+              "BuffId": null,
+              "Duration": 60,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 3.0,
+                "Defense": 3.0,
+                "Attack": 3.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 23,
+          "ContextTags": [
+            "color_dark_pink",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion": {
+          "Name": "MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RegenPotions.DigitalMindWavePotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RegenPotions.DigitalMindWavePotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 5,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "MadDog.Buffs.DigitalMindWavePotion",
+              "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffsPotions",
+              "IconSpriteIndex": 20,
+              "IsDebuff": false,
+              "GlowColor": "PaleVioletRed",
+              "CustomFields": {
+                "spacechase0.SpaceCore/HealthRegeneration": 15,
+                "spacechase0.SpaceCore/StaminaRegeneration": 6
+              },
+              "BuffId": null,
+              "Duration": 400,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 2.0,
+                "Defense": 0.0,
+                "Attack": 2.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 24,
+          "ContextTags": [
+            "color_dark_pink",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion": {
+          "Name": "MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RegenPotions.GlaiveArtsPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RegenPotions.GlaiveArtsPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 5,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "MadDog.Buffs.GlaiveArtsPotion",
+              "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffsPotions",
+              "IconSpriteIndex": 21,
+              "IsDebuff": false,
+              "GlowColor": "Crimson",
+              "CustomFields": {
+                "spacechase0.SpaceCore/HealthRegeneration": 8,
+                "spacechase0.SpaceCore/StaminaRegeneration": 12
+              },
+              "BuffId": null,
+              "Duration": 400,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 2.0,
+                "Attack": 2.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 25,
+          "ContextTags": [
+            "color_dark_red",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion": {
+          "Name": "MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.RegenPotions.NordswainsGlowPotion}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.RegenPotions.NordswainsGlowPotion.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 100,
+          "Edibility": 5,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "MadDog.Buffs.NordswainsGlowPotion",
+              "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffsPotions",
+              "IconSpriteIndex": 22,
+              "IsDebuff": false,
+              "GlowColor": "{{Random: Maroon, ForestGreen, Teal, DodgerBlue, DarkViolet}}",
+              "CustomFields": {
+                "spacechase0.SpaceCore/HealthRegeneration": 15,
+                "spacechase0.SpaceCore/StaminaRegeneration": 15
+              },
+              "BuffId": null,
+              "Duration": 333,
+              "CustomAttributes": {
+                "FarmingLevel": 1.0,
+                "FishingLevel": 1.0,
+                "MiningLevel": 1.0,
+                "LuckLevel": 2.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 1.0,
+                "Attack": 1.0
+              }
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 26,
+          "ContextTags": [
+            "color_pink",
+            "potion_item",
+            "gunnar_potion_item"
+          ]
+        }
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //recipe book test zone
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenRecipes": {
+          "Name": "MadDog.HashtagBearFam_TerenRecipes",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TerenRecipes}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TerenRecipes.Description}}",
+          "Type": "Basic",
+          "Category": -20,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1600, //
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 9,
+          "ContextTags": [
+            "color_aquamarine",
+            "book_item",
+            "bearfam_recipe_book_item"
+          ]
+        },
+        "MadDog.HashtagBearFam_BearRecipes": {
+          "Name": "MadDog.HashtagBearFam_BearRecipes",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.BearRecipes}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.BearRecipes.Description}}",
+          "Type": "Basic",
+          "Category": -20,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1600, //
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 10,
+          "ContextTags": [
+            "color_purple",
+            "book_item",
+            "bearfam_recipe_book_item"
+          ]
+        },
+        "MadDog.HashtagBearFam_GunnarRecipes": {
+          "Name": "MadDog.HashtagBearFam_GunnarRecipes",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.GunnarRecipes}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.GunnarRecipes.Description}}",
+          "Type": "Basic",
+          "Category": -20,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1600, //
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 11,
+          "ContextTags": [
+            "color_green",
+            "book_item"
+          ]
+        },
+        "MadDog.HashtagBearFam_SondraRecipes": {
+          "Name": "MadDog.HashtagBearFam_SondraRecipes",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.SondraRecipes}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.SondraRecipes.Description}}",
+          "Type": "Basic",
+          "Category": -20,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 1600, //
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 12,
+          "ContextTags": [
+            "color_dark_red",
+            "book_item",
+            "bearfam_recipe_book_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Kraken_WarpTotem": {
+          "Name": "MadDog.HashtagBearFam_Kraken_WarpTotem",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Kraken_WarpTotem}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Kraken_WarpTotem.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 350,
+          "Edibility": 10,
+          "IsDrink": false,
+          "Buff": null,
+          "Texture": "Mods\\MadDogBearFam\\NonWeaponEquipment",
+          "SpriteIndex": 13,
+          "ContextTags": [
+            "color_blue",
+            "not_placeable",
+            "totem_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_Raspberry_Flavored_Coffee": {
+          "Name": "MadDog.HashtagBearFam_Raspberry_Flavored_Coffee",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Raspberry_Flavored_Coffee}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Raspberry_Flavored_Coffee.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 10,
+          "Edibility": 10,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 360,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 1.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 0,
+          "ContextTags": [
+            "coffee_item",
+            "color_dark_red",
+            "maddog_bearfam_coffee_item"
+          ]
+        },
+        "MadDog.HashtagBearFam_Blueberry_Flavored_Coffee": {
+          "Name": "MadDog.HashtagBearFam_Blueberry_Flavored_Coffee",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Blueberry_Flavored_Coffee}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Blueberry_Flavored_Coffee.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 10,
+          "Edibility": 10,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 360,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 1.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 1,
+          "ContextTags": [
+            "coffee_item",
+            "color_dark_blue",
+            "maddog_bearfam_coffee_item"
+
+          ]
+        },
+        "MadDog.HashtagBearFam_Caramel_Flavored_Coffee": {
+          "Name": "MadDog.HashtagBearFam_Caramel_Flavored_Coffee",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Caramel_Flavored_Coffee}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Caramel_Flavored_Coffee.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 10,
+          "Edibility": 10,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 360,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 1.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 2,
+          "ContextTags": [
+            "coffee_item",
+            "color_copper",
+            "maddog_bearfam_coffee_item"
+
+          ]
+        },
+        "MadDog.HashtagBearFam_Chocolate_Flavored_Coffee": {
+          "Name": "MadDog.HashtagBearFam_Chocolate_Flavored_Coffee",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.Chocolate_Flavored_Coffee}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.Chocolate_Flavored_Coffee.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 10,
+          "Edibility": 10,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 360,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 1.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "Texture": "Mods\\MadDogBearFam\\Coffees",
+          "SpriteIndex": 3,
+          "ContextTags": [
+            "coffee_item",
+            "color_dark_brown",
+            "maddog_bearfam_coffee_item"
+
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Drinks with Colors",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "When": {
+        "HasMod": "mistyspring.ItemExtensions"
+      },
+      "Fields": {
+        "MadDog.HashtagBearFam_GunnarFirstPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffa3ba" } //pink
+        },
+        "MadDog.HashtagBearFam_GunnarMysteryPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#829e5d" } //jade
+        },
+        "MadDog.HashtagBearFam_GunnarPerfectPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffe600" } //yellow
+        },
+        "MadDog.HashtagBearFam_PeachJoja": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffa3ba" } //pink
+        },
+        "MadDog.HashtagBearFam_PumpkinJoja": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ff8000" } //orange
+        },
+        "MadDog.HashtagBearFam_JojaFloat": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#2e55b7" } //blue
+        },
+        "MadDog.HashtagBearFam_FerskenPeach_Mead": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffd700" } //gold
+        },
+        "MadDog.HashtagBearFam_FerskenPeach_PotentMead": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffd700" } //gold
+        },
+        "MadDog.HashtagBearFam_FerskenPeach_Mead_Tankard": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffd700" } //gold
+        },
+        "MadDog.HashtagBearFam_Zuzu_Mule": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#b35500" } //copper
+        },
+        "MadDog.HashtagBearFam_Honey_OldFashioned": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffd700" } //gold
+        },
+        "MadDog.HashtagBearFam_Citrus_City_Gin_Sour": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#829e5d" } //jade
+        },
+        "MadDog.HashtagBearFam_GunnarSecondPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#b4ffff" } //light cyan
+        },
+        "MadDog.HashtagBearFam_GunnarThirdPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#7329b5" } //purple
+        },
+        "MadDog.HashtagBearFam_GunnarWeirdPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#00008b" } //dark blue
+        },
+        "MadDog.HashtagBearFam_GunnarBadPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ff0000" } //red
+        },
+        "MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#2e8b57" } //sea green
+        },
+        "MadDog.HashtagBearFam_RegenPotions_AngelWingPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ff0000" } //red
+        },
+        "MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#7fffd4" } //aqua
+        },
+        "MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ff8000" } //orange
+        },
+        "MadDog.HashtagBearFam_RegenPotions_FantasiaPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ff1493" } //dark pink
+        },
+        "MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ff1493" } //dark pink
+        },
+        "MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#8b0000" } //dark red
+        },
+        "MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffa3ba" } //pink
+        },
+        "MadDog.HashtagBearFam_TerenMakes_PeachyLemonade": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffa3ba" } //pink
+        },
+        "MadDog.HashtagBearFam_TerenMakes_TooMuchFruitSmoothie": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#0a8f00" } //green
+        },
+        "MadDog.HashtagBearFam_TerenMakes_TomatoCoconutBisque": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ff0000" } //red
+        },
+        "MadDog.HashtagBearFam_Dylan_Tea": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#2e8b57" } //sea green
+        }
+      }
+    },
+    {
+      "LogName": "Drinks with Colors",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasMod |contains=mistyspring.ItemExtensions": true
+      },
+      "Fields": {
+        "MadDog.HashtagBearFam_FerskenPeach_GingerBeer": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ffa3ba" } //pink
+        },
+        "MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#ff555f" } //salmon
+        }
+      }
+    }
+  ]
+}

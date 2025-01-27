@@ -1,0 +1,321 @@
+{
+    "Changes": [
+		//Essential crops
+		{
+        "LogName": "Add to Custom Bush Framework",
+			"Action": "EditData",
+			"Target": "furyx639.CustomBush/Data",
+			//"When": {"Enable Essential Pack": true},
+			"Entries": {
+				"(O)Cornucopia_OliveSeeds": {
+					"DisplayName": "{{i18n:Olive_name}}",
+					"Description": "{{i18n:OliveSeeds_description}}",
+					"AgeToProduce": 30,
+					"DayToBeginProducing": 0,
+					"Seasons": ["fall"],
+					"ItemsProduced": [
+						{
+							"ItemId": "(O)Cornucopia_Olive",
+							"Chance": 1.0,
+							"MinStack": 2,
+							"MaxStack": 3,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 18,
+				},
+				"(O)Cornucopia_RaspberrySeeds": {
+					"DisplayName": "{{i18n:Raspberry_name}}",
+					"Description": "{{i18n:RaspberrySeeds_description}}",
+					"AgeToProduce": 14,
+					"DayToBeginProducing": 0,
+					"Seasons": ["summer"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 22 23 24 25 26 27 28",
+							"ItemId": "(O)Cornucopia_Raspberry",
+							"Chance": 1.0,
+							"MinStack": 2,
+							"MaxStack": 4,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 8,
+				},
+				"(O)Cornucopia_PeppercornSeeds": {
+					"DisplayName": "{{i18n:Peppercorn_name}}",
+					"Description": "{{i18n:PeppercornSeeds_description}}",
+					"AgeToProduce": 16,
+					"DayToBeginProducing": 0,
+					"Seasons": ["spring","summer","fall"],
+					"ItemsProduced": [
+						{
+							"ItemId": "(O)Cornucopia_Peppercorn",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 24,
+				},
+				"(O)Cornucopia_VanillaSeeds": {
+					"DisplayName": "{{i18n:Vanilla_name}}",
+					"Description": "{{i18n:VanillaSeeds_description}}",
+					"AgeToProduce": 16,
+					"DayToBeginProducing": 0,
+					"Seasons": ["spring"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 3 6 9 12 15 18 21 24 27",
+							"ItemId": "(O)Cornucopia_Vanilla",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 26,
+				}
+			}
+		},
+		{
+        //Essential crops - grapes config (unique)
+		"LogName": "Add to Custom Bush Framework",
+			"Action": "EditData",
+			"Target": "furyx639.CustomBush/Data",
+			"When": 
+				{
+					"Enable Extended Crops Pack": true,
+					"Disable Grape Bushes": false
+				},
+			"Entries": {
+				"(O)301": {
+					"DisplayName": "[LocalizedText Strings\\Objects:Grape_Name]",
+					"Description": "{{i18n:GrapeSeeds_description}}",
+					"AgeToProduce": 16,
+					"DayToBeginProducing": 0,
+					"Seasons": ["fall"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH even",
+							"ItemId": "(O)398",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 0,
+				}
+			}
+	    },
+		//Extended crops
+		{
+		"LogName": "Add to Custom Bush Framework",
+			"Action": "EditData",
+			"Target": "furyx639.CustomBush/Data",
+			"When": 
+				{
+					"Enable Extended Crops Pack": true
+				},
+			"Entries": {
+				"(O)Cornucopia_BlackCurrantsSeeds": {
+					"DisplayName": "{{i18n:BlackCurrants_name}}",
+					"Description": "{{i18n:BlackCurrantsSeeds_description}}",
+					"AgeToProduce": 16,
+					"DayToBeginProducing": 0,
+					"Seasons": ["summer"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 3 6 9 12 15 18 21 24 27",
+							"ItemId": "(O)Cornucopia_BlackCurrants",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 3,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 12,
+				},
+				"(O)Cornucopia_ChickenoftheWoodsSeeds": {
+					"DisplayName": "{{i18n:ChickenoftheWoods_name}}",
+					"Description": "{{i18n:ChickenoftheWoodsSeeds_description}}",
+					"AgeToProduce": 22,
+					"DayToBeginProducing": 0,
+					"Seasons": ["summer", "fall"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 22 23 24 25 26 27 28",
+							"ItemId": "(O)Cornucopia_ChickenoftheWoods",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 6,
+				},
+				"(O)Cornucopia_ElderberriesSeeds": {
+					"DisplayName": "{{i18n:Elderberries_name}}",
+					"Description": "{{i18n:ElderberriesSeeds_description}}",
+					"AgeToProduce": 14,
+					"DayToBeginProducing": 0,
+					"Seasons": ["winter"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 4 8 12 16 20 24 28",
+							"ItemId": "(O)Cornucopia_Elderberries",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 3,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 16,
+				},
+				"(O)Cornucopia_GooseberrySeeds": {
+					"DisplayName": "{{i18n:Gooseberry_name}}",
+					"Description": "{{i18n:GooseberrySeeds_description}}",
+					"AgeToProduce": 16,
+					"DayToBeginProducing": 0,
+					"Seasons": ["summer"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 3 6 9 12 15 18 21 24 27",
+							"ItemId": "(O)Cornucopia_Gooseberry",
+							"Chance": 1.0,
+							"MinStack": 3,
+							"MaxStack": 4,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 22,
+				},
+				"(O)Cornucopia_JuniperBerriesSeeds": {
+					"DisplayName": "{{i18n:JuniperBerries_name}}",
+					"Description": "{{i18n:JuniperBerries_description}}",
+					"AgeToProduce": 14,
+					"DayToBeginProducing": 0,
+					"Seasons": ["winter"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 1 4 7 10 13 16 19 22 25 28",
+							"ItemId": "(O)Cornucopia_JuniperBerries",
+							"Chance": 1.0,
+							"MinStack": 2,
+							"MaxStack": 4,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 14,
+				},
+				"(O)Cornucopia_ShiitakeSeeds": {
+					"DisplayName": "{{i18n:Shiitake_name}}",
+					"Description": "{{i18n:ShiitakeSeeds_description}}",
+					"AgeToProduce": 22,
+					"DayToBeginProducing": 0,
+					"Seasons": ["spring", "fall"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH 5 10 15 20 25",
+							"ItemId": "(O)Cornucopia_Shiitake",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 4,
+				},
+			}
+	    },
+		{
+        //Extended crops - white grapes config (unique)
+		"LogName": "Add to Custom Bush Framework",
+			"Action": "EditData",
+			"Target": "furyx639.CustomBush/Data",
+			"When": 
+				{
+					"Enable Extended Crops Pack": true,
+					"Disable Grape Bushes": false
+				},
+			"Entries": {
+				"(O)Cornucopia_WhiteGrapeSeeds": {
+					"DisplayName": "{{i18n:WhiteGrape_name}}",
+					"Description": "{{i18n:WhiteGrapeSeeds_description}}",
+					"AgeToProduce": 16,
+					"DayToBeginProducing": 0,
+					"Seasons": ["fall"],
+					"ItemsProduced": [
+						{
+							"Condition": "DAY_OF_MONTH even",
+							"ItemId": "(O)Cornucopia_WhiteGrape",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 2,
+				}
+			}
+	    },
+		//Herbs pack
+		{
+		"LogName": "Add to Custom Bush Framework",
+			"Action": "EditData",
+			"Target": "furyx639.CustomBush/Data",
+			"When": 
+				{
+					"Enable Herbs Pack": true
+				},
+			"Entries": {
+				"(O)Cornucopia_BayLeavesSeeds": {
+					"DisplayName": "{{i18n:BayLeaves_name}}",
+					"Description": "{{i18n:BayLeavesSeeds_description}}",
+					"AgeToProduce": 12,
+					"DayToBeginProducing": 0,
+					"Seasons": ["winter"],
+					"ItemsProduced": [
+						{
+							"ItemId": "(O)Cornucopia_BayLeaves",
+							"Id": "Default",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+						}
+					],
+					"Texture": "Cornucopia.MoreCrops/teabushes",
+					"IndoorTexture": "Cornucopia.MoreCrops/teabushes_indoors",
+					"TextureSpriteRow": 20,
+				},
+			}
+		},
+	]
+}

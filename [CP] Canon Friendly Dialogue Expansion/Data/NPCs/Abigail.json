@@ -1,0 +1,267 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Abigail_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)128": "{{i18n: CFE_Abigail_Pufferfish}}",
+        "AcceptGift_(O)276": "{{i18n: CFE_Abigail_Pumpkin}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Abigail_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Abigail_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Abigail_RockCandy}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Abigail_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Abigail_RabbitsFoot}}",
+
+        "AcceptGift_(O)904": "{{i18n: CFE_Abigail_BananaPudding}}",
+        "AcceptGift_(O)611": "{{i18n: CFE_Abigail_BlackberryCobbler}}",
+        "AcceptGift_(O)220": "{{i18n: CFE_Abigail_ChocolateCake{{GenderNeutralCompat}} |AdultInformalNoun={{lowercase:{{Random:{{GNMTAdultInformalNoun}}}}}}}}",
+        "AcceptGift_(O)226": "{{i18n: CFE_Abigail_SpicyEel}}"
+      },
+      "When": { "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Abigail_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Abigail": "{{i18n: CFE_Abigail_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Abigail_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+        "spring_12_1": "{{i18n: CFE_Abigail_spring12}}",
+        "spring_12_2": "{{i18n: CFE_Abigail_spring12}}",
+        "spring_1_2": "{{i18n: CFE_Abigail_spring1y2}}",
+
+        "summer_6_1": "{{i18n: CFE_Abigail_summer6y1}}",
+        "summer_10_1": "{{i18n: CFE_Abigail_summer10}}",
+        "summer_10_2": "{{i18n: CFE_Abigail_summer10}}",
+        "summer_27_1": "{{i18n: CFE_Abigail_summer27}}",
+        "summer_27_2": "{{i18n: CFE_Abigail_summer27}}",
+
+        "fall_26_1": "{{i18n: CFE_Abigail_fall26y1}}",
+        "fall_26_2": "{{i18n: CFE_Abigail_fall26y2}}",
+
+        "winter_7_1": "{{i18n: CFE_Abigail_winter7}}",
+        "winter_7_2": "{{i18n: CFE_Abigail_winter7}}",
+        "winter_24_1": "{{i18n: CFE_Abigail_winter24y1}}",
+        "winter_24_2": "{{i18n: CFE_Abigail_winter24y2}}",
+        "winter_28_1": "{{i18n: CFE_Abigail_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Abigail_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon8": "{{i18n: CFE_Abigail_summerMon8}}",
+        "summer_Mon6": "{{i18n: CFE_Abigail_summerMon6}}",
+        "summer_Mon4": "{{i18n: CFE_Abigail_repeated_5}}",
+        "summer_Mon2": "{{i18n: CFE_Abigail_repeated_9}}",
+        "summer_Tue10": "{{i18n: CFE_Abigail_repeated_1}}",
+        "summer_Tue6": "{{i18n: CFE_Abigail_summerTue6{{GenderNeutralCompat}} |GenericNoun={{lowercase:{{Random:{{GNMTGenericNoun}}}}}}}}",
+        "summer_Tue4": "{{i18n: CFE_Abigail_summerTue4}}",
+        "summer_Tue2": "{{i18n: CFE_Abigail_summerTue2}}",
+        "summer_Wed10": "{{i18n: CFE_Abigail_summerWed10}}",
+        "summer_Thu8": "{{i18n: CFE_Abigail_summerThu8}}",
+        "summer_Wed4": "{{i18n: CFE_Abigail_summerWed4}}",
+        "summer_Wed2": "{{i18n: CFE_Abigail_summerWed2}}",
+        "summer_Thu10": "{{i18n: CFE_Abigail_summerThu10}}",
+        "summer_Fri10": "{{i18n: CFE_Abigail_summerFri10}}",
+        "summer_Fri8": "{{i18n: CFE_Abigail_summerFri8}}",
+        "summer_Fri6": "{{i18n: CFE_Abigail_summerFri6}}",
+        "summer_Fri4": "{{i18n: CFE_Abigail_summerFri4}}",
+        "summer_Fri2": "{{i18n: CFE_Abigail_summerFri2}}",
+        "summer_Sat10": "{{i18n: CFE_Abigail_summerSat10}}",
+        "summer_Sat6": "{{i18n: CFE_Abigail_summerSat6}}",
+        "summer_Sat4": "{{i18n: CFE_Abigail_summerSat4}}",
+        "summer_Sun6": "{{i18n: CFE_Abigail_summerSun6}}",
+
+        "fall_Mon8": "{{i18n: CFE_Abigail_fallMon8}}",
+        "fall_Mon6": "{{i18n: CFE_Abigail_fallMon6}}",
+        "fall_Mon4": "{{i18n: CFE_Abigail_fallMon4}}",
+        "fall_Tue8": "{{i18n: CFE_Abigail_fallTue8}}",
+        "fall_Tue4": "{{i18n: CFE_Abigail_repeated_8}}",
+        "fall_Tue2": "{{i18n: CFE_Abigail_repeated_6}}",
+        "fall_Wed10": "{{i18n: CFE_Abigail_repeated_1}}",
+        "fall_Wed8": "{{i18n: CFE_Abigail_fallWed8}}",
+        "fall_Wed4": "{{i18n: CFE_Abigail_fallWed4}}",
+        "fall_Thu10": "{{i18n: CFE_Abigail_fallThu10}}",
+        "fall_Thu8": "{{i18n: CFE_Abigail_repeated_7}}",
+        "fall_Thu6": "{{i18n: CFE_Abigail_fallThu6}}",
+        "fall_Thu4": "{{i18n: CFE_Abigail_fallThu4}}",
+        "fall_Fri10": "{{i18n: CFE_Abigail_fallFri10}}",
+        "fall_Fri6": "{{i18n: CFE_Abigail_fallFri6}}",
+        "fall_Sat8": "{{i18n: CFE_Abigail_repeated_2}}",
+        "fall_Sat6": "{{i18n: CFE_Abigail_fallSat6}}",
+        "fall_Sun8": "{{i18n: CFE_Abigail_fallSun8}}",
+        "fall_Sun8_old": "{{i18n: CFE_Abigail_fall_Sun8_old}}",
+        "fall_Sun8_27": "{{i18n: CFE_Abigail_fall_Sun8_27}}",
+        "fall_Sun8_28": "{{i18n: CFE_Abigail_fall_Sun8_28}}",
+        "fall_Sun8_WildColor": "{{i18n: CFE_Abigail_fall_Sun8_WildColor}}",
+        "fall_Sun6": "{{i18n: CFE_Abigail_fallSun6}}",
+
+        "winter_Mon8": "{{i18n: CFE_Abigail_winterMon8}}",
+        "winter_Mon6": "{{i18n: CFE_Abigail_winterMon6}}",
+        "winter_Mon4": "{{i18n: CFE_Abigail_winterMon4}}",
+        "winter_Tue10": "{{i18n: CFE_Abigail_winterTue10}}",
+        "winter_Tue8": "{{i18n: CFE_Abigail_repeated_3}}",
+        "winter_Tue6": "{{i18n: CFE_Abigail_repeated_2}}",
+        "winter_Tue4": "{{i18n: CFE_Abigail_repeated_3}}",
+        "winter_Wed10": "{{i18n: CFE_Abigail_winterWed10}}",
+        "winter_Wed6": "{{i18n: CFE_Abigail_winterWed6}}",
+        "winter_Wed2": "{{i18n: CFE_Abigail_winterWed2}}",
+        "winter_Thu10": "{{i18n: CFE_Abigail_winterThu10}}",
+        "winter_Thu6": "{{i18n: CFE_Abigail_winterthu6}}",
+        "winter_Thu4": "{{i18n: CFE_Abigail_winterThu4}}",
+        "winter_Fri10": "{{i18n: CFE_Abigail_winterFri10}}",
+        "winter_Fri8": "{{i18n: CFE_Abigail_winterFri8}}",
+        "winter_Fri4": "{{i18n: CFE_Abigail_repeated_5}}",
+        "winter_Sat10": "{{i18n: CFE_Abigail_winterSat10}}",
+        "winter_Sat8": "{{i18n: CFE_Abigail_winterSat8}}",
+        "winter_Sat6": "{{i18n: CFE_Abigail_repeated_4}}",
+        "winter_Sun10": "{{i18n: CFE_Abigail_winterSun10}}",
+
+        "Mon6": "{{i18n: CFE_Abigail_Mon6}}",
+        "Mon4": "{{i18n: CFE_Abigail_Mon4}}",
+        "Tue8": "{{i18n: CFE_Abigail_Tue8}}",
+        "Tue6": "{{i18n: CFE_Abigail_Tue6}}",
+        "Tue4": "{{i18n: CFE_Abigail_Tue4}}",
+        "Wed10": "{{i18n: CFE_Abigail_Wed10}}",
+        "Wed8": "{{i18n: CFE_Abigail_Wed8}}",
+        "Wed6": "{{i18n: CFE_Abigail_repeated_4}}",
+        "Wed2": "{{i18n: CFE_Abigail_Wed2}}",
+        "Thu10": "{{i18n: CFE_Abigail_Thu10}}",
+        "Thu8": "{{i18n: CFE_Abigail_Thu8}}",
+        "Thu6": "{{i18n: CFE_Abigail_Thu6}}",
+        "Thu4": "{{i18n: CFE_Abigail_Thu4}}",
+        "Thu2": "{{i18n: CFE_Abigail_repeated_6}}",
+        "Fri8": "{{i18n: CFE_Abigail_repeated_7}}",
+        "Fri6": "{{i18n: CFE_Abigail_Fri6}}",
+        "Fri4": "{{i18n: CFE_Abigail_Fri4}}",
+        "Fri2": "{{i18n: CFE_Abigail_Fri2}}",
+        "Sat10": "{{i18n: CFE_Abigail_Sat10}}",
+        "Sat8": "{{i18n: CFE_Abigail_Sat8}}",
+        "Sat6": "{{i18n: CFE_Abigail_Sat6}}",
+        "Sat4": "{{i18n: CFE_Abigail_repeated_8}}",
+        "Sat2": "{{i18n: CFE_Abigail_Sat2}}",
+
+        //Generic Weekday Dialogue
+        "spring_Thu": "{{i18n:  CFE_Abigail_springThu}}",
+        "fall_Tue": "{{i18n: CFE_Abigail_repeated_9}}"
+      },
+      "When": { "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Abigail_Marriage_GenericDialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Abigail": "{{i18n: CFE_Abigail_Married_spouseRoom_{{random: 1,2,3,4,5}}}}"
+      },
+      "When": { "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Abigail_Marriage",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+      "Entries": {
+        //these lines follow different priority rules than unmarried dialogue does, with different options having different % likelihoods to show up each day when the right conditions are met.
+
+        //Weather specific dialogue
+        //note that Indoor_Day is the key for any weather besides rain, even when the Abigail is outside. Day means prior to 6pm. Indoor_Night is specific to inside the farmhouse when it's not raining after 6pm.
+        "Rainy_Day_0": "{{i18n: CFE_Abigail_Married_RainyDay_{{Random: 1,2}}}}",
+        "Rainy_Day_1": "{{i18n: CFE_Abigail_Married_RainyDay_{{Random: 3,4}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Abigail_Married_RainyDay_{{Random: 5,6}}}}",
+        "Rainy_Day_3": "{{i18n: CFE_Abigail_Married_RainyDay_{{Random: 7,8}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Abigail_Married_RainyDay_{{Random: 9,10}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Abigail_Married_RainyNight_{{Random: 1,2}}}}",
+        "Rainy_Night_1": "{{i18n: CFE_Abigail_Married_RainyNight_{{Random: 3,4}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Abigail_Married_RainyNight_{{Random: 5,6}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Abigail_Married_RainyNight_{{Random: 7,8}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Abigail_Married_RainyNight_{{Random: 9,10}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Abigail_Married_IndoorDay_{{Random: 1,2,3}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Abigail_Married_IndoorDay_{{Random: 4,5,6}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Abigail_Married_IndoorDay_{{Random: 7,8,9}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Abigail_Married_IndoorDay_{{Random: 10,11,12}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Abigail_Married_IndoorDay_{{Random: 13,14,15}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Abigail_Married_IndoorNight_{{Random: 1,2}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Abigail_Married_IndoorNight_{{Random: 3,4}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Abigail_Married_IndoorNight_{{Random: 5,6}}}}",
+        "Indoor_Night_3": "{{i18n: CFE_Abigail_Married_IndoorNight_{{Random: 7,8}}}}",
+        "Indoor_Night_4": "{{i18n: CFE_Abigail_Married_IndoorNight_{{Random: 9,10,11}}}}",
+
+        //locational specific dialogue
+        //funleave and return only show up on Mondays or Fridays (except for characters with jobs), and only while the Abigail is leaving or entering the farmhouse. fun return will not display once the Abigail has reached their target location.
+        //Kid dialogue only displays when the Abigail is standing in the farmhouse kitchen
+        //Kid dialogue only displays when the Abigail is standing in the farmhouse kitchen
+        //Outdoor Dialogue only displays on the farm. _num has an 80% chance of being displayed, _Abigail has a 20% chance. _Abigail is currently unused here
+        "funLeave_Abigail": "{{i18n: CFE_Abigail_Married_funLeave_{{Random: 1,2}}}}",
+        "funReturn_Abigail": "{{i18n: CFE_Abigail_Married_funReturn_{{Random: 1,2}}}}",
+
+        "OneKid_0": "{{i18n: CFE_Abigail_Married_OneKid_{{Random: 1,2}}}}",
+        "OneKid_1": "{{i18n: CFE_Abigail_Married_OneKid_{{Random: 3,4}}}}",
+        "OneKid_2": "{{i18n: CFE_Abigail_Married_OneKid_{{Random: 5,6}}}}",
+        "OneKid_3": "{{i18n: CFE_Abigail_Married_OneKid_{{Random: 7,8}}}}",
+        "TwoKids_0": "{{i18n: CFE_Abigail_Married_TwoKids_{{Random: 1,2}}}}",
+        "TwoKids_1": "{{i18n: CFE_Abigail_Married_TwoKids_{{Random: 3,4}}}}",
+        "TwoKids_2": "{{i18n: CFE_Abigail_Married_TwoKids_{{Random: 5,6}}}}",
+        "TwoKids_3": "{{i18n: CFE_Abigail_Married_TwoKids_{{Random: 7,8}}}}",
+
+        "Outdoor_0": "{{i18n: CFE_Abigail_Married_Outdoor_{{Random: 1,2}}}}",
+        "Outdoor_1": "{{i18n: CFE_Abigail_Married_Outdoor_{{Random: 3,4}}}}",
+        "Outdoor_2": "{{i18n: CFE_Abigail_Married_Outdoor_{{Random: 5,6}}}}",
+        "Outdoor_3": "{{i18n: CFE_Abigail_Married_Outdoor_{{Random: 7,8}}}}",
+        "Outdoor_4": "{{i18n: CFE_Abigail_Married_Outdoor_{{Random: 9,10}}}}",
+
+        "patio_Abigail": "{{i18n: CFE_Abigail_Married_patio_{{Random: 1,2,3}}}}",
+
+        //Date Specific Dialogue
+        "spring_6": "{{i18n: CFE_Abigail_Married_spring6}}",
+        "spring_16": "{{i18n: CFE_Abigail_Married_spring16}}",
+
+        "summer_19": "{{i18n: CFE_Abigail_Married_summer19}}",
+        "summer_22": "{{i18n: CFE_Abigail_Married_summer22}}",
+        "summer_23": "{{i18n: CFE_Abigail_Married_summer23}}",
+
+        "fall_12": "{{i18n: CFE_Abigail_Married_fall12}}",
+        "fall_24": "{{i18n: CFE_Abigail_Married_fall24}}",
+        "fall_28": "{{i18n: CFE_Abigail_Married_fall28}}",
+
+        "winter_1": "{{i18n: CFE_Abigail_Married_winter1}}",
+        "winter_8": "{{i18n: CFE_Abigail_Married_winter8}}",
+        "winter_19": "{{i18n: CFE_Abigail_Married_winter19}}",
+        "winter_24": "{{i18n: CFE_Abigail_Married_winter24}}",
+        "winter_28": "{{i18n: CFE_Abigail_Married_winter28}}"
+
+        //Seasonal Dialogue
+        //shown at 9+ hearts, with a 5% chance each day
+        //currently unused. key looks like "fall_Abigail"
+
+        //Affection Specific Dialogue
+        //only shown inside the farmhouse between 11 and 6pm, or at the start of day if no other dialogue is chosen first.
+        //Bad or Neutral responses are randomly chosen between if the player has less than 9 hearts, Good or Neutral responses have a 50/50 chance with 10+ hearts, and the likelihood of a Good response goes up to 87% with 11+ hearts
+        //currently unused. key looks like "Bad_3"
+      },
+      "When": { "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

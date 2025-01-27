@@ -1,0 +1,140 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/AdelaideRosierVMV",
+      "Entries": {
+        //"Introduction": "{{i18n: AdelaideDialogueIntroduction}}",
+        "Mon": "{{i18n: AdelaideDialogueMon}}",
+        "Tue": "{{i18n: AdelaideDialogueTue}}",
+        "Wed": "{{i18n: AdelaideDialogueWed}}",
+        "Thu": "{{i18n: AdelaideDialogueThu}}",
+        "Fri": "{{i18n: AdelaideDialogueFri}}",
+        "Sat": "{{i18n: AdelaideDialogueSat}}",
+        "Sun": "{{i18n: AdelaideDialogueSun}}",
+		//2
+        "Mon2": "{{i18n: AdelaideDialogueMon2|RandomPlaceName={{RandomPlaceName}}}}",
+        "Tue2": "{{i18n: AdelaideDialogueTue2}}",
+        "Wed2": "{{i18n: AdelaideDialogueWed2|HasSBV={{HasMod |contains=skellady.SBVCP}}}}",
+        "Thu2": "{{i18n: AdelaideDialogueThu2}}",
+        "Fri2": "{{i18n: AdelaideDialogueFri2}}",
+        "Sat2": "{{i18n: AdelaideDialogueSat2}}",
+        "Sun2": "{{i18n: AdelaideDialogueSun2}}",
+		//4
+        "Mon4": "{{i18n: AdelaideDialogueMon4}}",
+        "Tue4": "{{i18n: AdelaideDialogueTue4}}",
+        "Wed4": "{{i18n: AdelaideDialogueWed4}}",
+        "Thu4": "{{i18n: AdelaideDialogueThu4}}",
+        "Fri4": "{{i18n: AdelaideDialogueFri4}}",
+        "Sat4": "{{i18n: AdelaideDialogueSat4}}",
+        "Sun4": "{{i18n: AdelaideDialogueSun4|gems={{GemsList}}}}",
+		//6
+        "Mon6": "{{i18n: AdelaideDialogueMon6{{Random:R01, R02}}}}",
+        "Tue6": "{{i18n: AdelaideDialogueTue6}}",
+        "Wed6": "{{i18n: AdelaideDialogueWed6}}",
+        "Thu6": "{{i18n: AdelaideDialogueThu6}}",
+        "Fri6": "{{i18n: AdelaideDialogueFri6}}",
+        "Sat6": "{{i18n: AdelaideDialogueSat6}}",
+        "Sun6": "{{i18n: AdelaideDialogueSun6}}",
+		
+		//Summer
+        "summer_26_2": "{{i18n: AdelaideDialoguesummer_26_2}}",
+		//Fall
+        "fall_17": "{{i18n: AdelaideDialoguefall_17}}",
+        "fall_17_2": "{{i18n: AdelaideDialoguefall_17_2}}",
+		
+		//Resort
+		"Resort": "{{i18n: AdelaideDialogueResort}}",
+        //Conversation Topics
+        "Lumisteria.MtVapius.Arrival": "{{i18n: AdelaideDialogueLumisteria.MtVapius.Arrival}}",
+        "Lumisteria.MtVapius.Orchard": "{{i18n: AdelaideDialogueLumisteria.MtVapius.Orchard}}",
+        "Lumisteria.MtVapius.PennyVisit": "{{i18n: AdelaideDialogueLumisteria.MtVapius.PennyVisit}}",
+        "Lumisteria.MtVapius.PamVisit": "{{i18n: AdelaideDialogueLumisteria.MtVapius.PamVisit}}",
+        "pamHouseUpgrade": "{{i18n: AdelaideDialoguepamHouseUpgrade}}",
+        "pamHouseUpgradeAnonymous": "{{i18n: AdelaideDialoguepamHouseUpgradeAnonymous}}",
+		"eventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneweek": "{{i18n: AdelaideDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneweek}}",
+
+        "GreenRain": "{{i18n: AdelaideDialogueGreenRain}}",
+		//Special
+		"reject_865": "{{i18n: AdelaideDialogueRejectTomatoSalt}}",
+		"reject_458": "{{i18n: AdelaideDialogueRejectBouquet}}",
+
+      }
+    },
+    {
+      "LogName": "Adelaide Season Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/AdelaideRosierVMV",
+      "Entries": {
+        "summer_Thu": "{{i18n: AdelaideDialoguesummer_Thu}}",
+        "summer_Wed": "{{i18n: AdelaideDialoguesummer_Wed}}",
+        "summer_Tue4": "{{i18n: AdelaideDialoguesummer_Tue4}}",
+      },
+      "When": {
+        "Random: true, true, false": "true"
+      }
+    },
+    {
+      "LogName": "Adelaide 8 Heart Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/AdelaideRosierVMV",
+      "Entries": {
+        "Mon8": "{{i18n: AdelaideDialogueMon8{{Random:R01, R02}}}}",
+        "Tue8": "{{i18n: AdelaideDialogueTue8{{Random:R01, R02}}}}",
+        "Wed8": "{{i18n: AdelaideDialogueWed8{{Random:R01, R02}}}}",
+        "Thu8": "{{i18n: AdelaideDialogueThu8{{Random:R01, R02}}}}",
+        "Fri8": "{{i18n: AdelaideDialogueFri8{{Random:R01, R02}}}}",
+        "Sat8": "{{i18n: AdelaideDialogueSat8{{Random:R01, R02}}}}",
+        "Sun8": "{{i18n: AdelaideDialogueSun8{{Random:R01, R02}}}}",
+      },
+      "When": {
+        "Random: true, true, true, true, false": "true"
+      }
+    },
+    {
+      "LogName": "Adelaide 8 Heart Seasonal Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/AdelaideRosierVMV",
+      "Entries": {
+        "summer_Fri8": "{{i18n: AdelaideDialoguesummer_Fri8}}",
+        "winter_Thu8": "{{i18n: AdelaideDialogueWinter_Thu8}}",
+      },
+      "When": {
+        "Random: true, true, true, true, false": "true"
+      }
+    },
+    {
+      "LogName": "Adelaide 10 Heart Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/AdelaideRosierVMV",
+      "Entries": {
+        //10
+        "Mon10": "{{i18n: AdelaideDialogueMon10}}",
+        "Tue10": "{{i18n: AdelaideDialogueTue10}}",
+        "Wed10": "{{i18n: AdelaideDialogueWed10}}",
+        "Thu10": "{{i18n: AdelaideDialogueThu10}}",
+        "Fri10": "{{i18n: AdelaideDialogueFri10}}",
+        "Sat10": "{{i18n: AdelaideDialogueSat10}}",
+        "Sun10": "{{i18n: AdelaideDialogueSun10}}",
+      },
+      "When": {
+        "Random: true, true, true, true, false": "true"
+      }
+    },
+    {
+      "LogName": "Adelaide Dialogue Gift Taste",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/AdelaideRosierVMV",
+      "Entries": {
+		"AcceptGift_(O)StardropTea": "{{i18n: DefaultAcceptGift_(O)StardropTea}}",
+        "AcceptGift_(O)445": "{{i18n: AdelaideDialogueAcceptGift_(O)348}}",//Wine
+        "AcceptGift_(O)445": "{{i18n: AdelaideDialogueAcceptGift_(O)426}}",//Goat Cheese
+        "AcceptGift_(O)445": "{{i18n: AdelaideDialogueAcceptGift_(O)445}}",//Caviar
+        "AcceptGift_(O)206": "{{i18n: AdelaideDialogueAcceptGift_(O)206}}",//pizza
+        "AcceptGift_(O)213": "{{i18n: AdelaideDialogueAcceptGift_(O)213}}",//taco
+        "AcceptGift_(O)224": "{{i18n: AdelaideDialogueAcceptGift_(O)224}}",//spagetti
+        "AcceptGift_(O)241": "{{i18n: AdelaideDialogueAcceptGift_(O)241}}",//burger
+      },
+    },
+  ]
+}

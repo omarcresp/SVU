@@ -1,0 +1,362 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_salmon_caught": {
+                    "Id": "{{ModId}}_salmon_caught",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CAUGHT_FISH Current (O)139",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModId}}_salmon_filet",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:ui.recipe_unlocked.text}}: {{i18n:item.salmon_filet.name}}\""
+                    ]
+                },
+                "{{ModId}}_tiger_trout_caught": {
+                    "Id": "{{ModId}}_tiger_trout_caught",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CAUGHT_FISH Current (O)699",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModId}}_broiled_tiger_trout",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:ui.recipe_unlocked.text}}: {{i18n:item.broiled_tiger_trout.name}}\""
+                    ]
+                },
+                "{{ModId}}_mines_level_80": {
+                    "Id": "{{ModId}}_mines_level_80",
+                    "Trigger": "DayStarted",
+                    "Condition": "MINE_LOWEST_LEVEL_REACHED 80",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModId}}_mushroom_stroganoff",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:ui.recipe_unlocked.text}}: {{i18n:item.mushroom_stroganoff.name}}\""
+                    ]
+                },
+                "{{ModId}}_donut_unlock": {
+                    "Id": "{{ModId}}_donut_unlock",
+                    "Trigger": "DayStarted",
+                    //"13": "Popular^Reach a 5-heart friend level with 20 people.^true^12^11",
+                    "Condition": "PLAYER_HAS_ACHIEVEMENT Current 13",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModId}}_donut",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:ui.recipe_unlocked.text}}: {{i18n:item.donut.name}}\""
+                    ]
+                },
+                //Send Mailses
+                "{{ModId}}_dumpling_soup_unlock": {
+                    "Id": "{{ModId}}_dumpling_soup_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Harvey 4",
+                    "Actions": [
+                        "AddMail Current dumpling_soup_harvey now"
+                    ]
+                },
+                "{{ModId}}_fried_egg_unlock": {
+                    "Id": "{{ModId}}_fried_egg_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Alex 4",
+                    "Actions": [
+                        "AddMail Current fried_egg_alex now"
+                    ]
+                },
+                "{{ModId}}_tomato_soup_unlock": {
+                    "Id": "{{ModId}}_tomato_soup_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Penny 4",
+                    "Actions": [
+                        "AddMail Current tomato_soup_penny now"
+                    ]
+                },
+                "{{ModId}}_gooseberry_pie_unlock": {
+                    "Id": "{{ModId}}_gooseberry_pie_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Leah 4",
+                    "Actions": [
+                        "AddMail Current gooseberry_pie_leah now"
+                    ]
+                },
+                "{{ModId}}_pull_apart_bread_unlock": {
+                    "Id": "{{ModId}}_pull_apart_bread_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Evelyn 4",
+                    "Actions": [
+                        "AddMail Current pull_apart_bread_evelyn now"
+                    ]
+                },
+                "{{ModId}}_fancy_ramen_unlock": {
+                    "Id": "{{ModId}}_fancy_ramen_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Sebastian 4",
+                    "Actions": [
+                        "AddMail Current fancy_ramen_sebastian now"
+                    ]
+                },
+                "{{ModId}}_sweet_potato_fries_unlock": {
+                    "Id": "{{ModId}}_sweet_potato_fries_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Caroline 4",
+                    "Actions": [
+                        "AddMail Current sweet_potato_fries_caroline now"
+                    ]
+                },
+                "{{ModId}}_fried_sea_cucumber_unlock": {
+                    "Id": "{{ModId}}_fried_sea_cucumber_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Willy 6",
+                    "Actions": [
+                        "AddMail Current fried_sea_cucumber_willy now"
+                    ]
+                },
+                "{{ModId}}_baked_void_salmon_unlock": {
+                    "Id": "{{ModId}}_baked_void_salmon_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Krobus 8",
+                    "Actions": [
+                        "AddMail Current baked_void_salmon_krobus now"
+                    ]
+                },
+                "{{ModId}}_charcuterie_unlock": {
+                    "Id": "{{ModId}}_charcuterie_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Abigail 4",
+                    "Actions": [
+                        "AddMail Current charcuterie_abigail now"
+                    ]
+                },
+                "{{ModId}}_guacamole_unlock": {
+                    "Id": "{{ModId}}_guacamole_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Maru 6",
+                    "Actions": [
+                        "AddMail Current guacamole_maru now"
+                    ]
+                },
+                "{{ModId}}_omelette_unlock": {
+                    "Id": "{{ModId}}_omelette_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Marnie 6",
+                    "Actions": [
+                        "AddMail Current omelette_marnie now",
+                        "AddMail Current omelette_marnie_2 tomorrow"
+                    ]
+                },
+                "{{ModId}}_mushroom_skewer_unlock": {
+                    "Id": "{{ModId}}_mushroom_skewer_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Dwarf 6",
+                    "Actions": [
+                        "AddMail Current mushroom_skewer_dwarf now"
+                    ]
+                },
+                "{{ModId}}_tofu_sandwich_unlock": {
+                    "Id": "{{ModId}}_tofu_sandwich_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Emily 6",
+                    "Actions": [
+                       "AddMail Current tofu_sandwich_emily now"
+                    ]
+                },
+                "{{ModId}}_pierogies_unlock": {
+                    "Id": "{{ModId}}_pierogies_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Abigail 6",
+                    "Actions": [
+                        "AddMail Current pierogies_abigail now"
+                    ]
+                },
+                "{{ModId}}_margherita_pizza_unlock": {
+                    "Id": "{{ModId}}_margherita_pizza_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Sam 6",
+                    "Actions": [
+                        "AddMail Current margherita_pizza_sam now"
+                    ]
+                },
+                "{{ModId}}_croquettes_unlock": {
+                    "Id": "{{ModId}}_croquettes_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Gus 6",
+                    "Actions": [
+                        "AddMail Current croquettes_gus now"
+                    ]
+                },
+                "{{ModId}}_apple_melon_pie_unlock": {
+                    "Id": "{{ModId}}_apple_melon_pie_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Haley 7",
+                    "Actions": [
+                        "AddMail Current apple_melon_pie_haley now"
+                    ]
+                },
+                "{{ModId}}_grilled_cheese_unlock": {
+                    "Id": "{{ModId}}_grilled_cheese_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Shane 5",
+                    "Actions": [
+                        "AddMail Current grilled_cheese_shane now"
+                    ]
+                },
+                "{{ModId}}_sweet_potato_mash_unlock": {
+                    "Id": "{{ModId}}_sweet_potato_mash_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current George 8",
+                    "Actions": [
+                        "AddMail Current sweet_potato_mash_george now"
+                    ]
+                },
+                "{{ModId}}_pita_unlock": {
+                    "Id": "{{ModId}}_pita_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Jodi 4",
+                    "Actions": [
+                        "AddMail Current pita_sandwich_jodi now"
+                    ]
+                },
+                "{{ModId}}_minestrone_soup_unlock": {
+                    "Id": "{{ModId}}_minestrone_soup_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Lewis 4",
+                    "Actions": [
+                        "AddMail Current minestrone_soup_lewis now"
+                    ]
+                },
+                "{{ModId}}_smoked_salmon_bagel_unlock": {
+                    "Id": "{{ModId}}_smoked_salmon_bagel_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Kent 3",
+                    "Actions": [
+                        "AddMail Current smoked_salmon_bagel_kent now"
+                    ]
+                },
+                "{{ModId}}_burger_unlock": {
+                    "Id": "{{ModId}}_burger_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_STAT Current itemsCooked 25",
+                    "Actions": [
+                        "AddMail Current burger_qos now"
+                    ]
+                },
+                "{{ModId}}_blackened_tofu_unlock": {
+                    "Id": "{{ModId}}_blackened_tofu_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_STAT Current itemsCooked 50",
+                    "Actions": [
+                        "AddMail Current blackened_tofu_qos now"
+                    ]
+                },
+                "{{ModId}}_miso_soup_unlock": {
+                    "Id": "{{ModId}}_miso_soup_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_STAT Current itemsCooked 75",
+                    "Actions": [
+                        "AddMail Current miso_soup_qos now"
+                    ]
+                }
+            }
+        },
+        //Unlock Unknowable Dish via Wizard friendship
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+                "alternate_unlock_unknowable": "On"
+            },
+            "Entries": {
+                "{{ModId}}_unknowable_dish_alt_unlock": {
+                    "Id": "{{ModId}}_unknowable_dish_alt_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Wizard 8",
+                    "Actions": [
+                        "AddMail Current unknowable_dish_wizard now"
+                    ]
+                }
+            }
+        },
+        //Unlock Fresh Maki Recipe by Catching a Salmon while having lvl 6 Fishing
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+                "alternate_unlock_maki": "On"
+            },
+            "Entries": {
+                "{{ModId}}_fresh_maki_alt_unlock": {
+                    "Id": "{{ModId}}_fresh_maki_alt_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CAUGHT_FISH Current (O)139, PLAYER_FISHING_LEVEL Current 6",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModId}}_fresh_maki",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:ui.recipe_unlocked.text}}: {{i18n:item.fresh_maki.name}}\""
+                    ]
+                }
+            }
+        },
+        //Unlock Unknowable Dish via the trash
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+                "HasMod |contains=spacechase0.SpaceCore": true,
+                "alternate_unlock_unknowable": "Off"
+            },
+            "Entries": {
+                "{{ModId}}_garbage_unlock": {
+                    "Id": "{{ModId}}_garbage_unlock",
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "ITEM_ID Input {{ModId}}_unknowable_recipe",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModId}}_unknowable_dish",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:ui.recipe_unlocked.text}}: {{i18n:item.unknowable_dish.name}}\""
+                    ]
+                }
+            }
+        },
+        //Unlock Fresh Maki via Fishing Treasure
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+                "HasMod |contains=spacechase0.SpaceCore": true,
+                "HasMod |contains=mistyspring.ItemExtensions": true,
+                "alternate_unlock_maki": "Off"
+            },
+            "Entries": {
+                "{{ModId}}_fishing_treasure_unlock": {
+                    "Id": "{{ModId}}_fishing_treasure_unlock",
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "ITEM_ID Input {{ModId}}_maki_recipe",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModId}}_fresh_maki",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:ui.recipe_unlocked.text}}: {{i18n:item.fresh_maki.name}}\""
+                    ]
+                }
+            }
+        },
+        //Unlock Shrimp Rice and Catfish Dinner if DSV's Jewish Elliott is not enabled
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_shrimp_rice_unlock": {
+                    "Id": "{{ModId}}_shrimp_rice_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Elliott 6",
+                    "Actions": [
+                        "AddMail Current shrimp_rice_elliott now"
+                    ]
+                },
+                "{{ModId}}_catfish_caught": {
+                    "Id": "{{ModId}}_catfish_caught",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CAUGHT_FISH Current (O)143, PLAYER_FISHING_LEVEL Current 6",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModId}}_catfish_dinner",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:ui.recipe_unlocked.text}}: {{i18n:item.catfish_dinner.name}}\""
+                    ]
+                }
+            },
+            "When": { "DSVElliottCompat": "false" }
+        }
+    ]
+}
+
+

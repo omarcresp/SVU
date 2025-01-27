@@ -1,0 +1,395 @@
+{
+	"Changes": [
+		{
+			"LogName": "Adding Fruit Trees",
+			"Action": "EditData",
+			"Target": "Data/FruitTrees",
+			"Entries": {
+				"Lumisteria.MtVapius_FrostAppleSapling": {
+					"DisplayName": "{{i18n: MtVapiusFrostApple_Translated}}",
+					"Seasons": [
+						"fall",
+						"winter"
+					],
+					"Fruit": [
+						{
+							"Chance": 0.1,
+							"Condition": "LOCATION_IS_OUTDOORS Target",
+							"Id": "FrostApple",
+							"ItemId": "Lumisteria.MtVapius_FrostApple",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.2,
+							"Condition": "WEATHER Target Snow",
+							"Id": "FrostApple",
+							"ItemId": "Lumisteria.MtVapius_FrostApple",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.02,
+							"Condition": "LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+							"Id": "FrostApple",
+							"ItemId": "Lumisteria.MtVapius_FrostApple",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.04,
+							"Season": "winter",
+							"Id": "FrostApple",
+							"ItemId": "Lumisteria.MtVapius_FrostApple",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.8,
+							"Id": "Apple",
+							"ItemId": "(O)613",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						}
+					],
+					"Texture": "Mods\\Lumisteria.MtVapius\\fruitTrees",
+					"TextureSpriteRow": 0
+				},
+				"Lumisteria.MtVapius_OliveSapling": {
+					"DisplayName": "{{i18n: MtVapiusOlive_Translated}}",
+					"Seasons": [
+						"fall",
+						"winter"
+					],
+					"Fruit": [
+						{
+							"Chance": 0.1,
+							"Condition": "LOCATION_IS_OUTDOORS Target",
+							"Id": "Lumisteria.MtVapius_VoidOlive",
+							"ItemId": "Lumisteria.MtVapius_VoidOlive",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.2,
+							"Condition": "LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+							"Id": "Lumisteria.MtVapius_VoidOlive",
+							"ItemId": "Lumisteria.MtVapius_VoidOlive",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 1,
+							"Condition": "DAY_OF_MONTH 15",
+							"Id": "Lumisteria.MtVapius_VoidOlive",
+							"ItemId": "Lumisteria.MtVapius_VoidOlive",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.5,
+							"Id": "Lumisteria.MtVapius_Olive",
+							"ItemId": "Lumisteria.MtVapius_Olive",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						}
+					],
+					"Texture": "Mods\\Lumisteria.MtVapius\\fruitTrees",
+					"TextureSpriteRow": 1
+				},
+				"Lumisteria.MtVapius_GrapeSapling": {
+					"DisplayName": "[LocalizedText Strings\\Objects:Grape_Name]",
+					"Seasons": [
+						"summer",
+						"fall",
+					],
+					"Fruit": [
+						{
+							"Chance": 0.1,
+							"Condition": "LOCATION_IS_OUTDOORS Target",
+							"Id": "Lumisteria.MtVapius_WhiteGrape",
+							"ItemId": "Lumisteria.MtVapius_WhiteGrape",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.2,
+							"Condition": "LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+							"Id": "Lumisteria.MtVapius_WhiteGrape",
+							"ItemId": "Lumisteria.MtVapius_WhiteGrape",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 1,
+							"Condition": "DAY_OF_MONTH 27",
+							"Id": "Lumisteria.MtVapius_WhiteGrape",
+							"ItemId": "Lumisteria.MtVapius_WhiteGrape",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.6,
+							"Id": "398",
+							"ItemId": "398",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						}
+					],
+					"Texture": "Mods\\Lumisteria.MtVapius\\fruitTrees",
+					"TextureSpriteRow": 2
+				},
+				"Lumisteria.MtVapius_CasalotierSapling": {
+					"DisplayName": "{{i18n: MtVapiusCasalotierFlower_Translated}}",
+					"Seasons": [
+						"spring",
+						"summer",
+						"fall",
+						"winter",
+					],
+					"Fruit": [
+						{
+							"Chance": 0.05,
+							"Id": "Lumisteria.MtVapius_CasalotierFlower_Rare",
+							"ItemId": "Lumisteria.MtVapius_CasalotierFlower",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.05,
+							"Id": "Lumisteria.MtVapius_PixieBreath_Rare",
+							"ItemId": "wildflour.ateliercrops_pixies_breath",
+							"Condition": "{{HasMod |contains=wildflour.ateliercrops}}, CAULDRON_CONFIG_VALUE FaerieGarden True",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 1,
+							"Id": "Lumisteria.MtVapius_CasalotierFlower",
+							"ItemId": "Lumisteria.MtVapius_CasalotierFlower",
+							"Condition": "SEASON spring",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+					],
+					"Texture": "Mods\\Lumisteria.MtVapius\\fruitTrees",
+					"TextureSpriteRow": 3
+				},
+				"Lumisteria.MtVapius_LarimarSapling": {
+					"DisplayName": "{{i18n: MtVapiusLarimar_Translated}}",
+					"Seasons": [
+						"spring",
+					],
+					"Fruit": [
+						{
+							"Chance": 1,
+							"Id": "Lumisteria.MtVapius_Larimar",
+							"ItemId": "Lumisteria.MtVapius_Larimar",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+					],
+					"Texture": "Mods\\Lumisteria.MtVapius\\fruitTrees",
+					"TextureSpriteRow": 4
+				},
+			},
+		},
+		{
+			"LogName": "Orange Trees Produces",
+			"Action": "EditData",
+			"Target": "Data/FruitTrees",
+			"TargetField": [
+				"630",
+				"Fruit"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_OrangeBlossomRare": {
+					"Chance": 0.1,
+					"Id": "Lumisteria.MtVapius_OrangeBlossomRare",
+					"ItemId": "(O)Lumisteria.MtVapius_OrangeBlossom",
+					"StackModifiers": [
+						{
+							"Id": "Lumisteria.MtVapius_OutdoorDouble",
+							"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+							"Modification": "Add",
+							"Amount": 1.0,
+						},
+					],
+					"StackModifierMode": "Stack",
+				},
+				"Lumisteria.MtVapius_OrangeBlossom": {
+					"Season": "spring",
+					"Chance": 0.25,
+					"Id": "Lumisteria.MtVapius_OrangeBlossom",
+					"ItemId": "(O)Lumisteria.MtVapius_OrangeBlossom",
+					"StackModifiers": [
+						{
+							"Id": "Lumisteria.MtVapius_OutdoorDouble",
+							"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+							"Modification": "Add",
+							"Amount": 1.0,
+						},
+					],
+					"StackModifierMode": "Stack",
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "Lumisteria.MtVapius_OrangeBlossomRare",
+					"BeforeId": "Default"
+				},
+			]
+		},
+		{
+			"LogName": "Orange Trees Summer Produces",
+			"Action": "EditData",
+			"Target": "Data/FruitTrees",
+			"TargetField": [
+				"630",
+				"Fruit",
+				"Default"
+			],
+			"Entries": {
+				"Season": "summer"
+			}
+		},
+		{
+			"LogName": "Orange Trees Season",
+			"Action": "EditData",
+			"Target": "Data/FruitTrees",
+			"Fields": {
+				"630": {
+					"Seasons": [
+						"spring",
+						"summer"
+					]
+				}
+			}
+		},
+		/* add item  images*/
+		{
+			"Action": "Load",
+			"Target": "Mods/Lumisteria.MtVapius/FruitTrees",
+			"FromFile": "assets/images/trees/{{TargetWithoutPath}}.png"
+		}
+	]
+}

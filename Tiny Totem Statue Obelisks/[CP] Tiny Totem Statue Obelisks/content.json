@@ -1,0 +1,406 @@
+// This code was created by JennaJuffuffles. All rights are reserved. If you want to suggest changes, please reach out to me via Nexus or Discord.
+{
+  "Format": "2.0.6",
+  "ConfigSchema": {
+    "EarthObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Obelisks"
+    },
+    "DesertObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Obelisks"
+    },
+    "WaterObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Obelisks"
+    },
+    "IslandObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Obelisks"
+    },
+    "FarmObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Obelisks"
+    },
+    "EastScarpEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Compatibility"
+    },
+    "RidgesideVillageEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Compatibility"
+    },
+    "RemoteObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Remote"
+    },
+    "RemoteWarpLocation": {
+      "AllowValues": "default, custom",
+      "Default": "default",
+      "Section": "Remote"
+    },
+    "CustomFarmX": {
+      "Default": 48,
+      "Section": "Remote",
+      "Description": "Can also be used as an override for the Remote Obelisk teleport location."
+    },
+    "CustomFarmY": {
+      "Default": 7,
+      "Section": "Remote",
+      "Description": "Can also be used as an override for the Remote Obelisk teleport location."
+    },
+    "FlowersEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Decoration"
+    },
+    "MossEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Decoration"
+    },
+    "MiniObeliskEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Mini-Obelisks"
+    },
+    "MiniObeliskStyle": {
+      "AllowValues": "signpost, statue",
+      "Default": "signpost",
+      "Section": "Mini-Obelisks"
+    }
+  },
+  "DynamicTokens": [
+    {
+      "Name": "RemoteX",
+      "Value": "{{CustomFarmX}}",
+      "When": {
+        "RemoteWarpLocation": "custom"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": "{{CustomFarmY}}",
+      "When": {
+        "RemoteWarpLocation": "custom"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType |contains=Standard,Forest, Hilltop, Riverland, Wilderness": "true",
+        "HasMod |contains=flashshifter.immersivefarm2remastered,flashshifter.GrandpasFarm,Lnh.MiNiFarm": "false",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType |contains=Standard, Forest, Hilltop, Riverland, Wilderness": "true",
+        "HasMod |contains=flashshifter.immersivefarm2remastered,flashshifter.GrandpasFarm,Lnh.MiNiFarm": "false",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": "48",
+      "When": {
+        "FarmType": "FourCorners",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 39,
+      "When": {
+        "FarmType": "FourCorners",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 82,
+      "When": {
+        "FarmType": "Beach",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 71,
+      "When": {
+        "FarmType": "Beach",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 71,
+      "When": {
+        "FarmType": "MeadowlandsFarm",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 6,
+      "When": {
+        "FarmType": "MeadowlandsFarm",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 100,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=flashshifter.GrandpasFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 49,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=flashshifter.GrandpasFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=flashshifter.immersivefarm2remastered": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=flashshifter.immersivefarm2remastered": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 22,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=Lnh.MiNiFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 2,
+      "When": {
+        "FarmType": "Standard",
+        "HasMod |contains=Lnh.MiNiFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "Personal_FarmV1",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "Personal_FarmV1",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "Personal_FarmV2",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "Personal_FarmV2",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "Personal_FarmV3",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "Personal_FarmV3",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "A_TK.FarmProjectForaging/WaFF",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "A_TK.FarmProjectForaging/WaFF",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 48,
+      "When": {
+        "FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 7,
+      "When": {
+        "FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteX",
+      "Value": 35,
+      "When": {
+        "FarmType |contains=DaisyNiko.ZenithFarm.CFL/Zenith Farm,Zenith Farm,ZenithFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    },
+    {
+      "Name": "RemoteY",
+      "Value": 16,
+      "When": {
+        "FarmType |contains=DaisyNiko.ZenithFarm.CFL/Zenith Farm,Zenith Farm,ZenithFarm": "true",
+        "RemoteWarpLocation": "default"
+      }
+    }
+  ],
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.earth",
+      "Action": "Include",
+      "FromFile": "content/obelisk/Earth.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "EarthObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.desert",
+      "Action": "Include",
+      "FromFile": "content/obelisk/Desert.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "DesertObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.water",
+      "Action": "Include",
+      "FromFile": "content/obelisk/Water.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "WaterObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.island",
+      "Action": "Include",
+      "FromFile": "content/obelisk/Island.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "IslandObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.gingerisland",
+      "Action": "Include",
+      "FromFile": "content/obelisk/Farm.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "FarmObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.remote",
+      "Action": "Include",
+      "FromFile": "content/obelisk/remote.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "RemoteObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.eastscarp",
+      "Action": "Include",
+      "FromFile": "content/obelisk/EastScarp.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "EastScarpEnabled": "true",
+        "HasMod: |contains=LemurKat.EastScarpe.CP": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.ridgesidevillage",
+      "Action": "Include",
+      "FromFile": "content/obelisk/RidgesideVillage.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "HasMod: |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.decoration",
+      "Action": "Include",
+      "FromFile": "content/Decoration.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "HasMod: |contains=LemurKat.EastScarpe.CP": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.includes.miniobelisk",
+      "Action": "Include",
+      "FromFile": "content/miniobelisk/{{MiniObeliskStyle}}_MiniObelisk.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "MiniObeliskEnabled": "true"
+      }
+    }
+  ]
+}

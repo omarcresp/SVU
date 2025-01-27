@@ -1,0 +1,710 @@
+{
+  
+    "Changes": [
+	
+	//gives berry items item_berryitem context tag idea for blueberries and salmonberries and grapes maybe
+	
+	
+	
+	
+	
+	
+	
+    //ITEMS====================================
+      
+						{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+						
+                "{{ModId}}_Brown_Amanita": {
+                    "Name": "Brown Amanita",
+                    "Displayname": "Brown Amanita",
+                    "Description": "Doesn't look safe to eat at all.",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 0,
+					"Edibility": -50,
+					"IsDrink": false,
+				
+					"Buffs": [
+								{
+						"Id": "Brown_amanitaDebuffDark",
+						"Duration": 50,
+						"BuffId": 26, 
+						"IsDebuff": true,
+						"CustomAttributes":  {  },
+								},
+								{
+						"Id": "Brown_amanitaDebuffNausea",
+						"Duration": 50,
+						"BuffId": 25,  
+						"IsDebuff": true,
+						"CustomAttributes":  {  },
+								},
+								{
+						"Id": "Brown_amanitaDebuffAdrenaline",
+						"Duration": 50,
+						"BuffId": 22,  
+						"IsDebuff": true,
+						"CustomAttributes":  { },
+				
+								},
+								],
+							},
+			 "{{ModId}}_Cooking_Pot": {
+                    "Name": "Cooking Pot",
+                    "Displayname": "Cooking Pot",
+                    "Description": "A regular cooking dishware.",
+                    "Type": "Quest",
+                    //"Category": -20,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 1,
+					 "ExcludeFromRandomSale": true,
+					  "ExcludeFromFishingCollection": true,
+					   "ExcludeFromShippingCollection": true,
+					   "ContextTags": [ "not_giftable", "prevent_loss_on_death" ], 
+							},	
+			"{{ModId}}_Crayfish_Soup": {
+                    "Name": "Crayfish Soup",
+                    "Displayname": "Crayfish Soup",
+                    "Description": "Dense and slimy, with unique purplish color.",
+                    "Type": "Cooking",
+                    //"Category": -7,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 2,
+					"Edibility": 40,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Crayfish_Soup",
+						"Duration": 240,
+						//"IsDebuff": false,
+						"CustomAttributes":  { "FishingLevel": 2, "LuckLevel": 1,  }
+								},
+							]
+							},
+				"{{ModId}}_Fancy_Blanket": {
+                    "Name": "Fancy Blanket",
+                    "Displayname": "Fancy Blanket",
+                    "Description": "Soft and warm.",
+                    "Type": "Quest",
+                    //"Category": -20,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 3,
+					 "ExcludeFromRandomSale": true,
+					  "ExcludeFromFishingCollection": true,
+					   "ExcludeFromShippingCollection": true,
+					   	"ContextTags": [ "not_giftable", "prevent_loss_on_death" ], 
+							},	
+				"{{ModId}}_Giant_Horsehoe_Crab": {
+                    "Name": "Giant Horsehoe Crab",
+                    "Displayname": "Giant Horsehoe Crab",
+                    "Description": "Despite such creepy appearance those are shy and humble creatures. Truly a 'Living Fossil!'",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 850,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 4,
+					"Edibility": -50,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [ "fish_giant_horsehoe_crab", "color_brown", "season_all", "fish_pond", "fish_swamp" ], 
+							},
+				"{{ModId}}_Ginger_Tincture": {
+                    "Name": "Ginger Tincture",
+                    "Displayname": "Ginger Tincture",
+                    "Description": "A bottle of brew made out of mushrooms, ginger and swamp herbs. Gives immunity against debuffs and reduces digestive problems!",
+                    "Type": "Crafting",
+                    //"Category": -26,
+                    "Price": 250,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 5,
+					"Edibility": 50,
+					"IsDrink": true,
+					"Buffs": [
+								{
+						"Id": "Ginger_Tincture",
+						"Duration": 250,
+						"BuffId": 28,
+						"IconTexture": "Mods/{{ModId}}/BuffIconsAimon",
+						"SpriteIndex": 15,
+								},
+							],
+					"ContextTags": [ "ginger_item", "potion_item"  ],
+					"ExcludeFromRandomSale": true,
+							},
+				"{{ModId}}_Mushroom_Kebab": {
+                    "Name": "Mushroom Kebab",
+                    "Displayname": "Mushroom Kebab",
+                    "Description": "Lots of mushroom caps on a stick. Crunchy!",
+                    "Type": "Cooking",
+                    //"Category": -7,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 6,
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Mushroom_Kebab", 
+						"Duration": 180,
+						"CustomAttributes":  { "ForagingLevel": 2, "MagneticRadius": 1,  }
+								},
+							],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Pemmican": {
+                    "Name": "Pemmican",
+                    "Displayname": "Pemmican",
+                    "Description": "Dried fish mixed with fatty bug meat. Very nutritious despite its unpleasant appearance.",
+                    "Type": "Cooking",
+					"Category": -7,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 7,
+					"Edibility": 120,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+						},
+							
+				"{{ModId}}_Purple_Algae": {
+                    "Name": "Purple Algae",
+                    "Displayname": "Purple Algae",
+                    "Description": "Contains lots of iodine!",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 30,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 8,
+					"Edibility": 15,
+					"IsDrink": false,
+					//"Buff": {  
+					//	"Duration": 250,
+					//	"BuffId": 25,
+					//},
+					"ContextTags": [ "fish_purple_algae", "fish_swamp", "color_purple", "season_all", "fish_pond" ],
+					"ExcludeFromRandomSale": true,
+							},
+				"{{ModId}}_Swamp_Herb": {
+                    "Name": "Swamp Herb",
+                    "Displayname": "Swamp Herb",
+                    "Description": "It has some heady odour.",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 100,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 9,
+					"Edibility": 2,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Swamp_Herb",  
+						"Duration": 20,
+						"BuffId": 17,
+						},
+					],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Swamp_Leech": {
+                    "Name": "Swamp Leech",
+                    "Displayname": "Swamp Leech",
+                    "Description": "Usually leeches are used in medicine... but this one has enormous size!",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 80,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 10,
+					"Edibility": -30,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Swamp_Leech",   
+						"Duration": 20,
+						"BuffId": 25,
+						},
+						],
+					"ContextTags": [ "fish_swamp_leech", "fish_swamp", "color_black", "season_all", "fish_pond" ],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Vile_Ancient_Fruit": {
+                    "Name": "Vile Ancient Fruit",
+                    "Displayname": "Vile Ancient Fruit",
+                    "Description": "Something isn't right with this...",
+                    "Type": "Basic",
+                    "Category": -79,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 11,
+					"Edibility": -20,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Vile_Ancient_Fruit",  
+						"Duration": 20,
+						"BuffId": 26,
+							},
+						],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Void_Minnow": {
+                    "Name": "Void Minnow",
+                    "Displayname": "Void Minnow",
+                    "Description": "It's skin so thin that you can even see the insides",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 25,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 12,
+					"Edibility": -10,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Void_Minnow",    
+						"Duration": 20,
+						"BuffId": 26,
+						},
+					],
+					"ContextTags": [ "color_dark_purple", "fish_void_minnow", "fish_swamp", "season_all", "fish_pond" ],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Void_Mint_Leaves": {
+                    "Name": "Void Mint Leaves",
+                    "Displayname": "Void Mint Leaves",
+                    "Description": "Spicy and spiky.",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 70,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 13,
+					"Edibility": 5,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Void_Mint_Leaves",    
+						"Duration": 10,
+						"BuffId": 26,
+						},
+						],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Void_Mint_Tea": {
+                    "Name": "Void Mint Tea",
+                    "Displayname": "Void Mint Tea",
+                    "Description": "Slightly bitter, with cinnamon aroma and minty aftertaste. Tones you up!",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 14,
+					"Edibility": 5,
+					"IsDrink": true,
+					"Buffs": [
+								{
+						"Id": "Void_Mint_Tea",  
+						"Duration": 180,
+						"CustomAttributes":  { "MaxStamina": 30, "Speed": 2,  }
+						},
+					],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Vile_Ancient_Fruit_Seeds": {
+                    "Name": "Vile Ancient Fruit Seeds",
+                    "Displayname": "Vile Ancient Fruit Seeds",
+                    "Description": "Smells odd...",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    //"Price": 0,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 15,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+						},
+				"{{ModId}}_Void_Mint_Seeds": {
+                    "Name": "Void Mint Seeds",
+                    "Displayname": "Void Mint Seeds",
+                    "Description": "Even the seeds have tiny spikes on them.",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    //"Price": 0,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 16,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+						},
+						
+						//1.6
+				"{{ModId}}_Suspicious_Pie": {
+                    "Name": "Suspicious Pie",
+                    "Displayname": "Suspicious Pie",
+                    "Description": "Now you're really wonder what's inside...",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 150,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 17,
+					"Edibility": 20,
+					"IsDrink": false,
+					
+					"Buffs": [
+						{
+						"Id": "Suspicious_Bun_dark",
+						"Duration": 150,
+						"BuffId": 26, 
+						"IsDebuff": true,
+						"CustomAttributes":  {  },
+								},
+								{
+						"Id": "Suspicious_Bun_Adrenaline",
+						"Duration": 150,
+						"BuffId": 22,  
+						"IsDebuff": false,
+						"CustomAttributes":  { "Speed": 1,  },
+								},
+								],
+					"ExcludeFromRandomSale": true,
+						},
+				},
+		},
+			
+
+//CROPS====================================
+
+{
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "{{ModId}}_Vile_Ancient_Fruit_Seeds": {
+                    "Seasons": [ "spring", "summer", "fall" ],
+                    "DaysInPhase": [2, 7, 7, 7, 5],
+					"RegrowDays": 5,
+					
+                    "HarvestItemId": "{{ModId}}_Vile_Ancient_Fruit",
+                    "Texture": "Mods/{{ModId}}/Crop_Vile_Ancien_Fruit",
+                    "SpriteIndex": 0,
+					},
+				"{{ModId}}_Void_Mint_Seeds": {
+                    "Seasons": [ "spring", "summer", "fall" ],
+                    "DaysInPhase": [1, 2, 2, 3, 2],
+					"RegrowDays": 3,
+                    "HarvestItemId": "{{ModId}}_Void_Mint_Leaves",
+                    "Texture": "Mods/{{ModId}}/Crop_Void_Mint",
+                    "SpriteIndex": 0,
+            }
+        },
+		
+	},
+			 
+			 
+//you can find more about making 1.6 recipes for custom items here https://stardewvalleywiki.com/Modding:Recipe_data
+//Cooking Recipes====================================
+		{ 
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+             "Entries": {
+				"Crayfish Soup": "(O)716 1 (O)157 1 Aimon111.WitchSwampOverhaulCP_Purple_Algae 1 (O)78 1/10 10/Aimon111.WitchSwampOverhaulCP_Crayfish_Soup/none",
+				"Mushroom Kebab": "(O)404 1 (O)420 1 (O)281 1 (O)388 1/10 10/Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab/none",
+				"Pemmican": "(O)684 1 -4 1 (O)296 3 (O)390 2/10 10/Aimon111.WitchSwampOverhaulCP_Pemmican/none",
+				// blueberry variant "Pemmican": "(O)684 1 -4 1 (O)410 3 (O)390 2/10 10/Aimon111.WitchSwampOverhaulCP_Pemmican/none",
+				"Void Mint Tea": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves 5/10 10/Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea/none",
+				"Suspicious Pie": "{{ModId}}_Vile_Ancient_Fruit 1 203 1 245 1/10 10/{{ModId}}_Suspicious_Pie/none",
+			 }, 
+		},  
+		
+		
+//Crafting Recipes====================================
+		{ 
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+             "Entries": {
+				"Ginger Tincture": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita 1 Aimon111.WitchSwampOverhaulCP_Swamp_Herb 1 (O)829 5 (O)848 3/Field/Aimon111.WitchSwampOverhaulCP_Ginger_Tincture/false/none",
+			 }, 
+		},  
+
+
+
+
+
+
+
+
+			
+		 // add item  images
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Objects",
+            "FromFile": "assets/Objects/Objects.png" //  assets/Objects.png
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Crop_Vile_Ancien_Fruit",
+            "FromFile": "assets/Objects/Crop_Vile_Ancien_Fruit.png" // assets/Crops.png,
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Crop_Void_Mint",
+            "FromFile": "assets/Objects/Crop_Void_Mint.png" // assets/Crops1.png,
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/BuffIconsAimon",
+            "FromFile": "assets/Objects/BuffIconsAimon.png" 
+        },
+		
+
+
+
+
+
+
+
+//GIFT TASTES====================================
+        // add gift tastes vanilla
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                { //universal hate
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Hate"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab Aimon111.WitchSwampOverhaulCP_Vile_Ancient_Fruit",
+                    "Delimiter": " " // if there are already values, add a space between them and the new one
+                },
+				{ //universal dislike
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Dislike"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Pemmican",
+                    "Delimiter": " " // if there are already values, add a space between them and the new one
+                },
+				 { //universal neutral
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Neutral"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Cooking_Pot Aimon111.WitchSwampOverhaulCP_Fancy_Blanket Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Swamp_Herb Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Harvey", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Harvey", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Swamp_Leech Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Haley", "5"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab Aimon111.WitchSwampOverhaulCP_Pemmican",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Jas", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Vincent", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Leo", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Abigail", "3"],
+                    "Value": "(O)Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                }, 
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Vincent", "1"],
+                    "Value": "Aimon111.Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Vincent", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Swamp_Leech",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Kent", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab Aimon111.WitchSwampOverhaulCP_Pemmican Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Swamp_Herb Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Linus", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Pemmican",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Linus", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Swamp_Herb Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Linus", "9"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab Aimon111.WitchSwampOverhaulCP_Purple_Algae",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Caroline", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Swamp_Herb",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Caroline", "5"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Caroline", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Leah", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Swamp_Herb Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "George", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Gus", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Penny", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Wizard", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Wizard", "5"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Vile_Ancient_Fruit",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Willy", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Willy", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Pemmican",
+                    "Delimiter": " " 
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Demetrius", "9"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Demetrius", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Swamp_Herb",
+                    "Delimiter": " " 
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Demetrius", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Dwarf", "9"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Krobus", "9"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Swamp_Leech",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Krobus", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Vile_Ancient_Fruit Aimon111.WitchSwampOverhaulCP_Void_Minnow Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Sebastian", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Minnow Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+            ]
+        },  
+		
+		 { //gifttastes modded npcs
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+			"When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, },
+            "TextOperations": [
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "GuntherSilvian", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " "  },
+					
+					{
+                    "Operation": "Append",
+                    "Target": ["Fields", "MarlonFay", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Pemmican",
+                    "Delimiter": " "  },
+					{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Claire", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " "  },
+            ]
+        },  
+    ]
+}
+

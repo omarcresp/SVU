@@ -1,0 +1,153 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Acid Rain Weather (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_AcidRain": {
+          "Id": "Kana.WeatherWonders_AcidRain",
+          "DisplayName": "{{i18n: Weather.AcidRain}}",
+          "Forecast": "{{i18n: Weather.AcidRain.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "IconSource": {
+            "X": 108,
+            "Y": 0
+          },
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 117
+          },
+          "MusicOverride": "Kana.WeatherWonders_AcidRainSound",
+          "MusicFrequencyOutside": 100,
+          "MusicFrequencyInside": 15,
+          "IsRaining": true,
+          "UseNightTiles": true,
+          "SpawnCritters": false,
+          "SpawnFrogs": false,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "AcidRainRainLayer1",
+              "Type": "Rain",
+              "Texture": "Mods/Kana.WeatherWonders/Smoke",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 9,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "3, -6",
+              "Count": 4,
+              "Color": "White",
+              "Opacity": 1.0,
+              "Vibrancy": 2,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "AcidRainRainLayer2",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/AcidRainLayer",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-16, 32",
+              "Count": 35,
+              "Color": "#FFD700",
+              "Opacity": 1,
+              "Vibrancy": 2,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "AcidRainRainLayer3",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/AcidRainLayer",
+              "Source": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-16, 32",
+              "Count": 35,
+              "Color": "#FFD700",
+              "Opacity": 1,
+              "Vibrancy": 2,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "RainTint1",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Color": "#FFD700",
+              "Opacity": 0.3,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "RainTint2",
+              "Type": "Color",
+              "Mode": "Lighting",
+              "Color": "#3366FF",
+              "Opacity": 0.6,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "CloudOne",
+              "Type": "TextureScroll",
+              "Mode": "Lighting",
+              "Texture": "Mods/Kana.WeatherWonders/Clouds",
+              "Speed": "0.1, 0.14",
+              "Scale": 4,
+              "Color": "yellow",
+              "Opacity": 0.05,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "CloudTwo",
+              "Type": "TextureScroll",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/Clouds",
+              "Speed": "0.1, 0.1",
+              "Scale": 2,
+              "Color": "yellow",
+              "Opacity": 0.1,
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": [
+            {
+              "Id": "AcidRainTint1",
+              "AmbientColor": "255, 200, 80",
+              "AmbientOutdoorOpacity": null,
+              "LightingTint": "255, 255, 0",
+              "LightingTintOpacity": 0.45,
+              "PostLightingTint": "255, 165, 0",
+              "PostLightingTintOpacity": 0.2
+            }
+          ],
+          "Effects": []
+        }
+      }
+    }
+  ]
+}

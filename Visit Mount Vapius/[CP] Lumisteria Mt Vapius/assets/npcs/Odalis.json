@@ -1,0 +1,109 @@
+{
+  "Changes": [
+    {
+      "LogName": "Odalis Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/OdalisDuboisVelezVMV, Characters/OdalisDuboisVelezVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Odalis Summer Sprites",
+      "Action": "Load",
+      "Target": "Characters/OdalisDuboisVelezVMV_Summer",
+      "FromFile": "assets/npcs/Characters/OdalisDuboisVelezVMVExtra/Summer.png",
+    },
+    {
+      "LogName": "Odalis Summer Portraits",
+      "Action": "Load",
+      "Target": "Portraits/OdalisDuboisVelezVMV_Summer",
+      "FromFile": "assets/npcs/Portraits/OdalisDuboisVelezVMVExtra/Summer.png",
+    },
+    {
+      "LogName": "Odalis DuboisVelez Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "OdalisDuboisVelezVMV": {
+          "DisplayName": "{{i18n: OdalisDisplayName}}",
+          "BirthSeason": "Fall",
+          "BirthDay": 14,
+          "HomeRegion": "Other",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "SocialTab": "UnknownUntilMet",
+          "IntroductionsQuest": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "FriendsAndFamily": {
+            "CelestineDuboisVMV": "",
+            "MoiraDuboisVMV": "",
+          },
+          "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Inn_OdalisArrival",
+		  "CanSocialize": "TRUE",
+		  "CanVisitIsland": "!DAY_OF_WEEK Tuesday, !DAY_OF_WEEK Saturday",
+          "SpawnIfMissing": true,
+			"Appearance": [
+			  {
+				"Id": "Lumisteria.MtVapiusOdalisSummer",
+				"Condition": "LOCATION_SEASON Here Summer",
+				"Sprite": "Characters/OdalisDuboisVelezVMV_Summer",
+				"Portrait": "Portraits/OdalisDuboisVelezVMV_Summer",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			],
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_InnSecondFloor",
+					"Tile": { "X": 20, "Y": 17 },
+					"Direction": "down"
+				}
+			],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "LogName": "Odalis Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "OdalisDuboisVelezVMV_wash": "8/16 16 17 16 17 17/8",
+        "OdalisDuboisVelezVMV_sort": "12/20 20 20 21 21 22 21 20 20 21 22 22 21/12",
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/OdalisDuboisVelezVMV/Schedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "OdalisDuboisVelezVMV": "{{i18n: OdalisGiftLoved}}/Lumisteria.MtVapius_ArtisanGoods_SeaBuckthornBerryOil Lumisteria.MtVapius_Treasures_Cyanotype 344 Lumisteria.MtVapius_Cooking_Empanadas/{{i18n: OdalisGiftLiked}}/283/{{i18n: OdalisGiftDislike}}/food_cake food_sweet food_party/{{i18n: OdalisGiftHate}}/342 454/{{i18n: OdalisGiftNeutral}}/-4/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/OdalisDuboisVelezVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/OdalisDuboisVelezVMV/Dialogue.json"
+    },
+  ]
+}

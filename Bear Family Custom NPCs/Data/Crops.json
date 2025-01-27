@@ -1,0 +1,93 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Other Items asset",
+      "Action": "Load",
+      "Target": "Mods/MadDogBearFam/SeedPacket",
+      "FromFile": "Assets/MadDog.BearFam_Equipment.png"
+    },
+    {
+      "LogName": "Load Other Items asset",
+      "Action": "Load",
+      "Target": "Mods/MadDogBearFam/CropObject",
+      "FromFile": "Assets/MadDog.BearFamObjects.png"
+    },
+    {
+      "LogName": "Add Fruit",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_StoneBrambleBerry": {
+          "Name": "MadDog.HashtagBearFam_StoneBrambleBerry",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.StoneBrambleBerry}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.StoneBrambleBerry.Description}}",
+          "Type": "Fruit",
+          "Category": -79,
+          "Price": 10,
+          "Edibility": 50,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Texture": "Mods\\MadDogBearFam\\CropObject",
+          "SpriteIndex": 56,
+          "ContextTags": [
+            "color_salmon",
+            "category_fruit"
+          ]
+        }
+      }
+    },
+
+    {
+      "LogName": "Add Seed",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_StoneBrambleSeed": {
+          "Name": "MadDog.HashtagBearFam_StoneBrambleSeed",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.StoneBrambleBerrySeed}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.StoneBrambleBerrySeed.Description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Texture": "Mods\\MadDogBearFam\\SeedPacket",
+          "SpriteIndex": 17
+        }
+      }
+    },
+    {
+      "LogName": "Crop Sprites",
+      "Action": "Load",
+      "Target": "Mods/MadDog.HashtagBearfam/MadDogCrops",
+      "FromFile": "assets/MadDog.BearFamCrops.png"
+    },
+
+    {
+      "LogName": "Turn it into a crop",
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "MadDog.HashtagBearFam_StoneBrambleSeed": {
+          "Seasons": [ "spring", "summer" ],
+          "DaysInPhase": [ 1, 3, 3, 4, 2 ],
+          "RegrowDays": 4,
+          "IsRaised": false,
+          "IsPaddyCrop": false,
+          "NeedsWatering": true,
+          "HarvestItemId": "MadDog.HashtagBearFam_StoneBrambleBerry",
+          "HarvestMethod": "Grab",
+          "HarvestMinStack": 2,
+          "HarvestMaxStack": 4,
+          "ExtraHarvestChance": 0.02,
+          "CountForMonoculture": "{{CountForShipping}}",
+          "CountForPolyculture": "{{CountForShipping}}",
+          "Texture": "Mods\\MadDog.HashtagBearfam\\MadDogCrops",
+          "SpriteIndex": 0
+        }
+      }
+    }
+  ]
+}

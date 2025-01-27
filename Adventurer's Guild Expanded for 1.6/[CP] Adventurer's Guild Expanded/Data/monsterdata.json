@@ -1,0 +1,98 @@
+{
+"Changes": [
+
+{
+            "Action": "EditImage",
+            "Target": "TileSheets/animations",
+	    "FromFile": "assets/LooseSprites/magic_kill.png",
+            "ToArea": { "X": 0, "Y": 2807, "Width": 640, "Height": 73 },
+	    "PatchMode": "replace",
+	    "When": {
+				"HasSeenEvent: currentPlayer |contains=9280011, 9280012": "true",
+			},
+        },
+
+{
+	    "Action": "EditData",
+	    "Target": "Data/Monsters",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "TextOperations": [
+      		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Green Slime", "6"],
+         		"Value": "supert_SlimeGem .15",
+         		"Delimiter": " " 
+      		},
+		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Frost Jelly", "6"],
+         		"Value": "supert_SlimeGem .15",
+         		"Delimiter": " " 
+      		},
+		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Sludge", "6"],
+         		"Value": "supert_SlimeGem .15",
+         		"Delimiter": " " 
+      		},
+		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Tiger Slime", "6"],
+         		"Value": "supert_SlimeGem .15",
+         		"Delimiter": " " 
+      		},
+		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Big Slime", "6"],
+         		"Value": "supert_SlimeGem .15",
+         		"Delimiter": " " 
+      		},
+  	 	],
+	   "When": {
+		"HasSeenEvent: anyPlayer |contains=9280005": "true",
+		},
+},
+
+{
+	    "Action": "EditData",
+	    "Target": "Data/Monsters",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "TextOperations": [
+      		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Green Slime", "6"],
+         		"Value": "supert_SlimeSoul .01 supert_TrueSlimeEnergy .005",
+         		"Delimiter": " " 
+      		},
+		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Frost Jelly", "6"],
+         		"Value": "supert_FrozenSlimeSoul .01 supert_TrueSlimeEnergy .005",
+         		"Delimiter": " " 
+      		},
+		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Sludge", "6"],
+         		"Value": "supert_FireSlimeSoul .01 supert_TrueSlimeEnergy .005",
+         		"Delimiter": " " 
+      		},
+		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Tiger Slime", "6"],
+         		"Value": "supert_FireSlimeSoul .01 supert_TrueSlimeEnergy .005",
+         		"Delimiter": " " 
+      		},
+		{
+         		"Operation": "Append",
+         		"Target": ["Fields", "Big Slime", "6"],
+         		"Value": "supert_FireSlimeSoul .01 supert_TrueSlimeEnergy .005",
+         		"Delimiter": " " 
+      		},
+  	 	],
+	   "When": {
+		"HasSeenEvent: anyPlayer |contains=9280019": "true",
+		},
+},
+
+],
+}

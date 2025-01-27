@@ -1,0 +1,409 @@
+{
+  "Changes": [
+    /*{
+      "LogName": "Aster Pellegrin Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "AsterPellegrinVMV": "adult/polite/shy/neutral/female/not-datable/null/Other/spring 14/Haley '' MoiraDuboisVMV '' MaddyPellegrinVMV 'sister'/Lumisteria.MtVapius_AsterHouse 16 5/Aster"
+      }
+    },*/
+    {
+      "LogName": "Aster Portraits",
+      "Action": "Load",
+      "Target": "Portraits/AsterPellegrinVMV, Characters/AsterPellegrinVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Aster Season Portraits",
+      "Action": "Load",
+      "Target": "Portraits/AsterPellegrinVMV_Fall",
+      "FromFile": "assets/npcs/Portraits/AsterPellegrinVMVExtra/Fall.png",
+    },
+    {
+      "LogName": "Aster Season Portraits",
+      "Action": "Load",
+      "Target": "Portraits/AsterPellegrinVMV_Winter",
+      "FromFile": "assets/npcs/Portraits/AsterPellegrinVMVExtra/Winter.png",
+    },
+    {
+      "LogName": "Aster Beach Portraits",
+      "Action": "Load",
+      "Target": "Portraits/AsterPellegrinVMV_Beach",
+      "FromFile": "assets/npcs/Portraits/AsterPellegrinVMVExtra/Beach.png",
+    },
+    {
+      "LogName": "Aster Beach Sprites",
+      "Action": "Load",
+      "Target": "Characters/AsterPellegrinVMV_Beach",
+      "FromFile": "assets/npcs/Characters/AsterPellegrinVMVExtra/Beach.png",
+    },
+    {
+      "LogName": "Aster Pellegrin Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "AsterPellegrinVMV": {
+          "DisplayName": "{{i18n: AsterDisplayName}}",
+          "BirthSeason": "spring",
+          "BirthDay": 14,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "{{PolitenessAster}}",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Neutral",
+          "CanBeRomanced": true,
+          "SocialTab": "UnknownUntilMet",
+		  "CanVisitIslandCondition": "!DAY_OF_WEEK Tuesday, !DAY_OF_WEEK Saturday",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+			"SpouseRoom": {
+			  "MapAsset": "Lumisteria_MtVapius_SpouseRooms",
+			  "MapSourceRect": {
+				"X": 0,
+				"Y": 0,
+				"Width": 6,
+				"Height": 9
+			  }
+			},
+			"SpousePatio": {
+			  "MapAsset": "Lumisteria_MtVapius_Patios",
+			  "MapSourceRect": {
+				"X": 0,
+				"Y": 0,
+				"Width": 4,
+				"Height": 4
+			  },
+			  "SpriteAnimationFrames": [
+				[
+				  30,
+				  3200
+				],
+				[
+				  31,
+				  500
+				],
+			  ],
+			  "SpriteAnimationPixelOffset": {
+				"X": 0,
+				"Y": 10
+			  }
+			},
+          "FriendsAndFamily": {
+            "Haley": "",
+            "MoiraDuboisVMV": "",
+            "MaddyPellegrinVMV": "{{i18n: AsterMaddyName}}"
+          },
+          "SpawnIfMissing": true,
+			"Appearance": [
+			  {
+				"Id": "Lumisteria.MtVapiusAsterFall",
+				"Condition": "LOCATION_SEASON Here Fall",
+				"Portrait": "Portraits/AsterPellegrinVMV_Fall",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusAsterWinter",
+				"Condition": "LOCATION_SEASON Here Winter",
+				"Portrait": "Portraits/AsterPellegrinVMV_Winter",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusAsterBeach",
+				"Portrait": "Portraits/AsterPellegrinVMV_Beach",
+				"Sprite": "Characters/AsterPellegrinVMV_Beach",
+				"IsIslandAttire": true,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			],
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Lumisteria.MtVapius_AsterHouse",
+              "Tile": {
+                "X": 16,
+                "Y": 5
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+          "KissSpriteIndex": "27",
+        },
+      },
+    },
+    {
+      "LogName": "Aster Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "AsterPellegrinVMV_gardening": "15/16 17 17 17 18 18 18 18 19 19 18 18 17 17 18 16/15",
+        "AsterPellegrinVMV_work": "0/24 24 24 25 25 25/0",
+        "AsterPellegrinVMV_sit": "29/29/29",
+        "AsterPellegrinVMV_read": "31/30/31",
+        "AsterPellegrinVMV_dance": "0 20 20 21 21/22 22 20 20 23 23 20 20 22 22 22 20 20 20 23 23 23 20 20 20/21 21 20 20 0",
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/AsterPellegrinVMV/Schedule.json"
+    },
+    {
+      "LogName": "Include Schedule Strings",
+      "Action": "Include",
+      "FromFile": "assets/npcs/AsterPellegrinVMV/StringSchedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "AsterPellegrinVMV": "{{i18n: AsterGiftLoved{{GiftAnswerAster}}}}/228 392 421 648 Lumisteria.MtVapius_StarShapedFlower book_item/{{i18n: AsterGiftLiked{{GiftAnswerAster}}}}/-74 60 614 quality_fertilizer_item/{{i18n: AsterGiftDislike{{GiftAnswerAster}}}}/-81 395 253/{{i18n: AsterGiftHate{{GiftAnswerAster}}}}/-5 729 202 430 372 718 719 721 722 723/{{i18n: AsterGiftNeutral{{GiftAnswerAster}}}}/-4 food_sweet WWWA.AutographedPhoto/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/AsterPellegrinVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/AsterPellegrinVMV/Dialogue.json"
+    },
+    {
+      "LogName": "Marriage Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueAsterPellegrinVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/AsterPellegrinVMV/MarriageDialogue.json"
+    },
+    //General Tags: Sweet, Sour, Salty, Fatty, Joja, Healthy, Gourmet, Hot, Candy 
+    {
+      "Action": "EditData",
+      "Target": "Data/ConcessionTastes",
+      "Entries": {
+        "AsterPellegrinVMV": { //NPC internal name
+          "Name": "AsterPellegrinVMV", //NPC internal name
+          "LovedTags": [
+            "Hummus Snack Pack"
+          ],
+          "LikedTags": [
+            "Healthy",
+          ],
+          "DislikedTags": [
+            "Joja Cola",
+            "Fatty",
+          ],
+        },
+      },
+    },
+    // Movie Reactions (KEEP EVERYTHING THE SAME, JUST REPLACE NPCNAME, RESPONSE, AND TEXT)
+    {
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",
+      "Entries": {
+        "AsterPellegrinVMV": { //NPC internal name
+          "NPCName": "AsterPellegrinVMV", //NPC internal name
+          "Reactions": [
+            //Brave Little Sapling (ANIMATED) (FAMILY) (COMEDY)
+            {
+              "Tag": "spring_movie_0",
+              "Response": "love", // can be love, like, or dislike
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": null,
+                "DuringMovie": null,
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:AsterReactionSaplingAfterMovie}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            //Journey of the Praire King (VIDEOGAME)
+            {
+              "Tag": "summer_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:AsterReactionPrairieBeforeMovie}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:AsterReactionPrairieDuringMovie}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:AsterReactionPrairieAfterMovie}}"
+                }
+              },
+              "ID": "reaction_1"
+            },
+            //Mysterium (MINDFUCK) (MYSTERY)
+            {
+              "Tag": "fall_movie_0",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": null,
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:AsterReactionMysteriumDuringMovie}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:AsterReactionMysteriumAfterMovie}}"
+                }
+              },
+              "ID": "reaction_2"
+            },
+            //Miracle at Coldstar Ranch (WHOLESOME) (TEAR JERKER) (FAMILY)
+            {
+              "Tag": "winter_movie_0",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:AsterReactionColdstarBeforeMovie}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:AsterReactionColdstarDuringMovie}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:AsterReactionColdstarAfterMovie}}"
+                }
+              },
+              "ID": "reaction_3"
+            },
+            //Natural Wonders: Exploring Our Vibrant World (TOUR) (EDUCATIONAL)
+            {
+              "Tag": "spring_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.SpringMovie1.Love.BeforeMovie}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.SpringMovie1.Love.DuringMovie}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.SpringMovie1.Love.AfterMovie}}"
+                }
+              },
+              "ID": "reaction_4"
+            },
+            //Wumbus (SCI-FI) (COMEDY)
+            {
+              "Tag": "summer_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.SummerMovie1.Love.BeforeMovie}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.SummerMovie1.Love.DuringMovie}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.SummerMovie1.Love.AfterMovie}}"
+                }
+              },
+              "ID": "reaction_5"
+            },
+            //Howls in the Rain (HORROR)
+            {
+              "Tag": "fall_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.FallMovie1.Like.BeforeMovie}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.FallMovie1.Like.DuringMovie}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.FallMovie1.Like.AfterMovie}}"
+                }
+              },
+              "ID": "reaction_6"
+            },
+            //Zuzu City Express (CLASSIC) (ROMANCE)
+            {
+              "Tag": "winter_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.WinterMovie1.Love.BeforeMovie}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.WinterMovie1.Love.DuringMovie}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Diala.WinterMovie1.Love.AfterMovie}}"
+                }
+              },
+              "ID": "reaction_7"
+            },
+          ],
+        }
+      }
+    }
+  ]
+}

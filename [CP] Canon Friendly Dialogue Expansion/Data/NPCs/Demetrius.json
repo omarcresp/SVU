@@ -1,0 +1,121 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Demetrius_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)207": "{{i18n: CFE_Demetrius_BeanHotpot}}",
+        "AcceptGift_(O)233": "{{i18n: CFE_Demetrius_IceCream}}",
+        "AcceptGift_(O)232": "{{i18n: CFE_Demetrius_RicePudding}}",
+        "AcceptGift_(O)400": "{{i18n: CFE_Demetrius_Strawberry}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Demetrius}}' = 'true' OR ('{{CFE_Demetrius}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Demetrius_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Demetrius_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Demetrius_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Demetrius_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Demetrius_RabbitsFoot}}"
+      },
+      "When": { "Query: '{{CFE_Demetrius}}' = 'true' OR ('{{CFE_Demetrius}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Demetrius_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Demetrius": "{{i18n: CFE_Demetrius_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Demetrius}}' = 'true' OR ('{{CFE_Demetrius}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Demetrius_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": {
+        //special dialogue,
+        //
+        //Date Specific Dialogue,
+        "spring_1_2": "{{i18n: CFE_Demetrius_spring1y2}}",
+
+        "summer_28_1": "{{i18n: CFE_Demetrius_summer28}}",
+        "summer_28_2": "{{i18n: CFE_Demetrius_summer28}}",
+
+        "winter_28_1": "{{i18n: CFE_Demetrius_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Demetrius_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon6": "{{i18n: CFE_Demetrius_summerMon6}}",
+        "summer_Tue8": "{{i18n: CFE_Demetrius_summerTue8}}",
+        "summer_Tue4": "{{i18n: CFE_Demetrius_repeated_2}}",
+        "summer_Wed10": "{{i18n: CFE_Demetrius_repeated_1}}",
+        "summer_Thu8": "{{i18n: CFE_Demetrius_summerThu8}}",
+        "summer_Thu4": "{{i18n: CFE_Demetrius_summerThu4}}",
+        "summer_Fri10": "{{i18n: CFE_Demetrius_summerFri10}}",
+        "summer_Fri2": "{{i18n: CFE_Demetrius_summerFri2}}",
+        "summer_Sat10": "{{i18n: CFE_Demetrius_summerSat10}}",
+        "summer_Sun10": "{{i18n: CFE_Demetrius_repeated_2}}",
+
+        "fall_Mon10": "{{i18n: CFE_Demetrius_fallMon10}}",
+        "fall_Tue10": "{{i18n: CFE_Demetrius_fallTue10}}",
+        "fall_Thu6": "{{i18n: CFE_Demetrius_fallThu6}}",
+        "fall_Fri10": "{{i18n: CFE_Demetrius_fallFri10}}",
+        "fall_Sun6": "{{i18n: CFE_Demetrius_fallSun6}}",
+
+        "winter_Mon10": "{{i18n: CFE_Demetrius_winterMon10}}",
+        "winter_Wed10": "{{i18n: CFE_Demetrius_winterWed10}}",
+        "winter_Wed4": "{{i18n: CFE_Demetrius_winterWed4}}",
+        "winter_Thu10": "{{i18n: CFE_Demetrius_winterThu10}}",
+        "winter_Sat8": "{{i18n: CFE_Demetrius_winterSat8}}",
+        "winter_Sat4": "{{i18n: CFE_Demetrius_winterSat4}}",
+        "winter_Sun10": "{{i18n: CFE_Demetrius_winterSun10}}",
+
+        "Mon10": "{{i18n: CFE_Demetrius_Mon10}}",
+        "Mon8": "{{i18n: CFE_Demetrius_Mon8}}",
+        "Mon6": "{{i18n: CFE_Demetrius_Mon6}}",
+        "Mon4": "{{i18n: CFE_Demetrius_Mon4}}",
+        "Mon2": "{{i18n: CFE_Demetrius_Mon2}}",
+        "Tue8": "{{i18n: CFE_Demetrius_Tue8}}",
+        "Tue6": "{{i18n: CFE_Demetrius_Tue6}}",
+        "Tue4": "{{i18n: CFE_Demetrius_Tue4}}",
+        "Tue2": "{{i18n: CFE_Demetrius_Tue2}}",
+        "Wed10": "{{i18n: CFE_Demetrius_Wed10}}",
+        "Wed8": "{{i18n: CFE_Demetrius_Wed8}}",
+        "Wed6": "{{i18n: CFE_Demetrius_Wed6}}",
+        "Wed4": "{{i18n: CFE_Demetrius_Wed4}}",
+        "Thu6": "{{i18n: CFE_Demetrius_Thu6}}",
+        "Thu4": "{{i18n: CFE_Demetrius_Thu4}}",
+        "Thu2": "{{i18n: CFE_Demetrius_Thu2}}",
+        "Fri10": "{{i18n: CFE_Demetrius_Fri10}}",
+        "Fri6": "{{i18n: CFE_Demetrius_repeated_1}}",
+        "Fri4": "{{i18n: CFE_Demetrius_Fri4}}",
+        "Sat10": "{{i18n: CFE_Demetrius_Sat10}}",
+        "Sat6": "{{i18n: CFE_Demetrius_Sat6}}",
+        "Sat4": "{{i18n: CFE_Demetrius_Sat4}}",
+        "Sun10": "{{i18n: CFE_Demetrius_Sun10}}",
+        "Sun8": "{{i18n: CFE_Demetrius_Sun8}}",
+        "Sun6": "{{i18n: CFE_Demetrius_Sun6}}",
+        "Sun4": "{{i18n: CFE_Demetrius_Sun4}}",
+
+        //Generic Weekday Dialogue
+        "summer_Fri": "{{i18n: CFE_Demetrius_summerFri}}",
+        "fall_Wed": "{{i18n: CFE_Demetrius_fallWed}}",
+        "fall_Thu_inlaw_Maru": "{{i18n: CFE_Demetrius_fallThuinlawMaru}}",
+        "fall_Sun": "{{i18n: CFE_Demetrius_fallSun}}",
+        "winter_Wed": "{{i18n: CFE_Demetrius_winterWed}}",
+        "winter_Sat": "{{i18n: CFE_Demetrius_winterSat}}",
+        "Sun_inlaw_Sebastian": "{{i18n: CFE_Demetrius_SuninlawSebastian}}"
+      },
+      "When": { "Query: '{{CFE_Demetrius}}' = 'true' OR ('{{CFE_Demetrius}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

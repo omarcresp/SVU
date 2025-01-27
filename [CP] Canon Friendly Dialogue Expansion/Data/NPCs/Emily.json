@@ -1,0 +1,251 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Emily_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)74": "{{i18n: CFE_Emily_PrismaticShard}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Emily}}' = 'true' OR ('{{CFE_Emily}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Emily_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Emily_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Emily_Pearl}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Emily_RabbitsFoot}}",
+        "AcceptGift_(O)440": "{{i18n: CFE_Emily_Wool}}",
+        "AcceptGift_(O)428": "{{i18n: CFE_Emily_Cloth}}",
+        "AcceptGift_(O)241": "{{i18n: CFE_Emily_SurvivalBurger}}"
+      },
+      "When": { "Query: '{{CFE_Emily}}' = 'true' OR ('{{CFE_Emily}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Emily_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Emily": "{{i18n: CFE_Emily_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Emily}}' = 'true' OR ('{{CFE_Emily}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Emily_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Emily_spring1y2}}",
+        "spring_23_1": "{{i18n: CFE_Emily_spring23}}",
+        "spring_23_2": "{{i18n: CFE_Emily_spring23}}",
+
+        "summer_10_1": "{{i18n: CFE_Emily_summer10}}",
+        "summer_10_2": "{{i18n: CFE_Emily_summer10}}",
+        "summer_27_1": "{{i18n: CFE_Emily_summer27}}",
+        "summer_27_2": "{{i18n: CFE_Emily_summer27}}",
+
+        "fall_14_1": "{{i18n: CFE_Emily_fall14}}",
+        "fall_14_2": "{{i18n: CFE_Emily_fall14}}",
+        "fall_26_1": "{{i18n: CFE_Emily_fall26}}",
+        "fall_26_2": "{{i18n: CFE_Emily_fall26}}",
+
+        "winter_9_1": "{{i18n: CFE_Emily_winter9}}",
+        "winter_9_2": "{{i18n: CFE_Emily_winter9}}",
+        "winter_24_1": "{{i18n: CFE_Emily_winter24}}",
+        "winter_24_2": "{{i18n: CFE_Emily_winter24}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Emily_summerMon10}}",
+        "summer_Mon6": "{{i18n: CFE_Emily_summerMon6}}",
+        "summer_Tue4": "{{i18n: CFE_Emily_summerTue4}}",
+        "summer_Tue2": "{{i18n: CFE_Emily_summerTue2}}",
+        "summer_Wed10": "{{i18n: CFE_Emily_summerWed10}}",
+        "summer_Wed8": "{{i18n: CFE_Emily_summerWed8}}",
+        "summer_Wed4": "{{i18n: CFE_Emily_summerWed4}}",
+        "summer_Thu8": "{{i18n: CFE_Emily_summerThu8}}",
+        "summer_Thu4": "{{i18n: CFE_Emily_summerThu4}}",
+        "summer_Thu4_old": "{{i18n: CFE_Emily_summer_Thu4_old}}",
+        "summer_Thu4_040": "{{i18n: CFE_Emily_summer_Thu4_040}}",
+        "summer_Thu4_041": "{{i18n: CFE_Emily_summer_Thu4_041}}",
+        "summer_Thu4_042": "{{i18n: CFE_Emily_summer_Thu4_042}}",
+        "summer_Sat10": "{{i18n: CFE_Emily_summerSat10}}",
+        "summer_Sat8": "{{i18n: CFE_Emily_summerSat8}}",
+        "summer_Sat4": "{{i18n: CFE_Emily_summerSat4}}",
+        "summer_Sun10": "{{i18n: CFE_Emily_summerSun10}}",
+        "summer_Sun8": "{{i18n: CFE_Emily_summerSun8}}",
+        "summer_Sun6": "{{i18n: CFE_Emily_summerSun6{{GenderNeutralCompat}} |GenericNoun={{lowercase:{{Random:{{GNMTGenericNoun}}}}}}}}",
+
+        "fall_Mon4": "{{i18n: CFE_Emily_fallMon4}}",
+        "fall_Tue8": "{{i18n: CFE_Emily_repeated_1}}",
+        "fall_Wed8": "{{i18n: CFE_Emily_fallWed8}}",
+        "fall_Wed2": "{{i18n: CFE_Emily_fallWed2}}",
+        "fall_Thu8": "{{i18n: CFE_Emily_fallThu8}}",
+        "fall_Thu4": "{{i18n: CFE_Emily_fallThu4}}",
+        "fall_Thu2": "{{i18n: CFE_Emily_fallThu2}}",
+        "fall_Fri10": "{{i18n: CFE_Emily_fallFri10}}",
+        "fall_Fri8": "{{i18n: CFE_Emily_repeated_2}}",
+        "fall_Fri4": "{{i18n: CFE_Emily_fallFri4}}",
+        "fall_Sat10": "{{i18n: CFE_Emily_fallSat10}}",
+        "fall_Sat8": "{{i18n: CFE_Emily_fallSat8}}",
+        "fall_Sat4": "{{i18n: CFE_Emily_fallSat4}}",
+        "fall_Sun10": "{{i18n: CFE_Emily_fallSun10}}",
+        "fall_Sun8": "{{i18n: CFE_Emily_fallSun8}}",
+        "fall_Sun4": "{{i18n: CFE_Emily_fallSun4}}",
+
+        "winter_Mon10": "{{i18n: CFE_Emily_winterMon10}}",
+        "winter_Mon8": "{{i18n: CFE_Emily_winterMon8}}",
+        "winter_Mon4": "{{i18n: CFE_Emily_winterMon4}}",
+        "winter_Mon2": "{{i18n: CFE_Emily_winterMon2}}",
+        "winter_Tue8": "{{i18n: CFE_Emily_winterTue8}}",
+        "winter_Tue6": "{{i18n: CFE_Emily_winterTue6}}",
+        "winter_Wed10": "{{i18n: CFE_Emily_winterWed10}}",
+        "winter_Wed8": "{{i18n: CFE_Emily_winterWed8}}",
+        "winter_Wed6": "{{i18n: CFE_Emily_winterWed6}}",
+        "winter_Wed4": "{{i18n: CFE_Emily_winterWed4}}",
+        "winter_Wed2": "{{i18n: CFE_Emily_winterWed2}}",
+        "winter_Thu10": "{{i18n: CFE_Emily_winterThu10}}",
+        "winter_Thu4": "{{i18n: CFE_Emily_winterThu4}}",
+        "winter_Fri8": "{{i18n: CFE_Emily_winterFri8}}",
+        "winter_Fri6": "{{i18n: CFE_Emily_winterFri6}}",
+        "winter_Fri2": "{{i18n: CFE_Emily_winterFri2}}",
+        "winter_Sat8": "{{i18n: CFE_Emily_repeated_2}}",
+        "winter_Sat6": "{{i18n: CFE_Emily_winterSat6}}",
+        "winter_Sun10": "{{i18n: CFE_Emily_winterSun10}}",
+        "winter_Sun8_inlaw_Haley": "{{i18n: CFE_Emily_winterSun8inlawHaley}}",
+        "winter_Sun8": "{{i18n: CFE_Emily_winterSun8}}",
+        "winter_Sun6": "{{i18n: CFE_Emily_winterSun6}}",
+        "winter_Sun2": "{{i18n: CFE_Emily_winterSun2}}",
+
+        "Tue10": "{{i18n: CFE_Emily_Tue10}}",
+        "Tue2": "{{i18n: CFE_Emily_Tue2}}",
+        "Wed2": "{{i18n: CFE_Emily_Wed2}}",
+        "Thu8": "{{i18n: CFE_Emily_Thu8}}",
+        "Thu2": "{{i18n: CFE_Emily_Thu2}}",
+        "Fri10": "{{i18n: CFE_Emily_Fri10}}",
+        "Fri8": "{{i18n: CFE_Emily_Fri8}}",
+        "Fri6": "{{i18n: CFE_Emily_Fri6}}",
+        "Fri4": "{{i18n: CFE_Emily_Fri4}}",
+        "Fri2": "{{i18n: CFE_Emily_Fri2}}",
+        "Sat8": "{{i18n: CFE_Emily_repeated_1}}",
+        "Sat4": "{{i18n: CFE_Emily_Sat4}}",
+        "Sat2": "{{i18n: CFE_Emily_Sat2}}",
+        "Sun10": "{{i18n: CFE_Emily_Sun10}}",
+        "Sun8": "{{i18n: CFE_Emily_Sun8}}",
+        "Sun6": "{{i18n: CFE_Emily_Sun6}}",
+
+
+
+        //Generic Weekday Dialogue
+        "winter_Wed_inlaw_Haley": "{{i18n: CFE_Emily_winterWedinlawHaley}}",
+        "winter_Wed": "{{i18n: CFE_Emily_winterWed}}"
+      },
+      "When": { "Query: '{{CFE_Emily}}' = 'true' OR ('{{CFE_Emily}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Emily_Marriage_GenericDialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Emily": "{{i18n: CFE_Emily_Married_spouseRoom_{{random: 1,2,3,4,5}}}}"
+      },
+      "When": { "Query: '{{CFE_Emily}}' = 'true' OR ('{{CFE_Emily}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Emily_Marriage",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueEmily",
+      "Entries": {
+        //these lines follow different priority rules than unmarried dialogue does, with different options having different % likelihoods to show up each day when the right conditions are met.
+
+        //Weather specific dialogue
+        //note that Indoor_Day is the key for any weather besides rain, even when the Emily is outside. Day means prior to 6pm. Indoor_Night is specific to inside the farmhouse when it's not raining after 6pm.
+        "Rainy_Day_0": "{{i18n: CFE_Emily_Married_RainyDay_{{Random: 1,2}}}}",
+        "Rainy_Day_1": "{{i18n: CFE_Emily_Married_RainyDay_{{Random: 3,4}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Emily_Married_RainyDay_{{Random: 5,6}}}}",
+        "Rainy_Day_3": "{{i18n: CFE_Emily_Married_RainyDay_{{Random: 7,8}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Emily_Married_RainyDay_{{Random: 9,10}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Emily_Married_RainyNight_{{Random: 1,2,3}}}}",
+        "Rainy_Night_1": "{{i18n: CFE_Emily_Married_RainyNight_{{Random: 4,5,6}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Emily_Married_RainyNight_{{Random: 7,8}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Emily_Married_RainyNight_{{Random: 9,10}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Emily_Married_RainyNight_{{Random: 11,12}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Emily_Married_IndoorDay_{{Random: 1,2}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Emily_Married_IndoorDay_{{Random: 3,4}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Emily_Married_IndoorDay_{{Random: 5,6}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Emily_Married_IndoorDay_{{Random: 7,8}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Emily_Married_IndoorDay_{{Random: 9,10}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Emily_Married_IndoorNight_{{Random: 1,2,3}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Emily_Married_IndoorNight_{{Random: 4,5,6}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Emily_Married_IndoorNight_{{Random: 7,8,9,10}}}}",
+        //"Indoor_Night_3": "{{i18n: CFE_Emily_Married_IndoorNight_{{Random: 10,11,12}}}}",
+        //"Indoor_Night_4": "{{i18n: CFE_Emily_Married_IndoorNight_{{Random: 13,14,15}}}}",
+
+        //locational specific dialogue
+        //funleave and return only show up on Mondays or Fridays (except for characters with jobs), and only while the Emily is leaving or entering the farmhouse. fun return will not display once the Emily has reached their target location.
+        //Kid dialogue only displays when the Emily is standing in the farmhouse kitchen
+        //Kid dialogue only displays when the Emily is standing in the farmhouse kitchen
+        //Outdoor Dialogue only displays on the farm. _num has an 80% chance of being displayed, _Emily has a 20% chance. _Emily is currently unused here
+
+        "funLeave_Emily": "{{i18n: CFE_Emily_Married_funLeave_{{Random: 1,2}}}}",
+        "funReturn_Emily": "{{i18n: CFE_Emily_Married_funReturn_{{Random: 1,2}}}}",
+
+        "OneKid_0": "{{i18n: CFE_Emily_Married_OneKid_{{Random: 1,2}}}}",
+        "OneKid_1": "{{i18n: CFE_Emily_Married_OneKid_{{Random: 3,4}}}}",
+        "OneKid_2": "{{i18n: CFE_Emily_Married_OneKid_{{Random: 5,6}}}}",
+        "OneKid_3": "{{i18n: CFE_Emily_Married_OneKid_{{Random: 7,8}}}}",
+        "TwoKids_0": "{{i18n: CFE_Emily_Married_TwoKids_{{Random: 1,2}}}}",
+        "TwoKids_1": "{{i18n: CFE_Emily_Married_TwoKids_{{Random: 3,4}}}}",
+        "TwoKids_2": "{{i18n: CFE_Emily_Married_TwoKids_{{Random: 5,6}}}}",
+        "TwoKids_3": "{{i18n: CFE_Emily_Married_TwoKids_{{Random: 7,8}}}}",
+
+        "Outdoor_0": "{{i18n: CFE_Emily_Married_Outdoor_1}}",
+        "Outdoor_1": "{{i18n: CFE_Emily_Married_Outdoor_2{{GenderNeutralCompat}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}",
+        "Outdoor_2": "{{i18n: CFE_Emily_Married_Outdoor_{{Random: 3,4}}}}",
+        "Outdoor_3": "{{i18n: CFE_Emily_Married_Outdoor_{{Random: 5,6}}}}",
+        "Outdoor_4": "{{i18n: CFE_Emily_Married_Outdoor_{{Random: 7,8}}}}",
+
+        "patio_Emily": "{{i18n: CFE_Emily_Married_patio_{{Random: 1,2,3}}}}",
+
+        //Date Specific Dialogue
+        "spring_14": "{{i18n: CFE_Emily_Married_spring14}}",
+        "spring_19": "{{i18n: CFE_Emily_Married_spring19}}",
+        "spring_27": "{{i18n: CFE_Emily_Married_spring27}}",
+
+        "summer_7": "{{i18n: CFE_Emily_Married_summer7}}",
+        "summer_12": "{{i18n: CFE_Emily_Married_summer12}}",
+        "summer_18": "{{i18n: CFE_Emily_Married_summer18}}",
+        "summer_22": "{{i18n: CFE_Emily_Married_summer22}}",
+        "summer_26": "{{i18n: CFE_Emily_Married_summer26}}",
+
+        "fall_4": "{{i18n: CFE_Emily_Married_fall4}}",
+        "fall_7": "{{i18n: CFE_Emily_Married_fall7}}",
+        "fall_10": "{{i18n: CFE_Emily_Married_fall10}}",
+        "fall_14": "{{i18n: CFE_Emily_Married_fall14}}",
+        "fall_20": "{{i18n: CFE_Emily_Married_fall20}}",
+
+        "winter_10": "{{i18n: CFE_Emily_Married_winter10}}",
+        "winter_16": "{{i18n: CFE_Emily_Married_winter16}}",
+        "winter_22": "{{i18n: CFE_Emily_Married_winter22}}"
+
+        //Seasonal Dialogue
+        //shown at 9+ hearts, with a 5% chance each day
+        //currently unused. key looks like "fall_Emily"
+
+        //Affection Specific Dialogue
+      },
+      "When": { "Query: '{{CFE_Emily}}' = 'true' OR ('{{CFE_Emily}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

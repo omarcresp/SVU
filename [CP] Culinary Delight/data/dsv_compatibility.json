@@ -1,0 +1,68 @@
+{
+    "Changes": [
+        //Dialogue
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries": {
+                //Love
+                "AcceptGift_(O){{ModId}}_shrimp_rice": null,
+                "AcceptGift_(O){{ModId}}_shrimp_nigiri": null,
+                "AcceptGift_(O){{ModId}}_catfish_dinner": "{{i18n: dialogue.catfish_dinner.Elliott.DSV}}",
+                "AcceptGift_(O){{ModId}}_fresh_maki": "{{i18n: dialogue.fresh_maki.Elliott.DSV}}"
+            },
+            "When": { "DSVElliottCompat": "true" }
+        },
+        //Gift Tastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                //Elliott Love
+                {
+                    "Operation": "Append",
+                    "Target":  [ "Fields", "Elliott", "1" ],
+                    "Value": "{{ModId}}_catfish_dinner",
+                    "Delimiter": " "
+                }
+            ],
+            "When": { "DSVElliottCompat": "true" },
+            "Priority": "Late"
+        },
+        //Mail
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "shrimp_rice_elliott": null,
+                "catfish_dinner_elliott": "{{i18n: mail.catfish_dinner_elliott.DSV}}%item cookingRecipe {{ModId}}_catfish_dinner%%[#]{{i18n: mail.title.catfish_dinner_elliott.DSV}}"
+            },
+            "When": { "DSVElliottCompat": "true" }
+        },
+        //Trigger Actions
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_catfish_dinner_dsv_unlock": {
+                    "Id": "{{ModId}}_catfish_dinner_dsv_unlock",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Elliott 6",
+                    "Actions": [
+                        "AddMail Current catfish_dinner_elliott now"
+                    ]
+                },
+                "{{ModId}}_shrimp_rice_dsv_unlock": {
+                    "Id": "{{ModId}}_shrimp_rice_unlock_dsv",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CAUGHT_FISH Current (O)720, PLAYER_FISHING_LEVEL Current 6",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModId}}_shrimp_rice",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:ui.recipe_unlocked.text}}: {{i18n:item.shrimp_rice.name}}\""
+                    ]
+                }
+            },
+            "When": { "DSVElliottCompat": "true" }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+If you want to modify the mod because you think the egg never goes on sale, or the price seems excessive, here I explain how:
+
+IF YOU WANT TO CHANGE THE PRICE:
+1) Open the content.json file with your notepad
+2) look for the line: "Price": 100000,
+3) Modify the price to your liking :) 
+4) Make sure the number ends with a comma
+
+Examples of what prices should look like:
+"Price": 100,
+"Price": 999999,
+"Price": 1,
+"Price": 150000,
+
+That's it! your egg has changed price!
+
+IF YOU WANT TO CHANGE THE PROBABILITY OF APPEARANCE:
+1) Open the content.json file with your notepad
+2) look for the line: 
+"Condition": "RANDOM 0.25 @addDailyLuck"
+3) we will focus on the number 0.25
+
+The number 0.25 represents the probability that the golden egg will appear, which in this case is 25% probability
+The probability works like this:
+1 = 100%
+0.50 = 50%
+0 = 0%
+
+If you understand this, you should be able to easily change the probability of the egg spawning.
+
+IF YOU DO NOT WANT DAILY LUCK TO AFFECT THE APPEARANCE OF THE EGG, DO THIS:
+1) Open the content.json file with your notepad
+2) Look for this line: 
+"Condition": "RANDOM 0.25 @addDailyLuck"
+3) Delete @addDailyLuck
+4) Make sure the line of code looks like this:
+"Condition": "RANDOM 0.25"
+
+Done!

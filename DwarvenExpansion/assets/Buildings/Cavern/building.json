@@ -1,0 +1,207 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Buildings/Cavern",
+			"FromFile": "assets/Buildings/Cavern/Cavern.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"Entries": {
+				"{{ModId}}_LargeCavern": {
+					"Name": "{{i18n:Cavern.Name}}",
+					"Description": "{{i18n:Cavern.Description}}",
+					"Texture": "Mods/DwarvenExpansion/Buildings/Cavern",
+					"SourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 112,
+						"Height": 128
+					},
+					"SeasonOffset": {
+						"X": 112,
+						"Y": 0
+					},
+					"DrawOffset": "0,0",
+					"DrawShadow": false,
+					"SortTileOffset": 1.0,
+					"CollisionMap": "\nXXXXXXX\nXXXXXXX\nXXXXXXX\n0XXXXX0",
+					"FadeWhenBehind": true,
+					"Size": {
+						"X": 7,
+						"Y": 4
+					},
+					"UpgradeSignTile": "2, 2",
+					"UpgradeSignHeight": 28.0,
+					"BuildingToUpgrade": null,
+					"Builder": "Robin",
+					"BuildCondition": null,
+					"BuildDays": 2,
+					"BuildCost": 28000,
+					"BuildMaterials": [
+						{
+							"ItemId": "(O)390",
+							"Amount": 950
+						},
+						{
+							"ItemId": "(O)388",
+							"Amount": 50
+						},
+						{
+							"ItemId": "(O)330",
+							"Amount": 50
+						}
+					],
+					"MagicalConstruction": false,
+					"BuildMenuDrawOffset": {
+						"X": 0,
+						"Y": 0
+					},
+					"HumanDoor": {
+						"X": 6,
+						"Y": 2
+					},
+					"AnimalDoor": {
+						"X": 2,
+						"Y": 2,
+						"Width": 3,
+						"Height": 2
+					},
+					"AnimalDoorOpenDuration": 0.4,
+					"AnimalDoorOpenSound": "trashcan",
+					"AnimalDoorCloseDuration": 0.2,
+					"AnimalDoorCloseSound": "trashcanlid",
+					"NonInstancedIndoorLocation": null,
+					"IndoorMap": "{{ModId}}_Locations_Cavern",
+					"IndoorMapType": "StardewValley.AnimalHouse",
+					"MaxOccupants": 12,
+					"ValidOccupantTypes": [
+						"{{ModId}}_LargeCavern",
+						"Barn"
+					],
+					"AllowAnimalPregnancy": true,
+					"IndoorItemMoves": [],
+					"IndoorItems": [
+						{
+							"Id": "Default_FeedHopper",
+							"ItemId": "(BC)99",
+							"Tile": {
+								"X": 5,
+								"Y": 4
+							},
+							"Indestructible": true
+						},
+						{
+							"Id": "Default_Incubator",
+							"ItemId": "(BC){{ModId}}_CaveIncubator",
+							"Tile": {
+								"X": 7,
+								"Y": 4
+							},
+							"Indestructible": true
+						}
+					],
+					"AddMailOnBuild": null,
+					"Metadata": {},
+					"ModData": {},
+					"HayCapacity": 0,
+					"Chests": null,
+					"DefaultAction": null,
+					"AdditionalTilePropertyRadius": 0,
+					"AllowsFlooringUnderneath": true,
+					"ActionTiles": [],
+					"TileProperties": [],
+					"ItemConversions": null,
+					"DrawLayers": [
+						{
+							"Id": "Default_AnimalDoor_Bottom",
+							"Texture": null,
+							"SourceRect": {
+								"X": 0,
+								"Y": 144,
+								"Width": 48,
+								"Height": 32
+							},
+							"DrawPosition": "32, 91",
+							"DrawInBackground": false,
+							"SortTileOffset": 1.02,
+							"OnlyDrawIfChestHasContents": null,
+							"FrameDuration": 90,
+							"FrameCount": 1,
+							"FramesPerRow": -1,
+							"AnimalDoorOffset": {
+								"X": 0,
+								"Y": -32
+							}
+						},
+						{
+							"Id": "Default_AnimalDoor_Top",
+							"Texture": null,
+							"SourceRect": {
+								"X": 0,
+								"Y": 128,
+								"Width": 48,
+								"Height": 16
+							},
+							"DrawPosition": "32, 75",
+							"DrawInBackground": false,
+							"SortTileOffset": 1.02,
+							"OnlyDrawIfChestHasContents": null,
+							"FrameDuration": 90,
+							"FrameCount": 1,
+							"FramesPerRow": -1,
+							"AnimalDoorOffset": {
+								"X": 0,
+								"Y": -32
+							}
+						},
+						{
+							"Id": "Default_AnimalDoor_Open_Top",
+							"Texture": null,
+							"SourceRect": {
+								"X": 48,
+								"Y": 128,
+								"Width": 48,
+								"Height": 16
+							},
+							"DrawPosition": "32, 76",
+							"DrawInBackground": false,
+							"SortTileOffset": 2.0,
+							"OnlyDrawIfChestHasContents": null,
+							"FrameDuration": 90,
+							"FrameCount": 1,
+							"FramesPerRow": -1,
+							"AnimalDoorOffset": {
+								"X": 0,
+								"Y": 0
+							}
+						},
+						{
+							"Id": "Default_AnimalDoor_Open_Bottom",
+							"Texture": null,
+							"SourceRect": {
+								"X": 48,
+								"Y": 144,
+								"Width": 48,
+								"Height": 32
+							},
+							"DrawPosition": "32, 92",
+							"DrawInBackground": false,
+							"SortTileOffset": 2.0,
+							"OnlyDrawIfChestHasContents": null,
+							"FrameDuration": 90,
+							"FrameCount": 1,
+							"FramesPerRow": -1,
+							"AnimalDoorOffset": {
+								"X": 0,
+								"Y": 0
+							}
+						}
+					],
+					"CustomFields": null
+				}
+			}
+		}
+	]
+}

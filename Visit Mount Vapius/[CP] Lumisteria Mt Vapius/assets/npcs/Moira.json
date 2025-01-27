@@ -1,0 +1,109 @@
+{
+  "Changes": [
+    /*{
+      "LogName": "Moïra Dubois Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "MoiraDuboisVMV": "adult/neutral/outgoing/negative/female/not-datable/null/Other/summer 26/AsterPellegrinVMV '' CelestineDuboisVMV 'Grandma' AdelaideRosierVMV ''/Lumisteria.MtVapius_Inn 39 10/Moïra"
+      }
+    },*/
+    {
+      "LogName": "Moïra Dubois Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "MoiraDuboisVMV": {
+          "DisplayName": "{{i18n: MoiraDisplayName}}",
+          "BirthSeason": "summer",
+          "BirthDay": 26,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Negative",
+          "CanBeRomanced": false,
+          "SocialTab": "UnknownUntilMet",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "FriendsAndFamily": {
+            "AsterPellegrinVMV": "",
+            "AdelaideRosierVMV": "",
+            "CelestineDuboisVMV": "{{i18n: MoiraCelestineName}}"
+          },
+          "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Hamlet_MoiraArrival",
+		  "CanVisitIsland": "!DAY_OF_WEEK Tuesday, !DAY_OF_WEEK Saturday",
+          "SpawnIfMissing": true,
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_Inn",
+					"Tile": { "X": 39, "Y": 10 },
+					"Direction": "down"
+				}
+			],
+          /*
+          "HomeLocation": "Lumisteria.MtVapius_Inn",
+          "HomeTile": {
+            "X": 39,
+            "Y": 10
+          },
+          "HomeDirection": "down",*/
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "LogName": "Moïra Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/MoiraDuboisVMV, Characters/MoiraDuboisVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Moïra Portraits and Sprites",
+      "Action": "EditImage",
+      "Target": "Portraits/MoiraDuboisVMV",
+      "FromFile": "assets/npcs/{{Target}}Extra/{{season}}.png",
+      "When": {
+        "HasFile:assets/npcs/{{Target}}Extra/{{season}}.png": "true"
+      }
+    },
+    {
+      "LogName": "Moïra Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "MoiraDuboisVMV_work": "0/24 24 24 25 25 25/0",
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/MoiraDuboisVMV/Schedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "MoiraDuboisVMV": "{{i18n: MoiraGiftLoved{{GiftAnswerMoira}}}}/106 204 418 Lumisteria.MtVapius_Cooking_CallaloSoup Lumisteria.MtVapius_WoodSilkFlower jewel_fan/{{i18n: MoiraGiftLiked{{GiftAnswerMoira}}}}/doll_item forage_item/{{i18n: MoiraGiftDislike{{GiftAnswerMoira}}}}/230 264 609/{{i18n: MoiraGiftHate{{GiftAnswerMoira}}}}/454/{{i18n: MoiraGiftNeutral{{GiftAnswerMoira}}}}/-2 alcohol_item/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MoiraDuboisVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/MoiraDuboisVMV/Dialogue.json"
+    },
+  ]
+}

@@ -1,0 +1,173 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Format": "2.4.0",
+	"ConfigSchema": {
+		"Vanilla_Catalogue_Exclude": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Catalogue_Config"
+		},
+		"Recolor_Vanilla_Oak": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Furniture_Recolors"
+		},
+		"Recolor_Vanilla_Walnut": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Furniture_Recolors"
+		},
+		"Recolor_Vanilla_Birch": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Furniture_Recolors"
+		},
+		"Recolor_Desaturated_Oak": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Furniture_Recolors"
+		},
+		"Recolor_Desaturated_Walnut": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Furniture_Recolors"
+		},
+		"Recolor_Desaturated_Birch": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Furniture_Recolors"
+		},
+		"Recolor_Custom_Cedar": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Furniture_Recolors"
+		},
+		"Recolor_Custom_GlossWhite": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Furniture_Recolors"
+		},
+		"Recolor_BathMats_Vibrant": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Bath_Mats_Recolors"
+		},
+		"Recolor_BathMats_Pastel": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Bath_Mats_Recolors"
+		}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "CatalogueItemName",
+			"Value": "{{ModID}}.Catalogue"
+		},
+		{
+			"Name": "TMB_ContextTags",
+			"Value": "collection_cmb cmb_bathroom",
+		},
+		{
+			"Name": "CatalogueShopID",
+			"Value": "Teaiscoldagain.Shop"
+		},
+
+	],
+	"Changes": [
+		{
+			"Action": "Include",
+			"FromFile": "data/shops.json, data/furniture_bathsuite.json, data/furnitureoffsets.json, data/furniture_windows_pastel.json, data/furniture_windows_vibrant.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/paths_floorsandpaths.json, data/paths_objects.json",
+		},
+		// Beta Testing Paths Inclusions and Management - not ready for prod
+		// {
+		// 	"Action": "Include",
+		// 	"FromFile": "data/paths_craftingrecipes.json, data/paths_shop.json",
+		// },
+		{
+			"Action": "Load",
+			"Target": "Paths/bathmats_paths",
+			"FromFile": "Assets/bathmats_paths.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "TileSheets/bathmats_sprites",
+			"FromFile": "Assets/bathmats_sprites.png"
+		},
+		{
+			"When": {
+				"Recolor_Vanilla_Oak": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_vanilla_oak.json",
+		},
+		{
+			"When": {
+				"Recolor_Vanilla_Walnut": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_vanilla_walnut.json",
+		},
+		{
+			"When": {
+				"Recolor_Vanilla_Birch": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_vanilla_birch.json",
+		},
+		{
+			"When": {
+				"Recolor_Desaturated_Oak": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_desaturated_oak.json",
+		},
+		{
+			"When": {
+				"Recolor_Desaturated_Walnut": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_desaturated_walnut.json",
+		},
+		{
+			"When": {
+				"Recolor_Desaturated_Birch": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_desaturated_birch.json",
+		},
+		{
+			"When": {
+				"Recolor_Custom_Cedar": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_custom_cedar.json",
+		},
+		{
+			"When": {
+				"Recolor_Custom_GlossWhite": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_custom_glosswhite.json",
+		},
+		{
+			"When": {
+				"Recolor_BathMats_Vibrant": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_bathmats_vibrant.json",
+		},
+		{
+			"When": {
+				"Recolor_BathMats_Pastel": true
+			},
+			"Action": "Include",
+			"FromFile": "data/furniture_bathmats_pastel.json",
+		},
+		
+
+	]
+}

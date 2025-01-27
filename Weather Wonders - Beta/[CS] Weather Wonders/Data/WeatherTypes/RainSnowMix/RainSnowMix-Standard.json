@@ -1,0 +1,116 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Rain-Snow Mix Weather (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_RainSnowMix": {
+          "Id": "Kana.WeatherWonders_RainSnowMix",
+          "DisplayName": "{{i18n: Weather.RainSnowMix}}",
+          "Forecast": "{{i18n: Weather.RainSnowMix.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 0
+          },
+          "MusicOverride": "rain",
+          "MusicFrequencyOutside": 100,
+          "MusicFrequencyInside": 15,
+          "IsRaining": true,
+          "UseNightTiles": true,
+          "SpawnCritters": false,
+          "SpawnFrogs": true,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "RainSnowMixRainParticles1",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "TileSheets/rain",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-16, 32",
+              "Count": 35,
+              "Color": null,
+              "Opacity": 1,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "RainSnowMixRainParticles2",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "TileSheets/rain",
+              "Source": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-16, 32",
+              "Count": 35,
+              "Color": null,
+              "Opacity": 1,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "RainSnowMixSnowParticles1",
+              "Type": "Debris",
+              "Group": "Debris",
+              "UseSeasonal": 3,
+              "Opacity": 0.9,
+              "ShouldAnimate": true,
+              "MinTimePerFrame": 76,
+              "MaxTimePerFrame": 126,
+              "MinCount": 32,
+              "MaxCount": 128,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "RainSnowMixTint1",
+              "Type": "Color",
+              "Mode": "Lighting",
+              "Color": "41, 50, 50",
+              "Opacity": 0.63,
+              "TargetMapType": "Outdoors"
+            }
+            //{
+            //	"Id": "RainSnowMixSnowParticles1",
+            //	"Type": "Snow",
+            //	"Texture": "Mods/Kana.WeatherWonders/ThinSnow",
+            //	"Source": {
+            //		"X": 0,
+            //		"Y": 0,
+            //		"Width": 64,
+            //		"Height": 64
+            //	},
+            //	"Frames": 1,
+            //	"TimePerFrame": 75,
+            //	"Opacity": 0.8,
+            //	"ViewSpeed": "-1, -1",
+            //	"Scale": 1.0
+            //}
+          ],
+          "Lighting": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "SpouseStardrop": "A fan tossed that fruit onstage at one of my old band's gigs. I could tell it was something special, so I've been saving it ever since.#$b#I gave it to you because... I wanted to help out, I guess.$h#$b#Even if it's just by giving you the energy to do even more of the work around here... heh.$10#$b#Seriously, though... I know I don't always step up when it comes to that stuff. I still have a lot of bad habits to break.$s#$b#But I'll tell you one thing you can count on from me. I'll be by your side for the rest of our lives.#$b#I think for my dad, being responsible for our family meant fighting for us... even if he had leave us to do it.$s#$b#I'm still figuring out what responsibility means to me, but I think it starts with just... being here. And that's exactly what I'm gonna do.$u#$b#I love you, @. I love the little family we've made together. I'm not going anywhere.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "SpouseStardrop": "A fan tossed that fruit onstage at one of my old band's gigs. I could tell it was something special, so I've been saving it ever since.#$b#I gave it to you because... I wanted to help out, I guess.$h#$b#Even if it's just by giving you the energy to do even more of the work around here... heh.$10#$b#Seriously, though... I know I don't always step up when it comes to that stuff. I still have a lot of bad habits to break.$s#$b#But I'll tell you one thing you can count on from me. I'll be by your side for the rest of our lives.#$b#I think for my dad, being responsible for our family meant fighting for us... even if he had leave us to do it.$s#$b#I'm still figuring out what responsibility means to me, but I think it starts with just... being here. And that's exactly what I'm gonna do.$u#$b#I love you, @. I love the little family we've made together. I'm not going anywhere.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            },
+        },
+        {
+            "LogName": "Sam terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Sam": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Sam terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Sam": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Indoor_Night_0": "Hey, you look tired. Let me help you relax tonight, okay? Can I get you anything?",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "OneKid_3": "I think we should consider a second kid. Vincent keeps asking when he gets to be a 'double uncle.'$h",
+            },
+            "When":
+            {
+		"AlwaysAdopt": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+	    "Logname": "Sam 10 heart, aro no, ace yes, love portraits true",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+		"233104/f Sam 2500/t 2000 2400/w sunny/n samMessage": "nightTime/-1000 -1000/farmer 5 90 1 Sam 12 87 2 Vincent 8 22 3 Jodi 6 13 0/viewport 10 86 clamp true/skippable/move farmer 7 0 0/move farmer 0 -2 0/pause 500/speak Sam \"Hi @.#$b#I wanted to talk to you in private...\"/faceDirection Sam 1/faceDirection Sam 3/faceDirection Sam 2/shake Sam 1000/speak Sam \"It's kinda cold out here though... let's sneak into my room.$u\"/pause 800/move Sam 0 -1 0 true/move farmer 0 -1 0 true/globalFade/viewport -1000 -1000/changeLocation SamHouse/playSound thudStep/pause 500/playSound woodyStep/pause 200/playSound Ship/pause 500/playSound woodyStep/pause 400/playSound Ship/warp farmer 20 18/warp Sam 20 17/viewport 18 14 true/move Sam 0 -3 2 true/move farmer 0 -3 0 false/pause 1000/faceDirection Sam 3/faceDirection Sam 2/speak Sam \"So... @.$10#$b#I know I've been talking about nothing but the band for a while now... But I don't want you to think that's all I'm interested in.#$b#Um... Er... What I mean is...$8#$b#Well, I'm really happy that we've grown so close... Heh.$10\"/move Jodi 0 2 1 true/emote Sam 40/pause 400/speak Sam \"@... do you think of me as a friend, or...?$l\"/move Jodi 6 0 0/playSound woodyStep/faceDirection Sam 3/playSound woodyStep/showFrame Sam 33/jump Sam/pause 800/speak Jodi \"Sam? I'm coming in!\"/move Sam -1 0 3/speak Sam \"Quick! Hide in the bed!$8\"/speed farmer 4/move farmer 0 -2 1/speed farmer 4/move farmer 2 0 1 true/doAction 12 14/faceDirection Sam 3 true/move Jodi 0 -2 1 false/move Jodi 2 0 1/speak Jodi \"What's wrong, honey? Were you doing something... bad?#$b#I thought I heard some weird sounds coming from your room...\"/move Sam 0 -1 3/speak Sam \"No Mom! I was just... doing push-ups! I wanna beat Dad at arm-wrestling some day! ...heh.$8\"/emote Jodi 16/pause 300/speak Jodi \"Oh! *giggle*... That explains why you're all red and sweaty.$h#$b#Okay, well good luck. I'll see you in the morning.\"/pause 1000/speak Sam \"Goodnight, Mom.$10\"/move Jodi -2 0 2/move Jodi 0 2 0/move Jodi -10 0 2 true/faceDirection Sam 1/emote Sam 28/speak Sam \"Whew... That was close.$h\"/faceDirection farmer 3/speak Sam \"Okay, @, the coast is clear.\"/move farmer -2 0 3/pause 600/faceDirection Sam 2/faceDirection Sam 1/speak Sam \"Earlier, I was trying to say... that I really like you, @. I think we could really have something special together... Know what I mean?\"/pause 900/speak Sam \"Alright, I said it.$7\"/resetVariable/emote Sam 40/question fork1 \"#Move closer to Sam.#Head for the window.\"/fork rejectSam/playMusic musicboxsong/pause 2000/animate farmer true true 150 6 7 6 8/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/showFrame Sam 35/pause 1000/showFrame Sam 38 /positionOffset Sam 4 0/animate farmer true true 100 101/pause 3000/speak Sam \"I'm going to be thinking about this night for a long time...\"/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Sam \"...$l\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            },
+        },
+        {
+	    "Logname": "Sam 10 heart, aro no, ace yes, love portraits false",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+		"233104/f Sam 2500/t 2000 2400/w sunny/n samMessage": "nightTime/-1000 -1000/farmer 5 90 1 Sam 12 87 2 Vincent 8 22 3 Jodi 6 13 0/viewport 10 86 clamp true/skippable/move farmer 7 0 0/move farmer 0 -2 0/pause 500/speak Sam \"Hi @.#$b#I wanted to talk to you in private...\"/faceDirection Sam 1/faceDirection Sam 3/faceDirection Sam 2/shake Sam 1000/speak Sam \"It's kinda cold out here though... let's sneak into my room.$u\"/pause 800/move Sam 0 -1 0 true/move farmer 0 -1 0 true/globalFade/viewport -1000 -1000/changeLocation SamHouse/playSound thudStep/pause 500/playSound woodyStep/pause 200/playSound Ship/pause 500/playSound woodyStep/pause 400/playSound Ship/warp farmer 20 18/warp Sam 20 17/viewport 18 14 true/move Sam 0 -3 2 true/move farmer 0 -3 0 false/pause 1000/faceDirection Sam 3/faceDirection Sam 2/speak Sam \"So... @.$10#$b#I know I've been talking about nothing but the band for a while now... But I don't want you to think that's all I'm interested in.#$b#Um... Er... What I mean is...$8#$b#Well, I'm really happy that we've grown so close... Heh.$10\"/move Jodi 0 2 1 true/emote Sam 40/pause 400/speak Sam \"@... do you think of me as a friend, or...?$10\"/move Jodi 6 0 0/playSound woodyStep/faceDirection Sam 3/playSound woodyStep/showFrame Sam 33/jump Sam/pause 800/speak Jodi \"Sam? I'm coming in!\"/move Sam -1 0 3/speak Sam \"Quick! Hide in the bed!$8\"/speed farmer 4/move farmer 0 -2 1/speed farmer 4/move farmer 2 0 1 true/doAction 12 14/faceDirection Sam 3 true/move Jodi 0 -2 1 false/move Jodi 2 0 1/speak Jodi \"What's wrong, honey? Were you doing something... bad?#$b#I thought I heard some weird sounds coming from your room...\"/move Sam 0 -1 3/speak Sam \"No Mom! I was just... doing push-ups! I wanna beat Dad at arm-wrestling some day! ...heh.$8\"/emote Jodi 16/pause 300/speak Jodi \"Oh! *giggle*... That explains why you're all red and sweaty.$h#$b#Okay, well good luck. I'll see you in the morning.\"/pause 1000/speak Sam \"Goodnight, Mom.$10\"/move Jodi -2 0 2/move Jodi 0 2 0/move Jodi -10 0 2 true/faceDirection Sam 1/emote Sam 28/speak Sam \"Whew... That was close.$h\"/faceDirection farmer 3/speak Sam \"Okay, @, the coast is clear.\"/move farmer -2 0 3/pause 600/faceDirection Sam 2/faceDirection Sam 1/speak Sam \"Earlier, I was trying to say... that I really like you, @. I think we could really have something special together... Know what I mean?\"/pause 900/speak Sam \"Alright, I said it.$7\"/resetVariable/emote Sam 40/question fork1 \"#Move closer to Sam.#Head for the window.\"/fork rejectSam/playMusic musicboxsong/pause 2000/animate farmer true true 150 6 7 6 8/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/showFrame Sam 35/pause 1000/showFrame Sam 38 /positionOffset Sam 4 0/animate farmer true true 100 101/pause 3000/speak Sam \"I'm going to be thinking about this night for a long time...\"/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Sam \"...$10\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/SamHouse",
+            "Entries":
+            {
+		"stayPut": null,
+		"rejectSam": "pause 800/move farmer 0 3 2/faceDirection Sam 2/pause 800/showFrame Sam 37/emote Sam 28/speak Sam \"I see...$s\"/pause 800/faceDirection Sam 0/speak Sam \"I'm sorry... I had the wrong idea. I'll see you around.$7\"/move farmer 0 2 2/warp farmer -1000 -1000/playSound woodyStep/pause 1000/end dialogue Sam \"...$s\""
+            },
+        },
+        {
+	    "Logname":"Sam no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam",
+            "FromFile": "assets/Portraits/SamNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.SamVincentJodiKent": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname":"Sam no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam_Winter",
+            "FromFile": "assets/Portraits/SamNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.SamVincentJodiKent": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname":"Sam no blush portrait edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam",
+            "FromFile": "assets/Portraits/SamNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+	    "Logname":"Sam no blush portrait edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam_Winter",
+            "FromFile": "assets/Portraits/SamNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+//CFDE
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "Indoor_Night_0": "#$c .5#Hey, you look tired. Let me help you relax tonight, okay? Can I get you anything?#Whoa, you're home! Guess that's my cue. OK, relax-o time for you! [184 346 206]",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "OneKid_3": "#$c .5#I think we should consider a second kid. Vincent keeps asking when he gets to be a 'double uncle.'$h#Sure, being a dad is way more exhausting than I imagined, but I'm up for the challenge!$h",
+            },
+            "When":
+            {
+                "AlwaysAdopt": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+//SVE
+        {
+	    "Logname": "Sam 10 heart, aro no, ace yes, love portraits true, SVE",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+		"233104/f Sam 2500/t 2000 2400/w sunny/n samMessage": "nightTime/-1000 -1000/farmer 5 90 1 Sam 10 87 2 Vincent 8 22 3 Jodi 6 13 0/viewport 10 86 clamp true/skippable/move farmer 5 0 0/move farmer 0 -2 0/pause 500/speak Sam \"Hi @.#$b#I wanted to talk to you in private...\"/faceDirection Sam 1/faceDirection Sam 3/faceDirection Sam 2/shake Sam 1000/speak Sam \"It's kinda cold out here though... let's sneak into my room.$u\"/pause 800/move Sam 0 -1 0 true/move farmer 0 -1 0 true/globalFade/viewport -1000 -1000/changeLocation SamHouse/playSound thudStep/pause 500/playSound woodyStep/pause 200/playSound Ship/pause 500/playSound woodyStep/pause 400/playSound Ship/warp farmer 20 18/warp Sam 20 17/viewport 18 14 true/move Sam 0 -3 2 true/move farmer 0 -3 0 false/pause 1000/faceDirection Sam 3/faceDirection Sam 2/speak Sam \"So... @.$10#$b#I know I've been talking about nothing but the band for a while now... But I don't want you to think that's all I'm interested in.#$b#Um... Er... What I mean is...$8#$b#Well, I'm really happy that we've grown so close... Heh.$10\"/move Jodi 0 2 1 true/emote Sam 40/pause 400/speak Sam \"@... do you think of me as a friend, or...?$l\"/move Jodi 6 0 0/playSound woodyStep/faceDirection Sam 3/playSound woodyStep/showFrame Sam 33/jump Sam/pause 800/speak Jodi \"Sam? I'm coming in!\"/move Sam -1 0 3/speak Sam \"Quick! Hide in the bed!$8\"/speed farmer 4/move farmer 0 -2 1/speed farmer 4/move farmer 2 0 1 true/doAction 12 14/faceDirection Sam 3 true/move Jodi 0 -2 1 false/move Jodi 2 0 1/speak Jodi \"What's wrong, honey? Were you doing something... bad?#$b#I thought I heard some weird sounds coming from your room...\"/move Sam 0 -1 3/speak Sam \"No Mom! I was just... doing push-ups! I wanna beat Dad at arm-wrestling some day! ...heh.$8\"/emote Jodi 16/pause 300/speak Jodi \"Oh! *giggle*... That explains why you're all red and sweaty.$h#$b#Okay, well good luck. I'll see you in the morning.\"/pause 1000/speak Sam \"Goodnight, Mom.$10\"/move Jodi -2 0 2/move Jodi 0 2 0/move Jodi -10 0 2 true/faceDirection Sam 1/emote Sam 28/speak Sam \"Whew... That was close.$h\"/faceDirection farmer 3/speak Sam \"Okay, @, the coast is clear.\"/move farmer -2 0 3/pause 600/faceDirection Sam 2/faceDirection Sam 1/speak Sam \"Earlier, I was trying to say... that I really like you, @. I think we could really have something special together... Know what I mean?\"/pause 900/speak Sam \"Alright, I said it.$7\"/resetVariable/emote Sam 40/question fork1 \"#Move closer to Sam.#Head for the window.\"/fork rejectSam/playMusic musicboxsong/pause 2000/animate farmer true true 150 6 7 6 8/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/showFrame Sam 35/pause 1000/showFrame Sam 38 /positionOffset Sam 4 0/animate farmer true true 100 101/pause 3000/speak Sam \"I'm going to be thinking about this night for a long time...\"/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Sam \"...$l\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            },
+        },
+        {
+	    "Logname": "Sam 10 heart, aro no, ace yes, love portraits false, SVE",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+		"233104/f Sam 2500/t 2000 2400/w sunny/n samMessage": "nightTime/-1000 -1000/farmer 5 90 1 Sam 10 87 2 Vincent 8 22 3 Jodi 6 13 0/viewport 10 86 clamp true/skippable/move farmer 5 0 0/move farmer 0 -2 0/pause 500/speak Sam \"Hi @.#$b#I wanted to talk to you in private...\"/faceDirection Sam 1/faceDirection Sam 3/faceDirection Sam 2/shake Sam 1000/speak Sam \"It's kinda cold out here though... let's sneak into my room.$u\"/pause 800/move Sam 0 -1 0 true/move farmer 0 -1 0 true/globalFade/viewport -1000 -1000/changeLocation SamHouse/playSound thudStep/pause 500/playSound woodyStep/pause 200/playSound Ship/pause 500/playSound woodyStep/pause 400/playSound Ship/warp farmer 20 18/warp Sam 20 17/viewport 18 14 true/move Sam 0 -3 2 true/move farmer 0 -3 0 false/pause 1000/faceDirection Sam 3/faceDirection Sam 2/speak Sam \"So... @.$10#$b#I know I've been talking about nothing but the band for a while now... But I don't want you to think that's all I'm interested in.#$b#Um... Er... What I mean is...$8#$b#Well, I'm really happy that we've grown so close... Heh.$10\"/move Jodi 0 2 1 true/emote Sam 40/pause 400/speak Sam \"@... do you think of me as a friend, or...?$10\"/move Jodi 6 0 0/playSound woodyStep/faceDirection Sam 3/playSound woodyStep/showFrame Sam 33/jump Sam/pause 800/speak Jodi \"Sam? I'm coming in!\"/move Sam -1 0 3/speak Sam \"Quick! Hide in the bed!$8\"/speed farmer 4/move farmer 0 -2 1/speed farmer 4/move farmer 2 0 1 true/doAction 12 14/faceDirection Sam 3 true/move Jodi 0 -2 1 false/move Jodi 2 0 1/speak Jodi \"What's wrong, honey? Were you doing something... bad?#$b#I thought I heard some weird sounds coming from your room...\"/move Sam 0 -1 3/speak Sam \"No Mom! I was just... doing push-ups! I wanna beat Dad at arm-wrestling some day! ...heh.$8\"/emote Jodi 16/pause 300/speak Jodi \"Oh! *giggle*... That explains why you're all red and sweaty.$h#$b#Okay, well good luck. I'll see you in the morning.\"/pause 1000/speak Sam \"Goodnight, Mom.$10\"/move Jodi -2 0 2/move Jodi 0 2 0/move Jodi -10 0 2 true/faceDirection Sam 1/emote Sam 28/speak Sam \"Whew... That was close.$h\"/faceDirection farmer 3/speak Sam \"Okay, @, the coast is clear.\"/move farmer -2 0 3/pause 600/faceDirection Sam 2/faceDirection Sam 1/speak Sam \"Earlier, I was trying to say... that I really like you, @. I think we could really have something special together... Know what I mean?\"/pause 900/speak Sam \"Alright, I said it.$7\"/resetVariable/emote Sam 40/question fork1 \"#Move closer to Sam.#Head for the window.\"/fork rejectSam/playMusic musicboxsong/pause 2000/animate farmer true true 150 6 7 6 8/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/showFrame Sam 35/pause 1000/showFrame Sam 38 /positionOffset Sam 4 0/animate farmer true true 100 101/pause 3000/speak Sam \"I'm going to be thinking about this night for a long time...\"/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Sam \"...$10\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            },
+        },
+    ]
+}

@@ -1,0 +1,58 @@
+{
+	"Changes": [
+		//Festival Data 
+		{
+			"LogName": "Flower Dance Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "AsterPellegrinVMV 70 14 down",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "AsterPellegrinVMV 70 14 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+				"AsterPellegrinVMV": "{{i18n: AsterFlowerDanceY2}}",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring19",
+			"TextOperations": [
+				// Set-up
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MoiraDuboisVMV 44 34 down",
+					"Delimiter": "/",
+				},
+			],
+			"When": {
+				"HasMod": "UNA.FF.CP",
+			},
+		},
+	]
+}

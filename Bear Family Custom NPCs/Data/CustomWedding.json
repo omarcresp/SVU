@@ -1,0 +1,1380 @@
+{
+  "Changes": [
+    {
+      "LogName": "Sigurd wedding",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "EventScript"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "sweet/-1000 -1000/farmer 34 25 2 MadDog.HashtagBearFam.Sigurd 35 25 2 MadDog.HashtagBearFam.Sondra 34 24 2 otherFarmers 30 28 0[SetupContextualWeddingAttendees]/positionOffset MadDog.HashtagBearFam.Sondra 30 0/showFrame MadDog.HashtagBearFam.Sondra 52/changeLocation MadDog.HashtagBearFam_WeddingMap/showFrame MadDog.HashtagBearFam.Sigurd 48/specificTemporarySprite wedding/viewport 34 26 true/pause 4000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.SigurdWedding.Speak.Sondra.1}}\"/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Sigurd 3 true/showFrame MadDog.HashtagBearFam.Sigurd 49/pause 500/pause 2000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.SigurdWedding.Speak.Sondra.2}}\"/playMusic none/pause 1000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.SigurdWedding.Speak.Sondra.3}}\"/pause 500/speak MadDog.HashtagBearFam.Sigurd \"{{i18n:BearFam.SigurdWedding.Speak.Sigurd.1}}\"/quickQuestion #{{i18n:BearFam.SigurdWedding.Speak.QuickQuestionResponse.1}}(break)speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.SigurdWedding.Speak.Sondra.4}}\"/pause 1000/showFrame farmer 101/positionOffset farmer 10 0/showFrame MadDog.HashtagBearFam.Sigurd 50/positionOffset MadDog.HashtagBearFam.Sigurd -10 0/specificTemporarySprite heart 28 62/playSound dwop/pause 2000/specificTemporarySprite wed/faceDirection farmer 2/faceDirection MadDog.HashtagBearFam.Sigurd 2 true/showFrame MadDog.HashtagBearFam.Sigurd 48/[ContextualWeddingCelebrations]/pause 4000/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Sigurd 3 true/showFrame MadDog.HashtagBearFam.Sigurd 49/globalFade/viewport -1000 -1000/pause 1000/message \"{{i18n:BearFam.SigurdWedding.Speak.Message.1}}\"/pause 500/message \"{{i18n:BearFam.SigurdWedding.Speak.Message.2}}\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueId]/end wedding"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Engaged"
+      },
+      "TargetField": [
+        "Attendees"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": {
+          "Id": "Gunnar",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Gunnar 33 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Gunnar 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Gudrun": {
+          "Id": "Gudrun",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Gudrun 32 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Gudrun 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Teren": {
+          "Id": "Teren",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Teren 31 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Teren 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "{{Gunther}}": {
+          "Id": "Gunther",
+          "Condition": null,
+          "Setup": "{{Gunther}} 37 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Alex": {
+          "Id": "Alex",
+          "Condition": null,
+          "Setup": "Alex 39 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Penny": {
+          "Id": "Penny",
+          "Condition": null,
+          "Setup": "Penny 36 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Gus": {
+          "Id": "Gus",
+          "Condition": null,
+          "Setup": "Gus 38 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Cirrus": {
+          "Id": "Cirrus",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch3.Cirrus.1}}",
+          "Setup": "Cirrus 30 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Haley": {
+          "Id": "Haley",
+          "Condition": null,
+          "Setup": "Haley 31 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Eloise": {
+          "Id": "Eloise",
+          "Condition": null,
+          "Setup": "Eloise 32 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jacob": {
+          "Id": "Jacob",
+          "Condition": null,
+          "Setup": "Jacob 33 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Andy": {
+          "Id": "Andy",
+          "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}",
+          "Setup": "Andy 30 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Mateo": {
+          "Id": "Mateo",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch1.Mateo.1}}",
+          "Setup": "Mateo 31 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Evelyn": {
+          "Id": "Evelyn",
+          "Condition": null,
+          "Setup": "Evelyn 32 30 0",
+          "Celebration": "faceDirection Evelyn 1 true",
+          "IgnoreUnlockConditions": false
+        },
+        "George": {
+          "Id": "George",
+          "Condition": null,
+          "Setup": "George 33 30 0",
+          "Celebration": "faceDirection George 3 true",
+          "IgnoreUnlockConditions": false
+        },
+        "WaffleW": {
+          "Id": "Waffle",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "WaffleW 30 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "EveT": {
+          "Id": "Eve",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "EveT 31 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jessie": {
+          "Id": "Jessie",
+          "Condition": null,
+          "Setup": "Jessie? 32 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Willy": {
+          "Id": "Willy",
+          "Condition": null,
+          "Setup": "Willy 33 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Victor": {
+          "Id": "Victor",
+          "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}",
+          "Setup": "Victor 30 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Sam": {
+          "Id": "Sam",
+          "Condition": null,
+          "Setup": "Sam 31 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Sebastian": {
+          "Id": "Sebastian",
+          "Condition": null,
+          "Setup": "Sebastian 32 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Abigail": {
+          "Id": "Abigail",
+          "Condition": null,
+          "Setup": "Abigail 33 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Olivia": {
+          "Id": "Olivia",
+          "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}",
+          "Setup": "Olivia 30 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Leah": {
+          "Id": "Leah",
+          "Condition": null,
+          "Setup": "Leah 31 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Elliott": {
+          "Id": "Elliott",
+          "Condition": null,
+          "Setup": "Elliott 32 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Harvey": {
+          "Id": "Harvey",
+          "Condition": null,
+          "Setup": "Harvey 33 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Rosa": {
+          "Id": "Rosa",
+          "Condition": null,
+          "Setup": "Rosa 36 29 0",
+          "Celebration": "faceDirection Rosa 1 true",
+          "IgnoreUnlockConditions": false
+        },
+        "Juliet": {
+          "Id": "Juliet",
+          "Condition": null,
+          "Setup": "Juliet? 37 29 0",
+          "Celebration": "faceDirection Juliet? 3 true",
+          "IgnoreUnlockConditions": false
+        },
+        "RodneyOBrien": {
+          "Id": "Rodney",
+          "Condition": "{{HasMod |contains=TheFrenchDodo.RodneyOBrien}}",
+          "Setup": "RodneyOBrien 38 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nora": {
+          "Id": "Nora",
+          "Condition": null,
+          "Setup": "Nora 39 29 0",
+          "Celebration": "{{HasMod |contains=Bagi.Nora.CP}}",
+          "IgnoreUnlockConditions": false
+        },
+        "ToriLK": {
+          "Id": "Tori",
+          "Condition": null,
+          "Setup": "ToriLK 36 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Kent": {
+          "Id": "Kent",
+          "Condition": null,
+          "Setup": "Kent 37 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jodi": {
+          "Id": "Jodi",
+          "Condition": null,
+          "Setup": "Jodi 38 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Vincent": {
+          "Id": "Vincent",
+          "Condition": null,
+          "Setup": "Vincent 39 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Fievel": {
+          "Id": "Fievel",
+          "Condition": "{{HasMod |contains=EastScarp.FGES}}",
+          "Setup": "Fievel 36 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jasper": {
+          "Id": "Jasper",
+          "Condition": null,
+          "Setup": "Jasper? 38 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Aideen": {
+          "Id": "Aideen",
+          "Condition": null,
+          "Setup": "Aideen 39 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Eli": {
+          "Id": "Eli",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Eli 36 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Dylan": {
+          "Id": "Dylan",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Dylan 37 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "TraceV": {
+          "Id": "Trace",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "TraceV 38 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Otter.Cambria": {
+          "Id": "Cambria",
+          "Condition": "{{HasMod |contains=Squeaks.MGC.CP}}",
+          "Setup": "Otter.Cambria 39 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Lewis": {
+          "Id": "Lewis",
+          "Condition": null,
+          "Setup": "Lewis 36 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Demetrius": {
+          "Id": "Demetrius",
+          "Condition": null,
+          "Setup": "Demetrius 37 33 0",
+          "Celebration": "animate Demetrius true true 500 24 25 24 26",
+          "IgnoreUnlockConditions": false
+        },
+        "Robin": {
+          "Id": "Robin",
+          "Condition": null,
+          "Setup": "Robin 38 33 0",
+          "Celebration": "animate Robin true true 500 20 21 20 22",
+          "IgnoreUnlockConditions": false
+        },
+        "APTMarcus": {
+          "Id": "Marcus",
+          "Condition": "{{HasMod |contains=AndrewJC.CoalPointFarm}}",
+          "Setup": "APTMarcus 39 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        }
+      }
+    },
+    {
+      "LogName": "Gunnar Wedding Mateo present",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "EventScript"
+      ],
+      "When": {
+        "HasMod  |contains=DN.SnS": true,
+        "HasSeenEvent  |contains=MadDog.BearFam.16193001A": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "sweet/-1000 -1000/farmer 34 25 2 MadDog.HashtagBearFam.Gunnar 35 25 2 MadDog.HashtagBearFam.Sondra 34 24 2 Mateo 35 24 2 otherFarmers 30 28 0[SetupContextualWeddingAttendees]/changeLocation MadDog.HashtagBearFam_WeddingMap/showFrame MadDog.HashtagBearFam.Sondra 52/showFrame MadDog.HashtagBearFam.Gunnar 48/specificTemporarySprite wedding/viewport 34 26 true/pause 4000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Sondra.1}}\"/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Gunnar 3 true/showFrame MadDog.HashtagBearFam.Gunnar 49/pause 500/pause 2000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Sondra.2}}\"/playMusic none/pause 1000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Sondra.3}}\"/pause 500/speak MadDog.HashtagBearFam.Gunnar \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Gunnar.1}}\"/quickQuestion #{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.QuickQuestionResponse.1}}(break)speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Sondra.4}}\"/pause 1000/showFrame farmer 101/positionOffset farmer 10 0/showFrame MadDog.HashtagBearFam.Gunnar 50/positionOffset MadDog.HashtagBearFam.Gunnar -10 0/specificTemporarySprite heart 28 62/playSound dwop/pause 2000/specificTemporarySprite wed/faceDirection farmer 2/faceDirection MadDog.HashtagBearFam.Gunnar 2 true/showFrame MadDog.HashtagBearFam.Gunnar 48/[ContextualWeddingCelebrations]/pause 4000/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Gunnar 3 true/showFrame MadDog.HashtagBearFam.Gunnar 49/globalFade/viewport -1000 -1000/pause 1000/message \"{{i18n:BearFam.GunnarWedding.Speak.Message.1}}\"/pause 500/message \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.2}}\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueId]/end wedding"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "Attendees"
+      ],
+      "When": {
+        "HasMod  |contains=DN.SnS": true,
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Engaged" //,
+        //"HasSeenEvent  |contains=MadDog.BearFam.16193001A": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": {
+          "Id": "Gunnar",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Sigurd 33 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Sigurd 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Gudrun": {
+          "Id": "Gudrun",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Gudrun 31 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Gudrun 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Teren": {
+          "Id": "Teren",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Teren 32 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Teren 20 true",
+          "IgnoreUnlockConditions": false
+        },
+
+        "Sandy": {
+          "Id": "Sandy",
+          "Condition": "PLAYER_HAS_MET Target Sandy",
+          "Setup": "Sandy 37 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Alex": {
+          "Id": "Alex",
+          "Condition": null,
+          "Setup": "Alex 36 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Clint": {
+          "Id": "Clint",
+          "Condition": null,
+          "Setup": "Clint 37 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Gus": {
+          "Id": "Gus",
+          "Condition": null,
+          "Setup": "Gus 31 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Cirrus": {
+          "Id": "Cirrus",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch3.Cirrus.1}}",
+          "Setup": "Cirrus 30 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Hector": {
+          "Id": "Hector",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch2.Hector.1}}",
+          "Setup": "Hector 31 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Dandelion": {
+          "Id": "Dandelion",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch4.Dandelion.1}}",
+          "Setup": "Dandelion 32 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Roslin": {
+          "Id": "Roslin",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch4.Dandelion.1}}",
+          "Setup": "Roslin 33 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "TraceV": {
+          "Id": "Trace",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "TraceV 31 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Krobus": {
+          "Id": "Krobus",
+          "Condition": "PLAYER_HAS_MET Target Krobus",
+          "Setup": "Krobus 30 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Dwarf": {
+          "Id": "Dwarf",
+          "Condition": "PLAYER_HAS_MET Target Dwarf",
+          "Setup": "Dwarf 32 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Wizard": {
+          "Id": "Wizard",
+          "Condition": "PLAYER_HAS_MET Target Wizard",
+          "Setup": "Wizard 33 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Eloise": {
+          "Id": "Eloise",
+          "Condition": null,
+          "Setup": "Eloise 38 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jacob": {
+          "Id": "Jacob",
+          "Condition": null,
+          "Setup": "Jacob 39 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Evelyn": {
+          "Id": "Evelyn",
+          "Condition": null,
+          "Setup": "Evelyn 36 33 0",
+          "Celebration": "faceDirection Evelyn 1 true",
+          "IgnoreUnlockConditions": false
+        },
+        "George": {
+          "Id": "George",
+          "Condition": null,
+          "Setup": "George 37 33 0",
+          "Celebration": "faceDirection George 3 true",
+          "IgnoreUnlockConditions": false
+        },
+        "WaffleW": {
+          "Id": "Waffle",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "WaffleW 30 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "EveT": {
+          "Id": "Eve",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "EveT 31 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jessie": {
+          "Id": "Jessie",
+          "Condition": null,
+          "Setup": "Jessie? 32 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Linus": {
+          "Id": "Linus",
+          "Condition": null,
+          "Setup": "Linus 33 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Sebastian": {
+          "Id": "Sebastian",
+          "Condition": null,
+          "Setup": "Sebastian 37 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Maru": {
+          "Id": "Maru",
+          "Condition": null,
+          "Setup": "Maru 36 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Abigail": {
+          "Id": "Abigail",
+          "Condition": null,
+          "Setup": "Abigail 37 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Pam": {
+          "Id": "Pam",
+          "Condition": null,
+          "Setup": "Pam 32 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Penny": {
+          "Id": "Penny",
+          "Condition": null,
+          "Setup": "Penny 38 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Harvey": {
+          "Id": "Harvey",
+          "Condition": null,
+          "Setup": "Harvey 38 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Rosa": {
+          "Id": "Rosa",
+          "Condition": null,
+          "Setup": "Rosa 38 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Juliet": {
+          "Id": "Juliet",
+          "Condition": null,
+          "Setup": "Juliet? 39 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "RodneyOBrien": {
+          "Id": "Rodney",
+          "Condition": "{{HasMod |contains=TheFrenchDodo.RodneyOBrien}}",
+          "Setup": "RodneyOBrien 37 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nora": {
+          "Id": "Nora",
+          "Condition": "{{HasMod |contains=Bagi.Nora.CP}}",
+          "Setup": "Nora 39 1 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "ToriLK": {
+          "Id": "Tori",
+          "Condition": null,
+          "Setup": "ToriLK 30 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Fievel": {
+          "Id": "Fievel",
+          "Condition": "{{HasMod |contains=EastScarp.FGES}}",
+          "Setup": "Fievel 33 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jasper": {
+          "Id": "Jasper",
+          "Condition": null,
+          "Setup": "Jasper? 38 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Aideen": {
+          "Id": "Aideen",
+          "Condition": null,
+          "Setup": "Aideen 39 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Eli": {
+          "Id": "Eli",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Eli 30 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Dylan": {
+          "Id": "Dylan",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Dylan 31 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Lance": {
+          "Id": "Lance",
+          "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}",
+          "Setup": "Lance 32 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "{{Marlon}}": {
+          "Id": "Marlon",
+          "Condition": null,
+          "Setup": "{{Marlon}} 39 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Demetrius": {
+          "Id": "Demetrius",
+          "Condition": null,
+          "Setup": "Demetrius 36 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Robin": {
+          "Id": "Robin",
+          "Condition": null,
+          "Setup": "Robin 38 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Emily": {
+          "Id": "Emily",
+          "Condition": null,
+          "Setup": "Emily 38 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "{{Gunther}}": {
+          "Id": "Gunther",
+          "Condition": null,
+          "Setup": "{{Gunther}} 36 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        }
+      }
+    },
+    {
+      "LogName": "Gunnar Wedding",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "EventScript"
+      ],
+      "When": {
+        "HasSeenEvent  |contains=MadDog.BearFam.16193001A": false
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "sweet/-1000 -1000/farmer 34 25 2 MadDog.HashtagBearFam.Gunnar 35 25 2 MadDog.HashtagBearFam.Sondra 34 24 2 otherFarmers 30 28 0[SetupContextualWeddingAttendees]/positionOffset MadDog.HashtagBearFam.Sondra 30 0/showFrame MadDog.HashtagBearFam.Sondra 52/changeLocation MadDog.HashtagBearFam_WeddingMap/showFrame MadDog.HashtagBearFam.Gunnar 48/specificTemporarySprite wedding/viewport 34 26 true/pause 4000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.Speak.Sondra.1}}\"/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Gunnar 3 true/showFrame MadDog.HashtagBearFam.Gunnar 49/pause 500/pause 2000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.Speak.Sondra.2}}\"/playMusic none/pause 1000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.Speak.Sondra.3}}\"/pause 500/speak MadDog.HashtagBearFam.Gunnar \"{{i18n:BearFam.GunnarWedding.Speak.Gunnar.1}}\"/quickQuestion #{{i18n:BearFam.GunnarWedding.Speak.QuickQuestionResponse.1}}(break)speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.Speak.Sondra.4}}\"/pause 1000/showFrame farmer 101/positionOffset farmer 10 0/showFrame MadDog.HashtagBearFam.Gunnar 50/positionOffset MadDog.HashtagBearFam.Gunnar -10 0/specificTemporarySprite heart 28 62/playSound dwop/pause 2000/specificTemporarySprite wed/faceDirection farmer 2/faceDirection MadDog.HashtagBearFam.Gunnar 2 true/showFrame MadDog.HashtagBearFam.Gunnar 48/[ContextualWeddingCelebrations]/pause 4000/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Gunnar 3 true/showFrame MadDog.HashtagBearFam.Gunnar 49/globalFade/viewport -1000 -1000/pause 1000/message \"{{i18n:BearFam.GunnarWedding.Speak.Message.1}}\"/pause 500/message \"{{i18n:BearFam.GunnarWedding.Speak.Message.2}}\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueId]/end wedding"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Engaged",
+        "HasSeenEvent |contains=MadDog.BearFam.16193001A": false
+      },
+      "TargetField": [
+        "Attendees"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": {
+          "Id": "Gunnar",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Sigurd 33 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Sigurd 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Gudrun": {
+          "Id": "Gudrun",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Gudrun 31 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Gudrun 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Teren": {
+          "Id": "Teren",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Teren 32 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Teren 20 true",
+          "IgnoreUnlockConditions": false
+        },
+
+        "Sandy": {
+          "Id": "Sandy",
+          "Condition": "PLAYER_HAS_MET Target Sandy",
+          "Setup": "Sandy 37 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Alex": {
+          "Id": "Alex",
+          "Condition": null,
+          "Setup": "Alex 36 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Clint": {
+          "Id": "Clint",
+          "Condition": null,
+          "Setup": "Clint 37 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Gus": {
+          "Id": "Gus",
+          "Condition": null,
+          "Setup": "Gus 31 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Cirrus": {
+          "Id": "Cirrus",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch3.Cirrus.1}}",
+          "Setup": "Cirrus 30 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Hector": {
+          "Id": "Hector",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch2.Hector.1}}",
+          "Setup": "Hector 31 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Dandelion": {
+          "Id": "Dandelion",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch4.Dandelion.1}}",
+          "Setup": "Dandelion 32 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Roslin": {
+          "Id": "Roslin",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch4.Dandelion.1}}",
+          "Setup": "Roslin 33 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "TraceV": {
+          "Id": "Trace",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "TraceV 31 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Krobus": {
+          "Id": "Krobus",
+          "Condition": "PLAYER_HAS_MET Target Krobus",
+          "Setup": "Krobus 30 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Dwarf": {
+          "Id": "Dwarf",
+          "Condition": "PLAYER_HAS_MET Target Dwarf",
+          "Setup": "Dwarf 32 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Wizard": {
+          "Id": "Wizard",
+          "Condition": "PLAYER_HAS_MET Target Wizard",
+          "Setup": "Wizard 33 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Eloise": {
+          "Id": "Eloise",
+          "Condition": null,
+          "Setup": "Eloise 38 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jacob": {
+          "Id": "Jacob",
+          "Condition": null,
+          "Setup": "Jacob 39 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "George": {
+          "Id": "George",
+          "Condition": null,
+          "Setup": "George 37 33 0",
+          "Celebration": "faceDirection George 3 true",
+          "IgnoreUnlockConditions": false
+        },
+        "WaffleW": {
+          "Id": "Waffle",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "WaffleW 30 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "EveT": {
+          "Id": "Eve",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "EveT 31 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jessie": {
+          "Id": "Jessie",
+          "Condition": null,
+          "Setup": "Jessie? 32 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Linus": {
+          "Id": "Linus",
+          "Condition": null,
+          "Setup": "Linus 33 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Sebastian": {
+          "Id": "Sebastian",
+          "Condition": null,
+          "Setup": "Sebastian 37 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Maru": {
+          "Id": "Maru",
+          "Condition": null,
+          "Setup": "Maru 36 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Abigail": {
+          "Id": "Abigail",
+          "Condition": null,
+          "Setup": "Abigail 37 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Pam": {
+          "Id": "Pam",
+          "Condition": null,
+          "Setup": "Pam 32 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Penny": {
+          "Id": "Penny",
+          "Condition": null,
+          "Setup": "Penny 38 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Harvey": {
+          "Id": "Harvey",
+          "Condition": null,
+          "Setup": "Harvey 38 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Rosa": {
+          "Id": "Rosa",
+          "Condition": null,
+          "Setup": "Rosa 38 33 0",
+          "Celebration": "faceDirection Rosa 1 true",
+          "IgnoreUnlockConditions": false
+        },
+        "Juliet": {
+          "Id": "Juliet",
+          "Condition": null,
+          "Setup": "Juliet? 39 33 0",
+          "Celebration": "faceDirection Juliet? 3 true",
+          "IgnoreUnlockConditions": false
+        },
+        "RodneyOBrien": {
+          "Id": "Rodney",
+          "Condition": "{{HasMod |contains=TheFrenchDodo.RodneyOBrien}}",
+          "Setup": "RodneyOBrien 37 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nora": {
+          "Id": "Nora",
+          "Condition": "{{HasMod |contains=Bagi.Nora.CP}}",
+          "Setup": "Nora 39 1 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "ToriLK": {
+          "Id": "Tori",
+          "Condition": null,
+          "Setup": "ToriLK 30 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Fievel": {
+          "Id": "Fievel",
+          "Condition": "{{HasMod |contains=EastScarp.FGES}}",
+          "Setup": "Fievel 33 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jasper": {
+          "Id": "Jasper",
+          "Condition": null,
+          "Setup": "Jasper? 38 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Aideen": {
+          "Id": "Aideen",
+          "Condition": null,
+          "Setup": "Aideen 39 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Eli": {
+          "Id": "Eli",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Eli 30 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Dylan": {
+          "Id": "Dylan",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Dylan 31 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Lance": {
+          "Id": "Lance",
+          "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}",
+          "Setup": "Lance 32 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "{{Marlon}}": {
+          "Id": "Marlon",
+          "Condition": null,
+          "Setup": "{{Marlon}} 39 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Demetrius": {
+          "Id": "Demetrius",
+          "Condition": null,
+          "Setup": "Demetrius 36 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Robin": {
+          "Id": "Robin",
+          "Condition": null,
+          "Setup": "Robin 38 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Emily": {
+          "Id": "Emily",
+          "Condition": null,
+          "Setup": "Emily 38 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "{{Gunther}}": {
+          "Id": "Gunther",
+          "Condition": null,
+          "Setup": "{{Gunther}} 36 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        }
+      }
+    },
+    {
+      "LogName": "Teren Wedding",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "EventScript"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": "sweet/-1000 -1000/farmer 34 25 2 MadDog.HashtagBearFam.Teren 35 25 2 MadDog.HashtagBearFam.Sondra 34 24 2 otherFarmers 30 28 0[SetupContextualWeddingAttendees]/positionOffset MadDog.HashtagBearFam.Sondra 30 0/showFrame MadDog.HashtagBearFam.Sondra 52/changeLocation MadDog.HashtagBearFam_WeddingMap/showFrame MadDog.HashtagBearFam.Teren 48/specificTemporarySprite wedding/viewport 34 26 true/pause 4000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.TerenWedding.Speak.Sondra.1}}\"/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Teren 3 true/showFrame MadDog.HashtagBearFam.Teren 49/pause 500/pause 2000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.TerenWedding.Speak.Sondra.2}}\"/playMusic none/pause 1000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.TerenWedding.Speak.Sondra.3}}\"/pause 500/speak MadDog.HashtagBearFam.Teren \"{{i18n:BearFam.TerenWedding.Speak.Teren.1}}\"/quickQuestion #{{i18n:BearFam.TerenWedding.Speak.QuickQuestionResponse.1}}(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:BearFam.TerenWedding.Speak.Teren.2}}\"/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.TerenWedding.Speak.Sondra.4}}\"/pause 1000/showFrame farmer 101/positionOffset farmer 10 0/showFrame MadDog.HashtagBearFam.Teren 50/positionOffset MadDog.HashtagBearFam.Teren -10 0/specificTemporarySprite heart 28 62/playSound dwop/pause 2000/specificTemporarySprite wed/faceDirection farmer 2/faceDirection MadDog.HashtagBearFam.Teren 2 true/showFrame MadDog.HashtagBearFam.Teren 48/[ContextualWeddingCelebrations]/pause 4000/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Teren 3 true/showFrame MadDog.HashtagBearFam.Teren 49/globalFade/viewport -1000 -1000/pause 1000/message \"{{i18n:BearFam.TerenWedding.Speak.Message.1}}\"/pause 500/message \"{{i18n:BearFam.TerenWedding.Speak.Message.2}}\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueId]/end wedding"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "When": { "Relationship:MadDog.HashtagBearFam.Teren": "Engaged" },
+      "TargetField": [
+        "Attendees"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": {
+          "Id": "Gunnar",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Gunnar 33 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Gunnar 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Gudrun": {
+          "Id": "Gudrun",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Gudrun 32 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Gudrun 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Sigurd": {
+          "Id": "Teren",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Sigurd 31 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Sigurd 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "Marnie": {
+          "Id": "Marnie",
+          "Condition": "!SEASON winter",
+          "Setup": "Marnie 36 31 0",
+          "Celebration": "temporaryAnimatedSprite LooseSprites\\Cursors 558 1425 20 26 400 3 99999 26 64 false false 65 0 1 0 0 0 ping_pong/warp Marnie -2000 -2000",
+          "IgnoreUnlockConditions": false
+        },
+        "MarnieWinter": {
+          "Id": "Marnie",
+          "Condition": "SEASON winter",
+          "Setup": "Marnie 36 31 0",
+          "Celebration": "temporaryAnimatedSprite LooseSprites\\marnie_winter_dance 0 0 20 26 400 3 99999 26 64 false false 65 0 1 0 0 0 ping_pong/warp Marnie -2000 -2000",
+          "IgnoreUnlockConditions": false
+        },
+        "Sandy": {
+          "Id": "Sandy",
+          "Condition": "PLAYER_HAS_MET Target Sandy",
+          "Setup": "Sandy 39 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Alex": {
+          "Id": "Alex",
+          "Condition": null,
+          "Setup": "Alex 31 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Penny": {
+          "Id": "Penny",
+          "Condition": null,
+          "Setup": "Penny 38 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Gus": {
+          "Id": "Gus",
+          "Condition": null,
+          "Setup": "Gus 38 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Cirrus": {
+          "Id": "Cirrus",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch3.Cirrus.1}}",
+          "Setup": "Cirrus 30 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Haley": {
+          "Id": "Haley",
+          "Condition": null,
+          "Setup": "Haley 31 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Eloise": {
+          "Id": "Eloise",
+          "Condition": null,
+          "Setup": "Eloise 32 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jacob": {
+          "Id": "Jacob",
+          "Condition": null,
+          "Setup": "Jacob 33 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Shane": {
+          "Id": "Shane",
+          "Condition": null,
+          "Setup": "Shane 32 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Mateo": {
+          "Id": "Mateo",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch1.Mateo.1}}",
+          "Setup": "Mateo 38 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Evelyn": {
+          "Id": "Evelyn",
+          "Condition": null,
+          "Setup": "Evelyn 32 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "George": {
+          "Id": "George",
+          "Condition": null,
+          "Setup": "George 33 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "WaffleW": {
+          "Id": "Waffle",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "WaffleW 30 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "EveT": {
+          "Id": "Eve",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "EveT 31 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jessie": {
+          "Id": "Jessie",
+          "Condition": null,
+          "Setup": "Jessie? 32 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Pierre": {
+          "Id": "Pierre",
+          "Condition": null,
+          "Setup": "Pierre 38 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Victor": {
+          "Id": "Victor",
+          "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}",
+          "Setup": "Victor 30 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Sam": {
+          "Id": "Sam",
+          "Condition": null,
+          "Setup": "Sam 31 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Maru": {
+          "Id": "Maru",
+          "Condition": null,
+          "Setup": "Maru 37 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Abigail": {
+          "Id": "Abigail",
+          "Condition": null,
+          "Setup": "Abigail 39 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Leah": {
+          "Id": "Leah",
+          "Condition": null,
+          "Setup": "Leah 32 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Elliott": {
+          "Id": "Elliott",
+          "Condition": null,
+          "Setup": "Elliott 33 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Harvey": {
+          "Id": "Harvey",
+          "Condition": null,
+          "Setup": "Harvey 36 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Rosa": {
+          "Id": "Rosa",
+          "Condition": null,
+          "Setup": "Rosa 36 30 0",
+          "Celebration": "faceDirection Rosa 1 true",
+          "IgnoreUnlockConditions": false
+        },
+        "Juliet": {
+          "Id": "Juliet",
+          "Condition": null,
+          "Setup": "Juliet? 37 30 0",
+          "Celebration": "faceDirection Juliet? 3 true",
+          "IgnoreUnlockConditions": false
+        },
+        "RodneyOBrien": {
+          "Id": "Rodney",
+          "Condition": "{{HasMod |contains=TheFrenchDodo.RodneyOBrien}}",
+          "Setup": "RodneyOBrien 39 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nora": {
+          "Id": "Nora",
+          "Condition": null,
+          "Setup": "Nora 33 32 0",
+          "Celebration": "{{HasMod |contains=Bagi.Nora.CP}}",
+          "IgnoreUnlockConditions": false
+        },
+        "ToriLK": {
+          "Id": "Tori",
+          "Condition": null,
+          "Setup": "ToriLK 30 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Kent": {
+          "Id": "Kent",
+          "Condition": null,
+          "Setup": "Kent 36 28 0",
+          "Celebration": "faceDrection Kent 1",
+          "IgnoreUnlockConditions": false
+        },
+        "Jodi": {
+          "Id": "Jodi",
+          "Condition": null,
+          "Setup": "Jodi 37 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Vincent": {
+          "Id": "Vincent",
+          "Condition": null,
+          "Setup": "Vincent 37 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Fievel": {
+          "Id": "Fievel",
+          "Condition": "{{HasMod |contains=EastScarp.FGES}}",
+          "Setup": "Fievel 33 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jasper": {
+          "Id": "Jasper",
+          "Condition": null,
+          "Setup": "Jasper? 36 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Aideen": {
+          "Id": "Aideen",
+          "Condition": null,
+          "Setup": "Aideen 39 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Eli": {
+          "Id": "Eli",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Eli 30 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Dylan": {
+          "Id": "Dylan",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Dylan 31 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "TraceV": {
+          "Id": "Trace",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "TraceV 36 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Lewis": {
+          "Id": "Lewis",
+          "Condition": null,
+          "Setup": "Lewis 37 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Demetrius": {
+          "Id": "Demetrius",
+          "Condition": null,
+          "Setup": "Demetrius 37 33 0",
+          "Celebration": "animate Demetrius true true 500 24 25 24 26",
+          "IgnoreUnlockConditions": false
+        },
+        "Robin": {
+          "Id": "Robin",
+          "Condition": null,
+          "Setup": "Robin 38 33 0",
+          "Celebration": "animate Robin true true 500 20 21 20 22",
+          "IgnoreUnlockConditions": false
+        },
+        "Emily": {
+          "Id": "Emily",
+          "Condition": null,
+          "Setup": "Emily 38 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Caroline": {
+          "Id": "Caroline",
+          "Condition": null,
+          "Setup": "Caroline 39 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        }
+      }
+    }
+  ]
+}

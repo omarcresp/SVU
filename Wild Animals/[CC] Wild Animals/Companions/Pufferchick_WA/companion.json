@@ -1,0 +1,563 @@
+{
+	"Name": "Pufferchick_WA",
+	"Type": "Walking",
+	"Scale": 0.8,
+	"EnableSpawnAtDayStart": false,
+	"EnableCharacterCollision": false,
+	"EnableFarmerCollision": false,
+	"EnableShadow": true,
+	"TravelSpeed": 2,
+	"MaxIdleDistance": -1,
+	"MaxDistanceBeforeTeleport": -1,
+	"IdleBehavior": "Wander",
+	"FrameSizeWidth": 32,
+	"FrameSizeHeight": 32,
+
+	// This plays when the companion travels upwards
+	"UpAnimation": {
+		"StartingFrame": 8,
+		"NumberOfFrames": 4,
+		"Duration": 100,
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+        "Frame": 8,
+        "Duration": 3000,
+		},
+		{
+        "Frame": 17,
+        "Duration": 150,
+		},
+		{
+        "Frame": 18,
+        "Duration": 1000,
+		},
+		{
+        "Frame": 19,
+        "Duration": 100,
+		},
+		{
+        "Frame": 18,
+        "Duration": 100,
+		},
+		{
+        "Frame": 19,
+        "Duration": 100,
+		},
+		{
+        "Frame": 18,
+        "Duration": 1000,
+		},
+		{
+        "Frame": 17,
+        "Duration": 150,
+		},
+    ],
+    }
+  },
+	// This plays when the companion travels downwards
+	"DownAnimation": {
+		"StartingFrame": 0,
+		"NumberOfFrames": 4,
+		"Duration": 100,
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+        "Frame": 0,
+        "Duration": 3000,
+		},
+		{
+        "Frame": 12,
+        "Duration": 150,
+		},
+		{
+        "Frame": 13,
+        "Duration": 150,
+		},
+		{
+        "Frame": 14,
+        "Duration": 150,
+		},
+		{
+        "Frame": 15,
+        "Duration": 150,
+		},
+		{
+        "Frame": 16,
+        "Duration": 150,
+		},
+		{
+        "Frame": 12,
+        "Duration": 150,
+		},
+		{
+        "Frame": 13,
+        "Duration": 150,
+		},
+		{
+        "Frame": 14,
+        "Duration": 150,
+		},
+		{
+        "Frame": 15,
+        "Duration": 150,
+		},
+		{
+        "Frame": 16,
+        "Duration": 150,
+		},
+		{
+        "Frame": 12,
+        "Duration": 150,
+		},
+		{
+        "Frame": 13,
+        "Duration": 150,
+		},
+		{
+        "Frame": 14,
+        "Duration": 150,
+		},
+		{
+        "Frame": 15,
+        "Duration": 150,
+		},
+		{
+        "Frame": 16,
+        "Duration": 150,
+		},
+		{
+        "Frame": 12,
+        "Duration": 150,
+		},
+		{
+        "Frame": 13,
+        "Duration": 150,
+		},
+		{
+        "Frame": 14,
+        "Duration": 150,
+		},
+		{
+        "Frame": 15,
+        "Duration": 150,
+		},
+		{
+        "Frame": 16,
+        "Duration": 150,
+		},
+		{
+        "Frame": 12,
+        "Duration": 150,
+		},
+		{
+        "Frame": 13,
+        "Duration": 150,
+		},
+		{
+        "Frame": 14,
+        "Duration": 150,
+		},
+		{
+        "Frame": 15,
+        "Duration": 150,
+		},
+		{
+        "Frame": 16,
+        "Duration": 150,
+		},
+		{
+        "Frame": 12,
+        "Duration": 150,
+		},
+    ],
+    }
+  },
+	// This plays when the companion travels left
+	"LeftAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 4,
+		"Duration": 100,
+		"Flip": true
+		},
+		{
+		"Frame": 5,
+		"Duration": 100,
+		"Flip": true
+		},
+		{
+		"Frame": 6,
+		"Duration": 100,
+		"Flip": true
+		},
+		{
+		"Frame": 7,
+		"Duration": 100,
+		"Flip": true
+		}
+		],
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+        "Frame": 4,
+        "Duration": 3000,
+		"Flip": true
+		},
+		{
+        "Frame": 20,
+        "Duration": 150,
+		"Flip": true
+		},
+		{
+        "Frame": 21,
+        "Duration": 150,
+		"Flip": true
+		},
+		{
+        "Frame": 22,
+        "Duration": 1000,
+		"Flip": true
+		},
+		{
+        "Frame": 23,
+        "Duration": 250,
+		"Flip": true
+		},
+		{
+        "Frame": 22,
+        "Duration": 250,
+		"Flip": true
+		},
+		{
+        "Frame": 23,
+        "Duration": 250,
+		"Flip": true
+		},
+		{
+        "Frame": 22,
+        "Duration": 500,
+		"Flip": true
+		},
+		{
+        "Frame": 23,
+        "Duration": 1000,
+		"Flip": true
+		},
+		{
+        "Frame": 22,
+        "Duration": 500,
+		"Flip": true
+		},
+		{
+        "Frame": 21,
+        "Duration": 150,
+		"Flip": true
+		},
+		{
+        "Frame": 20,
+        "Duration": 150,
+		"Flip": true
+		},
+    ],
+    }
+  },
+	// This plays when the companion travels right
+	"RightAnimation": {
+		"StartingFrame": 4,
+		"NumberOfFrames": 4,
+		"Duration": 100,
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+        "Frame": 4,
+        "Duration": 3000,
+		},
+		{
+        "Frame": 20,
+        "Duration": 150,
+		},
+		{
+        "Frame": 21,
+        "Duration": 150,
+		},
+		{
+        "Frame": 22,
+        "Duration": 1000,
+		},
+		{
+        "Frame": 23,
+        "Duration": 250,
+		},
+		{
+        "Frame": 22,
+        "Duration": 250,
+		},
+		{
+        "Frame": 23,
+        "Duration": 250,
+		},
+		{
+        "Frame": 22,
+        "Duration": 500,
+		},
+		{
+        "Frame": 23,
+        "Duration": 1000,
+		},
+		{
+        "Frame": 22,
+        "Duration": 500,
+		},
+		{
+        "Frame": 21,
+        "Duration": 150,
+		},
+		{
+        "Frame": 20,
+        "Duration": 150,
+		},
+    ],
+    }
+  },
+
+	// Follower Data
+	"MinTilesForNearby": 3,
+	"UpdateWhenPlayerNearby": {
+	"Name": "Pufferchick_WA",
+	"Type": "Walking",
+	"TravelSpeed": 2,
+	"Scale": 0.8,
+	"EnableCharacterCollision": false,
+	"EnableFarmerCollision": false,
+	"EnableShadow": true,
+	"MaxIdleDistance": -1,
+	"MaxDistanceBeforeTeleport": -1,
+	"IdleBehavior": "Jumper",
+	"FrameSizeWidth": 32,
+	"FrameSizeHeight": 32,
+	"ResetWhenPlayerAway": true,
+	"MinTilesForAway": 5,
+
+	// This plays when the companion travels upwards
+	"UpAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 29,
+		"Duration": 100,
+		},
+		{
+		"Frame": 30,
+		"Duration": 100,
+		},
+		{
+		"Frame": 31,
+		"Duration": 100,
+		},
+		{
+		"Frame": 32,
+		"Duration": 100,
+		},
+		{
+		"Frame": 33,
+		"Duration": 100,
+		},
+		],
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 29,
+		"Duration": 100,
+		},
+		{
+		"Frame": 30,
+		"Duration": 100,
+		},
+		{
+		"Frame": 31,
+		"Duration": 100,
+		},
+		{
+		"Frame": 32,
+		"Duration": 100,
+		},
+		{
+		"Frame": 33,
+		"Duration": 100,
+		},
+    ],
+    }
+  },
+	// This plays when the companion travels downwards
+	"DownAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 24,
+		"Duration": 100,
+		},
+		{
+		"Frame": 25,
+		"Duration": 100,
+		},
+		{
+		"Frame": 26,
+		"Duration": 100,
+		},
+		{
+		"Frame": 27,
+		"Duration": 100,
+		},
+		{
+		"Frame": 28,
+		"Duration": 100,
+		},
+		],
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 24,
+		"Duration": 100,
+		},
+		{
+		"Frame": 25,
+		"Duration": 100,
+		},
+		{
+		"Frame": 26,
+		"Duration": 100,
+		},
+		{
+		"Frame": 27,
+		"Duration": 100,
+		},
+		{
+		"Frame": 28,
+		"Duration": 100,
+		},
+		],
+    }
+  },
+	// This plays when the companion travels left
+	"LeftAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 24,
+		"Duration": 100,
+		},
+		{
+		"Frame": 25,
+		"Duration": 100,
+		},
+		{
+		"Frame": 26,
+		"Duration": 100,
+		},
+		{
+		"Frame": 27,
+		"Duration": 100,
+		},
+		{
+		"Frame": 28,
+		"Duration": 100,
+		},
+		],
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 24,
+		"Duration": 100,
+		},
+		{
+		"Frame": 25,
+		"Duration": 100,
+		},
+		{
+		"Frame": 26,
+		"Duration": 100,
+		},
+		{
+		"Frame": 27,
+		"Duration": 100,
+		},
+		{
+		"Frame": 28,
+		"Duration": 100,
+		},
+		],
+    }
+  },
+	// This plays when the companion travels right
+	"RightAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 29,
+		"Duration": 100,
+		},
+		{
+		"Frame": 30,
+		"Duration": 100,
+		},
+		{
+		"Frame": 31,
+		"Duration": 100,
+		},
+		{
+		"Frame": 32,
+		"Duration": 100,
+		},
+		{
+		"Frame": 33,
+		"Duration": 100,
+		},
+		],
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 29,
+		"Duration": 100,
+		},
+		{
+		"Frame": 30,
+		"Duration": 100,
+		},
+		{
+		"Frame": 31,
+		"Duration": 100,
+		},
+		{
+		"Frame": 32,
+		"Duration": 100,
+		},
+		{
+		"Frame": 33,
+		"Duration": 100,
+		},
+    ],
+    }
+  },
+	"OverheadTexts": [
+		{
+		"Text": "<",
+		"ChanceWeight": 0.1,
+		"TextLifetime": 3000
+		}
+	],
+	"Sounds": [
+		{
+		"SoundName": "cluck",
+		"WhenToPlay": "Idle",
+		"TimeBetweenSound": 3000,
+		"ChanceOfPlaying": 0.5
+		}
+	]
+  },
+
+"Sounds": [
+	{
+	"SoundName": "cluck",
+	"WhenToPlay": "Idle",
+	"TimeBetweenSound": 5000,
+	"ChanceOfPlaying": 0.1
+	}
+]  
+}

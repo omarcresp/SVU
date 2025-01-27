@@ -1,0 +1,124 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Wind Weather (Visual Wind, Spring)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "When": {
+        "Season": "Spring"
+      },
+      "Entries": {
+        "Wind": {
+          "Forecast": "{{i18n: Weather.Wind.ForecastSpring}}",
+          "TVTexture": "LooseSprites/Cursors",
+          "TVSource": {
+            "X": 465,
+            "Y": 359
+          },
+          "TVFrames": 4,
+          "Id": "Wind",
+          "Condition": "!CS_LOCATION_IGNORE_DEBRIS_WEATHER Here",
+          "DisplayName": "{{i18n: Weather.Wind}}",
+          "IsDebrisWeather": true,
+          "UseNightTiles": false,
+          "SpawnCritters": true,
+          "AmbientColor": null,
+          "LightingTint": null,
+          "PostLightingTint": null,
+          "Layers": [
+            {
+              "Id": "Debris",
+              "Type": "Debris",
+              "Group": "Debris",
+              "CanBlow": true,
+              "UseSeasonal": -1,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "DebrisLongWindBlown",
+              "Type": "Rain",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/LongWindBlown",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 32,
+                "Height": 32
+              },
+              "Frames": 30,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "8, 0",
+              "Count": 2,
+              "Color": "White",
+              "Opacity": 0.5,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load WW's Wind Weather (Visual Wind, Fall)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "When": {
+        "Season": "Fall"
+      },
+      "Entries": {
+        "Wind": {
+          "Forecast": "{{i18n: Weather.Wind.ForecastFall}}",
+          "TVTexture": "LooseSprites/Cursors",
+          "TVSource": {
+            "X": 413,
+            "Y": 359
+          },
+          "TVFrames": 4,
+          "Id": "Wind",
+          "Condition": "!CS_LOCATION_IGNORE_DEBRIS_WEATHER Here",
+          "DisplayName": "{{i18n: Weather.Wind}}",
+          "IsDebrisWeather": true,
+          "UseNightTiles": false,
+          "SpawnCritters": true,
+          "AmbientColor": null,
+          "LightingTint": null,
+          "PostLightingTint": null,
+          "Layers": [
+            {
+              "Id": "Debris",
+              "Type": "Debris",
+              "Group": "Debris",
+              "CanBlow": true,
+              "UseSeasonal": -1,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "DebrisLongWindBlown",
+              "Type": "Rain",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/LongWindBlown",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 32,
+                "Height": 32
+              },
+              "Frames": 30,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "8, 0",
+              "Count": 2,
+              "Color": "White",
+              "Opacity": 0.5,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

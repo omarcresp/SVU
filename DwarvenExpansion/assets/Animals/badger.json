@@ -1,0 +1,142 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/Badger",
+			"FromFile": "assets/Animals/Badger.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/BadgerBaby",
+			"FromFile": "assets/Animals/BadgerBaby.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Meat_Badger": {
+                    "Name": "Badger Meat",
+                    "DisplayName": "{{i18n:Meat_Badger.DisplayName}}",
+                    "Description": "{{i18n:Meat_Badger.Description}}",
+                    "Type": "Basic",
+                    "Category": "-14",
+                    "Price": 80,
+                    "Edibility": 10,
+                    "ContextTags": [
+                        "{{ModId}}"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 247
+                }
+			}
+		},       	
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}_Badger": {
+					"DisplayName": "{{i18n:Badger.DisplayName}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": 800,
+					"SellPrice": 1600,
+					"ShopTexture": "Mods/DwarvenExpansion/Animals/ShopImages",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 112,
+						"Width": 32,
+						"Height": 16
+					},
+					"ShopDisplayName": "{{i18n:Badger.ShopDisplayName}}",
+					"ShopDescription": "{{i18n:Badger.ShopDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n:Badger.ShopMissingBuildingDescription}}",
+					"RequiredBuilding": "Barn",
+					"UnlockCondition": "PLAYER_HEARTS ANY Dwarf 3",
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{i18n:Badger.BirthText}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": true,
+					"DaysToProduce": 1,
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+						{
+							"Id": "CaveCarrot1",
+							"ItemId": "78"
+						},
+						{
+							"Id": "CaveCarrot2",
+							"ItemId": "78"
+						},
+						{
+							"Id": "Clay1",
+							"ItemId": "330"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "CaveCarrot1",
+							"ItemId": "78"
+						},
+						{
+							"Id": "CaveCarrot1",
+							"ItemId": "78"
+						},
+						{
+							"Id": "WinterRoot",
+							"ItemId": "412"
+						},
+						{
+							"Id": "Potato",
+							"ItemId": "192"
+						}
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 300,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "rabbit",
+					"BabySound": "rabbit",
+					"Texture": "Mods/DwarvenExpansion/Animals/Badger",
+					"HarvestedTexture": null,
+					"BabyTexture": "Mods/DwarvenExpansion/Animals/BadgerBaby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0
+					},
+					"SwimOffset": {
+						"X": 0,
+						"Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 1,
+					"HappinessDrain": 7,
+					"UpDownPetHitboxTileSize": "1, 1.75",
+					"LeftRightPetHitboxTileSize": "1.75, 1.25",
+					"BabyUpDownPetHitboxTileSize": "1, 1.75",
+					"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+					"StatToIncrementOnProduce": [],
+					"ShowInSummitCredits": false,
+					"CustomFields": {
+						"meatIndex": "{{ModId}}_Meat_Badger"
+					}
+				}
+			}
+		}
+	]
+}

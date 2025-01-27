@@ -1,0 +1,56 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Mods/mistyspring.ItemExtensions/MixedSeeds",
+			"When": {"HasMod|contains=mistyspring.ItemExtensions": true, "Enhanced Mixed Flower Seeds": true},
+			"Entries": {
+				"MixedFlowerSeeds": [
+					//spring crops
+					{
+						"ItemId": "Cornucopia_PansySeeds",
+						"Condition": "ANY \"LOCATION_SEASON Here spring\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					},
+					{
+						"ItemId": "Cornucopia_PinkCatSeeds",
+						"Condition": "ANY \"LOCATION_SEASON Here spring\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					},
+					{
+						"ItemId": "Cornucopia_ChamomileSeeds",
+						"Condition": "{{Enable Extended Flowers Pack}}, ANY \"LOCATION_SEASON Here spring\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					},
+					{
+						"ItemId": "Cornucopia_CarnationSeeds",
+						"Condition": "{{Enable Extended Flowers Pack}}, ANY \"LOCATION_SEASON Here spring summer\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					},
+					//summer crops
+					{
+						"ItemId": "Cornucopia_BlueMistSeeds",
+						"Condition": "ANY \"LOCATION_SEASON Here summer\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					},
+					{
+						"ItemId": "Cornucopia_DaisySeeds",
+						"Condition": "{{Enable Extended Flowers Pack}}, ANY \"LOCATION_SEASON Here summer\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					},
+					{
+						"ItemId": "Cornucopia_ButtercupSeeds",
+						"Condition": "{{Enable Extended Flowers Pack}}, ANY \"LOCATION_SEASON Here summer\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					},
+					//fall seeds
+					{
+						"ItemId": "Cornucopia_ChrysanthemumSeeds",
+						"Condition": "ANY \"LOCATION_SEASON Here fall\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					},
+					{
+						"ItemId": "Cornucopia_DahliaSeeds",
+						"Condition": "{{Enable Extended Flowers Pack}}, ANY \"LOCATION_SEASON Here fall\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					},
+					{
+						"ItemId": "Cornucopia_PurpleConeflowerSeeds",
+						"Condition": "{{Enable Extended Flowers Pack}}, ANY \"LOCATION_SEASON Here fall\" \"LOCATION_IS_INDOORS Here\" \"LOCATION_NAME Here IslandWest\""
+					}
+				]
+			}
+		}
+	]
+}

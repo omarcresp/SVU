@@ -1,0 +1,54 @@
+{
+	"Changes": [
+
+		// **** ALEX GRIDBALL DATE ****
+
+		//Date Initiation
+		{
+			"LogName": "Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116029/f Alex {{MinFriendship}}/O Alex/t 500 1500": "continue/-10000 -1000/farmer -100 -100 2 Alex -100 -100 2/skippable/warp Alex -100 -100/warp farmer -100 -100/faceDirection Alex 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Alex 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Alex \"{{i18n:Alex.Gridball.Intro.1}}\"/pause 500/emote farmer 8/pause 500/speak Alex \"{{i18n:Alex.Gridball.Intro.2}}\"/pause 300/emote farmer 40/pause 200/speak Alex \"{{i18n:Alex.Gridball.Intro.3}}\"/pause 200/emote farmer 16/pause 200/speak Alex \"{{i18n:Alex.Gridball.Intro.4}}\"/pause 1000/question fork0 \"{{i18n:AcceptDate.Choice | Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork dateYes/playMusic none/pause 1000/emote Alex 28/speak Alex \"{{i18n:Alex.Gridball.Intro.Refusal.5}}\"/pause 500/faceDirection Alex 3 true/pause 1000/emote Alex 40/pause 400/faceDirection Alex 2/pause 400/speak Alex \"{{i18n:Alex.Gridball.Intro.Refusal.6}}\"/pause 800/faceDirection Alex 1 true/pause 100/faceDirection Alex 0/pause 400/playSound doorClose/warp Alex -100 -100/pause 2000/end dialogue Alex \"{{i18n:Alex.Gridball.Refusal.7.{{Gender}} }}\"",
+
+				"dateYes": "pause 200/addMailReceived alexGridballDateAgree/emote Alex 20/pause 500/speak Alex \"{{i18n:Alex.Gridball.Intro.5}}\"/pause 500/end dialogue Alex \"{{i18n:Alex.Gridball.Intro.End}}\"",
+
+			},
+			"When": {
+				"Date": "Alex",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": true,
+				"UniqueDateType": "alexGridball",
+			},
+		},
+
+		//Alex Gridball Date - Suggestive
+		{
+			"LogName": "Alex Gridball Date",
+			"Action": "EditData",
+			"Target": "Data/Events/BusStop",
+			"Entries": {
+				"1116030/n alexGridballDateAgree/t 1200 1900": "playful/14 11/farmer -1000 -1000 0 Alex 24 13 2 Pam -1000 -1000 2 Shane -1000 -1000 2 Jas -1000 -1000 2 Gus -1000 -1000 2/makeInvisible 7 11 12 12/ignoreCollisions farmer/friendship Alex {{FriendBonus}}/skippable/pause 1500/emote Alex 40/warp Pam 22 10/playSound doorClose/pause 600/emote Pam 12/speak Pam \"{{i18n:Alex.Gridball.1}}\"/faceDirection Alex 0/emote Alex 16/speak Alex \"{{i18n:Alex.Gridball.2}}\"/faceDirection Alex 2/textAboveHead Pam \"{{i18n:Alex.Gridball.3}}\"/pause 600/faceDirection Pam 0/warp Pam -1000 -1000/playSound doorClose/warp farmer 24 22/move farmer 0 -8 0 true/pause 1000/jump Alex/pause 600/speak Alex \"{{i18n:Alex.Gridball.4}}\"/emote farmer 60/move Alex -2 0 3 true/move farmer -2 0 3 false/move Alex 0 -3 2 true/move farmer 0 -3 0 false/speak Alex \"{{i18n:Alex.Gridball.5}}\"/emote farmer 32/faceDirection Alex 0/warp Alex -1000 -1000/playSound doorClose/pause 300/move farmer 0 -1 0/pause 300/warp farmer -1000 -1000/playSound doorClose/fade/stopMusic/viewport 1000 1000/pause 500/playSound busDoorOpen/beginSimultaneousCommand/changeToTemporaryMap Stadium false/faceDirection farmer 2 true/warp farmer 22 15/warp Alex 22 19/faceDirection Pam 2 true/warp Pam 19 14/warp Shane 27 16/warp Jas 26 16/warp Gus 18 14/endSimultaneousCommand/pause 2000/fade/playMusic Stadium_ambient/viewport 23 15/pause 1000/jump Alex/move farmer 0 3 2/speak Alex \"{{i18n:Alex.Gridball.6}}\"/speed Alex 5/move Alex -2 0 1 true/move farmer 0 1 3 false/move farmer -1 0 3/speak Alex \"{{i18n:Alex.Gridball.7}}\"/faceDirection Alex 2/faceDirection farmer 2/pause 500/jump Alex/speak Alex \"{{i18n:Alex.Gridball.8}}\"/emote farmer 32/pause 500/playSound Stadium_cheer/textAboveHead Alex \"{{i18n:Alex.Gridball.9}}\"/jump Alex/playSound Stadium_cheer/speak Alex \"{{i18n:Alex.Gridball.10}}\"/emote farmer 32/pause 1000/playSound whistle/emote Alex 8/speak Alex \"{{i18n:Alex.Gridball.11}}\"/pause 500/playMusic crane_game_fast/message \"{{i18n:Alex.Gridball.12}}\"/pause 500/message \"{{i18n:Alex.Gridball.13}}\"/pause 500/playSound whistle/pause 50/playSound whistle/jump Alex/jump farmer/emote Alex 16 true/emote farmer 16/message \"{{i18n:Alex.Gridball.14}}\"/speak Alex \"{{i18n:Alex.Gridball.15}}\"/faceDirection Alex 1 true/faceDirection farmer 3/playMusic musicboxsong/speak Alex \"{{i18n:Alex.Gridball.16}}\"/emote farmer 20/showFrame farmer 101 true/playSound dwop/animate Alex false true 500 42/positionOffset farmer -10 0/specificTemporarySprite heart 21 18/pause 2500/stopAnimation Alex 4/positionOffset farmer 10 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/message \"{{i18n:Alex.Gridball.17}}\"/emote Alex 20/speak Alex \"{{i18n:Alex.Gridball.18}}\"/emote farmer 20/playSound whistle/emote Alex 16/faceDirection Alex 2/jump Alex/pause 400/speak Alex \"{{i18n:Alex.Gridball.19}}\"/faceDirection farmer 2/pause 1400/playSound Stadium_cheer/jump Alex/textAboveHead Alex \"{{i18n:Alex.Gridball.20}}\"/pause 500/speak Alex \"{{i18n:Alex.Gridball.21}}\"/emote farmer 32/pause 1000/playSound Stadium_cheer/jump Alex/textAboveHead Alex \"{{i18n:Alex.Gridball.22}}\"/fade/viewport -1000 -1000/pause 1600/message \"{{i18n:Alex.Gridball.23}}\"/playSound busDoorOpen/beginSimultaneousCommand/changeLocation BusStop/makeInvisible 7 11 12 12/warp Jas 1000 1200/warp Alex 1000 1200/warp farmer 1000 1200/warp Shane 1000 1200/warp Gus 1000 1200/warp Pam 1000 1200/endSimultaneousCommand/pause 2600/fade/viewport 24 11/pause 1000/warp farmer 22 10/playSound doorClose/pause 400/move farmer 0 2 0/pause 250/warp Alex 22 10/playSound doorClose/pause 250/move Alex 0 1 2/speak Alex \"{{i18n:Alex.Gridball.24}}\"/emote farmer 32/speak Alex \"{{i18n:Alex.Gridball.25}}\"/pause 700/faceDirection Alex 0/pause 600/faceDirection Alex 2/emote farmer 8/speak Alex \"{{i18n:Alex.Gridball.26.Suggestive}}\"/emote farmer 16/speed farmer 7/move farmer 0 10 2/move Alex 0 10 2 true/fade/viewport -1000 -1000/pause 2000/changePortrait Alex Beach/speak Alex \"{{i18n:Alex.Gridball.27.Suggestive}}\"/pause 1500/end",
+			},
+			"When": {
+				"Date": "Alex",
+				"SuggestiveEndings": "enabled",
+			},
+		},
+
+		//Alex Gridball Date - Non Suggestive
+		{
+			"LogName": "Alex Gridball Date",
+			"Action": "EditData",
+			"Target": "Data/Events/BusStop",
+			"Entries": {
+				"1116030/n alexGridballDateAgree/t 1200 1900": "playful/14 11/farmer -1000 -1000 0 Alex 24 13 2 Pam -1000 -1000 2 Shane -1000 -1000 2 Jas -1000 -1000 2 Gus -1000 -1000 2/makeInvisible 7 11 12 12/ignoreCollisions farmer/friendship Alex {{FriendBonus}}/skippable/pause 1500/emote Alex 40/warp Pam 22 10/playSound doorClose/pause 600/emote Pam 12/speak Pam \"{{i18n:Alex.Gridball.1}}\"/faceDirection Alex 0/emote Alex 16/speak Alex \"{{i18n:Alex.Gridball.2}}\"/faceDirection Alex 2/textAboveHead Pam \"{{i18n:Alex.Gridball.3}}\"/pause 600/faceDirection Pam 0/warp Pam -1000 -1000/playSound doorClose/warp farmer 24 22/move farmer 0 -8 0 true/pause 1000/jump Alex/pause 600/speak Alex \"{{i18n:Alex.Gridball.4}}\"/emote farmer 60/move Alex -2 0 3 true/move farmer -2 0 3 false/move Alex 0 -3 2 true/move farmer 0 -3 0 false/speak Alex \"{{i18n:Alex.Gridball.5}}\"/emote farmer 32/faceDirection Alex 0/warp Alex -1000 -1000/playSound doorClose/pause 300/move farmer 0 -1 0/pause 300/warp farmer -1000 -1000/playSound doorClose/fade/stopMusic/viewport 1000 1000/pause 500/playSound busDoorOpen/beginSimultaneousCommand/changeToTemporaryMap Stadium false/faceDirection farmer 2 true/warp farmer 22 15/warp Alex 22 19/faceDirection Pam 2 true/warp Pam 19 14/warp Shane 27 16/warp Jas 26 16/warp Gus 18 14/endSimultaneousCommand/pause 2000/fade/playMusic Stadium_ambient/viewport 23 15/pause 1000/jump Alex/move farmer 0 3 2/speak Alex \"{{i18n:Alex.Gridball.6}}\"/speed Alex 5/move Alex -2 0 1 true/move farmer 0 1 3 false/move farmer -1 0 3/speak Alex \"{{i18n:Alex.Gridball.7}}\"/faceDirection Alex 2/faceDirection farmer 2/pause 500/jump Alex/speak Alex \"{{i18n:Alex.Gridball.8}}\"/emote farmer 32/pause 500/playSound Stadium_cheer/textAboveHead Alex \"{{i18n:Alex.Gridball.9}}\"/jump Alex/playSound Stadium_cheer/speak Alex \"{{i18n:Alex.Gridball.10}}\"/emote farmer 32/pause 1000/playSound whistle/emote Alex 8/speak Alex \"{{i18n:Alex.Gridball.11}}\"/pause 500/playMusic crane_game_fast/message \"{{i18n:Alex.Gridball.12}}\"/pause 500/message \"{{i18n:Alex.Gridball.13}}\"/pause 500/playSound whistle/pause 50/playSound whistle/jump Alex/jump farmer/emote Alex 16 true/emote farmer 16/message \"{{i18n:Alex.Gridball.14}}\"/speak Alex \"{{i18n:Alex.Gridball.15}}\"/faceDirection Alex 1 true/faceDirection farmer 3/playMusic musicboxsong/speak Alex \"{{i18n:Alex.Gridball.16}}\"/emote farmer 20/showFrame farmer 101 true/playSound dwop/animate Alex false true 500 42/positionOffset farmer -10 0/specificTemporarySprite heart 21 18/pause 2500/stopAnimation Alex 4/positionOffset farmer 10 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/message \"{{i18n:Alex.Gridball.17}}\"/emote Alex 20/speak Alex \"{{i18n:Alex.Gridball.18}}\"/emote farmer 20/playSound whistle/emote Alex 16/faceDirection Alex 2/jump Alex/pause 400/speak Alex \"{{i18n:Alex.Gridball.19}}\"/faceDirection farmer 2/pause 1400/playSound Stadium_cheer/jump Alex/textAboveHead Alex \"{{i18n:Alex.Gridball.20}}\"/pause 500/speak Alex \"{{i18n:Alex.Gridball.21}}\"/emote farmer 32/pause 1000/playSound Stadium_cheer/jump Alex/textAboveHead Alex \"{{i18n:Alex.Gridball.22}}\"/fade/viewport -1000 -1000/pause 1600/message \"{{i18n:Alex.Gridball.23}}\"/playSound busDoorOpen/beginSimultaneousCommand/changeLocation BusStop/makeInvisible 7 11 12 12/warp Jas 1000 1200/warp Alex 1000 1200/warp farmer 1000 1200/warp Shane 1000 1200/warp Gus 1000 1200/warp Pam 1000 1200/endSimultaneousCommand/pause 2600/fade/viewport 24 11/pause 1000/warp farmer 22 10/playSound doorClose/pause 400/move farmer 0 2 0/pause 250/warp Alex 22 10/playSound doorClose/pause 250/move Alex 0 1 2/speak Alex \"{{i18n:Alex.Gridball.24}}\"/emote farmer 32/speak Alex \"{{i18n:Alex.Gridball.25}}\"/pause 700/speak Alex \"{{i18n:Alex.Gridball.26}}\"/emote farmer 32/move farmer 0 10 2 true/move Alex 0 10 2 false/fade/viewport -1000 -1000/pause 2000/message \"{{i18n:Alex.Gridball.27}}\"/pause 1500/end",
+			},
+			"When": {
+				"Date": "Alex",
+				"SuggestiveEndings": "disabled",
+			},
+		},
+
+	],
+}

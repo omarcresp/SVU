@@ -1,0 +1,141 @@
+{
+	"Format": "2.0.0",
+	"DynamicTokens": [
+		{
+			"Name": "MoonCycleToken",
+			"Value": "{{Random: Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Eclipse, Blue}}",
+			"When": {
+				"Day |contains= 1, 14, 15, 28": true,
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "{{Random: Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Full, Moon, Eclipse, Blue}}",
+			"When": {
+				"Day |contains= 1, 14, 15, 28": true,
+				"HasMod |contains= skellady.SBVCP": true
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "{{Random: Full, Full, Full, Full, Full, Harvest}}",
+			"When": {
+				"Day |contains= 1, 14, 15, 28": true,
+				"Season |contains= fall": true
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "ThreeQuarters",
+			"When": {
+				"Day |contains= 2, 3, 16, 17": true
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "Half",
+			"When": {
+				"Day |contains= 4, 18": true
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "Crescent",
+			"When": {
+				"Day |contains= 5, 6, 19, 20": true
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "New",
+			"When": {
+				"Day |contains= 7, 8, 21, 22": true
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "CrescentReverse",
+			"When": {
+				"Day |contains= 9, 10, 23, 24": true
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "HalfReverse",
+			"When": {
+				"Day |contains= 11, 25": true
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "ThreeQuartersReverse",
+			"When": {
+				"Day |contains= 12, 13, 26, 27": true
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "Blood",
+			"When": {
+				"Weather": "Kana.WeatherWonders_BloodMoon",
+				"HasMod": "Kana.WeatherWonders"
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "Blue",
+			"When": {
+				"Weather": "Kana.WeatherWonders_BlueMoon",
+				"HasMod": "Kana.WeatherWonders"
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "Harvest",
+			"When": {
+				"Weather": "Kana.WeatherWonders_HarvestMoon",
+				"HasMod": "Kana.WeatherWonders"
+			}
+		},
+		{
+			"Name": "MoonCycleToken",
+			"Value": "Eclipse",
+			"When": {
+				"Weather": "Kana.WeatherWonders_Eclipse",
+				"HasMod": "Kana.WeatherWonders"
+			}
+		},
+	],
+	"Changes": [
+		{
+			"LogName": "Moon Cycle",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Moon_{{MoonCycleToken}}.png",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 7,
+				"Y": 1462,
+				"Width": 44,
+				"Height": 45
+			}
+		},
+		{
+			"LogName": "Moon Cycle",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Moon_NoMoon.png",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 641,
+				"Y": 834,
+				"Width": 44,
+				"Height": 45
+			},
+			"When": 
+			{
+				"Day |contains= 27": false
+			}
+		}
+	]
+}

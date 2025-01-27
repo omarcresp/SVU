@@ -1,0 +1,136 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Lewis_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Lewis",
+      "Entries": {
+        "AcceptGift_(O)200": "{{i18n: CFE_Lewis_VegetableMedley}}"
+        //every time UGDE updates, or someone requests special compat with a different mod, this section may be updated to include the conflicting key. Mods other than UGDE will need to be added to the list of mods to recognize, found in the dynamic tokens section of content.json
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Lewis}}' = 'true' OR ('{{CFE_Lewis}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Lewis_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Lewis": "{{i18n: CFE_Lewis_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Lewis}}' = 'true' OR ('{{CFE_Lewis}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Lewis_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Lewis",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Lewis_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Lewis_RockCandy}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Lewis_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Lewis_RabbitsFoot}}",
+        "AcceptGift_(O)235": "{{i18n: CFE_Lewis_AutumnsBounty}}",
+        "AcceptGift_(O)614": "{{i18n: CFE_Lewis_GreenTea{{GenderNeutralCompat}}}}",
+        "AcceptGift_(O)208": "{{i18n: CFE_Lewis_GlazedYams}}",
+        "AcceptGift_(O)260": "{{i18n: CFE_Lewis_HotPepper}}"
+      },
+      "When": { "Query: '{{CFE_Lewis}}' = 'true' OR ('{{CFE_Lewis}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Lewis_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Lewis",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Lewis_spring1y2}}",
+        "spring_3_1": "{{i18n: CFE_Lewis_spring3}}",
+        "spring_3_2": "{{i18n: CFE_Lewis_spring3}}",
+        "spring_12_1": "{{i18n: CFE_Lewis_spring12}}",
+        "spring_12_2": "{{i18n: CFE_Lewis_spring12}}",
+        "spring_14_1": "{{i18n: CFE_Lewis_spring14}}",
+        "spring_14_2": "{{i18n: CFE_Lewis_spring14}}",
+        "spring_23_1": "{{i18n: CFE_Lewis_spring23}}",
+        "spring_23_2": "{{i18n: CFE_Lewis_spring23}}",
+
+        "summer_10_1": "{{i18n: CFE_Lewis_summer10}}",
+        "summer_10_2": "{{i18n: CFE_Lewis_summer10}}",
+        "summer_28_1": "{{i18n: CFE_Lewis_summer28}}",
+        "summer_28_2": "{{i18n: CFE_Lewis_summer28}}",
+
+        "fall_15_1": "{{i18n: CFE_Lewis_fall15}}",
+        "fall_15_2": "{{i18n: CFE_Lewis_fall15}}",
+        "fall_28_1": "{{i18n: CFE_Lewis_fall28}}",
+        "fall_28_2": "{{i18n: CFE_Lewis_fall28}}",
+
+        "winter_1_1": "{{i18n: CFE_Lewis_winter1}}",
+        "winter_1_2": "{{i18n: CFE_Lewis_winter1}}",
+        "winter_7_1": "{{i18n: CFE_Lewis_winter7}}",
+        "winter_7_2": "{{i18n: CFE_Lewis_winter7}}",
+        "winter_15_1": "{{i18n: CFE_Lewis_winter15}}",
+        "winter_15_2": "{{i18n: CFE_Lewis_winter15}}",
+        "winter_24_1": "{{i18n: CFE_Lewis_winter24}}",
+        "winter_24_2": "{{i18n: CFE_Lewis_winter24}}",
+        "winter_28_1": "{{i18n: CFE_Lewis_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Lewis_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Lewis_summerMon10}}",
+        "summer_Mon4": "{{i18n: CFE_Lewis_summerMon4}}",
+        "summer_Mon4_old": "{{i18n: CFE_Lewis_summer_Mon4_old}}",
+        "summer_Mon4_007": "{{i18n: CFE_Lewis_summer_Mon4_007}}",
+        "summer_Mon4_008": "{{i18n: CFE_Lewis_summer_Mon4_008}}",
+        "summer_Tue8": "{{i18n: CFE_Lewis_summerTue8}}",
+        "summer_Tue4": "{{i18n: CFE_Lewis_summerTue4}}",
+        "summer_Wed6": "{{i18n: CFE_Lewis_summerWed6}}",
+        "summer_Thu4": "{{i18n: CFE_Lewis_summerThu4}}",
+        "summer_Sat10": "{{i18n: CFE_Lewis_summerSat10}}",
+        "summer_Sun6": "{{i18n: CFE_Lewis_summerSun6}}",
+
+        "fall_Mon4": "{{i18n: CFE_Lewis_fallMon4}}",
+        "fall_Tue6": "{{i18n: CFE_Lewis_fallTue6}}",
+        "fall_Wed4": "{{i18n: CFE_Lewis_fallWed4}}",
+        "fall_Thu10": "{{i18n: CFE_Lewis_fallThu10}}",
+        "fall_Thu4": "{{i18n: CFE_Lewis_fallThu4}}",
+        "fall_Fri10": "{{i18n: CFE_Lewis_fallFri10}}",
+        "fall_Sat10": "{{i18n: CFE_Lewis_fallSat10}}",
+        "fall_Sun4": "{{i18n: CFE_Lewis_fallSun4}}",
+
+        "winter_Mon8": "{{i18n: CFE_Lewis_winterMon8}}",
+        "winter_Tue8": "{{i18n: CFE_Lewis_winterTue8}}",
+        "winter_Wed10": "{{i18n: CFE_Lewis_winterWed10}}",
+        "winter_Thu8": "{{i18n: CFE_Lewis_winterThu8}}",
+        "winter_Fri10": "{{i18n: CFE_Lewis_winterFri10}}",
+        "winter_Sat10": "{{i18n: CFE_Lewis_winterSat10}}",
+        "winter_Sun10": "{{i18n: CFE_Lewis_winterSun10}}",
+
+        "Mon6": "{{i18n: CFE_Lewis_Mon6}}",
+        "Mon2": "{{i18n: CFE_Lewis_Mon2}}",
+        "Tue8": "{{i18n: CFE_Lewis_Tue8}}",
+        "Wed6": "{{i18n: CFE_Lewis_Wed6}}",
+        "Wed2": "{{i18n: CFE_Lewis_Wed2}}",
+        "Thu6": "{{i18n: CFE_Lewis_Thu6}}",
+        "Thu2": "{{i18n: CFE_Lewis_Thu2}}",
+        "Fri4": "{{i18n: CFE_Lewis_Fri4}}",
+        "Fri2": "{{i18n: CFE_Lewis_Fri2}}",
+        "Sat8": "{{i18n: CFE_Lewis_Sat8}}",
+        "Sat2": "{{i18n: CFE_Lewis_Sat2}}",
+        "Sun4": "{{i18n: CFE_Lewis_Sun4}}",
+        "Sun2": "{{i18n: CFE_Lewis_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Thu": "{{i18n: CFE_Lewis_summerThu}}",
+        "summer_Fri": "{{i18n: CFE_Lewis_summerFri}}",
+        "fall_Mon": "{{i18n: CFE_Lewis_fallMon}}",
+        "fall_Tue": "{{i18n: CFE_Lewis_fallTue}}",
+        "winter_Tue": "{{i18n: CFE_Lewis_winterTue}}",
+        "winter_Thu": "{{i18n: CFE_Lewis_winterThu}}",
+
+        "Thu": "{{i18n: CFE_Lewis_Thu}}",
+        "Sun": "{{i18n: CFE_Lewis_Sun}}"
+      },
+      "When": { "Query: '{{CFE_Lewis}}' = 'true' OR ('{{CFE_Lewis}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

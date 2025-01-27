@@ -1,0 +1,144 @@
+{
+"Changes": [
+
+//*** SILLY THE SLIME ****
+
+		{
+		"LogName": "Adding AGE Characters (2)",
+		"Action": "EditData",
+		"Target": "Data/Characters",
+                "Update": "OnTimeChange, OnLocationChange",
+		"Entries": {
+			"Silly": {
+                             "DisplayName": "{{i18n:sillyNPCnamedisplay}}",
+                             "Gender": "Undefined",
+                             "Age": "Child",
+                             "Manner": "Polite",
+                             "SocialAnxiety": "Shy",
+                             "Optimism": "Positive",
+                             "HomeRegion": "Town",
+                             "CanBeRomanced": false,
+                             "CanSocialize": true,
+                             "IsDarkSkinned": false,
+                             "CanGreetNearbyCharacters": false,
+                             "PerfectionScore": false,
+                             "IntroductionsQuest": false,
+                             "ItemDeliveryQuests": false,
+                             "CanVisitIsland": false,
+                             "WinterStarParticipant": false,
+                             "Calendar": "HiddenAlways",
+                             "SocialTab": "HiddenUntilMet",
+                             "SpawnIfMissing" : true,
+                             "Home": [
+                                     {
+                                         "Id": "Default",
+                                         "Location": "Custom_GE_MonsterResearchWing",
+                                         "Tile": {
+                                                 "X": 17,
+                                                 "Y": 5,
+                                                 },     
+                                         "Direction": "down"
+                                     }     
+                                   ],     
+			        },
+			},
+                "When": { "HasFlag: hostPlayer |contains=choseZinnia": "true", },
+		},
+
+
+		//LOAD EMPTY JSONS
+		  {
+			"LogName": "Load Empty Json Dialogues",
+   			"Action": "Load",
+   			"Target": "Characters/Dialogue/Silly, Characters/schedules/Silly, Strings/schedules/Silly",
+   			"FromFile": "Data/empty.json"
+  		},
+
+		{
+			"LogName": "Silly Sprites",
+			"Action": "Load",
+			"Target": "Characters/Silly",
+			"FromFile": "Assets/Characters/Silly.png",
+		},
+
+		{
+			"LogName": "Silly Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Silly",
+			"FromFile": "Assets/Portraits/Silly.png",
+		},
+
+		{
+			"LogName": "Silly Beach Sprites",
+			"Action": "Load",
+			"Target": "Characters/Silly_Beach",
+			"FromFile": "Assets/Characters/Silly_Beach.png",
+		},
+
+		{
+			"LogName": "Silly Beach Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Silly_Beach",
+			"FromFile": "Assets/Portraits/Silly_Beach.png",
+		},
+
+		{
+			"LogName": "Silly Dialogue",
+			"Action": "Include",
+			"FromFile": "Data/NPCs/Silly/dialogue.json",
+		},
+
+		{
+            		"Action": "Include",
+            		"FromFile": "Data/NPCs/Silly/schedule.json",
+        	},
+
+		{
+            	"Action": "EditData",
+            	"Target": "Data/NPCGiftTastes",
+	    	"Update": "OnTimeChange, OnLocationChange",
+            	"Entries": {
+                	"Silly": "{{i18n:GiftReactionSilly.love}}/400 613 394 268 340 344 158 796 supert_FrozenSlimeSoul supert_FireSlimeSoul supert_SlimeSoul supert_SlimeHeart supert_TrueSlimeEnergy supert_Zinnia/{{i18n:GiftReactionSilly.like}}/437 439 413 680 857 -15 834 -2 414 -81/{{i18n:GiftReactionSilly.dislike}}/-4/{{i18n:GiftReactionSilly.hate}}/557 -5 -6 -26 supert_SlimeGem/{{i18n:GiftReactionSilly.neutral}}/-28 428/",
+            		},
+       		},
+
+		 {
+            	"Action": "EditData",
+            	"Target": "Data/NPCGiftTastes",
+	    	"Update": "OnTimeChange, OnLocationChange",
+            	"Fields": {
+                	"Silly": {
+				0: "{{i18n:GiftReactionSillyAlt.love}}",
+				2: "{{i18n:GiftReactionSillyAlt.like}}",
+				4: "{{i18n:GiftReactionSillyAlt.dislike}}",
+				6: "{{i18n:GiftReactionSillyAlt.hate}}",
+				8: "{{i18n:GiftReactionSillyAlt.neutral}}",
+			},
+            	},
+	    	"When": {
+			"HasSeenEvent: currentPlayer |contains=9280011, 9280012": "true",
+		},
+        	},
+                {
+                "Action": "EditData",
+		"Target": "Data/Characters",
+                "Update": "OnTimeChange, OnLocationChange",
+		"Entries": {
+			"Silly": {
+                             "DisplayName": "{{i18n:sillyNPCnamedisplay}}",
+                             "Gender": "Undefined",
+                             "Age": "Child",
+                             "Manner": "Polite",
+                             "SocialAnxiety": "Shy",
+                             "Optimism": "Positive",
+                             "HomeRegion": "Town",
+                             "CanGreetNearbyCharacters": true,
+                             "CanVisitIsland": true,
+                             "WinterStarParticipant": true,
+			}
+		      },
+                "When": { "HasSeenEvent: anyPlayer |contains=9280017": "true", },
+                },
+
+],
+}

@@ -1,0 +1,431 @@
+{
+  "Changes": [
+
+    {
+      "LogName": "Patch for Violet Moon",
+      "Action": "EditMap",
+      "Target": "Maps/DN.SnS_VioletMoon",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_VioletMoonBooth_Patch.tmx",
+      "PatchMode": "Replace",
+      "ToArea": {
+        "X": 34,
+        "Y": 57,
+        "Width": 4,
+        "Height": 5
+      } /*,
+      "When": {
+        "HasMod": "DN.SnS"
+      }*/
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "MadDog.HashtagBearFam_VioletMoonTeren": {
+          "Id": "MadDog.HashtagBearFam_VioletMoonTeren",
+          "Owners": [ //don't need this
+            {
+              "Name": "AnyOrNone",
+              "Id": "MadDog.HashtagBearFam_TerenVioletMoonLines",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.VioletMoon.Teren.ShopLine.{{Random:1++2|inputSeparator=++}}}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "MadDog.HashtagBearfam_TofurkeyDrumstick",
+              "ItemID": "MadDog.HashtagBearFam_TofurkeyDrumstick",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 500
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              //"Price": "1600",
+              //"AvailableStock": 1,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_TurkeyDrumstick",
+              "ItemID": "MadDog.HashtagBearFam_TurkeyDrumstick",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 550
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              //"Price": "1600",
+              //"AvailableStock": 1,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_VeggieStew",
+              "ItemID": "MadDog.HashtagBearFam_VeggieStew",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 500
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              //"Price": "1600",
+              //"AvailableStock": 1,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_BeefStew",
+              "ItemID": "MadDog.HashtagBearFam_BeefStew",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 550
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              //"Price": "1600",
+              //"AvailableStock": 1,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_FerskenPeach_Mead_Tankard",
+              "ItemID": "MadDog.HashtagBearFam_FerskenPeach_Mead_Tankard",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 750
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              //"Price": "1600"
+              //"AvailableStock": 1,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GreenTea",
+              "ItemID": "(O)614",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              //"Price": "1600"
+              //"AvailableStock": 1,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "(O)MadDog.HashtagBearFam_TerenBakes_AutumnPumpkinCookie", //
+              //"Condition": "SEASON Fall",
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_AutumnPumpkinCookie",
+              "Price": 850,
+              "IgnoreShopPriceModifiers": true //
+              //"Price": 25,
+              //"AvailableStock": 3,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SondraAutumnCookie", //Sondra's Autumn Apple Cookie
+              //"Condition": "SEASON fall",
+              "ItemId": "MadDog.HashtagBearFam_SondraAutumnCookie",
+              "Price": 145,
+              "IgnoreShopPriceModifiers": true //
+              //"Price": 75,
+              //"AvailableStock": 3,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_TerenBakes_ButtermilkCrescentRoll",
+              "ItemID": "MadDog.HashtagBearFam_TerenBakes_ButtermilkCrescentRoll",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 400
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              //"Price": "1600",
+              //"AvailableStock": 1,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SesameBrownBread",
+              "ItemID": "MadDog.HashtagBearFam_SesameBrownBread",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              //"Price": "1600",
+              //"AvailableStock": 1,
+              //"AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_HoneyWheatBread",
+              "ItemID": "MadDog.HashtagBearFam_HoneyWheatBread",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              //"Price": "1600",
+              //"AvailableStock": 1,
+              //"AvailableStockLimit": "Player"
+            }
+          ]
+        },
+        "MadDog.HashtagBearFam_VioletMoonGunnar": {
+          "Id": "MadDog.HashtagBearFam_VioletMoonGunnar",
+          "Owners": [ //don't need this
+            {
+              "Name": "AnyOrNone",
+              "Id": "MadDog.HashtagBearFam_GunnarVioletMoonLines",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.{{Random: Gunnar_armored, Gunnar_armored_glasses}}",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.VioletMoon.Gunnar.ShopLine.{{Random:1++2|inputSeparator=++}}}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "MadDog.HashtagBearFam_KitchenCleaver",
+              "ItemID": "MadDog.HashtagBearFam_KitchenCleaver",
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              "Price": 10000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_FishStick",
+              "ItemID": "MadDog.HashtagBearFam_FishStick",
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              "Price": 10000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BusterSword",
+              "ItemID": "MadDog.HashtagBearFam_BusterSword",
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              "Price": 10000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_MilitaryRapier",
+              "ItemID": "MadDog.HashtagBearFam_MilitaryRapier",
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              "Price": 10000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_Mjolnir",
+              "ItemID": "MadDog.HashtagBearFam_Mjolnir",
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              "Price": 10000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Regen_WeakRingI",
+              "ItemID": "MadDog.HashtagBearFam_Regen_WeakRingI",
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              "Price": 5000,
+              //"AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Regen_WeakRingII",
+              "ItemID": "MadDog.HashtagBearFam_Regen_WeakRingII",
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              "Price": 5000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Regen_WeakRingIII",
+              "ItemID": "MadDog.HashtagBearFam_Regen_WeakRingIII",
+              //"Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              "Price": 10000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_Adventurer_Cache", //Adventurer Cache
+              //"Condition": "RANDOM 0.5",
+              "ItemId": "MadDog.HashtagBearFam_Adventurer_Cache", //
+              "Price": "{{CachePrice}}",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Violet Moon Ren Fair food",
+      "Action": "Load",
+      "Target": "Mods/MadDogBearFam/VioletMoonFood",
+      "FromFile": "Assets/MadDog.HashtagBearFam_VioletMoon_Food.png"
+    },
+    {
+      "LogName": "Violet Moon Foods",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_TofurkeyDrumstick": {
+          "Name": "MadDog.HashtagBearFam_TofurkeyDrumstick",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TofurkeyDrumstick}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TofurkeyDrumstick.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 500, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\VioletMoonFood",
+          "SpriteIndex": 3,
+          "ContextTags": [
+            "color_green"
+          ]
+        },
+        "MadDog.HashtagBearFam_TurkeyDrumstick": {
+          "Name": "MadDog.HashtagBearFam_TurkeyDrumstick",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.TurkeyDrumstick}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.TurkeyDrumstick.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 550, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\VioletMoonFood",
+          "SpriteIndex": 2,
+          "ContextTags": [
+            "color_yellow",
+            "food_nonvegan",
+            "food_nonvegetarian",
+            "allergen_meat"
+          ]
+        },
+        "MadDog.HashtagBearFam_VeggieStew": {
+          "Name": "MadDog.HashtagBearFam_VeggieStew",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.VeggieStew}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.VeggieStew.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 500, //
+          "Edibility": 50,
+          "IsDrink": true,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\VioletMoonFood",
+          "SpriteIndex": 1,
+          "ContextTags": [
+            "color_brown"
+          ]
+        },
+        "MadDog.HashtagBearFam_BeefStew": {
+          "Name": "MadDog.HashtagBearFam_BeefStew",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.BeefStew}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.BeefStew.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 550, //
+          "Edibility": 50,
+          "IsDrink": true,
+          "Buffs": null,
+          "Texture": "Mods\\MadDogBearFam\\VioletMoonFood",
+          "SpriteIndex": 0,
+          "ContextTags": [
+            "color_dark_brown",
+            "food_nonvegan",
+            "allergen_gluten",
+            "food_nonvegetarian",
+            "allergen_meat"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Faire Drinks with Colors",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "When": {
+        "HasMod": "mistyspring.ItemExtensions"
+      },
+      "Fields": {
+        "MadDog.HashtagBearFam_BeefStew": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#824925" } //brown
+        },
+        "MadDog.HashtagBearFam_VeggieStew": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#8b4513" } //dark brown
+        }
+      }
+    },
+    {
+      "LogName": "Make Added Faire things More Cool",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "MadDog.HashtagBearFam_BeefStew": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_VeggieStew": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_TurkeyDrumstick": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_TofurkeyDrumstick": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Violet Moon",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall1",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          "Value": "MadDog.HashtagBearFam.Sigurd 35 56 1/MadDog.HashtagBearFam.Sondra 37 62 2/MadDog.HashtagBearFam.Gunnar 35 60 2/MadDog.HashtagBearFam.Gudrun 77 61 2/MadDog.HashtagBearFam.Teren 36 60 2",
+          "Delimiter": "/"
+        },
+        /*{
+          "Operation": "Append",
+          "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+          "Value": "MadDog.HashtagBearFam.Sigurd/MadDog.HashtagBearFam.Sondra/MadDog.HashtagBearFam.Gunnar/MadDog.HashtagBearFam.Gudrun/MadDog.HashtagBearFam.Teren",
+          "Delimiter": "/"
+        },*/
+        {
+          "Operation": "Append",
+          "Target": [ "Fields", "set-up", 5 ],
+          "Value": "/positionOffset MadDog.HashtagBearFam.Gunnar -8 0/positionOffset MadDog.HashtagBearFam.Teren -8 0/positionOffset MadDog.HashtagBearFam.Gudrun 10 25/animate MadDog.HashtagBearFam.Gudrun false true 1000 32 32 32/positionOffset MadDog.HashtagBearFam.Sigurd 8 0/animate MadDog.HashtagBearFam.Sigurd true true 250 22 22 22 22 22 22 22 22 22 22 22 22 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22/positionOffset MadDog.HashtagBearFam.Sondra 1 0/animate MadDog.HashtagBearFam.Sondra false true 1000 42 42 42"
+        }
+      ]
+    },
+    {
+      "LogName": "Violet Moon",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall1",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:VioletMoon.Sigurd.{{Random:1++2|inputSeparator=++}}{{BearFamProfanityChanges}}}}",
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:VioletMoon.Sondra.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:VioletMoon.Gunnar.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:VioletMoon.Gudrun.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Teren": "{{i18n:VioletMoon.Teren.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    }
+  ]
+
+}

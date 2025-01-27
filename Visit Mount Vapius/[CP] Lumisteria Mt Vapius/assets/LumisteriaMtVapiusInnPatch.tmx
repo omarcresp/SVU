@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="2" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="73">
+ <properties>
+  <property name="DefaultWarpLocation" value="28 40"/>
+  <property name="Doors" value="33 10 1 120 33 22 1 120 10 10 1 120 10 22 1 120 17 10 1 120 17 22 1 120"/>
+  <property name="LocationContext" value="Lumisteria_MtVapius_Inn"/>
+  <property name="Warp" value="22 42 Lumisteria.MtVapius_Hamlet 41 64 23 42 Lumisteria.MtVapius_Hamlet 41 64 13 9 Lumisteria.MtVapius_InnSecondFloor 13 36 14 9 Lumisteria.MtVapius_InnSecondFloor 13 36"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <tileset firstgid="5291" name="lumisteriamtvapiuswalls" tilewidth="16" tileheight="16" tilecount="96" columns="16">
+  <image source="lumisteria_mtvapius_walls.png" width="256" height="96"/>
+ </tileset>
+ <tileset firstgid="5387" name="lumisteriaMtVapiusTownInterior" tilewidth="16" tileheight="16" tilecount="736" columns="32">
+  <image source="lumisteria_mtvapius_c_townInterior.png" width="512" height="368"/>
+  <tile id="480">
+   <animation>
+    <frame tileid="480" duration="400"/>
+    <frame tileid="483" duration="400"/>
+    <frame tileid="486" duration="400"/>
+   </animation>
+  </tile>
+  <tile id="481">
+   <animation>
+    <frame tileid="481" duration="400"/>
+    <frame tileid="484" duration="400"/>
+    <frame tileid="487" duration="400"/>
+   </animation>
+  </tile>
+  <tile id="482">
+   <animation>
+    <frame tileid="482" duration="400"/>
+    <frame tileid="485" duration="400"/>
+    <frame tileid="488" duration="400"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="6123" name="lumisteriamtvapiusfloors" tilewidth="16" tileheight="16" tilecount="64" columns="16">
+  <image source="lumisteria_mtvapius_floors.png" width="256" height="64"/>
+ </tileset>
+ <layer id="9" name="Placeholder" width="2" height="3" visible="0">
+  <data encoding="csv">
+0,0,
+0,0,
+232,233
+</data>
+ </layer>
+ <layer id="1" name="Back" width="2" height="3">
+  <data encoding="csv">
+5521,5521,
+5553,5553,
+5585,5585
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="2" height="3">
+  <data encoding="csv">
+5617,2147489265,
+5649,2147489297,
+5681,2147489329
+</data>
+ </layer>
+ <layer id="10" name="Buildings+1" width="2" height="3">
+  <data encoding="csv">
+580,581,
+612,613,
+644,645
+</data>
+ </layer>
+ <layer id="3" name="Front" width="2" height="3">
+  <data encoding="csv">
+0,0,
+0,0,
+0,0
+</data>
+ </layer>
+ <layer id="11" name="Front+1" width="2" height="3">
+  <data encoding="csv">
+0,0,
+0,0,
+0,0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="2" height="3">
+  <data encoding="csv">
+0,0,
+0,0,
+0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+</map>

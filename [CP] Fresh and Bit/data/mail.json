@@ -1,0 +1,201 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                // Recipe letters added for marriage candidates 
+                "HaleyCooking": "{{i18n: mail.HaleyCooking}}%item cookingRecipe %%[#]Haley's Recipe",
+                "PennyCooking": "{{i18n: mail.PennyCooking}}%item cookingRecipe %%[#]Penny's Recipe",
+                "AbigailCooking": "{{i18n: mail.AbigailCooking}}%item cookingRecipe %%[#]Abigail's Recipe",
+                "SamCooking": "{{i18n: mail.SamCooking}}%item cookingRecipe %%[#]Sam's Recipe",
+                "ElliottCooking": "{{i18n: mail.ElliottCooking}}%item cookingRecipe %%[#]Elliott's Recipe",
+                "AlexCooking": "{{i18n: mail.AlexCooking}}%item cookingRecipe %%[#]Alex's Recipe",
+                "HarveyCooking": "{{i18n: mail.HarveyCooking}}%item cookingRecipe %%[#]Harvey's Recipe",
+                "LeahCooking": "{{i18n: mail.LeahCooking}}%item cookingRecipe %%[#]Leah's Recipe",
+                "MaruCooking": "{{i18n: mail.MaruCooking}}%item cookingRecipe %%[#]Maru's Recipe",
+                "SebastianCooking": "{{i18n: mail.SebastianCooking}}%item cookingRecipe %%[#]Sebastian's Recipe",
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_HaleyCookingMail": {
+                    "Id": "minothilos.FreshandBit_HaleyCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Haley 5",
+                    "Actions": [
+                        "AddMail Current HaleyCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_PennyCookingMail": {
+                    "Id": "minothilos.FreshandBit_PennyCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Penny 5",
+                    "Actions": [
+                        "AddMail Current PennyCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_HarveyCookingMail": {
+                    "Id": "minothilos.FreshandBit_HarveyCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Harvey 7",
+                    "Actions": [
+                        "AddMail Current HarveyCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_AbigailCookingMail": {
+                    "Id": "minothilos.FreshandBit_AbigailCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Abigail 5",
+                    "Actions": [
+                        "AddMail Current AbigailCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_SamCookingMail": {
+                    "Id": "minothilos.FreshandBit_SamCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Sam 7",
+                    "Actions": [
+                        "AddMail Current SamCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_ElliottCookingMail": {
+                    "Id": "minothilos.FreshandBit_ElliottCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Elliott 5",
+                    "Actions": [
+                        "AddMail Current ElliottCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_AlexCookingMail": {
+                    "Id": "minothilos.FreshandBit_AlexCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Alex 5",
+                    "Actions": [
+                        "AddMail Current AlexCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_LeahCookingMail": {
+                    "Id": "minothilos.FreshandBit_LeahCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Leah 5",
+                    "Actions": [
+                        "AddMail Current LeahCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_MaruCookingMail": {
+                    "Id": "minothilos.FreshandBit_MaruCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Maru 5",
+                    "Actions": [
+                        "AddMail Current MaruCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_SebastianCookingMail": {
+                    "Id": "minothilos.FreshandBit_SebastianCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Sebastian 5",
+                    "Actions": [
+                        "AddMail Current SebastianCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_EmilyCookingMail": {
+                    "Id": "minothilos.FreshandBit_EmilyCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Emily 7",
+                    "Actions": [
+                        "AddMail Current EmilyCooking now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "minothilos.FreshandBit_ShaneCookingMail": {
+                    "Id": "minothilos.FreshandBit_ShaneCookingMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current Shane 7",
+                    "Actions": [
+                        "AddMail Current ShaneCooking now"
+                    ]
+                }
+            }
+        },
+    ]
+}

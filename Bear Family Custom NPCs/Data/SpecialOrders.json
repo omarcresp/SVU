@@ -1,0 +1,136 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "MadDog.Bearfam.SondraBotBFood": {
+          "Name": "[SondraBattleoftheBandsFood_Name]",
+          "Requester": "Sondra",
+          "Duration": "Month",
+          "Repeatable": "False",
+          "RequiredTags": "event_MadDog.BearFam.16192006",
+          "OrderType": "",
+          "SpecialRule": "",
+          "Text": "[SondraBattleoftheBandsFood_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "[SondraBattleoftheBandsFoodObjective_Text1]",
+              "RequiredCount": "5",
+              "Data": {
+                "DropBox": "SondraStorage",
+                "DropBoxGameLocation": "MadDog.BearFam.Custom_BearLodge",
+                "DropBoxIndicatorLocation": "15 16",
+                "AcceptedContextTags": "category_egg"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SondraBattleoftheBandsFoodObjective_Text2]",
+              "RequiredCount": "5",
+              "Data": {
+                "DropBox": "SondraStorage",
+                "DropBoxGameLocation": "MadDog.BearFam.Custom_BearLodge",
+                "DropBoxIndicatorLocation": "15 16",
+                "AcceptedContextTags": "category_milk"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SondraBattleoftheBandsFoodObjective_Text3]",
+              "RequiredCount": "30",
+              "Data": {
+                "DropBox": "SondraStorage",
+                "DropBoxGameLocation": "MadDog.BearFam.Custom_BearLodge",
+                "DropBoxIndicatorLocation": "15 16",
+                "AcceptedContextTags": "category_vegetable"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "5000"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "BattleoftheBandsIsReady",
+                "NoLetter": true
+              }
+            }
+          ]
+        },
+        "MadDog.Bearfam.SondraBotBMaterial": {
+          "Name": "[SondraBattleoftheBandsMaterial_Name]",
+          "Requester": "Sondra",
+          "Duration": "Month",
+          "Repeatable": "False",
+          "RequiredTags": "event_MadDog.BearFam.16192006",
+          "OrderType": "",
+          "SpecialRule": "",
+          "Text": "[SondraBattleoftheBandsMaterial_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "[SondraBattleoftheBandsMaterialObjective_Text1]",
+              "RequiredCount": "200",
+              "Data": {
+                "DropBox": "SondraStorage",
+                "DropBoxGameLocation": "MadDog.BearFam.Custom_BearLodge",
+                "DropBoxIndicatorLocation": "15 16",
+                "AcceptedContextTags": "item_wood"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SondraBattleoftheBandsMaterialObjective_Text2]",
+              "RequiredCount": "10",
+              "Data": {
+                "DropBox": "SondraStorage",
+                "DropBoxGameLocation": "MadDog.BearFam.Custom_BearLodge",
+                "DropBoxIndicatorLocation": "15 16",
+                "AcceptedContextTags": "item_iron_bar"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[SondraBattleoftheBandsMaterialObjective_Text3]",
+              "RequiredCount": "10",
+              "Data": {
+                "DropBox": "SondraStorage",
+                "DropBoxGameLocation": "MadDog.BearFam.Custom_BearLodge",
+                "DropBoxIndicatorLocation": "15 16",
+                "AcceptedContextTags": "item_hardwood"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "5000"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "BattleoftheBandsIsReady",
+                "NoLetter": true
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

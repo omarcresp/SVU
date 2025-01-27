@@ -1,0 +1,2343 @@
+{
+  "Changes": [
+    // shops
+
+    //bear necessities
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193000", //has seen Gunnar install the shop
+      "Entries": {
+        "MadDog.HashtagBearFam_GunShop": {
+          /*"Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "The Bear Necessities"
+              "Portrait": "{{InternalAssetKey: assets/MadDog.BearFamgunshop.png}}",
+              "Dialogues": [
+                {
+                  "Id": "MadDog.HashtagBearfam_Open",
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamOpen}}",
+                  "Condition": "TIME 600 2400"
+                },
+                {
+                  "Id": "MadDog.HashtagBearfam_Closed",
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamClosed}}",
+                  "Condition": "TIME 2410 2600"
+                }
+              ]
+            }
+          ],*/
+          "SalableItemTags": [
+            "category_gem",
+            "category_minerals",
+            "category_junk",
+            "category_bait",
+            "category_tackle",
+            "category_monster_loot",
+            "category_ring",
+            "category_weapon",
+            "category_metal_resources",
+            "category_building_resources"
+          ],
+          "Items": [
+            {
+              "Id": "MadDog.HashtagBearFam_StoneBrambleSeed", //Stone Bramble Seeds
+              "Condition": "RANDOM 0.5",
+              "ItemId": "MadDog.HashtagBearFam_StoneBrambleSeed", //
+              "Price": 2,
+              "AvailableStock": 8,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_Adventurer_Cache", //Adventurer Cache
+              //"Condition": "RANDOM 0.5",
+              "ItemId": "MadDog.HashtagBearFam_Adventurer_Cache", //
+              "Price": "{{CachePrice}}",
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarFirstPotion", //Gunnar's First Potion
+              "ItemId": "MadDog.HashtagBearFam_GunnarFirstPotion", //
+              "Price": 25,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarSecondPotion", //Gunnar's Second Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 250",
+              "ItemId": "MadDog.HashtagBearFam_GunnarSecondPotion", //
+              "Price": 75,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarThirdPotion", //Gunnar's Third Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 500",
+              "ItemId": "MadDog.HashtagBearFam_GunnarThirdPotion", //
+              "Price": 125,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarRemedyAll", //Gunnar's Remedy All
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1500",
+              "ItemId": "MadDog.HashtagBearFam_GunnarRemedyAll", //
+              "Price": 100,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarWeirdPotion", //Gunnar's Weird Potion
+              "Condition": "RANDOM 0.4",
+              "ItemId": "MadDog.HashtagBearFam_GunnarWeirdPotion", //
+              "Price": 100,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarBadPotion", //Gunnar's Bad Potion
+              "ItemId": "MadDog.HashtagBearFam_GunnarBadPotion", //
+              "Price": 10,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarMysteryPotion", //Gunnar's Mystery Potion
+              "Condition": "RANDOM 0.2",
+              "ItemId": "MadDog.HashtagBearFam_GunnarMysteryPotion", //
+              "Price": 5,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Regen_WeakRingI", //
+              "Condition": "RANDOM 0.5, PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1000",
+              "ItemId": "MadDog.HashtagBearFam_Regen_WeakRingI", //
+              "Price": 5000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Regen_WeakRingII", //
+              "Condition": "RANDOM 0.5, PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1500",
+              "ItemId": "MadDog.HashtagBearFam_Regen_WeakRingII", //
+              "Price": 5000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Regen_WeakRingIII", //
+              "Condition": "RANDOM 0.5, PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 2250",
+              "ItemId": "MadDog.HashtagBearFam_Regen_WeakRingIII", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarPhoenixDown", //Gunnar's Phoenix Down
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 2000",
+              "ItemId": "MadDog.HashtagBearFam_GunnarPhoenixDown", //
+              "Price": 1000,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_NineHerbsCharm", //Nine Herbs Charm
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 2000",
+              "ItemId": "MadDog.HashtagBearFam_NineHerbsCharm", //
+              "Price": 1000,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarPerfectPotion", //Gunnar's Perfect Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 2000",
+              "ItemId": "MadDog.HashtagBearFam_GunnarPerfectPotion", //
+              "Price": 500,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion", //Gunnar's Great Gospel Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1750",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion", //
+              "Price": 7500,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_AngelWingPotion", //Gunnar's Angel Wing Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1000",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_AngelWingPotion", //
+              "Price": 5000,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion", //Gunnar's Tides of Fate Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1250",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion", //
+              "Price": 5000,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion", //Gunnar's Free Energy Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1000",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion", //
+              "Price": 5000,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_FantasiaPotion", //Gunnar's Fantasia Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1750",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_FantasiaPotion", //
+              "Price": 8000,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion", //Gunnar's Digital Mind Wave Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1500",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion", //
+              "Price": 7000,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion", //Gunnar's Glaive Arts Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1500",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion", //
+              "Price": 7000,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion", //Gunnar's Nordswains Glow Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 2000",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion", //
+              "Price": 10000,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion.Recipe", //Gunnar's Great Gospel Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1750",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion", //
+              "Price": 10000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_AngelWingPotion.Recipe", //Gunnar's Angel Wing Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1000",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_AngelWingPotion", //
+              "Price": 10000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion.Recipe", //Gunnar's Tides of Fate Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1250",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion", //
+              "Price": 10000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion.Recipe", //Gunnar's Free Energy Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1000",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion", //
+              "Price": 10000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_FantasiaPotion.Recipe", //Gunnar's Fantasia Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1500",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_FantasiaPotion", //
+              "Price": 10000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion.Recipe", //Gunnar's Digital Mind Wave Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1500",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion", //
+              "Price": 10000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion.Recipe", //Gunnar's Glaive Arts Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1500",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion", //
+              "Price": 10000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion.Recipe", //Gunnar's Nordswains Glow Potion
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 2000",
+              "ItemId": "MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion", //
+              "Price": 25000,
+              "IsRecipe": true
+            },
+
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarPerfectRamen.Recipe", //Gunnar's Perfect Ramen
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16197003",
+              "ItemId": "MadDog.HashtagBearFam_GunnarPerfectRamen", //
+              "Price": 25,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GudrunPerfectRamen", //Gudrun's Perfect Ramen
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16197003, RANDOM 0.2",
+              "ItemId": "MadDog.HashtagBearFam_GudrunPerfectRamen", //
+              "Price": 15,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SigurdPerfectRamen", //Sig's Perfect Ramen
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16197003, RANDOM 0.5",
+              "ItemId": "MadDog.HashtagBearFam_SigurdPerfectRamen", //
+              "Price": 35,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SondraPerfectRamen", //Sondra's Perfect Ramen
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16197003",
+              "ItemId": "MadDog.HashtagBearFam_SondraPerfectRamen", //
+              "Price": 50,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_BrazierSecretAlfredo", //Brazier's Secret Alfredo
+              "Condition": "RANDOM 0.5",
+              "ItemId": "MadDog.HashtagBearFam_BrazierSecretAlfredo", //
+              "Price": 100,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SondraAutumnCookie", //Sondra's Autumn Apple Cookie
+              "Condition": "SEASON fall",
+              "ItemId": "MadDog.HashtagBearFam_SondraAutumnCookie", //
+              "Price": 75,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SondraSpringtimeShortbread", //Sondra's Springtime Shortbread
+              "Condition": "SEASON spring",
+              "ItemId": "MadDog.HashtagBearFam_SondraSpringtimeShortbread", //
+              "Price": 75,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SondraSummerCake", //Sondra's Summer Snack Cake
+              "Condition": "SEASON summer",
+              "ItemId": "MadDog.HashtagBearFam_SondraSummerCake", //
+              "Price": 75,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SondraWinterBar", //Sondra's Winter Wonder Bar
+              "Condition": "SEASON winter",
+              "ItemId": "MadDog.HashtagBearFam_SondraWinterBar", //
+              "Price": 75,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_TriangleGrilledCheese", //Triangle Grilled Cheese
+              //"Condition": "RANDOM 0.4",
+              "ItemId": "MadDog.HashtagBearFam_TriangleGrilledCheese", //
+              "Price": 35,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_FerskenPeachSapling", //sapling
+              "Condition": "RANDOM 0.5",
+              "ItemId": "MadDog.HashtagBearFam_FerskenPeachSapling", //
+              "Price": 1505,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Recipe_FerskenPeach_Honey",
+              "ItemID": "MadDog.HashtagBearFam_FerskenPeach_Honey",
+              "Condition": "RANDOM 0.7",
+              "Price": "100",
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            //recipes
+            {
+              "Id": "MadDog.HashtagBearfam_BearRecipes",
+              "ItemID": "MadDog.HashtagBearFam_BearRecipes",
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16191010",
+              "Price": "1600",
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_GunnarRecipes",
+              "ItemID": "MadDog.HashtagBearFam_GunnarRecipes",
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199011",
+              "Price": "1600",
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SondraRecipes",
+              "ItemID": "MadDog.HashtagBearFam_SondraRecipes",
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16192008, YEAR 2",
+              "Price": "1600",
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            //trading zone?
+            {
+              "Id": "MadDog.HashtagBearfam_BearScarecrow", //MadDog.BearFam_VikingHelmet
+              "ItemID": "MadDog.HashtagBearFam_BearScarecrow",
+              "TradeItemId": "(O)MadDog.HashtagBearFam_FerskenPeach",
+              "TradeItemAmount": "2",
+              "Available Stock": 2,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_FerskenPeach_Mead",
+              "ItemID": "MadDog.HashtagBearFam_FerskenPeach_Mead",
+              "TradeItemId": "(O)MadDog.HashtagBearFam_FerskenPeach",
+              "TradeItemAmount": "5",
+              "Available Stock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_FerskenPeach_PotentMead",
+              "Condition": "RANDOM 0.1",
+              "ItemID": "MadDog.HashtagBearFam_FerskenPeach_PotentMead",
+              "TradeItemId": "(O)MadDog.HashtagBearFam_FerskenPeach",
+              "TradeItemAmount": "10",
+              "Available Stock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_VikingHelmet",
+              "ItemID": "MadDog.HashtagBearFam_VikingHelmet",
+              "Condition": "PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1250",
+              "TradeItemId": "(O)MadDog.HashtagBearFam_FerskenPeach",
+              "TradeItemAmount": "3",
+              "Available Stock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            //Gunnar Weapons and Gear
+            {
+              "Id": "MadDog.HashtagBearfam_BearTrainingSword", //bear training sword
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193002", //sword break event
+              "ItemId": "MadDog.HashtagBearFam_BearTrainingSword", //
+              "Price": 103,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Ulfberht", //Ulfberht
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193006, PLAYER_HEARTS current MadDog.HashtagBearFam.Gunnar 1000",
+              "ItemId": "MadDog.HashtagBearFam_Ulfberht", //
+              "Price": 303,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Gramr", //Gramr
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193008",
+              "ItemId": "MadDog.HashtagBearFam_Gramr", //
+              "Price": 503,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Hofund", //Hofund
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193011",
+              "ItemId": "MadDog.HashtagBearFam_Hofund", //
+              "Price": 703,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Dainsleif", //Dainsleif
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193012",
+              "ItemId": "MadDog.HashtagBearFam_Dainsleif", //
+              "Price": 1003,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_TentacularSpectacular", //Dainsleif
+              "Condition": "PLAYER_HAS_MAIL current LonelyKraken Received",
+              "ItemId": "MadDog.HashtagBearFam_TentacularSpectacular", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            //vanilla items
+            {
+              "Id": "MadDog.HashtagBearfam_CherryBomb", //Cherry Bomb
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193002, RANDOM 0.8",
+              "ItemId": "(O)286",
+              "Price": 200,
+              "AvailableStock": 6,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Bomb", //Bomb
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193002, RANDOM 0.6",
+              "ItemId": "(O)287",
+              "Price": 450,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_MegaBomb", //Mega Bomb
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193002, RANDOM 0.2",
+              "ItemId": "(O)288",
+              "Price": 650,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_BugSteak", //Bug Steak
+              "Condition": "RANDOM 0.8",
+              "ItemId": "(O)874",
+              "Price": 10,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Slime", //Slime
+              //"Condition": "RANDOM 0.8",
+              "ItemId": "(O)766",
+              "Price": 1,
+              "AvailableStock": 10,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Batwings", //Bat Wings
+              // "Condition": "RANDOM 0.8",
+              "ItemId": "(O)767",
+              "Price": 10,
+              "AvailableStock": 10,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_SeaJelly", //sea j
+              "Condition": "RANDOM 0.2",
+              "ItemId": "(O)SeaJelly",
+              "AvailableStock": "{{Random: 1, 3, 5}}",
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_CaveJelly", //cave j
+              "Condition": "RANDOM 0.1",
+              "ItemId": "(O)CaveJelly",
+              "AvailableStock": "{{Random: 1, 3, 5}}",
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_RiverJelly", //river j
+              "Condition": "RANDOM 0.1",
+              "ItemId": "(O)RiverJelly",
+              "AvailableStock": "{{Random: 1, 3, 5}}",
+              "AvailableStockLimit": "Player"
+            },
+            //furniture
+            {
+              "Id": "MadDog.HashtagBearFam_LargeGrizzlyPlush", //Grizzly Furniture
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_LargeGrizzlyPlush", //
+              "Price": 750,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_WonderChest", //chest lamp furniture
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_WonderChest", //
+              "Price": 750,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            //clothes
+            {
+              "Id": "MadDog.HashtagBearFam_BurgundyLeathers", //"armor"
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_BurgundyLeathers", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_UmberLeathers", //"armor"
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_UmberLeathers", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_CopperBomberJacket", //"armor"
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_CopperBomberJacket", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_CowboyBlue", //"armor"
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_CowboyBlue", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_PotioneerVest", //"armor" 
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_PotioneerVest", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_GathererKnapsack", //"armor"
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_GathererKnapsack", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_AdventuringKit", //"armor"
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_AdventuringKit", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BanditBlue", //"armor"
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_BanditBlue", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_LawmanStetson", //"armor"
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_LawmanStetson", //
+              "Price": 1000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_ZuzuNights", //shirt
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_ZuzuNights", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_ZuzuVarsity", //shirt
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_ZuzuVarsity", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_PrismaticMoon", //shirt
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_PrismaticMoon", //
+              "Price": 500,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            //relationship stuff
+            //gudrun
+            {
+              "Id": "MadDog.HashtagBearFam_PrismaticFish", //shirt
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16194011",
+              "ItemId": "MadDog.HashtagBearFam_PrismaticFish", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            //sondra
+            {
+              "Id": "MadDog.HashtagBearFam_PrismaticFlower", //shirt
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16192007",
+              "ItemId": "MadDog.HashtagBearFam_PrismaticFlower", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            //gunnar
+            {
+              "Id": "MadDog.HashtagBearFam_SmallKrakenPlush", //Kraken furniture
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193012",
+              "ItemId": "MadDog.HashtagBearFam_SmallKrakenPlush", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_Stuffed_Kraken", //Kraken "ring"
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193012",
+              "ItemId": "MadDog.HashtagBearFam_Stuffed_Kraken", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_GunnarPlaid", //Gunnar's shirt
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193012",
+              "ItemId": "MadDog.HashtagBearFam_GunnarPlaid", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            //sig
+            {
+              "Id": "MadDog.HashtagBearFam_SmallBearPlush", //Small bear furniture
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16191013",
+              "ItemId": "MadDog.HashtagBearFam_SmallBearPlush", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_Stuffed_Bear", //Small bear "ring"
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16191013",
+              "ItemId": "MadDog.HashtagBearFam_Stuffed_Bear", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_SigHoodie", //Sig's shirt
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16191013",
+              "ItemId": "MadDog.HashtagBearFam_SigHoodie", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            //teren
+            {
+              "Id": "MadDog.HashtagBearFam_SmallDogPlush", //Dog furniture
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199010",
+              "ItemId": "MadDog.HashtagBearFam_SmallDogPlush", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_Stuffed_Dog", //Dog "ring"
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199010",
+              "ItemId": "MadDog.HashtagBearFam_Stuffed_Dog", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenCamo", //Teren's shirt
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199010",
+              "ItemId": "MadDog.HashtagBearFam_TerenCamo", //
+              "Price": 10000,
+              "AvailableStock": 1, 
+              "AvailableStockLimit": "Player"
+            }
+          ]
+        }
+      }
+    },
+    //Cornucopia Section for Gunnar's Shop
+    {
+      "LogName": "More Crops Herb Zone Gun Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "MadDog.HashtagBearFam_GunShop", "Items" ],
+      "When": {
+        "HasMod": "Cornucopia.MoreCrops",
+        "HasFlag": "Cornucopia.MoreCrops_HerbsPackEnabled"
+      },
+      "Entries": {
+        "MadDog.HashtagBearfam_Cornucopia_ThymeSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_ThymeSeeds", //
+          "Condition": "SEASON fall", //y3
+          "ItemId": "Cornucopia_ThymeSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_TurmericSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_TurmericSeeds", //
+          "Condition": "SEASON fall", //y3
+          "ItemId": "Cornucopia_TurmericSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_TarragonSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_TarragonSeeds", //
+          "Condition": "SEASON fall", //y3
+          "ItemId": "Cornucopia_TarragonSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_RosemarySeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_RosemarySeeds", //
+          "Condition": "YEAR 2, SEASON fall",
+          "ItemId": "Cornucopia_RosemarySeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_SageSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_SageSeeds", //
+          "Condition": "SEASON fall", //y3
+          "ItemId": "Cornucopia_SageSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_LemongrassSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_LemongrassSeeds", //
+          "Condition": "SEASON summer", //y3
+          "ItemId": "Cornucopia_LemongrassSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_MarjoramSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_MarjoramSeeds", //
+          "Condition": "SEASON spring", //y3
+          "ItemId": "Cornucopia_MarjoramSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_MintSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_MintSeeds", //
+          "Condition": "SEASON winter",
+          "ItemId": "Cornucopia_MintSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_OreganoSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_OreganoSeeds", //
+          "Condition": "YEAR 2, SEASON summer",
+          "ItemId": "Cornucopia_OreganoSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_ParsleySeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_ParsleySeeds", //
+          "Condition": "YEAR 2, SEASON spring",
+          "ItemId": "Cornucopia_ParsleySeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_PerillaLeavesSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_PerillaLeavesSeeds", //
+          "Condition": "SEASON summer", //y3
+          "ItemId": "Cornucopia_PerillaLeavesSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_CatnipSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_CatnipSeeds", //
+          "Condition": "SEASON spring",
+          "ItemId": "Cornucopia_CatnipSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_ChivesSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_ChivesSeeds", //
+          "Condition": "YEAR 2, SEASON summer",
+          "ItemId": "Cornucopia_ChivesSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_CilantroSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_CilantroSeeds", //
+          "Condition": "YEAR 2, SEASON fall",
+          "ItemId": "Cornucopia_CilantroSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_DillSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_DillSeeds", //
+          "Condition": "YEAR 2, SEASON spring",
+          "ItemId": "Cornucopia_DillSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_FennelSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_FennelSeeds", //
+          "Condition": "SEASON fall", //y3
+          "ItemId": "Cornucopia_FennelSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_FenugreekSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_FenugreekSeeds", //
+          "Condition": "SEASON spring", //y3
+          "ItemId": "Cornucopia_FenugreekSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_AloeSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_AloeSeeds", //
+          "Condition": "SEASON summer", //y2, removed for story telling purposes
+          "ItemId": "Cornucopia_AloeSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_BayLeavesSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_BayLeavesSeeds", //
+          "Condition": "YEAR 2, SEASON winter",
+          "ItemId": "Cornucopia_BayLeavesSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_WormwoodSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_WormwoodSeeds", //
+          "Condition": "SEASON winter", //y3
+          "ItemId": "Cornucopia_WormwoodSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_CuminSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_CuminSeeds", //
+          "Condition": "SEASON fall", //y3
+          "ItemId": "Cornucopia_CuminSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_CamphorLeavesSapling": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_CamphorLeavesSapling", //???????????
+          //"Condition": "YEAR 3", //y3
+          "ItemId": "Cornucopia_CamphorLeavesSapling",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_CinnamonSticksSapling": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_CinnamonSticksSapling", //
+          "Condition": "YEAR 2",
+          "ItemId": "Cornucopia_CinnamonSticksSapling",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_EucalyptusLeavesSapling": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_EucalyptusLeavesSapling", //
+          "Condition": "YEAR 2",
+          "ItemId": "Cornucopia_EucalyptusLeavesSapling",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_MelaleucaLeavesSapling": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_MelaleucaLeavesSapling", //
+          "Condition": "YEAR 2",
+          "ItemId": "Cornucopia_MelaleucaLeavesSapling",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_NutmegSapling": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_NutmegSapling", //
+          "Condition": "YEAR 2",
+          "ItemId": "Cornucopia_NutmegSapling",
+          "IgnoreShopPriceModifiers": true
+        }
+      }
+    },
+    {
+      "LogName": "More Crops but Extended Gun Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "MadDog.HashtagBearFam_GunShop", "Items" ],
+      "When": {
+        "HasMod": "Cornucopia.MoreCrops",
+        "HasFlag": "Cornucopia.MoreCrops_ExtendedCropsPackEnabled"
+      },
+      "Entries": {
+        "MadDog.HashtagBearfam_Cornucopia_VanillaSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_VanillaSeeds", //
+          "Condition": "YEAR 2, SEASON spring",
+          "ItemId": "Cornucopia_VanillaSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_CanolaFlowerSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_CanolaFlowerSeeds", //
+          "Condition": "SEASON spring summer", //y3
+          "ItemId": "Cornucopia_CanolaFlowerSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_AgaveSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_AgaveSeeds", //
+          "Condition": "SEASON spring",
+          "ItemId": "Cornucopia_AgaveSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_BlueAgaveSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_BlueAgaveSeeds", //
+          "Condition": "SEASON summer",
+          "ItemId": "Cornucopia_BlueAgaveSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_GinsengSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_GinsengSeeds", //
+          "Condition": "SEASON spring winter",
+          "ItemId": "Cornucopia_GinsengSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_PeppercornSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_PeppercornSeeds", //
+          "Condition": "SEASON spring summer fall",
+          "ItemId": "Cornucopia_PeppercornSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_JuniperBerries": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_JuniperBerries", //
+          //"Condition": "",
+          "ItemId": "Cornucopia_JuniperBerries",
+          "IgnoreShopPriceModifiers": true
+        }
+      }
+    },
+    {
+      "LogName": "Just More Crops Gunshop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "MadDog.HashtagBearFam_GunShop", "Items" ],
+      "When": {
+        "HasMod": "Cornucopia.MoreCrops"
+      },
+      "Entries": {
+        "MadDog.HashtagBearfam_Cornucopia_BasilSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_BasilSeeds", //
+          "Condition": "YEAR 2, SEASON spring",
+          "ItemId": "Cornucopia_BasilSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_CottonBollSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_CottonBollSeeds", //
+          "Condition": "SEASON summer fall",
+          "ItemId": "Cornucopia_CottonBollSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_CocoaPodSapling": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_CocoaPodSapling", //???????
+          "Condition": "YEAR 2",
+          "ItemId": "Cornucopia_CocoaPodSapling",
+          "IgnoreShopPriceModifiers": true
+        }
+      }
+    },
+    {
+      "LogName": "More Crops but more Flowers Specifically Gun Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "MadDog.HashtagBearFam_GunShop", "Items" ],
+      "When": {
+        "HasMod": "Cornucopia.MoreFlowers",
+        "HasFlag": "Cornucopia.MoreFlowers_ExtendedFlowersPackEnabled"
+      },
+      "Entries": {
+        "MadDog.HashtagBearfam_Cornucopia_LavenderSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_LavenderSeeds", //
+          "Condition": "SEASON summer",
+          "ItemId": "Cornucopia_LavenderSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_ChamomileSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_ChamomileSeeds", //
+          "Condition": "SEASON spring",
+          "ItemId": "Cornucopia_ChamomileSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_WolfsbaneSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_WolfsbaneSeeds", //
+          "Condition": "SEASON summer",
+          "ItemId": "Cornucopia_WolfsbaneSeeds",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_JasmineSapling": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_JasmineSapling", //???????
+          "Condition": "YEAR 2",
+          "ItemId": "Cornucopia_JasmineSapling",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_WisteriaSapling": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_WisteriaSapling", //
+          //"Condition": "",
+          "ItemId": "Cornucopia_WisteriaSapling",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_YlangYlangSapling": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_YlangYlangSapling", //
+          //"Condition": "YEAR 3", //y3
+          "ItemId": "Cornucopia_YlangYlangSapling",
+          "IgnoreShopPriceModifiers": true
+        }
+      }
+    },
+    {
+      "LogName": "More Crops but actually just Ginger Forage Gun Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "MadDog.HashtagBearFam_GunShop", "Items" ],
+      "When": {
+        "HasMod": "Cornucopia.GrowableForage",
+        "HasFlag": "Cornucopia.GrowableForage_GingerSeedsEnabled"
+      },
+      "Entries": {
+        "MadDog.HashtagBearfam_Cornucopia_GingerSeeds": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_GingerSeeds", //
+          "Condition": "SEASON summer",
+          "ItemId": "Cornucopia_GingerSeeds",
+          "IgnoreShopPriceModifiers": true
+        }
+      }
+    },
+    {
+      "LogName": "Artisan Goods - Gunshop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "MadDog.HashtagBearFam_GunShop", "Items" ],
+      "When": {
+        "HasMod": "Cornucopia.ArtisanGoods"
+      },
+      "Entries": {
+        "MadDog.HashtagBearfam_Cornucopia_SeaSalt": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_SeaSalt", //
+          //"Condition": "YEAR 2, SEASON spring",
+          "ItemId": "Cornucopia_SeaSalt",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_DryingRack": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_DryingRack", //
+          "Condition": "RANDOM 0.08",
+          "ItemId": "Cornucopia_DryingRack",
+          "Price": 2000
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Grinder": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Grinder", //
+          "Condition": "RANDOM 0.08",
+          "ItemId": "Cornucopia_Grinder",
+          "Price": 2000
+        },
+        "MadDog.HashtagBearfam_Cornucopia_SoapPress": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_SoapPress", //
+          "Condition": "RANDOM 0.08",
+          "ItemId": "Cornucopia_SoapPress",
+          "Price": 2000
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Still": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Still", //
+          "Condition": "RANDOM 0.08",
+          "ItemId": "Cornucopia_Still",
+          "Price": 5000
+        },
+        "MadDog.HashtagBearfam_Cornucopia_WaxBarrel": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_WaxBarrel", //
+          "Condition": "RANDOM 0.08",
+          "ItemId": "Cornucopia_WaxBarrel",
+          "Price": 4000
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Gin": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Gin", //
+          "Condition": "RANDOM 0.1",
+          "ItemId": "Cornucopia_Gin",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Rum": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Rum", //
+          "Condition": "RANDOM 0.09",
+          "ItemId": "Cornucopia_Rum",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Tequila": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Tequila", //
+          "Condition": "RANDOM 0.09",
+          "ItemId": "Cornucopia_Tequila",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Absinthe": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Absinthe", //
+          "Condition": "RANDOM 0.5",
+          "ItemId": "Cornucopia_Absinthe",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Whiskey": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Whiskey", //
+          "Condition": "RANDOM 0.1",
+          "ItemId": "Cornucopia_Whiskey",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_Cornucopia_HardAppleCider": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_HardAppleCider", //
+          "Condition": "RANDOM 0.2",
+          "ItemId": "Cornucopia_HardAppleCider",
+          "IgnoreShopPriceModifiers": true
+        }
+
+      }
+    },
+    {
+      "LogName": "SVE Potions Post Crimson Badlands",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "MadDog.HashtagBearFam_GunShop", "Items" ],
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+        "HasFlag": "GunnarCopsSVEStyle"
+      },
+      "Entries": {
+        "MadDog.HashtagBearfam_StardewValleyExpandedCP_Aegis_Elixir": {
+          "Id": "MadDog.HashtagBearfam_StardewValleyExpandedCP_Aegis_Elixir", //
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host 908079",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Aegis_Elixir",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_StardewValleyExpandedCP_Barbarian_Elixir": {
+          "Id": "MadDog.HashtagBearfam_StardewValleyExpandedCP_Barbarian_Elixir", //
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host 908079",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_StardewValleyExpandedCP_Gravity_Elixir": {
+          "Id": "MadDog.HashtagBearfam_StardewValleyExpandedCP_Gravity_Elixir", //
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host 908079",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Gravity_Elixir",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_StardewValleyExpandedCP_Lightning_Elixir": {
+          "Id": "MadDog.HashtagBearfam_StardewValleyExpandedCP_Lightning_Elixir", //
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host 908079",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Lightning_Elixir",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_StardewValleyExpandedCP_Armor_Elixir": {
+          "Id": "MadDog.HashtagBearfam_StardewValleyExpandedCP_Armor_Elixir", //
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host 908079",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Armor_Elixir",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_StardewValleyExpandedCP_Haste_Elixir": {
+          "Id": "MadDog.HashtagBearfam_StardewValleyExpandedCP_Haste_Elixir", //
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host 908079",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Haste_Elixir",
+          "IgnoreShopPriceModifiers": true
+        },
+        "MadDog.HashtagBearfam_StardewValleyExpandedCP_Hero_Elixir": {
+          "Id": "MadDog.HashtagBearfam_StardewValleyExpandedCP_Hero_Elixir", //
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host 908079",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+          "IgnoreShopPriceModifiers": true
+        }
+      }
+    },
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    ///vending machine
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "MadDog.HashtagBearFam_CellarVendingMachine": {
+          "Id": "JojaVending",
+          "Owners": [ //don't need this
+            {
+              "Name": "AnyOrNone",
+              "Condition": "TIME 600 2400",
+              "Portrait": "{{InternalAssetKey: assets/MadDog.Bearfam_JojaVendingPortrait.png}}",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamVendingOpen}}"
+                }
+              ]
+            },
+            {
+              "Name": "None",
+              "Condition": "TIME 2410 2600",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamVendingClosed}}"
+                }
+              ]
+            }
+          ],
+          "SalableItemTags": [
+            "category_junk"
+          ],
+          "Items": [
+            {
+              "Id": "MadDog.HashtagBearfam_PumpkinJoja", //Pumpkin Joja
+              "Condition": "TIME 600 2400",
+              "ItemId": "MadDog.HashtagBearFam_PumpkinJoja", //
+              "Price": 25,
+              "AvailableStock": 6,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_PeachJoja", //Peach Joja
+              "Condition": "TIME 600 2400",
+              "ItemId": "MadDog.HashtagBearFam_PeachJoja", //
+              "Price": 25,
+              "AvailableStock": 6,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_JojaCola", //vanilla/in game Joja
+              "Condition": "TIME 600 2400",
+              "ItemId": "(O)167",
+              "Price": 25,
+              "AvailableStock": 6,
+              "AvailableStockLimit": "Player"
+            }
+          ]
+        }
+      }
+    },
+
+    //coffee machine
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "MadDog.HashtagBearFam_HouseCoffeeMachine": {
+          "Id": "SondraCoffeeMachine",
+          "Owners": [ //don't need this
+            {
+              "Name": "AnyOrNone",
+              "Condition": "TIME 600 1400",
+              "Portrait": "{{InternalAssetKey: assets/MadDog.Bearfam_CoffeeShopPortrait.png}}",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamFreeCoffee1}}"
+                }
+              ]
+            },
+            {
+              "Name": "None",
+              "Condition": "TIME 1410 2600",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamFreeCoffee2}}"
+                }
+              ]
+            }
+          ],
+          "PurchaseSound": "glug",
+          "SalableItemTags": null,
+          "StackSizeVisibility": "Hide",
+          "Items": [
+            {
+              "Id": "MadDog.HashtagBearfam_CupofCoffee", //coffee
+              "ItemId": "(O)MadDog.HashtagBearFam_{{Random: Chocolate_Flavored_Coffee, Caramel_Flavored_Coffee, Blueberry_Flavored_Coffee, Raspberry_Flavored_Coffee}}", //
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "Condition": "TIME 600 1400" //RANDOM 0.9, 
+            }
+          ]
+        }
+      }
+    },
+
+    //bee house
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "When": {
+        "HasSeenEvent": "MadDog.BearFam.16191111"
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam_CellarBeeHouse": {
+          //"Id": "CellarBeeHouse",
+          "Owners": [ //don't need this
+            {
+              "Name": "AnyOrNone",
+              "Condition": "SEASON spring summer fall, TIME 600 1400",
+              "Portrait": "{{InternalAssetKey: assets/MadDog.Bearfam_BeeHousePortrait.png}}",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamBees1}}"
+                }
+              ]
+            },
+            {
+              "Name": "None",
+              "Condition": "SEASON spring summer fall, TIME 1410 2600",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamBees2}}"
+                }
+              ]
+            },
+            {
+              "Name": "None",
+              "Condition": "SEASON winter",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamBees3}}"
+                }
+              ]
+            }
+          ],
+          "OpenSound": "MadDog.HashtagBearFam_BeeNoise",
+          "PurchaseSound": "MadDog.HashtagBearFam_BeeNoise",
+          "SalableItemTags": null,
+          "StackSizeVisibility": "Hide",
+          "Items": [
+            {
+              "Id": "MadDog.HashtagBearfam_FerskenPeachHoney7Days", //fersken peach honey
+              "ItemId": "MadDog.HashtagBearFam_FerskenPeach_Honey", //
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "Condition": "SEASON_DAY spring 7 spring 14 spring 21 spring 28 summer 7 summer 14 summer 21 summer 28, TIME 600 1400"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_WildHoney4Days", //regular ol honey
+              "ItemId": "(O)340", //
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "Condition": "SEASON_DAY fall 4 fall 8 fall 12 fall 16 fall 20 fall 24 fall 28, TIME 600 1400"
+            }
+          ]
+        }
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///cellar flowers
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "When": {
+        "Season": "spring, summer, fall"
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam_CellarFlowerBox": {
+          "Id": "HashtagBearFam_CellarFlowerBox",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Condition": "TIME 600 1400",
+              "Portrait": "{{InternalAssetKey: assets/MadDog.Bearfam_BeenandoPortrait.png}}",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamCellarFlowerBoxOpen}}"
+                }
+              ]
+            },
+            {
+              "Name": "None",
+              "Condition": "ANY \"SEASON winter\" \"TIME 1410 2600\"",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamCellarFlowerBoxClosed}}"
+                }
+              ]
+            }
+          ],
+          "OpenSound": "MadDog.HashtagBearFam_BeeNoise",
+          "PurchaseSound": "MadDog.HashtagBearFam_BeeNoise",
+          "SalableItemTags": null,
+          "StackSizeVisibility": "Hide",
+          "Items": [
+            {
+              "Id": "MadDog.HashtagBearfam_Cornucopia_Iris", //
+              "Condition": "RANDOM 0.03, TIME 600 1400",
+              "ItemId": "Cornucopia_Iris",
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Cornucopia_Lily", //
+              "Condition": "RANDOM 0.04, TIME 600 1400",
+              "ItemId": "Cornucopia_Lily",
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Cornucopia_MorningGlory", //
+              "Condition": "RANDOM 0.06, TIME 600 1400",
+              "ItemId": "Cornucopia_MorningGlory",
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Cornucopia_Pansy", //
+              "Condition": "RANDOM 0.05, TIME 600 1400",
+              "ItemId": "Cornucopia_Pansy",
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Cornucopia_Rose", //
+              "Condition": "RANDOM 0.02, TIME 600 1400",
+              "ItemId": "Cornucopia_Rose",
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Flowers MORE FLOWERS",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "MadDog.HashtagBearFam_CellarFlowerBox", "Items" ],
+      "When": {
+        "HasMod": "Cornucopia.MoreFlowers",
+        "HasFlag": "Cornucopia.MoreFlowers_ExtendedFlowersPackEnabled",
+        "Season": "spring, summer, fall"
+      },
+      "Entries": {
+
+        "MadDog.HashtagBearfam_Cornucopia_BeeBalm": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_BeeBalm", //
+          "Condition": "TIME 600 1400",
+          "ItemId": "Cornucopia_BeeBalm",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Buttercup": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Buttercup", //
+          "Condition": "RANDOM 0.07, TIME 600 1400",
+          "ItemId": "Cornucopia_Buttercup",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Carnation": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Carnation", //
+          "Condition": "RANDOM 0.05, TIME 600 1400",
+          "ItemId": "Cornucopia_Carnation",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Dahlia": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Dahlia", //
+          "Condition": "RANDOM 0.02, TIME 600 1400",
+          "ItemId": "Cornucopia_Dahlia",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Daisy": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Daisy", //
+          "Condition": "RANDOM 0.05, TIME 600 1400",
+          "ItemId": "Cornucopia_Daisy",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Freesia": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Freesia", //
+          "Condition": "RANDOM 0.03, TIME 600 1400",
+          "ItemId": "Cornucopia_Freesia",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Peony": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Peony", //
+          "Condition": "RANDOM 0.03, TIME 600 1400",
+          "ItemId": "Cornucopia_Peony",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Violet": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Violet", //
+          "Condition": "RANDOM 0.06, TIME 600 1400",
+          "ItemId": "Cornucopia_Violet",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Magnolia": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Magnolia", //
+          "Condition": "RANDOM 0.03, TIME 600 1400",
+          "ItemId": "Cornucopia_Magnolia",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        }
+
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///lodge fruit bowl
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "MadDog.HashtagBearFam_FruitBowl": {
+          "Id": "HashtagBearFam_FruitBowl",
+          "Owners": [ //don't need this
+            {
+              "Name": "AnyOrNone",
+              "Condition": "TIME 600 1400",
+              "Portrait": "{{InternalAssetKey: assets/MadDog.Bearfam_FruitBowlPortrait.png}}",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamFruitBowlOpen}}"
+                }
+              ]
+            },
+            {
+              "Name": "None",
+              "Condition": "TIME 2410 2600",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.HashtagBearfamFruitBowlClosed}}"
+                }
+              ]
+            }
+          ],
+          "SalableItemTags": null,
+          "Items": [
+            {
+              "Id": "MadDog.HashtagBearfam_StoneBrambleBerry",
+              "Condition": "RANDOM 0.3, TIME 600 2400",
+              "ItemId": "MadDog.HashtagBearFam_StoneBrambleBerry",
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Cornucopia_Kiwi",
+              "Condition": "RANDOM 0.06, TIME 600 2400",
+              "ItemId": "Cornucopia_Kiwi",
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Cornucopia_Raspberry", //
+              "Condition": "RANDOM 0.4, TIME 600 2400",
+              "ItemId": "Cornucopia_Raspberry",
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearfam_Cornucopia_Pear", //
+              "Condition": "RANDOM 0.08, TIME 600 2400",
+              "ItemId": "Cornucopia_Pear",
+              "Price": 0,
+              "AvailableStock": 1, "AvoidRepeat": true,
+              "AvailableStockLimit": "Player"
+            }
+
+          ]
+        }
+      }
+    },
+
+    {
+      "LogName": "Fruit Bowl MORE FRUIT",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "MadDog.HashtagBearFam_FruitBowl", "Items" ],
+      "When": {
+        "HasMod": "Cornucopia.MoreCrops",
+        "HasFlag": "Cornucopia.MoreCrops_ExtendedCropsPackEnabled"
+      },
+      "Entries": {
+        "MadDog.HashtagBearfam_Cornucopia_BlackCurrants": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_BlackCurrants", //
+          "Condition": "RANDOM 0.3, TIME 600 2400",
+          "ItemId": "Cornucopia_BlackCurrants",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Cantaloupe": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Cantaloupe", //
+          "Condition": "RANDOM 0.04, TIME 600 2400",
+          "ItemId": "Cornucopia_Cantaloupe",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Elderberries": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Elderberries", //
+          "Condition": "RANDOM 0.4, TIME 600 2400",
+          "ItemId": "Cornucopia_Elderberries",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Gooseberry": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Gooseberry", //
+          "Condition": "RANDOM 0.4, TIME 600 2400",
+          "ItemId": "Cornucopia_Gooseberry",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Groundcherries": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Groundcherries", //
+          "Condition": "RANDOM 0.2, TIME 600 2400",
+          "ItemId": "Cornucopia_Groundcherries",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Honeydew": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Honeydew", //
+          "Condition": "RANDOM 0.05, TIME 600 2400",
+          "ItemId": "Cornucopia_Honeydew",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_JuniperBerries": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_JuniperBerries", //
+          "Condition": "TIME 600 2400",
+          "ItemId": "Cornucopia_JuniperBerries",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_DragonFruit": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_DragonFruit", //
+          "Condition": "RANDOM 0.04, TIME 600 2400",
+          "ItemId": "Cornucopia_DragonFruit",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Grapefruit": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Grapefruit", //
+          "Condition": "RANDOM 0.3, TIME 600 2400",
+          "ItemId": "Cornucopia_Grapefruit",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Lemon": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Lemon", //
+          "Condition": "RANDOM 0.8, TIME 600 2400",
+          "ItemId": "Cornucopia_Lemon",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Lime": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Lime", //
+          "Condition": "RANDOM 0.6, TIME 600 2400",
+          "ItemId": "Cornucopia_Lime",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Nectarine": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Nectarine", //
+          "Condition": "RANDOM 0.5, TIME 600 2400",
+          "ItemId": "Cornucopia_Nectarine",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        },
+        "MadDog.HashtagBearfam_Cornucopia_Papaya": {
+          "Id": "MadDog.HashtagBearfam_Cornucopia_Papaya", //
+          "Condition": "RANDOM 0.4, TIME 600 2400",
+          "ItemId": "Cornucopia_Papaya",
+          "Price": 0,
+          "AvailableStock": 1, "AvoidRepeat": true,
+          "AvailableStockLimit": "Player"
+        }
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Teren?
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",    
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199008": true
+     },
+      "Entries": {
+        "MadDog.HashtagBearFam_CaritasBakeryShop": {
+          "Id": "TerenCaritasBakery",
+          "Owners": [ //don't need this
+            {
+              "Name": "AnyOrNone",
+              "Id": "MadDog.HashtagBearFam.TerenWeekday",
+              "Condition": "TIME 800 1600, DAY_OF_WEEK Sunday Monday Wednesday",
+              "Portrait": "MadDog.HashtagBearFam.Teren",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.CaritasBakery.Teren.Weekday.{{Random:1++2++3|inputSeparator=++}}}}"
+                }
+              ]
+            },
+            {
+              "Name": "AnyOrNone",
+              "Id": "MadDog.HashtagBearFam.TerenWeekday2",
+              "Condition": "TIME 800 1600, DAY_OF_WEEK Tuesday Thursday",
+              "Portrait": "MadDog.HashtagBearFam.Teren",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.CaritasBakery.Teren.Weekday.{{Random:1++2++3|inputSeparator=++}}}}"
+                }
+              ]
+            },
+            {
+              "Name": "AnyOrNone",
+              "Id": "MadDog.HashtagBearFam.TerenWeekend",
+              "Condition": "TIME 1200 2600, DAY_OF_WEEK Friday Saturday",
+              "Portrait": "MadDog.HashtagBearFam.Teren",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.CaritasBakery.Teren.Weekend.{{Random:1++2++3|inputSeparator=++}}}}"
+                }
+              ]
+            },
+            {
+              "Name": "None",
+              "Condition": "ANY \"TIME 1610 2600, DAY_OF_WEEK Sunday Tuesday Monday Wednesday Thursday\" \"TIME 600 1150, DAY_OF_WEEK Friday Saturday\" \"SEASON_DAY spring 19 fall 19 fall 27 winter 16 spring 3 spring 23 summer 3 summer 23 fall 3 fall 23 winter 3 winter 23 spring 22 summer 22 fall 22 winter 22\"",
+              //"Portrait": "{{InternalAssetKey: assets/MadDog.Bearfam_JojaVendingPortrait.png}}",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:MadDog.CaritasBakery.Closed}}"
+                }
+              ]
+            }
+          ],
+          "SalableItemTags": [
+            "category_junk"
+          ],
+          "Items": [
+            {
+              "Id": "MadDog.HashtagBearfam_TerenRecipes",
+              "ItemID": "MadDog.HashtagBearFam_TerenRecipes",
+              "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16199004",
+              "Price": "1600",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_Cakes",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)MadDog.HashtagBearFam_TerenBakes_CookiesnCremeCake",
+                "(O)MadDog.HashtagBearFam_TerenBakes_DecadentCheesecake",
+                "(O)MadDog.HashtagBearFam_TerenBakes_CherryLayerCake",
+                "(O)MadDog.HashtagBearFam_TerenBakes_RainbowCake",
+                "(O)MadDog.HashtagBearFam_RoseCupcakes",
+                "(O)MadDog.HashtagBearFam_TTBrownies",
+                "(O)MadDog.HashtagBearFam_TerenBakes_BlueberrySpongeCake",
+                "(O)220", //choc
+                "(O)221" //pink
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_Breakfast",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+
+                "(O)MadDog.HashtagBearFam_TerenBakes_CinnaSpiceRoll",
+                "(O)MadDog.HashtagBearFam_TerenBakes_CaramelOrangeRoll",
+                "(O)MadDog.HashtagBearFam_TerenBakes_PDFruitScone",
+                "(O)MadDog.HashtagBearFam_TerenBakes_HazelnutCroissant",
+                "(O)MadDog.HashtagBearFam_TerenBakes_ApricotDonut",
+                "(O)MadDog.HashtagBearFam_TerenBakes_PomegranateEclair",
+                "(O)MadDog.HashtagBearFam_TerenBakes_WildPlumDonut",
+                "(O)MadDog.HashtagBearFam_TerenBakes_PlumRiceBalls",
+                "(O)651", //poppyseed muff
+                "(O)731" //maple bar
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_Desserts",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)MadDog.HashtagBearFam_TerenBakes_ZuzuPretzel",
+                "(O)MadDog.HashtagBearFam_TerenBakes_CaramelFlan",
+                "(O)MadDog.HashtagBearFam_TerenBakes_RainbowChipCookies",
+                "(O)MadDog.HashtagBearFam_TerenBakes_RedVelvetCookie",
+                "(O)MadDog.HashtagBearFam_TerenBakes_HeartHealthCookies",
+                "(O)MadDog.HashtagBearFam_Eli_Cookie",
+                "(O)223", //cookie
+                "(O)222", //rhubarb
+                "(O)234", //blue tart
+                "(O)608", //pump
+                "(O)611" //blackb
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_Breads",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)MadDog.HashtagBearFam_TerenBakes_ButtermilkCrescentRoll",
+                "(O)MadDog.HashtagBearFam_SesameBrownBread",
+                "(O)MadDog.HashtagBearFam_HoneyWheatBread",
+                "(O)MadDog.HashtagBearFam_BananaBread",
+                "(O)MadDog.HashtagBearFam_CornbreadMuffins",
+                "(O)216" //bread
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_Beverages",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)253", //tripleshot
+                "(O)395", //coffee
+                "(O)614", //green tea
+                "(O)184", //milk
+                "(O)350", //juice
+                "(O)167", //joja
+                "(O)MadDog.HashtagBearFam_TerenMakes_TooMuchFruitSmoothie",
+                "(O)MadDog.HashtagBearFam_TerenMakes_PeachyLemonade",
+                "(O)MadDog.HashtagBearFam_Dylan_Tea",
+                "(O)MadDog.HashtagBearFam_PumpkinJoja",
+                "(O)MadDog.HashtagBearFam_PeachJoja",
+                "(O)MadDog.HashtagBearFam_JojaFloat"
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_Savory",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)MadDog.HashtagBearFam_RoseysLatkes",
+                "(O)MadDog.HashtagBearFam_TerenMakes_MushroomSteakBurger",
+                "(O)MadDog.HashtagBearFam_TerenMakes_TomatoCoconutBisque",
+                "(O)MadDog.HashtagBearFam_TerenMakes_JerkVeggiesandSalsa",
+                "(O)MadDog.HashtagBearFam_TerenMakes_GarlicSquoodles",
+                "(O)MadDog.HashtagBearFam_TerenMakes_VeggieSkewer"
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_Shirts",
+              "AvailableStock": 1,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Dark",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Green",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Blue",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Purple",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Red",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Teal",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Pink",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Yellow"
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_CroppedShirts",
+              "AvailableStock": 1,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Cropped.Dark",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Cropped.Green",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Cropped.Blue",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Cropped.Purple",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Cropped.Red",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Cropped.Teal",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Cropped.Pink",
+                "(S)MadDog.HashtagBearFam_CaritasFlannel.Cropped.Yellow"
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_SpringPhotos",
+              "AvailableStock": 1,
+              "Condition": "SEASON Spring",
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.HetterglossCaverns",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.CarnegieaDesert",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.GiantForest",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.MariposaNaturePreserve"
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_SummerPhotos",
+              "AvailableStock": 1,
+              "Condition": "SEASON Summer",
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.ElysiumCastleRuins",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.FortunetellerFalls",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.GotoroMerchantShips",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.CoeruleusLake"
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_FallPhotos",
+              "AvailableStock": 1,
+              "Condition": "SEASON Fall",
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.SequoiadendronAutumn",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.MoltenGoldWheatFields",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.FireSwamp",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.PalladiumFortressRuins"
+              ]
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_BakeryGroups_WinterPhotos",
+              "AvailableStock": 1,
+              "Condition": "SEASON Winter",
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.EruptingMtGotoro",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.HetterglossMountains",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.GiantsDiadem",
+                "(F)MadDog.HashtagBearFam_GotoroPhotos.HetterFireSwampWinterglossCaverns"
+              ]
+            },
+            {
+              "Id": "(O)MadDog.HashtagBearFam_TerenBakes_SpringMacarons", //
+              "Condition": "SEASON Spring",
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_SpringMacarons", //
+              //"Price": 500,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "(O)MadDog.HashtagBearFam_TerenBakes_SummerCakePopsicle", //
+              "Condition": "SEASON Summer",
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_SummerCakePopsicle", //
+              //"Price": 25,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "(O)MadDog.HashtagBearFam_TerenBakes_AutumnPumpkinCookie", //
+              "Condition": "SEASON Fall",
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_AutumnPumpkinCookie", //
+              //"Price": 25,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "(O)MadDog.HashtagBearFam_TerenBakes_WinterGingerBread", //
+              "Condition": "SEASON Winter",
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_WinterGingerBread", //
+              //"Price": 25,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            //recipes
+            {
+              "Id": "MadDog.HashtagBearFam_Dylan_Tea", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_Dylan_Tea", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_Eli_Cookie", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_Eli_Cookie", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_CookiesnCremeCake", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_CookiesnCremeCake", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_RainbowChipCookies", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_RainbowChipCookies", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_ApricotDonut", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_ApricotDonut", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_DecadentCheesecake", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_DecadentCheesecake", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_ZuzuPretzel", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_ZuzuPretzel", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_HazelnutCroissant", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_HazelnutCroissant", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_CaramelFlan", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_CaramelFlan", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_RedVelvetCookie", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_RedVelvetCookie", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_CherryLayerCake", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_CherryLayerCake", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_CinnaSpiceRoll", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_CinnaSpiceRoll", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_PomegranateEclair", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_PomegranateEclair", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_PDFruitScone", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_PDFruitScone", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_ButtermilkCrescentRoll", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_ButtermilkCrescentRoll", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_RainbowCake", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_RainbowCake", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_SpringMacarons", //
+              "Condition": "SEASON Spring",
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_SpringMacarons", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_SummerCakePopsicle", //
+              "Condition": "SEASON Summer",
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_SummerCakePopsicle", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_AutumnPumpkinCookie", //
+              "Condition": "SEASON Fall",
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_AutumnPumpkinCookie", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_WinterGingerBread", //
+              "Condition": "SEASON Winter",
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_WinterGingerBread", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_WildPlumDonut", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_WildPlumDonut", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_HeartHealthCookies", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_HeartHealthCookies", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_PlumRiceBalls", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_PlumRiceBalls", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenMakes_MushroomSteakBurger", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenMakes_MushroomSteakBurger", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenMakes_TomatoCoconutBisque", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenMakes_TomatoCoconutBisque", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenMakes_JerkVeggiesandSalsa", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenMakes_JerkVeggiesandSalsa", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenMakes_GarlicSquoodles", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenMakes_GarlicSquoodles", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenMakes_PeachyLemonade", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenMakes_PeachyLemonade", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_BlueberrySpongeCake", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_BlueberrySpongeCake", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenBakes_CaramelOrangeRoll", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenBakes_CaramelOrangeRoll", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TerenMakes_TooMuchFruitSmoothie", //
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_TerenMakes_TooMuchFruitSmoothie", //
+              "Price": 1000,
+              "IsRecipe": true
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_RoseysLatkes",
+              //"Condition": null,
+              "ItemId": "MadDog.HashtagBearFam_RoseysLatkes", //
+              "Price": 1000,
+              "IsRecipe": true
+            }
+          ]
+        }
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "LogName": "Add Spouse Portraits to Traveling Cart",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Traveler",
+        "Items"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam_SigurdPortrait": {
+          "Price": 30000,
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Player",
+          "AvoidRepeat": false,
+          "UseObjectDataPrice": false,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifierMode": "Stack",
+          "AvailableStockModifiers": null,
+          "AvailableStockModifierMode": "Stack",
+          "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Sigurd 14",
+          "Id": "(F)MadDog.HashtagBearFam_SigurdPortrait",
+          "ItemId": "(F)MadDog.HashtagBearFam_SigurdPortrait",
+          "IsRecipe": false,
+          "StackModifierMode": "Stack",
+          "QualityModifierMode": "Stack"
+        },
+        "MadDog.HashtagBearFam_GunnarPortrait": {
+          "Price": 30000,
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Player",
+          "AvoidRepeat": false,
+          "UseObjectDataPrice": false,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifierMode": "Stack",
+          "AvailableStockModifiers": null,
+          "AvailableStockModifierMode": "Stack",
+          "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Gunnar 14",
+          "Id": "(F)MadDog.HashtagBearFam_GunnarPortrait",
+          "ItemId": "(F)MadDog.HashtagBearFam_GunnarPortrait",
+          "IsRecipe": false,
+          "StackModifierMode": "Stack",
+          "QualityModifierMode": "Stack"
+        },
+        "MadDog.HashtagBearFam_TerenPortrait": {
+          "Price": 30000,
+          "AvailableStock": 1, 
+          "AvailableStockLimit": "Player",
+          "AvoidRepeat": false,
+          "UseObjectDataPrice": false,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifierMode": "Stack",
+          "AvailableStockModifiers": null,
+          "AvailableStockModifierMode": "Stack",
+          "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Teren 14",
+          "Id": "(F)MadDog.HashtagBearFam_TerenPortrait",
+          "ItemId": "(F)MadDog.HashtagBearFam_TerenPortrait",
+          "IsRecipe": false,
+          "StackModifierMode": "Stack",
+          "QualityModifierMode": "Stack"
+        }
+
+      }
+    }
+  ]
+}

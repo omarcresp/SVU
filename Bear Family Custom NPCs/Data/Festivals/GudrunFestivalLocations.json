@@ -1,0 +1,534 @@
+{
+	"Changes": [
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//Gudrun
+
+		//Egg Festival
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 54 77 3",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 54 77 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "BearFamExtraMembers",
+				"HasConversationTopic |contains=GudrunRunAway": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 54 77 3",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 54 77 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "BearFamExtraMembers",
+				"HasConversationTopic |contains=GudrunRunAway": false
+			}
+		},
+
+		// Flower Dance
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 44 42 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 44 42 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 44 42 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 44 42 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			}
+		},
+
+
+		// Luau
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 36 23 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 36 23 0",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "BearFamExtraMembers",
+				"HasConversationTopic |contains=GudrunRunAway": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 36 23 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 36 23 0",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "BearFamExtraMembers",
+				"HasConversationTopic |contains=GudrunRunAway": false
+			}
+		},
+		//fireworks fest
+		{
+			"LogName": "Fireworks Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer20",
+			"When": {
+				"HasMod |contains=violetlizabet.FireworksFestival": true,
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 45 11 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Fireworks Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer20",
+			"When": {
+				"HasMod |contains=violetlizabet.FireworksFestival": true,
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 45 11 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		// Dance of the Moonlight Jellies
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{ // I have not added a MainEvent to this one, since the waterfront area is V crowded already and very little of the map is visible.
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 98 43 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "BearFamExtraMembers",
+				"HasConversationTopic |contains=GudrunRunAway": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{ // I have not added a MainEvent to this one, since the waterfront area is V crowded already and very little of the map is visible.
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 98 43 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "BearFamExtraMembers",
+				"HasConversationTopic |contains=GudrunRunAway": false
+			}
+		},
+		/*{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{ // I have not added a MainEvent to this one, since the waterfront area is V crowded already and very little of the map is visible.
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 68 8 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "BearFamExtraMembers",
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"Query: {{Year}} % 2 = 0": true
+			}
+		},*/
+
+		// Stardew Fair
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Gudrun 60 53 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Gudrun 44 35 1",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasFlag": "BearFamExtraMembers",
+				"HasConversationTopic |contains=GudrunRunAway": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "MadDog.HashtagBearFam.Gudrun 13 38 1",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers",
+				"Query: {{Year}} % 2 = 0": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "MadDog.HashtagBearFam.Gudrun 13 38 1",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers",
+				"Query: {{Year}} % 2 = 0": true
+			}
+		},
+
+		// Spirit's Eve
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 9 53 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 9 53 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 9 53 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Year": "1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99",
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			}
+		},
+		// Ice Festival Gudrun hates this festival
+		/*{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 59 28 1",
+					"Delimiter": "/"
+				},
+		// Note the spelling of "Main-Event" here differs from the others
+				{	"Operation": "Append",
+					"Target": [ "Entries", "Main-Event_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 59 28 1",
+					"Delimiter": "/"
+				}
+			]
+		},*/
+
+		// Winter Star
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 30 77 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 30 77 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			}
+		},
+		//bonus festivals
+		{
+			"LogName": "Love Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/Winter6",
+			"When": {
+				"HasMod": "AvalonMFX.LoveFestival",
+				"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Gudrun 21 95 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Fields", "set-up", 5 ],
+					"Value": "/positionOffset MadDog.HashtagBearFam.Gudrun 0 -1/animate MadDog.HashtagBearFam.Gudrun false true 100 32 32 32"
+				}
+			]
+		},
+		{
+			"LogName": " Fashion Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/Spring19",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Gudrun 80 9 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Gudrun 22 23 1",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod": "UNA.FF.CP",
+				"HasFlag |contains=BearFamExtraMembers": true
+			}
+		}
+		/*,
+
+		//RSV Ember of Resolutions
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+		"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			},
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 26 35 1",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 26 35 1",
+					"Delimiter": "/"
+				}
+			]
+		},
+
+		//RSV Gathering Festival
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+		"HasConversationTopic |contains=GudrunRunAway": false,
+				"HasFlag": "BearFamExtraMembers"
+			},
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 106 44 2",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Gudrun 106 44 2",
+					"Delimiter": "/"
+				}
+			]
+		}*/
+	]
+}

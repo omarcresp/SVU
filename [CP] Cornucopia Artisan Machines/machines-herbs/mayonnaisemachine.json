@@ -1,0 +1,42 @@
+{
+	"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules" ],
+			"Entries": {
+				"Cornucopia_DillMayonnaise": {
+					"Id": "Cornucopia_DillMayonnaise",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "(O)Cornucopia_Dill",
+							}
+						],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Cornucopia_DillMayonnaiseLargeEgg",
+							"ItemId": "(O)Cornucopia_DillMayonnaise",
+							"Quality": 2,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
+							}
+						},
+						{
+							"Id": "Cornucopia_DillMayonnaiseSmallEgg",
+							"ItemId": "(O)Cornucopia_DillMayonnaise",
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
+							}
+						},
+					],
+					"MinutesUntilReady": 180,
+				}
+			}
+		}
+    ]
+}

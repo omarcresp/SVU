@@ -1,0 +1,738 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Wallpapers/WallpaperSet1",
+      "FromFile": "items/Wallpapers/sprite.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/AdditionalWallpaperFlooring",
+      "Entries": {
+        "{{ModId}}_ZuzuWallpapers": {
+          "ID": "{{ModId}}_ZuzuWallpapers",
+          "Texture": "Mods/{{ModId}}/Wallpapers/WallpaperSet1",
+          "IsFlooring": false,
+          "Count": 4
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_BigBurger": {
+          "Name": "{{ModId}}_BigBurger",
+          "DisplayName": "Big Burger",
+          "Description": "A big burger from Zuzu City. The meat is tender and juicy.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 280,
+          "Texture": "Mods/{{ModId}}/Items/Big Burger",
+          "SpriteIndex": 0,
+          "Edibility": 35,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_BLT": {
+          "Name": "{{ModId}}_BLT",
+          "DisplayName": "BLT",
+          "Description": "A delicious sandwich; a combination of bacon, lettuce, tomato and some mayonnaise.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/BLT",
+          "SpriteIndex": 0,
+          "Edibility": 32,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_ChickenDrumstick": {
+          "Name": "{{ModId}}_ChickenDrumstick",
+          "DisplayName": "Chicken Drumstick",
+          "Description": "A large leg of chicken. It looks very nice.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/Items/Chicken Drumstick",
+          "SpriteIndex": 0,
+          "Edibility": 34,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_ChocolateSlice": {
+          "Name": "{{ModId}}_ChocolateSlice",
+          "DisplayName": "Chocolate Slice",
+          "Description": "A slice of chocolate cake with a shiny red cherry on the top.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/Items/Chocolate Slice",
+          "SpriteIndex": 0,
+          "Edibility": 33,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_Cider": {
+          "Name": "{{ModId}}_Cider",
+          "DisplayName": "Cider",
+          "Description": "A bottle of crisp apple cider. It looks lovely.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Cider",
+          "SpriteIndex": 0,
+          "Edibility": 26,
+          "IsDrink": true,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_DowntownDog": {
+          "Name": "{{ModId}}_DowntownDog",
+          "DisplayName": "Downtown Dog",
+          "Description": "A yummy hot dog from Zuzu City, it looks delicious!",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 260,
+          "Texture": "Mods/{{ModId}}/Items/Downtown Dog",
+          "SpriteIndex": 0,
+          "Edibility": 45,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_GranaryStack": {
+          "Name": "{{ModId}}_GranaryStack",
+          "DisplayName": "Granary Stack",
+          "Description": "A nice stack of lettuce, tomato and chicken on a loaf of granary bread.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Granary Stack",
+          "SpriteIndex": 0,
+          "Edibility": 36,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_IceDelight": {
+          "Name": "{{ModId}}_IceDelight",
+          "DisplayName": "Ice Delight",
+          "Description": "A bowl of cool vanilla ice cream, topped with a drizzle of raspberry sauce.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Ice Delight",
+          "SpriteIndex": 0,
+          "Edibility": 29,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_JojaCocktail": {
+          "Name": "{{ModId}}_JojaCocktail",
+          "DisplayName": "Joja Cocktail",
+          "Description": "A bright blue cocktail. It looks bad for you, but who cares?",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Joja Cocktail",
+          "SpriteIndex": 0,
+          "Edibility": 10,
+          "IsDrink": true,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_JojaFries": {
+          "Name": "{{ModId}}_JojaFries",
+          "DisplayName": "Joja Fries",
+          "Description": "A salty tub of potato fries. They're swimming with grease.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 25,
+          "Texture": "Mods/{{ModId}}/Items/Joja Fries",
+          "SpriteIndex": 0,
+          "Edibility": 3,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_JojaSoda": {
+          "Name": "{{ModId}}_JojaSoda",
+          "DisplayName": "Joja Soda",
+          "Description": "A draught version of Joja Cola. It also has a bit more sweetness to it.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 50,
+          "Texture": "Mods/{{ModId}}/Items/Joja Soda",
+          "SpriteIndex": 0,
+          "Edibility": 5,
+          "IsDrink": true,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_LemonDrizzleCheesecake": {
+          "Name": "{{ModId}}_LemonDrizzleCheesecake",
+          "DisplayName": "Lemon Drizzle Cheesecake",
+          "Description": "A lemon curd cheesecake with a shortbread base. Tangy!",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/Items/Lemon Drizzle Cheesecake",
+          "SpriteIndex": 0,
+          "Edibility": 30,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_MozzarellaSlice": {
+          "Name": "{{ModId}}_MozzarellaSlice",
+          "DisplayName": "Mozzarella Slice",
+          "Description": "A slice of mozzarella pizza with various toppings. The cheese is nice and stringy.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Mozzarella Slice",
+          "SpriteIndex": 0,
+          "Edibility": 29,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_QiCrystal": {
+          "Name": "{{ModId}}_QiCrystal",
+          "DisplayName": "Qi Crystal",
+          "Description": "A crystal with exceptionally strong energy. It appears to be comprised of prismatic shards and diamonds, bound together.",
+          "Type": "Minerals",
+          "Category": -2,
+          "Price": 1500,
+          "Texture": "Mods/{{ModId}}/Items/Qi Crystal",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_SerpentFragment": {
+          "Name": "{{ModId}}_SerpentFragment",
+          "DisplayName": "Serpent Fragment",
+          "Description": "A strange scale-like fragment dropped by the mighty beasts inside the Zuzu Desert cave. There's a strange energy emanating from it.",
+          "Type": "Basic",
+          "Category": -28,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Serpent Fragment",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": false,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_StrawberryDaiquiri": {
+          "Name": "{{ModId}}_StrawberryDaiquiri",
+          "DisplayName": "Strawberry Daiquiri",
+          "Description": "A red, very strong 'alcohol smoothie'. It looks absolutely delicious.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Strawberry Daiquiri",
+          "SpriteIndex": 0,
+          "Edibility": 28,
+          "IsDrink": true,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_ZuzuChampagne": {
+          "Name": "{{ModId}}_ZuzuChampagne",
+          "DisplayName": "Zuzu Champagne",
+          "Description": "A bottle of pink, perfumey champagne. Why not treat yourself?",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Zuzu Champagne",
+          "SpriteIndex": 0,
+          "Edibility": 28,
+          "IsDrink": true,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_ZuzuIceCream": {
+          "Name": "{{ModId}}_ZuzuIceCream",
+          "DisplayName": "Zuzu Ice Cream",
+          "Description": "A cone of pink Zuzu Ice Cream - a very popular flavour, with an indescribably sweet taste.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 140,
+          "Texture": "Mods/{{ModId}}/Items/Zuzu Ice Cream",
+          "SpriteIndex": 0,
+          "Edibility": 22,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_ZuzuMilkshake": {
+          "Name": "{{ModId}}_ZuzuMilkshake",
+          "DisplayName": "Zuzu Milkshake",
+          "Description": "A milkshake from Zuzu City. It is very popular, due to its thick, creamy consistency and flavour!",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 128,
+          "Texture": "Mods/{{ModId}}/Items/Zuzu Milkshake",
+          "SpriteIndex": 0,
+          "Edibility": 16,
+          "IsDrink": true,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_ZuzuSignatureCocktail": {
+          "Name": "{{ModId}}_ZuzuSignatureCocktail",
+          "DisplayName": "Zuzu Signature Cocktail",
+          "Description": "A neon pink cocktail. You don't know what's in it, but it looks damn tasty.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Zuzu Signature Cocktail",
+          "SpriteIndex": 0,
+          "Edibility": 30,
+          "IsDrink": true,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_SpanishLime": {
+          "Name": "{{ModId}}_SpanishLime",
+          "DisplayName": "Spanish Lime",
+          "Description": "An exotic fruit growable only on tropical islands. It has a sweet yet tangy flavour to it.",
+          "Type": "Forage",
+          "Category": -81,
+          "Price": 120,
+          "Texture": "Mods/{{ModId}}/Items/Spanish Lime",
+          "SpriteIndex": 0,
+          "Edibility": 25,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_Jackfruit": {
+          "Name": "{{ModId}}_Jackfruit",
+          "DisplayName": "Jackfruit",
+          "Description": "An exotic fruit growable only on tropical islands. It's rich in nutrients and fiber.",
+          "Type": "Forage",
+          "Category": -81,
+          "Price": 130,
+          "Texture": "Mods/{{ModId}}/Items/Jackfruit",
+          "SpriteIndex": 0,
+          "Edibility": 26,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_Araza": {
+          "Name": "{{ModId}}_Araza",
+          "DisplayName": "Araza",
+          "Description": "An exotic fruit growable only on tropical islands. It has a very sour and bittersweet flavour to it.",
+          "Type": "Forage",
+          "Category": -81,
+          "Price": 115,
+          "Texture": "Mods/{{ModId}}/Items/Araza",
+          "SpriteIndex": 0,
+          "Edibility": 23,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_Ackee": {
+          "Name": "{{ModId}}_Ackee",
+          "DisplayName": "Ackee",
+          "Description": "An exotic fruit growable only on tropical islands. A relative of the lychee, with a delicate, nutty flavour.",
+          "Type": "Forage",
+          "Category": -81,
+          "Price": 120,
+          "Texture": "Mods/{{ModId}}/Items/Ackee",
+          "SpriteIndex": 0,
+          "Edibility": 20,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_Cherimoya": {
+          "Name": "{{ModId}}_Cherimoya",
+          "DisplayName": "Cherimoya",
+          "Description": "An exotic fruit growable only on tropical islands. A light and refreshing fruit, reminiscent of a fruit salad.",
+          "Type": "Forage",
+          "Category": -81,
+          "Price": 140,
+          "Texture": "Mods/{{ModId}}/Items/Cherimoya",
+          "SpriteIndex": 0,
+          "Edibility": 28,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_Earth'sEssence": {
+          "Name": "{{ModId}}_Earth'sEssence",
+          "DisplayName": "Earth's Essence",
+          "Description": "A tough crystalline cluster of minerals with a forest green sheen to them. They have a certain aura of being connected to nature itself.",
+          "Type": "Mineral",
+          "Category": -12,
+          "Price": 170,
+          "Texture": "Mods/{{ModId}}/Items/Earth's Essence",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_LotusCrystal": {
+          "Name": "{{ModId}}_LotusCrystal",
+          "DisplayName": "Earth's Essence",
+          "Description": "A delicate crystal in the shape of a lotus flower. It's very beautiful.",
+          "Type": "Mineral",
+          "Category": -12,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Lotus Crystal",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_Moonstone": {
+          "Name": "{{ModId}}_Moonstone",
+          "DisplayName": "Moonstone",
+          "Description": "The texture of it reminds you of a diamond, but the colours are a deeper, more pearlescent blue.",
+          "Type": "Mineral",
+          "Category": -12,
+          "Price": 220,
+          "Texture": "Mods/{{ModId}}/Items/Moonstone",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_Stargazer'sOre": {
+          "Name": "{{ModId}}_Stargazer'sOre",
+          "DisplayName": "Stargazer's Ore",
+          "Description": "It's like a geode of deep blue crystal. It shimmers with the glow of the night sky.",
+          "Type": "Mineral",
+          "Category": -12,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Stargazer's Ore",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_SunsetFragment": {
+          "Name": "{{ModId}}_SunsetFragment",
+          "DisplayName": "Sunset Fragment",
+          "Description": "A chunk of infernal crystal, forged in the depths of the Earth's core.",
+          "Type": "Mineral",
+          "Category": -12,
+          "Price": 190,
+          "Texture": "Mods/{{ModId}}/Items/Sunset Fragment",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": false
+        },
+        //fish
+        
+        "{{ModId}}_SapphireStarfish": {
+          "Name": "{{ModId}}_SapphireStarfish",
+          "DisplayName": "Sapphire Starfish",
+          "Description": "A small starfish resembling a sapphire crystal. It can only be caught in the mysterious depths of the Zuzu Oasis Caverns.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/Items/Sapphire Starfish",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": false,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_ZuzuCarp": {
+          "Name": "{{ModId}}_ZuzuCarp",
+          "DisplayName": "Zuzu Carp",
+          "Description": "A strange purple-pink version of the carp. It seems to have 2 extra fins.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Zuzu Carp",
+          "SpriteIndex": 0,
+          "Edibility": 65,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": false,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_Angelfish": {
+          "Name": "{{ModId}}_Angelfish",
+          "DisplayName": "Angelfish",
+          "Description": "These fish grow to be quite large, and they fetch quite a price. They only inhabit exceptionally tropical habitats.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/Items/Angelfish",
+          "SpriteIndex": 0,
+          "Edibility": 30,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": false,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_Clownfish": {
+          "Name": "{{ModId}}_Clownfish",
+          "DisplayName": "Clownfish",
+          "Description": "Clownfish are social fish, living in anemones with their own 'families'. They don't, however, tell jokes and make balloon animals.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 175,
+          "Texture": "Mods/{{ModId}}/Items/Clownfish",
+          "SpriteIndex": 0,
+          "Edibility": 25,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": false,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_FireJellyfish": {
+          "Name": "{{ModId}}_FireJellyfish",
+          "DisplayName": "Fire Jellyfish",
+          "Description": "Fire Jellyfish are dastardly little sea dwellers, feeding off of other jellyfish, but also fish fry. They can let out poison if irritated, too.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 235,
+          "Texture": "Mods/{{ModId}}/Items/Fire Jellyfish",
+          "SpriteIndex": 0,
+          "Edibility": -15,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": false,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_MarineDragon": {
+          "Name": "{{ModId}}_MarineDragon",
+          "DisplayName": "Marine Dragon",
+          "Description": "A relative of the seahorse, the marine dragon is an exotic fish that is rarely found frequenting tropical archipelagoes.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 300,
+          "Texture": "Mods/{{ModId}}/Items/Marine Dragon",
+          "SpriteIndex": 0,
+          "Edibility": -5,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": false,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_MarineGold": { // very tricky
+          "Name": "{{ModId}}_MarineGold",
+          "DisplayName": "Marine Gold",
+          "Description": "A special fish with a golden sheen coated upon its pearlescent scales. It's a tricky fish, only found in hot climates.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 600,
+          "Texture": "Mods/{{ModId}}/Items/Marine Gold",
+          "SpriteIndex": 0,
+          "Edibility": 95,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": false,
+          "ExcludeFromShippingCollection": false
+        },
+        "{{ModId}}_VampireSquid": {
+          "Name": "{{ModId}}_VampireSquid",
+          "DisplayName": "Vampire Squid",
+          "Description": "A cephalopod found in extreme deep sea environments, but for some unknown reason, it comes to near surface in hot and humid regions.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 240,
+          "Texture": "Mods/{{ModId}}/Items/Vampire Squid",
+          "SpriteIndex": 0,
+          "Edibility": -3,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": false,
+          "ExcludeFromShippingCollection": false
+        },
+
+
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModId}}_QiCrystal": "72 3 74 1/null/{{ModId}}_QiCrystal/false/Combat 6/Qi Crystal"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_BubblegumIceCream": {
+          "Name": "{{ModId}}_BubblegumIceCream",
+          "DisplayName": "Bubblegum Ice Cream",
+          "Description": "A brightly-coloured cone of Bubblegum Ice Cream Cone - a popular flavour, due to its sweetness!",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 130,
+          "Texture": "Mods/{{ModId}}/Items/Bubblegum Ice Cream",
+          "SpriteIndex": 0,
+          "Edibility": 20,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_StrawberryPopsicle": {
+          "Name": "{{ModId}}_StrawberryPopsicle",
+          "DisplayName": "Strawberry Popsicle",
+          "Description": "A block of strawberry flavoured ice on a wooden stick. It's sweet.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 125,
+          "Texture": "Mods/{{ModId}}/Items/Strawberry Popsicle",
+          "SpriteIndex": 0,
+          "Edibility": 18,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        }
+      },
+      "When": {
+        "HasMod |contains=Aquilegia.SweetTooth": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ChocolateIceCream": {
+          "Name": "{{ModId}}_ChocolateIceCream",
+          "DisplayName": "Chocolate Ice Cream",
+          "Description": "A delicious cone of chocolate flavoured ice cream cone. It's a refreshing treat, perfect for a hot day.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 130,
+          "Texture": "Mods/{{ModId}}/Items/Chocolate Ice Cream",
+          "SpriteIndex": 0,
+          "Edibility": 20,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        }
+      },
+      "When": {
+        "HasMod |contains=ppja.artisanvalleymachinegoods": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_Popcorn": {
+          "Name": "{{ModId}}_Popcorn",
+          "DisplayName": "Popcorn",
+          "Description": "A delicious, salty snack. Great to eat while watching a movie! There's a couple un-popped kernels in the bottom.",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods/{{ModId}}/Items/Popcorn",
+          "SpriteIndex": 0,
+          "Edibility": 10,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true
+        }
+      },
+      "When": {
+        "HasMod |contains=ppja.evenmorerecipes": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "{{ModId}}_QiBlade": {
+          "Name": "{{ModId}}_QiBlade",
+          "DisplayName": "Qi Blade",
+          "Description": "A mysterious dagger given to you by Mr Qi. It feels... as if it were from another dimension.",
+          "Type": 1,
+          "MinDamage": 0,
+          "MaxDamage": 150,
+          "Texture": "Mods/{{ModId}}/Weapons/Qi Blade",
+          "SpriteIndex": 0,
+          "Knockback": 1.2,
+          "Speed": 3,
+          "Precision": 0.5,
+          "CanBeLostOnDeath": false
+        },
+        "{{ModId}}_Serpent'sSmallsword": {
+          "Name": "{{ModId}}_Serpent'sSmallsword",
+          "DisplayName": "Serpent's Smallsword",
+          "Description": "An odd weapon Qi made for you by combining fragments dropped by a deadly beast. The blade seems to have a golden glow.",
+          "Type": 3,
+          "MinDamage": 50,
+          "MaxDamage": 110,
+          "Texture": "Mods/{{ModId}}/Weapons/Serpent's Smallsword",
+          "SpriteIndex": 0,
+          "Knockback": 1.5,
+          "Speed": 1,
+          "Precision": 0.3,
+          "CanBeLostOnDeath": false
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shirts",
+      "Entries": {
+        "{{ModId}}_ZuzuUniversityJersey": {
+          "Name": "{{ModId}}_ZuzuUniversityJersey",
+          "DisplayName": "Zuzu University Jersey",
+          "Description": "The flagship jersey of Zuzu University's Gridball team.",
+          "Texture": "Mods/{{ModId}}/Shirts/master",
+          "SpriteIndex": 0
+        }
+      }
+    },
+
+    ///
+    /// Textures <<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+    ///
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Items/Big Burger, Mods/{{ModId}}/Items/BLT, Mods/{{ModId}}/Items/Bubblegum Ice Cream, Mods/{{ModId}}/Items/Chicken Drumstick, Mods/{{ModId}}/Items/Chocolate Ice Cream, Mods/{{ModId}}/Items/Chocolate Slice, Mods/{{ModId}}/Items/Cider, Mods/{{ModId}}/Items/Downtown Dog, Mods/{{ModId}}/Items/Granary Stack, Mods/{{ModId}}/Items/Ice Delight, Mods/{{ModId}}/Items/Joja Fries, Mods/{{ModId}}/Items/Joja Cocktail, Mods/{{ModId}}/Items/Serpent Fragment, Mods/{{ModId}}/Items/Joja Soda, Mods/{{ModId}}/Items/Lemon Drizzle Cheesecake, Mods/{{ModId}}/Items/Mozzarella Slice, Mods/{{ModId}}/Items/Popcorn, Mods/{{ModId}}/Items/Qi Crystal, Mods/{{ModId}}/Items/Sapphire Starfish, Mods/{{ModId}}/Items/Strawberry Daiquiri, Mods/{{ModId}}/Items/Strawberry Popsicle, Mods/{{ModId}}/Items/Zuzu Carp, Mods/{{ModId}}/Items/Zuzu Champagne, Mods/{{ModId}}/Items/Zuzu Ice Cream, Mods/{{ModId}}/Items/Zuzu Milkshake, Mods/{{ModId}}/Items/Zuzu Signature Cocktail, Mods/{{ModId}}/Items/Ackee, Mods/{{ModId}}/Items/Araza, Mods/{{ModId}}/Items/Cherimoya, Mods/{{ModId}}/Items/Earth's Essence, Mods/{{ModId}}/Items/Jackfruit, Mods/{{ModId}}/Items/Lotus Crystal, Mods/{{ModId}}/Items/Moonstone, Mods/{{ModId}}/Items/Spanish Lime, Mods/{{ModId}}/Items/Stargazer's Ore, Mods/{{ModId}}/Items/Sunset Fragment, Mods/{{ModId}}/Items/Angelfish, Mods/{{ModId}}/Items/Clownfish, Mods/{{ModId}}/Items/Fire Jellyfish, Mods/{{ModId}}/Items/Marine Dragon, Mods/{{ModId}}/Items/Marine Gold, Mods/{{ModId}}/Items/Vampire Squid",
+      "FromFile": "items/Objects/{{TargetWithoutPath}}.png" // loads all images for Objects
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Weapons/Qi Blade, Mods/{{ModId}}/Weapons/Serpent's Smallsword",
+      "FromFile": "items/Weapons/{{TargetWithoutPath}}.png" // loads all images for Weapons
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Shirts/master",
+      "FromFile": "items/Shirts/master.png" // loads all images for Shirts
+    },
+
+    //
+		// new fish
+		//
+		{
+			"LogName": "Fish Info",
+			"Action": "EditData",
+			"Target": "Data/Fish",
+			"Entries": {
+				"DTZ.DowntownZuzuCP_ZuzuCarp": "Zuzu Carp/30/smooth/7/45/0600 2600/spring summer fall winter/both/null/2/.3/.5/2/true",
+				"DTZ.DowntownZuzuCP_SapphireStarfish": "Sapphire Starfish/65/sinker/7/30/0600 2600/spring summer fall winter/both/null/0/.3/.5/2/true",
+        "DTZ.DowntownZuzuCP_Angelfish": "Angelfish/55/mixed/4/10/1500 2600/spring summer fall winter/both/null/1/.4/.5/1/true",
+        "DTZ.DowntownZuzuCP_Clownfish": "Clownfish/33/smooth/2/15/600 1600/spring summer fall winter/sunny/null/2/.5/.5/0/true",
+        "DTZ.DowntownZuzuCP_FireJellyfish": "Fire Jellyfish/60/sinker/1/4/600 2600/spring summer fall winter/both/null/2/.4/.5/2/true",
+        "DTZ.DowntownZuzuCP_MarineDragon": "Marine Dragon/63/dart/1/14/1200 2300/spring summer fall winter/both/null/3/.3/.5/2/true",
+        "DTZ.DowntownZuzuCP_MarineGold": "Marine Gold/90/mixed/5/30/1600 2600/spring summer fall winter/sunny/null/3/.1/.5/5/true",
+        "DTZ.DowntownZuzuCP_VampireSquid": "Vampire Squid/42/sinker/3/12/1600 2600/spring summer fall winter/rainy/null/2/.3/.7/3/true"
+			}
+		}
+  ]
+}

@@ -1,0 +1,509 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+
+  "Changes": [
+    /*********
+    ** Textures
+    *********/
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_SubmarineVendor",
+      "FromFile": "assets/shops/submarinevendor.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_SnackVendor",
+      "FromFile": "assets/shops/snackvendor.png"
+    },
+
+    /*********
+    ** Shop data
+    *********/
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        /****
+        ** Beach snack shop
+        ****/
+        "{{ModId}}_BeachShop": {
+          "Owners": [
+            // closed
+            {
+              "Id": "Closed",
+              "Name": "AnyOrNone",
+              "ClosedMessage": "{{i18n: beach-shop.closed}}",
+              "Condition": "!TIME 1000 1800"
+            },
+
+            // open
+            {
+              "Id": "Default",
+              "Name": "AnyOrNone",
+              "Portrait": "Portraits/{{ModId}}_SnackVendor",
+              "Dialogues": [
+                {
+                  "Id": "Default",
+                  "Dialogue": "{{i18n: beach-shop.dialogue}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "JojaCola",
+              "ItemId": "(O)167",
+              "Price": 50,
+              "AvailableStock": 4,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "Cookie",
+              "ItemId": "(O)223",
+              "Price": 180,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "Apple",
+              "ItemId": "(O)613",
+              "Price": 125,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "SEASON Fall, YEAR 2"
+            },
+            {
+              "Id": "Pomegranate",
+              "ItemId": "(O)637",
+              "Price": 125,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "SEASON Fall, YEAR 2"
+            },
+            {
+              "Id": "Peach",
+              "ItemId": "(O)636",
+              "Price": 150,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "SEASON Summer, YEAR 2"
+            },
+            {
+              "Id": "Orange",
+              "ItemId": "(O)635",
+              "Price": 150,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "SEASON Summer, YEAR 2"
+            },
+            {
+              "Id": "Apricot",
+              "ItemId": "(O)634",
+              "Price": 75,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "SEASON Spring, YEAR 2"
+            },
+            {
+              "Id": "Cherry",
+              "ItemId": "(O)638",
+              "Price": 75,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "SEASON Spring, YEAR 2"
+            }
+          ]
+        },
+
+        /****
+        ** Ice-cream shop
+        ****/
+        "{{ModId}}_IceCreamShop": {
+          "Owners": [
+            // closed
+            {
+              "Id": "Closed",
+              "Name": "AnyOrNone",
+              "Condition": "!TIME 900 1900",
+              "ClosedMessage": "{{i18n: ice-cream-shop.closed}}"
+            },
+
+            // open
+            {
+              "Id": "Default",
+              "Name": "AnyOrNone",
+              "Portrait": "",
+              "Dialogues": [
+                {
+                  "Id": "Default",
+                  "Dialogue": "{{i18n: ice-cream-shop.dialogue}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "IceCream",
+              "ItemId": "(O)233",
+              "Price": 200,
+              "AvailableStock": 4,
+              "AvailableStockLimit": "Player"
+            }
+          ]
+        },
+
+        /****
+        ** Submarine shop
+        ****/
+        "{{ModId}}_SubmarineShop": {
+          "Owners": [
+            // closed
+            {
+              "Id": "Closed",
+              "Name": "AnyOrNone",
+              "ClosedMessage": "{{i18n: submarine-shop.closed}}",
+              "Condition": "!TIME 1000 2100"
+            },
+
+            // open
+            {
+              "Id": "Default",
+              "Name": "AnyOrNone",
+              "Portrait": "Portraits/{{ModId}}_SubmarineVendor",
+              "Dialogues": [
+                {
+                  "Id": "Default",
+                  "Dialogue": "{{i18n: submarine-shop.dialogue}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            /*
+            {
+              "Id": "SpicyLavaEel",
+              "ItemId": "",
+              "Price": 5000,
+              "AvailableStock": 10,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:LavaEel"
+            },
+            */
+            {
+              "Id": "LegendaryBait",
+              "ItemId": "{{ModId}}_LegendaryBait",
+              "Price": 5000,
+              "AvailableStock": 10,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:40"
+            },
+            {
+              "Id": "WarpTotemBeach",
+              "ItemId": "(O)690",
+              "Price": 200,
+              "AvailableStock": 4,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:MNF.MoreNewFish_tui, PLAYER_HAS_MAIL Host AquariumDonated:MNF.MoreNewFish_la"
+            },
+            {
+              "ItemId": "{{ModId}}_TheCuratorsHat",
+              "Price": 1000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumCompleted"
+            },
+            {
+              "ItemId": "{{ModId}}_PufferchickMask",
+              "Price": 1000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:Pufferchick"
+            },
+            {
+              "ItemId": "{{ModId}}_GlacierfishMask",
+              "Price": 1000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:Glacierfish"
+            },
+            {
+              "ItemId": "{{ModId}}_LegendMask",
+              "Price": 1000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:Legend"
+            },
+            {
+              "ItemId": "{{ModId}}_CrimsonfishMask",
+              "Price": 1000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:Crimsonfish"
+            },
+            {
+              "ItemId": "{{ModId}}_MutantCarpMask",
+              "Price": 1000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:MutantCarp"
+            },
+            {
+              "ItemId": "{{ModId}}_AnglerMask",
+              "Price": 1000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:Angler"
+            },
+            {
+              "Id": "BlobfishMask",
+              "ItemId": "(H)56",
+              "Price": 1000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:Blobfish"
+            },
+            {
+              "Id": "PufferchickShirt",
+              "ItemId": "{{ModId}}_PufferchickShirt",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:Pufferchick"
+            },
+            {
+              "Id": "Sunglasses",
+              "ItemId": "(H)88",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "SEASON Summer"
+            },
+            {
+              "Id": "ShrimpEnthusiastShirt",
+              "ItemId": "(S)1286",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumDonated:Shrimp"
+            },
+            {
+              "Id": "FishShirt",
+              "ItemId": "(S)1158",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "FishingVest",
+              "ItemId": "(S)1157",
+              "Price": 500,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:30"
+            },
+            {
+              "Id": "FishingHat",
+              "ItemId": "(H)55",
+              "Price": 1000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:40"
+            },
+            {
+              "Id": "BikiniTop",
+              "ItemId": "(S)1134",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "CropTankTopF",
+              "ItemId": "(S)1133",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "CropTankTopM",
+              "ItemId": "(S)1132",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "SailorShirt",
+              "ItemId": "(S)1019",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "KelpShirt",
+              "ItemId": "(S)1168",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "ItemId": "{{ModId}}_FishBowl",
+              "Price": 200,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            /*
+            {
+              "Id": "LargeFishTank",
+              "ItemId": "(F)2304",
+              "Price": 2000,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "SmallFishTank",
+              "ItemId": "(F)2322",
+              "Price": 500,
+              "AvailableStock": 10,
+              "AvailableStockLimit": "Player"
+            },
+            */
+            {
+              "Id": "FisherDoubleBed",
+              "ItemId": "(F)2502",
+              "Price": 25000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "Id": "WildBait",
+              "ItemId": "(O)774",
+              "Price": 28,
+              "AvailableStock": 15,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:55"
+            },
+            {
+              "Id": "Spinner",
+              "ItemId": "(O)686",
+              "Price": 400,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:15"
+            },
+            {
+              "Id": "DressedSpinner",
+              "ItemId": "(O)687",
+              "Price": 800,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:25"
+            },
+            {
+              "Id": "TrapBobber",
+              "ItemId": "(O)694",
+              "Price": 425,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:35"
+            },
+            {
+              "Id": "CorkBobber",
+              "ItemId": "(O)695",
+              "Price": 600,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:45"
+            },
+            {
+              "Id": "LeadBobber",
+              "ItemId": "(O)692",
+              "Price": 100,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:50"
+            },
+            {
+              "Id": "BarbedHook",
+              "ItemId": "(O)691",
+              "Price": 750,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:20"
+            },
+            {
+              "Id": "TroutSoup",
+              "ItemId": "(O)219",
+              "Price": 200,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:5"
+            },
+            {
+              "Id": "Chowder",
+              "ItemId": "(O)727",
+              "Price": 300,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:10"
+            },
+            {
+              "Id": "ShrimpCocktail",
+              "ItemId": "(O)733",
+              "Price": 350,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:15"
+            },
+            {
+              "Id": "FishTaco",
+              "ItemId": "(O)213",
+              "Price": 650,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:20, PLAYER_BASE_FISHING_LEVEL Current 3"
+            },
+            {
+              "Id": "Escargot",
+              "ItemId": "(O)729",
+              "Price": 700,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:25, PLAYER_BASE_FISHING_LEVEL Current 5"
+            },
+            {
+              "Id": "DishOTheSea",
+              "ItemId": "(O)242",
+              "Price": 800,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:30, PLAYER_BASE_FISHING_LEVEL Current 4"
+            },
+            {
+              "Id": "FishStew",
+              "ItemId": "(O)728",
+              "Price": 850,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:40, PLAYER_BASE_FISHING_LEVEL Current 6"
+            },
+            {
+              "Id": "LobsterBisque",
+              "ItemId": "(O)730",
+              "Price": 1000,
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host quariumFishDonated:50, PLAYER_BASE_FISHING_LEVEL Current 7"
+            },
+            {
+              "Id": "SeafoamPudding",
+              "ItemId": "(O)265",
+              "Price": 2500,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_MAIL Host AquariumFishDonated:60, PLAYER_BASE_FISHING_LEVEL Current 10"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

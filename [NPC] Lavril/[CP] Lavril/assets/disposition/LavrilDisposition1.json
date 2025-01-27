@@ -1,0 +1,96 @@
+{
+  "Changes": [
+    //NPC Dispositions
+
+    {
+      "LogName": "NPC Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        // Lavril
+        "Lavril": {
+          "DisplayName": "Lavril",
+          "BirthSeason": "spring",
+          "BirthDay": 28,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Child",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "ExcludeFromIntroductionsQuest": true,
+          "ExcludeFromPerfectionScore": true,
+          "EndSlideShow": "MainGroup",
+          "WinterStarParticipant": false,
+
+          "FriendsAndFamily": {
+            "Void": "brother"
+          },
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "EastScarp_OrchardHouse",
+              "Tile": {
+                "X": 998,
+                "Y": 999
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true
+        },
+        //Void
+        "Void": {
+
+          "DisplayName": "Void",
+          "BirthSeason": "spring",
+          "BirthDay": 28,
+          "HomeRegion": "Other",
+          "Gender": "Male",
+          "Manner": "Rude",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Negative",
+          "CanBeRomanced": false,
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanSocialize": "FALSE",
+          "ExcludeFromIntroductionsQuest": true,
+          "ExcludeFromPerfectionScore": true,
+          "EndSlideShow": "MainGroup",
+          "CanGreetNearbyCharacters": false,
+          "WinterStarParticipant": false,
+          "FriendsAndFamily": {
+            "Lavril": "sister"
+          },
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "EastScarp_OrchardHouse",
+              "Tile": {
+                "X": 999,
+                "Y": 999
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": false
+        }
+
+      }
+    }
+
+  ]
+}

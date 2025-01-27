@@ -1,0 +1,346 @@
+{
+	"Name": "LalaThePenguin_Friendly_WA",
+	"Type": "Walking",
+	"EnableSpawnAtDayStart": false,
+	"EnableCharacterCollision": false,
+	"EnableFarmerCollision": true,
+	"TravelSpeed": 1,
+	"MaxIdleDistance": -1,
+	"MaxDistanceBeforeTeleport": -1,
+	"IdleBehavior": "Wander",
+	"FrameSizeWidth": 32,
+	"FrameSizeHeight": 32,
+	"TileSheetPath": "Characters\\LalaThePenguin_WA",
+
+	// This plays when the companion travels upwards
+	"UpAnimation": {
+		"StartingFrame": 8,
+		"NumberOfFrames": 4,
+		"Duration": 200,
+	"IdleAnimation": {
+		"StartingFrame": 18,
+		"NumberOfFrames": 1,
+		"Duration": 500
+	}
+	},
+	// This plays when the companion travels downwards
+	"DownAnimation": {
+		"StartingFrame": 0,
+		"NumberOfFrames": 4,
+		"Duration": 200,
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 20,
+		"Duration": 3000,
+		},
+		{
+		"Frame": 21,
+		"Duration": 150,
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		},
+		{
+		"Frame": 23,
+		"Duration": 150,
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		},
+		{
+		"Frame": 23,
+		"Duration": 150,
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		},
+		{
+		"Frame": 21,
+		"Duration": 150,
+		},
+		],
+	}
+	},
+	// This plays when the companion travels left
+	"LeftAnimation": {
+		"StartingFrame": 12,
+		"NumberOfFrames": 4,
+		"Duration": 200,
+	"IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 19,
+		"Duration": 3000,
+		},
+		{
+		"Frame": 32,
+		"Duration": 250,
+		},
+		{
+		"Frame": 33,
+		"Duration": 250,
+		},
+		{
+		"Frame": 34,
+		"Duration": 2000,
+		},
+		{
+		"Frame": 33,
+		"Duration": 250,
+		}
+		],
+	}
+	},
+	// This plays when the companion travels right
+	"RightAnimation": {
+		"StartingFrame": 4,
+		"NumberOfFrames": 4,
+		"Duration": 200,
+	"IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 17,
+		"Duration": 1000,
+		},
+		{
+		"Frame": 24,
+		"Duration": 200,
+		},
+		{
+		"Frame": 25,
+		"Duration": 200,
+		},
+		{
+		"Frame": 26,
+		"Duration": 250,
+		},
+		{
+		"Frame": 27,
+		"Duration": 250,
+		},
+		{
+		"Frame": 26,
+		"Duration": 250,
+		},
+		{
+		"Frame": 27,
+		"Duration": 250,
+		},
+		{
+		"Frame": 26,
+		"Duration": 250,
+		},
+		{
+		"Frame": 27,
+		"Duration": 250,
+		},
+		{
+		"Frame": 26,
+		"Duration": 200,
+		},
+		{
+		"Frame": 28,
+		"Duration": 200,
+		},
+		{
+		"Frame": 29,
+		"Duration": 200,
+		},
+		{
+		"Frame": 30,
+		"Duration": 200,
+		},
+		{
+		"Frame": 31,
+		"Duration": 500,
+		},
+		{
+		"Frame": 30,
+		"Duration": 200,
+		},
+		],
+	}
+	},
+
+	// Follower Data
+	"MinTilesForNearby": 2,
+	"UpdateWhenPlayerNearby": {
+	"Name": "LalaThePenguin_Friendly_WA",
+	"Type": "Walking",
+	"TravelSpeed": 1,
+	"EnableCharacterCollision": false,
+	"EnableFarmerCollision": true,
+	"MaxIdleDistance": -1,
+	"MaxDistanceBeforeTeleport": -1,
+	"IdleBehavior": "Follow",
+	"FrameSizeWidth": 32,
+	"FrameSizeHeight": 32,
+	"ResetWhenPlayerAway": true,
+	"MinTilesForAway": 5,
+
+	// This plays when the companion travels upwards
+	"UpAnimation": {
+		"StartingFrame": 8,
+		"NumberOfFrames": 4,
+		"Duration": 200,
+	"IdleAnimation": {
+		"StartingFrame": 18,
+		"NumberOfFrames": 1,
+		"Duration": 500
+	}
+	},
+	// This plays when the companion travels downwards
+	"DownAnimation": {
+		"StartingFrame": 0,
+		"NumberOfFrames": 4,
+		"Duration": 200,
+    "IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 20,
+		"Duration": 3000,
+		},
+		{
+		"Frame": 21,
+		"Duration": 150,
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		},
+		{
+		"Frame": 23,
+		"Duration": 150,
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		},
+		{
+		"Frame": 23,
+		"Duration": 150,
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		},
+		{
+		"Frame": 21,
+		"Duration": 150,
+		},
+		],
+	}
+	},
+	// This plays when the companion travels left
+	"LeftAnimation": {
+		"StartingFrame": 12,
+		"NumberOfFrames": 4,
+		"Duration": 200,
+	"IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 19,
+		"Duration": 3000,
+		},
+		{
+		"Frame": 32,
+		"Duration": 250,
+		},
+		{
+		"Frame": 33,
+		"Duration": 250,
+		},
+		{
+		"Frame": 34,
+		"Duration": 2000,
+		},
+		{
+		"Frame": 33,
+		"Duration": 250,
+		}
+		],
+	}
+	},
+	// This plays when the companion travels right
+	"RightAnimation": {
+		"StartingFrame": 4,
+		"NumberOfFrames": 4,
+		"Duration": 200,
+	"IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 17,
+		"Duration": 1000,
+		},
+		{
+		"Frame": 24,
+		"Duration": 200,
+		},
+		{
+		"Frame": 25,
+		"Duration": 200,
+		},
+		{
+		"Frame": 26,
+		"Duration": 250,
+		},
+		{
+		"Frame": 27,
+		"Duration": 250,
+		},
+		{
+		"Frame": 26,
+		"Duration": 250,
+		},
+		{
+		"Frame": 27,
+		"Duration": 250,
+		},
+		{
+		"Frame": 26,
+		"Duration": 250,
+		},
+		{
+		"Frame": 27,
+		"Duration": 250,
+		},
+		{
+		"Frame": 26,
+		"Duration": 200,
+		},
+		{
+		"Frame": 28,
+		"Duration": 200,
+		},
+		{
+		"Frame": 29,
+		"Duration": 200,
+		},
+		{
+		"Frame": 30,
+		"Duration": 200,
+		},
+		{
+		"Frame": 31,
+		"Duration": 500,
+		},
+		{
+		"Frame": 30,
+		"Duration": 200,
+		},
+		],
+    }
+	},
+	"OverheadTexts": [
+		{
+		"Text": "<",
+		"ChanceWeight": 0.1,
+		"TextLifetime": 3000
+		}
+	],
+  },
+}

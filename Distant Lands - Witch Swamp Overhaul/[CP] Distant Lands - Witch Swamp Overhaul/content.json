@@ -1,0 +1,369 @@
+{
+   "Format": "2.4.0",
+   
+    
+   "ConfigSchema": {
+		
+			"Recolor": { 
+		"AllowValues": "default, crimson, void, green",
+		"Default": "default",
+			},
+			"Water Overlay": { 
+		"AllowValues": "true, false",
+		"Default": "true",
+			},
+		"Better BetterWater Compatibility": { 
+		"AllowValues": "true, false",
+		"Default": "true",
+			},
+			
+			"Darker Ambient Light": { 
+		"AllowValues": "true, false",
+		"Default": "true",
+			}
+			
+
+		},
+		
+
+
+	
+  //--------------------------------------
+  
+  "Changes": [
+  
+  
+ 
+  	
+    //for events--------------------
+  //Aimon111.WitchSwampOverhaulCP_event
+   //Aimon111.WitchSwampOverhaulCP_event2
+   
+	
+
+    //-------------- add location
+   
+	
+	
+	//darker ambient light
+	{
+       "Action": "EditMap",
+       "Target": "Maps/WitchSwamp",
+        "MapProperties": {
+              "AmbientLight": "90 70 75"
+          },
+		  "When": {  "Darker Ambient Light": "true",	},
+			
+     },
+	
+	
+	
+   
+	 //------------------------------------
+
+		
+		
+		
+	
+	//TILESHEETS--------------------
+	{
+            "Action": "Load",
+            "Target": "Maps/z_custom_SwampTIles",
+            "FromFile": "assets/Tilesheets/z_custom_SwampTIles.png",
+        },
+		{
+            "Action": "Load",
+            "Target": "Maps/z_water_aimon111",
+            "FromFile": "assets/Tilesheets/z_water_aimon111.png",
+        },
+		
+		{
+            "Action": "Load",
+            "Target": "Maps/z_custom_SwampTIlesextra",
+            "FromFile": "assets/Tilesheets/z_custom_SwampTIlesextra.png",
+        },
+		//{
+        //    "Action": "Load",
+        //    "Target": "z_Aimon_fire",
+       //     "FromFile": "assets/Tilesheets/z_fire.png",
+       // },
+		
+		{
+            "Action": "Load",
+            "Target": "Maps/z_darkborders",
+            "FromFile": "assets/Tilesheets/z_darkborders.png",
+        },
+		//RECOLORS----------------------
+		{
+       "Action": "EditImage",
+       "Target": "Maps/witchSwampTiles",
+       "FromFile": "assets/Tilesheets/recolors/crimson/witchSwampTiles_crimson.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "crimson",  },
+        },
+		{
+       "Action": "EditImage",
+       "Target": "Maps/witchSwampTiles",
+       "FromFile": "assets/Tilesheets/recolors/green/witchSwampTiles_green.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "green",  },
+        },
+		{
+       "Action": "EditImage",
+       "Target": "Maps/witchSwampTiles",
+       "FromFile": "assets/Tilesheets/recolors/void/witchSwampTiles_void.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "void",  },
+        },
+		{
+       "Action": "EditImage",
+       "Target": "Maps/witchSwampTiles",
+       "FromFile": "assets/Tilesheets/witchSwampTiles_default.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "default",  },
+        },
+		
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_custom_SwampTIles",
+       "FromFile": "assets/Tilesheets/recolors/crimson/z_custom_SwampTIles.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "crimson",  },
+        },
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_water_aimon111",
+       "FromFile": "assets/Tilesheets/recolors/crimson/z_water_aimon111.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "crimson",  },
+        },
+		//
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_custom_SwampTIles",
+       "FromFile": "assets/Tilesheets/recolors/void/z_custom_SwampTIles.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "void",  },
+        },
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_water_aimon111",
+       "FromFile": "assets/Tilesheets/recolors/void/z_water_aimon111.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "void",  },
+        },
+		//
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_custom_SwampTIles",
+       "FromFile": "assets/Tilesheets/recolors/green/z_custom_SwampTIles.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "green",  },
+        },
+		{
+       "Action": "EditImage",
+       "Target": "Maps/z_water_aimon111",
+       "FromFile": "assets/Tilesheets/recolors/green/z_water_aimon111.png",
+	   "PatchMode": "Replace",	
+	   "When": { "Recolor": "green",  },
+        },
+//water overlay
+		{
+		"LogName": "waterswamp",
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"PatchMode": "Replace",
+		"FromFile": "assets/Tilesheets/Cursors_dark.png",
+		"FromArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+		"ToArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+		"When": {"LocationName": "WitchSwamp",
+		 "Water Overlay": "true",
+		"Better BetterWater Compatibility": "true",		 },
+		"Update": "OnLocationChange",
+			"Priority": "Late",
+		},
+		
+		
+		
+		//MAPS
+         {
+            "Action": "Load",
+            "Target": "Maps/WitchSwamp",
+            "FromFile": "assets/WitchSwamp.tmx",
+			//"PatchMode": "Replace",
+			
+        },
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WitchSwamp",
+			"MapProperties": {
+			"DefaultWarpLocation": "20 41", 
+			"Warp": "20 47 Railroad 54 36", 
+			},			
+		},
+		
+		
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WitchSwamp",
+			"When": { 
+					  "Water Overlay": "true",	},
+			"MapProperties": {
+			"indoorWater": "t", 
+			},			
+		},
+		
+	//railroad npcwarp
+  {			 "LogName": "swampnpcwarp",
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"MapProperties": {
+			"NPCWarp": "55 36 WitchSwamp 20 41", 
+			},
+		},
+		{			 "LogName": "swampnpcwarp",
+			"Action": "EditMap",
+			"Target": "Maps/WitchSwamp",
+			"MapProperties": {
+			"NPCWarp": "20 42 Railroad 54 36", 
+			},
+		},
+		 {
+		  "LogName": "swampnpcwarpaddwarps",
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+          
+            "AddWarps": [
+                "52 34 WitchSwamp 20 41"
+            ]
+        },
+		 {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "MapTiles": [
+                {
+                    "Position": { "X":52, "Y": 34 },
+                    "Layer": "Buildings",
+                    "SetProperties": 
+					{
+                        "Passable": "t",
+		"NPCPassable": "t",
+                    }
+                },
+		{
+                    "Position": { "X":52, "Y": 35 },
+                    "Layer": "Buildings",
+                    "SetProperties": 
+					{
+                        "Passable": "t",
+		"NPCPassable": "t",
+                    }
+                },
+		
+            ]
+        },
+	
+		
+
+	  
+	  //INCLUDED CODE
+	   {
+      "Action": "Include",
+      "FromFile": "assets/code/Fish.json",
+	   },
+	    {
+      "Action": "Include",
+      "FromFile": "assets/code/StringsFromMap.json",
+	   },
+	   {
+      "Action": "Include",
+      "FromFile": "assets/code/Mappatches.json",
+	   },
+	    {
+      "Action": "Include",
+      "FromFile": "assets/code/Objects.json",
+	   },
+	    {
+      "Action": "Include",
+      "FromFile": "assets/NPC/NPC code.json",
+	  "When": { "HasWalletItem |contains=MagicInk": true,	},	
+	"Update": "OnLocationChange"	  
+	   },
+	   {
+			 "LogName": "AllSchedulesZIcInclude",
+      "Action": "Include",
+      "FromFile": "assets/NPC/NPC Schedules.json",
+	  "When": { "HasWalletItem |contains=MagicInk": true,	},	
+	  "Update": "OnLocationChange"
+	  },
+	   {
+      "Action": "Include",
+      "FromFile": "assets/NPC/events.json",
+	  "When": { "HasWalletItem |contains=MagicInk": true,	},			  
+	   },
+	   {
+      "Action": "Include",
+      "FromFile": "assets/NPC/mail&quests.json",
+	  "When": { "HasWalletItem |contains=MagicInk": true,	},			  
+	   },
+		
+	  
+	  
+	  	  //------------------------appearance&sprites
+					
+		{
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}_GoblinZic",
+			"FromFile": "assets/NPC/sprites/Zic_Indoor_Sprite.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/z_Aimon_fire",
+			"FromFile": "assets/Tilesheets/z_fire.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_GoblinZic",
+			"FromFile": "assets/NPC/sprites/Zic_Indoor_Portrait.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_GoblinZic_Default",
+			"FromFile": "assets/NPC/sprites/Zic_Indoor_Portrait.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_GoblinZic_Blanket",
+			"FromFile": "assets/NPC/sprites/Zic_Indoor_Portrai_blanket.png"
+		},
+		
+	
+
+		// apply any overlays needed
+		{
+			"Action": "EditImage",
+			"Target": "Characters/{{ModId}}_GoblinZic", 
+			"FromFile": "assets/NPC/sprites/Zic_Indoor_Sprite_Blanket.png",
+			 "When": {
+				"HasSeenEvent": "181091267", 
+				"Season": "Winter", },
+				 "Update": "OnLocationChange"
+				
+		},
+	{
+			"Action": "EditImage",
+			"Target": "Portraits/{{ModId}}_GoblinZic_Default", 
+			"FromFile": "assets/NPC/sprites/Zic_Indoor_Portrai_blanket.png",
+			 "When": {
+				"HasSeenEvent": "181091267", 
+				"Season": "Winter", },
+				 "Update": "OnLocationChange"
+				
+		},
+		
+		
+		
+    ]
+}
+

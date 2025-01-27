@@ -1,0 +1,1738 @@
+{
+ "Changes": [
+				{
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": { 
+			
+			//Cold Smoker
+						   "Elaho.JosephsSeedShopCP_Cold_Smoker": {
+								"HasInput": false,
+								"HasOutput": false,
+								"InteractMethod": null,
+								"OutputRules": [
+							
+						
+						//Traditional Smoked Salmon
+									{
+										"Id": "Default_Salmon_Fish",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "(O)380",
+												"RequiredTags": null,
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Traditional_Cold-Smoked_Salmon",
+												"ItemId": "Elaho.JosephsSeedShopCP_Traditional_Cold-Smoked_Salmon",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Traditional_Cold-Smoked_Salmon",
+												"ObjectDisplayName": "{{i18n:traditional-cold-smoked-salmon-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+									},
+
+						//Maple Candied Salmon
+									{
+										"Id": "Elaho.JosephsSeedShopCP_Traditional_Cold-Smoked_Salmon",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Traditional_Cold-Smoked_Salmon",
+													"RequiredTags": [
+														"category_artisan_goods",
+														"item_elaho_traditional_cold_smoked_salmon",
+													],
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Candied_Salmon_Nuggets",
+												"ItemId": "Elaho.JosephsSeedShopCP_Candied_Salmon_Nuggets",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Candied_Salmon_Nuggets",
+												"ObjectDisplayName": "{{i18n:candied-salmon-nuggets-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 3600, //2 days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+									},
+								
+						//Smoked Bear
+									{
+										"Id": "Elaho.JosephsSeedShopCP_Raw_Bear_Meat",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Raw_Bear_Meat",
+												"RequiredTags": [
+														"category_meat",
+														"item_elaho_raw_bear_meat",
+													],
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Cold-Smoked_Bear_Meat",
+												"ItemId": "Elaho.JosephsSeedShopCP_Cold-Smoked_Bear_Meat",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Cold-Smoked_Bear_Meat",
+												"ObjectDisplayName": "{{i18n:cold-smoked-bear-meat-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 8000,
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+									},
+	
+						//Smoked Moose
+									{
+										"Id": "Elaho.JosephsSeedShopCP_Raw_Moose_Meat",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Raw_Moose_Meat",
+												"RequiredTags": [
+														"category_meat",
+														"item_elaho_raw_moose_meat",
+													],
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Cold-Smoked_Moose_Meat",
+												"ItemId": "Elaho.JosephsSeedShopCP_Cold-Smoked_Moose_Meat",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Cold-Smoked_Moose_Meat",
+												"ObjectDisplayName": "{{i18n:cold-smoked-moose-meat-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 8000, //5 days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+									},
+						//Smoked Venison
+									{
+										"Id": "Elaho.JosephsSeedShopCP_Raw_Venison",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Raw_Venison",
+												"RequiredTags": [
+														"category_meat",
+														"item_elaho_raw_venison",
+													],
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Cold-Smoked_Venison",
+												"ItemId": "Elaho.JosephsSeedShopCP_Cold-Smoked_Venison",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Cold-Smoked_Venison",
+												"ObjectDisplayName": "{{i18n:cold-smoked-venison-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 8000, //5 days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+									},
+									
+						//Smoked Duck
+									{
+										"Id": "Elaho.JosephsSeedShopCP_Raw_Wild_Duck",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Raw_Wild_Duck",
+												"RequiredTags": [
+														"category_meat",
+														"item_elaho_raw_wild_duck",
+													],
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Cold-Smoked_Wild_Duck",
+												"ItemId": "Elaho.JosephsSeedShopCP_Cold-Smoked_Wild_Duck",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Cold-Smoked_Wild_Duck",
+												"ObjectDisplayName": "{{i18n:cold-smoked-wild-duck-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+									},
+						//Smoked Goose
+									{
+										"Id": "Elaho.JosephsSeedShopCP_Raw_Wild_Goose",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Raw_Wild_Goose",
+												"RequiredTags": [
+														"category_meat",
+														"item_elaho_raw_wild_goose",
+													],
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Cold-Smoked_Wild_Goose",
+												"ItemId": "Elaho.JosephsSeedShopCP_Cold-Smoked_Wild_Goose",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Cold-Smoked_Wild_Goose",
+												"ObjectDisplayName": "{{i18n:cold-smoked-wild-goose-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 11200, //7 days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+									},
+									
+							//Smoked Cheese
+									{
+										"Id": "Default_Cheese",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "(O)424",
+												"RequiredTags": null,
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Cold-Smoked_Cheese",
+												"ItemId": "Elaho.JosephsSeedShopCP_Cold-Smoked_Cheese",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Cold-Smoked_Cheese",
+												"ObjectDisplayName": "{{i18n:cold-smoked-cheese-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+									},
+							//Smoked Goat Cheese
+									{
+										"Id": "Default_Goat_Cheese",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "(O)426",
+												"RequiredTags": null,
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Cold-Smoked_Goat_Cheese",
+												"ItemId": "Elaho.JosephsSeedShopCP_Cold-Smoked_Goat_Cheese",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Cold-Smoked_Goat_Cheese",
+												"ObjectDisplayName": "{{i18n:cold-smoked-goat-cheese-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+									},
+								//	
+									
+								],
+								"AdditionalConsumedItems": [
+									{
+										"ItemId": "(O)709",
+										"RequiredCount": 1,
+										"InvalidCountMessage": "{{i18n:hardwood-required.cold-smoker-message}}"
+									},
+									{
+										"ItemId": "(O)382",
+										"RequiredCount": 5,
+										"InvalidCountMessage": "{{i18n:coal-required.cold-smoker-message}}"
+									},
+								],
+								"PreventTimePass": null,
+								"ReadyTimeModifiers": null,
+								"ReadyTimeModifierMode": 0,
+								"InvalidItemMessage": null,
+								"InvalidItemMessageCondition": null,
+								"InvalidCountMessage": null,
+								"LoadEffects": [
+									{
+										"Id": "Default",
+										"Condition": null,
+										"Sounds": [
+											{
+												"Id": "furnace",
+												"Delay": 0
+											}
+										],
+										"Interval": 100,
+										"Frames": null,
+										"ShakeDuration": -1,
+										"TemporarySprites": null
+									}
+								],
+								"WorkingEffects": null,
+								"WorkingEffectChance": 0.33000001311302185,
+								"AllowLoadWhenFull": false,
+								"WobbleWhileWorking": true,
+								"ShowNextIndexWhileWorking": true,
+								"ShowNextIndexWhenReady": false,
+								"AllowFairyDust": true,
+								"IsIncubator": false,
+								"OnlyCompleteOvernight": false,
+								"ClearContentsOvernightCondition": null,
+								"StatsToIncrementWhenLoaded": null,
+								"StatsToIncrementWhenHarvested": null,
+								"ExperienceGainOnHarvest": null,
+								"CustomFields": null
+							},
+
+			//Stone Grinder - All Other Flours
+							
+							"Elaho.JosephsSeedShopCP_Stone_Grinder": {
+								"HasInput": false,
+								"HasOutput": false,
+								"InteractMethod": null,
+								"OutputRules": [
+											
+								//Acorn Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Acorn_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "(O)309",
+												"RequiredTags": null,
+												"RequiredCount": 25,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Acorn_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Acorn_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Acorn_Flour",
+												"ObjectDisplayName": "{{i18n:acorn-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:acorn-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Amaranth Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Amaranth_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "(O)300",
+												"RequiredTags": null,
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Amaranth_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Amaranth_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Amaranth_Flour",
+												"ObjectDisplayName": "{{i18n:amaranth-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:amaranth-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Arrowroot Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Arrowroot_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Arrowroot",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_arrowroot"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Arrowroot_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Arrowroot_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Arrowroot_Flour",
+												"ObjectDisplayName": "{{i18n:arrowroot-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:arrowroot-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Buckwheat Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Buckwheat_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Buckwheat",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_buckwheat"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Buckwheat_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Buckwheat_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Buckwheat_Flour",
+												"ObjectDisplayName": "{{i18n:buckwheat-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:buckwheat-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Cassava Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Cassava_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Cassava",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_cassava"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Cassava_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Cassava_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Cassava_Flour",
+												"ObjectDisplayName": "{{i18n:cassava-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:cassava-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Millet Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Millet_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Millet",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_millet"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Millet_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Millet_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Millet_Flour",
+												"ObjectDisplayName": "{{i18n:millet-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:millet-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Pearled Barley
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Pearled_Barley",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Barley",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_barley"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Pearled_Barley",
+												"ItemId": "Elaho.JosephsSeedShopCP_Pearled_Barley",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Pearled_Barley",
+												"ObjectDisplayName": "{{i18n:pearled-barley-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:barley-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Prairie Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Prairie_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Prairie_Potato",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_prairie_potato"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Prairie_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Prairie_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Prairie_Flour",
+												"ObjectDisplayName": "{{i18n:prairie-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:prairie-potato-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Sorghum Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Sorghum_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Sorghum",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_sorghum"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Sorghum_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Sorghum_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Sorghum_Flour",
+												"ObjectDisplayName": "{{i18n:sorghum-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:sorghum-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Teff Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Teff_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Teff",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_teff"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Teff_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Teff_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Teff_Flour",
+												"ObjectDisplayName": "{{i18n:teff-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:teff-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Default Wheat Flour
+										{
+										"Id": "Default_Wheat_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "(O)262",
+												"RequiredTags": null,
+												"RequiredCount": 1,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "(O)246",
+												"ItemId": "(O)246",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack":  1,
+												"MaxStack":  3,
+												"Quality": -1,
+												"ObjectInternalName": null,
+												"ObjectDisplayName": null,
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 1600, //1 Day
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": null,
+										"RecalculateOnCollect": false
+											},
+											
+								//Einkorn Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Einkorn_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Einkorn",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_einkorn"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Einkorn_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Einkorn_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Einkorn_Flour",
+												"ObjectDisplayName": "{{i18n:einkorn-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:einkorn-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Emmer Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Emmer_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Emmer",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_emmer"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Emmer_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Emmer_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Emmer_Flour",
+												"ObjectDisplayName": "{{i18n:emmer-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:emmer-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Kamut Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Kamut_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Kamut",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_kamut"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Kamut_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Kamut_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Kamut_Flour",
+												"ObjectDisplayName": "{{i18n:kamut-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:kamut-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Rye Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Rye_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Rye",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_rye"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Rye_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Rye_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Rye_Flour",
+												"ObjectDisplayName": "{{i18n:rye-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:rye-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Spelt Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Spelt_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Spelt",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_spelt"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Spelt_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Spelt_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Spelt_Flour",
+												"ObjectDisplayName": "{{i18n:spelt-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:spelt-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Rolled Oats
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Rolled_Oats",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Oat",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_oat"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Rolled_Oats",
+												"ItemId": "Elaho.JosephsSeedShopCP_Rolled_Oats",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Rolled_Oats",
+												"ObjectDisplayName": "{{i18n:rolled-oats-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:oat-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+											
+								//Powdered Sugar
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Powdered_Sugar",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "(O)245",
+												"RequiredTags": null,
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Powdered_Sugar",
+												"ItemId": "Elaho.JosephsSeedShopCP_Powdered_Sugar",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Powdered_Sugar",
+												"ObjectDisplayName": "{{i18n:powdered-sugar-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 8000, //5 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:sugar-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+								//Hopniss Root
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Hopniss_Flour",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "Elaho.JosephsSeedShopCP_Hopniss_Root",
+												"RequiredTags": [
+														"category_vegetable",
+														"item_elaho_hopniss_root"
+													],
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Hopniss_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Hopniss_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Hopniss_Flour",
+												"ObjectDisplayName": "{{i18n:hopniss-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:hopniss-root-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+								//Rice [Vanilla]
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Unmilled_Rice",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "(O)271",
+												"RequiredTags": null,
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "(O)271",
+												"ItemId": "(O)271",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": 5,
+												"MaxStack": 8,
+												"Quality": -1,
+												"ObjectInternalName": null,
+												"ObjectDisplayName": null,
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:unmilled-rice-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											},
+								//Rice Flour
+										{
+										"Id": "Elaho.JosephsSeedShopCP_Rice",
+										"Triggers": [
+											{
+												"Id": "ItemPlacedInMachine",
+												"Trigger": 1,
+												"RequiredItemId": "(O)271",
+												"RequiredTags": null,
+												"RequiredCount": 5,
+												"Condition": null
+											}
+										],
+										"UseFirstValidOutput": false,
+										"OutputItem": [
+											{
+												"Id": "Elaho.JosephsSeedShopCP_Rice_Flour",
+												"ItemId": "Elaho.JosephsSeedShopCP_Rice_Flour",
+												"RandomItemId": null,
+												"MaxItems": null,
+												"MinStack": -1,
+												"MaxStack": -1,
+												"Quality": -1,
+												"ObjectInternalName": "Elaho.JosephsSeedShopCP_Rice_Flour",
+												"ObjectDisplayName": "{{i18n:rice-flour-JSS.name}}",
+												"ToolUpgradeLevel": -1,
+												"IsRecipe": false,
+												"StackModifiers": null,
+												"StackModifierMode": 0,
+												"QualityModifiers": null,
+												"QualityModifierMode": 0,
+												"ModData": null,
+												"PerItemCondition": null,
+												"Condition": null,
+												"OutputMethod": null,
+												"CopyColor": false,
+												"CopyPrice": false,
+												"CopyQuality": false,
+												"PreserveType": null,
+												"PreserveId": null,
+												"IncrementMachineParentSheetIndex": 0,
+												"PriceModifiers": null,
+												"PriceModifierMode": 0,
+												"CustomData": null
+											}
+										],
+										"MinutesUntilReady": 4800, //3 Days
+										"DaysUntilReady": -1,
+										"InvalidCountMessage": "{{i18n:rice-count-required.stone-grinder-message}}",
+										"RecalculateOnCollect": false
+											}
+							
+										],
+										"AdditionalConsumedItems": null,
+										"PreventTimePass": null,
+										"ReadyTimeModifiers": null,
+										"ReadyTimeModifierMode": 0,
+										"InvalidItemMessage": null,
+										"InvalidItemMessageCondition": null,
+										"InvalidCountMessage": null,
+										"LoadEffects": [
+											{
+												"Id": "Default",
+												"Condition": null,
+												"Sounds": [
+													{
+														"Id": "Trashcanlid",
+														"Delay": 0
+													}
+												],
+												"Interval": 100,
+												"Frames": null,
+												"ShakeDuration": -1,
+												"TemporarySprites": null
+											}
+										],
+										"WorkingEffects": null,
+										"WorkingEffectChance": 0.33000001311302185,
+										"AllowLoadWhenFull": false,
+										"WobbleWhileWorking": true,
+										"LightWhileWorking": null,
+										"ShowNextIndexWhileWorking": false,
+										"ShowNextIndexWhenReady": false,
+										"AllowFairyDust": true,
+										"IsIncubator": false,
+										"OnlyCompleteOvernight": false,
+										"ClearContentsOvernightCondition": null,
+										"StatsToIncrementWhenLoaded": null,
+										"StatsToIncrementWhenHarvested": null,
+									}
+				
+				}
+	
+			}	
+			
+	]
+	
+}

@@ -1,0 +1,1542 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "breakUp": "*gulp* Oh... I guess I should've seen this coming. I'm as worthless as a friend as I am at everything else...$s#$b#I'll... uh... guess I'll see you at the Saloon.",
+                "event_stadium1": "Oh yeah? I guess that makes sense.$6#$b#Me? I get bored with Pelican Town sometimes.#$b#But... I like that you're different. We balance each other out.$6",
+                "AcceptBouquet": "{{Random: You want to spend *more* time with me? Why would you do that to yourself?$s#$e#No, I... I'm not saying no.$u @@ You want to get to know me better? ...You'll probably like me less the more you learn about me.$u#$e#But I guess I'd like to know *you* better. For as long as it lasts.$6 |inputSeparator=@@}}",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're a really thoughtful person, you know that?",
+		"dating_Shane_memory_oneday": "I think I might be the luckiest guy in the world to have a friend like you.$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "SpouseStardrop": "An old buddy from the JojaMart stockroom hooked me up with that fruit. He works for some rare goods merchant now.#$b#It’s to thank you for helping me, uh... How do I put this.$u#$b#Look, I know I put you in a terrible position that night on the cliffs, and I'm sorry. It's not your job to save me, or fix me.$s#$b#The thing is... when people used to tell me that they loved me, that I wasn’t worthless, I figured that was just because they didn’t know me as well as I knew myself.$s#$b#So the fact that, even after you’d seen everything about me that I was so ashamed of, you still wanted me in your life...$u#$b#Well. It got the ball rolling. The rest is up to me.$6#$b#What I'm trying to say is... I love you, @. Thank you for being here.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "SpouseStardrop": "An old buddy from the JojaMart stockroom hooked me up with that fruit. He works for some rare goods merchant now.#$b#It’s to thank you for helping me, uh... How do I put this.$u#$b#Look, I know I put you in a terrible position that night on the cliffs, and I'm sorry. It's not your job to save me, or fix me.$s#$b#The thing is... when people used to tell me that they loved me, that I wasn’t worthless, I figured that was just because they didn’t know me as well as I knew myself.$s#$b#So the fact that, even after you’d seen everything about me I was so ashamed of, you still wanted me in your life...$u#$b#Well. It got the ball rolling. The rest is up to me.$6#$b#What I'm trying to say is... I love you, @. Thank you for being here.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+            "LogName": "Shane pendant and bracelet proposal acceptance, no 10k, love portraits",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Shane_Engaged": "...This is for real? You want to be {{RelationshipLabel}} with a washed-up killjoy like me? I'd just drag you down...$10#$b#........$u#$b#You know what? Even if it ends up crashing down around me like everything else... Let's give this a shot.$l#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?$h",
+		"Shane_EngagedRoommate": "...This is for real? You want to be {{RelationshipLabel}} with a washed-up killjoy like me? I'd just drag you down...$10#$b#........$u#$b#You know what? Even if it ends up crashing down around me like everything else... Let's give this a shot.$l#$b#I need some time to pack up my stuff. I'll be there in 3 days, okay?$h",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+                "UseLovePortraits": true,
+            },
+        },
+        {
+            "LogName": "Shane pendant and bracelet proposal acceptance, no 10k, no love portraits",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Shane_Engaged": "...This is for real? You want to be {{RelationshipLabel}} with a washed-up killjoy like me? I'd just drag you down...$10#$b#........$u#$b#You know what? Even if it ends up crashing down around me like everything else... Let's give this a shot.$6#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?$h",
+		"Shane_EngagedRoommate": "...This is for real? You want to be {{RelationshipLabel}} with a washed-up killjoy like me? I'd just drag you down...$10#$b#........$u#$b#You know what? Even if it ends up crashing down around me like everything else... Let's give this a shot.$6#$b#I need some time to pack up my stuff. I'll be there in 3 days, okay?$h",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+                "UseLovePortraits": false,
+            },
+        },
+        {
+            "LogName": "Shane engagement dialogue, no 10k",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Shane0": "Part of me is wondering if this isn't all some elaborate prank.#$e#I can't believe you'd actually want to spend your life with someone like me.",
+                "ShaneRoommate0": "Part of me is wondering if this isn't all some elaborate prank.#$e#I can't believe you'd actually want to spend your life with someone like me.",
+		"ShaneRoommate1": "@... My head's spinning, and I haven't even had a beer today.",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Shane": "If I hadn't met you, @... I might not even be here right now.#$b#Which would be a shame, because the bird-watching up here is phenomenal!$h\"/emote farmer 16/pause 1000/speak Shane \"Heh... I... I tend to joke a lot, because...well...$s#$b#I guess keeping things light-hearted makes it so I don't have to open up and make myself vulnerable.\"/emote Shane 28/speak Shane \"But every season that goes by, with you, I get a little more comfortable with myself.#$b#Uh.. I guess what I want to say is...#$b#I have no regrets about sharing my life with you!$h",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Game1.cs.2782": "I'm glad that's over. I felt kind of ridiculous dressed up like that in front of everyone.#$e#It was worth it, though.$h",
+            },
+            "When":
+            {
+                "Spouse": "Shane"
+            },
+        },
+        {
+            "LogName": "Shane terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Pal",
+                "NPC.cs.4518": "Pal",
+                "NPC.cs.4519": "Bud",
+                "NPC.cs.4522": "Kid",
+                "NPC.cs.4523": "Kid",
+                "Event.cs.1736": "$q -1 null#Oh boy...#$r -1 0 danceAsk#(Ask Shane to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Shane": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Shane terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Pal",
+                "NPC.cs.4518": "Pal",
+                "NPC.cs.4519": "Bud",
+                "NPC.cs.4522": "Kid",
+                "NPC.cs.4523": "Kid",
+                "Event.cs.1736": "$q -1 null#Oh boy...#$r -1 0 danceAsk#(Ask Shane to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Shane": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Shane roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Oh boy...#$r -1 0 danceAsk#(Ask Shane to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Shane": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: ...I think one necklace is enough. But thanks. @@ ...You weren't just messing with me, were you? A second pendant... Is this part of some cruel joke?$s |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Shane": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: ...We're already {{RelationshipLabel}}, right? @@ Maybe hold onto that in case I lose the first one.$u |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Shane": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Oh, @. You're right that Jas and I will miss having Shane around, but we'll be fine right here. Your place isn't far. @@ That's very funny, @! I think Jas and I need to stay here and take care of the animals.$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Shane": "Engaged"
+            }
+        },
+        {
+	    "Logname": "Emily dialogue about Shane",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+		"married_Shane": "Now that Shane's living with you, I assume he won't be coming to the Saloon as much!#$b#That's probably a good thing, but it's always a little sad to lose a regular...$s",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: You want me to move in with my chickens? That's very sweet, but if Shane misses them he's welcome to visit anytime. @@ I don't think Shane needs his old aunt as a roommate again, dear. The two of you seem to be doing just fine. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Shane": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "TwoKids_2": "Ugh... %kid2 is being a little brat today. Must be my influence...",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_0": "Today's a good day. I have a lot more of those than I used to.$6",
+                "Good_1": "You're a better person than me, you know that? I'm glad you put up with me.$6",
+                "Neutral_2": "Why don't you tell me about your day later? I'm kind of busy right now...",
+                "Indoor_Day_3": "Is that tomato sauce on your chin? Someone's been nibbling on pizza rolls.",
+                "Indoor_Day_4": "I may keep to myself a lot, and I may seem unhappy sometimes... but I appreciate all the work you do. I'm lucky to have a friend like you.$l",
+                "Outdoor_4": "Hey, @. I went for a morning walk around the farm before you got up. Everything looks fine.",
+                "Bad_8": "Yeah... *hic* ... Sure, pal. Whatever you say... *hic*",
+                "funReturn_Shane": "Phew, I'm all sweaty... That was quite a walk... Buh, I'm out of shape.$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_0": "Today's a good day. I have a lot more of those than I used to.$6",
+                "Good_1": "You're a better person than me, you know that? I'm glad you put up with me.$6",
+                "Neutral_2": "Why don't you tell me about your day later? I'm kind of busy right now...",
+                "Indoor_Day_3": "Is that tomato sauce on your chin? Someone's been nibbling on pizza rolls.",
+                "Indoor_Day_4": "I may keep to myself a lot, and I may seem unhappy sometimes... but I appreciate all the work you do. I'm lucky to have a friend like you.$6",
+                "Outdoor_4": "Hey, @. I went for a morning walk around the farm before you got up. Everything looks fine.",
+                "Bad_8": "Yeah... *hic* ... Sure, pal. Whatever you say... *hic*",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+	    "Logname": "Shane dialogue, aro yes, ace yes, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_9": "Huh... You're wondering why I have this goofy grin on my face? I was just thinking about how my life turned out.$h#$b#I can't believe I went from that dead-end job at Joja to living on a farm with my best friend, a stone's throw from Jas and Marnie's place.$6#$e#I'm not always in a place to appreciate it, but... yeah. I'm glad I'm here.$l",
+                "Outdoor_0": "I didn't sleep well last night, so I'm hoping this fresh air will get the juices flowing.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+	    "Logname": "Shane dialogue, aro yes, ace yes, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_9": "Huh... You're wondering why I have this goofy grin on my face? I was just thinking about how my life turned out.$h#$b#I can't believe I went from that dead-end job at Joja to living on a farm with my best friend, a stone's throw from Jas and Marnie's place.$6#$e#I'm not always in a place to appreciate it, but... yeah. I'm glad I'm here.$6",
+                "Outdoor_0": "I didn't sleep well last night, so I'm hoping this fresh air will get the juices flowing.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "2128292/e 3900074/t 600 630/f Shane 2500/D Shane": null,
+                "2128292/e 3900074/t 600 630/f Shane 2500": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"Hey, @!$6\"/pause 1000/speak Shane \"Uh... So I got two tickets to the Tunnelers game tonight.$6\"/pause 2000/speak Shane \"If you want to come, meet me at the bus stop around 5pm.$6\"/pause 1000/end",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries":
+            {
+                "9581348/e 2128292/t 1600 1800": "continue/-1000 -1000/farmer 22 19 0 Shane 23 10 2 Alex 22 13 0 Gus 19 11 1 Pam 20 10 2/viewport 22 11 clamp true/skippable/move farmer 0 -4 0 true/move Alex 0 -4 0 true/proceedPosition Alex/playSound thudStep/warp Alex -100 -100/move farmer 0 -1 0/move Shane 0 1 2/speak Shane \"Hey, there you are!$6#$b#I'm glad you decided to come. We should get going...$6\"/move Pam 2 0 0/move Pam 0 -1 0/warp Pam -100 -100/playSound thudStep/move Gus 3 0 0/move Gus 0 -2 0/faceDirection Shane 3 true/playSound thudStep/warp Gus -100 -100/move farmer 0 -4 0 true/globalFade/viewport -1000 -1000/playMusic none/pause 800/playSound busDriveOff/pause 4000/changeToTemporaryMap Stadium false/speak Shane \"We're almost there...\"/pause 1500/speak Shane \"*gulp* ...pre-game nerves...$10\"/pause 1000/playMusic Stadium_ambient/warp farmer 19 19/faceDirection farmer 2/positionOffset farmer 0 16/warp Alex 14 12/faceDirection Alex 2/warp Gus 30 14/faceDirection Gus 2/warp Shane 22 12/pause 3000/advancedMove Shane false 0 7 -2 0/viewport 22 18 clamp true/proceedPosition Shane/faceDirection Shane 2/speak Shane \"Here, I got you another soda...\"/showFrame Shane 25/pause 1000/playSound coin/showFrame 90/showFrame Shane 0/pause 2000/farmerEat 184/pause 1000/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/pause 6000/animate Shane false true 400 0 30 0 30 0 31 0 31/pause 1000/faceDirection farmer 1/pause 1000/speak Shane \"Hey, I've been meaning to say... $6#$b#Thanks for sticking with me through everything... my anxiety, depression... you know...$6#$b#You've been a really good friend to me.$l\"/pause 2000/faceDirection farmer 2/pause 4000/speak Shane \"Anyway...  it's your first gridball game, huh?\"/pause 1000/speak Shane \"$q -1 null#Well, what do you think?#$r -1 10 event_stadium1#Noisy... It makes me appreciate how peaceful it is back home.#$r -1 10 event_stadium2#Fun... Pelican Town seems really boring in comparison.\"/stopAnimation Shane/pause 100/jump Shane/showFrame Shane 18/pause 1000/speak Shane \"Gahh!! Look, the Tunnelers are on the attack!$10\"/showFrame Shane 0/pause 1500/playSound Stadium_cheer/pause 500/showFrame Shane 31/jump Shane/textAboveHead Shane \"Goal!!\"/jump Alex/jump Gus/pause 100/textAboveHead Alex \"Goal!\"/pause 2000/jump Shane/pause 2000/showFrame Shane 34/positionOffset Shane -4 0/pause 10/positionOffset Shane -5 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -2 0/pause 5/positionOffset Shane -2 0/positionOffset Shane -2 0/pause 10/showFrame farmer 94/pause 800/showFrame farmer 0/pause 800/faceDirection farmer 1 true/animate farmer false true 100 101/pause 1000/pause 1500/stopAnimation farmer/showFrame Shane 12/positionOffset Shane 1 0/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 1 0/pause 1500/faceDirection Shane 1/speak Shane \"Um... Sorry about that. I’m not usually a hugger...$u\"/move Shane 1 0 1/speak Shane \"It's just been a long time since I could enjoy things like this. Before I started treatment for my depression, even things I used to love just left me numb.$u#$b#But today... I get to see the game with my best friend, and it feels like it's supposed to. I'm actually happy.$l#$b#So I guess I got carried away. Sorry if I made you uncomfortable.$u\"/pause 2300/faceDirection Shane 2/pause 500/move farmer 2 0 1/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/pause 700/animate farmer false true 100 101/positionOffset farmer 1 0/positionOffset farmer 1 0/pause 10/positionOffset farmer 1 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 1 0/pause 10/positionOffset farmer 2 0/pause 800/shake Shane 1200/pause 2800/showFrame Shane 34/positionOffset Shane -2 0/pause 3000/viewport move -1 -1 5000/pause 3000/globalFade/viewport -2000 -2000/pause 3000/playMusic none/pause 1000/speak Shane \"Well... that was a great game. We even won!$h\"/pause 1000/speak Shane \"See you soon, @.$6\"/pause 2000/end",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries":
+            {
+                "9581348/e 2128292/t 1600 1800": "continue/-1000 -1000/farmer 22 19 0 Shane 23 10 2 Alex 22 13 0 Gus 19 11 1 Pam 20 10 2/viewport 22 11 clamp true/skippable/move farmer 0 -4 0 true/move Alex 0 -4 0 true/proceedPosition Alex/playSound thudStep/warp Alex -100 -100/move farmer 0 -1 0/move Shane 0 1 2/speak Shane \"Hey, there you are!$6#$b#I'm glad you decided to come. We should get going...$6\"/move Pam 2 0 0/move Pam 0 -1 0/warp Pam -100 -100/playSound thudStep/move Gus 3 0 0/move Gus 0 -2 0/faceDirection Shane 3 true/playSound thudStep/warp Gus -100 -100/move farmer 0 -4 0 true/globalFade/viewport -1000 -1000/playMusic none/pause 800/playSound busDriveOff/pause 4000/changeToTemporaryMap Stadium false/speak Shane \"We're almost there...\"/pause 1500/speak Shane \"*gulp* ...pre-game nerves...$10\"/pause 1000/playMusic Stadium_ambient/warp farmer 19 19/faceDirection farmer 2/positionOffset farmer 0 16/warp Alex 14 12/faceDirection Alex 2/warp Gus 30 14/faceDirection Gus 2/warp Shane 22 12/pause 3000/advancedMove Shane false 0 7 -2 0/viewport 22 18 clamp true/proceedPosition Shane/faceDirection Shane 2/speak Shane \"Here, I got you another soda...\"/showFrame Shane 25/pause 1000/playSound coin/showFrame 90/showFrame Shane 0/pause 2000/farmerEat 184/pause 1000/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/pause 6000/animate Shane false true 400 0 30 0 30 0 31 0 31/pause 1000/faceDirection farmer 1/pause 1000/speak Shane \"Hey, I've been meaning to say... $6#$b#Thanks for sticking with me through everything... my anxiety, depression... you know...$6#$b#You've been a really good friend to me.$6\"/pause 2000/faceDirection farmer 2/pause 4000/speak Shane \"Anyway...  it's your first gridball game, huh?\"/pause 1000/speak Shane \"$q -1 null#Well, what do you think?#$r -1 10 event_stadium1#Noisy... It makes me appreciate how peaceful it is back home.#$r -1 10 event_stadium2#Fun... Pelican Town seems really boring in comparison.\"/stopAnimation Shane/pause 100/jump Shane/showFrame Shane 18/pause 1000/speak Shane \"Gahh!! Look, the Tunnelers are on the attack!$10\"/showFrame Shane 0/pause 1500/playSound Stadium_cheer/pause 500/showFrame Shane 31/jump Shane/textAboveHead Shane \"Goal!!\"/jump Alex/jump Gus/pause 100/textAboveHead Alex \"Goal!\"/pause 2000/jump Shane/pause 2000/showFrame Shane 34/positionOffset Shane -4 0/pause 10/positionOffset Shane -5 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -2 0/pause 5/positionOffset Shane -2 0/positionOffset Shane -2 0/pause 10/showFrame farmer 94/pause 800/showFrame farmer 0/pause 800/faceDirection farmer 1 true/animate farmer false true 100 101/pause 1000/pause 1500/stopAnimation farmer/showFrame Shane 12/positionOffset Shane 1 0/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 1 0/pause 1500/faceDirection Shane 1/speak Shane \"Um... Sorry about that. I’m not usually a hugger...$u\"/move Shane 1 0 1/speak Shane \"It's just been a long time since I could enjoy things like this. Before I started treatment for my depression, even things I used to love just left me numb.$u#$b#But today... I get to see the game with my best friend, and it feels like it's supposed to. I'm actually happy.$6#$b#So I guess I got carried away. Sorry if I made you uncomfortable.$u\"/pause 2300/faceDirection Shane 2/pause 500/move farmer 2 0 1/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/pause 700/animate farmer false true 100 101/positionOffset farmer 1 0/positionOffset farmer 1 0/pause 10/positionOffset farmer 1 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 1 0/pause 10/positionOffset farmer 2 0/pause 800/shake Shane 1200/pause 2800/showFrame Shane 34/positionOffset Shane -2 0/pause 3000/viewport move -1 -1 5000/pause 3000/globalFade/viewport -2000 -2000/pause 3000/playMusic none/pause 1000/speak Shane \"Well... that was a great game. We even won!$h\"/pause 1000/speak Shane \"See you soon, @.$6\"/pause 2000/end",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries":
+            {
+                "wewereworried": "emote farmer 40/faceDirection Marnie 1/pause 1000/faceDirection Shane 2/emote Shane 12/speak Shane \"We're {{RelationshipLabel}}... you should trust me. I've always been honest with you about my problems.$a#$b#Look... I know I haven't been able to quit cold turkey... but, I'm trying my best... and I'm getting a lot healthier.#$b#My life is better now than it's ever been. I'm not in such a dark place anymore...\"/pause 500/emote Marnie 20 true/emote farmer 20 true/pause 1300/faceDirection Shane 0/speak Shane \"You know, when I'm playing this game, I become so focused that I can't think about anything else. It really helps when I've got 'the urge'...\"/faceDirection Shane 2/speak Shane \"Anyway... I'll just... eh... play ONE more round and head home. Okay?\"/pause 500/emote farmer 32/pause 1000/end dialogue Shane \"You guys must have been really confused when you came in and saw me in front of the arcade machine!$h\""
+            },
+        },
+        {
+	    "Logname": "Shane no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Shane",
+            "FromFile": "assets/Portraits/ShaneNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.ShaneJasMarnie": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        {
+	    "Logname": "Shane no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Shane_Winter",
+            "FromFile": "assets/Portraits/ShaneWinterNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.ShaneJasMarnie": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Shane no blush portrait edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Shane",
+            "FromFile": "assets/Portraits/ShaneNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        {
+	    "Logname": "Shane no blush portrait edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Shane_Winter",
+            "FromFile": "assets/Portraits/ShaneNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        //COMPATIBILITY: IMMERSIVE CHARACTERS - SHANE v2.4.2 
+        //Dialogue and events in this section are based on the originals written by tenthousandcats, used and edited with permission. (Thank you, tenthousandcats!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "AcceptBouquet": "...Wait, really?$10#$b#You want to be serious friends...like, ride or die friends... with me? I... uh... yes, please.$10#$e#%Shane covers his face.#$e#Hooooo boy. Okay, um... you're serious, right? I just can't believe you actually... $h#$b#Okay, um. I... I'll see you around, @.$l",
+                "RejectMermaidPendant_Under8Hearts": "No!$10#$b#I mean--look, I'm sorry. I'm not ready to take that step with you.$s",
+                "ExtraDialogue_Spouse_MonstersInHouse": "Uh... @? What are these monsters doing in here?",
+                "SpouseStardrop": "I've never been good with words, so I wanted to give you that stardrop.$6#$b#How it made you feel... well, that's how I feel when I'm with you.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "AcceptBouquet": "...Wait, really?$10#$b#You want to be serious friends...like, ride or die friends... with me? I... uh... yes, please.$10#$e#%Shane covers his face.#$e#Hooooo boy. Okay, um... you're serious, right? I just can't believe you actually... $h#$b#Okay, um. I... I'll see you around, @.$6",
+                "RejectMermaidPendant_Under8Hearts": "No!$10#$b#I mean--look, I'm sorry. I'm not ready to take that step with you.$s",
+                "ExtraDialogue_Spouse_MonstersInHouse": "Uh... @? What are these monsters doing in here?",
+                "SpouseStardrop": "I've never been good with words, so I wanted to give you that stardrop.$6#$b#How it made you feel... well, that's how I feel when I'm with you.$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "LogName": "Shane pendant and bracelet proposal acceptance, 10k, love portraits",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Shane_Engaged": "...!!!$10#$b#No way!? Wait no, I mean yes, I absolutely do want to be {{RelationshipLabel}} with you.$10#$b#Yes. I wanna be {{RelationshipLabel}}. Sorry I freaked out, I just... can't believe that this is actually happening...$l#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?$h",
+		"Shane_EngagedRoommate": "...!!!$10#$b#No way!? Wait no, I mean yes, I absolutely do want to be {{RelationshipLabel}} with you.$10#$b#Yes. I wanna be {{RelationshipLabel}}. Sorry I freaked out, I just... can't believe that this is actually happening...$l#$b#I need some time to pack up my stuff. I'll be there in 3 days, okay?$h",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+                "UseLovePortraits": true,
+            },
+        },
+        {
+            "LogName": "Shane pendant and bracelet proposal acceptance, 10k, no love portraits",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Shane_Engaged": "...!!!$10#$b#No way!? Wait no, I mean yes, I absolutely do want to be {{RelationshipLabel}} with you.$10#$b#Yes. I wanna be {{RelationshipLabel}}. Sorry I freaked out, I just... can't believe that this is actually happening...$6#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?$h",
+		"Shane_EngagedRoommate": "...!!!$10#$b#No way!? Wait no, I mean yes, I absolutely do want to be {{RelationshipLabel}} with you.$10#$b#Yes. I wanna be {{RelationshipLabel}}. Sorry I freaked out, I just... can't believe that this is actually happening...$6#$b#I need some time to pack up my stuff. I'll be there in 3 days, okay?$h",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+                "UseLovePortraits": false,
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "ExtraDialogue_Town_DumpsterDiveComment_Adult": "Uh... you want me to get you some hand sanitizer or something, {{Random: chickadee, bud, @}}?",
+                "2{{DialogueYear}}": "*snort*$6#$b#You've got twigs in your hair, chickadee. You trying to start a new trend?$h#$b#C'mere, I'll get them out for you.$6#$e#*sigh*...Do I even wanna know what you've been up to?$6",
+                "4{{DialogueYear}}": "Hey, bud. I was thinking of taking Jas to Zuzu City sometime. Maybe buy her a new dress, some new books, take her to see a movie...$6#$b#I was hoping you'd come with us.$6",
+                "6{{DialogueYear}}": "I still can't believe that of all the people in town, you spend so much time with me.$l#$b#*snort* No, I'm not complaining, ya dingus.$h#$b#Just never thought I'd have a friend like you here, is all.$6#$e#Hey, who are you calling a softie!?$10",
+                "winter_7{{DialogueYear}}": "Hey, why don't we ditch the Ice Festival this year?#$b#We could just stay in and lay around on the couch.#$e#I'll go if you really wanna go and win the fishing competition, though.#$b#Gotta cheer you on and all that.$6",
+                "8{{DialogueYear}}": "Hey. So how's my favorite dork?$6#$e#You doing anything this weekend? I was thinking we could go out and do something fun.$6#$b#Or if you're busy, I could just come over and help you with your animals.$6#$b#I mean, I can if you want me to.$l",
+                "winter_8{{DialogueYear}}": "How do they always manage to set the Ice Festival for the coldest, most godforsaken day of the year?$s#$b#I'm wearing four pairs of socks, but I'm pretty sure my toes are gonna freeze off...#$e#Hm... you look like you're freezing, too.#$b#C'mere, we can conserve our body heat if we stay close to each other.$6",
+                "10{{DialogueYear}}": "Oooh... my mouf ith numb. I ate way too many pepper popperth.$10",
+                "11{{DialogueYear}}": "...$6#You look really cheerful today. I can't believe that used to annoy me.$6",
+                "14{{DialogueYear}}": "Hey, @. Don't take this the wrong way, but I feel awful and I don't wanna talk right now. Sorry.$s#$e#I really don't wanna talk, but I'd like it if you kept me company.",
+                "17{{DialogueYear}}": "Hey, tell me about your day. I like hearing about all the stuff you get up to.$6#$q 594431/594432 Shane_story#So what have you been doing lately?#$r 594431 10 story_one#Caring for my crops and animals.#$r 594431 10 story_one#Mining and fighting monsters.#$r 594432 0 story_trash#Digging through people's trash.",
+                "18{{DialogueYear}}": "Hey, @. Wanna split a pizza sometime?#$b#I'm talking about Gus's fancy oven-baked pizzas, not my usual microwavable ones.$6#$e#My treat. Don't worry, I can afford to splurge on my favorite dweeb every now and then.$h",
+                "spring_23{{DialogueYear}}": "Just so you know, I really, really, really wouldn't mind if you asked Emily to dance tomorrow.$6#$b#She'd get to dance, you'd get to dance, I won't have to dance...$3#$b#It'd be a win-win-win situation, don't you think?$6#$e#Of course I'd dance with you if you asked. I'm just saying, you have friends who *like* dancing.$h",
+                "spring_24{{DialogueYear}}": "Oh hey, chickadee.$6#$e#I, uh, I gotta go run some errands before the dance.$3#$e#See you in a bit, @.$6",
+                "winter_25{{DialogueYear}}": "%Shane clasps a hand on your shoulder.#$b#Happy Feast, @.$6#$e#Heh, I wish I could stay, but I gotta help with some last-minute prep. See you in a bit, chickadee.$6",
+                "summer_28{{DialogueYear}}": "Hey, chickadee.$6#$e#You ready for fall? Marnie's already drafted a schedule of chores at the ranch.#$b#You know, to get ready for the Fair.#$b#I'm gonna be giving lots of animal baths in the next two weeks...$3#$e#Anyway, I'll see you tonight.$6",
+                "smooch": null,
+                "haha": null,
+                "pepper_problem": null,
+                "story_one": "Sounds exhausting. If you need to take a break, just lemme know and I'll bring you some food or something.$6",
+                "story_trash": "...Huh. I was not expecting that.#$e#*sigh*... of course my best friend would be the town dumpster diver.$3",
+                "Shane_story": "#$p 594431#You haven't been overworking yourself, have you?|Unless you've been digging through people's garbage again. I don't wanna hear about that, you weirdo.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "Hearts:Shane": "{{Range: 10, 14}}",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "ExtraDialogue_Town_DumpsterDiveComment_Adult": "Uh... you want me to get you some hand sanitizer or something, {{Random: chickadee, bud, @}}?",
+                "2{{DialogueYear}}": "*snort*$6#$b#You've got twigs in your hair, chickadee. You trying to start a new trend?$h#$b#C'mere, I'll get them out for you.$6#$e#*sigh*...Do I even wanna know what you've been up to?$6",
+                "4{{DialogueYear}}": "Hey, bud. I was thinking of taking Jas to Zuzu City sometime. Maybe buy her a new dress, some new books, take her to see a movie...$6#$b#I was hoping you'd come with us.$6",
+                "6{{DialogueYear}}": "I still can't believe that of all the people in town, you spend so much time with me.$6#$b#*snort* No, I'm not complaining, ya dingus.$h#$b#Just never thought I'd have a friend like you here, is all.$6#$e#Hey, who are you calling a softie!?$10",
+                "winter_7{{DialogueYear}}": "Hey, why don't we ditch the Ice Festival this year?#$b#We could just stay in and lay around on the couch.#$e#I'll go if you really wanna go and win the fishing competition, though.#$b#Gotta cheer you on and all that.$6",
+                "8{{DialogueYear}}": "Hey. So how's my favorite dork?$6#$e#You doing anything this weekend? I was thinking we could go out and do something fun.$6#$b#Or if you're busy, I could just come over and help you with your animals.$6#$b#I mean, I can if you want me to.$6",
+                "winter_8{{DialogueYear}}": "How do they always manage to set the Ice Festival for the coldest, most godforsaken day of the year?$s#$b#I'm wearing four pairs of socks, but I'm pretty sure my toes are gonna freeze off...#$e#Hm... you look like you're freezing, too.#$b#C'mere, we can conserve our body heat if we stay close to each other.$6",
+                "10{{DialogueYear}}": "Oooh... my mouf ith numb. I ate way too many pepper popperth.$10",
+                "11{{DialogueYear}}": "...$6#You look really cheerful today. I can't believe that used to annoy me.$6",
+                "14{{DialogueYear}}": "Hey, @. Don't take this the wrong way, but I feel awful and I don't wanna talk right now. Sorry.$s#$e#I really don't wanna talk, but I'd like it if you kept me company.",
+                "17{{DialogueYear}}": "Hey, tell me about your day. I like hearing about all the stuff you get up to.$6#$q 594431/594432 Shane_story#So what have you been doing lately?#$r 594431 10 story_one#Caring for my crops and animals.#$r 594431 10 story_one#Mining and fighting monsters.#$r 594432 0 story_trash#Digging through people's trash.",
+                "18{{DialogueYear}}": "Hey, @. Wanna split a pizza sometime?#$b#I'm talking about Gus's fancy oven-baked pizzas, not my usual microwavable ones.$6#$e#My treat. Don't worry, I can afford to splurge on my favorite dweeb every now and then.$h",
+                "spring_23{{DialogueYear}}": "Just so you know, I really, really, really wouldn't mind if you asked Emily to dance tomorrow.$6#$b#She'd get to dance, you'd get to dance, I won't have to dance...$3#$b#It'd be a win-win-win situation, don't you think?$6#$e#Of course I'd dance with you if you asked. I'm just saying, you have friends who *like* dancing.$h",
+                "spring_24{{DialogueYear}}": "Oh hey, chickadee.$6#$e#I, uh, I gotta go run some errands before the dance.$3#$e#See you in a bit, @.$6",
+                "winter_25{{DialogueYear}}": "%Shane clasps a hand on your shoulder.#$b#Happy Feast, @.$6#$e#Heh, I wish I could stay, but I gotta help with some last-minute prep. See you in a bit, chickadee.$6",
+                "summer_28{{DialogueYear}}": "Hey, chickadee.$6#$e#You ready for fall? Marnie's already drafted a schedule of chores at the ranch.#$b#You know, to get ready for the Fair.#$b#I'm gonna be giving lots of animal baths in the next two weeks...$3#$e#Anyway, I'll see you tonight.$6",
+                "smooch": null,
+                "haha": null,
+                "pepper_problem": null,
+                "story_one": "Sounds exhausting. If you need to take a break, just lemme know and I'll bring you some food or something.$6",
+                "story_trash": "...Huh. I was not expecting that.#$e#*sigh*... of course my best friend would be the town dumpster diver.$3",
+                "Shane_story": "#$p 594431#You haven't been overworking yourself, have you?|Unless you've been digging through people's garbage again. I don't wanna hear about that, you weirdo.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "Hearts:Shane": "{{Range: 10, 14}}",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Shane0": "Are you sure you know what you're getting yourself into?$6#$b#You know I'll do my best for you, but I'll still be the same jerk with the same baggage... not to mention that I have Jas to take care of...$3#$b#You really want this?#$e#Don't get me wrong, I do want this. I want this so bad, and I just... I really need this to work, @.#$b#So... if you're absolutely sure that you wanna spend the rest of eternity with this hot mess, then let's do this.$6#$e#This is... this is real, right? I mean, this is actually happening?$6#$e#Yoba, I don't know how to tell you how I feel right now.$l#$b#Heh... I guess I've got the rest of our lives to figure out how to tell you, right?$l#$e#You know what, I'm gonna go before I get even sappier. Gotta save some of that mushiness for the ceremony, right?$6#$e#@, my bud, my favorite person in the universe... I'd love to spend the rest of the day finding more ways to say that, but we both have stuff to do.$l#$b#Go on, get outta here!$h",
+                "Shane1": "I talked to Marnie and Jas last night. They kinda freaked out and took over the commitment ceremony prep.$h#$b#They cried a lot. Happy tears, of course. They're really, really happy for us, @.$l#$e#Jas is also pretty excited to come hang out on the farm. Do you think we should set up a room for her?$6",
+                "ShaneRoommate0": "Are you sure you know what you're getting yourself into?$6#$b#You know I'll do my best for you, but I'll still be the same jerk with the same baggage... not to mention that I have Jas to take care of...$3#$b#You really want this?#$e#Don't get me wrong, I do want this. I want this so bad, and I just... I really need this to work, @.#$b#So... if you're absolutely sure that you wanna spend the rest of eternity with this hot mess, then let's do this.$6#$e#This is... this is real, right? I mean, this is actually happening?$6#$e#Yoba, I don't know how to tell you how I feel right now.$l#$b#Heh... I guess I've got the rest of our lives to figure out how to tell you, right?$l#$e#You know what, I'm gonna go before I get even sappier. Gotta save some of that mushiness for when I'm actually living with you, right?$6#$e#@, my bud, my favorite person in the universe... I'd love to spend the rest of the day finding more ways to say that, but we both have stuff to do.$l#$b#Go on, get outta here!$h",
+                "ShaneRoommate1": "I talked to Marnie and Jas last night. They kinda freaked out and took over the whole moving process.$h#$b#They cried a lot. Happy tears, of course. They're really, really happy for us, @.$l#$e#Jas is also pretty excited to come hang out on the farm. Do you think we should set up a room for her?$6",
+
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Shane0": "Are you sure you know what you're getting yourself into?$6#$b#You know I'll do my best for you, but I'll still be the same jerk with the same baggage... not to mention that I have Jas to take care of...$3#$b#You really want this?#$e#Don't get me wrong, I do want this. I want this so bad, and I just... I really need this to work, @.#$b#So... if you're absolutely sure that you wanna spend the rest of eternity with this hot mess, then let's do this.$6#$e#This is... this is real, right? I mean, this is actually happening?$6#$e#Yoba, I don't know how to tell you how I feel right now.$6#$b#Heh... I guess I've got the rest of our lives to figure out how to tell you, right?$6#$e#You know what, I'm gonna go before I get even sappier. Gotta save some of that mushiness for the ceremony, right?$6#$e#@, my bud, my favorite person in the universe... I'd love to spend the rest of the day finding more ways to say that, but we both have stuff to do.$6#$b#Go on, get outta here!$h",
+                "Shane1": "I talked to Marnie and Jas last night. They kinda freaked out and took over the commitment ceremony prep.$h#$b#They cried a lot. Happy tears, of course. They're really, really happy for us, @.$6#$e#Jas is also pretty excited to come hang out on the farm. Do you think we should set up a room for her?$6",
+                "ShaneRoommate0": "Are you sure you know what you're getting yourself into?$6#$b#You know I'll do my best for you, but I'll still be the same jerk with the same baggage... not to mention that I have Jas to take care of...$3#$b#You really want this?#$e#Don't get me wrong, I do want this. I want this so bad, and I just... I really need this to work, @.#$b#So... if you're absolutely sure that you wanna spend the rest of eternity with this hot mess, then let's do this.$6#$e#This is... this is real, right? I mean, this is actually happening?$6#$e#Yoba, I don't know how to tell you how I feel right now.$6#$b#Heh... I guess I've got the rest of our lives to figure out how to tell you, right?$6#$e#You know what, I'm gonna go before I get even sappier. Gotta save some of that mushiness for when I'm actually living with you, right?$6#$e#@, my bud, my favorite person in the universe... I'd love to spend the rest of the day finding more ways to say that, but we both have stuff to do.$6#$b#Go on, get outta here!$h",
+                "ShaneRoommate1": "I talked to Marnie and Jas last night. They kinda freaked out and took over the whole moving process.$h#$b#They cried a lot. Happy tears, of course. They're really, really happy for us, @.$6#$e#Jas is also pretty excited to come hang out on the farm. Do you think we should set up a room for her?$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "JojaMart10": "{{Random: Oh hey, bud. I'll see you after my shift, okay?$6 ++ What are you doing here? Not that I'm not glad to see your dumb face, but I don't think you're here to *buy* this junk.$6 |inputSeparator=++}}",
+            },
+            "When":
+            {
+                "Relationship:Shane |contains= Engaged": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "JojaMart": "Hm? Oh, hey. Miss me already?$6",
+            },
+            "When":
+            {
+                "Relationship:Shane |contains= Engaged": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries":
+            {
+                "Shane": "See, *this* is why you're my best friend... heh, just kidding. Thanks, @!/206 215 260/Hey, this is neat! Thanks, chickadee./203 -5 -79 113 167/Uh... I don't really like this./80 342 0 -20 -21 92 110 111 112 142 152 153 157 178 105 168 170 171 172 374 376 378 380 397 420 684 721 766 767 772 203 308 -81 152 330/Yoba, you of all people should know better than to give me this./346 459 303 348/Oh, you got me something? Thanks, bud.// "
+            },
+            "When":
+            {
+                "Hearts:Shane": "{{Range: 9, 14}}",
+                "Relationship:Shane |contains=Married": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries":
+            {
+                "Shane": "{{Random: Have I told you that I love you? I love you, this is great. ++ Aw, bud, now you're just spoiling me. ++ Ugh, I just can't get enough of this stuff. Thanks, @! ++ You know me too well, @. ++ *hug* You're the best, @. ++ Aw yes, this is the good stuff. Thanks, @! |inputSeparator=++}}/206 215 260/{{Random: Aw, @, you shouldn't have. ++ Thanks, chickadee! I really like this. ++ Hey, I like this stuff. Thanks! ++ Hey, I was just thinking of this! Thanks, bud. ++ Oh, neat! Thanks, @. ++ Aw, thanks, bud. I really like this. ++ I seriously like this! Thanks, @. |inputSeparator=++}}/203 -5 -79 113 167/{{Random: The trash can's over there, bud. Put your trash there instead. ++ Eugh, why? Did I do something to tick you off? ++ I'll just... throw this away for you, I guess. ++ Don't take this the wrong way, but this is nasty. ++ Uh... are you asking me to put this in the trash for you? ++ Is this supposed to be a gift? No thanks. ++ *sigh* Why are you giving me this? |inputSeparator=++}}/80 342 0 -20 -21 92 110 111 112 142 152 153 157 178 105 168 170 171 172 374 376 378 380 397 420 684 721 766 767 772 203 308 -81 152 330/{{Random: You've gotta be kidding me. ++ C'mon, @... why do you have to do this? ++ Yeah, this stuff is going down the drain. Quit it, @. ++ Seriously, @, you gotta stop giving me this stuff. ++ Is this some kinda prank? It's not funny. ++ Yeah, no. Not cool. ++ @, I really need you to stop giving me this junk. |inputSeparator=++}}/346 459 303 348/{{Random: Heh, thanks, @. ++ Oh, you got me something? Thanks, sunshine. ++ Hey, for me? Thanks, bud. ++ Thanks, @. ++ You're giving this to me? Heh, thanks. ++ Thanks, chickadee. |inputSeparator=++}}// "
+            },
+            "When":
+            {
+                "Relationship:Shane |contains=Married": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_1": "{{Random: Have I ever told you that Jas thinks you're the coolest grown-up ever?$6#$b#Don't worry, I won't tell her what a huge dork you really are.$h ++ Hey, feel my shirt... It's made of boyfriend material.$h#$b#How do you think that one would go over with Emily? She likes fabrics, right?$6 |inputSeparator=++}}",
+                "Good_2": "{{Random: Hey, I was thinking we should have Jas and Marnie over for lunch sometime. They'd like that, wouldn't they?$6#$e#I'll probably get Gus to make us something, though. I don't wanna take any chances with my cooking. ++ Morning, chickadee. Lookin' good!$6 |inputSeparator=++}}",
+                "Good_3": "Sometimes I feel like I'm really getting it together. I get all these chores done, I spend time with my family...#$b#It's nice. I'm feeling pretty proud of myself.$6",
+                "Good_5": "{{Random: I'm in a great mood today... The Tunnelers won big last night.$h ++ A little bit before we became {{RelationshipLabel}}, I got these really sappy dreams about you.$6#$b#Yoba, I was so embarrassed about them. I had it in my head that it was weird to care that much about someone I wasn't dating.$3#$e#I kinda freaked out whenever I saw you afterwards, you know. Like I was scared you'd read my mind or something.$6#$e#Yeah, I do still have dreams about you every now and then. Not that big a deal to me, though...#$b#I know you're way sappier in real life.$h |inputSeparator=++}}",
+                "Good_7": "{{Random: Hey, @. Could you stay with me for a little bit?#$b#Today feels really heavy...$s ++ I'm glad that we were neighbors before I moved in.$6#$b#It doesn't feel like I moved out and left Jas and Marnie behind. It's more like my home just got a lot bigger, you know?$6#$e#I hope you feel the same way. What's mine is yours, and all that.$6#$b#Besides, Marnie and Jas have been bugging me about getting you to visit more often.$h |inputSeparator=++}}",
+                "Good_8": "{{Random: *Sniff*... *sniff*... what's that wonderful fragrance? Eau de pepperoni?$6#$e#I'm kidding, I'm kidding.$h#$e#Seriously, though, do you smell pizza somewhere? ++ Sometimes I get scared that us being {{RelationshipLabel}} is all a really great, elaborate fever dream. Like any minute I'll wake up in a hospital bed with a doctor telling me that I've been asleep for ten years.#$b#Maybe I've just been watching too many movies...$3#$e#Or maybe you're too good to be true, and I still can't believe that I'm the one who gets to share your life.$l |inputSeparator=++}}",
+                "Neutral_0": "{{Random: Why don't you tell me about your day later? I'm kind of busy right now... ++ Hey, are we doing okay on money, @? |inputSeparator=++}}",
+                "Outdoor_1": "{{Random: Hey, @. I went for a morning walk around the farm before you got up. Everything looks fine.$6 ++ Ooohh... my tongue is swollen from eating too many pepper poppers.$s |inputSeparator=++}}",
+                "Indoor_Day_3": "{{Random: Hey. Take this... I didn't feel like cooking today, so I just nuked some breakfast. [195 215 206]#$e#Sorry if it's squishy.$6 ++ Is that tomato sauce on your chin? Someone's been nibbling on pizza rolls.$6 |inputSeparator=++}}",
+                "funReturn_Shane": "{{Random: Phew, I'm all sweaty... That was a pretty long walk...#$b#*sigh* Today was nice. I'm wiped out, though...$6#$e#Why don't you tell me about your day?$6 ++ Hey, you won't believe what I saw on the walk home. I'll tell you about it next time you have a free minute. |inputSeparator=++}}",
+                "Rainy_Day_3": "{{Random: Take this... [773]#$e#I know you like to head into the caves on days like this. Come home in one piece, @. ++ Ugh... I woke up to water dripping on my face. Of course a leak would pop up right above the bed.$s#$e#I'll get it fixed as soon as I can. I think my pillow's already soaked through. |inputSeparator=++}}",
+                "Rainy_Night_0": "{{Random: ...I'll never get used to how cheerful you look after working outside in the rain all day.$6 ++ Well, you're completely soaked. I figured you'd forget to bring an umbrella again.#$b#*sigh*... Go on, I already drew you a bath. As if I'll let you get sick from the rain.$6 |inputSeparator=++}}",
+                "Rainy_Night_4": "{{Random: *sigh*... I hope Jas doesn't get any nightmares tonight. The rain has a way of setting her off...$3#$e#I'm gonna give her a call. I'll talk to you a bit, bud.$6 ++ The tip-tappa-tip of the rain takes me to a different time... a different place.$3#$e#*sigh*... Memories sure have a way of just barging in whenever they feel like it. |inputSeparator=++}}",
+                "spring_23": "Oh, right. It's the Flower Dance tomorrow. Hey, if it makes you happy, I'm happy.$6#$e#Besides, if I have to dance, at least it's with my dork of a best friend.$h",
+                "summer_11": "Morning, chickadee. You ready for the biggest buffet of the year?$h#$e#I got you a pair of stretchy shorts, in case you wanna wear them. For comfort, you know?$6#$e#...Damn, we're not turning into the kind of {{RelationshipLabel}} that wear matching outfits, are we?$10#$b#...$3#$b#Oh well, I guess I don't mind. It's not like we're doing this to be cutesy or whatever.$6",
+                "winter_7": "Wanna ditch the Ice Festival tomorrow? We could stay in, make some hot drinks, and play a game or something...$6#$e#I'll obviously go if you're going, though. Gotta support my best friend.$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_1": "{{Random: Have I ever told you that Jas thinks you're the coolest grown-up ever?$6#$b#Don't worry, I won't tell her what a huge dork you really are.$h ++ Hey, feel my shirt... It's made of boyfriend material.$h#$b#How do you think that one would go over with Emily? She likes fabrics, right?$6 |inputSeparator=++}}",
+                "Good_2": "{{Random: Hey, I was thinking we should have Jas and Marnie over for lunch sometime. They'd like that, wouldn't they?$6#$e#I'll probably get Gus to make us something, though. I don't wanna take any chances with my cooking. ++ Morning, chickadee. Lookin' good!$6 |inputSeparator=++}}",
+                "Good_3": "Sometimes I feel like I'm really getting it together. I get all these chores done, I spend time with my family...#$b#It's nice. I'm feeling pretty proud of myself.$6",
+                "Good_5": "{{Random: I'm in a great mood today... The Tunnelers won big last night.$h ++ A little bit before we became {{RelationshipLabel}}, I got these really sappy dreams about you.$6#$b#Yoba, I was so embarrassed about them. I had it in my head that it was weird to care that much about someone I wasn't dating.$3#$e#I kinda freaked out whenever I saw you afterwards, you know. Like I was scared you'd read my mind or something.$6#$e#Yeah, I do still have dreams about you every now and then. Not that big a deal to me, though...#$b#I know you're way sappier in real life.$h |inputSeparator=++}}",
+                "Good_7": "{{Random: Hey, @. Could you stay with me for a little bit?#$b#Today feels really heavy...$s ++ I'm glad that we were neighbors before I moved in.$6#$b#It doesn't feel like I moved out and left Jas and Marnie behind. It's more like my home just got a lot bigger, you know?$6#$e#I hope you feel the same way. What's mine is yours, and all that.$6#$b#Besides, Marnie and Jas have been bugging me about getting you to visit more often.$h |inputSeparator=++}}",
+                "Good_8": "{{Random: *Sniff*... *sniff*... what's that wonderful fragrance? Eau de pepperoni?$6#$e#I'm kidding, I'm kidding.$h#$e#Seriously, though, do you smell pizza somewhere? ++ Sometimes I get scared that us being {{RelationshipLabel}} is all a really great, elaborate fever dream. Like any minute I'll wake up in a hospital bed with a doctor telling me that I've been asleep for ten years.#$b#Maybe I've just been watching too many movies...$3#$e#Or maybe you're too good to be true, and I still can't believe that I'm the one who gets to share your life.$6 |inputSeparator=++}}",
+                "Neutral_0": "{{Random: Why don't you tell me about your day later? I'm kind of busy right now... ++ Hey, are we doing okay on money, @? |inputSeparator=++}}",
+                "Outdoor_1": "{{Random: Hey, @. I went for a morning walk around the farm before you got up. Everything looks fine.$6 ++ Ooohh... my tongue is swollen from eating too many pepper poppers.$s |inputSeparator=++}}",
+                "Indoor_Day_3": "{{Random: Hey. Take this... I didn't feel like cooking today, so I just nuked some breakfast. [195 215 206]#$e#Sorry if it's squishy.$6 ++ Is that tomato sauce on your chin? Someone's been nibbling on pizza rolls.$6 |inputSeparator=++}}",
+                "funReturn_Shane": "{{Random: Phew, I'm all sweaty... That was a pretty long walk...#$b#*sigh* Today was nice. I'm wiped out, though...$6#$e#Why don't you tell me about your day?$6 ++ Hey, you won't believe what I saw on the walk home. I'll tell you about it next time you have a free minute. |inputSeparator=++}}",
+                "Rainy_Day_3": "{{Random: Take this... [773]#$e#I know you like to head into the caves on days like this. Come home in one piece, @. ++ Ugh... I woke up to water dripping on my face. Of course a leak would pop up right above the bed.$s#$e#I'll get it fixed as soon as I can. I think my pillow's already soaked through. |inputSeparator=++}}",
+                "Rainy_Night_0": "{{Random: ...I'll never get used to how cheerful you look after working outside in the rain all day.$6 ++ Well, you're completely soaked. I figured you'd forget to bring an umbrella again.#$b#*sigh*... Go on, I already drew you a bath. As if I'll let you get sick from the rain.$6 |inputSeparator=++}}",
+                "Rainy_Night_4": "{{Random: *sigh*... I hope Jas doesn't get any nightmares tonight. The rain has a way of setting her off...$3#$e#I'm gonna give her a call. I'll talk to you a bit, bud.$6 ++ The tip-tappa-tip of the rain takes me to a different time... a different place.$3#$e#*sigh*... Memories sure have a way of just barging in whenever they feel like it. |inputSeparator=++}}",
+                "spring_23": "Oh, right. It's the Flower Dance tomorrow. Hey, if it makes you happy, I'm happy.$6#$e#Besides, if I have to dance, at least it's with my dork of a best friend.$h",
+                "summer_11": "Morning, chickadee. You ready for the biggest buffet of the year?$h#$e#I got you a pair of stretchy shorts, in case you wanna wear them. For comfort, you know?$6#$e#...Damn, we're not turning into the kind of {{RelationshipLabel}} that wear matching outfits, are we?$10#$b#...$3#$b#Oh well, I guess I don't mind. It's not like we're doing this to be cutesy or whatever.$6",
+                "winter_7": "Wanna ditch the Ice Festival tomorrow? We could stay in, make some hot drinks, and play a game or something...$6#$e#I'll obviously go if you're going, though. Gotta support my best friend.$6",
+                "winter_8": "Hey, be sure to bundle up today.#$e#I don't want you freezing your toes off or whatever if we're gonna be hanging out on some godforsaken ice disk all day.$6",
+                "Good_4": "{{Random: Hey, you know I love you, right?$6#$b#I just wanna make sure you never forget.$6 ++ Ugh... I just wanna crawl back into bed...$s#$b#I'll just stay in today, okay? I don't feel up to anything at all...#$e#Have a good day out there, bud.$6 |inputSeparator=++}}",
+                "winter_28": "Well, we've made it through another year.$6#$b#I know I don't say it enough, but I hope you know how grateful I am that we went through it with each other.$6#$e#Happy new year, @. I love you.$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+	    "Logname": "Shane -'Admiring the pendant' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_6": "{{Random: Ah, don't hug me. I haven't showered yet and I don't wanna expose you to that.$6#$b#I've, uh, had some trouble getting myself to do anything this morning.$3 ++ So picture this: I'm just getting on with my day, doing chores and stuff... when my pendant swings into view.#$b#*sigh*... You know how distracting this thing is? I keep getting all emotional whenever I lay my eyes on it.#$e#Take it off?$10#$b#Yeah, I get that it's the practical thing to do, but the only way to get this pendant off me is to pry it off my cold, dead body.#$b#I'm not taking it off for anything.$6 |inputSeparator=++}}",
+            },
+            "When":
+            {
+                "Relationship:Shane": "Married",
+                "Roommate |contains=Shane": "false",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+	    "Logname": "Shane -'Admiring the bracelet' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_6": "{{Random: Ah, don't hug me. I haven't showered yet and I don't wanna expose you to that.$6#$b#I've, uh, had some trouble getting myself to do anything this morning.$3 ++ So picture this: I'm just getting on with my day, doing chores and stuff... when my bracelet swings into view.#$b#*sigh*... You know how distracting this thing is? I keep getting all emotional whenever I lay my eyes on it.#$e#Take it off?$10#$b#Yeah, I get that it's the practical thing to do, but the only way to get this bracelet off me is to pry it off my cold, dead body.#$b#I'm not taking it off for anything.$6 |inputSeparator=++}}",
+            },
+            "When":
+            {
+                "Roommate": "Shane",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+	    "Logname": "Shane -Ambiguous pendant or bracelet line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_6": "{{Random: Ah, don't hug me. I haven't showered yet and I don't wanna expose you to that.$6#$b#I've, uh, had some trouble getting myself to do anything this morning.$3 ++ So picture this: I'm just getting on with my day, doing chores and stuff... when you-know-what swings into view. You know, this thing you gave me when you asked me to live with you.#$b#*sigh*... You know how distracting that is? I keep getting all emotional whenever I lay my eyes on it.#$e#Take it off?$10#$b#Yeah, I get that it's the practical thing to do, but the only way to get it off me is to pry it off my cold, dead body.#$b#I'm not taking it off for anything.$6 |inputSeparator=++}}",
+            },
+            "When":
+            {
+                "Relationship:Shane": "Married",
+                "Roommate |contains=Shane": "false",
+                "Spouse |contains=Shane": "false",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Neutral_5": "{{Random: Do you ever feel like there's a huge yawning chasm in your chest?#$b#Sometimes I wake up feeling so... hollow.$s#$e#*sigh*... I hate having days like these. ++ I woke up at one in the morning and couldn't get back to sleep, so I scrubbed and mopped all our floors.#$b#Well, looks like I just used up all my productivity for the month. At least the floors are shiny.$3#$e#My head's starting to hurt, so I think I'll go back to sleep now. G'night, {{Lowercase:{{TermofEndearment}}}}. |inputSeparator=++}}",
+                "Indoor_Day_4": "{{Random: Morning, {{Lowercase:{{TermofEndearment}}}}. Here's breakfast, courtesy of Charlie and the girls.$6 [195]#$e#I like to think that I've gotten pretty good at making egg dishes. Except for deviled eggs.$6#$b#Yoba, I could really go for some of Gus's special fancy-rich-jerk deviled eggs right now...$3 ++ ...I  think I need some time alone today.$3#$b#It's not you, I just feel awful. I wanna just lie in bed and not do anything.#$e#I promise I'll try not to wallow. I'll watch a movie or play some games or something.#$b#You have a good day, okay? Be safe. |inputSeparator=++}}",
+                "Rainy_Night_3": "{{Random: Eat up, {{Lowercase:{{TermofEndearment}}}}.$6 [199 457 727]#$e#I know it's not Luau-level stuff, but you gotta warm up after spending all day in the rain.$6 ++ Here.$6 [199 457 727]#$e#Nothing like a stomach full of hot soup on a rainy night, right?$6#$b#I just hope I didn't make it too salty.$3 |inputSeparator=++}}",
+                "summer_4": "Morning, {{Lowercase:{{TermofEndearment}}}}. You sleep okay?$6#$e#Oh, don't forget that it's Jas's birthday today. I'm gonna bring her a cake later.$6#$b#Heh, I just had Gus make it. My cooking skills aren't up to making cake yet, and I really don't wanna bring Jas some burnt disaster.$6",
+                "fall_18": "Hey, {{Lowercase:{{TermofEndearment}}}}. You sleep okay?$6#$e#Don't forget to greet Marnie today. It's her birthday.$6",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Neutral_5": "{{Random: Do you ever feel like there's a huge yawning chasm in your chest?#$b#Sometimes I wake up feeling so... hollow.$s#$e#*sigh*... I hate having days like these. ++ I woke up at one in the morning and couldn't get back to sleep, so I scrubbed and mopped all our floors.#$b#Well, looks like I just used up all my productivity for the month. At least the floors are shiny.$3#$e#My head's starting to hurt, so I think I'll go back to sleep now. G'night, {{TermofEndearment}}. |inputSeparator=++}}",
+                "Indoor_Day_4": "{{Random: Morning, {{TermofEndearment}}. Here's breakfast, courtesy of Charlie and the girls.$6 [195]#$e#I like to think that I've gotten pretty good at making egg dishes. Except for deviled eggs.$6#$b#Yoba, I could really go for some of Gus's special fancy-rich-jerk deviled eggs right now...$3 ++ ...I  think I need some time alone today.$3#$b#It's not you, I just feel awful. I wanna just lie in bed and not do anything.#$e#I promise I'll try not to wallow. I'll watch a movie or play some games or something.#$b#You have a good day, okay? Be safe. |inputSeparator=++}}",
+                "Rainy_Night_3": "{{Random: Eat up, {{TermofEndearment}}.$6 [199 457 727]#$e#I know it's not Luau-level stuff, but you gotta warm up after spending all day in the rain.$6 ++ Here.$6 [199 457 727]#$e#Nothing like a stomach full of hot soup on a rainy night, right?$6#$b#I just hope I didn't make it too salty.$3 |inputSeparator=++}}",
+                "summer_4": "Morning, {{TermofEndearment}}. You sleep okay?$6#$e#Oh, don't forget that it's Jas's birthday today. I'm gonna bring her a cake later.$6#$b#Heh, I just had Gus make it. My cooking skills aren't up to making cake yet, and I really don't wanna bring Jas some burnt disaster.$6",
+                "fall_18": "Hey, {{TermofEndearment}}. You sleep okay?$6#$e#Don't forget to greet Marnie today. It's her birthday.$6",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+	    "Logname": "Shane dialogue, aro yes, ace yes, love portraits true, IC Shane",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_9": "{{Random: If someone told me before we met that this is what my life would be like, I would've told them that they were wrong.#$b#I'm glad that *I* was wrong, though.$6 ++ Huh... You're wondering why I have this goofy grin on my face? I was just thinking about how my life turned out.$h#$e#I can't believe I went from that dead-end job at Joja to living on a farm with my best friend, a stone's throw from Jas and Marnie's place.$6#$e#I'm not always in a place to appreciate it, but... yeah. I'm glad I'm here.$6 |inputSeparator=++}}",
+                "Outdoor_0": "{{Random: I didn't sleep well last night, so I'm hoping this fresh air will get the juices flowing. ++ Sometimes I stop and realize that I'm nothing more than a bag of juicy, squishy flesh.#$e#But hey... that's just fine... what's life, anyway?$h |inputSeparator=++}}",
+                "winter_8": "Hey, be sure to bundle up today.#$e#I don't want you freezing your toes off or whatever if we're gonna be hanging out on some godforsaken ice disk all day.$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+	    "Logname": "Shane dialogue, aro yes, ace yes, love portraits false, IC Shane",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Good_9": "{{Random: If someone told me before we met that this is what my life would be like, I would've told them that they were wrong.#$b#I'm glad that *I* was wrong, though.$6 ++ Huh... You're wondering why I have this goofy grin on my face? I was just thinking about how my life turned out.$h#$e#I can't believe I went from that dead-end job at Joja to living on a farm with my best friend, a stone's throw from Jas and Marnie's place.$6#$e#I'm not always in a place to appreciate it, but... yeah. I'm glad I'm here.$6 |inputSeparator=++}}",
+                "Outdoor_0": "{{Random: I didn't sleep well last night, so I'm hoping this fresh air will get the juices flowing. ++ Sometimes I stop and realize that I'm nothing more than a bag of juicy, squishy flesh.#$e#But hey... that's just fine... what's life, anyway?$h |inputSeparator=++}}",
+                "winter_8": "Hey, be sure to bundle up today.#$e#I don't want you freezing your toes off or whatever if we're gonna be hanging out on some godforsaken ice disk all day.$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Bad_0": "Did I do something to tick you off?#$b#Or what, are you just tired of me and my baggage?#$e#I warned you, @. I told you that I'm a mess, but no, you went ahead and moved me in anyway.#$b#You knew exactly what you were getting into when you asked me to be {{RelationshipLabel}}. So if you regret anything, that's on you.$a",
+                "Bad_1": "...Can we still fix this?$s#$b#Not that I have much experience, but I'm pretty sure this isn't how being {{RelationshipLabel}} is supposed to work.#$e#Please... I just want us to go back to how we were before.$3",
+                "Bad_3": "Are you gonna kick me out? Is that why you've been so distant lately?$s#$e#I'm... I'm doing the best I can for you, you know.#$b#I'm sorry it isn't enough, but it's the best I can do...$s#$b#Please don't abandon me. I'll try harder, @. I'll do whatever you want me to, just... just talk to me. Tell me what you want from me.#$e#...I want to fix this, @. Do you?$3",
+                "Bad_5": "You were my best friend once, you know?#$b#Yoba, we just had to mess that up by living together, didn't we?$s",
+                "Bad_6": "Did you ever really care about me? Do I mean anything to you?$s#$b#Or was asking me to move in just some act of charity you couldn't back out of?$a",
+                "Bad_7": "You know, if I knew that living with me would make you so miserable, I wouldn't have said yes.#$e#You said I'd make you happy, jerk! And damn if I'm not trying my hardest to do that, but you're just completely checked out of our friendship.$a",
+            },
+            "When":
+            {
+                "Hearts:Shane": "{{Range: 0, 8}}",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Bad_0": "Do you even still care about me?#$b#Heh, well, you make it easy to forget that you do...$s",
+                "Bad_2": "I think I'm starting to get what people mean when they say that they've drifted apart.$s#$e#Never thought it'd happen to us, but hey, here we are.",
+                "Bad_7": "Sometimes I think of what it would have been like if I didn't move in with you.$3#$b#We were really good friends before we were {{RelationshipLabel}}. I almost wish we could go back to how things were back then.",
+            },
+            "When":
+            {
+                "Hearts:Shane": "{{Range: 9, 14}}",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Shane": "When we met, I showed you all the worst parts of me...$3#$b#And you chose to stick with me, anyway.\"/pause 500/speak Shane \"Then you chose to be with me and... and love me. Even though you see who I am.$3#$b#Or maybe because you see me.$6\"/pause 1000/speak Shane \"You didn't quit on me, and I'm never gonna quit on you...#$b#...Even if you fart in your sleep.$6\"/pause 100/emote farmer 12/pause 200/speak Shane \"I'm kidding, I'm kidding.$h\"/pause 1000/emote Shane 40/pause 1000/speak Shane \"Looking out at all this...$6#$b#I just--\"/faceDirection Shane 3/speak Shane \"I see you too, you know?$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "2128292/e 3900074/t 600 630/f Shane 2000/D Shane": null,
+                "59443111/e 9581348/t 2200 2600/f Shane 2500/D Shane/w sunny": null,
+                "ShaneHello": null,
+                "59443143/O Shane/f Shane 3000/t 2200 2400/z spring/z summer/z fall/d Mon Fri Sat/F": "shaneTheme/-1000 -1000/farmer 0 0 0 Shane 1 1 2/skippable/warp farmer 65 18 3/warp Shane 65 15 2/faceDirection Shane 2/faceDirection farmer 3/pause 500/viewport 64 15/pause 500/move farmer -1 0 0/speak Shane \"Hey, bud. How'd your day go?$6\"/pause 200/emote farmer 56/pause 500/speak Shane \"That's good...\"/move farmer 0 -3 1/faceDirection Shane 3/showFrame Shane 34/positionOffset Shane -2 0/animate farmer false true 100 101/playSound dwop/pause 500/stopAnimation farmer/showFrame Shane 12/pause 1500/emote Shane 40/pause 1000/question fork1 \"{{PlayerName}}... Can we talk? I just need to get something off my chest.#Sure.#Maybe some other time.\"/fork noShaneTalk/pause 500/speak Shane \"Thanks...\"/pause 1000/speak Shane \"...$3\"/pause 1000/speak Shane \"Today was pretty bad for me.$3\"/emote farmer 8/pause 200/speak Shane \"Don't worry, nothing happened.#$b#It's just... everything's been so heavy.$3\"/pause 1000/emote Shane 28/pause 1000/speak Shane \"Honestly, I'm starting to think that I'll feel this way for the rest of my life.$s#$b#And sometimes...$s#$b#Sometimes, I still wish I could just end it all.$3\"/stopMusic/pause 1500/faceDirection Shane 2/pause 1000/speak Shane \"I can't, though. I won't.$3#$b#I don't want you to worry. I'm never gonna do anything like that again.#$b#There are people depending on me, you know? And there are lots of good things in my life.\"/playMusic SettlingIn/pause 500/speak Shane \"I have you. And there's Jas, Marnie, the farm, the chickens... I have actual friends in town now, too.#$b#...There's no way I can just... leave.$3#$b#Even if I feel like I want to.$s#$b#There's no way I'm gonna just throw it all away.\"/pause 500/faceDirection Shane 3/pause 500/speak Shane \"And I just wanna let you know that of all the good things keeping me here...#$b#You're my favorite.$6\"/pause 1000/speak Shane \"...Well, it's a tie between you and Jas, to be honest... I mean...$3\"/pause 500/emote Shane 40/pause 500/speak Shane \"Anyway, the point is that you matter to me. You know that, right?$6\"/pause 500/emote farmer 20/pause 500/showFrame Shane 34/positionOffset Shane -2 0/animate farmer false true 100 101/pause 2000/stopAnimation farmer/showFrame Shane 12/pause 1000/speak Shane \"*sigh* Thanks for hearing me out...$6\"/pause 500/speak Shane \"We should probably get some shut-eye...#$b#Or do you want a snack first? I can heat something up for you if you want.$6\"/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/end dialogue Shane \"Here, in case you wanna snack before bed.$6 [206 215]#$b#Goodnight, @.$6\"",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "59443125/e 59443124/z spring/z fall/z winter/u 4/w sunny/t 1100 1300": "marnieShop/-1000 -1000/farmer 0 0 0 Shane 1 0 0 Jas 40 13 2 Marnie 39 12 3/skippable/changeToTemporaryMap JasParty/viewport -1000 -1000/pause 1000/warp farmer 47 14/warp Shane 48 13/positionOffset farmer -20 0/viewport 36 11 true/move farmer -8 0 3 true/move Shane -6 0 3 true/pause 1750/jump Jas 4/faceDirection Jas 1/textAboveHead Jas \"You're here!\"/pause 500/faceDirection farmer 0 true/faceDirection Marnie 1/pause 250/speak Shane \"Happy birthday, Jas!$h\"/move Marnie 2 0 2 true/speak Marnie \"I'm glad you two could make it!$h\"/speak Jas \"Uncle Shane, I need to show you something!$h\"/pause 250/emote farmer 8/pause 100/speak Jas \"*giggle* It's a secret, {{Auncle}} @.$4#$b#Come on, Uncle Shane!$h\"/speed Jas 4/move Jas 0 3 2 true/pause 500/faceDirection Shane 2/move Shane 0 1 3 true/faceDirection farmer 1 true/faceDirection Jas 0 true/speak Shane \"Heh, well, it looks like I gotta escort our birthday girl. We'll be back in a bit, bud.$6\"/showFrame Shane 34/positionOffset Shane -5 0/animate farmer false true 100 101/playSound dwop/pause 400/stopAnimation farmer/showFrame Shane 12/pause 500/faceDirection Shane 2/move Shane 0 2 3 true/faceDirection farmer 2 true/speak Shane \"So what did you find, squirt?$6\"/faceDirection Jas 1 true/jump Jas 5/speak Jas \"Come on, it's this way!$h\"/speed Jas 5/move Jas -18 0 3 true/speed Shane 4/move Shane -18 0 3 true/pause 500/faceDirection Marnie 3/pause 250/move Marnie -2 0 3 true/faceDirection farmer 3 true/textAboveHead Marnie \"Be careful!\"/pause 3000/emote Marnie 28/playSound breathout/pause 500/faceDirection Marnie 2 true/move Marnie 0 2 1 true/speak Marnie \"I'm sorry she dragged him off like that. She's always just so excited to spend time with him.\"/pause 200/emote farmer 32/warp Shane -30 -30/pause 250/speak Marnie \"...You know, Jas was over the moon when she found out that you and Shane were going to be {{RelationshipLabel}}.#$b#Your commitment ceremony was all she would talk about for weeks!$h#$b#It was good to see her so animated about something.\"/pause 500/speak Marnie \"You know how she can be so withdrawn sometimes...$s\"/stopMusic/emote Marnie 40/pause 500/speak Marnie \"Things were... difficult for them. For both of them.$3#$b#You know how bad things got for Shane...$3#$b#Jas's father was his best friend. I'd known them both since they were children.$3#$b#And Jas was four when the accident happened. She still gets nightmares sometimes.$s#$b#I don't know if they'll ever really heal from what happened, but...$3\"/pause 500/speak Marnie \"They've both come so far. I never imagined that we could all be together like this.\"/pause 250/warp Jas 24 16/warp Shane 24 15/speed Jas 5/move Jas 16 0 0 true/move Shane 14 0 1 true/pause 1000/textAboveHead Jas \"We're back!\"/pause 1000/playMusic SettlingIn/speak Jas \"*giggle* {{Auncle}} @, you'll never guess what we found!$h\"/pause 250/faceDirection farmer 2 true/faceDirection Marnie 2 true/emote farmer 8/pause 100/speak Jas \"Come on, Uncle Shane!\"/move Shane 4 0 3 true/pause 2100/addObject 41 15 402/pause 1000/speak Shane \"Heh... Jas found a big patch of sweet peas.$6\"/jump Jas 4/speak Jas \"So I told him to give some to you, since you love each other.#$b#It's like what they do in the movies!$h\"/emote farmer 32/pause 250/speak Shane \"Well, Jas, we talked about how what @ and I have isn't exactly like in those movies.#$b#But... yeah. We love each other.$l\"/emote farmer 32/emote Shane 32/speak Shane \"...So, uh... who else are we waiting for? Is Vincent coming too?$6\"/pause 250/speak Jas \"Nope! He and Miss Penny already celebrated with me yesterday. We went looking for shells at the beach.#$b#So today is just for family.$4\"/emote farmer 20/pause 250/speak Marnie \"Well, let's go and eat before the ants get to all our food!$h\"/jump Jas/textAboveHead Jas \"Can I have some cake?\"/move Jas 0 -3 0 true/pause 500/move Marnie 0 -2 3 true/move Shane 0 -4 3 true/speak Shane \"That pizza does look really good...$6\"/move Shane -3 0 3 true/move Jas -2 0 0 true/emote farmer 32/globalFade/viewport -1000 -1000/message \"Jas told us all about what she was learning at her tutoring sessions.#Later, Marnie admitted that she just bought all our food from the saloon.#It was a lot of fun!\"/end dialogue Jas \"Thanks for coming, {{Auncle}} @.#$e#Weren't those flowers pretty?$h\"/end dialogue Marnie \"Don't be a stranger now, dear. We are family, after all.$h\"/end dialogue Shane \"Heh, looks like I've got some stiff competition in Jas's 'favorite grown up' department.$6\""
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "Roommate |contains=Shane": "false",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "59443125/e 59443124/z spring/z fall/z winter/u 4/w sunny/t 1100 1300": "marnieShop/-1000 -1000/farmer 0 0 0 Shane 1 0 0 Jas 40 13 2 Marnie 39 12 3/skippable/changeToTemporaryMap JasParty/viewport -1000 -1000/pause 1000/warp farmer 47 14/warp Shane 48 13/positionOffset farmer -20 0/viewport 36 11 true/move farmer -8 0 3 true/move Shane -6 0 3 true/pause 1750/jump Jas 4/faceDirection Jas 1/textAboveHead Jas \"You're here!\"/pause 500/faceDirection farmer 0 true/faceDirection Marnie 1/pause 250/speak Shane \"Happy birthday, Jas!$h\"/move Marnie 2 0 2 true/speak Marnie \"I'm glad you two could make it!$h\"/speak Jas \"Uncle Shane, I need to show you something!$h\"/pause 250/emote farmer 8/pause 100/speak Jas \"*giggle* It's a secret, {{Auncle}} @.$4#$b#Come on, Uncle Shane!$h\"/speed Jas 4/move Jas 0 3 2 true/pause 500/faceDirection Shane 2/move Shane 0 1 3 true/faceDirection farmer 1 true/faceDirection Jas 0 true/speak Shane \"Heh, well, it looks like I gotta escort our birthday girl. We'll be back in a bit, bud.$6\"/showFrame Shane 34/positionOffset Shane -5 0/animate farmer false true 100 101/playSound dwop/pause 400/stopAnimation farmer/showFrame Shane 12/pause 500/faceDirection Shane 2/move Shane 0 2 3 true/faceDirection farmer 2 true/speak Shane \"So what did you find, squirt?$6\"/faceDirection Jas 1 true/jump Jas 5/speak Jas \"Come on, it's this way!$h\"/speed Jas 5/move Jas -18 0 3 true/speed Shane 4/move Shane -18 0 3 true/pause 500/faceDirection Marnie 3/pause 250/move Marnie -2 0 3 true/faceDirection farmer 3 true/textAboveHead Marnie \"Be careful!\"/pause 3000/emote Marnie 28/playSound breathout/pause 500/faceDirection Marnie 2 true/move Marnie 0 2 1 true/speak Marnie \"I'm sorry she dragged him off like that. She's always just so excited to spend time with him.\"/pause 200/emote farmer 32/warp Shane -30 -30/pause 250/speak Marnie \"...You know, Jas was over the moon when she found out that you and Shane were going to be {{RelationshipLabel}}.#$b#It was all she would talk about for weeks!$h#$b#It was good to see her so animated about something.\"/pause 500/speak Marnie \"You know how she can be so withdrawn sometimes...$s\"/stopMusic/emote Marnie 40/pause 500/speak Marnie \"Things were... difficult for them. For both of them.$3#$b#You know how bad things got for Shane...$3#$b#Jas's father was his best friend. I'd known them both since they were children.$3#$b#And Jas was four when the accident happened. She still gets nightmares sometimes.$s#$b#I don't know if they'll ever really heal from what happened, but...$3\"/pause 500/speak Marnie \"They've both come so far. I never imagined that we could all be together like this.\"/pause 250/warp Jas 24 16/warp Shane 24 15/speed Jas 5/move Jas 16 0 0 true/move Shane 14 0 1 true/pause 1000/textAboveHead Jas \"We're back!\"/pause 1000/playMusic SettlingIn/speak Jas \"*giggle* {{Auncle}} @, you'll never guess what we found!$h\"/pause 250/faceDirection farmer 2 true/faceDirection Marnie 2 true/emote farmer 8/pause 100/speak Jas \"Come on, Uncle Shane!\"/move Shane 4 0 3 true/pause 2100/addObject 41 15 402/pause 1000/speak Shane \"Heh... Jas found a big patch of sweet peas.$6\"/jump Jas 4/speak Jas \"So I told him to give some to you, since you love each other.#$b#It's like what they do in the movies!$h\"/emote farmer 32/pause 250/speak Shane \"Well, Jas, we talked about how what @ and I have isn't exactly like in those movies.#$b#But... yeah. We love each other.$l\"/emote farmer 32/emote Shane 32/speak Shane \"...So, uh... who else are we waiting for? Is Vincent coming too?$6\"/pause 250/speak Jas \"Nope! He and Miss Penny already celebrated with me yesterday. We went looking for shells at the beach.#$b#So today is just for family.$4\"/emote farmer 20/pause 250/speak Marnie \"Well, let's go and eat before the ants get to all our food!$h\"/jump Jas/textAboveHead Jas \"Can I have some cake?\"/move Jas 0 -3 0 true/pause 500/move Marnie 0 -2 3 true/move Shane 0 -4 3 true/speak Shane \"That pizza does look really good...$6\"/move Shane -3 0 3 true/move Jas -2 0 0 true/emote farmer 32/globalFade/viewport -1000 -1000/message \"Jas told us all about what she was learning at her tutoring sessions.#Later, Marnie admitted that she just bought all our food from the saloon.#It was a lot of fun!\"/end dialogue Jas \"Thanks for coming, {{Auncle}} @.#$e#Weren't those flowers pretty?$h\"/end dialogue Marnie \"Don't be a stranger now, dear. We are family, after all.$h\"/end dialogue Shane \"Heh, looks like I've got some stiff competition in Jas's 'favorite grown up' department.$6\""
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+	        "Roommate": "Shane",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "59443125/e 59443124/z spring/z fall/z winter/u 4/w sunny/t 1100 1300": "marnieShop/-1000 -1000/farmer 0 0 0 Shane 1 0 0 Jas 40 13 2 Marnie 39 12 3/skippable/changeToTemporaryMap JasParty/viewport -1000 -1000/pause 1000/warp farmer 47 14/warp Shane 48 13/positionOffset farmer -20 0/viewport 36 11 true/move farmer -8 0 3 true/move Shane -6 0 3 true/pause 1750/jump Jas 4/faceDirection Jas 1/textAboveHead Jas \"You're here!\"/pause 500/faceDirection farmer 0 true/faceDirection Marnie 1/pause 250/speak Shane \"Happy birthday, Jas!$h\"/move Marnie 2 0 2 true/speak Marnie \"I'm glad you two could make it!$h\"/speak Jas \"Uncle Shane, I need to show you something!$h\"/pause 250/emote farmer 8/pause 100/speak Jas \"*giggle* It's a secret, {{Auncle}} @.$4#$b#Come on, Uncle Shane!$h\"/speed Jas 4/move Jas 0 3 2 true/pause 500/faceDirection Shane 2/move Shane 0 1 3 true/faceDirection farmer 1 true/faceDirection Jas 0 true/speak Shane \"Heh, well, it looks like I gotta escort our birthday girl. We'll be back in a bit, bud.$6\"/showFrame Shane 34/positionOffset Shane -5 0/animate farmer false true 100 101/playSound dwop/pause 400/stopAnimation farmer/showFrame Shane 12/pause 500/faceDirection Shane 2/move Shane 0 2 3 true/faceDirection farmer 2 true/speak Shane \"So what did you find, squirt?$6\"/faceDirection Jas 1 true/jump Jas 5/speak Jas \"Come on, it's this way!$h\"/speed Jas 5/move Jas -18 0 3 true/speed Shane 4/move Shane -18 0 3 true/pause 500/faceDirection Marnie 3/pause 250/move Marnie -2 0 3 true/faceDirection farmer 3 true/textAboveHead Marnie \"Be careful!\"/pause 3000/emote Marnie 28/playSound breathout/pause 500/faceDirection Marnie 2 true/move Marnie 0 2 1 true/speak Marnie \"I'm sorry she dragged him off like that. She's always just so excited to spend time with him.\"/pause 200/emote farmer 32/warp Shane -30 -30/pause 250/speak Marnie \"...You know, Jas was over the moon when she found out that you and Shane were going to be {{RelationshipLabel}}.#$b#Your commitment ceremony was all she would talk about for weeks!$h#$b#It was good to see her so animated about something.\"/pause 500/speak Marnie \"You know how she can be so withdrawn sometimes...$s\"/stopMusic/emote Marnie 40/pause 500/speak Marnie \"Things were... difficult for them. For both of them.$3#$b#You know how bad things got for Shane...$3#$b#Jas's father was his best friend. I'd known them both since they were children.$3#$b#And Jas was four when the accident happened. She still gets nightmares sometimes.$s#$b#I don't know if they'll ever really heal from what happened, but...$3\"/pause 500/speak Marnie \"They've both come so far. I never imagined that we could all be together like this.\"/pause 250/warp Jas 24 16/warp Shane 24 15/speed Jas 5/move Jas 16 0 0 true/move Shane 14 0 1 true/pause 1000/textAboveHead Jas \"We're back!\"/pause 1000/playMusic SettlingIn/speak Jas \"*giggle* {{Auncle}} @, you'll never guess what we found!$h\"/pause 250/faceDirection farmer 2 true/faceDirection Marnie 2 true/emote farmer 8/pause 100/speak Jas \"Come on, Uncle Shane!\"/move Shane 4 0 3 true/pause 2100/addObject 41 15 402/pause 1000/speak Shane \"Heh... Jas found a big patch of sweet peas.$6\"/jump Jas 4/speak Jas \"So I told him to give some to you, since you love each other.#$b#It's like what they do in the movies!$h\"/emote farmer 32/pause 250/speak Shane \"Well, Jas, we talked about how what @ and I have isn't exactly like in those movies.#$b#But... yeah. We love each other.$6\"/emote farmer 32/emote Shane 32/speak Shane \"...So, uh... who else are we waiting for? Is Vincent coming too?$6\"/pause 250/speak Jas \"Nope! He and Miss Penny already celebrated with me yesterday. We went looking for shells at the beach.#$b#So today is just for family.$4\"/emote farmer 20/pause 250/speak Marnie \"Well, let's go and eat before the ants get to all our food!$h\"/jump Jas/textAboveHead Jas \"Can I have some cake?\"/move Jas 0 -3 0 true/pause 500/move Marnie 0 -2 3 true/move Shane 0 -4 3 true/speak Shane \"That pizza does look really good...$6\"/move Shane -3 0 3 true/move Jas -2 0 0 true/emote farmer 32/globalFade/viewport -1000 -1000/message \"Jas told us all about what she was learning at her tutoring sessions.#Later, Marnie admitted that she just bought all our food from the saloon.#It was a lot of fun!\"/end dialogue Jas \"Thanks for coming, {{Auncle}} @.#$e#Weren't those flowers pretty?$h\"/end dialogue Marnie \"Don't be a stranger now, dear. We are family, after all.$h\"/end dialogue Shane \"Heh, looks like I've got some stiff competition in Jas's 'favorite grown up' department.$6\""
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "Roommate |contains=Shane": "false",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "59443125/e 59443124/z spring/z fall/z winter/u 4/w sunny/t 1100 1300": "marnieShop/-1000 -1000/farmer 0 0 0 Shane 1 0 0 Jas 40 13 2 Marnie 39 12 3/skippable/changeToTemporaryMap JasParty/viewport -1000 -1000/pause 1000/warp farmer 47 14/warp Shane 48 13/positionOffset farmer -20 0/viewport 36 11 true/move farmer -8 0 3 true/move Shane -6 0 3 true/pause 1750/jump Jas 4/faceDirection Jas 1/textAboveHead Jas \"You're here!\"/pause 500/faceDirection farmer 0 true/faceDirection Marnie 1/pause 250/speak Shane \"Happy birthday, Jas!$h\"/move Marnie 2 0 2 true/speak Marnie \"I'm glad you two could make it!$h\"/speak Jas \"Uncle Shane, I need to show you something!$h\"/pause 250/emote farmer 8/pause 100/speak Jas \"*giggle* It's a secret, {{Auncle}} @.$4#$b#Come on, Uncle Shane!$h\"/speed Jas 4/move Jas 0 3 2 true/pause 500/faceDirection Shane 2/move Shane 0 1 3 true/faceDirection farmer 1 true/faceDirection Jas 0 true/speak Shane \"Heh, well, it looks like I gotta escort our birthday girl. We'll be back in a bit, bud.$6\"/showFrame Shane 34/positionOffset Shane -5 0/animate farmer false true 100 101/playSound dwop/pause 400/stopAnimation farmer/showFrame Shane 12/pause 500/faceDirection Shane 2/move Shane 0 2 3 true/faceDirection farmer 2 true/speak Shane \"So what did you find, squirt?$6\"/faceDirection Jas 1 true/jump Jas 5/speak Jas \"Come on, it's this way!$h\"/speed Jas 5/move Jas -18 0 3 true/speed Shane 4/move Shane -18 0 3 true/pause 500/faceDirection Marnie 3/pause 250/move Marnie -2 0 3 true/faceDirection farmer 3 true/textAboveHead Marnie \"Be careful!\"/pause 3000/emote Marnie 28/playSound breathout/pause 500/faceDirection Marnie 2 true/move Marnie 0 2 1 true/speak Marnie \"I'm sorry she dragged him off like that. She's always just so excited to spend time with him.\"/pause 200/emote farmer 32/warp Shane -30 -30/pause 250/speak Marnie \"...You know, Jas was over the moon when she found out that you and Shane were going to be {{RelationshipLabel}}.#$b#It was all she would talk about for weeks!$h#$b#It was good to see her so animated about something.\"/pause 500/speak Marnie \"You know how she can be so withdrawn sometimes...$s\"/stopMusic/emote Marnie 40/pause 500/speak Marnie \"Things were... difficult for them. For both of them.$3#$b#You know how bad things got for Shane...$3#$b#Jas's father was his best friend. I'd known them both since they were children.$3#$b#And Jas was four when the accident happened. She still gets nightmares sometimes.$s#$b#I don't know if they'll ever really heal from what happened, but...$3\"/pause 500/speak Marnie \"They've both come so far. I never imagined that we could all be together like this.\"/pause 250/warp Jas 24 16/warp Shane 24 15/speed Jas 5/move Jas 16 0 0 true/move Shane 14 0 1 true/pause 1000/textAboveHead Jas \"We're back!\"/pause 1000/playMusic SettlingIn/speak Jas \"*giggle* {{Auncle}} @, you'll never guess what we found!$h\"/pause 250/faceDirection farmer 2 true/faceDirection Marnie 2 true/emote farmer 8/pause 100/speak Jas \"Come on, Uncle Shane!\"/move Shane 4 0 3 true/pause 2100/addObject 41 15 402/pause 1000/speak Shane \"Heh... Jas found a big patch of sweet peas.$6\"/jump Jas 4/speak Jas \"So I told him to give some to you, since you love each other.#$b#It's like what they do in the movies!$h\"/emote farmer 32/pause 250/speak Shane \"Well, Jas, we talked about how what @ and I have isn't exactly like in those movies.#$b#But... yeah. We love each other.$6\"/emote farmer 32/emote Shane 32/speak Shane \"...So, uh... who else are we waiting for? Is Vincent coming too?$6\"/pause 250/speak Jas \"Nope! He and Miss Penny already celebrated with me yesterday. We went looking for shells at the beach.#$b#So today is just for family.$4\"/emote farmer 20/pause 250/speak Marnie \"Well, let's go and eat before the ants get to all our food!$h\"/jump Jas/textAboveHead Jas \"Can I have some cake?\"/move Jas 0 -3 0 true/pause 500/move Marnie 0 -2 3 true/move Shane 0 -4 3 true/speak Shane \"That pizza does look really good...$6\"/move Shane -3 0 3 true/move Jas -2 0 0 true/emote farmer 32/globalFade/viewport -1000 -1000/message \"Jas told us all about what she was learning at her tutoring sessions.#Later, Marnie admitted that she just bought all our food from the saloon.#It was a lot of fun!\"/end dialogue Jas \"Thanks for coming, {{Auncle}} @.#$e#Weren't those flowers pretty?$h\"/end dialogue Marnie \"Don't be a stranger now, dear. We are family, after all.$h\"/end dialogue Shane \"Heh, looks like I've got some stiff competition in Jas's 'favorite grown up' department.$6\""
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+	        "Roommate": "Shane",
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries":
+            {
+                "9581348/e 2128292/t 1600 1800": "continue/-1000 -1000/farmer 22 19 0 Shane 23 10 2 Alex 22 13 0 Gus 19 11 1 Pam 20 10 2/viewport 22 11 clamp true/skippable/move farmer 0 -4 0 rue/move Alex 0 -4 0 true/proceedPosition Alex/playSound thudStep/warp Alex -100 -100/move farmer 0 -1 0/move Shane 0 1 2/speak Shane \"Hey, there you are!$6#$b#I'm glad you decided to come. We should get going...$6\"/move Pam 2 0 0/move Pam 0 -1 0/warp Pam -100 -100/playSound thudStep/move Gus 3 0 0/move Gus 0 -2 0/faceDirection Shane 3 true/playSound thudStep/warp Gus -100 -100/move farmer 0 -4 0 true/globalFade/viewport -1000 -1000/playMusic none/pause 800/playSound busDriveOff/pause 4000/changeToTemporaryMap Stadium false/speak Shane \"We're almost there...\"/pause 1500/playSound glug/pause 500/speak Shane \"*gulp* ...pre-game nerves...$10\"/pause 1000/playMusic Stadium_ambient/warp farmer 19 19/faceDirection farmer 2/positionOffset farmer 0 16/warp Alex 14 12/faceDirection Alex 2/warp Gus 30 14/faceDirection Gus 2/warp Shane 22 12/pause 3000/advancedMove Shane false 0 7 -2 0/viewport 22 18 clamp true/proceedPosition Shane/faceDirection Shane 2/speak Shane \"Here, I got you another soda...\"/showFrame Shane 25/pause 1000/playSound coin/showFrame 90/showFrame Shane 0/pause 2000/farmerEat 184/pause 1000/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/pause 6000/animate Shane false true 400 0 30 0 30 0 31 0 31/pause 1000/faceDirection farmer 1/pause 1000/speak Shane \"Hey, I've been meaning to say... $6#$b#Thanks for sticking with me through everything... my anxiety, depression... you know...$6#$b#You've been a really good friend to me.$6\"/pause 2000/faceDirection farmer 2/pause 4000/speak Shane \"Anyway...  it's your first gridball game, huh?\"/pause 1000/speak Shane \"$q -1 null#Well, what do you think?#$r -1 10 event_stadium1#Noisy... It makes me appreciate how peaceful it is back home.#$r -1 10 event_stadium2#Fun... Pelican Town seems really boring in comparison.\"/stopAnimation Shane/pause 100/jump Shane/showFrame Shane 18/pause 1000/speak Shane \"Gahh!! Look, the Tunnelers are on the attack!$10\"/showFrame Shane 0/pause 1500/playSound Stadium_cheer/pause 500/showFrame Shane 31/jump Shane/textAboveHead Shane \"Goal!!\"/jump Alex/jump Gus/pause 100/textAboveHead Alex \"Goal!\"/pause 2000/jump Shane/pause 2000/showFrame Shane 34/positionOffset Shane -4 0/pause 10/positionOffset Shane -5 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -2 0/pause 5/positionOffset Shane -2 0/positionOffset Shane -2 0/pause 10/showFrame farmer 94/pause 800/showFrame farmer 0/pause 800/faceDirection farmer 1 true/animate farmer false true 100 101/pause 1000/pause 1500/stopAnimation farmer/showFrame Shane 12/positionOffset Shane 1 0/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 1 0/pause 1500/faceDirection Shane 1/speak Shane \"Um... Sorry about that. I’m not usually a hugger...$u\"/move Shane 1 0 1/speak Shane \"It's just been a long time since I could enjoy things like this. Before I started treatment for my depression, even things I used to love just left me numb.$u#$b#But today... I get to see the game with my best friend, and it feels like it's supposed to. I'm actually happy.$l#$b#So I guess I got carried away. Sorry if I made you uncomfortable.$u\"/pause 2300/faceDirection Shane 2/pause 500/move farmer 2 0 1/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/pause 700/animate farmer false true 100 101/positionOffset farmer 1 0/positionOffset farmer 1 0/pause 10/positionOffset farmer 1 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 1 0/pause 10/positionOffset farmer 2 0/pause 800/shake Shane 1200/pause 2800/showFrame Shane 34/positionOffset Shane -2 0/pause 3000/viewport move -1 -1 5000/pause 3000/globalFade/viewport -2000 -2000/pause 3000/playMusic none/pause 1000/speak Shane \"Well... that was a great game. We even won!$h\"/pause 1000/speak Shane \"See you soon, @.$6\"/pause 2000/end",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries":
+            {
+                "9581348/e 2128292/t 1600 1800": "continue/-1000 -1000/farmer 22 19 0 Shane 23 10 2 Alex 22 13 0 Gus 19 11 1 Pam 20 10 2/viewport 22 11 clamp true/skippable/move farmer 0 -4 0 rue/move Alex 0 -4 0 true/proceedPosition Alex/playSound thudStep/warp Alex -100 -100/move farmer 0 -1 0/move Shane 0 1 2/speak Shane \"Hey, there you are!$6#$b#I'm glad you decided to come. We should get going...$6\"/move Pam 2 0 0/move Pam 0 -1 0/warp Pam -100 -100/playSound thudStep/move Gus 3 0 0/move Gus 0 -2 0/faceDirection Shane 3 true/playSound thudStep/warp Gus -100 -100/move farmer 0 -4 0 true/globalFade/viewport -1000 -1000/playMusic none/pause 800/playSound busDriveOff/pause 4000/changeToTemporaryMap Stadium false/speak Shane \"We're almost there...\"/pause 1500/playSound glug/pause 500/speak Shane \"*gulp* ...pre-game nerves...$10\"/pause 1000/playMusic Stadium_ambient/warp farmer 19 19/faceDirection farmer 2/positionOffset farmer 0 16/warp Alex 14 12/faceDirection Alex 2/warp Gus 30 14/faceDirection Gus 2/warp Shane 22 12/pause 3000/advancedMove Shane false 0 7 -2 0/viewport 22 18 clamp true/proceedPosition Shane/faceDirection Shane 2/speak Shane \"Here, I got you another soda...\"/showFrame Shane 25/pause 1000/playSound coin/showFrame 90/showFrame Shane 0/pause 2000/farmerEat 184/pause 1000/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/pause 6000/animate Shane false true 400 0 30 0 30 0 31 0 31/pause 1000/faceDirection farmer 1/pause 1000/speak Shane \"Hey, I've been meaning to say... $6#$b#Thanks for sticking with me through everything... my anxiety, depression... you know...$6#$b#You've been a really good friend to me.$6\"/pause 2000/faceDirection farmer 2/pause 4000/speak Shane \"Anyway...  it's your first gridball game, huh?\"/pause 1000/speak Shane \"$q -1 null#Well, what do you think?#$r -1 10 event_stadium1#Noisy... It makes me appreciate how peaceful it is back home.#$r -1 10 event_stadium2#Fun... Pelican Town seems really boring in comparison.\"/stopAnimation Shane/pause 100/jump Shane/showFrame Shane 18/pause 1000/speak Shane \"Gahh!! Look, the Tunnelers are on the attack!$10\"/showFrame Shane 0/pause 1500/playSound Stadium_cheer/pause 500/showFrame Shane 31/jump Shane/textAboveHead Shane \"Goal!!\"/jump Alex/jump Gus/pause 100/textAboveHead Alex \"Goal!\"/pause 2000/jump Shane/pause 2000/showFrame Shane 34/positionOffset Shane -4 0/pause 10/positionOffset Shane -5 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -4 0/pause 10/positionOffset Shane -2 0/pause 5/positionOffset Shane -2 0/positionOffset Shane -2 0/pause 10/showFrame farmer 94/pause 800/showFrame farmer 0/pause 800/faceDirection farmer 1 true/animate farmer false true 100 101/pause 1000/pause 1500/stopAnimation farmer/showFrame Shane 12/positionOffset Shane 1 0/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 2 0/pause 10/positionOffset Shane 1 0/pause 1500/faceDirection Shane 1/speak Shane \"Um... Sorry about that. I’m not usually a hugger...$u\"/move Shane 1 0 1/speak Shane \"It's just been a long time since I could enjoy things like this. Before I started treatment for my depression, even things I used to love just left me numb.$u#$b#But today... I get to see the game with my best friend, and it feels like it's supposed to. I'm actually happy.$6#$b#So I guess I got carried away. Sorry if I made you uncomfortable.$u\"/pause 2300/faceDirection Shane 2/pause 500/move farmer 2 0 1/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/pause 700/animate farmer false true 100 101/positionOffset farmer 1 0/positionOffset farmer 1 0/pause 10/positionOffset farmer 1 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 2 0/pause 10/positionOffset farmer 1 0/pause 10/positionOffset farmer 2 0/pause 800/shake Shane 1200/pause 2800/showFrame Shane 34/positionOffset Shane -2 0/pause 3000/viewport move -1 -1 5000/pause 3000/globalFade/viewport -2000 -2000/pause 3000/playMusic none/pause 1000/speak Shane \"Well... that was a great game. We even won!$h\"/pause 1000/speak Shane \"See you soon, @.$6\"/pause 2000/end",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true"
+            },
+        },
+		{
+			"LogName": "CGD Gift Dialogue 9-10 Platonic Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries": {
+			//Love
+				//Food
+				"GiftReaction_Hot_Pepper": "See, this is why we're friends... heh, just kidding. Thanks, @!$h",
+				"GiftReaction_Pizza": "See, this is why we're friends... heh, just kidding. Thanks, @!$h",
+				"GiftReaction_Pepper_Poppers~1": "See, this is why we're friends... heh, just kidding. Thanks, @!$h",
+			},
+			"When": {
+				"Hearts:Shane": "{{Range: 9, 14}}",
+				"Relationship:Shane |contains= Dating, Engaged": true,
+                		"HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+               			"HasMod |contains=PurrplingCat.CustomGiftDialogue": "true"
+			},
+		},
+		{
+			"LogName": "CGD Gift Tastes Spouse",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Shane": "{{Random: Have I told you that I love you? I love you, this is great. ++ Aw, now you're just spoiling me. ++ Ugh, I just can't get enough of this stuff. Thanks, @! ++ You know me too well, @. ++ You're the best, @. ++ Hell yes, this is the good stuff. Thanks, @! |inputSeparator=++}}/206 215 260/{{Random: Aw, @, you shouldn't have. ++ Thanks, bud! I really like this. ++ Hey, I like this stuff. Thanks! ++ Hey, I was just thinking of this! Thanks, bud. ++ Oh, neat! Thanks, @. ++ Aw, thanks, bud. I really like this. ++ I seriously like this! Thanks, @. |inputSeparator=++}}/203 -5 -79 113 167/{{Random: The trash can's over there, bud. Put your trash there instead. ++ Eugh, why? Did I do something to tick you off? ++ I'll just... throw this away for you, I guess. ++ Don't take this the wrong way, but this is just nasty. ++ Uh... are you asking me to put this in the trash for you? ++ Is this supposed to be a gift? No thanks. ++ *sigh* Why are you giving me this? |inputSeparator=++}}/-81 152 330/{{Random: You've gotta be kidding me. ++ C'mon, @... why do you have to do this? ++ Seriously, @, you gotta stop giving me this stuff. ++ Is this some kinda prank? It's not funny. ++ Yeah, no. Not cool. ++ @, I really need you to stop giving me this junk. |inputSeparator=++}}/80 342 346 348 303 459 873/{{Random: Heh, thanks, @. ++ Oh, you got me something? Thanks, bud. ++ Hey, for me? Thanks, @. ++ Thanks, @. ++ You're giving this to me? Heh, thanks. |inputSeparator=++}}// " 
+			},
+			"When": {
+				"Relationship:Shane": "Married",
+                		"HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+               			"HasMod |contains=PurrplingCat.CustomGiftDialogue": "true"
+			},
+		},
+		{
+			"LogName": "CGD Gift Dialogue Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries": {
+			//Love
+				//Food
+				"GiftReaction_Hot_Pepper": "Hell yes, this is the good stuff. Thanks, @!$h",
+				"GiftReaction_Hot_Pepper~1": "Have I told you that I love you? I love you, this is great.$h",
+				"GiftReaction_Hot_Pepper~2": "Seriously, I could eat these all day. Thanks, @.$6",
+				"GiftReaction_Hot_Pepper~3": "Aw, now you're just spoiling me. I'm just drowning in hot peppers here.$6",
+				"GiftReaction_Pizza": "Hell yes, this is the good stuff. Just look at that sauce... Thanks, @!$h",
+				"GiftReaction_Pizza~1": "Oh man, the cheese is all bubbly and stringy... I love this. Thanks, @.$6",
+				"GiftReaction_Pizza~2": "Yoba, you're the best. Thanks, @!$h",
+				"GiftReaction_Pizza~3": "Have I told you that you're my favorite person in the universe? I should tell you that more often.#$b#Ah, this smells so good. Want a slice?$6",
+				"GiftReaction_Pizza~4": "Yoba, you're the best. Thanks, @!$h",
+				"GiftReaction_Pepper_Poppers": "Oh man, do I wanna eat these now or save them for later? Decisions, decisions.$3#$b#Eh, I'll figure it out. Thanks, @.$6",
+				"GiftReaction_Pepper_Poppers~1": "Hoo, these look crispy. You're the best, @.$h",
+				"GiftReaction_Pepper_Poppers~2": "Yoba, you're the best. Thanks, @!$h",
+				"GiftReaction_Pepper_Poppers~3": "You know me too well, @. Thanks.$6",
+				"GiftReaction_Pepper_Poppers~4": "Ugh, I just can't get enough of these poppers. Thanks, @!$h",
+				//Universal Loves
+				"GiftReaction_Prismatic_Shard": "Thanks, but you know you don't need to shower me in ridiculously expensive gems, right?$6#$b#I mean, I'm not complaining, but I'd be just as happy with a pizza or something.$6",
+				"GiftReaction_Pearl": "Thanks, but you know you don't need to shower me in ridiculously expensive gifts, right?$6#$b#I mean, I'm not complaining, but I'd be just as happy with a pizza or something.$6",
+				"GiftReaction_Golden_Pumpkin": "Huh... so this is what you get from finishing the hedge maze?#$b#Thanks.$6",
+				"GiftReaction_Magic_Rock_Candy": "This is just way too fancy to be real candy. Do rich people seriously eat this?#$b#I mean, I appreciate it. Thanks, @.$6",
+				"GiftReaction_Rabbit's_Foot": "Heh. I do look like I need some luck, don't I?#$b#Thanks, @.$6",
+			//Like
+				//Eggs
+				"GiftReactionCategory_-5": "Oh hey, is this from your hens? Thanks, @.$6",
+				//Loved Ones
+				"GiftReaction_Pink_Cake": "Hey, this is Jas and Marnie's favorite. You mind if I share it with them?$6#$b#Thanks, @.",
+				"GiftReaction_Diamond": "Oh, is this a diamond? Marnie loves these.$6#$b#Is it okay if I pass this to her?$6",
+				"GiftReaction_Farmer's_Lunch": "Hey, I'm pretty sure Marnie loves this dish. Would you mind if I shared?$6",
+				"GiftReaction_Pumpkin_Pie": "Oh man, Marnie loves pumpkin pie. Hope you won't mind if she ends up eating most of this.$6",
+				"GiftReaction_Plum_Pudding": "Hey, is this plum pudding? Jas loves this stuff!$h#$b#I'm gonna share this with her, if you don't mind.$6",
+				"GiftReaction_Fairy_Rose": "Oh, thanks. I think I'll stick these in Jas's room or something. She just loves these.$6",
+			//Dislike
+				"GiftReaction_Void_Egg": "Ugh... where did you even get this messed-up egg?$a",
+			//Hate
+				"GiftReaction_Preserved_Pickle": "...I hate pickles.$s",
+				"GiftReaction_Void_Mayonnaise": "Is this supposed to be mayonnaise? Why does it look...#$b#Ugh, why are you giving me your garbage?$a",
+				"GiftReaction_Poppy": "Ugh. Why?$s",
+				//Booze
+				"GiftReaction_Beer": "Yeah, this stuff is going down the drain. Quit it, @.$a",
+				"GiftReaction_Beer~1": "Yoba, you of all people should know better than to give me this.$s",
+				"GiftReaction_Beer~2": "Beer? Seriously? You just gotta make things harder for me, don't you?$a",
+				"GiftReaction_Beer~3": "Seriously, @, you gotta stop giving me booze.$a",
+				"GiftReaction_Pale_Ale": "Yeah, this stuff is going down the drain. Quit it, @.$a",
+				"GiftReaction_Pale_Ale~1": "Yoba, you of all people should know better than to give me this.$s",
+				"GiftReaction_Pale_Ale~2": "Seriously, @, you gotta stop giving me booze.$a",
+				"GiftReaction_Mead": "Yeah, this stuff is going down the drain. Quit it, @.$a",
+				"GiftReaction_Mead~1": "Yoba, you of all people should know better than to give me this.$s",
+				"GiftReaction_Mead~2": "Seriously, @, you gotta stop giving me booze.$a",
+				"GiftReaction_Wine": "Yeah, this stuff is going down the drain. Quit it, @.$a",
+				"GiftReaction_Wine~1": "Yoba, you of all people should know better than to give me this.$s",
+				"GiftReaction_Wine~2": "Seriously, @, you gotta stop giving me booze.$a",
+				"GiftReaction_Piña_Colada": "Yeah, this stuff is going down the drain. Quit it, @.$a",
+				"GiftReaction_Piña_Colada~1": "Yoba, you of all people should know better than to give me this.$s",
+				"GiftReaction_Piña_Colada~2": "Seriously, @, you gotta stop giving me booze.$a",
+			},
+			"When": {
+				"Relationship:Shane": "Married",
+                		"HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+               			"HasMod |contains=PurrplingCat.CustomGiftDialogue": "true"
+			},
+		},
+
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "Tue10": "Emily and I are just friends right now.#$b#I wouldn't mind changing that... Then again, it's worked out really well for me and you.$l",
+                "summer_Tue10": "Maybe I fell for Emily a little bit, at one point or another...$u#$e#That's not the most important thing to me, though. I don't think romantic stuff always needs to come first.#$e#Jas is priority one. After that, I guess it's a tie between Marnie and you.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "Tue10": "Emily and I are just friends right now.#$b#I wouldn't mind changing that... Then again, it's worked out really well for me and you.$6",
+                "summer_Tue10": "Maybe I fell for Emily a little bit, at one point or another...$u#$e#That's not the most important thing to me, though. I don't think romantic stuff always needs to come first.#$e#Jas is priority one. After that, I guess it's a tie between Marnie and you.$6",
+                "fall_Tue10": "It's strange how I don't ever seem to get bored with seeing you, @.#$e#That's never happened for me before.$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Indoor_Day_2": "#$c .5#You know what? I think I've lost some weight since moving in with you.$6#Does it ever annoy you that I don't have as much energy as you do?",
+                "Indoor_Night_3": "Buh... I wish I was six inches taller and a whole lot smarter...#$b#But you like me anyway? I still have a hard time understanding that...",
+                "Outdoor_4": "#$c .5#Hey, @. I went for a morning walk around the farm before you got up. Everything looks fine.#I don't know why, but I'm just feeling pretty good this morning. I must've slept well.$h",
+                "Good_0": "Today's a good day. I have a lot more of those than I used to.$6",
+                "Good_1": "You're a better person than me, you know that? I'm glad you put up with me.$6",
+                "Neutral_2": "Why don't you tell me about your day later? I'm kind of busy right now...",
+                "Outdoor_0": "I didn't sleep well last night, so I'm hoping this fresh air will get the juices flowing.",
+                "Bad_8": "Yeah... *hic* ... Sure, pal. Whatever you say... *hic*",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Indoor_Day_2": "#$c .5#You know what? I think I've lost some weight since moving in with you.$6#Does it ever annoy you that I don't have as much energy as you do?",
+                "Indoor_Night_3": "Buh... I wish I was six inches taller and a whole lot smarter...#$b#But you like me anyway? I still have a hard time understanding that...",
+                "Outdoor_4": "#$c .5#Hey, @. I went for a morning walk around the farm before you got up. Everything looks fine.#I don't know why, but I'm just feeling pretty good this morning. I must've slept well.$h",
+                "Good_0": "Today's a good day. I have a lot more of those than I used to.$6",
+                "Good_1": "You're a better person than me, you know that? I'm glad you put up with me.$6",
+                "Neutral_2": "Why don't you tell me about your day later? I'm kind of busy right now...",
+                "Outdoor_0": "I didn't sleep well last night, so I'm hoping this fresh air will get the juices flowing.",
+                "Bad_8": "Yeah... *hic* ... Sure, pal. Whatever you say... *hic*",
+                "summer_17": "How do people like you and Marnie just keep it together all the time? I don't even know where I'd be if Marnie hadn't taken in Jas... and me.$s#$e#Well, and then you came along.$6",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries":
+            {
+                "Indoor_Day_3": "#$c .5#Is that tomato sauce on your chin? Someone's been nibbling on pizza rolls.$6#You're looking bright-eyed and bushy-tailed this morning.$6",
+                "Indoor_Day_4": "#$c .5#I may keep to myself a lot, and I may seem unhappy sometimes... but I appreciate all the work you do. I'm lucky to have a friend like you.$6#Give me something positive to focus on. I know it should feel like a good morning; I just need some help getting there.",
+                "funReturn_Shane": "#$c .5#Phew, I'm all sweaty... That was quite a walk... Buh, I'm out of shape.$6#Yeah, I had a good time going out. Don't worry, though. I was good.",
+                "winter_28": "Well, another year gone by... I feel a little older...#$b#...but you seem as full of pep as ever.$6"
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Alex
+	        "LogName": "KO Mines- Shane",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Shane 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Shane \"Hey. There we go... Are you okay?\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Shane \"I just had a bad feeling and came to find you. At first, I thought it was just the regular anxiety, but then when it wouldn't go away, I knew something was up.$3#$b#Good thing we came by. Passed out face-down in the mud really doesn't suit your cool image, you know.$6\"/pause 1000/speak Marlon \"And I simply came along to clear a path for Shane while we brought you back up to the surface.#$b#At first, I was to venture in alone, but he insisted on coming along.#$b#You're blessed to have ended up sharing your life with someone so courageous.\"/emote Shane 16/pause 500/speak Shane \"I'm not courageous at all. I'm just a guy with a best friend he can't afford to lose. That's all. $2\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I saw. You did well, standing by my side.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Shane \"Hey... we should go home and grab something to eat. You've had a rough day today.#$b#You can come back another time to finish what you started, okay?$6#$b#Even the toughest fighters need to take a break sometimes. And anyway, we both know you'll make short work of whatever got you today the next time you're down there.$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Shane \"Hey, glad you made it. I was just about to kick my feet up and watch the game. Want to sit with me? You've had a long day, too.$1#$c 0.7#And... I'm really glad you're still here. I know the injury was nothing major, but... I really meant what I said. I can't lose you.#I was going to snack in front of the TV, but... you probably need this more than me, so here.[210 215 223 228 232 243 403 406 613 618 636 651]\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Shane",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Hospital Death- Shane
+            "LogName": "Player 'Killed'- Shane",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Shane 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Shane 5/move Shane 0 3 2/textAboveHead Shane \"{0}!\"/emote farmer 16/move Shane -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Shane 0 1 3/speak Shane \"You're okay! I'm not a believer, but I think I could stand to thank Yoba just this once.$6\"/emote farmer 60/pause 500/speak Shane \"Hey, don't give a guy a heart attack like that, okay?#$b#I nearly lost it when I heard you were in the hospital. Been here too many times myself to believe you'd be alright when I got here...$3\"/emote Shane 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Shane 3/speak Shane \"@... Please be careful the next time you go out there. I can't stop you, but I just want you to know that this all gets to me.$2#$b#Every day's still a struggle, but I'm getting better thanks to all the support you've given me.$2#$b#You really do make life worth living, @, so please don't leave me out here on my own again.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Shane \"Hey... are you sure you're okay? I'm not trying to be overbearing, but... I really was scared earlier.$2#$c 0.7#Maybe I should turn in early tonight. I don't want to be walking around making noise when you need your sleep the most.$2#$b#Here. Have some leftovers for a quick bite and take it easy for today. [237 241 203 204 220 244 272]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Shane",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+   {       //only change is not triggering if you have a roommate
+            "LogName": "Hospital death - Shane Ex-Partner",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Shane 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.#$b#...And you should think of your own wellbeing, too.$2\"/pause 500/speak Shane \"Hey, don't worry. I'm just going to pop in and pop out. Don't think I can manage anything more, anyway.\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Shane 0 4 3/emote farmer 16/faceDirection Shane 3/pause 1000/speak Shane \"...#$b#Well, now that I'm here, it suddenly feels like a stupid idea to have showed up.$2#$b#Just figured it would suck if you had to wake up all alone after nearly dying.$2\"/emote farmer 16/pause 1000/speak Shane \"Don't thank me. It's as much for me as it was for you.$2#$b#I just didn't want to regret anything later on. Plus, if you hadn't realized, you're always going to be someone who was important to me.$2#$b#... Whatever. That must not mean much to you, anyway. I'm getting out of here. Don't follow me.$2\"/pause 500/move Shane 0 -4 0/move Shane -8 0 0/move Shane 0 -3 0/warp Shane -100 -100/emote farmer 28/hospitaldeath/end dialogue Shane \"Seriously, get out of my face. My therapist says I have to move on, and none of this is helping me do that.$2#$b#I only came because you used to be everything to me... and I guess my heart's too weak to forget it just yet.$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Shane": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+		"Relationship:Maru |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+     {       //only change is triggering for shane roommate
+	        "LogName": "Island Death Shane",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Shane \"Holy- @, is that really you?$10#$b#What happened? You smell like Gus' barbecue. Are you sure you're okay? Your clothes are burnt.$3#$b#Yeah, yeah, I'm calm now. Just got a little worried there, but you seem okay, so... Good.#$b#Seriously, though... I'm craving barbecue now. Should we have steak, or maybe ribs tonight?\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Shane",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     }, 
+     {       //only change is triggering for shane roommate
+	        "LogName": "Island Death- Leo, Shane",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Shane \"Holy- @, is that really you?$10#$b#What happened? You smell like Gus' barbecue. Are you sure you're okay? Your clothes are burnt.$3#$b#Yeah, yeah, I'm calm now. Just got a little worried there, but you seem okay, so... Good.#$b#Seriously, though... I'm craving barbecue now. Should we have steak, or maybe ribs tonight?\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Shane",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     }, 
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Shane",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Shane \"Holy- @, is that really you?$10#$b#What happened? You smell like Gus' barbecue. Are you sure you're okay? Your clothes are burnt.$3#$b#Yeah, yeah, I'm calm now. Just got a little worried there, but you seem okay, so... Good.#$b#Seriously, though... I'm craving barbecue now. Should we have steak, or maybe ribs tonight?\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Shane",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Shane",
+		"Entries": {
+	//	        "marriage_museum3": "I would almost say Gunther hired me just to be nice.$h#$b#But then I think about how you chose me to spend your life with, and I realize maybe there is some value to me after all.#$b#Thanks.$l#$b#Or maybe you two are just weird.$h",
+			"marriage_r": "I used to avoid hanging around outside for too long.#$b#It gave me too much alone time to wallow in my own misery.$s#$b#I don't have to worry about that anymore.$l",
+			"marriage_r3": "Hey, I could do with your company for a moment.#$b#We don't have to have a deep conversation or anything. It's comforting just to have you around.$l",
+			"marriage_r4": "%Shane has a goofy smile on his face. It looks like he's enjoying himself.#$b#Hey, @. I was just thinking about something Jas said the other day.$6#$b#She's a funny kid. Smart as a whip, too.$h",
+			"marriage_r6": "%Shane gives you a spontaneous hug.#$b#Why'd I do that? Cause I wanted to.$l#$b#I might be a hugger after all.$h",
+		},
+		    "When": {
+			"UseLovePortraits": "true",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		    }
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Shane",
+		"Entries": {
+	//	        "marriage_museum3": "I would almost say Gunther hired me just to be nice.$h#$b#But then I think about how you chose me to spend your life with, and I realize maybe there is some value to me after all.#$b#Thanks.$6#$b#Or maybe you two are just weird.$h",
+			"marriage_work5": "You know I can't sell you stuff... so you really came here just to visit me?#$b#Thanks.$6",
+			"marriage_r": "I used to avoid hanging around outside for too long.#$b#It gave me too much alone time to wallow in my own misery.$s#$b#I don't have to worry about that anymore.$6",
+			"marriage_r2": "Buh... life, right?$h#$b#...#$b#So how's your day been?$6",
+			"marriage_r3": "Hey, I could do with your company for a moment.#$b#We don't have to have a deep conversation or anything. It's comforting just to have you around.$6",
+			"marriage_r4": "%Shane has a goofy smile on his face. It looks like he's enjoying himself.#$b#Hey, @. I was just thinking about something Jas said the other day.$6#$b#She's a funny kid. Smart as a whip, too.$h",
+			"marriage_r6": "%Shane gives you a spontaneous hug.#$b#Why'd I do that? Cause I wanted to.$6#$b#I might be a hugger after all.$h",
+		},
+		    "When": {
+			"UseLovePortraits": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		    }
+	},
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname": "Shane PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "summer_Tue8_inlaw_Shane":"Oh, hey.$0#$e#How's life with Shane coming along?$1",
+            "winter_Mon10_inlaw_Shane":"Oh, hey.$0#$e#How's life with Shane coming along?$1",
+            "summer_Tue8_roommate_Shane":"Oh, hey.$0#$e#How's life with Shane coming along?$1",
+            "winter_Mon10_roommate_Shane":"Oh, hey.$0#$e#How's life with Shane coming along?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Shane": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Shane make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Shane": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Shane will have any problems with that.$1",
+            "fall_Fri8_inlaw_Shane": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Shane make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Shane": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Shane will have any problems with that.$1",
+            "spring_Tue8_roommate_Shane": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Shane make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Shane": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Shane will have any problems with that.$1",
+            "fall_Fri8_roommate_Shane": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Shane make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Shane": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Shane will have any problems with that.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Shane",
+	"Entries": {
+            "summer_Mon8_inlaw_Shane":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Shane":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "summer_Mon8_roommate_Shane":"Hey, @. How's life with Shane?$0#$b#You should get him to learn an instrument so I can come over and jam with you two.$1",
+            "fall_Sat8_roommate_Shane":"Hey, @. How's life with Shane?$0#$b#You should get him to learn an instrument so I can come over and jam with you two.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Thu8_inlaw_Shane":"Shane has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_inlaw_Shane":"I clearly see you and Shane were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_inlaw_Shane":"Shane has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_inlaw_Shane":"I clearly see you and Shane were made to be {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Shane":"Shane has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_roommate_Shane":"I clearly see you and Shane were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_roommate_Shane":"Shane has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_roommate_Shane":"I clearly see you and Alex were made to be {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Haley",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Haley",
+	"Entries": {
+            "summer_Sat8_inlaw_Shane":"I'm so happy for you and Shane.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_inlaw_Shane":"I'm so happy for you and Shane.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "summer_Sat8_roommate_Shane":"I'm so happy for you and Shane.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_roommate_Shane":"I'm so happy for you and Shane.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Shane ":"Hello, @.$0#$e#You and Shane are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Shane":"Hello, @.$0#$e#You and Shane are such cute {{RelationshipLabel}}.$1",
+            "spring_Mon8_roommate_Shane":"Hello, @.$0#$e#You and Shane are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Shane":"Hello, @.$0#$e#You and Shane are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Shane":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Shane as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Shane":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Shane as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Shane":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Shane as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Shane":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Shane as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Shane":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Shane will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Shane":"A true lifelong friendship, like you have with Shane, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Shane":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Shane will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Shane":"A true lifelong friendship, like you have with Shane, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Shane":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Shane will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Shane":"A true lifelong friendship, like you have with Shane, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Shane":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Shane will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Shane":"A true lifelong friendship, like you have with Shane, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{	
+	"Logname": "Shane PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Shane":"If you and Shane want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Shane":"If you and Shane want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Shane":"If you and Shane want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Shane":"If you and Shane want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Shane":"If you and Shane want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Shane":"If you and Shane want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Shane":"If you and Shane want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Shane":"If you and Shane want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Sat10_inlaw_Shane":"{{Auncle}} @!$1#$e#When I grow up I also want to have a beautiful wedding and get married like you and Shane.$1",
+            "winter_Wed10_inlaw_Shane":"So are you and Shane like... super best friends forever?$0",
+            "winter_Sun10_inlaw_Shane":"Hello, {{Auncle}} @.$0#$b#Why can't you and Shane celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "spring_Sat10_roommate_Shane":"{{Auncle}} @!$1#$e#When I grow up I also want to have a beautiful wedding and get married like you and Shane.$1",
+            "winter_Wed10_roommate_Shane":"So are you and Shane like... super best friends forever?$0",
+            "winter_Sun10_roommate_Shane":"Hello, {{Auncle}} @.$0#$b#Don't you think you and Shane should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Jodi",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jodi",
+	"Entries": {
+            "summer_Wed10_inlaw_Shane":"Hello, @.$0#$e#Did you know Marnie was more nervous than Shane was about him moving out?$1",
+            "winter_Fri10_inlaw_Shane":"Hello, @.$0#$e#Did you know Marnie was more nervous than Shane was about him moving out?$1",
+            "summer_Wed10_roommate_Shane":"Hello, @.$0#$e#Did you know Marnie was more nervous than Shane was about him moving out?$1",
+            "winter_Fri10_roommate_Shane":"Hello, @.$0#$e#Did you know Marnie was more nervous than Shane was about him moving out?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Lewis",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Shane":"There aren't many young {{RelationshipLabel}} like you and Shane here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Shane":"There aren't many young {{RelationshipLabel}} like you and Shane here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Shane":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Shane":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Shane":"There aren't many young {{RelationshipLabel}} like you and Shane here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Shane":"There aren't many young {{RelationshipLabel}} like you and Shane here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Shane":"I know you and Shane chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Shane":"I know you and Shane chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "fall_Wed_inlaw_Shane":"Hello, @.$0#$e#I wish you and Shane a lifetime of love and happiness.$1",
+            "winter_Fri_inlaw_Shane":"May Yoba grant you and Shane a life of blessing and joy.$1",
+            "fall_Wed_roommate_Shane":"Hello, @.$0#$e#I wish you and Shane a lifetime of love and happiness.$1",
+            "winter_Fri_roommate_Shane":"May Yoba grant you and Shane a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Shane PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Shane":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Shane":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Shane":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Shane":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },  
+{
+	"Logname": "Pam PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Shane":"You and Shane remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Shane":"You and Shane remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Shane":"You and Shane remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Shane":"You and Shane remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },    
+{
+	"Logname": "Shane PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Shane":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Shane.$1",
+            "summer_Wed10_inlaw_Shane":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_inlaw_Shane":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Shane.$1",
+            "winter_Sun10_inlaw_Shane":"It's so cool how you're {{RelationshipLabel}} with Mister Shane.$1#$e#I never thought that would have happened!$0",
+            "spring_Tue10_roommate_Shane":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Shane.$1",
+            "summer_Wed10_roommate_Shane":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_roommate_Shane":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Shane.$1",
+            "winter_Sun10_roommate_Shane":"It's so cool how you're {{RelationshipLabel}} with Mister Shane.$1#$e#I never thought that would have happened!$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

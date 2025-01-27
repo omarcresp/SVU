@@ -1,0 +1,89 @@
+{
+  "Changes": [
+    {
+      "LogName": "Charline Clocherton Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "CharlineClochertonVMV": {
+          "DisplayName": "{{i18n: CharlineDisplayName}}",
+          "BirthSeason": "Summer",
+          "BirthDay": 22,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Rude",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "SocialTab": "HiddenAlways",
+          "Calendar": "HiddenAlways",
+          "CanSocialize": "FALSE",
+          "CanReceiveGifts": false,
+          "IntroductionsQuest": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "FriendsAndFamily": {},
+          "SpawnIfMissing": true,
+          "Appearance": [],
+          "Home": [
+            /*{
+              "Id": "Lumisteria.MtVapius_VisitMiddleOfMonth",
+              "Condition": "DAY_OF_MONTH 16 17 18 19",
+              "Location": "Lumisteria.MtVapius_Inn",
+              "Tile": {
+                "X": 4,
+                "Y": 23
+              },
+              "Direction": "down"
+            },*/
+            {
+              "Id": "Default",
+              "Location": "Lumisteria.MtVapius_WarpRoom",
+              "Tile": {
+                "X": 10,
+                "Y": 4
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "LogName": "Charline Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/CharlineClochertonVMV, Characters/CharlineClochertonVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/CharlineClochertonVMV/Schedule.json"
+    },
+    /*{
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "CharlineClochertonVMV": "{{i18n: CharlineGiftLoved}}/687 635 424 575 Lumisteria.MtVapius_Cooking_JamPie/{{i18n: CharlineGiftLiked}}/-12 72 82 84 prehistoric_item/{{i18n: CharlineGiftDislike}}/-5 -6 -81 2 16/{{i18n: CharlineGiftHate}}/766 412/{{i18n: CharlineGiftNeutral}}/330/",
+      },
+    },*/
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/CharlineClochertonVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/CharlineClochertonVMV/Dialogue.json"
+    },
+  ]
+}

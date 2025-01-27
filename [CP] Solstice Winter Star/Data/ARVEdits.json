@@ -1,0 +1,143 @@
+{
+	"Changes": [
+		// FESTIVAL DIALOGUE
+		{
+			"LogName": "ARV Festival Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Henry": "{{i18n:SWS.Compat.ARV.Festival.Henry.Y1}}",
+				"Henry_y2": "{{i18n:SWS.Compat.ARV.Festival.Henry.Y2}}"
+			}
+		},
+		{
+			"LogName": "ARV Festival Sterling Married Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Henry_y2": "{{Random: {{i18n:SWS.Compat.ARV.Festival.Henry.SterlingMarried.One}} ++ {{i18n:SWS.Compat.ARV.Festival.Henry.SterlingMarried.Two}} ++ {{i18n:SWS.Compat.ARV.Festival.Henry.SterlingMarried.Three}} |inputSeparator=++}}"
+			},
+			"When": {
+				"Relationship:Sterling |contains= married": true
+			}
+		},
+		// DAILY DIALOGUE
+		{
+			"LogName": "ARV Sterling Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.ARV.Regular.Sterling.Daily}}"
+			}
+		},
+		{
+			"LogName": "ARV Sterling Marriage Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueSterling",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.ARV.Regular.Sterling.Marriage}}"
+			}
+		},
+		{
+			"LogName": "ARV Henry Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Henry",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.ARV.Regular.Henry.Daily}}"
+			}
+		},
+		// GIFT CHANGES
+		{
+			"LogName": "SWS ARV Sterling Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Sterling", "WinterStarGifts" ],
+			"Entries": {
+				"{{ModId}}_Sterling_FroggyBurger": {
+					"Id": "{{ModId}}_Sterling_FroggyBurger",
+					"ItemId": "(O)HimeTarts.ARV_Froggy_Burger"
+				},
+				"{{ModId}}_Sterling_MorningCatToast": {
+					"Id": "{{ModId}}_Sterling_MorningCatToast",
+					"ItemId": "(O)HimeTarts.ARV_Morning_Cat_Toast"
+				},
+				"{{ModId}}_Sterling_ScallopedPotatoes": {
+					"Id": "{{ModId}}_Sterling_ScallopedPotatoes",
+					"ItemId": "(O)HimeTarts.ARV_Morning_Scalloped_Potatoes"
+				},
+				"{{ModId}}_Sterling_BearPancakes": {
+					"Id": "{{ModId}}_Sterling_BearPancakes",
+					"ItemId": "(O)HimeTarts.ARV_Bear_Pancakes"
+				}
+			}
+		},
+		{
+			"LogName": "SWS ARV Aicha Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Henry", "WinterStarGifts" ],
+			"Entries": {
+				"{{ModId}}_Henry_PlainCroissant": {
+					"Id": "{{ModId}}_Henry_PlainCroissant",
+					"ItemId": "(O)HimeTarts.ARV_Morning_Plain_Croissant"
+				},
+				"{{ModId}}_Henry_StarshotCappucino": {
+					"Id": "{{ModId}}_Henry_StarshotCappucino",
+					"ItemId": "(O)HimeTarts.ARV_Morning_Starshot_Cappuccino"
+				},
+				"{{ModId}}_Henry_ScallopedPotatoes": {
+					"Id": "{{ModId}}_Henry_ScallopedPotatoes",
+					"ItemId": "(O)HimeTarts.ARV_Morning_Scalloped_Potatoes"
+				},
+				"{{ModId}}_Henry_BearPancakes": {
+					"Id": "{{ModId}}_Henry_BearPancakes",
+					"ItemId": "(O)HimeTarts.ARV_Bear_Pancakes"
+				}
+			}
+		},
+		{
+			"LogName": "SWS ARV Aicha Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Mia", "WinterStarGifts" ],
+			"Entries": {
+				"{{ModId}}_Mia_FroggyBurger": {
+					"Id": "{{ModId}}_Mia_FroggyBurger",
+					"ItemId": "(O)HimeTarts.ARV_Froggy_Burger"
+				},
+				"{{ModId}}_Mia_MorningCatToast": {
+					"Id": "{{ModId}}_Mia_MorningCatToast",
+					"ItemId": "(O)HimeTarts.ARV_Morning_Cat_Toast"
+				},
+				"{{ModId}}_Mia_BearPancakes": {
+					"Id": "{{ModId}}_Mia_BearPancakes",
+					"ItemId": "(O)HimeTarts.ARV_Bear_Pancakes"
+				},
+				"{{ModId}}_Mia_BearMuffin": {
+					"Id": "{{ModId}}_Mia_BearMuffin",
+					"ItemId": "(O)HimeTarts.ARV_Bear_Muffin"
+				},
+				"{{ModId}}_Mia_BerryDelightCake": {
+					"Id": "{{ModId}}_Mia_BerryDelightCake",
+					"ItemId": "(O)HimeTarts.ARV_Berry_Delight_Cake"
+				},
+				"{{ModId}}_Mia_BerryParfait": {
+					"Id": "{{ModId}}_Mia_BerryParfait",
+					"ItemId": "(O)HimeTarts.ARV_Berry_Parfait"
+				},
+				"{{ModId}}_Mia_CrabCroissant": {
+					"Id": "{{ModId}}_Mia_CrabCroissant",
+					"ItemId": "(O)HimeTarts.ARV_Crab_Croissant"
+				},
+				"{{ModId}}_Mia_KittyMuffin": {
+					"Id": "{{ModId}}_Mia_KittyMuffin",
+					"ItemId": "(O)HimeTarts.ARV_Kitty_Muffin"
+				},
+				"{{ModId}}_Mia_OwlRiceCrisp": {
+					"Id": "{{ModId}}_Mia_OwlRiceCrisp",
+					"ItemId": "(O)HimeTarts.ARV_Morning_Owl_Rice_Crisp"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "Enabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowMultiple": false,
+      "AllowBlank": false,
+      "Description": "Make your slimes cuter."
+    },
+    "Mode": {
+      "AllowValues": "Jelly, Glossy",
+      "Default": "Jelly",
+      "AllowMultiple": false,
+      "AllowBlank": false,
+      "Description": "Select your slime mode."
+    }
+  },
+  "Changes": [
+    {
+      "LogName": "Cuter Green Slime",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Green Slime",
+      "FromFile": "assets/{{Mode}}/Green Slime.png",
+      "When": { "Enabled": "true" }
+    },
+    {
+      "LogName": "Cuter Big Slime",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Big Slime",
+      "FromFile": "assets/{{Mode}}/Big Slime.png",
+      "When": { "Enabled": "true" }
+    },
+    {
+      "LogName": "Cuter Tiger Slime",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Tiger Slime",
+      "FromFile": "assets/{{Mode}}/Tiger Slime.png",
+      "When": { "Enabled": "true" }
+    },
+    {
+      "LogName": "Cuter Green Slime Dangerous",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Green Slime_dangerous",
+      "FromFile": "assets/{{Mode}}/Green Slime_dangerous.png",
+      "When": { "Enabled": "true" }
+    }
+  ]
+}

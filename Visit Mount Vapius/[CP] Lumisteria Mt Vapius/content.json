@@ -1,0 +1,1064 @@
+{
+	"Format": "2.0.0",
+	/* "CustomLocations": [
+      // add the in-game location
+      {
+         "Name": "Lumisteria.MtVapius_AsterHouse",
+         "FromMapFile": "assets/LumisteriaMtVapiusAsterHouse.tmx"
+      },
+      {
+         "Name": "Lumisteria.MtVapius_Inn",
+         "FromMapFile": "assets/LumisteriaMtVapiusInn.tmx"
+      },
+      {
+         "Name": "Lumisteria.MtVapius_InnSecondFloor",
+         "FromMapFile": "assets/LumisteriaMtVapiusInnSecondFloor.tmx"
+      },
+	  
+      {
+         "Name": "Lumisteria.MtVapius_HeliaHouse",
+         "FromMapFile": "assets/LumisteriaMtVapiusHeliaHouse.tmx"
+      },
+      {
+         "Name": "Lumisteria.MtVapius_NaveenHouse",
+         "FromMapFile": "assets/LumisteriaMtVapiusNaveenHouse.tmx"
+      },
+
+      {
+         "Name": "Lumisteria.MtVapius_MineRoom",
+         "FromMapFile": "assets/LumisteriaMtVapiusMineRoom.tmx"
+      },
+
+      {
+         "Name": "Lumisteria.MtVapius_AgingCave",
+         "FromMapFile": "assets/LumisteriaMtVapiusAgingCave.tmx"
+      },
+      {
+         "Name": "Lumisteria.MtVapius_OrchardHouse",
+         "FromMapFile": "assets/LumisteriaMtVapiusOrchardHouse.tmx"
+      },
+      {
+         "Name": "Lumisteria.MtVapius_DeluxeSlimeHutch",
+         "FromMapFile": "assets/LumisteriaMtVapiusDeluxeSlimeHutch.tmx"
+      },
+   ],*/
+	"ConfigSchema": {
+		"RailroadMinecart": {
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"TravelingLadyIsLotti": {
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"ContextTagRecipes": {
+			"AllowValues": "true, false",
+			"Default": false
+		},
+		"StarfruitRegrowDayCompat": {
+			"AllowValues": "7, 8, 9, 10, 11, 12",
+			"Default": "12"
+		},
+	},
+	"DynamicTokens": [
+		{
+			// default
+			"Name": "DepressedChance",
+			"Value": "10"
+		},
+		{
+			"Name": "DepressedChance",
+			"Value": "60",
+			"When": {
+				"Year": "1, 2",
+			}
+		},
+		{
+			"Name": "DepressedChance",
+			"Value": "30",
+			"When": {
+				"Year": "3,4",
+			}
+		},
+		{
+			"Name": "DepressedChance",
+			"Value": "10",
+			"When": {
+				"Hearts:AsterPellegrinVMV": "{{Range: 7, 14}}",
+			}
+		},
+		{
+			"Name": "PolitenessAster",
+			"Value": "Polite",
+		},
+		{
+			"Name": "PolitenessAster",
+			"Value": "Rude",
+			"When": {
+				"Query: {{Random: {{Range:1,101}} }} <= {{DepressedChance}}": true
+			}
+		},
+		{
+			"Name": "GiftAnswerAster",
+			"Value": "Distant",
+		},
+		{
+			"Name": "GiftAnswerAster",
+			"Value": "Friend",
+			"When": {
+				"Hearts:AsterPellegrinVMV": "{{Range: 5, 14}}",
+			}
+		},
+		{
+			"Name": "GiftAnswerMaddy",
+			"Value": "Distant",
+		},
+		{
+			"Name": "GiftAnswerMaddy",
+			"Value": "Friend",
+			"When": {
+				"Hearts:MaddyPellegrinVMV": "{{Range: 5, 14}}",
+			}
+		},
+		{
+			"Name": "GiftAnswerMoira",
+			"Value": "Distant",
+		},
+		{
+			"Name": "GiftAnswerMoira",
+			"Value": "Friend",
+			"When": {
+				"Hearts:MoiraDuboisVMV": "{{Range: 5, 14}}",
+			}
+		},
+		{
+			"Name": "GiftAnswerAdelaide",
+			"Value": "Distant",
+		},
+		{
+			"Name": "GiftAnswerAdelaide",
+			"Value": "Friend",
+			"When": {
+				"Hearts:AdelaideRosierVMV": "{{Range: 5, 14}}",
+			}
+		},
+		{
+			"Name": "GiftAnswerCelestine",
+			"Value": "Distant",
+		},
+		{
+			"Name": "GiftAnswerCelestine",
+			"Value": "Friend",
+			"When": {
+				"Hearts:CelestineDuboisVMV": "{{Range: 5, 14}}",
+			}
+		},
+		{
+			"Name": "GiftAnswerMariam",
+			"Value": "Distant",
+		},
+		{
+			"Name": "GiftAnswerMariam",
+			"Value": "Friend",
+			"When": {
+				"Hearts:MariamFortinVMV": "{{Range: 5, 14}}",
+			}
+		},
+		{
+			"Name": "GiftAnswerHelia",
+			"Value": "Distant",
+		},
+		{
+			"Name": "GiftAnswerHelia",
+			"Value": "Friend",
+			"When": {
+				"Hearts:HeliaDiamantiVMV": "{{Range: 5, 14}}",
+			}
+		},
+		{
+			"Name": "GiftAnswerNaveen",
+			"Value": "Distant",
+		},
+		{
+			"Name": "GiftAnswerNaveen",
+			"Value": "Friend",
+			"When": {
+				"Hearts:NaveenFaycombeSereneVMV": "{{Range: 5, 14}}",
+			}
+		},
+		{
+			"Name": "GemsList",
+			"Value": "{{Random:60,62,64,66,68,70}}",
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "0",
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_QuestMoonPodsFlag",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_QuestNightMiscanthusFlag",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"query: {{Hearts:AdelaideRosierVMV}} >= 6": true
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"query: {{Hearts:CelestineDuboisVMV}} >= 6": true
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_MoreGuildGoalsMail",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_JunimoClearingVisitedMail",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapiusSpecialOrders.MtVapiusFlowersMail, Lumisteria.MtVapiusSpecialOrders.PelicanFlowersMail",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapiusSpecialOrders.MtVapiusShippingMail, Lumisteria.MtVapiusSpecialOrders.MtVapiusSeasonCropsMail",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapiusSpecialOrders.MtVapiusFishesMail",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapiusSpecialOrders.MtVapiusLodgeStarfruitsMail",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapiusSpecialOrders.MtVapiusMineralsMail",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"DLX.Bundles/Purchased": "Lumisteria.MtVapius_StartingBundle"
+			}
+		},
+		{
+			"LogName": "HamletProgress FarmingBundle",
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_FarmingBundle01": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_FarmingBundle02": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_FarmingBundle03": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_FarmingBundle04": "true",
+			}
+		},
+		{
+			"LogName": "HamletProgress ForagingBundle",
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_ForagingBundle01": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_ForagingBundle02": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_ForagingBundle03": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_ForagingBundle04": "true",
+			}
+		},
+		{
+			"LogName": "HamletProgress CombatMiningBundle",
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_CombatMiningBundle01": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_CombatMiningBundle02": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_CombatMiningBundle03": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_CombatMiningBundle04": "true",
+			}
+		},
+		{
+			"LogName": "HamletProgress VillagersBundle",
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_VillagersBundle01": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_VillagersBundle02": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_VillagersBundle03": "true",
+				"DLX.Bundles/Purchased|contains=Lumisteria.MtVapius_VillagersBundle04": "true",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Gil_Lumisteria.MtVapius_Slimes2",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Gil_Lumisteria.MtVapius_DustSpirits2",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Gil_Lumisteria.MtVapius_MetalHeads",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Gil_Lumisteria.MtVapius_Ghosts",
+			}
+		},
+		{
+			"Name": "StockBasic",
+			"Value": "9",
+		},
+		{
+			"Name": "StockBasic",
+			"Value": "{{query: {{StockBasic}} + 9}}",
+			"When": {
+				"Query: {{HamletProgress}} >= 5": true,
+			}
+		},
+		{
+			"Name": "RandomPlaceName",
+			"Value": "{{Random:{{i18n: MtVapiusMtSkyshard}}, {{i18n: MtVapiusFaycombe}}, {{i18n: MtVapiusSaltspringTown}}, {{i18n: MtVapiusQuerynges}}, {{i18n: MtVapiusWillowUponIcine}}, {{i18n: MtVapiusTheDreamons}}, {{i18n: MtVapiusBalmcreek}}}}",
+		},
+		{
+			"Name": "AsterSeedGift2H",
+			"Value": "Lumisteria.MtVapius_WoodSilkFlowerSeeds 5",
+		},
+		{
+			"Name": "AsterSeedGift2H",
+			"Value": "Lumisteria.MtVapius_VelvetIrisRhizome 3",
+			"When": {
+				"season": "spring",
+			}
+		},
+		{
+			"Name": "AsterSeedGift2H",
+			"Value": "Lumisteria.MtVapius_CosmosSeeds 3",
+			"When": {
+				"season": "summer",
+			}
+		},
+		{
+			"Name": "AsterSeedGift2H",
+			"Value": "Lumisteria.MtVapius_RyeSeeds 8",
+			"When": {
+				"season": "fall",
+			}
+		},
+		{
+			"Name": "OrchardUnlockDialogueHeart",
+			"Value": "pause 100/",
+		},
+		{
+			"Name": "OrchardUnlockDialogueHeart",
+			"Value": "{{OrchardUnlockDialogueHeart}}speak AsterPellegrinVMV \"{{i18n: OrchardUnlockAster7H}}\"/pause 100/",
+			"When": {
+				"Hearts:AsterPellegrinVMV": "{{Range: 7, 14}}",
+			}
+		},
+		{
+			"Name": "OrchardUnlockDialogueHeart",
+			"Value": "{{OrchardUnlockDialogueHeart}}speak MoiraDuboisVMV \"{{i18n: OrchardUnlockMoira7H}}\"/pause 100/",
+			"When": {
+				"Hearts:MoiraDuboisVMV": "{{Range: 7, 14}}",
+			}
+		},
+		{
+			"Name": "ForageProgress",
+			"Value": "false",
+		},
+		{
+			"Name": "ForageProgress",
+			"Value": "true",
+			"When": {
+				"DLX.Bundles/Purchased": "Lumisteria.MtVapius_ForagingBundle01"
+			}
+		},
+		{
+			"Name": "ForageProgress",
+			"Value": "true",
+			"When": {
+				"DLX.Bundles/Purchased": "Lumisteria.MtVapius_ForagingBundle02"
+			}
+		},
+		{
+			"Name": "ForageProgress",
+			"Value": "true",
+			"When": {
+				"DLX.Bundles/Purchased": "Lumisteria.MtVapius_ForagingBundle03"
+			}
+		},
+		{
+			"Name": "ForageProgress",
+			"Value": "true",
+			"When": {
+				"DLX.Bundles/Purchased": "Lumisteria.MtVapius_ForagingBundle04"
+			}
+		},
+		//
+		{
+			"Name": "MinecartProgress",
+			"Value": "false",
+		},
+		{
+			"Name": "MinecartProgress",
+			"Value": "true",
+			"When": {
+				"DLX.Bundles/Purchased": "Lumisteria.MtVapius_CombatMiningBundle01"
+			}
+		},
+		{
+			"Name": "MinecartProgress",
+			"Value": "true",
+			"When": {
+				"DLX.Bundles/Purchased": "Lumisteria.MtVapius_CombatMiningBundle02"
+			}
+		},
+		{
+			"Name": "MinecartProgress",
+			"Value": "true",
+			"When": {
+				"DLX.Bundles/Purchased": "Lumisteria.MtVapius_CombatMiningBundle03"
+			}
+		},
+		{
+			"Name": "MinecartProgress",
+			"Value": "true",
+			"When": {
+				"DLX.Bundles/Purchased": "Lumisteria.MtVapius_CombatMiningBundle04"
+			}
+		},
+		{
+			"Name": "AsterInnFlowers",
+			"Value": "597",
+		},
+		{
+			"Name": "AsterInnFlowers",
+			"Value": "593",
+			"When": {
+				"season": "summer",
+			}
+		},
+		{
+			"Name": "AsterInnFlowers",
+			"Value": "595",
+			"When": {
+				"season": "fall",
+			}
+		},
+		{
+			"Name": "AsterInnFlowers",
+			"Value": "418",
+			"When": {
+				"season": "winter",
+			}
+		},
+		{
+			"Name": "YearCycling",
+			"Value": "{{Query: {{Year}} % 3}}"
+		},
+	],
+	"Changes": [
+		//Map tilesheet
+		{
+			"LogName": "Lumisteria Mt Vapius Custom Outdoors", //custom tiles custom color
+			"Action": "Load",
+			"Target": "Maps/spring_lumisteria_mtvapius_c_outdoors, Maps/summer_lumisteria_mtvapius_c_outdoors, Maps/fall_lumisteria_mtvapius_c_outdoors, Maps/winter_lumisteria_mtvapius_c_outdoors",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Outdoors Custom Color", //vanilla tiles recolored
+			"Action": "Load",
+			"Target": "Maps/spring_lumisteria_mtvapius_v_outdoorsTileSheet, Maps/summer_lumisteria_mtvapius_v_outdoorsTileSheet, Maps/fall_lumisteria_mtvapius_v_outdoorsTileSheet, Maps/winter_lumisteria_mtvapius_v_outdoorsTileSheet",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Outdoors 2 Custom Color", //vanilla tiles recolored 2
+			"Action": "Load",
+			"Target": "Maps/spring_lumisteria_mtvapius_v_outdoorsTileSheet2, Maps/summer_lumisteria_mtvapius_v_outdoorsTileSheet2, Maps/fall_lumisteria_mtvapius_v_outdoorsTileSheet2, Maps/winter_lumisteria_mtvapius_v_outdoorsTileSheet2",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Custom Buildings",
+			"Action": "Load",
+			"Target": "Maps/spring_lumisteria_mtvapius_c_buildings, Maps/summer_lumisteria_mtvapius_c_buildings, Maps/fall_lumisteria_mtvapius_c_buildings, Maps/winter_lumisteria_mtvapius_c_buildings",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Custom Interiors",
+			"Action": "Load",
+			"Target": "Maps/lumisteria_mtvapius_c_townInterior",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Custom magic details",
+			"Action": "Load",
+			"Target": "Maps/lumisteria_mtvapius_c_magicdetails",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Custom Mine, waterplants",
+			"Action": "Load",
+			"Target": "Maps/lumisteria_mtvapius_mine, Maps/lumisteria_mtvapius_c_waterplants",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Mountain Background",
+			"Action": "Load",
+			"Target": "Maps/lumisteria_mtvapius_mountainbackground",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Custom Wallpapers and Floors",
+			"Action": "Load",
+			"Target": "Maps/lumisteria_mtvapius_walls, Maps/lumisteria_mtvapius_floors",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Vendors",
+			"Action": "Load",
+			"Target": "Maps/lumisteria_mtvapius_vendors",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Spouse Rooms",
+			"Action": "Load",
+			"Target": "Maps/Lumisteria_MtVapius_SpouseRooms",
+			"FromFile": "Assets/LumisteriaMtVapiusSpouseRooms.tmx",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Spouse Patios",
+			"Action": "Load",
+			"Target": "Maps/Lumisteria_MtVapius_Patios",
+			"FromFile": "Assets/LumisteriaMtVapiusPatios.tmx",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Temp Wedding Map",
+			"Action": "Load",
+			"Target": "Maps/Lumisteria_MtVapius_TemporaryForestWedding",
+			"FromFile": "Assets/LumisteriaMtVapiusTemporaryForestWedding.tmx",
+		},
+		//Snow spring/fall
+		{
+			"LogName": "Lumisteria Mt Vapius Snow",
+			"Action": "EditImage",
+			"Target": "Maps/spring_lumisteria_mtvapius_c_outdoors, Maps/fall_lumisteria_mtvapius_c_outdoors",
+			"FromFile": "assets/tilesheets/winter_lumisteria_mtvapius_c_outdoors.png",
+			"When": {
+				"Weather: Lumisteria_MtVapius_Forest, Lumisteria_MtVapius_Main": "Snow"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Outdoors Custom Snow",
+			"Action": "EditImage",
+			"Target": "Maps/spring_lumisteria_mtvapius_v_outdoorsTileSheet, Maps/fall_lumisteria_mtvapius_v_outdoorsTileSheet",
+			"FromFile": "assets/tilesheets/winter_lumisteria_mtvapius_v_outdoorsTileSheet.png",
+			"When": {
+				"Weather: Lumisteria_MtVapius_Forest, Lumisteria_MtVapius_Main": "Snow"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Outdoors 2 Custom Snow",
+			"Action": "EditImage",
+			"Target": "Maps/spring_lumisteria_mtvapius_v_outdoorsTileSheet2, Maps/fall_lumisteria_mtvapius_v_outdoorsTileSheet2",
+			"FromFile": "assets/tilesheets/winter_lumisteria_mtvapius_v_outdoorsTileSheet2.png",
+			"When": {
+				"Weather: Lumisteria_MtVapius_Forest, Lumisteria_MtVapius_Main": "Snow"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ChairTiles",
+			"Entries": {
+				//chairs
+				"spring_lumisteria_mtvapius_c_buildings/23/40": "1/1/down/chair/-1/-1/false",
+			},
+		},
+		//Map Patches
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/MapPatches.json",
+		},
+		//Minecart+Minecart Map Patches
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/MineCarts.json",
+		},
+		//MuseumRewards
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/MuseumRewards.json",
+		},
+		//Guilg Goals
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/GuildGoals.json",
+		},
+		//Wallpapers
+		{
+			"Action": "EditData",
+			"Target": "Data/AdditionalWallpaperFlooring",
+			"Entries": {
+				"Lumisteria.MtVapiusWalls": {
+					"ID": "Lumisteria.MtVapiusWalls",
+					"Texture": "Maps/lumisteria_mtvapius_walls",
+					"IsFlooring": false,
+					"Count": 18
+				},
+				"Lumisteria.MtVapiusFloors": {
+					"ID": "Lumisteria.MtVapiusFloors",
+					"Texture": "Maps/lumisteria_mtvapius_floors",
+					"IsFlooring": true,
+					"Count": 13
+				}
+			},
+		},
+		//Map
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/Map.json",
+		},
+		//Objects
+		{
+			"LogName": "Objects",
+			"Action": "Include",
+			"FromFile": "Assets/items/Objects.json",
+		},
+		//Items
+		/*{
+			"LogName": "Items",
+			"Action": "Include",
+			"FromFile": "Assets/items/Items.json",
+		},*/
+		/*{
+			"LogName": "Context Tags",
+			"Action": "Include",
+			"FromFile": "Assets/items/ContextTags.json",
+		},*/
+		{
+			"LogName": "Furniture",
+			"Action": "Include",
+			"FromFile": "Assets/items/Furniture.json",
+		},
+		{
+			"LogName": "Clothes",
+			"Action": "Include",
+			"FromFile": "Assets/items/Clothes.json",
+		},
+		{
+			"LogName": "Crops",
+			"Action": "Include",
+			"FromFile": "Assets/items/Crops.json",
+		},
+		{
+			"LogName": "FloorsAndPaths",
+			"Action": "Include",
+			"FromFile": "Assets/items/FloorsAndPaths.json",
+		},
+		{
+			"LogName": "CookingRecipes",
+			"Action": "Include",
+			"FromFile": "Assets/items/CookingRecipes.json",
+		},
+		{
+			"LogName": "CookingRecipes",
+			"Action": "Include",
+			"FromFile": "Assets/items/CookingRecipesSpacecoreOverride.json",
+			"When": {
+				"ContextTagRecipes": true,
+			}
+		},
+		{
+			"LogName": "CraftingRecipes",
+			"Action": "Include",
+			"FromFile": "Assets/items/CraftingRecipes.json",
+		},
+		{
+			"LogName": "TailoringRecipes",
+			"Action": "Include",
+			"FromFile": "Assets/items/TailoringRecipes.json",
+		},
+		{
+			"LogName": "Fish",
+			"Action": "Include",
+			"FromFile": "Assets/items/Fish.json",
+		},
+		{
+			"LogName": "FishPond",
+			"Action": "Include",
+			"FromFile": "Assets/items/FishPond.json",
+		},
+		{
+			"LogName": "Fishing Panning Treasures",
+			"Action": "Include",
+			"FromFile": "Assets/items/FishingPanningTreasures.json",
+		},
+		{
+			"LogName": "Monsters",
+			"Action": "Include",
+			"FromFile": "Assets/items/Monsters.json",
+		},
+		{
+			"LogName": "Weapons",
+			"Action": "Include",
+			"FromFile": "Assets/items/Weapons.json",
+		},
+		{
+			"LogName": "Machines",
+			"Action": "Include",
+			"FromFile": "Assets/items/Machines.json",
+		},
+		//FruitTrees
+		{
+			"LogName": "FruitTrees",
+			"Action": "Include",
+			"FromFile": "Assets/items/FruitTrees.json",
+		},
+		//WildTrees
+		{
+			"LogName": "WildTrees",
+			"Action": "Include",
+			"FromFile": "Assets/items/WildTrees.json",
+		},
+		//Ores
+		{
+			"LogName": "Ores",
+			"Action": "Include",
+			"FromFile": "Assets/items/Ores.json",
+		},
+		//Buildings
+		{
+			"LogName": "Buildings",
+			"Action": "Include",
+			"FromFile": "Assets/others/Buildings.json",
+		},
+		//Festivals
+		{
+			"LogName": "Festivals",
+			"Action": "Include",
+			"FromFile": "Assets/others/Festivals.json",
+		},
+		//Shops
+		{
+			"LogName": "Shops",
+			"Action": "Include",
+			"FromFile": "Assets/others/Shops.json",
+		},
+		//Garbage Cans
+		{
+			"LogName": "Garbage Cans",
+			"Action": "Include",
+			"FromFile": "Assets/others/GarbageCans.json",
+		},
+		//Quests
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/Quests.json",
+		},
+		//Special orders
+		{
+			"Action": "Include",
+			"FromFile": "Assets/orders/MtVapiusSpecialOrders.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Assets/orders/MtVapiusSpecialOrdersMail.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Assets/orders/MtVapiusSpecialOrdersStrings.json",
+		},
+		//Animals
+		{
+			"LogName": "Animals",
+			"Action": "Include",
+			"FromFile": "Assets/items/Animals.json",
+		},
+		//Aster AsterPellegrinVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Aster.json",
+		},
+		//Maddy MaddyPellegrinVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Maddy.json",
+		},
+		//Adélaïde AdelaideRosierVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Adelaide.json",
+		},
+		//Célestine CelestineDuboisVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Celestine.json",
+		},
+		//Moira MoiraDuboisVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Moira.json",
+		},
+		//Mariam MariamFortinVMVVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Mariam.json",
+		},
+		//Abdon AbdonMadiVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Abdon.json",
+		},
+		//Naveen NaveenFaycombeSereneVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Naveen.json",
+		},
+		//Helia HeliaDiamantisVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Helia.json",
+		},
+		//Djamel DjamelVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Djamel.json",
+		},
+		//Lotti LottiMillerVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Lotti.json",
+		},
+		//Gavin GavinPommerelVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Gavin.json",
+		},
+		//Rayan RayanClarkeVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Rayan.json",
+		},
+		//Chloe ChloeRosierLindVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Chloe.json",
+		},
+		//Charline CharlineClochertonVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Charline.json",
+		},
+		//Priya PriyaFaycombeSereneVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Priya.json",
+		},
+		//Chandra ChandraFaycombeSereneVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Chandra.json",
+		},
+		//Felicity FelicityMossVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Felicity.json",
+		},
+		//Odalis OdalisDuboisVelezVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Odalis.json",
+		},
+		//Claretie ClaretieLivreauVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Claretie.json",
+		},
+		//Temp actors
+		{
+			"LogName": "Ewe01",
+			"Action": "Load",
+			"Target": "Characters/Ewe01VMV",
+			"FromFile": "assets/npcs/{{Target}}.png"
+		},
+		{
+			"LogName": "Ewe02",
+			"Action": "Load",
+			"Target": "Characters/Ewe02VMV",
+			"FromFile": "assets/npcs/{{Target}}.png"
+		},
+		//Vanilla Dialogue changes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/VillagersChanges/Dialogue.json",
+		},
+		//Vanilla Schedule changes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/VillagersChanges/Schedule.json",
+		},
+		//Vanilla Schedule strings changes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/VillagersChanges/StringSchedule.json",
+		},
+		//Map Strings
+		{
+			"Action": "Include",
+			"FromFile": "Assets/strings/StringsFromMaps.json",
+		},
+		//CSFiles Strings
+		{
+			"Action": "Include",
+			"FromFile": "Assets/strings/StringsFromCSFiles.json",
+		},
+		//Objects Strings
+		{
+			"Action": "Include",
+			"FromFile": "Assets/strings/Objects.json",
+		},
+		//Events
+		{
+			"Action": "Include",
+			"FromFile": "Assets/events/EventsData.json",
+		},
+		//Triggers
+		{
+			"Action": "Include",
+			"FromFile": "Assets/events/Triggers.json",
+		},
+		//Locations data
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/Locations.json",
+		},
+		//Context
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/LocationContext.json",
+		},
+		//Locations Additions
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/LocationsAdditions.json",
+		},
+		//Appending context tags
+		/*{
+			"Action": "Include",
+			"FromFile": "Assets/others/AppendContextTag.json",
+		},*/
+		//Visual Changes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/VisualChanges.json",
+		},
+		//Companions
+		/*{
+			"Action": "Include",
+			"FromFile": "Assets/others/Companions.json",
+			"When": {
+				"HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+				"HasMod |contains=Lumisteria.MtVapiusCompanions": "true"
+			}
+		},*/
+		//Mails
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/Mails.json",
+		},
+		//Saloon Changes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/SaloonChanges.json",
+		},
+		//Wedding Changes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/events/Wedding.json",
+		},
+		//Bundles
+		{
+			"Action": "Include",
+			"FromFile": "Assets/bundles/Bundles.json",
+		},
+		//Music Changes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/Music/Music.json",
+		},
+		//Bushes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/Bushes.json",
+			"When": {
+				"HasMod |contains=NCarigon.BushBloomMod": "true",
+			}
+		},
+		//Notes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/items/SecretNotes.json",
+			"When": {
+				"HasMod |contains=ichortower.SecretNoteFramework": "true",
+			}
+		},
+		
+		//Location data (ex : fishes)
+		/*{
+			"LogName": "Location Datas",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Lumisteria.MtVapius_TrainStation": "20 .7 16 .5/396 .5 398 .8/404 .4 406 .4 408 .9/414 .85 418 .9 283 .5/136 -1 142 -1 153 -1 702 -1 700 -1/136 -1 142 -1 153 -1 138 -1 702 -1 700 -1 698 -1/136 -1 140 -1 142 -1 153 -1 702 -1 700 -1 269 -1/161 -1 136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1 269 -1/382 .06 581 .1 378 .1 102 .15 390 .25 330 1",
+			},
+		}*/
+	]
+}

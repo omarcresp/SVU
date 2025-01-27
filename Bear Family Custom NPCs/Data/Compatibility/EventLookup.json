@@ -1,0 +1,118 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hide Aquarium Events",
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/blocklist",
+      "When": {
+        "HasMod": "shekurika.EventLookup"
+      },
+      "Entries": {
+        "MadDog.BearFam.GSAquarium": "T",
+        "MadDog.BearFam.GGAquarium": "T"
+      }
+    },
+    {
+      "LogName": "Hide Sigurd Romance Events When Not Romanceable",
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/blocklist",
+      "When": {
+        "HasFlag |contains=SigDateable": false,
+        "HasMod": "shekurika.EventLookup"
+      },
+      "Entries": {
+        "MadDog.BearFam.PoolDate": "T",
+        "MadDog.BearFam.RockDate": "T",
+        "MadDog.BearFam.SigurdProposalEvent": "T",
+        "MadDog.BearFam.MarriedSigCooksPart1": "T",
+        "MadDog.BearFam.MarriedSigCooksPart2": "T",
+        "MadDog.BearFam.MarriedSigDateCity": "T"
+      }
+    },
+    {
+      "LogName": "Hide Gunnar Romance Events When Not Romanceable",
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/blocklist",
+      "When": {
+        "HasFlag |contains=GunnarDateable": false,
+        "HasMod": "shekurika.EventLookup"
+      },
+      "Entries": {
+        "MadDog.BearFam.GunnarBlacksmithDate": "T",
+        "MadDog.BearFam.GunnarCollisionDate": "T",
+        "MadDog.BearFam.GunnarProposalEvent": "T",
+        "MadDog.BearFam.MarriedGunnarDateGoat": "T",
+        "MadDog.BearFam.MarriedGunnarDateCavePrecursor": "T",
+        "MadDog.BearFam.MarriedGunnarDateCave": "T"
+      }
+    },
+    {
+      "LogName": "Hide Teren Romance Events When Not Romanceable",
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/blocklist",
+      "When": {
+        "HasFlag |contains=TerenDateable": false,
+        "HasMod": "shekurika.EventLookup"
+      },
+      "Entries": {
+        "MadDog.BearFam.TerenSassyDate": "T",
+        "MadDog.BearFam.TerenWorthyDate": "T",
+        "MadDog.BearFam.TerenProposalEvent": "T",
+        "MadDog.BearFam.MarriedSwimDatePrecursor": "T",
+        "MadDog.BearFam.MarriedTerenSwimDate": "T",
+        "MadDog.BearFam.MarriedTerenDateMysteryBox": "T"
+      }
+    },
+    {
+      "LogName": "Show Sigurd Romance Events When Romanceable",
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/blocklist",
+      "When": {
+        "HasFlag |contains=SigDateable": true,
+        "HasMod": "shekurika.EventLookup"
+      },
+      "Entries": {
+        "MadDog.BearFam.PoolDate": "F",
+        "MadDog.BearFam.RockDate": "F",
+        "MadDog.BearFam.SigurdProposalEvent": "F",
+        "MadDog.BearFam.MarriedSigCooksPart1": "F",
+        "MadDog.BearFam.MarriedSigCooksPart2": "F",
+        "MadDog.BearFam.MarriedSigDateCity": "F"
+      }
+    },
+    {
+      "LogName": "Show Gunnar Romance Events When Romanceable",
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/blocklist",
+      "When": {
+        "HasFlag |contains=GunnarDateable": true,
+        "HasMod": "shekurika.EventLookup"
+      },
+      "Entries": {
+        "MadDog.BearFam.GunnarBlacksmithDate": "F",
+        "MadDog.BearFam.GunnarCollisionDate": "F",
+        "MadDog.BearFam.GunnarProposalEvent": "F",
+        "MadDog.BearFam.MarriedGunnarDateGoat": "F",
+        "MadDog.BearFam.MarriedGunnarDateCavePrecursor": "F",
+        "MadDog.BearFam.MarriedGunnarDateCave": "F"
+      }
+    },
+    {
+      "LogName": "Show Teren Romance Events When Romanceable",
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/blocklist",
+      "When": {
+        "HasFlag |contains=TerenDateable": true,
+        "HasMod": "shekurika.EventLookup"
+      },
+      "Entries": {
+        "MadDog.BearFam.TerenSassyDate": "F",
+        "MadDog.BearFam.TerenWorthyDate": "F",
+        "MadDog.BearFam.TerenProposalEvent": "F",
+        "MadDog.BearFam.MarriedSwimDatePrecursor": "F",
+        "MadDog.BearFam.MarriedTerenSwimDate": "F",
+        "MadDog.BearFam.MarriedTerenDateMysteryBox": "F"
+      }
+    }
+  ]
+}

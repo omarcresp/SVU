@@ -1,0 +1,300 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/CopperCrabAdult",
+			"FromFile": "assets/Animals/CopperCrabFarmAnimal.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/CopperCrabBaby",
+			"FromFile": "assets/Animals/CopperCrabFarmAnimalBaby.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/CopperCrabSheared",
+			"FromFile": "assets/Animals/CopperCrabFarmAnimalSheared.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Animals_CrabEgg_Copper": {
+					"Name": "Copper Crab Egg",
+					"DisplayName": "{{i18n:Animals_CrabEgg_Copper.DisplayName}}",
+					"Description": "{{i18n:Animals_CrabEgg_Copper.Description}}",
+					"Type": "Basic",
+					"Category": "-20",
+					"Price": 15,
+					"Edibility": -20,
+					"ContextTags": [
+						"{{ModId}}",
+						"{{ModId}}_CrabEgg"
+					],
+					"Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+					"SpriteIndex": 240,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": [
+						{
+							"Chance": 0.05,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O)717",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 2,
+							"MaxStack": 2,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.1575,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O)717",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.375,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O){{ModId}}_OreCluster_Copper",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 2,
+							"MaxStack": 5,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 1.0,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O)378",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 3,
+							"MaxStack": 9,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Rock Crab",
+						6
+					],
+					"Value": "{{ModId}}_Animals_CrabEgg_Copper .10",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Hate"
+					],
+					"Value": "{{ModId}}_Animals_CrabEgg_Copper",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Animals_CrabEgg_Copper": {
+                    "ID": "{{ModId}}_Animals_CrabEgg_Copper",
+                    "ItemId": "(O){{ModId}}_Animals_CrabEgg_Copper",
+                    "MaxItems": 1,
+                    "IsRecipe": false,
+                    "AvoidRepeat": true,
+                    "Price": "350",
+                    "AvailableStock": 1,
+					"Condition": "SYNCED_RANDOM day copper_crab_egg 0.5 @addDailyLuck"
+                }
+            },
+			"When": {
+                "BuyCrabEggsAtMarlons": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "SalableItemTags"
+            ],
+            "Entries": {
+                "#-1": "{{ModId}}_Animals_CrabEgg_Copper"
+            }
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}_CopperCrab": {
+					"DisplayName": "{{i18n:CopperCrab.DisplayName}}",
+					"House": "{{ModId}}_CaveCoop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": 400,
+					"SellPrice": 800,
+					"ShopTexture": "Mods/DwarvenExpansion/Animals/ShopImages",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 16,
+						"Width": 32,
+						"Height": 16
+					},
+					"ShopDisplayName": "{{i18n:CopperCrab.ShopDisplayName}}",
+					"ShopDescription": "{{i18n:CopperCrab.ShopDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n:CopperCrab.ShopMissingBuildingDescription}}",
+					"RequiredBuilding": "{{ModId}}_CaveCoop",
+					"UnlockCondition": "MINE_LOWEST_LEVEL_REACHED 20",
+					"EggItemIds": [
+						"{{ModId}}_Animals_CrabEgg_Copper"
+					],
+					"IncubationTime": 4320,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{i18n:CopperCrab.BirthText}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": true,
+					"DaysToProduce": 1,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+					"ProduceItemIds": [
+						{
+							"Id": "Egg",
+							"ItemId": "{{ModId}}_Animals_CrabEgg_Copper",
+							"Condition": "RANDOM 0.05"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "378"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Egg",
+							"ItemId": "{{ModId}}_Animals_CrabEgg_Copper",
+							"Condition": "RANDOM 0.3"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "{{ModId}}_OreCluster_Copper"
+						}
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": -1,
+					"ProfessionForQualityBoost": -1,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "stoneCrack",
+					"BabySound": "stoneCrack",
+					"Texture": "Mods/DwarvenExpansion/Animals/CopperCrabAdult",
+					"HarvestedTexture": "Mods/DwarvenExpansion/Animals/CopperCrabSheared",
+					"BabyTexture": "Mods/DwarvenExpansion/Animals/CopperCrabBaby",
+					"UseFlippedRightForLeft": false,
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": -16
+					},
+					"SwimOffset": {
+						"X": 0,
+						"Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 1,
+					"HappinessDrain": 7,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": [],
+					"ShowInSummitCredits": false,
+					"CustomFields": {
+						"meatIndex": "717"
+					}
+				}
+			}
+		}
+	]
+}

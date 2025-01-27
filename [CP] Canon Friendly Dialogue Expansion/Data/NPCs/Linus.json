@@ -1,0 +1,103 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Linus_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "AcceptGift_(O)90": "{{i18n: CFE_Linus_CactusFruit}}",
+        "AcceptGift_(O)88": "{{i18n: CFE_Linus_Coconut}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Linus}}' = 'true' OR ('{{CFE_Linus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+      //every time UGDE updates, or someone requests special compat with this mod, this section may be updated to include the conflicting key. Mods other than UGDE will need to be added to the list of mods to recognize, found in the dynamic tokens section of content.json
+    },
+    {
+      "LogName": "CFE_Linus_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Linus": "{{i18n: CFE_Linus_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Linus}}' = 'true' OR ('{{CFE_Linus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Linus_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Linus_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Linus_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Linus_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Linus_RabbitsFoot}}",
+        "AcceptGift_(O)234": "{{i18n: CFE_Linus_BlueberryTart}}",
+        "AcceptGift_(O)242": "{{i18n: CFE_Linus_DishotheSea}}",
+        "AcceptGift_(O)280": "{{i18n: CFE_Linus_Yam}}"
+      },
+      "When": { "Query: '{{CFE_Linus}}' = 'true' OR ('{{CFE_Linus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Linus_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Linus_spring1y2}}",
+        "summer_10_1": "{{i18n: CFE_Linus_summer10}}",
+        "summer_10_2": "{{i18n: CFE_Linus_summer10}}",
+        "winter_15_1": "{{i18n: CFE_Linus_winter15}}",
+        "winter_15_2": "{{i18n: CFE_Linus_winter15}}",
+        "winter_28_1": "{{i18n: CFE_Linus_winter15}}",
+        "winter_28_2": "{{i18n: CFE_Linus_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Linus_summerMon10}}",
+        "summer_Tue8": "{{i18n: CFE_Linus_summerTue8}}",
+        "summer_Wed10": "{{i18n: CFE_Linus_summerWed10}}",
+        "summer_Thu10": "{{i18n: CFE_Linus_summerThu10}}",
+        "summer_Sat10": "{{i18n: CFE_Linus_summerSat10}}",
+        "summer_Sun6": "{{i18n: CFE_Linus_summerSun6}}",
+
+        "fall_Mon8": "{{i18n: CFE_Linus_fallMon8}}",
+        "fall_Tue10": "{{i18n: CFE_Linus_fallTue10}}",
+        "fall_Wed8": "{{i18n: CFE_Linus_fallWed8}}",
+        "fall_Fri10": "{{i18n: CFE_Linus_fallFri10}}",
+        "fall_Sat10": "{{i18n: CFE_Linus_fallSat10}}",
+        "fall_Sun10": "{{i18n: CFE_Linus_fallSun10}}",
+
+        "winter_Mon8": "{{i18n: CFE_Linus_winterMon8}}",
+        "winter_Tue8": "{{i18n: CFE_Linus_winterTue8}}",
+        "winter_Wed8": "{{i18n: CFE_Linus_winterWed8}}",
+        "winter_Thu8": "{{i18n: CFE_Linus_winterThu8}}",
+        "winter_Fri10": "{{i18n: CFE_Linus_winterFri10}}",
+        "winter_Sat10": "{{i18n: CFE_Linus_winterSat10}}",
+        "winter_Sun8": "{{i18n: CFE_Linus_winterSun8}}",
+
+        "Mon8": "{{i18n: CFE_Linus_Mon8}}",
+        "Mon6": "{{i18n: CFE_Linus_Mon6}}",
+        "Mon4": "{{i18n: CFE_Linus_Mon4}}",
+        "Mon2": "{{i18n: CFE_Linus_Mon2}}",
+        "Tue10": "{{i18n: CFE_Linus_Tue10}}",
+        "Tue6": "{{i18n: CFE_Linus_Tue6}}",
+        "Tue2": "{{i18n: CFE_Linus_Tue2}}",
+        "Wed4": "{{i18n: CFE_Linus_Wed4}}",
+        "Thu10": "{{i18n: CFE_Linus_Thu10}}",
+        "Thu8": "{{i18n: CFE_Linus_Thu8}}",
+        "Thu6": "{{i18n: CFE_Linus_Thu6}}",
+        "Thu2": "{{i18n: CFE_Linus_Thu2}}",
+        "Fri8": "{{i18n: CFE_Linus_Fri8}}",
+        "Fri2": "{{i18n: CFE_Linus_Fri2}}",
+        "Sat10": "{{i18n: CFE_Linus_Sat10}}",
+        "Sat8": "{{i18n: CFE_Linus_Sat8}}",
+        "Sat6": "{{i18n: CFE_Linus_Sat6}}",
+        "Sat2": "{{i18n: CFE_Linus_Sat2}}",
+        "Sun8": "{{i18n: CFE_Linus_Sun8}}",
+        "Sun2": "{{i18n: CFE_Linus_Sun2}}"
+        //Generic Weekday Dialogue
+      },
+      "When": { "Query: '{{CFE_Linus}}' = 'true' OR ('{{CFE_Linus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

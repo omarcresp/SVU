@@ -1,0 +1,64 @@
+{
+	"Changes": [
+		// VANILLA MAIL EDITS
+		{
+			"LogName": "Secret Gift Letter Edits",
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries": {
+				"winter_18": "{{i18n:SWS.Mail.Winter18.Body}}[#]{{i18n:SWS.Mail.Winter18.Title}}",
+				"winter_24": "{{i18n:SWS.Mail.Winter24.Body}}[#]{{i18n:SWS.Mail.Winter24.Title}}"
+			}
+		},
+		// NEW SPICEBERRY LETTERS
+		{
+			"LogName": "New Spice Berry Letters",
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries": {
+				"SWS_SpiceberryLetter_1": "{{i18n:SWS.Mail.SpiceberryLetter.1.Body}} %item object 396 2 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.1.Title}}",
+				"SWS_SpiceberryLetter_2": "{{i18n:SWS.Mail.SpiceberryLetter.2.Body}} %item object 396 3 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.2.Title}}",
+				"SWS_SpiceberryLetter_3": "{{i18n:SWS.Mail.SpiceberryLetter.3.Body}} %item object 396 4 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.3.Title}}",
+				"SWS_SpiceberryLetter_4": "{{i18n:SWS.Mail.SpiceberryLetter.4.Body}} %item object 396 3 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.4.Title}}",
+				"SWS_SpiceberryLetter_5": "{{i18n:SWS.Mail.SpiceberryLetter.5.Body}} %item object 396 4 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.5.Title}}"
+			}
+		},
+        // SPICEBERRY LETTER SEND TRIGGER ACTION
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_SWS_SpiceberryLetter_1": {
+                    "Id": "{{ModId}}_SWS_SpiceberryLetter_1",
+                    "Trigger": "DayEnding",
+                    "Action": "AddMail Current SWS_SpiceberryLetter_1",
+                    "Condition": "ANY \"DAY_OF_MONTH 19, {{NewLettersFast |contains= OneYear}}\" \"DAY_OF_MONTH 19, YEAR 1, {{NewLettersFast |contains= TwoYears, FiveYears}}\""
+                },
+                "{{ModId}}_SWS_SpiceberryLetter_4": {
+                    "Id": "{{ModId}}_SWS_SpiceberryLetter_4",
+                    "Trigger": "DayEnding",
+                    "Action": "AddMail Current SWS_SpiceberryLetter_4",
+                    "Condition": "ANY \"DAY_OF_MONTH 22, {{NewLettersFast |contains= OneYear}}\" \"DAY_OF_MONTH 22, YEAR 2, {{NewLettersFast |contains= TwoYears, FiveYears}}\""
+                },
+                "{{ModId}}_SWS_SpiceberryLetter_5": {
+                    "Id": "{{ModId}}_SWS_SpiceberryLetter_5",
+                    "Trigger": "DayEnding",
+                    "Action": "AddMail Current SWS_SpiceberryLetter_5",
+                    "Condition": "ANY \"DAY_OF_MONTH 20, {{NewLettersFast |contains= OneYear}}\" \"DAY_OF_MONTH 22, YEAR 2, {{NewLettersFast |contains= TwoYears}}\" \"DAY_OF_MONTH 22, YEAR 3, {{NewLettersFast |contains= FiveYears}}\""
+                },
+                "{{ModId}}_SWS_SpiceberryLetter_2": {
+                    "Id": "{{ModId}}_SWS_SpiceberryLetter_2",
+                    "Trigger": "DayEnding",
+                    "Action": "AddMail Current SWS_SpiceberryLetter_2",
+                    "Condition": "ANY \"DAY_OF_MONTH 21, {{NewLettersFast |contains= OneYear}}\" \"DAY_OF_MONTH 21, YEAR 1, {{NewLettersFast |contains= TwoYears}}\" \"DAY_OF_MONTH 21, YEAR 4, {{NewLettersFast |contains= FiveYears}}\""
+                },
+                "{{ModId}}_SWS_SpiceberryLetter_3": {
+                    "Id": "{{ModId}}_SWS_SpiceberryLetter_3",
+                    "Trigger": "DayEnding",
+                    "Action": "AddMail Current SWS_SpiceberryLetter_3",
+                    "Condition": "ANY \"DAY_OF_MONTH 18, {{NewLettersFast |contains= OneYear}}\" \"DAY_OF_MONTH 18, YEAR 1, {{NewLettersFast |contains= TwoYears}}\" \"DAY_OF_MONTH 18, YEAR 5, {{NewLettersFast |contains= FiveYears}}\""
+                }
+            }
+        }
+	]
+}

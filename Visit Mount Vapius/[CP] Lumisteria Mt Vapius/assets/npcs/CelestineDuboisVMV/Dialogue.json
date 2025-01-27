@@ -1,0 +1,138 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/CelestineDuboisVMV",
+      "Entries": {
+        //"Introduction": "{{i18n: CelestineDialogueIntroduction}}",
+        "Mon": "{{i18n: CelestineDialogueMon}}",
+        "Tue": "{{i18n: CelestineDialogueTue{{Random:R01, R02}}|TravelingLadyIsLotti={{TravelingLadyIsLotti}}}}",
+        "Wed": "{{i18n: CelestineDialogueWed}}",
+        "Thu": "{{i18n: CelestineDialogueThu}}",
+        "Fri": "{{i18n: CelestineDialogueFri}}",
+        "Sat": "{{i18n: CelestineDialogueSat}}",
+        "Sun": "{{i18n: CelestineDialogueSun}}",
+		//2
+        "Mon2": "{{i18n: CelestineDialogueMon2}}",
+        "Tue2": "{{i18n: CelestineDialogueTue2|TravelingLadyIsLotti={{TravelingLadyIsLotti}}}}",
+        "Wed2": "{{i18n: CelestineDialogueWed2|HasSBV={{HasMod |contains=skellady.SBVCP}}}}",
+        "Thu2": "{{i18n: CelestineDialogueThu2}}",
+        "Fri2": "{{i18n: CelestineDialogueFri2}}",
+        "Sat2": "{{i18n: CelestineDialogueSat2{{Random:R01, R02}}}}",
+        "Sun2": "{{i18n: CelestineDialogueSun2{{Random:R01, R02}}}}",
+		//4
+        "Mon4": "{{i18n: CelestineDialogueMon4}}",
+        "Tue4": "{{i18n: CelestineDialogueTue4}}",
+        "Wed4": "{{i18n: CelestineDialogueWed4}}",
+        "Thu4": "{{i18n: CelestineDialogueThu4}}",
+        "Fri4": "{{i18n: CelestineDialogueFri4}}",
+        "Sat4": "{{i18n: CelestineDialogueSat4{{Random:R01, R02}}}}",
+        "Sun4": "{{i18n: CelestineDialogueSun4}}",
+		//6
+        "Mon6": "{{i18n: CelestineDialogueMon6}}",
+        "Tue6": "{{i18n: CelestineDialogueTue6}}",
+        "Wed6": "{{i18n: CelestineDialogueWed6}}",
+        "Thu6": "{{i18n: CelestineDialogueThu6}}",
+        "Fri6": "{{i18n: CelestineDialogueFri6}}",
+        "Sat6": "{{i18n: CelestineDialogueSat6}}",
+        "Sun6": "{{i18n: CelestineDialogueSun6}}",
+		
+		//Summer
+        "summer_23_2": "{{i18n: CelestineDialoguesummer_23_2}}",
+		//Winter
+        "winter_5": "{{i18n: CelestineDialoguewinter_5}}",
+        "winter_5_2": "{{i18n: CelestineDialoguewinter_5_2}}",
+        "winter_15": "{{i18n: CelestineDialoguewinter_15|HasES={{HasMod |contains=LemurKat.EastScarpe.CP}}}}",
+        "winter_15_2": "{{i18n: CelestineDialoguewinter_15|HasES={{HasMod |contains=LemurKat.EastScarpe.CP}}}}",
+		
+		
+		
+		//Resort
+		"Resort_Entering": "{{i18n: CelestineDialogueResort_Entering}}",
+		"Resort_Leaving": "{{i18n: CelestineDialogueResort_Leaving}}",
+		"Resort_Wander": "{{i18n: CelestineDialogueResort_Wander}}",
+		"Resort_Bar": "{{i18n: CelestineDialogueResort_Bar}}",
+		"Resort": "{{i18n: CelestineDialogueResort}}",
+		
+		//Conversation Topics
+        "Lumisteria.MtVapius.Arrival": "{{i18n: CelestineDialogueLumisteria.MtVapius.Arrival}}",
+        "Lumisteria.MtVapius.PennyVisit": "{{i18n: CelestineDialogueLumisteria.MtVapius.PennyVisit}}",
+        "Lumisteria.MtVapius.OdalisArriving": "{{i18n: CelestineDialogueLumisteria.MtVapius.OdalisArriving}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneday": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneweek": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_twoweeks": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_twoweeks}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday}}",
+
+		//Special
+		"reject_865": "{{i18n: CelestineDialogueRejectTomatoSalt}}",
+		"reject_458": "{{i18n: CelestineDialogueRejectBouquet}}",
+      }
+    },
+    {
+      "LogName": "Celestine Season Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/CelestineDuboisVMV",
+      "Entries": {
+        "summer_Sat2": "{{i18n: CelestineDialoguesummer_Sat2}}",
+      },
+      "When": {
+        "Random: true, true, false": "true"
+      }
+    },
+    {
+      "LogName": "Celestine 8 Heart Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/CelestineDuboisVMV",
+      "Entries": {
+        "Mon8": "{{i18n: CelestineDialogueMon8{{Random:R01, R02, R03}}}}",
+        "Tue8": "{{i18n: CelestineDialogueTue8}}",
+        "Wed8": "{{i18n: CelestineDialogueWed8}}",
+        "Thu8": "{{i18n: CelestineDialogueThu8}}",
+        "Fri8": "{{i18n: CelestineDialogueFri8{{Random:R01, R02}}}}",
+        "Sat8": "{{i18n: CelestineDialogueSat8{{Random:R01, R02}}}}",
+        "Sun8": "{{i18n: CelestineDialogueSun8{{Random:R01, R02}}}}",
+      },
+      "When": {
+        "Random: true, true, true, true, false": "true"
+      }
+    },
+    {
+      "LogName": "Celestine 8 Heart Seasonal Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/CelestineDuboisVMV",
+      "Entries": {
+        "summer_Wed6": "{{i18n: CelestineDialoguesummer_Wed6}}",
+      },
+      "When": {
+        "Random: true, true, true, true, false": "true"
+      }
+    },
+    {
+      "LogName": "Celestine 10 Heart Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/CelestineDuboisVMV",
+      "Entries": {
+        //10
+        "Mon10": "{{i18n: CelestineDialogueMon10}}",
+        "Tue10": "{{i18n: CelestineDialogueTue10}}",
+        "Wed10": "{{i18n: CelestineDialogueWed10}}",
+        "Thu10": "{{i18n: CelestineDialogueThu10}}",
+        "Fri10": "{{i18n: CelestineDialogueFri10}}",
+        "Sat10": "{{i18n: CelestineDialogueSat10}}",
+        "Sun10": "{{i18n: CelestineDialogueSun10|HasSBV={{HasMod |contains=skellady.SBVCP}}}}",
+      },
+      "When": {
+        "Random: true, true, true, true, false": "true"
+      }
+    },
+    {
+      "LogName": "Celestine Dialogue Gift Taste",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/CelestineDuboisVMV",
+      "Entries": {
+		"AcceptGift_(O)StardropTea": "{{i18n: DefaultAcceptGift_(O)StardropTea}}",
+      },
+    },
+  ]
+}

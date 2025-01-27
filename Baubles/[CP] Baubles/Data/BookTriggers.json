@@ -1,0 +1,120 @@
+{
+  "Changes":
+    [
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "When": { "Quests": "Off" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.CurioBookTrigger":
+		  {
+		    "Id": "appleseed.BCP.CurioBookTrigger",
+		    "Trigger": "DayEnding",
+		    "Condition": "PLAYER_STAT Current appleseed.BCP.CurioBook 1",
+		    "Actions":
+			[
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Whimsychine",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushFairy",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushUnseelie",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.8-Ball",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.AntiqueTeaSet",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.CuckooClock",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.JunimoShaker",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.MusicBox",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushTrashBear",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Starglobe",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.WindupHare",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.StrangePuzzle",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Chessboard",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.DollMansion",
+			  "AddMail Current appleseed.BCP.WhimsychineHint Tomorrow"
+			]
+		  },
+		"appleseed.BCP.CurioBookTriggerBackup":
+		  {
+		    "Id": "appleseed.BCP.CurioBookTriggerBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "PLAYER_STAT Current appleseed.BCP.CurioBook 1, PLAYER_HAS_MAIL Current appleseed.BCP.CurioBookLetter",
+		    "Actions":
+			[
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Whimsychine",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushFairy",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushUnseelie",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.8-Ball",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.AntiqueTeaSet",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.CuckooClock",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.JunimoShaker",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.MusicBox",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushTrashBear",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Starglobe",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.WindupHare",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.StrangePuzzle",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Chessboard",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.DollMansion",
+			  "AddMail Current appleseed.BCP.WhimsychineHint Tomorrow"
+			]
+		  }
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "When": { "Quests": "On" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.CurioBookTriggerQuest":
+		  {
+		    "Id": "appleseed.BCP.CurioBookTriggerQuest",
+		    "Trigger": "DayEnding",
+		    "Condition": "PLAYER_STAT Current appleseed.BCP.CurioBook 1",
+		    "Actions":
+			[
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Whimsychine",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushFairy",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushUnseelie",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.8-Ball",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.AntiqueTeaSet",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.CuckooClock",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.JunimoShaker",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.MusicBox",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushTrashBear",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Starglobe",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.WindupHare",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.StrangePuzzle",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Chessboard",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.DollMansion",
+			  "AddMail Current appleseed.BCP.WhimsychineHint Tomorrow",
+			  "AddMail Current appleseed.BCP.WizardRequest Tomorrow"
+			]
+		  },
+		"appleseed.BCP.CurioBookTriggerQuestBackup":
+		  {
+		    "Id": "appleseed.BCP.CurioBookTriggerQuestBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "PLAYER_STAT Current appleseed.BCP.CurioBook 1, PLAYER_HAS_MAIL Current appleseed.BCP.CurioBookLetter",
+		    "Actions":
+			[
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Whimsychine",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushFairy",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushUnseelie",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.8-Ball",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.AntiqueTeaSet",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.CuckooClock",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.JunimoShaker",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.MusicBox",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.PlushTrashBear",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Starglobe",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.WindupHare",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.StrangePuzzle",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.Chessboard",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.DollMansion",
+			  "AddMail Current appleseed.BCP.WhimsychineHint Tomorrow",
+			  "AddMail Current appleseed.BCP.WizardRequest Tomorrow"
+			]
+		  }
+	    }
+	},
+    ]
+
+}

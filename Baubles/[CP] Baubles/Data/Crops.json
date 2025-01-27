@@ -1,0 +1,99 @@
+{
+  "Changes":
+    [  
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP/Crops",
+	  "FromFile": "Assets/Crops.png"
+	}, 
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP/GiantCrops",
+	  "FromFile": "Assets/GiantCrops.png"
+	},        
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Crops",
+	  "Entries": 
+	    {
+		"appleseed.BCP.BatFlowerSeeds": 
+		  {
+		    "Seasons": [ "summer", "fall" ],
+		    "DaysInPhase": [ 1, 2, 2, 2, 1 ],
+		    "HarvestItemId": "appleseed.BCP.BatFlower",
+		    "Texture": "Mods/appleseed.BCP/Crops",
+		    "SpriteIndex": 0
+		  },
+		"appleseed.BCP.PimaCottonSeeds": 
+		  {
+		    "Seasons": [ "summer", "fall" ],
+		    "DaysInPhase": [ 1, 1, 2, 2, 1 ],
+		    "HarvestItemId": "appleseed.BCP.PimaCotton",
+		    "Texture": "Mods/appleseed.BCP/Crops",
+		    "SpriteIndex": 1,
+		    "RegrowDays": 3,
+		  },
+		"appleseed.BCP.PelicanBellSeeds": 
+		  {
+		    "Seasons": [ "spring", "winter" ],
+		    "DaysInPhase": [ 1, 1, 1, 1, 1 ],
+		    "HarvestItemId": "appleseed.BCP.PelicanBell",
+		    "Texture": "Mods/appleseed.BCP/Crops",
+		    "SpriteIndex": 2
+		  }
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/GiantCrops",
+	  "Entries": 
+	    {
+		"appleseed.BCP.GiantPelicanBell":
+		  {
+		    "FromItemId": "appleseed.BCP.PelicanBell",
+		    "HarvestItems": 
+		    [
+			{
+			  "Chance": 1.0,
+			  "ItemId": "appleseed.BCP.PelicanBell",
+			  "Quality": 0,
+			  "Minstack": 12,
+			  "MaxStack": 20
+			},
+			{
+			  "Chance": 1.0,
+			  "ItemId": "appleseed.BCP.PelicanBellSeeds",
+			  "Quality": 0,
+			  "Minstack": 5,
+			  "MaxStack": 12
+			}
+		    ],
+		    "Texture": "Mods/appleseed.BCP/GiantCrops",
+		    "TexturePosition": { "X": 0, "Y": 0 },
+		    "TileSize": { "X": 3, "Y": 3 },
+		    "Chance": 0.01,
+		  },
+    
+		"appleseed.BCP.GiantPimaCotton":
+		  {
+		    "FromItemId": "appleseed.BCP.PimaCotton",
+		    "HarvestItems": 
+		    [
+			{
+			  "Chance": 1.0,
+			  "ItemId": "appleseed.BCP.PimaCotton",
+			  "Quality": 0,
+			  "Minstack": 5,
+			  "MaxStack": 9
+			}
+		    ],
+		    "Texture": "Mods/appleseed.BCP/GiantCrops",
+		    "TexturePosition": { "X": 48, "Y": 0 },
+		    "TileSize": { "X": 2, "Y": 2 },
+		    "Chance": 0.05,
+		  }
+	    }
+
+	}
+    ]
+}

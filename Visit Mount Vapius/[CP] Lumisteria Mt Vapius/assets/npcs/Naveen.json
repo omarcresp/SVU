@@ -1,0 +1,119 @@
+{
+  "Changes": [
+    {
+      "LogName": "Naveen Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/NaveenFaycombeSereneVMV, Characters/NaveenFaycombeSereneVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Naveen Fall Portraits",
+      "Action": "Load",
+      "Target": "Portraits/NaveenFaycombeSereneVMV_Fall",
+      "FromFile": "assets/npcs/Portraits/NaveenFaycombeSereneVMVExtra/Fall.png",
+    },
+    {
+      "LogName": "Naveen Fall Sprites",
+      "Action": "Load",
+      "Target": "Characters/NaveenFaycombeSereneVMV_Fall",
+      "FromFile": "assets/npcs/Characters/NaveenFaycombeSereneVMVExtra/Fall.png",
+    },
+    {
+      "LogName": "Naveen Winter Portraits",
+      "Action": "Load",
+      "Target": "Portraits/NaveenFaycombeSereneVMV_Winter",
+      "FromFile": "assets/npcs/Portraits/NaveenFaycombeSereneVMVExtra/Winter.png",
+    },
+    {
+      "LogName": "Naveen Winter Sprites",
+      "Action": "Load",
+      "Target": "Characters/NaveenFaycombeSereneVMV_Winter",
+      "FromFile": "assets/npcs/Characters/NaveenFaycombeSereneVMVExtra/Winter.png",
+    },
+    {
+      "LogName": "Naveen FaycombeSerene Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "NaveenFaycombeSereneVMV": {
+          "DisplayName": "{{i18n: NaveenDisplayName}}",
+          "BirthSeason": "spring",
+          "BirthDay": 28,
+          "HomeRegion": "Other",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "SocialTab": "UnknownUntilMet",
+          "IntroductionsQuest": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "FriendsAndFamily": {
+            "HeliaDiamantiVMV": "",
+          },
+		  "CanSocialize": "PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_BusBundle",
+		  "CanVisitIsland": "!DAY_OF_WEEK Tuesday, !DAY_OF_WEEK Saturday",
+          "SpawnIfMissing": true,
+			"Appearance": [
+			  {
+				"Id": "Lumisteria.MtVapiusNaveenFall",
+				"Condition": "LOCATION_SEASON Here Fall",
+				"Portrait": "Portraits/NaveenFaycombeSereneVMV_Fall",
+				"Sprite": "Characters/NaveenFaycombeSereneVMV_Fall",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusNaveenWinter",
+				"Condition": "LOCATION_SEASON Here Winter",
+				"Portrait": "Portraits/NaveenFaycombeSereneVMV_Winter",
+				"Sprite": "Characters/NaveenFaycombeSereneVMV_Winter",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			],
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_NaveenHouse",
+					"Tile": { "X": 5, "Y": 26 },
+					"Direction": "down"
+				}
+			],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/NaveenFaycombeSereneVMV/Schedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "NaveenFaycombeSereneVMV": "{{i18n: NaveenGiftLoved{{GiftAnswerNaveen}}}}/243 279 417 220 637 Lumisteria.MtVapius_GiantCrystalFish/{{i18n: NaveenGiftLiked{{GiftAnswerNaveen}}}}/-12 104 106 392 394/{{i18n: NaveenGiftDislike{{GiftAnswerNaveen}}}}/bone_item/{{i18n: NaveenGiftHate{{GiftAnswerNaveen}}}}/395 253 424 426 ingredient_cheese/{{i18n: NaveenGiftNeutral{{GiftAnswerNaveen}}}}/382/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/NaveenFaycombeSereneVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/NaveenFaycombeSereneVMV/Dialogue.json"
+    },
+  ]
+}

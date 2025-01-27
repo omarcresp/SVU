@@ -1,0 +1,86 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Blood Moon Lunar Event (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_BloodMoon": {
+          "Id": "Kana.WeatherWonders_BloodMoon",
+          "DisplayName": "{{i18n: Weather.Sunny}}",
+          "SoftMusicOverrides": [{}],
+          "Forecast": "{{i18n: Weather.Sunny.Forecast}}",
+          "IconTexture": "LooseSprites/Cursors",
+          "IconSource": {
+            "X": 341,
+            "Y": 421
+          },
+          "TVTexture": "LooseSprites/Cursors",
+          "TVSource": {
+            "X": 413,
+            "Y": 333
+          },
+          "UseNightTiles": true,
+          "SpawnCritters": true,
+          "SpawnFrogs": true,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "BloodMoonTint1",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 1800 1830",
+              "Color": "255, 0, 0",
+              "Opacity": 0.05,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "BloodMoonTint2",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 1840 1910",
+              "Color": "255, 0, 0",
+              "Opacity": 0.1,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "BloodMoonTint3",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 1920 2020",
+              "Color": "255, 0, 0",
+              "Opacity": 0.175,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "BloodMoonTint4",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 2030 2600",
+              "Color": "255, 0, 0",
+              "Opacity": 0.25,
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": [
+            {
+              "Id": "BloodMoonTint1",
+              "TimeOfDay": 1940,
+              "PostLightingTint": "221, 0, 0",
+              "PostLightingTintOpacity": 0.22
+            }
+          ],
+          "Effects": [
+            {
+              "Id": "BlueMoonEffect1",
+              "Type": "Buff",
+              "BuffId": "Kana.WeatherWonders_BloodMoon",
+              "Condition": "TIME 2000 2600, PLAYER_LOCATION_CONTEXT Current Default",
+              "TargetMapType": "Indoors, Outdoors"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

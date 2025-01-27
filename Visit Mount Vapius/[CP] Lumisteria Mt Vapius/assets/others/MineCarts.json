@@ -1,0 +1,213 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Entries": {
+                "Railroad": {
+                    "Id": "Railroad",
+                    "DisplayName": "[LocationName Railroad]",
+                    "Condition": "LOCATION_ACCESSIBLE Railroad, {{RailroadMinecart}}",
+                    "TargetLocation": "Railroad",
+                    "TargetTile": {
+                        "X": 16,
+                        "Y": 39
+                    },
+                    "TargetDirection": "down",
+                },
+            },
+        },
+        // add minecart destination
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "Entries": {
+                "Lumisteria.MtVapiusNetworkTrainBus": {
+                    //"UnlockCondition": "PLAYER_HAS_MAIL Host ccBoilerRoom Received",
+                    "LockedMessage": null,
+                    //"ChooseDestinationMessage": null,
+                    //"BuyTicketMessage": null,
+                    "Destinations": [
+                        {
+                            "Id": "Lumisteria.MtVapius_RailroadTrain",
+                            "DisplayName": "[LocationName Railroad]",
+                            "Condition": "LOCATION_ACCESSIBLE Railroad, !{{HasMod |contains=Lumisteria.TS.MtVapius}}",
+                            "TargetLocation": "Railroad",
+                            "TargetTile": {
+                                "X": 31,
+                                "Y": 40
+                            },
+                            "TargetDirection": "down",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_BusStop",
+                            "DisplayName": "[LocalizedText Strings\\Locations:MineCart_Destination_BusStop] {{i18n: MtVapiusOneWayOnlyWarning}}",
+                            "Condition": "!LOCATION_ACCESSIBLE Railroad, !{{HasMod |contains=Lumisteria.TS.MtVapius}}",
+							"TargetLocation": "BusStop",
+							"TargetTile": {
+							  "X": 14,
+							  "Y": 4
+							},
+                            "TargetDirection": "down",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_TrainStationTrain",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_TrainStation]",
+                            //"Condition": "LOCATION_ACCESSIBLE Railroad, {{RailroadMinecart}}",
+                            "TargetLocation": "Lumisteria.MtVapius_TrainStation",
+                            "TargetTile": {
+                                "X": 6,
+                                "Y": 32
+                            },
+                            "TargetDirection": "down",
+                            "Price": 250,
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_FaycombeBus",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_Faycombe]",
+                            "Condition": "PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_BusBundle Any",
+                            "TargetLocation": "Lumisteria.MtVapius_Faycombe",
+                            "TargetTile": {
+                                "X": 11,
+                                "Y": 13
+                            },
+                            "TargetDirection": "down",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_HamletBus",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_Hamlet]",
+                            "Condition": "PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_BusBundle Any",
+                            "TargetLocation": "Lumisteria.MtVapius_Hamlet",
+                            "TargetTile": {
+                                "X": 42,
+                                "Y": 95
+                            },
+                            "TargetDirection": "up",
+                        },
+                    ]
+                }
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "Entries": {
+                "Lumisteria.MtVapiusNetwork": {
+                    "UnlockCondition": "PLAYER_HAS_MAIL Host ccBoilerRoom Received",
+                    "LockedMessage": null,
+                    "ChooseDestinationMessage": null,
+                    "BuyTicketMessage": null,
+                    "Destinations": [
+                        {
+                            "Id": "Lumisteria.MtVapius_Hamlet",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_Hamlet]",
+                            "Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_MineCartRepairedMail",
+                            "TargetLocation": "Lumisteria.MtVapius_Hamlet",
+                            "TargetTile": {
+                                "X": 12,
+                                "Y": 62
+                            },
+                            "TargetDirection": "down",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_TrainStation",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_TrainStation]",
+                            "Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_MineCartRepairedMail",
+                            "TargetLocation": "Lumisteria.MtVapius_TrainStation",
+                            "TargetTile": {
+                                "X": 4,
+                                "Y": 10
+                            },
+                            "TargetDirection": "down",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_Lodge",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_Lodge]",
+                            "Condition": "PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_Lodge",
+                            "TargetLocation": "Lumisteria.MtVapius_Lodge",
+                            "TargetTile": {
+                                "X": 13,
+                                "Y": 16
+                            },
+                            "TargetDirection": "down",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_Orchard",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_Orchard]",
+                            "Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_MineCartRepairedMail",
+                            "TargetLocation": "Lumisteria.MtVapius_Orchard",
+                            "TargetTile": {
+                                "X": 1,
+                                "Y": 2
+                            },
+                            "TargetDirection": "down",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_ForestCrystalLake",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_ForestCrystalLake]",
+                            "Condition": "ANY \"!LOCATION_CONTEXT Here Lumisteria_MtVapius_Main\" \"PLAYER_HAS_MAIL Any Lumisteria.MtVapius_MineCartRepairedMail\", PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestCrystalLake",
+                            "TargetLocation": "Lumisteria.MtVapius_ForestCrystalLake",
+                            "TargetTile": {
+                                "X": 23,
+                                "Y": 9
+                            },
+                            "TargetDirection": "down",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_ForestJunimoClearing",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_ForestJunimoClearing]",
+                            "Condition": "FALSE",
+                            "TargetLocation": "Lumisteria.MtVapius_ForestJunimoClearing",
+                            "TargetTile": {
+                                "X": 16,
+                                "Y": 36
+                            },
+                            "TargetDirection": "down",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_RandomRoom",
+                            "DisplayName": "[LocationName {{Random:Lumisteria.MtVapius_ForestCaveMoonPond, Lumisteria.MtVapius_ForestCaveMarsh, Lumisteria.MtVapius_ForestCaveWinterRift, Lumisteria.MtVapius_ForestCaveAmber|key=Lumisteria.MtVapius_RandomRoom}}]",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Lodge_ShortcutsFixed",
+                            "TargetLocation": "{{Random:Lumisteria.MtVapius_ForestCaveMoonPond, Lumisteria.MtVapius_ForestCaveMarsh, Lumisteria.MtVapius_ForestCaveWinterRift, Lumisteria.MtVapius_ForestCaveAmber|key=Lumisteria.MtVapius_RandomRoom}}",
+                            "TargetTile": {
+                                "X": 7,
+                                "Y": 13
+                            },
+                            "TargetDirection": "up",
+                        },
+                        {
+                            "Id": "Lumisteria.MtVapius_ForestCaveShortcut",
+                            "DisplayName": "[LocationName Lumisteria.MtVapius_ForestCaveShortcut]",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Lodge_ShortcutsFixed",
+                            "TargetLocation": "Lumisteria.MtVapius_ForestCaveShortcut",
+                            "TargetTile": {
+                                "X": 36,
+                                "Y": 13
+                            },
+                            "TargetDirection": "down",
+                        },
+                    ]
+                }
+            },
+        },
+        // add minecart
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "assets/LumisteriaRailroad_MapPatch.tmx",
+            "ToArea": {
+                "X": 16,
+                "Y": 35,
+                "Width": 3,
+                "Height": 3
+            },
+            "When": {
+                "RailroadMinecart": true
+            }
+        }
+    ]
+}

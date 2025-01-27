@@ -1,0 +1,38 @@
+{
+  "Changes": [
+		{
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CropExtensionData",
+			"Entries": {
+				"{{ModID}}_CornflowerSeeds": {
+					"YieldOverrides": {
+						"4": {
+							"IgnoreDefaultDrops": false,
+							"Drops": [
+								{
+									"Id": "{{ModID}}_Cornflower",
+									"ItemId": "(O){{ModID}}_Cornflower",
+									"PerItemCondition": "RANDOM 0.05, NEARBY_CROPS 2 483",
+								},
+							]
+						}
+					}
+				},
+				"483": {
+					"YieldOverrides": {
+						"4": {
+							"IgnoreDefaultDrops": false,
+							"Drops": [
+								{
+									"Id": "{{ModID}}_WheatSeeds",
+									"ItemId": "(O)483",
+									"PerItemCondition": "RANDOM 0.05, NEARBY_CROPS 2 483",
+								},
+							]
+						}
+					}
+				},
+			}
+		},
+  ]
+}

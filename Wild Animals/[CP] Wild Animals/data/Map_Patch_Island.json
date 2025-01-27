@@ -1,0 +1,351 @@
+{
+//	"Format": "2.0.0",
+
+	"Changes": [
+
+	{
+		"LogName": "Add dolphins in south of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_S",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 6, 23, 37 |key=island s dolphin coordinate}}",
+					"Y": "{{Random: 45, 50, 40 |key=island s dolphin coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.Dolphin_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Dolphins": true,
+			"Weather": "Sun, Wind, Rain",
+			"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add dolphins in southeast of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 34, 4, 22 |key=island se dolphin coordinate}}",
+					"Y": "{{Random: 38, 36, 41 |key=island se dolphin coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Dolphin_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Dolphins": true,
+			"Weather": "Sun, Wind, Rain",
+			"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add dolphins in southeast of the island (2)",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 33, 5, 23 |key=island se dolphin coordinate}}",
+					"Y": "{{Random: 39, 37, 42 |key=island se dolphin coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Dolphin_WA, DolphinPink_WA, Dolphin_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "false",
+			"Load Wild Animals |contains= Dolphins": true,
+			"Weather": "Sun, Wind, Rain",
+			"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add baby dolphins in southeast of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 34, 4, 22 |key=island se dolphin coordinate}}",
+					"Y": "{{Random: 40, 38, 43 |key=island se dolphin coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.DolphinBaby_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Dolphins": true,
+			"Weather": "Sun, Wind, Rain",
+			"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the west of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_W",
+		"MapTiles": [
+            {
+               "Position": { "X": 82, "Y": 98 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 12, "Y": 86 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 62, "Y": 101 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= MoonlightJellies": true,	
+			"Season": "Spring",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the south of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_S",
+		"MapTiles": [
+            {
+               "Position": { "X": 8, "Y": 51 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 36, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= MoonlightJellies": true,	
+			"Season": "Spring",
+			"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the southeast of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": { "X": 38, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 25, "Y": 36 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+            {
+               "Position": { "X": 26, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.MoonlightJellyGreen_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= MoonlightJellies": true,	
+			"Season": "Spring",
+			"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the west of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_W",
+		"MapTiles": [
+            {
+               "Position": { "X": 82, "Y": 98 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 12, "Y": 86 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 13, "Y": 52 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 49, "Y": 100 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 9, "Y": 20 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 62, "Y": 101 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+            {
+               "Position": { "X": 58, "Y": 104 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+            {
+               "Position": { "X": 9, "Y": 41 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= MoonlightJellies": true,	
+			"Season": "Summer",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the south of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_S",
+		"MapTiles": [
+            {
+               "Position": { "X": 8, "Y": 51 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 9, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 36, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+            {
+               "Position": { "X": 12, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= MoonlightJellies": true,	
+			"Season": "Summer",
+			"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the southeast of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": { "X": 38, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 25, "Y": 38 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
+               },
+            },
+            {
+               "Position": { "X": 25, "Y": 36 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+            {
+               "Position": { "X": 28, "Y": 52 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
+               },
+            },
+            {
+               "Position": { "X": 26, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.MoonlightJellyGreen_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= MoonlightJellies": true,	
+			"Season": "Summer",
+			"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	]
+}

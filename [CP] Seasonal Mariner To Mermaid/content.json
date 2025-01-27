@@ -1,0 +1,104 @@
+// This code was created by JennaJuffuffles. All rights are reserved. If you want to suggest changes, please reach out to me via Nexus or Discord.
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "Enabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable to replace the Old Mariner with a seasonal mermaid visitor."
+    }
+  },
+  "DynamicTokens": [
+    {
+      "Name": "Pendant",
+      "Value": "Default"
+    }
+  ],
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.mermaid.load.mariner.rain",
+      "Action": "EditImage",
+      "Target": "Characters/Mariner",
+      "FromFile": "assets/{{Season}}_Rain.png"
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.load.mariner.storm",
+      "Action": "EditImage",
+      "Target": "Characters/Mariner",
+      "FromFile": "assets/{{Season}}_Rain.png",
+      "Priority": "Default + 1",
+      "When": {
+        "Enabled": "true",
+        "Weather": "Storm",
+        "HasMod: |contains=DolphINaF.MermaidMariner": false
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.load.mariner.greenrain",
+      "Action": "EditImage",
+      "Target": "Characters/Mariner",
+      "Priority": "Default + 1",
+      "FromFile": "assets/{{Season}}_GreenRain.png",
+      "When": {
+        "Enabled": "true",
+        "Weather": "GreenRain"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.seasonal.rain",
+      "Action": "EditData",
+      "Target": "Strings/Locations",
+      "Entries": {
+        "Beach_Mariner_PlayerMarried": "{{i18n:{{Season}}.Rain.married}}",
+        "Beach_Mariner_PlayerHasItem": "{{i18n:{{Season}}.Rain.hasItem}}",
+        "Beach_Mariner_PlayerNotUpgradedHouse": "{{i18n:{{Season}}.Rain.notUpgradedHouse}}",
+        "Beach_Mariner_PlayerBuyItem_Question": "{{i18n:{{Season}}.Rain.buyItemQuestion}}",
+        "Beach_Mariner_PlayerNoRelationship": "{{i18n:{{Season}}.Rain.noRelationship}}"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.seasonal.storm",
+      "Action": "EditData",
+      "Priority": "Default + 1",
+      "Target": "Strings/Locations",
+      "Entries": {
+        "Beach_Mariner_PlayerMarried": "{{i18n:{{Season}}.Rain.married}}",
+        "Beach_Mariner_PlayerHasItem": "{{i18n:{{Season}}.Rain.hasItem}}",
+        "Beach_Mariner_PlayerNotUpgradedHouse": "{{i18n:{{Season}}.Rain.notUpgradedHouse}}",
+        "Beach_Mariner_PlayerBuyItem_Question": "{{i18n:{{Season}}.Rain.buyItemQuestion}}",
+        "Beach_Mariner_PlayerNoRelationship": "{{i18n:{{Season}}.Rain.noRelationship}}"
+      },
+      "When": {
+        "Enabled": "true",
+        "Weather": "Storm",
+        "HasMod: |contains=DolphINaF.MermaidMariner": false
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.seasonal.greenrain",
+      "Action": "EditData",
+      "Priority": "Default + 1",
+      "Target": "Strings/Locations",
+      "Entries": {
+        "Beach_Mariner_PlayerMarried": "{{i18n:{{Season}}.GreenRain.married}}",
+        "Beach_Mariner_PlayerHasItem": "{{i18n:{{Season}}.GreenRain.hasItem}}",
+        "Beach_Mariner_PlayerNotUpgradedHouse": "{{i18n:{{Season}}.GreenRain.notUpgradedHouse}}",
+        "Beach_Mariner_PlayerBuyItem_Question": "{{i18n:{{Season}}.GreenRain.buyItemQuestion}}",
+        "Beach_Mariner_PlayerNoRelationship": "{{i18n:{{Season}}.GreenRain.noRelationship}}"
+      },
+      "When": {
+        "Enabled": "true",
+        "Weather": "GreenRain"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.includes.portraits",
+      "Action": "Include",
+      "FromFile": "assets/portrait/include.json",
+      "When": {
+        "HasMod": "DolphINaF.VendorPortraits",
+        "Enabled": "true"
+      }
+    }
+  ]
+}

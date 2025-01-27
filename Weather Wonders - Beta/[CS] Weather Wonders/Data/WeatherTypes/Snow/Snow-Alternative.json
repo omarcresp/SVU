@@ -1,0 +1,41 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Snow Weather (Alternative)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Snow": {
+          "Id": "Snow",
+          "Condition": "!CS_LOCATION_IGNORE_DEBRIS_WEATHER Here",
+          "DisplayName": "{{i18n: Weather.Snow}}",
+          "Forecast": "{{i18n: Weather.Snow.Forecast}}",
+          "TVTexture": "LooseSprites/Cursors",
+          "TVSource": {
+            "X": 465,
+            "Y": 346
+          },
+          "IsSnowing": true,
+          "UseNightTiles": false,
+          "SpawnCritters": true,
+          "AmbientColor": null,
+          "LightingTint": null,
+          "PostLightingTint": null,
+          "Layers": [
+            {
+              "Id": "Debris",
+              "Type": "Debris",
+              "Group": "Debris",
+              "MinCount": 176,
+              "MaxCount": 224,
+              "Scale": 3,
+              "CanBlow": false,
+              "UseSeasonal": 3,
+              "TargetMapType": "Outdoors"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

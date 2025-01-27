@@ -1,0 +1,203 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_DwarvenStill": {
+                    "Name": "Dwarven Still",
+                    "DisplayName": "{{i18n:DwarvenStill.DisplayName}}",
+                    "Description": "{{i18n:DwarvenStill.Description}}",
+                    "Price": 0,
+                    "Fragility": 0,
+                    "CanBePlacedIndoors": true,
+                    "CanBePlacedOutdoors": true,
+                    "IsLamp": false,
+                    "Texture": "Mods/DwarvenExpansion/BigCraftablesSpritesheet",
+                    "SpriteIndex": 8
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "Dwarven Still": "335 5 388 5 338 3/Home/{{ModId}}_DwarvenStill/true/Mining 6/"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Dwarf",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_DwarvenStill": {
+                    "ID": "{{ModId}}_DwarvenStill",
+                    "ItemId": "(BC){{ModId}}_DwarvenStill",
+                    "Condition": "PLAYER_MINING_LEVEL Current 6",
+                    "Price": "2000",
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Objects",
+            "Entries": {
+                "{{ModId}}_Infused_Spirits_Object_Display_Name": "{{i18n:DwarvenStill.Output.Infused_Dwarven_Spirits.ObjectDisplayName}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_DwarvenStill": {
+                    "OutputRules": [
+                        {
+                            "Id": "Dwarven_Spirits",
+                            "Triggers": [
+                                {
+                                    "Id": "Ore_Dust",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredTags": [
+                                        "{{ModId}}_oredust"
+                                    ],
+                                    "RequiredCount": 1
+                                },
+                                {
+                                    "Id": "Ore_Dust",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredTags": [
+                                        "{{ModId}}_gemdust"
+                                    ],
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Dwarven_Spirits",
+                                    "ItemId": "{{ModId}}_Drinks_DwarvenSpirits",
+                                    "Quality": "0",
+                                    "CopyPrice": true,
+                                    "Condition": "ITEM_CONTEXT_TAG  Input {{ModId}}_oredust",
+                                    "PriceModifiers": [
+                                        {
+                                            "ID": "increase_base_for_carrot_mash",
+                                            "Modification": "Add",
+                                            "Amount": 25
+                                        },
+                                        {
+                                            "ID": "multiply",
+                                            "Modification": "Multiply",
+                                            "Amount": 1.25
+                                        }
+                                    ],
+                                    "QualityModifiers": [
+                                        {
+                                            "ID": "iridium_quality",
+                                            "Modification": "Set",
+                                            "Amount": 4,
+                                            "Condition": "ITEM_ID Input {{ModId}}_MineralDust_IridiumDust"
+                                        },
+                                        {
+                                            "ID": "gold_quality",
+                                            "Modification": "Set",
+                                            "Amount": 2,
+                                            "Condition": "ITEM_ID Input {{ModId}}_MineralDust_GoldDust"
+                                        },
+                                        {
+                                            "ID": "silver_quality",
+                                            "Modification": "Set",
+                                            "Amount": 1,
+                                            "Condition": "ITEM_ID Input {{ModId}}_MineralDust_IronDust"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "Infused_Dwarven_Spirits",
+                                    "ItemId": "{{ModId}}_Drinks_InfusedSpirits",
+                                    "ObjectDisplayName": "[LocalizedText Strings/Objects:{{ModId}}_Infused_Spirits_Object_Display_Name %PRESERVED_DISPLAY_NAME Spirits]",
+                                    "ObjectInternalName": "{0} Infused Spirits",
+                                    "Quality": "0",
+                                    "CopyPrice": true,
+                                    "PreserveId": "DROP_IN",
+                                    "Condition": "ITEM_CONTEXT_TAG  Input {{ModId}}_gemdust",
+                                    "PriceModifiers": [
+                                        {
+                                            "ID": "increase_base_for_carrot_mash",
+                                            "Modification": "Add",
+                                            "Amount": 25
+                                        },
+                                        {
+                                            "ID": "multiply",
+                                            "Modification": "Multiply",
+                                            "Amount": 1.50
+                                        }
+                                    ],
+                                    "QualityModifiers": [
+                                        {
+                                            "ID": "iridium_quality",
+                                            "Modification": "Set",
+                                            "Amount": 4,
+                                            "Condition": "ITEM_CONTEXT_TAG Input {{ModId}}_gemquality_perfect"
+                                        },
+                                        {
+                                            "ID": "gold_quality",
+                                            "Modification": "Set",
+                                            "Amount": 2,
+                                            "Condition": "ITEM_CONTEXT_TAG Input {{ModId}}_gemquality_high"
+                                        },
+                                        {
+                                            "ID": "silver_quality",
+                                            "Modification": "Set",
+                                            "Amount": 1,
+                                            "Condition": "ITEM_CONTEXT_TAG Input {{ModId}}_gemquality_medium"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "UseFirstValidOutput": true,
+                            "DaysUntilReady": "7"
+                        }
+                    ],
+                    "AdditionalConsumedItems": [
+                        {
+                            "ItemId": "{{ModId}}_CarrotMash"
+                        }
+                    ],
+                    "LoadEffects": [
+                        {
+                            "Sounds": [
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 30
+                                }
+                            ],
+                            "Frames": [
+                                0,
+                                1
+                            ]
+                        }
+                    ],
+                    "WorkingEffects": [
+                        {
+                            "Frames": [
+                                0,
+                                1
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 1,
+                    "WobbleWhileWorking": false
+                }
+            }
+        }
+    ]
+}

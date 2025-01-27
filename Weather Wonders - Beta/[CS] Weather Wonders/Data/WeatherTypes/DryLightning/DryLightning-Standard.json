@@ -1,0 +1,41 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Dry Lightning Weather (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_DryLightning": {
+          "Id": "Kana.WeatherWonders_DryLightning",
+          "DisplayName": "{{i18n: Weather.DryLightning}}",
+          "Forecast": "{{i18n: Weather.DryLightning.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "IconSource": {
+            "X": 24,
+            "Y": 0
+          },
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 52
+          },
+          "IsLightning": true,
+          "SpawnCritters": true,
+          "SpawnClouds": true,
+          "Layers": [],
+          "Lighting": [
+            {
+              "Id": "DryLightningTint2",
+              "AmbientColor": "255, 200, 80",
+              "AmbientOutdoorOpacity": null,
+              "LightingTint": "orangered",
+              "LightingTintOpacity": 0.61,
+              "PostLightingTint": "64, 64, 64",
+              "PostLightingTintOpacity": 0.3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

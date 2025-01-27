@@ -1,0 +1,117 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Deluge Weather (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_Deluge": {
+          "Id": "Kana.WeatherWonders_Deluge",
+          "DisplayName": "{{i18n: Weather.Deluge}}",
+          "Forecast": "{{i18n: Weather.Deluge.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "IconSource": {
+            "X": 72,
+            "Y": 0
+          },
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 65
+          },
+          "MusicOverride": "Kana.WeatherWonders_DelugeSound",
+          "MusicFrequencyOutside": 100,
+          "MusicFrequencyInside": 15,
+          "IsLightning": true,
+          "IsRaining": true,
+          "IsDebrisWeather": true,
+          "UseNightTiles": true,
+          "SpawnFrogs": true,
+          "SpawnCritters": false,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "DelugeRainParticles1",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "TileSheets/rain",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-32, 64",
+              "Count": 140,
+              "Color": null,
+              "Opacity": 1,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "DelugeRainParticles2",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "TileSheets/rain",
+              "Source": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 5,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-32, 64",
+              "Count": 140,
+              "Color": null,
+              "Opacity": 1,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "DelugeWindBlown1",
+              "Type": "Rain",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/WindBlown",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 32,
+                "Height": 32
+              },
+              "Frames": 16,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "16, 0",
+              "Count": 16,
+              "Color": "White",
+              "Opacity": 0.3,
+              "Vibrancy": 2,
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": [
+            {
+              "Id": "DelugeTint1",
+              "AmbientColor": "255, 200, 80",
+              "AmbientOutdoorOpacity": null,
+              "LightingTint": "orangered",
+              "LightingTintOpacity": 0.6,
+              "PostLightingTint": "darkblue",
+              "PostLightingTintOpacity": 0.35
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

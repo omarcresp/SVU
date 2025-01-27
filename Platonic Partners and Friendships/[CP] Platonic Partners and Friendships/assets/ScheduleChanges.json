@@ -1,0 +1,84 @@
+{
+    "Changes": [
+        //Schedule changes: Platonically befriending Haley no longer stops Alex from visiting her; befriending Leah no longer stops Elliot from meeting her at the saloon; or Abigail or Sebastian no longer stops them from hanging out with each other 
+        //Hangout only stops if you're both romantic and at 6+ hearts with one of the pair
+        //Platonically partnering Haley, Leah, or Sebastian lets their counterparts' schedules change as in vanilla, since your partner wouldn't be able to join the hangout
+        //Abigail and Sebastian:
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Abigail",
+            "Entries":
+            {
+                "11": "1000 SebastianRoom 5 4 2 abigail_sit_down/1700 SeedShop 1 9 3 abigail_sleep",
+                "25": "GOTO 11",
+            },
+            "When":
+            {
+		"Sebastian |contains=FullyPlatonic, SexWithoutRomance": "true",
+                "Relationship:Sebastian |contains=Married": "false",
+                "EnableScheduleChanges": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Abigail",
+            "Entries":
+            {
+              "11_6": "1000 SebastianRoom 5 4 2 abigail_sit_down/1700 SeedShop 1 9 3 abigail_sleep",
+              "25_6": "GOTO 11_6",
+            },
+            "When":
+            {
+		"Abigail |contains=FullyPlatonic, SexWithoutRomance": "true",
+		"Sebastian |contains=FullyPlatonic, SexWithoutRomance": "true",
+                "Relationship:Sebastian |contains=Married": "false",
+                "EnableScheduleChanges": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Abigail",
+            "Entries":
+            {
+              "11_6": "NOT friendship Sebastian 6/1000 SebastianRoom 5 4 2 abigail_sit_down/1700 SeedShop 1 9 3 abigail_sleep",
+              "25_6": "NOT friendship Sebastian 6/GOTO 11_6",
+            },
+            "When":
+            {
+		"Abigail |contains=FullyPlatonic, SexWithoutRomance": "true",
+		"Sebastian |contains=FullyPlatonic, SexWithoutRomance": "false",
+                "EnableScheduleChanges": "true"
+            },
+        },
+	//Alex and Haley:
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Alex",
+            "Entries":
+            {
+               "Wed": "800 Town 64 64 2 alex_football/1200 HaleyHouse 7 23 3 alex_sit_left/1630 Town 50 68 1/1840 JoshHouse 8 19 2/2000 JoshHouse 17 5 0/2200 JoshHouse 21 4 1 alex_sleep",
+            },
+            "When":
+            {
+		"Haley |contains=FullyPlatonic, SexWithoutRomance": "true",
+                "Relationship:Haley |contains=Married": "false",
+                "EnableScheduleChanges": "true"
+            },
+        },
+        //Elliott and Leah:
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Elliott",
+            "Entries":
+            {
+		"Fri": "800 ElliottHouse 1 5 0/1100 Beach 24 32 3 square_1_5_3/1700 Saloon 4 19 2 elliott_drink/2340 ElliottHouse 13 4 1 elliott_sleep",
+            },
+            "When":
+            {
+		"Leah |contains=FullyPlatonic, SexWithoutRomance": "true",
+                "Relationship:Leah |contains=Married": "false",
+                "EnableScheduleChanges": "true"
+            },
+        },
+    ]
+}

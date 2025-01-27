@@ -1,0 +1,84 @@
+{
+  "Changes": [
+    {
+      "LogName": "Mariam Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/MariamFortinVMV, Characters/MariamFortinVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Mariam Portraits and Sprites",
+      "Action": "EditImage",
+      "Target": "Portraits/MariamFortinVMV",
+      "FromFile": "assets/npcs/{{Target}}Extra/{{season}}.png",
+      "When": {
+        "HasFile:assets/npcs/{{Target}}Extra/{{season}}.png": "true"
+      }
+    },
+    {
+      "LogName": "Mariam Fortin Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "MariamFortinVMV": {
+          "DisplayName": "{{i18n: MariamDisplayName}}",
+          "BirthSeason": "summer",
+          "BirthDay": 20,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Negative",
+          "CanBeRomanced": false,
+          "SocialTab": "UnknownUntilMet",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "FriendsAndFamily": {
+            "MaddyPellegrinVMV": "",
+          },
+          "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Clearing01Mariam0H, !PLAYER_HAS_CONVERSATION_TOPIC Host Lumisteria.MtVapius_MariamEncounter",
+		  "CanVisitIsland": "!DAY_OF_WEEK Tuesday, !DAY_OF_WEEK Saturday",
+          "SpawnIfMissing": true,
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_Lodge",
+					"Tile": { "X": 24, "Y": 11 },
+					"Direction": "down"
+				}
+			],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/MariamFortinVMV/Schedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "MariamFortinVMV": "{{i18n: MariamGiftLoved{{GiftAnswerMariam}}}}/275 109 562 162 Lumisteria.MtVapius_StellarGooseEgg Lumisteria.MtVapius_Treasures_ArtifactTrove GoldenMysteryBox MysteryBox/{{i18n: MariamGiftLiked{{GiftAnswerMariam}}}}/351/{{i18n: MariamGiftDislike{{GiftAnswerMariam}}}}/Lumisteria.MtVapius_Cooking_JamPie/{{i18n: MariamGiftHate{{GiftAnswerMariam}}}}/344/{{i18n: MariamGiftNeutral{{GiftAnswerMariam}}}}/Lumisteria.MtVapius_ArtisanGoods_MyriadinTea/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MariamFortinVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/MariamFortinVMV/Dialogue.json"
+    },
+  ]
+}

@@ -1,0 +1,33 @@
+{
+	"Changes":[
+		{
+			"LogName": "Volcano Dwarf",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "VolcanoShop", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/VolcanoDwarf_Default"},
+		},
+// Dwarf Portrait Replacement Support
+		{
+			"LogName": "Dwarf Portrait Replacement",
+			"Action": "EditImage",
+			"Target": "Portraits/VolcanoDwarf_Default",
+			"FromFile": "assets/Portraits/LavenderSkelly/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasMod": "LavenderSkelly.DwarfPortraitReplacement",
+				"LavenderSkellyDwarf": true,
+			}
+		},
+// The Last Smoluanu Support		
+		{
+			"LogName": "The Last Smoluanu",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "VolcanoShop", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/CinderDwarf"},
+			"When": {
+				"HasMod |contains=Lemurkat.Dwarf.cp": true
+			}
+		},
+	],
+}

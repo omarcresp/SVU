@@ -1,0 +1,139 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_GemPolisher": {
+                    "Name": "Dwarven Gem Polisher",
+                    "DisplayName": "{{i18n:GemPolisher.DisplayName}}",
+                    "Description": "{{i18n:GemPolisher.Description}}",
+                    "Price": 0,
+                    "Fragility": 0,
+                    "CanBePlacedIndoors": true,
+                    "CanBePlacedOutdoors": true,
+                    "IsLamp": false,
+                    "Texture": "Mods/DwarvenExpansion/BigCraftablesSpritesheet",
+                    "SpriteIndex": 2
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "Dwarven Gem Polisher": "390 10 334 2/Home/{{ModId}}_GemPolisher/true/Mining 2/"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Dwarf",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_GemPolisher": {
+                    "ID": "{{ModId}}_GemPolisher",
+                    "ItemId": "(BC){{ModId}}_GemPolisher",
+                    "Condition": "PLAYER_MINING_LEVEL Current 2",
+                    "Price": "500",
+                    "AvailableStock": 2,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_GemPolisher": {
+                    "OutputRules": [
+                        {
+                            "Id": "Basic_Gem",
+                            "Triggers": [
+                                {
+                                    "Id": "Gem",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredTags": [
+                                        "category_gem",
+                                        "!{{ModId}}_jewelry"
+                                    ],
+                                    "Condition": "ITEM_QUALITY Input 0 1"
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Gold_Output",
+                                    "ItemId": "DROP_IN_ID",
+                                    "Quality": "2",
+                                    "Condition": "ITEM_QUALITY Input 1 1"
+                                },
+                                {
+                                    "Id": "Silver_Output",
+                                    "ItemId": "DROP_IN_ID",
+                                    "Quality": "1",
+                                    "Condition": "ITEM_QUALITY Input 0 0"
+                                }
+                            ],
+                            "UseFirstValidOutput": true,
+                            "MinutesUntilReady": "360"
+                        },
+                        {
+                            "Id": "Iridium_Gem",
+                            "Triggers": [
+                                {
+                                    "Id": "Gem",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredTags": [
+                                        "category_gem",
+                                        "!{{ModId}}_jewelry"
+                                    ],
+                                    "Condition": "ITEM_QUALITY Input 2 2"
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "Iridium_Output",
+                                    "ItemId": "DROP_IN_ID",
+                                    "Quality": "4",
+                                    "Condition": "ITEM_QUALITY Input 2 2"
+                                }
+                            ],
+                            "UseFirstValidOutput": true,
+                            "MinutesUntilReady": "720"
+                        }
+                    ],
+                    "LoadEffects": [
+                        {
+                            "Sounds": [
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 50
+                                }
+                            ],
+                            "Frames": [
+                                0,
+                                1
+                            ]
+                        }
+                    ],
+                    "WorkingEffects": [
+                        {
+                            "Frames": [
+                                0,
+                                1
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 1,
+                    "WobbleWhileWorking": false
+                }
+            }
+        }
+    ]
+}

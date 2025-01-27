@@ -1,0 +1,235 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Sebastian_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)84": "{{i18n: CFE_Sebastian_FrozenTear}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Sebastian}}' = 'true' OR ('{{CFE_Sebastian}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Sebastian_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Sebastian_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Sebastian_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Sebastian_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Sebastian_PrismaticShard}}"
+      },
+      "When": { "Query: '{{CFE_Sebastian}}' = 'true' OR ('{{CFE_Sebastian}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Sebastian_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Sebastian": "{{i18n: CFE_Sebastian_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Sebastian}}' = 'true' OR ('{{CFE_Sebastian}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Sebastian_Billiards",
+      "Action": "EditData",
+      "Target": "Strings/Schedules/Sebastian",
+      "Entries": {
+        "Fri.000": "{{i18n: CFE_Sebastian_Billiards_{{random: 1,2}}}}",
+        "marriage_Fri.001": "{{i18n: CFE_Sebastian_Married_Billiards_{{random: 1,2}}}}"
+      },
+      "When": { "Query: '{{CFE_Sebastian}}' = 'true' OR ('{{CFE_Sebastian}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Sebastian_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",
+      "Entries": {
+        //Special Dialogue
+
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Sebastian_spring1y2}}",
+        "spring_12_1": "{{i18n: CFE_Sebastian_spring12}}",
+        "spring_12_2": "{{i18n: CFE_Sebastian_spring12}}",
+        "spring_23_1": "{{i18n: CFE_Sebastian_spring23}}",
+        "spring_23_2": "{{i18n: CFE_Sebastian_spring23}}",
+
+        "summer_10_1": "{{i18n: CFE_Sebastian_summer10}}",
+        "summer_10_2": "{{i18n: CFE_Sebastian_summer10}}",
+        "summer_27_1": "{{i18n: CFE_Sebastian_summer27}}",
+        "summer_27_2": "{{i18n: CFE_Sebastian_summer27}}",
+
+        "fall_20_1": "{{i18n: CFE_Sebastian_fall20}}",
+        "fall_20_2": "{{i18n: CFE_Sebastian_fall20}}",
+        "fall_26_1": "{{i18n: CFE_Sebastian_fall26}}",
+        "fall_26_2": "{{i18n: CFE_Sebastian_fall26}}",
+
+        "winter_24_1": "{{i18n: CFE_Sebastian_winter24}}",
+        "winter_24_2": "{{i18n: CFE_Sebastian_winter24}}",
+        "winter_28_1": "{{i18n: CFE_Sebastian_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Sebastian_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Sebastian_summerMon10}}",
+        "summer_Mon4": "{{i18n: CFE_Sebastian_summerMon4}}",
+        "summer_Mon2": "{{i18n: CFE_Sebastian_summerMon2}}",
+        "summer_Tue6": "{{i18n: CFE_Sebastian_summerTue6}}",
+        "summer_Wed8": "{{i18n: CFE_Sebastian_summerWed8}}",
+        "summer_Wed4": "{{i18n: CFE_Sebastian_summerWed4}}",
+        "summer_Thu8": "{{i18n: CFE_Sebastian_summerThu8}}",
+        "summer_Thu6": "{{i18n: CFE_Sebastian_summerThu6}}",
+        "summer_Thu2": "{{i18n: CFE_Sebastian_summerThu2}}",
+        "summer_Fri4": "{{i18n: CFE_Sebastian_summerFri4}}",
+        "summer_Fri2": "{{i18n: CFE_Sebastian_summerFri2}}",
+        "summer_Sat10": "{{i18n: CFE_Sebastian_summerSat10}}",
+        "summer_Sat6": "{{i18n: CFE_Sebastian_summerSat6}}",
+        "summer_Sat4": "{{i18n: CFE_Sebastian_summerSat4}}",
+        "summer_Sat2": "{{i18n: CFE_Sebastian_summerSat2}}",
+        "summer_Sun8": "{{i18n: CFE_Sebastian_summerSun8}}",
+        "summer_Sun6": "{{i18n: CFE_Sebastian_summerSun6}}",
+
+        "fall_Mon8": "{{i18n: CFE_Sebastian_fallMon8}}",
+        "fall_Mon6_inlaw_Maru": "{{i18n: CFE_Sebastian_fallMon6inlawMaru}}",
+        "fall_Mon6": "{{i18n: CFE_Sebastian_fallMon6}}",
+        "fall_Tue8": "{{i18n: CFE_Sebastian_fallTue8}}",
+        "fall_Tue4": "{{i18n: CFE_Sebastian_fallTue4}}",
+        "fall_Tue2": "{{i18n: CFE_Sebastian_fallTue2}}",
+        "fall_Wed6": "{{i18n: CFE_Sebastian_fallWed6}}",
+        "fall_Wed4": "{{i18n: CFE_Sebastian_fallWed4}}",
+        "fall_Thu8": "{{i18n: CFE_Sebastian_fallThu8}}",
+        "fall_Thu6": "{{i18n: CFE_Sebastian_fallThu6}}",
+        "fall_Thu4": "{{i18n: CFE_Sebastian_fallThu4}}",
+        "fall_Sat10": "{{i18n: CFE_Sebastian_fallSat10}}",
+        "fall_Sat8": "{{i18n: CFE_Sebastian_fallSat8{{GenderNeutralCompat}} |GenericNoun={{Random:{{GNMTGenericNoun}}}}}}",
+        "fall_Sat6": "{{i18n: CFE_Sebastian_fallSat6}}",
+        "fall_Sun10": "{{i18n: CFE_Sebastian_fallSun10}}",
+        "fall_Sun6": "{{i18n: CFE_Sebastian_fallSun6}}",
+        "fall_Sun4": "{{i18n: CFE_Sebastian_fallSun4}}",
+
+        "winter_Mon10": "{{i18n: CFE_Sebastian_winterMon10}}",
+        "winter_Mon6": "{{i18n: CFE_Sebastian_winterMon6}}",
+        "winter_Tue8": "{{i18n: CFE_Sebastian_winterTue8}}",
+        "winter_Tue2": "{{i18n: CFE_Sebastian_winterTue2}}",
+        "winter_Wed10": "{{i18n: CFE_Sebastian_winterWed10}}",
+        "winter_Wed6": "{{i18n: CFE_Sebastian_winterWed6}}",
+        "winter_Thu10": "{{i18n: CFE_Sebastian_winterThu10}}",
+        "winter_Thu4": "{{i18n: CFE_Sebastian_winterThu4}}",
+        "winter_Fri6": "{{i18n: CFE_Sebastian_winterFri6}}",
+        "winter_Fri4": "{{i18n: CFE_Sebastian_winterFri4}}",
+        "winter_Sat10": "{{i18n: CFE_Sebastian_winterSat10}}",
+        "winter_Sat8": "{{i18n: CFE_Sebastian_winterSat8}}",
+        "winter_Sat4": "{{i18n: CFE_Sebastian_winterSat4}}",
+        "winter_Sun6_inlaw_Maru": "{{i18n: CFE_Sebastian_winterSun6inlawMaru}}",
+        "winter_Sun4": "{{i18n: CFE_Sebastian_winterSun4}}",
+
+        "Mon10": "{{i18n: CFE_Sebastian_Mon10}}",
+        "Mon8": "{{i18n: CFE_Sebastian_Mon8}}",
+        "Tue10": "{{i18n: CFE_Sebastian_Tue10}}",
+        "Tue4": "{{i18n: CFE_Sebastian_Tue4}}",
+        "Wed4": "{{i18n: CFE_Sebastian_Wed4}}",
+        "Thu4_inlaw_Maru": "{{i18n: CFE_Sebastian_Thu4inlawMaru}}",
+        "Fri8": "{{i18n: CFE_Sebastian_Fri8}}",
+        "Sat10": "{{i18n: CFE_Sebastian_Sat10}}",
+        "Sat8": "{{i18n: CFE_Sebastian_Sat8}}",
+        "Sat6": "{{i18n: CFE_Sebastian_Sat6}}",
+        "Sat4": "{{i18n: CFE_Sebastian_Sat4}}",
+        "Sun8": "{{i18n: CFE_Sebastian_Sun8}}",
+        "Sun6": "{{i18n: CFE_Sebastian_Sun6}}",
+
+        //Generic Weekday Dialogue
+        "summer_Thu": "{{i18n: CFE_Sebastian_summerThu}}"
+      },
+      "When": { "Query: '{{CFE_Sebastian}}' = 'true' OR ('{{CFE_Sebastian}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Sebastian_Married_spouseRoom",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Sebastian": "{{i18n: CFE_Sebastian_Married_spouseRoom_{{random: 1,2,3,4,5}}}}"
+      },
+      "When": { "Query: '{{CFE_Sebastian}}' = 'true' OR ('{{CFE_Sebastian}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Sebastian_Married",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueSebastian",
+      "Entries": {
+        //Weather Specific Dialogue
+        "Rainy_Day_0": "{{i18n: CFE_Sebastian_Married_RainyDay_{{Random: 1,2}}}}",
+        "Rainy_Day_1": "{{i18n: CFE_Sebastian_Married_RainyDay_{{Random: 3,4}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Sebastian_Married_RainyDay_{{Random: 5,6}}}}",
+        "Rainy_Day_3": "{{i18n: CFE_Sebastian_Married_RainyDay_{{Random: 7,8}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Sebastian_Married_RainyDay_{{Random: 9,10}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Sebastian_Married_RainyNight_1}}",
+        "Rainy_Night_1": "{{i18n: CFE_Sebastian_Married_RainyNight_{{Random: 2,3}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Sebastian_Married_RainyNight_{{Random: 4,5}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Sebastian_Married_RainyNight_{{Random: 6,7}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Sebastian_Married_RainyNight_{{Random: 8,9}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Sebastian_Married_IndoorDay_{{Random: 1,2,3}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Sebastian_Married_IndoorDay_{{Random: 4,5,6}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Sebastian_Married_IndoorDay_{{Random: 7,8,9}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Sebastian_Married_IndoorDay_{{Random: 10,11,12}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Sebastian_Married_IndoorDay_{{Random: 13,14,15}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Sebastian_Married_IndoorNight_{{Random: 1,2}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Sebastian_Married_IndoorNight_{{Random: 3,4}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Sebastian_Married_IndoorNight_{{Random: 5,6}}}}",
+        "Indoor_Night_3": "{{i18n: CFE_Sebastian_Married_IndoorNight_{{Random: 7,8}}}}",
+        "Indoor_Night_4": "{{i18n: CFE_Sebastian_Married_IndoorNight_{{Random: 9,10}}}}",
+
+        //Location Specific Dialogue
+        "funLeave_Sebastian": "{{i18n: CFE_Sebastian_Married_funLeave_{{Random: 1,2}}}}",
+        "funReturn_Sebastian": "{{i18n: CFE_Sebastian_Married_funLeave_{{Random: 1,2}}}}",
+
+        "OneKid_0": "{{i18n: CFE_Sebastian_Married_OneKid_{{Random: 1,2}}}}",
+        "OneKid_1": "{{i18n: CFE_Sebastian_Married_OneKid_{{Random: 3,4}}}}",
+        "OneKid_2": "{{i18n: CFE_Sebastian_Married_OneKid_{{Random: 5,6}}}}",
+        "OneKid_3": "{{i18n: CFE_Sebastian_Married_OneKid_{{Random: 7,8}}}}",
+        "TwoKids_0": "{{i18n: CFE_Sebastian_Married_TwoKids_{{Random: 1,2}}}}",
+        "TwoKids_1": "{{i18n: CFE_Sebastian_Married_TwoKids_{{Random: 3,4}}}}",
+        "TwoKids_2": "{{i18n: CFE_Sebastian_Married_TwoKids_{{Random: 5,6}}}}",
+        "TwoKids_3": "{{i18n: CFE_Sebastian_Married_TwoKids_{{Random: 7,8}}}}",
+
+        "Outdoor_0": "{{i18n: CFE_Sebastian_Married_Outdoor_1}}",
+        "Outdoor_1": "{{i18n: CFE_Sebastian_Married_Outdoor_{{Random: 2,3}}}}",
+        "Outdoor_2": "{{i18n: CFE_Sebastian_Married_Outdoor_{{Random: 4,5}}}}",
+        "Outdoor_3": "{{i18n: CFE_Sebastian_Married_Outdoor_{{Random: 6,7}}}}",
+        "Outdoor_4": "{{i18n: CFE_Sebastian_Married_Outdoor_{{Random: 8,9}}}}",
+
+        "patio_Sebastian": "{{i18n: CFE_Sebastian_Married_patio_{{Random: 1,2,3}}}}",
+
+        //Date Specific Dialogue
+        "spring_8": "{{i18n: CFE_Sebastian_Married_spring8}}",
+        "spring_16": "{{i18n: CFE_Sebastian_Married_spring16}}",
+        "spring_26": "{{i18n: CFE_Sebastian_Married_spring26}}",
+        "spring_28": "{{i18n: CFE_Sebastian_Married_spring28}}",
+
+        "summer_5": "{{i18n: CFE_Sebastian_Married_summer5}}",
+        "summer_15": "{{i18n: CFE_Sebastian_Married_summer15}}",
+        "summer_19": "{{i18n: CFE_Sebastian_Married_summer19}}",
+        "summer_22": "{{i18n: CFE_Sebastian_Married_summer22}}",
+
+        "fall_6": "{{i18n: CFE_Sebastian_Married_fall6}}",
+        "fall_17": "{{i18n: CFE_Sebastian_Married_fall17}}",
+        "fall_22": "{{i18n: CFE_Sebastian_Married_fall22}}",
+
+        "winter_3": "{{i18n: CFE_Sebastian_Married_winter3}}",
+        "winter_12": "{{i18n: CFE_Sebastian_Married_winter12}}",
+        "winter_19": "{{i18n: CFE_Sebastian_Married_winter19}}",
+        "winter_24": "{{i18n: CFE_Sebastian_Married_winter24}}",
+        "winter_26": "{{i18n: CFE_Sebastian_Married_winter26}}"
+
+        //Seasonal Dialogue
+        //Affection Specific Dialogue
+      },
+      "When": { "Query: '{{CFE_Sebastian}}' = 'true' OR ('{{CFE_Sebastian}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

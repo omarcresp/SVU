@@ -1,0 +1,85 @@
+{
+  "Changes": [
+    // custom fruit tree
+    // add fruit + sapling items
+    {
+      "LogName": "Load Other Items asset",
+      "Action": "Load",
+      "Target": "Mods/MadDogBearFam/Sapling",
+      "FromFile": "Assets/MadDog.BearFam_Equipment.png"
+    },
+    // note: sapling must have an edibility under 0 (usually -300) to be plantable
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach": {
+          "Name": "MadDog.HashtagBearFam_FerskenPeach",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.FerskenPeach}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.FerskenPeach.Description}}",
+          "Type": "Fruit",
+          "Category": -79,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 169,
+          "Edibility": 23,
+          "IsDrink": false,
+
+          "Texture": "{{InternalAssetKey: assets/MadDog.BearFamObjects.png}}",
+          "SpriteIndex": 34,
+          "ContextTags": [
+            "color_pink",
+            "category_fruit"
+          ]
+        },
+        "MadDog.HashtagBearFam_FerskenPeachSapling": {
+          "Name": "MadDog.HashtagBearFam_FerskenPeachSapling",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.FerskenPeachSapling}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.FerskenPeachSapling.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Price": 1505,
+
+          "Texture": "Mods\\MadDogBearFam\\Sapling",
+          "SpriteIndex": 18
+        }
+      }
+    },
+
+    {
+      "LogName": "Tree Sprite",
+      "Action": "Load",
+      "Target": "Mods/MadDog.HashtagBearfam/MadDogFruitTrees",
+      "FromFile": "assets/MadDog.BearFamFruitTrees.png"
+    },
+
+    // add fruit tree
+    {
+      "Action": "EditData",
+      "Target": "Data/FruitTrees",
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeachSapling": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.FerskenPeachTree}}",
+          "Seasons": [ "summer", "fall" ],
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Fruit": [
+            {
+              "Id": "MadDog.HashtagBearFam_FerskenPeach",
+              "ItemId": "MadDog.HashtagBearFam_FerskenPeach",
+              "Seasons": [ "summer", "fall" ],
+              "Chance": 0.5,
+              "Condition": null,
+              "RandomItemId": null,
+              "MinStack": 0,
+              "MaxStack": 1,
+              "Quality": 1
+            }
+          ],
+          "Texture": "Mods\\MadDog.HashtagBearfam\\MadDogFruitTrees",
+          "TextureSpriteRow": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "Changes": [
+    /*Seeds*/
+    {
+      "LogName": "Mixed Seeds",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_MeadowMixedSeeds": {
+          "Name": "Meadow Mixed Seeds",
+          "DisplayName": "{{i18n: SereneMeadowMeadowMixedSeeds_Translated}}",
+          "Description": "{{i18n: SereneMeadowMeadowMixedSeeds_Description_Translated}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Price": 5,
+          "Texture": "Mods/{{ModID}}/Seeds",
+          "SpriteIndex": 25,
+          "ContextTags": [
+            "season_spring",
+            "season_summer",
+            "season_fall",
+            "season_winter",
+          ],
+          "CustomFields": {}
+        },
+      },
+    },
+    {
+      "LogName": "Crops",
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_MeadowMixedSeeds": {
+          "Seasons": [
+            "Spring",
+            "Summer",
+            "Fall",
+            "Winter"
+          ],
+          "DaysInPhase": [
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "RegrowDays": -1,
+          "HarvestItemId": "(O){{ModID}}_Cornflower",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 1,
+          "ExtraHarvestChance": 0.05,
+          "Texture": "Mods/{{ModID}}/Crops",
+          "SpriteIndex": 0,
+        },
+      },
+    },
+    {
+      "Action": "EditData",
+      "Target": "Mods/mistyspring.ItemExtensions/MixedSeeds",
+      "Entries": {
+        "{{ModID}}_MeadowMixedSeeds": [
+          {
+            "ItemId": "{{ModID}}_CornflowerSeeds",
+            "Weight": 10
+          },
+          {
+            "ItemId": "{{ModID}}_BorageSeeds",
+            "Weight": 10
+          },
+          {
+            "ItemId": "{{ModID}}_SnowdropSeeds",
+            "Weight": 10
+          },
+          {
+            "ItemId": "{{ModID}}_SpringBellsSeeds",
+            "Weight": 10
+          },
+          {
+            "ItemId": "{{ModID}}_CalendulaSeeds",
+            "Weight": 10
+          },
+          {
+            "ItemId": "{{ModID}}_WinterPansySeeds",
+            "Weight": 10
+          },
+          {
+            "ItemId": "{{ModID}}_SpringPansySeeds",
+            "Weight": 10
+          },
+          {
+            "ItemId": "{{ModID}}_WinterIrisBulb",
+            "Weight": 10
+          },
+          {
+            "ItemId": "{{ModID}}_SpringPansySeeds",
+            "Weight": 10
+          },
+          {
+            "ItemId": "{{ModID}}_BabyBooSquashSeeds",
+            "Weight": 5
+          },
+          {
+            "ItemId": "{{ModID}}_ForgetMeNotSeeds",
+            "Weight": 5
+          },
+          {
+            "ItemId": "{{ModID}}_ButterflyLavenderSeeds",
+            "Weight": 5
+          },
+          {
+            "ItemId": "{{ModID}}_HollyhockSeeds",
+            "Weight": 5
+          },
+          {
+            "ItemId": "{{ModID}}_IrisSeeds",
+            "Weight": 5
+          },
+          {
+            "ItemId": "{{ModID}}_FoxgloveSeeds",
+            "Weight": 5
+          },
+          {
+            "ItemId": "{{ModID}}_TallMallowSeeds",
+            "Weight": 5
+          },
+          {
+            "ItemId": "{{ModID}}_DahliaSeeds",
+            "Weight": 5
+          },
+          {
+            "ItemId": "{{ModID}}_BlueFlameSeeds",
+          },
+          {
+            "ItemId": "{{ModID}}_PurpleFlameSeeds",
+          },
+          {
+            "ItemId": "{{ModID}}_RomanescoCabbageSeeds",
+          },
+          {
+            "ItemId": "{{ModID}}_VoidLilySeeds",
+          },
+          {
+            "ItemId": "{{ModID}}_WillowherbSeeds",
+          },
+          {
+            "ItemId": "{{ModID}}_SpottedOrchisSeeds",
+          },
+          {
+            "ItemId": "{{ModID}}_GiantFernSeeds",
+          },
+        ],
+      }
+    },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_JasMixedSeedsTrigger": {
+                    "Id": "{{ModID}}_JasMixedSeedsTrigger",
+                    "Condition": "PLAYER_HEARTS Current Jas 2, SYNCED_RANDOM day lumisteria.chanceletter01 0.1",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current {{ModID}}_JasMixedSeedsMail"
+                },
+            }
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"{{ModID}}_JasMixedSeedsMail": "{{i18n: JasMixedSeedsMail_Translated}}%item id (O){{ModID}}_MeadowMixedSeeds 5 %%[#]{{i18n: JasMixedSeedsMail_Title_Translated}}",
+
+			},
+		},
+  ]
+}

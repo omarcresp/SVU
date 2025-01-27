@@ -1,0 +1,1063 @@
+{
+    "Changes": [
+        //Platonic edits to regular dialogue and custom fixed dialogue
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "divorced": "I thought we made a good team... I guess I was wrong.$s",
+                "Mon8": "You know, I used to want fame and fortune, but lately I've been starting to sing a different tune. In the end it's the humble little things that satisfy, don't you think?#$e#I'd still like to go pro, but it's not the most important thing in the world.",
+                "Fri8": "Hi @. You look sporty today.$h",
+                "Sat10": "I'm having a hard time focusing on exercise lately. Staying in shape is important to me, but there's so much else I want to see and do.#$e#I think it's all about finding a balance!$h",
+                "fall_Thu10": "@! Good to see you!$h",
+                "winter_Tue4": "Hey, @. Could you do me a favor?#$b#If you see Haley, tell her I'll be a little late. I want to run some errands for my grandma so she can stay out of the cold.",
+                "event_box3": "...Thanks, @. That actually does help. You've become my best friend in the whole town.#$b#I'm glad I know you. Is that embarrassing to say?$l",
+                "breakUp": "You're giving me wha...?$7#$b#*huff*... Well, you've made your choice. I'm not five, I'm not gonna beg you to be my friend.$a",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're a great friend!$h",
+                "SpouseStardrop": "My old coach hooked me up with that fruit!$h#$b#It's my way of saying thank you for being in my life. I'm so much happier and more secure about myself since I met you.#$b#I used to think that I unless I lived up to some impossible ideal, no one would care about or respect me.$s#$b#But you helped me see that those expectations were all in my own head.#$b#The people who matter won't think less of me if I'm not famous, or don't have a perfect body, or if I talk about my feelings sometimes.#$b#So, even though I still feel a little sappy admitting stuff like this... I love you, @. You're my best friend for life.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "divorced": "I thought we made a good team... I guess I was wrong.$s",
+                "Mon8": "You know, I used to want fame and fortune, but lately I've been starting to sing a different tune. In the end it's the humble little things that satisfy, don't you think?#$e#I'd still like to go pro, but it's not the most important thing in the world.",
+                "Fri8": "Hi @. You look sporty today.$h",
+                "Sat10": "I'm having a hard time focusing on exercise lately. Staying in shape is important to me, but there's so much else I want to see and do.#$e#I think it's all about finding a balance!$h",
+                "fall_Thu10": "@! Good to see you!$h",
+                "winter_Tue4": "Hey, @. Could you do me a favor?#$b#If you see Haley, tell her I'll be a little late. I want to run some errands for my grandma so she can stay out of the cold.",
+                "event_box3": "...Thanks, @. That actually does help. You've become my best friend in the whole town.#$b#I'm glad I know you. Is that embarrassing to say?$h",
+                "breakUp": "You're giving me wha...?$7#$b#*huff*... Well, you've made your choice. I'm not five, I'm not gonna beg you to be my friend.$a",
+                "SpouseGiftJealous": "I heard you gave {0} a gift today.#$e#You're a great friend!$h",
+                "SpouseStardrop": "My old coach hooked me up with that fruit!$h#$b#It's my way of saying thank you for being in my life. I'm so much happier and more secure about myself since I met you.#$b#I used to think that I unless I lived up to some impossible ideal, no one would care about or respect me.$s#$b#But you helped me see that those expectations were all in my own head.#$b#The people who matter won't think less of me if I'm not famous, or don't have a perfect body, or if I talk about my feelings sometimes.#$b#So, even though I still feel a little sappy admitting stuff like this... I love you, @. You're my best friend for life.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false
+            }
+        },
+        {
+	    "Logname": "Alex bouquet reactions, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: You really want to be close friends? I was worried I blew it with my first impression... What a relief!$h#$e#Flowers don't really fit into my image, but I don't care about that right now!$h @@ You want us to be closer friends? I feel the same way!$h#$e#You want to be better friends with me? Who wouldn't!$h#$e#But uh, seriously, I would like that. This actually means a lot to me.$l |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Alex bouquet reactions, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: You really want to be close friends? I was worried I blew it with my first impression... What a relief!$h#$e#Flowers don't really fit into my image, but I don't care about that right now!$h @@ You want us to be closer friends? I feel the same way!$h#$e#You want to be better friends with me? Who wouldn't!$h#$e#But uh, seriously, I would like that. This actually means a lot to me. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Alex bouquet reactions, love portraits true, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: You really want to be close friends? Me too!$h#$e#I was worried I blew it with my first impression... What a relief!$h @@ You want to be better friends with me? Who wouldn't!$h#$e#But uh, seriously, I would like that. This actually means a lot to me.$l |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+	    "Logname": "Alex bouquet reactions, love portraits false, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: You really want to be close friends? Me too!$h#$e#I was worried I blew it with my first impression... What a relief!$h @@ You want to be better friends with me? Who wouldn't!$h#$e#But uh, seriously, I would like that. This actually means a lot to me. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+            "LogName": "Alex pendant and bracelet proposal acceptance",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Alex_Engaged": "...!!! You really want to spend our lives together? As {{RelationshipLabel}}? Yes!!!!$h#$b#That was a 'yes' like 'I'm PUMPED', but I'm also SAYING yes... haha, you know what I mean!$h#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Alex_EngagedRoommate": "...!!! You really want to spend our lives together? As {{RelationshipLabel}}? Yes!!!!$h#$b#That was a 'yes' like 'I'm PUMPED', but I'm also SAYING yes... haha, you know what I mean!$h#$b#I need some time to pack up my things. I'll be there in 3 days, okay?",
+            },
+        },
+        //Edits to inlaw dialogue and reactions to being gifted a pendant when partnered with Alex
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/George",
+            "Entries":
+            {
+		"RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Huh? Speak up! @@ Move in? So you think my wife and I are too frail to live on our own? Hmph! |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Alex": "Engaged, Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+		"RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: ...I don't get it? You already gave me one of these. @@ I think one pendant is enough. If I had two, they'd bang together when I do pull-ups.$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Alex": "Engaged, Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Evelyn",
+            "Entries":
+            {
+		"RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: I'm sorry, dear, I think I must have misheard you.$2 @@ Move in with you and Alex? That's very kind of you, but George and I want to stay independent for as long as we can. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Alex": "Engaged, Married"
+            }
+        },
+        {
+	    "Logname": "George dialogue about Alex",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/George",
+            "Entries":
+            {
+                "Wed_roommate_Alex": "Alex explained your relationship to me... '{{RelationshipLabel}},' right?#$e#In my day you were either married or you weren't, but times change. You're part of the family, now.",
+                "Wed10_roommate_Alex": "You're part of the family, now... and I couldn't be more proud.",
+                "Wed_inlaw_Alex": "Alex explained your relationship to me... '{{RelationshipLabel}},' right?#$e#In my day you were either married or you weren't, but times change. You're part of the family, now.",
+                "Wed10_inlaw_Alex": "You're part of the family, now... and I couldn't be more proud.",
+		"married_Alex": "I'd like to become a great-grandpa before I croak. Any chance you two {{RelationshipLabel}} could raise some kids together?",
+            },
+        },
+        {
+	    "Logname": "Pam dialogue about Alex",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries":
+            {
+		"married_Alex": "So, the Mullner boy moved in with you, huh?#$b#Will you be takin' that smelly old dog with ya, too?",
+            },
+        },
+        //Edits to post-partnering festival dialogue
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+                "Alex_spouse": "What am I thankful for? Getting to spend my life with a friend like you.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+                "Alex_spouse": "What am I thankful for? Getting to spend my life with a friend like you.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false"
+            },
+        },
+        //Edits to engagement dialogue and commitment ceremony reaction
+        {
+	    "Logname": "Alex pendant and bracelet engagement dialogue, love portraits",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Alex0": "@, this is the greatest thing that could have happened.$l#$e#I can't wait.$h",
+                "Alex1": "I'm going to love being a farmer.$h",
+                "AlexRoommate0": "@, this is the greatest thing that could have happened.$l#$e#I can't wait.$h",
+                "AlexRoommate1": "I'm going to love being a farmer.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true"
+            }
+        },
+        {
+	    "Logname": "Alex pendant and bracelet engagement dialogue, no love portraits",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Alex0": "@, this is the greatest thing that could have happened.#$e#I can't wait.$h",
+                "Alex1": "I'm going to love being a farmer.$h",
+                "AlexRoommate0": "@, this is the greatest thing that could have happened.#$e#I can't wait.$h",
+                "AlexRoommate1": "I'm going to love being a farmer.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false"
+            }
+        },
+        {
+            "LogName": "Alex post-ceremony line",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Game1.cs.2782": "That was the best ceremony ever.$h#$e#I'm stoked to get to work on the farm!$h",
+            },
+            "When":
+            {
+                "Spouse": "Alex"
+            },
+        },
+        {
+            "LogName": "Alex terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Bud",
+                "NPC.cs.4518": "Bud",
+                "NPC.cs.4519": "Champ",
+                "NPC.cs.4522": "Champ",
+                "NPC.cs.4523": "Homeslice",
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "Event.cs.1736": "$q -1 null#Sup?#$r -1 0 danceAsk#(Ask Alex to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Alex": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            },
+        },
+        {
+            "LogName": "Alex terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Bud",
+                "NPC.cs.4518": "Bud",
+                "NPC.cs.4519": "Champ",
+                "NPC.cs.4522": "Champ",
+                "NPC.cs.4523": "Homeslice",
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "Event.cs.1736": "$q -1 null#Sup?#$r -1 0 danceAsk#(Ask Alex to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Alex": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue, datamancer.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Alex roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Sup?#$r -1 0 danceAsk#(Ask Alex to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Alex": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue, datamancer.CustomFixedDialogue": "true",
+            },
+        },
+        //Edits to partnership dialogue
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries":
+            {
+                "Good_0": "@... I really care about you. I don't think I say that enough.$l#$e#My dad would say it's 'unmanly' to say those things to your friends. But I'm done listening to him.$a",
+                "Good_1": "I'm really happy living on this farm with you. And you make me feel like I deserve that.$l",
+                "winter_1": "Make sure you stay warm this winter. I worry about you getting sick.$s",
+            },
+            "When":
+            {
+                "UseLovePortraits": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries":
+            {
+                "Good_0": "@... I really care about you. I don't think I say that enough.#$e#My dad would say it's 'unmanly' to say those things to your friends. But I'm done listening to him.$a",
+                "Good_1": "I'm really happy living on this farm with you. And you make me feel like I deserve that.$h",
+                "winter_1": "Make sure you stay warm this winter. I worry about you getting sick.$s",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries":
+            {
+                "Rainy_Day_4": "I think I might start reading books. I need to learn about agriculture so I can help you with the farm!",
+                "Rainy_Night_2": "Oh... the smell? I've been eating garlic all day. I'm trying to stay manly... Sorry.$h",
+                "Indoor_Day_0": "Ahh... there's nothing like a good night's sleep on the farm!$h",
+                "Indoor_Day_1": "Hey, @! I made you a hot breakfast.[195 210 211]#$e#If you want to get strong, you have to eat like you mean it!",
+                "Indoor_Day_3": "I'm still getting used to cooking and doing laundry... It's not exactly my favorite, but it's all part of being a good housemate!$h",
+                "Indoor_Night_1": "Did you get a haircut or something? You look great today! Maybe it's all that fresh air.$h",
+                "Outdoor_3": "Look at us, with our little farm. We make a good team.$h",
+                "OneKid_3": "I think I'm really bonding with the kiddo. I'm relieved...I wasn't sure if I'd be a good dad.#$e#I try to follow my mom's example.",
+                "TwoKids_3": "I finally have the family life that I missed out on as a kid... thank you.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+	    "Logname": "Alex aro yes, ace yes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries":
+            {
+                "winter_28": "It's been a great year, @. I'm looking forward to next year!",
+                "Indoor_Day_2": "Wow, look at those biceps! You're getting ripped from all that farm work.",
+                "Indoor_Night_3": "I had to buy a bunch of new shorts. I shrunk my old ones in the laundry...$s",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Indoor_Night_Alex": "I feel exhausted... That's a good sign! It means I worked hard enough today.$h",
+                "spouseRoom_Alex": "#$c .5#Don't ever let me get lazy. I want to stay in good shape so I can help on the farm!#$e#There's lots of room here to do my exercises. I'm making more progress than ever!",
+            },
+        },
+        //Event edits
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries":
+            {
+                "911526/f Alex 2500/t 1900 2200/n joshMessage": "50s/-1000 -1000/farmer 5 5 1 Alex 9 5 3 Emily 9 17 2/skippable/showFrame 117/showFrame Alex 39/positionOffset farmer 12 8/positionOffset Alex -12 0/viewport 7 4 true/pause 1000/speak Alex \"This is nice... I've never had a sit-down meal here before.\"/pause 1000/emote Alex 40/speak Alex \"Um, anyway... I reserved this room so we could talk...$s\"/warp Emily 11 11 true/playSound woodyStep/move Emily 0 -1 0/doAction 11 9/move Emily 0 -3 3/move Emily -4 0 0/move Emily 0 -1 0/speak Emily \"I've got a linguini with mushroom cream sauce and a side salad for @... and a grilled steak for Alex.\"/playSound woodyHit/specificTemporarySprite joshDinner/speak Alex \"Thanks.\"/move Emily 4 0 2/move Emily 0 5 1/move Emily 11 0 1 true/stopMusic/speak Alex \"So, what I wanted to say was...$9\"/playMusic musicboxsong/pause 600/speak Alex \"Well... when we first met, I was really arrogant... I’ve already apologized for that. But I’ve been thinking about why I acted that way in the first place.$s\"/pause 800/speak Alex \"I think I felt like... if I wasn’t the best, it would mean my dad was right when he said I was worthless. I could either be this elite athlete or a total failure, you know?$s#$b#But watching you fix up that old farm... using your strength to build things, and grow things, and feed people...$l#$b#It made me realize that I get to decide what success means to me. Playing sports isn’t the only way I can be good at something that matters.#$b#I don’t think Mom would want me to limit myself, either. So I’ve been looking into other careers where physical fitness is important. I never realized how many options I have!$h#$b#I'm not sure what I'll choose yet, but I'm done pinning all my self-worth on one dream. And, well...#$b#...Turns out, if I ease up on the gridball training, I have time for dinners with my best friend.$l#$b#Not to get all mushy, but... you’re really important to me, @. You inspire me. I can't wait to show you where I go from here.$l\"/pause 400/emote Alex 40/pause 600/question fork1 \"#No matter what you end up doing, your work ethic will take you far.#So you’re really giving up on pro sports? That sucks...\"/pause 400/fork rejectJosh/speak Alex \"Thanks, @. That means a lot to me.$l\"/emote Alex 32/pause 800/animate Alex false false 400 40 41 41 40 41 41 40 41 41 40 41 41 40/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound gulp/pause 400/speak Alex \"Mmm... this steak is outstanding. Can you smell that fragrant sauce?$10\"/eyes 1 -4000/animate Alex false false 400 40 41 41 40 41 41 40/pause 1000/specificTemporarySprite alexDiningDog/playSound dogWhining/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Alex \"Thanks for listening, @.$l\"",
+                "rejectJosh": "pause 100/playMusic none/shake Alex 2000/emote Alex 28/speak Alex \"... I mean... I saw this as a step forward for me... I thought you would support me.$s\"/pause 2000/speak Alex \"I'm not hungry anymore...$s\"/viewport move 1 1 5000/globalFade/viewport -1000 -1000/pause 4000/end dialogue Alex \"Thanks for hearing me out, I guess.$s\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries":
+            {
+                "911526/f Alex 2500/t 1900 2200/n joshMessage": "50s/-1000 -1000/farmer 5 5 1 Alex 9 5 3 Emily 9 17 2/skippable/showFrame 117/showFrame Alex 39/positionOffset farmer 12 8/positionOffset Alex -12 0/viewport 7 4 true/pause 1000/speak Alex \"This is nice... I've never had a sit-down meal here before.\"/pause 1000/emote Alex 40/speak Alex \"Um, anyway... I reserved this room so we could talk...$s\"/warp Emily 11 11 true/playSound woodyStep/move Emily 0 -1 0/doAction 11 9/move Emily 0 -3 3/move Emily -4 0 0/move Emily 0 -1 0/speak Emily \"I've got a linguini with mushroom cream sauce and a side salad for @... and a grilled steak for Alex.\"/playSound woodyHit/specificTemporarySprite joshDinner/speak Alex \"Thanks.\"/move Emily 4 0 2/move Emily 0 5 1/move Emily 12 0 1 true/stopMusic/speak Alex \"So, what I wanted to say was...$9\"/playMusic musicboxsong/pause 600/speak Alex \"Well... when we first met, I was really arrogant... I’ve already apologized for that. But I’ve been thinking about why I acted that way in the first place.$s\"/pause 800/speak Alex \"I think I felt like... if I wasn’t the best, it would mean my dad was right when he said I was worthless. I could either be this elite athlete or a total failure, you know?$s#$b#But watching you fix up that old farm... using your strength to build things, and grow things, and feed people...#$b#It made me realize that I get to decide what success means to me. Playing sports isn’t the only way I can be good at something that matters.#$b#I don’t think Mom would want me to limit myself, either. So I’ve been looking into other careers where physical fitness is important. I never realized how many options I have!$h#$b#I'm not sure what I'll choose yet, but I'm done pinning all my self-worth on one dream. And, well...#$b#...Turns out, if I ease up on the gridball training, I have time for dinners with my best friend.$h#$b#Not to get all mushy, but... you’re really important to me, @. You inspire me. I can't wait to show you where I go from here.\"/pause 400/emote Alex 40/pause 600/question fork1 \"#No matter what you end up doing, your work ethic will take you far.#So you’re really giving up on pro sports? That sucks...\"/pause 400/fork rejectJosh/speak Alex \"Thanks, @. That means a lot to me.$h\"/emote Alex 32/pause 800/animate Alex false false 400 40 41 41 40 41 41 40 41 41 40 41 41 40/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound gulp/pause 400/speak Alex \"Mmm... this steak is outstanding. Can you smell that fragrant sauce?$10\"/eyes 1 -4000/animate Alex false false 400 40 41 41 40 41 41 40/pause 1000/specificTemporarySprite alexDiningDog/playSound dogWhining/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Alex \"Thanks for listening, @.\"",
+                "rejectJosh": "pause 100/playMusic none/shake Alex 2000/emote Alex 28/speak Alex \"... I mean... I saw this as a step forward for me... I thought you would support me.$s\"/pause 2000/speak Alex \"I'm not hungry anymore...$s\"/viewport move 1 1 5000/globalFade/viewport -1000 -1000/pause 4000/end dialogue Alex \"Thanks for hearing me out, I guess.$s\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries":
+            {
+                "3917590/n saloonSportsRoom/O Alex": "distantBanjo/-100 -100/farmer 31 20 0 Alex 32 7 0 Shane 33 8 0 Gus 34 8 0 Kent 35 8 0 George 36 7 0/skippable/specificTemporarySprite gridballGameTV/viewport 34 7 true/move farmer 0 -13 1 true/pause 1000/textAboveHead Alex \"Big play!\"/pause 600/jump Gus/pause 2000/textAboveHead George \"Score!\"/pause 400/textAboveHead Alex \"There we go!\"/faceDirection Kent 3 true/faceDirection Gus 1 true/animate Gus false true 100 22/animate Kent false true 100 17/shake Gus 500/shake Kent 500/pause 500/textAboveHead George \"Atta boy!\"/pause 1000/stopAnimation Gus/stopAnimation Kent/faceDirection Kent 0 true/faceDirection Gus 0/pause 1000/faceDirection Alex 3/pause 400/speak Alex \"Hey, @! You made it!$h\"/faceDirection Alex 1/speak Alex \"So... what do you think?\"/pause 500/emote farmer 8/faceDirection Alex 3/speak Alex \"I've been thinking... You know how I used to want to be a pro athlete someday?#$b#Well, I'm happier living on the farm with you than I ever was chasing that dream!$h#$b#But even though gridball isn't my only focus anymore, it's still a part of my life...#$b#... so I thought it would be cool to have a place where us guys could hang out and watch the Sunday game. Gus liked the idea so much he offered me part of his back room!$h\"/pause 500/emote farmer 32/pause 600/faceDirection George 3/speak George \"You did good, son. I could watch this at home, but coming here makes me feel young again!$h\"/faceDirection Alex 1/speak Alex \"Thanks, Grandpa.\"/pause 500/speak Kent \"I'm happy for an excuse to get out of the house, and take my mind off things.\"/faceDirection Alex 2/pause 100/textAboveHead Shane \"Same\"/pause 1200/speak Gus \"I'm having a lot of fun. And it's good for business!$h#$b#Though maybe not so good for Shane's liver...$s\"/pause 100/faceDirection Shane 2 true/animate Shane false true 100 18/jump Shane/pause 500/textAboveHead Shane \"Hey!\"/pause 500/emote Alex 32/pause 2000/fade/viewport -1000 -1000/pause 400/message \"It seems the guys have a new Sunday tradition.\"/pause 1000/message \"5,000g well spent!\"/pause 1000/end dialogue Alex \"Thanks again for the money, @. It was a fun project for me, and all the guys seem happy with it!$h\"",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false"
+            },
+        },
+        //Blush edits
+        {
+	    "Logname": "Alex default blush edits",
+            "Action": "EditImage",
+            "Target": "Portraits/Alex",
+            "FromFile": "assets/Portraits/AlexNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.AlexEvelynGeorge": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        {
+	    "Logname": "Alex default blush edits, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Alex_Winter",
+            "FromFile": "assets/Portraits/AlexWinterNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.AlexEvelynGeorge": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Alex Seasonal Cute blush edits",
+            "Action": "EditImage",
+            "Target": "Portraits/Alex",
+            "FromFile": "assets/Portraits/AlexNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        {
+	    "Logname": "Alex Seasonal Cute blush edits, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Alex_Winter",
+            "FromFile": "assets/Portraits/AlexNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        //COMPATIBILITY: PLATONIC RELATIONSHIPS 
+        //This section prevents the dating-flag-required version of the vanilla 10 heart mail added by Platonic Relationships from triggering. Thanks to Cherry for providing the event codes!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "2346091/f Alex 2502/x joshMessage": "null",
+                "2346091/f Alex 2502/D Alex/x joshMessage": null
+            },
+            "When":
+            {
+                "HasMod |contains=Cherry.PlatonicRelationships": "true"
+            },
+        },
+        //COMPATIBILITY: IMMERSIVE CHARACTERS - SHANE v2.4.2 
+        //Dialogue and events in this section are based on the originals written by tenthousandcats, used and edited with permission. (Thank you, tenthousandcats!)
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries":
+            {
+                "3917590/n saloonSportsRoom/O Alex": "distantBanjo/-100 -100/farmer 31 20 0 Alex 32 7 0 Shane 33 8 0 Gus 34 8 0 Kent 35 8 0 George 36 7 0/skippable/specificTemporarySprite gridballGameTV/viewport 34 7 true/move farmer 0 -13 1 true/pause 1000/textAboveHead Alex \"Big play!\"/pause 600/jump Gus/pause 2000/textAboveHead George \"Score!\"/pause 400/textAboveHead Alex \"There we go!\"/faceDirection Kent 3 true/faceDirection Gus 1 true/animate Gus false true 100 22/animate Kent false true 100 17/shake Gus 500/shake Kent 500/pause 500/textAboveHead George \"Atta boy!\"/pause 1000/stopAnimation Gus/stopAnimation Kent/faceDirection Kent 0 true/faceDirection Gus 0/pause 1000/faceDirection Alex 3/pause 400/speak Alex \"Hey, @! You made it!$h\"/faceDirection Alex 1/speak Alex \"So... what do you think?\"/pause 500/emote farmer 8/faceDirection Alex 3/speak Alex \"I've been thinking... You know how I used to dream of being a pro athlete someday?#$b#Well, I'm happier living on the farm with you than I ever was chasing that dream!$h#$b#But even though gridball isn't my only focus anymore, it's still a part of my life...#$b#... so I thought it would be cool to have a place where us guys could hang out and watch the Sunday game. Gus liked the idea so much he offered me part of his back room!$h\"/pause 500/emote farmer 32/pause 600/faceDirection George 3/speak George \"You did good, son. I could watch this at home, but coming here makes me feel young again!$h\"/faceDirection Alex 1/speak Alex \"Thanks, Grandpa.\"/pause 500/speak Kent \"I'm happy for an excuse to get out of the house, and take my mind off things.\"/faceDirection Alex 2/pause 100/textAboveHead Shane \"Same\"/pause 1200/speak Gus \"I'm having a lot of fun. And it's good for business!$h#$b#Shane orders at least twice as many pepper poppers than he usually does...\"/pause 100/faceDirection Shane 2 true/animate Shane false true 100 18/jump Shane/pause 500/textAboveHead Shane \"Hey!\"/pause 500/emote Alex 32/pause 2000/fade/viewport -1000 -1000/pause 400/message \"It seems the guys have a new Sunday tradition.\"/pause 1000/message \"5,000g well spent!\"/pause 1000/end dialogue Alex \"Thanks again for the money, @. It was a fun project for me, and all the guys seem happy with it!\"",
+            },
+            "When":
+            {
+                "HasSeenEvent |contains=2118991": true,
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false"
+            },
+        },
+
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "Tue10": "Hey. You're lookin' good today!$h#$e#So what's new?",
+                "Fri10": "Hey, let me know if you ever want some help with your farmwork.#$e#I've gotta do something that's more than just exercise for its own sake, right?$h",
+                "Sun10": "Haley and I always thought we could be the town's 'power couple,' but it was always complicated.#$e#I'd still like to make things work with her. But if that never happens, at least we're still friends.",
+                "summer_Sun10": "@, I wonder sometimes whether my mom would be proud of me.$s#$e#I think she'd be happy I found a friend like you. I guess that's something.$l#$e#See you around.$l",
+                "fall_Thu10": "@! Hey!$h#$b#Is it cool if we hang out soon?",
+                "fall_Fri10": "I really do think Haley and I could have something special together. I just wish she listened to me the way you do.#$e#I feel like I always have to act like a big shot around her. And if I told her how I really feel, she'd just lose interest in me.$s#$e#I guess it's okay to have different people in my life fulfill different emotional needs. I'm glad I have a friend I can open up to.$l",
+                "winter_Tue10": "Hey! What's up?$h#$e#Are you bored, too? Hey, we can hang out anytime.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "Tue10": "Hey. You're lookin' good today!$h#$e#So what's new?",
+                "Fri10": "Hey, let me know if you ever want some help with your farmwork.#$e#I've gotta do something that's more than just exercise for its own sake, right?$h",
+                "Sun10": "Haley and I always thought we could be the town's 'power couple,' but it was always complicated.#$e#I'd still like to make things work with her. But if that never happens, at least we're still friends.",
+                "summer_Sun10": "@, I wonder sometimes whether my mom would be proud of me.$s#$e#I think she'd be happy I found a friend like you. I guess that's something.#$e#See you around.",
+                "fall_Thu10": "@! Hey!$h#$b#Is it cool if we hang out soon?",
+                "fall_Fri10": "I really do think Haley and I could have something special together. I just wish she listened to me the way you do.#$e#I feel like I always have to act like a big shot around her. And if I told her how I really feel, she'd just lose interest in me.$s#$e#I guess it's okay to have different people in my life fulfill different emotional needs. I'm glad I have a friend I can open up to.",
+                "winter_Tue10": "Hey! What's up?$h#$e#Are you bored, too? Hey, we can hang out anytime.",
+                "winter_Mon10": "I think I disagree that high school is the best years of your life.#$b#This year, for one, has been better.$h",
+                "winter_Fri10": "@, are your parents proud of you?#$e#Well, here's one guy who's pretty proud of you.$h",
+                "fall_Thu6": "I remember the final play of the regional championship game. The score was tied, and we were just ten seconds away from the end.#$b#I saw the leaves go flying around in a gust of wind, and I threw the ball, knowing the wind would knock it to the side a bit.#$b#Zane caught it perfectly and we scored. No overtime.#$e#It was a good feeling, y'know?$h",
+                "summer_Mon10": "It's weird. I never really talked about my feelings with many people before I met you.#$e#I feel like I can just be myself.",
+                "fall_Mon10": "Tunnelers won again last night! They're having an amazing season this year!$h#$e#Sorry, I am really happy right now.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries":
+            {
+                "Rainy_Day_4": "#$c .5#It's a good day to read. I need to learn more about agriculture so I can help you with the farm!#I'm trying to catch up on all the books I was supposed to read in high school. Sometimes they start out boring, but they're actually really good!",
+                "Rainy_Night_2": "#$c .5#Oh... the smell? I've been eating garlic all day. I'm trying to stay manly... Sorry.$h#I wonder what it'd be like to stand under a waterfall...?",
+                "Indoor_Day_0": "#$c .5#Feels good to stay in good health! We only get one body. Gotta make use of it!$h#Ahh... there's nothing like a good night's sleep on the farm!$h",
+                "Indoor_Day_1": "Hey, @! I made you a hot breakfast.[195 210 211]#$e#$c .5#If you want to get strong, you have to eat like you mean it!#Good food, straight from the source! I'm so glad we've got this farm.$h",
+                "Indoor_Day_3": "#$c .5#I'm still getting used to cooking and doing laundry... It's not exactly my favorite, but it's all part of being a good housemate!$h#I got some books from the library that I need to finish before they're due. I want to keep my mind as fit as my body.",
+                "Indoor_Day_4": "#$c .5#There's a couple things around the house that I'm going to try and fix today. Don't worry about me, I'm not bored.#Leave the cleaning to me today! I like to think I pull off the look of that one cleaning brand mascot.$h",
+                "Indoor_Night_1": "#$c .5#Did you get a haircut or something? You look great today! Maybe it's all that fresh air.$h#Another busy day? I like that you keep as active as you do.",
+                "Indoor_Night_4": "#$c .5#If you need some quiet time to yourself, that's okay with me.#Hey, @! Did you push it to the limit today?",
+                "Outdoor_3": "#$c .5#Glad I got up in time to see the early morning. It's always the best part of the day, but it's so easy to miss if you sleep in.$h#Look at us, with our little farm. We make a good team.$h",
+                "OneKid_3": "#$c .5#I think I'm really bonding with the kiddo.$h#Ahh, little %kid1... you've got a lot of life in front of you, don't ya?$h",
+                "fall_3": "I almost forgot, it's salmon season! You know what sounds good?$h#$e#Pan roasted salmon with a lemon butter sauce. And a side of kale and... whatever that grain is. The one that isn't rice.$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries":
+            {
+                "TwoKids_2": "#$c .5#When the kids get bigger, I don't suppose you could spare some of the farm space to make a little gridball field...?$h#Maybe %kid2 will be the first professional gridball player from Pelican Town?$h",
+                "TwoKids_3": "#$c .5#I finally have the family life that I missed out on as a kid... thank you.#It'd be great if the kids are into sports. I want to make sure they stay healthy. But I'll support them in any kind of life they choose.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+	    "Logname": "Alex aro yes, ace yes, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries":
+            {
+                "winter_28": "It's been a great year, @. I'm looking forward to next year!",
+                "Indoor_Day_2": "#$c .5#Wow, look at those biceps! You're getting ripped from all that farm work.#Today's a good day to read something. ...Yeah, I've been keeping that going.$h",
+                "Indoor_Night_3": "#$c .5#I had to buy a bunch of new shorts. I shrunk my old ones in the laundry...$s#I feel like my mom can rest at peace, knowing how things have worked out for me. I'm lucky to have you in my life.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Alex
+	        "LogName": "KO Mines- Alex",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Alex 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Alex \"Hey, are you good to stand? Come on, I'll boost you up.\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Alex \"Okay, hear this. I was just running laps up in the mountains when I realized that something was pulling me towards the mines.#$b#It was honestly a little creepy, and got me thinking that you might be calling out for me, or something. So I came down here to find you.\"/pause 1000/speak Marlon \"And I simply came along to clear a path for Alex while we brought you back up to the surface.#$b#At first, I was to venture in alone, but he insisted on coming along.#$b#You're blessed to have ended up sharing your life with someone so courageous.\"/emote Alex 16/pause 500/speak Alex \"Oh, it's nothing. Punching a slime here and there isn't much of a workout, though I totally see how easy it is to get overwhelmed.#$b#I guess I'm only courageous when I got someone at my back to prevent that from happening.\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I saw. You did well, standing by my side.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Alex \"Hey, let's head on home. Want to jog down the mountain with me?#$b#Oh, wait. You probably shouldn't be exerting yourself right now. You don't look too injured, but let's still be careful.#$b#I'll jog ahead and tidy up so you can crash when you get there. Meet you at home!$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Alex \"Hey, welcome back! You're not looking too bad, for someone who was KO'ed a little while ago. Don't worry, it's our secret. And Marlon's.$1#$c 0.7#I'm going to set the example and take it easy tonight. That means you have to take it easy, too, alright?$1#$b#You should eat a snack with protein in it to help your muscles heal. Here, try some of mine.[210 215 223 228 232 243 403 406 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Alex",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Hospital Death- Alex
+            "LogName": "Player 'Killed'- Alex",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Alex 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Alex 5/move Alex 0 3 2/textAboveHead Alex \"{0}!\"/emote farmer 16/move Alex -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Alex 0 1 3/speak Alex \"{{TermofEndearment}}, are you okay? I must've beat my personal time running here when I heard you were hurt!$2\"/emote farmer 60/pause 500/speak Alex \"Did you almost get eaten by slimes, or something? The risk of that happening is always on my mind.$2#$b#I know you're strong, but things like this make me worry even more for you.$2\"/emote Alex 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Alex 3/speak Alex \"You know I'm all about pushing personal limits, but this is just excessive.$2#$b#I don't know what I'd do if I lost you, too, alright?$2#$b#I've had enough of people I love leaving me behind.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Alex \"Hey. I jogged back to get the place ready for you to relax. Pushing yourself when you're exhausted won't do you any favors, trust me.#$c 0.7#{{TermofEndearment}}, you look really tired. You really should rest today. Injuries that don't heal all the way can follow you for a long time.#$b#I got you some of this, too. It's full of protein, to help heal your injuries. [237 241 203 204 220 244 272]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Alex",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {    
+            "LogName": "Player 'Killed'- Alex Ex",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Alex 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"@ is ready to see you.#$b#It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.\"/pause 500/speak Alex \"Nah, I get it. We don't have much to say to each other anyway.$9\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Alex 0 4 3/emote farmer 16/faceDirection Alex 3/pause 1000/speak Alex \"Hey. Harvey really worked a miracle putting you back together, huh. Guess I worried for nothing.$9#$b#Hmm? Of course I'd worry. We may not be {{RelationshipLabel}} anymore, or even friends, but that doesn't mean I want you dead. Who do you think I am?$9#$b#...Sorry. I'm not trying to pick a fight. I'll go.$2\"/emote farmer 16/pause 1000/speak Alex \"Truth is, I just didn't want you waking up alone from that.$2#$b#You didn't see yourself when you got here. I imagine getting hurt like that wasn't a joyride, so I wanted to stay until you woke up. Just in case.$2#$b#But... you're clearly fine now, so I'll leave you to it. I don't want to talk about any of what happened here later, either. Bye.$2\"/pause 500/move Alex 0 -4 0/move Alex -8 0 0/move Alex 0 -3 0/warp Alex -100 -100/emote farmer 28/hospitaldeath/end dialogue Alex \"Our friendship is over, @. I came to see you only because I can't forget you, even if...$2#$b#Even if I know that you're not the same person from my memories anymore.$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Alex": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+     {       
+	    "LogName": "Island Death before Leo - Alex",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Alex \"Whoa there! @, is that really you? What happened?$7#$b#I'm glad you're okay, but you still look -and smell- like an overcooked steak. It's sort of impressive, actually.$2#$b#Hey, hold on... if you streak some of the ash on your cheek this way... And some of it like this...#$b#Hah. You look like a gridball player like this. Nice face paint!$1\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Alex",
+		    }
+	     },  
+     {      
+	    "LogName": "Island death with Leo - Alex",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Alex \"Whoa there! @, is that really you? What happened?$7#$b#I'm glad you're okay, but you still look -and smell- like an overcooked steak. It's sort of impressive, actually.$2#$b#Hey, hold on... if you streak some of the ash on your cheek this way... And some of it like this...#$b#Hah. You look like a gridball player like this. Nice face paint!$1\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Alex",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {      
+	    "LogName": "Island death after Leo - Alex",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Alex \"Whoa there! @, is that really you? What happened?$7#$b#I'm glad you're okay, but you still look -and smell- like an overcooked steak. It's sort of impressive, actually.$2#$b#Hey, hold on... if you streak some of the ash on your cheek this way... And some of it like this...#$b#Hah. You look like a gridball player like this. Nice face paint!$1\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Alex",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+       //Island Death - Alex before/with Leo: no changes needed
+	//
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Alex",
+		"Entries": {
+			"marriage_beach": "Hey, you alright? You're looking a little burnt. Be careful.$s",
+			"marriage_beach2": "Nothing beats hanging out at the beach with you.$l",
+			"marriage_bus4": "Hey, @, before you head off I wanted to tell you something.#$b#You're my best friend.$l",
+			"marriage_bus8": "Morning, again. Heading out early?#$b#{{Random: %Alex gives you a manly hug. ++ Mind picking up some protein for me if you got the time?$h ++ You look like you're ready to face whatever the day throws at you!$h ++ Have fun today. Not to get sappy, but I'll miss you.$s |inputSeparator=++}}#$b#Well, catch ya later then.",
+			"marriage_dog3": "Dusty's been with me for half my life.#$b#I could never bring myself to leave him alone. Same goes for you.$l",
+			"marriage_josh3": "Having a good day? I'm sure you got a lot of farmwork done today.#$b#{{Random: Me? I'm just watching over Grandma and Grandpa., I dropped off some groceries today so help yourself to the fridge., %Alex high fives you.}}",
+			"marriage_josh5": "I was looking at the photos on the wall there.#$b#{{Random: That's... baby Alex. Don't look at that!$7, We should get our family photo taken again soon.$h, Mom looks just as young as I remember her.$s}}",
+			"marriage_sum7": "Haley always stops by my ice cream stand when it opens.$h",
+			"marriage_town5": "I can't let myself go and slack off, never. Not when you've been working so hard.#$b#You believed in me, and I have to do the same. Sure, the goal isn't going pro anymore...#$b#...But I've gotta try to keep up with the toughest person I know.$l",
+			"marriage_town6": "Ugh, I'm feeling unmotivated today...$s#$b#{{Random: %You give Alex a hug., Maybe you're who I needed to see right now.$l, Maybe I pushed myself too far yesterday...$s}}",
+			"marriage_town8": "Hey, @. Catch!$u#$b#%You catch the ball.#$b#{{Random: Heh heh! You've got quick reflexes.$h, Nice one! High five!$h}}",
+			"marriage_tree3": "I remember standing here thinking I'd go pro anytime soon and be out of this town.#$b#I'm sort of glad that never happened.$l",
+			"marriage_tree4": "It was under this tree that I realized how important you really were to me.$9#$b#Not just that, but like... that it didn't mean we had to be 'in love.' That a friend could mean that much to me.#$b#I sat under here on the night before our commitment ceremony... I couldn't sleep.$s#$b#{{Random: I'm proud to be able to call myself your {{PlatonicSocialMenuLabel}}.$l, Sorry... I'm not good with words. But I know you get me.$l}}",
+			"marriage_tree5": "You know, this tree means quite a lot to me.$9#$b#Whenever I was questioning things, like what I wanted out of my life, I'd come here to sort through my thoughts.$s#$b#Usually it was after I'd been talking with you. You helped me rethink a lot of things... I don't know where I'd be without you.$l#$b#E-enough sappy talk. Uh, so what do you want for dinner?$9",
+			"marriage_doctorafter": "I've never really liked visiting the doctor. I feel all cramped up in there.$s#$b#I'll be home soon.",
+			"marriage_nm": "Think you'll do some deep-sea fishing tonight? Too bad there aren't any salmon down there.$h",	
+		},
+		    "When": {
+			"UseLovePortraits": "true",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		    }
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Alex",
+		"Entries": {
+			"marriage_beach": "Hey, you alright? You're looking a little burnt. Be careful.$s",
+			"marriage_beach2": "Nothing beats hanging out at the beach with you.$h",
+			"marriage_bus4": "Hey, @, before you head off I wanted to tell you something.#$b#You're my best friend.$h",
+			"marriage_bus8": "Morning, again. Heading out early?#$b#{{Random: %Alex gives you a manly hug. ++ Mind picking up some protein for me if you got the time?$h ++ You look like you're ready to face whatever the day throws at you!$h ++ Have fun today. Not to get sappy, but I'll miss you.$s |inputSeparator=++}}#$b#Well, catch ya later then.",
+			"marriage_dog3": "Dusty's been with me for half my life.#$b#I could never bring myself to leave him alone. Same goes for you.",
+			"marriage_josh3": "Having a good day? I'm sure you got a lot of farmwork done today.#$b#{{Random: Me? I'm just watching over Grandma and Grandpa., I dropped off some groceries today so help yourself to the fridge., %Alex high fives you.}}",
+			"marriage_josh5": "I was looking at the photos on the wall there.#$b#{{Random: That's... baby Alex. Don't look at that!$7, We should get our family photo taken again soon.$h, Mom looks just as young as I remember her.$s}}",
+			"marriage_sum7": "Haley always stops by my ice cream stand when it opens.$h",
+			"marriage_town5": "I can't let myself go and slack off, never. Not when you've been working so hard.#$b#You believed in me, and I have to do the same. Sure, the goal isn't going pro anymore...#$b#...But I've gotta try to keep up with the toughest person I know.$h",
+			"marriage_town6": "Ugh, I'm feeling unmotivated today...$s#$b#{{Random: %You give Alex a hug., Maybe you're who I needed to see right now., Maybe I pushed myself too far yesterday...$s}}",
+			"marriage_town8": "Hey, @. Catch!$u#$b#%You catch the ball.#$b#{{Random: Heh heh! You've got quick reflexes.$h, Nice one! High five!$h}}",
+			"marriage_tree3": "I remember standing here thinking I'd go pro anytime soon and be out of this town.#$b#I'm sort of glad that never happened.$h",
+			"marriage_tree4": "It was under this tree that I realized how important you really were to me.$9#$b#Not just that, but like... that it didn't mean we had to be 'in love.' That a friend could mean that much to me.#$b#I sat under here on the night before our commitment ceremony... I couldn't sleep.$s#$b#{{Random: I'm proud to be able to call myself your {{PlatonicSocialMenuLabel}}., Sorry... I'm not good with words. But I know you get me.}}",
+			"marriage_tree5": "You know, this tree means quite a lot to me.$9#$b#Whenever I was questioning things, like what I wanted out of my life, I'd come here to sort through my thoughts.$s#$b#Usually it was after I'd been talking with you. You helped me rethink a lot of things... I don't know where I'd be without you.#$b#E-enough sappy talk. Uh, so what do you want for dinner?$9",
+			"marriage_doctorafter": "I've never really liked visiting the doctor. I feel all cramped up in there.$s#$b#I'll be home soon.",
+			"marriage_nm": "Think you'll do some deep-sea fishing tonight? Too bad there aren't any salmon down there.$h",	
+			"marriage_town3": "Wherever my Mom is, I hope she's proud of me.$s#$b#I didn't grow up to be the sports star I wanted to be, but I think I prefer this life more than anything.#$b#I know my Mom would understand.",
+			"marriage_tree": "Grandma and Grandpa are getting old...$s#$b#{{Random: But I want to show them they don't have to worry about me anymore, and you've helped me with the first step. ++ I'm gonna miss Grandma's special casserole when she... Forget it.$s ++ They've supported me for most of my life. I wanna do the same now. |inputSeparator=++}}",				
+		},
+		    "When": {
+			"UseLovePortraits": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		    }
+	},
+	{
+		"Logname": "Alex ace yes, aro yes, Immersive Spouses",
+		"Action": "EditData",
+		"Target": "Strings/schedules/Alex",
+		"Entries": {
+			"marriage_beach4": "Looking good, @! {{Random: Maybe it's the sun., You been working out with that sword of yours?, I bet you've got a lot of eyes on you today.}}",
+			"marriage_beach5": "My body's always restless during summer.#$b#{{Random: I totally regret not bringing my ball with me today...$s, Maybe I'll go for a swim., This body was built for moving non stop.}}",
+			"marriage_beach7": "Hey, I was hoping I'd see you here. You taking a break, or are you here to fish?",				
+			"marriage_bh2": "@, you here to work out too?$6#$b#Or to relax? That heated pool is awesome for sore muscles.$6",	
+			"marriage_bh3": "Cheer me on... *huff* I'm this close... *puff* to a new personal best!$6",
+			},
+		    "When": {
+                	"HasMod |contains=iss.immersivespouses": "true"
+		    }
+	},
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname": "Alex PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Alex": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Alex make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Alex": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Alex will have any problems with that.$1",
+            "fall_Fri8_inlaw_Alex": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Alex make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Alex": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Alex will have any problems with that.$1",
+            "spring_Tue8_roommate_Alex": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Alex make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Alex": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Alex will have any problems with that.$1",
+            "fall_Fri8_roommate_Alex": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Alex make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Alex": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Alex will have any problems with that.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sam",
+	"Entries": {
+            "summer_Mon8_inlaw_Alex":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Alex":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "summer_Mon8_roommate_Alex":"Hey, @. How's life with Alex?$0#$b#You should get him to learn an instrument so I can come over and jam with you two.$1",
+            "fall_Sat8_roommate_Alex":"Hey, @. How's life with Alex?$0#$b#You should get him to learn an instrument so I can come over and jam with you two.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Thu8_inlaw_Alex":"Alex has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_inlaw_Alex":"I clearly see you and Alex were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_inlaw_Alex":"Alex has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_inlaw_Alex":"I clearly see you and Alex were made to be {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Alex":"Alex has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_roommate_Alex":"I clearly see you and Alex were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_roommate_Alex":"Alex has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_roommate_Alex":"I clearly see you and Alex were made to be {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Haley",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Haley",
+	"Entries": {
+            "summer_Sat8_inlaw_Alex":"I'm so happy for you and Alex.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_inlaw_Alex":"I'm so happy for you and Alex.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "summer_Sat8_roommate_Alex":"I'm so happy for you and Alex.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_roommate_Alex":"I'm so happy for you and Alex.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Alex":"Hello, @.$0#$e#You and Alex are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Alex":"Hello, @.$0#$e#You and Alex are such cute {{RelationshipLabel}}.$1",
+            "spring_Mon8_roommate_Alex":"Hello, @.$0#$e#You and Alex are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Alex":"Hello, @.$0#$e#You and Alex are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Caroline",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Caroline",
+	"Entries": {
+            "spring_Wed10_inlaw_Alex":"Hello, @.$0#$e#Sharing a home with someone isn't always easy. You and Alex will have to overcome many difficulties together.$0#$b#But it'll be worth it.$1",
+            "fall_Sun10_inlaw_Alex":"Hello, @.$0#$e#Sharing a home with someone isn't always easy. You and Alex will have to overcome many difficulties together.$0#$b#But it'll be worth it.$1",
+            "spring_Wed10_roommate_Alex":"Hello, @.$0#$e#Sharing a home with someone isn't always easy. You and Alex will have to overcome many difficulties together.$0#$b#But it'll be worth it.$1",
+            "fall_Sun10_roommate_Alex":"Hello, @.$0#$e#Sharing a home with someone isn't always easy. You and Alex will have to overcome many difficulties together.$0#$b#But it'll be worth it.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Alex":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Alex as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Alex":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Alex as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Alex":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Alex as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Alex":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Alex as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "summer_Tue10_inlaw_Alex": "I'm delighted Alex has found you.$0#$b#You're perfect {{RelationshipLabel}} for each other.$1",
+            "summer_Sun10_inlaw_Alex": "George doesn't show it much, but he's as glad as me that you and Alex are {{RelationshipLabel}}.$1",
+            "winter_Wed10_inlaw_Alex": "George doesn't show it much, but he's as glad as me that you and Alex are {{RelationshipLabel}}.$1",
+            "summer_Tue10_roommate_Alex": "I'm delighted Alex has found you.$0#$b#You're perfect {{RelationshipLabel}} for each other.$1",
+            "summer_Sun10_roommate_Alex": "George doesn't show it much, but he's as glad as me that you and Alex are {{RelationshipLabel}}.$1",
+            "winter_Wed10_roommate_Alex": "George doesn't show it much, but he's as glad as me that you and Alex are {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, George",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/George",
+	"Entries": {
+            "summer_Thu_inlaw_Alex": "I did think you and Alex would get along well.$0#$b#It really makes me happy to see the two of you as {{RelationshipLabel}}.$1",
+            "summer_Sat10_inlaw_Alex": "Alex reminds me of Clara so much...$0#$e#She'd be so excited to see him as your {{PlatonicSocialMenuLabel}}.$0#$b#You're both great kids.$1",
+            "winter_Tue10_inlaw_Alex": "Alex reminds me of Clara so much...$0#$e#She'd be so excited to see him as your {{PlatonicSocialMenuLabel}}.$0#$b#You're both great kids.$1",
+            "winter_Sun_inlaw_Alex": "I did think you and Alex would get along well.$0#$b#It really makes me happy to see the two of you as {{RelationshipLabel}}.$1",
+            "summer_Thu_roommate_Alex": "I did think you and Alex would get along well.$0#$b#It really makes me happy to see the two of you as {{RelationshipLabel}}.$1",
+            "summer_Sat10_roommate_Alex": "Alex reminds me of Clara so much...$0#$e#She'd be so excited to see him as your {{PlatonicSocialMenuLabel}}.$0#$b#You're both great kids.$1",
+            "winter_Tue10_roommate_Alex": "Alex reminds me of Clara so much...$0#$e#She'd be so excited to see him as your {{PlatonicSocialMenuLabel}}.$0#$b#You're both great kids.$1",
+            "winter_Sun_roommate_Alex": "I did think you and Alex would get along well.$0#$b#It really makes me happy to see the two of you as {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Alex":"If you and Alex want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Alex":"If you and Alex want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Alex":"If you and Alex want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Alex":"If you and Alex want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Alex":"If you and Alex want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Alex":"If you and Alex want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Alex":"If you and Alex want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Alex":"If you and Alex want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Alex":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Alex":"So are you and Mister Alex like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Alex":"Hello, Farmer @.$0#$b#Why can't you and Mister Alex celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Alex":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Alex":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Alex":"So are you and Mister Alex like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Alex":"Hello, Farmer @.$0#$b#Don't you think you and Mister Alex should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Alex":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Lewis",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Alex":"There aren't many young {{RelationshipLabel}} like you and Alex here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Alex":"There aren't many young {{RelationshipLabel}} like you and Alex here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Alex":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Alex":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Alex":"There aren't many young {{RelationshipLabel}} like you and Alex here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Alex":"There aren't many young {{RelationshipLabel}} like you and Alex here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Alex":"I know you and Alex chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Alex":"I know you and Alex chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Alex":"Hello, @.$0#$e#I wish you and Alex a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Alex":"May Yoba grant you and Alex a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Alex":"Hello, @.$0#$e#I wish you and Alex a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Alex":"May Yoba grant you and Alex a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Alex":"Hello, @.$0#$e#I wish you and Alex a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Alex":"May Yoba grant you and Alex a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Alex":"Hello, @.$0#$e#I wish you and Alex a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Alex":"May Yoba grant you and Alex a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Alex":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Alex":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Alex":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Alex":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },    
+{
+	"Logname": "Alex PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Alex":"You and Alex remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Alex":"You and Alex remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Alex":"You and Alex remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Alex":"You and Alex remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Alex PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Alex":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Alex.$1",
+            "summer_Wed10_inlaw_Alex":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_inlaw_Alex":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Alex.$1",
+            "winter_Sun10_inlaw_Alex":"It's so cool how you're {{RelationshipLabel}} with Mister Alex.$1#$e#I never thought that would have happened!$0",
+            "spring_Tue10_roommate_Alex":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Alex.$1",
+            "summer_Wed10_roommate_Alex":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_roommate_Alex":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Alex.$1",
+            "winter_Sun10_roommate_Alex":"It's so cool how you're {{RelationshipLabel}} with Mister Alex.$1#$e#I never thought that would have happened!$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_CaveIncubator": {
+                    "Name": "Cave Incubator",
+                    "DisplayName": "{{i18n:CaveIncubator.DisplayName}}",
+                    "Description": "{{i18n:CaveIncubator.Description}}",
+                    "Price": 0,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": false,
+                    "IsLamp": false,
+                    "Texture": "Mods/DwarvenExpansion/BigCraftablesSpritesheet",
+                    "SpriteIndex": 6,
+                    "ContextTags": null,
+                    "CustomFields": null
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_CaveIncubator": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": null,
+                                    "RequiredTags": null,
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": null,
+                                    "OutputMethod": "StardewValley.Object, Stardew Valley: OutputIncubator",
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": false,
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "Default",
+                                    "ItemId": null,
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": -1,
+                                    "MaxStack": -1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": null,
+                                    "ObjectDisplayName": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": null,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": null,
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 9000,
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": [
+                        {
+                            "Id": "Coopmaster",
+                            "Condition": "PLAYER_HAS_PROFESSION Target 2",
+                            "Modification": "Multiply",
+                            "Amount": 0.5,
+                            "RandomAmount": null
+                        }
+                    ],
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": null,
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "coin",
+                                    "Delay": 0
+                                }
+                            ],
+                            "Interval": 100,
+                            "Frames": null,
+                            "ShakeDuration": -1,
+                            "TemporarySprites": null
+                        }
+                    ],
+                    "WorkingEffects": null,
+                    "WorkingEffectChance": 0.33,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": false,
+                    "IsIncubator": true,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": null,
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                }
+            }
+        }
+    ]
+}

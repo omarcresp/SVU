@@ -1,0 +1,36 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)13",
+				"OutputRules"
+			],
+			"Entries": {
+				"{{ModId}}_Prismatic_Ore_Process": {
+					"Triggers": [
+					  {
+						"Id": "ItemPlacedInMachine",
+						"Trigger": "ItemPlacedInMachine",
+						"RequiredItemId": "(O){{ModId}}_Prismatic_Pieces",
+						"RequiredCount": 5,
+					  }
+					],
+					"OutputItem": [
+					  {
+						"PriceModifierMode": "Stack",
+						"Id": "(O)74",
+						"ItemId": "(O)74",
+						"StackModifierMode": "Stack",
+						"QualityModifierMode": "Stack",
+					  }
+					],
+					"DaysUntilReady": 4,
+					"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+			}
+		},
+    ],
+}

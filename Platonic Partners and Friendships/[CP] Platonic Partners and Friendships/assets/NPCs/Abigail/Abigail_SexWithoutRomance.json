@@ -1,0 +1,1023 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "breakUp": "Oh... I... I understand. You don't see me as that close a friend...$s#$b#I guess we weren't really a good match...$s",
+                "Thu10": "Everything seems brighter since you moved here.$h#$b#You have that effect on people, you know!",
+                "summer_Thu10": "Wow, you look nice today.#$e#That summer air is really good for the complexion, isn't it?$h",
+                "fall_Mon8": "You know, I could actually see myself becoming a farmer some day...#$e#You looking for a business partner, @? *chuckle*$h",
+                "fall_Fri10": "I usually feel lonely this time of year, but not anymore.#$e#@, what are your plans for the future?",
+                "winter_Fri10": "@, I wanted to tell you... I really admire the risk you took by moving here.$6#$b#You had a steady job, and you couldn't have known if your farm would succeed, but you took the leap anyway.#$b#Don't tell anyone I said this, but...you inspire me!$h",
+                "fall_Thu10": "I had a wild dream last night, with you in it.#$e#We were fighting monsters together!$h",
+                "Event_Cave_2": "I guess when you have something to lose, it's normal to be afraid...$s",
+                "FlowerDance_Accept_Spouse": "B... But... I wanted to dance with...$s#$b#Just kidding! Of course I'm dancing with you. You're my favorite person!$h",
+                "FlowerDance_Accept_Roommate": "B... But... I wanted to dance with...$s#$b#Just kidding! Of course I'm dancing with you. You're my favorite person!$h",
+                "SpouseStardrop": "I found that fruit down in the mines!$h#$b#Something tells me it will help you find the strength that's already inside you, just like you helped me find mine.#$b#I love you, @. I'll have your back for as long as I live.",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're such a kind friend!$h",
+		"dating_Abigail": "%Abigail looks happy.",
+            },
+        },
+        {
+	    "Logname": "Abigail bouquet acceptance",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: Wow, @, you really like me enough to get all formal about it?$h#$e#I'd like to get to know you better too! You've been an amazing friend to me.$h @@ You want us to be closer friends? I feel the same way!$h#$e#I'm kind of nervous. You'll still like me when you know all my darkest secrets, right? |inputSeparator=@@}}",
+		"dating_Abigail_memory_oneday": "Would you believe those flowers you gave me are already wilting?#$e#I blame my dad. He stores them too close to the fruit! They were probably on their way out when you bought them.$h",
+		"dating_Abigail_memory_oneyear": "I was just thinking about that bouquet you gave me... wow, a year ago today. Time really flies!$h",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            },
+        },
+        {
+	    "Logname": "Abigail bouquet acceptance, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: Wow, @, you really like me enough to get all formal about it?$h#$e#I'd like to get to know you better too! You've been an amazing friend to me.$h @@ You want us to be closer friends? I feel the same way!$h#$e#I'm kind of nervous. You'll still like me when you know all my darkest secrets, right? |inputSeparator=@@}}",
+		"dating_Abigail_memory_oneday": "I need to find a safe place to keep that letter you wrote. I never want to lose it!#$e#Maybe I'll put it with my cool rock collection.",
+		"dating_Abigail_memory_oneyear": "I was just thinking about that letter you gave me... wow, a year ago today. I still have it!$h",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            },
+        },
+        {
+            "LogName": "Abigail pendant and bracelet proposal acceptance",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Abigail_Engaged": "...!!! You...you really want to spend our lives together?$7#$b#As {{RelationshipLabel}}? I... yes!! Yes, @!$h#$b#It's going to be a complete change of lifestyle...A leap into the unknown... Just like I've always wanted!#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Abigail_EngagedRoommate": "...!!! You...you really want to spend our lives together?$7#$b#As {{RelationshipLabel}}? I... yes!! Yes, @!$h#$b#It's going to be a complete change of lifestyle...A leap into the unknown... Just like I've always wanted!#$b#I need some time to pack up my things. I'll be there in 3 days, okay?",
+            },
+        },
+        {
+            "LogName": "Abigail post-ceremony line",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Game1.cs.2782": "Wasn't that a great ceremony? It was worth getting dressed up for.#$e#Well, onto the next adventure!$h",
+            },
+            "When":
+            {
+	        "Spouse": "Abigail",
+            },
+        },
+        {
+            "LogName": "Abigail terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Pal",
+                "NPC.cs.4518": "Pal",
+                "NPC.cs.4519": "Bud",
+                "NPC.cs.4522": "Bud",
+                "NPC.cs.4523": "Bud",
+                "Event.cs.1736": "$q -1 null#What's up?#$r -1 0 danceAsk#(Ask Abigail to be your dance partner)#$r -1 0 null#Nevermind...",
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            },
+        },
+        {
+            "LogName": "Abigail terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Pal",
+                "NPC.cs.4518": "Pal",
+                "NPC.cs.4519": "Bud",
+                "NPC.cs.4522": "Bud",
+                "NPC.cs.4523": "Bud",
+                "Event.cs.1736": "$q -1 null#What's up?#$r -1 0 danceAsk#(Ask Abigail to be your dance partner)#$r -1 0 null#Nevermind...",
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue, datamancer.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Abigail roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#What's up?#$r -1 0 danceAsk#(Ask Abigail to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue, datamancer.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Haha, you already gave me one of these!$h @@ You know I already have one, you goof!$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Haha, I already live with you!$h @@ I don't need two of them, you goof!$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: There are at least four reasons why I'm not going to move in with you and my daughter.$3 @@ Abigail doesn't need me hovering over her shoulder. I know she's ready to live her own life.$2 |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Engaged, Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: I don't need to follow Abby everywhere for the rest of her life. I know she'll be fine living with you. @@ Move in with you and Abby? ...Ask me again when I'm a widow.$2 |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Engaged, Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+            "Entries":
+            {
+                "Rainy_Night_5": "Hey! You look like you've been hard at work. Can I get you anything?$h",
+                "Neutral_0": "I hope you'll still like me when I'm too old to bring you presents from the mines.#$b#It's going to happen some day!",
+                "Bad_9": "I was good friends with Sebastian long before we met. I could have made a life with him...$s",
+                "spring_12": "Hey, the egg festival is tomorrow. I'm sorry, but I won't go easy on you just because we're best friends!$h#$e#I plan on winning that egg hunt. Go ahead and try to beat me.",
+                "summer_1": "I don't like getting sunburnt, so I need to be careful this time of year.",
+                "summer_4": "Make sure you don't get a heat stroke, @.#$e#Drink plenty of water and don't overwork yourself.",
+                "fall_2": "Can we grow giant pumpkins this season? Please, @?$h",
+                "fall_20": "@... you're worth more to me than a chest full of quartz.#$e#Now, a chest full of amethyst? Hmm... I'd have to think about that one.$h",
+            },
+        },
+        {
+	    "Logname": "Abigail -'Admiring the pendant' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+            "Entries":
+            {
+                "Good_5": "I was just admiring the pendant you gave me when you asked me to live with you... I'll proudly wear this to my grave.",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Married",
+                "Roommate |contains=Abigail": "false",
+            },	
+        },
+        {
+	    "Logname": "Abigail - Bracelet version of 'admiring the pendant' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+            "Entries":
+            {
+                "Good_5": "I was just admiring the bracelet you gave me when you asked me to live with you... I'll proudly wear this to my grave.",
+            },
+            "When":
+            {
+                "Roommate": "Abigail"
+            },	
+        },
+        {
+	    "Logname": "Abigail - Ambiguous version of 'admiring the pendant' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+            "Entries":
+            {
+                "Good_5": "I was just admiring the gift you gave me when you asked me to live with you... I'll proudly wear this to my grave.",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Married",
+                "Roommate |contains=Abigail": "false",
+                "Spouse |contains=Abigail": "false",
+            },	
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+                "Wed2_inlaw_Abigail": "Sam and Abby are probably my only friends in this town.#$e#Abby's really... I kind of... $h#$e#Umm... nevermind. Don't tell her I said anything.",
+                "Wed2_roommate_Abigail": "Sam and Abby are probably my only friends in this town.#$e#Abby's really... I kind of... $h#$e#Umm... nevermind. Don't tell her I said anything.",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries":
+            {
+		"dating_Abigail_memory_oneday": "Abby told me that you two have become good friends. That's sweet!",
+		"married_Abigail": "I'm so happy for you and Abby! Please consider yourself a member of the family!$h",
+                "Mon_inlaw_Abigail": "Hi, @. Are you and Abby enjoying life as {{RelationshipLabel}}? I hope so!",
+                "Mon_roommate_Abigail": "Hi, @. Are you and Abby enjoying life as {{RelationshipLabel}}? I hope so!",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries":
+            {
+                "Mon_inlaw_Abigail": "Hello, @. How are things with you and Abigail?",
+                "Mon_roommate_Abigail": "Hello, @. How are things with you and Abigail?",
+            },
+        },
+        {
+	    "Logname": "Abigail pendant and bracelet engagement dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Abigail0": "Hehe. Me? Moving to a farm? I never thought this would happen.$h#$e#We're going to have a lot of fun together.$h",
+                "AbigailRoommate0": "Hehe. Me? Moving to a farm? I never thought this would happen.$h#$e#We're going to have a lot of fun together.$h",
+                "Abigail1": "I'm going to be {{RelationshipLabel}} with a farmer. Wow!$h#$e#Our lives are going to be a lot different from now on.",
+                "AbigailRoommate1": "I'm going to be {{RelationshipLabel}} with a farmer. Wow!$h#$e#Our lives are going to be a lot different from now on.",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Abigail": "Standing here, looking out on the horizon... I get a feeling of endless possibility.#$b#I'm just happy I get to explore this world, with you by my side.",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries":
+            {
+                "Abigail_spouse": "Hey, @... look, it's you!$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/SeedShop",
+            "Entries":
+            {
+                "3/f Abigail 2000/p Abigail/t 2000 2200/n abbySpiritBoard": "echos/-1000 -1000/farmer 13 6 3 Abigail 6 8 1/skippable/specificTemporarySprite abbyOuijaCandles/viewport 7 5/speak Abigail \"Hey! I was hoping you'd show up. I wanna show you something.\"/move farmer -5 0 0/move farmer 0 2 3/faceDirection Abigail 2/speak Abigail \"See this? It's called a spirit board. Have you ever used one?\"/emote farmer 8/move Abigail 0 2 1/move farmer 0 2 3/pause 500/speak Abigail \"Put your hands on the planchette with me...\"/showFrame Abigail 30/pause 200/animate farmer true true 9999 89/pause 600/speak Abigail \"Now the spirits will guide us toward a...$h\"/showFrame Abigail 31/pause 500/speak Abigail \"LOOK, it's moving!$7\"/emote farmer 16/speak Abigail \"The first letter is... 'C' ...\"/pause 600/speak Abigail \"Next is... 'O' ...\"/pause 800/speak Abigail \"Wow, look at it go! It's spelling out... 'W'... 'A'... COWA...?\"/emote Abigail 16/showFrame Abigail 12/faceDirection Abigail 3/stopMusic/pause 200/stopAnimation farmer/faceDirection Abigail 1/pause 400/specificTemporarySprite abbyOuija/playSound swordswipe/pause 900/playSound seeds/pause 500/speak Abigail \"Oops, accidentally knocked over the board! Heh heh...$h#$b#It's just a silly game, it doesn't mean anything.$9\"/faceDirection Abigail 3/emote Abigail 28/faceDirection Abigail 1/speak Abigail \"I, um, have something to do. You'll have to go... Sorry.$9\"/faceDirection Abigail 2/emote farmer 28/pause 500/move farmer 0 -3 0/pause 800/faceDirection farmer 2/pause 1000/move farmer 5 0 1 true/globalFade/viewport -1000 -1000/end invisibleWarpOut Abigail",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "5/e 3/v Abigail/t 600 800": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"Hi. Um... I just wanted to say sorry for acting so weird yesterday.$6#$b#You probably understand what happened. The spirit board revealed my own inner feelings, and, well...$6#$b#I just... Sometimes I wonder if I’m kidding myself.$s#$b#You know how I told you I want to do something exciting, like exploring the mines?$6#$b#Well... Why am I still just talking about it? Swinging my sword around at nothing?$u#$b#Am I really preparing for an adventure, or am I just playing pretend?$u#$b#... I’m sorry. I don’t want to dump this on you.$s#$b#So, uh... bye.$s\"/pause 500/end",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries":
+            {
+                "901756/f Abigail 2500/t 1700 2400/o Abigail": "Upper_Ambient/18 7/farmer -1000 -1000 0 Abigail 18 11 0/skippable/move Abigail 0 -3 1/move Abigail 5 0 2/pause 500/animate Abigail false false 150 26 24 25 25 25 25/pause 450/playSound sandyStep/stopAnimation Abigail/showFrame Abigail 25/pause 2000/playSound batFlap/pause 500/playSound batFlap/pause 500/playSound batFlap/pause 500/emote Abigail 8/pause 1000/specificTemporarySprite abbyOneBat/playSound batScreech/showFrame Abigail 32/shake Abigail 2000/pause 2000/showFrame Abigail 0/pause 600/animate Abigail false true 100 28 29/pause 1200/stopAnimation Abigail/pause 1000/specificTemporarySprite abbyManyBats/showFrame Abigail 32/shake Abigail 2000/pause 2000/speed Abigail 8/move Abigail 0 -4 0/speed Abigail 8/move Abigail 2 0 0/animate Abigail false false 100 21 20 20/pause 200/showFrame Abigail 20/shake Abigail 10000/pause 2000/warp farmer 18 13/move farmer 0 -5 0/pause 1000/faceDirection farmer 1/pause 300/emote farmer 16/speed farmer 8/move farmer 6 0 0/speed farmer 8/playMusic desolate/move farmer 0 -4 1/speak Abigail \"$q 776589 null#*sniff*$s#$r 776589 20 Event_Cave2_1#What happened?#$r 776589 40 Event_Cave2_2#Are you okay?\"/pause 500/animate Abigail false false 100 21 0 0/pause 200/stopAnimation Abigail/faceDirection Abigail 3/pause 500/speak Abigail \"You know how I've been practicing my swordsmanship for a while...$8#$b#and I wasn't sure if I would ever take the next step?$8#$b#Well, I decided today would be the day I actually venture into the caves...$8\"/pause 500/faceDirection Abigail 1/pause 1000/speak Abigail \"...but I got scared. I couldn't do it.$s\"/pause 500/faceDirection Abigail 3/speak Abigail \"$q 34 null#I guess I'm not as tough as I thought I could be...$8#$r 34 20 Event_Cave_1#You're safe with me.#$r 34 40 Event_Cave_2#I get scared too.#$r 34 -50 Event_Cave_3#You're crying like a little baby. Stop.\"/faceDirection Abigail 3/stopMusic/pause 1500/playMusic sadpiano/pause 1800/speak Abigail \"@... You’re really important to me. You know that, right?$8#$b#You’re the best friend I’ve ever had. You see the real me. Not who I’m supposed to be, or who you want me to be. And not even just who I am now.$8#$b#You see the daring explorer I want to become. You believe I can be that person.$8#$b#And that makes me believe it, too.\"/pause 2000/speak Abigail \"I think... it’s okay that I’m afraid of the mines. If they weren’t dangerous, they wouldn’t be so exciting!$h#$b#And I WILL explore them, even if it’s not today. If I ever catch myself doubting that again, I know you’ll set me straight.#$b#Thank you, @. I’m really glad we’re friends.\"/pause 1000/animate Abigail true true 100 30/positionOffset Abigail -8 0/positionOffset farmer 8 0/animate farmer false true 100 101/pause 2500/globalFade/viewport -1000 -1000/end",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Backwoods",
+            "Entries":
+            {
+                "6963327/f Abigail 3500/O Abigail/t 610 1700": "continue/-100 -100/farmer 39 14 0 golem 37 15 0 Abigail -100 23 0/addWorldState golemGrave/makeInvisible 37 11 5 7/skippable/pause 1000/viewport 39 11 clamp true/move farmer 0 -3 0/doAction 39 10/pause 500/doAction 39 10/pause 1000/move farmer 1 0 0/playMusic none/pause 100/doAction 39 10/playSound rockGolemSpawn/move Golem 0 -4 0/doAction 39 10/move Golem 2 0 1/pause 500/faceDirection farmer 3/pause 300/playSound rockGolemHit/pause 100/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/pause 700/showFrame Golem 5/specificTemporarySprite swordswipe 39 11/playSound swordswipe/pause 250/playSound hitEnemy/startJittering/positionOffset farmer 8 0/pause 20/positionOffset farmer 8 0/pause 20/positionOffset farmer 8 0/pause 20/positionOffset farmer 8 0/pause 20/positionOffset farmer 8 0/pause 20/positionOffset farmer 8 0/pause 20/positionOffset farmer 8 0/pause 20/positionOffset farmer 8 0/playSound clubhit/stopJittering/pause 20/showFrame Golem 4/showFrame farmer 5/pause 1000/move Golem 1 0 1/warp Abigail 49 14/animate Golem false true 150 4 5 6 7/move Abigail -5 0 3/jump Abigail/animate Abigail false true 100 32/speak Abigail \"*gasp*...!$7\"/stopAnimation Abigail/speed Abigail 8/move Abigail -5 0 0/speed Abigail 8/move Abigail 0 -3 1/pause 250/animate Abigail false false 200 50 51/specificTemporarySprite swordswipe 39 11/playSound swordswipe/pause 250/playSound rockGolemHit/stopAnimation Golem/shake Golem 250/faceDirection Golem 3 true/pause 500/animate Abigail false false 200 50 51/specificTemporarySprite swordswipe 39 11/playSound swordswipe/pause 250/playSound rockGolemHit/stopAnimation Golem/shake Golem 250/pause 250/animate Abigail false false 200 50 51/specificTemporarySprite swordswipe 39 11/playSound swordswipe/pause 250/playSound rockGolemDie/specificTemporarySprite golemDie/warp Golem -100 -100/pause 750/playMusic echos/speed Abigail 4/move Abigail 1 0 1/pause 700/animate Abigail false true 100 39/pause 100/emote Abigail 28/pause 400/speak Abigail \"@...?$6\"/pause 1000/speak Abigail \"@... are you okay?$6\"/pause 1500/startJittering/pause 500/stopJittering/pause 1000/startJittering/pause 500/stopJittering/pause 1000/stopAnimation farmer/showFrame farmer 0/jump farmer/pause 250/stopAnimation Abigail/showFrame Abigail 4/pause 500/faceDirection farmer 3/speak Abigail \"It looks like you're just scraped up a little... you had me worried!\"/pause 450/animate Abigail false true 100 30/positionOffset Abigail 8 0/positionOffset farmer -8 0/animate farmer true true 100 101/pause 1500/positionOffset farmer 8 0/positionOffset Abigail -8 0/stopAnimation farmer/stopAnimation Abigail/showFrame Abigail 4/pause 1300/faceDirection Abigail 2/pause 800/move Abigail 0 1 2/faceDirection farmer 2/pause 500/move farmer 0 1 3/emote Abigail 28/pause 1200/speak Abigail \"I... I've never taken a life before...$s\"/pause 700/faceDirection Abigail 1/pause 550/quickQuestion #It's sad, but there was no other option.#Monsters don't deserve our sympathy!#It's a harsh world, kid.#Did you have to kill him?(break)speak Abigail \"Yeah... I did what I had to do.$s#$b#I guess the world's a pretty tough place. It was either you or him, right?$6\"(break)speak Abigail \"...Aren't they just trying to survive, like us?$s#$b#They may be our enemies, but I still think they deserve sympathy.$6#$b#Still... I did what had to be done.$6\"(break)speak Abigail \"Huh? That's pretty funny coming from someone who just got rescued...$h#$b#But... yeah... Sometimes reality forces us to do things we'd rather not... Guess I'm learning that the hard way.$6\"(break)speak Abigail \"Hey! I saved your life, didn't I? Maybe you should think about that instead of putting me on a guilt trip.$a\"\\pause 600/pause 500/emote Abigail 40/pause 500/speak Abigail \"Look... You've gotta be more careful from now on. I don't want to lose you.\"/pause 500/animate Abigail false true 100 30/positionOffset Abigail 8 0/positionOffset farmer -8 0/animate farmer true true 100 101/pause 2000/positionOffset farmer 8 0/positionOffset Abigail -8 0/stopAnimation farmer/stopAnimation Abigail/showFrame Abigail 4/pause 1300/faceDirection Abigail 2/faceDirection farmer 2/pause 500/animate Abigail false true 100 0 1 2 3/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/positionOffset Abigail 0 2/pause 50/stopAnimation Abigail/pause 500/showFrame Abigail 26/pause 100/showFrame Abigail 27/pause 600/speak Abigail \"Let's put him to rest nearby... okay?$6\"/pause 600/fade/viewport -1000 -1000/pause 1000/playSound dirtyHit/pause 600/playSound dirtyHit/pause 600/playSound dirtyHit/pause 600/playSound dirtyHit/pause 2000/end dialogue Abigail \"Good thing I brought my sword today!$6\"",
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Abigail",
+            "FromFile": "assets/Sprites/AbigailDressRecolor.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 293,
+                "Width": 45,
+                "Height": 27
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnableSpriteEdits": true,
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.AbigailCarolinePierre": "false",
+            },
+        },
+        {
+	    "Logname": "Abigail no blush edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Abigail",
+            "FromFile": "assets/Portraits/AbigailNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.AbigailCarolinePierre": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname": "Abigail no blush edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Abigail_Winter",
+            "FromFile": "assets/Portraits/AbigailNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.AbigailCarolinePierre": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Abigail no blush edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Abigail",
+            "FromFile": "assets/Portraits/AbigailNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+	    "Logname": "Abigail no blush edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Abigail_Winter",
+            "FromFile": "assets/Portraits/AbigailNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        //COMPATIBILITY: PLATONIC RELATIONSHIPS
+        //This section prevents the dating-flag-required version of the vanilla 10 heart event added by Platonic Relationships from triggering. Thanks to Cherry for providing the event codes!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries":
+            {
+                "901756/f Abigail 2500/D Abigail/t 1700 2400/o Abigail": null,
+            },
+            "When":
+            {
+                "HasMod |contains=Cherry.PlatonicRelationships": "true"
+            },
+        },
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "Fri8": "I've often wondered if one day, I'll wake up and realize that the reality I knew was just a dream.$6#$e#But these days, I don't really hope that's the case.",
+                "Sat6": "You came all this way to visit me? That's nice.$h#$e#So have you been exploring the mountain caves at all?#$e#Interesting. I'd like to go there myself one of these days.",
+                "Sat10": "Dying one day and ceasing to exist didn't sound so bad before. But these days, the stakes seem too high.#$b#I don't want to leave you behind.$l",
+                "summer_Sat10": "This might be the best summer of my life.$h#$e#But getting to spend time with you in the fall sounds even better.$l",
+                "fall_Thu8": "I've often wondered if one day, I'll wake up and realize that the reality I knew was just a dream.$6#$e#But these days, I don't really hope that's the case.",
+                "winter_Tue10": "*hug* Hey you!$h#$e#No, I wasn't using you for warmth! That was totally a hug of pure affection!$h",
+                "winter_Fri8": "Do you ever worry that maybe all your hard work and effort might all be for nothing?$s#$e#Oh! I mean...! Not YOUR hard work. I meant 'you' in the general sense. I know *you* have your life under control.$h",
+                "winter_Sat10": "Thanks for not making fun of me after the bit with the spirit board.$6#$e#It's embarrassing to have an insecurity put on display like that.$s",
+                "winter_Sun10": "Hey, if you ever want to come into my room, you can just walk right in.#$e#You don't have ask in advance or anything. I'm always happy to see you.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "Fri8": "I've often wondered if one day, I'll wake up and realize that the reality I knew was just a dream.$6#$e#But these days, I don't really hope that's the case.",
+                "Sat6": "You came all this way to visit me? That's nice.$h#$e#So have you been exploring the mountain caves at all?#$e#Interesting. I'd like to go there myself one of these days.",
+                "Sat10": "Dying one day and ceasing to exist didn't sound so bad before. But these days, the stakes seem too high.#$b#I don't want to leave you behind.$6",
+                "summer_Sat10": "This might be the best summer of my life.$h#$e#But getting to spend time with you in the fall sounds even better.",
+                "fall_Thu8": "I've often wondered if one day, I'll wake up and realize that the reality I knew was just a dream.$6#$e#But these days, I don't really hope that's the case.",
+                "winter_Tue10": "*hug* Hey you!$h#$e#No, I wasn't using you for warmth! That was totally a hug of pure affection!$h",
+                "winter_Fri8": "Do you ever worry that maybe all your hard work and effort might all be for nothing?$s#$e#Oh! I mean...! Not YOUR hard work. I meant 'you' in the general sense. I know *you* have your life under control.$h",
+                "winter_Sat10": "Thanks for not making fun of me after the bit with the spirit board.$6#$e#It's embarrassing to have an insecurity put on display like that.$s",
+                "winter_Sun10": "Hey, if you ever want to come into my room, you can just walk right in.#$e#You don't have ask in advance or anything. I'm always happy to see you.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+            "Entries":
+            {
+                "Rainy_Day_0": "#$c .5#I think I'll bust out my good ol' sketchbook today. I've got some ideas for mythical beasts that could be fun.#The dark... the rain... it gets me excited.$h",
+                "Rainy_Day_1": "Hey, remember when we played that duet by the lake? This weather reminds me of that day.#$e#$c .5#Do you still carry around that mini harp? That one kind of surprised me. Where'd you learn to play, anyway?#You really surprised me with that mini-harp... I never expected that. I guess that's why I like you so much!$h",
+                "Rainy_Day_3": "#$c .5#Hehe, I did some sword training in the rainy darkness. You've gotta admit, your best friend is pretty epic.$h#It might be a good day to visit the caves, huh? Just be careful out there, and if you go, bring a Life Elixir or two.",
+                "Rainy_Night_1": "#$c .5#It's a good night to see a ghost...#Hey! You look like you've been hard at work. Can I get you something to eat?",
+                "Indoor_Day_4": "#$c .5#Sure, I can do some cleaning today, no problem. You work so hard on the farm, it's the least I can do.#You don't mind if I do some re-decorating now and then, do you? I'm still excited to have a place of my own to work on.",
+                "Indoor_Night_0": "#$c .5#Hey, you look really good tonight! Teach me your secrets!$l#I had a good day, today. There's always something interesting going on around here, if you look close enough.",
+                "Outdoor_0": "#$c .5#What an awesome morning! I can't believe how many of these I missed before we were {{RelationshipLabel}}.$h#The soft breeze is blowing mountain air throughout the valley today. It smells like fresh pine and sage.",
+                "spring_16": "Will you get mad at me if I go for an all-day video game binge today?#$b#Sorry, it just... sounds really nice.$h",
+                "summer_23": "Some of my old online classmates squeed when they found out you and I became {{RelationshipLabel}}. It's good to keep in touch with them.",
+                "winter_19": "Tonight's supposed to be a Saloon night again. Think you can make it?#$e#You'll always be my priority, but it's fun to get the whole friend group together.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+            "Entries":
+            {
+                "Rainy_Day_0": "#$c .5#I think I'll bust out my good ol' sketchbook today. I've got some ideas for mythical beasts that could be fun.#The dark... the rain... it gets me excited.$h",
+                "Rainy_Day_1": "Hey, remember when we played that duet by the lake? This weather reminds me of that day.#$e#$c .5#Do you still carry around that mini harp? That one kind of surprised me. Where'd you learn to play, anyway?#You really surprised me with that mini-harp... I never expected that. I guess that's why I like you so much!$h",
+                "Rainy_Day_3": "#$c .5#Hehe, I did some sword training in the rainy darkness. You've gotta admit, your best friend is pretty epic.$h#It might be a good day to visit the caves, huh? Just be careful out there, and if you go, bring a Life Elixir or two.",
+                "Rainy_Night_1": "#$c .5#It's a good night to see a ghost...#Hey! You look like you've been hard at work. Can I get you something to eat?",
+                "Indoor_Day_4": "#$c .5#Sure, I can do some cleaning today, no problem. You work so hard on the farm, it's the least I can do.#You don't mind if I do some re-decorating now and then, do you? I'm still excited to have a place of my own to work on.",
+                "Indoor_Night_0": "#$c .5#Hey, you look really good tonight! Teach me your secrets!$h#I had a good day, today. There's always something interesting going on around here, if you look close enough.",
+                "Outdoor_0": "#$c .5#What an awesome morning! I can't believe how many of these I missed before we were {{RelationshipLabel}}.$h#The soft breeze is blowing mountain air throughout the valley today. It smells like fresh pine and sage.",
+                "spring_16": "Will you get mad at me if I go for an all-day video game binge today?#$b#Sorry, it just... sounds really nice.$h",
+                "summer_23": "Some of my old online classmates squeed when they found out you and I became {{RelationshipLabel}}. It's good to keep in touch with them.",
+                "winter_19": "Tonight's supposed to be a Saloon night again. Think you can make it?#$e#You'll always be my priority, but it's fun to get the whole friend group together.$h",
+                "summer_22": "Ugh... Didn't sleep well, and my back is killing me. I can't adult today...$s#$e#...But, yeah, I'll try. Sorry.#$e#I know it hasn't been that much time since we first met, but in some respects, I feel like I was still just a little kid then.$s#$b#I feel like I've grown up a lot since then. But I also feel such a long way off from... my parents' level of maturity, for example.$u#$e#Heh. Who knew entering adulthood would be just as scary as entering the mines?$h#$b#I'm glad you're with me.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+	    "Logname": "Pierre dialogue about Abigail",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries":
+            {
+                "fall_Mon_inlaw_Abigail": "Hello, @. How are things with you and Abigail?",
+                "winter_Mon_inlaw_Abigail": "Hello, @. How are things with you and Abigail?",
+                "fall_Mon_roommate_Abigail": "Hello, @. How are things with you and Abigail?",
+                "winter_Mon_roommate_Abigail": "Hello, @. How are things with you and Abigail?",
+		"married_Abigail_memory_oneday": "Oh... Abigail didn't come with you? How is she?",
+            },
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Abigail
+	        "LogName": "KO Mines- Abigail",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Abigail 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Abigail \"Oh! You're awake!\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Abigail \"So, weird story... Earlier, I got this random feeling that something terrible had happened, and I just knew it was about you.#$b#Don't ask me how I knew. It really just came to me.#$b#Wherever it came from, though, it led me to find you. I can't complain.\"/pause 1000/speak Marlon \"And I simply came along to clear a path for Abigail while we brought you back up to the surface.#$b#At first, I was to venture in alone, but she insisted on coming along.#$b#You're blessed to have ended up sharing your life with someone so courageous.\"/emote Abigail 16/pause 500/speak Abigail \"'Courageous', huh...? I like the sound of that. Sounds like you're buttering me up to recruit me for the Guild.$4\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I saw. You did well, standing by my side.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Abigail \"Hey, @... I know I don't sound like it, but I really was worried for you.#$b#I got to explore the mines, but it wasn't so exciting when all I could think of was you in danger somewhere.$2#$b#I'm glad we made it in time to find you. And, I'm glad I got to swing my sword a few times, too.#$b#Just you wait until I get stronger. We'll conquer the mines as a dream team together!$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Abigail \"Hey there! I just finished practicing with my sword. Next time you go into the mines, I want to come with so I can watch your back!$1#$c 0.7#Well... maybe it's a little early for something like that. I can't give up, though. Not now, not ever.$1#$b#I was about to have a post-training snack. Would you like to share it with me? You look like you could use it.[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Abigail",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Hospital Death- Abigail
+            "LogName": "Player 'Killed'- Abigail",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Abigail 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Abigail 5/move Abigail 0 3 2/textAboveHead Abigail \"{0}!\"/emote farmer 16/move Abigail -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Abigail 0 1 3/speak Abigail \"Oh gosh, are you okay? Don't get up too quickly.$2\"/emote farmer 60/pause 500/speak Abigail \"I'm so glad you're looking better. Dr. Harvey really worked a miracle on you, huh?#$b#I was seriously on edge while waiting for Dr. Harvey to let me into the room. I hated not knowing how you were doing...$2\"/emote Abigail 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Abigail 3/speak Abigail \"You know, @... I'm still training every day to become stronger, like you.#$b#One day, I want to be able to stand by your side and protect you, like you protect me.#$b# So until that day comes... Please don't go where I can't follow.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Abigail \"There you are! Sit down and relax for today. I'll take care of you until you're totally back on your feet.#$c 0.7#... I'll have to work ten times harder from now on to become strong enough to protect you. Just wait for me a little longer, {{Lowercase:{{TermofEndearment}}}}.$2#$b#I got this for you, too. Hope you feel better soon. [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Abigail",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+                	"TermofEndearment |contains=@": "false",
+                	"TermofEndearment |contains=BFF": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //Hospital Death- Abigail
+            "LogName": "Player 'Killed'- Abigail",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Abigail 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Abigail 5/move Abigail 0 3 2/textAboveHead Abigail \"{0}!\"/emote farmer 16/move Abigail -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Abigail 0 1 3/speak Abigail \"Oh gosh, are you okay? Don't get up too quickly.$2\"/emote farmer 60/pause 500/speak Abigail \"I'm so glad you're looking better. Dr. Harvey really worked a miracle on you, huh?#$b#I was seriously on edge while waiting for Dr. Harvey to let me into the room. I hated not knowing how you were doing...$2\"/emote Abigail 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Abigail 3/speak Abigail \"You know, @... I'm still training every day to become stronger, like you.#$b#One day, I want to be able to stand by your side and protect you, like you protect me.#$b# So until that day comes... Please don't go where I can't follow.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Abigail \"There you are! Sit down and relax for today. I'll take care of you until you're totally back on your feet.#$c 0.7#... I'll have to work ten times harder from now on to become strong enough to protect you. Just wait for me a little longer, {{Lowercase:{{TermofEndearment}}}}.$2#$b#I got this for you, too. Hope you feel better soon. [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Abigail",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+			"TermofEndearment": "@, BFF",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //only change is not triggering if you have a roommate
+            "LogName": "Hospital death - Abigail Ex-Partner",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Abigail 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.#$b#...And you should think of your own wellbeing, too.$2\"/pause 500/speak Abigail \"Don't worry. I don't have a lot to say to @, anyway.$2\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Abigail 0 4 3/emote farmer 16/faceDirection Abigail 3/pause 1000/speak Abigail \"I won't be long, I promise.$6#$b#I... I don't know why I came, actually. I guess I'd feel guilty if I left without knowing you'd be alright.$2#$b#And... If that was me in your shoes, I know I wouldn't have wanted to wake up all alone after almost having kicked it.$2\"/emote farmer 16/pause 1000/speak Abigail \"We're never going to be good, you and I, but that doesn't mean I'd let you think that you've been left behind.$2#$b#You have to know that I could never just sit by and watch anyone die.$2#$b#...That's all there is to say. Be more careful out there, @.$2\"/pause 500/move Abigail 0 -4 0/move Abigail -8 0 0/move Abigail 0 -3 0/warp Abigail -100 -100/emote farmer 28/hospitaldeath/end dialogue Abigail \"Hey, that wasn't me trying to make up. I was just being a decent human being.#$b#Just go away, @. This doesn't change anything between us...$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Abigail": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+		"Relationship:Maru |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+     {    
+	    "LogName": "Island Death before Leo - Abigail",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Abigail \"Goodness, @, is that really you? Something got you good out there!$7#$b#Sorry for freaking out, it's just... you're covered in soot and burns and I'm not sure what you need right now...$2#$b#Oh, you're okay? That's a relief.$6#$b#The day I'm strong enough to go out there with you, those monsters will regret ever coming after you, I swear.\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Abigail",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },    
+     {       
+	    "LogName": "Island death with Leo - Abigail",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Abigail \"Goodness, @, is that really you? Something got you good out there!$7#$b#Sorry for freaking out, it's just... you're covered in soot and burns and I'm not sure what you need right now...$2#$b#Oh, you're okay? That's a relief.$6#$b#The day I'm strong enough to go out there with you, those monsters will regret ever coming after you, I swear.\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Abigail",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+     {       
+	    "LogName": "Island death after Leo - Abigail",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Abigail \"Goodness, @, is that really you? Something got you good out there!$7#$b#Sorry for freaking out, it's just... you're covered in soot and burns and I'm not sure what you need right now...$2#$b#Oh, you're okay? That's a relief.$6#$b#The day I'm strong enough to go out there with you, those monsters will regret ever coming after you, I swear.\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Abigail",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+	//
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Abigail",
+		"Entries": {
+			"marriage_bus4": "@, want to hang out with me for a bit this morning?#$b#{{Random: I know! Let me try practicing my palm reading again on you.$h, Hmm... How about you critique me on my sword skills?}}",		
+			"marriage_forest": "My dad would be freaking out if he knew I was here.#$b#This is the most alive I've felt since our commitment ceremony.$l",
+			"marriage_13": "They said I can only come in with you.$9#$b#I have a hunch that they started allowing the kids to roam free while they hide the eggs.#$b#I guess a certain couple of {{RelationshipLabel}} had to do with that.$h",
+			"marriage_16": "Let's walk in together. I wanna show my Dad who he's up against.$h",
+			},
+		    "When": {
+			"UseLovePortraits": "true",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		    }
+		},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Abigail",
+		"Entries": {
+			"marriage_bus4": "@, want to hang out with me for a bit this morning?#$b#{{Random: I know! Let me try practicing my palm reading again on you.$h, Hmm... How about you critique me on my sword skills?}}",		
+			"marriage_forest": "My dad would be freaking out if he knew I was here.#$b#This is the most alive I've felt since our commitment ceremony.$h",
+			"marriage_13": "They said I can only come in with you.$9#$b#I have a hunch that they started allowing the kids to roam free while they hide the eggs.#$b#I guess a certain couple of {{RelationshipLabel}} had to do with that.$h",
+			"marriage_16": "Let's walk in together. I wanna show my Dad who he's up against.$h",
+			},
+		    "When": {
+			"UseLovePortraits": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		    }
+		},
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueAbigail",
+		"Entries": {
+			"spring_4": "Oh joy. {{TermofEndearment}}, if you need me today I'll be at the doctor's for my check-up."
+		},
+		    "When": {
+                	"HasMod |contains=iss.immersivespouses": "true"
+		    }
+	},
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname": "Abigail PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "summer_Tue8_inlaw_Abigail":"Oh, hey.$0#$e#How's life with Abigail coming along?$1",
+            "winter_Mon10_inlaw_Abigail":"Oh, hey.$0#$e#How's life with Abigail coming along?$1",
+            "summer_Tue8_roommate_Abigail":"Oh, hey.$0#$e#How's life with Abigail coming along?$1",
+            "winter_Mon10_roommate_Abigail":"Oh, hey.$0#$e#How's life with Abigail coming along?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Abigail": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Abigail make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Abigail": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Abigail will have any problems with that.$1",
+            "fall_Fri8_inlaw_Abigail": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Abigail make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Abigail": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Abigail will have any problems with that.$1",
+            "spring_Tue8_roommate_Abigail": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Abigail make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Abigail": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Abigail will have any problems with that.$1",
+            "fall_Fri8_roommate_Abigail": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Abigail make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Abigail": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Abigail will have any problems with that.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sam",
+	"Entries": {
+            "spring_Tue8_inlaw_Abigail":"I knew you'd end up living with Abby the first time I met you.$0#$b#You're such great friends to each other.$1",
+            "summer_Mon8_inlaw_Abigail":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Abigail":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "winter_Wed8_inlaw_Abigail":"I knew you'd end up living with Abby the first time I met you.$0#$b#You're such great friends to each other.$1",
+            "spring_Tue8_roommate_Abigail":"I knew you'd end up living with Abby the first time I met you.$0#$b#You're such great friends to each other.$1",
+            "summer_Mon8_roommate_Abigail":"Hey, @. How's life with Abby?$0#$b#Hey, don't you play an instrument? I should come over sometime and jam with you two.$1",
+            "fall_Sat8_roommate_Abigail":"Hey, @. How's life with Abby?$0#$b#Hey, don't you play an instrument? I should come over sometime and jam with you two.$1",
+            "winter_Wed8_roommate_Abigail":"I knew you'd end up living with Abby the first time I met you.$0#$b#You're such great friends to each other.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Thu8_inlaw_Abigail":"Abigail has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_inlaw_Abigail":"I clearly see you and Abigail were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_inlaw_Abigail":"Abigail has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_inlaw_Abigail":"I clearly see you and Abigail were made to be {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Abigail":"Abigail has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_roommate_Abigail":"I clearly see you and Abigail were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_roommate_Abigail":"Abigail has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_roommate_Abigail":"I clearly see you and Abigail were made to be {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Haley",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Haley",
+	"Entries": {
+            "summer_Sat8_inlaw_Abigail":"I'm so happy for you and Abigail.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_inlaw_Abigail":"I'm so happy for you and Abigail.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "summer_Sat8_roommate_Abigail":"I'm so happy for you and Abigail.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_roommate_Abigail":"I'm so happy for you and Abigail.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Abigail":"Hello, @.$0#$e#You and Abigail are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Abigail":"Hello, @.$0#$e#You and Abigail are such cute {{RelationshipLabel}}.$1",
+            "spring_Mon8_roommate_Abigail":"Hello, @.$0#$e#You and Abigail are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Abigail":"Hello, @.$0#$e#You and Abigail are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Caroline",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Caroline",
+	"Entries": {
+	    "Mon_inlaw_Abigail": "Hi, @. Are you and Abigail enjoying life as {{RelationshipLabel}}? I hope so!",
+            "spring_Sat10_inlaw_Abigail": "When did Abigail grow up so much?$0#$e#It seems like yesterday when I used to take her to the playground.$0#$b#I kind of miss those days.$0#$e#At least now she's {{RelationshipLabel}} with a wonderful farmer.$1",
+            "summer_Thu_inlaw_Abigail": "My little girl's all grown up now.$0#$b#It didn't even cross my mind that Abigail would move away.$0",
+            "summer_Fri10_inlaw_Abigail": "When did Abigail grow up so much?$0#$e#It seems like yesterday when I used to take her to the playground.$0#$b#I kind of miss those days.$0#$e#At least now she's {{RelationshipLabel}} with a wonderful farmer.$1",
+            "fall_Sun_inlaw_Abigail": "I didn't expect Abigail to move out so soon.$0#$e#Maybe I should have spent more time with her when I could...$2",
+            "winter_Thu10_inlaw_Abigail": "My little girl's all grown up now.$0#$b#It didn't even cross my mind that Abigail would move away.$0",
+            "winter_Sat10_inlaw_Abigail": "I didn't expect Abigail to move out so soon.$0#$e#Maybe I should have spent more time with her when I could...$2",
+	    "Mon_roommate_Abigail": "Hi, @. Are you and Abigail enjoying life as {{RelationshipLabel}}? I hope so!",
+            "spring_Sat10_roommate_Abigail": "When did Abigail grow up so much?$0#$e#It seems like yesterday when I used to take her to the playground.$0#$b#I kind of miss those days.$0#$e#At least now she's {{RelationshipLabel}} with a wonderful farmer.$1",
+            "summer_Thu_roommate_Abigail": "My little girl's all grown up now.$0#$b#It didn't even cross my mind that Abigail would move away.$0",
+            "summer_Fri10_roommate_Abigail": "When did Abigail grow up so much?$0#$e#It seems like yesterday when I used to take her to the playground.$0#$b#I kind of miss those days.$0#$e#At least now she's {{RelationshipLabel}} with a wonderful farmer.$1",
+            "fall_Sun_roommate_Abigail": "I didn't expect Abigail to move out so soon.$0#$e#Maybe I should have spent more time with her when I could...$2",
+            "winter_Thu10_roommate_Abigail": "My little girl's all grown up now.$0#$b#It didn't even cross my mind that Abigail would move away.$0",
+            "winter_Sat10_roommate_Abigail": "I didn't expect Abigail to move out so soon.$0#$e#Maybe I should have spent more time with her when I could...$2",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Abigail":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Abigail as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Abigail":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Abigail as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Abigail":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Abigail as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Abigail":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Abigail as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Abigail":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Abigail will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Abigail":"A true lifelong friendship, like you have with Abigail, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Abigail":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Abigail will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Abigail":"A true lifelong friendship, like you have with Abigail, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Abigail":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Abigail will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Abigail":"A true lifelong friendship, like you have with Abigail, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Abigail":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Abigail will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Abigail":"A true lifelong friendship, like you have with Abigail, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{	
+	"Logname": "Abigail PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Abigail":"If you and Abigail want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Abigail":"If you and Abigail want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Abigail":"If you and Abigail want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Abigail":"If you and Abigail want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Abigail":"If you and Abigail want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Abigail":"If you and Abigail want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Abigail":"If you and Abigail want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Abigail":"If you and Abigail want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Jas, pendant relationship",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Abigail":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Abigail":"So are you and Ms. Abigail like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Abigail":"Hello, Farmer @.$0#$b#Why can't you and Ms. Abigail celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Abigail":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Abigail":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Abigail":"So are you and Ms. Abigail like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Abigail":"Hello, Farmer @.$0#$b#Don't you think you and Ms. Abigail should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Abigail":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Jodi",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jodi",
+	"Entries": {
+            "summer_Wed10_inlaw_Abigail":"Hello, @.$0#$e#Did you know Caroline was more nervous than Abigail was about her moving out?$1",
+            "winter_Fri10_inlaw_Abigail":"Hello, @.$0#$e#Did you know Caroline was more nervous than Abigail was about her moving out?$1",
+            "summer_Wed10_roommate_Abigail":"Hello, @.$0#$e#Did you know Caroline was more nervous than Abigail was about her moving out?$1",
+            "winter_Fri10_roommate_Abigail":"Hello, @.$0#$e#Did you know Caroline was more nervous than Abigail was about her moving out?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Abigail":"There aren't many young {{RelationshipLabel}} like you and Abigail here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Abigail":"There aren't many young {{RelationshipLabel}} like you and Abigail here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Abigail":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Abigail":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Abigail":"There aren't many young {{RelationshipLabel}} like you and Abigail here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Abigail":"There aren't many young {{RelationshipLabel}} like you and Abigail here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Abigail":"I know you and Abigail chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Abigail":"I know you and Abigail chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Abigail":"Hello, @.$0#$e#I wish you and Abigail a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Abigail":"May Yoba grant you and Abigail a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Abigail":"Hello, @.$0#$e#I wish you and Abigail a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Abigail":"May Yoba grant you and Abigail a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Abigail":"Hello, @.$0#$e#I wish you and Abigail a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Abigail":"May Yoba grant you and Abigail a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Abigail":"Hello, @.$0#$e#I wish you and Abigail a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Abigail":"May Yoba grant you and Abigail a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Abigail":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Abigail":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Abigail":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Abigail":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },   
+{
+	"Logname": "Abigail PRMM, Pierre",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pierre",
+	"Entries": {
+            "fall_Mon_inlaw_Abigail":"Hello, @. How are things with you and Abigail?",
+            "winter_Mon_inlaw_Abigail":"Hello, @. How are things with you and Abigail?",
+            "summer_Fri10_inlaw_Abigail":"I didn't expect Abigail would move out so soon.$0#$e#Maybe I should have spent more time with her when I could...$2",
+            "fall_Wed10_inlaw_Abigail":"My little girl's all grown up now.$0#$b#It didn't even cross my mind Abigail would move away.$0",
+            "fall_Sat10_inlaw_Abigail":"If Abigail ever wants a romantic relationship on top of being your {{PlatonicSocialMenuLabel}}, I think Sebastian would be a good match.$1",
+            "fall_Mon_roommate_Abigail":"Hello, @. How are things with you and Abigail?",
+            "winter_Mon_roommate_Abigail":"Hello, @. How are things with you and Abigail?",
+            "summer_Fri10_roommate_Abigail":"I didn't expect Abigail would move out so soon.$0#$e#Maybe I should have spent more time with her when I could...$2",
+            "fall_Wed10_roommate_Abigail":"My little girl's all grown up now.$0#$b#It didn't even cross my mind Abigail would move away.$0",
+            "fall_Sat10_roommate_Abigail":"If Abigail ever wants a romantic relationship on top of being your {{PlatonicSocialMenuLabel}}, I think Sebastian would be a good match.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Abigail":"You and Abigail remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Abigail":"You and Abigail remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Abigail":"You and Abigail remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Abigail":"You and Abigail remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Abigail":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Abigail.$1",
+            "summer_Wed10_inlaw_Abigail":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_inlaw_Abigail":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Abigail.$1",
+            "winter_Sun10_inlaw_Abigail":"It's so cool how you're {{RelationshipLabel}} with Ms. Abigail.$1#$e#I never thought that would have happened!$0",
+            "spring_Tue10_roommate_Abigail":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Abigail.$1",
+            "summer_Wed10_roommate_Abigail":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_roommate_Abigail":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Abigail.$1",
+            "winter_Sun10_roommate_Abigail":"It's so cool how you're {{RelationshipLabel}} with Ms. Abigail.$1#$e#I never thought that would have happened!$0",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

@@ -1,0 +1,339 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Buff Icons!",
+      "Action": "Load",
+      "Target": "Mods/MadDog.HashtagBearfam/MadDogBuffs",
+      "FromFile": "assets/MadDogBearFam_BuffIcons.png"
+    },
+    {
+      "LogName": "Define Buffs",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "MadDog.HashtagBearFam_LeatherArmorBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_LeatherArmorBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 0,
+          "Effects": {
+            "MaxStamina": 40.0,
+            "Speed": 1.0,
+            "Defense": 4.0,
+            "Attack": 1.0
+          }
+        },
+        "MadDog.HashtagBearFam_WellEquippedBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_WellEquippedBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 1,
+          "Effects": {
+            "MaxStamina": 50.0,
+            "MagneticRadius": 32.0,
+            "Speed": 2.0,
+            "Defense": 2.0,
+            "Attack": 2.0
+          }
+        },
+        "MadDog.HashtagBearFam_WildWestBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_WildWestBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 2,
+          "Effects": {
+            "Attack": 3.0,
+            "LuckLevel": 1.0,
+            "ForagingLevel": 2.0
+          }
+        },
+        "MadDog.HashtagBearFam_MercantileBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_MercantileBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 3,
+          "Effects": {
+            "MiningLevel": 2.0,
+            "LuckLevel": 2.0,
+            "MagneticRadius": 64.0,
+            "Speed": 2.0
+          }
+        },
+        "MadDog.HashtagBearFam_VikingatSeaBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_VikingatSeaBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 4,
+          "Effects": {
+            "FishingLevel": 6.0,
+            "MiningLevel": 2.0,
+            "MaxStamina": 70.0,
+            "Attack": 2.0
+          }
+        },
+        "MadDog.HashtagBearFam_LongArmoftheLawBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_LongArmoftheLawBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 5,
+          "Effects": {
+            "Attack": 3.0,
+            "LuckLevel": 1.0,
+            "ForagingLevel": 2.0
+          }
+        },
+        "MadDog.HashtagBearFam_KrakenDefenseBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_KrakenDefenseBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 6,
+          "Effects": {
+            "Defense": 10,
+            "LuckLevel": 2.0
+          }
+        },
+        "MadDog.HashtagBearFam_BearAttackBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_BearAttackBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 7,
+          "Effects": {
+            "Attack": 10,
+            "ForagingLevel": 2.0
+          }
+        },
+        "MadDog.HashtagBearFam_DogSpeedBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_DogSpeedBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 8,
+          "Effects": {
+            "Speed": 10,
+            "MaxStamina": 35.0
+          }
+        },
+        "MadDog.HashtagBearFam_FishAreFriendsBuff": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_FishAreFriendsBuff.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 9,
+          "Effects": {
+            "ForagingLevel": 5.0,
+            "FishingLevel": -10.0,
+            "FarmingLevel": 5.0
+          }
+        },
+        "MadDog.HashtagBearFam_MyLuckyFlower": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_MyLuckyFlower.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 10,
+          "Effects": {
+            "Luck": 3.0,
+            "FarmingLevel": 7.0
+          }
+        },
+        /* "MadDog.HashtagBearFam_WeakHealth": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_WeakHealth.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 11,
+          "Effects": {
+            "Luck": 3.0,
+            "FarmingLevel": 7.0
+          },
+          "CustomFields": {
+            "spacechase0.SpaceCore/HealthRegeneration": 1
+          }
+        },
+        "MadDog.HashtagBearFam_WeakStamina": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_WeakStamina.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 12,
+          "Effects": {
+            "Luck": 3.0,
+            "FarmingLevel": 7.0
+          },
+          "CustomFields": {
+            "spacechase0.SpaceCore/StaminaRegeneration": 1
+          }
+        },
+        "MadDog.HashtagBearFam_Weakling": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_Weakling.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 13,
+          "Effects": {
+            "Luck": 3.0,
+            "FarmingLevel": 7.0
+          },
+          "CustomFields": {
+            "spacechase0.SpaceCore/HealthRegeneration": 3,
+            "spacechase0.SpaceCore/StaminaRegeneration": 3
+          }
+        },*/
+        "MadDog.HashtagBearFam_WeakHealth": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_WeakHealth.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 11,
+          "Effects": {
+            "Luck": 3.0,
+            "MaxStamina": 30,
+            "FarmingLevel": 7.0
+          }
+        },
+        "MadDog.HashtagBearFam_WeakStamina": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_WeakStamina.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 12,
+          "Effects": {
+            "Luck": 3.0,
+            "MaxStamina": 50,
+            "FarmingLevel": 7.0
+          }
+        },
+        "MadDog.HashtagBearFam_Weakling": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_Weakling.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 13,
+          "Effects": {
+            "Luck": 3.0,
+            "MaxStamina": 80,
+            "Defense": 2.0,
+            "FarmingLevel": 7.0
+          }
+        },
+        "MadDog.HashtagBearFam_PartofBearFam": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_PartofBearFam.Name}}",
+          "IconTexture": "Mods\\MadDog.HashtagBearfam\\MadDogBuffs",
+          "IconSpriteIndex": 14,
+          "Effects": {
+            "Defense": 1.0
+          },
+          "CustomFields": {
+            "spacechase0.SpaceCore/HealthRegeneration": 3,
+            "spacechase0.SpaceCore/StaminaRegeneration": 3
+          }
+        }
+      }
+    },
+
+    {
+      "LogName": "Add Buffs to Items",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/WearableData",
+      "Entries": {
+
+        "(S)MadDog.HashtagBearFam_BurgundyLeathers": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_LeatherArmorBuff"
+        },
+        "(S)MadDog.HashtagBearFam_UmberLeathers": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_LeatherArmorBuff"
+        },
+
+        "(S)MadDog.HashtagBearFam_CopperBomberJacket": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_WellEquippedBuff"
+        },
+        "(S)MadDog.HashtagBearFam_AdventuringKit": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_WellEquippedBuff"
+        },
+
+        "(S)MadDog.HashtagBearFam_CowboyBlue": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_WildWestBuff"
+        },
+        "(S)MadDog.HashtagBearFam_BanditBlue": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_WildWestBuff"
+        },
+
+        "(S)MadDog.HashtagBearFam_PotioneerVest": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_MercantileBuff"
+        },
+        "(S)MadDog.HashtagBearFam_GathererKnapsack": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_MercantileBuff"
+        },
+
+        "(H)MadDog.HashtagBearFam_VikingHelmet": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_VikingatSeaBuff"
+        },
+        "(H)MadDog.HashtagBearFam_LawmanStetson": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_LongArmoftheLawBuff"
+        },
+        "(O)MadDog.HashtagBearFam_Regen_WeakRingI": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_WeakHealth"
+        },
+        "(O)MadDog.HashtagBearFam_Regen_WeakRingII": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_WeakStamina"
+        },
+        "(O)MadDog.HashtagBearFam_Regen_WeakRingIII": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_Weakling"
+        }
+      }
+    },
+    {
+      "LogName": "Add Buff to Gunnar's plush",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/WearableData",
+      "When": {
+        "HasSeenEvent": "MadDog.BearFam.16193012"
+      },
+      "Entries": {
+        "(O)MadDog.HashtagBearFam_Stuffed_Kraken": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_KrakenDefenseBuff"
+        }
+      }
+    },
+    {
+      "LogName": "Add Buff to Sig's plush",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/WearableData",
+      "When": {
+        "HasSeenEvent": "MadDog.BearFam.16191013"
+      },
+      "Entries": {
+        "(O)MadDog.HashtagBearFam_Stuffed_Bear": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_BearAttackBuff"
+        }
+      }
+    },
+    {
+      "LogName": "Add Buff to Teren's plush",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/WearableData",
+      "When": {
+        "HasSeenEvent": "MadDog.BearFam.16199010"
+      },
+      "Entries": {
+        "(O)MadDog.HashtagBearFam_Stuffed_Dog": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_DogSpeedBuff"
+        }
+      }
+    },
+    {
+      "LogName": "Add Buff to Gudrun's shirt",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/WearableData",
+      "When": {
+        "HasSeenEvent": "MadDog.BearFam.16194011"
+      },
+      "Entries": {
+        "(S)MadDog.HashtagBearFam_PrismaticFish": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_FishAreFriendsBuff"
+        }
+      }
+    },
+    {
+      "LogName": "Add Buff to Sondra's shirt",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/WearableData",
+      "When": {
+        "HasSeenEvent": "MadDog.BearFam.16192007"
+      },
+      "Entries": {
+        "(S)MadDog.HashtagBearFam_PrismaticFlower": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_MyLuckyFlower"
+        }
+      }
+    },
+    {
+      "LogName": "Add Buff to Bearfam keychain",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/WearableData",
+      "When": {
+        "HasMod": "DN.SnS"
+      },
+      "Entries": {
+        "(O)MadDog.HashtagBearFam_BearFamilyKeyChain": {
+          "BuffIdToApply": "MadDog.HashtagBearFam_PartofBearFam"
+        }
+      }
+    }
+  ]
+
+}

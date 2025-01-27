@@ -1,0 +1,914 @@
+{
+	
+	//CONFIG TRANSLATIONS
+	
+	"config.section.Date Chances.name": "데이트 확률 조정",
+	"config.section.Date Chances.description": "그 날 아침 배우자가 데이트를 권유할 확률을 조정합니다.",
+	
+	"config.section.Friendship Requirements.name": "친밀도에 따른 보너스",
+	"config.section.Friendship Requirements.description": "배우자가 친밀도에 따라 데이트를 추가로 권유할 확률을 조정합니다.",
+	
+	"config.section.Date Tweaks.name": "데이트 변경",
+	"config.section.Date Tweaks.description": "여러 명의 배우자와 결혼했을 시 성별등 여러 요소에 따라 데이트를 권유하는 방식을 변경합니다.",
+	
+	"config.section.Allowed Dates.name": "허용된 데이트",
+	"config.section.Allowed Dates.description": "이곳에서 특정 NPC와의 데이트를 허용하거나 비활성화하세요. 바닐라 타입의 배우자 또는 룸메이트만 허용됩니다.",
+	
+	"config.DateAskPercentChance.name": "데이트 권유 확률 조정",
+    "config.DateAskPercentChance.description": "농장 저택 밖으로 나갈 때 배우자가 데이트를 권유할 확률을 조정합니다. 기본값은 10%이며, 0%로 설정 시 데이트 권유를 하지 않습니다.",
+	
+	"config.UniqueDateChance.name": "특별한 데이트 확률",
+    "config.UniqueDateChance.description": "특정 배우자의 특별한 데이트가 발생할 확률을 조정합니다. 만약 배우자와의 특별한 데이트가 없다면 확률을 0으로 설정하십시오. 이 확률을 100으로 설정했다면, 배우자와의 일반 데이트가 발생할 확률을 0으로 설정하십시오.(현재 버전에서는 마루, 헤일리, 에밀리, 알렉스 4명의 특별한 데이트가 개방되어 있습니다.)",
+	
+	"config.MinHeartsRequired.name": "데이트에 필요한 최소 친밀도",
+    "config.MinHeartsRequired.description": "데이트 권유가 발생 가능한 친밀도의 최저값을 설정합니다. 기본은 10입니다.",
+	
+	"config.FriendshipBonus.name": "데이트로 얻는 보너스 친밀도",
+    "config.FriendshipBonus.description": "배우자와의 데이트 이벤트로 얻는 보너스 친밀도를 설정합니다. 없음은 아무런 보너스를 받지 못하며, 작음은 1/10하트, 중간은 2/10하트, 많음은 4/10하트를 획득합니다.",
+	"config.FriendshipBonus.values.none": "없음",
+	"config.FriendshipBonus.values.small": "작음 (1/10 하트)",
+	"config.FriendshipBonus.values.medium": "중간 (1/5 하트)",
+	"config.FriendshipBonus.values.large": "많음 (2/5 하트)",
+	
+	"config.FreeLovePatch.name": "폴리모리 모드 또는 프리 러브 모드와의 호환성",
+    "config.FreeLovePatch.description": "활성화하면, 다수의 배우자와 결혼하는 모드가 설치되어 있을 경우, 데이트를 할 수 있는 배우자를 선택할 수 있습니다. 해당 모드가 없다면 기본적으로 비활성화 되어 있습니다.",
+	"config.FreeLovePatch.values.disabled": "데이트를 물어볼 배우자",
+	"config.FreeLovePatch.values.enabled": "데이트 배우자 무작위 선택",
+	
+	"config.GenderedDialogue.name": "성별 구분 대사",
+    "config.GenderedDialogue.description": "모드에서 나오는 대화에 대한 성별 차이를 설정합니다 Off 상태에서는 대화에서 기본적으로 배우자의 성별을 논바이너리로 취급합니다. 기본적으로 ON상태이지만, 비활성화 할 경우 플레이어의 성별이 중립 모드인 경우에 한해 자동으로 off 설정됩니다.",
+	"config.GenderedDialogue.values.disabled": "성별 중립 대화 사용",
+	"config.GenderedDialogue.values.enabled": "성별 구분 대화 사용",
+	
+	"config.SuggestiveEndings.name": "'특별한 행위'를 암시하는 엔딩 설정",
+    "config.SuggestiveEndings.description": "데이트 이벤트에 관련된 엔딩이 주는 '특별한' 암시를 활성화/비활성화 합니다. 엔딩 이벤트는 후방 주의가 아니지만, 청소년 시청관람 가능 등급을 유지하고 싶다면 비활성화할 수 있습니다. ",
+	"config.SuggestiveEndings.values.disabled": "암시하는 엔딩 사용 안함",
+	"config.SuggestiveEndings.values.enabled": "암시하는 엔딩 사용",
+	
+	"config.LibraryDateCutscene.name": "도서관 데이트 컷신",
+    "config.LibraryDateCutscene.description": "도서관 데이트 컷신 중의 액자식 구성 스토리 보기를 활성화/비활성화 합니다. 한번쯤 보시는것을 추천드립니다만, 이벤트를 짧게 끝내고 싶으시다면 비활성화 하세요.",
+	"config.LibraryDateCutscene.values.disabled": "도서관 이야기 컷신 스킵",
+	"config.LibraryDateCutscene.values.enabled": "도서관 이야기 컷신 보기",
+	
+	"config.DatesOnFestivalDays.name": "축제날의 데이트 발생 허용",
+    "config.DatesOnFestivalDays.description": "축제 일 때 데이트를 신청할지 여부를 활성화/비활성화합니다. 기본적으로 축제일에 몇몇 지역이 출입 금지가 되기 때문에, 데이트 이벤트와 충돌하면 그 날 일정을 정상적으로 종료할 수 없습니다. 활성화하면, 모든 조건을 무시하고 그 날 데이트 이벤트가 발생합니다. 비활성화한다면, 축제일에는 절대 데이트를 신청하지 않습니다.",
+	"config.DatesOnFestivalDays.values.disabled": "축제일에 데이트 거부",
+	"config.DatesOnFestivalDays.values.enabled": "축제일에 데이트 허용",
+	
+	"config.AllowRoommateDates.name": "동성 배우자와의 데이트",
+    "config.AllowRoommateDates.description": "동성 배우자가 데이트를 권유할지 여부를 결정합니다. 참고: 이 옵션은 데이트 대화 자체를 변경하는 것이 아닙니다. 단지 데이트 이벤트 발생 자체를 차단할 뿐입니다. 기본적으로 이성 배우자일 때와 동일한 데이트 이벤트가 발생합니다.",
+	"config.AllowRoommateDates.values.disabled": "데이트 거부",
+	"config.AllowRoommateDates.values.enabled": "데이트 허용",
+	
+	"config.DisabledDates.name": "제거",
+    "config.DisabledDates.description": "다수의 배우자와 결혼하는 모드 한정으로 특정 배우자가 당신에게 데이트를 신청하는 것을 차단할 수 있습니다. 기본적으로 비활성화되어 있습니다.",
+	"config.DisabledDates.values.Abigail": "아비게일과의 데이트",
+	"config.DisabledDates.values.Leah": "레아와의 데이트",
+	"config.DisabledDates.values.Penny": "페니와의 데이트",
+	"config.DisabledDates.values.Maru": "마루와의 데이트",
+	"config.DisabledDates.values.Haley": "헤일리와의 데이트",
+	"config.DisabledDates.values.Emily": "에밀리와의 데이트",
+	"config.DisabledDates.values.Sebastian": "세바스챤과의 데이트",
+	"config.DisabledDates.values.Elliott": "엘리엇과의 데이트",
+	"config.DisabledDates.values.Sam": "샘과의 데이트",
+	"config.DisabledDates.values.Harvey": "하비와의 데이트",
+	"config.DisabledDates.values.Alex": "알렉스와의 데이트",
+	"config.DisabledDates.values.Shane": "셰인과의 데이트",
+	
+	
+	//Date Translations
+	
+	//Common Date Lines
+	
+	"AcceptDate.Choice": "오늘 나랑 어디 놀러 갈래?",
+	"AcceptDate.Yes": "좋아.",
+	"AcceptDate.No": "오늘은 좀...",
+	
+	"RejectDate.1": "아...$s#$b#오늘도 바빠?$s",
+	"RejectDate.2": "괜찮아요. 다음에 가지 뭐, 어서 일 하러 가봐.", //Applies to all generic dates except Dance, Grocery and Unique Dates
+	"RejectDate.3": "걱정하지 마. 나 화 안났어.#$b#너 늘 바쁜 거 잘 아는 걸...내가 이 마을 최고의 농부랑 결혼한 것도 잘 알고.",
+	
+	//GENERIC DATES
+	
+	//Saloon Date
+	
+		//Intro
+		"SaloonDateIntro.1": "저기, @...",
+		"SaloonDateIntro.2": "@, 가기 전에...",
+		"SaloonDateIntro.3": "@, 기다려!",
+		"SaloonDateIntro.4": "@, 잠깐...",
+		
+		"SaloonDateIntro.5": "음, 혹시 너만 좋다면...$l#$b#오늘 저녁에 어디 놀러 갈래...?$l",
+		"SaloonDateIntro.6": "난, 너가...어쩌면...$l#$b#...오늘 밤 놀러 갈래...?$l",
+		
+		"SaloonDateIntro.7.Gendered": "네가 늘 바쁜 건 알고 있지만, 그래도 난 오늘만큼은 제 멋진 반쪽과 함께 하는 시간을 가지고 싶은걸...$l^네가 늘 바쁜 건 알고 있어. 그래도 가끔은 내 예쁜 아내와 시간을 보내고 싶은걸...$l",
+		"SaloonDateIntro.7.Neutral": "네가 늘 바쁜 건 알고 있지만, 그래도 가끔은 내 최고의 친구와 멋진 시간을 함께하고 싶어.$l",
+		
+		"SaloonDateIntro.8.Gendered": "너랑 좀 더 함께 있고 싶어...$l^너와 좀 더 함께 있고 싶어...$l",
+		"SaloonDateIntro.8.Neutral": "너와 좀 더 함께하고 싶어...$l",
+		
+		"SaloonDateIntro.9": "네가 늘 바쁘다는 건 알고 있지만, 그래도 가끔은 정말로 둘만의 시간을 가지고 싶은 걸...$l",
+		"SaloonDateIntro.10": "멋져! 우리 오후 6시 이후에 살롱에서 만나!$h#$b#네가 보고 싶어서 그때까지 못 기다릴 거 같아...$l",
+		"SaloonDateIntro.End": "나 정말 기뻐, 자기!$h#$b#기억해, 오후 6시 이후에 살롱이야! 꼭 잊지 마~!$h",
+	
+		//Date
+		"SaloonDate.1": "@! 왔네! 저도 너 오기 바로 전에 도착했어.",
+		"SaloonDate.2": "[CharacterName {{Gus}}] 아저씨에게 부탁해서 특별히 안쪽의 방을 따로 예약했어! 멋지지?",
+		"SaloonDate.3": "어서 와서 앉아.",
+		"SaloonDate.4": "당신과 오랫만에 함께 할 수 있어서 정말 기뻐, @. $l",
+		"SaloonDate.5": "[CharacterName {{Gus}}] 아저씨 에게 이미 주문해 놨어.#$b#걱정 마! 네가 가장 좋아하는 걸로 했으니까~$h",
+		"SaloonDate.6": "내가 펠리컨 타운에 새로 온 농부와 사랑에 빠질 거라곤 정말 상상도 못했었네. 하지만 지금은 이렇게 되었지...$l",
+		"SaloonDate.7": "당신은 정말 최고야. @. 이 순간이 정말이지 영원했으면 좋겠어...$l",
+		"SaloonDate.8": "오늘 같이 놀러와 줘서 정말 고마워, 네가 늘 바쁜 건 잘 알고 있는 걸...",
+		"SaloonDate.9": "주문한 거 왔습니다, [CharacterName {{Date}}].",
+		"SaloonDate.10": "정말 고마워! [CharacterName {{Gus}}] 아저씨! 내가 거기로 가지러 갈게!", //Look into alternatives for this - translations won't translate dynamic tokens
+		"SaloonDate.11": "'음~제가 정말 좋아하는 거야! 거스 아저씨는 정말 절 잘 알아'!",
+		"SaloonDate.12": "너도 좋아할 줄 알았어!$h", //Split into two for item giving
+		"SaloonDate.13": "우리 좀 더 특별한 걸 해볼까!",
+		"SaloonDate.14": "좋아, @. 뭐 하고 싶은 거 있어?",
+		"SaloonDate.15": "지금 뭐 하고 싶은 거라도 있어?",
+		"SaloonDate.16": "우리 당구라도 칠까?!",
+		"SaloonDate.17": "우리 해변에 갈래?",
+		
+			//Beach Fork
+		
+		"Waves.1": "@, 바닷가에서 파도 구경을 하고 싶은 거야?$h#$b#정말 낭만적이다. 그렇게 해!$h",
+		"Waves.2": "@, 저 너한테 말 하지 않았던 게 있어...",
+		"Waves.3": "네가 이 마을에 오기 전날 밤에, 그때도 바닷가에 한번 왔었던 적이 있어. 생각할 게 있어서...",
+		"Waves.4": "사실은...그땐...난 행복하지 않았던 것 같아. 제가 뭔가 더 나아질 수 있는 계기가 생기기를 바랬었어...$s",
+		"Waves.5": "@, 이제 내 소원이 이루어졌네.$l#$b#제내 소원이 바로 너였던 거야...",
+		"Waves.6": "정말 사랑해, @.",
+		"Waves.7": "얼마나 낭만적인 밤인지... 네가 내 인생에 함께 해 줘서 정말로 기뻐...",
+		
+		"Waves.8": "마법같은 밤이야, @.",
+		"Waves.9": "저기, @...$l#$b#우리 집에 돌아가서도...오늘 밤이 이대로 끝나지는 않겠지...?♡$l",
+		"Waves.10": "하앙...정말 멋졌어... @...$l#$b#하아, 완전히 가 버렸어♡...$l",
+		
+			//Pool Fork
+			
+		"Pool.1": "당구? 좋아!$h#$b#이번에야말로 반드시 승부야!$h",
+		
+		"Pool.2.Gendered": "너라고 해서 봐주진 않아!^아내라고 해서 봐주진 않는다!",
+		"Pool.2.Neutral": "부부라고 해서 봐줄 거라곤 생각하지 마!",
+		
+		"Pool.3": "이얍! 간닷!",
+		"Pool.4": "공이 앞으로 천천히 굴러 갑니다.",
+		"Pool.5": "아...",
+		"Pool.6": "[CharacterName {{Date}}]는(은) 정말로 열심히 했지만, 난 정말 간단하게 이겨 버렸어요. 정말 멋진 밤이었어!",
+		
+		"Pool.7": "다음번엔 반드시 이길 거야! 두고 봐!$h",
+		"Pool.8": "흠, @. 집에 가서 너의 좀 색.다.른. 기술을 가르쳐 주는 건 어때?$l",
+		"Pool.9": "흐으...정말 최고였어, @...$l#$b#하, 완전히 가 버렸는걸...?$l",
+		
+		"SaloonDate.End": "정말 즐거웠어. 언젠가 또 기회가 된다면...?$l",
+		
+	//Picnic Date
+	
+		//Intro
+		"PicnicDateIntro.1": "저기, @...",
+		"PicnicDateIntro.2": "여보, 가기 전에...",
+		"PicnicDateIntro.3": "@, 기다려!",
+		"PicnicDateIntro.4": "@. 잠깐만 기다려 봐.",
+		"PicnicDateIntro.5": "음, 만약 너만 좋다고 한다면...$l#$b#...오늘 어디 놀러 갈래?$l",
+		"PicnicDateIntro.6": "네가 원한다면...그러니까...$l#$b#...오늘 같이 할 수 있어?$l",
+		"PicnicDateIntro.7": "아까부터 물어보려고 했는데...$l#$b#@, 오늘 데이트 어때?$l",
+		
+		"PicnicDateIntro.8.Gendered": "네가 늘 바쁜 건 알고 있지만, 그래도 난 오늘만큼은 제 멋진 남편과 함께 하는 시간을 가지고 싶은걸...$l^네가 늘 바쁜 건 알고 있어. 그래도 가끔은 내 예쁜 아내와 시간을 보내고 싶은걸...$l",
+		"PicnicDateIntro.8.Neutral": "네가 늘 바쁜 건 알고 있지만, 그래도 가끔은 내 최고의 친구와 멋진 시간을 함께하고 싶어.$l",
+		
+		"PicnicDateIntro.9.Gendered": "너랑 좀 더 함께 있고 싶어...$l^너와 좀 더 함께 있고 싶어...$l",
+		"PicnicDateIntro.9.Neutral": "네가 늘 바쁜 건 알고 있지만, 그래도 가끔은 내 친구와 시간을 함께하고 싶어.$l",
+		
+		"PicnicDateIntro.10": "네가 늘 바쁘단 건 알고 있지만서도, 가끔은 둘만의 시간을 보내고 싶은 걸...?$l",
+		"PicnicDateIntro.11": "너에게 뭔가 보여주고 싶은 게 있어.$l",
+		"PicnicDateIntro.12": "정말요? 좋아요! 오후에 잉걸불 숲으로 와.$h#$b#오후까지 참을 수 있을까? @!$l",
+		"PicnicDateIntro.End": "너무 기뻐, @.$h#$b#기억해! 오후에 잉걸불 숲이야, 꼭!$h",
+		
+		//Date
+		
+		"PicnicDate.1": "@! 제시간에 왔네!$h",
+		"PicnicDate.2": "어때?$l#$b#방금 준비를 끝냈는데...$l#$b#짠! 우리를 위한 피크닉이야!$h",
+		"PicnicDate.3": "네가 즐겨 먹던 '농부의 점심'을 준비해 봤어!$h#$b#마음에 들었으면 좋겠네.$l",
+		"PicnicDate.4": "얌얌...음~ 역시 정말 맛있어!",
+		"PicnicDate.5": "너도 느꼈겠지만, 이렇게 밖에 나와 보니 이 계곡이 이렇게 멋지다는 점에 대해서 새삼스럽게 감사한 생각이 들었어...",
+		"PicnicDate.6": "눈에 들어오는 모든 것들이 아름답게 느껴지는 걸...",
+		
+		"PicnicDate.7.Gendered": "특히 제 앞에 있는 너가...$l^특히 내 앞에 있는 @!$l",
+		"PicnicDate.7.Neutral": "특히 내 앞에 서 있는 네가 말이지.$l",
+		
+		"PicnicDate.8": "@, 우리 농장을 볼 때마다 제가 얼마나 운이 좋은 사람인지 새삼스럽게 느껴...$l",
+		"PicnicDate.9": "예쁜 농장, 아늑한 집...무엇보다 바로 네가 있다는 점...$l#$b#난 정말 운이 좋은 사람이야!$h",
+		"PicnicDate.10": "너무 맛있어!$h",
+		"PicnicDate.11": "맛있게 먹었다니 정말 기뻐, @.$l",
+		"PicnicDate.12": "음식도 좀 남았고...시간도 여유가 좀 있네!#$b#우리 이제 뭘 할까, 여보?",
+		"PicnicDate.13": "뭘 하고 싶어?",
+		"PicnicDate.14": "호수에서 바람이라도 쐬요.",
+		"PicnicDate.15": "같이 숲 탐사를 해 볼까요!",
+
+			//Forest Fork
+			
+		"Forest.1": "숲? 좋아! 한번도 숲 깊은 곳까지 들어가 본 적은 없어.#$b#그래도 네가 가고 싶다면 함께 가자.",
+		"Forest.2": "좋아, 가볼까!",
+		"Forest.3": "어서 와, @! 올라올 수 있어!",
+		"Forest.4": "걱정마, 자기! 내가 잡아 줄게!",
+		"Forest.5": "와...여기선 계곡 전체가 다 보이네...",
+		"Forest.6": "오늘 나랑 함께 와 줘서 고마워, @.$l",
+		"Forest.7": "@, 넌 내가 힘들 때마다 늘 곁에 있어 줬네. 말로는 다 표현할 수 없을 정도로 고마워.$l",
+		"Forest.8": "사랑해, @. 영원히.",
+		"Forest.9": "난 오늘을 정말 진심으로 바라고 있었어. 난 정말 운이 좋네.",
+		
+			//Lake Fork
+			
+		"Lake.1": "호수? 아, 정말 좋은 생각이야! 이맘때쯤이 호수가 가장 아름다울 때라고 들었어.",
+		"Lake.2": "좋아, 가자!",
+		"Lake.3": "와...정말이네.#$b#오늘은 특히 더 호수가 아름다워.",
+		"Lake.4": "그래도 너만큼은 아니네.$l",
+		"Lake.5": "오늘 나랑 함께 해 줘서 고마워, @.#$b#나에겐 정말 의미가 커.",
+		"Lake.6": "네가 팰리컨 마을에 온 뒤로 나에게 정말 많은 것들을 주었어...#$b#난 그저 일부라도 갚아 주고 싶었을 뿐이야. 네가 나에게 너무나 준 많은 것들 중 일부라도 돌려 주기 위해서...",
+		"Lake.7": "@, 정말 모든 게 고마워요. 당신을 만나기 전 그 어느 때보다 당신은 절 행복하게 해 주었어요.$l",
+		"Lake.8": "세상 그 누구보다도 당신을 사랑해, @.$l",
+		"Lake.9": "난 오늘을 정말 진심으로 바라고 있었어. 난 정말 운이 좋네.",
+		
+		//Suggestive End
+		"PicnicDate.Suggestive.1": "저기, @...$l",
+		"PicnicDate.Suggestive.2": "우리 돌아가기 전에 여기 덤불 안에서 색.다.른. 즐거움을 느껴 볼까...?♡$l",
+		"PicnicDate.Suggestive.3": "어머~농담이지롱~~$h",
+		"PicnicDate.Suggestive.4": "여기가 아니라...'집에서'라면...?♡$l",
+		"PicnicDate.Suggestive.5": "너무 짜릿했어, @!$l#$b#다음에 시간나면 그때 또...알지?♡$l",
+		
+		"PicnicDate.End": "와줘서 고마워. 당신.$l",
+		
+	//Library Date
+	
+		//Intro
+		"LibraryDateIntro.1": "@, 잠깐만!",
+		"LibraryDateIntro.2": "여보, 기다려봐!",
+		"LibraryDateIntro.3": "@, 잠깐만!",
+		"LibraryDateIntro.4": "자기, 기다려봐!",
+		"LibraryDateIntro.5": "부르르르....",
+		"LibraryDateIntro.6": "와, 오늘 정말 날씨가 쌀쌀하네!",
+		"LibraryDateIntro.7": "부르르...오늘 정말 추워.",
+		"LibraryDateIntro.8": "오...오늘같이 추운 날은 처음이야!",
+		"LibraryDateIntro.9": "저기, @. 나 좋은 생각이 났어!",
+		"LibraryDateIntro.10": "흠...기다려봐. 오늘 뭔가 해야 할 것 같아!",
+		"LibraryDateIntro.11": "기다려봐, @! 오늘 우리가 뭘 해야 할지 좋은 생각이 났어!",
+		"LibraryDateIntro.12": "우리가 함께 할 멋진 장소가 떠올랐어! 오늘 함께 할래? @?$h",
+		"LibraryDateIntro.13": "멋져요! 언제든지 시간 나실 때 도서관으로 와! 오늘같이 추운 날 정말 완벽한 하루가 될 것 같아!$h#$b#당신을 만날 때까지 기다릴 수 없을 것 같아...$l",
+		"LibraryDateIntro.End": "잊지 마!$h#$b#도서관이 문 닫기 전까지 와야 돼?$h",
+		
+		//Date
+		
+		"LibraryDate.1": "오, @! 왔어? 자, 커피를 따뜻하게 데워 놨지.",
+		"LibraryDate.2": "여기야, 한번 마셔 봐!",
+		"LibraryDate.3": "음~ 따뜻하고 맛있네! 오늘같은 날 정말 딱 어울리는 것 같아.",
+		"LibraryDate.4": "고마워! 너도 좋아할 거라고 생각했어.",
+		"LibraryDate.5": "좀 더 마시고 싶은 것처럼 보이네!$h",
+		"LibraryDate.6": "저기, @?#$b#우리 같이 책이라도 읽자!$h",
+		"LibraryDate.7": "네가 좋아하는 책으로 하나 골라 와. 너랑 함께 읽을 수 있다면 장르 따윈 상관 없어. ",
+		
+			//Book Choices
+		"LibraryDate.BookChoice": "어떤 책을 볼까?",
+		"LibraryDate.Detective": "'탐정 김{{PlayerName}} 과(와) 도둑맞은 보물'?",
+		
+			//Detective Book (Default)
+		"Detective.1": "'탐정 김{{PlayerName}} 과(와) 도둑맞은 보물'...#$b#재미있어 보이네!$h",
+		"Detective.2": "'[CharacterName {{Date}}] 는(은) 당신에게 바짝 붙어 옵니다.'",
+		"Detective.3": "같이 읽어 볼까? @!$h#$b#네가 먼저 읽어 봐.",
+		"Detective.4": "'김{{PlayerName}} 는(은) 작은 마을에 사는 평범한 주민이 아니었습니다.'",
+		
+		"Detective.5.Male": "'그 남자는 지겨운 도시 생활에 염증을 느껴 갈매기 마을로 이사왔습니다.'",
+		"Detective.5.Female": "'그녀는 지겨운 도시 생활에 염증을 느껴 갈매기 마을로 이사왔습니다.'",
+		"Detective.5.Neutral": "'그는 지겨운 도시 생활에 염증을 느껴 갈매기 마을로 이사왔습니다.'",
+		
+		"Detective.6": "와, 이 주인공 너랑 비슷해 보이는데, @! 심지어 이름도 비슷해!",
+		"Detective.7": "'하지만 김{{PlayerName}} 은(는) 단순한 사무직이 아니었답니다.'",
+		
+		"Detective.8.Male": "'그 남자는 세계적인 명 탐정이었어요!'",
+		"Detective.8.Female": "'그녀는 세계적인 명 탐정이었답니다!'",
+		"Detective.8.Neutral": "'그는 월드클래스의 명 탐정이었지요!'",
+		
+		"Detective.9": "내 차례!",
+		"Detective.10": "어디까지 읽었더라...",
+		"Detective.11": "아! 여기였네!",
+		"Detective.12": "어느 차가운 밤, 평화로운 마을에 사건이 발생했습니다...",
+		
+		"Detective.Skip": "[CharacterName {{Date}}] 과(와) 나는 하루 종일 책을 읽었습니다. 정말 재미있었어요! [CharacterName {{Date}}] (는)은 김{{PlayerName}} (를)을 볼 때마다 자꾸 제가 생각난다고 했지만요...", //Library Cutscene Disabled
+		
+				//Detective Story
+		"Detective.13": "어이!",
+		"Detective.14": "조시: 도둑 잡아라!!",
+		"Detective.15": "조시: 아, 김{{PlayerName}}! 요바시여, 감사합니다!",
+		"Detective.16": "김{{PlayerName}}: 뭔가 문제라도 생긴 건가요,조시?",
+		"Detective.17": "조시: 어떤 불한당이 우리 집안의 가보를 훔쳐 갔어요! 할아버지 대부터 전해 내려오던 건데!",
+		
+		"Detective.18.Male": "'김{{PlayerName}} 는(은) 누가 그런 짓을 했는지 알고 있었답니다'",
+		"Detective.18.Female": "'김{{PlayerName}} 는(은) 누가 그런 짓을 했는지 알고 있었답니다'",
+		"Detective.18.Neutral": "'김{{PlayerName}} 는(은) 누가 그런 짓을 했는지 알고 있었답니다'",
+		
+		"Detective.19": "다른 사람들에게는 강도가 마치 땅으로 꺼져 버린 것처럼 보일 수도 있었겠지만요.#$b#...하지만 김{{PlayerName}} 는(은) 알고 있었어요!'",
+		
+		"Detective.20.Male": "'그는 곧바로 증거 추적에 나섰고, 곧 이어...!'",
+		"Detective.20.Female": "그녀는 곧바로 증거 추적에 나섰고, 곧 이어...!'",
+		"Detective.20.Neutral": "그는 곧바로 증거 추적에 나섰고, 곧 이어...!'",
+		
+		"Detective.21": "도둑의 은신처로군요!#$b#흥미진진한데, @! 네 차례야!",
+		"Detective.22": "김{{PlayerName}}: 이리 나와라, 도둑놈아!",
+		"Detective.23": "김{{PlayerName}}: 그만 둬라, 이 도둑놈! 네가 누구건간에, 네놈의 정체를 온 천하에 까발려 줄 테다!",
+		"Detective.24": "'도둑은 다름 아닌...'",
+		"Detective.25": "오! 방석 가장자리로 밀려날 뻔 했어... 다시 읽을게.",
+		"Detective.26": "'넌 바로 박[CharacterName {{Date}}](이)야!'", //Translator note: This is the Date's name with -reap appended to it. Likely doesn't need translating, but if you have a better idea on how to make the name work better, feel free to alter.
+		"Detective.27": "김{{PlayerName}}: 박[CharacterName {{Date}}]? 하지만 어째서? 넌 그저 평범한 마을 주민인 줄 알았는데?!",
+		"Detective.28": "박[CharacterName {{Date}}]: 너무 늦었어요! 난 이미 필요한 건 다 챙겼죠!",
+		"Detective.29": "박[CharacterName {{Date}}]: 요바께서 내려 주신 계시에 따라서, 이제 곧 진정한 예언이 실현될 거에요!",
+		"Detective.30": "예언이요? 무슨 예언이지...? 우리가 뭔가 놓치고 넘어 온 게 있나요, @?",
+		"Detective.31": "박[CharacterName {{Date}}]: 좋아요. 마침내 저는---",
+		
+				//Story ends here (merge no cutscene and cutscene dialogues here)
+		"Detective.32": "실례합니다, [CharacterName {{Date}}], 그리고 @.",
+		"Detective.33": "아...?",
+		"Detective.34": "두 사람에게 이런 말씀 드리긴 정말 죄송합니다만, 오늘 도서관 영업 시간이 끝났습니다.",
+		"Detective.35": "오! 그렇게 시간이 많이 지났어?",
+		"Detective.36": "너랑 함께 있었더니 시간 가는 줄 몰랐어!",
+		"Detective.37": "미안해요. [CharacterName {{Gunther}}] 교수님., 우리 바로 나갈게요.",
+		"Detective.38": "감사합니다, [CharacterName {{Date}}].",
+		"Detective.39": "좋아, @. 우리 이제 집에 가자. 딱 재미있는 장면에서 끊겨서 정말로 아쉬워...#$b#아, 책을 읽는 동안 계속 생각이 났어.#$b#[CharacterName {{Jodi}}] 가 조시고, 김{{PlayerName}}은 너...#$b#그리고 난는 박[CharacterName {{Date}}]!$h",
+		"Detective.39.NoStory": "좋아, @. 이제 집에 가는 게 좋을 것 같네. 책을 다 읽지 못해서 아쉬워. 결말이 정말로 궁금했는데...#$b#아, 책을 읽는 동안 스토리가 상상되더라구.#$b#조디는 피해자고, 너는 멋진 영웅...#$b#그리고 나는 나쁜 빌런!$h",
+		
+		"Detective.40": "오늘 같이 와서 고마웠어, @. 정말 재미있었어.#$b#다음에 또 왔으면 좋겠네.",
+		"Detective.41": "'[CharacterName {{Date}}] 과(와) 저는 오늘 정말 즐거운 시간을 보냈습니다! 멋진 데이트였어요!'",
+		
+		"Detective.40.Suggestive": "오늘 와줘서 고마워, @. 정말 즐거웠어.",
+		"Detective.41.Suggestive": "저기... @? 우리 집에 가서 좀더 즐.거.운. 일을 할까?",
+		"Detective.42.Suggestive": "정말 기분 좋았어, @...$l#$b#완전히 가 버렸네...$h",
+		
+		"LibraryDate.End": "와줘서 고마워, @. 정말 기뻤어.$l",
+	
+	//Dance Date (1st of Season)
+	
+		"DanceDate.1": "좋은 아침, @.$l",
+		"DanceDate.2": "그냥 이번 {{Season}} 도 네가 행복했으면 좋겠어. 시간이 정말 빠르게 느껴지네...$l#$b#너와 함께 하는 매일매일이 너무나 놀라워.$l",
+		"DanceDate.3": "저기, @. 너한테 주고 싶은 게 있어.",
+		"DanceDate.4": "직접 기른 거야. 난 당신같이 능숙한 농부는 아니지만, 그래도 네가 기뻐해줬으면 좋겠어.#$b#나한테, 꽃은 행복과 생명을 상징해...#$b#이 꽃이 늘 내 곁에서 그리고 너와 함께 할 거야...$l",
+		"DanceDate.5": "저기, @...$l",
+		"DanceDate.6": "조금 뜬금없을지도 모르지만...$l#$b#나랑 춤 춰 줄래? 우리 삶이 늘 새롭게 바뀌어 가는 이 농장 앞에서, 너랑 나 단 둘이서만...$l",
+		"DanceDate.7": "[CharacterName {{Date}}], (정중하게)나랑 춤 춰 주시겠습니까?",
+		"DanceDate.8": "고마워, @. 음악은 내가 세팅할게.$l",
+		
+		
+		"DanceDate.9.Suggestive": "같이 춤 출 수 있어서 고마웠어, @.$l#$b#이번 계절도 정말 멋진 시즌이 될 것 같아.$l",
+		"DanceDate.10.Suggestive": "저기...일 하러 가시기 전에 좀 시간 되지...?$l#$b#춤을 추고 났더니...몸이 조금 달아오른 것 같아...$l",
+		"DanceDate.11.Suggestive": "하아...$l#$b#정말 짜릿했어...$l#$b#너 진짜 체력 굉장하네, @. 사랑해.$l",
+		
+		"DanceDate.9": "춤 춰 줘서 고마워, @.$l#$b#이번 계절도 정말 멋질 것 같아... 사랑해, @.$l",
+		
+		"DanceDate.ILoveYou": "나도 사랑해, [CharacterName {{Date}}]!.",
+		"DanceDate.End": "나와 춤 춰 줘서 고마워! 올 {{Season}} 도 멋진 계절이 되기를...",
+		
+		"DanceRefusal.1": "아...$s#$b#많이 바빠?$s",
+		"DanceRefusal.2": "이해해. 계절이 새로 시작한다는 건 너같은 농부에겐 엄청나게 할 일이 많아진다는 것을 의마하는 걸...$s#$b#괜찮아. 다음에 기회가 있겠지.$s#$b#다음엔 너랑 좀 더 함께 했으면 좋겠어.",
+		"DanceRefusal.3": "괜찮아. 화 안났어.#$b#네가 바쁘다는 건 결혼할 때부터 이미 알고 있었는걸.",
+	
+	//Beach Date
+	
+		//Intro
+		"BeachDateIntro.1": "저기, @...?",
+		"BeachDateIntro.2": "너, 가시 전에 잠시만...",
+		"BeachDateIntro.3": "@, 기다려!",
+		"BeachDateIntro.4": "자기, 잠시만 기다려 봐.",
+		"BeachDateIntro.5": "아...바깥이 정말 덥네...",
+		"BeachDateIntro.6": "와, 태양이 정말 뜨겁게 타오르고 있어.",
+		"BeachDateIntro.7": "아! 여름이 왔다는 건 알고 있었지만, 제 생각보다 훨씬 더 덥네!",
+		
+		"BeachDateIntro.8.Gendered": "저기, @? 나 좋은 생각이 있어...#$b#우리 오늘 바닷가로 놀러 가지 않을래?#$b#더위를 식히는 데 정말 좋을 것 같아. 네가 매일 바빠서 휴식이 필요하다는 것도 알고 있어.#$b#게다가, 저도 정말 멋진 남자랑 시간을 보낼 수 있구!$l^게다가, 저도 내 예쁜 여자랑 시간을 보낼 수 있지!$l",
+		"BeachDateIntro.8.Neutral": "저기, @? 나 좋은 생각이 있어...#$b#우리 오늘 바닷가로 놀러 가지 않을래?#$b#더위를 식히는 데 정말 좋을 것 같아. 네가 매일 바빠서 휴식이 필요하다는 것도 알고 있어.#$b#거기에, 내 멋진 룸메와 시간을 보낼 수도 있지!$l",
+		
+		"BeachDateIntro.9": "좋지, @?",
+		"BeachDateIntro.10": "정말? 좋아!$h#$b#오전 10시 이후에 바닷가에서 만나.#$b#해가 지기 전엔 와야 돼!#$b#너랑 함께 할 수 있는 시간이 생겼어!$l",
+		"BeachDateIntro.11": "좋아, @... 정말 멋진 아침이야! 곧 다시 만나!",
+		"BeachDateIntro.End": "안녕, @! 오늘 너랑 함께 할 수 있어서 정말 짜릿해!$l#$b#잊지 마세, 오전 10시 이후 해 지기 전까지 바닷가야. 알았지?",
+		
+		//Date
+		
+		"BeachDate.1": "@, 여기야!$h",
+		"BeachDate.2": "무슨 생각 해? 난 아침 내내 오늘의 데이트 준비를 했어.#$b#정말 완벽한 해변 데이트가 될 거야!",
+		"BeachDate.3": "살롱에서 갓 구워온 신선한 피자와 정말 달콤한 와인! 오늘을 즐기기에 너무나 모자람 없는 것들이네!",
+		"BeachDate.4": "너도 좋아했으면 좋겠어, @.$l",
+		"BeachDate.5": "좋아, 먹어 볼까!$h",
+		"BeachDate.6": "좋아, @! 먹자!",
+		"BeachDate.7": "음! 피자가 정말 완벽해!",
+		"BeachDate.8": "맛있어! 거스 아저씨의 피자는 언제나 절 실망시키지 않는다니까!$h",
+		"BeachDate.9": "음...와인도 정말 뒤쳐지지 않네.#$b#여기 더 있어!",
+		"BeachDate.10": "여기, @. 혹시 모르니 나중에 마시라고 따로 챙겨 놓을게.",
+		"BeachDate.11": "좋아! 이제 좀 놀아 볼까?#$b#넌 뭘 하고 싶어?",
+		"BeachDate.12": "뭘 할까?",
+		"BeachDate.13": "'당구를 치자!'",
+		"BeachDate.14": "'해안가 웅덩이를 관찰하러 가자!'",
+		
+			//Swimming Fork
+			
+		"Swim.1": "수영이요? 그거 재미있겠어요!$h#$b#달아오른 몸을 식힐 수 있겠지?",
+		"Swim.2": "좋아, @. 어서 가자!",
+		"Swim.3": "와...정말 멋져!$h#$b#시원한 바닷바람이 왠지 마음을 편하게 만들어 주네.",
+		"Swim.4": "바다 너머 보이는 세계는 이렇게나 넓지만...#$b#나에게 있어 너의 옆자리보다 더 좋은 곳은 없네.$l",
+		"Swim.5": "그렇지, @?",
+		"Swim.6": "다이빙!",
+		"Swim.7": "@, 어서 들어와! 물이 너무 좋아!",
+		"Swim.8": "하~ 너무 시원해.$h",
+		"Swim.9": "뭔가 이상해, 당신?$s#$b#우리 @, 너무 무서워하지 마. 내가 여기 있잖아.",
+		"Swim.10": "내가 잘 봐 줄게.#$b#내가 늘 네 곁에 있을 거야. 슬플 때나 행복할 때나...네 곁에 있을거라고 믿어 줘.",
+		"Swim.11": "사랑해, @.",
+		"Swim.12": "'나도 사랑해, [CharacterName {{Date}}].'",
+		"Swim.13": "'나도 항상 네 곁에 있을게.'",
+		"Swim.14": "우리가 영원히 함께였으면 좋겠어",
+		"Swim.15": "하하, 봐?$h#$b#나랑 함께하면 무섭지 않아. 바다란 참 재미있잖아?",
+		"Swim.16": "이거 받아 봐! @!",
+		"Swim.17": "[CharacterName {{Date}}] (이)가'당신에게 물을 튀깁니다.",
+		"Swim.18": "이런~ 미안해, @~",
+		"Swim.19": "'나도 [CharacterName {{Date}}] 에게 물을 튀기며 한참동안 쫒아다녔어요.'",
+		"Swim.20": "'거의 5분 넘게 쫒아 다닌 끝에, 그(그녀)를 마침내 잡고야 말았죠!'",
+		"Swim.21": "하하, 좋아, @~ 드디어 잡히고 말았네!$h",
+		"Swim.22": "너무 재미있었어요!$h#$b#우리 둘 다 홀딱 젖어 버렸네요!$h",
+		"Swim.23": "'[CharacterName {{Date}}] 과(와)의 해변 데이트는 너무나도 환상적이었습니다. 시간이 어떻게 흐른 줄도 몰랐어!'",
+		
+				//Suggestive Lines
+		"Swim.24": "저기, @...$l#$b#우리 이대로 수영복을 입은 채로 하루를 마무리 할 순 없잖아, 그렇지?$l#$b#얼른 집에 가서 벗어 버리자...♡",
+		"Swim.25": "하앙, @... 너무 좋았어...$l#$b#넌 정말로 멋져...그 누구에게도 주기 싫을 정도로...한번 더 안아 줘...$l",
+		
+			//Tide Pool Fork
+			
+		"TidePool.1": "조수 웅덩이? 그거 좋네! 그쪽으로 건너가는 다리가 망가진 이후로는 한번도 거기 가 본 적이 없어.#$b#특히 여름에 그쪽이 아름답다고 들었어!$h",
+		"TidePool.2": "좋아, @. 어서 가요!",
+		"TidePool.3": "와, 올해 본 것 중에 가장 멋진 광경이네.",
+		"TidePool.4": "이게 뭐지?",
+		"TidePool.5": "꽃게다!#$b#그런데 왠지 겁먹은 것 처럼 보이네?$s",
+		
+		"TidePool.6.Gendered": "안녕, 꽃게 씨. 너 괜찮은 거니?$s^어이~ 꽃게 아가씨. 괜찮아?",
+		"TidePool.6.Neutral": "어이, 꽃게 친구. 괜찮은 거냐?$s", //Small change for gender neutral players, since the game supports gender neutral dialogues now and if someone sets it to non-gendered, should have a backup line
+		
+		"TidePool.7": "*딸각딸각...*",
+		"TidePool.8": "매우 외로워 보여, @...$s#$b#도와주고는 싶지만, 자연환경에 함부로 손 대는 건 좋지 않다는 것 정돈 알아...$s",
+		
+		"TidePool.9.Gendered": "미안해, 꽃게 씨. 도와주진 못할 거 같아...$s^미안해, 꽃게 아가씨...도와주진 못하겠네...$s",
+		"TidePool.9.Neutral": "미안하다. 꽃게 친구. 도와주진 못하겠네.$s",
+		
+		"TidePool.10": "주변에 뭔가 다른 게 있어?",
+		"TidePool.11": "이것 좀 봐, @?",
+		
+		"TidePool.12.Gendered": "저건 그의 친구가 본명해!$h^저건 그녀의 친구가 분명해!$h",
+		"TidePool.12.Neutral": "저건 꽃게의 친구가 분명하다구!$h",
+		
+		"TidePool.13.Gendered": "그녀가 그에게 돌아왔어, @!^그가 그녀에게 돌아왔어, @!", //Consider making this non-heterosexual? Granted, they're crabs, so it shouldn't matter that much.
+		"TidePool.13.Neutral": "그들은 마침내 다시 만났네, @!",
+	
+		"TidePool.14.Gendered": "그녀는 그가 슬퍼하는 걸 알고, 함께 있으려고 온 걸 거야.^그는 그녀가 슬픈 걸 알고 함께 하러 온 게 분명해.#$b#마치 나랑 너 같아! @! $h#$b#나도 슬플때나 행복할 때나 항상 네 곁에 있을게.$l#$b#늘 함께 있을 거야. @.$l",
+		"TidePool.14.Neutral": "저 꽃게는 자기 친구가 슬픈 걸 알고, 곁에 있으려고 온 거야.#$b#너와 나 같이 말이지, 친구!$h#$b#네가 행복할 때나 슬플 때나 항상 곁에 있어 줄게.$l#$b#언제나 너를 도와 주겠어.$l",
+		
+		"TidePool.15": "사랑은 정말 어디에나 있는 것 같아. 꽃게 같은 동물들까지도, 사랑은 서로를 하나로 만들어.",
+		"TidePool.16": "사랑해, @. 네가 알아 줬으면 좋겠어.#$b#너을 이 세상 누구보다 사랑해.",
+		"TidePool.17": "'나도 널 사랑해, [CharacterName {{Date}}].'",
+		"TidePool.18": "'언제나 네 곁에 있을게.'",
+		"TidePool.19": "우리 영원히 함께였으면 좋겠어.",
+		"TidePool.20": "*딸깍딸깍!*",
+		"TidePool.21": "이 꽃게들처럼, 함께 할 사람이 있다는 건 정말 행운인 것 같아. 나한텐 그게 너고, @.$l#$b#오늘 정말 환상적인 데이트였어.",
+		
+		"TidePool.22.NotSuggestive": "'오늘은 정말 멋진 데이트였어요. [CharacterName {{Date}}] 와(과) 즐거운 시간을 보냈어. 나중에 또 왔으면 좋겠군요!'",
+		
+		"TidePool.22": "야, 너 다시 일 하러 가기 전에 시간 좀 있지...?$l#$b#옷에 모래가 잔뜩 묻었는데 집에 가서 벗.는.건. 어때?$l",
+		"TidePool.23": "와우, @... 너무 멋졌어...$l#$b#넌 정말 최고야. 누구에게도 주기 싫을 정도로 말이야...♡$l",
+		
+		"BeachDate.End": "아, 너무 신경 쓰지 마, 당신 난 아직도 당신을 만났다는 이 행운이 믿겨지지가 않는걸.$l#$b#오늘의 마법같은 데이트, 너무나도 고마워. @.",
+	
+	//Grocery Date
+	
+		//Intro
+		"GroceryDateIntro.1": "아, 안녕. 여보.",
+		"GroceryDateIntro.2": "이번 주에 쓸 음식들을 사러 잡화점에 가려고 했어. 식자재가 모자라면, 네가 제때 끼니를 못 챙길지도 모르잖아, 난 그건 싫어!",
+		"GroceryDateIntro.3": "저기, @...?$l#$b#혹시 같이 갈래? 그렇게 낭만적인 데이트는 아니지만, 너랑 함께 할 수 있다면 어쨌든 좋아.",
+		"GroceryDateIntro.4": "진짜? 좋아!$h#$b#그럼 잡화점 문 닫기 전에 거기서 만나. 커플용 가방을 챙겨야겠어~",
+		"GroceryDateIntro.End": "오늘 함께 와서 고마워, @. 물건 사는 게 그렇게 즐거운 건 아니지만, 너랑 함께라면 이야기가 다르지.$l",
+		
+		"GroceryDate.Refusal.1": "아...$s#$b#오늘도 바빠?$s",
+		"GroceryDate.Refusal.2": "괜찮아. 일 하러 가. 다음에 같이 가면 되지. 오늘은 나 혼자 다녀 올게.",
+		"GroceryDate.Refusal.3": "걱정 마. 나 화 안났어.#$b#난 네가 얼마나 바쁜 사람인지 잘 알고 있어. 그걸 알고도 너랑 결혼한 걸.",
+	
+		//Date
+		"GroceryDate.1": "@! 되게 금방 왔네!",
+		"GroceryDate.2": "좋아, @. 얼른 가서 사자!",
+		"GroceryDate.3": "오늘 저녁 거리도 필요하고...#$b#아, 쿠키와 디저트도 사야겠어!",
+		"GroceryDate.4": "너도 뭔가 살 게 있어?",
+		"GroceryDate.5": "'뭘 살까?'",
+		"GroceryDate.6": "달걀!",
+		"GroceryDate.7": "우유!",
+		"GroceryDate.8": "과일!",
+		"GroceryDate.9": "씨앗!",
+		"GroceryDate.10": "간식!",
+		"GroceryDate.11": "괜찮아, 필요한 게 딱히 없어!",
+		
+			//Eggs Fork
+		"Eggs.1": "아, 계란이 필요해?#$b#맞아. 너처럼 열심히 일하는 사람일수록 단백질 섭취가 중요하다고 들었어요.$l",
+		"Eggs.2": "좋아요, @, 계란을 가지러 가자. 아직 어딘가에 좀 남아 있을 거야...",
+		"Eggs.3": "여기야, 여보!#$b#이걸로 오믈렛을 만들어 주셨으면 좋겠어. 너의 요리는 최고니까!",
+
+			//Milk Fork
+		"Milk.1": "우유가 필요해? 좋아!#$b#너같이 열심히 일하는 사람은 늘 에너지가 필요지. 그렇지?",
+		"Milk.2": "좋아, @, 우유를 가지러 가자. 아직 어딘가에 있을 거야...",
+		"Milk.3": "여기야, 여보!#$b#그걸 마시면 너도 더 건강해 질 거야!",
+		
+			//Fruit Fork
+		"Fruit.1": "아, 좋은 생각!#$b#과일이 좋은 것 같아. 달콤함과 건강함의 완벽한 하모니!",
+		"Fruit.2": "좋아, @, 과일을 좀 가지러 가요. 아직 어딘가에 있을 거야...",
+		"Fruit.3": "여기에요, @. 일한 뒤에 먹는 과일만큼 맛있는 것도 없지!",
+		
+			//Seeds Fork
+		"Seeds.1": "씨앗? 물론이야!#$b#너같이 열심히 일하는 농부는 늘 준비를 철저히 해야지.$l",
+		"Seeds.2": "좋아, @, 씨앗을 좀 가지러 가자. 그거 어디 있었던 것 같은데...",
+		"Seeds.3": "여기야, 여보! 네가 찾던 씨앗들. 잘 키워서 우리 농장을 한층 멋지게 만들자! 저것들로 요리를 하면 분명 굉장한 게 나올 거야!$l",
+		
+			//Treats Fork
+		"Treats.1": "간식? 좋아, 제발!#$b#건강한 식생활도 중요하지만, 이런 달콤한 간식 한두개는 나쁘지 않겠지?",
+		"Treats.2": "여기 괜찮은 게 있는 것 같아. 가서 골라 보자.",
+		"Treats.3": "음~ 이걸로 해, 여보. @. 오늘 간식 타임까지 기다릴 수 없겠어!",
+		
+		//Date (continued)
+		
+		"GroceryDate.12": "됐어, 여보! [CharacterName {{Pierre}}] 아저씨, 계산해 주세요!",
+		"GroceryDate.13": "안녕하세요, [CharacterName {{Pierre}}] 아저씨! 오늘 우리가 살 것들이에요.",
+		"GroceryDate.14": "안녕, 농부 @ 와(과) [CharacterName {{Date}}]. 우리 가게를 이용해 줘서 정말 고맙구나.#$b#이걸로 다 된 거니?",
+		"GroceryDate.15": "예! 모두 잘 됬어요!.",
+		"GroceryDate.16": "그거 반가운 소리구나.#$b#좋아, 전부 해서 700골드란다.",
+		"GroceryDate.17": "알았어요! 돈을 어디에 뒀더라...",
+		"GroceryDate.18": "'내가 계산한다'",
+		"GroceryDate.19": "[CharacterName {{Date}}] 이(가) 계산하게 냅둔다.",
+		
+			//Offer to Pay
+		"Offer.1": "예, @?#$b#네가 계산하고 싶다구?#$b#걱정하지 마, 여보. 너은 이미 우리를 위해 많은 걸 하고 있잖아, 이번만큼은 내가 도움이 되고 싶어.",
+		"Offer.2": "'그래도 내가 계산한다'",
+		"Offer.3": "[CharacterName {{Date}}] 이(가) 계산하게 냅둔다.",
+		
+			//Date Pays
+		"DatePay.1": "좋아, [CharacterName {{Date}}], 이용해 주셔서 감~사합니다!#$b#좋은 하루 보내렴!",
+		"DatePay.2": "아저씨도 고마워요!",
+		"DatePay.3": "내가 계산하게 해 주셔서 고마워. 당신. 늘 네가 얼마나 열심히 일 하시는지 알기에, 오늘만큼은 너에게 도움이 되고 싶었어.",
+		
+			//Player Pays
+		"PlayerPay.1": "!!!$l#$b#@, 제가 이걸 받아도 돼?$l#$b#진짜로 네가 대신 내겠다면, 이번엔 그렇게 해. 하지만 다음엔 꼭 내가 낼게?$l",
+		"PlayerPay.2": "700골드 받았습니다.",
+		"PlayerPay.3": "고맙다, @! 두사람 다 좋은 하루 보내렴.",
+
+		//Date End
+		
+		"GroceryDate.20": "좋아, 여보. 이제 집으로 가자.",
+		"GroceryDate.21": "오늘 쇼핑에 함께 와 줘서 정말 고마웠어, @. 다른 데 놀러 가는 것만큼은 아니곘지만, 그래도 너과 함께여서 너무 즐거웠어.",
+		
+		"GroceryDate.22": "저기, @...?$l",
+		"GroceryDate.23": "'[CharacterName {{Date}}] 은(는) 귀 속에 속삭였다.'",
+		"GroceryDate.24": "우리 오늘 산 것들 집에 가져다 놓고 나서 정말로 기분 좋은 것 하지 않을래?$l",
+		"GroceryDate.25": "잔뜩 가 버렸어, @....$l#$b#쇼핑 다녀올 때마다 이런 기분 좋은 거 할 수 있다면 정말로 쇼핑 중독이 되어 버릴 것 같아~♡.$l",
+		
+		"GroceryDate.22.NotSuggestive": "어서...어쨌든 좋으니까 집에 가서 얼른 '쉬자구'.",
+		"GroceryDate.23.NotSuggestive": "너무 기분 좋았어, @.$l#$b#가게에 갈 때마다 이런 거 할 수 있다면 매일이라도 가고 싶은 걸!$l",
+		
+		"GroceryDate.DateEnd": "'이런 거라면 저도 [CharacterName {{Date}}] 와(과) 매일 쇼핑하러 가고 싶어요!'",
+		
+		"GroceryDate.End": "정말 고마워. @. 너과 함께라면 평범한 일상도 너무나 즐거워져.$l",
+	
+	//Camping Date
+	
+		//Intro
+		"CampingDateIntro.1": "저기, @...?",
+		"CampingDateIntro.2": "@, 가기 전에 잠시만...",
+		"CampingDateIntro.3": "@, 기다려!",
+		"CampingDateIntro.4": "자기, 잠시만 기다려.",
+		"CampingDateIntro.5": "오늘 날씨가 너무 좋은데...#$b#만약 너만 괜찮다면...음...$l#$b#오늘 밤에 캠핑 갈래?$l#$b#너과 함께 평화로운 자연을 즐길 수 있다면 정말 즐거울 거야.",
+		"CampingDateIntro.6": "고마워, @! 밤 8시 이후에 잉걸불 숲에서 만나. 캠핑 준비는 내가 다 해놓을께.#$b#정말 기다릴 수 없어! 아, 그리고 오기 전에 하루 일과를 다 끝마쳐 놓는 것 잊지 마. 오늘 밤은 바깥에서 보낼 거니까!$h",
+		"CampingDateIntro.7": "오늘 밤 캠핑 데이트 열심히 준비할게, @.$h#$b#너은 그저 8시 이후에 잉걸불 숲에 오기만 하면 돼!$h#$b#잊지 마!",
+		
+		//Date
+		"CampingDate.1": "어서 와, @.$l#$b#저녁 내내 열심히 캠핑 준비를 했답니다~ 마음에 들었으면 좋겠어.$l",
+		"CampingDate.2": "여기, 몇가지 음식들을 구워 봤어!",
+		"CampingDate.3": "맛있어! 갓 구운 물고기가 역시 최고!",
+		"CampingDate.4": "너도 맘에 든다니 기뻐, 여보!$h#$b#여기 모닥불 옆에 와서 앉아.$l",
+		"CampingDate.5": "'[CharacterName {{Date}}] 는(은) 당신 옆에 바싹 붙어 옵니다.'",
+		"CampingDate.6": "있잖아. 이렇게나 평화로운 곳에 있으면 마음도 안정되는 것 같아.#$b#가지고 있던 스트레스들, 걱정들...#$b#너과 이렇게 함께 있으면 전부 잊을 수 있어.$l#$b#언제나 함께 있어줘서 고마워, @.",
+		"CampingDate.7": "좋아, @. 이제 우리 뭘 할까?",
+		"CampingDate.8": "'이제 뭘 하지?'",
+		"CampingDate.9": "'물 수제비 던지기를 하자.'",
+		"CampingDate.10": "'천체 관측을 하자.'",
+
+			//Rock Skipping Fork
+			
+		"RockSkip.1": "물수제비 뜨기라니, 멋저.$l#$b#얼른 가자!$h",
+		"RockSkip.2": "호수가 밤이 되니까 더욱 잔잔하게 보여.$l",
+		"RockSkip.3": "좋아, @, 잘 봐!",
+		"RockSkip.4": "와! 정말 깔끔하게 잘 날아가네!$h",
+		"RockSkip.5": "네 차례야, 여보!",
+		"RockSkip.6": "하하! 너무 신경 쓰지 마, 내가 잘 하는 방법을 알려 줄게.",
+		"RockSkip.7": "먼저, 돌을 이렇게 잡고...",
+		"RockSkip.8": "'[CharacterName {{Date}}]는(은) 그(그녀)의 손을 너의 어깨에 얹습니다.'",
+		"RockSkip.9": "그 다음, 손목을 이렇게 부드럽게 돌리면서...",
+		"RockSkip.10": "있는 힘껏 던지는 거지!",
+		"RockSkip.11": "참 잘 했어, @! 조금 도와 줬을 뿐인데, 정말 자연스럽게 잘 했네!",
+		"RockSkip.12": "늘 오늘처럼 항상 당신 옆에서 힘이 되어 줄게!$l",
+		
+		"RockSkip.13.Suggestive": "그럼 이제 텐트로 들어갈까? 내 다른 것도 더 잘 알려 줄 수 있어. 이것저것...♡$l",
+		"RockSkip.14.Suggestive": "하아하아...정말 너무 좋았어, @$l#$b#저 캠핑 중독이 될 것 같아...#$b#이제 그만 잘까, @?",
+		
+		"RockSkip.13": "좋아,@! 이제 텐트로 돌아가. 아직 오늘은 끝나지 않았잖아.",
+		"RockSkip.14": "오늘 나랑 같이 캠핑에 와 줘서 고마워, @.$l#$b#다음에도 이런 기회가 또 있었으면 좋겠어.$l",
+		"RockSkip.15": "'나도 [CharacterName {{Date}}]과(와) 또 캠핑에 왔으면 좋겠어요!'",
+		"RockSkip.16": "*하품*#$b#이제 잘 시간이네...",
+			
+			//Stargazing Fork
+			
+		"Stars.1": "천체 관측? 정말 낭만적!$h#$b#어서 가자, 여보.$l",
+		"Stars.2": "와...너무 아름다워!",
+		"Stars.3": "우주는 우리가 상상하는 것보다 훨씬 거대해, @.$l#$b#너와 나는 이 은하 안에선 하나의 작은 점일 뿐이겠지...?$l",
+		"Stars.4": "정말 놀라워... 그렇지 않아, @?#$b#이 우주에 있는 수억 수조 개의 별들 중에서...#$b#우리가 서로 함께 할 수 있다는 것...$l",
+		"Stars.5": "너을 만나게 된 것에 영원히 감사할 거야, @...$l",
+		
+		"Stars.6.Suggestive": "저기, @...?",
+		"Stars.7.Suggestive": "이제 텐트로 들어가 볼까? 내가 너에게 좀 더 좋은 것들을 보여 줄게...예를 들자면...이런 거♡?$l",
+		"Stars.8.Suggestive": "하아하아...정말 너무 좋았어, @$l#$b#저 캠핑 중독이 될 것 같아...#$b#이제 그만 잘까, @?",
+		
+		"Stars.6": "좋아,@! 이제 텐트로 돌아가자. 아직 오늘은 끝나지 않았잖아.",
+		"Stars.7": "오늘 나랑 같이 캠핑에 와 줘서 고마워, @.$l#$b#다음에도 이런 기회가 또 있었으면 좋겠어.$l",
+		"Stars.8": "'나도 [CharacterName {{Date}}]과(와) 또 캠핑에 왔으면 좋겠어!'",
+		"Stars.9": "*하품*#$b#이제 잘 시간이네...",
+	
+	//UNIQUE DATES
+	
+	//Maru Eclipse Date
+	
+		//Intro
+		"Maru.EclipseDate.Intro.1": "너! 잠깐만!",
+		"Maru.EclipseDate.Intro.2": "아, 좋아. 나 너 일 나가기 전에 할 말이 있어!#$b#오늘 매우 특별한 일이 생길 거거든?#$b#오늘 밤 한달에 한번뿐인 특별한 월식 현상이 일어날 거래!?#$b#몇 분 동안이지만, 달이 붉게 물들고 사랑스러운 빨간 달빛이 계곡을 아름답게 물 들일 거야!#$b#나 진짜로 너랑 그거 보고 싶어, @... 네가 원한다면 말야...#$b#혹시 오늘 밤 시간 돼?, 가능하다면 오늘 밤 우리 둘이서 특별한 관람회를 위해 날을 샐 수도 있어!",
+		"Maru.EclipseDate.Intro.3": "신난다! 정말 재미있을 거야!$h#$b#오늘 오후 8시에 농장 뒤쪽 숲에서 만나자. 내가 조그맣게 관람할 수 있는 곳을 만들어 놓을게.#$b#우린 오늘 밤 두 명의 작은 별보미가 될 거야!$l#$b#너무 기대된다!$h",
+		"Maru.EclipseDate.Intro.End": "정말 아름다운 밤이 되겠네, @. 기다릴 수 없겠는걸.$l#$b#기억해. 8시 이후에 농장 뒤쪽 숲에서 만나자. 내가 다 준비해 놓을게.$l",
+		
+		"Maru.EclipseDate.Intro.Refuse.1": "아...$s#$b#오늘도 바빠...?$s",
+		"Maru.EclipseDate.Intro.Refuse.2": "괜찮아. 다음달에 봐도 되는 걸, 어서 일하러 가 봐.#$b#나 혼자서 봐도 돼.$s",
+		"Maru.EclipseDate.Intro.Refuse.End": "걱정하지 마. 나 화 안났어.#$b#너이 늘 바쁜 건 잘 알고 있는 걸, 알면서도 결혼했으니까.",
+		
+		//Date
+		"Maru.EclipseDate.1": "안녕, 자기야!.$l#$b#와 줘서 너무 기뻐.$l",
+		"Maru.EclipseDate.2": "그럼, 우리가 오늘 함께 할 작은 플라네타리움에 대해서 어떻게 생각해?",
+		"Maru.EclipseDate.3": "'정말 멋져, 마루!'",
+		"Maru.EclipseDate.4": "'너무 아늑해 보인다!'.",
+		"Maru.EclipseDate.5": "'화톳불이 너무 좋아!'",
+		"Maru.EclipseDate.6": "고마워! 여보! 최대한 아늑하고 편하게 만들려고 힘냈어!",
+		"Maru.EclipseDate.7": "아! 그리고 하나 더...",
+		"Maru.EclipseDate.8": "여기서 구워 먹을 수 있게 생선도 좀 준비해 봤어! 이게 바로 진짜 캠프파이어 느낌 아닐까, @!",
+		"Maru.EclipseDate.9": "자, @. 잘 익었길 바래!",
+		"Maru.EclipseDate.10": "'음! 따뜻하고 바삭해, 100점 만점! 마루가 딱 잘 맞게 구웠네요!'",
+		"Maru.EclipseDate.11": "와우! 정말 맛있다!",
+		"Maru.EclipseDate.12": "배부르다, 하하. 하루 먹을 걸 지금 다 먹은 느낌이야.$h",
+		"Maru.EclipseDate.13": "또 하는 이야기지만 와 줘서 정말 고마워, @.$l#$b#월식이 몇 분 뒤에 일어날 거라 했는데...",
+		"Maru.EclipseDate.14": "저기 봐! 월식이야! 어서 와서 같이 보자!",
+		"Maru.EclipseDate.15": "와...정말 이뻐! 내가 이걸 진짜로 보는 날이 오다니...!$h",
+		"Maru.EclipseDate.16": "자, 자기도 어서 봐봐!",
+		"Maru.EclipseDate.17": "월식은 지구가 달과 태양 사이에 위치할 때 일어나.#$b#달의 대부분은 지구 그림자에 가려지고, 지구에서 오는 해질녂의 붉은 빛 일부만을 받아 반사하지. ",
+		"Maru.EclipseDate.18": "내가 어렸을 땐, 하늘의 별들을 보면서 행성가 별들의 존재 의미에 대해 생각해 보곤 했어.#$b#우리가 저들의 존재 의미를 알 수 있을까? 난 절대로 아니라고 생각해...",
+		"Maru.EclipseDate.19": "난 항상...$s#$b#아니야...$s#$b#난 항상 알고 있었어...$l#$b#...저 별들이 내 삶의 방향을 제시해 줄 거라고 말야.",
+		"Maru.EclipseDate.20": "내가 월식을 처음 목격한 날, 아버지는 내게 이렇게 물어보셨어...#$b#'마루야 저 하늘의 별들을, 천체를 연구하는 것보다, 우리가 지금 있는 이 대지를 연구하는 것이 더 중요하단다. 저 은하는 너무나도 넓고 넓어서, 우리는 평생 저 곳을 다 연구할 수가 없단다. 우리의 후손들도, 또 그 후손의 후손들도...그러니 우리의 삶은, 바로 우리가 딛고 있는 이 땅과, 지구와 함께 해야 한단다.'.#$b#난 아버지가 왜 그렇게 말씀하시는지 이해하지 못했어. 난 늘 미지의 세계를 탐험하고 싶어했으니까.#$b#지금은, 이상하지만 확실히...#$b#아버지가 하신 말을 이해할 수 있을 것 같아.",
+		"Maru.EclipseDate.21": "널 만나고 나서, @...$l#$b#난 어디에도 가고 싶지 않아졌어!",
+		"Maru.EclipseDate.22": "생각해 보면 굉장히 상징적이지.#$b#빨강색은 분노, 좌절, 부정을 뜻하지만서도...#$b#사랑, 따뜻함, 열정을 상징하기도 해",
+		"Maru.EclipseDate.23": "생각해 보면 내 삶에 네가 들어와 줘서 정말 운이 좋았어, @... 너도 똑같은 생각이었으면 좋겠다.",
+		"Maru.EclipseDate.24": "월식이 끝나 가네...여보. 달은 다시 지구의 사랑스러운 그림자로부터 벗어나 본래의 은색 빛으로 돌아오고 있어.",
+		"Maru.EclipseDate.25": "*하품*",
+		"Maru.EclipseDate.26": "슬슬 졸리네, @. 이제 텐트로 들어가 볼까?",
+		
+		"Maru.EclipseDate.27": "저기, @...?$l#$b#정말로 사랑해.",
+		
+		"Maru.EclipseDate.27.Suggestive": "저기, @...?$l#$b#텐트 안으로 들어와 봐. 당신이 정말로 깜짝 놀랄 일을 보여주고 싶어♡.$l",
+		"Maru.EclipseDate.28.Suggestive": "하아...너무 뜨거웠어...$l#$b#완전히 가 버렸는걸! 이제 진짜로 자자..잘 자...$h",
+		
+		"Maru.EclipseDate.End": "'마루와 함께 일식을 볼 수 있었어요. 너무나도 멋진 밤이었군요!'",
+	
+	//Haley Desert Date
+	
+		//Intro
+		"Haley.DesertDate.Intro.1": "좋아...편지 온 게 있나 한번 볼까...",
+		"Haley.DesertDate.Intro.2": "이건 뭐지...?",
+		"Haley.DesertDate.Intro.3": "아, 안녕! 자기야!",
+		"Haley.DesertDate.Intro.4": "오늘 편지 온 게 있나 확인해 보고 있었어.",
+		"Haley.DesertDate.Intro.5": "음, 자기야...사실 말야...$l",
+		"Haley.DesertDate.Intro.6": "언니한테 편지를 한 통 받았거든.#$b#언니가 사막에서 가게를 운영하는 언니 친구 샌디를 같이 만나러 가자고 했어.#$b#버스가 수리되서, 사막에 더 자주 갈수 있게 되었다고 말야.",
+		
+		"Haley.DesertDate.Intro.7.Gendered": "당신, 나랑 같이 갈래? 사막은 사진 찍기에 정말 좋은 곳이거든. 경치가 너무 좋아.#$b#같이 간다면 그 말야...$l#$b#사막 여기저기를 탐험하면서 사진도 찍고 모험도 할 수 있어. 내 남편과 말야.너무 낭만적이지 않아?$l^사막 여기저기를 탐험하면서 사진도 같이 찍을 수 있어 너와 함께. 정말 낭만적일 거야.$l",
+		"Haley.DesertDate.Intro.7.Neutral": "같이 갈래, 당신? 사막은 사진 찍기에 정말 좋은 곳이거든..#$b#같이 간다면 말야...$l#$b#너화 함꼐 사막 여기저기를 탐험하면서 사진도 찍을 수 있어. 너무 낭만적일 것 같아.$l",
+		
+		"Haley.DesertDate.Intro.8": "괜찮아, 자기?",
+		"Haley.DesertDate.Intro.9": "예이~! 고마워, @!$h#$b#정말 재미있을 것 같아. 오늘 오후 5시 이전에 아무 때나 버스정류장으로 오면 돼. 필요한 것 좀 챙겨서 에밀리랑 기다리고 있을게!",
+		"Haley.DesertDate.Intro.10": "당신과 보낼 시간이 너무 기대되는 걸, @.$l",
+		"Haley.DesertDate.Intro.End": "I너무 신나, 자기야!.$h#$b#나 짐만 좀 싸서 바로 버스정류장으로 갈께!#$b#어쨌든 오후 5시 전까지만 오면 돼!$h",
+		
+		"Haley.DesertDate.Intro.Refusal.9": "아...$s#$b#T오늘도 바뻐?$s",
+		"Haley.DesertDate.Intro.Refusal.10": "괜찮아. 담에 같이 가지 뭐...어서 일 하러 가봐...",
+		"Haley.DesertDate.Intro.Refusal.End": "걱정 마. 나 화 안났어.#$b#당신이 늘 바쁜 거 잘 아는걸...그것까지 포함해서 당신과 결혼 한 거니까...#$b#우리 다음에 꼭 같이 가자.$s",
+		
+		//Date
+		"Haley.DesertDate.1": "@, 왔구나!$h#$b#같이 가기로 해 줘서 너무 기뻐!.",
+		"Haley.DesertDate.2": "언니는 방금 버스 티켓 사러 갔어. 잠시 후에 버스에 타면 돼!",
+		"Haley.DesertDate.3": "좋아. 언니!, 이제 타러 갈께!",
+		"Haley.DesertDate.4": "Hi, @! 네 티켓도 사 놨어, 걱정하지 마.#$b#이젠 우리는 한 가족이니까!$h",
+		"Haley.DesertDate.5": "좋아, 자기야! 얼른 버스에 타서 가자!",
+		"Haley.DesertDate.6": "신난다!$h",
+		"Haley.DesertDate.7": "좋아, 동생아... 가자고...(한숨)",
+		"Haley.DesertDate.8": "안녕! 샌디!",
+		"Haley.DesertDate.9": "반가워! 에밀리!",
+		"Haley.DesertDate.10": "다시 보니까 반갑다. 샌디!",
+		"Haley.DesertDate.11": "나도 다시 만나서 기뻐, 자기야!.",
+		"Haley.DesertDate.12": "오, 이분은 누구야?",
+		"Haley.DesertDate.13": "안녕, 헤일리! 안 본지 정말 오래 됐다!.",
+		
+		"Haley.DesertDate.14.Gendered": "잘생긴 남편도 데려 왔구나!^예쁜 동거인도 데려 왔구나!",
+		"Haley.DesertDate.14.Neutral": "정말 멋진 친구와 함꼐 왔구나!",
+		
+		"Haley.Giggle": "*(낄낄거리며 웃음)*",
+		
+		"Haley.DesertDate.15": "정말 만나서 반가워, 샌디!",
+		"Haley.DesertDate.16": "좋아, 헤일리. 나랑 샌디는 가게에 있을 테니까, 너는 @와(과) 같이 사막에 가서 즐겁게 놀다 와!",
+		"Haley.DesertDate.17": "알았어 언니! 이따가 봐.",
+		"Haley.DesertDate.18": "좋아, 자기야! 우리도 가 보자!$h#$b#여기저기 멋진 사진 촬영 명소가 많을 거야!$h",
+		"Haley.DesertDate.19": "와...생각보다 엄청 더운데...?$s",
+		"Haley.DesertDate.20": "저기, @, 괜찮다면 샌디의 가게에 먼저 들려도 될까?#$b#뭔가 몸을 식힐 만한 것들을 좀 챙겨 가고 싶어. 이대로 가면 홀랑 익어 버릴 꺼야!",
+		"Haley.DesertDate.21": "그럼 가자!",
+		"Haley.DesertDate.22": "그 사람이 진짜 그렇게 말했어?",
+		"Haley.DesertDate.23": "그래, 진짜라니까!",
+		"Haley.DesertDate.24": "안녕, 자기야.여긴 어쩐 일이야? 사막으로 모험을 떠난 줄 알았는데?",
+		"Haley.DesertDate.25": "아, 이제 출발하려고, 샌디!#$b#가기 전에 음료수랑 이거저거 좀 챙겨 가려고 왔어.",
+		"Haley.DesertDate.26": "아, 그렇구나!$h#$b#여기, 차가운 우유 좀 챙겨 가. 더위를 식히는 데 도움이 될 거야.#$b#네 언니와 나는 절친이니까, 오늘은 특별히 공짜로 해 줄께!$h",
+		"Haley.DesertDate.27": "와우, 정말 멋져! 샌디!",
+		"Haley.DesertDate.28": "고마워!",
+		"Haley.DesertDate.29": "여기 있어, 자기야!",
+		"Haley.DesertDate.30": "좋았어, 그럼 우리 이제 가 볼께!",
+		"Haley.DesertDate.31": "그런데 말야 샌디, 우리 가기 전에...",
+		"Haley.DesertDate.32": "같이 사진 몇장만 찍어도 될까? 이 여행의 모든 것을 추억으로 남겨 놓고 싶어!",
+		"Haley.DesertDate.33": "물론이야, 자기!",
+		"Haley.DesertDate.34": "예이~!",
+		"Haley.DesertDate.35": "자기야, 저기 가서 서 있어 봐.#$b#카메라 세팅 좀 할께.",
+		"Haley.DesertDate.36": "다 됐다!",
+		"Haley.DesertDate.37": "좋아요, 모두들! 스마일~!$h",
+		"Haley.DesertDate.38": "치즈~!",
+		"Haley.DesertDate.39": "정말 잘 찍혔다! 모두들 고마워!!$h",
+		"Haley.DesertDate.40": "이 정도야 뭐!",
+		"Haley.DesertDate.41": "좋아, @. 이제 진짜로 가 볼까!",
+		"Haley.DesertDate.42": "'헤일리와 나는 사막 여기저기를 다니며 사진을 찍었답니다'.",
+		"Haley.DesertDate.43": "'우리는 사막의 아름다운 풍경들을 잔뜩 감상했어요!'",
+		"Haley.DesertDate.44": "'헤일리가 마지막으로 가 보고 싶었던 곳은...'",
+		"Haley.DesertDate.45": "아우...너무 귀여워!",
+		"Haley.DesertDate.46": "걔 이름은 험프리라고 해.",
+		"Haley.DesertDate.47": "험프리?#$b#정말 사랑스러운 이름이네!$h",
+		"Haley.DesertDate.48": "너도 좋지, 험프리?",
+		"Haley.DesertDate.49": "저기 말이야, @...",
+		"Haley.DesertDate.50": "내가 당신과 연인이 되지 않았더라면, 오늘처럼 이렇게 즐거운 일도 없었겠지...?$l",
+		"Haley.DesertDate.51": "당신은 나에게 단순히 자기 외모를 가꾸는 것보다 더 많은 것들이 있다는 것을 내게 알려줬어...$l#$b#...넌 내게 나 자신이 생각했던 것보다 더 가치가 있는 사람이란 걸 알려 줬어...$l",
+		"Haley.DesertDate.52": "사랑해, @. 그 무엇보다도.$l#$b#여기서 이런 새로운 경험을 할 수 있게 된 건 전부 당신 덕분이야. 내가 늘 바래왔던 것들...$l",
+		"Haley.DesertDate.53": "...그리고 항상 해 보고 싶었던 것들 말이야...$l#$b#낙타를 쓰다듬는 것 같은 일이라던가 말이지!$h",
+		"Haley.DesertDate.54": "착한 아이구나, 험프티!",
+		"Haley.DesertDate.55": "너무 고마워, 자기야. 오늘 여행은 정말 놀라웠어, 무엇보다도 당신과 함께 할 수 있었다는 사실이 특히 말야!$l",
+		"Haley.DesertDate.56": "헤일리, @! 곧 버스가 돌아간대, 빨리 와!",
+		"Haley.DesertDate.57": "금방 갈게, 언니!",
+		"Haley.DesertDate.58": "가기 전에 이거 하나만 하고 갈까?",
+		"Haley.DesertDate.59": "자, 치즈~, @!",
+		"Haley.DesertDate.60": "'헤일리와 나는 사막에서 즐거운 시간을 보냈답니다. 그녀와 함께 할 수 있어서 너무 기뻤어요.'",
+		"Haley.DesertDate.61": "와, 헤일리. 정말 엄청난 여행을 하고 왔구나!",
+		"Haley.DesertDate.62": "응, 너무 환상적이었어!$h#$b#자, 오늘 찍은 사진들 여 줄께!$h",
+		"Haley.DesertDate.63": "이게 젤 첨에 찍은 거야, 우리가 처음 도착했을 때 모래 위에서...",
+		"Haley.DesertDate.64": "예뻐!",
+		"Haley.DesertDate.65": "그리고 이건 샌디네 가게에서 찍은 사진!",
+		"Haley.DesertDate.66": "와, 헤일리! 정말 잘 찍혔다!",
+		"Haley.DesertDate.67": "고마워! 그리고 다음 사진은...!!",
+		"Haley.DesertDate.68": "앗...!$l",
+		"Haley.DesertDate.69": "오~! 이것도 정말 귀여운걸..?",
+		"Haley.DesertDate.70": "헤헤, 저기 말야...$l",
+		"Haley.DesertDate.71": "나, 으음, 그러니까 카메라가 돌아가고 있는 걸 미처 몰랐다고 할까...헤헤$l",
+		"Haley.DesertDate.72": "정말 멋져! 사랑에 빠진 두 사람의 모습이라니. 너무나도 완벽한 한 쌍인걸.",
+		"Haley.DesertDate.73": "'나도 헤일리와 함께라 너무 기뻐.'",
+		
+		"Haley.DesertDate.74": "저기, 음, @...$l#$b#우리 농장에 가서 해야 할 중요한 작업이 있지 않았던가...?$l",
+		"Haley.DesertDate.75": "어서 돌아가야 작업을 시작할 수 있을 것 같아...♡$l",
+		"Haley.DesertDate.76": "정말, 애정 행각은 나 없는 데서 해! 두 사람 다!", //giggle with textabovehead after this, see above
+		"Haley.DesertDate.77": "정말 멋졌어, @...#$b#자기야, 한번 더 할 수 있지?$13",
+		
+		"Haley.DesertDate.End": "너와 함께 해서 정말로 행복했어, @.",
+		
+	
+	//Emily Gem Date
+	
+		//Intro
+		"Emily.GemDate.Intro.1": "다 챙겨온 것 같은데...",
+		"Emily.GemDate.Intro.2": "잠깐...잊어버릴 뻔 했다!",
+		"Emily.GemDate.Intro.3": "아! @! 미안해, 자기야.",
+		"Emily.GemDate.Intro.4": "오늘 헤일리에게 몇가지 필요한 걸 가져다 주고 거기에 있던 물건 몇 개를 챙겨 오려고 했거든.#$b#당신을 깨우고 싶진 않았어. 당신 잘 때 모습이 너무 평화로워 보이거든.$l",
+		"Emily.GemDate.Intro.5": "가서 여기 올 떄 미처 못 챙겨온 물건들 가져 오려고.",
+		"Emily.GemDate.Intro.6": "저기, 자기야...$l",
+		
+		"Emily.GemDate.Intro.7.Gendered": "혹시 괜찮으면 같이 갈래? 내 옛날 수집품들을 좀 보여주고 싶어...$l#$b#조금 특별한 '우리만의' 시간이 될 거야.#$b#내 최고의 남편과 함께 하는, 가장 완벽한 시간 말야!^정말 멋진 너와 함께 하는 가장 완벽한 시간이 될 거야!",
+		"Emily.GemDate.Intro.7.Neutral": "혹시 괜찮으면 같이 갈래? 내 옛날 수집품들을 좀 보여주고 싶어...$l#$b#조금 특별한 '우리만의' 시간이 될 거야.#$b#내 멋진 친구와 함께 하는, 가장 완벽한 시간 말이야!",
+		
+		"Emily.GemDate.Intro.8": "괜찮아, 자기?",
+		"Emily.GemDate.Intro.9": "멋져! 정말 즐거울 꺼야, @!$h#$b#조금 더 준비해서 다시 나올께!#$b#일 대충 마치고 그냥 내 옛날 집에 오기만 하면 돼!$h#$b#아, 정말 기대된다. 자기야!$l",
+		"Emily.GemDate.Intro.End": "나 곧 옜날 집으로 갈게.#$b#꼭 여기 들리는 거 잊지 마, 당신!",
+		
+		"Emily.GemDate.Intro.Refusal.9": "오...$s#$b#오늘도 바빠?$s",
+		"Emily.GemDate.Intro.Refusal.10": "괜찮아. 담에 같이 가지 뭐...어서 일 하러 가봐...",
+		"Emily.GemDate.Intro.Refusal.11": "나 그냥 두고 온 것만 챙겨서 나갈게.$s#$b#다시 생각해 보니까...오늘 굳이 안 가도 될 것 같아...$s",
+		"Emily.GemDate.Intro.Refusal.End": "걱정 마. 나 화 안났어.#$b#당신이 늘 바쁜 거 잘 아는걸...그것까지 포함해서 당신과 결혼 한 거니까...#$b#우리 다음에 꼭 같이 가자.$s",
+		
+		//Date
+		"Emily.GemDate.1": "다 했다!",
+		"Emily.GemDate.2": "전부 다!",
+		"Emily.GemDate.3": "*한숨*... 정말 헤일리가 청소를 주기적으로 해 줬으면 좋겠어...$s#$b#내가 결혼한 뒤로 예전 내 방을 쓰게 해 줬으면, 최소한 청소는 깔끔히 해 놔야 되는 거 아냐?$s",
+		"Emily.GemDate.4": "'읽지 않은 1개의 새 메일이 있습니다!'",
+		"Emily.GemDate.5": "오, 누구한테 온 거지?!",
+		"Emily.GemDate.6": "제목: 어떻게 지내, 자기야?",
+		"Emily.GemDate.7": "발신인: 샌디",
+		"Emily.GemDate.8": "'정말 좋은 날이야, EM! 요즘 어떻게 지내는지 정말 궁금하다. 혹시 심심하면 사막에 좋은 친구가 살고 있다는 걸 잊지 말아줘! 언제라도 놀러 오라구.'",
+		"Emily.GemDate.9": "오, 샌디. 너무 좋아!",
+		"Emily.GemDate.10": "'비록 네가 그 멋진 농부 {{PlayerName}} 와(과) 결혼했다는 걸 생각해 보면, 굳이 외로움을 느낄 것 같지는 않지만 말야.'",
+		"Emily.GemDate.11": "'정말이지, EM! 내가 몰랐을 거라고 생각해? 내가 사막에서 일하지만,계곡의 소식에 항상 빠삭하다구! 정말 너 때문에 기뻐서 미칠 것 같아!'",
+		"Emily.GemDate.12": "오, 안돼! 나 에밀리한테 내가 결혼한다는 사실 알려 주는 거 까맣게 잊고 있었지 뭐야!!!$s",
+		"Emily.GemDate.13": "당장 샌디 만나러 갈 계획을 세워겠는걸, 일단 답장부터 보내야지",
+		"Emily.GemDate.14": "'내 최애 친구 샌디에게,'#$b#'너한테 @ 에 대한 걸 말하는 거 깜빡 해서 정말 미안해.'#$b#'요즘 이래저래 너무 바빠서 너한테까지 소식을 전하는 걸 깜빡해버렸지 뭐야...'#$b#'너무 섭섭해 하지 마. 내가 정말 미안해. 빠른 시일 내에 한번 만나러 갈게.'",
+		
+		"Emily.GemDate.15.Gendered": "'@ 에 대한 거라면...'$l#$b#'그를 선택한 건 내 인생 최고의 결정이였어!'$l^'그녀를 선택한 건 내 인생 최고의 결정이었어.'$l#$b#'그는 날 편안하고 행복하게 해 줘. 그와 함께 있는 매일매일이 너무 즐거워. 난 그의 모든것을 사랑--'$l^'그녀는 날 편안하고 행복하게 해 줘. 그녀와 함께 있는 매일매일이 너무 즐거워. 난 그녀의 모든것을 사랑--'$l",
+		"Emily.GemDate.15.Neutral": "'@ 에 대한 거라면...'$l#$b#그를 선택한 건 내 인생 최고의 결정이였어!'$l#$b#'그는 날 편안하고 행복하게 해 줘. 그와 함께 있는 매일매일이 너무 즐거워. 난 그의 모든것을 사랑--'$l",
+		
+		"Emily.GemDate.16": "@! 당신, 같이 있었지, 참!$h",
+		"Emily.GemDate.17": "저 그냥 샌디에게 당신에 대해서 이야기하고 있었을 뿐이야.",
+		"Emily.GemDate.18": "난 그녀에게 당신은 내가 아는 사람 중에 가장 스마트하고, 용감하고, 정직하고, 가정에 충실한 사람이라고 말했어.$l",
+		"Emily.GemDate.19": "아, 맞다! 뭔가 보여주고 싶은 게 있어!",
+		"Emily.GemDate.20": "자, 와서 자세히 봐!",
+		"Emily.GemDate.21": "이게 내 '슬픔 제거 크리스탈' 중의 하나야.$3",
+		"Emily.GemDate.22": "살롱에서 일 하는게 힘었을 때나, 헤일리랑 싸웠을 때나, 어쨌든 힘든 일이 있었을 때, 난 이 크리스탈에 내 슬픈 감정들을 흘려 보내곤 했어.$s",
+		"Emily.GemDate.23": "그렇게 하면 이 크리스탈이 내 부정적인 에너지를 흡수해서 나에게서 빠져 나갈 거라고 생각했거든. $3#$b#내 부정적인 에너지가 다른 사람에게까지 옮겨 가는 것을 원하진 않았으니까...$s#$b#그러고 보면, 이 크리스탈은 내 안좋은 기억들을 숨겨 놓은 곳이기도 하겠네...$s",
+		"Emily.GemDate.24": "이건,부모님이 멀리 떠나고 나서, 나와 헤일리 단 둘이서만 있었던 때의 첫날밤의 외로움이 담긴 크리스탈이고...$s#$b#이건, 클린트와 내가 말싸움을 했었던 때의 화난 감정이 들어 있는 크리스탈이야...$s#$b#그리고 이게 가장 최근의 내 부정적인 감정이 들어 있는 크리스탈이네...$s",
+		"Emily.GemDate.25": "@... 이 크리스탈을 마지막으로 쓴 게 바로 너와 만나기 전날 밤이었던 것 같아...$3#$b#그 날, 헤일리와 엄청 크게 싸우고 외롭게 혼자 있었어...$s",
+		"Emily.GemDate.26": "하지만 @, 네가 내 삶에 들어왔어.바로 그 순간부터, 포지티브하고, 사랑으로 넘치는 아우라를 느낄 수 있었어...$l#$b#난 이미 그때부터 너와 나의 운명이 하나가 될 거란 걸 알고 있었던 거야...$l",
+		"Emily.GemDate.27": "자, @. 이 크리스탈을 받아.",
+		
+		"Emily.GemDate.28.Gendered": "내 부정적인 감정의 결정을 너에게 주려는 게 아냐... $s#$b#그저 나의 너무나도 멋진 반려가 이것을 안전하게 보관해 주길 바랄 뿐이야.$l^그저 나의 너무나도 멋진 반쪽이 이걸 안전하게 보관해 주길 바랄 뿐이야.$l",
+		"Emily.GemDate.28.Neutral": "내 부정적인 감정의 결정을 너에게 주려는 게 아냐...$s#$b#그저 나의 너무나도 좋은 친구가 이것을 안전하게 보관해 주길 바랄 뿐이야.$l",
+		
+		"Emily.GemDate.29": "같이 와 줘서 정말 고마워, @. 너와 함께 내 지나간 나날을 돌아 볼 수 있어서 정말 기뻤어.",
+		
+		"Emily.GemDate.30.Suggestive": "저기, @...?$l",
+		"Emily.GemDate.31.Suggestive": "헤일리가 한 두어시간 정도는 뒤에 돌아올 것 같은데...$l#$b#이 집에 지금 단 둘뿐이네, 그치?$l",
+		"Emily.GemDate.32.Suggestive": "이렇게 기분 좋았던 적은 처음이야, @.$l#$b#한 번만 더...괜찮지?♡$l",
+		"Emily.GemDate.End.Suggestive": "너무 멋졌어...$l#$b#내 크리스탈을 안전하게 지켜 줘...영원히!",
+		
+		"Emily.GemDate.30": "주변에 '어색한 감정의 크리스탈'이 많이 있네...#$b#클린트와 만날 때마다 한번씩은 꼭 써 줘야 했었어!$h",
+		"Emily.GemDate.31": "'에밀리와 정말로 즐거운 시간을 보냈어요! 에밀리가 이제 '부정적인 감정의 크리스탈'을 쓰지 않아도 되어 참으로 기뻐요!'",
+		"Emily.GemDate.End": "너무 멋졌어, @.$l#$b#내 크리스탈을 잘 보관해 줘...영원히!",
+	
+	//Alex Gridball Date
+	
+		//Intro
+		"Alex.Gridball.Intro.1": "@, 기다려!",
+		"Alex.Gridball.Intro.2": "내가 방금 뭘 얻었게?",
+		"Alex.Gridball.Intro.3": "아냐...#$b#그러니까...#$b#오늘 밤 있을 터널러즈의 경기 티켓 두장!$h",
+		"Alex.Gridball.Intro.4": "그래서, @? 같이 갈래? 정말 대단할 거야!$h",
+		
+		"Alex.Gridball.Intro.Refusal.5": "Oh...$s#$b#오늘도 바빠?$s",
+		"Alex.Gridball.Intro.Refusal.6": "괜찮아, 다음에 같이 가면 돼.어서 일 하러 가봐.#$b#다른 사람이랑 같이 가도 돼...$s",
+		"Alex.Gridball.Intro.Refusal.7.Gendered": "걱정하지 마, 나 화 안났어.#$b#너 바쁜 거 알고 있는 걸. 알면서도 결혼한 거니까.#$b#너랑 같이 갔으면 정말 좋았을 텐데....^너와 함께 갔으면 정말 좋았을 건데...",
+		"Alex.Gridball.Intro.Refusal.7.Neutral": "걱정하지 마, 나 화 안났어.#$b#너 바쁜 거 알고 있는 걸. 알면서도 결혼한 거니까.#$b#너랑 같이 갔으면 정말 좋았을 텐데....",
+		
+		"Alex.Gridball.Intro.5": "아싸! 정말 재밌겠다!$h#$b#오후 7시 전까지 버스 정류장으로 와, @. 빨리 가고 싶다!$h#$b#필요한 것들 좀 챙겨서 기다리고 있을게.#$b#이야, 이거 그때까지 기다릴 수 있을까?!$h",
+		"Alex.Gridball.Intro.End": "잊지 마, @! 오후 7시까지 버스 정류장이야!#$b#정말 재미있을 거야,@!$h",
+		
+		//Date
+		"Alex.Gridball.1": "어,@(이)가 아직 안 왔네?! 늦지 않을려면 지금 출발해야 하는데...",
+		"Alex.Gridball.2": "기다려요, 팸 씨! 같이 갈 사람이 곧 올 거에요.",
+		"Alex.Gridball.3": "흐음...",
+		"Alex.Gridball.4": "@! 왔구나!#$b#빨리 와, 출발하자! 더 이상 늦으면 위험하다구!",
+		"Alex.Gridball.5": "오늘의 경기가 너무 기대된다, @!$h",
+		"Alex.Gridball.6": "딱 맞춰서 도착했네. 어서 가자, @!$h",
+		"Alex.Gridball.7": "어디 보자...",
+		"Alex.Gridball.8": "터널러즈가 이기고 있어, @!$h",
+		"Alex.Gridball.9": "우호!",
+		"Alex.Gridball.10": "이예! 터널러즈가 방금 점수를 땃어!$h#$b#점수 차를 더 벌리고 있다고!$h",
+		"Alex.Gridball.11": "이야, 전반전 종료인건가...",
+		"Alex.Gridball.12": "캐스터: 해피해피 키스 타임의 시간이 돌아 왔습니다아아아아아아!",
+		"Alex.Gridball.13": "캐스터: 어디 볼까요...",
+		"Alex.Gridball.14": "캐스터: 아래쪽 좌석에 너무나도 사랑스러운 커플이 보이는군요!",
+		"Alex.Gridball.15": "우, 우리야! @!",
+		"Alex.Gridball.16": "괜찮아, @?",
+		"Alex.Gridball.17": "캐스터: 와! 이 사랑스러운 커플들의 키스를 보십시오!",
+		"Alex.Gridball.18": "헤, 나 괜찮았지?.$l",
+		"Alex.Gridball.19": "후반전이 시작되었나 봐, @!$h",
+		"Alex.Gridball.20": "우와!",
+		"Alex.Gridball.21": "추가 득점이야, @!$h#$b#이번 시즌 터널러즈의 경기 중에 오늘이 최고였어!$h",
+		"Alex.Gridball.22": "가라!!",
+		"Alex.Gridball.23": "'알렉스와 저는 오늘 정말 즐거운 시간을 보냈어요. 터널러즈는 압도적인 점수 차로 승리했답니다.'",
+		"Alex.Gridball.24": "와, 너무 쩔었어, @!#$b#터널러즈는 매 시즌 경기력이 엄청나게 향상되고 있다고!$h",
+		"Alex.Gridball.25": "오늘 나랑 같이 경기에 와 줘서 고마워, @.#$b#네가 늘 내 옆에 있다는 게 너무 좋아!$l",
+		
+		"Alex.Gridball.26.Suggestive": "저기, @...$l#$b#우리 둘의 경기는 아직 끝나지 않은 것 같지 않아...?$l",
+		"Alex.Gridball.27.Suggestive": "헤, 너무 좋았어...$l#$b#음...연장전에 돌입해 볼까...♡?$l",
+		
+		"Alex.Gridball.26": "자, 이제 집에 돌아가자.#$b#사진도 엄청 많이 찍었네, 하하!$h",
+		"Alex.Gridball.27": "'알렉스와 저는 정말 멋진 시간을 보냈답니다. 그와 결혼해서 정말 행복해!'",
+
+}

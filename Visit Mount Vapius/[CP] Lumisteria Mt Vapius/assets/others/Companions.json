@@ -1,0 +1,186 @@
+{
+  "Changes": [
+    {
+      "LogName": "Rayan",
+      "Action": "EditMap",
+      "Target": "Maps/Lumisteria.MtVapius_Hamlet",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 36,
+            "Y": 67
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 Lumisteria.MtVapiusCompanions.Rayan"
+          }
+        },
+      ],
+      "When": {
+        "HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+        "HasMod |contains=Lumisteria.MtVapiusCompanions": "true",
+        //"DayOfWeek": "Saturday, Sunday"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Lumisteria.MtVapius_Hamlet",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 33,
+            "Y": 67
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 Lumisteria.MtVapiusCompanions.Jeremy"
+          }
+        },
+      ],
+      "When": {
+        "HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+        "HasMod |contains=Lumisteria.MtVapiusCompanions": "true",
+        //"DayOfWeek": "Tuesday, Wednesday"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Lumisteria.MtVapius_Hamlet",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 49,
+            "Y": 16
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 Lumisteria.MtVapiusCompanions.Vivian"
+          }
+        },
+      ],
+      "When": {
+        "HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+        "HasMod |contains=Lumisteria.MtVapiusCompanions": "true",
+        //"DayOfWeek": "Friday, Saturday"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Lumisteria.MtVapius_Hamlet",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 22,
+            "Y": 4
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 Lumisteria.MtVapiusCompanions.Min-ho"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+        "HasMod |contains=Lumisteria.MtVapiusCompanions": "true",
+        //"DayOfWeek": "Thursday, Friday"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Lumisteria.MtVapius_TrainStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 2,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 Lumisteria.MtVapiusCompanions.Chloe"
+          }
+        },
+      ],
+      "When": {
+        "HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+        "HasMod |contains=Lumisteria.MtVapiusCompanions": "true",
+        //"DayOfWeek": "Sunday"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Lumisteria.MtVapiusCompanions.Rayan}}",
+      "Entries": {
+        "Companion": {
+          //"InspectionDialogue": "{{i18n: RayanRandom{{Random:01, 02}}}}"
+          "DialogueSequence": [
+            {
+              "Text": "{{i18n: RayanRandom{{Random:01, 02, 03, 04}}}}",
+              "DisplayOnce": true,
+            },
+          ],
+        }
+      },
+      "When": {
+        "HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+        "HasMod |contains=Lumisteria.MtVapiusCompanions": "true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Lumisteria.MtVapiusCompanions.Vivian}}",
+      "Entries": {
+        "Companion": {
+          //"InspectionDialogue": "{{i18n: VivianRandom{{Random:01, 02, 03, 04}}}}",
+          "DialogueSequence": [
+            {
+              "Text": "{{i18n: VivianRandom{{Random:01, 02, 03, 04}}}}",
+              "DisplayOnce": true,
+            },
+          ],
+        }
+      },
+      "When": {
+        "HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+        "HasMod |contains=Lumisteria.MtVapiusCompanions": "true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Lumisteria.MtVapiusCompanions.Chloe}}",
+      "Entries": {
+        "Companion": {
+          //"InspectionDialogue": "{{i18n: ChloeRandom{{Random:01, 02, 03, 04}}}}"
+          "DialogueSequence": [
+            {
+              "Text": "{{i18n: ChloeRandom{{Random:01, 02, 03, 04}}}}",
+              "DisplayOnce": true,
+            },
+          ],
+        }
+      },
+      "When": {
+        "HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+        "HasMod |contains=Lumisteria.MtVapiusCompanions": "true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Lumisteria.MtVapiusCompanions.Min-ho}}",
+      "Entries": {
+        "Companion": {
+          //"InspectionDialogue": "{{i18n: Min-hoRandom{{Random:01, 02, 03}}}}"
+          "DialogueSequence": [
+            {
+              "Text": "{{i18n: Min-hoRandom{{Random:01, 02, 03, 04}}}}",
+              "DisplayOnce": true,
+            },
+          ],
+        }
+      },
+      "When": {
+        "HasMod |contains=PeacefulEnd.CustomCompanions": "true",
+        "HasMod |contains=Lumisteria.MtVapiusCompanions": "true"
+      }
+    }
+  ]
+}

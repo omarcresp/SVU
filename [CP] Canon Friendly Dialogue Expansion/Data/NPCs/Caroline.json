@@ -1,0 +1,123 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Caroline_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)213": "{{i18n: CFE_Caroline_FishTaco}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Caroline_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Caroline_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Caroline_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Caroline_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Caroline_RabbitsFoot}}",
+        "AcceptGift_(O)614": "{{i18n: CFE_Caroline_GreenTea}}",
+        "AcceptGift_(O)593": "{{i18n: CFE_Caroline_SummerSpangle}}",
+        "AcceptGift_(O)907": "{{i18n: CFE_Caroline_TropicalCurry}}"
+      },
+      "When": { "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Caroline_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Caroline": "{{i18n: CFE_Caroline_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Caroline_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Caroline_spring1y2}}",
+        "spring_12_1": "{{i18n: CFE_Caroline_spring12}}",
+        "spring_12_2": "{{i18n: CFE_Caroline_spring12}}",
+        "summer_27_1": "{{i18n: CFE_Caroline_summer27}}",
+        "summer_27_2": "{{i18n: CFE_Caroline_summer27}}",
+        "fall_15_1": "{{i18n: CFE_Caroline_fall15}}",
+        "fall_15_2": "{{i18n: CFE_Caroline_fall15}}",
+        "winter_28_1": "{{i18n: CFE_Caroline_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Caroline_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon6": "{{i18n: CFE_Caroline_summerMon6}}",
+        "summer_Wed10": "{{i18n: CFE_Caroline_summerWed10}}",
+        "summer_Thu6": "{{i18n: CFE_Caroline_summerThu6}}",
+        "summer_Thu8": "{{i18n: CFE_Caroline_summerThu8}}",
+        "summer_Fri10": "{{i18n: CFE_Caroline_summerFri10}}",
+        "summer_Sat6": "{{i18n: CFE_Caroline_summerSat6}}",
+        "summer_Sun8": "{{i18n: CFE_Caroline_summerSun8}}",
+        "summer_Sun4": "{{i18n: CFE_Caroline_summerSun4}}",
+
+        "fall_Mon10": "{{i18n: CFE_Caroline_fallMon10}}",
+        "fall_Tue10": "{{i18n: CFE_Caroline_fallTue10}}",
+        "fall_Thu6": "{{i18n: CFE_Caroline_fallThu6}}",
+        "fall_Sat8": "{{i18n: CFE_Caroline_fallSat8}}",
+        "fall_Sat4": "{{i18n: CFE_Caroline_fallSat4}}",
+        "fall_Sat2": "{{i18n: CFE_Caroline_fallSat2}}",
+
+        "winter_Mon10": "{{i18n: CFE_Caroline_winterMon10}}",
+        "winter_Wed10": "{{i18n: CFE_Caroline_winterWed10}}",
+        "winter_Thu8": "{{i18n: CFE_Caroline_repeated_2}}",
+        "winter_Thu6": "{{i18n: CFE_Caroline_repeated_1}}",
+        "winter_Fri6": "{{i18n: CFE_Caroline_winterFri6}}",
+        "winter_Sun4": "{{i18n: CFE_Caroline_winterSun4}}",
+
+        "Mon6": "{{i18n: CFE_Caroline_Mon6}}",
+        "Mon4": "{{i18n: CFE_Caroline_Mon4}}",
+        "Mon2": "{{i18n: CFE_Caroline_Mon2}}",
+        "Tue10": "{{i18n: CFE_Caroline_Tue10}}",
+        "Tue8": "{{i18n: CFE_Caroline_Tue8}}",
+        "Tue6": "{{i18n: CFE_Caroline_Tue6}}",
+        "Tue4": "{{i18n: CFE_Caroline_Tue4}}",
+        "Tue2": "{{i18n: CFE_Caroline_Tue2}}",
+        "Wed8": "{{i18n: CFE_Caroline_Wed8}}",
+        "Wed6": "{{i18n: CFE_Caroline_Wed6}}",
+        "Wed4": "{{i18n: CFE_Caroline_Wed4}}",
+        "Wed2": "{{i18n: CFE_Caroline_Wed2}}",
+        "Thu6": "{{i18n: CFE_Caroline_repeated_2}}",
+        "Thu4": "{{i18n: CFE_Caroline_repeated_1}}",
+        "Thu2": "{{i18n: CFE_Caroline_Thu2}}",
+        "Fri10_1": "{{i18n: CFE_Caroline_Fri10y1}}",
+        "Fri10_2": "{{i18n: CFE_Caroline_Fri10y2}}",
+        "Fri8": "{{i18n: CFE_Caroline_Fri8}}",
+        "Fri6": "{{i18n: CFE_Caroline_Fri6}}",
+        "Fri4": "{{i18n: CFE_Caroline_Fri4}}",
+        "Sat8": "{{i18n: CFE_Caroline_Sat8}}",
+        "Sat6": "{{i18n: CFE_Caroline_Sat6}}",
+        "Sat4": "{{i18n: CFE_Caroline_Sat4}}",
+        "Sat2": "{{i18n: CFE_Caroline_Sat2}}",
+        "Sun8": "{{i18n: CFE_Caroline_Sun8}}",
+        "Sun6": "{{i18n: CFE_Caroline_Sun6}}",
+        "Sun4": "{{i18n: CFE_Caroline_Sun4}}",
+        "Sun2": "{{i18n: CFE_Caroline_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Mon": "{{i18n: CFE_Caroline_summerMon}}",
+        "summer_Thu": "{{i18n: CFE_Caroline_summerThu}}",
+        "fall_Thu": "{{i18n: CFE_Caroline_fallThu}}",
+        "winter_Thu": "{{i18n: CFE_Caroline_winterThu}}",
+
+        "Tue": "{{i18n: CFE_Caroline_Tue}}",
+        "Sat": "{{i18n: CFE_Caroline_Sat}}"
+      },
+      "When": { "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

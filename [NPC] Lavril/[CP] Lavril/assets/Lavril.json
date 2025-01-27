@@ -1,0 +1,230 @@
+{
+  "Changes": [
+    {
+      //Spawn Void and Lavril into the void
+      "LogName": "NPC Manifestation",
+      "Action": "Include",
+      "FromFile": "assets/disposition/LavrilDisposition1.json",
+      "When": {
+        "HasSeenEvent |contains=630710010": "true",
+        "HasSeenEvent |contains=63070012": "false"
+      }
+    },
+
+    {
+      //Normal Lavril and Void Spawn
+      "LogName": "NPC Manifestation",
+      "Action": "Include",
+      "FromFile": "assets/disposition/LavrilDisposition2.json",
+      "When": {
+        "HasSeenEvent |contains=63070012": "true"
+      }
+    },
+
+    {
+      "LogName": "Animation Descriptions",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "entries": {
+        "lavril_meditation": "18/18 18 18 18 16 16 16 16 17 17 17 17 16 16 16 16/18",
+        "lavril_sit": "31/31 31 31 31/31",
+        "lavril_read": "35/35 35 35/35",
+        "lavril_rest": "24/24 24 24/24",
+        "lavril_sleep": "24/24 24 24/24"
+      }
+    },
+
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Lavril": "Tee-hee! I'm so happy!$h/417 64 308 795 268/Ah... Umm... Thank you. Hehe./233 220 221 305 769 612 608 222 223 234/Oh... Um... I don't really like this./768/Get that away from me...!/168 171 116/...$11//"
+      }
+    },
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Lavril",
+      "FromFile": "assets/img/LavrilSprites.png",
+      "When": {
+        "WinterOutfit": "false"
+      }
+    },
+
+    {
+      "LogName": "Winter Seasonal Outfits",
+      "Action": "Load",
+      "Target": "Characters/Lavril",
+      "FromFile": "assets/img/LavrilWinterSprites.png",
+      "When": {
+        "WinterOutfit": "true"
+      }
+    },
+
+    { //Default Portraits by Arknir27
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Lavril",
+      "FromFile": "assets/img/LavrilPortrait.png",
+      "When": {
+        "AlternatePortraits": "false",
+        "WinterOutfit": "false"
+
+      }
+    },
+
+    { //Noxide77 Portraits
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Lavril",
+      "FromFile": "assets/img2/LavrilPortrait.png",
+      "When": {
+        "AlternatePortraits": "true",
+        "WinterOutfit": "false"
+      }
+    },
+
+
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Lavril",
+      "FromFile": "assets/img/LavrilWinterPortrait.png",
+      "When": {
+        "AlternatePortraits": "true",
+        "WinterOutfit": "true"
+      }
+    },
+
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Lavril",
+      "FromFile": "assets/img/LavrilWinterPortrait.png",
+      "When": {
+        "AlternatePortraits": "false",
+        "WinterOutfit": "true"
+      }
+    },
+
+
+    //adds Lavril's default portrait
+    {
+      "LogName": "Lavril default",
+      "Action": "Load",
+      "Target": "Portraits/Lavril_default",
+      "FromFile": "assets/img/LavrilPortrait.png",
+      "When": {
+        "AlternatePortraits": "false"
+      }
+    },
+
+    {
+      "LogName": "Lavril default",
+      "Action": "Load",
+      "Target": "Portraits/Lavril_default",
+      "FromFile": "assets/img2/LavrilPortrait.png",
+      "When": {
+        "AlternatePortraits": "true"
+      }
+    },
+
+    //adds Lavril's default sprites
+
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Lavril_default",
+      "FromFile": "assets/img/LavrilSprites.png"
+    },
+
+
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Lavril",
+      "FromFile": "assets/schedules/LavrilSchedule.json"
+    },
+
+    {
+      "LogName": "Movie Invite Strings",
+      "Action": "EditData",
+      "Target": "strings/Characters",
+      "Entries": {
+        "MovieInvite_Invited_Lavril": "You want to watch a movie with me? Umm... I would love to come!$16"
+      }
+
+    },
+
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Lavril",
+      "FromFile": "assets/dialogue/LavrilDialogue.json"
+    },
+
+    {
+      "LogName": "Marriage Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueLavril, Characters/Dialogue/MarriageDialogueLavrilRoommate",
+      "FromFile": "assets/dialogue/AdoptedDialogue.json"
+    },
+
+    {
+      "LogName": "Lavril Event Costumes",
+      "Action": "Load",
+      "Target": "Characters/Lavril_Winter",
+      "FromFile": "assets/img/LavrilWinterSprites.png"
+    },
+
+    {
+      "LogName": "Lavril Event Costumes",
+      "Action": "Load",
+      "Target": "Characters/Lavril_SpiritsEve",
+      "FromFile": "assets/img/LavrilFallSprites.png"
+    },
+
+    {
+      "LogName": "Lavril Event Costumes",
+      "Action": "Load",
+      "Target": "Characters/Lavril_PJ",
+      "FromFile": "assets/img/LavrilPJ.png"
+    },
+
+    {
+      "LogName": "Lavril Event Costumes",
+      "Action": "Load",
+      "Target": "Portraits/Lavril_PJ",
+      "FromFile": "assets/img/LavrilPJPortrait.png"
+    },
+
+    {      
+      "Action": "EditData",
+      "Target": "Characters/schedules/Lavril",
+      "When": {
+          "HasMod": "Xiddav.LittleRedSchoolHouse"
+      },
+      "Entries": {
+          "Tue": "0 Town 108 72 1/700 Town 86 52 1/730 Custom_SchoolHouse 20 17 3/950 Custom_SchoolHouse 19 17 3/1000 Custom_SchoolHouse 19 16 3 lavril_read \"Strings\\schedules\\Lavril:Lread.000\"/1130 Town 20 14 square_6_1/1250 Custom_SchoolHouse 20 17 3/1300 Custom_SchoolHouse 19 17 3 lavril_read \"Strings\\schedules\\Lavril:Lread.000\"/1530 Town 83 97 3/1620 Town 17 91 3/1750 AnimalShop 3 5 0",
+          "Wed": "0 Town 108 72 1/700 Town 86 52 1/730 Custom_SchoolHouse 20 17 3/950 Custom_SchoolHouse 19 17 3/1000 Custom_SchoolHouse 19 16 3 lavril_read \"Strings\\schedules\\Lavril:Lread.000\"/1130 Town 20 14 square_6_1/1250 Custom_SchoolHouse 20 17 3/1300 Custom_SchoolHouse 19 17 3 lavril_read \"Strings\\schedules\\Lavril:Lread.000\"/1530 Town 83 97 3/1640 EastScarp_Village 20 67 2/1800 EastScarp_OrchardHouse 7 5 2/1900 EastScarp_OrchardHouse 7 5 2 lavril_read/2040 EastScarp_OrchardHouse 2 4 2/2050 EastScarp_OrchardHouse 3 4 2/2100 EastScarp_OrchardHouse 3 4 2 lavril_sleep",
+          "Fri": "GOTO Wed"
+      }
+  },
+
+  {      
+    "Action": "EditData",
+    "Target": "Characters/schedules/Void",
+    "When": {
+        "HasMod": "Xiddav.LittleRedSchoolHouse"
+    },
+    "Entries": {
+        "Tue": "0 Town 109 72 3/700 Town 87 52 3/730 Custom_SchoolHouse 10 17 1/950 Custom_SchoolHouse 11 17 1/1000 Custom_SchoolHouse 11 16 1 void_read \"Strings\\schedules\\Void:Vread.000\"/1130 Town 24 14 square_2_1/1250 Custom_SchoolHouse 10 17 1/1300 Custom_SchoolHouse 11 17 1 void_read \"Strings\\schedules\\Void:Vread.000\"/1530 Town 83 98 3/1620 Town 18 91 3/1750 AnimalShop 2 5 0",
+        "Wed": "0 Town 109 72 3/700 Town 87 52 3/730 Custom_SchoolHouse 10 17 1/950 Custom_SchoolHouse 11 17 1/1000 Custom_SchoolHouse 11 16 1 void_read \"Strings\\schedules\\Void:Vread.000\"/1130 Town 24 14 square_2_1/1250 Custom_SchoolHouse 10 17 1/1300 Custom_SchoolHouse 11 17 1 void_read \"Strings\\schedules\\Void:Vread.000\"/1530 Town 83 98 3/1640 EastScarp_Village 20 68 0/1800 EastScarp_Orchard 31 10 0",
+        "Fri": "GOTO Wed"
+    }
+}
+
+
+  ]
+}

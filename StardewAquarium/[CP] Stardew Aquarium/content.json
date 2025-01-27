@@ -1,0 +1,92 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+
+  "Format": "2.4.0",
+  "ConfigSchema": {
+    "LegendaryFishAnimation": {
+      "AllowValues": "true,false",
+      "Default": "true",
+      "AllowMultiple": false
+    }
+    /*
+    "SpicyLavaEelAnimation":
+    {
+      "AllowValues": "true,false",
+      "Default": "true",
+      "AllowMultiple": false
+    },
+    "SpecialOrdersDifficulty":
+    {
+      "AllowValues": "Easy,Medium,Hard,Hell",
+      "Default": "Medium",
+      "AllowMultiple": false
+    },
+    "CustomSpecialBoardBackground":
+    {
+      "AllowValues": "vanilla,1,2",
+      "Default": "1",
+      "AllowMultiple": false
+    },
+    "CustomSpecialBoardSprite":
+    {
+      "AllowValues": "true,false",
+      "Default": "true",
+      "AllowMultiple": false
+    }
+    */
+  },
+  "DynamicTokens": [
+    /****
+    ** Gender Neutrality suffix
+    ****/
+    // When Gender Neutrality is installed, check for gender-neutral overrides in event text.
+    {
+      "Name": "EventOverrideSuffix",
+      "Value": ""
+    },
+    {
+      "Name": "EventOverrideSuffix",
+      "Value": ".genderNeutral",
+      "When": {
+        "HasMod": "Hana.GenderNeutralityMod"
+      }
+    },
+
+    /****
+    ** More New Fish spirit questline
+    ****/
+    // captive spirit fish
+    // This is set to 'La' or 'Tui' if the player has caught only one of them, which is used to (a) check if the event
+    // should be shown and (b) swap in the correct text like `{{i18n: events.spiritFish.{{CaptiveSpiritFish}}.name}}`.
+    {
+      "Name": "CaptiveSpiritFish",
+      "Value": ""
+    },
+    {
+      "Name": "CaptiveSpiritFish",
+      "Value": "La",
+      "When": {
+        "Render: {{HasFlag:hostPlayer |contains=AquariumDonated:MNF.MoreNewFish_la}}#{{HasFlag:hostPlayer |contains=AquariumDonated:MNF.MoreNewFish_tui}}": "true#false"
+      }
+    },
+    {
+      "Name": "CaptiveSpiritFish",
+      "Value": "Tui",
+      "When": {
+        "Render: {{HasFlag:hostPlayer |contains=AquariumDonated:MNF.MoreNewFish_la}}#{{HasFlag:hostPlayer |contains=AquariumDonated:MNF.MoreNewFish_tui}}": "false#true"
+      }
+    },
+
+    // has captive spirit fish
+    {
+      "Name": "HasCaptiveSpiritFish",
+      "Value": "{{CaptiveSpiritFish |contains=La, Tui}}"
+    }
+  ],
+  "Changes": [
+    {
+      "Action": "Include",
+      "FromFile": "patches/characters.json, patches/events.json, patches/fish-tank-descriptions.json, patches/items.json, patches/legacy-migrations.json, patches/locations.json, patches/mail.json, patches/map-strings.json, patches/shops.json, patches/ui.json"
+    }
+  ]
+}

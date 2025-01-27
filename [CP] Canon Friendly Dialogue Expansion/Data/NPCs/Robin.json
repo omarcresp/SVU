@@ -1,0 +1,119 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Robin_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)224": "{{i18n: CFE_Robin_Spaghetti}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Robin}}' = 'true' OR ('{{CFE_Robin}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Robin_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        // we can also add reveal gift taste code to these now that they use i18n.
+        "AcceptGift_(O)373": "{{i18n: CFE_Robin_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Robin_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Robin_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Robin_RabbitsFoot}}",
+        "AcceptGift_(O)426": "{{i18n: CFE_Robin_GoatCheese}}",
+        "AcceptGift_(O)636": "{{i18n: CFE_Robin_Peach}}"
+      },
+      "When": { "Query: '{{CFE_Robin}}' = 'true' OR ('{{CFE_Robin}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Robin_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Robin": "{{i18n: CFE_Robin_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Robin}}' = 'true' OR ('{{CFE_Robin}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Robin_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Robin_spring1y2}}",
+        "summer_27_1": "{{i18n: CFE_Robin_summer27}}",
+        "summer_27_2": "{{i18n: CFE_Robin_summer27}}",
+        "fall_15_1": "{{i18n: CFE_Robin_fall15}}",
+        "fall_15_2": "{{i18n: CFE_Robin_fall15}}",
+        "winter_15_1": "{{i18n: CFE_Robin_winter15}}",
+        "winter_15_2": "{{i18n: CFE_Robin_winter15}}",
+        "winter_28_1": "{{i18n: CFE_Robin_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Robin_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Robin_summerMon10}}",
+        "summer_Tue10": "{{i18n: CFE_Robin_summerTue10}}",
+        "summer_Tue6": "{{i18n: CFE_Robin_summerTue6}}",
+        "summer_Wed8": "{{i18n: CFE_Robin_summerWed8}}",
+        "summer_Thu10": "{{i18n: CFE_Robin_summerThu10}}",
+        "summer_Sun10": "{{i18n: CFE_Robin_repeated_2}}",
+
+        "fall_Mon8": "{{i18n: CFE_Robin_fallMon8}}",
+        "fall_Mon4": "{{i18n: CFE_Robin_fallMon4}}",
+        "fall_Tue10": "{{i18n: CFE_Robin_repeated_3}}",
+        "fall_Wed10": "{{i18n: CFE_Robin_fallWed10}}",
+        "fall_Thu8": "{{i18n: CFE_Robin_fallThu8}}",
+        "fall_Fri6": "{{i18n: CFE_Robin_fallFri6}}",
+        "fall_Sat10": "{{i18n: CFE_Robin_repeated_4}}",
+        "fall_Sun10": "{{i18n: CFE_Robin_fallSun10}}",
+
+        "winter_Tue10": "{{i18n: CFE_Robin_winterTue10}}",
+        "winter_Mon8": "{{i18n: CFE_Robin_winterMon8}}",
+        "winter_Mon6": "{{i18n: CFE_Robin_winterMon6}}",
+        "winter_Wed6": "{{i18n: CFE_Robin_winterWed6}}",
+        "winter_Thu10": "{{i18n: CFE_Robin_winterThu10}}",
+        "winter_Sat8": "{{i18n: CFE_Robin_winterSat8}}",
+        "winter_Sun10": "{{i18n: CFE_Robin_winterSun10}}",
+
+        "Mon6": "{{i18n: CFE_Robin_Mon6}}",
+        "Mon4": "{{i18n: CFE_Robin_Mon4}}",
+        "Mon2": "{{i18n: CFE_Robin_Mon2}}",
+        "Tue8": "{{i18n: CFE_Robin_Tue8}}",
+        "Tue6": "{{i18n: CFE_Robin_repeated_4}}",
+        "Tue4": "{{i18n: CFE_Robin_Tue4}}",
+        "Tue2": "{{i18n: CFE_Robin_Tue2}}",
+        "Wed4": "{{i18n: CFE_Robin_Wed4}}",
+        "Wed2": "{{i18n: CFE_Robin_repeated_3}}",
+        "Thu10": "{{i18n: CFE_Robin_Thu10}}",
+        "Thu6": "{{i18n: CFE_Robin_repeated_2}}",
+        "Thu4": "{{i18n: CFE_Robin_Thu4}}",
+        "Thu2": "{{i18n: CFE_Robin_Thu2}}",
+        "Fri8": "{{i18n: CFE_Robin_Fri8}}",
+        "Fri2": "{{i18n: CFE_Robin_Fri2}}",
+        "Sat8": "{{i18n: CFE_Robin_Sat8}}",
+        "Sat6": "{{i18n: CFE_Robin_Sat6}}",
+        "Sat4": "{{i18n: CFE_Robin_Sat4}}",
+
+        //Generic Weekday Dialogue
+        "summer_Wed": "{{i18n: CFE_Robin_summerWed}}",
+        "summer_Fri_inlaw_Sebastian": "{{i18n: CFE_Robin_summerFriinlawSebastian}}",
+        "summer_Fri_inlaw_Maru": "{{i18n: CFE_Robin_summerFriinlawMaru}}",
+
+        "winter_Wed": "{{i18n: CFE_Robin_winterWed}}",
+        "winter_Fri_inlaw_Maru": "{{i18n: CFE_Robin_winterFriinlawMaru}}",
+
+        "Mon": "{{i18n: CFE_Robin_Mon}}",
+        "Wed": "{{i18n: CFE_Robin_Wed}}",
+        "Wed_old": "{{i18n: CFE_Robin_Wed_old}}",
+        "Wed_604": "{{i18n: CFE_Robin_Wed_604}}",
+        "Wed_605": "{{i18n: CFE_Robin_Wed_605}}",
+        "Wed_606": "{{i18n: CFE_Robin_Wed_606}}",
+        "Fri_inlaw_Maru": "{{i18n: CFE_Robin_FriinlawMaru}}"
+      },
+      "When": { "Query: '{{CFE_Robin}}' = 'true' OR ('{{CFE_Robin}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "Changes":
+    [
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP.LetterBackgrounds",
+	  "FromFile": "Assets/LetterBackgrounds.png"
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Mail",
+	  "When": { "Quests": "Off" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.BaublesIntro": "{{i18n:appleseed.BCP.BaublesIntro}}%item craftingRecipe appleseed.BCP.AtelierTable %%[letterbg Mods/appleseed.BCP.LetterBackgrounds 0][textcolor gray][#]{{i18n:appleseed.BCP.BaublesIntroTitle}}",
+		"appleseed.BCP.WhimsychineHint": "{{i18n:appleseed.BCP.WhimsychineHint}}[letterbg Mods/appleseed.BCP.LetterBackgrounds 2][textcolor black][#]{{i18n: appleseed.BCP.WhimsychineHintTitle}}",
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Mail",
+	  "When": { "Quests": "On" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.BaublesIntro": "{{i18n:appleseed.BCP.BaublesIntro}}%item craftingRecipe appleseed.BCP.AtelierTable %% %item quest appleseed.BCP.IntroQuest true%%[letterbg Mods/appleseed.BCP.LetterBackgrounds 0][textcolor gray][#]{{i18n:appleseed.BCP.BaublesIntroTitle}}",
+		"appleseed.BCP.WizardRequest": "{{i18n:appleseed.BCP.WizardRequest}}%item quest appleseed.BCP.WhimsychineQuest true %%[letterbg 2][textcolor cyan][#]{{i18n:appleseed.BCP.WizardRequestTitle}}",
+		"appleseed.BCP.WhimsychineHint": "{{i18n:appleseed.BCP.WhimsychineHint}}[letterbg Mods/appleseed.BCP.LetterBackgrounds 2][textcolor black][#]{{i18n: appleseed.BCP.WhimsychineHintTitle}}",
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "Entries": 
+	    {
+		"appleseed.BCP.SendBaublesIntro":
+		  {
+		    "Id": "appleseed.BCP.SendBaublesIntro",
+		    "Trigger": "DayEnding",
+		    "Condition": "DAYS_PLAYED 0",
+		    "Action": "Addmail Current appleseed.BCP.BaublesIntro"
+		  },
+		"appleseed.BCP.SendBaublesIntroBackup":
+		  {
+		    "Id": "appleseed.BCP.SendBaublesIntroBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "!PLAYER_HAS_MAIL Current appleseed.BCP.BaublesIntro",
+		    "Action": "Addmail Current appleseed.BCP.BaublesIntro now"
+		  }
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Mail",
+	  "When": { "CurioUnlockMode": "MakeFriends, CompleteCC, Free" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.CurioBookLetter": "{{i18n: appleseed.BCP.CurioBookLetter}}%item object appleseed.BCP.CurioBook 1 %%[letterbg Mods/appleseed.BCP.LetterBackgrounds 1][textcolor black][#]{{i18n:appleseed.BCP.CurioBookLetterTitle}}"
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "When": { "CurioUnlockMode": "Free" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.SendCurioBookLetter":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterF",
+		    "Trigger": "DayEnding",
+		    "Condition": "DAYS_PLAYED 0",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter"
+		  },
+		"appleseed.BCP.SendCurioBookLetterBackup":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterFBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "!PLAYER_HAS_MAIL Current appleseed.BCP.CurioBookLetter",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter now"
+		  }
+
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "When": { "CurioUnlockMode": "MakeFriends" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.SendCurioBookLetterMF":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterMF",
+		    "Trigger": "DayEnding",
+		    "Condition": "PLAYER_HAS_ACHIEVEMENT Current 12",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter"
+		  },
+		"appleseed.BCP.SendCurioBookLetterMFBackup":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterMFBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "!PLAYER_HAS_MAIL Current appleseed.BCP.CurioBookLetter, PLAYER_HAS_ACHIEVEMENT Current 12",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter now"
+		  }
+
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "When": { "CurioUnlockMode": "CompleteCC" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.SendCurioBookLetterCC":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterCC",
+		    "Trigger": "DayEnding",
+		    "Condition": "IS_COMMUNITY_CENTER_COMPLETE true",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter"
+		  },
+		"appleseed.BCP.SendCurioBookLetterCCBackup":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterCCBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "!PLAYER_HAS_MAIL Current appleseed.BCP.CurioBookLetter, IS_COMMUNITY_CENTER_COMPLETE true",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter now"
+		  }
+
+	    }
+	}
+    ]
+}

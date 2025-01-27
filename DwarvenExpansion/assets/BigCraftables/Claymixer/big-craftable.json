@@ -1,0 +1,156 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_Claymixer": {
+                    "Name": "Clay mixer",
+                    "DisplayName": "{{i18n:Claymixer.DisplayName}}",
+                    "Description": "{{i18n:Claymixer.Description}}",
+                    "Price": 0,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": false,
+                    "IsLamp": false,
+                    "Texture": "Mods/DwarvenExpansion/BigCraftablesSpritesheet",
+                    "SpriteIndex": 14,
+                    "ContextTags": null,
+                    "CustomFields": null
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "Clay Mixer": "335 3 390 20 80 5/Home/{{ModId}}_Claymixer/true/Mining 3/"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Blacksmith",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Claymixer": {
+                    "ID": "{{ModId}}_Claymixer",
+                    "ItemId": "(BC){{ModId}}_Claymixer",
+                    "Condition": "PLAYER_MINING_LEVEL Current 3",
+                    "Price": "1000",
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_Claymixer": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default",
+                            "Triggers": [
+                                {
+                                    "Id": "Input",
+                                    "Trigger": "OutputCollected, MachinePutDown",
+                                    "RequiredItemId": null,
+                                    "RequiredTags": null,
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": null,
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": false,
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "Clay",
+                                    "ItemId": "(O)330",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 4,
+                                    "MaxStack": 5,
+                                    "Quality": -1,
+                                    "ObjectInternalName": null,
+                                    "ObjectDisplayName": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": null,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": null,
+                                    "PerItemCondition": null
+                                  }
+                            ],
+                            "MinutesUntilReady": -1,
+                            "DaysUntilReady": 1,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": [],
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": null,
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "coin",
+                                    "Delay": 0
+                                }
+                            ],
+                            "Interval": 100,
+                            "Frames": null,
+                            "ShakeDuration": -1,
+                            "TemporarySprites": null
+                        }
+                    ],
+                    "WorkingEffects": [
+                        {
+                            "Frames": [
+                                0,
+                                1
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 1,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": false,
+                    "IsIncubator": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": null,
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                }
+            }
+        }
+    ]
+}

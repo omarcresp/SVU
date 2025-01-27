@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="31" height="26" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="144">
+ <properties>
+  <property name="AmbientLight" value="110 110 110"/>
+  <property name="LocationContext" value="ZuzuCity"/>
+  <property name="UniquePortrait" value="DTZ.DowntownZuzuCP_Hazel"/>
+  <property name="UniqueSprite" value="DTZ.DowntownZuzuCP_Hazel"/>
+  <property name="Warp" value="15 25 Custom_DTZ_Pizzeria 15 7"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="1889">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2213" name="samshowtiles" tilewidth="16" tileheight="16" tilecount="140" columns="10">
+  <image source="samshowtiles.png" width="160" height="224"/>
+ </tileset>
+ <tileset firstgid="2353" name="spring_extra3" tilewidth="16" tileheight="16" tilecount="10000" columns="100">
+  <image source="spring_extra3.png" width="1600" height="1600"/>
+ </tileset>
+ <tileset firstgid="12353" name="cameos" tilewidth="16" tileheight="16" tilecount="15625" columns="125">
+  <image source="cameos.png" width="2000" height="2000"/>
+ </tileset>
+ <tileset firstgid="27978" name="JojaEnergyWashroom" tilewidth="16" tileheight="16" tilecount="63" columns="9">
+  <image source="JojaEnergyWashroom.png" width="144" height="112"/>
+ </tileset>
+ <tileset firstgid="28041" name="JojaEnergy" tilewidth="16" tileheight="16" tilecount="640" columns="32">
+  <image source="spring_JojaEnergy.png" width="512" height="320"/>
+ </tileset>
+ <tileset firstgid="28681" name="JojaEnergyInterior" tilewidth="16" tileheight="16" tilecount="345" columns="23">
+  <image source="JojaEnergyInterior.png" width="368" height="240"/>
+ </tileset>
+ <tileset firstgid="29026" name="DoorToRight.png" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <image source="DoorToRight.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="29090" name="JojaEnergyInterior" tilewidth="16" tileheight="16" tilecount="345" columns="23">
+  <image source="JojaEnergyInterior.png" width="368" height="240"/>
+ </tileset>
+ <tileset firstgid="29435" name="wallandwindowsextras" tilewidth="16" tileheight="16" tilecount="1280" columns="40">
+  <image source="wallandwindowsextras.png" width="640" height="512"/>
+ </tileset>
+ <tileset firstgid="30715" name="springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+ </tileset>
+ <tileset firstgid="31651" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="34627" name="pizza-place" tilewidth="16" tileheight="16" tilecount="170" columns="17">
+  <image source="pizza-place.png" width="272" height="160"/>
+  <tile id="98">
+   <animation>
+    <frame tileid="98" duration="250"/>
+    <frame tileid="96" duration="250"/>
+    <frame tileid="94" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="99">
+   <animation>
+    <frame tileid="99" duration="250"/>
+    <frame tileid="97" duration="250"/>
+    <frame tileid="95" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="34797" name="joja_furniture" tilewidth="16" tileheight="16" tilecount="260" columns="13">
+  <image source="joja_furniture.png" width="208" height="333"/>
+ </tileset>
+ <layer id="1" name="Back" width="31" height="26">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,338,338,338,338,338,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,338,338,338,338,338,0,0,0,0,0,0,0,338,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,338,338,338,338,338,0,0,338,338,338,338,338,338,338,338,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,1310,1309,1310,1309,1310,0,0,1309,1310,1309,1310,1309,1310,1309,1310,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,29948,29948,0,0,1341,1342,1341,1342,1341,1342,1341,1342,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,338,338,29947,29947,338,338,1373,1374,1373,1374,1373,1374,1373,1374,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,338,338,29947,29947,338,338,1341,1342,1341,1342,1341,1342,1341,1342,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,338,338,29947,29947,338,338,1373,1374,1373,1374,1373,1374,1373,1374,34744,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,1341,1342,1073743133,1073743134,1309,1310,1309,1310,1341,1342,1341,1342,1341,1309,1310,1342,34744,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,1373,1374,1309,1310,1373,1374,1373,1374,1373,1374,1373,1374,1373,1374,1373,1374,34744,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,1341,1342,1341,1342,1341,1342,1341,1342,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,1373,1374,1373,1374,1373,1374,1373,1374,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="14" name="Back1" width="31" height="26">
+  <properties>
+   <property name="DrawAbove" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="13" name="Back1"/>
+ <layer id="3" name="Buildings" width="31" height="26">
+  <data encoding="csv">
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,46,47,47,47,47,47,47,47,47,48,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,46,47,47,47,47,47,48,101,338,338,338,338,338,338,338,338,105,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,101,0,1426,0,0,0,105,101,338,338,338,338,338,1426,338,338,105,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,101,175,1458,175,175,175,105,101,175,175,175,175,175,1458,175,175,105,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,133,438,0,0,0,0,105,101,34903,34851,34851,34864,0,0,1391,1260,105,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,46,47,231,0,0,230,231,34851,34930,34931,34877,0,0,927,928,105,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,101,91,92,0,0,91,92,34668,30026,30027,0,0,0,959,960,105,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,101,123,124,0,0,123,124,1396,1397,0,0,0,5553,5554,1404,105,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,101,155,156,0,0,155,156,34649,34648,0,0,34647,5653,5654,0,105,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,101,1591,1592,0,0,11673,11674,34686,0,0,0,0,1391,5553,5554,105,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,197,0,0,0,0,0,0,0,0,0,0,0,0,5653,5654,204,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,133,0,167,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="108" name="TileData" x="96" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 15 24 Custom_DTZ_GioRoom"/>
+   </properties>
+  </object>
+  <object id="109" name="TileData" x="272" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.2&quot;"/>
+   </properties>
+  </object>
+  <object id="110" name="TileData" x="240" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="111" name="TileData" x="224" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="112" name="TileData" x="208" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="113" name="TileData" x="208" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="114" name="TileData" x="224" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="115" name="TileData" x="224" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="116" name="TileData" x="208" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="117" name="TileData" x="192" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="118" name="TileData" x="192" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="119" name="TileData" x="192" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="120" name="TileData" x="208" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="121" name="TileData" x="272" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="122" name="TileData" x="288" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="123" name="TileData" x="272" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="124" name="TileData" x="288" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="125" name="TileData" x="288" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="126" name="TileData" x="304" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="127" name="TileData" x="288" y="368" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="128" name="TileData" x="304" y="368" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="129" name="TileData" x="288" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="130" name="TileData" x="288" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="131" name="TileData" x="304" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="132" name="TileData" x="304" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.1&quot;"/>
+   </properties>
+  </object>
+  <object id="133" name="TileData" x="208" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.3&quot;"/>
+   </properties>
+  </object>
+  <object id="134" name="TileData" x="192" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.3&quot;"/>
+   </properties>
+  </object>
+  <object id="135" name="TileData" x="256" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.3&quot;"/>
+   </properties>
+  </object>
+  <object id="136" name="TileData" x="192" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.3&quot;"/>
+   </properties>
+  </object>
+  <object id="137" name="TileData" x="96" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Pizzeria.9&quot;"/>
+   </properties>
+  </object>
+  <object id="138" name="TileData" x="112" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Pizzeria.9&quot;"/>
+   </properties>
+  </object>
+  <object id="139" name="TileData" x="128" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.4&quot;"/>
+   </properties>
+  </object>
+  <object id="140" name="TileData" x="112" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.4&quot;"/>
+   </properties>
+  </object>
+  <object id="141" name="TileData" x="144" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.4&quot;"/>
+   </properties>
+  </object>
+  <object id="142" name="TileData" x="160" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.5&quot;"/>
+   </properties>
+  </object>
+  <object id="143" name="TileData" x="176" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.PizzeriaBack.5&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Paths" width="31" height="26">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,9,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="31" height="26">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,33281,0,33281,0,0,0,475,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,244,0,0,0,0,33313,0,33313,0,0,345,507,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,406,0,0,0,0,0,0,34890,0,0,0,0,0,1359,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,34917,34918,0,0,0,895,896,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,29986,29987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,34765,34766,1364,1365,0,0,0,5453,5454,1372,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,34782,34783,34632,34631,0,0,34630,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,1559,1560,0,0,11573,11574,0,0,0,0,0,1359,5453,5454,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="31" height="26">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,34650,34651,0,0,0,0,34635,34636,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,34668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,202,202,199,0,0,0,0,0,34652,34668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,34633,34634,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,198,202,202,202,202,202,202,202,199,0,200,202,202,203,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

@@ -1,0 +1,86 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Blue Moon Lunar Event",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_BlueMoon": {
+          "Id": "Kana.WeatherWonders_BlueMoon",
+          "DisplayName": "{{i18n: Weather.Sunny}}",
+          "SoftMusicOverrides": [{}],
+          "Forecast": "{{i18n: Weather.Sunny.Forecast}}",
+          "IconTexture": "LooseSprites/Cursors",
+          "IconSource": {
+            "X": 341,
+            "Y": 421
+          },
+          "TVTexture": "LooseSprites/Cursors",
+          "TVSource": {
+            "X": 413,
+            "Y": 333
+          },
+          "UseNightTiles": true,
+          "SpawnCritters": true,
+          "SpawnFrogs": true,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "BlueMoonTint1",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 1800 1830",
+              "Color": "0, 0, 255",
+              "Opacity": 0.025,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "BlueMoonTint2",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 1840 1910",
+              "Color": "0, 0, 255",
+              "Opacity": 0.045,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "BlueMoonTint3",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 1920 2020",
+              "Color": "0, 0, 255",
+              "Opacity": 0.085,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "BlueMoonTint4",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 2030 2600",
+              "Color": "0, 0, 255",
+              "Opacity": 0.125,
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": [
+            {
+              "Id": "BlueMoonTint1",
+              "TimeOfDay": 1940,
+              "PostLightingTint": "0, 0, 196",
+              "PostLightingTintOpacity": 0.15
+            }
+          ],
+          "Effects": [
+            {
+              "Id": "BlueMoonEffect1",
+              "Type": "Buff",
+              "BuffId": "Kana.WeatherWonders_BlueMoon",
+              "Condition": "TIME 2000 2600, PLAYER_LOCATION_CONTEXT Current Default",
+              "TargetMapType": "Indoors, Outdoors"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

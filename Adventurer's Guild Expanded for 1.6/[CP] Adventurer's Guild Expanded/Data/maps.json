@@ -1,0 +1,708 @@
+{
+"Changes": [
+
+	//LOAD TILESHEETS
+	{
+            "Action": "Load",
+            "Target": "Maps/silly_room",
+            "FromFile": "assets/Maps/silly_room.png",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/z_flowerParadiseTiles",
+            "FromFile": "assets/Maps/flowerParadise.png",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/z_zinniaRocks",
+            "FromFile": "assets/Maps/zinniaRocks.png",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/z_zinniaPicture",
+            "FromFile": "assets/Maps/zinniaPicture.png",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/z_blueCave",
+            "FromFile": "assets/Maps/z_blueCave.png",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/z_GabrielDateSky",
+            "FromFile": "assets/Maps/z_GabrielDateSky.png",
+        },
+
+
+	//Monster House
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Farm",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+	        "HasMod: |contains=flashshifter.GrandpasFarm": false,
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Farm_Fishing",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Farm_Combat",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Farm_Foraging",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Farm_Mining",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Farm_FourCorners",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Farm_Island",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Farm_Ranching",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GE_MonsterHouse",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "FromArea": { "X": 0, "Y": 15, "Width": 2, "Height": 4},
+            "ToArea": { "X": 3, "Y": 0, "Width": 2, "Height": 4},
+	    "PatchMode": "overlay",
+	    "When": {
+		"FarmBasementEntrance": "true",
+		"HasMod: |contains=flashshifter.GrandpasFarm": false,
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GE_MonsterHouse",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "FromArea": { "X": 2, "Y": 15, "Width": 2, "Height": 4},
+            "ToArea": { "X": 3, "Y": 0, "Width": 2, "Height": 4},
+	    "PatchMode": "overlay",
+	    "When": {
+		"FarmBasementEntrance": "true",
+		"HasMod: |contains=flashshifter.GrandpasFarm": true,
+	     },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 1, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{BusStopBPosX}}}}", "Y": "{{Query:{{BusStopBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+	     },
+        },
+
+		//Grandpa's Farm
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Farm",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+		"HasMod: |contains=flashshifter.GrandpasFarm": true,
+	     },
+        },
+
+		//IF2F
+	{
+            "Action": "EditMap",
+            "Target": "Maps/zanderb14_IF2Fix",
+            "FromFile": "assets/Maps/Trapdoor.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
+	    "PatchMode": "overlay",
+	    "When": {
+		"sillyMovedIn": "true",
+		"FarmBasementEntrance": "true",
+		"HasMod: |contains=zander.immersivefarm2": true,
+	     },
+        },
+
+	//Guild Expansion
+	{
+            "Action": "EditMap",
+            "Target": "Maps/AdventureGuild",
+            "FromFile": "assets/Maps/AdventureGuild.tmx",
+	    "FromArea": { "X": 13, "Y": 10, "Width": 6, "Height": 7},
+            "ToArea": { "X": 13, "Y": 10, "Width": 6, "Height": 7},
+	    "PatchMode": "replace",
+	    "When": {
+			"HasSeenEvent: anyPlayer |contains=9280002": "true",
+		},
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/AdventureGuild",
+            "FromFile": "assets/Maps/AdventureGuild.tmx",
+	    "FromArea": { "X": 11, "Y": 13, "Width": 2, "Height": 3},
+            "ToArea": { "X": 11, "Y": 13, "Width": 2, "Height": 3},
+	    "PatchMode": "replace",
+	    "When": {
+			"HasSeenEvent: anyPlayer |contains=9280002": "true",
+		},
+        },
+
+	//Random Daniel Visits
+	{
+            "Action": "EditMap",
+            "Target": "Maps/AdventureGuild",
+            "FromFile": "assets/Maps/Daniel.tbin",
+	    "ToArea": { "X": 12, "Y": 12, "Width": 1, "Height": 2},
+	    "PatchMode": "overlay",
+	    "When": {
+		"HasSeenEvent: anyPlayer |contains=8280001": "true",
+		"DanielVisit": "true",
+		},
+        },
+
+	//Silly's Room
+
+	//Zinnia Path
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GE_MonsterResearchWing",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 7, "Height": 12},
+            "ToArea": { "X": 14, "Y": 0, "Width": 7, "Height": 12},
+	    "PatchMode": "replace",
+            "Update": "OnTimeChange, OnLocationChange",
+	    "When": {
+			"HasFlag: hostPlayer |contains=choseZinnia": "true",
+		},
+        },
+
+	//Gabe Path
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GE_MonsterResearchWing",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "FromArea": { "X": 7, "Y": 0, "Width": 7, "Height": 12},
+            "ToArea": { "X": 14, "Y": 0, "Width": 7, "Height": 12},
+	    "PatchMode": "replace",
+            "Update": "OnTimeChange, OnLocationChange",
+	    "When": {
+			"HasFlag: hostPlayer |contains=choseGabriel": "true",
+		},
+        },
+
+	//other slimes
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GE_MonsterResearchWing",
+	    "Update": "OnTimeChange, OnLocationChange",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "FromArea": { "X": 0, "Y": 12, "Width": 1, "Height": 3},
+            "ToArea": { "X": 15, "Y": 4, "Width": 1, "Height": 3},
+	    "PatchMode": "overlay",
+	    "When": {
+			"HasSeenEvent: currentPlayer |contains=9280019": "true",
+		},
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GE_MonsterResearchWing",
+	    "Update": "OnTimeChange, OnLocationChange",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "FromArea": { "X": 1, "Y": 12, "Width": 1, "Height": 3},
+            "ToArea": { "X": 19, "Y": 4, "Width": 1, "Height": 3},
+	    "PatchMode": "overlay",
+	    "When": {
+			"HasSeenEvent: currentPlayer |contains=9280019": "true",
+		},
+        },
+	
+	//lights
+	{
+   	    "Action": "EditMap",
+   	    "Target": "Maps/Custom_GE_MonsterResearchWing",
+   	    "TextOperations": [
+      		{
+        	 "Operation": "Append",
+         	"Target": ["MapProperties", "Lights"],
+         	"Value": "16 1 4 19 1 4",
+         	"Delimiter": " " 
+      		},
+   		],
+	     "When": {
+			"HasFlag: currentPlayer |contains=choseZinnia, choseGabriel": "true",
+		},
+	},
+
+	//FLOWER PARADISE
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "FromFile": "assets/Maps/MineZinniaEventEdit.tbin",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "FromArea": { "X": 20, "Y": 0, "Width": 7, "Height": 6},
+            "ToArea": { "X": 20, "Y": 0, "Width": 7, "Height": 6},
+	    "PatchMode": "replace",
+	    "When": {
+		"HasSeenEvent: anyPlayer |contains=8280004": "true",
+		},
+        },
+
+	 {
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "MapProperties": {
+                "Music": "Upper_Ambient"
+            },
+        },
+
+	 {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GE_ZinniaField",
+            "MapProperties": {
+               "Music": "ZinniaSorrow"
+            },
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GE_FlowerParadise",
+            "FromFile": "assets/Maps/FlowerParadiseZinnia14.tbin",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "FromArea": { "X": 14, "Y": 0, "Width": 14, "Height": 12},
+            "ToArea": { "X": 14, "Y": 0, "Width": 14, "Height": 12},
+	    "PatchMode": "replace",
+	    "When": {
+			"HasSeenEvent: anyPlayer |contains=8280008": "true",
+		},
+        },
+
+    //SPOUSE ROOMS + PATIOS
+
+	// SpouseRoom
+    {
+        "Action": "Load",
+        "Target": "Maps/GESpouseRooms",
+        "FromFile": "assets/maps/GESpouseRooms.tbin"
+    },
+	
+     //Patios
+    {
+    	"Action": "Load",
+    	"Target": "Maps/GESpousePatios",
+    	"FromFile": "assets/maps/GESpousePatios.tbin"
+    },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/GESpouseRooms",
+            "FromFile": "assets/Maps/GabrielBat.tbin",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "FromArea": { "X": 1, "Y": 0, "Width": 1, "Height": 4},
+            "ToArea": { "X": 6, "Y": 0, "Width": 1, "Height": 4},
+	    "PatchMode": "overlay",
+	    "When": {
+			"HasSeenEvent: anyPlayer |contains=8280019": "true",
+			"Spouse: anyPlayer |contains=Gabriel": "true"
+		},
+        },
+
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GE_ZinniaRoom",
+            "FromFile": "assets/Maps/GabrielBat.tbin",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "FromArea": { "X": 1, "Y": 0, "Width": 1, "Height": 4},
+            "ToArea": { "X": 17, "Y": 2, "Width": 1, "Height": 4},
+	    "PatchMode": "overlay",
+	    "When": {
+			"HasSeenEvent: anyPlayer |contains=8280019": "true",
+			"Spouse: anyPlayer |contains=Gabriel": "false"
+		},
+        },
+
+	//slime shrines
+
+	//petrified slime
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "FromArea": { "X": 2, "Y": 12, "Width": 3, "Height": 3},
+            "ToArea": { "X": 12, "Y": 30, "Width": 3, "Height": 3},
+	    "PatchMode": "overlay",
+	    "When": {
+			"HasSeenEvent: currentPlayer |contains=9280020": "true",
+			"sewerChanges": "true",
+		},
+        },
+
+	//midnight carp
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "FromArea": { "X": 8, "Y": 12, "Width": 3, "Height": 3},
+            "ToArea": { "X": 12, "Y": 33, "Width": 3, "Height": 3},
+	    "PatchMode": "overlay",
+	    "When": {
+			"HasSeenEvent: currentPlayer |contains=9280020": "true",
+			"sewerChanges": "true",
+		},
+        },
+
+	//sunflower
+	{
+            "Action": "EditMap",
+             "Target": "Maps/Sewer",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "FromArea": { "X": 5, "Y": 12, "Width": 3, "Height": 3},
+            "ToArea": { "X": 19, "Y": 30, "Width": 3, "Height": 3},
+	    "PatchMode": "overlay",
+	    "When": {
+			"HasSeenEvent: currentPlayer |contains=9280020": "true",
+			"sewerChanges": "true",
+		},
+        },
+
+	//true slime energy
+	{
+            "Action": "EditMap",
+           "Target": "Maps/Sewer",
+            "FromFile": "assets/Maps/SillyRoom.tbin",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "FromArea": { "X": 11, "Y": 12, "Width": 3, "Height": 3},
+            "ToArea": { "X": 19, "Y": 33, "Width": 3, "Height": 3},
+	    "PatchMode": "overlay",
+	    "When": {
+			"HasSeenEvent: currentPlayer |contains=9280020": "true",
+			"sewerChanges": "true",
+		},
+        },
+
+	//Daisy Shrine
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "FromFile": "assets/Maps/DaisyGrave.tbin",
+	    "Update": "OnTimeChange, OnLocationChange",
+	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 3},
+            "ToArea": { "X": 15, "Y": 3, "Width": 1, "Height": 3},
+	    "PatchMode": "overlay",
+	    "When": {
+			"HasSeenEvent: currentPlayer |contains=8280019": "true",
+		},
+        },
+
+	//LOAD TEMP MAPS
+	{
+            "Action": "Load",
+            "Target": "Maps/FlashbackMinesGE",
+            "FromFile": "assets/Maps/FlashbackMines.tbin",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/FlashbackMineDownGE",
+            "FromFile": "assets/Maps/FlashbackMineDown.tbin",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/ZinniaEventMines",
+            "FromFile": "assets/Maps/ZinniaEventMines.tbin",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/zinniaPicture",
+            "FromFile": "assets/Maps/ZinniaPicture.tbin",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/FlowerParadiseZinnia14",
+            "FromFile": "assets/Maps/FlowerParadiseZinnia14.tbin",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/BlueCave",
+            "FromFile": "assets/Maps/BlueCave.tbin",
+        },
+
+	{
+            "Action": "Load",
+            "Target": "Maps/GabrielDate",
+            "FromFile": "assets/Maps/GabrielDate.tbin",
+        },
+
+
+	 //STRINGS FROM MAPS
+	{
+     "Action": "EditData",
+     "Target": "Strings/StringsFromMaps",
+     "Entries": {
+		"GabeGuild.98": "{{i18n:MapStrings.GabeGuild.98|PlayerName={{PlayerName}} }}",
+		"ZinniaRoom.1": "{{i18n:MapStrings.ZinniaRoom.1}}",
+		"ZinniaRoom.2": "{{i18n:MapStrings.ZinniaRoom.2}}",
+		"ZinniaRoom.3": "{{i18n:MapStrings.ZinniaRoom.3}}",
+		"ZinniaRoom.4": "{{i18n:MapStrings.ZinniaRoom.4}}",
+		"ZinniaRoom.5": "{{i18n:MapStrings.ZinniaRoom.5}}",
+		"ZinniaRoom.6": "{{i18n:MapStrings.ZinniaRoom.6}}",
+		"ZinniaRoom.7": "{{i18n:MapStrings.ZinniaRoom.7}}",
+		"ZinniaRoom.8": "{{i18n:MapStrings.ZinniaRoom.8}}",
+		"ZinniaRoom.9": "{{i18n:MapStrings.ZinniaRoom.9}}",
+		"ZinniaRoom.10": "{{i18n:MapStrings.ZinniaRoom.10}}",
+		"ZinniaRoom.11": "{{i18n:MapStrings.ZinniaRoom.11}}",
+		"ZinniaRoom.12": "{{i18n:MapStrings.ZinniaRoom.12}}",
+		"ZinniaRoom.13": "{{i18n:MapStrings.ZinniaRoom.13}}",
+		"ZinniaRoom.14": "{{i18n:MapStrings.ZinniaRoom.14}}",
+		"ResearchWing.1": "{{i18n:MapStrings.ResearchWing.1}}",
+		"ResearchWing.2": "{{i18n:MapStrings.ResearchWing.2}}",
+		"ResearchWing.3": "{{i18n:MapStrings.ResearchWing.3}}",
+		"ResearchWing.4": "{{i18n:MapStrings.ResearchWing.4}}",
+		"ResearchWing.5": "{{i18n:MapStrings.ResearchWing.5}}",
+		"ResearchWing.6": "{{i18n:MapStrings.ResearchWing.6}}",
+		"ResearchWing.7": "{{i18n:MapStrings.ResearchWing.7}}",
+		"ResearchWing.8": "{{i18n:MapStrings.ResearchWing.8}}",
+		"ResearchWing.9": "{{i18n:MapStrings.ResearchWing.9}}",
+		"ResearchWing.10": "{{i18n:MapStrings.ResearchWing.10}}",
+		"ResearchWing.11": "{{i18n:MapStrings.ResearchWing.11}}",
+		"ResearchWing.12": "{{i18n:MapStrings.ResearchWing.12}}",
+		"sillyTrappedMessage": "{{i18n:MapStrings.sillyTrappedMessage}}",
+		"danielsMessage": "{{i18n:MapStrings.danielsMessage.{{Random:00,01,02,03,04,05,06}} }}",
+		"GabrielBat.Sleep": "{{i18n:MapStrings.GabrielBat.Sleep}}",
+		"GabrielBat.Awake": "{{i18n:MapStrings.GabrielBat.Awake}}",
+		"DaisyGrave": "{{i18n:MapStrings.DaisyGrave}}",
+		"MonsterHouse.1": "{{i18n:MapStrings.MonsterHouse.1}}",
+		"MonsterHouse.2": "{{i18n:MapStrings.MonsterHouse.2}}",
+		"MonsterHouse.3": "{{i18n:MapStrings.MonsterHouse.3}}",
+
+	},
+	},
+
+	//WARPS FOR NPC PATHING
+
+		//Zinnia's Room
+		{
+   			"Action": "EditMap",
+   			"Target": "Maps/Custom_GE_ZinniaRoom",
+			"AddWarps": [
+      			"11 29 Custom_GE_MonsterResearchWing 7 5",
+			"12 29 Custom_GE_MonsterResearchWing 8 5",
+   			],
+		},
+
+		//Research Wing
+		{
+   			"Action": "EditMap",
+   			"Target": "Maps/Custom_GE_MonsterResearchWing",
+			"AddWarps": [
+      			"5 16 AdventureGuild 15 14",
+			"7 4 Custom_GE_ZinniaRoom 11 28",
+			"8 4 Custom_GE_ZinniaRoom 12 28",
+   			],
+		},
+
+		//Guild
+		{
+   	    		"Action": "EditMap",
+   	    		"Target": "Maps/AdventureGuild",
+   	    		"TextOperations": [
+      			{
+        	 	"Operation": "Append",
+         		"Target": ["MapProperties", "NPCWarp"],
+         		"Value": "15 13 Custom_GE_MonsterResearchWing 5 15",
+         		"Delimiter": " " // if there are already values, add a space between them and the new ones
+      			},
+   			],
+	     	},
+
+		//Monster House
+		{
+   	    		"Action": "EditMap",
+   	    		"Target": "Maps/BusStop",
+	   		"When": {
+				"sillyMovedIn": "true",
+	    		},
+   	    		"TextOperations": [
+      			{
+        	 	"Operation": "Append",
+         		"Target": ["MapProperties", "NPCWarp"],
+         		"Value": "20 22 Custom_GE_MonsterHouse 10 4",
+         		"Delimiter": " " 
+      			},
+   			],
+	     	},
+		
+		//SLEEP IN YOUR SO'S BED
+
+		//Gabriel
+		{
+   	    		"Action": "EditMap",
+   	    		"Target": "Maps/Custom_GE_ZinniaRoom",
+			"Update": "OnTimeChange, OnLocationChange",
+   	    		"MapTiles": [
+      			{
+        			"Position": { "X": 16, "Y": 6 },
+        			"Layer": "Back",
+        			"SetProperties": {
+        			"TouchAction": "Sleep"
+      				},
+			},
+			],
+			"When": {
+				"Relationship:Gabriel": "Dating, Engaged, Married",
+			},
+	     	},
+
+		//Zinnia
+		{
+   	    		"Action": "EditMap",
+   	    		"Target": "Maps/Custom_GE_ZinniaRoom",
+			"Update": "OnTimeChange, OnLocationChange",
+   	    		"MapTiles": [
+      			{
+        			"Position": { "X": 7, "Y": 6 },
+        			"Layer": "Back",
+        			"SetProperties": {
+        			"TouchAction": "Sleep"
+      				},
+			},
+			],
+			"When": {
+				"Relationship:Zinnia": "Dating, Engaged, Married",
+			},
+	     	},
+	
+	
+	//EVENT LOOKUP DISPLAYNAMES
+	{
+            //Add "displayname" to locations
+            "Action": "EditData",
+            "Target": "Mods/shekurika.EventLookup/locationnames",
+            "Entries": {
+                "Custom_GE_MonsterResearchWing": "{{i18n:Custom_GE_MonsterResearchWing.Name}}",
+		"Custom_GE_ZinniaRoom": "{{i18n:Custom_GE_ZinniaRoom.Name}}",
+		"Custom_GE_FlowerParadise": "{{i18n:Custom_GE_FlowerParadise.Name}}",
+		"Custom_GE_MonsterHouse": "{{i18n:Custom_GE_MonsterHouse.Name}}",
+            },
+	    "When": {
+		"HasMod": "shekurika.EventLookup",
+		},
+        },
+
+	//NPC MAP LOCATIONS EDIT
+	{
+   	 "Action": "EditData",
+   	 "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+   	 "Entries": {
+       		 "Silly": {
+            		"MarkerCropOffset": 14
+        	},
+		"Zinnia": {
+            		"MarkerCropOffset": 2
+        	},
+	"When": {
+		"HasMod": "Bouhm.NPCMapLocations",
+		},
+   	 }
+	}
+
+],
+}

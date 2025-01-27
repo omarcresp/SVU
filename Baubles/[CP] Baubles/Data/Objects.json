@@ -1,0 +1,3379 @@
+{
+  "Changes": 
+    [
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP/BigCraftables",
+	  "FromFile": "Assets/BigCraftables.png"
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/BigCraftables",
+	  "Entries":
+		{
+		  "appleseed.BCP.DyeingPot": 
+		    {
+			"Name": "Dyeing Pot",
+			"DisplayName": "{{i18n:appleseed.BCP.dyeingpot.name}}",
+			"Description": "{{i18n:appleseed.BCP.dyeingpot.description}}",
+			"Price": 0,
+			"Texture": "Mods/appleseed.BCP/BigCraftables",
+			"SpriteIndex": 1
+		    },
+		  "appleseed.BCP.Whimsychine": 
+		    {
+			"Name": "Whimsychine",
+			"DisplayName": "{{i18n:appleseed.BCP.whimsychine.name}}",
+			"Description": "{{i18n:appleseed.BCP.whimsychine.description}}",
+			"Price": 0,
+			"Texture": "Mods/appleseed.BCP/BigCraftables",
+			"SpriteIndex": 2
+		    },
+		  "appleseed.BCP.Frogstone": 
+		    {
+			"Name": "Frogstone",
+			"DisplayName": "{{i18n:appleseed.BCP.frogstone.name}}",
+			"Description": "{{i18n:appleseed.BCP.frogstone.description}}",
+			"Price": 0,
+			"Texture": "Mods/appleseed.BCP/BigCraftables",
+			"SpriteIndex": 5
+		    }
+		}
+	},
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP/Objects",
+	  "FromFile": "Assets/Objects.png"
+	},
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP/DefaultJelly",
+	  "FromFile": "Assets/DefaultJelly.png",
+	  "When": {"JellyStyle": "Default"}
+	},
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP/VanillaJelly",
+	  "FromFile": "Assets/VanillaJelly.png",
+	  "When": {"JellyStyle": "Vanilla"}
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": 
+//MISC ITEMS
+		{
+		  "appleseed.BCP.DyeingGuide":
+		    {
+			"Name": "Dyeing Guide",
+			"DisplayName": "{{i18n:appleseed.BCP.dyeingguide.name}}",
+			"Description": "{{i18n:appleseed.BCP.dyeingguide.description}}",
+			"Type": "0",
+			"Category": 0,
+			"Price": 0,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 102,
+			"CanBeTrashed": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "color_white",
+			    "not_giftable",
+			  ]
+		    },
+		  "appleseed.BCP.CurioBook":
+		    {
+			"Name": "Magic Tinkerer's Tome",
+			"DisplayName": "{{i18n:appleseed.BCP.curiobook.name}}",
+			"Description": "{{i18n:appleseed.BCP.curiobook.description}}",
+			"Type": "asdf",
+			"Category": -102,
+			"Price": 5000,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 101,
+			"ContextTags":
+			  [
+			    "color_green",
+			    "book_item",
+			    "bauble_book"
+			  ],
+			"CustomFields": 
+			  {
+			    "Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n:appleseed.BCP.curiobook.power}}"
+			  }
+		    },
+//WOOL
+		  "appleseed.BCP.RedWool":
+		    {
+			"Name": "Red Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.redwool.name}}",
+			"Description": "{{i18n:appleseed.BCP.redwool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 365,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 0,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_red",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.YellowWool":
+		    {
+		 	"Name": "Yellow Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.yellowwool.name}}",
+			"Description": "{{i18n:appleseed.BCP.yellowwool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 365,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 1,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_yellow",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.BlueWool":
+		    {
+		 	"Name": "Blue Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.bluewool.name}}",
+			"Description": "{{i18n:appleseed.BCP.bluewool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 365,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 2,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_blue",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.OrangeWool":
+		    {
+		 	"Name": "Orange Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.orangewool.name}}",
+			"Description": "{{i18n:appleseed.BCP.orangewool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 390,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 3,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_orange",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.GreenWool":
+		    {
+		 	"Name": "Green Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.greenwool.name}}",
+			"Description": "{{i18n:appleseed.BCP.greenwool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 390,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 4,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_green",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.VioletWool":
+		    {
+		 	"Name": "Violet Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.violetwool.name}}",
+			"Description": "{{i18n:appleseed.BCP.violetwool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 390,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 5,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_purple",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.BrownWool":
+		    {
+		 	"Name": "Brown Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.brownwool.name}}",
+			"Description": "{{i18n:appleseed.BCP.brownwool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 418,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 6,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_brown",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.BlackWool":
+		    {
+		 	"Name": "Black Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.blackwool.name}}",
+			"Description": "{{i18n:appleseed.BCP.blackwool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 365,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 7,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_black",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.WhiteWool":
+		    {
+		 	"Name": "White Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.whitewool.name}}",
+			"Description": "{{i18n:appleseed.BCP.whitewool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 365,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 8,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_white",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.GreyWool":
+		    {
+		 	"Name": "Grey Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.greywool.name}}",
+			"Description": "{{i18n:appleseed.BCP.greywool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 390,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 9,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_gray",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.PinkWool":
+		    {
+		 	"Name": "Pink Wool",
+			"DisplayName": "{{i18n:appleseed.BCP.pinkwool.name}}",
+			"Description": "{{i18n:appleseed.BCP.pinkwool.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 390,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 10,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_pink",
+			    "bauble_material"
+			  ]
+		    },
+//CLOTH
+		  "appleseed.BCP.RedCloth":
+		    {
+		 	"Name": "Red Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.redcloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.redcloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 490,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 11,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_red",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.YellowCloth":
+		    {
+		 	"Name": "Yellow Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.yellowcloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.yellowcloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 490,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 12,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_yellow",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.BlueCloth":
+		    {
+		 	"Name": "Blue Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.bluecloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.bluecloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 490,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 13,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_blue",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.OrangeCloth":
+		    {
+		 	"Name": "Orange Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.orangecloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.orangecloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 520,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 14,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_orange",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.GreenCloth":
+		    {
+		 	"Name": "Green Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.greencloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.greencloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 520,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 15,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_green",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.VioletCloth":
+		    {
+		 	"Name": "Violet Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.violetcloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.violetcloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 520,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 16,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_purple",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.BrownCloth":
+		    {
+		 	"Name": "Brown Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.browncloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.browncloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 545,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 17,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_brown",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.BlackCloth":
+		    {
+		 	"Name": "Black Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.blackcloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.blackcloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 490,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 18,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_black",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.WhiteCloth":
+		    {
+		 	"Name": "White Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.whitecloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.whitecloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 490,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 19,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_white",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.GreyCloth":
+		    {
+		 	"Name": "Grey Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.greycloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.greycloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 520,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 20,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_gray",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.PinkCloth":
+		    {
+		 	"Name": "Pink Cloth",
+			"DisplayName": "{{i18n:appleseed.BCP.pinkcloth.name}}",
+			"Description": "{{i18n:appleseed.BCP.pinkcloth.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 520,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 21,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_pink",
+			    "bauble_material"
+			  ]
+		    },
+//MATERIALS
+		  "appleseed.BCP.WoodenButtons":
+		    {
+		 	"Name": "Wooden Buttons",
+			"DisplayName": "{{i18n:appleseed.BCP.woodenbuttons.name}}",
+			"Description": "{{i18n:appleseed.BCP.woodenbuttons.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 30,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 22,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_sand",
+			    "bauble_material",
+			    "bauble_button"
+			  ]
+		    },
+		  "appleseed.BCP.MetalButtons":
+		    {
+		 	"Name": "Metal Buttons",
+			"DisplayName": "{{i18n:appleseed.BCP.metalbuttons.name}}",
+			"Description": "{{i18n:appleseed.BCP.metalbuttons.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 90,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 23,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_iron",
+			    "bauble_material",
+			    "bauble_button"
+			  ]
+		    },
+		  "appleseed.BCP.HardwoodButtons":
+		    {
+		 	"Name": "Hardwood Buttons",
+			"DisplayName": "{{i18n:appleseed.BCP.hardwoodbuttons.name}}",
+			"Description": "{{i18n:appleseed.BCP.hardwoodbuttons.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 70,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 24,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_brown",
+			    "bauble_material",
+			    "bauble_button"
+			  ]
+		    },
+		  "appleseed.BCP.GemstoneButtons":
+		    {
+		 	"Name": "Gemstone Buttons",
+			"DisplayName": "{{i18n:appleseed.BCP.gemstonebuttons.name}}",
+			"Description": "{{i18n:appleseed.BCP.gemstonebuttons.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 180,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 25,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_purple",
+			    "bauble_material",
+			    "bauble_button"
+			  ]
+		    },
+		  "appleseed.BCP.PearlButtons":
+		    {
+		 	"Name": "Pearl Buttons",
+			"DisplayName": "{{i18n:appleseed.BCP.pearlbuttons.name}}",
+			"Description": "{{i18n:appleseed.BCP.pearlbuttons.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 1375,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 26,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_prismatic",
+			    "bauble_material",
+			    "bauble_button"
+			  ]
+		    },
+		  "appleseed.BCP.PimaCotton":
+		    {
+		 	"Name": "Pima Cotton",
+			"DisplayName": "{{i18n:appleseed.BCP.pimacotton.name}}",
+			"Description": "{{i18n:appleseed.BCP.pimacotton.description}}",
+			"Type": "Fruit",
+			"Category": -79,
+			"Price": 50,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 27,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "category_fruits",
+			    "not_placeable",
+			    "color_white",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.PelicanBell":
+		    {
+		 	"Name": "Pelican Bell",
+			"DisplayName": "{{i18n:appleseed.BCP.pelicanbell.name}}",
+			"Description": "{{i18n:appleseed.BCP.pelicanbell.description}}",
+			"Type": "Flower",
+			"Category": -80,
+			"Price": 23,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 28,
+			"Edibility": -30,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "category_flowers",
+			    "not_placeable",
+			    "color_white",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.BatFlower":
+		    {
+		 	"Name": "Bat Flower",
+			"DisplayName": "{{i18n:appleseed.BCP.batflower.name}}",
+			"Description": "{{i18n:appleseed.BCP.batflower.description}}",
+			"Type": "Flower",
+			"Category": -80,
+			"Price": 60,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 29,
+			"Edibility": 10,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "category_flowers",
+			    "not_placeable",
+			    "color_black",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.SmallGears":
+		    {
+		 	"Name": "Small Gears",
+			"DisplayName": "{{i18n:appleseed.BCP.smallgears.name}}",
+			"Description": "{{i18n:appleseed.BCP.smallgears.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 70,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 30,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_copper",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.WindingKey":
+		    {
+		 	"Name": "Winding Key",
+			"DisplayName": "{{i18n:appleseed.BCP.windingkey.name}}",
+			"Description": "{{i18n:appleseed.BCP.windingkey.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 78,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 31,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_iron",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.SpoolOfThread":
+		    {
+		 	"Name": "Spool Of Thread",
+			"DisplayName": "{{i18n:appleseed.BCP.spoolofthread.name}}",
+			"Description": "{{i18n:appleseed.BCP.spoolofthread.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 140,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 32,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_white",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.StarJelly":
+		    {
+		 	"Name": "Star Jelly",
+			"DisplayName": "{{i18n:appleseed.BCP.starjelly.name}}",
+			"Description": "{{i18n:appleseed.BCP.starjelly.description}}",
+			"Type": "Greens",
+			"Category": -81,
+			"Price": 10,
+			"Texture": "{{JellyConfig}}",
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "category_greens",
+			    "not_placeable",
+			    "color_pink"
+			  ]
+		    },
+		  "appleseed.BCP.CrystalizedStarJelly":
+		    {
+		 	"Name": "Crystalized Star Jelly",
+			"DisplayName": "{{i18n:appleseed.BCP.crystalizedstarjelly.name}}",
+			"Description": "{{i18n:appleseed.BCP.crystalizedstarjelly.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 100,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 34,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_purple",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.Paint":
+		    {
+		 	"Name": "Paint",
+			"DisplayName": "{{i18n:appleseed.BCP.paint.name}}",
+			"Description": "{{i18n:appleseed.BCP.paint.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 70,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 35,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_prismatic",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.Petuntse":
+		    {
+		 	"Name": "Petuntse",
+			"DisplayName": "{{i18n:appleseed.BCP.petuntse.name}}",
+			"Description": "{{i18n:appleseed.BCP.petuntse.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 300,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 36,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_white",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.Porcelain":
+		    {
+		 	"Name": "Porcelain",
+			"DisplayName": "{{i18n:appleseed.BCP.porcelain.name}}",
+			"Description": "{{i18n:appleseed.BCP.porcelain.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 645,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 37,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_white",
+			    "bauble_material"
+			  ]
+		    },
+		  "appleseed.BCP.PetrichorHeart":
+		    {
+		 	"Name": "Petrichor Heart",
+			"DisplayName": "{{i18n:appleseed.BCP.petrichorheart.name}}",
+			"Description": "{{i18n:appleseed.BCP.petrichorheart.description}}",
+			"Type": "building_resources",
+			"Category": -16,
+			"Price": 0,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 38,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_prismatic",
+			    "bauble_material",
+			    "prevent_loss_on_death"
+			  ]
+		    },
+//MISC TOYS
+		  "appleseed.BCP.WoodenDoll":
+		    {
+		 	"Name": "Wooden Doll",
+			"DisplayName": "{{i18n:appleseed.BCP.woodendoll.name}}",
+			"Description": "{{i18n:appleseed.BCP.woodendoll.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 480,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 39,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_sand",
+			    "bauble_mundane",
+			    "bauble_misc",
+			    "wooden_doll"
+			  ]
+		    },
+		  "appleseed.BCP.SeaGlobe":
+		    {
+		 	"Name": "Sea Globe",
+			"DisplayName": "{{i18n:appleseed.BCP.seaglobe.name}}",
+			"Description": "{{i18n:appleseed.BCP.seaglobe.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 450,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 40,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_aquamarine",
+			    "bauble_misc"
+			  ]
+		    },
+		  "appleseed.BCP.SnowGlobe":
+		    {
+		 	"Name": "Snow Globe",
+			"DisplayName": "{{i18n:appleseed.BCP.snowglobe.name}}",
+			"Description": "{{i18n:appleseed.BCP.snowglobe.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 578,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 41,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_misc"
+			  ]
+		    },
+		  "appleseed.BCP.ToyBoat":
+		    {
+		 	"Name": "Toy Boat",
+			"DisplayName": "{{i18n:appleseed.BCP.toyboat.name}}",
+			"Description": "{{i18n:appleseed.BCP.toyboat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 795,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 80,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_iron",
+			    "bauble_metal",
+			    "bauble_mobile",
+			    "toy_boat"
+			  ]
+		    },
+		  "appleseed.BCP.ToyShuttle":
+		    {
+		 	"Name": "Toy Shuttle",
+			"DisplayName": "{{i18n:appleseed.BCP.toyshuttle.name}}",
+			"Description": "{{i18n:appleseed.BCP.toyshuttle.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1155,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 81,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_iron",
+			    "bauble_metal",
+			    "bauble_mobile",
+			    "toy_shuttle"
+			  ]
+		    },
+//FELTS
+		  "appleseed.BCP.FeltSlime":
+		    {
+		 	"Name": "Felt Slime",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 42,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_green",
+			    "bauble_felt",
+			    "felt_slime"
+			  ]
+		    },		  
+		  "appleseed.BCP.FeltGrub":
+		    {
+		 	"Name": "Felt Grub",
+			"DisplayName": "{{i18n:appleseed.BCP.feltgrub.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltgrub.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 592,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 43,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_felt",
+			    "felt_grub"
+			  ]
+		    },
+		  "appleseed.BCP.FeltRockCrab":
+		    {
+		 	"Name": "Felt Rock Crab",
+			"DisplayName": "{{i18n:appleseed.BCP.feltrockcrab.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltrockcrab.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 690,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 44,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_orange",
+			    "bauble_felt",
+			    "felt_crab"
+			  ]
+		    },
+		  "appleseed.BCP.FeltBat":
+		    {
+		 	"Name": "Felt Bat",
+			"DisplayName": "{{i18n:appleseed.BCP.feltbat.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltbat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 652,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 45,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_black",
+			    "bauble_felt",
+			    "felt_bat"
+			  ]
+		    },
+		  "appleseed.BCP.FeltDustSprite":
+		    {
+		 	"Name": "Felt Dust Sprite",
+			"DisplayName": "{{i18n:appleseed.BCP.feltdustsprite.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltdustsprite.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 720,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 46,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_purple",
+			    "bauble_felt",
+			    "felt_sprite"
+			  ]
+		    },
+		  "appleseed.BCP.FeltGhost":
+		    {
+		 	"Name": "Felt Ghost",
+			"DisplayName": "{{i18n:appleseed.BCP.feltghost.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltghost.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 682,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 47,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_cyan",
+			    "bauble_felt",
+			    "felt_ghost"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSkeleton":
+		    {
+		 	"Name": "Felt Skeleton",
+			"DisplayName": "{{i18n:appleseed.BCP.feltskeleton.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltskeleton.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 825,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 48,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_felt",
+			    "felt_skeleton"
+			  ]
+		    },
+		  "appleseed.BCP.FeltMetalHead":
+		    {
+		 	"Name": "Felt Metal Head",
+			"DisplayName": "{{i18n:appleseed.BCP.feltmetalhead.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltmetalhead.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 862,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 49,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_gray",
+			    "bauble_felt",
+			    "felt_metalhead"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSquidKid":
+		    {
+		 	"Name": "Felt Squid Kid",
+			"DisplayName": "{{i18n:appleseed.BCP.feltsquidkid.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltsquidkid.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 862,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 50,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_pink",
+			    "bauble_felt",
+			    "felt_squidkid"
+			  ]
+		    },
+		  "appleseed.BCP.FeltHauntedSkull":
+		    {
+		 	"Name": "Felt Haunted Skull",
+			"DisplayName": "{{i18n:appleseed.BCP.felthauntedskull.name}}",
+			"Description": "{{i18n:appleseed.BCP.felthauntedskull.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 937,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 51,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_felt",
+			    "felt_skull"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSerpent":
+		    {
+		 	"Name": "Felt Serpent",
+			"DisplayName": "{{i18n:appleseed.BCP.feltserpent.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltserpent.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1230,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 52,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_green",
+			    "bauble_felt"
+			  ]
+		    },
+		  "appleseed.BCP.FeltMummy":
+		    {
+		 	"Name": "Felt Mummy",
+			"DisplayName": "{{i18n:appleseed.BCP.feltmummy.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltmummy.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1147,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 53,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_sand",
+			    "bauble_felt"
+			  ]
+		    },
+		  "appleseed.BCP.FeltDinosaur":
+		    {
+		 	"Name": "Felt Dinosaur",
+			"DisplayName": "{{i18n:appleseed.BCP.feltdinosaur.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltdinosaur.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1987,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 100,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_green",
+			    "bauble_felt"
+			  ]
+		    },
+//PLUSHES
+		  "appleseed.BCP.PlushChicken":
+		    {
+		 	"Name": "Plush Chicken",
+			"DisplayName": "{{i18n:appleseed.BCP.plushchicken.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushchicken.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1065,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 54,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_blue",
+			    "bauble_plush",
+			    "plush_chicken"
+			  ]
+		    },
+		  "appleseed.BCP.PlushCow":
+		    {
+		 	"Name": "Plush Cow",
+			"DisplayName": "{{i18n:appleseed.BCP.plushcow.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushcow.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1065,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 55,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_plush",
+			    "plush_cow"
+			  ]
+		    },
+		  "appleseed.BCP.PlushCrow":
+		    {
+		 	"Name": "Plush Crow",
+			"DisplayName": "{{i18n:appleseed.BCP.plushcrow.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushcrow.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1065,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 56,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_black",
+			    "bauble_plush"
+			  ]
+		    },
+		  "appleseed.BCP.PlushDog":
+		    {
+		 	"Name": "Plush Dog",
+			"DisplayName": "{{i18n:appleseed.BCP.plushdog.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushdog.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1125,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 57,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_yellow",
+			    "bauble_plush",
+			    "plush_dog"
+			  ]
+		    },
+		  "appleseed.BCP.PlushCat":
+		    {
+		 	"Name": "Plush Cat",
+			"DisplayName": "{{i18n:appleseed.BCP.plushcat.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushcat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1170,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 58,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_orange",
+			    "bauble_plush",
+			    "plush_cat"
+			  ]
+		    },
+		  "appleseed.BCP.PlushDuck":
+		    {
+		 	"Name": "Plush Duck",
+			"DisplayName": "{{i18n:appleseed.BCP.plushduck.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushduck.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1170,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 59,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_green",
+			    "bauble_plush"
+			  ]
+		    },
+		  "appleseed.BCP.PlushGoat":
+		    {
+		 	"Name": "Plush Goat",
+			"DisplayName": "{{i18n:appleseed.BCP.plushgoat.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushgoat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1155,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 60,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_yellow",
+			    "bauble_plush"
+			  ]
+		    },
+		  "appleseed.BCP.PlushFox":
+		    {
+		 	"Name": "Plush Fox",
+			"DisplayName": "{{i18n:appleseed.BCP.plushfox.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushfox.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1155,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 61,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_red",
+			    "bauble_plush"
+			  ]
+		    },
+		  "appleseed.BCP.PlushPelican":
+		    {
+		 	"Name": "Plush Pelican",
+			"DisplayName": "{{i18n:appleseed.BCP.plushpelican.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushpelican.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1965,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 62,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_plush"
+			  ]
+		    },
+		  "appleseed.BCP.PlushBear":
+		    {
+		 	"Name": "Plush Bear",
+			"DisplayName": "{{i18n:appleseed.BCP.plushbear.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushbear.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1147,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 63,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_brown",
+			    "bauble_plush"
+			  ]
+		    },
+		  "appleseed.BCP.PlushSheep":
+		    {
+		 	"Name": "Plush Sheep",
+			"DisplayName": "{{i18n:appleseed.BCP.plushsheep.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushsheep.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1170,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 64,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_gray",
+			    "bauble_plush",
+			    "plush_sheep"
+			  ]
+		    },
+		  "appleseed.BCP.PlushBee":
+		    {
+		 	"Name": "Plush Bee",
+			"DisplayName": "{{i18n:appleseed.BCP.plushbee.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushbee.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1260,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 103,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_yellow",
+			    "bauble_plush"
+			  ]
+		    },
+		  "appleseed.BCP.PlushRaccoon":
+		    {
+		 	"Name": "Plush Raccoon",
+			"DisplayName": "{{i18n:appleseed.BCP.plushraccoon.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushraccoon.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1275,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 65,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_gray",
+			    "bauble_plush"
+			  ]
+		    },
+		  "appleseed.BCP.PlushTurtle":
+		    {
+		 	"Name": "Plush Turtle",
+			"DisplayName": "{{i18n:appleseed.BCP.plushturtle.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushturtle.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1342,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 66,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_green",
+			    "bauble_plush",
+			    "plush_turtle"
+			  ]
+		    },
+		  "appleseed.BCP.WindupMouse":
+		    {
+		 	"Name": "Windup Mouse",
+			"DisplayName": "{{i18n:appleseed.BCP.windupmouse.name}}",
+			"Description": "{{i18n:appleseed.BCP.windupmouse.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1032,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 67,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_plush",
+			    "bauble_mobile"
+			  ]
+		    },
+		  "appleseed.BCP.WindupFrog":
+		    {
+		 	"Name": "Windup Frog",
+			"DisplayName": "{{i18n:appleseed.BCP.windupfrog.name}}",
+			"Description": "{{i18n:appleseed.BCP.windupfrog.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1182,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 68,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_green",
+			    "bauble_plush",
+			    "bauble_mobile",
+			  ]
+		    },
+		  "appleseed.BCP.PlushOstrich":
+		    {
+		 	"Name": "Plush Ostrich",
+			"DisplayName": "{{i18n:appleseed.BCP.plushostrich.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushostrich.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 2752,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 69,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_sand",
+			    "bauble_plush"
+			  ]
+		    },
+		  "appleseed.BCP.PlushParrot":
+		    {
+		 	"Name": "Plush Parrot",
+			"DisplayName": "{{i18n:appleseed.BCP.plushparrot.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushparrot.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 2790,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 70,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_green",
+			    "bauble_plush"
+			  ]
+		    },
+//PLUSHES-HUMANOID
+		  "appleseed.BCP.PlushGoblin":
+		    {
+		 	"Name": "Plush Goblin",
+			"DisplayName": "{{i18n:appleseed.BCP.plushgoblin.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushgoblin.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1552,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 71,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_green",
+			    "bauble_plush_character"
+			  ]
+		    },
+		  "appleseed.BCP.PlushSeaMonster":
+		    {
+		 	"Name": "Plush Sea Monster",
+			"DisplayName": "{{i18n:appleseed.BCP.plushseamonster.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushseamonster.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1380,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 72,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_green",
+			    "bauble_plush_character"
+			  ]
+		    },
+		  "appleseed.BCP.PlushDwarf":
+		    {
+		 	"Name": "Plush Dwarf",
+			"DisplayName": "{{i18n:appleseed.BCP.plushdwarf.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushdwarf.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1365,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 73,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_red",
+			    "bauble_plush_character"
+			  ]
+		    },
+		  "appleseed.BCP.PlushShadowSpirit":
+		    {
+		 	"Name": "Plush Shadow Spirit",
+			"DisplayName": "{{i18n:appleseed.BCP.plushshadowspirit.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushshadowspirit.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1365,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 74,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_black",
+			    "bauble_plush_character"
+			  ]
+		    },
+		  "appleseed.BCP.PlushWizard":
+		    {
+		 	"Name": "Plush Wizard",
+			"DisplayName": "{{i18n:appleseed.BCP.plushwizard.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushwizard.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 2370,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 75,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_purple",
+			    "bauble_plush_character"
+			  ]
+		    },
+		  "appleseed.BCP.PlushWitch":
+		    {
+		 	"Name": "Plush Witch",
+			"DisplayName": "{{i18n:appleseed.BCP.plushwitch.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushwitch.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 2310,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 76,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_black",
+			    "bauble_plush_character"
+			  ]
+		    },
+		  "appleseed.BCP.PlushElf":
+		    {
+		 	"Name": "Plush Elf",
+			"DisplayName": "{{i18n:appleseed.BCP.plushelf.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushelf.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 2782,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 77,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_black",
+			    "bauble_plush_character"
+			  ]
+		    },
+//CERAMICS
+		  "appleseed.BCP.Teacup":
+		    {
+		 	"Name": "Teacup",
+			"DisplayName": "{{i18n:appleseed.BCP.teacup.name}}",
+			"Description": "{{i18n:appleseed.BCP.teacup.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1928,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 82,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_ceramic",
+			    "ceramic_teacup"
+			  ]
+		    },
+		  "appleseed.BCP.Teapot":
+		    {
+		 	"Name": "Teapot",
+			"DisplayName": "{{i18n:appleseed.BCP.teapot.name}}",
+			"Description": "{{i18n:appleseed.BCP.teapot.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 2218,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 83,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_ceramic",
+			    "ceramic_teapot"
+			  ]
+		    },
+		  "appleseed.BCP.FigurineRose":
+		    {
+		 	"Name": "Figurine Rose",
+			"DisplayName": "{{i18n:appleseed.BCP.figurinerose.name}}",
+			"Description": "{{i18n:appleseed.BCP.figurinerose.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1402,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 84,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_ceramic",
+			    "ceramic_flower"
+			  ]
+		    },
+		  "appleseed.BCP.FigurinePrincess":
+		    {
+		 	"Name": "Figurine Princess",
+			"DisplayName": "{{i18n:appleseed.BCP.figurineprincess.name}}",
+			"Description": "{{i18n:appleseed.BCP.figurineprincess.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1935,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 85,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_yellow",
+			    "bauble_ceramic"
+			  ]
+		    },
+		  "appleseed.BCP.FigurineOwl":
+		    {
+		 	"Name": "Figurine Owl",
+			"DisplayName": "{{i18n:appleseed.BCP.figurineowl.name}}",
+			"Description": "{{i18n:appleseed.BCP.figurineowl.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 2014,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 86,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_brown",
+			    "bauble_ceramic"
+			  ]
+		    },
+		  "appleseed.BCP.FigurinePig":
+		    {
+		 	"Name": "Figurine Pig",
+			"DisplayName": "{{i18n:appleseed.BCP.figurinepig.name}}",
+			"Description": "{{i18n:appleseed.BCP.figurinepig.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1935,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 87,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_red",
+			    "bauble_ceramic"
+			  ]
+		    },
+		  "appleseed.BCP.WhitePawn":
+		    {
+		 	"Name": "White Pawn",
+			"DisplayName": "{{i18n:appleseed.BCP.pawn.name}}",
+			"Description": "{{i18n:appleseed.BCP.pawn.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 104,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_ceramic",
+			    "ceramic_pawn"
+			  ]
+		    },
+		  "appleseed.BCP.WhiteRook":
+		    {
+		 	"Name": "White Rook",
+			"DisplayName": "{{i18n:appleseed.BCP.rook.name}}",
+			"Description": "{{i18n:appleseed.BCP.rook.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 105,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_ceramic",
+			    "ceramic_rook"
+			  ]
+		    },
+		  "appleseed.BCP.WhiteKnight":
+		    {
+		 	"Name": "White Knight",
+			"DisplayName": "{{i18n:appleseed.BCP.knight.name}}",
+			"Description": "{{i18n:appleseed.BCP.knight.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 106,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_ceramic",
+			    "ceramic_knight"
+			  ]
+		    },
+		  "appleseed.BCP.WhiteBishop":
+		    {
+		 	"Name": "White Bishop",
+			"DisplayName": "{{i18n:appleseed.BCP.bishop.name}}",
+			"Description": "{{i18n:appleseed.BCP.bishop.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 107,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_ceramic",
+			    "ceramic_bishop"
+			  ]
+		    },
+		  "appleseed.BCP.WhiteQueen":
+		    {
+		 	"Name": "White Queen",
+			"DisplayName": "{{i18n:appleseed.BCP.queen.name}}",
+			"Description": "{{i18n:appleseed.BCP.queen.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 108,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_ceramic",
+			    "ceramic_queen"
+			  ]
+		    },
+		  "appleseed.BCP.WhiteKing":
+		    {
+		 	"Name": "White King",
+			"DisplayName": "{{i18n:appleseed.BCP.king.name}}",
+			"Description": "{{i18n:appleseed.BCP.king.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 109,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_white",
+			    "bauble_ceramic",
+			    "ceramic_king"
+			  ]
+		    },
+//CURIOS
+		  "appleseed.BCP.PlushFairy":
+		    {
+		 	"Name": "Plush Fairy",
+			"DisplayName": "{{i18n:appleseed.BCP.plushfairy.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushfairy.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 8028,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 78,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_pink",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.PlushUnseelie":
+		    {
+		 	"Name": "Plush Unseelie",
+			"DisplayName": "{{i18n:appleseed.BCP.plushunseelie.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushunseelie.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 8088,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 79,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_pink",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.8-Ball":
+		    {
+		 	"Name": "8-Ball",
+			"DisplayName": "{{i18n:appleseed.BCP.8ball.name}}",
+			"Description": "{{i18n:appleseed.BCP.8ball.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 3808,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 88,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_iridium",
+			    "8_ball",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.AntiqueTeaSet":
+		    {
+		 	"Name": "Antique Tea Set",
+			"DisplayName": "{{i18n:appleseed.BCP.antiqueteaset.name}}",
+			"Description": "{{i18n:appleseed.BCP.antiqueteaset.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 12558,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 89,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_white",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.CuckooClock":
+		    {
+		 	"Name": "Cuckoo Clock",
+			"DisplayName": "{{i18n:appleseed.BCP.cuckooclock.name}}",
+			"Description": "{{i18n:appleseed.BCP.cuckooclock.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 6678,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 90,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_brown",
+			    "cuckoo_clock",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.JunimoShaker":
+		    {
+		 	"Name": "Junimo Shaker",
+			"DisplayName": "{{i18n:appleseed.BCP.junimoshaker.name}}",
+			"Description": "{{i18n:appleseed.BCP.junimoshaker.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 6464,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 91,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_sand",
+			    "bauble_curio",
+			    "junimo_shaker"
+			  ]
+		    },
+		  "appleseed.BCP.MusicBox":
+		    {
+		 	"Name": "Music Box",
+			"DisplayName": "{{i18n:appleseed.BCP.musicbox.name}}",
+			"Description": "{{i18n:appleseed.BCP.musicbox.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 9268,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 92,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_brown",
+			    "music_box",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.PlushTrashBear":
+		    {
+		 	"Name": "Plush Trash Bear",
+			"DisplayName": "{{i18n:appleseed.BCP.plushtrashbear.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushtrashbear.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 5400,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 93,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_brown",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.Starglobe":
+		    {
+		 	"Name": "Starglobe",
+			"DisplayName": "{{i18n:appleseed.BCP.starglobe.name}}",
+			"Description": "{{i18n:appleseed.BCP.starglobe.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 3690,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 94,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_iridium",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.WindupHare":
+		    {
+		 	"Name": "Windup Hare",
+			"DisplayName": "{{i18n:appleseed.BCP.winduphare.name}}",
+			"Description": "{{i18n:appleseed.BCP.winduphare.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 8190,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 95,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_black",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.StrangePuzzle":
+		    {
+		 	"Name": "Strange Puzzle",
+			"DisplayName": "{{i18n:appleseed.BCP.strangepuzzle.name}}",
+			"Description": "{{i18n:appleseed.BCP.strangepuzzle.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 4992,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 96,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_sand",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.Chessboard":
+		    {
+		 	"Name": "Chessboard",
+			"DisplayName": "{{i18n:appleseed.BCP.chessboard.name}}",
+			"Description": "{{i18n:appleseed.BCP.chessboard.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 23000,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 116,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_brown",
+			    "bauble_curio"
+			  ]
+		    },
+		  "appleseed.BCP.DollMansion":
+		    {
+		 	"Name": "Doll Mansion",
+			"DisplayName": "{{i18n:appleseed.BCP.dollmansion.name}}",
+			"Description": "{{i18n:appleseed.BCP.dollmansion.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 5632,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 162,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "color_yellow",
+			    "bauble_curio"
+			  ]
+		    },
+//SEEDS
+		  "appleseed.BCP.BatFlowerSeeds":
+		    {
+		 	"Name": "Bat Flower Seeds",
+			"DisplayName": "{{i18n:appleseed.BCP.batflowerseeds.name}}",
+			"Description": "{{i18n:appleseed.BCP.batflowerseeds.description}}",
+			"Type": "Seed",
+			"Category": -74,
+			"Price": 0,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 97,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+		    },
+		  "appleseed.BCP.PelicanBellSeeds":
+		    {
+		 	"Name": "Pelican Bell Seeds",
+			"DisplayName": "{{i18n:appleseed.BCP.pelicanbellseeds.name}}",
+			"Description": "{{i18n:appleseed.BCP.pelicanbellseeds.description}}",
+			"Type": "Seed",
+			"Category": -74,
+			"Price": 0,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 98,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+		    },
+		  "appleseed.BCP.PimaCottonSeeds":
+		    {
+		 	"Name": "Pima Cotton Seeds",
+			"DisplayName": "{{i18n:appleseed.BCP.pimacottonseeds.name}}",
+			"Description": "{{i18n:appleseed.BCP.pimacottonseeds.description}}",
+			"Type": "Seed",
+			"Category": -74,
+			"Price": 0,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 99,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+		    },
+//VARIANTS
+		  "appleseed.BCP.ToyBoatAlt":
+		    {
+		 	"Name": "Toy Boat A",
+			"DisplayName": "{{i18n:appleseed.BCP.toyboat.name}}",
+			"Description": "{{i18n:appleseed.BCP.toyboat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 795,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 158,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_iron",
+			    "bauble_metal",
+			    "bauble_mobile",
+			    "toy_boat"
+			  ]
+		    },
+		  "appleseed.BCP.ToyShuttleAlt":
+		    {
+		 	"Name": "Toy Shuttle A",
+			"DisplayName": "{{i18n:appleseed.BCP.toyshuttle.name}}",
+			"Description": "{{i18n:appleseed.BCP.toyshuttle.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1155,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 159,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "bauble_mundane",
+			    "color_iron",
+			    "bauble_metal",
+			    "bauble_mobile",
+			    "toy_shuttle"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSlimeGreenF":
+		    {
+		 	"Name": "Felt Slime GF",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 117,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_slime"
+			  ]
+		    },	
+		  "appleseed.BCP.FeltSlimeBlue":
+		    {
+		 	"Name": "Felt Slime B",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 118,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_slime"
+			  ]
+		    },	
+		  "appleseed.BCP.FeltSlimeBlueF":
+		    {
+		 	"Name": "Felt Slime BF",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 119,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_slime"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSlimeRed":
+		    {
+		 	"Name": "Felt Slime R",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 120,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_slime"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSlimeRedF":
+		    {
+		 	"Name": "Felt Slime RF",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 121,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_slime"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSlimePurple":
+		    {
+		 	"Name": "Felt Slime P",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 122,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_slime"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSlimePurpleF":
+		    {
+		 	"Name": "Felt Slime PF",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 123,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_slime"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSlimeTiger":
+		    {
+		 	"Name": "Felt Slime T",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 124,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_slime"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSlimeTigerF":
+		    {
+		 	"Name": "Felt Slime TF",
+			"DisplayName": "{{i18n:appleseed.BCP.feltslime.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltslime.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 630,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 125,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_slime"
+			  ]
+		    },
+		  "appleseed.BCP.FeltGrubGreen":
+		    {
+		 	"Name": "Felt Grub G",
+			"DisplayName": "{{i18n:appleseed.BCP.feltgrub.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltgrub.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 592,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 126,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_grub"
+			  ]
+		    },
+		  "appleseed.BCP.FeltRockCrabRed":
+		    {
+		 	"Name": "Felt Rock Crab R",
+			"DisplayName": "{{i18n:appleseed.BCP.feltrockcrab.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltrockcrab.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 690,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 127,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_crab"
+			  ]
+		    },
+		  "appleseed.BCP.FeltRockCrabIridium":
+		    {
+		 	"Name": "Felt Rock Crab I",
+			"DisplayName": "{{i18n:appleseed.BCP.feltrockcrab.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltrockcrab.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 690,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 128,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_crab"
+			  ]
+		    },
+		  "appleseed.BCP.FeltRockCrabTruffle":
+		    {
+		 	"Name": "Felt Rock Crab T",
+			"DisplayName": "{{i18n:appleseed.BCP.felttrufflecrab.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltrockcrab.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 690,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 129,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_crab"
+			  ]
+		    },
+		  "appleseed.BCP.FeltBatBlue":
+		    {
+		 	"Name": "Felt Bat B",
+			"DisplayName": "{{i18n:appleseed.BCP.feltbat.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltbat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 652,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 130,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_bat"
+			  ]
+		    },
+		  "appleseed.BCP.FeltBatRed":
+		    {
+		 	"Name": "Felt Bat R",
+			"DisplayName": "{{i18n:appleseed.BCP.feltbat.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltbat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 652,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 131,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_bat"
+			  ]
+		    },
+		  "appleseed.BCP.FeltBatIridium":
+		    {
+		 	"Name": "Felt Bat I",
+			"DisplayName": "{{i18n:appleseed.BCP.feltbat.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltbat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 652,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 132,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_bat"
+			  ]
+		    },
+		  "appleseed.BCP.FeltDustSpriteAlt":
+		    {
+		 	"Name": "Felt Dust Sprite A",
+			"DisplayName": "{{i18n:appleseed.BCP.feltdustsprite.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltdustsprite.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 720,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 133,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_sprite"
+			  ]
+		    },
+		  "appleseed.BCP.FeltGhostGreen":
+		    {
+		 	"Name": "Felt Ghost G",
+			"DisplayName": "{{i18n:appleseed.BCP.feltghost.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltghost.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 682,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 134,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_ghost"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSkeletonBlue":
+		    {
+		 	"Name": "Felt Skeleton B",
+			"DisplayName": "{{i18n:appleseed.BCP.feltskeleton.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltskeleton.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 825,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 135,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_skeleton"
+			  ]
+		    },
+		  "appleseed.BCP.FeltMetalHeadOrange":
+		    {
+		 	"Name": "Felt Metal Head O",
+			"DisplayName": "{{i18n:appleseed.BCP.feltmetalhead.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltmetalhead.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 862,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 136,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_metalhead"
+			  ]
+		    },
+		  "appleseed.BCP.FeltSquidKidCool":
+		    {
+		 	"Name": "Felt Squid Kid C",
+			"DisplayName": "{{i18n:appleseed.BCP.feltcoolkid.name}}",
+			"Description": "{{i18n:appleseed.BCP.feltcoolkid.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 862,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 137,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_squidkid"
+			  ]
+		    },
+		  "appleseed.BCP.FeltHauntedSkullBlue":
+		    {
+		 	"Name": "Felt Haunted Skull B",
+			"DisplayName": "{{i18n:appleseed.BCP.felthauntedskull.name}}",
+			"Description": "{{i18n:appleseed.BCP.felthauntedskull.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 937,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 138,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "felt_skull"
+			  ]
+		    },
+		  "appleseed.BCP.PlushChickenWhite":
+		    {
+		 	"Name": "Plush Chicken W",
+			"DisplayName": "{{i18n:appleseed.BCP.plushchicken.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushchicken.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1065,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 139,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_chicken"
+			  ]
+		    },
+		  "appleseed.BCP.PlushChickenBrown":
+		    {
+		 	"Name": "Plush Chicken B",
+			"DisplayName": "{{i18n:appleseed.BCP.plushchicken.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushchicken.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1065,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 140,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_chicken"
+			  ]
+		    },
+		  "appleseed.BCP.PlushCowBrown":
+		    {
+		 	"Name": "Plush Cow B",
+			"DisplayName": "{{i18n:appleseed.BCP.plushcow.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushcow.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1065,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 141,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_cow"
+			  ]
+		    },
+		  "appleseed.BCP.PlushDogShepard":
+		    {
+		 	"Name": "Plush Dog S",
+			"DisplayName": "{{i18n:appleseed.BCP.plushdog.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushdog.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1125,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 142,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_dog"
+			  ]
+		    },
+		  "appleseed.BCP.PlushDogPoodle":
+		    {
+		 	"Name": "Plush Dog P",
+			"DisplayName": "{{i18n:appleseed.BCP.plushdog.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushdog.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1125,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 143,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_dog"
+			  ]
+		    },
+		  "appleseed.BCP.PlushDogHound":
+		    {
+		 	"Name": "Plush Dog H",
+			"DisplayName": "{{i18n:appleseed.BCP.plushdog.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushdog.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1125,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 144,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_dog"
+			  ]
+		    },
+		  "appleseed.BCP.PlushDogChocolate":
+		    {
+		 	"Name": "Plush Dog C",
+			"DisplayName": "{{i18n:appleseed.BCP.plushdog.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushdog.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1125,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 145,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_dog"
+			  ]
+		    },
+		  "appleseed.BCP.PlushCatGrey":
+		    {
+		 	"Name": "Plush Cat G",
+			"DisplayName": "{{i18n:appleseed.BCP.plushcat.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushcat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1170,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 146,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_cat"
+			  ]
+		    },
+		  "appleseed.BCP.PlushCatYellow":
+		    {
+		 	"Name": "Plush Cat Y",
+			"DisplayName": "{{i18n:appleseed.BCP.plushcat.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushcat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1170,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 147,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_cat"
+			  ]
+		    },
+		  "appleseed.BCP.PlushCatWhite":
+		    {
+		 	"Name": "Plush Cat W",
+			"DisplayName": "{{i18n:appleseed.BCP.plushcat.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushcat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1170,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 148,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_cat"
+			  ]
+		    },
+		  "appleseed.BCP.PlushCatBlack":
+		    {
+		 	"Name": "Plush Cat B",
+			"DisplayName": "{{i18n:appleseed.BCP.plushcat.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushcat.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1170,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 149,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_cat"
+			  ]
+		    },
+		  "appleseed.BCP.PlushSheepInverted":
+		    {
+		 	"Name": "Plush Sheep I",
+			"DisplayName": "{{i18n:appleseed.BCP.plushsheep.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushsheep.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1170,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 150,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_sheep"
+			  ]
+		    },
+		  "appleseed.BCP.PlushTurtleGreen":
+		    {
+		 	"Name": "Plush Turtle G",
+			"DisplayName": "{{i18n:appleseed.BCP.plushturtle.name}}",
+			"Description": "{{i18n:appleseed.BCP.plushturtle.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1342,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 151,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "plush_turtle"
+			  ]
+		    },
+		  "appleseed.BCP.BlackPawn":
+		    {
+		 	"Name": "Black Pawn",
+			"DisplayName": "{{i18n:appleseed.BCP.pawn.name}}",
+			"Description": "{{i18n:appleseed.BCP.pawn.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 110,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_pawn"
+			  ]
+		    },
+		  "appleseed.BCP.BlackRook":
+		    {
+		 	"Name": "Black Rook",
+			"DisplayName": "{{i18n:appleseed.BCP.rook.name}}",
+			"Description": "{{i18n:appleseed.BCP.rook.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 111,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_rook"
+			  ]
+		    },
+		  "appleseed.BCP.BlackKnight":
+		    {
+		 	"Name": "Black Knight",
+			"DisplayName": "{{i18n:appleseed.BCP.knight.name}}",
+			"Description": "{{i18n:appleseed.BCP.knight.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 112,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_knight"
+			  ]
+		    },
+		  "appleseed.BCP.BlackBishop":
+		    {
+		 	"Name": "Black Bishop",
+			"DisplayName": "{{i18n:appleseed.BCP.bishop.name}}",
+			"Description": "{{i18n:appleseed.BCP.bishop.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 113,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_bishop"
+			  ]
+		    },
+		  "appleseed.BCP.BlackQueen":
+		    {
+		 	"Name": "Black Queen",
+			"DisplayName": "{{i18n:appleseed.BCP.queen.name}}",
+			"Description": "{{i18n:appleseed.BCP.queen.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 114,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_queen"
+			  ]
+		    },
+		  "appleseed.BCP.BlackKing":
+		    {
+		 	"Name": "Black King",
+			"DisplayName": "{{i18n:appleseed.BCP.king.name}}",
+			"Description": "{{i18n:appleseed.BCP.king.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 975,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 115,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_king"
+			  ]
+		    },
+		  "appleseed.BCP.TeacupBlue":
+		    {
+		 	"Name": "TeacupBlue",
+			"DisplayName": "{{i18n:appleseed.BCP.teacup.name}}",
+			"Description": "{{i18n:appleseed.BCP.teacup.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1928,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 152,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_teacup"
+			  ]
+		    },
+		  "appleseed.BCP.TeapotBlue":
+		    {
+		 	"Name": "TeapotBlue",
+			"DisplayName": "{{i18n:appleseed.BCP.teapot.name}}",
+			"Description": "{{i18n:appleseed.BCP.teapot.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 2218,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 153,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_teapot"
+			  ]
+		    },
+		  "appleseed.BCP.TeacupRed":
+		    {
+		 	"Name": "TeacupRed",
+			"DisplayName": "{{i18n:appleseed.BCP.teacup.name}}",
+			"Description": "{{i18n:appleseed.BCP.teacup.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1928,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 154,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_teacup"
+			  ]
+		    },
+		  "appleseed.BCP.TeapotRed":
+		    {
+		 	"Name": "TeapotRed",
+			"DisplayName": "{{i18n:appleseed.BCP.teapot.name}}",
+			"Description": "{{i18n:appleseed.BCP.teapot.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 2218,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 155,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_teapot"
+			  ]
+		    },
+		  "appleseed.BCP.FigurineSunflower":
+		    {
+		 	"Name": "Figurine Sunflower",
+			"DisplayName": "{{i18n:appleseed.BCP.figurinesunflower.name}}",
+			"Description": "{{i18n:appleseed.BCP.figurinesunflower.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1402,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 156,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_flower"
+			  ]
+		    },
+		  "appleseed.BCP.FigurineJazz":
+		    {
+		 	"Name": "Figurine Jazz",
+			"DisplayName": "{{i18n:appleseed.BCP.figurinejazz.name}}",
+			"Description": "{{i18n:appleseed.BCP.figurinejazz.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 1402,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 157,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": true,
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "ceramic_flower"
+			  ]
+		    },
+		  "appleseed.BCP.WoodenDollPurple":
+		    {
+		 	"Name": "Wooden Doll",
+			"DisplayName": "{{i18n:appleseed.BCP.woodendoll.name}}",
+			"Description": "{{i18n:appleseed.BCP.woodendoll.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 480,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 160,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "wooden_doll"
+			  ]
+		    },
+		  "appleseed.BCP.WoodenDollRed":
+		    {
+		 	"Name": "Wooden Doll",
+			"DisplayName": "{{i18n:appleseed.BCP.woodendoll.name}}",
+			"Description": "{{i18n:appleseed.BCP.woodendoll.description}}",
+			"Type": "ArtisanGoods",
+			"Category": -26,
+			"Price": 480,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 161,
+			"Edibility": -300,
+			"IsDrink": false,
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "not_placeable",
+			    "wooden_doll"
+			  ]
+		    }
+
+		}
+	}
+    ]
+
+}

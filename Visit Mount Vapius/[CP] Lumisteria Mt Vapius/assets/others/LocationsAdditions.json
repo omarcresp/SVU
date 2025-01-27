@@ -1,0 +1,280 @@
+{
+  "Changes": [
+    {
+      "Target": "Mods/VisitMountVapius/LocationExtensions",
+      "Action": "EditData",
+      "Entries": {
+        "Lumisteria.MtVapius_TrainStation": {
+          "FishSpotSpawnZones": [
+            {
+              "Id": "{{ModId}}_WaterfallBubble",
+              "Area": {
+                "X": 19,
+                "Y": 12,
+                "Width": 4,
+                "Height": 4
+              },
+              "Chance": 0.008,
+            }
+          ],
+        },
+        "Lumisteria.MtVapius_Hamlet": {
+          "FishSpotSpawnZones": [
+            {
+              "Id": "{{ModId}}_PondBubble",
+              "Area": {
+                "X": 28,
+                "Y": 4,
+                "Width": 4,
+                "Height": 4
+              },
+              "Chance": 0.003,
+            }
+          ],
+          "ArtifactSpawnZones": [
+            {
+              "Chance": 0.3,
+              //"Condition": "GSQ whatever",
+              "Area": {
+                "X": 7,
+                "Y": 80,
+                "Width": 16,
+                "Height": 12
+              },
+              "Type": "(O)590",
+              "Range": "1-3",
+            }
+          ]
+        },
+        "Lumisteria_MtVapius_Forest": {
+          "MonsterDropZones": [
+            {
+              "Id": "{{ModId}}_WeirdCoinsGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Chance": 0.03,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_WeirdCoins",
+                  "ItemId": "Lumisteria.MtVapius_WeirdCoins",
+                  "MinStack": 1,
+                  "MaxStack": 3,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_BatteryMachineGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"hot head\" \"metal head\"",
+              "Chance": 0.005,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_Battery",
+                  "ItemId": "787",
+                  "MinStack": 1,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_WatchMachineGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"Hot Head\" \"Metal Head\"",
+              "Chance": 0.003,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_BrokenWatch",
+                  "ItemId": "Lumisteria.MtVapius_Treasures_BrokenWatch",
+                  "MinStack": 1,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_EfficientCogMachineGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"Hot Head\" \"Metal Head\"",
+              "Chance": 0.001,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_EfficientCog",
+                  "ItemId": "Lumisteria.MtVapius_Treasures_EfficientCog",
+                  "MinStack": 1,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_CogMachineGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"Hot Head\" \"Metal Head\"",
+              "Chance": 0.004,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_Cog",
+                  "ItemId": "112",
+                  "MinStack": 1,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_NoteCogMachineGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"Hot Head\" \"Metal Head\", PLAYER_HAS_MAIL Current Lumisteria.MtVapius_CogsAndGearsFlag",
+              "Chance": 0.002,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_EfficientCog",
+                  "ItemId": "Lumisteria.MtVapius_Treasures_EfficientCog",
+                  "MinStack": 1,
+                },
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_Cog",
+                  "ItemId": "112",
+                  "MinStack": 1,
+                },
+              ]
+            },
+          ],
+        },
+        "Lumisteria.MtVapius_ForestCrystalLake": {
+          "FishSpotSpawnZones": [
+            {
+              "Id": "{{ModId}}_WaterfallBubble",
+              "Area": {
+                "X": 39,
+                "Y": 7,
+                "Width": 2,
+                "Height": 7
+              },
+              "Chance": 0.01,
+            }
+          ],
+          "PanSpotSpawnZones": [
+            {
+              "Id": "{{ModId}}_PanningSpots",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              //"Condition": "GSQ whatever",
+              "Chance": 0.03,
+            }
+          ]
+        },
+        "Lumisteria.MtVapius_ForestCaveMarsh": {
+          /*"MonsterDropZones": [
+            {
+              "Id": "{{ModId}}_WeirdCoinsGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              
+              "Chance": 0.01,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_WeirdCoins",
+                  "ItemId": "Lumisteria.MtVapius_WeirdCoins",
+                  "MinStack": 1,
+                  "MaxStack": 2,
+                },
+              ]
+            }
+          ],*/
+          "ArtifactSpawnZones": [
+            {
+              "Chance": 0.8,
+              //"Condition": "GSQ whatever",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Type": "(O)590",
+              "Range": "2-6",
+            }
+          ]
+        },
+        /*"MapYouWantMonstersOnORLocationContext": { // note that if a map has a specific one, it will override the location context one entirely. They don't add.
+          "MonsterDropZones": [
+            {
+              "Id": "Default", // right I forgot CP needs an Id, those are added now
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              }, // sames as above.
+              "Condition": "GSQ whatever",
+              "Chance": 1,
+              "Items": [
+                {
+                  // very similar to basically every time stardew does items, like basically like how machines work.
+                  "ItemQuerySearchMode": "RandomOfTypeItem" // one random item from the ones produced, the other options are like "First" or whatever.
+                }
+              ]
+            }
+          ], // note the list.
+          "FishSpotSpawnZones": [
+            {
+              "Id": "Default",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "GSQ whatever",
+              "Chance": 0.05, // per ten minute tick.
+            }
+          ], // note the list.
+          "PanSpotSpawnZones": [
+            {
+              "Id": "Default", // right I forgot CP needs an Id, those are added now
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              }, // sames as above.
+              "Condition": "GSQ whatever",
+              "Chance": 0.05, // per ten minute tick.
+            }
+          ] // note the list.
+        },*/
+      }
+    }
+  ]
+}

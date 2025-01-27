@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="3" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="7">
+ <tileset firstgid="1" name="z_maddogtvanimated" tilewidth="16" tileheight="16" tilecount="522" columns="87">
+  <image source="z_maddogtvanimated.png" width="1392" height="96"/>
+  <tile id="339">
+   <animation>
+    <frame tileid="339" duration="700"/>
+    <frame tileid="342" duration="700"/>
+    <frame tileid="345" duration="700"/>
+   </animation>
+  </tile>
+  <tile id="340">
+   <animation>
+    <frame tileid="340" duration="700"/>
+    <frame tileid="343" duration="700"/>
+    <frame tileid="346" duration="700"/>
+   </animation>
+  </tile>
+  <tile id="341">
+   <animation>
+    <frame tileid="341" duration="700"/>
+    <frame tileid="344" duration="700"/>
+    <frame tileid="347" duration="700"/>
+   </animation>
+  </tile>
+  <tile id="426">
+   <animation>
+    <frame tileid="426" duration="700"/>
+    <frame tileid="429" duration="700"/>
+    <frame tileid="432" duration="700"/>
+   </animation>
+  </tile>
+  <tile id="427">
+   <animation>
+    <frame tileid="427" duration="700"/>
+    <frame tileid="430" duration="700"/>
+    <frame tileid="433" duration="700"/>
+   </animation>
+  </tile>
+  <tile id="428">
+   <animation>
+    <frame tileid="428" duration="700"/>
+    <frame tileid="431" duration="700"/>
+    <frame tileid="434" duration="700"/>
+   </animation>
+  </tile>
+  <tile id="513">
+   <animation>
+    <frame tileid="513" duration="700"/>
+    <frame tileid="516" duration="700"/>
+    <frame tileid="519" duration="700"/>
+   </animation>
+  </tile>
+  <tile id="514">
+   <animation>
+    <frame tileid="514" duration="700"/>
+    <frame tileid="517" duration="700"/>
+    <frame tileid="520" duration="700"/>
+   </animation>
+  </tile>
+  <tile id="515">
+   <animation>
+    <frame tileid="515" duration="700"/>
+    <frame tileid="518" duration="700"/>
+    <frame tileid="521" duration="700"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="2" name="Back" width="3" height="3">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="1" name="Buildings" width="3" height="3">
+  <data encoding="csv">
+340,341,342,
+427,428,429,
+514,515,516
+</data>
+ </layer>
+ <layer id="3" name="Front" width="3" height="3">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="3" height="3">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="5" name="AlwaysFront" width="3" height="3">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <objectgroup id="7" name="Buildings">
+  <object id="6" name="TileData" x="16" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;BearLodgeGreenRain&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="9" name="Paths"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

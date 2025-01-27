@@ -1,0 +1,253 @@
+{
+  "Changes": 
+    [
+	{
+	  "Action": "Load",
+	  "Target": "Maps/TinselShop",
+	  "FromFile": "Assets/Z_TinselShop.png"
+	},
+	{
+	  "Action": "EditMap",
+	  "Target": "Maps/Town",
+	  "FromFile": "Assets/TownTinselShop.tmx",
+	  "PatchMode": "Overlay",
+	  "FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 4 },
+	  "ToArea": { "X": 17, "Y": 19, "Width": 2, "Height": 4 },
+	  "When": 
+	    {
+		"DayOfWeek": "Wednesday, Saturday", 
+		"Season": "Spring, Summer, Fall"
+	    }
+	},
+	{
+	  "Action": "EditMap",
+	  "Target": "Maps/Town",
+	  "FromFile": "Assets/TownTinselShop.tmx",
+	  "PatchMode": "Overlay",
+	  "FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 4 },
+	  "ToArea": { "X": 17, "Y": 19, "Width": 2, "Height": 4 },
+	  "When": 
+	    {
+		"Day": "3, 6, 10, 13, 20, 24, 27", 
+		"Season": "Winter"
+	    }
+	},
+	{
+	  "Action": "EditMap",
+	  "Target": "Maps/Beach-NightMarket",
+	  "FromFile": "Assets/BeachTinselShop.tmx",
+	  "PatchMode": "Overlay",
+	  "FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 4 },
+	  "ToArea": { "X": 35, "Y": 1, "Width": 2, "Height": 4 }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "Entries": 
+	    {
+		"appleseed.BCP.TinselShop":
+		  {
+		    "Owners":
+			[
+			  {
+			    "Name": "AnyOrNone",
+			    "Portrait": "None",
+			    "Dialogues":
+				[
+				  {
+				    "Id": "appleseed.BCP.TinselDialogue",
+				    "Dialogue": "{{i18n:appleseed.BCP.TinselDialogue}}",
+				  }
+				]
+			  }
+			],
+		    "Items":
+			[
+			  {
+			    "Id": "appleseed.BCP.TinselRandom1",
+			    "RandomItemId": [ "(O)appleseed.BCP.PlushChicken", "(O)appleseed.BCP.PlushCow", "(O)appleseed.BCP.PlushDuck", "(O)appleseed.BCP.PlushPelican", "(O)appleseed.BCP.PlushCat", "(O)appleseed.BCP.PlushBear", "(O)appleseed.BCP.PlushRaccoon", "(O)appleseed.BCP.PlushSheep", "(O)appleseed.BCP.PlushBee", "(O)612" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.TinselRandom2",
+			    "RandomItemId": [ "(O)appleseed.BCP.PlushFox", "(O)appleseed.BCP.PlushCrow", "(O)appleseed.BCP.PlushRaccoon", "(O)appleseed.BCP.PlushTurtle", "(O)appleseed.BCP.PlushGoat", "(O)appleseed.BCP.WindupMouse", "(O)appleseed.BCP.WindupFrog", "(O)appleseed.BCP.PlushDog", "(O)appleseed.BCP.WoodenDoll", "(O)612" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.TinselRandom3",
+			    "RandomItemId": [ "(O)appleseed.BCP.FeltSlime", "(O)appleseed.BCP.FeltMummy", "(O)appleseed.BCP.FeltDustSprite", "(O)appleseed.BCP.FeltSkeleton", "(O)appleseed.BCP.FeltSerpent", "(O)appleseed.BCP.FeltBat", "(O)appleseed.BCP.FeltDinosaur", "(O)appleseed.BCP.SeaGlobe", "(O)612" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.TinselRandom4",
+			    "RandomItemId": [ "(O)appleseed.BCP.FeltGhost", "(O)appleseed.BCP.FeltMetalHead", "(O)appleseed.BCP.FeltSquidKid", "(O)appleseed.BCP.FeltHauntedSkull", "(O)appleseed.BCP.FeltGrub", "(O)appleseed.BCP.FeltRockCrab", "(O)appleseed.BCP.ToyShuttle", "(O)612" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.TinselRandom5",
+			    "RandomItemId": [ "(O)appleseed.BCP.Teacup", "(O)appleseed.BCP.FigurineRose", "(O)appleseed.BCP.FigurineOwl", "(O)appleseed.BCP.WhitePawn", "(O)appleseed.BCP.WhiteKnight", "(O)appleseed.BCP.WhiteQueen", "(O)appleseed.BCP.ToyBoat", "(O)612" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.TinselRandom6",
+			    "RandomItemId": [ "(O)appleseed.BCP.Teapot", "(O)appleseed.BCP.FigurinePrincess", "(O)appleseed.BCP.FigurinePig", "(O)appleseed.BCP.WhiteRook", "(O)appleseed.BCP.WhiteBishop", "(O)appleseed.BCP.WhiteQueen", "(O)appleseed.BCP.SnowGlobe", "(O)612" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.TinselRandom7",
+			    "RandomItemId": [ "(O)appleseed.BCP.PlushGoblin", "(O)appleseed.BCP.PlushSeaMonster", "(O)appleseed.BCP.PlushDwarf", "(O)appleseed.BCP.PlushShadowSpirit", "(O)appleseed.BCP.PlushWizard", "(O)appleseed.BCP.PlushWitch", "(O)appleseed.BCP.PlushElf", "(O)612" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  }
+			]
+		  },
+		"appleseed.BCP.NMTinselShop":
+		  {
+		    "Owners":
+			[
+			  {
+			    "Name": "AnyOrNone",
+			    "Portrait": null,
+			    "Dialogues":
+				[
+				  {
+				    "Id": "appleseed.BCP.NMTinselDialogue",
+				    "Dialogue": "{{i18n:appleseed.BCP.NMTinselDialogue}}",
+				  }
+				]
+			  }
+			],
+		    "Items":
+			[
+			  {
+			    "Id": "appleseed.BCP.NMTinselRandom1",
+			    "RandomItemId": [ "(O)appleseed.BCP.PlushFairy", "(O)appleseed.BCP.PlushUnseelie", "(O)appleseed.BCP.8-Ball", "(O)appleseed.BCP.AntiqueTeaSet", "(O)appleseed.BCP.CuckooClock", "(O)appleseed.BCP.JunimoShaker", "(O)appleseed.BCP.MusicBox", "(O)appleseed.BCP.PlushTrashBear", "(O)appleseed.BCP.Starglobe", "(O)appleseed.BCP.WindupHare", "(O)appleseed.BCP.StrangePuzzle", "(O)appleseed.BCP.Chessboard", "(O)appleseed.BCP.DollMansion", "(F)appleseed.BCP.Clock" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.NMTinselRandom2",
+			    "RandomItemId": [ "(O)appleseed.BCP.ToyBoatAlt", "(O)appleseed.BCP.ToyShuttleAlt", "(O)appleseed.BCP.FeltSlimeGreenF", "(O)appleseed.BCP.FeltSlimeBlue", "(O)appleseed.BCP.FeltSlimeBlueF", "(O)appleseed.BCP.FeltSlimeRed", "(O)appleseed.BCP.FeltSlimeRedF", "(O)appleseed.BCP.FeltSlimePurple", "(O)appleseed.BCP.FeltSlimePurpleF", "(O)appleseed.BCP.FeltSlimeTiger", "(O)appleseed.BCP.FeltSlimeTigerF", "(O)appleseed.BCP.FeltGrubGreen", "(O)appleseed.BCP.FeltRockCrabRed", "(O)appleseed.BCP.FeltRockCrabIridium", "(O)appleseed.BCP.FeltRockCrabTruffle", "(O)223" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.NMTinselRandom3",
+			    "RandomItemId": [ "(O)appleseed.BCP.FeltBatBlue", "(O)appleseed.BCP.FeltBatRed", "(O)appleseed.BCP.FeltBatIridium", "(O)appleseed.BCP.FeltDustSpriteAlt", "(O)appleseed.BCP.FeltGhostGreen", "(O)appleseed.BCP.FeltSkeletonBlue", "(O)appleseed.BCP.FeltMetalHeadOrange", "(O)appleseed.BCP.FeltSquidKidCool", "(O)appleseed.BCP.FeltHauntedSkullBlue", "(O)appleseed.BCP.PlushChickenWhite", "(O)appleseed.BCP.PlushChickenBrown", "(O)appleseed.BCP.PlushCowBrown", "(O)appleseed.BCP.PlushTurtleGreen", "(O)appleseed.BCP.ToyBoatAlt", "(O)appleseed.BCP.PlushSheepInverted", "(O)223" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.NMTinselRandom4",
+			    "RandomItemId": [ "(O)appleseed.BCP.PlushDogShepard", "(O)appleseed.BCP.PlushDogPoodle", "(O)appleseed.BCP.PlushDogHound", "(O)appleseed.BCP.PlushDogChocolate", "(O)appleseed.BCP.PlushCatGrey", "(O)appleseed.BCP.PlushCatYellow", "(O)appleseed.BCP.PlushCatWhite", "(O)appleseed.BCP.PlushCatBlack", "(O)appleseed.BCP.TeacupRed", "(O)appleseed.BCP.TeapotRed", "(O)appleseed.BCP.TeacupBlue", "(O)appleseed.BCP.TeapotBlue", "(O)appleseed.BCP.FigurineSunflower", "(O)appleseed.BCP.FigurineJazz", "(O)appleseed.BCP.WoodenDollPurple", "(O)appleseed.BCP.WoodenDollRed", "(O)223" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.NMTinselRandom5",
+			    "RandomItemId": [ "(O)appleseed.BCP.BlackPawn", "(O)appleseed.BCP.BlackRook", "(O)appleseed.BCP.BlackKnight", "(O)appleseed.BCP.BlackBishop", "(O)appleseed.BCP.BlackQueen", "(O)appleseed.BCP.BlackKing", "(O)223" ],
+			    "AvailableStock": 1,
+			    "AvoidRepeat": true,
+			    "PriceModifiers": 
+				[
+				  {
+				    "Modification": "Multiply",
+				    "Amount": 1.4
+				  }
+				]
+			  },
+			  {
+			    "Id": "appleseed.BCP.TinselFS",
+			    "ItemId": "(BC)appleseed.BCP.Frogstone",
+			    "Price": 500
+			  }
+			]
+		  }
+	    }
+	}
+    ]
+
+}

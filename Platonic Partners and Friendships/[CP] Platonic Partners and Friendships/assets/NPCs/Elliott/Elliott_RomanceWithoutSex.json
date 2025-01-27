@@ -1,0 +1,195 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "SpouseStardrop": "When I last visited my former home by the sea, that strange fruit washed ashore at my feet... #$b#If you'll bear with me, I've composed a poem to accompany it.#$b#*ahem* 'To @, my beloved.'#$b#I traveled to this land to grow a rose, whose seed slept in the very soil of me. A perfect isolation I'd impose; I'd nurture it alone beside the sea.#$b#The seaside had the sun, and I the soil; I'd thought a rose should need no more to thrive. I never realized that, for all my toil, mere saltwater could not keep it alive.#$b#The seed lay buried and refused to grow, until you came to me amidst the gloom... #$b#Your heart a spring, from which the waterflow... poured into me, until my seedling bloomed.$l#$b#Put simply, @, I love you. I hope my gift inspires you in your work, as you've so often inspired mine.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "SpouseStardrop": "When I last visited my former home by the sea, that strange fruit washed ashore at my feet... #$b#If you'll bear with me, I've composed a poem to accompany it.#$b#*ahem* 'To @, my beloved.'$h#$b#I traveled to this land to grow a rose, whose seed slept in the very soil of me. A perfect isolation I'd impose; I'd nurture it alone beside the sea.$h#$b#The seaside had the sun, and I the soil; I'd thought a rose should need no more to thrive. I never realized that, for all my toil, mere saltwater could not keep it alive.$h#$b#The seed lay buried and refused to grow, until you came to me amidst the gloom... $h#$b#Your heart a spring, from which the waterflow... poured into me, until my seedling bloomed.#$b#Put simply, @, I love you. I hope my gift inspires you in your work, as you've so often inspired mine.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+             }
+        },
+        {
+            "LogName": "Elliott terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Elliott": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Elliott terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Elliott": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Indoor_Night_Elliott": "#$c .5#When you come home after a day of hard work, it feels as if you carry the majesty of the outdoors with you.$h#$e#You look tense. Why don't I brew you a cup of spice tea?",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Rainy_Night_1": "You're ice cold! Let me get you a blanket.$8",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+	//Blush Edits
+        {
+	    "Logname": "Elliott no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott",
+            "FromFile": "assets/Portraits/ElliottNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.LeahElliott": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname": "Elliott no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott_Winter",
+            "FromFile": "assets/Portraits/ElliottNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.LeahElliott": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Elliott no blush portrait edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott",
+            "FromFile": "assets/Portraits/ElliottNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+	    "Logname": "Elliott no blush portrait edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott_Winter",
+            "FromFile": "assets/Portraits/ElliottNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+//CFDE
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Rainy_Night_1": "#$c .5#You're ice cold! Let me get you a blanket.$8#Dearest @... I know you've been out in the rain, but my hair is not a hand towel!$8",
+                "fall_23": "I wrote a short little vignette yesterday. I just need to polish it up today.#$b#Would you like a copy to read in bed tonight?",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+//Immersive Spouses
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Elliott",
+		"Entries": {
+			"marriage_docafter": "I think I'll need a bath...$s",
+		},
+		"When": {
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+    ]
+}

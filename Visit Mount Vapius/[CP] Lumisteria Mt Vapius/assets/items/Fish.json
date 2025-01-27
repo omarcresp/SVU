@@ -1,0 +1,65 @@
+{
+  "Changes": [
+    //Fish entries
+    {
+      "LogName": "Fish Data",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "Lumisteria.MtVapius_Sturgiant": "Sturgiant/88/mixed/30/90/1200 1900/summer winter/sunny/689 .35 682 .1/4/.35/.05/8/false",
+        "Lumisteria.MtVapius_AlpineCharPrince": "Alpine Char Prince/88/mixed/30/90/600 1100/fall/rainy/689 .35 682 .1/4/.35/.07/8/false",
+        "Lumisteria.MtVapius_WhiteVendace": "White Vendace/40/floater/5/12/600 2600/spring summer fall winter/both/684 .35/0/.3/.3/0/false",
+        "Lumisteria.MtVapius_VapiusRoach": "Vapius Roach/20/floater/8/40/600 1900/spring summer fall winter/both/684 .35/1/.3/.3/0/false",
+        "Lumisteria.MtVapius_AlpineChar": "Alpine Char/55/mixed/13/22/1100 2000/spring summer fall winter/both/684 .35/2/.3/.3/1/false",
+        "Lumisteria.MtVapius_MossyCrayfish": "Mossy Crayfish/trap/.35/682 .3/lumisteria.mtvapius.freshwater/1/9/false",
+        "Lumisteria.MtVapius_CrystalFish": "Crystal Fish/64/smooth/10/25/600 2600/spring summer fall winter/both/684 .35/2/.45/.1/3/false",
+        "Lumisteria.MtVapius_GiantCrystalFish": "Giant Crystal Fish/78/smooth/35/40/800 1800/spring summer fall winter/both/684 .35/4/.45/.1/5/false",
+        "Lumisteria.MtVapius_RainbowPerch": "Rainbow Perch/50/dart/30/34/600 2600/spring summer fall winter/both/684 .35/1/.45/.1/0/false",
+        //"Lumisteria.MtVapius_RainbowStrider": "Rainbow Strider/trap/.9/682 .5/lumisteria.mtvapius.freshwater/1/2/false",
+        "Lumisteria.MtVapius_LeafyTrout": "Leafy Trout/65/dart/10/20/800 1900/spring fall winter/rainy/688 .45 685 .2/3/.2/.1/3/false",
+        "Lumisteria.MtVapius_PlanetFish": "Planet Fish/115/sinker/70/80/800 2200/spring/both/688 .45 685 .2/3/.05/.1/9/false",
+      }
+    },
+    //Aquarium Fishes Entries
+    {
+      "LogName": "Aquarium Fishes",
+      "Action": "EditData",
+      "Target": "Data/AquariumFish",
+      "Entries": {
+        "Lumisteria.MtVapius_Sturgiant": "0/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_AlpineCharPrince": "1/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_WhiteVendace": "2/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_VapiusRoach": "3/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_MossyCrayfish": "4/crawl/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_AlpineChar": "5/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_CrystalFish": "6/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_GiantCrystalFish": "7/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_RainbowPerch": "8/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_LeafyTrout": "10/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+        "Lumisteria.MtVapius_PlanetFish": "11/fish/////Mods\\Lumisteria.MtVapius\\AquariumFishes",
+      }
+    },
+    {
+      "LogName": "Load images",
+      "Action": "Load",
+      "Target": "Mods/Lumisteria.MtVapius/Fishes, Mods/Lumisteria.MtVapius/AquariumFishes",
+      "FromFile": "assets/images/items/{{TargetWithoutPath}}.png"
+    },
+    /* Move Fish Entry*/
+    /*{
+      "LogName": "Moving fish entries",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "MoveEntries": [
+        {
+          "ID": "Lumisteria.MtVapius_MossyCrayfish",
+          "BeforeID": "715"
+        },
+        {
+          "ID": "Lumisteria.MtVapius_RainbowStrider",
+          "AfterID": "Lumisteria.MtVapius_MossyCrayfish"
+        },
+      ],
+    },*/
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Dwarf_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Dwarf",
+      "Entries": {
+        "AcceptGift_(O)554": "{{i18n: CFE_Dwarf_LemonStone}}"
+        //any keys that overlap go here
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Dwarf}}' = 'true' OR ('{{CFE_Dwarf}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Dwarf_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Dwarf",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Dwarf_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Dwarf_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Dwarf_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Dwarf_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Dwarf_RabbitsFoot}}",
+
+        "AcceptGift_(O)60": "{{i18n: CFE_Dwarf_Emerald}}",
+        "AcceptGift_(O)64": "{{i18n: CFE_Dwarf_Ruby}}",
+        "AcceptGift_(O)66": "{{i18n: CFE_Dwarf_Emerald}}",
+        "AcceptGift_(O)68": "{{i18n: CFE_Dwarf_Topaz}}",
+        "AcceptGift_(O)70": "{{i18n: CFE_Dwarf_Jade}}",
+        "AcceptGift_(O)749": "{{i18n: CFE_Dwarf_OmniGeode}}",
+        "AcceptGift_(O)162": "{{i18n: CFE_Dwarf_LavaEel}}"
+      },
+      "When": { "Query: '{{CFE_Dwarf}}' = 'true' OR ('{{CFE_Dwarf}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Dwarf_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Dwarf": "{{i18n: CFE_Dwarf_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Dwarf}}' = 'true' OR ('{{CFE_Dwarf}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Dwarf_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Dwarf",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Dwarf_summerMon10}}",
+        "summer_Tue10": "{{i18n: CFE_Dwarf_summerTue10}}",
+        "summer_Wed10": "{{i18n: CFE_Dwarf_repeated_2}}",
+        "summer_Thu10": "{{i18n: CFE_Dwarf_summerThu10}}",
+        "summer_Fri10": "{{i18n: CFE_Dwarf_summerFri10}}",
+        "summer_Sat10": "{{i18n: CFE_Dwarf_summerSat10}}",
+        "summer_Sun10": "{{i18n: CFE_Dwarf_summerSun10}}",
+
+        "fall_Mon10": "{{i18n: CFE_Dwarf_repeated_1}}",
+        "fall_Tue10": "{{i18n: CFE_Dwarf_repeated_3}}",
+        "fall_Wed10": "{{i18n: CFE_Dwarf_fallWed10}}",
+        "fall_Thu10": "{{i18n: CFE_Dwarf_fallThu10}}",
+        "fall_Fri10": "{{i18n: CFE_Dwarf_fallFri10}}",
+        "fall_Sat10": "{{i18n: CFE_Dwarf_fallSat10}}",
+        "fall_Sun10": "{{i18n: CFE_Dwarf_fallSun10}}",
+
+        "winter_Mon10": "{{i18n: CFE_Dwarf_winterMon10}}",
+        "winter_Tue10": "{{i18n: CFE_Dwarf_winterTue10}}",
+        "winter_Wed10": "{{i18n: CFE_Dwarf_winterWed10}}",
+        "winter_Thu10": "{{i18n: CFE_Dwarf_winterThu10}}",
+        "winter_Fri10": "{{i18n: CFE_Dwarf_winterFri10}}",
+        "winter_Sat10": "{{i18n: CFE_Dwarf_winterSat10}}",
+        "winter_Sun10": "{{i18n: CFE_Dwarf_winterSun10}}",
+
+        "Mon8": "{{i18n: CFE_Dwarf_Mon8}}",
+        "Mon6": "{{i18n: CFE_Dwarf_Mon6}}",
+        "Mon4": "{{i18n: CFE_Dwarf_Mon4}}",
+        "Mon2": "{{i18n: CFE_Dwarf_Mon2}}",
+        "Tue10": "{{i18n: CFE_Dwarf_Tue10}}",
+        "Tue8": "{{i18n: CFE_Dwarf_Tue8}}",
+        "Tue6": "{{i18n: CFE_Dwarf_Tue6}}",
+        "Tue4": "{{i18n: CFE_Dwarf_Tue4}}",
+        "Tue2": "{{i18n: CFE_Dwarf_Tue2}}",
+        "Wed10": "{{i18n: CFE_Dwarf_Wed10}}",
+        "Wed8": "{{i18n: CFE_Dwarf_repeated_1}}",
+        "Wed6": "{{i18n: CFE_Dwarf_repeated_2}}",
+        "Wed4": "{{i18n: CFE_Dwarf_Wed4}}",
+        "Wed2": "{{i18n: CFE_Dwarf_Wed2}}",
+        "Thu10": "{{i18n: CFE_Dwarf_Thu10}}",
+        "Thu6": "{{i18n: CFE_Dwarf_Thu6}}",
+        "Thu4": "{{i18n: CFE_Dwarf_Thu4}}",
+        "Thu2": "{{i18n: CFE_Dwarf_Thu2}}",
+        "Fri8": "{{i18n: CFE_Dwarf_Fri8}}",
+        "Fri6": "{{i18n: CFE_Dwarf_Fri6}}",
+        "Fri4": "{{i18n: CFE_Dwarf_Fri4}}",
+        "Fri2": "{{i18n: CFE_Dwarf_Fri2}}",
+        "Sat8": "{{i18n: CFE_Dwarf_Sat8}}",
+        "Sat6": "{{i18n: CFE_Dwarf_Sat6}}",
+        "Sat4": "{{i18n: CFE_Dwarf_Sat4}}",
+        "Sat2": "{{i18n: CFE_Dwarf_Sat2}}",
+        "Sun8": "{{i18n: CFE_Dwarf_Sun8}}",
+        "Sun6": "{{i18n: CFE_Dwarf_repeated_3}}",
+        "Sun4": "{{i18n: CFE_Dwarf_Sun4}}",
+        "Sun2": "{{i18n: CFE_Dwarf_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "winter_Sun": "{{i18n: CFE_Dwarf_winterSun}}",
+        "Mon": "{{i18n: CFE_Dwarf_Mon}}",
+        "Tue": "{{i18n: CFE_Dwarf_Tue}}",
+        "Sun": "{{i18n: CFE_Dwarf_Sun}}"
+      },
+      "When": { "Query: '{{CFE_Dwarf}}' = 'true' OR ('{{CFE_Dwarf}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

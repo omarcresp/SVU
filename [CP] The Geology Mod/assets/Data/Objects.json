@@ -1,0 +1,470 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/Objects",
+			"FromFile": "assets/Resources/Objects.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Olivine": {
+					"Name": "Olivine",
+					"Displayname": "{{i18n: Olivine.N}}",
+					"Description": "{{i18n: Olivine.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 55,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"color_green"
+					],
+				},
+				"{{ModId}}_Peridot": {
+					"Name": "Peridot",
+					"Displayname": "{{i18n: Peridot.N}}",
+					"Description": "{{i18n: Peridot.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 70,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 1,
+					"ContextTags": [
+						"color_lime"
+					],
+				},
+				"{{ModId}}_Lapis_Lazuli": {
+					"Name": "Lapis Lazuli",
+					"Displayname": "{{i18n: Lapis Lazuli.N}}",
+					"Description": "{{i18n: Lapis Lazuli.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 90,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 2,
+					"ContextTags": [
+						"color_dark_blue"
+					],
+				},
+				"{{ModId}}_Zircon": {
+					"Name": "Zircon",
+					"Displayname": "{{i18n: Zircon.N}}",
+					"Description": "{{i18n: Zircon.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 115,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 3,
+					"ContextTags": [
+						"color_red"
+					],
+				},
+				"{{ModId}}_Onxy": {
+					"Name": "Onxy",
+					"Displayname": "{{i18n: Onxy.N}}",
+					"Description": "{{i18n: Onxy.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 130,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 4,
+					"ContextTags": [
+						"color_black"
+					],
+				},
+				"{{ModId}}_Vanadinite": {
+					"Name": "Vanadinite",
+					"Displayname": "{{i18n: Vanadinite.N}}",
+					"Description": "{{i18n: Vanadinite.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 160,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 5,
+					"ContextTags": [
+						"color_copper"
+						],
+				},
+				"{{ModId}}_Sapphire": {
+					"Name": "Sapphire",
+					"Displayname": "{{i18n: Sapphire.N}}",
+					"Description": "{{i18n: Sapphire.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 185,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 6,
+					"ContextTags": [
+						"color_light_cyan"
+					],
+				},
+				"{{ModId}}_Rhodochrosite": {
+					"Name": "Rhodochrosite",
+					"Displayname": "{{i18n: Rhodochrosite.N}}",
+					"Description": "{{i18n: Rhodochrosite.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 235,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 7,
+					"ContextTags": [
+						"color_pink"
+					],
+				},
+				"{{ModId}}_Sunstone": {
+					"Name": "Sunstone",
+					"Displayname": "{{i18n: Sunstone.N}}",
+					"Description": "{{i18n: Sunstone.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 275,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 8,
+					"ContextTags": [
+						"color_dark_orange"
+					],
+				},
+				"{{ModId}}_Prismatic_Pieces": {
+					"Name": "Prismatic Pieces",
+					"Displayname": "{{i18n: Prismatic_Pieces.N}}",
+					"Description": "{{i18n: Prismatic_Pieces.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 150,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 9,
+					"ContextTags": [
+						"color_prismatic",
+						"crystalarium_banned"
+					],
+				},
+				"{{ModId}}_Hornblende": {
+					"Name": "Hornblende",
+					"Displayname": "{{i18n: Hornblende.N}}",
+					"Description": "{{i18n: Hornblende.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 10,
+					"ContextTags": [
+						"color_black"
+					],
+					"GeodeDrops": [
+						{
+							"Chance": 0.2,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Resources",
+							"RandomItemId": [
+								"(O)390",
+								"(O)330",
+								"(O)378",
+								"(O)380",
+								"(O)382",
+							],
+							"MinStack": 1,
+							"MaxStack": 4,
+						},
+						{
+							"Chance": 1.0,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Minerals",
+							"RandomItemId": [
+								"(O)541",
+								"(O)556",
+								"(O)559",
+								"(O)564",
+								"(O)567",
+								"(O)575",
+								"(O)123",
+								"(O)568",
+								"(O)545",
+								"(O)552",
+								"(O)548",
+								"(O)122",
+								"{{ModId}}_Olivine", 
+								"{{ModId}}_Peridot", 
+							],
+						}
+					],
+				},
+				"{{ModId}}_Gneiss": {
+					"Name": "Gneiss",
+					"Displayname": "{{i18n: Gneiss.N}}",
+					"Description": "{{i18n: Gneiss.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 160,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 11,
+					"ContextTags": [
+						"color_brown"
+					],
+					"GeodeDrops": [
+						{
+							"Chance": 0.05,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Id": "Iridium Ore",
+							"ItemId": "(O)386",
+							"MinStack": 1,
+							"MaxStack": 11,
+						},
+						{
+							"Chance": 0.1,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Gold Ore",
+							"ItemId": "(O)384",
+							"MinStack": 1,
+							"MaxStack": 7,
+						},
+						{
+							"Chance": 0.2,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Resources",
+							"RandomItemId": [
+								"(O)390",
+								"(O)330",
+								"(O)378",
+								"(O)380",
+								"(O)382"
+							],
+							"MinStack": 1,
+							"MaxStack": 7,
+						},
+						{
+							"Chance": 1.0,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Minerals",
+							"RandomItemId": [
+								"(O)555",
+								"(O)570",
+								"(O)569",
+								"(O)541",
+								"(O)562",
+								"(O)123",
+								"(O)568",
+								"(O)576",
+								"(O)540",
+								"(O)122",
+								"(O)553",
+								"(O)566",
+								"{{ModId}}_Zircon", 
+								"{{ModId}}_Onxy", 
+							],
+						}
+					],
+				},
+				"{{ModId}}_Schist": {
+					"Name": "Schist",
+					"Displayname": "{{i18n: Schist.N}}",
+					"Description": "{{i18n: Schist.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 235,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 12,
+					"ContextTags": [
+						"color_brown"
+					],
+					"GeodeDrops": [
+						{
+							"Chance": 0.1,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Id": "Iridium Ore",
+							"ItemId": "(O)386",
+							"MinStack": 3,
+							"MaxStack": 11,
+						},
+						{
+							"Chance": 0.2,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Resources",
+							"RandomItemId": [
+								"(O)330",
+								"(O)378",
+								"(O)380",
+								"(O)382",
+								"(O)384"
+							],
+							"MinStack": 1,
+							"MaxStack": 15,
+						},
+						{
+							"Chance": 1.0,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Minerals",
+							"RandomItemId": [
+								"(O)561",
+								"(O)548",
+								"(O)544",
+								"(O)122",
+								"(O)573",
+								"(O)557",
+								"(O)540",
+								"(O)578",
+								"(O)574",
+								"(O)538",
+								"(O)562",
+								"(O)121",
+								"(O)547",
+								"{{ModId}}_Vanadinite", 
+								"{{ModId}}_Sapphire", 
+								"{{ModId}}_Sunstone", 
+							],
+						}
+					],
+				},
+				"{{ModId}}_Halite": {
+					"Name": "Halite",
+					"Displayname": "{{i18n: Halite.N}}",
+					"Description": "{{i18n: Halite.D}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 475,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 13,
+					"ContextTags": [
+						"color_gray"
+					],
+					"GeodeDrops": [
+						{
+							"Chance": 0.4,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Resources",
+							"RandomItemId": [
+								"(O)380",
+								"(O)384"
+							],
+							"MinStack": 1,
+							"MaxStack": 20,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Default",
+							"ItemId": "(O)390",
+							"MinStack": 1,
+							"MaxStack": 90,
+						}
+					],
+				},
+			},
+		},
+
+		//Geode
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "535", "GeodeDrops", "Default", "RandomItemId" ],
+            "Entries": {
+                "{{ModId}}_Hornblende": "{{ModId}}_Hornblende", 
+				"{{ModId}}_Gneiss": "{{ModId}}_Gneiss", 
+				"{{ModId}}_Schist": "{{ModId}}_Schist", 
+				"{{ModId}}_Olivine": "{{ModId}}_Olivine", 
+            }
+        },
+		//Frozen Geode
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "536", "GeodeDrops", "Default", "RandomItemId" ],
+            "Entries": {
+				"{{ModId}}_Lapis_Lazuli": "{{ModId}}_Lapis_Lazuli", 
+				"{{ModId}}_Zircon": "{{ModId}}_Zircon", 
+				"{{ModId}}_Onxy": "{{ModId}}_Onxy", 
+            }
+        },
+		//Magma Geode
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "537", "GeodeDrops", "Default", "RandomItemId" ],
+            "Entries": {
+				"{{ModId}}_Vanadinite": "{{ModId}}_Vanadinite", 
+				"{{ModId}}_Sapphire": "{{ModId}}_Sapphire", 
+				"{{ModId}}_Peridot": "{{ModId}}_Peridot", 
+            }
+        },
+		//Omni Geode
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "749", "GeodeDrops", "Default", "RandomItemId" ],
+            "Entries": {
+                "{{ModId}}_Hornblende": "{{ModId}}_Hornblende", 
+				"{{ModId}}_Gneiss": "{{ModId}}_Gneiss", 
+				"{{ModId}}_Schist": "{{ModId}}_Schist", 
+				"{{ModId}}_Olivine": "{{ModId}}_Olivine", 
+				"{{ModId}}_Peridot": "{{ModId}}_Peridot", 
+				"{{ModId}}_Lapis_Lazuli": "{{ModId}}_Lapis_Lazuli", 
+				"{{ModId}}_Zircon": "{{ModId}}_Zircon", 
+				"{{ModId}}_Onxy": "{{ModId}}_Onxy", 
+				"{{ModId}}_Vanadinite": "{{ModId}}_Vanadinite", 
+				"{{ModId}}_Sapphire": "{{ModId}}_Sapphire", 
+				"{{ModId}}_Rhodochrosite": "{{ModId}}_Rhodochrosite", 
+				"{{ModId}}_Sunstone": "{{ModId}}_Sunstone", 
+				"{{ModId}}_Prismatic_Pieces": "{{ModId}}_Prismatic_Pieces", 
+            }
+        },
+		//Mudstone
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "574" ],
+			"Entries": {
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"SetFlagOnPickup": null,
+						"Precedence": 0,
+						"Condition": null,
+						"Id": "Minerals",
+						"RandomItemId": [
+							"80",
+							"86"
+						],
+					},
+					{
+						"Chance": 0.1,
+						"SetFlagOnPickup": null,
+						"Precedence": 0,
+						"Condition": null,
+						"Id": "Resources",
+						"RandomItemId": [
+						  "378"
+						],
+						"MinStack": 1,
+						"MaxStack": 3,
+					},
+					{
+					  "Chance": 1.0,
+					  "Id": "Default",
+					  "ItemId": 330,
+					  "MinStack": 2,
+					  "MaxStack": 5,
+					}
+				],
+			}
+		}
+	]
+}
+

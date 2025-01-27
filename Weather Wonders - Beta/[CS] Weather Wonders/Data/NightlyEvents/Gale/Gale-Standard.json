@@ -1,0 +1,35 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Gale Nightly Event (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.morenightlyevents/Events",
+      "Entries": {
+        "Kana.WeatherWonders_Gale": {
+          "Id": "Kana.WeatherWonders_Gale",
+          "Type": "Message",
+          "Conditions": [
+            {
+              "Condition": "TRUE",
+              "Chance": 0.01,
+              "Weight": 1,
+              "IsExclusive": false
+            }
+          ],
+          "Priority": 10,
+          "TargetMap": "Farm",
+          "SoundName": "Kana.WeatherWonders_GaleSound",
+          "Message": "{{i18n: Nightly.Gale.Message}}",
+          "MessageDelay": 10000,
+          "SideEffects": [
+            {
+              "Actions": [
+                "AddMail Host Kana.WeatherWonders_GaleNightlyEvent Received"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

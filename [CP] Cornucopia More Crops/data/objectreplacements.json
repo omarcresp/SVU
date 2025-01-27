@@ -1,0 +1,114 @@
+{
+	"Changes": [
+		//Add cocoa pod to chocolate cake recipe
+		{
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Fields": {
+				"Chocolate Cake": {
+					"0": "Cornucopia_CocoaPod 1 246 1 245 1 -5 1"
+				}
+			}
+		},
+		// Cloth description changes
+		{
+			"Action": "EditData",
+			"Target": "Strings/Objects",
+			//"When": {"Enable Essential Pack": true},
+			"Entries": {
+				"Cloth_Description": "{{i18n:Cloth_description}}"
+			}
+		},
+		// Grape Starter description/name changes
+		{
+			"Action": "EditImage",
+			"Target": "maps/springobjects",
+			"FromFile": "assets/objects.png",
+			"When": {
+				"Enable Extended Crops Pack": true,
+				"Disable Grape Bushes": false
+			},
+			"FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 16 }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"Enable Extended Crops Pack": true,
+				"Disable Grape Bushes": false
+			},
+			"Fields": { 
+				"301": {
+					"Price": 300,
+					"DisplayName": "{{i18n:GrapeSeeds_name}}",
+					"Description": "{{i18n:GrapeSeeds_description}}"
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Crops",
+			"When": {
+				"Enable Extended Crops Pack": true,
+				"Disable Grape Bushes": false
+			},
+			"Entries": { 
+				"301": null,
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"When": {
+				"Enable Extended Crops Pack": true,
+				"Disable Grape Bushes": false
+			},
+			"Fields": {
+				"(O)301": {
+					"Condition": null,
+				},
+			},
+			"MoveEntries": [
+				{
+					"Id": "(O)301",
+					"BeforeId": "(O)628"
+				}
+			]
+		},
+		//Rename and retexture cheese press
+		{
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"When": {"Rename Cheese Press": true},
+			"Fields": {
+				"16": {
+					"DisplayName": "{{i18n:Press_name}}",
+					"Description": "{{i18n:Press_description}}"
+				}
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"When": {"Retexture Cheese Press": true},
+			"ToArea": {"X": 0, "Y": 64, "Width": 16, "Height": 32},
+			"FromFile": "assets/press.png",
+		},
+		// Japanese description/name changes
+		{
+			"Action": "EditData",
+			"Target": "Strings/Objects",
+			"When": {"Language": "ja"},
+			"Entries": {
+				"Yam_name": "{{i18n:Yam_name}}",
+				"YamSeeds_name": "{{i18n:YamSeeds_name}}",
+				"GlazedYams_name": "{{i18n:GlazedYam_name}}"
+			}
+		}
+	]
+}

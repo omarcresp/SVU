@@ -1,0 +1,200 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "SA.Legend": {
+          "Name": "[SA.Legend_Name]",
+          "Requester": null,
+          "Duration": "TwoWeeks",
+          "Repeatable": "False",
+          "RequiredTags": "season_spring",
+          "OrderType": "Esca.EMP/StardewAquarium/AquariumOrders",
+          "SpecialRule": "",
+          "Text": "[SA.Legend.Easy_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Fish",
+              "Text": "[SA.Legend.Easy_Objective_0_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_legend"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "2000"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SA.Legend.Mail",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer": "AquariumDonated:Legend",
+        "HasFlag: hostPlayer": "AquariumFishDonated:40",
+        "SpecialOrdersDifficulty": "Easy"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "SA.Legend": {
+          "Name": "[SA.Legend_Name]",
+          "Requester": null,
+          "Duration": "TwoWeeks",
+          "Repeatable": "False",
+          "RequiredTags": "season_spring",
+          "OrderType": "Esca.EMP/StardewAquarium/AquariumOrders",
+          "SpecialRule": "",
+          "Text": "[SA.Legend.Medium_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Fish",
+              "Text": "[SA.Legend.Medium_Objective_0_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_legend, quality_silver"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "2000"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SA.Legend.Mail",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer": "AquariumDonated:Legend",
+        "HasFlag: hostPlayer": "AquariumFishDonated:40",
+        "SpecialOrdersDifficulty": "Medium"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "SA.Legend": {
+          "Name": "[SA.Legend_Name]",
+          "Requester": null,
+          "Duration": "TwoWeeks",
+          "Repeatable": "False",
+          "RequiredTags": "season_spring",
+          "OrderType": "Esca.EMP/StardewAquarium/AquariumOrders",
+          "SpecialRule": "",
+          "Text": "[SA.Legend.Hard_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Fish",
+              "Text": "[SA.Legend.Hard_Objective_0_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_legend, quality_gold"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "2000"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SA.Legend.Mail",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer": "AquariumDonated:Legend",
+        "HasFlag: hostPlayer": "AquariumFishDonated:40",
+        "SpecialOrdersDifficulty": "Hard"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "SA.Legend": {
+          "Name": "[SA.Legend_Name]",
+          "Requester": null,
+          "Duration": "TwoWeeks",
+          "Repeatable": "False",
+          "RequiredTags": "season_spring",
+          "OrderType": "Esca.EMP/StardewAquarium/AquariumOrders",
+          "SpecialRule": "",
+          "Text": "[SA.Legend.Hell_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Fish",
+              "Text": "[SA.Legend.Hell_Objective_0_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_legend, quality_iridium"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "2000"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SA.Legend.Mail",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer": "AquariumDonated:Legend",
+        "HasFlag: hostPlayer": "AquariumFishDonated:40",
+        "SpecialOrdersDifficulty": "Hell"
+      }
+    }
+  ]
+}

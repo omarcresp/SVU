@@ -1,0 +1,35 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                //update the transmutation recipies and add more.
+                "Transmute (Fe -> Cu)": "335 1/Home/334 {{IronToCopperOutput}}/false/Mining {{IronToCopperLevel}}",
+                "Transmute (Fe)": "334 {{CopperToIronCost}}/Home/335/false/Mining {{CopperToIronLevel}}",
+                "Transmute (Au -> Fe)": "336 1/Home/335 {{GoldToIronOutput}}/false/Mining {{GoldToIronLevel}}",
+                "Transmute (Au)": "335 {{IronToGoldCost}}/Home/336/false/Mining {{IronToGoldLevel}}",
+                "Transmute (Ir -> Au)": "337 1/Home/336 {{IridiumToGoldOutput}}/false/Mining {{IridiumToGoldLevel}}",
+                "Transmute (Ir)": "336 {{GoldToIridiumCost}}/Home/337/false/Mining {{GoldToIridiumLevel}}",
+                "Transmute (Ra -> Ir)": "910 1/Home/337 {{RadioactiveToIridiumOutput}}/false/Mining {{RadioactiveToIridiumLevel}}",
+                "Transmute (Ra)": "337 {{IridiumToRadioactiveCost}}/Home/910/false/Mining {{IridiumToRadioactiveLevel}}"
+            },
+            "When": {
+                "EnableBaseTransmutationRecipes": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                //update the transmutation recipies and add recipes for prismatic shards to and from iridium bars.
+                "Transmute (Fe -> Cu)": "PrismaticBar 1/Home/337 {{PrismaticToIridiumOutput}}/false/Mining {{PrismaticToIridiumLevel}}",
+                "Transmute (Fe)": "337 {{IridiumToPrismaticCost}}/Home/PrismaticBar/false/Mining {{IridiumToPrismaticLevel}}"
+            },
+            "When": {
+                "HasMod": "iargue.PrismaticToolsContinued",
+                "EnablePrismaticTransmutationRecipes": "true"
+            }
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "Changes": [
+    {
+      "LogName": "Editing Wedding",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "EventScript",
+      ],
+      "Entries": {
+    "AsterPellegrinVMV": "sweet/-1000 -100/farmer 27 63 2 [SpouseFarmerText [EscapedText] [EscapedText spouse 28 63 2]] Lewis 27 64 2 MaddyPellegrinVMV 30 62 3 otherFarmers 29 69 0[SetupContextualWeddingAttendees]/addConversationTopic Lumisteria.MtVapius.WeddingAster 8/changeToTemporaryMap Lumisteria_MtVapius_TemporaryForestWedding/bgColor 0 0 0/ambientLight 0 0 0/[SpouseFarmerText [EscapedText faceDirection [SpouseActor] 2/warp [SpouseActor] 28 63] [EscapedText showFrame spouse 36]]/specificTemporarySprite wedding/viewport 27 64 true/pause 4000/speak Lewis \"[GenderedText [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5367_LumisteriaMtVapiusWeddingAster [DayOfMonth] [Season]]] [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5369_LumisteriaMtVapiusWeddingAster [DayOfMonth] [Season]]]]\"/pause 200/speak AsterPellegrinVMV \"{{i18n: WeddingAster01}}\"/speak Lewis \"[GenderedText [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5367_LumisteriaMtVapiusWeddingAster2 [DayOfMonth] [Season]]] [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5369_LumisteriaMtVapiusWeddingAster2 [DayOfMonth] [Season]]]]\"/faceDirection farmer 1/[SpouseFarmerText [EscapedText faceDirection [SpouseActor] 3] [EscapedText showFrame spouse 37]]/pause 500/faceDirection Lewis 0/pause 2000/speak Lewis \"[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5370]\"/move Lewis 0 1 0/playMusic none/pause 1000/showFrame Lewis 20/speak Lewis \"[GenderedText [SpouseGenderedText [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5371]] [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5373]]] [SpouseGenderedText [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5377]] [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5375]]]]\"/pause 500/speak Lewis \"[LocalizedText Strings\\\\StringsFromCSFiles:Utility.cs.5379]\"/pause 1000/showFrame 101/[SpouseFarmerText [EscapedText showFrame [SpouseActor] 101 true] [EscapedText showFrame spouse 38]]/specificTemporarySprite heart 28 62/playSound dwop/pause 2000/specificTemporarySprite wed/faceDirection farmer 2/[SpouseFarmerText [EscapedText faceDirection [SpouseActor] 2] [EscapedText showFrame spouse 36]]/[ContextualWeddingCelebrations]move Lewis 0 3 3 true/pause 4000/faceDirection farmer 1/[SpouseFarmerText [EscapedText showFrame [SpouseActor] 3 true] [EscapedText showFrame spouse 37]]/globalFade/viewport -1000 -1000/pause 1000/message \"[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5381]\"/pause 500/message \"[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5383]\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueID]/end wedding"
+      }
+    },
+    {
+      "LogName": "Editing Wedding",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "Attendees",
+      ],
+      "Entries": {
+		"CelestineDuboisVMV": {
+		  "Id": "CelestineDuboisVMV",
+		"Condition": "ANY \"PLAYER_HEARTS Any CelestineDuboisVMV 6\" \"PLAYER_NPC_RELATIONSHIP Any MoiraDuboisVMV Married\"",
+		  "Setup": "CelestineDuboisVMV 33 71 0",
+		  //"Celebration": null
+		},
+		"AdelaideRosierVMV": {
+		  "Id": "AdelaideRosierVMV",
+			"Condition": "ANY \"PLAYER_HEARTS Any AdelaideRosierVMV 6\" \"PLAYER_NPC_RELATIONSHIP Any MoiraDuboisVMV Married\"",
+		  "Setup": "AdelaideRosierVMV 34 71 0",
+		  //"Celebration": null
+		},
+		"MaddyPellegrinVMV": {
+		  "Id": "MaddyPellegrinVMV",
+		  "Condition": "ANY \"PLAYER_HEARTS Any MaddyPellegrinVMV 6, !PLAYER_NPC_RELATIONSHIP Any AsterPellegrinVMV Married\" \"PLAYER_NPC_RELATIONSHIP Any AsterPellegrinVMV Married, !PLAYER_NPC_RELATIONSHIP Any AsterPellegrinVMV Married\"",
+		  "Setup": "MaddyPellegrinVMV 35 71 0",
+		  //"Celebration": null
+		},
+
+      }
+    },
+  ]
+}

@@ -1,0 +1,1217 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "breakUp": "Ohh... Got it. Hah... I really don't have any luck with people...$s",
+                "Wed8": "Hi @! I was just thinking about you and your farm.#$e#I was imagining how good it must feel to harvest a big bunch of crops.$h#$e#Wouldn't it be nice to have help, though?",
+                "Sat8": "Farming sounds so fun. I want to try it, someday.$h",
+                "Sun8": "If you ever find any interesting looking driftwood, I could use it.#$e#It would be special that you gave it to me.",
+                "event_sculpt3": null,
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're such a kind friend!$h",
+		"dating_Leah": "I had a feeling you liked spending time with me.",
+		"dating_Leah_memory_oneday": "Please don't feel like you have to spend all your time with me to maintain our friendship... I know you're a busy person!",
+		"FlowerDance_Accept": "You want to dance with me? Yes!$h#$e#I was wondering if you'd ask me.$h",
+            },
+        },
+        {
+	    "Logname": "Leah bouquet reactions",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: Of course I'd like to be closer friends!$h#$e#I might commemorate this moment through art. I could incorporate dried petals from the bouquet... @@ You want us to get to know each other better? I feel the same way.#$e#Promise you'll bear with me if my social skills are a little rusty.$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Leah bouquet reactions, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: Of course I'd like to be closer friends!$h#$e#I might commemorate this moment through art. I could incorporate the wax seal from the envelope... @@ You want us to get to know each other better? I feel the same way.#$e#Promise you'll bear with me if my social skills are a little rusty.$h |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "SpouseStardrop": "I found that fruit growing wild! Can you believe it?$h#$b#I wanted you to have it to show how much I appreciate you.$l#$b#I'm sure you remember that when we met, it hadn't been very long since I left everything I knew to pursue a dream I wasn't sure would work out.$u#$b#My life was in this precarious, transitional state... I guess it was the same for you, back then.$u#$b#Add to that putting my art out into the world, exposing something so personal to others' interpretation and judgment... $s#$b#Of course, it all turned out well. But your support through that time meant a lot to me. *You* mean a lot to me.#$b#What I really want to say is... I love you, @. My life is richer for sharing it with you.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "SpouseStardrop": "I found that fruit growing wild! Can you believe it?$h#$b#I wanted you to have it to show how much I appreciate you.#$b#I'm sure you remember that when we met, it hadn't been very long since I left everything I knew to pursue a dream I wasn't sure would work out.$u#$b#My life was in this precarious, transitional state... I guess it was the same for you, back then.$u#$b#Add to that putting my art out into the world, exposing something so personal to others' interpretation and judgment... $s#$b#Of course, it all turned out well. But your support through that time meant a lot to me. *You* mean a lot to me.#$b#What I really want to say is... I love you, @. My life is richer for sharing it with you.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+//Leah post-ceremony line: generic
+        {
+            "LogName": "Leah terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Friend",
+                "NPC.cs.4518": "Friend",
+                "NPC.cs.4519": "Huckleberry",
+                "NPC.cs.4522": "Huckleberry",
+                "NPC.cs.4523": "Huckleberry",
+                "Event.cs.1736": "$q -1 null#Yes?#$r -1 0 danceAsk#(Ask Leah to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Leah terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Friend",
+                "NPC.cs.4518": "Friend",
+                "NPC.cs.4519": "Huckleberry",
+                "NPC.cs.4522": "Huckleberry",
+                "NPC.cs.4523": "Huckleberry",
+                "Event.cs.1736": "$q -1 null#Yes?#$r -1 0 danceAsk#(Ask Leah to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Leah roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Yes?#$r -1 0 danceAsk#(Ask Leah to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Leah pendant and bracelet proposal acceptance",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Leah_Engaged": "I... Wow... You really want to live together as {{RelationshipLabel}}?#$b#I'd like that! There's something poetic about life as a reclusive artist... but life with you sounds even more fulfilling.$h#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Leah_EngagedRoommate": "I... Wow... You really want to live together as {{RelationshipLabel}}?#$b#I'd like that! There's something poetic about life as a reclusive artist... but life with you sounds even more fulfilling.$h#$b#I need some time to pack up my things. I'll be there in 3 days, okay?",
+            },
+        },
+        {
+            "LogName": "Leah engagement dialogue",	
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Leah0": "I'm a little nervous. But happy.$h",
+                "LeahRoommate0": "I'm a little nervous. But happy.$h",
+                "LeahRoommate1": "I've always dreamed of living on a farm.$h#$e#I'm going to be so happy.",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries":
+            {
+                "MovieInvite_Spouse_Leah": "Oh, a movie? Sure, sounds fun!$h#$e#I'll meet you at the theater.",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Leah": "I think we've both found what we were looking for in this place.#$b#I wouldn't want to be anywhere else, but here with you.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Leah": "I think we've both found what we were looking for in this place.#$b#I wouldn't want to be anywhere else, but here with you.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Hehe, I already said yes!$h @@ I'm genuinely happy to be moving in with you, @. You don't need to bribe me with another pendant. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Are you worried I'll wander back to my old cabin? Well, I'm happy right where I am.$h @@ It's beautiful, but these pendants have more than just aesthetic significance. I don't need a spare. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_1": "Did I ever tell you... when you first moved here, I had a dream that our lives would be intertwined somehow?$l",
+                "Good_3": "Wow, you look full of energy today!$h",
+                "Good_8": "Don't worry about me... I know you've got a lot of responsibilities outside of the house. I'm fine in here by myself!$h",
+                "Neutral_0": "I hope you'll still like me when we're old.",
+                "Bad_0": "...Do you still care about me?$s",
+                "Bad_1": "*sigh*... Maybe we should have waited to entangle our lives like this.$s",
+                "Bad_5": "You used to be so caring... what happened?$s#$e#It feels like I'm not a priority to you anymore.$s",
+                "Bad_7": "You used to make time for me... now it feels like you don't even want to be around me.$s",
+                "Bad_9": "I wonder if I'd be better off back in my little cabin.$s",
+                "summer_9": "Ugh... I was sweating all night in the heat.",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_1": "Did I ever tell you... when you first moved here, I had a dream that our lives would be intertwined somehow?",
+                "Good_3": "Wow, you look full of energy today!$h",
+                "Good_8": "Don't worry about me... I know you've got a lot of responsibilities outside of the house. I'm fine in here by myself!$h",
+                "Neutral_0": "I hope you'll still like me when we're old.",
+                "Bad_0": "...Do you still care about me?$s",
+                "Bad_1": "*sigh*... Maybe we should have waited to entangle our lives like this.$s",
+                "Bad_5": "You used to be so caring... what happened?$s#$e#It feels like I'm not a priority to you anymore.$s",
+                "Bad_7": "You used to make time for me... now it feels like you don't even want to be around me.$s",
+                "Bad_9": "I wonder if I'd be better off back in my little cabin.$s",
+                "summer_9": "Ugh... I was sweating all night in the heat.",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+	    "Logname": "Leah - 'admiring the pendant' lines, love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my pendant... I'll cherish this treasure for the rest of my life.$l",
+                "Indoor_Night_3": "I never thought I'd receive a mermaid's pendant so soon after moving here! I'm happy about it, though.$l",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "Roommate |contains=Leah": "false",
+                "UseLovePortraits": "true",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },	
+        },
+        {
+	    "Logname": "Leah - 'admiring the pendant' lines, no love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my pendant... I'll cherish this treasure for the rest of my life.",
+                "Indoor_Night_3": "I never thought I'd receive a mermaid's pendant so soon after moving here! I'm happy about it, though.",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "Roommate |contains=Leah": "false",
+                "UseLovePortraits": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },	
+        },
+        {
+	    "Logname": "Leah - Bracelet version of 'admiring the pendant' line, love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my bracelet... I'll cherish this treasure for the rest of my life.$l",
+                "Indoor_Night_3": "I never thought I'd receive a friendship bracelet so soon after moving here! I'm happy about it, though.$l",
+            },
+            "When":
+            {
+                "Roommate": "Leah",
+                "UseLovePortraits": "true",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },	
+        },
+        {
+	    "Logname": "Leah - Bracelet version of 'admiring the pendant' line, no love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my bracelet... I'll cherish this treasure for the rest of my life.",
+                "Indoor_Night_3": "I never thought I'd receive a friendship bracelet so soon after moving here! I'm happy about it, though.",
+            },
+            "When":
+            {
+                "Roommate": "Leah",
+                "UseLovePortraits": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },	
+        },
+        {
+	    "Logname": "Leah - ambiguous 'admiring' lines, love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring the gift you gave me when we became {{RelationshipLabel}}... I'll cherish this treasure for the rest of my life.$l",
+                "Indoor_Night_3": "I never thought I'd be living with someone else so soon after moving here! I'm happy about it, though.$l",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "Roommate |contains=Leah": "false",
+                "Spouse |contains=Leah": "false",
+                "UseLovePortraits": "true",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },	
+        },
+        {
+	    "Logname": "Leah - ambiguous 'admiring' lines, no love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring the gift you gave me when we became {{RelationshipLabel}}... I'll cherish this treasure for the rest of my life.",
+                "Indoor_Night_3": "I never thought I'd be living with someone else so soon after moving here! I'm happy about it, though.",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "Roommate |contains=Leah": "false",
+                "Spouse |contains=Leah": "false",
+                "UseLovePortraits": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },	
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Rainy_Night_2": "It's going to be relaxing to fall asleep on a night like this.",
+                "Rainy_Night_Leah": "How was your day today? Muddy?",
+                "Outdoor_4": "Don't overwork yourself, @.#$e#Make sure and take a break every now and then, or get something to eat.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Rainy_Night_2": "It's going to be relaxing to fall asleep on a night like this.",
+                "Rainy_Night_Leah": "How was your day today? Muddy?",
+                "Outdoor_4": "Don't overwork yourself, @.#$e#Make sure and take a break every now and then, or get something to eat.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+	    "Logname": "Leah dialogue, aro yes, ace yes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_4": "I love the natural aromas of the farm.",
+                "spring_1": "I'm glad it's spring. Some of my favorite ingredients only grow wild this time of year.#$e#I'm thinking dandelion-salmonberry salad topped with crumbled goat cheese... Mmm.",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Rainy_Night_Leah": "How was your day today? Muddy?",
+                "Outdoor_Leah": "Wow, this is great! I'm really starting to enjoy life on the farm, @.$h#$e#This is the life I've always dreamed of.",
+                "summer_Leah": "Nothing pairs so well with summer like a nice sweet wine. Want to split one with me later?",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/LeahHouse",
+            "Entries":
+            {
+                "50/f Leah 500/p Leah": "breezy/9 8/farmer -50 -50 0 Leah 3 7 3/skippable/animate Leah false true 100 16 17 18 19 19 19 19 16/pause 100/playSound woodyStep/pause 800/playSound woodyStep/pause 800/playSound woodyStep/pause 800/warp farmer 7 9/playSound woodyStep/playSound doorClose/pause 300/stopAnimation Leah/pause 300/faceDirection Leah 1 true/emote Leah 16/speak Leah \"Oh, hi @! Come in, come in.\"/move farmer 0 -2 3/faceDirection Leah 1/move farmer -2 0 3/pause 500/speak Leah \"I'm just working on this sculpture here.\"/pause 300/speak Leah \"Come here. Watch this.\"/pause 300/move farmer -1 0 3/move farmer 0 -1 0/move farmer -1 0 2/faceDirection Leah 3/pause 500/animate Leah false true 100 16 17 18 19 19 19 19 16/pause 100/playSound woodyStep/pause 800/playSound woodyStep/pause 800/playSound woodyStep/pause 800/playSound woodyStep/pause 600/stopAnimation Leah/showFrame Leah 19/speak Leah \"See that? I'm revealing the essence of the wood.\"/pause 500/showFrame Leah 12/faceDirection Leah 0/speak Leah \"$q -1 null#Once you get past the outer layers, the true nature starts to show...#$r -1 0 event_sculpt1#It's the same with people.#$r -1 0 event_sculpt2#I actually prefer the look of raw, unadultered wood.\"/faceDirection Leah 3/pause 1500/faceDirection Leah 3/speak Leah \"I first visited this valley as a little girl, while on vacation with my parents.#$b#I knew I had to come back some day... This place has great artistic potential!\"/faceDirection Leah 3/pause 500/emote Leah 28/speak Leah \"Although, I have to admit... It's not easy to pay the bills as an artist.$s\"/pause 1000/emote farmer 16/faceDirection Leah 0/question fork1 \"#Why don't you have an art show in town?#Why don't you sell your art on the internet?\"/fork internet/faceDirection Leah 0/speak Leah \"Hmmm... interesting. I guess that could set the wheels in motion to making Pelican Town a true art destination...$7\"/faceDirection Leah 3/pause 700/speak Leah \"But what if no one likes my sculptures? I'd be crushed.$s\"/pause 500/speak Leah \"...I'll have to think about it.$s\"/faceDirection Leah 0/speak Leah \"Well, thanks for stopping by, @.\"/pause 600/move farmer 4 0 2 true/globalFade/viewport -1000 -1000/addMailReceived LeahArtShowSuggestion/end dialogueWarpOut Leah \"An art show for the whole village? That's a bold idea, @.\"",
+                "creepySexualPass": null
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+                "53/e 55/t 1500 1700": "none/-100 -100/farmer 28 57 1 Evelyn 37 58 3 Gus 30 56 2 Pam 31 56 2 Vincent 27 55 2 Jas 26 55 2 George 37 59 3 Leah 32 61 1 Shane 34 61 3 Robin 27 61 1 Demetrius 28 61 3 Emily 30 58 2 Clint 31 59 3 Harvey 34 57 2 Lewis 35 59 3 Marnie 35 58 3 Elliott 31 63 3 Maru 33 57 2 Sebastian 35 62 1 Abigail 35 63 1 Sam 36 61 2 Penny 37 62 3 Pierre 32 65 1 Caroline 33 65 3 Linus 28 64 1 Haley 28 59 1 Alex 28 58 1/specificTemporarySprite leahShow/skippable/animate LeahEx false true 100 4 5/viewport 33 60 true/move farmer 1 0 1/faceDirection Sebastian 2 true/faceDirection Alex 0 true/move farmer 1 0 1/faceDirection Sebastian 1 true/faceDirection Maru 3 true/move farmer 2 0 1/faceDirection Alex 1 true/faceDirection Maru 2 true/move farmer 0 1 2/faceDirection Shane 0 true/faceDirection Emily 2 true/move farmer 0 1 2/faceDirection Shane 3 true/move farmer 0 1 2/faceDirection Emily 0/move Shane 1 0 2/faceDirection Leah 0/speak Leah \"@! You're here!$h#$b#Okay... I guess I'd better introduce my pieces. Wish me luck!$u\"/pause 300/faceDirection Leah 2/pause 800/faceDirection Leah 1/faceDirection Leah 2/faceDirection Leah 3/faceDirection Leah 2/speak Leah \"Umm... Okay everyone!\"/faceDirection Sebastian 3 true/faceDirection Emily 1/faceDirection Demetrius 1 true/faceDirection Elliott 0/faceDirection Pierre 0 true/faceDirection Caroline 0 true/faceDirection Shane 3/faceDirection Sam 3 true/faceDirection Abigail 3/speak Leah \"Thanks for coming to my art show.$l\"/faceDirection Leah 1/speak Leah \"As some of you know, I came to this town because I wanted to draw inspiration from the beautiful surroundings.\"/faceDirection Leah 3/speak Leah \"This place really feels like home now.$h#$b#Okay. I'm going to introduce my sculptures now.\"/playMusic jaunty/move Leah -3 0 0/faceDirection farmer 3 true/faceDirection Marnie 3 true/faceDirection Linus 0 true/faceDirection Emily 3 true/faceDirection Demetrius 0/move Leah 0 -1 0/speak Leah \"I haven't named this one, yet. She started out as an exercise in human anatomy, but I ended up seeing her through to completion.#$b#Her expression is intentionally unclear... is she embarrassed, amused, pained? I'll leave that for you to decide.\"/pause 1500/move Leah 0 1 2/faceDirection Demetrius 2 true/faceDirection Haley 2 true/faceDirection farmer 2/faceDirection Emily 2 true/faceDirection Clint 2 true/pause 500/speak Leah \"This one's called 'Post-Dimensional Nullspace'. It represents the boundary of human imagination.$u#$b#The shape and color came to me vividly when I was in a 'trance state'.\"/pause 1500/move Leah 3 0 2/faceDirection Linus 1 true/faceDirection Demetrius 1 true/move Leah 0 1 1/faceDirection Haley 1/speak Leah \"I've been calling this one 'Egg Heads'. I wanted to create an animatronic humanoid statue to toy with the viewer's ability to properly attribute personhood to a physical entity. \"/pause 1500/move Leah 0 -1 0/pause 300/faceDirection Leah 2/speak Leah \"And the last one is called 'Wood Sculpture 3'. It's a celebration of my favorite sculpting material... wood.\"/faceDirection Leah 3/faceDirection Leah 1/faceDirection Leah 2/speak Leah \"Well, those are my sculptures!$l#$b#Oh! One last thing.\"/faceDirection Leah 0/speak Leah \"I'd like to say thanks to my good friend, @, for giving me the idea for this show and the courage to go through with it. I know that sounds cheesy, but it's true.\"/faceDirection Emily 1/faceDirection Shane 3 true/faceDirection Haley 1/faceDirection Elliott 3/pause 400/speak Lewis \"I'm proud of you, Leah! Events like this really breathe life into our little town!$h\"/pause 100/textAboveHead Gus \"Great stuff!\"/faceDirection Leah 3/speak Demetrius \"I love your art, Leah! 'Post-Dimensional Nullspace' is my favorite.$h\"/textAboveHead Robin \"Great use of wood!\"/speak Penny \"Thanks for doing this!$h\"/faceDirection Leah 1/emote Leah 32/faceDirection Leah 2/speak Leah \"Thanks, everyone!$h\"/faceDirection Leah 0/emote Leah 20/pause 500/speak Lewis \"Now let's start the bidding on these wonderful art pieces... A marvelous addition to your home!$h#$b#Do I hear 5000g for the pink one?\"/jump Demetrius/mail afterArtShow/viewport move 2 0 8000/pause 5000/globalFade/viewport -1000 -1000/end dialogue Leah \"Wow! I'm exhausted.#$b#My show was a real success, wasn't it?$h\"",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "54/f Leah 2500/t 1100 1600/z winter": "50s/-1000 -1000/farmer 87 40 3 Leah 76 40 1/skippable/specificTemporarySprite leahPicnic/viewport 77 40 true/move farmer -10 0 3/speak Leah \"Hi @. I knew you'd be passing through here today.#$b#...So I put together a surprise...$h\"/faceDirection Leah 0/pause 800/speak Leah \"It's a little picnic for us!$h\"/pause 500/faceDirection Leah 1/pause 500/faceDirection Leah 0/speak Leah \"This is a vegetable medley, with my 'special' spice blend.\"/pause 600/move Leah -1 0 0/speak Leah \"...and this is a fresh salad, made from greens that I foraged right here in the forest!$h\"/pause 600/faceDirection Leah 1/move farmer -1 0 3/faceDirection Leah 0/pause 1200/speak Leah \"@, um...$u\"/faceDirection Leah 2/pause 300/faceDirection Leah 1/speak Leah \"I just want to say thank you... for helping me get one step closer to becoming a real artist.\"/pause 400/showFrame Leah 25/pause 10/positionOffset Leah 2 0/pause 10/positionOffset Leah 2 0/pause 10/animate farmer true true 100 101/positionOffset farmer 16 0/positionOffset Leah 2 0/pause 10/positionOffset farmer -2 0/pause 10/positionOffset Leah 2 0/pause 10/positionOffset farmer -2 0/pause 10/positionOffset Leah 2 0/pause 10/positionOffset farmer -2 0/pause 10/positionOffset Leah 2 0/pause 10/positionOffset farmer -2 0/pause 10/positionOffset Leah 2 0/pause 10/positionOffset farmer -2 0/pause 10/positionOffset Leah 2 0/pause 10/positionOffset farmer -2 0/pause 10/positionOffset Leah 2 0/pause 10/positionOffset farmer -2 0/pause 10/positionOffset farmer -2 0/pause 500/pause 1000/stopMusic/message \"DISTANT VOICE: Well, well, well... What have we here?\"/warp LeahEx 74 29/move LeahEx 0 9 2 true/stopAnimation farmer/positionOffset farmer -16 0/faceDirection farmer 0 true/showFrame Leah 4/pause 20/positionOffset Leah -6 0/positionOffset farmer 4 0/pause 20/positionOffset Leah -4 0/positionOffset farmer 4 0/pause 20/positionOffset Leah -4 0/positionOffset farmer 4 0/pause 20/positionOffset Leah -4 0/positionOffset farmer 4 0/faceDirection Leah 0/pause 4000/showFrame LeahEx 4/move Leah -1 0 0/speak Leah \"Kel??$6#$b#What the heck are you doing here?$a\"/fork LeahInternet choseInternet/message \"KEL: Didn't you see me at the art show? I came all the way from Zuzu City to see your sculptures.\"/move LeahEx 0 1 2/message \"KEL: And to get you to come back with me.\"/message \"KEL: I want things to go back to the way they were... I miss you, babe.\"/emote Leah 12/faceDirection Leah 0/speak Leah \"Yuck, don't call me that!$a#$b#You never supported my art before... now that I've had some success you want me back? You make me sick.$a\"/move Leah 0 2 2/showFrame LeahEx 4/message \"KEL: Hey! Come Here!\"/speed farmer 4/move farmer -2 0 0 false/question fork1 \"#Punch Kel in the face.#Try reasoning with Kel.\"/fork noPunch/pause 300/screenFlash .25/animate farmer false false 650 15/positionOffset farmer 0 -8/faceDirection Leah 0 true/playSound clubhit/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/speak Leah \"Oh my God!$6\"/speed Leah 4/move Leah -1 0 0/speed Leah 4/move Leah 0 -4 1/emote Leah 40/pause 1700/speak Leah \"Well, Kel will be fine... but that was pretty violent, @.$u\"/faceDirection Leah 2/speak Leah \"Let's get out of here. I don't think Kel will be bothering us anymore.\"/speed farmer 2/positionOffset farmer 2 0/move farmer -1 0 0/move Leah 0 -8 0 true/move farmer 0 -8 0 true/globalFade/viewport -1000 -1000/pause 1000/speak Leah \"I don’t think that’s how I would have handled that... but thank you for having my back, @. You’re a true friend.\"/playMusic none/pause 2000/end dialogue Leah \"Well, the picnic didn't pan out like I wanted it to.$h\"",
+                "choseInternet": "pause 10/message \"KEL: I found your online art store... weren't you wondering about the 'Mr. K' who kept buying all your sculptures?\"/pause 90/speak Leah \"You're 'Mr. K'? I... I thought it was just a rich guy who truly loved my art.$s\"/move LeahEx 0 1 2/message \"KEL: Heh. Well, you were half right...\"/pause 1000/message \"KEL: Look, Leah. I want you back. I miss you, babe.\"/emote Leah 12/faceDirection Leah 0/speak Leah \"Ew, don't call me that!$a#$b#You never supported my art before... now that I've had some success you want me back? You make me sick.$a\"/move Leah 0 2 2/showFrame LeahEx 4/message \"KEL: Hey! Come Here!\"/speed farmer 4/move farmer -2 0 0 false/question fork1 \"#Punch Kel in the face.#Try reasoning with Kel.\"/fork noPunch/pause 300/screenFlash .25/animate farmer false false 650 15/positionOffset farmer 0 -8/faceDirection Leah 0 true/playSound clubhit/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/speak Leah \"Oh my God!$6\"/speed Leah 4/move Leah -1 0 0/speed Leah 4/move Leah 0 -4 1/emote Leah 40/pause 1700/speak Leah \"Well, Kel will be fine... but that was pretty violent, @.$u\"/faceDirection Leah 2/speak Leah \"Let's get out of here. I don't think Kel will be bothering us anymore.\"/speed farmer 2/positionOffset farmer 2 0/move farmer -1 0 0/move Leah 0 -8 0 true/move farmer 0 -8 0 true/globalFade/viewport -1000 -1000/pause 1000/speak Leah \"I don’t think that’s how I would have handled that... but thank you for having my back, @. You’re a true friend.\"/playMusic none/pause 2000/end dialogue Leah \"Well, the picnic didn't pan out like I wanted it to.$h\"",
+                "noPunch": "pause 10/message \"KEL: I have nothing to say to you. Get out of my way.\"/speed farmer 2/move farmer 1 0 3/move LeahEx 0 2 2/message \"KEL: Seriously, Leah... What are you doing out here with this simple-minded bumpkin?\"/faceDirection farmer 2/showFrame Leah 26/pause 1000/showFrame Leah 27/showFrame 94/playSound clubhit/screenFlash .25/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/stopAnimation farmer/speak Leah \"@ is my dear friend and a better person than you in every respect!$a#$b#Now get out of here and never come back!$a\"/move Leah -1 0 0/move Leah 0 -4 1/speak Leah \"Let's go, @. I don't think Kel will be bothering us anymore.\"/move farmer 0 1 2/faceDirection Leah 2 true/move farmer -2 0 0/move Leah 0 -11 0 true/move farmer 0 -11 0 true/globalFade/viewport -1000 -1000/pause 1000/playMusic none/pause 1000/end dialogue Leah \"Well, the picnic didn't pan out like I wanted it to.$h\"",
+                "3091462/e 3911124/O Leah/w sunny/t 1130 1400/A leahPaint": "breezy/-1000 -1000/farmer 75 40 3 Leah 73 38 3 Marnie 70 39 1/skippable/specificTemporarySprite leahPaintingSetup/animate farmer true true 100 80 80 80 80 81 81 81 81 80 80 80 80 81 81 81 81 81 81 81 81 81 81 81 81 81 81/makeInvisible 68 36 13 7/animate Leah false true 100 48 49 48 49 48 49 48 49 48 48 48 48 48 48 48 48 48 49 48 49 48 48 48 48 48 48/viewport 72 39 true/pause 6000/emote Marnie 28/speak Marnie \"Um... Leah? How much longer will this be?$s#$b#...My knees are quivering, my thighs are whimpering, and I've lost all sensation in my foot.$s\"/shake Marnie 500/pause 1000/shake Marnie 500/speak Leah \"Just keep perfectly still, Marnie... No squirming!$h\"/emote Marnie 28/speak Leah \"Hey, @... what style do you think I should do? I'm up for anything...\"/pause 1000/quickQuestion #Classic country portrait#Colorful, retro pop-art#Minimalist modern(break)speak Leah \"Stick with the classic look, huh? Yeah, I think Marnie will appreciate that.\"\\addWorldState m_painting0(break)speak Leah \"Good idea! That sounds fun... Let me get some more yellow paint on the palette...\"\\addWorldState m_painting1(break)speak Leah \"Hmm... not my usual style, but I'll give it a shot. I'd better switch to acrylic paint for this one...\"\\addWorldState m_painting2/pause 500/speak Leah \"How's yours coming along?\"/quickQuestion #It's a masterpiece of fine art!#I'm trying my best...#It looks like chicken scratch.(break)speak Leah \"Wow, I like your confidence!$h#$b#Who knows? Maybe you'll become the next Lupini!$h#$b#...Can't wait to see it.\"(break)speak Leah \"Hey, that's all I ask. If you keep trying your best you can't help but get better at it!\"(break)speak Leah \"Hey, that's okay! You gotta start somewhere. And you never know, one person's chicken scratch is another person's 'modern art'\"/pause 500/textAboveHead Marnie \"Make me look good!\"/pause 1500/textAboveHead Leah \"Shh!\"/pause 2300/speak Leah \"Now, don't forget the techniques I taught you... broad strokes, hold the brush like so...\"/pause 1000/playSound slimeHit/pause 1000/playSound slimeHit/pause 1000/playSound slimeHit/pause 2000/stopAnimation Leah/showFrame Leah 12/textAboveHead Leah \"There!\"/pause 3000/faceDirection Leah 2 true/playSound coin/specificTemporarySprite leahHoldPainting/pause 1000/textAboveHead Leah \"What do you think?\"/pause 2000/textAboveHead Marnie \"Oooh!\"/emote farmer 56/pause 2000/specificTemporarySprite leahStopHoldingPainting/pause 1000/speak Marnie \"I love it! That's going up in my room...$h\"/pause 500/speak Leah \"Now, let's see what you've got, @.\"/specificTemporarySprite removeSprite 444/stopAnimation farmer/faceDirection farmer 3/move Leah 4 0 2/move Leah 0 1 3/pause 100/showFrame Leah 24/pause 1000/showFrame Leah 12/emote Leah 40/emote Leah 28/speak Leah \"Erm... It's... interesting!$6#$b#It's, uh... a different kind of approach, for sure...$6\"/pause 500/emote Marnie 8/move Marnie 0 2 1/textAboveHead Marnie \"Let me see\"/move Marnie 7 0 0/move Marnie 0 -1 3/pause 500/emote Marnie 8/pause 1000/faceDirection farmer 2 true/playSound coin/showFrame farmer 57/specificTemporarySprite farmerHoldPainting/pause 500/showFrame Marnie 16/pause 50/jump Marnie/shake Marnie 3000/faceDirection Leah 2/pause 2000/speak Leah \"Marnie, you can hang both of these in your room!$h\"/jump Marnie/pause 1500/speak Marnie \"Em... @, why don't you go ahead and keep yours? It might be nice to, uh... own your first-ever painting... ya know?$s\"/pause 1000/awardFestivalPrize marniePainting/pause 2000/fade/viewport -1000 -1000/pause 500/end dialogue Leah \"Um... @? Where were you planning to hang that painting you did?$3\""
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Leah",
+            "FromFile": "assets/Sprites/LeahDressRecolor.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 305,
+                "Width": 45,
+                "Height": 15
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnableSpriteEdits": true,
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.LeahElliott": "false",
+            },
+        },
+        {
+	    "Logname": "Leah no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah",
+            "FromFile": "assets/Portraits/LeahNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.LeahElliott": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname": "Leah no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah_Winter",
+            "FromFile": "assets/Portraits/LeahNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.LeahElliott": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Leah no blush portrait edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah",
+            "FromFile": "assets/Portraits/LeahNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+	    "Logname": "Leah no blush portrait edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah_Winter",
+            "FromFile": "assets/Portraits/LeahNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        //COMPATIBILITY: PLATONIC RELATIONSHIPS
+        //This section prevents the dating-flag-required version of the vanilla 10 heart event added by Platonic Relationships from triggering. Thanks to Cherry for providing the event codes!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "54/f Leah 2500/D Leah/t 1100 1600/z winter": null,
+            },
+            "When":
+            {
+                "HasMod |contains=Cherry.PlatonicRelationships": "true"
+            },
+        },
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "Mon8": "Hi @! I was just thinking about you and your farm.#$e#I was imagining how good it must feel to harvest a big bunch of crops.$h#$e#Wouldn't it be nice to have help, though?",
+                "Tue10": "You don't think any less of me because I don't make a lot of money, do you?$s#$e#In the city, it sometimes felt like that was all anyone cared about. Sometimes I just need a little reassurance.",
+                "Wed10": "Haha, yep. Same hairstyle today as always.#$e#You know you like it.$h",
+                "Thu10": "Oh, @! Hi! Did your morning chores go okay?#$e#I hope I can help you sometime.$h",
+                "Fri8": "If you ever find any interesting looking driftwood, I could use it.#$e#It would be special that you gave it to me.",
+                "Sat10": "Hey friend.$l#$e#Wanna come visit me at the pond tomorrow in the late afternoon? I'll be there if it's not raining.#$e#Or you can just find me whenever.",
+                "Sun10": "Hey, @. I was just thinking about you.$l#$e#So, tell me about your week.$h",
+                "summer_Thu10": "Why yes, I do like long walks on the beach. How perceptive of you to ask!$h",
+                "summer_Sat10": "Hey, @. You're just the one who was missing from my day.$h#$e#C'mere, I need a hug.",
+                "summer_Sun10": "Oh, @! Hi! Did your morning chores go okay?#$e#I hope I can help you sometime.",
+                "fall_Mon10": "I was never crazy about starchy foods, but all Kel ever wanted to eat was 'breakfast for dinner' and I'd be the one to cook.$s#$b#I got so sick of those foods after a while.$s#$e#Sorry, I don't want to dump this on you. Let's change the subject.",
+                "fall_Sun10": "Hey, @. I was just thinking about you.$l#$e#So, tell me about your week.$h",
+                "winter_Tue8": "Farming sounds so fun. I want to try it, someday.$h",
+                "winter_Tue10": "Hey, I'm freezing. Give me a hug?$h",
+                "winter_Thu10": "Snow on the ground outside, someone I love by my side... Yeah, this is pretty nice.$l#$e#I hope that's not presumptuous of me. I know not everyone uses that word with friends, but it's how I feel.",
+                "winter_Fri10": "Hey. Whaddaya say we get a little tipsy together this evening?$h#$e#I do want to be asleep by around midnight, though.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "Mon8": "Hi @! I was just thinking about you and your farm.#$e#I was imagining how good it must feel to harvest a big bunch of crops.$h#$e#Wouldn't it be nice to have help, though?",
+                "Tue10": "You don't think any less of me because I don't make a lot of money, do you?$s#$e#In the city, it sometimes felt like that was all anyone cared about. Sometimes I just need a little reassurance.",
+                "Wed10": "Haha, yep. Same hairstyle today as always.#$e#You know you like it.$h",
+                "Thu10": "Oh, @! Hi! Did your morning chores go okay?#$e#I hope I can help you sometime.$h",
+                "Fri8": "If you ever find any interesting looking driftwood, I could use it.#$e#It would be special that you gave it to me.",
+                "Sat10": "Hey friend.$l#$e#Wanna come visit me at the pond tomorrow in the late afternoon? I'll be there if it's not raining.#$e#Or you can just find me whenever.",
+                "Sun10": "Hey, @. I was just thinking about you.#$e#So, tell me about your week.$h",
+                "summer_Thu10": "Why yes, I do like long walks on the beach. How perceptive of you to ask!$h",
+                "summer_Sat10": "Hey, @. You're just the one who was missing from my day.$h#$e#C'mere, I need a hug.",
+                "summer_Sun10": "Oh, @! Hi! Did your morning chores go okay?#$e#I hope I can help you sometime.",
+                "fall_Mon10": "I was never crazy about starchy foods, but all Kel ever wanted to eat was 'breakfast for dinner' and I'd be the one to cook.$s#$b#I got so sick of those foods after a while.$s#$e#Sorry, I don't want to dump this on you. Let's change the subject.",
+                "fall_Sun10": "Hey, @. I was just thinking about you.#$e#So, tell me about your week.$h",
+                "winter_Tue8": "Farming sounds so fun. I want to try it, someday.$h",
+                "winter_Tue10": "Hey, I'm freezing. Give me a hug?$h",
+                "winter_Thu10": "Snow on the ground outside, someone I love by my side... Yeah, this is pretty nice.#$e#I hope that's not presumptuous of me. I know not everyone uses that word with friends, but it's how I feel.$u",
+                "winter_Fri10": "Hey. Whaddaya say we get a little tipsy together this evening?$h#$e#I do want to be asleep by around midnight, though.",
+                "summer_Sun8": "Question: What's better than a delicious fruit salad?#$b#Two fruit salads, with someone to share it with! [610]$h#$e#No, I insist. Eat up!$h",
+                "fall_Tue10": "I usually try to keep myself out of my art, and let it just exist for the sake of its own beauty, rather than myself.#$e#Sometimes, though, I can't help it. That sculpture I gave you would be one example.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Rainy_Night_2": "#$c .5#It's going to be relaxing to fall asleep on a night like this...#Welcome home, @. Come here and give me a hug.$l",
+                "Rainy_Night_Leah": "#$c .5#How was your day today? Muddy?#An old friend from the city commissioned me to do a painting for her. I almost finished it today.",
+                "Outdoor_4": "Don't overwork yourself, @.#$e#$c .5#It's not as if we're starving, so there's no rush, right?#Make sure and take a break every now and then, or get something to eat.$h",
+                "summer_8": null,
+                "winter_16": "Sometimes, it's tough to sell a piece I feel really proud of.$s#$e#I mean, if we're good on money, maybe I'll just... keep some of them?",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Rainy_Night_2": "#$c .5#It's going to be relaxing to fall asleep on a night like this...#Welcome home, @. Come here and give me a hug.",
+                "Rainy_Night_Leah": "#$c .5#How was your day today? Muddy?#An old friend from the city commissioned me to do a painting for her. I almost finished it today.",
+                "Outdoor_4": "Don't overwork yourself, @.#$e#$c .5#It's not as if we're starving, so there's no rush, right?#Make sure and take a break every now and then, or get something to eat.$h",
+                "summer_8": null,
+                "winter_16": "Sometimes, it's tough to sell a piece I feel really proud of.$s#$e#I mean, if we're good on money, maybe I'll just... keep some of them?",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+	    "Logname": "Leah - CFDE 'admiring the pendant' lines, love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my pendant... I'll cherish this treasure for the rest of my life.$l",
+                "Indoor_Night_3": "#$c .5#I never thought I'd receive a mermaid's pendant so soon after moving here! I'm happy about it, though.#Did you make any good memories today?",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "Roommate |contains=Leah": "false",
+                "UseLovePortraits": "true",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },	
+        },
+        {
+	    "Logname": "Leah - CFDE 'admiring the pendant' lines, no love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my pendant... I'll cherish this treasure for the rest of my life.",
+                "Indoor_Night_3": "#$c .5#I never thought I'd receive a mermaid's pendant so soon after moving here! I'm happy about it, though.#Did you make any good memories today?",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "Roommate |contains=Leah": "false",
+                "UseLovePortraits": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },	
+        },
+        {
+	    "Logname": "Leah - CFDE 'admiring the bracelet' lines, love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my bracelet... I'll cherish this treasure for the rest of my life.$l",
+                "Indoor_Night_3": "#$c .5#I never thought I'd receive a friendship bracelet so soon after moving here! I'm happy about it, though.#Did you make any good memories today?",
+            },
+            "When":
+            {
+                "Roommate": "Leah",
+                "UseLovePortraits": "true",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },	
+        },
+        {
+	    "Logname": "Leah - CFDE 'admiring the bracelet' lines, no love portraits",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my bracelet... I'll cherish this treasure for the rest of my life.",
+                "Indoor_Night_3": "#$c .5#I never thought I'd receive a friendship bracelet so soon after moving here! I'm happy about it, though.#Did you make any good memories today?",
+            },
+            "When":
+            {
+                "Roommate": "Leah",
+                "UseLovePortraits": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },	
+        },
+        {
+	    "Logname": "Leah dialogue, aro yes, ace yes, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueLeah",
+            "Entries":
+            {
+                "Rainy_Night_4": "#$c .5#This is a good night to get under the covers and stay warm.#I missed you today. I'm glad you're home.",
+                "Indoor_Night_0": "#$c .5#Something about this time of night makes me thirsty.#Got some time to spend with me tonight? I've been missing you.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Leah
+	        "LogName": "KO Mines- Leah love portrait true",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Leah 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Leah \"Welcome back, @. Can you stand?$3\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Leah \"I was just cleaning the house when my most recent wooden sculpture suddenly cracked.$3#$b#If that wasn't a bad omen, I don't know what else it could've been. I got worried and came to find you.$2\"/pause 1000/speak Marlon \"Leah came to get me as soon as possible. I ventured into the mines to find you as requested.#$b#She was quite worried about you. You're blessed to have ended up sharing your life with someone so compassionate.\"/emote Leah 16/pause 500/speak Leah \"Oh! Thanks... You don't have to make me feel better about staying behind. I just did what I had to do for my best friend.$4\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I observed. You did well to fetch me.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Leah \"So... Are you heading back home, @? I know you're tough, but I think you've earned your rest for today.#$b#If you want, you can even tell me what happened down there. It might take a bit of the lingering stress off both of us.$3#$b#And... who knows! I might be tempted to paint a scene of your epic battle in due time!$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Leah \"Hey, welcome back! Good timing. I just finished adding filler to the sculpted piece that cracked earlier. It's not ideal, but it'll do.$c 0.7#I guess I do owe it, though, for prompting me to go to you. Fate really works in mysterious ways sometimes.$h#Now that I'm done with that, let's have a snack! It'll boost your energy after such a long day.[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Leah",
+                	"UseLovePortraits": true,
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Mine death with Leah
+	        "LogName": "KO Mines- Leah love portrait false",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Leah 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Leah \"Welcome back, @. Can you stand?$3\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Leah \"I was just cleaning the house when my most recent wooden sculpture suddenly cracked.$3#$b#If that wasn't a bad omen, I don't know what else it could've been. I got worried and came to find you.$2\"/pause 1000/speak Marlon \"Leah came to get me as soon as possible. I ventured into the mines to find you as requested.#$b#She was quite worried about you. You're blessed to have ended up sharing your life with someone so compassionate.\"/emote Leah 16/pause 500/speak Leah \"Oh! Thanks... You don't have to make me feel better about staying behind. I just did what I had to do for my best friend.\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I observed. You did well to fetch me.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Leah \"So... Are you heading back home, @? I know you're tough, but I think you've earned your rest for today.#$b#If you want, you can even tell me what happened down there. It might take a bit of the lingering stress off both of us.$3#$b#And... who knows! I might be tempted to paint a scene of your epic battle in due time!$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Leah \"Hey, welcome back! Good timing. I just finished adding filler to the sculpted piece that cracked earlier. It's not ideal, but it'll do.$c 0.7#I guess I do owe it, though, for prompting me to go to you. Fate really works in mysterious ways sometimes.$h#Now that I'm done with that, let's have a snack! It'll boost your energy after such a long day.[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Leah",
+                	"UseLovePortraits": true,
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Hospital Death- Leah
+            "LogName": "Player 'Killed'- Leah",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Leah 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Leah 5/move Leah 0 3 2/textAboveHead Leah \"{0}!\"/emote farmer 16/move Leah -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Leah 0 1 3/speak Leah \"{{TermofEndearment}}, are you okay? I dropped everything to get here when I heard you were hurt.$3\"/emote farmer 60/pause 500/speak Leah \"Well... You're a little chipped here and there, but it's nothing you won't pull through... Right?$2\"/emote Leah 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Leah 3/speak Leah \"What a relief that you're safe... Please be more careful next time, alright?#$b#You're my main source of inspiration and the driving force behind my art.$2#$b#An artist is nothing without a muse. If I lose you, I lose a piece of me, too.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Leah \"Would you like to lie down for a little while? At the very least, you should eat something to get your strength back.$2#$c 0.7#Whatever you decide to do, just remember what I said earlier. You mean the world to me, @.$2#I made you something that's good for your health. You should have a few bites before you go out again. [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Leah",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //only change is not triggering if you have a roommate
+            "LogName": "Hospital death - Leah Ex-Partner",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Leah 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.#$b#...And you should think of your own wellbeing, too.$2\"/pause 500/speak Leah \"I won't take up much time, I promise. These days, I don't have much to say to @ anyway.$3\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Leah 0 4 3/emote farmer 16/faceDirection Leah 3/pause 1000/speak Leah \"So. It's good to see you up and out of bed already.$3#$b#I guess I should've known that you'd shrug something like this right off.$3#$b#I came to sit with you after your surgery because I figured that no one deserves to wake up by themselves after something so scary. That's all.$2\"/emote farmer 16/pause 1000/speak Leah \"I'm moving on, @, but that doesn't mean I'd ever wish you harm. You nearly died, and I couldn't just sit back and do nothing.$2#$b#And whether or not you actually wanted me to come... Well, that's something I don't ever want to find out.$2#$b#... Don't tell me. I don't know which answer I would hate more. Bye, @.$2\"/pause 500/move Leah 0 -4 0/move Leah -8 0 0/move Leah 0 -3 0/warp Leah -100 -100/emote farmer 28/hospitaldeath/end dialogue Leah \"Just because I came to make sure you were alright, it doesn't mean I want to reconnect with you.$2#$b#I'm... better off without you, @. Goodbye.$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Leah": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+		"Relationship:Maru |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+     {       //Island death before Leo - Leah
+	        "LogName": "Island Death Leah",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Leah \"{{TermofEndearment}}, welcome home! Did you-#$b#Ah! @, what happened to your face? And your clothes? You smell like a campfire!$8#$b#I... Sorry, that was just a shock. Do you want to go shower off the soot? Maybe take care of those burns, too?$3#$b#Self-expression is good and all, but I... don't think the scorched look is doing you any favors.\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Leah",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     }, 
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo, Leah",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Leah \"{{TermofEndearment}}, welcome home! Did you-#$b#Ah! @, what happened to your face? And your clothes? You smell like a campfire!$8#$b#I... Sorry, that was just a shock. Do you want to go shower off the soot? Maybe take care of those burns, too?$3#$b#Self-expression is good and all, but I... don't think the scorched look is doing you any favors.\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Leah",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Leah",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Leah \"{{TermofEndearment}}, welcome home! Did you-#$b#Ah! @, what happened to your face? And your clothes? You smell like a campfire!$8#$b#I... Sorry, that was just a shock. Do you want to go shower off the soot? Maybe take care of those burns, too?$3#$b#Self-expression is good and all, but I... don't think the scorched look is doing you any favors.\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Leah",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueLeah",
+		"Entries": {	
+			"spring_16": "I have to head down to Harvey's today for my yearly checkup. I'll be thinking of you, {{Lowercase:{{TermofEndearment}}}}."
+		},
+            	"When": {
+             	  	 "TermofEndearment |contains=@": "false",
+              	 	 "TermofEndearment |contains=BFF": "false",
+               		 "HasMod |contains=iss.immersivespouses": "true"
+            }
+	},
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueLeah",
+		"Entries": {	
+			"spring_16": "I have to head down to Harvey's today for my yearly checkup. I'll be thinking of you, {{TermofEndearment}}."
+		},
+            	"When": {
+              		"TermofEndearment": "@, BFF",
+               		 "HasMod |contains=iss.immersivespouses": "true"
+            }
+	},
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leah",
+            "Entries": {
+		"marriage_seedshop": "Hmm, what to get, what to get..#$b#Oh, hi @! You know your stuff, do these crops look any good?$h",
+		"marriage_r": "We should take the time to appreciate the things we have before it's too late. I'll start first.#$b#Nature...$n#$b#My best friend...$l",
+		"marriage_r2": "Let's just enjoy the sunset for a moment, @.#$b#I'm so happy to be here with you.$l",
+		"marriage_r3": "Hi, @. I've had a fulfilling day. How about you?",
+		"marriage_saloonm": "It's nice to relax every once in a while, don't you think?#$b#...$s#$b#If it weren't for you, I would still be sitting at this table alone. Thank you.$l#$b#Sorry, I get all emotional when I'm drinking.$6",
+		"marriage_drawf": "The last time I was here that forage across from us wasn't there.#$b#That's why I love painting nature, it never ends up being the same.$h#$b#Although there is one part of my life I don't mind staying the same forever.$l",
+		"marriage_drawt3": "Hi, @! Be honest, what do you think of this drawing?#$b#Thanks!$h",
+            },
+            "When": {
+                "UseLovePortraits": "true",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leah",
+            "Entries": {
+		"marriage_seedshop": "Hmm, what to get, what to get..#$b#Oh, hi @! You know your stuff, do these crops look any good?$h",
+		"marriage_r": "We should take the time to appreciate the things we have before it's too late. I'll start first.#$b#Nature...$n#$b#My best friend...",
+		"marriage_r2": "Let's just enjoy the sunset for a moment, @.#$b#I'm so happy to be here with you.",
+		"marriage_r3": "Hi, @. I've had a fulfilling day. How about you?",
+		"marriage_saloonm": "It's nice to relax every once in a while, don't you think?#$b#...$s#$b#If it weren't for you, I would still be sitting at this table alone. Thank you.$u#$b#Sorry, I get all emotional when I'm drinking.$6",
+		"marriage_drawf": "The last time I was here that forage across from us wasn't there.#$b#That's why I love painting nature, it never ends up being the same.$h#$b#Although there is one part of my life I don't mind staying the same forever.",
+		"marriage_drawt3": "Hi, @! Be honest, what do you think of this drawing?#$b#Thanks!$h",
+            },
+            "When": {
+                "UseLovePortraits": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leah",
+            "Entries": {
+		"marriage_r4": "I was just admiring my amulet... What was the story of how you got it again?",
+            },
+            "When": {
+                "Relationship:Leah": "Married",
+                "Roommate |contains=Leah": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leah",
+            "Entries": {
+		"marriage_r4": "I was just admiring my bracelet... What was the story of how you made it again?",
+            },
+            "When": {
+                "Roommate": "Leah",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leah",
+            "Entries": {
+		"marriage_r4": "I was just admiring the gift you gave me to ask me to move in... What was the story of how you got it again?",
+            },
+            "When": {
+                "Relationship:Leah": "Married",
+                "Roommate |contains=Leah": "false",
+                "Spouse |contains=Leah": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leah",
+            "Entries": {
+		"marriage_saloonm2": "You don't have to work so hard at every hour, {{Lowercase:{{TermofEndearment}}}}. You deserve time to cool down.",
+		"marriage_doctormarriage": "Hey, {{Lowercase:{{TermofEndearment}}}}. Don't worry about me I'll be fine.",
+            },
+            "When": {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leah",
+            "Entries": {
+		"marriage_saloonm2": "You don't have to work so hard at every hour, {{TermofEndearment}}. You deserve time to cool down.",
+		"marriage_doctormarriage": "Hey, {{TermofEndearment}}. Don't worry about me I'll be fine.",
+            },
+            "When": {
+              	"TermofEndearment": "@, BFF",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname": "Leah PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "summer_Tue8_inlaw_Leah":"Oh, hey.$0#$e#How's life with Leah coming along?$1",
+            "winter_Mon10_inlaw_Leah":"Oh, hey.$0#$e#How's life with Leah coming along?$1",
+            "summer_Tue8_roommate_Leah":"Oh, hey.$0#$e#How's life with Leah coming along?$1",
+            "winter_Mon10_roommate_Leah":"Oh, hey.$0#$e#How's life with Leah coming along?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Elliott",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Elliott",
+	"Entries": {
+            "summer_Thu8_inlaw_Leah":"Leah was my first friend when I arrived here.$0#$b#I'm delighted to see her so happy as your {{PlatonicSocialMenuLabel}}.$1",
+            "winter_Sun8_inlaw_Leah":"Leah was my first friend when I arrived here.$0#$b#I'm delighted to see her so happy as your {{PlatonicSocialMenuLabel}}.$1",
+            "summer_Thu8_roommate_Leah":"Leah was my first friend when I arrived here.$0#$b#I'm delighted to see her so happy as your {{PlatonicSocialMenuLabel}}.$1",
+            "winter_Sun8_roommate_Leah":"Leah was my first friend when I arrived here.$0#$b#I'm delighted to see her so happy as your {{PlatonicSocialMenuLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Leah": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Leah make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Leah": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Leah will have any problems with that.$1",
+            "fall_Fri8_inlaw_Leah": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Leah make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Leah": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Leah will have any problems with that.$1",
+            "spring_Tue8_roommate_Leah": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Leah make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Leah": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Leah will have any problems with that.$1",
+            "fall_Fri8_roommate_Leah": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Leah make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Leah": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Leah will have any problems with that.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sam",
+	"Entries": {
+            "summer_Mon8_inlaw_Leah":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Leah":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "summer_Mon8_roommate_Leah":"Hey, @. How's life with Leah?$0#$b#You should get her to learn an instrument so I can come over and jam with you two.$1",
+            "fall_Sat8_roommate_Leah":"Hey, @. How's life with Leah?$0#$b#You should get her to learn an instrument so I can come over and jam with you two.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Thu8_inlaw_Leah":"Leah has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_inlaw_Leah":"I clearly see you and Leah were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_inlaw_Leah":"Leah has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_inlaw_Leah":"I clearly see you and Leah were made to be {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Leah":"Leah has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_roommate_Leah":"I clearly see you and Leah were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_roommate_Leah":"Leah has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_roommate_Leah":"I clearly see you and Leah were made to be {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Haley",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Haley",
+	"Entries": {
+            "summer_Sat8_inlaw_Leah":"I'm so happy for you and Leah.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_inlaw_Leah":"I'm so happy for you and Leah.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "summer_Sat8_roommate_Leah":"I'm so happy for you and Leah.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_roommate_Leah":"I'm so happy for you and Leah.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },    
+{
+	"Logname": "Leah PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Leah":"Hello, @.$0#$e#You and Leah are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Leah":"Hello, @.$0#$e#You and Leah are such cute {{RelationshipLabel}}.$1",
+            "spring_Mon8_roommate_Leah":"Hello, @.$0#$e#You and Leah are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Leah":"Hello, @.$0#$e#You and Leah are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Leah":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Leah as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Leah":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Leah as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Leah":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Leah as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Leah":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Leah as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Leah":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Leah will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Leah":"A true lifelong friendship, like you have with Leah, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Leah":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Leah will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Leah":"A true lifelong friendship, like you have with Leah, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Leah":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Leah will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Leah":"A true lifelong friendship, like you have with Leah, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Leah":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Leah will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Leah":"A true lifelong friendship, like you have with Leah, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{	
+	"Logname": "Leah PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Leah":"If you and Leah want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Leah":"If you and Leah want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Leah":"If you and Leah want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Leah":"If you and Leah want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Leah":"If you and Leah want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Leah":"If you and Leah want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Leah":"If you and Leah want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Leah":"If you and Leah want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Leah":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Leah":"So are you and Ms. Leah like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Leah":"Hello, Farmer @.$0#$b#Why can't you and Ms. Leah celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Leah":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Leah":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Leah":"So are you and Ms. Leah like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Leah":"Hello, Farmer @.$0#$b#Don't you think you and Ms. Leah should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Leah":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Lewis",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Leah":"There aren't many young {{RelationshipLabel}} like you and Leah here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Leah":"There aren't many young {{RelationshipLabel}} like you and Leah here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Leah":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Leah":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Leah":"There aren't many young {{RelationshipLabel}} like you and Leah here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Leah":"There aren't many young {{RelationshipLabel}} like you and Leah here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Leah":"I know you and Leah chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Leah":"I know you and Leah chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Leah":"Hello, @.$0#$e#I wish you and Leah a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Leah":"May Yoba grant you and Leah a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Leah":"Hello, @.$0#$e#I wish you and Leah a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Leah":"May Yoba grant you and Leah a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Leah":"Hello, @.$0#$e#I wish you and Leah a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Leah":"May Yoba grant you and Leah a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Leah":"Hello, @.$0#$e#I wish you and Leah a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Leah":"May Yoba grant you and Leah a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Leah PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Leah":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Leah":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Leah":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Leah":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },  
+{
+	"Logname": "Leah PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Leah":"You and Leah remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Leah":"You and Leah remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Leah":"You and Leah remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Leah":"You and Leah remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       }, 
+{
+	"Logname": "Leah PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Leah":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Leah.$1",
+            "summer_Wed10_inlaw_Leah":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_inlaw_Leah":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Leah.$1",
+            "winter_Sun10_inlaw_Leah":"It's so cool how you're {{RelationshipLabel}} with Ms. Leah.$1#$e#I never thought that would have happened!$0",
+            "spring_Tue10_roommate_Leah":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Leah.$1",
+            "summer_Wed10_roommate_Leah":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_roommate_Leah":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Leah.$1",
+            "winter_Sun10_roommate_Leah":"It's so cool how you're {{RelationshipLabel}} with Ms. Leah.$1#$e#I never thought that would have happened!$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

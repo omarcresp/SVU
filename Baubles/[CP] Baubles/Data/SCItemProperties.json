@@ -1,0 +1,108 @@
+{
+  "Changes": 
+    [	
+	{
+	  "Action": "EditData",
+	  "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+	  "Entries": 
+	    {		
+		"appleseed.BCP.JunimoShaker":
+		  {
+		    "CategoryTextOverride": "{{i18n:appleseed.BCP.SCCurioCategory}}",
+		    "CategoryColorOverride": { "R": 112, "G": 10, "B": 195, "A": 255 },
+		    "UseForTriggerAction": "True"
+		  },
+		"appleseed.BCP.MusicBox":
+		  {
+		    "CategoryTextOverride": "{{i18n:appleseed.BCP.SCCurioCategory}}",
+		    "CategoryColorOverride": { "R": 112, "G": 10, "B": 195, "A": 255 },
+		    "UseForTriggerAction": "True"
+		  },
+		"appleseed.BCP.StrangePuzzle":
+		  {
+		    "CategoryTextOverride": "{{i18n:appleseed.BCP.SCCurioCategory}}",
+		    "CategoryColorOverride": { "R": 112, "G": 10, "B": 195, "A": 255 },
+		    "UseForTriggerAction": "True"
+		  },
+		"appleseed.BCP.WindupHare":
+		  {
+		    "CategoryTextOverride": "{{i18n:appleseed.BCP.SCCurioCategory}}",
+		    "CategoryColorOverride": { "R": 112, "G": 10, "B": 195, "A": 255 },
+		    "UseForTriggerAction": "True"
+		  },
+		"appleseed.BCP.CuckooClock":
+		  {
+		    "CategoryTextOverride": "{{i18n:appleseed.BCP.SCCurioCategory}}",
+		    "CategoryColorOverride": { "R": 112, "G": 10, "B": 195, "A": 255 },
+		    "UseForTriggerAction": "True"
+		  }
+	    }
+	
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "Entries": 
+	    {
+		"appleseed.BCP.JunimoShakeSound":
+		  {
+			"Id": "appleseed.BCP.JunimoShakeSound",
+			"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+			"Condition": "ITEM_ID Input appleseed.BCP.JunimoShaker",
+			"Actions":
+			  [
+				"spacechase0.SpaceCore_PlaySound cancel false",
+				"spacechase0.SpaceCore_PlaySound junimoMeep1 false"
+			  ],
+			"MarkActionApplied": false
+		  },
+		"appleseed.BCP.MusicBoxSound":
+		  {
+			"Id": "appleseed.BCP.MusicBoxSound",
+			"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+			"Condition": "ITEM_ID Input appleseed.BCP.MusicBox",
+			"Actions":
+			  [
+				"spacechase0.SpaceCore_PlaySound toyPiano false"
+			  ],
+			"MarkActionApplied": false
+		  },
+		"appleseed.BCP.StrangePuzzleSound":
+		  {
+			"Id": "appleseed.BCP.StrangePuzzleSound",
+			"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+			"Condition": "ITEM_ID Input appleseed.BCP.StrangePuzzle",
+			"Actions":
+			  [
+				"spacechase0.SpaceCore_PlaySound woodWhack false",
+				"spacechase0.SpaceCore_PlaySound clank false"
+			  ],
+			"MarkActionApplied": false
+		  },
+		"appleseed.BCP.WindupHareSound":
+		  {
+			"Id": "appleseed.BCP.WindupHareSound",
+			"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+			"Condition": "ITEM_ID Input appleseed.BCP.WindupHare",
+			"Actions":
+			  [
+				"spacechase0.SpaceCore_PlaySound rabbit false",
+				"spacechase0.SpaceCore_PlaySound rabbit false"
+			  ],
+			"MarkActionApplied": false
+		  },
+		"appleseed.BCP.CuckooClockSound":
+		  {
+			"Id": "appleseed.BCP.CuckooClockSound",
+			"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+			"Condition": "ITEM_ID Input appleseed.BCP.CuckooClock",
+			"Actions":
+			  [
+				"spacechase0.SpaceCore_PlaySound appleseed.BCP.CuckooClockChime false"
+			  ],
+			"MarkActionApplied": false
+		  }
+	    }
+	}
+    ]
+}

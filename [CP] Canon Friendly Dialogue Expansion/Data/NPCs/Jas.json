@@ -1,0 +1,101 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Jas_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jas",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)221": "{{i18n: CFE_Jas_PinkCake}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Jas}}' = 'true' OR ('{{CFE_Jas}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Jas_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jas",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Jas_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Jas_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Jas_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Jas_PrismaticShard}}",
+        "AcceptGift_(O)595": "{{i18n: CFE_Jas_FairyRose{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+        "AcceptGift_(O)604": "{{i18n: CFE_Jas_PlumPudding}}"
+      },
+      "When": { "Query: '{{CFE_Jas}}' = 'true' OR ('{{CFE_Jas}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    /*{
+      "LogName": "CFE_Jas_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        //no rainy dialogue currently
+      }
+          "When": { "Query: '{{CFE_Jas}}' = 'true' OR ('{{CFE_Jas}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+      }, */
+    {
+      "LogName": "CFE_Jas_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jas",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+        "winter_28_1": "{{i18n: CFE_Jas_winter28{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+        "winter_28_2": "{{i18n: CFE_Jas_winter28{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon4": "{{i18n: CFE_Jas_summerMon4}}",
+        "summer_Tue4": "{{i18n: CFE_Jas_summerTue4}}",
+        "summer_Thu10": "{{i18n: CFE_Jas_summerThu10}}",
+        "summer_Sat10": "{{i18n: CFE_Jas_summerSat10}}",
+
+        "fall_Wed4": "{{i18n: CFE_Jas_fallWed4}}",
+        "fall_Thu10": "{{i18n: CFE_Jas_fallThu10}}",
+        "fall_Thu4": "{{i18n: CFE_Jas_fallThu4}}",
+        "fall_Fri10": "{{i18n: CFE_Jas_fallFri10}}",
+        "fall_Sat10": "{{i18n: CFE_Jas_fallSat10}}",
+        "fall_Sun10": "{{i18n: CFE_Jas_fallSun10}}",
+
+        "winter_Mon10": "{{i18n: CFE_Jas_winterMon10}}",
+        "winter_Wed10": "{{i18n: CFE_Jas_winterWed10}}",
+        "winter_Fri8": "{{i18n: CFE_Jas_winterFri8}}",
+        "winter_Sat6": "{{i18n: CFE_Jas_winterSat6}}",
+        "winter_Sun8": "{{i18n: CFE_Jas_winterSun8}}",
+
+        "Mon10": "{{i18n: CFE_Jas_Mon10}}",
+        "Mon8": "{{i18n: CFE_Jas_Mon8}}",
+        "Mon6": "{{i18n: CFE_Jas_Mon6}}",
+        "Mon2": "{{i18n: CFE_Jas_Mon2}}",
+        "Tue10": "{{i18n: CFE_Jas_Tue10}}",
+        "Tue8": "{{i18n: CFE_Jas_Tue8}}",
+        "Tue4_inlaw_Shane": "{{i18n: CFE_Jas_Tue4inlawShane}}",
+        "Tue4": "{{i18n: CFE_Jas_Tue4}}",
+        "Tue2": "{{i18n: CFE_Jas_Tue2}}",
+        "Wed10": "{{i18n: CFE_Jas_Wed10}}",
+        "Wed8": "{{i18n: CFE_Jas_Wed8}}",
+        "Wed6": "{{i18n: CFE_Jas_Wed6}}",
+        "Thu10": "{{i18n: CFE_Jas_Thu10}}",
+        "Thu8": "{{i18n: CFE_Jas_Thu8}}",
+        "Thu6": "{{i18n: CFE_Jas_Thu6}}",
+        "Thu4": "{{i18n: CFE_Jas_Thu4}}",
+        "Thu2": "{{i18n: CFE_Jas_Thu2}}",
+        "Fri8": "{{i18n: CFE_Jas_Fri8{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+        "Fri6": "{{i18n: CFE_Jas_Fri6}}",
+        "Sat8": "{{i18n: CFE_Jas_Sat8}}",
+        "Sat6": "{{i18n: CFE_Jas_Sat6}}",
+        "Sat4": "{{i18n: CFE_Jas_Sat4}}",
+        "Sun8": "{{i18n: CFE_Jas_Sun8}}",
+        "Sun6": "{{i18n: CFE_Jas_Sun6}}",
+        "Sun4": "{{i18n: CFE_Jas_Sun4}}",
+
+        //Generic Weekday Dialogue
+        "Tue_inlaw_Shane": "{{i18n: CFE_Jas_TueinlawShane}}"
+      },
+      "When": { "Query: '{{CFE_Jas}}' = 'true' OR ('{{CFE_Jas}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

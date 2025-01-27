@@ -1,0 +1,60 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "SpouseStardrop": "I found that fruit gift-wrapped in my hobby room... Could MarILDA have stopped by?#$b#I gave it to you because I want you to know how much I love being with you.$l#$b#We have such different interests... On paper, I don't think most people would expect us to choose one another. But I think our differences enrich us both.$u#$b#You've changed a lot of the preconceptions I had about the farming lifestyle... And I got you to look up from the soil and out at the stars. We complement each other.$l#$b#What I'm saying is... I love you, @. You've made me a better scientist and a happier person.",
+            },
+        },
+        {
+            "LogName": "Maru terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Maru terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+//Immersive spouses
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Maru",
+		"Entries": {
+			"marriage_p3": "It's getting a little chilly.$s#$b#Let's go home soon and warm up.$l",
+   	    },
+		"When": {
+                	"HasMod |contains=iss.immersivespouses": "true"
+	    }
+     },
+    ]
+}

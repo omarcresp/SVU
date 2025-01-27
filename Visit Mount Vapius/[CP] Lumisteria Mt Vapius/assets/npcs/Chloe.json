@@ -1,0 +1,89 @@
+{
+  "Changes": [
+    {
+      "LogName": "Chloe RosierLind Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "ChloeRosierLindVMV": {
+          "DisplayName": "{{i18n: ChloeDisplayName}}",
+          "BirthSeason": "spring",
+          "BirthDay": 1,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Neutral",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "SocialTab": "HiddenAlways",
+          "Calendar": "HiddenAlways",
+          "CanSocialize": "FALSE",
+          "CanReceiveGifts": false,
+          "IntroductionsQuest": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "FriendsAndFamily": {},
+          "SpawnIfMissing": true,
+          "Appearance": [],
+          "Home": [
+            /*{
+              "Id": "Lumisteria.MtVapius_VisitFirstDaysOfWeek",
+              "Condition": "DAY_OF_MONTH 1 2 3 4",
+              "Location": "Lumisteria.MtVapius_TrainStationIndoorSecondFloor",
+              "Tile": {
+                "X": 19,
+                "Y": 5
+              },
+              "Direction": "down"
+            },*/
+            {
+              "Id": "Default",
+              "Location": "Lumisteria.MtVapius_WarpRoom",
+              "Tile": {
+                "X": 8,
+                "Y": 4
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "LogName": "Chloe Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/ChloeRosierLindVMV, Characters/ChloeRosierLindVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/ChloeRosierLindVMV/Schedule.json"
+    },
+    /*{
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "ChloeRosierLindVMV": "{{i18n: ChloeGiftLoved}}/687 635 424 575 Lumisteria.MtVapius_Cooking_JamPie/{{i18n: ChloeGiftLiked}}/-12 72 82 84 prehistoric_item/{{i18n: ChloeGiftDislike}}/-5 -6 -81 2 16/{{i18n: ChloeGiftHate}}/766 412/{{i18n: ChloeGiftNeutral}}/330/",
+      },
+    },*/
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/ChloeRosierLindVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/ChloeRosierLindVMV/Dialogue.json"
+    },
+  ]
+}

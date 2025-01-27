@@ -1,0 +1,287 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"Entries": {
+				"{{ModId}}_MineralCavern": {
+					"Name": "[LocalizedText Strings\\Buildings:{{ModId}}_MineralCavern_Name]",
+					"Description": "[LocalizedText Strings\\Buildings:{{ModId}}_MineralCavern_Description]",
+					"Texture": "Buildings\\{{ModId}}\\MineralCavern",
+					"Builder": "Robin",
+					"BuildCost": 20000,
+					"BuildMaterials": [
+						{
+							"Id": "Clays",
+							"ItemId": "(O)330",
+							"Amount": 40
+						},
+						{
+							"Id": "Woods",
+							"ItemId": "(O)388",
+							"Amount": 100
+						},
+						{
+							"Id": "Stones",
+							"ItemId": "(O)390",
+							"Amount": 250
+						},
+					],
+					"BuildDays": 2,
+					"BuildCondition": "PLAYER_MINING_LEVEL Current 18",
+					"Size": {
+						"X": 5,
+						"Y": 3
+					},
+					"CollisionMap": "OXXXO\nXXXXX\nXXXXX",
+					"HumanDoor":{
+						"X": 2,
+						"Y": 2
+					},
+					"IndoorMap": "{{ModId}}\\MineralCavern",
+					"DrawShadow": false
+				},
+				"{{ModId}}_MineTent": {
+					"Name": "[LocalizedText Strings\\Buildings:{{ModId}}_MineTent_Name]",
+					"Description": "[LocalizedText Strings\\Buildings:{{ModId}}_MineTent_Description]",
+					"Texture": "Buildings\\{{ModId}}\\SmallSaltTent",
+					"Builder": "Robin",
+					"BuildCost": 10000,
+					"BuildMaterials": [
+						{
+							"Id": "CopperBars",
+							"ItemId": "(O)334",
+							"Amount": 20
+						},
+						{
+							"Id": "IronBars",
+							"ItemId": "(O)335",
+							"Amount": 10
+						},
+						{
+							"Id": "Stones",
+							"ItemId": "(O)390",
+							"Amount": 300
+						},
+					],
+					"BuildDays": 2,
+					"BuildCondition": "!BUILDINGS_CONSTRUCTED All {{ModId}}_MineTent 1 1 true, PLAYER_MINING_LEVEL Current 16",
+					"Size": {
+						"X": 5,
+						"Y": 3
+					},
+					"SourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 80,
+						"Height": 80
+					},
+					"CollisionMap": "XXXXX\nXXXXX\nOXOXO",
+					"ActionTiles":[
+						{
+							"Id": "Default_OpenDefault_Chest",
+							"Tile": {
+								"X": 2, 
+								"Y": 1
+							},
+							"Action": "BuildingChest Default_Chest",
+						}
+					],
+					"DrawLayers": [
+						{
+							"Id": "UnderlayForPassable",
+							"SourceRect": {
+								"X": 80,
+								"Y": 32,
+								"Width": 80,
+								"Height": 32,
+							},
+							"DrawPosition": "0, 32",
+							"DrawInBackground": true
+						},
+						{
+							"Id": "GemsAndOres",
+							"SourceRect": {
+								"X": 96,
+								"Y": 0,
+								"Width": 48,
+								"Height": 32,
+							},
+							"OnlyDrawIfChestHasContents": "Default_Chest",
+							"DrawPosition": "16, 48",
+							"DrawInBackground": true,
+						}
+					],
+					"Chests": [ 
+						{
+							"Id": "Default_Chest",
+							"Type": "Chest",
+							"Sound": "stoneCrack",
+							"InvalidItemMessageCondition": "FALSE"
+						} 
+					],
+					"DrawShadow": false,
+				},
+				//Foraging
+				/*"{{Mod_Id}}_Sawmill":{
+					"Name": "",
+					"Description": "",
+					"Texture": "",
+					"Builder": "Robin",
+					"BuildCondition": "PLAYER_FORAGING_LEVEL Current 11",
+					"BuildCost": 10000,
+					"BuildDays": 3,
+					"BuildMaterials": [
+						{
+							"Id": "Hardwood",
+							"ItemId": "(O)707", //Double check
+							"Amount": 400
+						},
+						{
+							"Id": "IronBars",
+							"ItemId": "(O)335",
+							"Amount": 15
+						},
+					],
+					"Size": {
+						"X": 7,
+						"Y": 5
+					},
+					"SourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 112,
+						"Height": 112
+					},
+					"CollisionMap": "XXOOOOO\nXXOOOOO\nXXXXXXO\nXXXXXXO\nXXXXXXO",
+					"ActionTiles":[
+						{
+							"Id": "Open_Input_Chest_1",
+							"Tile": {
+								"X": 3, 
+								"Y": 4
+							},
+							"Action": "BuildingChest Input",
+						},
+						{
+							"Id": "Open_Input_Chest_2",
+							"Tile": {
+								"X": 4, 
+								"Y": 4
+							},
+							"Action": "BuildingChest Input",
+						},
+						{
+							"Id": "Open_Output_Chest",
+							"Tile": {
+								"X": 6, 
+								"Y": 4
+							},
+							"Action": "BuildingChest Output",
+						},
+					],
+					"DrawLayers": [
+						{
+							"Id": "WoodPile",
+							"SourceRect": {
+								"X": 176,
+								"Y": 16,
+								"Width": 16,
+								"Height": 32,
+							},
+							"DrawPosition": "0, 32",
+							"OnlyDrawIfChestHasContents": "Output",
+						},
+						{
+							"Id": "LogBeingCut",
+							"SourceRect": {
+								"X": 128,
+								"Y": 16,
+								"Width": 48,
+								"Height": 16,
+							},
+							"OnlyDrawIfChestHasContents": "Input",
+							"DrawPosition": "32, 80",
+						},
+						{
+							"Id": "PouringWater",
+							"SourceRect": {
+								"X": 96,
+								"Y": 0,
+								"Width": 48,
+								"Height": 32,
+							},
+							"DrawPosition": "16, 48",
+						},
+						{
+							"Id": "TurningSaw",
+							"SourceRect": {
+								"X": 96,
+								"Y": 0,
+								"Width": 48,
+								"Height": 32,
+							},
+							"DrawPosition": "16, 48",
+						},
+						{
+							"Id": "TurningWatermill",
+							"SourceRect": {
+								"X": 96,
+								"Y": 0,
+								"Width": 48,
+								"Height": 32,
+							},
+							"DrawPosition": "16, 48",
+						},
+						{
+							"Id": "WaterTiles",
+							"SourceRect": {
+								"X": 96,
+								"Y": 0,
+								"Width": 48,
+								"Height": 32,
+							},
+							"DrawPosition": "16, 48",
+							"DrawInBackground": true,
+						}
+					],
+					"Chests": [ 
+						{
+							"Id": "Input",
+							"Type": "Input",
+							"Sound": "stoneCrack",
+							"InvalidItemMessageCondition": "FALSE"
+						},
+						{
+							"Id": "Output",
+							"Type": "Output",
+							"Sound": "stoneCrack",
+							"InvalidItemMessageCondition": "FALSE"
+						},
+					],
+					"DrawShadow": false,
+				}*/
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/Buildings",
+			"Entries": {
+				"{{ModId}}_MineralCavern_Name": "{{i18n:Buildings.MineralCavern.Name}}",
+				"{{ModId}}_MineralCavern_Description": "{{i18n:Buildings.MineralCavern.Desc}}",
+				"{{ModId}}_MineTent_Name": "{{i18n:Buildings.MineTent.Name}}",
+				"{{ModId}}_MineTent_Description": "{{i18n:Buildings.MineTent.Name}}",
+				"{{ModId}}_Sawmill_Name": "{{i18n:Buildings.Sawmill.Name}}",
+				"{{ModId}}_Sawmill_Description": "{{i18n:Buildings.Sawmill.Description}}",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModId}}_MineTent": "Trim/-10 5/Roof/0 15",
+				//"{{ModId}}_Sawmill": "Building/-10 5/Trim/-10 5/Roof/0 15",
+			}
+		}
+	]
+}

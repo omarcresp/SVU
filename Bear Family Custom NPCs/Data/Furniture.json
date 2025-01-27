@@ -1,0 +1,70 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Furniture Image",
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/MadDog.HashtagBearFam/MadDogFurniture",
+      "FromFile": "assets/MadDogBearFam_Furniture.png"
+    },
+    {
+      "LogName": "Load Pendant Anim",
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/MadDog.HashtagBearFam/PendantAnimation",
+      "FromFile": "assets/MadDogBearFam_GPAnimation.png"
+    },
+    {
+      "LogName": "Make Added FURNTIURE More Cool",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/TextureOverrides",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarsPendantAnimation": {
+          "TargetTexture": "Mods\\MadDog.HashtagBearFam\\MadDogFurniture",
+          "TargetRect": {
+            "X": 192,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+          },
+          "SourceTexture": "Mods\\MadDog.HashtagBearFam\\PendantAnimation:0..3@9"
+        }
+      }
+    },
+    {
+      "LogName": "Create Furniture",
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "MadDog.HashtagBearFam_SigurdPortrait": "MadDog.HashtagBearFam_SigurdPortrait/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.SigurdPortrait}}/{{SigurdHairColorSpriteIndex}}/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GunnarPortrait": "MadDog.HashtagBearFam_GunnarPortrait/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GunnarPortrait}}/4/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_TerenPortrait": "MadDog.HashtagBearFam_TerenPortrait/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.TerenPortrait}}/6/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+
+        "MadDog.HashtagBearFam_LargeGrizzlyPlush": "MadDog.HashtagBearFam_LargeGrizzlyPlush/decor/2 2/2 2/1/750/2/{{i18n:MadDog.HashtagBearFam.LargeGrizzlyPlush}}/8/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_SmallKrakenPlush": "MadDog.HashtagBearFam_SmallKrakenPlush/decor/1 1/1 1/1/500/2/{{i18n:MadDog.HashtagBearFam.SmallKrakenPlush}}/10/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_SmallBearPlush": "MadDog.HashtagBearFam_SmallBearPlush/decor/1 1/1 1/1/500/2/{{i18n:MadDog.HashtagBearFam.SmallBearPlush}}/11/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GunnarsPendant": "MadDog.HashtagBearFam_GunnarsPendant/decor/1 1/1 1/1/1/2/{{i18n:MadDog.HashtagBearFam.GunnarsPendant}}/12/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_SmallDogPlush": "MadDog.HashtagBearFam_SmallDogPlush/decor/1 1/1 1/1/500/2/{{i18n:MadDog.HashtagBearFam.SmallDogPlush}}/24/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_WonderChest": "MadDog.HashtagBearFam_WonderChest/lamp/1 1/1 1/1/750/2/{{i18n:MadDog.HashtagBearFam.WonderChest}}/25/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+
+        "MadDog.HashtagBearFam_GotoroPhotos.HetterglossCaverns": "MadDog.HashtagBearFam_GotoroPhotos.HetterglossCaverns/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.HetterglossCaverns}}/28/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.CarnegieaDesert": "MadDog.HashtagBearFam_GotoroPhotos.CarnegieaDesert/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.CarnegieaDesert}}/30/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.GiantForest": "MadDog.HashtagBearFam_GotoroPhotos.GiantForest/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.GiantForest}}/32/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.SequoiadendronAutumn": "MadDog.HashtagBearFam_GotoroPhotos.SequoiadendronAutumn/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.SequoiadendronAutumn}}/34/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.MoltenGoldWheatFields": "MadDog.HashtagBearFam_GotoroPhotos.MoltenGoldWheatFields/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.MoltenGoldWheatFields}}/36/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.ElysiumCastleRuins": "MadDog.HashtagBearFam_GotoroPhotos.ElysiumCastleRuins/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.ElysiumCastleRuins}}/38/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.MariposaNaturePreserve": "MadDog.HashtagBearFam_GotoroPhotos.MariposaNaturePreserve/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.MariposaNaturePreserve}}/40/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.FortunetellerFalls": "MadDog.HashtagBearFam_GotoroPhotos.FortunetellerFalls/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.FortunetellerFalls}}/56/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.EruptingMtGotoro": "MadDog.HashtagBearFam_GotoroPhotos.EruptingMtGotoro/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.EruptingMtGotoro}}/58/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.GotoroMerchantShips": "MadDog.HashtagBearFam_GotoroPhotos.GotoroMerchantShips/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.GotoroMerchantShips}}/60/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.HetterglossMountains": "MadDog.HashtagBearFam_GotoroPhotos.HetterglossMountains/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.HetterglossMountains}}/62/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.GiantsDiadem": "MadDog.HashtagBearFam_GotoroPhotos.GiantsDiadem/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.GiantsDiadem}}/64/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.FireSwampWinter": "MadDog.HashtagBearFam_GotoroPhotos.FireSwampWinter/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.FireSwampWinter}}/66/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.FireSwamp": "MadDog.HashtagBearFam_GotoroPhotos.FireSwamp/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.FireSwamp}}/68/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.PalladiumFortressRuins": "MadDog.HashtagBearFam_GotoroPhotos.PalladiumFortressRuins/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.PalladiumFortressRuins}}/84/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true",
+        "MadDog.HashtagBearFam_GotoroPhotos.CoeruleusLake": "MadDog.HashtagBearFam_GotoroPhotos.CoeruleusLake/painting/2 2/2 2/1/999/-1/{{i18n:MadDog.HashtagBearFam.GotoroPhotos.CoeruleusLake}}/86/Mods\\MadDog.HashtagBearFam\\MadDogFurniture/true"
+
+      }
+    }
+  ]
+}

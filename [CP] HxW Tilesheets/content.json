@@ -1,0 +1,356 @@
+{
+    "Format": "2.3.0",
+    "DynamicTokens":
+    [
+        {
+            "Name": "Coloring",
+            "Value": "Vanilla",
+            "When": { "HasMod: |contains=DaisyNiko.EarthyRecolour,Lita.StarblueValley,yri.RetroRecolor,Acerbicon.Recolor,grapeponta.VibrantPastoralRecolor": false },
+        },
+        {
+            "Name": "Coloring",
+            "Value": "Muted",
+            "When": { "HasMod: |contains=DaisyNiko.EarthyRecolour,Lita.StarblueValley,yri.RetroRecolor,Acerbicon.Recolor,grapeponta.VibrantPastoralRecolor": true },
+        },
+
+        {
+            "Name": "SeasonWithDefault",
+            "Value": "Spring"
+            },
+           
+        {
+            "Name": "SeasonWithDefault",
+            "Value": "{{Season}}",
+            },
+    ],
+    
+    "Changes": [
+        // Fairy Garden
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_fairygarden",
+            "FromFile": "Assets/{{Coloring}}/hime_fairygarden.png"
+        },
+           // Fairy Garden Front
+           {
+            "Action": "Load",
+            "Target": "Mods/hxw.tilesheets/hime_fairygarden_Front",
+            "FromFile": "Assets/{{Coloring}}/hime_fairygarden_Front.png"
+        },
+        // Fountains
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_fountains",
+            "FromFile": "Assets/{{Coloring}}/hime_fountains.png"
+        },
+         // Bathroom
+         {
+            "Action": "Load",
+            "Target": "Maps/hime_bathroom",
+            "FromFile": "Assets/{{Coloring}}/hime_bathroom.png"
+        },
+        // Bakery
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_bakery",
+            "FromFile": "Assets/{{Coloring}}/hime_bakery.png"
+        },
+        // Counters
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_counters",
+            "FromFile": "Assets/{{Coloring}}/hime_counters.png"
+        },
+         // Farmer's Market
+         {
+            "Action": "Load",
+            "Target": "Maps/hime_farmersmarket",
+            "FromFile": "Assets/{{Coloring}}/hime_farmersmarket.png"
+        },
+        // Romantic Fountains
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_romanticfountains",
+            "FromFile": "Assets/{{Coloring}}/{{SeasonWithDefault}}/hime_romanticfountains.png"
+        },
+        // Romantic Furniture
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_romanticfurniture",
+            "FromFile": "Assets/{{Coloring}}/{{SeasonWithDefault}}/hime_romanticfurniture.png"
+        },
+        // Outdoor Furniture
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_outdoorfurniture",
+            "FromFile": "Assets/{{Coloring}}/{{SeasonWithDefault}}/hime_outdoorfurniture.png"
+        },
+
+         // Outdoor Furniture Front 2
+         {
+            "Action": "Load",
+            "Target": "Maps/hime_outdoorfurniture_Front",
+            "FromFile": "Assets/{{Coloring}}/{{SeasonWithDefault}}/hime_outdoorfurniture_Front.png"
+        },
+
+        //Outdoor Furniture Front
+        {
+            "Action": "Load",
+            "Target": "Mods/hxw.tilesheets/hime_outdoorfurniture_Front",
+            "FromFile": "Assets/{{Coloring}}/{{SeasonWithDefault}}/hime_outdoorfurniture_Front.png"
+        },
+        // Pink Outdoors
+        {
+            "Action": "Load",
+            "Target": "Maps/pink_hime_outdoors",
+            "FromFile": "Assets/{{Coloring}}/{{SeasonWithDefault}}/pink_hime_outdoors.png"
+        },
+        // Plants Deco
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_decoplants",
+            "FromFile": "Assets/{{Coloring}}/Z_Plants/hime_decoplants.png"
+        },
+        // Plant Lovers
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_plantlovers",
+            "FromFile": "Assets/{{Coloring}}/Z_Plants/hime_plantlovers.png"
+        },
+
+        // Plant Lovers
+        {
+            "Action": "Load",
+            "Target": "Mods/hxw.tilesheets/hime_plantlovers_Front",
+            "FromFile": "Assets/{{Coloring}}/Z_Plants/hime_plantlovers_Front.png"
+        },
+        // Plant Flowers
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_flowers",
+            "FromFile": "Assets/{{Coloring}}/Z_Plants/hime_flowers.png"
+
+        },
+           // Restaurant
+           {
+            "Action": "Load",
+            "Target": "Maps/oak_restaurant",
+            "FromFile": "Assets/{{Coloring}}/Z_Small_Businesses/oak_restaurant.png"
+        },
+
+        // Sitting
+        {
+            "Action": "EditData",
+            "Target": "Data/ChairTiles",
+            "Entries": {
+                // Outdoor Furniture
+                "hime_outdoorfurniture/32/1": "1/1/left/bench/32/1/false/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/32/2": "1/1/left/bench/-1/-1/false",
+                "hime_outdoorfurniture/32/4": "1/1/left/bench/-1/-1/false",
+                "hime_outdoorfurniture/32/5": "1/1/left/bench/32/5/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/32/7": "2/1/left/bench/32/7/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/10/1": "2/1/down/bench/-1/-1/false",
+                "hime_outdoorfurniture/12/1": "1/1/right/bench/-1/-1/false",
+                "hime_outdoorfurniture/12/6": "2/1/down/bench/-1/-1/false",
+                "hime_outdoorfurniture/0/9": "3/1/down/bench/-1/-1/false",
+                "hime_outdoorfurniture/3/9": "1/1/right/bench/-1/-1/false",
+                "hime_outdoorfurniture/3/10": "1/1/right/bench/3/10/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/4/9": "3/1/up/highback_chair/4/9/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/10/9": "4/1/up/stool/-1/-1/false",
+                "hime_outdoorfurniture/14/14": "4/1/up/stool/-1/-1/false",
+                "hime_outdoorfurniture/3/12": "3/1/down/bench/-1/-1/false",
+                "hime_outdoorfurniture/3/14": "3/1/up/bench/-1/-1/false",
+                "hime_outdoorfurniture/0/11": "1/1/down/chair/-1/-1/false",
+                "hime_outdoorfurniture/1/11": "1/1/right/chair/1/11/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/2/11": "1/1/up/highback_chair/2/11/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/6/12": "3/1/down/bench/6/12/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front", 
+                "hime_outdoorfurniture/6/14": "3/1/up/bench/-1/-1/false",   
+                "hime_outdoorfurniture/13/14": "1/1/down/bench/-1/-1/false",
+                "hime_outdoorfurniture/16/14": "1/1/down/bench/-1/-1/false",
+               
+                //Tree
+                "hime_outdoorfurniture/3/21": "1/1/right/stool/3/21/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/6/21": "1/1/left/custom -0.5 0 0/6/21/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/10/21": "1/1/right/stool/10/21/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                "hime_outdoorfurniture/13/21": "1/1/left/custom -0.5 0 0/13/21/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+                
+                //Tree with Swing
+                "hime_outdoorfurniture/18/21": "1/1/down/bench/-1/-1/false",
+                "hime_outdoorfurniture/21/21": "1/1/down/bench/-1/-1/false",
+                "hime_outdoorfurniture/21/2": "1/1/down/chair/-1/-1/false",
+                "hime_outdoorfurniture/9/12": "1/3/right/bench/9/12/false/Mods\\hxw.tilesheets\\hime_outdoorfurniture_Front",
+
+                // Fairy Garden
+                "hime_fairygarden/18/11": "1/1/down/stool/-1/-1/false",
+                "hime_fairygarden/19/11": "1/1/down/stool/-1/-1/false",
+                "hime_fairygarden/10/13": "1/1/down/bench/-1/-1/false",
+                "hime_fairygarden/26/17": "1/1/down/bench/-1/-1/false",
+                "hime_fairygarden/7/16": "1/1/down/stool/-1/-1/false",
+                "hime_fairygarden/10/16": "1/1/down/stool/-1/-1/false",
+                    //tea tables
+                    "hime_fairygarden/6/36": "1/1/right/custom 0 0.2 0/6/36/false\\hxw.tilesheets\\hime_fairygarden_Front",
+                    "hime_fairygarden/8/36": "1/1/left/custom 0 0.2 0/8/36/false\\hxw.tilesheets\\hime_fairygarden_Front",
+                    //Log single chairs
+                    "hime_fairygarden/0/34": "1/1/down/chair/-1/-1/false",
+                    "hime_fairygarden/1/34": "1/1/right/chair/-1/-1/false",
+                    "hime_fairygarden/2/34": "1/1/up/chair/3/34/false/Mods\\hxw.tilesheets\\hime_fairygarden_Front",
+                    //Log Stool
+                    "hime_fairygarden/4/34": "1/1/down/stool/-1/-1/false",
+                    //Large Log Couch
+                    "hime_fairygarden/5/34": "1/1/down/bench/-1/-1/false",
+                    "hime_fairygarden/6/34": "1/1/down/bench/-1/-1/false",
+                    "hime_fairygarden/7/34": "1/1/down/bench/7/34/false/Mods\\hxw.tilesheets\\hime_fairygarden_Front",
+                    "hime_fairygarden/8/34": "1/1/down/bench/8/34/false/Mods\\hxw.tilesheets\\hime_fairygarden_Front",
+
+                // Romantic Furniture
+                "hime_romanticfurniture/9/11": "2/1/down/bench/-1/-1/false",
+                "hime_romanticfurniture/11/11": "1/2/right/bench/-1/-1/false",
+                "hime_romanticfurniture/14/11": "1/2/left/bench/-1/-1/false",
+                "hime_romanticfurniture/9/13": "2/1/down/bench/-1/-1/false",
+                "hime_romanticfurniture/11/14": "1/1/right/bench/11/14/false",
+                "hime_romanticfurniture/11/15": "1/1/right/bench/11/15/false/Mods\\hxw.tilesheets\\hime_romanticfurniture_Front",
+                "hime_romanticfurniture/12/13": "2/2/right/highback_chair/12/13/false/Mods\\hxw.tilesheets\\hime_romanticfurniture_Front",
+                "hime_romanticfurniture/14/14": "1/3/left/bench/-1/-1/false",
+                "hime_romanticfurniture/14/15": "1/3/left/bench/14/15/false/Mods\\hxw.tilesheets\\hime_romanticfurniture_Front",
+                "hime_romanticfurniture/38/14": "3/1/down/bench/-1/-1/false",
+                "hime_romanticfurniture/41/14": "3/1/down/bench/-1/-1/false",
+                "hime_romanticfurniture/6/27": "2/1/down/bench/-1/-1/false",
+
+                //Plant Lovers
+                    //Window seat Oak
+                    "hime_plantlovers/19/5": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/20/5": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/21/5": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/22/5": "1/1/down/bench/-1/-1/false",
+                    //Window seat Walnut
+                    "hime_plantlovers/47/5": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/48/5": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/49/5": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/50/5": "1/1/down/bench/-1/-1/false",
+                    //Window seat Birch
+                    "hime_plantlovers/19/39": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/20/39": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/21/39": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/22/39": "1/1/down/bench/-1/-1/false",
+
+                    //Lantern Seat Oak
+                    "hime_plantlovers/5/13": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/8/13": "1/1/down/bench/-1/-1/false",
+                    //Lantern Seat Walnut
+                    "hime_plantlovers/33/13": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/36/13": "1/1/down/bench/-1/-1/false",
+                    //Lantern Seat Birch
+                     "hime_plantlovers/5/47": "1/1/down/bench/-1/-1/false",
+                     "hime_plantlovers/8/47": "1/1/down/bench/-1/-1/false",
+
+                    //Blue Blanket Seat Oak
+                     "hime_plantlovers/5/15": "1/1/down/bench/-1/-1/false",
+                     "hime_plantlovers/8/15": "1/1/down/bench/-1/-1/false",
+                    //Blue Blanket Seat Walnut
+                     "hime_plantlovers/33/15": "1/1/down/bench/-1/-1/false",
+                     "hime_plantlovers/36/15": "1/1/down/bench/-1/-1/false",
+                    //Blue Blanket Seat Birch
+                     "hime_plantlovers/5/49": "1/1/down/bench/-1/-1/false",
+                     "hime_plantlovers/8/49": "1/1/down/bench/-1/-1/false",
+
+                    //Plant Bench Front Oak
+                    "hime_plantlovers/15/15": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/18/15": "1/1/down/bench/-1/-1/false",
+                    //Plant Bench Front Walnut
+                     "hime_plantlovers/43/15": "1/1/down/bench/-1/-1/false",
+                     "hime_plantlovers/46/15": "1/1/down/bench/-1/-1/false",
+                    //Plant Bench Front Birch
+                    "hime_plantlovers/15/49": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/18/49": "1/1/down/bench/-1/-1/false",
+
+                    //Double Couch Oak
+                    "hime_plantlovers/31/37": "1/2/up/highback_chair/31/37/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/32/37": "1/2/up/highback_chair/32/37/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/37/37": "1/2/up/highback_chair/37/37/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/38/37": "1/2/up/highback_chair/38/37/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/31/40": "1/1/down/bench//-1/-1/false",
+                    "hime_plantlovers/32/40": "1/1/down/bench//-1/-1/false",
+                    "hime_plantlovers/37/40": "1/1/down/bench//-1/-1/false",
+                    "hime_plantlovers/38/40": "1/1/down/bench//-1/-1/false",
+                    "hime_plantlovers/43/40": "1/2/up/highback_chair/43/40/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/46/40": "1/2/up/highback_chair/46/40/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/42/44": "1/1/left/bench/42/44/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/43/44": "1/1/left/bench/43/44/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/46/44": "1/1/right/bench/46/44/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/49/44": "1/1/left/bench/49/44/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/30/47": "1/1/right/bench/30/47/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/30/46": "1/1/right/bench/-1/-1/false",
+                    "hime_plantlovers/31/47": "1/1/left/bench/31/47/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/31/46": "1/1/left/bench/-1/-1/false",
+                    "hime_plantlovers/34/47": "1/1/right/bench/34/47/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/34/46": "1/1/right/bench/-1/-1/false",
+                    "hime_plantlovers/35/47": "1/1/left/bench/35/47/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/35/46": "1/1/left/bench/-1/-1/false",
+                    "hime_plantlovers/38/46": "1/1/right/bench/-1/-1/false",
+                    "hime_plantlovers/39/46": "1/1/left/bench/-1/-1/false",
+                    "hime_plantlovers/30/51": "1/1/down/bench/-1/-1/false",
+                    "hime_plantlovers/33/51": "1/1/down/bench/-1/-1/false",
+                    
+
+           
+
+                    //Tea Table Oak
+                    "hime_plantlovers/23/26": "1/1/up/custom -0.1 0.2 0/23/26/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/24/25": "1/1/left/custom 0.3 .3 0/24/25/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/23/24": "1/1/down/bench/23/24/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/25/25": "1/1/right/custom -0.3 0.3 0/25/25/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/26/26": "1/1/up/custom 0.1 0.2 0/26/26/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/26/24": "1/1/down/bench/26/24/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    //Tea Table Walnut  
+                    "hime_plantlovers/51/26": "1/1/up//custom -0.1 0.2 0//51/26/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/52/25": "1/1/left/custom 0.3 .3 0/52/25/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/51/24": "1/1/down/bench/51/24/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/53/25": "1/1/right/custom -0.3 0.3 0/53/25/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/54/26": "1/1/up/custom 0.1 0.2 0/54/26/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                    "hime_plantlovers/54/24": "1/1/down/bench/54/24/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     //Tea Table Birch
+                     "hime_plantlovers/23/60": "1/1/up//custom -0.1 0.2 0//23/26/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/24/59": "1/1/left/custom 0.3 .3 0/24/25/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/23/58": "1/1/down/bench/23/24/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/25/59": "1/1/right/custom -0.3 0.3 0/25/25/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/26/60": "1/1/up/custom 0.1 0.2 0/26/26/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/26/58": "1/1/down/bench/26/24/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+
+                     //Coffee Table Sheet Oak
+                     "hime_plantlovers/24/33": "1/1/up/custom 0 0.4 0/24/33/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/25/33": "1/1/up/custom 0 0.4 0/25/33/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/26/33": "1/1/up/custom 0 0.4 0/26/33/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/27/33": "1/1/up/custom 0 0.4 0/27/33/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/24/31": "1/1/down/bench/24/31/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/25/31": "1/1/down/bench/25/31/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/26/31": "1/1/down/bench/26/31/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/27/31": "1/1/down/bench/27/31/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                      //Coffee Table Sheet Walnut
+                      "hime_plantlovers/52/33": "1/1/up/custom 0 0.4 0/52/33/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                      "hime_plantlovers/53/33": "1/1/up/custom 0 0.4 0/53/33/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                      "hime_plantlovers/54/33": "1/1/up/custom 0 0.4 0/54/33/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                      "hime_plantlovers/55/33": "1/1/up/custom 0 0.4 0/55/33/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                      "hime_plantlovers/52/31": "1/1/down/bench/52/31/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                      "hime_plantlovers/53/31": "1/1/down/bench/53/31/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                      "hime_plantlovers/54/31": "1/1/down/bench/54/31/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                      "hime_plantlovers/55/31": "1/1/down/bench/55/31/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                      //Coffee Table Sheet Birch
+                     "hime_plantlovers/24/67": "1/1/up/custom 0 0.4 0/24/67/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/25/67": "1/1/up/custom 0 0.4 0/25/67/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/26/67": "1/1/up/custom 0 0.4 0/26/67/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/27/67": "1/1/up/custom 0 0.4 0/27/67/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/24/65": "1/1/down/bench/24/65/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/25/65": "1/1/down/bench/25/65/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/26/65": "1/1/down/bench/26/65/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+                     "hime_plantlovers/27/65": "1/1/down/bench/27/65/false/Mods\\hxw.tilesheets\\hime_plantlovers_Front",
+
+                     //Floor Cushions
+                     "hime_plantlovers/5/16": "1/1/custom 0 0.3 0/bench/-1/-1/false",
+                     "hime_plantlovers/33/16": "1/1/custom 0 0.3 0/bench/-1/-1/false",
+                     "hime_plantlovers/5/50": "1/1/custom 0 0.3 0/bench/-1/-1/false",
+
+
+            }
+        }  
+    ]
+}

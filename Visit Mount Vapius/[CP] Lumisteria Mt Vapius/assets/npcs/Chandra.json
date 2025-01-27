@@ -1,0 +1,79 @@
+{
+  "Changes": [
+    {
+      "LogName": "Chandra Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/ChandraFaycombeSereneVMV, Characters/ChandraFaycombeSereneVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Chandra FaycombeSerene Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "ChandraFaycombeSereneVMV": {
+          "DisplayName": "{{i18n: ChandraDisplayName}}",
+          "BirthSeason": "summer",
+          "BirthDay": 3,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Neutral",
+          "CanBeRomanced": false,
+          "SocialTab": "UnknownUntilMet",
+          "Calendar": "HiddenAlways",
+          "IntroductionsQuest": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "FriendsAndFamily": {
+            //"NaveenFaycombeSereneVMV": "{{i18n: ChandraNaveenName}}",
+            "PriyaFaycombeSereneVMV": "{{i18n: ChandraPriyaName}}",
+          },
+		  "CanSocialize": "FALSE",//PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_BusBundle
+		  "CanVisitIsland": "FALSE",
+          "SpawnIfMissing": true,
+			"Appearance": [
+			],
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_WarpRoom",
+					"Tile": { "X": 8, "Y": 10 },
+					"Direction": "down"
+				}
+			],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/ChandraFaycombeSereneVMV/Schedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "ChandraFaycombeSereneVMV": "{{i18n: ChandraGiftLoved{{GiftAnswerChandra}}}}/Lumisteria.MtVapius_CrystalRose 233 614 341 123/{{i18n: ChandraGiftLiked{{GiftAnswerChandra}}}}/scroll_item/{{i18n: ChandraGiftDislike{{GiftAnswerChandra}}}}/246/{{i18n: ChandraGiftHate{{GiftAnswerChandra}}}}/636 mushroom_item 404 195 194 197/{{i18n: ChandraGiftNeutral{{GiftAnswerChandra}}}}/-7/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/ChandraFaycombeSereneVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/ChandraFaycombeSereneVMV/Dialogue.json"
+    },
+  ]
+}

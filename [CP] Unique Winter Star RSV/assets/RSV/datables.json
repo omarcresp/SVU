@@ -1,0 +1,347 @@
+{
+	"Changes":[
+	//Bachelorettes
+		{
+			"LogName": "Alissa - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alissa",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Alissa.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Alissa.WinterStar.After}}",
+			},
+			"When": {
+				"Alissa": "normal, spicy, platonic",
+			},
+		},
+		{
+			"LogName": "Alissa - Winter Star, 8 Heart Seen",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alissa",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Alissa.WinterStar.8Heart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Alissa.WinterStar.8Heart.After}}",
+			},
+			"When": {
+				"Alissa": "normal, spicy, platonic",
+				"HasSeenEvent": "75160120",
+			},
+		},
+		{
+			"LogName": "Blair - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Blair",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Blair.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Blair.WinterStar.After}}",
+			},
+			"When": {
+				"Blair": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Corine - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Corine",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Corine.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Corine.WinterStar.After}}",
+			},
+			"When": {
+				"Corine": "normal, spicy, platonic",
+			},
+		},
+		{
+			"LogName": "Corine - Winter Star, 8 Heart Seen",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Corine",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Corine.WinterStar.8Heart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Corine.WinterStar.8Heart.After}}",
+			},
+			"When": {
+				"Corine": "normal, spicy, platonic",
+				"HasSeenEvent": "75160125",
+			},
+		},
+		{
+			"LogName": "Flor - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Flor",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Flor.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Flor.WinterStar.After}}",
+			},
+			"When": {
+				"Flor": "normal, spicy, platonic",
+			},
+		},
+		{
+			"LogName": "Kiarra - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kiarra",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Kiarra.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Kiarra.WinterStar.After}}",
+			},
+			"When": {
+				"Kiarra": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Kiarra - Winter Star, Player Sold Out to Joja",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kiarra",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Kiarra.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Kiarra.WinterStar.After}}",
+			},
+			"When": {
+				"Kiarra": "normal, spicy",
+				"HasSeenEvent": "502261",
+			},
+		},
+		{
+			"LogName": "Maddie - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maddie",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maddie.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maddie.WinterStar.After}}",
+			},
+			"When": {
+				"Maddie": "normal, spicy",
+				"Hearts:Maddie": "0, 1, 2, 3",
+			},
+		},
+		{
+			"LogName": "Maddie - Winter Star, Medium Hearts",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maddie",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maddie.WinterStar.Medium.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maddie.WinterStar.Medium.After}}",
+			},
+			"When": {
+				"Maddie": "normal, spicy",
+				"Hearts:Maddie": "4, 5, 6, 7, 8",
+			},
+		},
+		{
+			"LogName": "Maddie - Winter Star, High Hearts, No Platonic Relationships",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maddie",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maddie.WinterStar.High.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maddie.WinterStar.High.After}}",
+			},
+			"When": {
+				"Maddie": "normal, spicy",
+				"HasSeenEvent": "75160138",
+				"Hearts:Maddie": "7, 8", //I'll give a small bit of leeway here, but any below 7 and back to medium.
+			},
+		},
+		{
+			"LogName": "Maddie - Winter Star, High Hearts, Platonic Relationships",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maddie",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maddie.WinterStar.High.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maddie.WinterStar.High.After}}",
+			},
+			"When": {
+				"Maddie": "normal, spicy",
+				"relationship:Maddie": "friendly",
+				"Hearts:Maddie": "9, 10",
+			},
+		},
+		{
+			"LogName": "Ysabelle - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Ysabelle",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Ysabelle.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Ysabelle.WinterStar.After}}",
+			},
+			"When": {
+				"Ysabelle": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Faye - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Faye",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Faye.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Faye.WinterStar.After}}",
+			},
+			"When": {
+				"Faye": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Faye - Winter Star, Faye Interested in Bryle",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Faye",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Faye.WinterStar.Brayle.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Faye.WinterStar.Brayle.After}}",
+			},
+			"When": {
+				"Faye": "normal, spicy",
+				"HasFlag": "FayeBryleLoveStory", //Faye and Bryle are no longer romanceable
+			},
+		},
+		{
+			"LogName": "Irene - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Irene",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Irene.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Irene.WinterStar.After}}",
+			},
+			"When": {
+				"Irene": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Paula - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Paula",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Paula.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Paula.WinterStar.After}}",
+			},
+			"When": {
+				"Paula": "normal, spicy",
+			},
+		},
+		
+		{
+			"LogName": "Paula - Winter Star, Paula is dating Anton",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Paula",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Paula.WinterStar.DatingAnton.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Paula.WinterStar.DatingAnton.After}}",
+			},
+			"When": {
+				"Paula": "normal, spicy",
+				"HasDialogueAnswer": "75163522", //Paula goes to Anton
+			},
+		},
+		
+		//Bachelors
+		{
+			"LogName": "Ian - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Ian",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Ian.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Ian.WinterStar.After}}",
+			},
+			"When": {
+				"Ian": "normal, spicy, platonic",
+			},
+		},
+		
+		{
+			"LogName": "Jeric - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jeric",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Jeric.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Jeric.WinterStar.After}}",
+			},
+			"When": {
+				"Jeric": "normal, spicy, platonic",
+			},
+		},
+		{
+			"LogName": "June - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/June",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.June.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.June.WinterStar.After}}",
+			},
+			"When": {
+				"June": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Kenneth - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kenneth",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Kenneth.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Kenneth.WinterStar.After}}",
+			},
+			"When": {
+				"Kenneth": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Philip - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Philip",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Philip.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Philip.WinterStar.After}}",
+			},
+			"When": {
+				"Philip": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sean - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sean",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sean.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sean.WinterStar.After}}",
+			},
+			"When": {
+				"Sean": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Shiro - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shiro",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shiro.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shiro.WinterStar.After}}",
+			},
+			"When": {
+				"Shiro": "normal, spicy",
+			},
+		},
+		
+		{
+			"LogName": "Anton - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Anton",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Anton.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Anton.WinterStar.After}}",
+			},
+			"When": {
+				"Anton": "normal, spicy",
+			},
+		},
+		
+		{
+			"LogName": "Anton - Winter Star, Anton is Dating Paula",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Anton",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Anton.WinterStar.DatingPaula.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Anton.WinterStar.DatingPaula.After}}",
+			},
+			"When": {
+				"Anton": "normal, spicy",
+				"HasDialogueAnswer": "75163044", //Anton likes Paula
+			},
+		},
+	],
+}

@@ -1,0 +1,163 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "Entries": {
+                "Lumisteria.MtVapius": {
+                    // The main map background to draw.
+                    "BaseTexture": [
+                        {
+                            "Id": "Default",
+                            "Texture": "Mods\\Lumisteria.MtVapius\\Map\\MtVapiusMap"
+                        }
+                    ],
+                    // The map areas that can provide tooltips, scroll text, texture overlays, and world positions.
+                    "MapAreas": [
+                        {
+                            "Id": "{{ModId}}Hamlet",
+                            "PixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 68,
+                                "Height": 75
+                            },
+                            "ScrollText": "{{i18n: MtVapiusHamlet}}",
+                            "Tooltips": [
+                                {
+                                    "Id": "{{ModId}}Inn",
+                                    "PixelArea": {
+                                        "X": 30,
+                                        "Y": 43,
+                                        "Width": 6,
+                                        "Height": 7
+                                    },
+                                    "Text": "{{i18n: MtVapiusInn}}"
+                                },
+                                {
+                                    "Id": "{{ModId}}AsterHouse",
+                                    "PixelArea": {
+                                        "X": 53,
+                                        "Y": 12,
+                                        "Width": 10,
+                                        "Height": 6
+                                    },
+                                    "Text": "{{i18n: MtVapiusAsterHouse}}"
+                                },
+                                {
+                                    "Id": "{{ModId}}Clearing",
+                                    "PixelArea": {
+                                        "X": 0,
+                                        "Y": 51,
+                                        "Width": 8,
+                                        "Height": 10
+                                    },
+                                    "Text": "{{i18n: MtVapiusDirectionForest}}"
+                                },
+                                {
+                                    "Id": "{{ModId}}Cliff",
+                                    "PixelArea": {
+                                        "X": 68,
+                                        "Y": 37,
+                                        "Width": 21,
+                                        "Height": 41
+                                    },
+                                    "Text": "{{i18n: MtVapiusDirectionCliffs}}"
+                                },
+                                {
+                                    "Id": "{{ModId}}TrainTicketMachine",
+                                    "PixelArea": {
+                                        "X": 49,
+                                        "Y": 109,
+                                        "Width": 4,
+                                        "Height": 5
+                                    },
+                                    "Text": "{{i18n: MtVapiusTrainTicketMachine}}"
+                                },
+                            ],
+                            // Match location names & tile positions to this map area. For example, when the player is
+                            // in the 'Lumisteria.MtVapius_Inn' location, their marker on the map is shown on top of the
+                            // inn building.
+                            "WorldPositions": [
+                                {
+                                    "Id": "{{ModId}}Inn",
+                                    "LocationName": "Lumisteria.MtVapius_Inn",
+                                    "MapPixelArea": {
+                                        "X": 30,
+                                        "Y": 43,
+                                        "Width": 6,
+                                        "Height": 7
+                                    },
+                                    "ScrollText": "{{i18n: MtVapiusInn}}" // optional, defaults to parent area's scroll text (if any)
+                                },
+                                {
+                                    "Id": "{{ModId}}AsterHouse",
+                                    "LocationName": "Lumisteria.MtVapius_AsterHouse",
+                                    "MapPixelArea": {
+                                        "X": 53,
+                                        "Y": 12,
+                                        "Width": 10,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "{{i18n: MtVapiusAsterHouse}}" // optional, defaults to parent area's scroll text (if any)
+                                },
+                                {
+                                    "Id": "{{ModId}}Default",
+                                    "LocationName": "Lumisteria.MtVapius_Hamlet"
+                                }
+                            ]
+                        },
+                        {
+                            "Id": "{{ModId}}TrainStation",
+                            "PixelArea": {
+                                "X": 43,
+                                "Y": 78,
+                                "Width": 44,
+                                "Height": 37
+                            },
+                            "ScrollText": "{{i18n: MtVapiusTrainStation}}",
+                            "Tooltips": [
+                                {
+                                    "Id": "{{ModId}}TrainStationIndoor",
+                                    "PixelArea": {
+                                        "X": 53,
+                                        "Y": 106,
+                                        "Width": 6,
+                                        "Height": 7
+                                    },
+                                    "Text": "{{i18n: MtVapiusTrainStationIndoor}}"
+                                },
+                            ],
+                            // Match location names & tile positions to this map area. For example, when the player is
+                            // in the 'Lumisteria.MtVapius_Inn' location, their marker on the map is shown on top of the
+                            // inn building.
+                            "WorldPositions": [
+                                {
+                                    "Id": "{{ModId}}TrainStationIndoor",
+                                    "LocationName": "Lumisteria.MtVapius_TrainStationIndoor",
+                                    "MapPixelArea": {
+                                        "X": 30,
+                                        "Y": 43,
+                                        "Width": 6,
+                                        "Height": 7
+                                    },
+                                    "ScrollText": "{{i18n: MtVapiusTrainStationIndoor}}" // optional, defaults to parent area's scroll text (if any)
+                                },
+                                {
+                                    "Id": "{{ModId}}Default",
+                                    "LocationName": "Lumisteria.MtVapius_TrainStation"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+    {
+      "LogName": "Load images",
+      "Action": "Load",
+      "Target": "Mods/Lumisteria.MtVapius/Map/MtVapiusMap",
+      "FromFile": "assets/images/{{TargetWithoutPath}}.png"
+    },
+    ]
+}

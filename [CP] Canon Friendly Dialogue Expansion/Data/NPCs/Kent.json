@@ -1,0 +1,116 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Kent_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Kent",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)607": "{{i18n: CFE_Kent_RoastedHazelnuts_{{Random: 1,2}}}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Kent}}' = 'true' OR ('{{CFE_Kent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    /*{
+      "LogName": "CFE_Kent_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Kent": "{{i18n: CFE_Kent_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Kent}}' = 'true' OR ('{{CFE_Kent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }, */
+    {
+      "LogName": "CFE_Kent_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Kent",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Kent_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Kent_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Kent_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Kent_RabbitsFoot}}",
+
+        "AcceptGift_(O)649": "{{i18n: CFE_Kent_FiddleheadRisotto}}",
+        "AcceptGift_(O)346": "{{i18n: CFE_Kent_Beer}}"
+      },
+      "When": { "Query: '{{CFE_Kent}}' = 'true' OR ('{{CFE_Kent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Kent_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Kent",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+        "winter_28_2": "{{i18n: CFE_Kent_winter28}}",
+
+        //Heart Specific Dialogue
+
+        "summer_Mon8": "{{i18n: CFE_Kent_summerMon8}}",
+        "summer_Mon4": "{{i18n: CFE_Kent_summerMon4}}",
+        "summer_Wed10": "{{i18n: CFE_Kent_summerWed10}}",
+        "summer_Thu8": "{{i18n: CFE_Kent_summerThu8}}",
+        "summer_Sat10": "{{i18n: CFE_Kent_summerSat10}}",
+        "summer_Sun2": "{{i18n: CFE_Kent_summerSun2}}",
+
+        "fall_Mon6": "{{i18n: CFE_Kent_fallMon6}}",
+        "fall_Mon4": "{{i18n: CFE_Kent_fallMon4}}",
+        "fall_Tue6": "{{i18n: CFE_Kent_fallTue6}}",
+        "fall_Wed10": "{{i18n: CFE_Kent_fallWed10}}",
+        "fall_Fri8": "{{i18n: CFE_Kent_fallFri8}}",
+        "fall_Sun10": "{{i18n: CFE_Kent_fallSun10}}",
+
+        "winter_Mon10": "{{i18n: CFE_Kent_winterMon10}}",
+        "winter_Thu10": "{{i18n: CFE_Kent_winterThu10}}",
+        "winter_Fri10": "{{i18n: CFE_Kent_winterFri10}}",
+        "winter_Sat8": "{{i18n: CFE_Kent_winterSat8}}",
+        "winter_Sat2": "{{i18n: CFE_Kent_winterSat2}}",
+
+        "Mon10": "{{i18n: CFE_Kent_Mon10}}",
+        "Mon8_inlaw_Sam": "{{i18n: CFE_Kent_Mon8inlawSam{{GenderNeutralCompat}} |AdultFamilialNoun={{lowercase:{{Random:{{GNMTAdultFamilialNoun}}}}}}}}",
+        "Mon8": "{{i18n: CFE_Kent_Mon8}}",
+        "Mon6_inlaw_Sam": "{{i18n: CFE_Kent_Mon6inlawSam}}",
+        "Mon6": "{{i18n: CFE_Kent_Mon6}}",
+        "Mon4_inlaw_Sam": "{{i18n: CFE_Kent_Mon4inlawSam}}",
+        "Mon4": "{{i18n: CFE_Kent_Mon4}}",
+        "Mon2_inlaw_Sam": "{{i18n: CFE_Kent_Mon2inlawSam}}",
+        "Mon2": "{{i18n: CFE_Kent_Mon2}}",
+        "Tue10": "{{i18n: CFE_Kent_Tue10}}",
+        "Tue10_old": "{{i18n: CFE_Kent_Tue10_old}}",
+        "Tue10_018": "{{i18n: CFE_Kent_Tue10_018}}",
+        "Tue10_019": "{{i18n: CFE_Kent_Tue10_019}}",
+        "Tue8": "{{i18n: CFE_Kent_Tue8}}",
+        "Tue4": "{{i18n: CFE_Kent_Tue4}}",
+        "Wed8": "{{i18n: CFE_Kent_Wed8}}",
+        "Wed6": "{{i18n: CFE_Kent_Wed6}}",
+        "Wed4": "{{i18n: CFE_Kent_Wed4}}",
+        "Wed2": "{{i18n: CFE_Kent_Wed2{{GenderNeutralCompat}} |AdultFamilialNoun={{lowercase:{{Random:{{GNMTAdultFamilialNoun}}}}}}}}",
+        "Thu10": "{{i18n: CFE_Kent_Thu10}}",
+        "Thu8": "{{i18n: CFE_Kent_Thu8}}",
+        "Thu6": "{{i18n: CFE_Kent_Thu6}}",
+        "Thu4": "{{i18n: CFE_Kent_Thu4}}",
+        "Thu2": "{{i18n: CFE_Kent_Thu2}}",
+        "Fri10": "{{i18n: CFE_Kent_Fri10}}",
+        "Fri8": "{{i18n: CFE_Kent_Fri8}}",
+        "Fri6": "{{i18n: CFE_Kent_Fri6}}",
+        "Fri2": "{{i18n: CFE_Kent_Fri2}}",
+        "Sat10": "{{i18n: CFE_Kent_Sat10}}",
+        "Sat6": "{{i18n: CFE_Kent_Sat6}}",
+        "Sat4": "{{i18n: CFE_Kent_Sat4}}",
+        "Sat2": "{{i18n: CFE_Kent_Sat2}}",
+        "Sun10": "{{i18n: CFE_Kent_Sun10}}",
+        "Sun8": "{{i18n: CFE_Kent_Sun8}}",
+        "Sun6": "{{i18n: CFE_Kent_Sun6}}",
+        "Sun2": "{{i18n: CFE_Kent_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Thu": "{{i18n: CFE_Kent_summerThu}}",
+        "Mon_inlaw_Sam": "{{i18n: CFE_Kent_MoninlawSam}}"
+      },
+      "When": { "Query: '{{CFE_Kent}}' = 'true' OR ('{{CFE_Kent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

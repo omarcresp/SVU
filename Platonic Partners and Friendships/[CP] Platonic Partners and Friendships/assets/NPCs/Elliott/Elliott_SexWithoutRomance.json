@@ -1,0 +1,1572 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "event_boat1": null,
+                "event_boat2": null,
+                "fall_Thu": "Oh dear! A tiny crab appears to have made his home in my shirt pocket.$8#$e#That's the trouble with living on the beach.",
+                "fall_Fri10": "@, when you're around... I feel unusually creative.$l#$e#I know... strange, but it's true.",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#I'm glad you're maintaining your friendships outside our household. My own self-isolation was often stifling.",
+                "SpouseStardrop": "When I last visited my former home by the sea, that strange fruit washed ashore at my feet... #$b#If you'll bear with me, I've composed a poem to accompany it.#$b#*ahem* 'To @, my cherished companion.'#$b#I traveled to this land to grow a rose, whose seed slept in the very soil of me. A perfect isolation I'd impose; I'd nurture it alone beside the sea.#$b#The seaside had the sun, and I the soil; I'd thought a rose should need no more to thrive. I never realized that, for all my toil, mere saltwater could not keep it alive.#$b#The seed lay buried and refused to grow, until you came to me amidst the gloom... #$b#Your heart a spring, from which the waterflow... poured into me, until my seedling bloomed.$l#$b#Put simply, my friend, I love you. I hope my gift inspires you in your work, as you've so often inspired mine.$l",
+                "FlowerDance_Accept_Spouse": "Yes... could I refuse my dearest friend? We'll dance from now 'til springtime's end.$h#$b#That is, until the end of the festival... I confess my lifestyle lends me more stamina for rhymes than rhythms.$s",
+                "FlowerDance_Accept_Roommate": "Yes... could I refuse my dearest friend? We'll dance from now 'til springtime's end.$h#$b#That is, until the end of the festival... I confess my lifestyle lends me more stamina for rhymes than rhythms.$s",
+		"dating_Elliott_memory_oneday": "%Elliott's eyes shine as he shares a few of his ideas for a future book.",
+		"married_Elliott": "You've plucked Pelican Town's finest flower, my friend... Now, you must care for it with all your heart.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "fall_Tue8": "@, I was just thinking about you.#$e#Maybe you sensed it.$h#$e#So! Tell me about your day.",
+                "winter_Tue10": "@, I had a feeling that you would show up.#$e#Perhaps we're connected by an other-worldly thread.$h",
+                "event_boat1": null,
+                "event_boat2": null,
+                "fall_Thu": "Oh dear! A tiny crab appears to have made his home in my shirt pocket.$8#$e#That's the trouble with living on the beach.",
+                "fall_Fri10": "@, when you're around... I feel unusually creative.#$e#I know... strange, but it's true.$h",
+                "SpouseGiftJealous": "I heard you gave {0} a gift today.#$e#I'm glad you're maintaining your friendships outside our household. My own self-isolation was often stifling.",
+                "SpouseStardrop": "When I last visited my former home by the sea, that strange fruit washed ashore at my feet... #$b#If you'll bear with me, I've composed a poem to accompany it.#$b#*ahem* 'To @, my cherished companion.'$h#$b#I traveled to this land to grow a rose, whose seed slept in the very soil of me. A perfect isolation I'd impose; I'd nurture it alone beside the sea.$h#$b#The seaside had the sun, and I the soil; I'd thought a rose should need no more to thrive. I never realized that, for all my toil, mere saltwater could not keep it alive.$h#$b#The seed lay buried and refused to grow, until you came to me amidst the gloom... $h#$b#Your heart a spring, from which the waterflow... poured into me, until my seedling bloomed.#$b#Put simply, my friend, I love you. I hope my gift inspires you in your work, as you've so often inspired mine.",
+                "FlowerDance_Accept_Spouse": "Yes... could I refuse my dearest friend? We'll dance from now 'til springtime's end.$h#$b#That is, until the end of the festival... I confess my lifestyle lends me more stamina for rhymes than rhythms.$s",
+                "FlowerDance_Accept_Roommate": "Yes... could I refuse my dearest friend? We'll dance from now 'til springtime's end.$h#$b#That is, until the end of the festival... I confess my lifestyle lends me more stamina for rhymes than rhythms.$s",
+		"dating_Elliott_memory_oneday": "%Elliott's eyes shine as he shares a few of his ideas for a future book.",
+		"married_Elliott": "You've plucked Pelican Town's finest flower, my friend... Now, you must care for it with all your heart.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+	    "Logname": "Elliott bouquet reactions, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "breakUp": "Ah... the wilted bouquet. A sight I'd hoped to never see...$s#$b#I suppose there are other horizons to set my eyes upon, and other friends to find...$s",
+                "AcceptBouquet": "{{Random: I love the tradition of bouquet-gifting. The marriage of natural beauty with human sentiment is artistically stimulating.$h#$b#And... on a personal level, I'm deeply touched. I'd absolutely like us be closer friends.$l @@ These flowers... They signify that you want to deepen our friendship, yes? I feel the same way.$l#$e#...Would you mind if I drew literary inspiration from this moment? The emotions in play are a good fit for a scene I'm working on. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Elliott bouquet reactions, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "breakUp": "Ah... the wilted bouquet. A sight I'd hoped to never see...$s#$b#I suppose there are other horizons to set my eyes upon, and other friends to find...$s",
+                "AcceptBouquet": "{{Random: I love the tradition of bouquet-gifting. The marriage of natural beauty with human sentiment is artistically stimulating.$h#$b#And... on a personal level, I'm deeply touched. I'd absolutely like us be closer friends. @@ These flowers... They signify that you want to deepen our friendship, yes? I feel the same way.#$e#...Would you mind if I drew literary inspiration from this moment? The emotions in play are a good fit for a scene I'm working on. |inputSeparator=@@}}",
+	        "dating_Elliott": "I only wish I had given you a bouquet first!$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Elliott bouquet reactions, love portraits true, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "breakUp": "Ah... a letter of rejection. A sight I'd hoped to never see...$s#$b#I suppose there are other horizons to set my eyes upon, and other friends to find...$s",
+                "AcceptBouquet": "{{Random: I love the tradition of letter-writing. The marriage of literary finesse with genuine sentiment is artistically stimulating.$h#$b#And... on a personal level, I'm deeply touched. I'd absolutely like us be closer friends.$l @@ This letter... It signifies that you want to deepen our friendship, yes? I feel the same way.$l#$e#...Would you mind if I drew literary inspiration from this moment? The emotions in play are a good fit for a scene I'm working on. |inputSeparator=@@}}",
+	        "dating_Elliott": "I only wish that I had been the one to write you such a touching letter!$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+	    "Logname": "Elliott bouquet reactions, love portraits false, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "breakUp": "Ah... a letter of rejection. A sight I'd hoped to never see...$s#$b#I suppose there are other horizons to set my eyes upon, and other friends to find...$s",
+                "AcceptBouquet": "{{Random: I love the tradition of letter-writing. The marriage of literary finesse with genuine sentiment is artistically stimulating.$h#$b#And... on a personal level, I'm deeply touched. I'd absolutely like us be closer friends. @@ This letter... It signifies that you want to deepen our friendship, yes? I feel the same way.#$e#...Would you mind if I drew literary inspiration from this moment? The emotions in play are a good fit for a scene I'm working on. |inputSeparator=@@}}",
+	        "dating_Elliott": "I only wish that I had been the one to write you such a touching letter!$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+	    "Logname": "Elliott roommate flower dance",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Yes, my muse?#$r -1 0 danceAsk#(Ask Elliott to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+	        "Roommate": "Elliott",
+            },
+        },
+        {
+            "LogName": "Elliott pendant and bracelet proposal acceptance, love portraits",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Elliott_Engaged": "...!!! Wait, wait, I have something prepared for this!$8#$b#%Elliott withdraws a worn scrap of paper from his pocket.#$b#*ahem*$h#$b#O, how I labor to describe in idiom... A bond of friendship true, forged in iridium...$h#$b#I pledge my life to you, and you may think it twee... But I will cherish every hour spent with thee.$h#$b#That you would ask for us to be {{RelationshipLabel}}... I admit it's a hope I've nurtured for some time.$l#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days.", 
+		"Elliott_EngagedRoommate": "...!!! Wait, wait, I have something prepared for this!$8#$b#%Elliott withdraws a worn scrap of paper from his pocket.#$b#*ahem*$h#$b#O, how I labor to describe in idiom... A bond of friendship true, forged in iridium...$h#$b#I pledge my life to you, and you may think it twee... But I will cherish every hour spent with thee.$h#$b#That you would ask for us to be {{RelationshipLabel}}... I admit it's a hope I've nurtured for some time.$l#$b#I need some time to pack up my belongings. I'll be there in 3 days.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "LogName": "Elliott pendant and bracelet proposal acceptance, no love portraits",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Elliott_Engaged": "...!!! Wait, wait, I have something prepared for this!$8#$b#%Elliott withdraws a worn scrap of paper from his pocket.#$b#*ahem*$h#$b#O, how I labor to describe in idiom... A bond of friendship true, forged in iridium...$h#$b#I pledge my life to you, and you may think it twee... But I will cherish every hour spent with thee.$h#$b#That you would ask for us to be {{RelationshipLabel}}... I admit it's a hope I've nurtured for some time.#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days.",
+		"Elliott_EngagedRoommate": "...!!! Wait, wait, I have something prepared for this!$8#$b#%Elliott withdraws a worn scrap of paper from his pocket.#$b#*ahem*$h#$b#O, how I labor to describe in idiom... A bond of friendship true, forged in iridium...$h#$b#I pledge my life to you, and you may think it twee... But I will cherish every hour spent with thee.$h#$b#That you would ask for us to be {{RelationshipLabel}}... I admit it's a hope I've nurtured for some time.#$b#I need some time to pack up my belongings. I'll be there in 3 days.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "LogName": "Elliott engagement dialogue, love portraits",	
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Elliott0": "The farm will be such a lovely place to write. I'm really looking forward to this.$h#$e#We're going to make a great pair.$l",
+                "Elliott1": "This is going to be such an adventure! I'm really excited. Aren't you?$h#$e#We can use my cottage as a beach house.$l",
+                "ElliottRoommate0": "The farm will be such a lovely place to write. I'm really looking forward to this.$h#$e#We're going to make a great pair.$l",
+                "ElliottRoommate1": "This is going to be such an adventure! I'm really excited. Aren't you?$h#$e#We can use my cottage as a beach house.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "LogName": "Elliott engagement dialogue, no love portraits",	
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Elliott0": "The farm will be such a lovely place to write. I'm really looking forward to this.$h#$e#We're going to make a great pair.",
+                "Elliott1": "This is going to be such an adventure! I'm really excited. Aren't you?$h#$e#We can use my cottage as a beach house.",
+                "ElliottRoommate0": "The farm will be such a lovely place to write. I'm really looking forward to this.$h#$e#We're going to make a great pair.",
+                "ElliottRoommate1": "This is going to be such an adventure! I'm really excited. Aren't you?$h#$e#We can use my cottage as a beach house.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+//Elliott post-ceremony line: generic
+        {
+            "LogName": "Elliott terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life is certainly different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "My dearest friend",
+                "NPC.cs.4518": "My dearest friend",
+                "NPC.cs.4519": "My boon companion",
+                "NPC.cs.4522": "My muse",
+                "NPC.cs.4523": "My muse",
+                "Event.cs.1736": "$q -1 null#Yes, my muse?#$r -1 0 danceAsk#(Ask Elliott to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Elliott": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Elliott terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life is certainly different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "My dearest friend",
+                "NPC.cs.4518": "My dearest friend",
+                "NPC.cs.4519": "My boon companion",
+                "NPC.cs.4522": "My muse",
+                "NPC.cs.4523": "My muse",
+                "Event.cs.1736": "$q -1 null#Yes, my muse?#$r -1 0 danceAsk#(Ask Elliott to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Elliott": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Elliott roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Yes, my muse?#$r -1 0 danceAsk#(Ask Elliott to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Elliott": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Surely we already had this conversation? Or was that just a scene I wrote so vividly that it seemed to come to life...$s @@ I know I'm a somewhat recent transplant to the valley, but I understood the tradition to be the gifting of a single pendant. Why are you offering me another?$s |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Elliott": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: The pendant I already wear is a symbol of everything we mean to each other. The one you're offering me is just a shell.$s @@ No thank you, my friend. Wearing two pendants would be like rhyming a word with itself. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Elliott": "Married"
+            }
+        },
+        {
+	    "Logname": "Leah dialogue about Elliott",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+		"married_Elliott": "Elliott's a real romantic, even with his friends. I'm sure your days will be filled with poetry!$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries":
+            {
+                "MovieInvite_Spouse_Elliott": "My friend, of course I'd love to see a movie with you! I'll meet you at the theater.",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Elliott": "Heh... it just dawned on me...$h#$b#We've reached the summit, but not just physically... metaphorically as well.#$b#How poetic!$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+                "Elliott_spouse": "You don't need to get me anything. Your friendship is the greatest gift of all.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries":
+            {
+                "Elliott_spouse": "I enjoy seeing you so relaxed, {{Lowercase:{{TermofEndearment}}}}.$h",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries":
+            {
+                "Elliott_spouse": "I enjoy seeing you so relaxed, {{TermofEndearment}}.$h",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+                "Elliott_spouse": "You don't need to get me anything. Your friendship is the greatest gift of all.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Rainy_Night_2": "My skill with words is unmatched, yet I can't properly describe your constitution and resolve.#$b#It astounds me that you can withstand hours outdoors in the pouring rain.",
+                "Indoor_Day_0": "I've been taking much better care of myself now that we're {{RelationshipLabel}}. The solitary life wasn't particularly healthy for me.",
+                "Indoor_Night_0": "From the brightest winter star, to the shimmer of an iridium vein... nothing can compare with your mesmerizing spirit.$l", //credit to Airyn for the phrase "mesmerizing spirit!"
+                "Indoor_Night_3": "O, lonesome hours awaiting thee... But when my friend comes home to me, my heart, torn by the dread of night, is purified with golden light.#$e#Poetry is the only way I can begin to describe my fondness for you.$l",
+                "Indoor_Night_4": "My dearest friend... I wouldn't trade you for 100 iridium bars.#$e#Nor 1000...#$e#Not even 10,000 bars, no.$7#$e#...$7#$e#No, not even 100,000 bars!$a#$e#...$s#$e#Wa... one million bars of pure iridium...? Don't make me do this...$8",
+                "Outdoor_4": "I drank too much coffee... my mouth feels about as dry as the Calico Desert.$s",
+                "Good_0": "@... I'm so proud of all your hard work. I'm very lucky to be part of your life.$l",
+                "Good_1": "I made a whole secret book of poems expressing my affection for you.$l",
+                "fall_26": "Would you still respect me if I guzzled two gallons of pumpkin ale at the Spirit's Eve festival? Sometimes a man has primitive urges...",
+                "winter_28": "Happy new year's eve, my dearest friend. Please accept this to celebrate. [348]",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Rainy_Night_2": "My skill with words is unmatched, yet I can't properly describe your constitution and resolve.#$b#It astounds me that you can withstand hours outdoors in the pouring rain.",
+                "Indoor_Day_0": "I've been taking much better care of myself now that we're {{RelationshipLabel}}. The solitary life wasn't particularly healthy for me.",
+                "Indoor_Night_0": "From the brightest winter star, to the shimmer of an iridium vein... nothing can compare to your mesmerizing spirit.",
+                "Indoor_Night_3": "O, lonesome hours awaiting thee... But when my friend comes home to me, my heart, torn by the dread of night, is purified with golden light.#$e#Poetry is the only way I can begin to describe my fondness for you.",
+                "Indoor_Night_4": "My dearest friend... I wouldn't trade you for 100 iridium bars.#$e#Nor 1000...#$e#Not even 10,000 bars, no.$7#$e#...$7#$e#No, not even 100,000 bars!$a#$e#...$s#$e#Wa... one million bars of pure iridium...? Don't make me do this...$8",
+                "Outdoor_4": "I drank too much coffee... my mouth feels about as dry as the Calico Desert.$s",
+                "Good_0": "@... I'm so proud of all your hard work. I'm very lucky to be part of your life.$h",
+                "Good_1": "I made a whole secret book of poems expressing my affection for you.",
+                "fall_26": "Would you still respect me if I guzzled two gallons of pumpkin ale at the Spirit's Eve festival? Sometimes a man has primitive urges...",
+                "winter_28": "Happy new year's eve, my dearest friend. Please accept this to celebrate. [348]",
+                "Good_2": "I came to the valley to find the ivory tower from which my talents could reign supreme. But what I really found was a dungeon of loneliness. You saved me from that.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Rainy_Day_3": "I think I'll remain indoors today, {{Lowercase:{{TermofEndearment}}}}. The rain does my hair an injustice.",
+                "patio_Elliott": "Ah, what a lovely day to read a book... don't you think, {{Lowercase:{{TermofEndearment}}}}?",
+                "Rainy_Night_0": "Good evening. Did you have a productive day, {{Lowercase:{{TermofEndearment}}}}?",
+                "spring_23": "I look forward to dancing with you tomorrow, {{Lowercase:{{TermofEndearment}}}}.",
+                "Good_3": "You're looking chic today, {{Lowercase:{{TermofEndearment}}}}. How to describe your attire... Sumptuous, yet tasteful.#$b#I suppose when I next see it, it will be covered in mud... Well, there is beauty in ephemerality, too.$s",
+                "winter_7": "I'm a little out of practice, but I plan on entering the fishing contest tomorrow! You've got some stiff competition, {{Lowercase:{{TermofEndearment}}}}.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Rainy_Day_3": "I think I'll remain indoors today, {{TermofEndearment}}. The rain does my hair an injustice.",
+                "patio_Elliott": "Ah, what a lovely day to read a book... don't you think, {{TermofEndearment}}?",
+                "Rainy_Night_0": "Good evening. Did you have a productive day, {{TermofEndearment}}?",
+                "spring_23": "I look forward to dancing with you tomorrow, {{TermofEndearment}}.",
+                "Good_3": "You're looking chic today, {{TermofEndearment}}. How to describe your attire... Sumptuous, yet tasteful.#$b#I suppose when I next see it, it will be covered in mud... Well, ephemerality is itself beautiful.$s",
+                "winter_7": "I'm a little out of practice, but I plan on entering the fishing contest tomorrow! You've got some stiff competition, {{TermofEndearment}}.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Outdoor_Elliott": "Today, I'm going to continue writing my new novel. What better place than our wonderful farm?#$e#This is perfect.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Event.cs.1629": "Yes... could I refuse my dearest friend? We'll dance from now 'til springtime's end.$h#$b#That is, until the end of the festival... I confess my lifestyle lends me more stamina for rhymes than rhythms.$s",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "elliottLetter1": "@, my friend,^^I've just arrived in Grampleton, to start the tour. I've forgotten how hectic the city is! The streets are packed with people... they either seem in a mad hurry, or lost in a daze, unaware of their surroundings. I miss Pelican Town already!^^I begin the tour this evening, at a local bookstore. I must admit, I'm becoming a bit nervous at the thought of public speaking... my stomach feels as if it's been twisted into a soft pretzel and doused with spicy cheese dip. Wish me luck!^^-Love, Elliott^^P.S. I hope you had a peaceful night, and weren't too scared all alone in that big house! %item conversationTopic ElliottGone2 0 %%[#]Letter From Elliott",
+                "elliottLetter2": "My dear @,^^The first reading went well, though the audience was a bit smaller than I'd hoped. Still, I sold enough copies of the book to pay for my (bug-infested) hotel room!^^In a few hours, I leave for Zuzu City. If yesterday's reading was a warm-up, this next one will be a true napalm blast...^^I miss you very much. Remember to eat well! Oh, and don't forget the leftover crab cakes I put in the fridge...^-Love, Elliott %item conversationTopic ElliottGone3 0 %%[#]Letter From Elliott 2",
+                "elliottLetter3": "Cherished @,^^Last night in Zuzu City was quite the experience! It seems there's a large literary scene here... a few dozen people showed up at my reading!^^I even signed a couple of autographs... it's strange to be seen as someone important. It's all a matter of framing, a grand illusion... for truly I am no one special. Only your devoted friend, as always.^^Currently I'm alone, in my hotel room, 'ingesting' a Joja Value Meal...^^Should this be called 'food'?^Or 'edible matter'?^I needn't long brood^It must be the latter^^I look forward to returning home soon. Hope you enjoyed the crab cakes.^^-Love, Elliott %item conversationTopic ElliottGone4 0 %%[#]Letter From Elliott 3",
+                "elliottLetter4": "In dreams, when graced with lofty view^I gaze upon the sunlit sea^What distant shores I've travelled to^But time now clouds my memory^^There is but one eternal place^Where I shall someday pass beyond^With you, in Valley dear's embrace:^Our little home beside the pond^^-Elliott %item conversationTopic ElliottGone5 0 %%[#]Letter From Elliott 4",
+                "elliottLetter5": "My dear @,^^I won't bore you with any more details about my readings. They are mostly the same.^^I'm sure your time has been much more exciting! I can't wait to return and see what progress has been made.^^On these long travels between towns, I amuse myself by closing my eyes and envisioning the farm... I see kegs pulsing with sweet wine, a furnace ablaze with precious ore, and our little kitchen with the smell of cinnamon and nutmeg. There's a lot to enjoy!^^Just don't stay out too late in the mines, {{Lowercase:{{TermofEndearment}}}}. It's dangerous in there! If you must go... bring plenty of food.^^-Love, Elliott %item conversationTopic ElliottGone6 0 %%[#]Letter From Elliott 5",
+                "elliottLetter6": "Dearest @,^^This will be my last letter before I return home. I've had a fine trip... though nothing too exciting. It's been nice to meet people who enjoy my work, but I'm eager to return home.^^I look forward to the comfort of our little house, the satisfying farm work, a home-cooked meal, and most of all, cozying up by the fire with you.^^See you soon!^-Love, Elliott %item conversationTopic ElliottGone7 0 %%[#]Letter From Elliott 6",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+		"HasMod |contains=tiakall.writerelliott": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "elliottLetter1": "@, my friend,^^I've just arrived in Grampleton, to start the tour. I've forgotten how hectic the city is! The streets are packed with people... they either seem in a mad hurry, or lost in a daze, unaware of their surroundings. I miss Pelican Town already!^^I begin the tour this evening, at a local bookstore. I must admit, I'm becoming a bit nervous at the thought of public speaking... my stomach feels as if it's been twisted into a soft pretzel and doused with spicy cheese dip. Wish me luck!^^-Love, Elliott^^P.S. I hope you had a peaceful night, and weren't too scared all alone in that big house! %item conversationTopic ElliottGone2 0 %%[#]Letter From Elliott",
+                "elliottLetter2": "My dear @,^^The first reading went well, though the audience was a bit smaller than I'd hoped. Still, I sold enough copies of the book to pay for my (bug-infested) hotel room!^^In a few hours, I leave for Zuzu City. If yesterday's reading was a warm-up, this next one will be a true napalm blast...^^I miss you very much. Remember to eat well! Oh, and don't forget the leftover crab cakes I put in the fridge...^-Love, Elliott %item conversationTopic ElliottGone3 0 %%[#]Letter From Elliott 2",
+                "elliottLetter3": "Cherished @,^^Last night in Zuzu City was quite the experience! It seems there's a large literary scene here... a few dozen people showed up at my reading!^^I even signed a couple of autographs... it's strange to be seen as someone important. It's all a matter of framing, a grand illusion... for truly I am no one special. Only your devoted friend, as always.^^Currently I'm alone, in my hotel room, 'ingesting' a Joja Value Meal...^^Should this be called 'food'?^Or 'edible matter'?^I needn't long brood^It must be the latter^^I look forward to returning home soon. Hope you enjoyed the crab cakes.^^-Love, Elliott %item conversationTopic ElliottGone4 0 %%[#]Letter From Elliott 3",
+                "elliottLetter4": "In dreams, when graced with lofty view^I gaze upon the sunlit sea^What distant shores I've travelled to^But time now clouds my memory^^There is but one eternal place^Where I shall someday pass beyond^With you, in Valley dear's embrace:^Our little home beside the pond^^-Elliott %item conversationTopic ElliottGone5 0 %%[#]Letter From Elliott 4",
+                "elliottLetter5": "My dear @,^^I won't bore you with any more details about my readings. They are mostly the same.^^I'm sure your time has been much more exciting! I can't wait to return and see what progress has been made.^^On these long travels between towns, I amuse myself by closing my eyes and envisioning the farm... I see kegs pulsing with sweet wine, a furnace ablaze with precious ore, and our little kitchen with the smell of cinnamon and nutmeg. There's a lot to enjoy!^^Just don't stay out too late in the mines, {{TermofEndearment}}. It's dangerous in there! If you must go... bring plenty of food.^^-Love, Elliott %item conversationTopic ElliottGone6 0 %%[#]Letter From Elliott 5",
+                "elliottLetter6": "Dearest @,^^This will be my last letter before I return home. I've had a fine trip... though nothing too exciting. It's been nice to meet people who enjoy my work, but I'm eager to return home.^^I look forward to the comfort of our little house, the satisfying farm work, a home-cooked meal, and most of all, cozying up by the fire with you.^^See you soon!^-Love, Elliott %item conversationTopic ElliottGone7 0 %%[#]Letter From Elliott 6",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+		"HasMod |contains=tiakall.writerelliott": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries":
+            {
+                "1848481/f Elliott 2000/t 1300 1900/n elliottReading": "breezy/14 11/Elliott 14 9 2 Pierre 10 13 1 Caroline 11 13 3 Marnie 11 15 1 Lewis 12 15 3 Sebastian 11 17 2 Abigail 12 18 3 Sam 10 18 1 Leah 15 15 0 Emily 16 16 2 Clint 15 17 1 Jodi 19 13 2 Robin 20 14 3 Demetrius 20 11 3 Maru 10 10 1 Penny 11 9 1 Gus 18 16 0 Shane 19 16 0 Willy 21 11 3 farmer 6 14 1/skippable/move farmer 6 0 0/move farmer 0 -1 0/move Elliott 0 4 3/faceDirection farmer 1/speak Elliott \"@, you made it!$h#$b#I feel so relieved to be done with my book... it's like an elephant's been lifted off my shoulders.\"/pause 800/faceDirection Elliott 2/pause 500/faceDirection Elliott 1/pause 500/faceDirection Elliott 3/pause 500/speak Elliott \"Well, I'd better get started with the reading... Wish me luck.$8\"/pause 700/move Elliott 0 -4 2/faceDirection farmer 0/pause 500/faceDirection Elliott 1/faceDirection Elliott 2/faceDirection Elliott 3/faceDirection Elliott 2/speak Elliott \"Good afternoon, everyone.\"/pause 500/faceDirection Caroline 0 true/faceDirection Emily 0 true/textAboveHead Emily \"Hi!\"/faceDirection Abigail 0/faceDirection Sebastian 0 true/faceDirection Lewis 0/faceDirection Sam 0 true/faceDirection Marnie 0/faceDirection Pierre 0 true/faceDirection Jodi 0/faceDirection Clint 0/speak Elliott \"Ever since I was a young boy, I've dreamt of becoming a writer.#$b#When the time came for me to leave home and start my own life, I moved here. I was drawn to the peaceful beauty of the valley, and hoped that days of quiet reflection in this idyllic atmosphere would fan the literary flames.\"/showFrame Elliott 32/pause 200/showFrame Elliott 34/fork 958699 mysteryBook/fork 958700 romanceBook/speak Elliott \"After countless hours scribbling at my writing desk, I present to you my first novel: 'The Rise And Fall Of Planet Yazzo'... It's a sci-fi epic spanning thousands of years in an exotic planetary system.\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"Chapter One.#$b#Commander Yutkin stepped through the golden archway as the airlock snapped shut behind him. Today was his first day on Planet Yazzo, and all 14 of the alliance delegates had been summoned to the Grand Spire...\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sebastian -1000 -1000/warp Sam -1000 -1000/warp Abigail -1000 -1000/warp Jodi -1000 -1000/warp Robin -1000 -1000/warp Demetrius -1000 -1000/warp Shane -1000 -1000/warp Maru -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"...And as the 7th moon descended beneath the horizon, the planet of Yazzo would begin its sinister transformation... an event for which Commander Yutkin was completely unprepared.\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"Well, that concludes my reading. I'll be selling signed copies of the book by the front desk. Thanks for listening!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"Well, how was it?\"/emote farmer 32/speak Elliott \"Thanks. $h#$b#You know, I got the idea for making a sci-fi book from you. Do you remember?#$b#That's why I've dedicated this book to you...\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",
+                "mysteryBook": "pause 400/speak Elliott \"After countless hours scribbling at my writing desk, I present to you my first book: 'Blue Tower'... It's a mystery novel set in a surreal, dystopian future.\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"Chapter One.#$b#From the shadows emerged a man, radiating with enigmatic omniscience. 'Good Evening, Mr. Lu,' he said, the corners of his mouth quivering. Lu seemed astonished. 'How did you know my name?'\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sebastian -1000 -1000/warp Sam -1000 -1000/warp Abigail -1000 -1000/warp Jodi -1000 -1000/warp Robin -1000 -1000/warp Demetrius -1000 -1000/warp Shane -1000 -1000/warp Maru -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"Lu checked Jenu's pockets, then stood up and walked into the bedroom. He quickly found the small golden key that he was looking for and slipped it into his coat pocket.\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"Well, that concludes my reading. I'll be selling signed copies of the book by the front desk. Thanks for listening!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"Well, how was it?\"/emote farmer 32/speak Elliott \"Thanks. $h#$b#You know, I got the idea for making a mystery from you. Do you remember?#$b#That's why I've dedicated this book to you...\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",
+                "romanceBook": "pause 400/speak Elliott \"After countless hours scribbling at my writing desk, I present to you my first novel: 'Camellia Station'... It's a romance novel about a train stewardess who falls in love with a traveling architect...\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"Chapter One.#$b#'Your ticket, sir?' Ticket collector Gozman extended a gloved hand towards the young commuter. 'Ah, yes. I have it right here,' he replied, reaching into his coat pocket. Mortified, he discovered that the ticket was missing.\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sebastian -1000 -1000/warp Sam -1000 -1000/warp Abigail -1000 -1000/warp Jodi -1000 -1000/warp Robin -1000 -1000/warp Demetrius -1000 -1000/warp Shane -1000 -1000/warp Maru -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"...'Clara, there's something I must tell you,' he blurted as she turned to leave. Clara turned, slowly, and saw the look of desperation in Horatio's eye. At that moment Gozman burst into the compartment, red-faced.\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"Well, that concludes my reading. I'll be selling signed copies of the book by the front desk. Thanks for listening!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"Well, how was it?\"/emote farmer 32/speak Elliott \"Thanks. $h#$b#You know, I got the idea for writing a romance novel from you. Do you remember?#$b#That's why I've dedicated this book to you...\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+		"HasMod |contains=tiakall.writerelliott": "false",
+            }
+        },
+        {
+	    "Logname": "Elliott 10 heart event, love portraits true",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries":
+            {
+                "43/f Elliott 2500/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": "ocean/-1000 -1000/farmer 13 16 2 Elliott 13 27 1/specificTemporarySprite elliottBoat/skippable/viewport 17 26 clamp true/move farmer 0 8 2/faceDirection Elliott 0/speak Elliott \"Hey.\"/move farmer 0 2 2/faceDirection Elliott 1/faceDirection farmer 1/speak Elliott \"Look... I fixed up that old rowboat that's been sitting by my house. Pretty nice, huh?\"/pause 500/faceDirection Elliott 0/pause 500/speak Elliott \"@... Would you do me the honor of joining me for her maiden voyage?$l\"/faceDirection farmer 2/question fork1 \"Get in the boat?#Yes#No\"/fork NoToElliott/globalFade/viewport -1000 -1000/changeToTemporaryMap ElliottSea/playSound wateringCan/pause 1000/playSound wateringCan/playMusic 50s/warp farmer 26 20/positionOffset farmer 0 8/warp Elliott 26 20/showFrame Elliott 25/positionOffset Elliott 0 60/viewport 25 20 true/pause 5000/speak Elliott \"So my book's been out for a while now... It's not a best-seller or anything, but it's been getting some good reviews from the critics.#$b#And I really couldn't have finished it without your moral support.$l\"/pause 1000/speak Elliott \"Actually, that's not true at all. I would've finished it either way... but it wouldn't have been the same book.#$b#I told you once that I came here to be alone, so I could write free of all outside influences and distractions.$7#$b#I thought my story lived fully-formed within me, and I only had to let it spring forth in its purest form.$7#$b#But as I grew closer to you, and began to truly feel like a part of this community, I realized... Well, that stories don't work that way.$s#$b#Stories are about people. They're driven by the conflicts and connections between people... which emerge from the diversity of the human experience.#$b#The rich interplay of people who want different things, who've lived different lives, all crashing up against each other like waves on rocks...#$b#I was arrogant to think I could hold all of that within myself. I'm only one person. There were too many gaps for my imagination alone to fill.$s#$b#So it wasn't until my ivory tower was breached... until I started drawing inspiration from those around me... that my characters began to take life on the page.$7#$b#Oh, @... What kind of solipsistic drivel might I have produced, had I never opened myself to other perspectives?$s\"/emote Elliott 28/pause 200/emote farmer 28/pause 1000/speak Elliott \"And, well... I mentioned that stories are also about the connections between people... That's true of my life's story, too.#$b#@... You've become more important to me than I know how to express.$l#$b#You... you may have seen shades of that in my book... The unshakeable bond between the lead character and his cherished companion...$l\"/emote farmer 32/pause 150/speak Elliott \"I want to tell you how much your friendship means to me... How much brighter my days are when you feature in them... How much I still want to learn from you...\"/pause 1000/emote Elliott 40/pause 500/speak Elliott \"But for once, I'm at a loss for words.$s#$b#@, may I... hug you?$l\"/playMusic elliottPiano/pause 2500/showFrame Elliott 35/screenFlash 1/warp Elliott 26 20/positionOffset Elliott 14 8/positionOffset farmer -24 16/faceDirection farmer 1 true/showFrame 101/pause 4500/globalFade/viewport -1000 -1000/pause 1000/speak Elliott \"We'd better head back before the southern wind picks up.\"/pause 1400/speak Elliott \"Look at the valley from here... It finally looks like home.$l\"/end",
+                "NoToElliott": "emote Elliott 16/pause 800/faceDirection Elliott 1/showFrame Elliott 31/pause 1000/emote Elliott 28/pause 600/speak Elliott \"I see.$7\"/move farmer 0 -10 0 true/pause 800/end dialogue Elliott \"...$a\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+		"HasMod |contains=tiakall.writerelliott": "false",
+            }
+        },
+        {
+	    "Logname": "Elliott 10 heart event, love portraits false",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries":
+            {
+                "43/f Elliott 2500/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": "ocean/-1000 -1000/farmer 13 16 2 Elliott 13 27 1/specificTemporarySprite elliottBoat/skippable/viewport 17 26 clamp true/move farmer 0 8 2/faceDirection Elliott 0/speak Elliott \"Hey.\"/move farmer 0 2 2/faceDirection Elliott 1/faceDirection farmer 1/speak Elliott \"Look... I fixed up that old rowboat that's been sitting by my house. Pretty nice, huh?\"/pause 500/faceDirection Elliott 0/pause 500/speak Elliott \"@... Would you do me the honor of joining me for her maiden voyage?\"/faceDirection farmer 2/question fork1 \"Get in the boat?#Yes#No\"/fork NoToElliott/globalFade/viewport -1000 -1000/changeToTemporaryMap ElliottSea/playSound wateringCan/pause 1000/playSound wateringCan/playMusic 50s/warp farmer 26 20/positionOffset farmer 0 8/warp Elliott 26 20/showFrame Elliott 25/positionOffset Elliott 0 60/viewport 25 20 true/pause 5000/speak Elliott \"So my book's been out for a while now... It's not a best-seller or anything, but it's been getting some good reviews from the critics.#$b#And I really couldn't have finished it without your moral support.\"/pause 1000/speak Elliott \"Actually, that's not true at all. I would've finished it either way... but it wouldn't have been the same book.#$b#I told you once that I came here to be alone, so I could write free of all outside influences and distractions.$7#$b#I thought my story lived fully-formed within me, and I only had to let it spring forth in its purest form.$7#$b#But as I grew closer to you, and began to truly feel like a part of this community, I realized... Well, that stories don't work that way.$s#$b#Stories are about people. They're driven by the conflicts and connections between people... which emerge from the diversity of the human experience.#$b#The rich interplay of people who want different things, who've lived different lives, all crashing up against each other like waves on rocks...#$b#I was arrogant to think I could hold all of that within myself. I'm only one person. There were too many gaps for my imagination alone to fill.$s#$b#So it wasn't until my ivory tower was breached... until I started drawing inspiration from those around me... that my characters began to take life on the page.$7#$b#Oh, @... What kind of solipsistic drivel might I have produced, had I never opened myself to other perspectives?$s\"/emote Elliott 28/pause 200/emote farmer 28/pause 1000/speak Elliott \"And, well... I mentioned that stories are also about the connections between people... That's true of my life's story, too.#$b#@... You've become more important to me than I know how to express.#$b#You... you may have seen shades of that in my book... The unshakeable bond between the lead character and his cherished companion...$h\"/emote farmer 32/pause 150/speak Elliott \"I want to tell you how much your friendship means to me... How much brighter my days are when you feature in them... How much I still want to learn from you...\"/pause 1000/emote Elliott 40/pause 500/speak Elliott \"But for once, I'm at a loss for words.#$b#@, may I... hug you?$h\"/playMusic elliottPiano/pause 2500/showFrame Elliott 35/screenFlash 1/warp Elliott 26 20/positionOffset Elliott 14 8/positionOffset farmer -24 16/faceDirection farmer 1 true/showFrame 101/pause 4500/globalFade/viewport -1000 -1000/pause 1000/speak Elliott \"We'd better head back before the southern wind picks up.\"/pause 1400/speak Elliott \"Look at the valley from here... It finally looks like home.$h\"/end",
+                "NoToElliott": "emote Elliott 16/pause 800/faceDirection Elliott 1/showFrame Elliott 31/pause 1000/emote Elliott 28/pause 600/speak Elliott \"I see.$7\"/move farmer 0 -10 0 true/pause 800/end dialogue Elliott \"...$a\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+		"HasMod |contains=tiakall.writerelliott": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Temp",
+            "Entries":
+            {
+                "tooBold": null,
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "3912125/f Elliott 3500/O Elliott/t 500 1500/p Elliott/U 8": "continue/-10000 -1000/farmer -100 -100 2 Elliott -100 -100 2/addConversationTopic ElliottGone1 0/addConversationTopic elliottGone 6/addWorldState elliottGone/skippable/warp Elliott 63 15/warp farmer -100 -100/faceDirection Elliott 2/showFrame Elliott 38/viewport 64 15 clamp true/pause 1000/pause 2000/playSound doorClose/warp farmer 64 15/positionOffset farmer 0 16/pause 500/faceDirection farmer 3/emote farmer 8/pause 500/showFrame Elliott 39/emote Elliott 16/pause 500/speak Elliott \"@! I've just received the most exciting news!\"/pause 50/jump Elliott/pause 500/speak Elliott \"It's very short notice... but I've been invited to do a reading tour for my book, '%book'!\"/emote farmer 32/showFrame Elliott 0/faceDirection Elliott 1/pause 500/emote Elliott 28/pause 400/speak Elliott \"...I'll be out of town for a week. Will you be okay?$s\"/quickQuestion #Yes, I'll be fine.#I'll be happy as a clam!#Don't go!(break)emote Elliott 20\\speak Elliott \"I'll miss you very much, my friend.#$b#And I'll write to you every day, of course!\"\\emote farmer 20(break)jump Elliott\\pause 500\\speak Elliott \"Hah... good one. Now, don't get too excited...$8#$b#I'll be sure to write to you every day. I'll miss you!\"(break)speak Elliott \"But, dearest @... This is a rare opportunity for me. I must go!$s#$b#Please don't make me feel guilty about this. I'll write to you every day, and I'll be back before you know it.\"/pause 1000/positionOffset Elliott 7 0/positionOffset farmer -7 0/animate Elliott true true 100 35/animate farmer true true 100 101/pause 2000/stopAnimation Elliott/showFrame Elliott 4/stopAnimation farmer/positionOffset Elliott -7 0/positionOffset farmer 7 0/pause 500/speak Elliott \"I leave early tomorrow morning...#$b#I need to pack!$8\"/end dialogue Elliott \"Don't let me forget my hairbrush, my hairspray, my silk hair cap, and my pomegranate conditioner!\"",
+            },
+            "When":
+            {
+		"HasMod |contains=tiakall.writerelliott": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "3912132/e 3912126/O Elliott/A elliottGone/B": "spring_day_ambient/-1000 -1000/farmer 27 13 2 Elliott 25 13 1/fade unfade/makeInvisible 25 13/makeInvisible 26 13/makeInvisible 20 4/makeInvisible 22 4/eyes 1 -6000/viewport -100 -100 true unfreeze/pause 3000/emote farmer 24/pause 2000/speak Elliott \"@... I'm back...\"/jump farmer/pause 1000/move farmer -1 0 3/animate Elliott true true 100 35/animate farmer true true 100 101/positionOffset farmer -16 0/positionOffset Elliott 4 0/pause 2000/stopAnimation Elliott/showFrame Elliott 4/stopAnimation farmer/positionOffset Elliott -4 0/pause 1000/speak Elliott \"Ah... I've missed you.$l#$b#One drop of the big city and I'm quenched... I much prefer being back here with you!\"/emote farmer 20/pause 300/speak Elliott \"Well, I guess it's back to the old routine once again!$h#$b#I've got some chores to catch up on...\"/pause 1000/end dialogue Elliott \"It's good to be back...\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "3912132/e 3912126/O Elliott/A elliottGone/B": "spring_day_ambient/-1000 -1000/farmer 27 13 2 Elliott 25 13 1/fade unfade/makeInvisible 25 13/makeInvisible 26 13/makeInvisible 20 4/makeInvisible 22 4/eyes 1 -6000/viewport -100 -100 true unfreeze/pause 3000/emote farmer 24/pause 2000/speak Elliott \"@... I'm back...\"/jump farmer/pause 1000/move farmer -1 0 3/animate Elliott true true 100 35/animate farmer true true 100 101/positionOffset farmer -16 0/positionOffset Elliott 4 0/pause 2000/stopAnimation Elliott/showFrame Elliott 4/stopAnimation farmer/positionOffset Elliott -4 0/pause 1000/speak Elliott \"Ah... I've missed you.$l#$b#One drop of the big city and I'm quenched... I much prefer being back here with you!\"/emote farmer 20/pause 300/speak Elliott \"Well, I guess it's back to the old routine once again!$h#$b#I've got some chores to catch up on...\"/pause 1000/end dialogue Elliott \"It's good to be back...\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false",
+            }
+        },
+	//Blush Edits
+        {
+	    "Logname": "Elliott no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott",
+            "FromFile": "assets/Portraits/ElliottNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.LeahElliott": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname": "Elliott no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott_Winter",
+            "FromFile": "assets/Portraits/ElliottNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+		"EnablePortraitEdits_FullyPlatonic": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.LeahElliott": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Elliott no blush portrait edit, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott",
+            "FromFile": "assets/Portraits/ElliottNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+	    "Logname": "Elliott no blush portrait edit, winter, SCC",
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott_Winter",
+            "FromFile": "assets/Portraits/ElliottNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 320
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        //COMPATIBILITY: PLATONIC RELATIONSHIPS
+        //This section prevents the dating-flag-required version of the vanilla 10 heart event added by Platonic Relationships from triggering. Thanks to Cherry for providing the event codes!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries":
+            {
+                "43/f Elliott 2500 /D Elliott/w sunny /t 700 1300": null,
+                "43/f Elliott 2500/D/Elliott/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": null,
+            },
+            "When":
+            {
+                "HasMod |contains=Cherry.PlatonicRelationships": "true"
+            },
+        },
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "summer_Mon10": "I can't help but picture you whenever I sit down to write.$l#$b#Would it be too sentimental to describe you as my muse?$h",
+                "fall_Mon10": "Hello, @. I must admit I was hoping I'd see you today.$l#$e#Thank you for coming by.$h",
+                "fall_Thu4": "Oh dear! A tiny crab appears to have made his home in my shirt pocket.$8#$e#That's the trouble with living on the beach.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "summer_Mon10": "I can't help but picture you whenever I sit down to write.$l#$b#Would it be too sentimental to describe you as my muse?$h",
+                "fall_Mon10": "Hello, @. I must admit I was hoping I'd see you today.$l#$e#Thank you for coming by.$h",
+                "fall_Thu4": "Oh dear! A tiny crab appears to have made his home in my shirt pocket.$8#$e#That's the trouble with living on the beach.",
+                "Mon10": "When you're around, @, the feelings in my heart can only be called poetry without words.#$e#I hope all is well with you.$h",
+                "Tue10": "In my life, I've spent so much time alone, but I think I may be ready for a change to that.",
+                "Thu10": "I've tried my hand at some sonnets lately.#$e#Oh! I've written nothing worth another's attention.#$e#Perhaps another time.",
+                "summer_Thu10": "I think of how much I was bullied and outcast as a child. To find someone like you, I feel luckier than I ever thought I'd be.$h",
+                "summer_Sun10": "I can often see pieces of myself in the characters I create. But lately, I've written some vignettes that resemble you more than me.",
+                "winter_Fri10": "I can often see pieces of myself in the characters I create. But lately, I've written some vignettes that resemble you more than me.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Indoor_Day_0": "#$c .5#How on earth did I manage to rough it out in that old shack? Even now, it already feels like a memory out of someone else's life.#I've been taking much better care of myself now that we're {{RelationshipLabel}}. The solitary life wasn't particularly healthy for me.",
+                "Indoor_Night_0": "From the brightest winter star, to the shimmer of an iridium vein... nothing can compare with your mesmerizing spirit.$l",
+                "Rainy_Night_4": "My dearest friend... I wouldn't trade you for 100 iridium bars.#$e#Nor 1000...#$e#Not even 10,000 bars, no.$7#$e#...$7#$e#No, not even 100,000 bars!$a#$e#...$s#$e#Wa... one million bars of pure iridium...? Don't make me do this...$8",
+                "Good_0": "@... I'm so proud of all your hard work. I'm very lucky to be part of your life.$l",
+                "Good_1": "I made a whole secret book of poems expressing my affection for you.$l",
+                "fall_26": "Would you still respect me if I guzzled two gallons of pumpkin ale at the Spirit's Eve festival? Sometimes a man has primitive urges...",
+                "winter_28": "Happy new year's eve, my dearest friend. Please accept this to celebrate. [348]",
+                "Indoor_Day_3": "#$c .5#Today is going to be a fantastic day... I can feel it! I get this special feeling in my nose...$h#A sheen of silky sun in window's glare... reminds me how I know I've found my home, wherein your gleaming gaze invites to share... a moment in the sun to call our own.",
+                "Indoor_Night_3": "#$c .5#O, lonesome hours awaiting thee... But when my friend comes home to me, my heart... torn by the dread of night, is purified with golden light.#A darkened, starry sky will blanket us, and captivate us with celestial charm. Beneath that shroud you'll find your peace, in trust that I will shelter you from any harm.#$e#Poetry is the only way I can begin to describe my fondness for you.$l",
+                "Outdoor_4": "#$c .5#Good morning. Might I steal a hug from my treasured friend?$l#I drank too much coffee... my mouth feels about as dry as the Calico Desert.$s",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Indoor_Day_0": "#$c .5#How on earth did I manage to rough it out in that old shack? Even now, it already feels like a memory out of someone else's life.#I've been taking much better care of myself now that we're {{RelationshipLabel}}. The solitary life wasn't particularly healthy for me.",
+                "Indoor_Night_0": "From the brightest winter star, to the shimmer of an iridium vein... nothing inspires me so much as you, my muse.",
+                "Rainy_Night_4": "My dearest friend... I wouldn't trade you for 100 iridium bars.#$e#Nor 1000...#$e#Not even 10,000 bars, no.$7#$e#...$7#$e#No, not even 100,000 bars!$a#$e#...$s#$e#Wa... one million bars of pure iridium...? Don't make me do this...$8",
+                "Good_0": "@... I'm so proud of all your hard work. I'm very lucky to be part of your life.$h",
+                "Good_1": "I made a whole secret book of poems expressing my affection for you.",
+                "fall_26": "Would you still respect me if I guzzled two gallons of pumpkin ale at the Spirit's Eve festival? Sometimes a man has primitive urges...",
+                "winter_28": "Happy new year's eve, my dearest friend. Please accept this to celebrate. [348]",
+                "Good_2": "I came to the valley to find the ivory tower from which my talents could reign supreme. But what I really found was a dungeon of loneliness. You saved me from that.",
+                "Indoor_Day_3": "#$c .5#Today is going to be a fantastic day... I can feel it! I get this special feeling in my nose...$h#A sheen of silky sun in window's glare... reminds me how I know I've found my home, wherein your gleaming gaze invites to share... a moment in the sun to call our own.",
+                "Indoor_Night_3": "#$c .5#O, lonesome hours awaiting thee... But when my friend comes home to me, my heart... torn by the dread of night, is purified with golden light.#A darkened, starry sky will blanket us, and captivate us with celestial charm. Beneath that shroud you'll find your peace, in trust that I will shelter you from any harm.#$e#Poetry is the only way I can begin to describe my fondness for you.$h",
+                "Outdoor_4": "#$c .5#Good morning. Might I steal a hug from my treasured friend?$h#I drank too much coffee... my mouth feels about as dry as the Calico Desert.$s",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Rainy_Night_0": "Good evening. Did you have a productive day, {{Lowercase:{{TermofEndearment}}}}?",
+                "spring_23": "I look forward to dancing with you tomorrow, {{Lowercase:{{TermofEndearment}}}}.",
+                "Good_3": "You're looking chic today, {{Lowercase:{{TermofEndearment}}}}. How to describe your attire... Sumptuous, yet tasteful.#$b#I suppose when I next see it, it will be covered in mud... Well, there is beauty in ephemerality, too.$s",
+                "winter_7": "I'm a little out of practice, but I plan on entering the fishing contest tomorrow! You've got some stiff competition, {{Lowercase:{{TermofEndearment}}}}.",
+                "Rainy_Day_3": "#$c .5#I think I'll remain indoors today, {{Lowercase:{{TermofEndearment}}}}. The rain does my hair an injustice..#Goodness! I'm in constant admiration at how you boldly venture outside on these days, yet it never dampens your spirit.",
+                "patio_Elliott": "#$c .5#Ah... What a lovely day to read a book, don't you think?#Feel free to join me if you're taking a break, {{Lowercase:{{TermofEndearment}}}}.$h",
+                "Rainy_Night_2": "#$c .5#Have you been out in the rain all day? My skill with words is unmatched, yet I can't properly describe your constitution and resolve.#Ah, {{Lowercase:{{TermofEndearment}}}}, I was just thinking about you. Welcome home.$h",
+                "winter_21": "I've always thought, as long as speaking is one of the most fundamentally human things we do, I might as well take some pride in it.$h#$e#I say I should speak mellifluously, even if others may find it strange.#$b#Yet, you know me well, {{Lowercase:{{TermofEndearment}}}}: It would be strange if I didn't speak in my most authentic voice, would it not?",
+                "Indoor_Day_4": "#$c .5#I've had this recurring nightmare that you gave me a buzz cut... You wouldn't ever do that to me, would you?$s#{{Lowercase:{{TermofEndearment}}}}, what do you think we should do for dinner tonight? It's your pick.#$e#I trust you.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries":
+            {
+                "Rainy_Night_0": "Good evening. Did you have a productive day, {{TermofEndearment}}?",
+                "spring_23": "I look forward to dancing with you tomorrow, {{TermofEndearment}}.",
+                "Good_3": "You're looking chic today, {{TermofEndearment}}. How to describe your attire... Sumptuous, yet tasteful.#$b#I suppose when I next see it, it will be covered in mud... Well, ephemerality is itself beautiful.$s",
+                "winter_7": "I'm a little out of practice, but I plan on entering the fishing contest tomorrow! You've got some stiff competition, {{TermofEndearment}}.",
+                "Rainy_Day_3": "#$c .5#I think I'll remain indoors today, {{TermofEndearment}}. The rain does my hair an injustice.#Goodness! I'm in constant admiration at how you boldly venture outside on these days, yet it never dampens your spirit.",
+                "patio_Elliott": "#$c .5#Ah... What a lovely day to read a book, don't you think?#Feel free to join me if you're taking a break, {{TermofEndearment}}.$h",
+                "Rainy_Night_2": "#$c .5#Have you been out in the rain all day? My skill with words is unmatched, yet I can't properly describe your constitution and resolve.#Ah, {{TermofEndearment}}, I was just thinking about you. Welcome home.$h",
+                "winter_21": "I've always thought, as long as speaking is one of the most fundamentally human things we do, I might as well take some pride in it.$h#$e#I say I should speak mellifluously, even if others may find it strange.#$b#Yet, you know me well, {{TermofEndearment}}: It would be strange if I didn't speak in my most authentic voice, would it not?",
+                "Indoor_Day_4": "#$c .5#I've had this recurring nightmare that you gave me a buzz cut... You wouldn't ever do that to me, would you?$s#{{TermofEndearment}}, what do you think we should do for dinner tonight? It's your pick.#$e#I trust you.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries":
+            {
+                "Elliott_spouse": "I've prepared a poem for this evening. It's a bit long, but speak to me again if you'd like to hear it.#$e#The Midnight Ocean#$b#When lost in life as though I were asleep, / I fell into the midnight ocean deep, / The tossing waves attacking me to keep.#$b#\"Prepost'rous, I can't die,\" thought I with pride, / For though it swept my body side to side, / \"I only need a luminescent guide.\"#$b#Perhaps a cracking lightning bolt could blind, / Flash up a shoreline, etch into my mind / A simple haven, quite an easy find.#$b#Perhaps a royal galleon, blazing hope -- / The crew would spy me through a telescope, / And with some brilliant fanfare, offer rope.#$b#But nothing regal answered my proud cry: / Instead, some glowing jellyfish came nigh, / These eerie blooms no brighter than a sigh.#$b#And beckoned by this ghostly company, / I joined their flow, my strength returning free, / For drawn along to refuge, I did see#$b#The saving light strikes not in gaudy show / But rather glints in softest somber glow.#e#Thank you for indulging me, my friend.$h",
+            },
+            "When":
+            {
+                "Year": "3",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries":
+            {
+                "Elliott_spouse": "{{Random: If we keep polluting the oceans, the jellies will surely go extinct. It's already in the process of happening.#$e#What a shame... we have no respect for nature anymore. ++ 'The harbinger of hope sighs out his light#$b#While ancient moonlamps serenade the night.'#$b#Oh, @, that's the last two lines of a poem that's fluttering into my head.#$e#I don't keep a poem if I rhyme 'light' with 'night,' so this one's just for the moment.$h ++ I've prepared a poem for this evening. It's a bit long, but speak to me again if you'd like to hear it.#$e#The Midnight Ocean#$b#When lost in life as though I were asleep, / I fell into the midnight ocean deep, / The tossing waves attacking me to keep.#$b#\"Prepost'rous, I can't die,\" thought I with pride, / For though it swept my body side to side, / \"I only need a luminescent guide.\"#$b#Perhaps a cracking lightning bolt could blind, / Flash up a shoreline, etch into my mind / A simple haven, quite an easy find.#$b#Perhaps a royal galleon, blazing hope -- / The crew would spy me through a telescope, / And with some brilliant fanfare, offer rope.#$b#But nothing regal answered my proud cry: / Instead, some glowing jellyfish came nigh, / These eerie blooms no brighter than a sigh.#$b#And beckoned by this ghostly company, / I joined their flow, my strength returning free, / For drawn along to refuge, I did see#$b#The saving light strikes not in gaudy show / But rather glints in softest somber glow.#e#Thank you for indulging me, my friend.$h |inputSeparator=++}}"
+            },
+            "When":
+            {
+                "Year |contains= 1, 2, 3": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            }
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Elliott
+	        "LogName": "KO Mines- Elliott, love portraits",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Elliott 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Elliott \"There we go... Welcome back, my friend. Are you alright?\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Elliott \"I was staring out at the ocean when suddenly a doubt entered my head. I had a feeling I had to come and find you quickly.#$b#It's a good thing we hurried our search for you. I cannot fathom what would've happened if you'd stayed unconscious down there much longer.$2\"/pause 1000/speak Marlon \"Elliott came to get me as soon as possible. I ventured into the mines to find you as requested.#$b#He was quite worried about you. You're blessed to have ended up sharing your life with someone so compassionate.\"/emote Elliott 16/pause 500/speak Elliott \"There is no need to emphasize it, Marlon. It's nothing extraordinary.#$b#In fact, it seems like the least I could do as @'s {{PlatonicSocialMenuLabel}}.$l\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I observed. You did well to fetch me.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Elliott \"{{TermofEndearment}}, we should go before any of those monsters decide they'd like a taste of the surface.#$b#Of course, I will not stop you from returning here, but I will at least wish for your continued safety.$l#$b#I find my adventures in the pages of my favorite books, but I understand that you find yours down there in the dark. I can only continue to support you, @.$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Elliott \"{{TermofEndearment}}, it's reassuring to see you return home safe. Though you do still look quite haggard...$s#$c 0.7#Oh, well. Will you allow me to dote on you just for today? It's as much for you as it is for me...$1#$b#Here, a snack ought to boost your energy at least a little. Don't work yourself too hard for the rest of today.[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+                        },
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                        "HasConversationtopic |contains=elliottGone": "false",
+			"UseLovePortraits": "true",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true",
+		    }
+         },
+    {       //Mine death with Elliott
+	        "LogName": "KO Mines- Elliott, no love portraits",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Elliott 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Elliott \"There we go... Welcome back, my friend. Are you alright?\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Elliott \"I was staring out at the ocean when suddenly a doubt entered my head. I had a feeling I had to come and find you quickly.#$b#It's a good thing we hurried our search for you. I cannot fathom what would've happened if you'd stayed unconscious down there much longer.$2\"/pause 1000/speak Marlon \"Elliott came to get me as soon as possible. I ventured into the mines to find you as requested.#$b#He was quite worried about you. You're blessed to have ended up sharing your life with someone so compassionate.\"/emote Elliott 16/pause 500/speak Elliott \"There is no need to emphasize it, Marlon. It's nothing extraordinary.#$b#In fact, it seems like the least I could do as @'s {{PlatonicSocialMenuLabel}}.\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I observed. You did well to fetch me.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Elliott \"{{TermofEndearment}}, we should go before any of those monsters decide they'd like a taste of the surface.#$b#Of course, I will not stop you from returning here, but I will at least wish for your continued safety.$7#$b#I find my adventures in the pages of my favorite books, but I understand that you find yours down there in the dark. I can only continue to support you, @.$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Elliott \"{{TermofEndearment}}, it's reassuring to see you return home safe. Though you do still look quite haggard...$s#$c 0.7#Oh, well. Will you allow me to dote on you just for today? It's as much for you as it is for me...$1#$b#Here, a snack ought to boost your energy at least a little. Don't work yourself too hard for the rest of today.[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+                        },
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                        "HasConversationtopic |contains=elliottGone": "false",
+			"UseLovePortraits": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true",
+		    }
+         },
+    {       //Mine death- Elliott on tour
+	        "LogName": "KO Mines- ElliottGone",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \"Open your eyes, {2}.\"/viewport 19 10 true/pause 1500/speak Marlon \"Hello there, @. I'm glad you managed to wake. For a moment, I was worried that your injury may have been worse than it looked.\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Marlon \"As per my routine, I was culling the population of slimes in the mines when all of a sudden, I noticed that they were amassing in one place.#$b#I followed their tracks and found you, face-down on the ground and out cold. You seem to have been knocked out, although thankfully, the responsible injury seems minor.\"/pause 500/speak Marlon \"At any rate, it is best you return home. You may have gotten away with only a mild injury, but you shouldn't be negligent of your exhaustion.\"/faceDirection Marlon 2/pause 500/speak Marlon \"I should also inform you that, as per Guild policy, I will be sending a brief memo of today's events to your next of kin. Your {{PlatonicSocialMenuLabel}}, in this case.#$b#I shall not disclose anything more than general information, do not worry. Simply focus on regaining your strength.#$b# And of course, continue the good work you're doing once you're recovered. You're truly an invaluable member of the Guild.\"/emote farmer 16/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/message \"I do feel exhausted, but not terribly injured, as he said.\"/message \"Hopefully, that will be enough to reassure Elliott, wherever he is now...\"/mail ElliottReactionMine/minedeath/end",
+    		},
+		    "When": {
+			"Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+		        "HasConversationtopic":"elliottGone",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Hospital Death- Elliott
+            "LogName": "Player 'Killed'- Elliott",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Elliott 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Elliott 5/move Elliott 0 3 2/textAboveHead Elliott \"{0}!\"/emote farmer 16/move Elliott -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Elliott 0 1 3/speak Elliott \"Oh, @, look at you... I hurried over as soon as I heard you were injured!$2\"/emote farmer 60/pause 500/speak Elliott \"You certainly seem better... You're not in too much pain, I hope?$2#$b#Even if you stand in front of me now, my heart cannot help but worry.$2\"/emote Elliott 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Elliott 3/speak Elliott \"{{TermofEndearment}}, there are no words to express how relieved I am that you pulled through.#$b#In the moments when your condition remained unsure, I realized how much of myself I owed to you. I couldn't bear to ever lose you.#$b#I beg of you to be more careful next time, if only for the sake of our cherished friendship.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Elliott \"Dearest @, your topmost priority should be to recover your health for now. All else can wait.$2#$c 0.7#You hardly ever pause your work, so perhaps these unfortunate circumstances will give you good reason to rest.#$b#I've prepared you a meal, if you'd like. It'll give your body the energy it needs to bounce back from your ordeal. [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+                "Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                "HasConversationtopic |contains=elliottGone": "false",
+		"Relationship:Harvey |contains=Engaged, Married": "false",
+		"Relationship:Maru |contains=Engaged, Married": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true",
+            },
+         },
+    {       //Hospital death- Elliott on tour
+            "LogName": "Player 'Killed'-ElliottGone",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+		        "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Harvey \"Since you were unconscious and unable to consent to the surgery, I had to call your {{PlatonicSocialMenuLabel}} to explain the situation and get his consent instead.#$b#He was very worried for you, of course. #$b#Even said he would cancel his tour and return to Stardew Valley, although he agreed to hold off on that when I updated him on your condition after the surgery.\"/pause 500/speak Harvey \"Elliott was prepared to drop everything and return home to you...$2\"/pause 500/emote farmer 60/pause 1000/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"Well, if you're feeling alright, you can go home. Elliott said he would write you a letter soon, so keep an eye on your mail.\"/textAboveHead Harvey \"Take care!\"/move Harvey 1 0 0/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/emote farmer 40/pause 500/message \"I feel well enough to return home, but...\"/pause 1000/emote farmer 28/message \"At a time like this, I miss Elliott more than ever.\"/mail ElliottReactionHospital/hospitaldeath/end",
+            },
+            "When": {
+                "Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                "HasConversationtopic": "elliottGone",
+		"Relationship:Harvey |contains=Engaged, Married": "false",
+		"Relationship:Maru |contains=Engaged, Married": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+    {       //Hospital death- Elliott ex
+            "LogName": "Player 'Killed'- Elliott Ex-Partner",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Elliott 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"@ is ready to see you.#$b#It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.#$b#...And you should think of your own wellbeing, too.$2\"/pause 500/speak Elliott \"Of course. Thank you for your impartial attitude, Doctor.$2\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Elliott 0 4 3/emote farmer 16/faceDirection Elliott 3/pause 1000/speak Elliott \"Good. You seem to be better. It was all I needed to know in order to rest easy.$7#$b#...$2#$b#I hope my presence doesn't complicate things further. I just didn't want you to wake from near-death all alone.$2\"/emote farmer 16/pause 1000/speak Elliott \"This is not an apology, nor willingness to reforge our bond. Worrying for you is simply... a habit that my heart has yet to kick.$2#$b#I'll leave. It's best we don't continue this conversation. Be well, @.$2\"/pause 500/move Elliott 0 -4 0/move Elliott -8 0 0/move Elliott 0 -3 0/warp Elliott -100 -100/emote farmer 28/hospitaldeath/end dialogue Elliott \"Enough of this, @. I have no desire to talk to you. It was already hard enough to fear for you once more...$2#$b#Just like I still had enough respect to come support you, please have enough respect to leave me be.$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Elliott": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+		"Relationship:Maru |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+    {       //Elliott Letter
+            "LogName": "ElliottGone Letters",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                 "ElliottReactionHospital": "Dearest @,^^Dr. Harvey contacted me yesterday to ask for surgical consent on your behalf while you were unresponsive, and has since updated me on your condition. I was ready to cancel my tour and return home at once, although he assured me that you would be fine.^{{TermofEndearment}}, I was truly frightened for you, but all I can do from so far away is ask you to be careful.^I miss you and wish I could have been with you when you needed me the most.^^All my love, your devoted {{PlatonicSocialMenuLabel}} Elliott.[#]A Very Worried {{PlatonicSocialMenuLabel}}",
+                 "ElliottReactionMine": "Dear @,^^Imagine my surprise when I received a letter from Marlon yesterday! He informed me that you'd collapsed in the mines, although I was relieved to know that your injuries were only minor.^Still, I wish I had been able to be by your side, even for such a tiny mishap. I will have a lot of doting to catch up on once I return home.^^Be safe, and I shall see you soon, my muse.^-Love, Elliott[#]A Worried {{PlatonicSocialMenuLabel}}",
+                 },
+            "When": {
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+     {       //Island death before Leo - Elliott
+	        "LogName": "Island Death Elliott",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Elliott \"Oh dear! {{TermofEndearment}}, what in the world happened?$8#$b#You're, uh... How to put this... Looking a little scorched. And your hair is covered in cinders!$8#$b#It looks serious at first glance, but I'm relieved that you're alright. Be careful not to get hurt anymore, please.$2#$b#Moreover... Where did you even go to encounter such a fate?\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                	"HasConversationtopic |contains=elliottGone": "false",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {       //Island death before Leo - Elliott gone
+	        "LogName": "Island Death Elliott gone",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/message \"Good thing Elliott's not waiting at home. He'd be worried if he saw me like this...\"/minedeath/end",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                	"HasConversationtopic |contains=elliottGone": "true",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo, Elliott",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Elliott \"Oh dear! {{TermofEndearment}}, what in the world happened?$8#$b#You're, uh... How to put this... Looking a little scorched. And your hair is covered in cinders!$8#$b#It looks serious at first glance, but I'm relieved that you're alright. Be careful not to get hurt anymore, please.$2#$b#Moreover... Where did you even go to encounter such a fate?\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                	"HasConversationtopic |contains=elliottGone": "false",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo, Elliott gone",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"Good thing Elliott's not waiting at home... He'd be worried if he saw me like this.\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                	"HasConversationtopic |contains=elliottGone": "true",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Elliott",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Elliott \"Oh dear! {{TermofEndearment}}, what in the world happened?$8#$b#You're, uh... How to put this... Looking a little scorched. And your hair is covered in cinders!$8#$b#It looks serious at first glance, but I'm relieved that you're alright. Be careful not to get hurt anymore, please.$2#$b#Moreover... Where did you even go to encounter such a fate?\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                	"HasConversationtopic |contains=elliottGone": "false",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Elliott gone",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash.#$b#I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home... Oh, Elliott's out of town, isn't he? Lucky, that.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Elliott",
+                	"HasConversationtopic |contains=elliottGone": "true",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueElliott",
+		"Entries": {
+			"funLeave_Elliott": "#$c .5#{{TermofEndearment}}, how are you? Did you sleep well?#I wrote some more poetry this morning. I'll share it with you sometime.$h#$e#$c .5#We appear to be running low on groceries. I'll stop by Pierre's later today.#I know Mondays can get busy, so don't overwork yourself, my friend.",
+			"funReturn_Elliott": "#$c .5#Hey... I'm very proud of everything you've done today. You've worked hard.#My day was nothing special, my friend.#$e#$c .7#Let's continue the book I was reading for you before bed.#Tonight marks the thrilling conclusion of our book! I hope you're just as excited as I am.$h"
+		},
+		"When": {
+			"DayOfWeek": "Monday",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueElliott",
+		"Entries": {
+			"funLeave_Elliott": "#$c .5#Good morning. It is an amazing feeling, no longer waking to an empty house.#Hello, @. Waking up to silence instead of seagulls is an absolute wonder, is it not?#$e#This life with you... It is truly a life anyone would seek.$h#$b#Stay safe today. I love you, my dearest friend.$l",
+			"funReturn_Elliott": "#$c .5#Welcome back. You must be starving. Don't worry, I have just the thing for you. Enjoy.[213 212 244 198 214]#You look tired, @. Do you need me to bring you anything?$h#$e#You should get some rest soon."
+		},
+		"When": {
+			"DayOfWeek": "Wednesday",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueElliott",
+		"Entries": {
+			"funLeave_Elliott": "#$c .5#What are you up to today, my muse? I think I've read enough literature this week.#I made us some breakfast, dearest @. Here you are.[194 195 211 201 241]#$e#$c .5#I'll be down at the beach today. It's always nice to see the ocean again.#I'll be using this day to relax. Make sure you do the same sometime.",
+			"funReturn_Elliott": "#$c .5#Sorry I'm home late. But I bought some fresh fish from Willy today, I'll cook you dinner sometime to make up for it.#Oh! You frightened me, @. I'm surprised you're still up at this hour.$8#$e#Would you like to continue our book tonight? Is that why you were waiting for me?"
+		},
+		"When": {
+			"DayOfWeek": "Friday",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueElliott",
+		"Entries": {
+			"funLeave_Elliott": "#$c .5#Good morning. It's time for another day.$h#Ah, you're awake. Did you sleep well?$h#$e#$c .5#The library is usually unoccupied on Sundays so that's where I'll be today.#I'll be out in town today. You know where to find me, my friend.",
+			"funReturn_Elliott": "#$c .5#I'm just sipping on some water. I didn't drink much at the saloon but I'd prefer not to take any chances.#@! You have an absolutely inspiring energy about you tonight!$h#$e#Are you ready to get some rest? Or do you still need to attend to the farm?#$b#If so, be careful, it's hard to see out in the dark.$h"
+		},
+		"When": {
+			"DayOfWeek": "Sunday",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueElliott",
+		"Entries": {
+			"summer_9": "I have to visit Dr. Harvey today, {{Lowercase:{{TermofEndearment}}}}.#$b#Don't worry about me.$h"
+		},
+		"When": {
+                	"TermofEndearment |contains=@": "false",
+                	"TermofEndearment |contains=BFF": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueElliott",
+		"Entries": {
+			"summer_9": "I have to visit Dr. Harvey today, {{TermofEndearment}}.#$b#Don't worry about me.$h"
+		},
+		"When": {
+                 	"TermofEndearment": "@, BFF",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Elliott",
+		"Entries": {
+			"marriage_bus2": "\"Love one another, but make not a bond of love:#$b#Let it rather be a moving sea between the shores of your souls.\"#$b#By Khalil Gibran... Have a good day, my dearest friend.",
+			"marriage_bus3": "\"This poem is endless...#$b#the odds against us are endless...#$b#our chances of being alive together statistically nonexistent...#$b#still we have made it.$l\"#$b#By Lisel Mueller... Have a good day, my cherished companion.",
+			"marriage_bus6": "\"You do not have to be good...#$b#You do not have to walk on your knees for a hundred miles through the desert repenting...#$b#You only have to let the soft animal of your body love what it loves.\"#$b#Have a good day, my muse.",
+			"marriage_bus8": "\"Dance as though no one is watching you...#$b#Love as though you have never been hurt before...$s#$b#Sing as though no one can hear you...$h#$b#Live as though heaven is here on earth.\"#$b#Have a good day, my friend.$h",
+			"marriage_bridge2": "Have you been working hard, my friend?#$b#Of course you have, why do I even ask?$h",
+			"marriage_beach": "The beach is quite relaxing at this hour, don't you think?",
+			"marriage_leah": "Leah looked lonely tonight, so I figured I'd catch up with an old friend.$h#$b#I'll be home soon.",
+			"marriage_nm": "It's a beautiful night, isn't it?#$b#The sky is truly sight to behold.$h",
+			"marriage_25": "There you are, my friend. I wanted to go in together.#$b#There's not much to do when you're early, speaking from experience, of course.$h",
+		},
+		"When": {
+                 	"UseLovePortraits": "true",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Elliott",
+		"Entries": {
+			"marriage_bus2": "\"Love one another, but make not a bond of love:#$b#Let it rather be a moving sea between the shores of your souls.\"#$b#By Khalil Gibran... Have a good day, my dearest friend.",
+			"marriage_bus3": "\"This poem is endless...#$b#the odds against us are endless...#$b#our chances of being alive together statistically nonexistent...#$b#still we have made it.$h\"#$b#By Lisel Mueller... Have a good day, my cherished companion.",
+			"marriage_bus6": "\"You do not have to be good...#$b#You do not have to walk on your knees for a hundred miles through the desert repenting...#$b#You only have to let the soft animal of your body love what it loves.\"#$b#Have a good day, my muse.",
+			"marriage_bus8": "\"Dance as though no one is watching you...#$b#Love as though you have never been hurt before...$s#$b#Sing as though no one can hear you...$h#$b#Live as though heaven is here on earth.\"#$b#Have a good day, my friend.$h",
+			"marriage_bridge2": "Have you been working hard, my friend?#$b#Of course you have, why do I even ask?$h",
+			"marriage_beach": "The beach is quite relaxing at this hour, don't you think?",
+			"marriage_leah": "Leah looked lonely tonight, so I figured I'd catch up with an old friend.$h#$b#I'll be home soon.",
+			"marriage_nm": "It's a beautiful night, isn't it?#$b#The sky is truly sight to behold.$h",
+			"marriage_25": "There you are, my friend. I wanted to go in together.#$b#There's not much to do when you're early, speaking from experience, of course.$h",
+			"marriage_bus9": "Are you done at the farm already, @?#$b#I wanted to say, I'm very proud of everything you've accomplished.",
+			"marriage_bridge": "I've been reflecting on how things have turned out.#$b#...I'm happy.$h",
+			"marriage_bridge3": "Ah, @! Just as I was starting to get lonely.",
+			"marriage_nmpre2": "Yes, don't worry, I haven't forgotten.#$b#There's still some time left before it opens, best to finish any duties you have now.$h#$b#If you are done, then please, join me.",
+		},
+		"When": {
+                 	"UseLovePortraits": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Elliott",
+		"Entries": {
+			"marriage_bus": "Ah, how are you doing, {{Lowercase:{{TermofEndearment}}}}?#$b#I write outside once in awhile to get my thoughts flowing.$h",
+			"marriage_bus4": "\"There is no chance that we will fall apart...#$b#There is no chance. There are no parts.\"#$b#By June Jordan... Have a good day, {{Lowercase:{{TermofEndearment}}}}.",
+			"marriage_bus7": "\"Promise yourself to be so strong that nothing can disturb your peace of mind...#$b#To talk health, happiness, and prosperity to every person you meet...#$b#To make all your friends feel like there is something in them.\"$h#$b#By Christian Larson... I know you'll always do the right thing, {{Lowercase:{{TermofEndearment}}}}.",
+			"marriage_r2": "I'd recognize those footsteps anywhere.$h#$b#Hello, {{Lowercase:{{TermofEndearment}}}}!",
+			"marriage_beach3": "I passed by my old house... It's a shame that such fine construcion is going unused.$s#$b#I wish that man Linus would just accept my offer and live in it.$s#$b#You're right, {{Lowercase:{{TermofEndearment}}}}. Nothing I can do. You did warn me he would refuse.#$b#I'll continue to use it as storage for now.$h",
+			"marriage_nmpre": "I wrote a poem about tonight, {{Lowercase:{{TermofEndearment}}}}. Would you like to hear it?#$b#'For the glimmering nights and the whimpering lights...$h#$b#I shall not weep, the lights that seek no sleep.'$a#$b#That is all.",
+			"marriage_13": "Good luck on the hunt, {{Lowercase:{{TermofEndearment}}}}. I'll be cheering you on.$h#$b#I'll come in after you.",
+			"marriage_16": "I've seen what you've been up to. Your display is going to be marvelous, {{Lowercase:{{TermofEndearment}}}}.$h",
+		},
+		"When": {
+                	"TermofEndearment |contains=@": "false",
+                	"TermofEndearment |contains=BFF": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Elliott",
+		"Entries": {
+			"marriage_bus": "Ah, how are you doing, {{TermofEndearment}}?#$b#I write outside once in awhile to get my thoughts flowing.$h",
+			"marriage_bus4": "\"There is no chance that we will fall apart...#$b#There is no chance. There are no parts.\"#$b#By June Jordan... Have a good day, {{TermofEndearment}}.",
+			"marriage_bus7": "\"Promise yourself to be so strong that nothing can disturb your peace of mind...#$b#To talk health, happiness, and prosperity to every person you meet...#$b#To make all your friends feel like there is something in them.\"$h#$b#By Christian Larson... I know you'll always do the right thing, {{TermofEndearment}}.",
+			"marriage_r2": "I'd recognize those footsteps anywhere.$h#$b#Hello, {{TermofEndearment}}!",
+			"marriage_beach3": "I passed by my old house... It's a shame that such fine construcion is going unused.$s#$b#I wish that man Linus would just accept my offer and live in it.$s#$b#You're right, {{TermofEndearment}}. Nothing I can do. You did warn me he would refuse.#$b#I'll continue to use it as storage for now.$h",
+			"marriage_nmpre": "I wrote a poem about tonight, {{TermofEndearment}}. Would you like to hear it?#$b#'For the glimmering nights and the whimpering lights...$h#$b#I shall not weep, the lights that seek no sleep.'$a#$b#That is all.",
+			"marriage_13": "Good luck on the hunt, {{TermofEndearment}}. I'll be cheering you on.$h#$b#I'll come in after you.",
+			"marriage_16": "I've seen what you've been up to. Your display is going to be marvelous, {{TermofEndearment}}.$h",
+		},
+		"When": {
+              	 	"TermofEndearment": "@, BFF",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Logname": "Elliott dialogue, aro yes, ace no, Immersive Spouses",
+		"Action": "EditData",
+		"Target": "Strings/schedules/Elliott",
+		"Entries": {
+			"marriage_docafter": "I think I'll need a bath...$s#$b#Would you... like to help?$l",
+		},
+		"When": {
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+
+        //COMPATIBILITY: REALISTIC WRITER ELLIOTT v1.0.0
+        //Lines in this section are based on the original lines written by tiakall, used and edited with permission. (Thank you, tiakall!)
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "3912125/f Elliott 3500/O Elliott/t 500 1500/p Elliott/U 8": "continue/-10000 -1000/farmer -100 -100 2 Elliott -100 -100 2/addConversationTopic ElliottGone1 0/addConversationTopic elliottGone 6/addWorldState elliottGone/skippable/warp Elliott 63 15/warp farmer -100 -100/faceDirection Elliott 2/showFrame Elliott 38/viewport 64 15 clamp true/pause 1000/pause 2000/playSound doorClose/warp farmer 64 15/positionOffset farmer 0 16/pause 500/faceDirection farmer 3/emote farmer 8/pause 500/showFrame Elliott 39/emote Elliott 16/pause 500/speak Elliott \"@! I've just received the most exciting news!\"/pause 50/jump Elliott/pause 500/speak Elliott \"It's very short notice... but I've been invited to do a reading tour for my book, '%book'!#$b#Do you know how rare this is for a debut author, @? Marketing like this is almost unheard of in this day and age!$8\"/emote farmer 32/showFrame Elliott 0/faceDirection Elliott 1/pause 500/emote Elliott 28/pause 400/speak Elliott \"...I'll be out of town for a week. It'll just be to Zuzu and Grampleton and some surrounding areas, but... Will you be okay?$s\"/quickQuestion #Yes, I'll be fine.#I'll be happy as a clam!#Don't go!(break)emote Elliott 20\\speak Elliott \"I'll miss you very much, my friend.#$b#And I'll write to you every day, of course!\"\\emote farmer 20(break)jump Elliott\\pause 500\\speak Elliott \"Hah... good one. Now, don't get too excited...$8#$b#I'll be sure to write to you every day. I'll miss you!\"(break)speak Elliott \"But, dearest @... This is a rare opportunity for me. I must go!$s#$b#Please don't make me feel guilty about this. I'll write to you every day, and I'll be back before you know it.\"/pause 1000/positionOffset Elliott 7 0/positionOffset farmer -7 0/animate Elliott true true 100 35/animate farmer true true 100 101/pause 2000/stopAnimation Elliott/showFrame Elliott 4/stopAnimation farmer/positionOffset Elliott -7 0/positionOffset farmer 7 0/pause 500/speak Elliott \"I leave early tomorrow morning...#$b#I need to pack!$8\"/end dialogue Elliott \"Don't let me forget my hairbrush, my hairspray, my silk hair cap, and my pomegranate conditioner!\"",
+            },
+            "When":
+            {
+		"HasMod |contains=tiakall.writerelliott": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "elliottLetter1": "@, my friend,^^I've just arrived in Grampleton, to start the tour. I've forgotten how hectic the city is! The streets are packed with people... they either seem in a mad hurry, or lost in a daze, unaware of their surroundings. I miss Pelican Town already!^^I begin the tour this evening, at a local bookstore. I must admit, I'm becoming a bit nervous at the thought of public speaking... my stomach feels as if it's been twisted into a soft pretzel and doused with spicy cheese dip. Wish me luck!^^-Love, Elliott^^P.S. I hope you had a peaceful night, and weren't too scared all alone in that big house! %item conversationTopic ElliottGone2 0 %%[#]Letter From Elliott",
+                "elliottLetter2": "My dear @,^^The first reading went very well! I'm still a bit abuzz thinking I actually got to do something I dreamed of since I was a child.  The audience was a bit small, but the lady who ran the bookstore was such a lovely person, and very accomodating. She kept some of my books on stock to sell later, and I learned a little bit about how these small bookstores work. Maybe one day we'll have one in Pelican Town too!^^In a few hours, I leave for Zuzu City. If yesterday's reading was a warm-up, this next one will be a true napalm blast...^^I miss you very much. Remember to eat well! Oh, and don't forget the leftover crab cakes I put in the fridge...^-Love, Elliott %item conversationTopic ElliottGone3 0 %%[#]Letter From Elliott 2",
+                "elliottLetter3": "Cherished @,^^Last night in Zuzu City was quite the experience! I was paired with a well-known author, a C. Sun, who has another book out in the same genre. So many people showed up just for them, but walked away with both our books! What a clever marketing trick! I thought this C. Sun would be too good to talk to a debut author, but they had so much helpful advice. We ended up exchanging email addresses and a promise to beta-read each other's next novel. Were I to ever become as famous, I hope I too can pay it forward.^^Currently I'm alone, in my hotel room, 'ingesting' a Joja Value Meal since I am responsible for my own travel costs...^^Should this be called 'food'?^Or 'edible matter'?^I needn't long brood^It must be the latter^^I look forward to returning home soon. Hope you enjoyed the crab cakes.^^-Love, Elliott %item conversationTopic ElliottGone4 0 %%[#]Letter From Elliott 3",
+                "elliottLetter4": "In dreams, when graced with lofty view^I gaze upon the sunlit sea^What distant shores I've travelled to^But time now clouds my memory^^There is but one eternal place^Where I shall someday pass beyond^With you, in Valley dear's embrace:^Our little home beside the pond^^-Elliott %item conversationTopic ElliottGone5 0 %%[#]Letter From Elliott 4",
+                "elliottLetter5": "My dear @,^^Last night's reading was four of us, all debut or mid-lister. We held a panel discussion about genre and writing, and afterwards the four of us went to a local dive and spent nearly half the night talking about writing and the industry.  It makes me realize that we are all in this together; as Willy would say, a rising tide lifts all boats.^^Even with the new friends I've made, I still long for the quiet of Pelican Town and the beauty of the farm. On these long travels between towns, I amuse myself by closing my eyes and envisioning the farm... I see kegs pulsing with sweet wine, a furnace ablaze with precious ore, and our little kitchen with the smell of cinnamon and nutmeg. There's a lot to enjoy!^^Just don't stay out too late in the mines, {{Lowercase:{{TermofEndearment}}}}. It's dangerous in there! If you must go... bring plenty of food.^^-Love, Elliott %item conversationTopic ElliottGone6 0 %%[#]Letter From Elliott 5",
+                "elliottLetter6": "Dearest @,^^This will be my last letter before I return home. This has been such an educational and gratifying experience, and I am glad I went. It's been heartwarming to meet people who enjoy my work, and to make new friends of my peers (whom I shall keep in touch with with the wonders of the internet--finally, a reason not to fear it so much.) Yet I am eager to return home.^^I look forward to the comfort of our little house, the satisfying farm work, a home-cooked meal, and most of all, cozying up by the fire with you.^^See you soon!^-Love, Elliott %item conversationTopic ElliottGone7 0 %%[#]Letter From Elliott 6",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+		"HasMod |contains=tiakall.writerelliott": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "elliottLetter1": "@, my friend,^^I've just arrived in Grampleton, to start the tour. I've forgotten how hectic the city is! The streets are packed with people... they either seem in a mad hurry, or lost in a daze, unaware of their surroundings. I miss Pelican Town already!^^I begin the tour this evening, at a local bookstore. I must admit, I'm becoming a bit nervous at the thought of public speaking... my stomach feels as if it's been twisted into a soft pretzel and doused with spicy cheese dip. Wish me luck!^^-Love, Elliott^^P.S. I hope you had a peaceful night, and weren't too scared all alone in that big house! %item conversationTopic ElliottGone2 0 %%[#]Letter From Elliott",
+                "elliottLetter2": "My dear @,^^The first reading went very well! I'm still a bit abuzz thinking I actually got to do something I dreamed of since I was a child.  The audience was a bit small, but the lady who ran the bookstore was such a lovely person, and very accomodating. She kept some of my books on stock to sell later, and I learned a little bit about how these small bookstores work. Maybe one day we'll have one in Pelican Town too!^^In a few hours, I leave for Zuzu City. If yesterday's reading was a warm-up, this next one will be a true napalm blast...^^I miss you very much. Remember to eat well! Oh, and don't forget the leftover crab cakes I put in the fridge...^-Love, Elliott %item conversationTopic ElliottGone3 0 %%[#]Letter From Elliott 2",
+                "elliottLetter3": "Cherished @,^^Last night in Zuzu City was quite the experience! I was paired with a well-known author, a C. Sun, who has another book out in the same genre. So many people showed up just for them, but walked away with both our books! What a clever marketing trick! I thought this C. Sun would be too good to talk to a debut author, but they had so much helpful advice. We ended up exchanging email addresses and a promise to beta-read each other's next novel. Were I to ever become as famous, I hope I too can pay it forward.^^Currently I'm alone, in my hotel room, 'ingesting' a Joja Value Meal since I am responsible for my own travel costs...^^Should this be called 'food'?^Or 'edible matter'?^I needn't long brood^It must be the latter^^I look forward to returning home soon. Hope you enjoyed the crab cakes.^^-Love, Elliott %item conversationTopic ElliottGone4 0 %%[#]Letter From Elliott 3",
+                "elliottLetter4": "In dreams, when graced with lofty view^I gaze upon the sunlit sea^What distant shores I've travelled to^But time now clouds my memory^^There is but one eternal place^Where I shall someday pass beyond^With you, in Valley dear's embrace:^Our little home beside the pond^^-Elliott %item conversationTopic ElliottGone5 0 %%[#]Letter From Elliott 4",
+                "elliottLetter5": "My dear @,^^Last night's reading was four of us, all debut or mid-lister. We held a panel discussion about genre and writing, and afterwards the four of us went to a local dive and spent nearly half the night talking about writing and the industry. It makes me realize that we are all in this together; as Willy would say, a rising tide lifts all boats.^^Even with the new friends I've made, I still long for the quiet of Pelican Town and the beauty of the farm. On these long travels between towns, I amuse myself by closing my eyes and envisioning the farm... I see kegs pulsing with sweet wine, a furnace ablaze with precious ore, and our little kitchen with the smell of cinnamon and nutmeg. There's a lot to enjoy!^^Just don't stay out too late in the mines, {{TermofEndearment}}. It's dangerous in there! If you must go... bring plenty of food.^^-Love, Elliott %item conversationTopic ElliottGone6 0 %%[#]Letter From Elliott 5",
+                "elliottLetter6": "Dearest @,^^This will be my last letter before I return home. This has been such an educational and gratifying experience, and I am glad I went. It's been heartwarming to meet people who enjoy my work, and to make new friends of my peers (whom I shall keep in touch with with the wonders of the internet--finally, a reason not to fear it so much.) Yet I am eager to return home.^^I look forward to the comfort of our little house, the satisfying farm work, a home-cooked meal, and most of all, cozying up by the fire with you.^^See you soon!^-Love, Elliott %item conversationTopic ElliottGone7 0 %%[#]Letter From Elliott 6",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+		"HasMod |contains=tiakall.writerelliott": "true",
+            }
+        },
+        {
+	    "Logname": "Realistic Writer Elliott 10 heart event, love portraits true",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries":
+            {
+                "43/f Elliott 2500/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": "ocean/-1000 -1000/farmer 13 16 2 Elliott 13 27 1/specificTemporarySprite elliottBoat/skippable/viewport 17 26 clamp true/move farmer 0 8 2/faceDirection Elliott 0/speak Elliott \"Hey.\"/move farmer 0 2 2/faceDirection Elliott 1/faceDirection farmer 1/speak Elliott \"Look... I fixed up that old rowboat that's been sitting by my house. Pretty nice, huh?#$b#Willy did a lot of the work, though.$h\"/pause 500/faceDirection Elliott 0/pause 500/speak Elliott \"@... Would you do me the honor of joining me for her maiden voyage?$l\"/faceDirection farmer 2/question fork1 \"Get in the boat?#Yes#No\"/fork NoToElliott/globalFade/viewport -1000 -1000/changeToTemporaryMap ElliottSea/playSound wateringCan/pause 1000/playSound wateringCan/playMusic 50s/warp farmer 26 20/positionOffset farmer 0 8/warp Elliott 26 20/showFrame Elliott 25/positionOffset Elliott 0 60/viewport 25 20 true/pause 5000/speak Elliott \"So my book's been on submission...I got an agent recently and after some more revisions, it was bought at auction.#$b#Can you imagine? All the biggest publishers, fighting to be the one to publish my book?#$b#I'm currently doing the edits the publisher wants. I know it sounds like a lot of edits, but each one has made the book better.#$b#It'll be out soon... and I really couldn't have finished it without your moral support.$l\"/pause 1000/speak Elliott \"Writing is like breathing to me, so I could never give up writing....$h#$b#But I'm not sure I would have had the courage to actually publish if not for you.#$b#I am grateful that you believed in me... in my vision. And, well...\"/pause 500/speak Elliott \"@... You've become more important to me than I know how to express.$l#$b#You... you may have seen shades of that in my book... The unshakeable bond between the lead character and her cherished companion...$l\"/emote farmer 32/pause 150/speak Elliott \"I want to tell you how much your friendship means to me... How much brighter my days are when you feature in them... How much I still want to learn from you...\"/pause 1000/emote Elliott 40/pause 500/speak Elliott \"But for once, I'm at a loss for words.$s#$b#@, may I... hug you?$l\"/playMusic elliottPiano/pause 2500/showFrame Elliott 35/screenFlash 1/warp Elliott 26 20/positionOffset Elliott 14 8/positionOffset farmer -24 16/faceDirection farmer 1 true/showFrame 101/pause 4500/globalFade/viewport -1000 -1000/pause 1000/speak Elliott \"We'd better head back before the southern wind picks up.\"/pause 1400/speak Elliott \"Look at the valley from here... It finally looks like home.$l\"/end",
+                "NoToElliott": "emote Elliott 16/pause 800/faceDirection Elliott 1/showFrame Elliott 31/pause 1000/emote Elliott 28/pause 600/speak Elliott \"I see.$7\"/move farmer 0 -10 0 true/pause 800/end dialogue Elliott \"...$a\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+		"HasMod |contains=tiakall.writerelliott": "true",
+            }
+        },
+        {
+	    "Logname": "Realistic Writer Elliott 10 heart event, love portraits true",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries":
+            {
+                "43/f Elliott 2500/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": "ocean/-1000 -1000/farmer 13 16 2 Elliott 13 27 1/specificTemporarySprite elliottBoat/skippable/viewport 17 26 clamp true/move farmer 0 8 2/faceDirection Elliott 0/speak Elliott \"Hey.\"/move farmer 0 2 2/faceDirection Elliott 1/faceDirection farmer 1/speak Elliott \"Look... I fixed up that old rowboat that's been sitting by my house. Pretty nice, huh?#$b#Willy did a lot of the work, though.$h\"/pause 500/faceDirection Elliott 0/pause 500/speak Elliott \"@... Would you do me the honor of joining me for her maiden voyage?\"/faceDirection farmer 2/question fork1 \"Get in the boat?#Yes#No\"/fork NoToElliott/globalFade/viewport -1000 -1000/changeToTemporaryMap ElliottSea/playSound wateringCan/pause 1000/playSound wateringCan/playMusic 50s/warp farmer 26 20/positionOffset farmer 0 8/warp Elliott 26 20/showFrame Elliott 25/positionOffset Elliott 0 60/viewport 25 20 true/pause 5000/speak Elliott \"So my book's been on submission...I got an agent recently and after some more revisions, it was bought at auction.#$b#Can you imagine? All the biggest publishers, fighting to be the one to publish my book?#$b#I'm currently doing the edits the publisher wants. I know it sounds like a lot of edits, but each one has made the book better.#$b#It'll be out soon... and I really couldn't have done it without your moral support.\"/pause 1000/speak Elliott \"Writing is like breathing to me, so I could never give up writing....$h#$b#But I'm not sure I would have had the courage to actually publish if not for you.#$b#I am grateful that you believed in me... in my vision. And, well...\"/pause 500/speak Elliott \"@... You've become more important to me than I know how to express.#$b#You... you may have seen shades of that in my book... The unshakeable bond between the lead character and her cherished companion...$h\"/emote farmer 32/pause 150/speak Elliott \"I want to tell you how much your friendship means to me... How much brighter my days are when you feature in them... How much I still want to learn from you...\"/pause 1000/emote Elliott 40/pause 500/speak Elliott \"But for once, I'm at a loss for words.#$b#@, may I... hug you?$h\"/playMusic elliottPiano/pause 2500/showFrame Elliott 35/screenFlash 1/warp Elliott 26 20/positionOffset Elliott 14 8/positionOffset farmer -24 16/faceDirection farmer 1 true/showFrame 101/pause 4500/globalFade/viewport -1000 -1000/pause 1000/speak Elliott \"We'd better head back before the southern wind picks up.\"/pause 1400/speak Elliott \"Look at the valley from here... It finally looks like home.$h\"/end",
+                "NoToElliott": "emote Elliott 16/pause 800/faceDirection Elliott 1/showFrame Elliott 31/pause 1000/emote Elliott 28/pause 600/speak Elliott \"I see.$7\"/move farmer 0 -10 0 true/pause 800/end dialogue Elliott \"...$a\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+		"HasMod |contains=tiakall.writerelliott": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries":
+            {
+		"1848481/f Elliott 2000/t 1300 1900/n elliottReading": "breezy/14 11/Elliott 14 9 2 Pierre 10 13 1 Caroline 11 13 3 Marnie 11 15 1 Lewis 12 15 3 Sebastian 11 17 2 Abigail 12 18 3 Sam 10 18 1 Leah 15 15 0 Emily 16 16 2 Clint 15 17 1 Jodi 19 13 2 Robin 20 14 3 Demetrius 20 11 3 Maru 10 10 1 Penny 11 9 1 Gus 18 16 0 Shane 19 16 0 Willy 21 11 3 farmer 6 14 1/skippable/move farmer 6 0 0/move farmer 0 -1 0/move Elliott 0 4 3/faceDirection farmer 1/speak Elliott \"@, you made it!$h#$b#I feel so relieved to be done with my book... it's like an elephant's been lifted off my shoulders.\"/pause 800/faceDirection Elliott 2/pause 500/faceDirection Elliott 1/pause 500/faceDirection Elliott 3/pause 500/speak Elliott \"Well, I'd better get started with the reading... Wish me luck.$8\"/pause 700/move Elliott 0 -4 2/faceDirection farmer 0/pause 500/faceDirection Elliott 1/faceDirection Elliott 2/faceDirection Elliott 3/faceDirection Elliott 2/speak Elliott \"Good afternoon, everyone.\"/pause 500/faceDirection Caroline 0 true/faceDirection Emily 0 true/textAboveHead Emily \"Hi!\"/faceDirection Abigail 0/faceDirection Sebastian 0 true/faceDirection Lewis 0/faceDirection Sam 0 true/faceDirection Marnie 0/faceDirection Pierre 0 true/faceDirection Jodi 0/faceDirection Clint 0/speak Elliott \"Ever since I was a young boy, I've dreamt of becoming a writer.#$b#When the time came for me to leave home and start my own life, I moved here. I was drawn to the peaceful beauty of the valley, and hoped that days of quiet reflection in this idyllic atmosphere would fan the literary flames.\"/showFrame Elliott 32/pause 200/showFrame Elliott 34/fork 958699 mysteryBook/fork 958700 romanceBook/speak Elliott \"After countless hours scribbling at my writing desk, I present to you my first novel: 'Galactic Highways'... It's a sci-fi epic about a small-time ship captain who gets tasked with escorting an alien prince in trouble.\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"Chapter One.#$b#Sound didn't travel in space, but Captain Erin could always *feel* the rumbles of passing spaceships in her bones, echoing her own ship Mallownaver's clanks and grumbles. Soon, she promised it, they'd land a good gig soon...\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Jodi -1000 -1000/warp Robin -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"'They're gaining on us!' Prince Bast Sinea yelled. 'Can't this squishy bucket go any faster?' 'You can complain about Mallownaver's speed when you're not the reason we're being chased!' Erin looked at the nebula looming ahead, its colors a bright warning light against the blackness of space. They *could* lose their pursuers... but it was going to be rough.\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"Well, that concludes my reading. I hope to have it on sale soon. Thanks for listening!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"Well, how was it?\"/emote farmer 32/speak Elliott \"Thanks. $h#$b#You know, I got the idea for making a sci-fi book from you. Do you remember?#$b#That's why I've dedicated this book to you...\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",
+  "mysteryBook": "pause 400/speak Elliott \"After countless hours scribbling at my writing desk, I present to you my first book: 'Blue Waves, Blue Graves'... It's a mystery novel about a murder on an island paradise.\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"Chapter One.#$b#When Murphy's body washed ashore, everyone initially assumed she had just finally joined the sea she loved so much. The holes in her chest, however, spoke to a different story. What a way to start a vacation, Detective Kai thought to herself.'\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sam -1000 -1000/warp Jodi -1000 -1000/warp Maru -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"'But you said the knife undoubtedly was lost in the ocean,' Alexe said, stunned. 'And did you see their expressions when I said that?' Kai replied. 'Their faces told me what their words did not. The murder weapon is not lost, Alexe. It's right here, with the murderer. Because they're going to use it again.'\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"Well, that concludes my reading. I hope to have it on sale soon. Thanks for listening!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"Well, how was it?\"/emote farmer 32/speak Elliott \"Thanks. $h#$b#You know, I got the idea for making a mystery from you. Do you remember?#$b#That's why I've dedicated this book to you...\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",
+  "romanceBook": "pause 400/speak Elliott \"After countless hours scribbling at my writing desk, I present to you my first novel: 'The Lady of Camellia Estate'... It's a regency romance about a wealthy heiress that meets a young upstart from the city...\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"Chapter One.#$b#'They say a man with a fortune is in want of a wife, but they never say what happens when it's the wife with the fortune.' Lady Kristine Hamilton sighed behind her fan, and vowed to herself that her prospects--and her purse--would forever remain closed.\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sebastian -1000 -1000/warp Sam -1000 -1000/warp Demetrius -1000 -1000/warp Shane -1000 -1000/warp Pierre -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"...'But what if there was, Miss Kristine?' Adair's voice stopped her cold. 'What if there was someone who didn't care about your money? Someone who would throw it all to the ocean waves, if it meant you might look their way? What would you do, Miss Kristine?' Adair's words hung heavy between them, as intense as their smoldering eyes. 'What then?'.\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"Well, that concludes my reading. I hope to have it on sale soon. Thanks for listening!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"Well, how was it?\"/emote farmer 32/speak Elliott \"Thanks. $h#$b#You know, I got the idea for writing a romance novel from you. Do you remember?#$b#That's why I've dedicated this book to you...\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+		"HasMod |contains=tiakall.writerelliott": "true",
+            }
+        },
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname": "Elliott PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "summer_Tue8_inlaw_Elliott":"Oh, hey.$0#$e#How's life with Elliott coming along?$1",
+            "winter_Mon10_inlaw_Elliott":"Oh, hey.$0#$e#How's life with Elliott coming along?$1",
+            "summer_Tue8_roommate_Elliott":"Oh, hey.$0#$e#How's life with Elliott coming along?$1",
+            "winter_Mon10_roommate_Elliott":"Oh, hey.$0#$e#How's life with Elliott coming along?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Elliott": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Elliott make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Elliott": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Elliott will have any problems with that.$1",
+            "fall_Fri8_inlaw_Elliott": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Elliott make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Elliott": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Elliott will have any problems with that.$1",
+            "spring_Tue8_roommate_Elliott": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Elliott make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Elliott": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Elliott will have any problems with that.$1",
+            "fall_Fri8_roommate_Elliott": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Elliott make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Elliott": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Elliott will have any problems with that.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sam",
+	"Entries": {
+            "summer_Mon8_inlaw_Elliott":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Elliott":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "summer_Mon8_roommate_Elliott":"Hey, @. How's life with Elliott?$0#$b#You should move his piano to your farmhouse so I can come over and jam with you two.$1",
+            "fall_Sat8_roommate_Elliott":"Hey, @. How's life with Elliott?$0#$b#You should move his piano to your farmhouse so I can come over and jam with you two.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Thu8_inlaw_Elliott":"Elliott has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_inlaw_Elliott":"I clearly see you and Elliott were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_inlaw_Elliott":"Elliott has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_inlaw_Elliott":"I clearly see you and Elliott were made to be {{RelationshipLabel}}.$1",
+            "spring_Thu8_roommate_Elliott":"Elliott has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "summer_Wed8_roommate_Elliott":"I clearly see you and Elliott were made to be {{RelationshipLabel}}.$1",
+            "fall_Mon8_roommate_Elliott":"Elliott has a really unique energy. You two are great {{RelationshipLabel}}.$1",
+            "winter_Fri8_roommate_Elliott":"I clearly see you and Elliott were made to be {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Haley",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Haley",
+	"Entries": {
+            "summer_Sat8_inlaw_Elliott":"I'm so happy for you and Elliott.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_inlaw_Elliott":"I'm so happy for you and Elliott.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "summer_Sat8_roommate_Elliott":"I'm so happy for you and Elliott.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+            "winter_Mon8_roommate_Elliott":"I'm so happy for you and Elliott.$0#$b#You're the sweetest {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },    
+{
+	"Logname": "Elliott PRMM, Leah",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Leah",
+	"Entries": {
+            "spring_Wed8_inlaw_Elliott":"Elliott was my first friend when I arrived here.$0#$b#I'm delighted to see him so happy as your {{PlatonicSocialMenuLabel}}.$1",
+            "summer_Thu8_inlaw_Elliott":"Maybe I could paint something for you and Elliott.$1",
+            "fall_Sat8_inlaw_Elliott":"Maybe I could paint something for you and Elliott.$1",
+            "winter_Mon8_inlaw_Elliott":"Elliott was my first friend when I arrived here.$0#$b#I'm delighted to see him so happy as your {{PlatonicSocialMenuLabel}}.$1",
+            "spring_Wed8_roommate_Elliott":"Elliott was my first friend when I arrived here.$0#$b#I'm delighted to see him so happy as your {{PlatonicSocialMenuLabel}}.$1",
+            "summer_Thu8_roommate_Elliott":"Maybe I could paint something for you and Elliott.$1",
+            "fall_Sat8_roommate_Elliott":"Maybe I could paint something for you and Elliott.$1",
+            "winter_Mon8_roommate_Elliott":"Elliott was my first friend when I arrived here.$0#$b#I'm delighted to see him so happy as your {{PlatonicSocialMenuLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Elliott":"Hello, @.$0#$e#You and Elliott are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Elliott":"Hello, @.$0#$e#You and Elliott are such cute {{RelationshipLabel}}.$1",
+            "spring_Mon8_roommate_Elliott":"Hello, @.$0#$e#You and Elliott are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Elliott":"Hello, @.$0#$e#You and Elliott are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Elliott":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Elliott as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Elliott":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Elliott as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Elliott":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Elliott as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Elliott":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Elliott as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Elliott":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Elliott will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Elliott":"A true lifelong friendship, like you have with Elliott, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Elliott":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Elliott will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Elliott":"A true lifelong friendship, like you have with Elliott, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Elliott":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Elliott will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Elliott":"A true lifelong friendship, like you have with Elliott, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Elliott":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Elliott will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Elliott":"A true lifelong friendship, like you have with Elliott, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{	
+	"Logname": "Elliott PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Elliott":"If you and Elliott want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Elliott":"If you and Elliott want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Elliott":"If you and Elliott want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Elliott":"If you and Elliott want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Elliott":"If you and Elliott want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Elliott":"If you and Elliott want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Elliott":"If you and Elliott want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Elliott":"If you and Elliott want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Elliott":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Elliott":"So are you and Mister Elliott like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Elliott":"Hello, Farmer @.$0#$b#Why can't you and Mister Elliott celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Elliott":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Elliott":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Elliott":"So are you and Mister Elliott like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Elliott":"Hello, Farmer @.$0#$b#Don't you think you and Mister Elliott should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Elliott":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Lewis",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Elliott":"There aren't many young {{RelationshipLabel}} like you and Elliott here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Elliott":"There aren't many young {{RelationshipLabel}} like you and Elliott here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Elliott":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Elliott":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Elliott":"There aren't many young {{RelationshipLabel}} like you and Elliott here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Elliott":"There aren't many young {{RelationshipLabel}} like you and Elliott here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Elliott":"I know you and Elliott chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Elliott":"I know you and Elliott chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Elliott":"Hello, @.$0#$e#I wish you and Elliott a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Elliott":"May Yoba grant you and Elliott a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Elliott":"Hello, @.$0#$e#I wish you and Elliott a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Elliott":"May Yoba grant you and Elliott a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Elliott":"Hello, @.$0#$e#I wish you and Elliott a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Elliott":"May Yoba grant you and Elliott a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Elliott":"Hello, @.$0#$e#I wish you and Elliott a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Elliott":"May Yoba grant you and Elliott a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Elliott":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Elliott":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Elliott":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Elliott":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Elliott":"You and Elliott remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Elliott":"You and Elliott remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Elliott":"You and Elliott remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Elliott":"You and Elliott remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },    
+{
+	"Logname": "Elliott PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Elliott":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Elliott.$1",
+            "summer_Wed10_inlaw_Elliott":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_inlaw_Elliott":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Elliott.$1",
+            "winter_Sun10_inlaw_Elliott":"It's so cool how you're {{RelationshipLabel}} with Mister Elliott.$1#$e#I never thought that would have happened!$0",
+            "spring_Tue10_roommate_Elliott":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Elliott.$1",
+            "summer_Wed10_roommate_Elliott":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_roommate_Elliott":"Do you like suncatchers?$3#$e#I want to make a gift for you and Mister Elliott.$1",
+            "winter_Sun10_roommate_Elliott":"It's so cool how you're {{RelationshipLabel}} with Mister Elliott.$1#$e#I never thought that would have happened!$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Elliott PRMM, Willy",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Willy",
+	"Entries": {
+            "spring_Thu10_inlaw_Elliott":"It's nice to see my ol' friend Elliott found himself a family with you.$1",
+            "fall_Sun10_inlaw_Elliott":"It's nice to see my ol' friend Elliott found himself a family with you.$1",
+            "spring_Thu10_roommate_Elliott":"It's nice to see my ol' friend Elliott found himself a family with you.$1",
+            "fall_Sun10_roommate_Elliott":"It's nice to see my ol' friend Elliott found himself a family with you.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

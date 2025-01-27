@@ -1,0 +1,1462 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Sigurd 'Sig' Bear
+
+        "MadDog.HashtagBearFam.Sigurd": {
+          "DisplayName": "{{i18n:SigDisplayName}}",
+          "BirthSeason": "Fall",
+          "BirthDay": 19,
+          "HomeRegion": "Town",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Rude",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": "{{SigurdRelationshipStatus}}",
+          "FlowerDanceCanDance": true,
+          "LoveInterest": "Nova.Dylan",
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "CanGreetNearbyCharacters": false,
+          "CanCommentOnPurchasedShopItems": false,
+          "ItemDeliveryQuests": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": true,
+          "WinterStarGifts": [
+            {
+              "Id": "Sig Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)340", //honey
+                "(O)636", //peach
+                "(O)346" //beer
+              ]
+            }
+          ],
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Gudrun": "{{i18n:GudrunSister}}",
+            "MadDog.HashtagBearFam.Gunnar": "{{i18n:GunBrother}}",
+            "MadDog.HashtagBearFam.Sondra": "{{i18n:SondraAunt}}",
+            "MadDog.HashtagBearFam.Teren": "{{i18n:TerenFriend}}"
+          },
+          "SpouseRoom": {
+            "MapAsset": "MadDog.Bearfam_SpouseRoom",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "SpousePatio": {
+            "MapAsset": "MadDog.Bearfam_SpousePatio",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            },
+            "SpriteAnimationFrames": [
+              [ 16, 1000 ],
+              [ 17, 1000 ],
+              [ 18, 1000 ],
+              [ 19, 1000 ],
+              [ 20, 1000 ]
+            ],
+            "SpriteAnimationPixelOffset": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+
+          "SpouseFloors": [
+            "12",
+            "15",
+            "34"
+          ],
+          "SpouseWallpapers": [
+            "37",
+            "46",
+            "94",
+            "104",
+            "21"
+          ],
+
+          "HiddenProfileEmoteSound": "drumkit4",
+          "HiddenProfileEmoteDuration": 4000,
+          "HiddenProfileEmoteStartFrame": 16,
+          "HiddenProfileEmoteFrameCount": 5,
+          "HiddenProfileEmoteFrameDuration": 400,
+
+          "DumpsterDiveFriendshipEffect": 0,
+          "DumpsterDiveEmote": 40,
+          "SpouseWantsChildren": true,
+          "SpouseGiftJealousy": true,
+          "SpouseGiftJealousyFriendshipChange": 0,
+          "FormerCharacterNames": [ "Sigurd" ],
+          "Appearance": [
+            //outfits 1
+            {
+              "Id": "Sigurd Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/spring_sigurd.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/spring_sigurd.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sigurd Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/summer_sigurd.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/summer_sigurd.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sigurd Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/fall_sigurd.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/fall_sigurd.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sigurd Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/winter_sigurd.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/winter_sigurd.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //outfits 2
+            {
+              "Id": "Sigurd Spring 2",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/spring_sigurd1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/spring_sigurd1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sigurd Summer 2",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/summer_sigurd1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/summer_sigurd1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sigurd Fall 2",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/fall_sigurd1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/fall_sigurd1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sigurd Winter 2",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/winter_sigurd1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/winter_sigurd1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //festivals
+            {
+              "Id": "Sig Egg Festival",
+              "Condition": "IS_EVENT festival_spring13",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_eggfest.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_eggfest.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sig Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_flowerdance.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_flowerdance.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sig Luau", //no luau but surfing
+              "Condition": "IS_EVENT festival_summer4", //ANY "IS_EVENT festival_summer4, IS_EVENT festival_summer11
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_moonlightjellies.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_moonlightjellies.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            /*{
+             "Id": "Sig Fireworks Fest", //custom festival
+             "Condition": "IS_EVENT festival_summer20", // ANY "IS_EVENT festival_fall16, IS_EVENT festival_fall20"
+             "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_fireworksfestival.png}}",
+             "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_fireworksfestival.png}}",
+             "IsIslandAttire": false,
+             "Precedence": -100,
+             "Weight": 0
+            },*/
+            {
+              "Id": "Sig Moonlight Jellies",
+              "Condition": "IS_EVENT festival_summer28",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_moonlightjellies.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_moonlightjellies.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sig SDV Fair", //and RSV Concert Fair thing
+              "Condition": "IS_EVENT festival_fall16", // ANY "IS_EVENT festival_fall16, IS_EVENT festival_fall20"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_sdvfair.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_sdvfair.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sig Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Sig at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/CHaracters/Sigurd/sigurd_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sig Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Sig at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/CHaracters/Sigurd/sigurd_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "Id": "Sig Festival Of Ice",
+              "Condition": "IS_EVENT festival_winter8",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_icefestival.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_icefestival.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sig Winter Star", //and RSV Ember
+              "Condition": "IS_EVENT festival_winter25", // ANY "IS_EVENT festival_winter25, IS_EVENT festival_winter28"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sigurd/sigurd_winterfeast.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sigurd/sigurd_winterfeast.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            }
+          ],
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": 22,
+                "Y": 7
+              },
+              "Direction": "Down"
+            }
+          ]
+        },
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Sondra Brazier-Bear
+
+        "MadDog.HashtagBearFam.Sondra": {
+          "DisplayName": "{{i18n:SondraDisplayName}}",
+          "BirthSeason": "Spring",
+          "BirthDay": 19,
+          "HomeRegion": "Town",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "ItemDeliveryQuests": false,
+          "FlowerDanceCanDance": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": true,
+          "WinterStarGifts": [
+            {
+              "Id": "Sondra Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)731", //maple bar
+                "(O)220", //chocolate cake
+                "(O)100" //chipped amphora
+              ]
+            }
+          ],
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Sigurd": "{{i18n:SigNephew}}",
+            "MadDog.HashtagBearFam.Gunnar": "{{i18n:GunNephew}}",
+            "MadDog.HashtagBearFam.Gudrun": "{{i18n:GudrunNiece}}",
+            "MadDog.HashtagBearFam.Teren": "{{i18n:TerenNephew}}"
+          },
+          "DumpsterDiveFriendshipEffect": 0,
+          "DumpsterDiveEmote": 60,
+          "FormerCharacterNames": [ "Sondra" ],
+          "Appearance": [
+            //outfits 1
+            {
+              "Id": "Sondra Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/spring_sondra.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/spring_sondra.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/summer_sondra.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/summer_sondra.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/fall_sondra.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/fall_sondra.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/winter_sondra.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/winter_sondra.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //outfits 2
+            {
+              "Id": "Sondra Spring 2",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/spring_sondra1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/spring_sondra1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Summer 2",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/summer_sondra1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/summer_sondra1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Fall 2",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/fall_sondra1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/fall_sondra1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Winter 2",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/winter_sondra1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/winter_sondra1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //festivals
+            {
+              "Id": "Sondra Egg Festival",
+              "Condition": "IS_EVENT festival_spring13",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_eggfest.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_eggfest.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sondra Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_flowerdance.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_flowerdance.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sondra Luau", //add surfing
+              "Condition": "IS_EVENT festival_summer11", //ANY "IS_EVENT festival_summer4, IS_EVENT festival_summer11
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_luau.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_luau.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            /*{
+             "Id": "Sondra Fireworks Fest", //custom festival
+             "Condition": "IS_EVENT festival_summer20", // ANY "IS_EVENT festival_fall16, IS_EVENT festival_fall20"
+             "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_fireworksfestival.png}}",
+             "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_fireworksfestival.png}}",
+             "IsIslandAttire": false,
+             "Precedence": -100,
+             "Weight": 0
+            },*/
+            {
+              "Id": "Sondra Moonlight Jellies",
+              "Condition": "IS_EVENT festival_summer28",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_moonlightjellies.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_moonlightjellies.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sondra SDV Fair", //and RSV Concert Fair thing
+              "Condition": "IS_EVENT festival_fall16", // ANY "IS_EVENT festival_fall16, IS_EVENT festival_fall20"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_sdvfair.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_sdvfair.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sondra Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Sondra at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/CHaracters/Sondra/sondra_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sondra Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Sondra at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/CHaracters/Sondra/sondra_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            /*{
+              "Id": "Sondra Festival Of Ice", 
+              "Condition": "IS_EVENT festival_winter8",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_icefestival.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_icefestival.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },*/
+            {
+              "Id": "Sondra Winter Star", //and RSV Ember
+              "Condition": "IS_EVENT festival_winter25", // ANY "IS_EVENT festival_winter25, IS_EVENT festival_winter28"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Sondra/sondra_winterfeast.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Sondra/sondra_winterfeast.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            }
+          ],
+
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": 7,
+                "Y": 7
+              },
+              "Direction": "Down"
+            }
+          ]
+        },
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Gunnar Bear, 'Gun'
+
+        "MadDog.HashtagBearFam.Gunnar": {
+          "DisplayName": "{{i18n:GunnarDisplayName}}",
+          "BirthSeason": "Fall",
+          "BirthDay": 19,
+          "HomeRegion": "Town",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Negative",
+          "CanBeRomanced": "{{GunnarRelationshipStatus}}",
+          "ItemDeliveryQuests": false,
+          "FlowerDanceCanDance": true,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "CanSocialize": "PLAYER_HAS_MAIL Any BearFamExtraMembers received",
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": true,
+          "WinterStarGifts": [
+            {
+              "Id": "Gunnar Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)80", //quartz
+                "(O)552", //malachite
+                "(O)444" //duck feather
+              ]
+            }
+          ],
+          "IntroductionsQuest": false,
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Sigurd": "{{i18n:SigBrother}}",
+            "MadDog.HashtagBearFam.Gudrun": "{{i18n:GudrunSister}}",
+            "MadDog.HashtagBearFam.Sondra": "{{i18n:SondraAunt}}",
+            "MadDog.HashtagBearFam.Teren": "{{i18n:TerenFriend}}"
+          },
+          "SpouseRoom": {
+            "MapAsset": "MadDog.Bearfam_SpouseRoom",
+            "MapSourceRect": {
+              "X": 6,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "SpousePatio": {
+            "MapAsset": "MadDog.Bearfam_SpousePatio",
+            "MapSourceRect": {
+              "X": 4,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            },
+            "SpriteAnimationFrames": [
+              [ 16, 1000 ],
+              [ 17, 1000 ],
+              [ 18, 1000 ],
+              [ 19, 1000 ],
+              [ 20, 1000 ],
+              [ 21, 1000 ]
+            ],
+            "SpriteAnimationPixelOffset": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+
+          "SpouseFloors": [
+            "3",
+            "36",
+            "38"
+          ],
+          "SpouseWallpapers": [
+            "47",
+            "21",
+            "85",
+            "54",
+            "78"
+          ],
+
+          "HiddenProfileEmoteSound": null,
+          "HiddenProfileEmoteDuration": 3600,
+          "HiddenProfileEmoteStartFrame": 16,
+          "HiddenProfileEmoteFrameCount": 6,
+          "HiddenProfileEmoteFrameDuration": 600,
+
+          "DumpsterDiveFriendshipEffect": 0,
+          "DumpsterDiveEmote": 28,
+          "SpouseWantsChildren": true,
+          "SpouseGiftJealousy": true,
+          "SpouseGiftJealousyFriendshipChange": 0,
+          "FormerCharacterNames": [ "Gunnar" ],
+          "Appearance": [
+            //outfits 1
+            {
+              "Id": "Gunnar Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/spring_gunnar.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/spring_gunnar.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/summer_gunnar.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/summer_gunnar.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/fall_gunnar.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/fall_gunnar.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/winter_gunnar.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/winter_gunnar.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //outfits 2
+            {
+              "Id": "Gunnar Spring 2",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/spring_gunnar1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/spring_gunnar1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Summer 2",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/summer_gunnar1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/summer_gunnar1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Fall 2",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/fall_gunnar1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/fall_gunnar1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Winter 2",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/winter_gunnar1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/winter_gunnar1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //festivals
+            {
+              "Id": "Gunnar Egg Festival",
+              "Condition": "IS_EVENT festival_spring13",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_eggfest.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_eggfest.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_flowerdance.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_flowerdance.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Luau", //surfing
+              "Condition": "IS_EVENT festival_summer11", //ANY "IS_EVENT festival_summer4, IS_EVENT festival_summer11
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_luau.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_luau.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Fireworks Fest", //custom festival
+              "Condition": "IS_EVENT festival_summer20", // 
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_fireworksfestival.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_fireworksfestival.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Moonlight Jellies",
+              "Condition": "IS_EVENT festival_summer28",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_moonlightjellies.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_moonlightjellies.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar SDV Fair", //and RSV Concert Fair thing
+              "Condition": "IS_EVENT festival_fall16", // ANY "IS_EVENT festival_fall16, IS_EVENT festival_fall20"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_sdvfair.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_sdvfair.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Gunnar at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/CHaracters/Gunnar/gunnar_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Gunnar at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/CHaracters/Gunnar/gunnar_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Festival Of Ice",
+              "Condition": "IS_EVENT festival_winter8",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_icefestival.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_icefestival.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Winter Star", //and RSV Ember
+              "Condition": "IS_EVENT festival_winter25", // ANY "IS_EVENT festival_winter25, IS_EVENT festival_winter28"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_winterfeast.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_winterfeast.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            //special
+            {
+              "ID": "Gunnar Armor",
+              "Condition": "Any \"LOCATION_NAME Target Mine\" \"LOCATION_NAME Target AdventureGuild\" \"IS_EVENT MadDog.BearFam.16193005\" \"IS_EVENT MadDog.BearFam.16193008\" \"IS_EVENT MadDog.BearFam.16193009\" \"IS_EVENT MadDog.BearFam.16191005\" \"IS_EVENT MadDog.BearFam.16193011\" \"IS_EVENT MadDog.BearFam.16193013\" \"IS_EVENT MadDog.BearFam.16193009A\" \"IS_EVENT MadDog.BearFam.16193001A\"", 
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_armored.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_armored.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -250,
+              "Weight": 1
+            },
+            {
+              "ID": "Gunnar Armor",
+              "Condition": "Any \"LOCATION_NAME Target Mine\" \"LOCATION_NAME Target AdventureGuild\" \"IS_EVENT MadDog.BearFam.16193005\" \"IS_EVENT MadDog.BearFam.16193008\" \"IS_EVENT MadDog.BearFam.16193009\" \"IS_EVENT MadDog.BearFam.16191005\" \"IS_EVENT MadDog.BearFam.16193011\" \"IS_EVENT MadDog.BearFam.16193013\" \"IS_EVENT MadDog.BearFam.16193009A\" \"IS_EVENT MadDog.BearFam.16193001A\"",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gunnar/gunnar_armored1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gunnar/gunnar_armored1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -250,
+              "Weight": 1
+            }
+          ],
+
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Gunnar Arrives",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": "53",
+                "Y": "7"
+              },
+              "Direction": "Down",
+              "Condition": "PLAYER_HAS_MAIL Any BearFamExtraMembers received"
+            },
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearFamLoadingZone",
+              "Tile": {
+                "X": "2",
+                "Y": "5"
+              },
+              "Direction": "Down"
+            }
+          ]
+        },
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Gudrun Bear
+
+        "MadDog.HashtagBearFam.Gudrun": {
+          "DisplayName": "{{i18n:GudrunDisplayName}}",
+          "BirthSeason": "Winter",
+          "BirthDay": 24,
+          "HomeRegion": "Town",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "FlowerDanceCanDance": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "CanSocialize": "PLAYER_HAS_MAIL Any BearFamExtraMembers received",
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": true,
+          "WinterStarGifts": [
+            {
+              "Id": "Gudrun Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)253", //triple shot
+                "(O)394", //rainbow shell
+                "(O)392" //nautilus shell
+              ]
+            }
+          ],
+          "IntroductionsQuest": false,
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Sigurd": "{{i18n:SigBrother}}",
+            "MadDog.HashtagBearFam.Gunnar": "{{i18n:GunnarBrother}}",
+            "MadDog.HashtagBearFam.Sondra": "{{i18n:SondraAunt}}",
+            "MadDog.HashtagBearFam.Teren": "{{i18n:TerenFriend}}"
+          },
+          "DumpsterDiveFriendshipEffect": 10,
+          "DumpsterDiveEmote": 32,
+          "FormerCharacterNames": [ "Gudrun" ],
+          "Appearance": [
+            //oufits 1
+            {
+              "Id": "Gudrun Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/spring_gudrun.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/spring_gudrun.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/summer_gudrun.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/summer_gudrun.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/fall_gudrun.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/fall_gudrun.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/winter_gudrun.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/winter_gudrun.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //outfits 2
+            {
+              "Id": "Gudrun Spring 2",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/spring_gudrun1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/spring_gudrun1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Summer 2",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/summer_gudrun1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/summer_gudrun1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Fall 2",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/fall_gudrun1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/fall_gudrun1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Winter 2",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/winter_gudrun1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/winter_gudrun1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //festivals
+            {
+              "Id": "Gudrun Egg Festival",
+              "Condition": "IS_EVENT festival_spring13",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_eggfest.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_eggfest.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gudrun Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_flowerdance.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_flowerdance.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gudrun Luau", //and surfing
+              "Condition": "IS_EVENT festival_summer11", //ANY "IS_EVENT festival_summer4, IS_EVENT festival_summer11
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_luau.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_luau.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gudrun Fireworks Fest", //custom festival
+              "Condition": "IS_EVENT festival_summer20", // 
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_luau.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_luau.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+
+            {
+              "Id": "Gudrun Moonlight Jellies",
+              "Condition": "IS_EVENT festival_summer28",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_moonlightjellies.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_moonlightjellies.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gudrun SDV Fair", //and RSV Concert Fair thing
+              "Condition": "IS_EVENT festival_fall16", // ANY "IS_EVENT festival_fall16, IS_EVENT festival_fall20"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_sdvfair.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_sdvfair.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gudrun Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Gudrun at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/CHaracters/Gudrun/gudrun_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gudrun Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Gudrun at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/CHaracters/Gudrun/gudrun_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            /*{
+              "Id": "Gudrun Festival Of Ice",
+              "Condition": "IS_EVENT festival_winter8",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_icefestival.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_icefestival.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },*/
+            {
+              "Id": "Gudrun Winter Star", //and RSV Ember
+              "Condition": "IS_EVENT festival_winter25", // ANY "IS_EVENT festival_winter25, IS_EVENT festival_winter28"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Gudrun/gudrun_winterfeast.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Gudrun/gudrun_winterfeast.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            }
+          ],
+
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Gudrun Arrives",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": "35",
+                "Y": "7"
+              },
+              "Direction": "Down",
+              "Condition": "PLAYER_HAS_MAIL Any BearFamExtraMembers received"
+            },
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearFamLoadingZone",
+              "Tile": {
+                "X": "5",
+                "Y": "4"
+              },
+              "Direction": "Down"
+            }
+          ]
+        },
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Teren Barnes, 'Tere'
+
+        "MadDog.HashtagBearFam.Teren": {
+          "DisplayName": "{{i18n:TerenDisplayName}}",
+          "BirthSeason": "Spring",
+          "BirthDay": 28,
+          "HomeRegion": "Town",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": "{{TerenRelationshipStatus}}",
+          "FlowerDanceCanDance": true,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "LoveInterest": "Nova.Eli",
+          "ItemDeliveryQuests": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "CanSocialize": "PLAYER_HAS_MAIL Any TerenMysteryMail received",
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": true,
+          "WinterStarGifts": [
+            {
+              "Id": "Teren Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)346", //beer
+                "(O)206", //pizza
+                "(O)240" //farmer's lunch
+              ]
+            }
+          ],
+          "IntroductionsQuest": false,
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Sigurd": "{{i18n:SigFriend}}",
+            "MadDog.HashtagBearFam.Gunnar": "{{i18n:GunFriend}}",
+            "MadDog.HashtagBearFam.Sondra": "{{i18n:SondraAunt}}",
+            "MadDog.HashtagBearFam.Gudrun": "{{i18n:GudrunFriend}}"
+          },
+          "SpouseRoom": {
+            "MapAsset": "MadDog.Bearfam_SpouseRoom",
+            "MapSourceRect": {
+              "X": 12,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "SpousePatio": {
+            "MapAsset": "MadDog.Bearfam_SpousePatio",
+            "MapSourceRect": {
+              "X": 8,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            },
+            "SpriteAnimationFrames": [
+              [ 16, 1000 ],
+              [ 17, 1000 ],
+              [ 18, 1000 ],
+              [ 19, 1000 ]
+            ],
+            "SpriteAnimationPixelOffset": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+
+          "SpouseFloors": [
+            "2",
+            "28",
+            "34"
+          ],
+          "SpouseWallpapers": [
+            "105",
+            "92",
+            "37",
+            "43",
+            "95"
+          ],
+
+          "HiddenProfileEmoteSound": null,
+          "HiddenProfileEmoteDuration": 4000,
+          "HiddenProfileEmoteStartFrame": 16,
+          "HiddenProfileEmoteFrameCount": 4,
+          "HiddenProfileEmoteFrameDuration": 500,
+
+          "DumpsterDiveFriendshipEffect": 0,
+          "DumpsterDiveEmote": 40,
+          "SpouseWantsChildren": false,
+          "SpouseGiftJealousy": true,
+          "SpouseGiftJealousyFriendshipChange": 0,
+          "FormerCharacterNames": [ "Teren" ],
+          "Appearance": [
+            //oufits 1
+            {
+              "Id": "Teren Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/spring_teren.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/spring_teren.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/summer_teren.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/summer_teren.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/fall_teren.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/fall_teren.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/winter_teren.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/winter_teren.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //outfits 2
+            {
+              "Id": "Teren Spring 2",
+              "Condition": "SEASON Spring",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/spring_teren1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/spring_teren1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Summer 2",
+              "Condition": "SEASON Summer",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/summer_teren1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/summer_teren1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Fall 2",
+              "Condition": "SEASON Fall",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/fall_teren1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/fall_teren1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Winter 2",
+              "Condition": "SEASON Winter",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/winter_teren1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/winter_teren1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            //festivals
+            {
+              "Id": "Teren Egg Festival",
+              "Condition": "IS_EVENT festival_spring13",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_eggfest.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_eggfest.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Teren Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_flowerdance.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_flowerdance.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Teren Luau", //no luau but surfing
+              "Condition": "IS_EVENT festival_summer11", //ANY "IS_EVENT festival_summer4, IS_EVENT festival_summer11
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_luau.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_luau.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            /*{
+              "Id": "Teren Fireworks Fest", //custom festival
+              "Condition": "IS_EVENT festival_summer20", // 
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_fireworksfestival.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_fireworksfestival.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },*/
+
+            {
+              "Id": "Teren Moonlight Jellies",
+              "Condition": "IS_EVENT festival_summer28",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_moonlightjellies.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_moonlightjellies.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Teren SDV Fair", //and RSV Concert Fair thing
+              "Condition": "IS_EVENT festival_fall16", // ANY "IS_EVENT festival_fall16, IS_EVENT festival_fall20"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_sdvfair.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_sdvfair.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Teren Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Teren at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_spiritseve.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_spiritseve.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Teren Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Teren at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_spiritseve1.png}}",
+              "Sprite": "{{InternalAssetKey: assets/CHaracters/Teren/teren_spiritseve1.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "Id": "Teren Festival Of Ice",
+              "Condition": "IS_EVENT festival_winter8",
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_icefestival.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_icefestival.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Teren Winter Star", //and RSV Ember
+              "Condition": "IS_EVENT festival_winter25", // ANY "IS_EVENT festival_winter25, IS_EVENT festival_winter28"
+              "Portrait": "{{InternalAssetKey: assets/Portraits/Teren/teren_winterfeast.png}}",
+              "Sprite": "{{InternalAssetKey: assets/Characters/Teren/teren_winterfeast.png}}",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            }
+          ],
+
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Teren Arrives",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": "45",
+                "Y": "26"
+              },
+              "Direction": "Down",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any MadDog.BearFam.16199000"
+            },
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearFamLoadingZone",
+              "Tile": {
+                "X": "6",
+                "Y": "6"
+              },
+              "Direction": "Down"
+            }
+          ]
+        }
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    //Gift Tastes
+
+    {
+      "LogName": "Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:Sigurd.GiftReaction.Love.{{Random: 1, 2, 3}}}}/70 74 106 167 459 223 233 276 340 346 612 636 797 787 417 260 226 215 304 MadDog.HashtagBearfam_BrazierSecretAlfredo MadDog.HashtagBearfam_SondraAutumnCookie MadDog.HashtagBearfam_SigurdPerfectRamen MadDog.HashtagBearfam_PeachJoja MadDog.HashtagBearfam_PumpkinJoja MadDog.HashtagBearfam_FerskenPeach MadDog.HashtagBearfam_FerskenPeachCobbler MadDog.HashtagBearfam_SlicedPeaches MadDog.HashtagBearfam_HoneyWheatBread MadDog.HashtagBearfam_RoseCupcakes MadDog.HashtagBearfam_TTBrownies MadDog.HashtagBearfam_FerskenPeach_Mead MadDog.HashtagBearfam_FerskenPeach_Mead_Tankard MadDog.HashtagBearfam_FerskenPeach_Honey MadDog.HashtagBearfam_HoneyCakes WWWA.GenuineAutograph WWWA.Book.TheBookOfYoba sapphicsaph_pitv.PridePop sapphicsaph_pitv.GaylacticCookie Cornucopia_BellPepper Cornucopia_Habanero Cornucopia_Jalapeno Cornucopia_JuniperBerries Cornucopia_DarkAle Cornucopia_Porter Cornucopia_SparklingWine Cornucopia_Stout Cornucopia_BeeBalm Cornucopia_Freesia Cornucopia_Honeysuckle Cornucopia_Hydrangea Cornucopia_ChiliPowder Cornucopia_PeachSchnapps Cornucopia_Kefir Cornucopia_Kumis Cornucopia_Lassi Cornucopia_Porter Cornucopia_Sake Cornucopia_PrismaticWine Cornucopia_RoastedGarlic Cornucopia_RoastedSunflowerSeeds Cornucopia_SpicyMayonnaise Cornucopia_ChiliOil Cornucopia_FruitSoap Cornucopia_HabaneroExtract Cornucopia_JalapenoExtract Cornucopia_Bitter Cornucopia_Bourbon Cornucopia_Brandy Cornucopia_Campari Cornucopia_Cointreau Cornucopia_Frangelico Cornucopia_Moonshine Cornucopia_Vermouth Cornucopia_Vodka Cornucopia_Whiskey Cornucopia_Cauim Cornucopia_FramboiseLambic Cornucopia_Perry Cornucopia_Pulque Cornucopia_Umeshu Cornucopia_BlueberrySorbet Cornucopia_PineappleSorbet Cornucopia_HoneyLavenderIceCream Cornucopia_Amaretto Cornucopia_Chambord Cornucopia_CremedeCacao Cornucopia_Gin Cornucopia_Mezcal Cornucopia_Rum Cornucopia_Scotch Cornucopia_Shochu Cornucopia_Tequila Cornucopia_MintSchnapps Cornucopia_Absinthe Cornucopia_HardAppleCider Cornucopia_Schnapps Cornucopia_AppleSchnapps Cornucopia_MintSchnapps DN.SnS_salishbourbon DN.SnS_zuzustylepizza DN.SnS_zuzustylebagelwithlox DN.SnS_zuzustylecheesecake Lumisteria.MtVapius_Fan_GreenFan Lumisteria.MtVapius_Fan_PinkFan Lumisteria.MtVapius_Fan_ClassicFan Lumisteria.MtVapius_Fan_GooseFan Lumisteria.MtVapius_Tourmaline_Polished Lumisteria.MtVapius_Tourmaline Lumisteria.MtVapius_Treasures_DahuStatuette Lumisteria.MtVapius_StarShapedFlower Lumisteria.MtVapius_ArtisanGoods_MyriadinTea Lumisteria.MtVapius_Cooking_JamPie Lumisteria.MtVapius_Cooking_FishCurry Lumisteria.MtVapius_Candy_HoneyDrop TenebrousNova.EnD.DragonEye DTZ.DowntownZuzuCP_BigBurger DTZ.DowntownZuzuCP_ChocolateSlice DTZ.DowntownZuzuCP_LemonDrizzleCheesecake DTZ.DowntownZuzuCP_MozzarellaSlice DTZ.DowntownZuzuCP_ZuzuIceCream DTZ.DowntownZuzuCP_ZuzuMilkshake DTZ.DowntownZuzuCP_Cider DTZ.DowntownZuzuCP_ZuzuSignatureCocktail DTZ.DowntownZuzuCP_IceDelight DTZ.DowntownZuzuCP_JojaCocktail DTZ.DowntownZuzuCP_StrawberryDaiquiri DTZ.DowntownZuzuCP_ZuzuChampagne DTZ.DowntownZuzuCP_JojaFries DTZ.DowntownZuzuCP_JojaSoda Suushiico.PeachyKeenRecipes_Peach_Pie yourdorkbrains_ConiferInfusedVodka FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Thistle FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola FlashShifter.StardewValleyExpandedCP_Joja_Berry FlashShifter.StardewValleyExpandedCP_Joja_Veggie FlashShifter.StardewValleyExpandedCP_Bearberrys FlashShifter.StardewValleyExpandedCP_Flower_Cookie FlashShifter.StardewValleyExpandedCP_Lucky_Four_Leaf_Clover FlashShifter.StardewValleyExpandedCP_Big_Conch FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir Rafseazz.RSVCP_Highland_Blueberry_Pie Rafseazz.RSVCP_Hollowed_Bear Rafseazz.RSVCP_Moose_Statue MNF.MoreNewFish_duff VoidWitchCult.CP.TheFishmongerNPC_mouthwateringfishburger CyberZ.NewRecipes_Baked_Alaska CyberZ.NewRecipes_Mixed_Fruit_Smoothie DuchessIvy.ShadowRecipes_Black_Cherry_Flan DuchessIvy.ShadowRecipes_Pumpkin_Bread CyberZ.NewRecipes_Sangria miru.forestamber_AmethystKohakutou miru.forestamber_AmberAnchor miru.forestamber_AmberFan miru.forestamber_AmberDecoratedBook CyberZ.NewRecipes_Curry_Rice DuchessIvy.ShadowRecipes_Crystal_Float wildflour.jams_honey_peach_preserves wildflour.jams_honey_apricot_preserves wildflour.jams_flower_dance_jelly wildflour.jams_peach_blossom_jelly wildflour.atelierjuicebar_peachmango_smoothie wildflour.alesxmeads_peach_mead wildflour.alesxmeads_peach_ale wildflour.ateliercandy_peach_mallow_pop wildflour.atelierfrozen_peach_popsicle wildflour.gourmetpantry_honey_butter wildflour.pickles_marinated_mushrooms wildflour.pickles_peach_salsa wildflour.pickles_pepper_relish wildflour.pickles_spicy_tomato_salsa wildflour.pickles_mango_salsa wildflour.pickles_roasted_peppers wildflour.ateliermakeup_maelstrom BFV.CombinedCrops_SwedishPancakes BFV.CombinedCrops_DutchBaby BFV.CombinedCrops_PeachSliders chili_item spicy_item alcohol_item cosmicRetribution.HiddenCropRecipes_HoneyGlazedCarrots cosmicRetribution.HiddenCropRecipes_CarrotCake cosmicRetribution.HiddenCropRecipes_PowdermelonSorbet stinkyvicki_CaveBatTempura stinkyvicki_MonsterMedleyStew HXW.Mixology_berry_whiskey_sour HXW.Mixology_raspberry_lemon_drop HXW.Mixology_harvest_hayride HXW.Mixology_mango_tango yourdorkbrains.CP.WildHoneycomb wildflour.ateliermakeup_virgo_lotion Tulaash.IridiumChef_Peach_Popsicle Tulaash.IridiumChef_Beer_Battered_Onion_Rings Tulaash.IridiumChef_Chocolate_Milk Tulaash.IridiumChef_Peanut_Butter_And_Jelly_Sandwich Tulaash.IridiumChef_Steak_Dinner HXW.FreshlyBaked_peach_cake HXW.FreshlyBaked_spiced_cake HXW.FreshlyBaked_pumpkin_spice_pie HXW.FreshlyBaked_peach_pie HXW.FreshlyBaked_flower_cookies HXW.FreshlyBaked_baguettes HXW.FreshlyBaked_herb_focaccia CITV_GrizzlyTuberFries CITV_GrizzlyTuber CITV_LemonadeBerry-Ade DuchessIvy.GrannysRecipeBox_Hot_Apple_Cider Suushiico.AppleRecipes_Spicy_Apple_Slaw Suushiico.AppleRecipes_Pumpkin_Apple_Pie Suushiico.AppleRecipes_Honey_Dipped_Apples/{{i18n:Sigurd.GiftReaction.Like.{{Random: 1, 2, 3}}}}/149 344 -26 -6 -7 -79 MadDog.HashtagBearfam_SondraSpringtimeShortbread MadDog.HashtagBearfam_SondraWinterBar MadDog.HashtagBearfam_SondraSummerCake MadDog.HashtagBearfam_TriangleGrilledCheese MadDog.HashtagBearfam_SesameBrownBread MadDog.HashtagBearfam_BananaBread WWWA.Book.DeferenceArlington WWWA.Book.FishingForDumbDumbs WWWA.Book.MysteriesOfTheDwarves WWWA.Book.TheTarotRevealed WWWA.Book.Goblins WWWA.Book.ArtifactOrCutlery WWWA.Book.TheGreatBookOfSlimes WWWA.Book.HerpetologyOfFerngill Cornucopia_Beeswax Cornucopia_Salt Cornucopia_TeaSoap Cornucopia_HerbalSoap sapphicsaph_pitv.BiBerryMuffin sapphicsaph_pitv.LesbianLollipop sapphicsaph_pitv.EnbyEclair sapphicsaph_pitv.TastyAceCookie sapphicsaph_pitv.ARomanticCookie sapphicsaph_pitv.TransTart Fellowclown.AND_HotCereal Fellowclown.AND_GemBirdPatties Fellowclown.AND_FrostedCake Fellowclown.AND_CheesyWhiteRisotto Fellowclown.AND_TastyPastry Fellowclown.PC_FrenchDodoEgg EastScarp_Rosas_Baklava DN.SnS_mushroomsredsauce DN.SnS_autumnalstew DN.SnS_dandeliongreens DN.SnS_ferngreensandpineapple DN.SnS_ancienthuckleberryicecream DN.SnS_lavaeelandstirfriedancientbottlegourd DN.SnS_zuzustyleclamchowder DTZ.DowntownZuzuCP_BLT DTZ.DowntownZuzuCP_ChickenDrumstick DTZ.DowntownZuzuCP_DowntownDog DTZ.DowntownZuzuCP_GranaryStack DTZ.DowntownZuzuCP_SpanishLime DTZ.DowntownZuzuCP_Jackfruit DTZ.DowntownZuzuCP_Araza DTZ.DowntownZuzuCP_Ackee DTZ.DowntownZuzuCP_Cherimoya candycreation_hotpepper FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Aegis_Elixir FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish FlashShifter.StardewValleyExpandedCP_Seaweed_Salad FlashShifter.StardewValleyExpandedCP_Sports_Drink FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken MagicQuiver IceRod IridiumSpur BasiliskPaw Rafseazz.RSVCP_Apricot_Juice Rafseazz.RSVCP_Autumn_Dew_Drop_Juice Rafseazz.RSVCP_Cherry_Berry_Shakey Rafseazz.RSVCP_Clementine_Cake Rafseazz.RSVCP_Clementine_Juice Rafseazz.RSVCP_Crunchy_Bagel Rafseazz.RSVCP_Fluffy_Apple_Crumble Rafseazz.RSVCP_Forage_Souffle Rafseazz.RSVCP_Ginger_Rangpur_Meringue Rafseazz.RSVCP_Highland_Ice_Cream Rafseazz.RSVCP_Holiday_Ice Rafseazz.RSVCP_Hundred_Flavor_Doughnut Rafseazz.RSVCP_Pink_Frosted_Sprinkled_Doughnut Rafseazz.RSVCP_Ridge_Apple_Cake Rafseazz.RSVCP_Ridge_Mosaic_Cake Rafseazz.RSVCP_Ridgeside_Shaketini Rafseazz.RSVCP_Snow_Bowl_Surprise Rafseazz.RSVCP_Snowball_Slurpee Rafseazz.RSVCP_Strawberry_Lover_Pie Rafseazz.RSVCP_Summit_Iced_Tea Rafseazz.RSVCP_Sweet_Cranberry_Cheesecake Rafseazz.RSVCP_Tropic_Mango_Cake Rafseazz.RSVCP_Wild_Apple_Juice Rafseazz.RSVCP_Highland_Revani Rafseazz.RSVCP_Honey_Ginger_Whitefish Rafseazz.RSVCP_Zesty_Tuna Rafseazz.RSVCP_Winter_Night_Feast Rafseazz.RSVCP_Summer_Mountain_Blessing Rafseazz.RSVCP_Springtime_Primetime Rafseazz.RSVCP_Fried_Fish_a_la_Ridge Rafseazz.RSVCP_Autumnal_Serenity Rafseazz.RSVCP_Arugula_Roll Rafseazz.RSVCP_Ginger_Arugula_Fried_Rice Rafseazz.RSVCP_Pillowsoft_Cheezy_Sandwich Rafseazz.RSVCP_Pumpkin_Darling_Slice Rafseazz.RSVCP_Fried_Mountain_Greens Rafseazz.RSVCP_Honey_Glazed_Salad Rafseazz.RSVCP_Ridge_Fruity_Plate Rafseazz.RSVCP_Aurorean_Iris Rafseazz.RSVCP_Foxbloom Rafseazz.RSVCP_Highland_Butterwort Rafseazz.RSVCP_Lava_Lily Rafseazz.RSVCP_Mountain_Hokkaido Rafseazz.RSVCP_Mountain_Mistbloom Rafseazz.RSVCP_Ridge_Azorean_Flower Rafseazz.RSVCP_Violet_Devil_s_Claw Rafseazz.RSVCP_Forest_Amancay Rafseazz.RSVCP_Summit_Snowbell Rafseazz.RSVCP_Ridgeside_Monkshood Rafseazz.RSVCP_Sierra_Wintergreen Rafseazz.RSVCP_Autumn_Drop_Berry Rafseazz.RSVCP_Cherry_Pluot Rafseazz.RSVCP_Desert_Tangelo Rafseazz.RSVCP_Ember_Blood_Lime Rafseazz.RSVCP_Frost_Clump_Berry Rafseazz.RSVCP_Highland_Jostaberry Rafseazz.RSVCP_Mountain_Plumcot Rafseazz.RSVCP_Northern_Limequat Rafseazz.RSVCP_Paradise_Rangpur Rafseazz.RSVCP_Ridge_Cherry Rafseazz.RSVCP_Ridge_Wild_Apple Rafseazz.RSVCP_Ridgeside_Clementine Rafseazz.RSVCP_Tropi_Ugli_Fruit Rafseazz.RSVCP_Golden_Skull_Coral Rafseazz.RSVCP_Forest_Halva MNF.MoreNewFish_warrior_elixir VoidWitchCult.CP.TheFishmongerNPC_crispyfishandchips VoidWitchCult.CP.TheFishmongerNPC_bakedredsnappercurry VoidWitchCult.CP.TheFishmongerNPC_fishdillsauce VoidWitchCult.CP.TheFishmongerNPC_savoryfishballs VoidWitchCult.CP.TheFishmongerNPC_Plokkfiskur VoidWitchCult.CP.TheFishmongerNPC_crispysalmonschnitzel VoidWitchCult.CP.TheFishmongerNPC_freshdillsauce VoidWitchCult.CP.TheFishmongerNPC_potatoesdillsauce VoidWitchCult.CP.TheFishmongerNPC_spicymustardsauce CyberZ.NewRecipes_Beef_Wellington CyberZ.NewRecipes_Mushroom_Soup CyberZ.NewRecipes_Ratatouille CyberZ.NewRecipes_Fruit_Punch CyberZ.NewRecipes_Salmon_Steak CyberZ.NewRecipes_Shrimp_Fried_Rice DuchessIvy.ShadowRecipes_Spooky_Sushi DuchessIvy.ShadowRecipes_Savory_Squid_Stew DuchessIvy.ShadowRecipes_Braised_Midnight_Carp miru.forestamber_AmberTropicalNecklace miru.forestamber_AmberCowboyBoots miru.forestamber_AmberStar nail_polish_item blush_item cleanser_item powder_item lipstick_item lipgloss_item mascara_item palette_item lotion_item/{{i18n:Sigurd.GiftReaction.Dislike.{{Random: 1, 2, 3}}}}/117 -5 -80 WWWA.Book.TheGreatTomeOfMayo Cornucopia_Chamomile Cornucopia_HotWhiskeyCoffee Cornucopia_FloralSoap Cornucopia_WaxMelts Cornucopia_NuttySoap Cornucopia_Candles Fellowclown.AND_VoidJuice Fellowclown.AND_GemBirdMeat Fellowclown.AND_SeaglassFlowerDisplay Fellowclown.AND_Seaglass Fellowclown.AND_Button MNF.MoreNewFish_i_voted_sticker VoidWitchCult.CP.TheFishmongerNPC_wornouthat Rafseazz.RSVCP_Jumpy_Coffee_Cake Rafseazz.RSVCP_Matcha_Latte CyberZ.NewRecipes_Honey_Peach_Frappe CyberZ.NewRecipes_Bubble_Milk_Tea DuchessIvy.ShadowRecipes_Pumpkin_Latte miru.forestamber_AmberMask miru.forestamber_AmberCrystalBall Suushiico.MatchaRecipes_Matcha_Ginger_Smoothie Suushiico.MatchaRecipes_Matcha_Ice_Cream Suushiico.MatchaRecipes_Matcha_Mochi Suushiico.MatchaRecipes_Matcha_Cookies Suushiico.MatchaRecipes_Matcha_Waffles Suushiico.MatchaRecipes_Matcha_Swiss_Roll Suushiico.MatchaRecipes_Matcha_Sticky_Rice Suushiico.MatchaRecipes_Matcha_Moon_Cake Suushiico.MatchaRecipes_Strawberry_Matcha_Crepes/{{i18n:Sigurd.GiftReaction.Hate.{{Random: 1, 2, 3}}}}/109 120 -20 -28 WWWA.Book.TheJojaConspiracy Cornucopia_CaffeLatte Cornucopia_CaffePelicano Cornucopia_Cappuccino Cornucopia_Macchiato Cornucopia_MapleMacchiato Cornucopia_PumpkinSpiceLatte Cornucopia_ToastedCoconutMocha Cornucopia_CoffeeLiqueur Cornucopia_CaffeMocha Cornucopia_Affogato Cornucopia_VanillaLatte Cornucopia_PeppermintMocha Cornucopia_SaltedCaramelMocha Lumisteria.MtVapius_Treasures_FossilisedMoth TenebrousNova.EnD.MandrakeRoot ButterflyPowder FlashShifter.StardewValleyExpandedCP_Rusty_Blade miru.forestamber_AmberArrow miru.forestamber_AmberHandaxe miru.forestamber_AmberHelm miru.forestamber_AmberSword wildflour.pickles_sauerkraut wildflour.atelierjuicebar_peach_boba wildflour.atelierjuicebar_peach_icedtea wildflour.atelierjuicebar_peach_kombucha wildflour.atelierjuicebar_peach_elixir wildflour.atelierbarista_peach_tea wildflour.alesxmeads_snow_peach_ale wildflour.alesxmeads_snow_peach_mead wildflour.atelierfrozen_coffee_cone wildflour.gourmetpantry_espresso_powder wildflour.gourmetpantry_coffee_yogurt wildflour.gourmetpantry_peach_yogurt HXW.Mixology_autumn_nights HXW.Mixology_summer_mock_mule HXW.Mixology_think_pink stinkyvicki_ShadowCoffee HXW.FreshlyBaked_coffee_cake_muffins HXW.FreshlyBaked_matcha_cupcakes HXW.FreshlyBaked_honey_lavender_cookies HXW.FreshlyBaked_cafe_macarons HXW.FreshlyBaked_mocha_eclairs HXW.FreshlyBaked_celebration_cake Suushiico.MatchaRecipes_Matcha_Latte/{{i18n:Sigurd.GiftReaction.Neutral.{{Random: 1, 2, 3}}}}/-81 -75 -2 -4 -12 -27 MadDog.HashtagBearfam_GudrunPerfectRamen MadDog.HashtagBearfam_GunnarPerfectRamen MadDog.HashtagBearfam_SondraPerfectRamen MadDog.HashtagBearfam_GunnarBadPotion MadDog.HashtagBearfam_GunnarFirstPotion MadDog.HashtagBearfam_GunnarMysteryPotion MadDog.HashtagBearfam_GunnarSecondPotion MadDog.HashtagBearfam_GunnarWeirdPotion MadDog.HashtagBearfam_GunnarThirdPotion MadDog.HashtagBearfam_GunnarPerfectPotion MadDog.HashtagBearfam_GunnarPhoenixDown MadDog.HashtagBearfam_GunnarRemedyAll MadDog.HashtagBearfam_NineHerbsCharm WWWA.AutographedPhoto Book_Friendship SkillBook_4 Book_Void Book_Marlon Book_Defense Book_Grass WWWA.Book.WhyPepperRexesAreTheBest WWWA.Book.ArcanaCatcherPrunus WWWA.Book.CrabsAndWhyIHateThem WWWA.Book.GettingChicksToLoveYou WWWA.Book.PepperRexes WWWA.Book.GuideToSculptingWithGold WWWA.Book.LunarkinTrollTales MadDog.BearFam.Krakenling MadDog.BearFam.Lyngbakr MadDog.BearFam.Hafgufa MadDog.BearFam.Jojellyfish MadDog.BearFam.Colacrab TenebrousNova.EnD.LambentHyphafin TenebrousNova.EnD.Junimeel MadDog.HashtagBearfam_KingoftheForest_Whiskey Fellowclown.PC_IficusFish Fellowclown.PC_BoneyHeadedGraveFish Fellowclown.PC_SpeedFruit MysteriesOfTheDwarves TenebrousNova.EnD.SanguineHeart TenebrousNova.EnD.BeholderFruit TenebrousNova.EnD.Marimo TenebrousNova.EnD.FrogspawnCoral TenebrousNova.EnD.TorchCoral TenebrousNova.EnD.DuncanCoral TenebrousNova.EnD.Trachyphyllia TenebrousNova.EnD.Scolymia TenebrousNova.EnD.AcanCoral TenebrousNova.EnD.ToadstoolCoral TenebrousNova.EnD.CandyCaneCoral TenebrousNova.EnD.AcroporaCoral TenebrousNova.EnD.EleganceCoral TenebrousNova.EnD.Gorgonian TenebrousNova.EnD.CrystallineLily TenebrousNova.EnD.PixieBloom TenebrousNova.EnD.Bluffshroom 7thAxis.DitR_Items.VoidLavaSnailMayonnaise 7thAxis.DitR_Items.VoidLavaSnailEgg 7thAxis.DitR_Items.VoidLavaSnail 7thAxis.DitR_Items.ValleyLily 7thAxis.DitR_Items.GoldenValleyLily 7thAxis.DitR_Items.SensCrocus DTZ.DowntownZuzuCP_SapphireStarfish DTZ.DowntownZuzuCP_ZuzuCarp DTZ.DowntownZuzuCP_Angelfish DTZ.DowntownZuzuCP_Clownfish DTZ.DowntownZuzuCP_FireJellyfish DTZ.DowntownZuzuCP_MarineDragon DTZ.DowntownZuzuCP_MarineGold DTZ.DowntownZuzuCP_VampireSquid DTZ.DowntownZuzuCP_QiCrystal DTZ.DowntownZuzuCP_SerpentFragment DTZ.DowntownZuzuCP_Earth'sEssence DTZ.DowntownZuzuCP_LotusCrystal DTZ.DowntownZuzuCP_Moonstone DTZ.DowntownZuzuCP_Stargazer'sOre DTZ.DowntownZuzuCP_SunsetFragment TenebrousNova.EnD.CombJelly TenebrousNova.EnD.BloodybellyCombJelly Fellowclown.PC_DragaDoughnut Fellowclown.PC_CapWedges Fellowclown.PC_LoMaCakes Fellowclown.PC_ZinfazuIcecream Fellowclown.PC_IceBerryWine Fellowclown.PC_FarmhandsSupper Fellowclown.PC_TropaWine Fellowclown.PC_AdáuulaCakes Fellowclown.PC_WarpRootTea Fellowclown.PC_DragaWhiskey Fellowclown.PC_LavaPop Fellowclown.PC_MovoraptorEgg Fellowclown.PC_GaggleShrooms Fellowclown.PC_Cucumaba Fellowclown.PC_DragaClaw Fellowclown.PC_DragaTongue Fellowclown.PC_FairyCap Fellowclown.PC_IceBerries Fellowclown.PC_Popachini Fellowclown.PC_Páneeki Fellowclown.PC_WarpRoot Fellowclown.PC_AdáuulaStalks Fellowclown.PC_ZinfazuFruit Fellowclown.PC_ButterTuff Fellowclown.PC_ChocoFrog Fellowclown.PC_ChocoBar Fellowclown.PC_BudJelly Fellowclown.PC_SnowPop Fellowclown.PC_BayDrop Fellowclown.PC_MegaWrap Fellowclown.PC_AcornCake Fellowclown.PC_KingsRangoonDish Fellowclown.PC_PCeetenBreadPudding Fellowclown.PC_MidnightBubbly Fellowclown.PC_HotChoco Fellowclown.PC_LemonberryJuice Fellowclown.PC_ChocoFruit Fellowclown.PC_ButtonFruit Fellowclown.PC_YohoFruit Fellowclown.PC_DeepCaveFruit Fellowclown.PC_VultureSkull Fellowclown.PC_RootJuice Fellowclown.PC_MilkCoffee Fellowclown.PC_Firesnapper Fellowclown.PC_StoneShroom Fellowclown.PC_HeavyRoot Fellowclown.PC_DragaTail Fellowclown.PC_FairyFingers Fellowclown.PC_DragaEye Fellowclown.PC_BellPods Fellowclown.PC_LureBerries Fellowclown.PC_FrozenRoot Fellowclown.PC_DarkTuff FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo FlashShifter.StardewValleyExpandedCP_Bull_Trout FlashShifter.StardewValleyExpandedCP_Butterfish FlashShifter.StardewValleyExpandedCP_Clownfish FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Frog FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Grass_Carp FlashShifter.StardewValleyExpandedCP_King_Salmon FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Minnow FlashShifter.StardewValleyExpandedCP_Puppyfish FlashShifter.StardewValleyExpandedCP_Radioactive_Bass FlashShifter.StardewValleyExpandedCP_Razor_Trout FlashShifter.StardewValleyExpandedCP_Sea_Sponge FlashShifter.StardewValleyExpandedCP_Seahorse FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Snatcher_Worm FlashShifter.StardewValleyExpandedCP_Starfish FlashShifter.StardewValleyExpandedCP_Torpedo_Trout FlashShifter.StardewValleyExpandedCP_Undeadfish FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed FlashShifter.StardewValleyExpandedCP_Bonefish FlashShifter.StardewValleyExpandedCP_Ferngill_Primrose FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose FlashShifter.StardewValleyExpandedCP_Goldenrod FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Salal_Berry FlashShifter.StardewValleyExpandedCP_Green_Mushroom FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Ornate_Treasure_Chest MagicHairDye FrogEgg FairyBox ParrotEgg Rafseazz.RSVCP_Bladetail_Sturgeon Rafseazz.RSVCP_Caped_Tree_Frog Rafseazz.RSVCP_Cardia_Septal_Jellyfish Rafseazz.RSVCP_Crimson_Spiked_Clam Rafseazz.RSVCP_Cutthroat_Trout Rafseazz.RSVCP_Deep_Ridge_Angler Rafseazz.RSVCP_Fairytale_Lionfish Rafseazz.RSVCP_Fixer_Eel Rafseazz.RSVCP_Golden_Rose_Fin Rafseazz.RSVCP_Harvester_Trout Rafseazz.RSVCP_Lullaby_Carp Rafseazz.RSVCP_Mountain_Redbelly_Dace Rafseazz.RSVCP_Mountain_Whitefish Rafseazz.RSVCP_Pebble_Back_Crab Rafseazz.RSVCP_Ridge_Bluegill Rafseazz.RSVCP_Ridgeside_Bass Rafseazz.RSVCP_Skulpin_Fish Rafseazz.RSVCP_Sockeye_Salmon Rafseazz.RSVCP_Waterfall_Snakehead Rafseazz.RSVCP_Highland_Chard Rafseazz.RSVCP_Mountain_Arugula Rafseazz.RSVCP_Mountain_Chico Rafseazz.RSVCP_Elven_Comb Rafseazz.RSVCP_Everfrost_Stone Rafseazz.RSVCP_Inked_Fossil Rafseazz.RSVCP_Lover_s_Sorrow Rafseazz.RSVCP_Nightblack_Diamond Rafseazz.RSVCP_Opal_Halo Rafseazz.RSVCP_Pale_Candelabrum Rafseazz.RSVCP_Relic_Fox_Mask Rafseazz.RSVCP_Village_Hero_Sculpture Rafseazz.RSVCP_Yellow_Wood_Sculpture Rafseazz.RSVCP_Sapphire_Pearl Rafseazz.RSVCP_Shell_Bracelet Rafseazz.RSVCP_Silver_Fish_Bones Rafseazz.RSVCP_Ancient_Music_Box MNF.MoreNewFish_fishing_elixir VoidWitchCult.CP.TheFishmongerNPC_petrichor VoidWitchCult.CP.TheFishmongerNPC_bloodstainedrose VoidWitchCult.CP.TheFishmongerNPC_halcyonflower VoidWitchCult.CP.TheFishmongerNPC_scallure VoidWitchCult.CP.TheFishmongerNPC_sunsetrose VoidWitchCult.CP.TheFishmongerNPC_freshdill VoidWitchCult.CP.TheFishmongerNPC_fisheyebeans VoidWitchCult.CP.TheFishmongerNPC_spicymustard VoidWitchCult.CP.TheFishmongerNPC_oceanflax VoidWitchCult.CP.TheFishmongerNPC_saltemmer VoidWitchCult.CP.TheFishmongerNPC_bicolorpiranha VoidWitchCult.CP.TheFishmongerNPC_bigfinsquid VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta VoidWitchCult.CP.TheFishmongerNPC_firemouth VoidWitchCult.CP.TheFishmongerNPC_garfish VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly VoidWitchCult.CP.TheFishmongerNPC_glasseyesnapper VoidWitchCult.CP.TheFishmongerNPC_kissingfish VoidWitchCult.CP.TheFishmongerNPC_matjes VoidWitchCult.CP.TheFishmongerNPC_moray VoidWitchCult.CP.TheFishmongerNPC_neontetra VoidWitchCult.CP.TheFishmongerNPC_queentriggerfish VoidWitchCult.CP.TheFishmongerNPC_redfinhap VoidWitchCult.CP.TheFishmongerNPC_sheephead VoidWitchCult.CP.TheFishmongerNPC_scarletvampiresquid VoidWitchCult.CP.TheFishmongerNPC_stoplightparrotfish VoidWitchCult.CP.TheFishmongerNPC_stripedtoby VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta VoidWitchCult.CP.TheFishmongerNPC_viperfish DuchessIvy.ShadowRecipes_Void_Cake DuchessIvy.ShadowRecipes_Void_Caviar_Toast CyberZ.NewRecipes_Fugu miru.forestamber_EmeraldKohakutou miru.forestamber_AquamarineKohakutou miru.forestamber_RubyKohakutou miru.forestamber_TopazKohakutou miru.forestamber_JadeKohakutou miru.forestamber_AmberResinLiquid miru.forestamber_AmberCog miru.forestamber_AmberComputer miru.forestamber_AmberDisc miru.forestamber_AmberEgg miru.forestamber_AmberDrum miru.forestamber_AmberSpoon miru.forestamber_AmberShovel miru.forestamber_AmberToothbrush miru.forestamber_AmberOcarina miru.forestamber_PalmFossilAmber miru.forestamber_AmberSkull miru.forestamber_InsectFossilAmber miru.forestamber_AmberStone miru.forestamber_AmberChickenFigurine miru.forestamber_AmberAnimalFigurine miru.forestamber_AmberFigurine miru.forestamber_AmberFrogFigurine miru.forestamber_AmberJunimoFigurine miru.forestamber_AmberMonument miru.forestamber_NautilusFossilAmber miru.forestamber_AmberBangle miru.forestamber_AmberEarrings miru.forestamber_AmberPendant miru.forestamber_AmberRing miru.forestamber_AmberBeadsNecklace miru.forestamber_AmberTiara miru.forestamber_AmberAmphora wildflour.ateliermakeup_faerie_fire wildflour.ateliermakeup_lightning_strike wildflour.ateliermakeup_morning_dew wildflour.ateliermakeup_thunderclap wildflour.ateliermakeup_tourmaline_perfume wildflour.ateliermakeup_larimar_perfume wildflour.ateliermakeup_blue_agathe_perfume wildflour.ateliermakeup_forest_echo wildflour.ateliermakeup_misty_step wildflour.ateliermakeup_frostbite wildflour.ateliermakeup_whirlwind/",
+
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Gunnar.GiftReaction.Love.{{Random: 1, 2, 3}}}}/-4 -22 62 109 459 167 279 344 349 557 684 685 732 121 874 260 226 215 276 421 838 799 774 908 DeluxeBait ChallengeBait MadDog.HashtagBearfam_BrazierSecretAlfredo MadDog.HashtagBearfam_SondraWinterBar MadDog.HashtagBearfam_GunnarPerfectRamen MadDog.HashtagBearfam_PeachJoja MadDog.HashtagBearfam_PumpkinJoja MadDog.HashtagBearfam_FerskenPeachCobbler MadDog.HashtagBearfam_BananaBread MadDog.HashtagBearfam_FerskenPeach_Mead MadDog.HashtagBearfam_FerskenPeach_Mead_Tankard MadDog.HashtagBearfam_HoneyCakes WWWA.GenuineAutograph WWWA.Book.FishingForDumbDumbs WWWA.Book.HerpetologyOfFerngill MadDog.BearFam.Krakenling MadDog.BearFam.Lyngbakr MadDog.BearFam.Hafgufa MadDog.BearFam.Jojellyfish MadDog.BearFam.Colacrab TenebrousNova.EnD.LambentHyphafin TenebrousNova.EnD.Junimeel TenebrousNova.EnD.Marimo TenebrousNova.EnD.FrogspawnCoral TenebrousNova.EnD.TorchCoral TenebrousNova.EnD.DuncanCoral TenebrousNova.EnD.Trachyphyllia TenebrousNova.EnD.CombJelly TenebrousNova.EnD.BloodybellyCombJelly TenebrousNova.EnD.Scolymia TenebrousNova.EnD.AcanCoral TenebrousNova.EnD.ToadstoolCoral TenebrousNova.EnD.CandyCaneCoral TenebrousNova.EnD.AcroporaCoral TenebrousNova.EnD.EleganceCoral TenebrousNova.EnD.Gorgonian sapphicsaph_pitv.PridePop sapphicsaph_pitv.BiBerryMuffin Cornucopia_JuniperBerries Cornucopia_CottonBoll Cornucopia_Agave Cornucopia_BlueAgave Cornucopia_CanolaFlower Cornucopia_Elderberries Cornucopia_Ginseng, Cornucopia_Peppercorn Cornucopia_Vanilla Cornucopia_Aloe Cornucopia_BayLeaves Cornucopia_Catnip Cornucopia_Chives Cornucopia_Cilantro Cornucopia_CuminSeeds Cornucopia_Dill Cornucopia_Fennel Cornucopia_Fenugreek Cornucopia_Lemongrass Cornucopia_LicoriceRoot Cornucopia_Marjoram Cornucopia_Mint Cornucopia_Oregano Cornucopia_Parsley Cornucopia_PerillaLeaves Cornucopia_Rosemary Cornucopia_Sage Cornucopia_Tarragon Cornucopia_Thyme Cornucopia_Turmeric Cornucopia_Wormwood Cornucopia_CocoaPod Cornucopia_CamphorLeaves Cornucopia_CinnamonSticks Cornucopia_EucalyptusLeaves Cornucopia_MelaleucaLeaves Cornucopia_Nutmeg Cornucopia_DarkAle Cornucopia_Porter Cornucopia_SparklingWine Cornucopia_Stout Cornucopia_Chamomile Cornucopia_Daisy Cornucopia_Lavender Cornucopia_Wolfsbane Cornucopia_Jasmine Cornucopia_YlangYlang Cornucopia_Wisteria Cornucopia_SunflowerButter Cornucopia_DriedFlower Cornucopia_Beeswax Cornucopia_Kefir Cornucopia_Kumis Cornucopia_Lassi Cornucopia_Porter Cornucopia_Sake Cornucopia_CopperThread Cornucopia_GoldThread Cornucopia_IridiumThread Cornucopia_SilveryThread Cornucopia_Twine Cornucopia_PrismaticWine Cornucopia_SpicyMayonnaise Cornucopia_ChiliOil Cornucopia_FishOil Cornucopia_SesameOil Cornucopia_HabaneroExtract Cornucopia_JalapenoExtract Cornucopia_Bitter Cornucopia_Bourbon Cornucopia_Brandy Cornucopia_Campari Cornucopia_Cointreau Cornucopia_Frangelico Cornucopia_Moonshine Cornucopia_Vermouth Cornucopia_Vodka Cornucopia_Whiskey Cornucopia_Cauim Cornucopia_FramboiseLambic Cornucopia_Perry Cornucopia_Pulque Cornucopia_Umeshu Cornucopia_NuttySoap Cornucopia_OrangeSorbet Cornucopia_GroundTurmeric Cornucopia_GroundNutmeg Cornucopia_GroundCumin Cornucopia_GroundHerb Cornucopia_BlueMoonIceCream Cornucopia_Amaretto Cornucopia_Chambord Cornucopia_CremedeCacao Cornucopia_Gin Cornucopia_Mezcal Cornucopia_Rum Cornucopia_Scotch Cornucopia_Shochu Cornucopia_Tequila Cornucopia_MintSchnapps Cornucopia_Absinthe Cornucopia_HardAppleCider Cornucopia_Schnapps Cornucopia_AppleSchnapps Cornucopia_MintSchnapps Cornucopia_PeachSchnapps DN.SnS_salishbourbon DN.SnS_zuzustylepizza DN.SnS_zuzustylebagelwithlox DN.SnS_zuzustylecheesecake Lumisteria.MtVapius_BlueAgathe_Polished Lumisteria.MtVapius_BlueAgathe Lumisteria.MtVapius_Treasures_GiantTusk Lumisteria.MtVapius_Treasures_OldMinerLamp Lumisteria.MtVapius_Treasures_OldShield Lumisteria.MtVapius_GalaxyFruit Lumisteria.MtVapius_Basil Lumisteria.MtVapius_GoblinGentian Lumisteria.MtVapius_BlackChanterelle Lumisteria.MtVapius_Porchini Lumisteria.MtVapius_BirchSap Lumisteria.MtVapius_WoodgoatMushroom Lumisteria.MtVapius_ArtisanGoods_VoidOliveOil Lumisteria.MtVapius_Cooking_FishCurry TenebrousNova.EnD.SanguineHeart TenebrousNova.EnD.DragonEye DTZ.DowntownZuzuCP_BigBurger DTZ.DowntownZuzuCP_ChickenDrumstick DTZ.DowntownZuzuCP_MozzarellaSlice DTZ.DowntownZuzuCP_Cider DTZ.DowntownZuzuCP_ZuzuSignatureCocktail DTZ.DowntownZuzuCP_JojaCocktail DTZ.DowntownZuzuCP_StrawberryDaiquiri DTZ.DowntownZuzuCP_ZuzuChampagne DTZ.DowntownZuzuCP_JojaFries DTZ.DowntownZuzuCP_JojaSoda DTZ.DowntownZuzuCP_SapphireStarfish DTZ.DowntownZuzuCP_ZuzuCarp DTZ.DowntownZuzuCP_Angelfish DTZ.DowntownZuzuCP_Clownfish DTZ.DowntownZuzuCP_FireJellyfish DTZ.DowntownZuzuCP_MarineDragon DTZ.DowntownZuzuCP_MarineGold DTZ.DowntownZuzuCP_VampireSquid DTZ.DowntownZuzuCP_QiCrystal DTZ.DowntownZuzuCP_SerpentFragment DTZ.DowntownZuzuCP_Earth'sEssence DTZ.DowntownZuzuCP_LotusCrystal DTZ.DowntownZuzuCP_Moonstone DTZ.DowntownZuzuCP_Stargazer'sOre DTZ.DowntownZuzuCP_SunsetFragment yourdorkbrains_ConiferInfusedVodka yourdorkbrains_PineNeedleTincture FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Aegis_Elixir FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish FlashShifter.StardewValleyExpandedCP_Seaweed_Salad FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Big_Conch FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed FlashShifter.StardewValleyExpandedCP_Bonefish FlashShifter.StardewValleyExpandedCP_Sports_Drink FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola FlashShifter.StardewValleyExpandedCP_Joja_Berry FlashShifter.StardewValleyExpandedCP_Joja_Veggie FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Salal_Berry FlashShifter.StardewValleyExpandedCP_Bearberrys FlashShifter.StardewValleyExpandedCP_Green_Mushroom FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger FlashShifter.StardewValleyExpandedCP_Lucky_Four_Leaf_Clover Rafseazz.RSVCP_Zesty_Tuna Rafseazz.RSVCP_Tropic_Mango_Cake Rafseazz.RSVCP_Ridgeside_Monkshood Rafseazz.RSVCP_Sierra_Wintergreen Rafseazz.RSVCP_Hollowed_Bear Rafseazz.RSVCP_Inked_Fossil MNF.MoreNewFish_duff VoidWitchCult.CP.TheFishmongerNPC_mouthwateringfishburger VoidWitchCult.CP.TheFishmongerNPC_petrichor CyberZ.NewRecipes_Beef_Wellington CyberZ.NewRecipes_Mushroom_Soup DuchessIvy.ShadowRecipes_Void_Cake DuchessIvy.ShadowRecipes_Pumpkin_Bread CyberZ.NewRecipes_Salmon_Steak CyberZ.NewRecipes_Shrimp_Fried_Rice CyberZ.NewRecipes_Fugu DuchessIvy.ShadowRecipes_Spooky_Sushi DuchessIvy.ShadowRecipes_Savory_Squid_Stew DuchessIvy.ShadowRecipes_Braised_Midnight_Carp DuchessIvy.ShadowRecipes_Void_Caviar_Toast DuchessIvy.ShadowRecipes_Crystal_Float CyberZ.NewRecipes_Sangria miru.forestamber_AmberResinLiquid miru.forestamber_AmberShovel miru.forestamber_AmberCowboyBoots miru.forestamber_AmberArrow miru.forestamber_AmberHandaxe miru.forestamber_AmberHelm miru.forestamber_AmberSword miru.forestamber_JadeKohakutou wildflour.jams_spirits_eve_jam wildflour.gourmetpantry_pumpkin_butter wildflour.pickles_marinated_mushrooms wildflour.pickles_peach_salsa wildflour.pickles_pepper_relish wildflour.pickles_spicy_tomato_salsa wildflour.pickles_mango_salsa wildflour.pickles_roasted_peppers wildflour.ateliermakeup_forest_echo BFV.CombinedCrops_SwedishPancakes BFV.CombinedCrops_DutchBaby BFV.CombinedCrops_PeachSliders chili_item spicy_item alcohol_item Sushi_fish cosmicRetribution.HiddenCropRecipes_CarrotGingerSoup cosmicRetribution.HiddenCropRecipes_SummerSquashSkillet stinkyvicki_CaveGrubDumplings stinkyvicki_RoastedBug HXW.Mixology_raspberry_lemon_drop HXW.Mixology_gin_tonic HXW.Mixology_spirited_away HXW.Mixology_frozen_margarita wildflour.ateliermakeup_virgo_lotion Tulaash.IridiumChef_Salmon_Burger Tulaash.IridiumChef_Zuzu_Roll Tulaash.IridiumChef_Tempura_Udon Tulaash.IridiumChef_Takoyaki Tulaash.IridiumChef_Ember_Island_Pizza Tulaash.IridiumChef_Beer_Battered_Onion_Rings Tulaash.IridiumChef_Grilled_Cheese Tulaash.IridiumChef_Steak_And_Pasta HXW.FreshlyBaked_pumpkin_spice_pie HXW.FreshlyBaked_baguettes HXW.FreshlyBaked_country_bread HXW.FreshlyBaked_croissants HXW.FreshlyBaked_elderberry_pie CITV_GrizzlyTuberFries CITV_BerryCurrantFruitLeather CITV_GrizzlyTuber CITV_MuscovyFeather CITV_TurkeyFeather DuchessIvy.GrannysRecipeBox_Hot_Apple_Cider Suushiico.AppleRecipes_Spicy_Apple_Slaw Suushiico.AppleRecipes_Pumpkin_Apple_Pie Suushiico.MatchaRecipes_Matcha_Ginger_Smoothie/{{i18n:Gunnar.GiftReaction.Like.{{Random: 1, 2, 3}}}}/-7 -26 -79 105 -2 -12 MadDog.HashtagBearfam_SondraAutumnCookie MadDog.HashtagBearfam_SondraSpringtimeShortbread MadDog.HashtagBearfam_SondraSummerCake MadDog.HashtagBearfam_TriangleGrilledCheese MadDog.HashtagBearfam_FerskenPeach MadDog.HashtagBearfam_SlicedPeaches MadDog.HashtagBearfam_HoneyWheatBread MadDog.HashtagBearfam_CornbreadMuffins MadDog.HashtagBearfam_RoseCupcakes MadDog.HashtagBearfam_TTBrownies WWWA.Book.WhyPepperRexesAreTheBest WWWA.Book.CrabsAndWhyIHateThem WWWA.Book.MysteriesOfTheDwarves WWWA.Book.TheTarotRevealed WWWA.Book.Goblins Cornucopia_ChickenoftheWoods Cornucopia_Shiitake Cornucopia_FruitSoap Cornucopia_Candles Cornucopia_HerbalSoap sapphicsaph_pitv.GaylacticCookie sapphicsaph_pitv.LesbianLollipop sapphicsaph_pitv.EnbyEclair sapphicsaph_pitv.TastyAceCookie sapphicsaph_pitv.ARomanticCookie sapphicsaph_pitv.TransTart Fellowclown.AND_HotCereal Fellowclown.AND_GemBirdPatties Fellowclown.AND_FrostedCake Fellowclown.AND_CheesyWhiteRisotto Fellowclown.AND_TastyPastry Fellowclown.AND_WhiteTruffle Fellowclown.PC_SpeedFruit Fellowclown.PC_FrenchDodoEgg Fellowclown.AND_WhiteTruffle Fellowclown.PC_IficusFish Fellowclown.PC_BoneyHeadedGraveFish EastScarp_Rosas_Spanakopita DN.SnS_mushroomsredsauce DN.SnS_autumnalstew DN.SnS_dandeliongreens DN.SnS_ferngreensandpineapple DN.SnS_ancienthuckleberryicecream DN.SnS_lavaeelandstirfriedancientbottlegourd DN.SnS_zuzustyleclamchowder DTZ.DowntownZuzuCP_BLT DTZ.DowntownZuzuCP_ChocolateSlice DTZ.DowntownZuzuCP_DowntownDog DTZ.DowntownZuzuCP_GranaryStack DTZ.DowntownZuzuCP_LemonDrizzleCheesecake DTZ.DowntownZuzuCP_ZuzuIceCream DTZ.DowntownZuzuCP_ZuzuMilkshake DTZ.DowntownZuzuCP_SpanishLime DTZ.DowntownZuzuCP_Jackfruit DTZ.DowntownZuzuCP_Araza DTZ.DowntownZuzuCP_Ackee DTZ.DowntownZuzuCP_Cherimoya DTZ.DowntownZuzuCP_IceDelight DN.SnS_Arrow DN.SnS_FirestormArrow DN.SnS_IcicleArrow DN.SnS_RicochetArrow DN.SnS_WindwakerArrow DN.SnS_LightbringerArrow candycreation_hotpepper FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo FlashShifter.StardewValleyExpandedCP_Bull_Trout FlashShifter.StardewValleyExpandedCP_Butterfish FlashShifter.StardewValleyExpandedCP_Clownfish  FlashShifter.StardewValleyExpandedCP_Frog FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Grass_Carp FlashShifter.StardewValleyExpandedCP_King_Salmon FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Minnow FlashShifter.StardewValleyExpandedCP_Puppyfish FlashShifter.StardewValleyExpandedCP_Radioactive_Bass FlashShifter.StardewValleyExpandedCP_Razor_Trout FlashShifter.StardewValleyExpandedCP_Sea_Sponge FlashShifter.StardewValleyExpandedCP_Seahorse FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Snatcher_Worm FlashShifter.StardewValleyExpandedCP_Starfish FlashShifter.StardewValleyExpandedCP_Torpedo_Trout FlashShifter.StardewValleyExpandedCP_Undeadfish FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal FlashShifter.StardewValleyExpandedCP_Flower_Cookie FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken MagicQuiver IceRod IridiumSpur BasiliskPaw ParrotEgg Rafseazz.RSVCP_Apricot_Juice Rafseazz.RSVCP_Autumn_Dew_Drop_Juice Rafseazz.RSVCP_Cherry_Berry_Shakey Rafseazz.RSVCP_Clementine_Cake Rafseazz.RSVCP_Clementine_Juice Rafseazz.RSVCP_Crunchy_Bagel Rafseazz.RSVCP_Fluffy_Apple_Crumble Rafseazz.RSVCP_Forage_Souffle Rafseazz.RSVCP_Ginger_Rangpur_Meringue Rafseazz.RSVCP_Highland_Ice_Cream Rafseazz.RSVCP_Holiday_Ice Rafseazz.RSVCP_Hundred_Flavor_Doughnut Rafseazz.RSVCP_Pink_Frosted_Sprinkled_Doughnut Rafseazz.RSVCP_Ridge_Apple_Cake Rafseazz.RSVCP_Ridge_Mosaic_Cake Rafseazz.RSVCP_Ridgeside_Shaketini Rafseazz.RSVCP_Snow_Bowl_Surprise Rafseazz.RSVCP_Snowball_Slurpee Rafseazz.RSVCP_Strawberry_Lover_Pie Rafseazz.RSVCP_Summit_Iced_Tea Rafseazz.RSVCP_Sweet_Cranberry_Cheesecake Rafseazz.RSVCP_Wild_Apple_Juice Rafseazz.RSVCP_Highland_Revani Rafseazz.RSVCP_Honey_Ginger_Whitefish Rafseazz.RSVCP_Winter_Night_Feast Rafseazz.RSVCP_Summer_Mountain_Blessing Rafseazz.RSVCP_Springtime_Primetime Rafseazz.RSVCP_Fried_Fish_a_la_Ridge Rafseazz.RSVCP_Autumnal_Serenity Rafseazz.RSVCP_Highland_Blueberry_Pie Rafseazz.RSVCP_Arugula_Roll Rafseazz.RSVCP_Ginger_Arugula_Fried_Rice Rafseazz.RSVCP_Pillowsoft_Cheezy_Sandwich Rafseazz.RSVCP_Pumpkin_Darling_Slice Rafseazz.RSVCP_Fried_Mountain_Greens Rafseazz.RSVCP_Honey_Glazed_Salad Rafseazz.RSVCP_Ridge_Fruity_Plate Rafseazz.RSVCP_Bladetail_Sturgeon Rafseazz.RSVCP_Caped_Tree_Frog Rafseazz.RSVCP_Cardia_Septal_Jellyfish Rafseazz.RSVCP_Crimson_Spiked_Clam Rafseazz.RSVCP_Cutthroat_Trout Rafseazz.RSVCP_Deep_Ridge_Angler Rafseazz.RSVCP_Fairytale_Lionfish Rafseazz.RSVCP_Fixer_Eel Rafseazz.RSVCP_Golden_Rose_Fin Rafseazz.RSVCP_Harvester_Trout Rafseazz.RSVCP_Lullaby_Carp Rafseazz.RSVCP_Mountain_Redbelly_Dace Rafseazz.RSVCP_Mountain_Whitefish Rafseazz.RSVCP_Pebble_Back_Crab Rafseazz.RSVCP_Ridge_Bluegill Rafseazz.RSVCP_Ridgeside_Bass Rafseazz.RSVCP_Skulpin_Fish Rafseazz.RSVCP_Sockeye_Salmon Rafseazz.RSVCP_Waterfall_Snakehead Rafseazz.RSVCP_Autumn_Drop_Berry Rafseazz.RSVCP_Cherry_Pluot Rafseazz.RSVCP_Desert_Tangelo Rafseazz.RSVCP_Ember_Blood_Lime Rafseazz.RSVCP_Frost_Clump_Berry Rafseazz.RSVCP_Highland_Jostaberry Rafseazz.RSVCP_Mountain_Plumcot Rafseazz.RSVCP_Northern_Limequat Rafseazz.RSVCP_Paradise_Rangpur Rafseazz.RSVCP_Ridge_Cherry Rafseazz.RSVCP_Ridge_Wild_Apple Rafseazz.RSVCP_Ridgeside_Clementine Rafseazz.RSVCP_Tropi_Ugli_Fruit Rafseazz.RSVCP_Golden_Skull_Coral Rafseazz.RSVCP_Forest_Halva MNF.MoreNewFish_fishing_elixir MNF.MoreNewFish_warrior_elixir VoidWitchCult.CP.TheFishmongerNPC_crispyfishandchips VoidWitchCult.CP.TheFishmongerNPC_bakedredsnappercurry VoidWitchCult.CP.TheFishmongerNPC_fishdillsauce VoidWitchCult.CP.TheFishmongerNPC_savoryfishballs VoidWitchCult.CP.TheFishmongerNPC_Plokkfiskur VoidWitchCult.CP.TheFishmongerNPC_crispysalmonschnitzel VoidWitchCult.CP.TheFishmongerNPC_freshdillsauce VoidWitchCult.CP.TheFishmongerNPC_potatoesdillsauce VoidWitchCult.CP.TheFishmongerNPC_spicymustardsauce VoidWitchCult.CP.TheFishmongerNPC_bicolorpiranha VoidWitchCult.CP.TheFishmongerNPC_bigfinsquid VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta VoidWitchCult.CP.TheFishmongerNPC_firemouth VoidWitchCult.CP.TheFishmongerNPC_garfish VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly VoidWitchCult.CP.TheFishmongerNPC_glasseyesnapper VoidWitchCult.CP.TheFishmongerNPC_kissingfish VoidWitchCult.CP.TheFishmongerNPC_matjes VoidWitchCult.CP.TheFishmongerNPC_moray VoidWitchCult.CP.TheFishmongerNPC_neontetra VoidWitchCult.CP.TheFishmongerNPC_queentriggerfish VoidWitchCult.CP.TheFishmongerNPC_redfinhap VoidWitchCult.CP.TheFishmongerNPC_sheephead VoidWitchCult.CP.TheFishmongerNPC_scarletvampiresquid VoidWitchCult.CP.TheFishmongerNPC_stoplightparrotfish VoidWitchCult.CP.TheFishmongerNPC_stripedtoby VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta VoidWitchCult.CP.TheFishmongerNPC_viperfish CyberZ.NewRecipes_Baked_Alaska CyberZ.NewRecipes_Ratatouille CyberZ.NewRecipes_Curry_Rice CyberZ.NewRecipes_Mixed_Fruit_Smoothie DuchessIvy.ShadowRecipes_Black_Cherry_Flan CyberZ.NewRecipes_Fruit_Punch miru.forestamber_AmberCrystalBall miru.forestamber_EmeraldKohakutou miru.forestamber_AquamarineKohakutou miru.forestamber_RubyKohakutou miru.forestamber_AmethystKohakutou miru.forestamber_TopazKohakutou wildflour.ateliercrops_wheatshroom wildflour.ateliercrops_milkshroom wildflour.ateliercrops_meringueshroom wildflour.ateliercrops_honeyfungus wildflour.ateliercrops_chickenwoods nail_polish_item blush_item cleanser_item powder_item lipstick_item lipgloss_item mascara_item palette_item lotion_item/{{i18n:Gunnar.GiftReaction.Dislike.{{Random: 1, 2, 3}}}}/-75 651 MadDog.HashtagBearfam_SesameBrownBread WWWA.Book.TheJojaConspiracy WWWA.Book.TheGreatTomeOfMayo Cornucopia_CaffeLatte Cornucopia_CaffePelicano Cornucopia_Cappuccino Cornucopia_Macchiato Cornucopia_MapleMacchiato Cornucopia_PumpkinSpiceLatte Cornucopia_ToastedCoconutMocha Cornucopia_WaxMelts Cornucopia_CaffeMocha Cornucopia_Affogato Cornucopia_VanillaLatte Cornucopia_PeppermintMocha Cornucopia_SaltedCaramelMocha Fellowclown.AND_VoidJuice Fellowclown.AND_GemBirdMeat EastScarp_Rosas_Baklava wildflour.atelierfrozen_coconut_popsicle Fellowclown.AND_SeaglassFlowerDisplay Fellowclown.AND_Seaglass Fellowclown.AND_Button FlashShifter.StardewValleyExpandedCP_Ferngill_Primrose FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose FlashShifter.StardewValleyExpandedCP_Goldenrod FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Thistle Rafseazz.RSVCP_Jumpy_Coffee_Cake Rafseazz.RSVCP_Matcha_Latte MNF.MoreNewFish_i_voted_sticker VoidWitchCult.CP.TheFishmongerNPC_wornouthat CyberZ.NewRecipes_Honey_Peach_Frappe CyberZ.NewRecipes_Bubble_Milk_Tea DuchessIvy.ShadowRecipes_Pumpkin_Latte CITV_BlackWalnut CITV_BlackHawthorn/{{i18n:Gunnar.GiftReaction.Hate.{{Random: 1, 2, 3}}}}/-20 -81 88 766 408 413 437 439 680 857 WWWA.Book.TheGreatBookOfSlimes Cornucopia_Peanut Cornucopia_Pistachio Cornucopia_Almond Cornucopia_Cashew Cornucopia_Durian Cornucopia_Pecan Cornucopia_Walnut Cornucopia_EssentialOil Cornucopia_Raisins Cornucopia_RoastedSunflowerSeeds Cornucopia_SesameSeeds Cornucopia_MintChipIceCream Lumisteria.MtVapius_Treasures_FossilisedMoth ButterflyPowder wildflour.jams_blackberry_mint_jelly wildflour.atelierfrozen_coffee_cone wildflour.atelierfrozen_mint_chocolate_sandwich wildflour.atelierfrozen_mint_cone wildflour.gourmetpantry_espresso_powder wildflour.gourmetpantry_coffee_yogurt nut_item stinkyvicki_SlimeEggSouffle stinkyvicki_SlimeJellySandwich stinkyvicki_SlimeTorte stinkyvicki_Slimeade stinkyvicki_ShadowCoffee HXW.Mixology_berry_mimosa HXW.Mixology_flower_queen HXW.Mixology_mango_tango HXW.Mixology_blackberry_mint_refresher HXW.Mixology_blue_isle_cooler HXW.Mixology_coco_loco HXW.Mixology_fruity_fresca HXW.Mixology_grasshopper HXW.Mixology_picnic_punch HXW.Mixology_sweet_gem_spritzer Aimon111.CharityDSA_Cert_PreventionofCrueltytoSlimes Tulaash.IridiumChef_Salted_Peanuts Tulaash.IridiumChef_Coconut_Pancakes_With_Passion_Fruit HXW.FreshlyBaked_poppyseed_muffins HXW.FreshlyBaked_coffee_cake_muffins HXW.FreshlyBaked_matcha_cupcakes HXW.FreshlyBaked_coconut_cream_pie HXW.FreshlyBaked_chocolate_hazelnut_tart HXW.FreshlyBaked_cafe_macarons HXW.FreshlyBaked_coconut_brownies HXW.FreshlyBaked_poppyseed_bread HXW.FreshlyBaked_mocha_eclairs HXW.FreshlyBaked_walnut_muffins HXW.FreshlyBaked_pistachio_muffins HXW.FreshlyBaked_almond_elderflower_cake HXW.FreshlyBaked_chocolate_mudslide_cake HXW.FreshlyBaked_chocolate_mint_cupcakes HXW.FreshlyBaked_mint_brownies HXW.FreshlyBaked_raspberry_pistachio_tart HXW.FreshlyBaked_pistachio_eclairs HXW.FreshlyBaked_celebration_cake Suushiico.AppleRecipes_Apple_Hazelnut_Cider Suushiico.MatchaRecipes_Matcha_Latte/{{i18n:Gunnar.GiftReaction.Neutral.{{Random: 1, 2, 3}}}}/-5 -6 -80 -27 MadDog.HashtagBearfam_GudrunPerfectRamen MadDog.HashtagBearfam_SondraPerfectRamen MadDog.HashtagBearfam_SigurdPerfectRamen MadDog.HashtagBearfam_GunnarBadPotion MadDog.HashtagBearfam_GunnarFirstPotion MadDog.HashtagBearfam_GunnarMysteryPotion MadDog.HashtagBearfam_GunnarSecondPotion MadDog.HashtagBearfam_GunnarWeirdPotion MadDog.HashtagBearfam_GunnarThirdPotion MadDog.HashtagBearfam_GunnarPerfectPotion MadDog.HashtagBearfam_GunnarPhoenixDown MadDog.HashtagBearfam_GunnarRemedyAll MadDog.HashtagBearfam_NineHerbsCharm MadDog.HashtagBearfam_FerskenPeach_Honey WWWA.AutographedPhoto SkillBook_1 Book_Bombs SkillBook_4 Book_Defense Book_Void Book_Marlon WWWA.Book.TheBookOfYoba WWWA.Book.ArcanaCatcherPrunus WWWA.Book.DeferenceArlington WWWA.Book.GettingChicksToLoveYou WWWA.Book.PepperRexes WWWA.Book.GuideToSculptingWithGold WWWA.Book.ArtifactOrCutlery WWWA.Book.LunarkinTrollTales Cornucopia_HotWhiskeyCoffee Cornucopia_FloralSoap Cornucopia_TeaSoap MysteriesOfTheDwarves TenebrousNova.EnD.BeholderFruit TenebrousNova.EnD.CrystallineLily TenebrousNova.EnD.PixieBloom TenebrousNova.EnD.Bluffshroom TenebrousNova.EnD.MandrakeRoot 7thAxis.DitR_Items.VoidLavaSnailMayonnaise 7thAxis.DitR_Items.VoidLavaSnailEgg 7thAxis.DitR_Items.VoidLavaSnail 7thAxis.DitR_Items.ValleyLily 7thAxis.DitR_Items.GoldenValleyLily 7thAxis.DitR_Items.SensCrocus Fellowclown.PC_DragaDoughnut Fellowclown.PC_CapWedges Fellowclown.PC_LoMaCakes Fellowclown.PC_ZinfazuIcecream Fellowclown.PC_IceBerryWine Fellowclown.PC_FarmhandsSupper Fellowclown.PC_TropaWine Fellowclown.PC_AdáuulaCakes Fellowclown.PC_WarpRootTea Fellowclown.PC_DragaWhiskey Fellowclown.PC_LavaPop Fellowclown.PC_MovoraptorEgg Fellowclown.PC_GaggleShrooms Fellowclown.PC_Cucumaba Fellowclown.PC_DragaClaw Fellowclown.PC_DragaTongue Fellowclown.PC_FairyCap Fellowclown.PC_IceBerries Fellowclown.PC_Popachini Fellowclown.PC_Páneeki Fellowclown.PC_WarpRoot Fellowclown.PC_AdáuulaStalks Fellowclown.PC_ZinfazuFruit Fellowclown.PC_ButterTuff Fellowclown.PC_ChocoFrog Fellowclown.PC_ChocoBar Fellowclown.PC_BudJelly Fellowclown.PC_SnowPop Fellowclown.PC_BayDrop Fellowclown.PC_MegaWrap Fellowclown.PC_AcornCake Fellowclown.PC_KingsRangoonDish Fellowclown.PC_PCeetenBreadPudding Fellowclown.PC_MidnightBubbly Fellowclown.PC_HotChoco Fellowclown.PC_LemonberryJuice Fellowclown.PC_ChocoFruit Fellowclown.PC_ButtonFruit Fellowclown.PC_YohoFruit Fellowclown.PC_DeepCaveFruit Fellowclown.PC_VultureSkull Fellowclown.PC_RootJuice Fellowclown.PC_MilkCoffee Fellowclown.PC_Firesnapper Fellowclown.PC_StoneShroom Fellowclown.PC_HeavyRoot Fellowclown.PC_DragaTail Fellowclown.PC_FairyFingers Fellowclown.PC_DragaEye Fellowclown.PC_BellPods Fellowclown.PC_LureBerries Fellowclown.PC_FrozenRoot Fellowclown.PC_DarkTuff FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Ornate_Treasure_Chest MagicHairDye FrogEgg FairyBox Rafseazz.RSVCP_Aurorean_Iris Rafseazz.RSVCP_Foxbloom Rafseazz.RSVCP_Highland_Butterwort Rafseazz.RSVCP_Lava_Lily Rafseazz.RSVCP_Mountain_Hokkaido Rafseazz.RSVCP_Mountain_Mistbloom Rafseazz.RSVCP_Ridge_Azorean_Flower Rafseazz.RSVCP_Violet_Devil_s_Claw Rafseazz.RSVCP_Forest_Amancay Rafseazz.RSVCP_Summit_Snowbell Rafseazz.RSVCP_Highland_Chard Rafseazz.RSVCP_Mountain_Arugula Rafseazz.RSVCP_Mountain_Chico Rafseazz.RSVCP_Elven_Comb Rafseazz.RSVCP_Everfrost_Stone Rafseazz.RSVCP_Lover_s_Sorrow Rafseazz.RSVCP_Nightblack_Diamond Rafseazz.RSVCP_Opal_Halo Rafseazz.RSVCP_Pale_Candelabrum Rafseazz.RSVCP_Relic_Fox_Mask Rafseazz.RSVCP_Village_Hero_Sculpture Rafseazz.RSVCP_Yellow_Wood_Sculpture Rafseazz.RSVCP_Moose_Statue Rafseazz.RSVCP_Sapphire_Pearl Rafseazz.RSVCP_Shell_Bracelet Rafseazz.RSVCP_Silver_Fish_Bones Rafseazz.RSVCP_Ancient_Music_Box VoidWitchCult.CP.TheFishmongerNPC_bloodstainedrose VoidWitchCult.CP.TheFishmongerNPC_halcyonflower VoidWitchCult.CP.TheFishmongerNPC_scallure VoidWitchCult.CP.TheFishmongerNPC_sunsetrose VoidWitchCult.CP.TheFishmongerNPC_freshdill VoidWitchCult.CP.TheFishmongerNPC_fisheyebeans VoidWitchCult.CP.TheFishmongerNPC_spicymustard VoidWitchCult.CP.TheFishmongerNPC_oceanflax VoidWitchCult.CP.TheFishmongerNPC_saltemmer miru.forestamber_AmberCog miru.forestamber_AmberComputer miru.forestamber_AmberDisc miru.forestamber_AmberEgg miru.forestamber_AmberDrum miru.forestamber_AmberSpoon miru.forestamber_AmberToothbrush miru.forestamber_AmberOcarina miru.forestamber_PalmFossilAmber miru.forestamber_AmberSkull miru.forestamber_InsectFossilAmber miru.forestamber_AmberStone miru.forestamber_AmberStar miru.forestamber_NautilusFossilAmber miru.forestamber_AmberDecoratedBook miru.forestamber_AmberBangle miru.forestamber_AmberEarrings miru.forestamber_AmberPendant miru.forestamber_AmberRing miru.forestamber_AmberBeadsNecklace miru.forestamber_AmberTiara miru.forestamber_AmberTropicalNecklace miru.forestamber_AmberFan miru.forestamber_AmberAmphora miru.forestamber_AmberAnchor miru.forestamber_AmberChickenFigurine miru.forestamber_AmberAnimalFigurine miru.forestamber_AmberFigurine miru.forestamber_AmberFrogFigurine miru.forestamber_AmberJunimoFigurine miru.forestamber_AmberMonument miru.forestamber_AmberMask wildflour.ateliermakeup_faerie_fire wildflour.ateliermakeup_lightning_strike wildflour.ateliermakeup_morning_dew wildflour.ateliermakeup_thunderclap wildflour.ateliermakeup_tourmaline_perfume wildflour.ateliermakeup_larimar_perfume wildflour.ateliermakeup_blue_agathe_perfume wildflour.ateliermakeup_maelstrom wildflour.ateliermakeup_misty_step wildflour.ateliermakeup_frostbite wildflour.ateliermakeup_whirlwind/",
+
+        "MadDog.HashtagBearFam.Sondra": "{{i18n:Sondra.GiftReaction.Love.{{Random: 1, 2, 3}}}}/-2 -7 410 104 231 618 344 395 253 421 593 Carrot MadDog.HashtagBearfam_BrazierSecretAlfredo MadDog.HashtagBearfam_SondraPerfectRamen MadDog.HashtagBearfam_SlicedPeaches MadDog.HashtagBearfam_CornbreadMuffins MadDog.HashtagBearfam_RoseCupcakes WWWA.GenuineAutograph WWWA.Book.ArtifactOrCutlery sapphicsaph_pitv.PridePop sapphicsaph_pitv.TransTart Cornucopia_JuniperBerries Cornucopia_Grapefruit Cornucopia_Walnut Cornucopia_SparklingWine Cornucopia_Rose Cornucopia_Dahlia Cornucopia_RoseWinter Cornucopia_RoseSummer Cornucopia_RoseSpring Cornucopia_RosePrismatic Cornucopia_RoseFall Cornucopia_DriedFlower Cornucopia_CaffeLatte Cornucopia_CaffePelicano Cornucopia_Cappuccino Cornucopia_Macchiato Cornucopia_MapleMacchiato Cornucopia_PumpkinSpiceLatte Cornucopia_ToastedCoconutMocha Cornucopia_OrangeJuice Cornucopia_PrismaticWine Cornucopia_RoastedGarlic Cornucopia_RoastedSunflowerSeeds Cornucopia_FloralSoap Cornucopia_WaxMelts Cornucopia_CaffeMocha Cornucopia_Candles Cornucopia_Affogato Cornucopia_VanillaLatte Cornucopia_PeppermintMocha Cornucopia_BlueMoonIceCream Cornucopia_SaltedCaramelMocha DN.SnS_zuzustylebagelwithlox DN.SnS_zuzustylecheesecake Lumisteria.MtVapius_Garnet Lumisteria.MtVapius_Garnet_Polished Lumisteria.MtVapius_Diamond_Polished Lumisteria.MtVapius_Treasures_PetrifiedFlower Lumisteria.MtVapius_Treasures_FaiencePlate Lumisteria.MtVapius_Primrose Lumisteria.MtVapius_Cooking_PomegranateCake Lumisteria.MtVapius_Candy_CandiedFlower Lumisteria.MtVapius_Earrings_EmeraldEarrings Lumisteria.MtVapius_Jewel_FlowerGlobe Lumisteria.MtVapius_Jewel_CraftedCameo Lumisteria.MtVapius_Fan_GreenFan Lumisteria.MtVapius_Fan_PinkFan Lumisteria.MtVapius_Fan_ClassicFan Lumisteria.MtVapius_Fan_GooseFan TenebrousNova.EnD.CrystallineLily TenebrousNova.EnD.PixieBloom 7thAxis.DitR_Items.ValleyLily 7thAxis.DitR_Items.GoldenValleyLily 7thAxis.DitR_Items.SensCrocus DTZ.DowntownZuzuCP_ChocolateSlice DTZ.DowntownZuzuCP_BLT DTZ.DowntownZuzuCP_ZuzuIceCream FlashShifter.StardewValleyExpandedCP_Ferngill_Primrose FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose FlashShifter.StardewValleyExpandedCP_Goldenrod FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Thistle FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie FlashShifter.StardewValleyExpandedCP_Lucky_Four_Leaf_Clover Rafseazz.RSVCP_Strawberry_Lover_Pie Rafseazz.RSVCP_Aurorean_Iris Rafseazz.RSVCP_Foxbloom Rafseazz.RSVCP_Honey_Glazed_Salad Rafseazz.RSVCP_Ridge_Fruity_Plate Rafseazz.RSVCP_Highland_Butterwort Rafseazz.RSVCP_Lava_Lily Rafseazz.RSVCP_Mountain_Hokkaido Rafseazz.RSVCP_Mountain_Mistbloom Rafseazz.RSVCP_Ridge_Azorean_Flower Rafseazz.RSVCP_Ridgeside_Monkshood Rafseazz.RSVCP_Sierra_Wintergreen Rafseazz.RSVCP_Violet_Devil_s_Claw Rafseazz.RSVCP_Forest_Amancay Rafseazz.RSVCP_Summit_Snowbell Rafseazz.RSVCP_Hollowed_Bear Rafseazz.RSVCP_Lover_s_Sorrow Rafseazz.RSVCP_Opal_Halo VoidWitchCult.CP.TheFishmongerNPC_crispysalmonschnitzel VoidWitchCult.CP.TheFishmongerNPC_petrichor VoidWitchCult.CP.TheFishmongerNPC_bloodstainedrose VoidWitchCult.CP.TheFishmongerNPC_halcyonflower VoidWitchCult.CP.TheFishmongerNPC_scallure VoidWitchCult.CP.TheFishmongerNPC_sunsetrose CyberZ.NewRecipes_Ratatouille CyberZ.NewRecipes_Honey_Peach_Frappe DuchessIvy.ShadowRecipes_Pumpkin_Latte miru.forestamber_RubyKohakutou miru.forestamber_AmberBangle miru.forestamber_AmberEarrings miru.forestamber_AmberPendant miru.forestamber_AmberRing miru.forestamber_AmberBeadsNecklace miru.forestamber_AmberTiara miru.forestamber_AmberTropicalNecklace miru.forestamber_AmberFan wildflour.pickles_bruschetta wildflour.pickles_onion_chutney wildflour.jams_tulip_jelly wildflour.jams_vanilla_raspberry_preserves wildflour.ateliermakeup_whirlwind BFV.CombinedCrops_SwedishPancakes BFV.CombinedCrops_DutchBaby BFV.CombinedCrops_PeachSliders nail_polish_item blush_item cleanser_item powder_item lipstick_item lipgloss_item mascara_item palette_item lotion_item cosmicRetribution.HiddenCropRecipes_PastaPrimavera cosmicRetribution.HiddenCropRecipes_Quiche stinkyvicki_ExorcismSorbet Aimon111.CharityDSA_Cert_FeedingFerngil wildflour.ateliermakeup_pisces_lotion Tulaash.IridiumChef_Lemon_Bar Tulaash.IridiumChef_Hummus_Snack_Pack Tulaash.IridiumChef_Apple_Slices Tulaash.IridiumChef_Snowflake_Cupcake baking_item HXW.FreshlyBaked_rose_petit_fours HXW.FreshlyBaked_mango_pineapple_tart HXW.FreshlyBaked_cheesecake_thumbprint_cookies HXW.FreshlyBaked_flower_cookies HXW.FreshlyBaked_baguettes HXW.FreshlyBaked_tomato_basil_focaccia HXW.FreshlyBaked_lemon_bars CITV_ValleySalad CITV_LemonadeBerry-Ade CITV_BerryCurrantFruitLeather DuchessIvy.GrannysRecipeBox_Sbiten Suushiico.AppleRecipes_Apple_Hazelnut_Cider Suushiico.AppleRecipes_Blueberry_Apple_Scone Suushiico.MatchaRecipes_Matcha_Sticky_Rice Suushiico.MatchaRecipes_Matcha_Moon_Cake Suushiico.MatchaRecipes_Strawberry_Matcha_Crepes/{{i18n:Sondra.GiftReaction.Like.{{Random: 1, 2, 3}}}}/-12 -80 -26 -79 348 MadDog.HashtagBearfam_SondraAutumnCookie MadDog.HashtagBearfam_SondraSpringtimeShortbread MadDog.HashtagBearfam_SondraWinterBar MadDog.HashtagBearfam_TriangleGrilledCheese MadDog.HashtagBearfam_SondraSummerCake MadDog.HashtagBearfam_FerskenPeachCobbler MadDog.HashtagBearfam_HoneyWheatBread MadDog.HashtagBearfam_SesameBrownBread MadDog.HashtagBearfam_BananaBread MadDog.HashtagBearfam_TTBrownies MadDog.HashtagBearfam_FerskenPeach_Honey MadDog.HashtagBearfam_HoneyCakes WWWA.Book.TheBookOfYoba WWWA.Book.ArcanaCatcherPrunus WWWA.Book.DeferenceArlington WWWA.Book.LunarkinTrollTales WWWA.Book.HerpetologyOfFerngill Cornucopia_FruitSoap sapphicsaph_pitv.GaylacticCookie sapphicsaph_pitv.LesbianLollipop sapphicsaph_pitv.EnbyEclair sapphicsaph_pitv.TastyAceCookie sapphicsaph_pitv.ARomanticCookie sapphicsaph_pitv.BiBerryMuffin Fellowclown.AND_HotCereal Fellowclown.AND_GemBirdPatties Fellowclown.AND_FrostedCake Fellowclown.AND_CheesyWhiteRisotto Fellowclown.AND_TastyPastry Fellowclown.PC_FrenchDodoEgg EastScarp_Rosas_Baklava EastScarp_Rosas_Spanakopita DN.SnS_portfiredrakesparkler DN.SnS_mushroomsredsauce DN.SnS_autumnalstew DN.SnS_dandeliongreens DN.SnS_ferngreensandpineapple DN.SnS_ancienthuckleberryicecream DN.SnS_lavaeelandstirfriedancientbottlegourd DN.SnS_zuzustyleclamchowder DTZ.DowntownZuzuCP_BigBurger DTZ.DowntownZuzuCP_ChickenDrumstick DTZ.DowntownZuzuCP_DowntownDog DTZ.DowntownZuzuCP_GranaryStack DTZ.DowntownZuzuCP_LemonDrizzleCheesecake DTZ.DowntownZuzuCP_MozzarellaSlice DTZ.DowntownZuzuCP_ZuzuMilkshake DTZ.DowntownZuzuCP_SpanishLime DTZ.DowntownZuzuCP_Jackfruit DTZ.DowntownZuzuCP_Araza DTZ.DowntownZuzuCP_Ackee DTZ.DowntownZuzuCP_Cherimoya DTZ.DowntownZuzuCP_IceDelight FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish FlashShifter.StardewValleyExpandedCP_Seaweed_Salad FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger FlashShifter.StardewValleyExpandedCP_Flower_Cookie FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken FairyBox Rafseazz.RSVCP_Apricot_Juice Rafseazz.RSVCP_Autumn_Dew_Drop_Juice Rafseazz.RSVCP_Cherry_Berry_Shakey Rafseazz.RSVCP_Clementine_Cake Rafseazz.RSVCP_Clementine_Juice Rafseazz.RSVCP_Crunchy_Bagel Rafseazz.RSVCP_Fluffy_Apple_Crumble Rafseazz.RSVCP_Forage_Souffle Rafseazz.RSVCP_Ginger_Rangpur_Meringue Rafseazz.RSVCP_Highland_Ice_Cream Rafseazz.RSVCP_Holiday_Ice Rafseazz.RSVCP_Hundred_Flavor_Doughnut Rafseazz.RSVCP_Jumpy_Coffee_Cake Rafseazz.RSVCP_Matcha_Latte Rafseazz.RSVCP_Pink_Frosted_Sprinkled_Doughnut Rafseazz.RSVCP_Ridge_Apple_Cake Rafseazz.RSVCP_Ridge_Mosaic_Cake Rafseazz.RSVCP_Ridgeside_Shaketini Rafseazz.RSVCP_Snow_Bowl_Surprise Rafseazz.RSVCP_Snowball_Slurpee Rafseazz.RSVCP_Summit_Iced_Tea Rafseazz.RSVCP_Sweet_Cranberry_Cheesecake Rafseazz.RSVCP_Wild_Apple_Juice Rafseazz.RSVCP_Highland_Revani Rafseazz.RSVCP_Honey_Ginger_Whitefish Rafseazz.RSVCP_Winter_Night_Feast Rafseazz.RSVCP_Summer_Mountain_Blessing Rafseazz.RSVCP_Springtime_Primetime Rafseazz.RSVCP_Fried_Fish_a_la_Ridge Rafseazz.RSVCP_Autumnal_Serenity Rafseazz.RSVCP_Highland_Blueberry_Pie Rafseazz.RSVCP_Zesty_Tuna Rafseazz.RSVCP_Tropic_Mango_Cake Rafseazz.RSVCP_Arugula_Roll Rafseazz.RSVCP_Ginger_Arugula_Fried_Rice Rafseazz.RSVCP_Pillowsoft_Cheezy_Sandwich Rafseazz.RSVCP_Pumpkin_Darling_Slice Rafseazz.RSVCP_Fried_Mountain_Greens Rafseazz.RSVCP_Autumn_Drop_Berry Rafseazz.RSVCP_Cherry_Pluot Rafseazz.RSVCP_Desert_Tangelo Rafseazz.RSVCP_Ember_Blood_Lime Rafseazz.RSVCP_Frost_Clump_Berry Rafseazz.RSVCP_Highland_Jostaberry Rafseazz.RSVCP_Mountain_Plumcot Rafseazz.RSVCP_Northern_Limequat Rafseazz.RSVCP_Paradise_Rangpur Rafseazz.RSVCP_Ridge_Cherry Rafseazz.RSVCP_Ridge_Wild_Apple Rafseazz.RSVCP_Ridgeside_Clementine Rafseazz.RSVCP_Tropi_Ugli_Fruit Rafseazz.RSVCP_Golden_Skull_Coral Rafseazz.RSVCP_Forest_Halva VoidWitchCult.CP.TheFishmongerNPC_mouthwateringfishburger VoidWitchCult.CP.TheFishmongerNPC_crispyfishandchips VoidWitchCult.CP.TheFishmongerNPC_bakedredsnappercurry VoidWitchCult.CP.TheFishmongerNPC_fishdillsauce VoidWitchCult.CP.TheFishmongerNPC_savoryfishballs VoidWitchCult.CP.TheFishmongerNPC_Plokkfiskur VoidWitchCult.CP.TheFishmongerNPC_freshdillsauce VoidWitchCult.CP.TheFishmongerNPC_potatoesdillsauce VoidWitchCult.CP.TheFishmongerNPC_spicymustardsauce CyberZ.NewRecipes_Beef_Wellington CyberZ.NewRecipes_Baked_Alaska CyberZ.NewRecipes_Mixed_Fruit_Smoothie DuchessIvy.ShadowRecipes_Pumpkin_Bread CyberZ.NewRecipes_Fruit_Punch DuchessIvy.ShadowRecipes_Black_Cherry_Flan CyberZ.NewRecipes_Bubble_Milk_Tea miru.forestamber_EmeraldKohakutou miru.forestamber_AquamarineKohakutou miru.forestamber_AmethystKohakutou miru.forestamber_TopazKohakutou miru.forestamber_JadeKohakutou miru.forestamber_AmberAmphora miru.forestamber_AmberChickenFigurine miru.forestamber_AmberAnimalFigurine miru.forestamber_AmberFigurine miru.forestamber_AmberFrogFigurine miru.forestamber_AmberJunimoFigurine miru.forestamber_AmberMonument/{{i18n:Sondra.GiftReaction.Dislike.{{Random: 1, 2, 3}}}}/-4 -81 WWWA.Book.TheGreatTomeOfMayo WWWA.Book.GuideToSculptingWithGold MadDog.BearFam.Krakenling MadDog.BearFam.Lyngbakr MadDog.BearFam.Hafgufa MadDog.BearFam.Jojellyfish MadDog.BearFam.Colacrab TenebrousNova.EnD.LambentHyphafin TenebrousNova.EnD.Junimeel Cornucopia_ChewingGum Cornucopia_TeaSoap Cornucopia_HerbalSoap Fellowclown.AND_VoidJuice Fellowclown.AND_GemBirdMeat DN.SnS_salishbourbon Fellowclown.AND_SeaglassFlowerDisplay Fellowclown.AND_Seaglass Fellowclown.AND_Button FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Aegis_Elixir FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Sports_Drink FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola FlashShifter.StardewValleyExpandedCP_Joja_Berry FlashShifter.StardewValleyExpandedCP_Joja_Veggie MNF.MoreNewFish_i_voted_sticker VoidWitchCult.CP.TheFishmongerNPC_wornouthat DuchessIvy.ShadowRecipes_Void_Cake CyberZ.NewRecipes_Sangria CyberZ.NewRecipes_Mushroom_Soup miru.forestamber_AmberArrow miru.forestamber_AmberHandaxe miru.forestamber_AmberHelm miru.forestamber_AmberSword/{{i18n:Sondra.GiftReaction.Hate.{{Random: 1, 2, 3}}}}/-20 459 346 303 Cornucopia_DarkAle Cornucopia_Porter Cornucopia_Stout Cornucopia_HotWhiskeyCoffee Cornucopia_Kefir Cornucopia_Kumis Cornucopia_Lassi Cornucopia_Porter Cornucopia_Sake Cornucopia_Bitter Cornucopia_Bourbon Cornucopia_Brandy Cornucopia_Campari Cornucopia_Cointreau Cornucopia_Frangelico Cornucopia_Moonshine Cornucopia_Vermouth Cornucopia_Vodka Cornucopia_Whiskey Cornucopia_Cauim Cornucopia_FramboiseLambic Cornucopia_Perry Cornucopia_Pulque Cornucopia_Umeshu Cornucopia_NuttySoap Cornucopia_Amaretto Cornucopia_Chambord Cornucopia_CremedeCacao Cornucopia_Gin Cornucopia_Mezcal Cornucopia_Rum Cornucopia_Scotch Cornucopia_Shochu Cornucopia_Tequila Cornucopia_MintSchnapps Cornucopia_Absinthe Cornucopia_HardAppleCider Cornucopia_Schnapps Cornucopia_AppleSchnapps Cornucopia_MintSchnapps Cornucopia_PeachSchnapps Lumisteria.MtVapius_Treasures_FossilisedMoth DTZ.DowntownZuzuCP_Cider DTZ.DowntownZuzuCP_ZuzuSignatureCocktail DTZ.DowntownZuzuCP_JojaCocktail DTZ.DowntownZuzuCP_StrawberryDaiquiri ButterflyPowder MNF.MoreNewFish_duff miru.forestamber_AmberMask wildflour.pickles_pickled_carrots wildflour.ateliercandy_classic_gumballs wildflour.ateliercandy_apple_gumballs wildflour.ateliercandy_orange_gumballs wildflour.ateliercandy_cherry_gumballs wildflour.ateliercandy_flavor_gumballs wildflour.ateliercandy_lemon_gumballs/{{i18n:Sondra.GiftReaction.Neutral.{{Random: 1, 2, 3}}}}/-5 -6 -75 -27 167 MadDog.HashtagBearfam_GudrunPerfectRamen MadDog.HashtagBearfam_GunnarPerfectRamen MadDog.HashtagBearfam_SigurdPerfectRamen MadDog.HashtagBearfam_PeachJoja MadDog.HashtagBearfam_PumpkinJoja MadDog.HashtagBearfam_FerskenPeach MadDog.HashtagBearfam_GunnarBadPotion MadDog.HashtagBearfam_GunnarFirstPotion MadDog.HashtagBearfam_GunnarMysteryPotion MadDog.HashtagBearfam_GunnarSecondPotion MadDog.HashtagBearfam_GunnarWeirdPotion MadDog.HashtagBearfam_GunnarThirdPotion MadDog.HashtagBearfam_GunnarPerfectPotion MadDog.HashtagBearfam_GunnarPhoenixDown MadDog.HashtagBearfam_GunnarRemedyAll MadDog.HashtagBearfam_NineHerbsCharm WWWA.AutographedPhoto Book_QueenOfSauce Book_Diamonds Book_Mystery WWWA.Book.TheJojaConspiracy WWWA.Book.WhyPepperRexesAreTheBest WWWA.Book.CrabsAndWhyIHateThem WWWA.Book.FishingForDumbDumbs WWWA.Book.GettingChicksToLoveYou WWWA.Book.MysteriesOfTheDwarves WWWA.Book.PepperRexes WWWA.Book.TheTarotRevealed WWWA.Book.Goblins WWWA.Book.TheGreatBookOfSlimes Fellowclown.PC_IficusFish Fellowclown.PC_BoneyHeadedGraveFish Fellowclown.PC_SpeedFruit MysteriesOfTheDwarves TenebrousNova.EnD.SanguineHeart TenebrousNova.EnD.BeholderFruit TenebrousNova.EnD.Bluffshroom TenebrousNova.EnD.MandrakeRoot TenebrousNova.EnD.DragonEye TenebrousNova.EnD.Marimo TenebrousNova.EnD.FrogspawnCoral TenebrousNova.EnD.TorchCoral TenebrousNova.EnD.DuncanCoral TenebrousNova.EnD.Trachyphyllia TenebrousNova.EnD.Scolymia TenebrousNova.EnD.AcanCoral TenebrousNova.EnD.ToadstoolCoral TenebrousNova.EnD.CandyCaneCoral TenebrousNova.EnD.AcroporaCoral TenebrousNova.EnD.EleganceCoral TenebrousNova.EnD.Gorgonian 7thAxis.DitR_Items.VoidLavaSnailMayonnaise 7thAxis.DitR_Items.VoidLavaSnailEgg 7thAxis.DitR_Items.VoidLavaSnail DTZ.DowntownZuzuCP_ZuzuChampagne DTZ.DowntownZuzuCP_JojaFries DTZ.DowntownZuzuCP_JojaSoda DTZ.DowntownZuzuCP_SapphireStarfish DTZ.DowntownZuzuCP_ZuzuCarp DTZ.DowntownZuzuCP_Angelfish DTZ.DowntownZuzuCP_Clownfish DTZ.DowntownZuzuCP_FireJellyfish DTZ.DowntownZuzuCP_MarineDragon DTZ.DowntownZuzuCP_MarineGold DTZ.DowntownZuzuCP_VampireSquid DTZ.DowntownZuzuCP_QiCrystal DTZ.DowntownZuzuCP_SerpentFragment DTZ.DowntownZuzuCP_Earth'sEssence DTZ.DowntownZuzuCP_LotusCrystal DTZ.DowntownZuzuCP_Moonstone DTZ.DowntownZuzuCP_Stargazer'sOre DTZ.DowntownZuzuCP_SunsetFragment TenebrousNova.EnD.CombJelly TenebrousNova.EnD.BloodybellyCombJelly Fellowclown.PC_DragaDoughnut Fellowclown.PC_CapWedges Fellowclown.PC_LoMaCakes Fellowclown.PC_ZinfazuIcecream Fellowclown.PC_IceBerryWine Fellowclown.PC_FarmhandsSupper Fellowclown.PC_TropaWine Fellowclown.PC_AdáuulaCakes Fellowclown.PC_WarpRootTea Fellowclown.PC_DragaWhiskey Fellowclown.PC_LavaPop Fellowclown.PC_MovoraptorEgg Fellowclown.PC_GaggleShrooms Fellowclown.PC_Cucumaba Fellowclown.PC_DragaClaw Fellowclown.PC_DragaTongue Fellowclown.PC_FairyCap Fellowclown.PC_IceBerries Fellowclown.PC_Popachini Fellowclown.PC_Páneeki Fellowclown.PC_WarpRoot Fellowclown.PC_AdáuulaStalks Fellowclown.PC_ZinfazuFruit Fellowclown.PC_ButterTuff Fellowclown.PC_ChocoFrog Fellowclown.PC_ChocoBar Fellowclown.PC_BudJelly Fellowclown.PC_SnowPop Fellowclown.PC_BayDrop Fellowclown.PC_MegaWrap Fellowclown.PC_AcornCake Fellowclown.PC_KingsRangoonDish Fellowclown.PC_PCeetenBreadPudding Fellowclown.PC_MidnightBubbly Fellowclown.PC_HotChoco Fellowclown.PC_LemonberryJuice Fellowclown.PC_ChocoFruit Fellowclown.PC_ButtonFruit Fellowclown.PC_YohoFruit Fellowclown.PC_DeepCaveFruit Fellowclown.PC_VultureSkull Fellowclown.PC_RootJuice Fellowclown.PC_MilkCoffee Fellowclown.PC_Firesnapper Fellowclown.PC_StoneShroom Fellowclown.PC_HeavyRoot Fellowclown.PC_DragaTail Fellowclown.PC_FairyFingers Fellowclown.PC_DragaEye Fellowclown.PC_BellPods Fellowclown.PC_LureBerries Fellowclown.PC_FrozenRoot Fellowclown.PC_DarkTuff FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo FlashShifter.StardewValleyExpandedCP_Bull_Trout FlashShifter.StardewValleyExpandedCP_Butterfish FlashShifter.StardewValleyExpandedCP_Clownfish FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Frog FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Grass_Carp FlashShifter.StardewValleyExpandedCP_King_Salmon FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Minnow FlashShifter.StardewValleyExpandedCP_Puppyfish FlashShifter.StardewValleyExpandedCP_Radioactive_Bass FlashShifter.StardewValleyExpandedCP_Razor_Trout FlashShifter.StardewValleyExpandedCP_Sea_Sponge FlashShifter.StardewValleyExpandedCP_Seahorse FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Snatcher_Worm FlashShifter.StardewValleyExpandedCP_Starfish FlashShifter.StardewValleyExpandedCP_Torpedo_Trout FlashShifter.StardewValleyExpandedCP_Undeadfish FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Big_Conch FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed FlashShifter.StardewValleyExpandedCP_Bonefish FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Salal_Berry  FlashShifter.StardewValleyExpandedCP_Bearberrys FlashShifter.StardewValleyExpandedCP_Green_Mushroom FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Ornate_Treasure_Chest MagicQuiver IceRod IridiumSpur BasiliskPaw MagicHairDye FrogEgg ParrotEgg Rafseazz.RSVCP_Bladetail_Sturgeon Rafseazz.RSVCP_Caped_Tree_Frog Rafseazz.RSVCP_Cardia_Septal_Jellyfish Rafseazz.RSVCP_Crimson_Spiked_Clam Rafseazz.RSVCP_Cutthroat_Trout Rafseazz.RSVCP_Deep_Ridge_Angler Rafseazz.RSVCP_Fairytale_Lionfish Rafseazz.RSVCP_Fixer_Eel Rafseazz.RSVCP_Golden_Rose_Fin Rafseazz.RSVCP_Harvester_Trout Rafseazz.RSVCP_Lullaby_Carp Rafseazz.RSVCP_Mountain_Redbelly_Dace Rafseazz.RSVCP_Mountain_Whitefish Rafseazz.RSVCP_Pebble_Back_Crab Rafseazz.RSVCP_Ridge_Bluegill Rafseazz.RSVCP_Ridgeside_Bass Rafseazz.RSVCP_Skulpin_Fish Rafseazz.RSVCP_Sockeye_Salmon Rafseazz.RSVCP_Waterfall_Snakehead Rafseazz.RSVCP_Highland_Chard Rafseazz.RSVCP_Mountain_Arugula Rafseazz.RSVCP_Mountain_Chico Rafseazz.RSVCP_Elven_Comb Rafseazz.RSVCP_Everfrost_Stone Rafseazz.RSVCP_Inked_Fossil Rafseazz.RSVCP_Nightblack_Diamond Rafseazz.RSVCP_Pale_Candelabrum Rafseazz.RSVCP_Relic_Fox_Mask Rafseazz.RSVCP_Village_Hero_Sculpture Rafseazz.RSVCP_Yellow_Wood_Sculpture Rafseazz.RSVCP_Moose_Statue Rafseazz.RSVCP_Sapphire_Pearl Rafseazz.RSVCP_Shell_Bracelet Rafseazz.RSVCP_Silver_Fish_Bones Rafseazz.RSVCP_Ancient_Music_Box MNF.MoreNewFish_fishing_elixir MNF.MoreNewFish_warrior_elixir VoidWitchCult.CP.TheFishmongerNPC_freshdill VoidWitchCult.CP.TheFishmongerNPC_fisheyebeans VoidWitchCult.CP.TheFishmongerNPC_spicymustard VoidWitchCult.CP.TheFishmongerNPC_oceanflax VoidWitchCult.CP.TheFishmongerNPC_saltemmer VoidWitchCult.CP.TheFishmongerNPC_bicolorpiranha VoidWitchCult.CP.TheFishmongerNPC_bigfinsquid VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta VoidWitchCult.CP.TheFishmongerNPC_firemouth VoidWitchCult.CP.TheFishmongerNPC_garfish VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly VoidWitchCult.CP.TheFishmongerNPC_glasseyesnapper VoidWitchCult.CP.TheFishmongerNPC_kissingfish VoidWitchCult.CP.TheFishmongerNPC_matjes VoidWitchCult.CP.TheFishmongerNPC_moray VoidWitchCult.CP.TheFishmongerNPC_neontetra VoidWitchCult.CP.TheFishmongerNPC_queentriggerfish VoidWitchCult.CP.TheFishmongerNPC_redfinhap VoidWitchCult.CP.TheFishmongerNPC_sheephead VoidWitchCult.CP.TheFishmongerNPC_scarletvampiresquid VoidWitchCult.CP.TheFishmongerNPC_stoplightparrotfish VoidWitchCult.CP.TheFishmongerNPC_stripedtoby VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta VoidWitchCult.CP.TheFishmongerNPC_viperfish CyberZ.NewRecipes_Salmon_Steak CyberZ.NewRecipes_Shrimp_Fried_Rice CyberZ.NewRecipes_Fugu DuchessIvy.ShadowRecipes_Spooky_Sushi DuchessIvy.ShadowRecipes_Savory_Squid_Stew DuchessIvy.ShadowRecipes_Braised_Midnight_Carp DuchessIvy.ShadowRecipes_Void_Caviar_Toast DuchessIvy.ShadowRecipes_Crystal_Float miru.forestamber_AmberResinLiquid miru.forestamber_AmberCog miru.forestamber_AmberComputer miru.forestamber_AmberDisc miru.forestamber_AmberEgg miru.forestamber_AmberDrum miru.forestamber_AmberSpoon miru.forestamber_AmberShovel miru.forestamber_AmberToothbrush miru.forestamber_AmberOcarina miru.forestamber_PalmFossilAmber miru.forestamber_AmberSkull miru.forestamber_InsectFossilAmber miru.forestamber_AmberStone miru.forestamber_AmberStar miru.forestamber_NautilusFossilAmber miru.forestamber_AmberCrystalBall miru.forestamber_AmberDecoratedBook miru.forestamber_AmberCowboyBoots miru.forestamber_AmberAnchor wildflour.ateliermakeup_faerie_fire wildflour.ateliermakeup_lightning_strike wildflour.ateliermakeup_morning_dew wildflour.ateliermakeup_thunderclap wildflour.ateliermakeup_tourmaline_perfume wildflour.ateliermakeup_larimar_perfume wildflour.ateliermakeup_blue_agathe_perfume wildflour.ateliermakeup_forest_echo wildflour.ateliermakeup_maelstrom wildflour.ateliermakeup_frostbite wildflour.ateliermakeup_misty_step/", //Lumisteria.MtVapius_Earrings_AquamarineEarrings Lumisteria.MtVapius_Earrings_RubyEarrings Lumisteria.MtVapius_Earrings_AmethystEarrings Lumisteria.MtVapius_Earrings_TopazEarrings Lumisteria.MtVapius_Earrings_JadeEarrings Lumisteria.MtVapius_Earrings_DiamondEarrings Lumisteria.MtVapius_Earrings_SweetGemBerryEarrings - add to loved eventually
+
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Gudrun.GiftReaction.Love.{{Random: 1, 2, 3}}}}/-20 -81 -80 392 395 253 279 394 560 586 206 814 117 116 66 276 MadDog.HashtagBearfam_BrazierSecretAlfredo MadDog.HashtagBearfam_SondraSpringtimeShortbread MadDog.HashtagBearfam_TriangleGrilledCheese MadDog.HashtagBearfam_GudrunPerfectRamen MadDog.HashtagBearfam_SlicedPeaches MadDog.HashtagBearfam_SesameBrownBread MadDog.HashtagBearfam_RoseCupcakes WWWA.Book.TheJojaConspiracy WWWA.Book.WhyPepperRexesAreTheBest WWWA.Book.LunarkinTrollTales WWWA.Book.HerpetologyOfFerngill sapphicsaph_pitv.PridePop sapphicsaph_pitv.TransTart Cornucopia_JuniperBerries Cornucopia_Avocado Cornucopia_Orchid Cornucopia_Rose Cornucopia_Lavender Cornucopia_RoseWinter Cornucopia_RoseSummer Cornucopia_RoseSpring Cornucopia_RosePrismatic Cornucopia_RoseFall Cornucopia_CookieButter Cornucopia_CaffeLatte Cornucopia_CaffePelicano Cornucopia_Cappuccino Cornucopia_Macchiato Cornucopia_MapleMacchiato Cornucopia_PumpkinSpiceLatte Cornucopia_ToastedCoconutMocha Cornucopia_ChewingGum Cornucopia_RoastedSunflowerSeeds Cornucopia_FloralSoap Cornucopia_WaxMelts Cornucopia_CaffeMocha Cornucopia_StrawberrySorbet Cornucopia_Candles Cornucopia_Affogato Cornucopia_VanillaLatte Cornucopia_PeppermintMocha Cornucopia_MintChipIceCream Cornucopia_SaltedCaramelMocha DN.SnS_portfiredrakesparkler DN.SnS_zuzustylepizza DN.SnS_zuzustylecheesecake Lumisteria.MtVapius_Labradorite Lumisteria.MtVapius_Labradorite_Polished Lumisteria.MtVapius_Aquamarine_Polished Lumisteria.MtVapius_Treasures_FossilisedStarfish Lumisteria.MtVapius_Treasures_FossilisedFish Lumisteria.MtVapius_Treasures_FossilisedAmmonites Lumisteria.MtVapius_Treasures_Cyanotype Lumisteria.MtVapius_VelvetIris Lumisteria.MtVapius_Cooking_GemOrangeade Lumisteria.MtVapius_Candy_CandiedFruit Lumisteria.MtVapius_Candy_CoffeeCandy Lumisteria.MtVapius_Trash_BrokenBottle DTZ.DowntownZuzuCP_GranaryStack DTZ.DowntownZuzuCP_LemonDrizzleCheesecake DTZ.DowntownZuzuCP_MozzarellaSlice FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Big_Conch FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken FlashShifter.StardewValleyExpandedCP_Lucky_Four_Leaf_Clover Rafseazz.RSVCP_Highland_Ice_Cream Rafseazz.RSVCP_Jumpy_Coffee_Cake Rafseazz.RSVCP_Matcha_Latte Rafseazz.RSVCP_Hollowed_Bear Rafseazz.RSVCP_Sapphire_Pearl Rafseazz.RSVCP_Shell_Bracelet Rafseazz.RSVCP_Silver_Fish_Bones MNF.MoreNewFish_i_voted_sticker VoidWitchCult.CP.TheFishmongerNPC_wornouthat wildflour.jams_mixed_berry_preserves wildflour.jams_orange_marmalade wildflour.atelierjuicebar_coffee_boba wildflour.atelierfrozen_pumpkin_milkshake wildflour.atelierfrozen_coffee_cone wildflour.jams_blackberry_mint_jelly wildflour.atelierfrozen_mint_chocolate_sandwich wildflour.atelierfrozen_mint_cone wildflour.ateliermakeup_misty_step BFV.CombinedCrops_SwedishPancakes BFV.CombinedCrops_DutchBaby BFV.CombinedCrops_PeachSliders BeazNees.CP.TheSushiProject_Tamago BeazNees.CP.TheSushiProject_Niji nail_polish_item blush_item cleanser_item powder_item lipstick_item lipgloss_item mascara_item palette_item lotion_item CyberZ.NewRecipes_Honey_Peach_Frappe CyberZ.NewRecipes_Bubble_Milk_Tea DuchessIvy.ShadowRecipes_Pumpkin_Latte DuchessIvy.ShadowRecipes_Pumpkin_Bread miru.forestamber_AmberStar miru.forestamber_NautilusFossilAmber miru.forestamber_AmberCrystalBall miru.forestamber_AmberBangle miru.forestamber_AmberEarrings miru.forestamber_AmberPendant miru.forestamber_AmberRing miru.forestamber_AmberBeadsNecklace miru.forestamber_AmberTiara miru.forestamber_AmberTropicalNecklace miru.forestamber_AmberChickenFigurine miru.forestamber_AmberAnimalFigurine miru.forestamber_AmberFrogFigurine miru.forestamber_AmberJunimoFigurine miru.forestamber_EmeraldKohakutou cosmicRetribution.HiddenCropRecipes_CarrotCake cosmicRetribution.HiddenCropRecipes_PowdermelonSorbet stinkyvicki_ShadowCoffee wildflour.ateliermakeup_aquarius_lotion Tulaash.IridiumChef_Melon_Shaved_Ice Tulaash.IridiumChef_Ember_Island_Pizza Tulaash.IridiumChef_Raspberry_Sorbet Tulaash.IridiumChef_Rock_Candy Tulaash.IridiumChef_Chocolate_Donut HXW.FreshlyBaked_coffee_cake_muffins HXW.FreshlyBaked_pink_velvet_cake HXW.FreshlyBaked_matcha_cupcakes HXW.FreshlyBaked_red_velvet_petit_fours HXW.FreshlyBaked_pumpkin_spice_pie HXW.FreshlyBaked_cheesecake_thumbprint_cookies HXW.FreshlyBaked_cafe_macarons HXW.FreshlyBaked_classic_doughnuts HXW.FreshlyBaked_red_velvet_brownies doughnut_item HXW.FreshlyBaked_chocolate_mint_cupcakes HXW.FreshlyBaked_mocha_eclairs HXW.FreshlyBaked_mint_brownies CITV_GrizzlyTuberFries CITV_BerryCurrantFruitLeather CITV_LemonadeBerry-Ade DuchessIvy.GrannysRecipeBox_Hot_Apple_Cider Suushiico.AppleRecipes_Apple_Hazelnut_Cider Suushiico.AppleRecipes_Pumpkin_Apple_Pie Suushiico.AppleRecipes_Blueberry_Apple_Scone Suushiico.MatchaRecipes_Matcha_Ice_Cream Suushiico.MatchaRecipes_Matcha_Latte Suushiico.MatchaRecipes_Matcha_Swiss_Roll/{{i18n:Gudrun.GiftReaction.Like.{{Random: 1, 2, 3}}}}/-2 -7 -12 -79 MadDog.HashtagBearfam_SondraAutumnCookie MadDog.HashtagBearfam_SondraWinterBar MadDog.HashtagBearfam_SondraSummerCake MadDog.HashtagBearfam_FerskenPeach MadDog.HashtagBearfam_FerskenPeachCobbler MadDog.HashtagBearfam_HoneyWheatBread MadDog.HashtagBearfam_CornbreadMuffins MadDog.HashtagBearfam_BananaBread MadDog.HashtagBearfam_TTBrownies MadDog.HashtagBearfam_FerskenPeach_Honey MadDog.HashtagBearfam_HoneyCakes WWWA.Book.ArcanaCatcherPrunus WWWA.Book.CrabsAndWhyIHateThem WWWA.Book.PepperRexes sapphicsaph_pitv.GaylacticCookie sapphicsaph_pitv.LesbianLollipop sapphicsaph_pitv.EnbyEclair sapphicsaph_pitv.TastyAceCookie sapphicsaph_pitv.ARomanticCookie sapphicsaph_pitv.BiBerryMuffin Fellowclown.AND_HotCereal Fellowclown.AND_GemBirdPatties Fellowclown.AND_FrostedCake Fellowclown.AND_TastyPastry Fellowclown.PC_FrenchDodoEgg EastScarp_Rosas_Baklava DN.SnS_mushroomsredsauce DN.SnS_autumnalstew DN.SnS_dandeliongreens DN.SnS_ferngreensandpineapple DN.SnS_ancienthuckleberryicecream DN.SnS_lavaeelandstirfriedancientbottlegourd Lumisteria.MtVapius_Earrings_EmeraldEarrings Lumisteria.MtVapius_Jewel_FlowerGlobe Lumisteria.MtVapius_Jewel_CraftedCameo Lumisteria.MtVapius_Fan_GreenFan Lumisteria.MtVapius_Fan_PinkFan Lumisteria.MtVapius_Fan_ClassicFan Lumisteria.MtVapius_Fan_GooseFan TenebrousNova.EnD.CrystallineLily TenebrousNova.EnD.PixieBloom DTZ.DowntownZuzuCP_BigBurger DTZ.DowntownZuzuCP_BLT DTZ.DowntownZuzuCP_ChickenDrumstick DTZ.DowntownZuzuCP_ChocolateSlice DTZ.DowntownZuzuCP_DowntownDog DTZ.DowntownZuzuCP_ZuzuIceCream DTZ.DowntownZuzuCP_ZuzuMilkshake DTZ.DowntownZuzuCP_SpanishLime DTZ.DowntownZuzuCP_Jackfruit DTZ.DowntownZuzuCP_Araza DTZ.DowntownZuzuCP_Ackee DTZ.DowntownZuzuCP_Cherimoya DTZ.DowntownZuzuCP_IceDelight FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Ferngill_Primrose FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose FlashShifter.StardewValleyExpandedCP_Goldenrod FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Thistle FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger FlashShifter.StardewValleyExpandedCP_Flower_Cookie FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice FrogEgg FairyBox Rafseazz.RSVCP_Apricot_Juice Rafseazz.RSVCP_Autumn_Dew_Drop_Juice Rafseazz.RSVCP_Cherry_Berry_Shakey Rafseazz.RSVCP_Clementine_Cake Rafseazz.RSVCP_Clementine_Juice Rafseazz.RSVCP_Crunchy_Bagel Rafseazz.RSVCP_Fluffy_Apple_Crumble Rafseazz.RSVCP_Forage_Souffle Rafseazz.RSVCP_Ginger_Rangpur_Meringue Rafseazz.RSVCP_Highland_Blueberry_Pie Rafseazz.RSVCP_Holiday_Ice Rafseazz.RSVCP_Hundred_Flavor_Doughnut Rafseazz.RSVCP_Pink_Frosted_Sprinkled_Doughnut Rafseazz.RSVCP_Ridge_Apple_Cake Rafseazz.RSVCP_Ridge_Mosaic_Cake Rafseazz.RSVCP_Ridgeside_Shaketini Rafseazz.RSVCP_Snow_Bowl_Surprise Rafseazz.RSVCP_Snowball_Slurpee Rafseazz.RSVCP_Strawberry_Lover_Pie Rafseazz.RSVCP_Summit_Iced_Tea Rafseazz.RSVCP_Sweet_Cranberry_Cheesecake Rafseazz.RSVCP_Tropic_Mango_Cake Rafseazz.RSVCP_Wild_Apple_Juice Rafseazz.RSVCP_Highland_Revani Rafseazz.RSVCP_Autumn_Drop_Berry Rafseazz.RSVCP_Cherry_Pluot Rafseazz.RSVCP_Desert_Tangelo Rafseazz.RSVCP_Ember_Blood_Lime Rafseazz.RSVCP_Frost_Clump_Berry Rafseazz.RSVCP_Highland_Jostaberry Rafseazz.RSVCP_Mountain_Plumcot Rafseazz.RSVCP_Northern_Limequat Rafseazz.RSVCP_Paradise_Rangpur Rafseazz.RSVCP_Ridge_Cherry Rafseazz.RSVCP_Ridge_Wild_Apple Rafseazz.RSVCP_Ridgeside_Clementine Rafseazz.RSVCP_Tropi_Ugli_Fruit Rafseazz.RSVCP_Golden_Skull_Coral Rafseazz.RSVCP_Forest_Halva VoidWitchCult.CP.TheFishmongerNPC_freshdillsauce VoidWitchCult.CP.TheFishmongerNPC_potatoesdillsauce VoidWitchCult.CP.TheFishmongerNPC_spicymustardsauce VoidWitchCult.CP.TheFishmongerNPC_petrichor VoidWitchCult.CP.TheFishmongerNPC_bloodstainedrose VoidWitchCult.CP.TheFishmongerNPC_halcyonflower VoidWitchCult.CP.TheFishmongerNPC_scallure VoidWitchCult.CP.TheFishmongerNPC_sunsetrose CyberZ.NewRecipes_Beef_Wellington CyberZ.NewRecipes_Baked_Alaska CyberZ.NewRecipes_Ratatouille CyberZ.NewRecipes_Curry_Rice CyberZ.NewRecipes_Mixed_Fruit_Smoothie DuchessIvy.ShadowRecipes_Void_Cake DuchessIvy.ShadowRecipes_Black_Cherry_Flan CyberZ.NewRecipes_Fruit_Punch miru.forestamber_AmberDecoratedBook miru.forestamber_AmberFan miru.forestamber_AmberCowboyBoots miru.forestamber_AmberMask miru.forestamber_AmberAnchor miru.forestamber_AmberFigurine miru.forestamber_AmberMonument miru.forestamber_AquamarineKohakutou miru.forestamber_RubyKohakutou miru.forestamber_AmethystKohakutou miru.forestamber_TopazKohakutou miru.forestamber_JadeKohakutou/{{i18n:Gudrun.GiftReaction.Dislike.{{Random: 1, 2, 3}}}}/-26 198 WWWA.GenuineAutograph WWWA.Book.TheGreatTomeOfMayo Fellowclown.AND_CheesyWhiteRisotto Fellowclown.AND_VoidJuice Fellowclown.AND_GemBirdMeat Fellowclown.AND_SeaglassFlowerDisplay Fellowclown.AND_Seaglass Fellowclown.AND_Button FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Aegis_Elixir FlashShifter.StardewValleyExpandedCP_Sports_Drink FlashShifter.StardewValleyExpandedCP_Stamina_Capsule CyberZ.NewRecipes_Mushroom_Soup miru.forestamber_AmberArrow miru.forestamber_AmberHandaxe miru.forestamber_AmberHelm miru.forestamber_AmberSword/{{i18n:Gudrun.GiftReaction.Hate.{{Random: 1, 2, 3}}}}/-4 -22 198 202 203 204 209 212 213 214 218 219 225 226 227 228 242 265 456 727 728 729 730 732 733 921 167 190 MadDog.HashtagBearfam_PeachJoja MadDog.HashtagBearfam_PumpkinJoja WWWA.AutographedPhoto SmokedFish SkillBook_1 Book_Crabbing Book_Roe Broccoli WWWA.Book.FishingForDumbDumbs WWWA.Book.GuideToSculptingWithGold MadDog.BearFam.Krakenling MadDog.BearFam.Lyngbakr MadDog.BearFam.Hafgufa MadDog.BearFam.Jojellyfish MadDog.BearFam.Colacrab TenebrousNova.EnD.LambentHyphafin TenebrousNova.EnD.Junimeel TenebrousNova.EnD.Marimo TenebrousNova.EnD.FrogspawnCoral TenebrousNova.EnD.TorchCoral TenebrousNova.EnD.DuncanCoral TenebrousNova.EnD.Trachyphyllia TenebrousNova.EnD.Scolymia TenebrousNova.EnD.AcanCoral TenebrousNova.EnD.ToadstoolCoral TenebrousNova.EnD.CandyCaneCoral TenebrousNova.EnD.AcroporaCoral TenebrousNova.EnD.EleganceCoral TenebrousNova.EnD.Gorgonian Cornucopia_Broccoli Cornucopia_Asparagus Cornucopia_Spinach Cornucopia_Durian Cornucopia_DarkAle Cornucopia_Porter Cornucopia_SparklingWine Cornucopia_Stout Cornucopia_CannedFish Cornucopia_CannedMollusc Cornucopia_CannedTuna Cornucopia_HotWhiskeyCoffee Cornucopia_FishSauce Cornucopia_ShrimpPaste Cornucopia_Kefir Cornucopia_Kumis Cornucopia_Lassi Cornucopia_Porter Cornucopia_Sake Cornucopia_PrismaticWine Cornucopia_FishOil Cornucopia_SmokedFish Cornucopia_SmokedSalmon Cornucopia_TeaSoap Cornucopia_Bitter Cornucopia_Bourbon Cornucopia_Brandy Cornucopia_Campari Cornucopia_Cointreau Cornucopia_Frangelico Cornucopia_Moonshine Cornucopia_Vermouth Cornucopia_Vodka Cornucopia_Whiskey Cornucopia_Cauim Cornucopia_FramboiseLambic Cornucopia_Perry Cornucopia_Pulque Cornucopia_Umeshu Cornucopia_NuttySoap Cornucopia_HerbalSoap Cornucopia_Amaretto Cornucopia_Chambord Cornucopia_CremedeCacao Cornucopia_Gin Cornucopia_Mezcal Cornucopia_Rum Cornucopia_Scotch Cornucopia_Shochu Cornucopia_Tequila Cornucopia_MintSchnapps Cornucopia_Absinthe Cornucopia_HardAppleCider Cornucopia_Schnapps Cornucopia_AppleSchnapps Cornucopia_MintSchnapps Cornucopia_PeachSchnapps Fellowclown.PC_IficusFish Fellowclown.PC_BoneyHeadedGraveFish DN.SnS_salishbourbon DN.SnS_zuzustyleclamchowder DN.SnS_zuzustylebagelwithlox Lumisteria.MtVapius_ArtisanGoods_VendaceCaviar Lumisteria.MtVapius_Cooking_TroutAndMushrooms Lumisteria.MtVapius_Cooking_UrchinSouffle Lumisteria.MtVapius_Cooking_TroutAndToast Lumisteria.MtVapius_Cooking_FishCurry Lumisteria.MtVapius_Cooking_Tapenade Lumisteria.MtVapius_Treasures_FossilisedMoth 7thAxis.DitR_Items.VoidLavaSnailMayonnaise 7thAxis.DitR_Items.VoidLavaSnailEgg 7thAxis.DitR_Items.VoidLavaSnail 7thAxis.DitR_Items.GoldenVoidLavaSnail 7thAxis.DitR_Items.GoldenVoidLavaSnailEgg 7thAxis.DitR_Items.GoldenVoidLavaMayonnaise DTZ.DowntownZuzuCP_Cider DTZ.DowntownZuzuCP_ZuzuSignatureCocktail DTZ.DowntownZuzuCP_JojaCocktail DTZ.DowntownZuzuCP_StrawberryDaiquiri DTZ.DowntownZuzuCP_ZuzuChampagne DTZ.DowntownZuzuCP_JojaFries DTZ.DowntownZuzuCP_JojaSoda DTZ.DowntownZuzuCP_SapphireStarfish DTZ.DowntownZuzuCP_ZuzuCarp DTZ.DowntownZuzuCP_Angelfish DTZ.DowntownZuzuCP_Clownfish DTZ.DowntownZuzuCP_FireJellyfish DTZ.DowntownZuzuCP_MarineDragon DTZ.DowntownZuzuCP_MarineGold DTZ.DowntownZuzuCP_VampireSquid Suushiico.PeachyKeenRecipes_Peach_Crab_Cakes yourdorkbrains_ConiferInfusedVodka ButterflyPowder TenebrousNova.EnD.CombJelly TenebrousNova.EnD.BloodybellyCombJelly FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo FlashShifter.StardewValleyExpandedCP_Bull_Trout FlashShifter.StardewValleyExpandedCP_Butterfish FlashShifter.StardewValleyExpandedCP_Clownfish FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Frog FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Grass_Carp FlashShifter.StardewValleyExpandedCP_King_Salmon FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Minnow FlashShifter.StardewValleyExpandedCP_Puppyfish FlashShifter.StardewValleyExpandedCP_Radioactive_Bass FlashShifter.StardewValleyExpandedCP_Razor_Trout FlashShifter.StardewValleyExpandedCP_Sea_Sponge FlashShifter.StardewValleyExpandedCP_Seahorse FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Snatcher_Worm FlashShifter.StardewValleyExpandedCP_Starfish FlashShifter.StardewValleyExpandedCP_Torpedo_Trout FlashShifter.StardewValleyExpandedCP_Undeadfish FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish FlashShifter.StardewValleyExpandedCP_Seaweed_Salad FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed FlashShifter.StardewValleyExpandedCP_Bonefish FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola FlashShifter.StardewValleyExpandedCP_Joja_Berry FlashShifter.StardewValleyExpandedCP_Joja_Veggie Rafseazz.RSVCP_Arugula_Roll Rafseazz.RSVCP_Ginger_Arugula_Fried_Rice Rafseazz.RSVCP_Pillowsoft_Cheezy_Sandwich Rafseazz.RSVCP_Pumpkin_Darling_Slice Rafseazz.RSVCP_Fried_Mountain_Greens Rafseazz.RSVCP_Honey_Glazed_Salad Rafseazz.RSVCP_Ridge_Fruity_Plate Rafseazz.RSVCP_Highland_Chard Rafseazz.RSVCP_Mountain_Arugula Rafseazz.RSVCP_Honey_Ginger_Whitefish Rafseazz.RSVCP_Zesty_Tuna Rafseazz.RSVCP_Winter_Night_Feast Rafseazz.RSVCP_Summer_Mountain_Blessing Rafseazz.RSVCP_Springtime_Primetime Rafseazz.RSVCP_Fried_Fish_a_la_Ridge Rafseazz.RSVCP_Autumnal_Serenity Rafseazz.RSVCP_Bladetail_Sturgeon Rafseazz.RSVCP_Caped_Tree_Frog Rafseazz.RSVCP_Cardia_Septal_Jellyfish Rafseazz.RSVCP_Crimson_Spiked_Clam Rafseazz.RSVCP_Cutthroat_Trout Rafseazz.RSVCP_Deep_Ridge_Angler Rafseazz.RSVCP_Fairytale_Lionfish Rafseazz.RSVCP_Fixer_Eel Rafseazz.RSVCP_Golden_Rose_Fin Rafseazz.RSVCP_Harvester_Trout Rafseazz.RSVCP_Lullaby_Carp Rafseazz.RSVCP_Mountain_Redbelly_Dace Rafseazz.RSVCP_Mountain_Whitefish Rafseazz.RSVCP_Pebble_Back_Crab Rafseazz.RSVCP_Ridge_Bluegill Rafseazz.RSVCP_Ridgeside_Bass Rafseazz.RSVCP_Skulpin_Fish Rafseazz.RSVCP_Sockeye_Salmon Rafseazz.RSVCP_Waterfall_Snakehead MNF.MoreNewFish_fishing_elixir MNF.MoreNewFish_duff VoidWitchCult.CP.TheFishmongerNPC_bakedredsnappercurry VoidWitchCult.CP.TheFishmongerNPC_crispyfishandchips VoidWitchCult.CP.TheFishmongerNPC_mouthwateringfishburger VoidWitchCult.CP.TheFishmongerNPC_fishdillsauce VoidWitchCult.CP.TheFishmongerNPC_savoryfishballs VoidWitchCult.CP.TheFishmongerNPC_Plokkfiskur VoidWitchCult.CP.TheFishmongerNPC_crispysalmonschnitzel VoidWitchCult.CP.TheFishmongerNPC_bicolorpiranha VoidWitchCult.CP.TheFishmongerNPC_bigfinsquid VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta VoidWitchCult.CP.TheFishmongerNPC_firemouth VoidWitchCult.CP.TheFishmongerNPC_garfish VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly VoidWitchCult.CP.TheFishmongerNPC_glasseyesnapper VoidWitchCult.CP.TheFishmongerNPC_kissingfish VoidWitchCult.CP.TheFishmongerNPC_matjes VoidWitchCult.CP.TheFishmongerNPC_moray VoidWitchCult.CP.TheFishmongerNPC_neontetra VoidWitchCult.CP.TheFishmongerNPC_queentriggerfish VoidWitchCult.CP.TheFishmongerNPC_redfinhap VoidWitchCult.CP.TheFishmongerNPC_sheephead VoidWitchCult.CP.TheFishmongerNPC_scarletvampiresquid VoidWitchCult.CP.TheFishmongerNPC_stoplightparrotfish VoidWitchCult.CP.TheFishmongerNPC_stripedtoby VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta VoidWitchCult.CP.TheFishmongerNPC_viperfish wildflour.pickles_pickled_fish wildflour.pickles_artichoke_hearts BFV.CombinedCrops_FishSinigang BFV.CombinedCrops_GreenPapayaFishSoup BFV.CombinedCrops_FishandSamphire BFV.CombinedCrops_MangoShrimp BFV.CombinedCrops_MacadamiaTuna BFV.CombinedCrops_SquidSamphireBeanSalad Sushi_fish CyberZ.NewRecipes_Salmon_Steak CyberZ.NewRecipes_Shrimp_Fried_Rice CyberZ.NewRecipes_Fugu DuchessIvy.ShadowRecipes_Spooky_Sushi DuchessIvy.ShadowRecipes_Savory_Squid_Stew DuchessIvy.ShadowRecipes_Braised_Midnight_Carp DuchessIvy.ShadowRecipes_Void_Caviar_Toast DuchessIvy.ShadowRecipes_Crystal_Float CyberZ.NewRecipes_Sangria cosmicRetribution.HiddenCropRecipes_BroccoliCheeseSoup cosmicRetribution.HiddenCropRecipes_SummerSquashGoatCheeseTart stinkyvicki_BoiledStonefish stinkyvicki_RockCrabHotpot Tulaash.IridiumChef_Salmon_Burger Tulaash.IridiumChef_Zuzu_Roll Tulaash.IridiumChef_Tempura_Udon Tulaash.IridiumChef_Takoyaki DuchessIvy.GrannysRecipeBox_Ramen DuchessIvy.GrannysRecipeBox_Shrimp_Jambalaya DuchessIvy.GrannysRecipeBox_Sbiten/{{i18n:Gudrun.GiftReaction.Neutral.{{Random: 1, 2, 3}}}}/-5 -6 -75 -27 MadDog.HashtagBearfam_GunnarPerfectRamen MadDog.HashtagBearfam_SondraPerfectRamen MadDog.HashtagBearfam_SigurdPerfectRamen MadDog.HashtagBearfam_GunnarBadPotion MadDog.HashtagBearfam_GunnarFirstPotion MadDog.HashtagBearfam_GunnarMysteryPotion MadDog.HashtagBearfam_GunnarSecondPotion MadDog.HashtagBearfam_GunnarWeirdPotion MadDog.HashtagBearfam_GunnarThirdPotion MadDog.HashtagBearfam_GunnarPerfectPotion MadDog.HashtagBearfam_GunnarPhoenixDown MadDog.HashtagBearfam_GunnarRemedyAll MadDog.HashtagBearfam_NineHerbsCharm Book_Trash Book_Mystery Book_WildSeeds PurpleBook WWWA.Book.TheBookOfYoba WWWA.Book.DeferenceArlington WWWA.Book.GettingChicksToLoveYou WWWA.Book.MysteriesOfTheDwarves WWWA.Book.TheTarotRevealed WWWA.Book.Goblin WWWA.Book.ArtifactOrCutlery WWWA.Book.TheGreatBookOfSlimes WWWA.Book.Goblins Fellowclown.PC_SpeedFruit MysteriesOfTheDwarves TenebrousNova.EnD.SanguineHeart TenebrousNova.EnD.BeholderFruit TenebrousNova.EnD.Bluffshroom TenebrousNova.EnD.MandrakeRoot TenebrousNova.EnD.DragonEye 7thAxis.DitR_Items.ValleyLily 7thAxis.DitR_Items.GoldenValleyLily 7thAxis.DitR_Items.SensCrocus DTZ.DowntownZuzuCP_QiCrystal DTZ.DowntownZuzuCP_SerpentFragment DTZ.DowntownZuzuCP_Earth'sEssence DTZ.DowntownZuzuCP_LotusCrystal DTZ.DowntownZuzuCP_Moonstone DTZ.DowntownZuzuCP_Stargazer'sOre DTZ.DowntownZuzuCP_SunsetFragment Fellowclown.PC_DragaDoughnut Fellowclown.PC_CapWedges Fellowclown.PC_LoMaCakes Fellowclown.PC_ZinfazuIcecream Fellowclown.PC_IceBerryWine Fellowclown.PC_FarmhandsSupper Fellowclown.PC_TropaWine Fellowclown.PC_AdáuulaCakes Fellowclown.PC_WarpRootTea Fellowclown.PC_DragaWhiskey Fellowclown.PC_LavaPop Fellowclown.PC_MovoraptorEgg Fellowclown.PC_GaggleShrooms Fellowclown.PC_Cucumaba Fellowclown.PC_DragaClaw Fellowclown.PC_DragaTongue Fellowclown.PC_FairyCap Fellowclown.PC_IceBerries Fellowclown.PC_Popachini Fellowclown.PC_Páneeki Fellowclown.PC_WarpRoot Fellowclown.PC_AdáuulaStalks Fellowclown.PC_ZinfazuFruit Fellowclown.PC_ButterTuff Fellowclown.PC_ChocoFrog Fellowclown.PC_ChocoBar Fellowclown.PC_BudJelly Fellowclown.PC_SnowPop Fellowclown.PC_BayDrop Fellowclown.PC_MegaWrap Fellowclown.PC_AcornCake Fellowclown.PC_KingsRangoonDish Fellowclown.PC_PCeetenBreadPudding Fellowclown.PC_MidnightBubbly Fellowclown.PC_HotChoco Fellowclown.PC_LemonberryJuice Fellowclown.PC_ChocoFruit Fellowclown.PC_ButtonFruit Fellowclown.PC_YohoFruit Fellowclown.PC_DeepCaveFruit Fellowclown.PC_VultureSkull Fellowclown.PC_RootJuice Fellowclown.PC_MilkCoffee Fellowclown.PC_Firesnapper Fellowclown.PC_StoneShroom Fellowclown.PC_HeavyRoot Fellowclown.PC_DragaTail Fellowclown.PC_FairyFingers Fellowclown.PC_DragaEye Fellowclown.PC_BellPods Fellowclown.PC_LureBerries Fellowclown.PC_FrozenRoot Fellowclown.PC_DarkTuff FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Salal_Berry FlashShifter.StardewValleyExpandedCP_Bearberrys FlashShifter.StardewValleyExpandedCP_Green_Mushroom FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Ornate_Treasure_Chest MagicQuiver IceRod IridiumSpur BasiliskPaw ParrotEgg MagicHairDye Rafseazz.RSVCP_Aurorean_Iris Rafseazz.RSVCP_Foxbloom Rafseazz.RSVCP_Highland_Butterwort Rafseazz.RSVCP_Lava_Lily Rafseazz.RSVCP_Mountain_Hokkaido Rafseazz.RSVCP_Mountain_Mistbloom Rafseazz.RSVCP_Ridge_Azorean_Flower Rafseazz.RSVCP_Violet_Devil_s_Claw Rafseazz.RSVCP_Forest_Amancay Rafseazz.RSVCP_Summit_Snowbell Rafseazz.RSVCP_Ridgeside_Monkshood Rafseazz.RSVCP_Sierra_Wintergreen Rafseazz.RSVCP_Mountain_Chico Rafseazz.RSVCP_Elven_Comb Rafseazz.RSVCP_Everfrost_Stone Rafseazz.RSVCP_Inked_Fossil Rafseazz.RSVCP_Lover_s_Sorrow Rafseazz.RSVCP_Nightblack_Diamond Rafseazz.RSVCP_Opal_Halo Rafseazz.RSVCP_Pale_Candelabrum Rafseazz.RSVCP_Relic_Fox_Mask Rafseazz.RSVCP_Village_Hero_Sculpture Rafseazz.RSVCP_Yellow_Wood_Sculpture Rafseazz.RSVCP_Moose_Statue Rafseazz.RSVCP_Ancient_Music_Box MNF.MoreNewFish_warrior_elixir VoidWitchCult.CP.TheFishmongerNPC_freshdill VoidWitchCult.CP.TheFishmongerNPC_fisheyebeans VoidWitchCult.CP.TheFishmongerNPC_spicymustard VoidWitchCult.CP.TheFishmongerNPC_oceanflax VoidWitchCult.CP.TheFishmongerNPC_saltemmer wildflour.ateliermakeup_faerie_fire wildflour.ateliermakeup_lightning_strike wildflour.ateliermakeup_morning_dew wildflour.ateliermakeup_thunderclap wildflour.ateliermakeup_tourmaline_perfume wildflour.ateliermakeup_larimar_perfume wildflour.ateliermakeup_blue_agathe_perfume wildflour.ateliermakeup_forest_echo wildflour.ateliermakeup_maelstrom wildflour.ateliermakeup_frostbite wildflour.ateliermakeup_whirlwind miru.forestamber_AmberResinLiquid miru.forestamber_AmberCog miru.forestamber_AmberComputer miru.forestamber_AmberDisc miru.forestamber_AmberEgg miru.forestamber_AmberDrum miru.forestamber_AmberSpoon miru.forestamber_AmberShovel miru.forestamber_AmberToothbrush miru.forestamber_AmberOcarina miru.forestamber_PalmFossilAmber miru.forestamber_AmberSkull miru.forestamber_InsectFossilAmber miru.forestamber_AmberStone miru.forestamber_AmberAmphora/", //Lumisteria.MtVapius_Earrings_AquamarineEarrings Lumisteria.MtVapius_Earrings_RubyEarrings Lumisteria.MtVapius_Earrings_AmethystEarrings Lumisteria.MtVapius_Earrings_TopazEarrings Lumisteria.MtVapius_Earrings_JadeEarrings Lumisteria.MtVapius_Earrings_DiamondEarrings Lumisteria.MtVapius_Earrings_SweetGemBerryEarrings - add to liked eventually
+
+        "MadDog.HashtagBearFam.Teren": "{{i18n:Teren.GiftReaction.Love.{{Random: 1, 2, 3}}}}/797 651 636 611 606 560 554 376 346 303 233 211 62 74 88 105 724 235 216 220 221 222 223 276 304 MadDog.HashtagBearfam_SondraSummerCake MadDog.HashtagBearfam_FerskenPeachCobbler MadDog.HashtagBearfam_FerskenPeach_Mead MadDog.HashtagBearfam_FerskenPeach_Mead_Tankard MadDog.HashtagBearfam_HoneyCakes WWWA.GenuineAutograph WWWA.Book.TheTarotRevealed sapphicsaph_pitv.PridePop sapphicsaph_pitv.BiBerryMuffin Cornucopia_Peanut Cornucopia_Shallot Cornucopia_Vanilla Cornucopia_CocoaPod Cornucopia_Pistachio Cornucopia_Almond Cornucopia_Cashew Cornucopia_Pecan Cornucopia_Walnut Cornucopia_OliveOil Cornucopia_DarkAle Cornucopia_Porter Cornucopia_SparklingWine Cornucopia_Stout Cornucopia_Hydrangea Cornucopia_Lilac Cornucopia_Hibiscus Cornucopia_CookieButter Cornucopia_CaffeLatte Cornucopia_CaffePelicano Cornucopia_Cappuccino Cornucopia_Macchiato Cornucopia_MapleMacchiato Cornucopia_PumpkinSpiceLatte Cornucopia_ToastedCoconutMocha Cornucopia_HotWhiskeyCoffee Cornucopia_CoffeeLiqueur Cornucopia_Saffron Cornucopia_Kefir Cornucopia_Kumis Cornucopia_Lassi Cornucopia_Porter Cornucopia_Sake Cornucopia_PrismaticWine Cornucopia_RoastedGarlic Cornucopia_RoastedSunflowerSeeds Cornucopia_TeaSoap Cornucopia_Bitter Cornucopia_Bourbon Cornucopia_Brandy Cornucopia_Campari Cornucopia_Cointreau Cornucopia_Frangelico Cornucopia_Moonshine Cornucopia_Vermouth Cornucopia_Vodka Cornucopia_Whiskey Cornucopia_CaffeMocha Cornucopia_RumRaisinIceCream Cornucopia_Cauim Cornucopia_FramboiseLambic Cornucopia_Perry Cornucopia_Pulque Cornucopia_Umeshu Cornucopia_RaspberrySorbet Cornucopia_VanillaExtract Cornucopia_Affogato Cornucopia_VanillaLatte Cornucopia_PeppermintMocha Cornucopia_SaltedCaramelMocha Cornucopia_Amaretto Cornucopia_Chambord Cornucopia_CremedeCacao Cornucopia_Gin Cornucopia_Mezcal Cornucopia_Rum Cornucopia_Scotch Cornucopia_Shochu Cornucopia_Tequila Cornucopia_MintSchnapps Cornucopia_Absinthe Cornucopia_HardAppleCider Cornucopia_Schnapps Cornucopia_AppleSchnapps Cornucopia_MintSchnapps Cornucopia_PeachSchnapps DN.SnS_salishbourbon DN.SnS_zuzustylepizza DN.SnS_zuzustylebagelwithlox DN.SnS_zuzustylecheesecake Lumisteria.MtVapius_Turquoise Lumisteria.MtVapius_Turquoise_Polished Lumisteria.MtVapius_Aquamarine_Polished Lumisteria.MtVapius_Treasures_BrokenTeaCup Lumisteria.MtVapius_SweetMyriadin Lumisteria.MtVapius_SaltspringCheese Lumisteria.MtVapius_Cooking_Empanadas DTZ.DowntownZuzuCP_DowntownDog DTZ.DowntownZuzuCP_MozzarellaSlice DTZ.DowntownZuzuCP_Cider DTZ.DowntownZuzuCP_ZuzuSignatureCocktail DTZ.DowntownZuzuCP_JojaCocktail DTZ.DowntownZuzuCP_StrawberryDaiquiri DTZ.DowntownZuzuCP_ZuzuChampagne yourdorkbrains_Pineconejam FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Puppyfish FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken FlashShifter.StardewValleyExpandedCP_Lucky_Four_Leaf_Clover FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Aegis_Elixir Rafseazz.RSVCP_Jumpy_Coffee_Cake Rafseazz.RSVCP_Matcha_Latte Rafseazz.RSVCP_Pink_Frosted_Sprinkled_Doughnut Rafseazz.RSVCP_Hollowed_Bear Rafseazz.RSVCP_Ancient_Music_Box MNF.MoreNewFish_duff VoidWitchCult.CP.TheFishmongerNPC_crispyfishandchips VoidWitchCult.CP.TheFishmongerNPC_petrichor wildflour.pickles_tomato_salsa wildflour.pickles_onion_chutney wildflour.jams_cranberry_chutney wildflour.atelierbarista_pumpkin_latte wildflour.atelierfrozen_pumpkin_milkshake wildflour.atelierfrozen_coffee_cone wildflour.gourmetpantry_pumpkin_butter wildflour.ateliermakeup_frostbite BFV.CombinedCrops_PeachSliders alcohol_item Sushi_fish CyberZ.NewRecipes_Honey_Peach_Frappe DuchessIvy.ShadowRecipes_Pumpkin_Bread DuchessIvy.ShadowRecipes_Pumpkin_Latte CyberZ.NewRecipes_Sangria DuchessIvy.ShadowRecipes_Spooky_Sushi miru.forestamber_AmberDisc miru.forestamber_AmberDrum miru.forestamber_AmberOcarina miru.forestamber_PalmFossilAmber miru.forestamber_AmberSkull miru.forestamber_InsectFossilAmber miru.forestamber_AmberCrystalBall miru.forestamber_AquamarineKohakutou cosmicRetribution.HiddenCropRecipes_PastaPrimavera cosmicRetribution.HiddenCropRecipes_SummerSquashGoatCheeseTart cosmicRetribution.HiddenCropRecipes_SummerSquashSkillet cosmicRetribution.HiddenCropRecipes_BorealPlate stinkyvicki_ShadowCoffee HXW.Mixology_berry_mimosa HXW.Mixology_raspberry_lemon_drop HXW.Mixology_sangria HXW.Mixology_lightning_haze Aimon111.CharityDSA_Cert_FeedingFerngil wildflour.ateliermakeup_gemini_lotion Tulaash.IridiumChef_Salmon_Burger Tulaash.IridiumChef_Zuzu_Roll Tulaash.IridiumChef_Tempura_Udon Tulaash.IridiumChef_Takoyaki Tulaash.IridiumChef_Hot_Dog Tulaash.IridiumChef_Cranberry_Chicken Tulaash.IridiumChef_Ember_Island_Pizza HXW.FreshlyBaked_coffee_cake_muffins baking_item HXW.FreshlyBaked_matcha_cupcakes HXW.FreshlyBaked_cafe_macarons HXW.FreshlyBaked_pumpkin_spice_pie HXW.FreshlyBaked_baguettes HXW.FreshlyBaked_rye_loaves HXW.FreshlyBaked_mocha_eclairs HXW.FreshlyBaked_classic_doughnuts CITV_ValleySalad CITV_GrizzlyTuberFries CITV_LemonadeBerry-Ade DuchessIvy.GrannysRecipeBox_Hot_Apple_Cider Suushiico.AppleRecipes_Apple_Hazelnut_Cider Suushiico.AppleRecipes_Pumpkin_Apple_Pie Suushiico.MatchaRecipes_Matcha_Latte Suushiico.MatchaRecipes_Matcha_Waffles Suushiico.MatchaRecipes_Matcha_Sticky_Rice Suushiico.MatchaRecipes_Matcha_Mochi/{{i18n:Teren.GiftReaction.Like.{{Random: 1, 2, 3}}}}/-79 -26 -12 -7 -2 MadDog.HashtagBearfam_SondraAutumnCookie MadDog.HashtagBearfam_SondraSpringtimeShortbread MadDog.HashtagBearfam_SondraWinterBar MadDog.HashtagBearfam_TriangleGrilledCheese MadDog.HashtagBearfam_PeachJoja MadDog.HashtagBearfam_PumpkinJoja MadDog.HashtagBearfam_SlicedPeaches MadDog.HashtagBearfam_HoneyWheatBread MadDog.HashtagBearfam_SesameBrownBread MadDog.HashtagBearfam_CornbreadMuffins MadDog.HashtagBearfam_BananaBread MadDog.HashtagBearfam_RoseCupcakes MadDog.HashtagBearfam_TTBrownies WWWA.Book.FishingForDumbDumbs WWWA.Book.GettingChicksToLoveYou WWWA.Book.MysteriesOfTheDwarves WWWA.Book.TheGreatTomeOfMayo WWWA.Book.Goblins WWWA.Book.TheGreatBookOfSlimes WWWA.Book.HerpetologyOfFerngill sapphicsaph_pitv.GaylacticCookie sapphicsaph_pitv.LesbianLollipop sapphicsaph_pitv.EnbyEclair sapphicsaph_pitv.TastyAceCookie sapphicsaph_pitv.ARomanticCookie sapphicsaph_pitv.TransTart Fellowclown.AND_HotCereal Fellowclown.AND_GemBirdPatties Fellowclown.AND_FrostedCake Fellowclown.AND_CheesyWhiteRisotto Fellowclown.AND_TastyPastry Fellowclown.PC_FrenchDodoEgg EastScarp_Rosas_Spanakopita DN.SnS_mushroomsredsauce DN.SnS_autumnalstew DN.SnS_dandeliongreens DN.SnS_ferngreensandpineapple DN.SnS_ancienthuckleberryicecream DN.SnS_lavaeelandstirfriedancientbottlegourd DN.SnS_zuzustyleclamchowder DTZ.DowntownZuzuCP_BigBurger DTZ.DowntownZuzuCP_BLT DTZ.DowntownZuzuCP_ChickenDrumstick DTZ.DowntownZuzuCP_ChocolateSlice DTZ.DowntownZuzuCP_GranaryStack DTZ.DowntownZuzuCP_LemonDrizzleCheesecake DTZ.DowntownZuzuCP_ZuzuIceCream DTZ.DowntownZuzuCP_ZuzuMilkshake DTZ.DowntownZuzuCP_SpanishLime DTZ.DowntownZuzuCP_Jackfruit DTZ.DowntownZuzuCP_Araza DTZ.DowntownZuzuCP_Ackee DTZ.DowntownZuzuCP_Cherimoya DTZ.DowntownZuzuCP_IceDelight FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish FlashShifter.StardewValleyExpandedCP_Seaweed_Salad FlashShifter.StardewValleyExpandedCP_Sports_Drink FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola FlashShifter.StardewValleyExpandedCP_Joja_Berry FlashShifter.StardewValleyExpandedCP_Joja_Veggie FlashShifter.StardewValleyExpandedCP_Bearberrys FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger FlashShifter.StardewValleyExpandedCP_Flower_Cookie FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice FlashShifter.StardewValleyExpandedCP_Ornate_Treasure_Chest MagicQuiver IceRod IridiumSpur BasiliskPaw MagicHairDye Rafseazz.RSVCP_Apricot_Juice Rafseazz.RSVCP_Autumn_Dew_Drop_Juice Rafseazz.RSVCP_Cherry_Berry_Shakey Rafseazz.RSVCP_Clementine_Cake Rafseazz.RSVCP_Clementine_Juice Rafseazz.RSVCP_Crunchy_Bagel Rafseazz.RSVCP_Fluffy_Apple_Crumble Rafseazz.RSVCP_Forage_Souffle Rafseazz.RSVCP_Ginger_Rangpur_Meringue Rafseazz.RSVCP_Highland_Ice_Cream Rafseazz.RSVCP_Holiday_Ice Rafseazz.RSVCP_Hundred_Flavor_Doughnut Rafseazz.RSVCP_Ridge_Apple_Cake Rafseazz.RSVCP_Ridge_Mosaic_Cake Rafseazz.RSVCP_Ridgeside_Shaketini Rafseazz.RSVCP_Snow_Bowl_Surprise Rafseazz.RSVCP_Snowball_Slurpee Rafseazz.RSVCP_Summit_Iced_Tea Rafseazz.RSVCP_Sweet_Cranberry_Cheesecake Rafseazz.RSVCP_Wild_Apple_Juice Rafseazz.RSVCP_Highland_Revani Rafseazz.RSVCP_Honey_Ginger_Whitefish Rafseazz.RSVCP_Winter_Night_Feast Rafseazz.RSVCP_Summer_Mountain_Blessing Rafseazz.RSVCP_Springtime_Primetime Rafseazz.RSVCP_Fried_Fish_a_la_Ridge Rafseazz.RSVCP_Autumnal_Serenity Rafseazz.RSVCP_Highland_Blueberry_Pie Rafseazz.RSVCP_Zesty_Tuna Rafseazz.RSVCP_Tropic_Mango_Cake Rafseazz.RSVCP_Strawberry_Lover_Pie Rafseazz.RSVCP_Arugula_Roll Rafseazz.RSVCP_Ginger_Arugula_Fried_Rice Rafseazz.RSVCP_Pillowsoft_Cheezy_Sandwich Rafseazz.RSVCP_Pumpkin_Darling_Slice Rafseazz.RSVCP_Fried_Mountain_Greens Rafseazz.RSVCP_Honey_Glazed_Salad Rafseazz.RSVCP_Ridge_Fruity_Plate Rafseazz.RSVCP_Aurorean_Iris Rafseazz.RSVCP_Foxbloom Rafseazz.RSVCP_Highland_Butterwort Rafseazz.RSVCP_Lava_Lily Rafseazz.RSVCP_Mountain_Hokkaido Rafseazz.RSVCP_Mountain_Mistbloom Rafseazz.RSVCP_Ridge_Azorean_Flower Rafseazz.RSVCP_Violet_Devil_s_Claw Rafseazz.RSVCP_Forest_Amancay Rafseazz.RSVCP_Summit_Snowbell Rafseazz.RSVCP_Ridgeside_Monkshood Rafseazz.RSVCP_Sierra_Wintergreen Rafseazz.RSVCP_Autumn_Drop_Berry Rafseazz.RSVCP_Cherry_Pluot Rafseazz.RSVCP_Desert_Tangelo Rafseazz.RSVCP_Ember_Blood_Lime Rafseazz.RSVCP_Frost_Clump_Berry Rafseazz.RSVCP_Highland_Jostaberry Rafseazz.RSVCP_Mountain_Plumcot Rafseazz.RSVCP_Northern_Limequat Rafseazz.RSVCP_Paradise_Rangpur Rafseazz.RSVCP_Ridge_Cherry Rafseazz.RSVCP_Ridge_Wild_Apple Rafseazz.RSVCP_Ridgeside_Clementine Rafseazz.RSVCP_Tropi_Ugli_Fruit Rafseazz.RSVCP_Golden_Skull_Coral Rafseazz.RSVCP_Forest_Halva MNF.MoreNewFish_warrior_elixir VoidWitchCult.CP.TheFishmongerNPC_bakedredsnappercurry VoidWitchCult.CP.TheFishmongerNPC_mouthwateringfishburger VoidWitchCult.CP.TheFishmongerNPC_fishdillsauce VoidWitchCult.CP.TheFishmongerNPC_savoryfishballs VoidWitchCult.CP.TheFishmongerNPC_Plokkfiskur VoidWitchCult.CP.TheFishmongerNPC_crispysalmonschnitzel VoidWitchCult.CP.TheFishmongerNPC_freshdillsauce VoidWitchCult.CP.TheFishmongerNPC_potatoesdillsauce VoidWitchCult.CP.TheFishmongerNPC_spicymustardsauce VoidWitchCult.CP.TheFishmongerNPC_bloodstainedrose VoidWitchCult.CP.TheFishmongerNPC_halcyonflower VoidWitchCult.CP.TheFishmongerNPC_scallure VoidWitchCult.CP.TheFishmongerNPC_sunsetrose nail_polish_item blush_item cleanser_item powder_item lipstick_item lipgloss_item mascara_item palette_item lotion_item CyberZ.NewRecipes_Beef_Wellington CyberZ.NewRecipes_Baked_Alaska CyberZ.NewRecipes_Mushroom_Soup CyberZ.NewRecipes_Ratatouille CyberZ.NewRecipes_Curry_Rice CyberZ.NewRecipes_Mixed_Fruit_Smoothie DuchessIvy.ShadowRecipes_Void_Cake DuchessIvy.ShadowRecipes_Black_Cherry_Flan CyberZ.NewRecipes_Salmon_Steak CyberZ.NewRecipes_Shrimp_Fried_Rice CyberZ.NewRecipes_Fugu DuchessIvy.ShadowRecipes_Savory_Squid_Stew DuchessIvy.ShadowRecipes_Braised_Midnight_Carp DuchessIvy.ShadowRecipes_Void_Caviar_Toast DuchessIvy.ShadowRecipes_Crystal_Float miru.forestamber_AmberAmphora miru.forestamber_AmberFan miru.forestamber_AmberCowboyBoots miru.forestamber_AmberAnchor miru.forestamber_AmberChickenFigurine miru.forestamber_AmberAnimalFigurine miru.forestamber_AmberFigurine miru.forestamber_AmberFrogFigurine miru.forestamber_AmberJunimoFigurine miru.forestamber_AmberMonument miru.forestamber_EmeraldKohakutou miru.forestamber_RubyKohakutou miru.forestamber_AmethystKohakutou miru.forestamber_TopazKohakutou miru.forestamber_JadeKohakutou/{{i18n:Teren.GiftReaction.Dislike.{{Random: 1, 2, 3}}}}/-27 -20 124 125 110 101 92 78 WWWA.Book.GuideToSculptingWithGold Cornucopia_FloralSoap Cornucopia_FruitSoap Cornucopia_WaxMelts Cornucopia_NuttySoap Cornucopia_Candles Cornucopia_HerbalSoap Fellowclown.AND_VoidJuice Fellowclown.AND_GemBirdMeat Fellowclown.AND_SeaglassFlowerDisplay Fellowclown.AND_Seaglass Fellowclown.AND_Button MNF.MoreNewFish_i_voted_sticker VoidWitchCult.CP.TheFishmongerNPC_wornouthat miru.forestamber_AmberArrow miru.forestamber_AmberHandaxe miru.forestamber_AmberHelm miru.forestamber_AmberSword/{{i18n:Teren.GiftReaction.Hate.{{Random: 1, 2, 3}}}}/446 129 154 155 16 226 260 215 MadDog.HashtagBearfam_SigurdPerfectRamen Cornucopia_Habanero Cornucopia_Jalapeno Cornucopia_Durian Cornucopia_Plantain Cornucopia_ChiliPowder Cornucopia_SpicyMayonnaise Cornucopia_ChiliOil Cornucopia_HabaneroExtract Cornucopia_JalapenoExtract Cornucopia_BananaIceCream Lumisteria.MtVapius_Treasures_FossilisedMoth TenebrousNova.EnD.DragonEye HXW.Mixology_young_love HXW.Mixology_passion_punch candycreation_hotpepper ButterflyPowder wildflour.pickles_marinated_mushrooms wildflour.pickles_peach_salsa wildflour.pickles_pepper_relish wildflour.pickles_spicy_tomato_salsa wildflour.pickles_mango_salsa wildflour.pickles_roasted_peppers chili_item spicy_item CyberZ.NewRecipes_Bubble_Milk_Tea HXW.Mixology_summer_mock_mule HXW.Mixology_mermaid_lagoon BeazNees.CP.TheSushiProject_Aji Tulaash.IridiumChef_Banana_Cream_Pie Tulaash.IridiumChef_Kale_Smoothie Tulaash.IridiumChef_Orange_Smoothie Tulaash.IridiumChef_Banana_Split Hutchy.CraftBrewing_HBC1019PaleAle Hutchy.CraftBrewing_HBC1019IPA Hutchy.CraftBrewing_HBC1019DIPA Hutchy.CraftBrewing_WheatBeer Hutchy.CraftBrewing_Hefeweizen Hutchy.CraftBrewing_HBC1019PaleAleCan Hutchy.CraftBrewing_HBC1019IPACan Hutchy.CraftBrewing_HBC1019DIPACan Hutchy.CraftBrewing_WheatBeerCan Hutchy.CraftBrewing_HefeweizenCan HXW.FreshlyBaked_walnut_muffins Suushiico.AppleRecipes_Apple_Banana_Smoothie/{{i18n:Teren.GiftReaction.Neutral.{{Random: 1, 2, 3}}}}/-81 -80 -75 -6 -5 -4 167 91 904 MadDog.HashtagBearfam_GudrunPerfectRamen MadDog.HashtagBearfam_GunnarPerfectRamen MadDog.HashtagBearfam_SondraPerfectRamen MadDog.HashtagBearfam_FerskenPeach MadDog.HashtagBearfam_GunnarBadPotion MadDog.HashtagBearfam_GunnarFirstPotion MadDog.HashtagBearfam_GunnarMysteryPotion MadDog.HashtagBearfam_GunnarSecondPotion MadDog.HashtagBearfam_GunnarWeirdPotion MadDog.HashtagBearfam_GunnarThirdPotion MadDog.HashtagBearfam_GunnarPerfectPotion MadDog.HashtagBearfam_GunnarPhoenixDown MadDog.HashtagBearfam_GunnarRemedyAll MadDog.HashtagBearfam_NineHerbsCharm WWWA.AutographedPhoto Book_Marlon Book_QueenOfSauce Book_Defense SkillBook_4 WWWA.Book.TheJojaConspiracy WWWA.Book.TheBookOfYoba WWWA.Book.WhyPepperRexesAreTheBest WWWA.Book.ArcanaCatcherPrunus WWWA.Book.CrabsAndWhyIHateThem WWWA.Book.DeferenceArlington WWWA.Book.PepperRexes WWWA.Book.ArtifactOrCutlery WWWA.Book.LunarkinTrollTales MadDog.BearFam.Krakenling MadDog.BearFam.Lyngbakr MadDog.BearFam.Hafgufa MadDog.BearFam.Jojellyfish MadDog.BearFam.Colacrab TenebrousNova.EnD.LambentHyphafin TenebrousNova.EnD.Junimeel MadDog.HashtagBearfam_Teren_Book Fellowclown.PC_IficusFish Fellowclown.PC_BoneyHeadedGraveFish Fellowclown.PC_SpeedFruit MysteriesOfTheDwarves TenebrousNova.EnD.SanguineHeart TenebrousNova.EnD.BeholderFruit TenebrousNova.EnD.CrystallineLily TenebrousNova.EnD.PixieBloom TenebrousNova.EnD.Marimo TenebrousNova.EnD.FrogspawnCoral TenebrousNova.EnD.TorchCoral TenebrousNova.EnD.DuncanCoral TenebrousNova.EnD.Trachyphyllia TenebrousNova.EnD.Scolymia TenebrousNova.EnD.AcanCoral TenebrousNova.EnD.ToadstoolCoral TenebrousNova.EnD.CandyCaneCoral TenebrousNova.EnD.AcroporaCoral TenebrousNova.EnD.EleganceCoral TenebrousNova.EnD.Gorgonian TenebrousNova.EnD.Bluffshroom TenebrousNova.EnD.MandrakeRoot 7thAxis.DitR_Items.VoidLavaSnailMayonnaise 7thAxis.DitR_Items.VoidLavaSnailEgg 7thAxis.DitR_Items.VoidLavaSnail 7thAxis.DitR_Items.ValleyLily 7thAxis.DitR_Items.GoldenValleyLily 7thAxis.DitR_Items.SensCrocus DTZ.DowntownZuzuCP_JojaFries DTZ.DowntownZuzuCP_JojaSoda DTZ.DowntownZuzuCP_SapphireStarfish DTZ.DowntownZuzuCP_ZuzuCarp DTZ.DowntownZuzuCP_Angelfish DTZ.DowntownZuzuCP_Clownfish DTZ.DowntownZuzuCP_FireJellyfish DTZ.DowntownZuzuCP_MarineDragon DTZ.DowntownZuzuCP_MarineGold DTZ.DowntownZuzuCP_VampireSquid DTZ.DowntownZuzuCP_QiCrystal DTZ.DowntownZuzuCP_SerpentFragment DTZ.DowntownZuzuCP_Earth'sEssence DTZ.DowntownZuzuCP_LotusCrystal DTZ.DowntownZuzuCP_Moonstone DTZ.DowntownZuzuCP_Stargazer'sOre DTZ.DowntownZuzuCP_SunsetFragment TenebrousNova.EnD.CombJelly TenebrousNova.EnD.BloodybellyCombJelly Fellowclown.PC_DragaDoughnut Fellowclown.PC_CapWedges Fellowclown.PC_LoMaCakes Fellowclown.PC_ZinfazuIcecream Fellowclown.PC_IceBerryWine Fellowclown.PC_FarmhandsSupper Fellowclown.PC_TropaWine Fellowclown.PC_AdáuulaCakes Fellowclown.PC_WarpRootTea Fellowclown.PC_DragaWhiskey Fellowclown.PC_LavaPop Fellowclown.PC_MovoraptorEgg Fellowclown.PC_GaggleShrooms Fellowclown.PC_Cucumaba Fellowclown.PC_DragaClaw Fellowclown.PC_DragaTongue Fellowclown.PC_FairyCap Fellowclown.PC_IceBerries Fellowclown.PC_Popachini Fellowclown.PC_Páneeki Fellowclown.PC_WarpRoot Fellowclown.PC_AdáuulaStalks Fellowclown.PC_ZinfazuFruit Fellowclown.PC_ButterTuff Fellowclown.PC_ChocoFrog Fellowclown.PC_ChocoBar Fellowclown.PC_BudJelly Fellowclown.PC_SnowPop Fellowclown.PC_BayDrop Fellowclown.PC_MegaWrap Fellowclown.PC_AcornCake Fellowclown.PC_KingsRangoonDish Fellowclown.PC_PCeetenBreadPudding Fellowclown.PC_MidnightBubbly Fellowclown.PC_HotChoco Fellowclown.PC_LemonberryJuice Fellowclown.PC_ChocoFruit Fellowclown.PC_ButtonFruit Fellowclown.PC_YohoFruit Fellowclown.PC_DeepCaveFruit Fellowclown.PC_VultureSkull Fellowclown.PC_RootJuice Fellowclown.PC_MilkCoffee Fellowclown.PC_Firesnapper Fellowclown.PC_StoneShroom Fellowclown.PC_HeavyRoot Fellowclown.PC_DragaTail Fellowclown.PC_FairyFingers Fellowclown.PC_DragaEye Fellowclown.PC_BellPods Fellowclown.PC_LureBerries Fellowclown.PC_FrozenRoot Fellowclown.PC_DarkTuff FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo FlashShifter.StardewValleyExpandedCP_Bull_Trout FlashShifter.StardewValleyExpandedCP_Butterfish FlashShifter.StardewValleyExpandedCP_Clownfish FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Frog FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Grass_Carp FlashShifter.StardewValleyExpandedCP_King_Salmon FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Minnow FlashShifter.StardewValleyExpandedCP_Radioactive_Bass FlashShifter.StardewValleyExpandedCP_Razor_Trout FlashShifter.StardewValleyExpandedCP_Sea_Sponge FlashShifter.StardewValleyExpandedCP_Seahorse FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Snatcher_Worm FlashShifter.StardewValleyExpandedCP_Starfish FlashShifter.StardewValleyExpandedCP_Torpedo_Trout FlashShifter.StardewValleyExpandedCP_Undeadfish FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Big_Conch FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed FlashShifter.StardewValleyExpandedCP_Bonefish FlashShifter.StardewValleyExpandedCP_Ferngill_Primrose FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose FlashShifter.StardewValleyExpandedCP_Goldenrod FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Thistle FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Salal_Berry FlashShifter.StardewValleyExpandedCP_Green_Mushroom FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Swirl_Stone ParrotEgg FrogEgg FairyBox Rafseazz.RSVCP_Bladetail_Sturgeon Rafseazz.RSVCP_Caped_Tree_Frog Rafseazz.RSVCP_Cardia_Septal_Jellyfish Rafseazz.RSVCP_Crimson_Spiked_Clam Rafseazz.RSVCP_Cutthroat_Trout Rafseazz.RSVCP_Deep_Ridge_Angler Rafseazz.RSVCP_Fairytale_Lionfish Rafseazz.RSVCP_Fixer_Eel Rafseazz.RSVCP_Golden_Rose_Fin Rafseazz.RSVCP_Harvester_Trout Rafseazz.RSVCP_Lullaby_Carp Rafseazz.RSVCP_Mountain_Redbelly_Dace Rafseazz.RSVCP_Mountain_Whitefish Rafseazz.RSVCP_Pebble_Back_Crab Rafseazz.RSVCP_Ridge_Bluegill Rafseazz.RSVCP_Ridgeside_Bass Rafseazz.RSVCP_Skulpin_Fish Rafseazz.RSVCP_Sockeye_Salmon Rafseazz.RSVCP_Waterfall_Snakehead Rafseazz.RSVCP_Highland_Chard Rafseazz.RSVCP_Mountain_Arugula Rafseazz.RSVCP_Mountain_Chico Rafseazz.RSVCP_Elven_Comb Rafseazz.RSVCP_Everfrost_Stone Rafseazz.RSVCP_Inked_Fossil Rafseazz.RSVCP_Lover_s_Sorrow Rafseazz.RSVCP_Nightblack_Diamond Rafseazz.RSVCP_Opal_Halo Rafseazz.RSVCP_Pale_Candelabrum Rafseazz.RSVCP_Relic_Fox_Mask Rafseazz.RSVCP_Village_Hero_Sculpture Rafseazz.RSVCP_Yellow_Wood_Sculpture Rafseazz.RSVCP_Moose_Statue Rafseazz.RSVCP_Sapphire_Pearl Rafseazz.RSVCP_Shell_Bracelet Rafseazz.RSVCP_Silver_Fish_Bones MNF.MoreNewFish_fishing_elixir VoidWitchCult.CP.TheFishmongerNPC_freshdill VoidWitchCult.CP.TheFishmongerNPC_fisheyebeans VoidWitchCult.CP.TheFishmongerNPC_spicymustard VoidWitchCult.CP.TheFishmongerNPC_oceanflax VoidWitchCult.CP.TheFishmongerNPC_saltemmer VoidWitchCult.CP.TheFishmongerNPC_bicolorpiranha VoidWitchCult.CP.TheFishmongerNPC_bigfinsquid VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta VoidWitchCult.CP.TheFishmongerNPC_firemouth VoidWitchCult.CP.TheFishmongerNPC_garfish VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly VoidWitchCult.CP.TheFishmongerNPC_glasseyesnapper VoidWitchCult.CP.TheFishmongerNPC_kissingfish VoidWitchCult.CP.TheFishmongerNPC_matjes VoidWitchCult.CP.TheFishmongerNPC_moray VoidWitchCult.CP.TheFishmongerNPC_neontetra VoidWitchCult.CP.TheFishmongerNPC_queentriggerfish VoidWitchCult.CP.TheFishmongerNPC_redfinhap VoidWitchCult.CP.TheFishmongerNPC_sheephead VoidWitchCult.CP.TheFishmongerNPC_scarletvampiresquid VoidWitchCult.CP.TheFishmongerNPC_stoplightparrotfish VoidWitchCult.CP.TheFishmongerNPC_stripedtoby VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta VoidWitchCult.CP.TheFishmongerNPC_viperfish wildflour.ateliermakeup_faerie_fire wildflour.ateliermakeup_lightning_strike wildflour.ateliermakeup_morning_dew wildflour.ateliermakeup_thunderclap wildflour.ateliermakeup_tourmaline_perfume wildflour.ateliermakeup_larimar_perfume wildflour.ateliermakeup_blue_agathe_perfume wildflour.ateliermakeup_forest_echo wildflour.ateliermakeup_maelstrom wildflour.ateliermakeup_whirlwind wildflour.ateliermakeup_misty_step miru.forestamber_AmberResinLiquid miru.forestamber_AmberCog miru.forestamber_AmberComputer miru.forestamber_AmberEgg miru.forestamber_AmberSpoon miru.forestamber_AmberShovel miru.forestamber_AmberToothbrush miru.forestamber_AmberStone miru.forestamber_AmberStar miru.forestamber_NautilusFossilAmber miru.forestamber_AmberDecoratedBook miru.forestamber_AmberBangle miru.forestamber_AmberEarrings miru.forestamber_AmberPendant miru.forestamber_AmberRing miru.forestamber_AmberBeadsNecklace miru.forestamber_AmberTiara miru.forestamber_AmberTropicalNecklace miru.forestamber_AmberMask/"
+      }
+    }
+  ]
+}  

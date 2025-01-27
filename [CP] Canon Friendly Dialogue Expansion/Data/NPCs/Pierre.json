@@ -1,0 +1,126 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Pierre_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pierre",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)202": "{{i18n: CFE_Pierre_FriedCalamari}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Pierre}}' = 'true' OR ('{{CFE_Pierre}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Pierre_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pierre",
+      "Entries": {
+        // we can also add reveal gift taste code to these now that they use i18n.
+        "AcceptGift_(O)279": "{{i18n: CFE_Pierre_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Pierre_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Pierre_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Pierre_RabbitsFoot}}"
+      },
+      "When": { "Query: '{{CFE_Pierre}}' = 'true' OR ('{{CFE_Pierre}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Pierre_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Pierre": "{{i18n: CFE_Pierre_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Pierre}}' = 'true' OR ('{{CFE_Pierre}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Pierre_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pierre",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Pierre_spring1y2}}",
+        "spring_12_1": "{{i18n: CFE_Pierre_spring12}}",
+        "spring_12_2": "{{i18n: CFE_Pierre_spring12}}",
+        "spring_23_1": "{{i18n: CFE_Pierre_spring23}}",
+        "spring_23_2": "{{i18n: CFE_Pierre_spring23}}",
+
+        "fall_15_1": "{{i18n: CFE_Pierre_fall15}}",
+        "fall_15_2": "{{i18n: CFE_Pierre_fall15}}",
+        "fall_26_1": "{{i18n: CFE_Pierre_fall26}}",
+        "fall_26_2": "{{i18n: CFE_Pierre_fall26}}",
+
+        "winter_28_1": "{{i18n: CFE_Pierre_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Pierre_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Wed6": "{{i18n: CFE_Pierre_summerWed6}}",
+        "summer_Tue6": "{{i18n: CFE_Pierre_summerTue6}}",
+        "summer_Thu6": "{{i18n: CFE_Pierre_repeated_4}}",
+        "summer_Fri6": "{{i18n: CFE_Pierre_summerFri6}}",
+        "summer_Sat10": "{{i18n: CFE_Pierre_repeated_2}}",
+        "summer_Sun10": "{{i18n: CFE_Pierre_repeated_3}}",
+
+        "fall_Mon8": "{{i18n: CFE_Pierre_fallMon8}}",
+        "fall_Mon4_inlaw_Abigail": "{{i18n: CFE_Pierre_fallMon4inlawAbigail}}",
+        "fall_Mon4": "{{i18n: CFE_Pierre_repeated_5}}",
+        "fall_Tue10": "{{i18n: CFE_Pierre_fallTue10}}",
+        "fall_Wed6": "{{i18n: CFE_Pierre_fallWed6}}",
+        "fall_Thu10": "{{i18n: CFE_Pierre_fallThu10}}",
+        "fall_Fri10": "{{i18n: CFE_Pierre_fallFri10}}",
+        "fall_Fri2": "{{i18n: CFE_Pierre_fallFri2}}",
+        "fall_Sat10": "{{i18n: CFE_Pierre_fallSat10}}",
+        "fall_Sun8": "{{i18n: CFE_Pierre_fallSun8}}",
+        "fall_Sun4": "{{i18n: CFE_Pierre_fallSun4}}",
+        "fall_Sun2": "{{i18n: CFE_Pierre_fallSun2}}",
+
+        "winter_Mon8": "{{i18n: CFE_Pierre_winterMon8}}",
+        "winter_Mon4_inlaw_Abigail": "{{i18n: CFE_Pierre_winterMon4inlawAbigail}}",
+        "winter_Mon4": "{{i18n: CFE_Pierre_repeated_5}}",
+        "winter_Tue10": "{{i18n: CFE_Pierre_repeated_4}}",
+        "winter_Wed6": "{{i18n: CFE_Pierre_winterWed6}}",
+        "winter_Thu6": "{{i18n: CFE_Pierre_winterThu6}}",
+        "winter_Thu4": "{{i18n: CFE_Pierre_repeated_6}}",
+        "winter_Thu2": "{{i18n: CFE_Pierre_winterThu2}}",
+        "winter_Fri10": "{{i18n: CFE_Pierre_winterFri10}}",
+        "winter_Sat8": "{{i18n: CFE_Pierre_winterSat8}}",
+        "winter_Sat6": "{{i18n: CFE_Pierre_repeated_6}}",
+        "winter_Sun10": "{{i18n: CFE_Pierre_repeated_1}}",
+
+        "Mon8": "{{i18n: CFE_Pierre_Mon8}}",
+        "Mon6": "{{i18n: CFE_Pierre_repeated_1}}",
+        "Mon4": "{{i18n: CFE_Pierre_Mon4}}",
+        "Mon2": "{{i18n: CFE_Pierre_Mon2}}",
+        "Tue10": "{{i18n: CFE_Pierre_Tue10}}",
+        "Tue4": "{{i18n: CFE_Pierre_repeated_2}}",
+        "Tue2": "{{i18n: CFE_Pierre_Tue2}}",
+        "Wed10": "{{i18n: CFE_Pierre_Wed10}}",
+        "Thu8": "{{i18n: CFE_Pierre_Thu8}}",
+        "Thu6": "{{i18n: CFE_Pierre_Thu6}}",
+        "Thu4": "{{i18n: CFE_Pierre_Thu4}}",
+        "Fri8": "{{i18n: CFE_Pierre_Fri8}}",
+        "Fri6": "{{i18n: CFE_Pierre_Fri6}}",
+        "Fri4": "{{i18n: CFE_Pierre_repeated_3}}",
+        "Sat6": "{{i18n: CFE_Pierre_Sat6}}",
+        "Sat4": "{{i18n: CFE_Pierre_Sat4}}",
+        "Sat2": "{{i18n: CFE_Pierre_Sat2}}",
+        "Sun8": "{{i18n: CFE_Pierre_Sun8}}",
+        "Sun6": "{{i18n: CFE_Pierre_Sun6}}",
+        "Sun4": "{{i18n: CFE_Pierre_Sun4}}",
+        "Sun2": "{{i18n: CFE_Pierre_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Mon": "{{i18n: CFE_Pierre_summerMon}}",
+        "summer_Tue": "{{i18n: CFE_Pierre_summerTue}}",
+        "fall_Mon_inlaw_Abigail": "{{i18n: CFE_Pierre_repeated_7{{GenderNeutralCompat}} |AdultFamilialNoun={{lowercase:{{Random:{{GNMTAdultFamilialNoun}}}}}}}}",
+        "fall_Sun": "{{i18n: CFE_Pierre_fallSun}}",
+        "winter_Mon_inlaw_Abigail": "{{i18n: CFE_Pierre_repeated_7{{GenderNeutralCompat}} |AdultFamilialNoun={{lowercase:{{Random:{{GNMTAdultFamilialNoun}}}}}}}}",
+        "winter_Wed": "{{i18n: CFE_Pierre_winterWed}}",
+        "winter_Sat": "{{i18n: CFE_Pierre_winterSat}}"
+      },
+      "When": { "Query: '{{CFE_Pierre}}' = 'true' OR ('{{CFE_Pierre}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

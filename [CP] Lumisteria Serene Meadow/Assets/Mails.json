@@ -1,0 +1,38 @@
+{
+  "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_EvelynWelcomeGiftTrigger": {
+                    "Id": "{{ModID}}_EvelynWelcomeGiftTrigger",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current Evelyn Friendly, SEASON Spring, Year 1 1, DAY_OF_MONTH 18 19 20 21 22 23 24 25 26 27 28",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current {{ModID}}_EvelynWelcomeGiftMail"
+                },
+                "{{ModID}}_JodiSeedsGiftTrigger": {
+                    "Id": "{{ModID}}_JodiSeedsGiftTrigger",
+                    "Condition": "PLAYER_HEARTS Current Jodi 2, SEASON Winter Spring",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current {{ModID}}_JodiSeedsGiftMail"
+                },
+                "{{ModID}}_EvelynPansyTrigger": {
+                    "Id": "{{ModID}}_EvelynPansyTrigger",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_EvelynPansyFlag",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current {{ModID}}_EvelynPansyMail"
+                },
+            }
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"{{ModID}}_EvelynWelcomeGiftMail": "{{i18n: EvelynWelcomeGiftMail_Translated}}%item id (O){{ModID}}_DahliaSeeds 1 %%[#]{{i18n: EvelynWelcomeGiftMail_Title_Translated}}",
+				"{{ModID}}_JodiSeedsGiftMail": "{{i18n: JodiGift_Translated}}%item id (O){{ModID}}_IrisSeeds 4 %%[#]{{i18n: JodiGift_Title_Translated}}",
+				"{{ModID}}_EvelynPansyMail": "{{i18n: EvelynPansyMail_Translated}}%item id (O){{ModID}}_PurpleFlameSeeds 4 %%[#]{{i18n: EvelynPansyMail_Title_Translated}}",
+
+			},
+		},
+  ]
+}

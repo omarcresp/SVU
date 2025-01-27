@@ -1,0 +1,51 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)mytigio.dwarven_expansion_ImprovedMushroomBox",
+                "WorkingEffects"
+            ],
+            "Entries": {
+                "#-1": {
+                    "Condition": "ITEM_ID Input (O)Lumisteria.MtVapius_BlackChanterelle",
+                    "Frames": [8],
+                    "Interval": 100
+                },
+                "#-2": {
+                    "Condition": "ITEM_ID Input (O)Lumisteria.MtVapius_Porchini",
+                    "Frames": [9],
+                    "Interval": 100
+                },
+                "#-3": {
+                    "Condition": "ITEM_ID Input (O)Lumisteria.MtVapius_WoodgoatMushroom",
+                    "Frames": [10],
+                    "Interval": 100
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)mytigio.dwarven_expansion_ImprovedMushroomBox",
+                "ReadyTimeModifiers"
+            ],
+            "Entries": {
+                "MtVapius_BlackChanterelle": {
+                    "Id": "MtVapius_BlackChanterelle",
+                    "Modification": "Set",
+                    "Amount": 8640,
+                    "Condition": "ITEM_ID Input (O)Lumisteria.MtVapius_BlackChanterelle"
+                },
+                "MtVapius_WoodgoatMushroom": {
+                    "Id": "MtVapius_WoodgoatMushroom",
+                    "Modification": "Set",
+                    "Amount": 5760,
+                    "Condition": "ITEM_ID Input (O)Lumisteria.MtVapius_WoodgoatMushroom"
+                },
+            }
+        }
+    ]
+}

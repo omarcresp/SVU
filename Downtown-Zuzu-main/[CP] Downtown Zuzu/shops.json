@@ -1,0 +1,1013 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_SancStall": {
+              "Owners": [
+                  {
+                      "Condition": "TIME 800 1800",
+                      "Portrait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "This stall is open daily from 8AM to 6PM",
+                      "Id": "DTZ.DowntownZuzuSTF_SancStall-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 800 1800",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_SancStall-OpenOwnerDialogue",
+                              "Dialogue": "...this isn't a scam, I promise."
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_SancStall-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SancStall_Item_0",
+                      "Price": 5000,
+                      "ItemId": "(W)46",
+                      "AvailableStock": 1
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SancStall_Item_1",
+                      "Price": 4000,
+                      "ItemId": "(O)166",
+                      "AvailableStock": 1
+                  }
+              ]
+          }
+        }
+    },
+    {
+        "Action": "Load",
+        "Target": "Portraits/DTZ.DowntownZuzuSTF_SecretQi_Portrait",
+        "FromFile": "assets/qi.png"
+    },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_SecretQi": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 610 2400",
+                      "Portrait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "Too late, kid. Come back tomorrow.",
+                      "Id": "DTZ.DowntownZuzuSTF_SecretQi-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 610 2400",
+                      "Portrait": "Portraits/DTZ.DowntownZuzuSTF_SecretQi_Portrait",
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_SecretQi-OpenOwnerDialogue",
+                              "Dialogue": "Heya kid. I got some crazy stuff here."
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_SecretQi-OpenOwner",
+                      "Name": "MrQi"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SecretQi_Item_0",
+                      "Price": 50000,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_QiCrystal",
+                      "AvailableStock": 1
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SecretQi_Item_1",
+                      "Price": 0,
+                      "ItemId": "(W)DTZ.DowntownZuzuCP_QiBlade",
+                      "AvailableStock": 1
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SecretQi_Item_2",
+                      "Price": 0,
+                      "ItemId": "(W)DTZ.DowntownZuzuCP_Serpent'sSmallsword",
+                      "AvailableStock": 1
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_SancInt": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 610 2300",
+                      "Portrait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "Oh, sorry. We stopped serving a while ago.",
+                      "Id": "DTZ.DowntownZuzuSTF_SancInt-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 610 2300",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_SancInt-OpenOwnerDialogue",
+                              "Dialogue": "Hey, what can I getcha?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_SancInt-OpenOwner",
+                      "Name": "David"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SancInt_Item_0",
+                      "Price": 200,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_Popcorn"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SancInt_Item_1",
+                      "Price": 100,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_JojaSoda"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SancInt_Item_2",
+                      "Price": 200,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_JojaFries"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SancInt_Item_3",
+                      "Price": 150,
+                      "ItemId": "(O)614"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SancInt_Item_4",
+                      "Price": 300,
+                      "ItemId": "(O)395"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SancInt_Item_5",
+                      "Price": 750,
+                      "ItemId": "(O)346"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_SancInt_Item_6",
+                      "Price": 300,
+                      "ItemId": "(O)233"
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_ZuzuUnder": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 610 2500",
+                      "Portrait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "Oh, sorry. It's getting late, why don't you go home now?",
+                      "Id": "DTZ.DowntownZuzuSTF_ZuzuUnder-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 610 2500",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_ZuzuUnder-OpenOwnerDialogue",
+                              "Dialogue": "Welcome to Zuzu Underground, the land of good times! What can I get you?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_ZuzuUnder-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ZuzuUnder_Item_0",
+                      "Price": 750,
+                      "ItemId": "(O)346"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ZuzuUnder_Item_1",
+                      "Price": 800,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_ZuzuSignatureCocktail"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ZuzuUnder_Item_2",
+                      "Price": 300,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_JojaCocktail"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ZuzuUnder_Item_3",
+                      "Price": 600,
+                      "ItemId": "(O)613"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ZuzuUnder_Item_4",
+                      "Price": 1000,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_ZuzuChampagne"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ZuzuUnder_Item_5",
+                      "Price": 800,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_StrawberryDaiquiri"
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_JojaCafe": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 610 2300",
+                      "Portrait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "The Joja HQ Cafe closes at 11PM. Come back tomorrow.",
+                      "Id": "DTZ.DowntownZuzuSTF_JojaCafe-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 610 2300",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_JojaCafe-OpenOwnerDialogue",
+                              "Dialogue": "Welcome to the Joja HQ Cafe. How can I help?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_JojaCafe-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaCafe_Item_0",
+                      "Price": 50,
+                      "ItemId": "JojaCola"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaCafe_Item_1",
+                      "Price": 300,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_ChocolateIceCream"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaCafe_Item_2",
+                      "Price": 400,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_JojaCocktail"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaCafe_Item_3",
+                      "Price": 400,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_IceDelight"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaCafe_Item_4",
+                      "Price": 300,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_JojaSoda"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaCafe_Item_5",
+                      "Price": 100,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_JojaFries"
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_JojaEnergy": {
+              "Owners": [
+                  {
+                      "Portrait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "We're closed.",
+                      "Id": "DTZ.DowntownZuzuSTF_JojaEnergy-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_JojaEnergy-OpenOwnerDialogue",
+                              "Dialogue": "Welcome to Joja Energy. How can I help?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_JojaEnergy-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaEnergy_Item_0",
+                      "Price": 50,
+                      "ItemId": "JojaCola"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaEnergy_Item_1",
+                      "Price": 300,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_JojaSoda"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaEnergy_Item_2",
+                      "Price": 200,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_JojaFries"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaEnergy_Item_3",
+                      "Price": 500000,
+                      "ItemId": "(BC)272"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaEnergy_Item_4",
+                      "Price": 10000,
+                      "ItemId": "(H)16"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_JojaEnergy_Item_5",
+                      "Price": 50000,
+                      "ItemId": "(H)88"
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_BlockPartyFood": {
+              "Owners": [
+                  {
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_BlockPartyFood-OpenOwnerDialogue",
+                              "Dialogue": "Delicious food lays on the grill. What do you want to buy?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_BlockPartyFood-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_BlockPartyFood_Item_0",
+                      "Price": 300,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_BigBurger"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_BlockPartyFood_Item_1",
+                      "Price": 250,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_Cider"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_BlockPartyFood_Item_2",
+                      "Price": 300,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_DowntownDog"
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_BlockParty": {
+              "Owners": [
+                  {
+                    "Condition": true,
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_BlockParty-OpenOwnerDialogue",
+                              "Dialogue": "Hey there! What would you like from my stall?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_BlockParty-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_BlockParty_Item_0",
+                      "Price": 200,
+                      "ItemId": "(S)DTZ.DowntownZuzuCP_ZuzuUniversityJersey"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_BlockParty_Item_1",
+                      "Price": 350,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_ZuzuSignatureCocktail"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_BlockParty_Item_2",
+                      "Price": 25000,
+                      "ItemId": "(H)19"
+                  },
+                  {
+                    "Id": "DTZ.DowntownZuzuSTF_BlockParty_Item_3",
+                    "Price": 2500,
+                    "RandomItemId": ["(WP)DTZ.DowntownZuzuCP_ZuzuWallpapers:0", "(WP)DTZ.DowntownZuzuCP_ZuzuWallpapers:1"]
+                },
+                {
+                    "Id": "DTZ.DowntownZuzuSTF_BlockParty_Item_4",
+                    "Price": 2500,
+                    "RandomItemId": ["(WP)DTZ.DowntownZuzuCP_ZuzuWallpapers:2", "(WP)DTZ.DowntownZuzuCP_ZuzuWallpapers:3"]
+                }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "Load",
+      "Target": "Portraits/DTZ.DowntownZuzuSTF_PinkBakery_Portrait",
+      "FromFile": "assets/pcb.png"
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_PinkBakery": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 600 1900",
+                      "Portait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "I'm sorry. We aren't open. We close at 7pm.",
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 600 1900",
+                      "Portrait": "Portraits/DTZ.DowntownZuzuSTF_PinkBakery_Portrait",
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_PinkBakery-OpenOwnerDialogue",
+                              "Dialogue": "Heya friend! Welcome to the Pink Cake Bakery! What would you like?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_0",
+                      "Price": 400,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_BubblegumIceCream"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_1",
+                      "Price": 950,
+                      "ItemId": "(O)221"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_2",
+                      "Price": 800,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_LemonDrizzleCheesecake"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_3",
+                      "Price": 100,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_StrawberryPopsicle"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_4",
+                      "Price": 750,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_ZuzuMilkshake"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_5",
+                      "Price": 750,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_ZuzuIceCream"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_6",
+                      "Price": 600,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_IceDelight"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_7",
+                      "Price": 700,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_ChocolateSlice"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_8",
+                      "Price": 500,
+                      "ItemId": "(O)223"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_9",
+                      "Price": 800,
+                      "ItemId": "(O)222"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_10",
+                      "Price": 900,
+                      "ItemId": "(O)220"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PinkBakery_Item_11",
+                      "Price": 1500,
+                      "ItemId": "(O)243",
+                      "AvailableStock": 2
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_PharmacyZuzu": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 1000 1700, !DAY_OF_WEEK Mon Tue Sat Sun",
+                      "Portait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "The pharmacy isn't open. Open 10am - 5pm on Wednesdays, Thursdays and Fridays.^For Emergencies, visit Zuzu District Hospital.",
+                      "Id": "DTZ.DowntownZuzuSTF_PharmacyZuzu-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 1000 1700, !DAY_OF_WEEK Mon Tue Sat Sun",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_PharmacyZuzu-OpenOwnerDialogue",
+                              "Dialogue": "How can I help?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_PharmacyZuzu-OpenOwner",
+                      "Name": "Buddy"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PharmacyZuzu_Item_0",
+                      "Price": 1500,
+                      "ItemId": "(O)349"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PharmacyZuzu_Item_1",
+                      "Price": 1500,
+                      "ItemId": "(O)351"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PharmacyZuzu_Item_2",
+                      "Price": 1750,
+                      "ItemId": "(O)773"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_PharmacyZuzu_Item_3",
+                      "Price": 2000,
+                      "ItemId": "(O)772"
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_StardropCafe": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 600 2600",
+                      "Portait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "... congrats, you broke the mod. this shop should always be open.",
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 600 2600",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_StardropCafe-OpenOwnerDialogue",
+                              "Dialogue": "Welcome to the Stardrop Cafe. What can I get you?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe_Item_0",
+                      "Price": 500,
+                      "ItemId": "(O)395"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe_Item_1",
+                      "Price": 450,
+                      "ItemId": "(O)223"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe_Item_2",
+                      "Price": 795,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_LemonDrizzleCheesecake"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe_Item_3",
+                      "Price": 750,
+                      "ItemId": "(O)614"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe_Item_4",
+                      "Price": 750,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_ZuzuMilkshake"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe_Item_5",
+                      "Price": 750,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_ChocolateSlice"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe_Item_6",
+                      "Price": 750,
+                      "ItemId": "(O)222"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe_Item_7",
+                      "Price": 1000,
+                      "ItemId": "(O)220"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_StardropCafe_Item_8",
+                      "Price": 1500,
+                      "ItemId": "(O)243",
+                      "AvailableStock": 1
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_MollyFlowers": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 1000 2230",
+                      "Portait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "Sorry, I'm closed.",
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 1000 2230",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_MollyFlowers-OpenOwnerDialogue",
+                              "Dialogue": "Hi! Looking to buy some flowers?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers_Item_0",
+                      "Price": 200,
+                      "ItemId": "(O)402"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers_Item_1",
+                      "Price": 200,
+                      "ItemId": "(O)418"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers_Item_2",
+                      "Price": 200,
+                      "ItemId": "(O)18"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers_Item_3",
+                      "Price": 250,
+                      "ItemId": "(O)421"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers_Item_4",
+                      "Price": 500,
+                      "ItemId": "(O)593"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers_Item_5",
+                      "Price": 600,
+                      "ItemId": "(O)595"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers_Item_6",
+                      "Price": 300,
+                      "ItemId": "(O)376"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_MollyFlowers_Item_7",
+                      "Price": 50,
+                      "ItemId": "(O)22"
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_Furnisure": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 600 2600",
+                      "Portait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "congrats, you broke the mod :)",
+                      "Id": "DTZ.DowntownZuzuSTF_Furnisure-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 600 2600",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_Furnisure-OpenOwnerDialogue",
+                              "Dialogue": "Hey there, welcome to Furni-sure, your one stop furniture shop!"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_Furnisure-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Furnisure_Item_0",
+                      "Price": 350,
+                      "ItemId": "(F)0"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Furnisure_Item_1",
+                      "Price": 400,
+                      "ItemId": "(F)288"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Furnisure_Item_2",
+                      "Price": 450,
+                      "ItemId": "(F)416"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Furnisure_Item_3",
+                      "Price": 350,
+                      "ItemId": "(F)704"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Furnisure_Item_4",
+                      "Price": 350,
+                      "ItemId": "(F)704"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Furnisure_Item_5",
+                      "Price": 400,
+                      "ItemId": "(F)1120"
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Furnisure_Item_6",
+                      "Price": 2000,
+                      "ItemId": "(F)1136"
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_CrabSeller": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 800 2230",
+                      "Portrait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "Huh? You want to buy crabs? No! Go home!",
+                      "Id": "DTZ.DowntownZuzuSTF_CrabSeller-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 800 2230",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_CrabSeller-OpenOwnerDialogue",
+                              "Dialogue": "Hey!! You wanna buy some crabs??"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_CrabSeller-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_CrabSeller_Item_0",
+                      "Price": 175,
+                      "ItemId": "(O)717",
+                      "AvailableStock": 1
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_ResortShop": {
+              "Owners": [
+                  {
+                      "Condition": "!TIME 800 2230",
+                      "Portait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "The shop isn't open.",
+                      "Id": "DTZ.DowntownZuzuSTF_ResortShop-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 800 2230",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_ResortShop-OpenOwnerDialogue",
+                              "Dialogue": "What do you wanna buy?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_ResortShop-OpenOwner",
+                      "Name": "None"
+                  }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ResortShop_Item_0",
+                      "Price": 10000,
+                      "ItemId": "(O)460",
+                      "AvailableStock": 1
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ResortShop_Item_1",
+                      "Price": 1000,
+                      "ItemId": "(O)268",
+                      "AvailableStock": 5
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ResortShop_Item_2",
+                      "Price": 7500,
+                      "ItemId": "(O)114",
+                      "AvailableStock": 1
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ResortShop_Item_3",
+                      "Price": 10000,
+                      "ItemId": "(O)347",
+                      "AvailableStock": 2
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ResortShop_Item_4",
+                      "Price": 1000,
+                      "ItemId": "(O)91",
+                      "AvailableStock": 10
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ResortShop_Item_5",
+                      "Price": 250,
+                      "ItemId": "(O)372",
+                      "AvailableStock": 10
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_ResortShop_Item_6",
+                      "Price": 5000,
+                      "ItemId": "(O)446",
+                      "AvailableStock": 1
+                  }
+              ]
+          }
+      }
+  },
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+          "DTZ.DowntownZuzuSTF_Pizzeria": {
+              "Owners": [
+                {
+                    "Condition": "TIME 600 750",
+                    "Portait": null,
+                    "Dialogues": null,
+                    "ClosedMessage": "The pizzeria opens at 8AM.",
+                    "Id": "DTZ.DowntownZuzuSTF_Pizzeria-ClosedOwner-Pre",
+                    "Name": "None"
+                },
+                  {
+                      "Condition": "!TIME 800 2100",
+                      "Portait": null,
+                      "Dialogues": null,
+                      "ClosedMessage": "The pizzeria is all closed up for the day.",
+                      "Id": "DTZ.DowntownZuzuSTF_Pizzeria-ClosedOwner",
+                      "Name": "None"
+                  },
+                  {
+                      "Condition": "TIME 800 2100",
+                      "Portrait": null,
+                      "Dialogues": [
+                          {
+                              "Id": "DTZ.DowntownZuzuSTF_Pizzeria-OpenOwnerDialogueHazel",
+                              "Dialogue": "What do you wanna order?"
+                          }
+                      ],
+                      "ClosedMessage": null,
+                      "Id": "DTZ.DowntownZuzuSTF_Pizzeria-OpenOwnerHazel",
+                      "Name": "DTZ.DowntownZuzuCP_Hazel"
+                  },
+                  {
+                    "Condition": "TIME 800 2100",
+                    "Portrait": null,
+                    "Dialogues": [
+                        {
+                            "Id": "DTZ.DowntownZuzuSTF_Pizzeria-OpenOwnerDialogueGio",
+                            "Dialogue": "Hey hey hey! Whatcha want to order?"
+                        }
+                    ],
+                    "ClosedMessage": null,
+                    "Id": "DTZ.DowntownZuzuSTF_Pizzeria-OpenOwner",
+                    "Name": "DTZ.DowntownZuzuCP_Giovanni"
+                }
+              ],
+              "Items": [
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Pizzeria_Item_0",
+                      "Price": 500,
+                      "ItemId": "(O)206",
+                      "AvailableStock": 3
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Pizzeria_Item_1",
+                      "Price": 500,
+                      "ItemId": "(O)224",
+                      "AvailableStock": 3
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Pizzeria_Item_2",
+                      "Price": 1000,
+                      "ItemId": "(O)241",
+                      "AvailableStock": 1
+                  },
+                  {
+                      "Id": "DTZ.DowntownZuzuSTF_Pizzeria_Item_3",
+                      "Price": 350,
+                      "ItemId": "(O)DTZ.DowntownZuzuCP_MozzarellaSlice",
+                      "AvailableStock": 10
+                  }
+              ]
+          }
+      }
+  }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/LocationContexts",
+			"Entries": {
+				"Lumisteria_MtVapius_Main": {
+					"Name": "Lumisteria_MtVapius_Main",
+					"AllowRainTotem": true,
+					"WeatherConditions": [
+						{
+							"Id": "{{ModId}}_GreenRain",
+							"Condition": "IS_GREEN_RAIN_DAY",
+							"Weather": "GreenRain"
+						},
+						{
+							"Id": "{{ModId}}_Festival",
+							"Condition": "IS_FESTIVAL_DAY Here 1",
+							"Weather": "Festival"
+						},
+						{
+							"Id": "{{ModId}}_RainDay3",
+							"Condition": "DAYS_PLAYED 2, !DAYS_PLAYED 3",
+							"Weather": "Rain"
+						},
+						{
+							"Condition": "SEASON summer, RANDOM .05",
+							"Weather": "Wind"
+						},
+						{
+							"Condition": "SEASON summer, SYNCED_SUMMER_RAIN_RANDOM 0.12 .003, RANDOM .85",
+							"Weather": "Storm"
+						},
+						{
+							"Condition": "SEASON summer, SYNCED_SUMMER_RAIN_RANDOM 0.12 .003, RANDOM .25, DAYS_PLAYED 28, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2",
+							"Weather": "Storm"
+						},
+						{
+							"Condition": "!SEASON winter, !SEASON summer, SYNCED_RANDOM day location_weather .183, RANDOM .25, DAYS_PLAYED 28, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2",
+							"Weather": "Storm"
+						},
+						{
+							"Condition": "SEASON winter, SYNCED_RANDOM day location_weather 0.63",
+							"Weather": "Snow"
+						},
+						{
+							"Condition": "SEASON summer, SYNCED_SUMMER_RAIN_RANDOM 0.12 .003, !DAY_OF_MONTH 1",
+							"Weather": "Rain"
+						},
+						{
+							"Condition": "!SEASON summer, !SEASON winter, SYNCED_RANDOM day location_weather 0.183",
+							"Weather": "Rain"
+						},
+						{
+							"Id": "{{ModId}}_SpringSnow",
+							"Condition": "DAYS_PLAYED 3, SEASON spring, RANDOM .20",
+							"Weather": "Snow"
+						},
+						{
+							"Condition": "DAYS_PLAYED 3, SEASON spring, RANDOM .20",
+							"Weather": "Wind"
+						},
+						{
+							"Id": "{{ModId}}_RareFallWind",
+							"Condition": "DAYS_PLAYED 3, SEASON fall, RANDOM .6",
+							"Weather": "Wind"
+						},
+						{
+							"Id": "{{ModId}}_RareFallSnow",
+							"Condition": "DAYS_PLAYED 3, SEASON fall, RANDOM .6",
+							"Weather": "Snow"
+						},
+						{
+							"Id": "{{ModId}}_RareWinterStorm",
+							"Condition": "SEASON winter, SYNCED_RANDOM day location_weather .183, RANDOM .05, DAYS_PLAYED 28",
+							"Weather": "Storm"
+						},
+						{
+							"Condition": "",
+							"Weather": "Sun"
+						}
+					],
+					"ReviveLocations": [
+						{
+							"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main",
+							"Location": "Lumisteria.MtVapius_Hamlet",
+							"Position": {
+								"X": 49,
+								"Y": 77
+							}
+						},
+						{
+							"Condition": "",
+							"Location": "Hospital",
+							"Position": {
+								"X": 20,
+								"Y": 12
+							}
+						}
+					],
+					//"CopyWeatherFromLocation": null
+				},
+				"Lumisteria_MtVapius_Inn": {
+					"Name": "Lumisteria_MtVapius_Inn",
+					"ReviveLocations": [
+						{
+							"Condition": "",
+							"Location": "Lumisteria.MtVapius_Hamlet",
+							"Position": {
+								"X": 49,
+								"Y": 77
+							}
+						},
+					],
+					"PassOutLocations": [
+					  {
+						"Id": "Default",
+						"Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_InnSecondFloor_Bed",
+						"Location": "Lumisteria.MtVapius_InnSecondFloor",
+						"Position": {
+						  "X": 6,
+						  "Y": 35
+						}
+					  }
+					],
+					"MaxPassOutCost": 0,
+					"PassOutMail": [
+					  {
+						"Id": "Default",
+						"Mail": "Lumisteria.MtVapius_InnPassOut",
+						"MaxPassOutCost": -1,
+						"SkipRandomSelection": false
+					  }
+					],
+					"CopyWeatherFromLocation": "Lumisteria_MtVapius_Main"
+				},
+				"Lumisteria_MtVapius_Forest": {
+					"Name": "Lumisteria_MtVapius_Forest",
+					"DefaultValidPlantableLocations": [
+						/*"Farm",*/
+					],
+					"ReviveLocations": [
+						{
+							"Condition": "LOCATION_IS_OUTDOORS Here, !PLAYER_HAS_CONVERSATION_TOPIC Current Lumisteria.MtVapius_MariamEncounter, PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Clearing01Mariam0H, RANDOM 0.3 @addDailyLuck",
+							"Location": "Lumisteria.MtVapius_ForestCrystalLake",
+							"Position": {
+								"X": 49,
+								"Y": 77
+							}
+						},
+						{
+							"Condition": "",
+							"Location": "Lumisteria.MtVapius_Hamlet",
+							"Position": {
+								"X": 49,
+								"Y": 77
+							}
+						},
+						{
+							"Condition": "",
+							"Location": "Hospital",
+							"Position": {
+								"X": 20,
+								"Y": 12
+							}
+						}
+					],
+					"CopyWeatherFromLocation": "Lumisteria_MtVapius_Main"
+				}
+			}
+		},
+		/*{
+			"Action": "EditData",
+            "Target": "Data/LocationContexts",
+              "TargetField": [
+                "Lumisteria_MtVapius_Main",
+                "PlantableLocations",
+              ],
+            "Entries": {
+                999: "Lumisteria.MtVapius_Orchard"
+            },
+            "When": {
+
+                "HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_OrchardUnlock"            
+				}
+		},*/
+	]
+}

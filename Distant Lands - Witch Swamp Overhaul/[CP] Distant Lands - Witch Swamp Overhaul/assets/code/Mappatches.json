@@ -1,0 +1,109 @@
+{
+   "Changes": [
+   
+  //summit background fix for winter event
+  
+   {  
+            "Action": "EditMap",
+            "Target": "Maps/Summit",
+            "FromFile": "assets/mappatches/SummitEventFix.tmx",
+			
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"When": { 
+					"Hearts:{{ModId}}_GoblinZic": "10",
+					"Season": "Winter",
+					"HasSeenEvent |contains=181091263": false, 
+					"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false, },			
+					
+					},
+  
+		
+		  {  
+            "Action": "EditMap",
+            "Target": "Maps/Summit",
+            "FromFile": "assets/mappatches/SummitEventFixSVE.tmx",
+			
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"When": { 
+					"Hearts:{{ModId}}_GoblinZic": "10",
+					"Season": "Winter",
+					"HasSeenEvent |contains=181091263": false, 
+					"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, },			
+        },
+		
+		
+		
+  
+     { //ancientfruit
+            "Action": "EditMap",
+            "Target": "Maps/WitchSwamp",
+            "FromFile": "assets/mappatches/witchcropsdead.tmx",
+				"FromArea": {"X":2, "Y":9, "Width":8, "Height":7},
+			"ToArea": {"X":2, "Y":9, "Width":8, "Height":7},
+			"Update": "OnTimeChange",
+			"PatchMode": "Replace",
+			"When": {  "HasSeenEvent |contains=181091239": false,			},
+        },
+		 { //rice and beat
+            "Action": "EditMap",
+            "Target": "Maps/WitchSwamp",
+            "FromFile": "assets/mappatches/witchcropsdead.tmx",
+				"FromArea": {"X":11, "Y":16, "Width":6, "Height":7},
+			"ToArea": {"X":11, "Y":16, "Width":6, "Height":7},
+			"Update": "OnTimeChange",
+			"PatchMode": "Replace",
+			"When": {  "HasSeenEvent |contains=181091239": false,  },
+        },
+		 { //mint
+            "Action": "EditMap",
+            "Target": "Maps/WitchSwamp",
+            "FromFile": "assets/mappatches/witchcropsdead.tmx",
+				"FromArea": {"X":29, "Y":5, "Width":6, "Height":8},
+			"ToArea": {"X":29, "Y":5, "Width":6, "Height":8},
+			"Update": "OnTimeChange",
+			"PatchMode": "Replace",
+			"When": { "HasSeenEvent |contains=181091239": false,  },
+        },
+		
+		 {  //Fork
+            "Action": "EditMap",
+            "Target": "Maps/WitchSwamp",
+            "FromFile": "assets/mappatches/witchcropsdead.tmx",
+				"FromArea": {"X":17, "Y":21, "Width":1, "Height":1},
+			"ToArea": {"X":17, "Y":21, "Width":1, "Height":1},
+			"Update": "OnTimeChange",
+			"PatchMode": "Replace",
+			"When": { "HasSeenEvent |contains=181091239": false,  },
+        },
+		
+		
+		
+		{ //waterrrings
+            "Action": "EditMap",
+            "Target": "Maps/WitchSwamp",
+            "FromFile": "assets/mappatches/waterrings_1.tmx",
+			"When": { "DayOfWeek": "Monday, Thursday", },
+			"PatchMode": "Overlay",
+        },
+		{ //waterrrings
+            "Action": "EditMap",
+            "Target": "Maps/WitchSwamp",
+            "FromFile": "assets/mappatches/waterrings_2.tmx",
+			"When": { "DayOfWeek": "Tuesday, Friday, Sunday", },
+			"PatchMode": "Overlay",
+        },
+		{ //waterrrings
+            "Action": "EditMap",
+            "Target": "Maps/WitchSwamp",
+            "FromFile": "assets/mappatches/waterrings_3.tmx",
+			"When": { "DayOfWeek": "Wednesday, Saturday", },
+			"PatchMode": "Overlay",
+        },
+	 
+
+		
+		
+   ]
+}

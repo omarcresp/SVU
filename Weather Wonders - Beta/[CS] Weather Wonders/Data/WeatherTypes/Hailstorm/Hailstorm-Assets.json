@@ -1,0 +1,24 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Hailstorm Weather Sounds",
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Kana.WeatherWonders_HailstormSound": {
+          "ID": "Kana.WeatherWonders_HailstormSound",
+          "Category": "Ambient",
+          "FilePaths": ["{{AbsoluteFilePath: assets/HailstormSound.ogg}}"],
+          "StreamedVorbis": false,
+          "Looped": true
+        }
+      }
+    },
+    {
+      "LogName": "Load WW's Hailstorm Weather Particles",
+      "Action": "Load",
+      "Target": "Mods/Kana.WeatherWonders/HailstormLayer",
+      "FromFile": "assets/HailstormLayer.png"
+    }
+  ]
+}

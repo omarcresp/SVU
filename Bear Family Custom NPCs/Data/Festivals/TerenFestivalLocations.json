@@ -1,0 +1,476 @@
+{
+	"Changes": [
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//Teren  
+
+		// Egg Festival
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 52 78 0",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 52 78 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 52 78 0",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 52 78 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		// Flower Dance
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 52 40 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 52 40 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 52 40 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 52 40 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+
+			}
+		},
+
+		// Luau
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 23 25 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 23 25 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Fields", "set-up", 5 ],
+					"Value": "/positionOffset MadDog.HashtagBearFam.Teren -9 -18/animate MadDog.HashtagBearFam.Teren false true 100 16 16 16"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 23 25 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 23 25 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Fields", "set-up_y2", 5 ],
+					"Value": "/positionOffset MadDog.HashtagBearFam.Teren -9 -18/animate MadDog.HashtagBearFam.Teren false true 100 16 16 16"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail",
+				"Query: {{Year}} % 2 = 0": true
+			}
+		},
+		// Dance of the Moonlight Jellies
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{ // I have not added a MainEvent to this one, since the waterfront area is V crowded already and very little of the map is visible.
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 64 5 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{ // I have not added a MainEvent to this one, since the waterfront area is V crowded already and very little of the map is visible.
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 64 5 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+
+		// Stardew Fair
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Teren 57 53 1",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Fields", "set-up", 5 ],
+					"Value": "/positionOffset MadDog.HashtagBearFam.Teren 20 -30"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "MadDog.HashtagBearFam.Teren 57 53 1",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Fields", "set-up_y2", 5 ],
+					"Value": "/positionOffset MadDog.HashtagBearFam.Teren 20 -30"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasFlag": "TerenMysteryMail",
+				"Query: {{Year}} % 2 = 0": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Teren 22 31 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "MadDog.HashtagBearFam.Teren 22 31 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+
+		// Spirit's Eve
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 1 53 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 1 53 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 1 53 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Year": "1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
+			}
+		},
+
+		// Ice Festival
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 91 24 3",
+					"Delimiter": "/"
+				},
+				{ // Note the spelling of "Main-Event" here differs from the others
+					"Operation": "Append",
+					"Target": [ "Entries", "Main-Event_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 91 24 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 100 34 3",
+					"Delimiter": "/"
+				},
+				{ // Note the spelling of "Main-Event" here differs from the others
+					"Operation": "Append",
+					"Target": [ "Entries", "Main-Event_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 100 34 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail",
+				"Query: {{Year}} % 2 = 0": true
+			}
+		},
+
+		// Winter Star
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 50 72 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+					"Value": "MadDog.HashtagBearFam.Teren 50 72 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasFlag": "TerenMysteryMail"
+			}
+		},
+		//bonus festivals
+		{
+			"LogName": "Love Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/Winter6",
+			"When": {
+				"HasMod": "AvalonMFX.LoveFestival",
+				"HasFlag": "TerenMysteryMail"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MadDog.HashtagBearFam.Teren 17 96 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [ "Fields", "set-up", 5 ],
+					"Value": "/positionOffset MadDog.HashtagBearFam.Teren 0 -18/animate MadDog.HashtagBearFam.Teren false true 100 20 20 20"
+				}
+			]
+		}
+		/*,
+
+      //RSV Ember of Resolution
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+				"HasFlag": "TerenMysteryMail"
+			},
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 25 33 1",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 25 33 1",
+					"Delimiter": "/"
+				}
+			]
+		},
+
+		//RSV Gathering Festival
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+				"HasFlag": "TerenMysteryMail"
+			},
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 105 36 0",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+					"Value": "MadDog.HashtagBearFam.Teren 105 36 0",
+					"Delimiter": "/"
+				}
+			]
+		}*/
+	]
+}

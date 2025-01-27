@@ -1,0 +1,1012 @@
+{
+  "Changes": [
+    //ABIGAIL
+    {
+      "LogName": "DSV Abigail Daily Dialogue - Nonbinary Sebastian",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        "Thu2": "{{i18n: CFE_Abigail_repeated_6.DSV.NonbinarySebastian}}",
+        "summer_Fri2": "{{i18n: CFE_Abigail_summerFri2.DSV.NonbinarySebastian}}",
+        "fall_Tue2": "{{i18n: CFE_Abigail_repeated_6.DSV.NonbinarySebastian}}",
+        "fall_Thu4": "{{i18n: CFE_Abigail_fallThu4.DSV.NonbinarySebastian}}"
+      },
+      "When": {
+        "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:AbigailDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinarySebastian": "True"
+      }
+    },
+    {
+      "LogName": "DSV Abigail Daily Dialogue - Nonbinary Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        "Tue4": "{{i18n: CFE_Abigail_Tue4.DSV.NonbinaryAbigail}}",
+        "Tue8": "{{i18n: CFE_Abigail_Tue8.DSV.NonbinaryAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:AbigailDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True"
+      }
+    },
+    {
+      "LogName": "DSV Abigail Marriage Dialogue - Nonbinary Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+      "Entries": {
+        "Rainy_Day_3": "{{i18n: CFE_Abigail_Married_RainyDay_{{Random: 7.DSV.NonbinaryAbigail,8}}}}",
+        "patio_Abigail": "{{i18n: CFE_Abigail_Married_patio_{{Random: 1.DSV.NonbinaryAbigail,2,3.DSV.NonbinaryAbigail}}}}"
+      },
+      "When": {
+        "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:AbigailDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True"
+      }
+    },
+    {
+      "LogName": "DSV Abigail Festival Dialogue - Chinese-Filipino (Flower Dance)",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Abigail": "{{i18n: CFE_FlowerDance_Abigail.DSV.ChineseFilipinoAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Abigail}}' = 'true' OR ('{{CFE_Abigail}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:AbigailDialogue": "True",
+        "DSV.Core/ConfigValue:AbigailVariant |contains= ModdedPlusSize,ModdedStraightSize": true,
+        "Year |contains= 1, 2, 3, 4": false,
+        "CFE_Festivals": "true",
+        "SyncedRandom": "True"
+      }
+    },
+    //ALEX
+    {
+      "LogName": "DSV Alex Daily Dialogue - Modded Evelyn & George",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Alex",
+      "Entries": {
+        "Sat4": "{{i18n: CFE_Alex_Sat4.DSV.ModdedEvelyn |AlexGrandma={{AlexGrandmaToken}}}}",
+        "fall_Sun6": "{{i18n: CFE_Alex_fallSun6.DSV.ModdedGeorge |AlexGrandpa={{AlexGrandpaToken}}}}",
+        "winter_Wed10": "{{i18n: CFE_Alex_winterWed10.DSV.ModdedEvelyn |AlexGrandma={{AlexGrandmaToken}}}}"
+      },
+      "When": {
+        "Query: '{{CFE_Alex}}' = 'true' OR ('{{CFE_Alex}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:AlexDialogue": "True"
+      }
+    },
+    {
+      "LogName": "DSV Alex Marriage Dialogue - Modded Evelyn & George",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueAlex",
+      "Entries": {
+        "Indoor_Day_4": "{{i18n: CFE_Alex_Married_IndoorDay_{{Random: 13,14,15.DSV.ModdedEvelynGeorge}} |AlexGrandma={{AlexGrandmaToken}} |AlexGrandpa={{AlexGrandpaToken}} }}",
+        "funLeave_Alex": "{{i18n: CFE_Alex_Married_funLeave_{{Random: 1,2.DSV.ModdedEvelynGeorge}} |AlexGrandma={{AlexGrandmaToken}} |AlexGrandpa={{AlexGrandpaToken}} }}",
+        "funReturn_Alex": "{{i18n: CFE_Alex_Married_funReturn_{{Random: 1,2.DSV.ModdedEvelyn}} |AlexGrandma={{AlexGrandmaToken}} }}",
+        "spring_15": "{{i18n: CFE_Alex_Married_spring15.DSV.ModdedGeorge |AlexGrandpa={{AlexGrandpaToken}}}}"
+      },
+      "When": {
+        "Query: '{{CFE_Alex}}' = 'true' OR ('{{CFE_Alex}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:AlexDialogue": "True"
+      }
+    },
+    //CAROLINE
+    {
+      "LogName": "DSV Caroline Daily Dialogue - Nonbinary Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": {
+        "Mon2": "{{i18n: CFE_Caroline_Mon2.DSV.NonbinaryAbigail}}",
+        "Mon4": "{{i18n: CFE_Caroline_Mon4.DSV.NonbinaryAbigail}}",
+        "Mon6": "{{i18n: CFE_Caroline_Mon6.DSV.NonbinaryAbigail}}",
+        "Fri4": "{{i18n: CFE_Caroline_Fri4.DSV.NonbinaryAbigail}}",
+        "Sat6": "{{i18n: CFE_Caroline_Sat6.DSV.NonbinaryAbigail}}",
+        "summer_Sat6": "{{i18n: CFE_Caroline_summerSat6.DSV.NonbinaryAbigail}}",
+        "fall_Mon10": "{{i18n: CFE_Caroline_fallMon10.DSV.NonbinaryAbigail}}",
+        "fall_Sat2": "{{i18n: CFE_Caroline_fallSat2.DSV.NonbinaryAbigail}}",
+        "winter_Wed10": "{{i18n: CFE_Caroline_winterWed10.DSV.NonbinaryAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:CarolineDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True"
+      }
+    },
+    {
+      "LogName": "DSV Caroline Daily Dialogue - Chinese-Filipino Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": {
+        "winter_Fri6": "{{i18n: CFE_Caroline_winterFri6.DSV.ModdedAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:CarolineDialogue": "True",
+        "DSV.Core/ConfigValue:AbigailVariant |contains= ModdedPlusSize,ModdedStraightSize": true
+      }
+    },
+    {
+      "LogName": "DSV Caroline Daily Dialogue - Trans Sam",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": {
+        "Tue6": "{{i18n: CFE_Caroline_Tue6.DSV.TransSam}}"
+      },
+      "When": {
+        "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:CarolineDialogue": "True"
+      }
+    },
+    {
+      "LogName": "DSV Caroline Daily Dialogue - Religion Edits",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": {
+        "Sun2": "{{i18n:CFE_Caroline_Sun2.DSV.ReligionEdits}}",
+        "Sun4": "{{i18n:CFE_Caroline_Sun4.DSV.ReligionEdits}}"
+      },
+      "When": {
+        "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:CarolineDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:JodiVariant |contains= Modded}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi}}' = 'true' OR '{{DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled}}' = 'true' OR '{{DSV.Core/ConfigValue:JewishMullners}}' = 'true' OR '{{DSV.Core/ConfigValue:HarveyVariant |contains= ModdedSikh}}' = 'true'": true
+      }
+    },
+    {
+      "LogName": "DSV Caroline Festival Dialogue - Nonbinary Abigail (Flower Dance)",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Caroline": "{{i18n: CFE_FlowerDance_Caroline.DSV.NonbinaryAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:CarolineDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True",
+        "Year |contains= 1, 2, 3, 4": false,
+        "CFE_Festivals": "true",
+        "SyncedRandom": "True"
+      }
+    },
+    {
+      "LogName": "DSV Caroline Festival Dialogue - Nonbinary Abigail (Spirits Eve)",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Caroline_y2": "{{i18n: CFE_SpiritsEve_Caroline_y2.DSV.NonbinaryAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Caroline}}' = 'true' OR ('{{CFE_Caroline}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:CarolineDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True",
+        "Year |contains= 1, 2, 3, 4": false,
+        "CFE_Festivals": "true",
+        "SyncedRandom": "True"
+      }
+    },
+    //CLINT
+    {
+      "LogName": "DSV Clint Gift Dialogue - Blind Clint",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        "AcceptGift_(O)60": "{{i18n: CFE_Clint_Emerald.DSV.BlindClint}}",
+        "AcceptGift_(O)64": "{{i18n: CFE_Clint_Ruby.DSV.BlindClint}}",
+        "AcceptGift_(O)70": "{{i18n: CFE_Clint_Jade.DSV.BlindClint}}",
+        "AcceptGift_(O)336": "{{i18n: CFE_Clint_GoldBar.DSV.BlindClint}}"
+      },
+      "When": {
+        "Query: '{{CFE_Clint}}' = 'true' OR ('{{CFE_Clint}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:ClintDialogue": "True",
+        "DSV.Core/ConfigValue:ClintVariant |contains= Modded": true
+      }
+    },
+    {
+      "LogName": "DSV Clint Daily Dialogue - Turkish Gus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        "Fri8": "{{i18n: CFE_Clint_Fri8.DSV.TurkishGus}}"
+      },
+      "When": {
+        "Query: '{{CFE_Clint}}' = 'true' OR ('{{CFE_Clint}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:ClintDialogue": "True",
+        "DSV.Core/ConfigValue:GusVariant |contains= Modded": true
+      }
+    },
+    //DEMETRIUS
+    {
+      "LogName": "DSV Demetrius Daily Dialogue - Nonbinary Sebastian",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": {
+        "Sun6": "{{i18n: CFE_Demetrius_Sun6.DSV.NonbinarySebastian}}",
+        "Sun8": "{{i18n: CFE_Demetrius_Sun8.DSV.NonbinarySebastian}}",
+        "Sun10": "{{i18n: CFE_Demetrius_Sun10.DSV.NonbinarySebastian}}",
+        "Sun_inlaw_Sebastian": "{{i18n: CFE_Demetrius_SuninlawSebastian.DSV.NonbinarySebastian}}"
+      },
+      "When": {
+        "Query: '{{CFE_Demetrius}}' = 'true' OR ('{{CFE_Demetrius}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:DemetriusDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinarySebastian": "True"
+      }
+    },
+    {
+      "LogName": "DSV Demetrius Festival Dialogue - Nonbinary Sebastian (Spirits Eve)",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Demetrius_y2": "{{i18n: CFE_SpiritsEve_Demetrius_y2.DSV.NonbinarySebastian}}"
+      },
+      "When": {
+        "Query: '{{CFE_Demetrius}}' = 'true' OR ('{{CFE_Demetrius}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:DemetriusDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinarySebastian": "True",
+        "Year |contains= 1, 2, 3, 4": false,
+        "CFE_Festivals": "true",
+        "SyncedRandom": "True"
+      }
+    },
+    //ELLIOTT
+    {
+      "LogName": "DSV Elliott Gift Dialogue - Jewish Elliott",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Elliott",
+      "Entries": {
+        "AcceptGift_(O)715": "{{i18n: CFE_Elliott_Lobster}}",
+        "AcceptGift_(O)732": "{{i18n: CFE_Elliott_CrabCakes}}",
+        "AcceptGift_(O)218": "{{i18n: CFE_Elliott_TomKhaSoup}}",
+        "AcceptGift_(O)242": "{{i18n: CFE_Elliott_DishOTheSea.DSV.JewishElliott}}",
+        "AcceptGift_(O)705": "{{i18n: CFE_Elliott_Albacore.DSV.JewishElliott}}",
+        "AcceptGift_(O)231": "{{i18n: CFE_Elliott_EggplantParmesan.DSV.JewishElliott}}"
+      },
+      "When": {
+        "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:ElliottDialogue": "True",
+        "DSV.Core/ConfigValue:JewishElliott": "True",
+        "DSV.Core/ConfigValue:GiftTastesChange": "True"
+      }
+    },
+    {
+      "LogName": "DSV Elliott Married Dialogue - Jewish Elliott",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueElliott",
+      "Entries": {
+        "Indoor_Night_4": "{{i18n: CFE_Elliott_Married_IndoorNight_{{Random: 9,10}}.DSV.JewishElliott}}"
+      },
+      "When": {
+        "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:ElliottDialogue": "True",
+        "DSV.Core/ConfigValue:JewishElliott": "True"
+      }
+    },
+    {
+      "LogName": "DSV Elliott Married Dialogue - Black Elliott",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueElliott",
+      "Entries": {
+        "Rainy_Day_3": "{{i18n: CFE_Elliott_Married_RainyDay_{{Random: 6,7.DSV.BlackElliott}}}}"
+      },
+      "When": {
+        "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:ElliottDialogue": "True",
+        "DSV.Core/ConfigValue:ElliottVariant |contains= Modded": true
+      }
+    },
+    {
+      "LogName": "DSV Elliott Festival Dialogue - Jewish Elliott (Luau)",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Elliott": "{{i18n: CFE_Luau_Elliott.DSV.JewishElliott}}"
+      },
+      "When": {
+        "Query: '{{CFE_Elliott}}' = 'true' OR ('{{CFE_Elliott}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:ElliottDialogue": "True",
+        "DSV.Core/ConfigValue:JewishElliott": "True",
+        "Year |contains= 1, 2, 3, 4": false,
+        "CFE_Festivals": "true",
+        "SyncedRandom": "True"
+      }
+    },
+    //EVELYN
+    {
+      "LogName": "DSV Evelyn Daily Dialogue - Modded Evelyn",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Evelyn",
+      "Entries": {
+        "Thu4": "{{i18n: CFE_Evelyn_Thu4.DSV.{{DSV.Core/ConfigValue:EvelynVariant}}Evelyn}}",
+        "Thu8": "{{i18n: CFE_Evelyn_Thu8.DSV.ModdedEvelyn}}",
+        "summer_Thu4": "{{i18n: CFE_Evelyn_summerThu4.DSV.{{DSV.Core/ConfigValue:EvelynVariant}}Evelyn}}",
+        "summer_Thu6": "{{i18n: CFE_Evelyn_summerThu6.DSV.ModdedEvelyn}}",
+        "fall_Thu4": "{{i18n: CFE_Evelyn_fallThu4.DSV.{{DSV.Core/ConfigValue:EvelynVariant}}Evelyn}}",
+        "winter_Thu4": "{{i18n: CFE_Evelyn_winterThu4.DSV.{{DSV.Core/ConfigValue:EvelynVariant}}Evelyn}}"
+      },
+      "When": {
+        "Query: '{{CFE_Evelyn}}' = 'true' OR ('{{CFE_Evelyn}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:EvelynDialogue": "True",
+        "DSV.Core/ConfigValue:EvelynVariant |contains= Mexican, Samoan": true
+      }
+    },
+    {
+      "LogName": "DSV Evelyn Daily Dialogue - Religion Edits",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Evelyn",
+      "Entries": {
+        "Fri4": "{{i18n: CFE_Evelyn_Fri4.DSV.ReligionEdits}}"
+      },
+      "When": {
+        "Query: '{{CFE_Evelyn}}' = 'true' OR ('{{CFE_Evelyn}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:EvelynDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:JodiVariant |contains= Modded}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi}}' = 'true' OR '{{DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled}}' = 'true' OR '{{DSV.Core/ConfigValue:JewishMullners}}' = 'true' OR '{{DSV.Core/ConfigValue:HarveyVariant |contains= ModdedSikh}}' = 'true'": true
+      }
+    },
+    //GEORGE
+    {
+      "LogName": "DSV George Daily Dialogue - Religion Edits",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/George",
+      "Entries": {
+        "fall_Sat10": "{{i18n: CFE_George_fallSat10.DSV.ReligionEdits}}"
+      },
+      "When": {
+        "Query: '{{CFE_George}}' = 'true' OR ('{{CFE_George}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:GeorgeDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:JodiVariant |contains= Modded}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi}}' = 'true' OR '{{DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled}}' = 'true' OR '{{DSV.Core/ConfigValue:JewishMullners}}' = 'true' OR '{{DSV.Core/ConfigValue:HarveyVariant |contains= ModdedSikh}}' = 'true'": true
+      }
+    },
+    {
+      "LogName": "DSV George Daily Dialogue - Jewish Mullners",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/George",
+      "Entries": {
+        "fall_Sat10": "{{i18n: CFE_George_fallSat10.DSV.ReligionEdits.JewishMullners}}",
+        "Sun10": "{{i18n: CFE_George_Sun10.DSV.JewishMullners}}"
+      },
+      "When": {
+        "Query: '{{CFE_George}}' = 'true' OR ('{{CFE_George}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:GeorgeDialogue": "True",
+        "DSV.Core/ConfigValue:JewishMullners": "True"
+      }
+    },
+    //GUS
+    {
+      "LogName": "DSV Gus Rainy Dialogue - Turkish Gus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Gus": "{{i18n: CFE_Gus_rainy_{{random: 1.DSV.TurkishGus,2,3}}}}"
+      },
+      "When": {
+        "Query: '{{CFE_Gus}}' = 'true' OR ('{{CFE_Gus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:GusDialogue": "True",
+        "DSV.Core/ConfigValue:GusVariant |contains= Modded": true
+      }
+    },
+    {
+      "LogName": "DSV Gus Daily Dialogue - Turkish Gus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Gus",
+      "Entries": {
+        "winter_28_1": "{{i18n: CFE_Gus_winter28.DSV.TurkishGus}}",
+        "winter_28_2": "{{i18n: CFE_Gus_winter28.DSV.TurkishGus}}",
+        "Mon8": "{{i18n: CFE_Gus_Mon8.DSV.TurkishGus}}",
+        "Thu10": "{{i18n: CFE_Gus_Thu10.DSV.TurkishGus}}",
+        "Fri6": "{{i18n: CFE_Gus_Fri6.DSV.TurkishGus}}",
+        "Sat8": "{{i18n: CFE_Gus_Sat8.DSV.TurkishGus}}",
+        "Sat6": "{{i18n: CFE_Gus_Sat6.DSV.TurkishGus}}",
+        "Sun10": "{{i18n: CFE_Gus_Sun10.DSV.TurkishGus}}",
+        "winter_Sat6": "{{i18n: CFE_Gus_winterSat.DSV.TurkishGus}}",
+        "Wed": "{{i18n: CFE_Gus_Wed.DSV.TurkishGus}}",
+        "Wed_013": "{{i18n: CFE_Gus_Wed_013.DSV.TurkishGus}}"
+      },
+      "When": {
+        "Query: '{{CFE_Gus}}' = 'true' OR ('{{CFE_Gus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:GusDialogue": "True",
+        "DSV.Core/ConfigValue:GusVariant |contains= Modded": true
+      }
+    },
+    {
+      "LogName": "DSV Gus Daily Dialogue - Aro-Ace Gus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Gus",
+      "Entries": {
+        "Wed8": "{{i18n: CFE_Gus_Wed8.DSV.AroAceGus}}",
+        "Wed10": "{{i18n: CFE_Gus_Wed10.DSV.AroAceGus}}"
+      },
+      "When": {
+        "Query: '{{CFE_Gus}}' = 'true' OR ('{{CFE_Gus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:GusDialogue": "True",
+        "DSV.Core/ConfigValue:AroAceGus": "True"
+      }
+    },
+    {
+      "LogName": "DSV Gus Daily Dialogue - Nonbinary Emily",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Gus",
+      "Entries": {
+        "Wed4": "{{i18n: CFE_Gus_Wed4.DSV.NonbinaryEmily}}",
+        "Thu10": "{{i18n: CFE_Gus_Thu10.DSV.NonbinaryEmily}}"
+      },
+      "When": {
+        "Query: '{{CFE_Gus}}' = 'true' OR ('{{CFE_Gus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:GusDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryEmily": "True"
+      }
+    },
+    {
+      "LogName": "DSV Gus Festival Dialogue - Turkish Gus (Luau)",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Gus_y2": "{{i18n: CFE_Luau_Gus_y2.DSV.TurkishGus}}"
+      },
+      "When": {
+        "Query: '{{CFE_Gus}}' = 'true' OR ('{{CFE_Gus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:GusDialogue": "True",
+        "DSV.Core/ConfigValue:GusVariant |contains= Modded": true,
+        "Year |contains= 1, 2, 3, 4": false,
+        "CFE_Festivals": "true",
+        "SyncedRandom": "True"
+      }
+    },
+    //HALEY
+    {
+      "LogName": "DSV Haley Daily Dialogue - Modded Haley",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Haley",
+      "Entries": {
+        "summer_Mon4": "{{i18n: CFE_Haley_summerMon4.DSV.ModdedHaley}}",
+        "winter_Mon6": "{{i18n: CFE_Haley_winterMon6.DSV.ModdedHaley}}"
+      },
+      "When": {
+        "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:HaleyDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:HaleyVariant |contains= Black, Romani}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.TenthousandcatsHaley}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.AirynHaley}}' = 'true'": true
+      }
+    },
+    {
+      "LogName": "DSV Haley Daily Dialogue - Nonbinary Emily",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Haley",
+      "Entries": {
+        "Sun8_inlaw_Emily": "{{i18n: CFE_Haley_Sun8inlawEmily.DSV.NonbinaryEmily}}",
+        "summer_Sun8_inlaw_Emily": "{{i18n: CFE_Haley_summerSun8inlawEmily.DSV.NonbinaryEmily}}",
+        "fall_Sun4_inlaw_Emily": "{{i18n: CFE_Haley_fallSun4inlawEmily.DSV.NonbinaryEmily}}"
+      },
+      "When": {
+        "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:HaleyDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryEmily": "True"
+      }
+    },
+    {
+      "LogName": "DSV Haley Marriage Dialogue - Modded Haley",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueHaley",
+      "Entries": {
+        "Rainy_Day_3": "{{i18n: CFE_Haley_Married_RainyDay_{{Random: 7.DSV.ModdedHaley,8}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Haley_Married_RainyDay_{{Random: 9{{GenderNeutralCompat}}.DSV.{{DSV.Core/ConfigValue:HaleyVariant}}Haley,10{{GenderNeutralCompat}}}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}"
+      },
+      "When": {
+        "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:HaleyDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:HaleyVariant |contains= Black, Romani}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.TenthousandcatsHaley}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.AirynHaley}}' = 'true'": true
+      }
+    },
+    {
+      "LogName": "DSV Haley Marriage Dialogue - Nonbinary Emily",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueHaley",
+      "Entries": {
+        "Rainy_Night_2": "{{i18n: CFE_Haley_Married_RainyNight_{{Random: 5,6.DSV.NonbinaryEmily}}}}",
+        "Outdoor_1": "{{i18n: CFE_Haley_Married_Outdoor_{{Random: 3.DSV.NonbinaryEmily,4}}}}",
+        "summer_12": "{{i18n: CFE_Haley_Married_summer12.DSV.NonbinaryEmily}}"
+      },
+      "When": {
+        "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:HaleyDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryEmily": "True"
+      }
+    },
+    {
+      "LogName": "DSV Haley Festival Dialogue - Flower Queen's Crown (Flower Dance)",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Haley_y2": "{{i18n: CFE_FlowerDance_Haley_y2.DSV.FlowerQueensCrown}}"
+      },
+      "When": {
+        "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:HaleyDialogue": "True",
+        "Year |contains= 1, 2, 3, 4": false,
+        "CFE_Festivals": "true",
+        "SyncedRandom": "True",
+				"DSV.Core/ConfigValue:FlowerQueensCrown": "True",
+        "DSV.Core/FlowerQueen |contains= Haley": false
+      }
+    },
+    //HARVEY
+    {
+      "LogName": "DSV Harvey Daily Dialogue - Modded Harvey",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Harvey",
+      "Entries": {
+        "Tue2": "{{i18n: CFE_Harvey_Tue2.DSV.ModdedHarvey}}",
+        "summer_Fri4": "{{i18n: CFE_Harvey_summerFri4.DSV.ModdedHarvey}}",
+        "fall_Sat8": "{{i18n: CFE_Harvey_fallSat8.DSV.ModdedHarvey}}"
+      },
+      "When": {
+        "Query: '{{CFE_Harvey}}' = 'true' OR ('{{CFE_Harvey}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:HarveyDialogue": "True",
+        "DSV.Core/ConfigValue:HarveyVariant |contains= ModdedSikh, ModdedNonSikh": true
+      }
+    },
+    {
+      "LogName": "DSV Harvey Marriage Dialogue - Modded Sikh Harvey",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+      "Entries": {
+        "Indoor_Night_0": "{{i18n: CFE_Harvey_Married_IndoorNight_{{Random: 1{{GenderNeutralCompat}}.DSV.ModdedSikhHarvey,2{{GenderNeutralCompat}}}}{{GenderNeutralCompat}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Harvey_Married_IndoorNight_{{Random: 3.DSV.ModdedSikhHarvey,4}}}}",
+        "winter_26": "{{i18n: CFE_Harvey_Married_winter26.DSV.ModdedSikhHarvey}}"
+      },
+      "When": {
+        "Query: '{{CFE_Harvey}}' = 'true' OR ('{{CFE_Harvey}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:HarveyDialogue": "True",
+        "DSV.Core/ConfigValue:HarveyVariant |contains= ModdedSikh": true
+      }
+    },
+    //JODI
+    {
+      "LogName": "DSV Jodi Daily Dialogue - No More War",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jodi",
+      "Entries": {
+        "Sun4_2": "{{i18n: CFE_Jodi_Sun4y2.DSV.NoMoreWar}}",
+        "summer_Mon4_2": "{{i18n: CFE_Jodi_summerMon4y2.DSV.NoMoreWar}}",
+        "summer_Wed8_2": "{{i18n: CFE_Jodi_summerWed8y2.DSV.NoMoreWar}}",
+        "winter_Mon10": "{{i18n: CFE_Jodi_winterMon10.DSV.NoMoreWar}}"
+      },
+      "When": {
+        "Query: '{{CFE_Jodi}}' = 'true' OR ('{{CFE_Jodi}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:JodiDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled}}' = 'true' OR '{{HasMod |contains= ShotFromGuns.NoMoreWarKentJournalist}}' = 'true' OR '{{HasMod |contains= Mazout.NoMoreWarSFGKentReporterDeGuerre}}' = 'true' OR (('{{DSV.Core/ConfigValue:JodiVariant |contains= Modded}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi}}' = 'true') AND '{{DSV.Core/ConfigValue:NoMoreWarDialogueEdits}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "DSV Jodi Daily Dialogue - Religion Edits",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jodi",
+      "Entries": {
+        "Mon2": "{{i18n: CFE_Jodi_Mon2.DSV.ReligionEdits}}"
+      },
+      "When": {
+        "Query: '{{CFE_Jodi}}' = 'true' OR ('{{CFE_Jodi}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:JodiDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:JodiVariant |contains= Modded}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi}}' = 'true' OR '{{DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled}}' = 'true' OR '{{DSV.Core/ConfigValue:JewishMullners}}' = 'true' OR '{{DSV.Core/ConfigValue:HarveyVariant |contains= ModdedSikh}}' = 'true'": true
+      }
+    },
+    //KENT
+    {
+      "LogName": "DSV Kent Daily Dialogue - No More War",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Kent",
+      "Entries": {
+        "AcceptGift_(O)446": "{{i18n: CFE_Kent_RabbitsFoot.DSV.NoMoreWar}}",
+        "winter_Mon10": "{{i18n: CFE_Kent_winterMon10.DSV.NoMoreWar}}",
+        "Tue_019": "{{i18n: CFE_Kent_Tue10_019.DSV.NoMoreWar}}",
+        "Wed6": "{{i18n: CFE_Kent_Wed6.DSV.NoMoreWar}}",
+        "Thu8": "{{i18n: CFE_Kent_Thu8.DSV.NoMoreWar}}",
+        "Fri10": "{{i18n: CFE_Kent_Fri10.DSV.NoMoreWar}}",
+        "Sat4": "{{i18n: CFE_Kent_Sat4.DSV.NoMoreWar}}",
+        "Sat6": "{{i18n: CFE_Kent_Sat6.DSV.NoMoreWar}}"
+      },
+      "When": {
+        "Query: '{{CFE_Kent}}' = 'true' OR ('{{CFE_Kent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:KentDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled}}' = 'true' OR '{{HasMod |contains= ShotFromGuns.NoMoreWarKentJournalist}}' = 'true' OR '{{HasMod |contains= Mazout.NoMoreWarSFGKentReporterDeGuerre}}' = 'true' OR (('{{DSV.Core/ConfigValue:JodiVariant |contains= Modded}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi}}' = 'true') AND '{{DSV.Core/ConfigValue:NoMoreWarDialogueEdits}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "DSV Kent Daily Dialogue - Omani Kent",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Kent",
+      "Entries": {
+        "summer_Wed10": "{{i18n: CFE_Kent_summerWed10.DSV.OmaniKent}}",
+        "winter_Fri10": "{{i18n: CFE_Kent_winterFri10.DSV.OmaniKent}}"
+      },
+      "When": {
+        "Query: '{{CFE_Kent}}' = 'true' OR ('{{CFE_Kent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:KentDialogue": "True",
+        "DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled": true
+      }
+    },
+    {
+      "LogName": "DSV Kent Daily Dialogue - Trans Sam",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Kent",
+      "Entries": {
+        "Thu6": "{{i18n: CFE_Kent_Thu6.DSV.TransSam}}",
+        "winter_Fri10": "{{i18n: CFE_Kent_winterFri10.DSV.OmaniKent}}"
+      },
+      "When": {
+        "Query: '{{CFE_Kent}}' = 'true' OR ('{{CFE_Kent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:KentDialogue": "True"
+      }
+    },
+    //LEAH
+    {
+      "LogName": "DSV Leah Daily Dialogue - Native Leah",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",
+      "Entries": {
+        "AcceptGift_(O)348": null,
+        "AcceptGift_(O)350": "{{i18n: CFE_Leah_Juice.DSV.NativeLeah}}",
+        "AcceptGift_(O)426": "{{i18n: CFE_Leah_GoatCheese.DSV.NativeLeah}}",
+        "Mon4": "{{i18n: CFE_Leah_repeated_1}}",
+        "summer_Tue6": "{{i18n: CFE_Leah_summerTue6}}",
+        "summer_Wed8": "{{i18n: CFE_Leah_summerWed8}}",
+        "fall_Fri4": "{{i18n: CFE_Leah_repeated_1}}",
+        "winter_Fri10": "{{i18n: CFE_Leah_winterFri10}}"
+      },
+      "When": {
+        "Query: '{{CFE_Leah}}' = 'true' OR ('{{CFE_Leah}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:LeahDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:LeahVariant |contains= Native}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.JoLeah}}' = 'true'": true
+      }
+    },
+    {
+      "LogName": "DSV Leah Marriage Dialogue - Turkish Gus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",
+      "Entries": {
+        "fall_10": "{{i18n: CFE_Leah_Married_fall10.DSV.TurkishGus}}"
+      },
+      "When": {
+        "Query: '{{CFE_Leah}}' = 'true' OR ('{{CFE_Leah}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:LeahDialogue": "True",
+        "DSV.Core/ConfigValue:GusVariant |contains= Modded": true
+      }
+    },
+    //LINUS
+    {
+      "LogName": "DSV Linus Daily Dialogue - Modded Linus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "Tue10": "{{i18n: CFE_Linus_Tue10.DSV.ModdedLinus}}",
+        "summer_Tue8": "{{i18n: CFE_Linus_summerTue8.DSV.ModdedLinus}}",
+        "fall_Sat10": "{{i18n: CFE_Linus_fallSat10.DSV.ModdedLinus}}",
+        "winter_Tue8": "{{i18n: CFE_Linus_winterTue8.DSV.ModdedLinus}}"
+      },
+      "When": {
+        "Query: '{{CFE_Linus}}' = 'true' OR ('{{CFE_Linus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:LinusDialogue |contains= True": true,
+        "DSV.Core/ConfigValue:LinusVariant |contains= Modded": true,
+        "HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    //MARU
+    {
+      "LogName": "DSV Maru Daily Dialogue - Nonbinary Sebastian",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        "summer_Tue2": "{{i18n: CFE_Maru_summerTue2.DSV.NonbinarySebastian}}",
+        "summer_Fri4": "{{i18n: CFE_Maru_summerFri4.DSV.NonbinarySebastian}}",
+        "winter_Thu8": "{{i18n: CFE_Maru_winterThu8.DSV.NonbinarySebastian}}",
+        "winter_Thu6": "{{i18n: CFE_Maru_winterThu6.DSV.NonbinarySebastian}}",
+        "winter_Thu4_inlaw_Sebastian": "{{i18n: CFE_Maru_winterThu4inlawSebastian.DSV.NonbinarySebastian}}",
+        "winter_Thu4": "{{i18n: CFE_Maru_winterThu4.DSV.NonbinarySebastian}}"
+      },
+      "When": {
+        "Query: '{{CFE_Maru}}' = 'true' OR ('{{CFE_Maru}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:MaruDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinarySebastian": "True"
+      }
+    },
+    {
+      "LogName": "DSV Maru Festival Dialogue - Nonbinary Sebastian (Festival of Ice)",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "Maru": "{{i18n: CFE_IceFest_Maru.DSV.NonbinarySebastian}}"
+      },
+      "When": {
+        "Query: '{{CFE_Maru}}' = 'true' OR ('{{CFE_Maru}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:MaruDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinarySebastian": "True",
+        "Year |contains= 1, 2, 3, 4": false,
+        "CFE_Festivals": "true",
+        "SyncedRandom": "True"
+      }
+    },
+    //PAM
+    {
+      "LogName": "DSV Pam Daily Dialogue - Religion Edits",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pam",
+      "Entries": {
+        "winter_Thu10": "{{i18n: CFE_Pam_winterThu10.DSV.ReligionEdits}}"
+      },
+      "When": {
+        "Query: '{{CFE_Pam}}' = 'true' OR ('{{CFE_Pam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:PamDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:JodiVariant |contains= Modded}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi}}' = 'true' OR '{{DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled}}' = 'true' OR '{{DSV.Core/ConfigValue:JewishMullners}}' = 'true' OR '{{DSV.Core/ConfigValue:HarveyVariant |contains= ModdedSikh}}' = 'true'": true
+      }
+    },
+    //PENNY
+    {
+      "LogName": "DSV Penny Daily Dialogue - Trans Penny & Sam",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Penny",
+      "Entries": {
+        "Thu10": "{{i18n: CFE_Penny_Thu10.DSV.TransPennySam}}"
+      },
+      "When": {
+        "Query: '{{CFE_Penny}}' = 'true' OR ('{{CFE_Penny}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:PennyDialogue": "True"
+      }
+    },
+    {
+      "LogName": "DSV Penny Daily Dialogue - Modded Linus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Penny",
+      "Entries": {
+        "winter_Fri2": "{{i18n: CFE_Penny_winterFri2.DSV.ModdedLinus}}"
+      },
+      "When": {
+        "Query: '{{CFE_Penny}}' = 'true' OR ('{{CFE_Penny}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:PennyDialogue": "True",
+        "DSV.Core/ConfigValue:LinusVariant |contains= Modded": true
+      }
+    },
+    {
+      "LogName": "DSV Penny Marriage Dialogue - Trans Penny",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialoguePenny",
+      "Entries": {
+        "Indoor_Night_1": "{{i18n: CFE_Penny_Married_IndoorNight_{{Random: 3.DSV.TransPenny,4}}}}"
+      },
+      "When": {
+        "Query: '{{CFE_Penny}}' = 'true' OR ('{{CFE_Penny}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:PennyDialogue": "True"
+      }
+    },
+    //PIERRE
+    {
+      "LogName": "DSV Pierre Daily Dialogue - Nonbinary Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pierre",
+      "Entries": {
+        "Fri4": "{{i18n: CFE_Pierre_repeated_3}}",
+        "summer_Sun10": "{{i18n: CFE_Pierre_repeated_3.DSV.NonbinaryAbigail}}",
+        "fall_Mon4_inlaw_Abigail": "{{i18n: CFE_Pierre_fallMon4inlawAbigail.DSV.NonbinaryAbigail}}",
+        "winter_Mon4_inlaw_Abigail": "{{i18n: CFE_Pierre_winterMon4inlawAbigail.DSV.NonbinaryAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Pierre}}' = 'true' OR ('{{CFE_Pierre}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:PierreDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True"
+      }
+    },
+    //ROBIN
+    {
+      "LogName": "DSV Robin Daily Dialogue - Nonbinary Sebastian",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "Thu8": "{{i18n: CFE_Robin_repeated_1.DSV.NonbinarySebastian}}",
+        "Sat4": "{{i18n: CFE_Robin_Sat4.DSV.NonbinarySebastian}}",
+        "summer_Sat10": "{{i18n: CFE_Robin_repeated_1.DSV.NonbinarySebastian}}",
+        "winter_Tue10": "{{i18n: CFE_Robin_winterTue10.DSV.NonbinarySebastian}}"
+      },
+      "When": {
+        "Query: '{{CFE_Robin}}' = 'true' OR ('{{CFE_Robin}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:RobinDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinarySebastian": "True"
+      }
+    },
+    //SAM
+    {
+      "LogName": "DSV Sam Daily Dialogue - Trans Penny & Sam",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",
+      "Entries": {
+        "winter_Tue8": "{{i18n: CFE_Sam_winterTue8.DSV.TransPennySam}}",
+        "Thu4_2": "{{i18n: CFE_Sam_Thu4y2.DSV.TransSam}}"
+      },
+      "When": {
+        "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:SamDialogue": "True"
+      }
+    },
+    {
+      "LogName": "DSV Sam Daily Dialogue - Nonbinary Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",
+      "Entries": {
+        "Sat8_1": "{{i18n: CFE_Sam_repeated_2.DSV.NonbinaryAbigail}}",
+        "Sat6": "{{i18n: CFE_Sam_repeated_2.DSV.NonbinaryAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:SamDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True"
+      }
+    },
+    {
+      "LogName": "DSV Sam Daily Dialogue - Nonbinary Sebastian",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",
+      "Entries": {
+        "summer_Thu4": "{{i18n: CFE_Sam_summerThu4.DSV.NonbinarySebastian}}"
+      },
+      "When": {
+        "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:SamDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinarySebastian": "True"
+      }
+    },
+    {
+      "LogName": "DSV Sam Daily Dialogue - No More War",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",
+      "Entries": {
+        "fall_Tue6": "{{i18n: CFE_Sam_fallTue6.DSV.NoMoreWar}}"
+      },
+      "When": {
+        "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:SamDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled}}' = 'true' OR '{{HasMod |contains= ShotFromGuns.NoMoreWarKentJournalist}}' = 'true' OR '{{HasMod |contains= Mazout.NoMoreWarSFGKentReporterDeGuerre}}' = 'true' OR (('{{DSV.Core/ConfigValue:JodiVariant |contains= Modded}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi}}' = 'true') AND '{{DSV.Core/ConfigValue:NoMoreWarDialogueEdits}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "DSV Sam Marriage Dialogue - Nonbinary Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueSam",
+      "Entries": {
+        "fall_4": "{{i18n: CFE_Sam_Married_fall4.DSV.NonbinaryAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:SamDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True"
+      }
+    },
+    {
+      "LogName": "DSV Sam Marriage Dialogue - Nonbinary Sebastian",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueSam",
+      "Entries": {
+        "Rainy_Day_1": "{{i18n: CFE_Sam_Married_RainyDay_{{Random: 3,4.DSV.NonbinarySebastian}}}}",
+        "spring_8": "{{i18n: CFE_Sam_Married_spring8.DSV.NonbinarySebastian}}"
+      },
+      "When": {
+        "Query: '{{CFE_Sam}}' = 'true' OR ('{{CFE_Sam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:SamDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinarySebastian": "True"
+      }
+    },
+    //SANDY
+    {
+      "LogName": "DSV Sandy Daily Dialogue - Modded Sandy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "Entries": {
+        "summer_Mon10": "{{i18n: CFE_Sandy_summerMon10.DSV.ModdedSandy}}"
+      },
+      "When": {
+        "Query: '{{CFE_Sandy}}' = 'true' OR ('{{CFE_Sandy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:SandyDialogue": "True",
+        "DSV.Core/ConfigValue:SandyVariant |contains= Modded": true
+      }
+    },
+    {
+      "LogName": "DSV Sandy Daily Dialogue - Nonbinary Emily",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "Entries": {
+        "Mon6": "{{i18n: CFE_Sandy_Mon6.DSV.NonbinaryEmily}}",
+        "Mon8": "{{i18n: CFE_Sandy_repeated_1.DSV.NonbinaryEmily}}",
+        "winter_Wed10": "{{i18n: CFE_Sandy_repeated_1.DSV.NonbinaryEmily}}"
+      },
+      "When": {
+        "Query: '{{CFE_Sandy}}' = 'true' OR ('{{CFE_Sandy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:SandyDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryEmily": "True"
+      }
+    },
+    //SEBASTIAN
+    {
+      "LogName": "DSV Sebastian Daily Dialogue - Nonbinary Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",
+      "Entries": {
+        "winter_Wed10": "{{i18n: CFE_Sebastian_winterWed10.DSV.NonbinaryAbigail}}"
+      },
+      "When": {
+        "Query: '{{CFE_Sebastian}}' = 'true' OR ('{{CFE_Sebastian}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:SebastianDialogue": "True",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True"
+      }
+    },
+    //VINCENT
+    {
+      "LogName": "DSV Vincent Daily Dialogue - No More War",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Vincent",
+      "Entries": {
+        "Sat2": "{{i18n: CFE_Vincent_Sat2.DSV.NoMoreWar}}"
+      },
+      "When": {
+        "Query: '{{CFE_Vincent}}' = 'true' OR ('{{CFE_Vincent}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= DSV.Core": true,
+        "DSV.Core/ConfigValue:VincentDialogue": "True",
+        "Query: '{{DSV.Core/ConfigValue:KentVariant |contains= Omani, OmaniDisabled}}' = 'true' OR '{{HasMod |contains= ShotFromGuns.NoMoreWarKentJournalist}}' = 'true' OR '{{HasMod |contains= Mazout.NoMoreWarSFGKentReporterDeGuerre}}' = 'true' OR (('{{DSV.Core/ConfigValue:JodiVariant |contains= Modded}}' = 'true' OR '{{HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi}}' = 'true') AND '{{DSV.Core/ConfigValue:NoMoreWarDialogueEdits}}' = 'true')": true
+      }
+    }
+  ]
+}

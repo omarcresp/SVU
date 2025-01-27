@@ -1,0 +1,267 @@
+{
+	"Changes":[
+		//This is for regular dialogues. Festival Dialogue changes are in another file, as are early dialogues.
+		
+		//Bryle
+		
+		{
+			"LogName": "Winter Star, Gift From Bryle",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Bryle",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Bryle.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Bryle.WinterStar.After}}",
+			},
+			"When": {
+				"Bryle": "enabled, spicy",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Bryle, Bryle Interested in Faye",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Bryle",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Bryle.WinterStar.Brayle.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Bryle.WinterStar.Brayle.After}}",
+			},
+			"When": {
+				"Bryle": "enabled, spicy",
+				"HasFlag": "FayeBryleLoveStory", //Faye and Bryle are no longer romanceable
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Bryle - Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Bryle",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Bryle.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Bryle.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"Bryle": "enabled, spicy",
+				"relationship:Bryle": "dating",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Bryle - Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Bryle",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Bryle.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Bryle.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Bryle.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Bryle.WinterStar.Married.After}}",
+			},
+			"When": {
+				"Bryle": "enabled, spicy",
+				"relationship:Bryle": "married",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Bryle - Married Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Bryle",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Bryle.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Bryle.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Bryle.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Bryle.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"Bryle": "spicy",
+				"Enable Spicy Dialogue": "true",
+				"relationship:Bryle": "married",
+			},
+		},
+		
+		//Zayne
+		
+		{
+			"LogName": "Winter Star, Gift From Zayne",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Zayne",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Zayne.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Zayne.WinterStar.After}}",
+			},
+			"When": {
+				"Zayne": "enabled, spicy",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Zayne - Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Zayne",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Zayne.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Zayne.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"Zayne": "enabled, spicy",
+				"relationship:Zayne": "dating",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Zayne - Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Zayne",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Zayne.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Zayne.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Zayne.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Zayne.WinterStar.Married.After}}",
+			},
+			"When": {
+				"Zayne": "enabled, spicy",
+				"relationship:Zayne": "married",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Zayne - Married Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Zayne",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Zayne.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Zayne.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Zayne.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Zayne.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"Zayne": "spicy",
+				"Enable Spicy Dialogue": "true",
+				"relationship:Zayne": "married",
+			},
+		},
+		
+		//Jio
+		
+		{
+			"LogName": "Winter Star, Gift From Jio",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jio",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Jio.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Jio.WinterStar.After}}",
+			},
+			"When": {
+				"Jio": "enabled, spicy",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Jio - Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jio",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Jio.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Jio.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"Jio": "enabled, spicy",
+				"relationship:Jio": "dating",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Jio - Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jio",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Jio.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Jio.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Jio.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Jio.WinterStar.Married.After}}",
+			},
+			"When": {
+				"Jio": "enabled, spicy",
+				"relationship:Jio": "married",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Jio - Married Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jio",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Jio.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Jio.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Jio.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Jio.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"Jio": "spicy",
+				"Enable Spicy Dialogue": "true",
+				"relationship:Jio": "married",
+			},
+		},
+	
+		//Daia
+		
+		{
+			"LogName": "Winter Star, Gift From Daia",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Daia",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Daia.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Daia.WinterStar.After}}",
+			},
+			"When": {
+				"Daia": "enabled, spicy",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Daia - Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Daia",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Daia.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Daia.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"Daia": "enabled, spicy",
+				"relationship:Daia": "dating",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Daia - Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Daia",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Daia.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Daia.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Daia.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Daia.WinterStar.Married.After}}",
+			},
+			"When": {
+				"Daia": "enabled, spicy",
+				"relationship:Daia": "married",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Daia - Married Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Daia",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Daia.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Daia.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Daia.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Daia.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"Daia": "spicy",
+				"Enable Spicy Dialogue": "true",
+				"relationship:Daia": "married",
+			},
+		},
+	],
+}

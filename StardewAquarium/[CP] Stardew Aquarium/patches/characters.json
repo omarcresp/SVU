@@ -1,0 +1,228 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+
+  "Changes": [
+    /*********
+    ** NPC data
+    *********/
+    {
+      "LogName": "NPC Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Curator": {
+          "DisplayName": "{{i18n: curator.name}}",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "CanSocialize": false,
+          "ExcludeFromPerfectionScore": true,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "ID": "Default",
+              "Location": "{{ModId}}_CuratorBedroom",
+              "Tile": { "X": 6, "Y": 7 },
+              "Direction": "Down"
+            }
+          ]
+        },
+        "Goldie": {
+          "DisplayName": "{{i18n: goldie.name}}",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "CanSocialize": false,
+          "ExcludeFromPerfectionScore": true,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "ID": "Default",
+              "Location": "{{ModId}}_FishMuseum",
+              "Tile": { "X": 15, "Y": 46 },
+              "Direction": "Down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "NPCs AntiSocial Flag Curator & Goldie",
+      "Action": "EditData",
+      "Target": "Data/AntiSocialNPCs",
+      "Entries": {
+        "Curator": "true",
+        "Goldie": "true"
+      }
+    },
+    {
+      "LogName": "NPC Exclusion Curator & Goldie",
+      "Action": "EditData",
+      "Target": "Data/CustomNPCExclusions",
+      "Entries": {
+        "Curator": "All",
+        "Goldie": "All"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/Curator, Characters/schedules/Goldie",
+      "FromFile": "assets/{{Target}}.json"
+    },
+
+
+    /*********
+    ** Textures
+    *********/
+    {
+      "Action": "Load",
+      "LogName": "NPC portraits & sprites",
+      "Target": "Portraits/Curator, Characters/Curator, Portraits/Goldie, Characters/Goldie",
+      "FromFile": "assets/{{target}}.png"
+    },
+
+
+    /*********
+    ** Dialogue
+    *********/
+    // Curator & Goldie
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Curator, Characters/Dialogue/Goldie",
+      "FromFile": "assets/empty.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Curator",
+      "Entries": {
+        "Mon": "{{i18n: curator.dialogue.Mon}}",
+        "Tue": "{{i18n: curator.dialogue.Tue}}",
+        "Wed": "{{i18n: curator.dialogue.Wed}}",
+        "Thu": "{{i18n: curator.dialogue.Thu}}",
+        "Fri": "{{i18n: curator.dialogue.Fri}}",
+        "Sat": "{{i18n: curator.dialogue.Sat}}",
+        "Sun": "{{i18n: curator.dialogue.Sun}}"
+      }
+    },
+    {
+      "LogName": "Gender Neutral Curator Dialogue",
+      "Target": "Characters/Dialogue/Curator",
+      "Action": "EditData",
+      "Entries": {
+        "Mon": "{{i18n: curator.dialogue.genderNeutral.Mon}}",
+        "Thu": "{{i18n: curator.dialogue.genderNeutral.Thu}}",
+        "Fri": "{{i18n: curator.dialogue.genderNeutral.Fri}}"
+      },
+      "When": {
+        "HasMod |contains=Hana.GenderNeutralityMod": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Goldie",
+      "Entries": {
+        "Mon": "{{i18n: goldie.dialogue.Mon}}",
+        "Tue": "{{i18n: goldie.dialogue.Tue}}",
+        "Wed": "{{i18n: goldie.dialogue.Wed}}",
+        "Thu": "{{i18n: goldie.dialogue.Thu}}",
+        "Fri": "{{i18n: goldie.dialogue.Fri}}",
+        "Sat": "{{i18n: goldie.dialogue.Sat}}",
+        "Sun": "{{i18n: goldie.dialogue.Sun}}"
+      }
+    },
+
+    // conversation topics
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        "AquariumDonated:Pufferfish": "{{i18n: abigail.dialogue.AquariumDonated:Pufferfish}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Penny",
+      "Entries": {
+        "AquariumDonated:Sandfish": "{{i18n: penny.dialogue.AquariumDonated:Sandfish}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",
+      "Entries": {
+        "AquariumDonated:Frog": "Have you been to the Aquarium lately?$0#$b#I saw they have terrarium with a 'Frog', it looked lonely so I donated one of my pet frogs...$7#$b#So it could have a friend.$1"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Willy",
+      "Entries": {
+        // conversation topics
+        "AquariumDonated:Legend": "{{i18n: willy.dialogue.AquariumDonated:Legend}}",
+        "AquariumDonated:Crimsonfish": "{{i18n: willy.dialogue.AquariumDonated:Crimsonfish}}",
+        "AquariumDonated:Angler": "{{i18n: willy.dialogue.AquariumDonated:Angler}}",
+        "AquariumDonated:MutantCarp": "{{i18n: willy.dialogue.AquariumDonated:MutantCarp}}",
+        "AquariumDonated:Glacierfish": "{{i18n: willy.dialogue.AquariumDonated:Glacierfish}}",
+        "AquariumDonated:Pufferchick": "{{i18n: willy.dialogue.AquariumDonated:Pufferchick}}",
+        "AquariumCompletedCT": "{{i18n: willy.dialogue.AquariumCompletedCT}}"
+      }
+    },
+    {
+      "Target": "Characters/Dialogue/Wizard",
+      "Action": "EditData",
+      "Entries": {
+        "AquariumDonated:SuperCucumber": "{{i18n: wizard.dialogue.AquariumDonated:SuperCucumber}}"
+      }
+    },
+
+
+    /*********
+    ** Other
+    *********/
+    /*
+    //Schedules and dialogue for Aquarium School trip
+    {
+      "Action": "Include",
+      "FromFile": "assets/Characters/schedules/test.json, assets/Characters/schedules/Eloise.json, assets/Characters/schedules/Penny.json, assets/Characters/schedules/Jas.json, assets/Characters/schedules/Vincent.json, assets/Characters/schedules/Leo.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      },
+      "Update": "OnLocationChange"
+    },
+    */
+    {
+      "Action": "Include",
+      "FromFile": "patches/charactersGenderNeutral.json",
+      "When": {
+        "HasFile:{{FromFile}}": true,
+        "HasMod": "Hana.GenderNeutralityMod"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "CharacterTranslations/{{Language}}.json",
+      "When": {
+        "HasFile:{{FromFile}}": true
+      }
+    },
+    {
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "Curator_work": "24/25 25 25 26 26 26 27 27 27 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24/24",
+        "Curator_Sleep": "32/32/32"
+      }
+    }
+  ]
+}

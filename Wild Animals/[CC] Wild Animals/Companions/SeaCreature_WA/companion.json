@@ -1,0 +1,110 @@
+{
+	"Name": "SeaCreature_WA",
+	"Type": "Walking",
+	"EnableSpawnAtDayStart": false,
+	"EnableCharacterCollision": false,
+	"EnableFarmerCollision": true,
+	"TravelSpeed": 1,
+	"MaxIdleDistance": -1,
+	"MaxDistanceBeforeTeleport": -1,
+	"IdleBehavior": "Wander",
+	"FrameSizeWidth": 32,
+	"FrameSizeHeight": 32,
+
+	// This plays when the companion travels upwards
+	"UpAnimation": {
+		"StartingFrame": 8,
+		"NumberOfFrames": 4,
+		"Duration": 500,
+	"IdleAnimation": {
+		"StartingFrame": 8,
+		"NumberOfFrames": 4,
+		"Duration": 500
+	}
+	},
+	// This plays when the companion travels downwards
+	"DownAnimation": {
+		"StartingFrame": 0,
+		"NumberOfFrames": 4,
+		"Duration": 500,
+	"IdleAnimation": {
+		"StartingFrame": 0,
+		"NumberOfFrames": 4,
+		"Duration": 500
+	}
+	},
+	// This plays when the companion travels left
+	"LeftAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 7,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 6,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 5,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 4,
+		"Duration": 500,
+		"Flip": true
+		}
+		],
+	"IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 7,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 6,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 5,
+		"Duration": 500,
+		"Flip": true
+		},
+		{
+		"Frame": 4,
+		"Duration": 500,
+		"Flip": true
+		}
+		]
+	}
+	},
+	// This plays when the companion travels right
+	"RightAnimation": {
+		"StartingFrame": 4,
+		"NumberOfFrames": 4,
+		"Duration": 500,
+	"IdleAnimation": {
+		"StartingFrame": 4,
+		"NumberOfFrames": 4,
+		"Duration": 500
+	}
+	},
+
+"Sounds": [
+	{
+	"SoundName": "waterSlosh",
+	"WhenToPlay": "Moving",
+	"TimeBetweenSound": 2000
+	},
+	{
+	"SoundName": "shadowDie",
+	"WhenToPlay": "Idle",
+	"TimeBetweenSound": 5000,
+	"ChanceOfPlaying": 0.1
+	}
+]  
+}

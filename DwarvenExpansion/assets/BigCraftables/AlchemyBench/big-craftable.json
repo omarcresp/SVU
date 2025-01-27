@@ -1,0 +1,256 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_AlchemyBench": {
+                    "Name": "Dwarven Alchemy Bench",
+                    "DisplayName": "{{i18n:AlchemyBench.DisplayName}}",
+                    "Description": "{{i18n:AlchemyBench.Description}}",
+                    "Price": 0,
+                    "Fragility": 0,
+                    "CanBePlacedIndoors": true,
+                    "CanBePlacedOutdoors": true,
+                    "IsLamp": false,
+                    "Texture": "Mods/DwarvenExpansion/BigCraftablesSpritesheet",
+                    "SpriteIndex": 4
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "Dwarven Alchemy Bench": "709 10 428 2 338 5/Home/{{ModId}}_AlchemyBench/true/Mining 9/"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Dwarf",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_AlchemyBench": {
+                    "ID": "{{ModId}}_AlchemyBench",
+                    "ItemId": "(BC){{ModId}}_AlchemyBench",
+                    "Condition": "PLAYER_MINING_LEVEL Current 9",
+                    "Price": "4000",
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_AlchemyBench": {
+                    "OutputRules": [
+                        {
+                            "Id": "Potions",
+                            "Triggers": [
+                                {
+                                    "Id": "Prismatic_Dust",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItem": "{{ModId}}_MineralDust_PrismaticDust",
+                                    "RequiredCount": 1
+                                },
+                                {
+                                    "Id": "ShadowedElixer_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItem": "308",
+                                    "RequiredCount": 3
+                                },
+                                {
+                                    "Id": "DistilledSunlight_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItem": "768",
+                                    "RequiredCount": 10
+                                },
+                                {
+                                    "Id": "FarmersDraught_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "Required_Categories": [
+                                        "category_seeds"
+                                    ],
+                                    "RequiredCount": 15
+                                },
+                                {
+                                    "Id": "MinersDrink_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItem": "80",
+                                    "RequiredCount": 5
+                                },
+                                {
+                                    "Id": "FishermansBrew_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "Required_Categories": [
+                                        "category_fish"
+                                    ],
+                                    "RequiredCount": 3
+                                },
+                                {
+                                    "Id": "WoodsmansTonic_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItem": "709",
+                                    "RequiredCount": 5
+                                },
+                                {
+                                    "Id": "SwordsmansElixir_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItem": "335",
+                                    "RequiredCount": 2
+                                },
+                                {
+                                    "Id": "EngergizingConcontion_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItem": "{{ModId}}_MineralDust_EmeraldDust",
+                                    "RequiredCount": 1
+                                },
+                                {
+                                    "Id": "HealingDraught_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItem": "{{ModId}}_MineralDust_RubyDust",
+                                    "RequiredCount": 1
+                                },
+                                {
+                                    "Id": "RepellentPotion_Input",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItem": "684",
+                                    "RequiredCount": 100
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "OnePerfectDay",
+                                    "ItemId": "{{ModId}}_Potions_OnePerfectDay",
+                                    "Quality": "0",
+                                    "Condition": "ITEM_ID Input {{ModId}}_MineralDust_PrismaticDust"
+                                },
+                                {
+                                    "Id": "Potions_DistilledSunlight",
+                                    "ItemId": "{{ModId}}_Potions_DistilledSunlight",
+                                    "Quality": "0",
+                                    "Condition": "ITEM_ID Input 768"
+                                },
+                                {
+                                    "Id": "Potions_ShadowedElixir",
+                                    "ItemId": "{{ModId}}_Potions_ShadowedElixir",
+                                    "Quality": "0",
+                                    "Condition": "ITEM_ID Input 308"
+                                },
+                                {
+                                    "Id": "Potions_FarmersDraught",
+                                    "ItemId": "{{ModId}}_Potions_FarmersDraught",
+                                    "Quality": "0",
+                                    "Condition": "ITEM_CONTEXT_TAG Input category_seeds"
+                                },
+                                {
+                                    "Id": "Potions_FishermansBrew",
+                                    "ItemId": "{{ModId}}_Potions_FishermansBrew",
+                                    "Quality": "0",
+                                    "Condition": "ITEM_CONTEXT_TAG Input category_fish"
+                                },
+                                {
+                                    "Id": "Potions_MinersDrink",
+                                    "ItemId": "{{ModId}}_Potions_MinersDrink",
+                                    "Quality": "0",
+                                    "Condition": "ITEM_ID Input 80"
+                                },
+                                {
+                                    "Id": "Potions_SwordsmansElixir",
+                                    "ItemId": "{{ModId}}_Potions_SwordsmansElixir",
+                                    "Quality": "0",
+                                    "Condition": "ITEM_ID Input 335"
+                                },
+                                {
+                                    "Id": "Potions_WoodmansTonic",
+                                    "ItemId": "{{ModId}}_Potions_WoodmansTonic",
+                                    "Quality": "0",
+                                    "Condition": "ITEM_ID Input 709"
+                                },
+                                {
+                                    "Id": "Envigorating_Concoction",
+                                    "ItemId": "351",
+                                    "Quality": "0",
+                                    "ObjectDisplayName": "{{i18n:AlchemyBench.Output.Envigorating_Concoction.ObjectDisplayName}}",
+                                    "Condition": "ITEM_ID Input {{ModId}}_MineralDust_EmeraldDust"
+                                },
+                                {
+                                    "Id": "Healing_Draught",
+                                    "ItemId": "773",
+                                    "Quality": "0",
+                                    "ObjectDisplayName": "{{i18n:AlchemyBench.Output.Healing_Draught.ObjectDisplayName}}",
+                                    "Condition": "ITEM_ID Input {{ModId}}_MineralDust_RubyDust"
+                                },
+                                {
+                                    "Id": "Repellent_Potion",
+                                    "ItemId": "772",
+                                    "Quality": "0",
+                                    "ObjectDisplayName": "{{i18n:AlchemyBench.Output.Repellent_Potion.ObjectDisplayName}}",
+                                    "Condition": "ITEM_ID Input 684"
+                                }
+                            ],
+                            "UseFirstValidOutput": true,
+                            "DaysUntilReady": "1"
+                        }
+                    ],
+                    "ReadyTimeModifiers": [
+                        {
+                            "Id": "OnePerfectDay",
+                            "Modification": "Multiply",
+                            "Amount": 7,
+                            "Condition": "ITEM_ID  Input {{ModId}}_MineralDust_PrismaticDust"
+                        },
+                        {
+                            "Id": "SolarAndVoid",
+                            "Modification": "Multiply",
+                            "Amount": 2,
+                            "Condition": "ITEM_ID  Input 768 308"
+                        }
+                    ],
+                    "AdditionalConsumedItems": [
+                        {
+                            "ItemId": "{{ModId}}_Drinks_InfusedSpirits"
+                        }
+                    ],
+                    "LoadEffects": [
+                        {
+                            "Sounds": [
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 30
+                                }
+                            ],
+                            "Frames": [
+                                1
+                            ]
+                        }
+                    ],
+                    "WorkingEffects": [
+                        {
+                            "Sounds": [
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 60
+                                }
+                            ],
+                            "Frames": [
+                                1
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 1,
+                    "WobbleWhileWorking": true
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,117 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Pam_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pam",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)346": "{{i18n: CFE_Pam_Beer}}",
+        "AcceptGift_(O)459": "{{i18n: CFE_Pam_Mead}}",
+        "AcceptGift_(O)303": "{{i18n: CFE_Pam_PaleAle}}",
+        "AcceptGift_(O)24": "{{i18n: CFE_Pam_Parsnip}}",
+        "AcceptGift_(O)199": "{{i18n: CFE_Pam_ParsnipSoup}}",
+        "AcceptGift_(O)873": "{{i18n: CFE_Pam_PinaColada}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Pam}}' = 'true' OR ('{{CFE_Pam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Pam_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pam",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Pam_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Pam_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Pam_Pearl}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Pam_RabbitsFoot}}",
+        "AcceptGift_(O)90": "{{i18n: CFE_Pam_CactusFruit}}",
+        "AcceptGift_(O)208": "{{i18n: CFE_Pam_GlazedYams}}"
+      },
+      "When": { "Query: '{{CFE_Pam}}' = 'true' OR ('{{CFE_Pam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Pam_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Pam": "{{i18n: CFE_Pam_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Pam}}' = 'true' OR ('{{CFE_Pam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Pam_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pam",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Pam_spring1y2}}",
+        "spring_23_1": "{{i18n: CFE_Pam_spring23}}",
+        "spring_23_2": "{{i18n: CFE_Pam_spring23}}",
+        "winter_7_1": "{{i18n: CFE_Pam_winter7}}",
+        "winter_7_2": "{{i18n: CFE_Pam_winter7}}",
+        "winter_28_1": "{{i18n: CFE_Pam_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Pam_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon8": "{{i18n: CFE_Pam_summerMon8}}",
+        "summer_Tue10": "{{i18n: CFE_Pam_summerTue10}}",
+        "summer_Wed10": "{{i18n: CFE_Pam_summerWed10}}",
+        "summer_Thu10": "{{i18n: CFE_Pam_summerThu10}}",
+        "summer_Thu2": "{{i18n: CFE_Pam_summerThu2}}",
+        "summer_Fri8": "{{i18n: CFE_Pam_summerFri8}}",
+        "summer_Sat10": "{{i18n: CFE_Pam_summerSat10}}",
+        "summer_Sat2": "{{i18n: CFE_Pam_summerSat2}}",
+        "summer_Sun10": "{{i18n: CFE_Pam_summerSun10}}",
+
+        "fall_Mon10": "{{i18n: CFE_Pam_fallMon10}}",
+        "fall_Tue10": "{{i18n: CFE_Pam_fallTue10}}",
+        "fall_Wed10": "{{i18n: CFE_Pam_fallWed10}}",
+        "fall_Thu10": "{{i18n: CFE_Pam_fallThu10}}",
+        "fall_Fri10": "{{i18n: CFE_Pam_fallFri10}}",
+        "fall_Sat10": "{{i18n: CFE_Pam_fallSat10}}",
+        "fall_Sun10": "{{i18n: CFE_Pam_fallSun10}}",
+
+        "winter_Mon6": "{{i18n: CFE_Pam_winterMon6}}",
+        "winter_Tue10": "{{i18n: CFE_Pam_winterTue10}}",
+        "winter_Tue4": "{{i18n: CFE_Pam_winterTue4}}",
+        "winter_Wed10": "{{i18n: CFE_Pam_winterWed10}}",
+        "winter_Thu10": "{{i18n: CFE_Pam_winterThu10}}",
+        "winter_Fri8": "{{i18n: CFE_Pam_winterFri8}}",
+        "winter_Sat8": "{{i18n: CFE_Pam_winterSat8}}",
+        "winter_Sun8": "{{i18n: CFE_Pam_winterSun8}}",
+
+        "Mon8": "{{i18n: CFE_Pam_Mon8}}",
+        "Mon6": "{{i18n: CFE_Pam_Mon6}}",
+        "Mon4": "{{i18n: CFE_Pam_Mon4}}",
+        "Mon2": "{{i18n: CFE_Pam_Mon2}}",
+        "Tue8": "{{i18n: CFE_Pam_Tue8}}",
+        "Tue6": "{{i18n: CFE_Pam_Tue6}}",
+        "Tue4": "{{i18n: CFE_Pam_Tue4}}",
+        "Tue2": "{{i18n: CFE_Pam_Tue2{{GenderNeutralCompat}} |Title={{Random:{{GNMTTitle}}}}}}",
+        "Wed10": "{{i18n: CFE_Pam_Wed10}}",
+        "Wed8": "{{i18n: CFE_Pam_Wed8}}",
+        "Wed6": "{{i18n: CFE_Pam_Wed6}}",
+        "Wed4": "{{i18n: CFE_Pam_Wed4}}",
+        "Wed2": "{{i18n: CFE_Pam_Wed2}}",
+        "Thu8": "{{i18n: CFE_Pam_Thu8}}",
+        "Thu6": "{{i18n: CFE_Pam_Thu6}}",
+        "Thu4": "{{i18n: CFE_Pam_Thu4}}",
+        "Fri4": "{{i18n: CFE_Pam_Fri4}}",
+        "Fri2": "{{i18n: CFE_Pam_Fri2}}",
+        "Sat6": "{{i18n: CFE_Pam_Sat6}}",
+        "Sat4": "{{i18n: CFE_Pam_Sat4}}",
+        "Sat2": "{{i18n: CFE_Pam_Sat2}}",
+        "Sun6": "{{i18n: CFE_Pam_Sun6}}",
+        "Sun4": "{{i18n: CFE_Pam_Sun4}}",
+
+        //Generic Weekday Dialogue
+        "winter_Mon": "{{i18n: CFE_Pam_winterMon}}",
+        "Fri": "{{i18n: CFE_Pam_Fri}}"
+      },
+      "When": { "Query: '{{CFE_Pam}}' = 'true' OR ('{{CFE_Pam}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

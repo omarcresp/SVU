@@ -1,0 +1,52 @@
+{ 
+    "Changes": [
+
+    //Loads chair overlays.
+
+      {
+        "LogName": "Chair Fronts",
+        "Action": "Load",
+        "Target": "MadDogBearfam/ChairTiles",
+        "FromFile": "assets/MadDogFurnitureFront.png"
+      },
+
+	//Sit on all these dumb seats
+
+      {
+        "LogName": "Seats",
+        "Action": "EditData",
+        "Target": "Data/ChairTiles",
+        "Entries": {
+          "z_maddogfurniture/21/1": "1/1/down/couch/0/0/false", //red seat couch good
+          "z_maddogfurniture/20/9": "1/1/down/custom 0.5 0 0/0/0/false", //leather chair good
+          "z_maddogfurniture/27/9": "1/2/right/chair/0/0/false", //blue chair good
+          "z_maddogfurniture/28/12": "1/1/right/chair/0/0/false", //dining chair good
+          "z_maddogfurniture/28/14": "1/1/left/chair/0/0/false", //dining chair good
+          "z_maddogfurniture/11/14": "1/1/opposite/stool/0/0/false", //purple stool good
+          "z_maddogfurniture/11/15": "1/1/opposite/stool/0/0/false", //blue stool good
+          "z_maddogfurniture/12/14": "1/1/opposite/stool/0/0/false", //red stool good
+          "z_maddogfurniture/10/42": "1/1/down/couch/0/0/false", //leaf couch good
+          "z_maddogfurniture/15/48": "2/1/down/couch/0/0/false", //white bench good
+
+          "z_maddogfurniture/24/42": "2/1/up/custom 0.5 0 1/24/42/false/MadDogBearfam\\ChairTiles", //green couch
+          "z_maddogfurniture/25/42": "2/1/up/custom 0.5 0 1/25/42/false/MadDogBearfam\\ChairTiles", //green couch
+          "z_maddogfurniture/24/44": "2/2/up/custom 1 0 1/24/44/false/MadDogBearfam\\ChairTiles", //blue couch
+          "z_maddogfurniture/25/44": "2/2/up/custom .5 0 1/25/44/false/MadDogBearfam\\ChairTiles", //blue couch
+          "z_maddogfurniture/24/1": "2/1/up/custom 1 0 1/24/1/false/MadDogBearfam\\ChairTiles", //leather couch face up
+          "z_maddogfurniture/25/1": "2/1/up/custom .5 0 1/25/1/false/MadDogBearfam\\ChairTiles", //leather couch face up
+
+          "z_maddogfurniture/8/8": "1/2/right/couch/8/8/false/MadDogBearfam\\ChairTiles", //leather bench right good
+          "z_maddogfurniture/9/8": "1/2/right/couch/9/8/false/MadDogBearfam\\ChairTiles", //wood bench right good
+          "z_maddogfurniture/10/9": "2/2/up/custom 0.5 0 1/10/9/false/MadDogBearfam\\ChairTiles", //wood bench up
+          "z_maddogfurniture/11/9": "2/2/up/custom 0.5 0 1/11/9/false/MadDogBearfam\\ChairTiles", //wood bench up
+
+          "z_maddogfurniture/19/53": "1/1/down/custom 0 -0.3 1/0/0/false", //toilet good
+
+          "spring_MDSDecor/14/1": "2/1/down/couch/0/0/false",
+          "summer_MDSDecor/14/1": "2/1/down/couch/0/0/false",
+          "fall_MDSDecor/14/1": "2/1/down/couch/0/0/false",
+          "winter_MDSDecor/14/1": "2/1/down/couch/0/0/false"
+        }
+      }
+    ]
+}

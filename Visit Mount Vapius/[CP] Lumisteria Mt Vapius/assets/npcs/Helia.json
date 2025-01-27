@@ -1,0 +1,140 @@
+{
+  "Changes": [
+    {
+      "LogName": "Helia Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/HeliaDiamantiVMV, Characters/HeliaDiamantiVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Helia Spring Portraits",
+      "Action": "Load",
+      "Target": "Portraits/HeliaDiamantiVMV_Spring",
+      "FromFile": "assets/npcs/Portraits/HeliaDiamantiVMVExtra/Spring.png",
+    },
+    {
+      "LogName": "Helia Spring Sprites",
+      "Action": "Load",
+      "Target": "Characters/HeliaDiamantiVMV_Spring",
+      "FromFile": "assets/npcs/Characters/HeliaDiamantiVMVExtra/Spring.png",
+    },
+    {
+      "LogName": "Helia Fall Portraits",
+      "Action": "Load",
+      "Target": "Portraits/HeliaDiamantiVMV_Fall",
+      "FromFile": "assets/npcs/Portraits/HeliaDiamantiVMVExtra/Fall.png",
+    },
+    {
+      "LogName": "Helia Fall Sprites",
+      "Action": "Load",
+      "Target": "Characters/HeliaDiamantiVMV_Fall",
+      "FromFile": "assets/npcs/Characters/HeliaDiamantiVMVExtra/Fall.png",
+    },
+    {
+      "LogName": "Helia Winter Portraits",
+      "Action": "Load",
+      "Target": "Portraits/HeliaDiamantiVMV_Winter",
+      "FromFile": "assets/npcs/Portraits/HeliaDiamantiVMVExtra/Winter.png",
+    },
+    {
+      "LogName": "Helia Winter Sprites",
+      "Action": "Load",
+      "Target": "Characters/HeliaDiamantiVMV_Winter",
+      "FromFile": "assets/npcs/Characters/HeliaDiamantiVMVExtra/Winter.png",
+    },
+    {
+      "LogName": "Helia Diamanti Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "HeliaDiamantiVMV": {
+          "DisplayName": "{{i18n: HeliaDisplayName}}",
+          "BirthSeason": "winter",
+          "BirthDay": 12,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Rude",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "neutral",
+          "CanBeRomanced": false,
+          "SocialTab": "UnknownUntilMet",
+          "IntroductionsQuest": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "FriendsAndFamily": {
+            "NaveenFaycombeSereneVMV": "",
+          },
+		  "CanSocialize": "PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_BusBundle",
+		  "CanVisitIsland": "!DAY_OF_WEEK Tuesday, !DAY_OF_WEEK Saturday",
+          "SpawnIfMissing": true,
+			"Appearance": [
+			  {
+				"Id": "Lumisteria.MtVapiusHeliaSpring",
+				"Condition": "LOCATION_SEASON Here Spring",
+				"Portrait": "Portraits/HeliaDiamantiVMV_Spring",
+				"Sprite": "Characters/HeliaDiamantiVMV_Spring",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusHeliaFall",
+				"Condition": "LOCATION_SEASON Here Fall",
+				"Portrait": "Portraits/HeliaDiamantiVMV_Fall",
+				"Sprite": "Characters/HeliaDiamantiVMV_Fall",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusHeliaWinter",
+				"Condition": "LOCATION_SEASON Here Winter",
+				"Portrait": "Portraits/HeliaDiamantiVMV_Winter",
+				"Sprite": "Characters/HeliaDiamantiVMV_Winter",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			],
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_HeliaHouse",
+					"Tile": { "X": 28, "Y": 9 },
+					"Direction": "right"
+				}
+			],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/HeliaDiamantiVMV/Schedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "HeliaDiamantiVMV": "{{i18n: HeliaGiftLoved{{GiftAnswerHelia}}}}/Lumisteria.MtVapius_Heliodor_Polished/{{i18n: HeliaGiftLiked{{GiftAnswerHelia}}}}/furnace_item/{{i18n: HeliaGiftDislike{{GiftAnswerHelia}}}}/alcohol_item/{{i18n: HeliaGiftHate{{GiftAnswerHelia}}}}/348/{{i18n: HeliaGiftNeutral{{GiftAnswerHelia}}}}/382/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/HeliaDiamantiVMV/Dialogue.json"
+    },
+  ]
+}

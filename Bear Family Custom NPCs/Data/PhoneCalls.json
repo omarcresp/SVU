@@ -1,0 +1,348 @@
+{
+  "Changes": [
+    {
+      "LogName": "Incoming Calls - Sigurd",
+      "Action": "EditData",
+      "Target": "Data/IncomingPhoneCalls",
+      "Entries": {
+        "MadDog.HashtagBearFam_SigurdPhoneA": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sigurd",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sigurd.PhoneCalls.1}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_SigurdPhoneB": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sigurd",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sigurd.PhoneCalls.2}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_SigurdPhoneC": {
+          "TriggerCondition": "SEASON Fall",
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sigurd",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sigurd.PhoneCalls.3}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_SigurdPhoneD": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sigurd",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sigurd.PhoneCalls.4}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_SigurdPhoneE": {
+          "TriggerCondition": "ANY \"WORLD_STATE_FIELD WeatherForTomorrow Storm\" \"WORLD_STATE_FIELD WeatherForTomorrow Rain\"",
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sigurd",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sigurd.PhoneCalls.5}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": -1,
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Incoming Calls - Sondra",
+      "Action": "EditData",
+      "Target": "Data/IncomingPhoneCalls",
+      "Entries": {
+        "MadDog.HashtagBearFam_SondraPhoneA": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sondra",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sondra.PhoneCalls.1}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_SondraPhoneB": {
+          "TriggerCondition": "SEASON Summer",
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sondra",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sondra.PhoneCalls.2}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_SondraPhoneC": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sondra",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sondra.PhoneCalls.3}}$action AddQuest MadDog.HashtagBearFam_161973",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_SondraPhoneD": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sondra",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sondra.PhoneCalls.4}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_SondraPhoneE": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Sondra",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Sondra.PhoneCalls.5}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Incoming Calls - Gunnar",
+      "Action": "EditData",
+      "Target": "Data/IncomingPhoneCalls",
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarPhoneA": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gunnar",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gunnar.PhoneCalls.1}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": -1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_GunnarPhoneB": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gunnar",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gunnar.PhoneCalls.2}}$action AddQuest MadDog.HashtagBearFam_161974",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_GunnarPhoneC": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gunnar",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gunnar.PhoneCalls.3}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_GunnarPhoneD": {
+          "TriggerCondition": "PLAYER_KILLED_MONSTERS Current 'Green Slime' 250",
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gunnar",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gunnar.PhoneCalls.4}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_GunnarPhoneE": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gunnar",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gunnar.PhoneCalls.5}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Incoming Calls - Gudrun",
+      "Action": "EditData",
+      "Target": "Data/IncomingPhoneCalls",
+      "When": {
+        "HasFlag |contains=BearFamExtraMembers": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam_GudrunPhoneA": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gudrun",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gudrun.PhoneCalls.1}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_GudrunPhoneB": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gudrun",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gudrun.PhoneCalls.2}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_GudrunPhoneC": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gudrun",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gudrun.PhoneCalls.3}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_GudrunPhoneD": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gudrun",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gudrun.PhoneCalls.4}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_GudrunPhoneE": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Gudrun",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Gudrun.PhoneCalls.5}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Incoming Calls - Teren",
+      "Action": "EditData",
+      "Target": "Data/IncomingPhoneCalls",
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16199000": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenPhoneA": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Teren",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Teren.PhoneCalls.1}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_TerenPhoneB": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Teren",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Teren.PhoneCalls.2}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_TerenPhoneC": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Teren",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Teren.PhoneCalls.3}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_TerenPhoneD": {
+          "TriggerCondition": "SEASON Fall",
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Teren",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Teren.PhoneCalls.4}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "MadDog.HashtagBearFam_TerenPhoneE": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "MadDog.HashtagBearFam.Teren",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:Teren.PhoneCalls.5}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        }
+      }
+    }
+  ]
+}

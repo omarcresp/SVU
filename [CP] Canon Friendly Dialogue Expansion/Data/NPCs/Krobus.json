@@ -1,0 +1,175 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Krobus_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Krobus",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)16": "{{i18n: CFE_Krobus_WildHorseradish}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Krobus}}' = 'true' OR ('{{CFE_Krobus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Krobus_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Krobus": "{{i18n: CFE_Krobus_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Krobus}}' = 'true' OR ('{{CFE_Krobus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Krobus_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Krobus",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Krobus_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Krobus_RockCandy}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Krobus_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Krobus_RabbitsFoot}}",
+
+        "AcceptGift_(O)305": "{{i18n: CFE_Krobus_VoidEgg}}",
+        "AcceptGift_(O)72": "{{i18n: CFE_Krobus_Diamond}}",
+        "AcceptGift_(O)337": "{{i18n: CFE_Krobus_IridiumBar}}",
+        "AcceptGift_(O)276": "{{i18n: CFE_Krobus_Pumpkin}}"
+      },
+      "When": { "Query: '{{CFE_Krobus}}' = 'true' OR ('{{CFE_Krobus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Krobus_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Krobus",
+      "Entries": {
+        //special dialogue
+        //Date Specific Dialogue
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Krobus_summerMon10}}",
+        "summer_Tue10": "{{i18n: CFE_Krobus_summerTue10}}",
+        "summer_Wed6": "{{i18n: CFE_Krobus_repeated_1}}",
+        "summer_Thu6": "{{i18n: CFE_Krobus_repeated_2}}",
+        "summer_Sat8": "{{i18n: CFE_Krobus_summerSat8}}",
+        "summer_Sun10": "{{i18n: CFE_Krobus_summerSun10}}",
+
+        "fall_Mon10": "{{i18n: CFE_Krobus_fallMon10}}",
+        "fall_Wed10": "{{i18n: CFE_Krobus_fallWed10}}",
+        "fall_Thu10": "{{i18n: CFE_Krobus_fallThu10}}",
+        "fall_Sat10": "{{i18n: CFE_Krobus_fallSat10}}",
+        "fall_Sun10": "{{i18n: CFE_Krobus_fallSun10}}",
+
+        "winter_Mon10": "{{i18n: CFE_Krobus_winterMon10}}",
+        "winter_Tue10": "{{i18n: CFE_Krobus_winterTue10}}",
+        "winter_Wed6": "{{i18n: CFE_Krobus_repeated_1}}",
+        "winter_Thu6": "{{i18n: CFE_Krobus_repeated_2}}",
+        "winter_Sat10": "{{i18n: CFE_Krobus_winterSat10}}",
+
+        "Mon10": "{{i18n: CFE_Krobus_Mon10}}",
+        "Mon8": "{{i18n: CFE_Krobus_Mon8}}",
+        "Mon6": "{{i18n: CFE_Krobus_Mon6}}",
+        "Mon4": "{{i18n: CFE_Krobus_Mon4}}",
+        "Tue10": "{{i18n: CFE_Krobus_Tue10}}",
+        "Tue8": "{{i18n: CFE_Krobus_Tue8}}",
+        "Tue6": "{{i18n: CFE_Krobus_Tue6}}",
+        "Tue4": "{{i18n: CFE_Krobus_Tue4}}",
+        "Tue2": "{{i18n: CFE_Krobus_Tue2}}",
+        "Wed10": "{{i18n: CFE_Krobus_Wed10}}",
+        "Wed8": "{{i18n: CFE_Krobus_Wed8}}",
+        "Wed6": "{{i18n: CFE_Krobus_Wed6}}",
+        "Wed4": "{{i18n: CFE_Krobus_Wed4}}",
+        "Wed2": "{{i18n: CFE_Krobus_Wed2}}",
+        "Thu8": "{{i18n: CFE_Krobus_Thu8}}",
+        "Thu6": "{{i18n: CFE_Krobus_Thu6}}",
+        "Thu4": "{{i18n: CFE_Krobus_Thu4}}",
+        "Thu2": "{{i18n: CFE_Krobus_Thu2}}",
+        "Sat10": "{{i18n: CFE_Krobus_Sat10}}",
+        "Sat8": "{{i18n: CFE_Krobus_Sat8}}",
+        "Sat6": "{{i18n: CFE_Krobus_Sat6}}",
+        "Sun6": "{{i18n: CFE_Krobus_Sun6}}",
+        "Sun2": "{{i18n: CFE_Krobus_Sun2}}"
+
+        //Generic Weekday Dialogue
+      },
+      "When": { "Query: '{{CFE_Krobus}}' = 'true' OR ('{{CFE_Krobus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Krobus_Marriage_GenericDialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Krobus": "{{i18n: CFE_Krobus_Married_spouseRoom_{{random: 1,2,3,4,5}}}}"
+      },
+      "When": { "Query: '{{CFE_Krobus}}' = 'true' OR ('{{CFE_Krobus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Krobus_Marriage",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueKrobus",
+      "Entries": {
+        //these lines follow different priority rules than unmarried dialogue does, with different options having different % likelihoods to show up each day when the right conditions are met.
+        //
+        //Weather specific dialogue
+        //note that Indoor_Day is the key for any weather besides rain, even when the Krobus is outside. Day means prior to 6pm. Indoor_Night is specific to inside the farmhouse when it's not raining after 6pm.
+        "Rainy_Day_0": "{{i18n: CFE_Krobus_Married_RainyDay_{{Random: 1,2}}}}",
+        "Rainy_Day_1": "{{i18n: CFE_Krobus_Married_RainyDay_{{Random: 3,4}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Krobus_Married_RainyDay_{{Random: 5,6}}}}",
+        "Rainy_Day_3": "{{i18n: CFE_Krobus_Married_RainyDay_{{Random: 7,8}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Krobus_Married_RainyDay_{{Random: 9,10}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Krobus_Married_RainyNight_{{Random: 1,2}}}}",
+        "Rainy_Night_1": "{{i18n: CFE_Krobus_Married_RainyNight_{{Random: 3,4}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Krobus_Married_RainyNight_{{Random: 5,6}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Krobus_Married_RainyNight_{{Random: 7,8,9}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Krobus_Married_RainyNight_{{Random: 10,11,12}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Krobus_Married_IndoorDay_{{Random: 1,2,3}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Krobus_Married_IndoorDay_{{Random: 4,5,6}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Krobus_Married_IndoorDay_{{Random: 7,8,9}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Krobus_Married_IndoorDay_{{Random: 10,11,12}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Krobus_Married_IndoorDay_{{Random: 13,14,15}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Krobus_Married_IndoorNight_{{Random: 1,2}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Krobus_Married_IndoorNight_{{Random: 3,4}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Krobus_Married_IndoorNight_{{Random: 5,6}}}}",
+        "Indoor_Night_3": "{{i18n: CFE_Krobus_Married_IndoorNight_{{Random: 7,8}}}}",
+        "Indoor_Night_4": "{{i18n: CFE_Krobus_Married_IndoorNight_{{Random: 9,10,11}}}}",
+
+        //locational specific dialogue
+
+        //Date Specific Dialogue
+        "spring_1": "{{i18n: CFE_Krobus_Married_spring1}}",
+        "spring_6": "{{i18n: CFE_Krobus_Married_spring6}}",
+        "spring_15": "{{i18n: CFE_Krobus_Married_spring15}}",
+        "spring_23": "{{i18n: CFE_Krobus_Married_spring23}}",
+
+        "summer_1": "{{i18n: CFE_Krobus_Married_summer1}}",
+        "summer_8": "{{i18n: CFE_Krobus_Married_summer8}}",
+        "summer_10": "{{i18n: CFE_Krobus_Married_summer10}}",
+        "summer_15": "{{i18n: CFE_Krobus_Married_summer15}}",
+
+        "fall_8": "{{i18n: CFE_Krobus_Married_fall8}}",
+        "fall_15": "{{i18n: CFE_Krobus_Married_fall15}}",
+        "fall_17": "{{i18n: CFE_Krobus_Married_fall17}}",
+        "fall_18": "{{i18n: CFE_Krobus_Married_fall18}}",
+        "fall_24": "{{i18n: CFE_Krobus_Married_fall24}}",
+
+        "winter_7": "{{i18n: CFE_Krobus_Married_winter7}}",
+        "winter_16": "{{i18n: CFE_Krobus_Married_winter16}}",
+        "winter_28": "{{i18n: CFE_Krobus_Married_winter28}}"
+
+        //Seasonal Dialogue
+        //shown at 9+ hearts, with a 5% chance each day
+        //currently unused. key looks like "fall_Krobus"
+
+        //Affection Specific Dialogue
+        //only shown inside the farmhouse between 11 and 6pm, or at the start of day if no other dialogue is chosen first.
+        //Bad or Neutral responses are randomly chosen between if the player has less than 9 hearts, Good or Neutral responses have a 50/50 chance with 10+ hearts, and the likelihood of a Good response goes up to 87% with 11+ hearts
+        //currently unused. key looks like "Bad_3"
+      },
+      "When": { "Query: '{{CFE_Krobus}}' = 'true' OR ('{{CFE_Krobus}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "Changes": [
+    /*{
+      "LogName": "Maddy Pellegrin Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "MaddyPellegrinVMV": "adult/neutral/outgoing/positive/female/not-datable/null/Other/winter 21/Emily '' AsterPellegrinVMV 'sister'/Lumisteria.MtVapius_AsterHouse 9 4/Maddy"
+      }
+    },*/
+    {
+      "LogName": "Maddy Pellegrin Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "MaddyPellegrinVMV": {
+          "DisplayName": "{{i18n: MaddyDisplayName}}",
+          "BirthSeason": "winter",
+          "BirthDay": 21,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "SocialTab": "UnknownUntilMet",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "FriendsAndFamily": {
+            "Emily": "",
+            "MoiraDuboisVMV": "",
+            "AsterPellegrinVMV": "{{i18n: MaddyAsterName}}"
+          },
+          "SpawnIfMissing": true,
+			"Appearance": [
+			  {
+				"Id": "Lumisteria.MtVapiusMaddySummer",
+				"Condition": "LOCATION_SEASON Here Summer",
+				"Portrait": "Portraits/MaddyPellegrinVMV_Summer",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusMaddyWinter",
+				"Condition": "LOCATION_SEASON Here Winter",
+				"Portrait": "Portraits/MaddyPellegrinVMV_Winter",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			],
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_AsterHouse",
+					"Tile": { "X": 9, "Y": 4 },
+					"Direction": "down"
+				}
+			],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "LogName": "Maddy Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/MaddyPellegrinVMV, Characters/MaddyPellegrinVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Maddy Winter Portraits",
+      "Action": "Load",
+      "Target": "Portraits/MaddyPellegrinVMV_Winter",
+      "FromFile": "assets/npcs/Portraits/MaddyPellegrinVMVExtra/Winter.png"
+    },
+    {
+      "LogName": "Maddy Winter Portraits",
+      "Action": "Load",
+      "Target": "Portraits/MaddyPellegrinVMV_Summer",
+      "FromFile": "assets/npcs/Portraits/MaddyPellegrinVMVExtra/Summer.png"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/MaddyPellegrinVMV/Schedule.json"
+    },
+    {
+      "LogName": "Schedule Strings",
+      "Action": "Load",
+      "Target": "Strings/schedules/MaddyPellegrinVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include string for token.
+    {
+      "LogName": "Schedule Strings Edit",
+      "Action": "Include",
+      "FromFile": "assets/npcs/MaddyPellegrinVMV/StringSchedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "MaddyPellegrinVMV": "{{i18n: MaddyGiftLoved{{GiftAnswerMaddy}}{{Random:R01, R01, R02}}}}/687 635 424 575 Lumisteria.MtVapius_Cooking_JamPie/{{i18n: MaddyGiftLiked{{GiftAnswerMaddy}}}}/-12 72 82 84 prehistoric_item/{{i18n: MaddyGiftDislike{{GiftAnswerMaddy}}}}/-5 -6 -81 2 16/{{i18n: MaddyGiftHate{{GiftAnswerMaddy}}}}/766 412/{{i18n: MaddyGiftNeutral{{GiftAnswerMaddy}}}}/item_type_arch 330/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MaddyPellegrinVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/MaddyPellegrinVMV/Dialogue.json"
+    },
+    {
+      "LogName": "Maddy Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "MaddyPellegrinVMV_fish": "12 12 24 24/24 24 24 24 25 24 24 24 24 26 26 24 24 24 24 24 24 25 25 24 24 24 24 24 26/24 24 12 12",
+      }
+    },
+  ]
+}

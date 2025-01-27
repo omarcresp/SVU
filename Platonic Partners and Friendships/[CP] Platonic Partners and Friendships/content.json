@@ -1,0 +1,576 @@
+{
+    "Format": "2.0.0",
+    "DynamicTokens": [
+
+      // Config options - Relationship Types
+    {
+        "Name": "Abigail",
+        "Value": "{{PPAF.Core/ConfigValue:AbigailRelationshipType}}",
+    },
+    {
+        "Name": "Alex",
+        "Value": "{{PPAF.Core/ConfigValue:AlexRelationshipType}}",
+    },
+    {
+        "Name": "Elliott",
+        "Value": "{{PPAF.Core/ConfigValue:ElliottRelationshipType}}",
+    },
+    {
+        "Name": "Emily",
+        "Value": "{{PPAF.Core/ConfigValue:EmilyRelationshipType}}",
+    },
+    {
+        "Name": "Haley",
+        "Value": "{{PPAF.Core/ConfigValue:HaleyRelationshipType}}",
+    },
+    {
+        "Name": "Harvey",
+        "Value": "{{PPAF.Core/ConfigValue:HarveyRelationshipType}}",
+    },
+    {
+        "Name": "Leah",
+        "Value": "{{PPAF.Core/ConfigValue:LeahRelationshipType}}",
+    },
+    {
+        "Name": "Maru",
+        "Value": "{{PPAF.Core/ConfigValue:MaruRelationshipType}}",
+    },
+    {
+        "Name": "Penny",
+        "Value": "{{PPAF.Core/ConfigValue:PennyRelationshipType}}",
+    },
+    {
+        "Name": "Sam",
+        "Value": "{{PPAF.Core/ConfigValue:SamRelationshipType}}",
+    },
+    {
+        "Name": "Sebastian",
+        "Value": "{{PPAF.Core/ConfigValue:SebastianRelationshipType}}",
+    },
+    {
+        "Name": "Shane",
+        "Value": "{{PPAF.Core/ConfigValue:ShaneRelationshipType}}",
+    },
+
+      // Config options - Partnership Configuration
+    {
+        "Name": "CustomPlatonicLabels",
+        "Value": "{{PPAF.Core/ConfigValue:CustomPlatonicLabels}}",
+    },
+    {
+        "Name": "CustomRomanticLabels",
+        "Value": "{{PPAF.Core/ConfigValue:CustomRomanticLabels}}",
+    },
+    {
+        "Name": "RelationshipLabel",
+        "Value": "{{PPAF.Core/ConfigValue:RelationshipLabel}}",
+    },
+    {
+        "Name": "TermOfEndearment",
+        "Value": "{{PPAF.Core/ConfigValue:TermOfEndearment}}",
+    },
+    {
+        "Name": "AlwaysAdopt",
+        "Value": "{{PPAF.Core/ConfigValue:AlwaysAdopt}}",
+    },
+    // SocialMenuLabel must come after RelationshipStyle is defined (Line 206)
+
+      // Config options - Visual
+    {
+        "Name": "BraceletTheme",
+        "Value": "{{PPAF.Core/ConfigValue:BraceletTheme}}",
+    },
+    {
+        "Name": "UseLovePortraits",
+        "Value": "{{PPAF.Core/ConfigValue:UseLovePortraits}}",
+    },
+    {
+        "Name": "EnablePortraitEdits_FullyPlatonic",
+        "Value": "{{PPAF.Core/ConfigValue:EditPortraits_FullyPlatonic}}",
+    },
+    {
+        "Name": "EnablePortraitEdits_RomanceWithoutSex",
+        "Value": "{{PPAF.Core/ConfigValue:EditPortraits_RomanceWithoutSex}}",
+    },
+    {
+        "Name": "EnablePortraitEdits_SexWithoutRomance",
+        "Value": "{{PPAF.Core/ConfigValue:EditPortraits_SexWithoutRomance}}",
+    },
+    {
+        "Name": "EnableSpriteEdits",
+        "Value": "{{PPAF.Core/ConfigValue:EditSprites}}",
+    },
+
+      // Config options - Compatibility
+    {
+        "Name": "Auncle",
+        "Value": "{{PPAF.Core/ConfigValue:Auncle}}",
+    },
+    {
+        "Name": "SpousesReact_ExInvolvement",
+        "Value": "{{PPAF.Core/ConfigValue:SpousesReact_ExInvolvement}}",
+    },
+
+      // Config options - Schedules
+    {
+        "Name": "EnableScheduleChanges",
+        "Value": "{{PPAF.Core/ConfigValue:EnableScheduleChanges}}",
+    },
+
+      // Actual Dynamic Tokens
+    {
+        "Name": "SpouseOrRoommate",
+        "Value": "{{Merge:{{Spouse}},{{Roommate}} |valueAt=0}}"
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:AbigailRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Abigail"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:AlexRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Alex"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:ElliottRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Elliott"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:EmilyRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Emily"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:HaleyRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Haley"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:HarveyRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Harvey"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:LeahRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Leah"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:MaruRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Maru"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:PennyRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Penny"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:SamRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Sam"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:SebastianRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Sebastian"
+        }
+    },
+    {
+        "Name": "RelationshipStyle",
+        "Value": "{{PPAF.Core/ConfigValue:ShaneRelationshipType}}",
+        "When": {
+            "SpouseOrRoommate": "Shane"
+        }
+    },
+    {
+        "Name": "PlatonicSocialMenuLabel",
+        "Value": "{{PPAF.Core/ConfigValue:PlatonicLabel_housemate}}",
+    },
+    {
+        "Name": "RomanticSocialMenuLabel",
+        "Value": "{{PPAF.Core/ConfigValue:RomanticLabel_housemate}}",
+    },
+    {
+        "Name": "DialogueYear",
+        "Value": null,
+        "When":
+        {
+            "Year": "1",
+        },
+    },
+    {
+        "Name": "DialogueYear",
+        "Value": "_2",
+        "When":
+        {
+            "Year |contains=1": "false"
+        },
+    }, ],
+    "Changes": [
+    {
+	"LogName": "Enable Abigail's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Abigail/Abigail_{{PPAF.Core/ConfigValue:AbigailRelationshipType}}.json",
+        "When":
+        {
+                "Abigail |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Alex's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Alex/Alex_{{PPAF.Core/ConfigValue:AlexRelationshipType}}.json",
+        "When":
+        {
+                "Alex |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Elliott's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Elliott/Elliott_{{PPAF.Core/ConfigValue:ElliottRelationshipType}}.json",
+        "When":
+        {
+                "Elliott |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Emily's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Emily/Emily_{{PPAF.Core/ConfigValue:EmilyRelationshipType}}.json",
+        "When":
+        {
+                "Emily |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Haley's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Haley/Haley_{{PPAF.Core/ConfigValue:HaleyRelationshipType}}.json",
+        "When":
+        {
+                "Haley |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Harvey's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Harvey/Harvey_{{PPAF.Core/ConfigValue:HarveyRelationshipType}}.json",
+        "When":
+        {
+                "Harvey |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Leah's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Leah/Leah_{{PPAF.Core/ConfigValue:LeahRelationshipType}}.json",
+        "When":
+        {
+                "Leah |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Maru's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Maru/Maru_{{PPAF.Core/ConfigValue:MaruRelationshipType}}.json",
+        "When":
+        {
+                "Maru |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Penny's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Penny/Penny_{{PPAF.Core/ConfigValue:PennyRelationshipType}}.json",
+        "When":
+        {
+                "Penny |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Sam's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Sam/Sam_{{PPAF.Core/ConfigValue:SamRelationshipType}}.json",
+        "When":
+        {
+                "Sam |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Sebastian's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Sebastian/Sebastian_{{PPAF.Core/ConfigValue:SebastianRelationshipType}}.json",
+        "When":
+        {
+                "Sebastian |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+	"LogName": "Enable Shane's edits according to relationship type",
+        "Action": "Include",
+        "FromFile": "assets/NPCs/Shane/Shane_{{PPAF.Core/ConfigValue:ShaneRelationshipType}}.json",
+        "When":
+        {
+                "Shane |contains=RomanceAndSex": "false",
+        }
+    },
+    {
+        "Action": "Include",
+        "FromFile": "assets/GenericTweaks.json",
+    },
+    {
+        "Action": "Include",
+        "FromFile": "assets/BraceletRejections.json",
+    },
+{
+       "LogName": "Enable friendship bracelet for Abigail",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-1": "propose_roommate_abigail",
+		},
+        "When":
+            {
+                "Abigail": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Alex",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-2": "propose_roommate_alex",
+		},
+        "When":
+            {
+                "Alex": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Elliott",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-3": "propose_roommate_elliott",
+		},
+        "When":
+            {
+                "Elliott": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Emily",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-4": "propose_roommate_emily",
+		},
+        "When":
+            {
+                "Emily": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Haley",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-5": "propose_roommate_haley",
+		},
+        "When":
+            {
+                "Haley": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Harvey",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-6": "propose_roommate_harvey",
+		},
+        "When":
+            {
+                "Harvey": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Leah",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-7": "propose_roommate_leah",
+		},
+        "When":
+            {
+                "Leah": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Maru",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-8": "propose_roommate_maru",
+		},
+        "When":
+            {
+                "Maru": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Penny",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-9": "propose_roommate_penny",
+		},
+        "When":
+            {
+                "Penny": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Sam",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-10": "propose_roommate_sam",
+		},
+        "When":
+            {
+                "Sam": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Sebastian",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-11": "propose_roommate_sebastian",
+		},
+        "When":
+            {
+                "Sebastian": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+{
+       "LogName": "Enable friendship bracelet for Shane",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "TargetField": ["{{ModID}}_FriendshipBracelet", "ContextTags"],
+        "Entries": {
+               "#-12": "propose_roommate_shane",
+		},
+        "When":
+            {
+                "Shane": "FullyPlatonic, SexWithoutRomance",
+            },
+        },
+      {
+	"LogName": "Change friendship bracelet crafting recipe if player can no longer get a Mermaid's Pendant because Krobus",
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Fields":
+        {
+            "{{ModID}}_FriendshipBracelet":
+            {
+                0: "771 5",
+            },
+        },
+        "When":
+            {
+            	  "Roommate": "Krobus",
+                  "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+    {
+	"LogName": "Change friendship bracelet item description if player can no longer get a Mermaid's Pendant",
+        "Action": "EditData",
+        "Target": "Data/ObjectInformation",
+        "Fields":
+        {
+            "{{ModID}}_FriendshipBracelet":
+            {
+                5: "This can be used to ask someone to be your platonic roommate. (Since you already have a housemate and can't easily get another Mermaid's Pendant, the crafting recipe has been altered so it won't lock out the Craft Master achievement.)"
+            },
+        },
+        "When":
+            {
+            	  "HasValue:{{spouse}}": "true",
+                  "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+    },
+    {
+	"LogName": "Change friendship bracelet item description if player can no longer get a Mermaid's Pendant because Krobus",
+        "Action": "EditData",
+        "Target": "Data/ObjectInformation",
+        "Fields":
+        {
+            "{{ModID}}_FriendshipBracelet":
+            {
+                5: "This can be used to ask someone to be your platonic roommate. (Since you already have a housemate and can't easily get another Mermaid's Pendant, the crafting recipe has been altered so it won't lock out the Craft Master achievement.)"
+            },
+        },
+        "When":
+            {
+            	  "Roommate": "Krobus",
+                  "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+    },
+    {
+	"LogName": "Edit pregnancy lines to be about adoption",
+        "Action": "Include",
+        "FromFile": "assets/AdoptionEdits.json",
+        "When":
+        {
+            "AlwaysAdopt": true,
+        }
+    },
+    {
+	"LogName": "Disable redundant schedule changes if Bachelor(ettes) Stay Friends is installed",
+        "Action": "Include",
+        "FromFile": "assets/ScheduleChanges.json",
+        "When":
+        {
+            "EnableScheduleChanges": "true",
+            "HasMod |contains=missmarlot.bachelorsstayfriends": "false"
+        }
+    }]
+}

@@ -1,0 +1,58 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)mytigio.dwarven_expansion_Pulverizer",
+                "OutputRules",
+                "30_Minute_Dusts",
+                "Triggers"
+            ],
+            "Entries": {
+                "{{ModId}}_Prismatic_Pieces": {
+                    "Id": "{{ModId}}_Prismatic_Pieces",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "(O)Solariaze.Geology_Prismatic_Pieces",
+                    "RequiredCount": 25
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)mytigio.dwarven_expansion_Pulverizer",
+                "OutputRules",
+                "30_Minute_Dusts",
+                "OutputItem"
+            ],
+            "Entries": {
+                "{{ModId}}_Prismatic_Pieces": {
+                    "Id": "{{ModId}}_Prismatic_Pieces",
+                    "ItemId": "mytigio.dwarven_expansion_MineralDust_PrismaticDust",
+                    "MinStack": 1,
+                    "CopyPrice": false,
+                    "PreserveId": "DROP_IN_ID",
+                    "Condition": "ITEM_ID Input (O)Solariaze.Geology_Prismatic_Pieces"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)mytigio.dwarven_expansion_Pulverizer",
+                "OutputRules",
+                "30_Minute_Dusts",
+                "OutputItem"
+            ],
+            "MoveEntries": [
+                {
+                    "ID": "Gemstone_Dust",
+                    "ToPosition": "Bottom"
+                }
+            ]
+        }
+    ]
+}

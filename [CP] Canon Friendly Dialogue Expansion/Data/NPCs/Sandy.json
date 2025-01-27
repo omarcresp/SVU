@@ -1,0 +1,113 @@
+{
+  "Changes": [
+    /* {
+      "LogName": "CFE_Sandy_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "Entries": {
+        //any keys that overlap go here
+      },
+      "When": { "ModdedDialogCompat": "true" "Query: '{{CFE_Sandy}}' = 'true' OR ('{{CFE_Sandy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }, */
+    {
+      "LogName": "CFE_Sandy_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "Entries": {
+        // we can also add reveal gift taste code to these now that they use i18n.
+        "AcceptGift_(O)279": "{{i18n: CFE_Sandy_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Sandy_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Sandy_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Sandy_RabbitsFoot}}",
+        "AcceptGift_(O)905": "{{i18n: CFE_Sandy_MangoStickyRice}}"
+      },
+      "When": { "Query: '{{CFE_Sandy}}' = 'true' OR ('{{CFE_Sandy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Sandy_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Sandy": "{{i18n: CFE_Sandy_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Sandy}}' = 'true' OR ('{{CFE_Sandy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "Sandy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_13": "{{i18n: CFE_Sandy_spring13}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Sandy_summerMon10}}",
+        "summer_Tue10": "{{i18n: CFE_Sandy_summerTue10}}",
+        "summer_Wed10": "{{i18n: CFE_Sandy_repeated_6}}",
+        "summer_Wed8": "{{i18n: CFE_Sandy_summerWed8}}",
+        "summer_Wed6": "{{i18n: CFE_Sandy_summerWed6}}",
+        "summer_Wed4": "{{i18n: CFE_Sandy_summerWed4}}",
+        "summer_Wed2": "{{i18n: CFE_Sandy_summerWed2}}",
+        "summer_Thu10": "{{i18n: CFE_Sandy_summerThu10}}",
+        "summer_Fri6": "{{i18n: CFE_Sandy_summerFri6}}",
+        "summer_Sat10": "{{i18n: CFE_Sandy_repeated_3}}",
+        "summer_Sun10": "{{i18n: CFE_Sandy_summerSun10}}",
+
+        "fall_Mon10": "{{i18n: CFE_Sandy_repeated_8}}",
+        "fall_Tue10": "{{i18n: CFE_Sandy_repeated_9}}",
+        "fall_Wed10": "{{i18n: CFE_Sandy_fallWed10}}",
+        "fall_Thu10": "{{i18n: CFE_Sandy_fallThu10}}",
+        "fall_Fri4": "{{i18n: CFE_Sandy_fallFri4}}",
+        "fall_Sat10": "{{i18n: CFE_Sandy_repeated_10}}",
+        "fall_Sun10": "{{i18n: CFE_Sandy_repeated_5}}",
+
+        "winter_Mon10": "{{i18n: CFE_Sandy_repeated_4}}",
+        "winter_Tue10": "{{i18n: CFE_Sandy_repeated_2}}",
+        "winter_Wed10": "{{i18n: CFE_Sandy_repeated_1}}",
+        "winter_Thu10": "{{i18n: CFE_Sandy_repeated_7}}",
+        "winter_Fri6": "{{i18n: CFE_Sandy_winterFri6}}",
+        "winter_Sat10": "{{i18n: CFE_Sandy_winterSat10}}",
+        "winter_Sun10": "{{i18n: CFE_Sandy_winterSun10}}",
+
+        "Mon10": "{{i18n: CFE_Sandy_Mon10}}",
+        "Mon8": "{{i18n: CFE_Sandy_repeated_1}}",
+        "Mon6": "{{i18n: CFE_Sandy_Mon6}}",
+        "Mon4": "{{i18n: CFE_Sandy_repeated_2}}",
+        "Tue10": "{{i18n: CFE_Sandy_Tue10}}",
+        "Tue8": "{{i18n: CFE_Sandy_Tue8}}",
+        "Tue6": "{{i18n: CFE_Sandy_repeated_3}}",
+        "Tue4": "{{i18n: CFE_Sandy_repeated_4}}",
+        "Tue2": "{{i18n: CFE_Sandy_Tue2}}",
+        "Wed10": "{{i18n: CFE_Sandy_Wed10}}",
+        "Wed8": "{{i18n: CFE_Sandy_Wed8}}",
+        "Wed6": "{{i18n: CFE_Sandy_Wed6}}",
+        "Wed2": "{{i18n: CFE_Sandy_Wed2}}",
+        "Thu8": "{{i18n: CFE_Sandy_Thu8}}",
+        "Thu6": "{{i18n: CFE_Sandy_repeated_5}}",
+        "Thu4": "{{i18n: CFE_Sandy_Thu4}}",
+        "Fri8": "{{i18n: CFE_Sandy_Fri8}}",
+        "Fri6": "{{i18n: CFE_Sandy_repeated_6}}",
+        "Fri4": "{{i18n: CFE_Sandy_Fri4}}",
+        "Fri2": "{{i18n: CFE_Sandy_Fri2}}",
+        "Sat10": "{{i18n: CFE_Sandy_Sat10}}",
+        "Sat8": "{{i18n: CFE_Sandy_repeated_7}}",
+        "Sat4": "{{i18n: CFE_Sandy_Sat4}}",
+        "Sat2": "{{i18n: CFE_Sandy_Sat2}}",
+        "Sun10": "{{i18n: CFE_Sandy_Sun10}}",
+        "Sun8": "{{i18n: CFE_Sandy_repeated_8}}",
+        "Sun6": "{{i18n: CFE_Sandy_repeated_9}}",
+        "Sun4": "{{i18n: CFE_Sandy_repeated_10}}",
+        "Sun2": "{{i18n: CFE_Sandy_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Wed": "{{i18n: CFE_Sandy_summerWed}}",
+        "fall_Fri": "{{i18n: CFE_Sandy_fallFri}}",
+        "winter_Fri": "{{i18n: CFE_Sandy_winterFri}}",
+
+        "Fri": "{{i18n: CFE_Sandy_Fri}}",
+        "Sat": "{{i18n: CFE_Sandy_Sat}}"
+      },
+      "When": { "Query: '{{CFE_Sandy}}' = 'true' OR ('{{CFE_Sandy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

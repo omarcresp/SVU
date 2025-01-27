@@ -1,0 +1,38 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Heatwave Weather Music",
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Kana.WeatherWonders_HeatwaveMusic": {
+          "ID": "Kana.WeatherWonders_HeatwaveMusic",
+          "Category": "Music",
+          "FilePaths": ["{{AbsoluteFilePath: assets/HeatwaveMusic.ogg}}"],
+          "StreamedVorbis": false,
+          "Looped": false
+        }
+      }
+    },
+    {
+      "LogName": "Load WW's Heatwave Weather Music Context",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "TargetField": ["Kana.WeatherWonders_Heatwave"],
+      "Update": "OnLocationChange",
+      "Entries": {
+        "SoftMusicOverrides": [
+          {
+            "ID": "Kana.WeatherWonders_HeatwaveMusic",
+            "Track": "Kana.WeatherWonders_HeatwaveMusic",
+            "Condition": "!LOCATION_IS_MINES Here, !LOCATION_IS_SKULL_CAVE Here, !LOCATION_NAME Here Beach, !LOCATION_NAME Here Woods, !LOCATION_NAME Here WizardHouse, !LOCATION_NAME Here WizardHouseBasement, !LOCATION_NAME Here Saloon, !LOCATION_NAME Here AnimalShop, !LOCATION_NAME Here Sewer, !LOCATION_NAME Here AdventureGuild, !LOCATION_NAME Here CommunityCenter, !LOCATION_NAME Here BathHouse_Entry, !LOCATION_NAME Here BathHouse_Pool, !LOCATION_NAME Here BathHouse_MensLocker, !LOCATION_NAME Here BathHouse_WomensLocker, !LOCATION_NAME Here JojaMart, !LOCATION_NAME Here WitchHut, !LOCATION_NAME Here WitchSwamp, !LOCATION_NAME Here Summit, !LOCATION_NAME Here Sunroom, !LOCATION_NAME Here BoatTunnel, !LOCATION_NAME Here ScienceHouse, !LOCATION_NAME Here SebastianRoom, !LOCATION_NAME Here SandyHouse, !LOCATION_NAME Here Club, !LOCATION_NAME Here Caldera, !LOCATION_NAME Here Desert, !LOCATION_NAME Here LeoTreeHouse, TIME 0600 1940",
+            "Looped": false
+          }
+        ]
+      },
+      "When": {
+        "HeatwaveMusic": true
+      }
+    }
+  ]
+}

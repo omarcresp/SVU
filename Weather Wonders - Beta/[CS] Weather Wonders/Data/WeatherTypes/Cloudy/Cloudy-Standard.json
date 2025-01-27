@@ -1,0 +1,48 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Cloudy Weather (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_Cloudy": {
+          "Id": "Kana.WeatherWonders_Cloudy",
+          "DisplayName": "{{i18n: Weather.Cloudy}}",
+          "Forecast": "{{i18n: Weather.Cloudy.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "IconSource": {
+            "X": 120,
+            "Y": 0
+          },
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 130
+          },
+          "SpawnCritters": true,
+          "SpawnClouds": true,
+          "Layers": [
+            {
+              "Id": "CloudyTint2",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Color": "22, 22, 22",
+              "Opacity": 0.4,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "CloudyTint2",
+              "Type": "Color",
+              "Condition": "RANDOM 0.5",
+              "Mode": "Lighting",
+              "Color": "42, 42, 42",
+              "Opacity": 0.8,
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/PaleSalamander",
+			"FromFile": "assets/Animals/PaleSalamander.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/PaleSalamanderBaby",
+			"FromFile": "assets/Animals/PaleSalamander.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Meat_Salamander": {
+					"Name": "Salamander Meat",
+					"DisplayName": "{{i18n:Meat_Salamander.DisplayName}}",
+					"Description": "{{i18n:Meat_Salamander.Description}}",
+					"Type": "Basic",
+					"Category": "-14",
+					"Price": 40,
+					"Edibility": 8,
+					"ContextTags": [
+						"{{ModId}}"
+					],
+					"Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+					"SpriteIndex": 246
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}_GiantPaleSalamander": {
+					"DisplayName": "{{i18n:GiantPaleSalamander.DisplayName}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": 300,
+					"SellPrice": 600,
+					"ShopTexture": "Mods/DwarvenExpansion/Animals/ShopImages",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 96,
+						"Width": 32,
+						"Height": 16
+					},
+					"ShopDisplayName": "{{i18n:GiantPaleSalamander.ShopDisplayName}}",
+					"ShopDescription": "{{i18n:GiantPaleSalamander.ShopDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n:GiantPaleSalamander.ShopMissingBuildingDescription}}",
+					"RequiredBuilding": "Barn",
+					"UnlockCondition": "PLAYER_HEARTS ANY Dwarf 1",
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{i18n:GiantPaleSalamander.BirthText}}",
+					"DaysToMature": -1,
+					"CanGetPregnant": true,
+					"DaysToProduce": 1,
+					"HarvestType": "DigUp",
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"ItemId": "330"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "330"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "382"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "382"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "382"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "382"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "390"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "390"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "390"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "535"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "535"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"ItemId": "535"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "535"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "535"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "535"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "66"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "68"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "66"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "68"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "382"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "330"
+						}
+					],
+					"ProduceOnMature": true,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": null,
+					"BabySound": null,
+					"Texture": "Mods/DwarvenExpansion/Animals/PaleSalamander",
+					"HarvestedTexture": null,
+					"BabyTexture": "Mods/DwarvenExpansion/Animals/PaleSalamanderBaby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0
+					},
+					"SwimOffset": {
+						"X": 0,
+						"Y": 162
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+						"Visible": true
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+						"Visible": true
+					},
+					"CanSwim": true,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 1,
+					"HappinessDrain": 3,
+					"UpDownPetHitboxTileSize": "1, 1.75",
+					"LeftRightPetHitboxTileSize": "1.75, 1.25",
+					"BabyUpDownPetHitboxTileSize": "1, 1.75",
+					"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+					"StatToIncrementOnProduce": [],
+					"ShowInSummitCredits": false,
+					"CustomFields": {
+						"meatIndex": "{{ModId}}_Meat_Salamander"
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,632 @@
+{
+  "Format": "2.3.0",
+  "ConfigSchema": { //lets players toggle settings on and off
+    "CFE_Abigail": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Alex": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Birdie": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Caroline": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Clint": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Demetrius": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Dwarf": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Elliott": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Emily": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Evelyn": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_George": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Gus": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Haley": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Harvey": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Jas": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Jodi": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Kent": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Krobus": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Leah": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Leo": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Lewis": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Linus": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Marnie": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Maru": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Pam": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Penny": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Pierre": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Robin": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Sam": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Sandy": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Sebastian": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Shane": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Vincent": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Willy": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Wizard": {
+      "AllowValues": "true, false, random",
+      "Default": "true",
+      "Section": "Dialogue"
+    },
+    "CFE_Festivals": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Misc"
+    }
+  },
+
+  "DynamicTokens": [
+    {
+      "Name": "ModdedDialogCompat",
+      "Value": "true" //generally my content should be applied
+    },
+    {
+      "Name": "ModdedDialogCompat",
+      "Value": "{{Random: true, false}}", //randomize applying my content when these mods are present
+      "When": {
+        "HasMod |contains= PrincessFelicie.UniqueGiftDialoguesExpanded": "true" //add new mods UniqueIDs here after a comma to include them in intentional key compat
+      }
+    },
+    {
+      "Name": "SyncedRandom",
+      "Value": "{{Random: True, False |key=CFE_SyncedRandom}}" //used for syncing edits to CFE's festival dialogue. Other mods can also sync any compatibility edits in their own code by copying this token and key and including it in their content.json
+    },
+    {
+      "Name": "AlexGrandmaToken",
+      "Value": "{{i18n:AlexGrandmaToken.Default}}"
+    },
+    {
+      "Name": "AlexGrandmaToken",
+      "Value": "{{i18n:AlexGrandmaToken.Jewish}}",
+      "When": 
+      {
+        "HasMod": "DSV.Core",
+        "DSV.Core/ConfigValue:JewishMullners": "true"
+      }
+    },
+    {
+      "Name": "AlexGrandmaToken",
+      "Value": "{{i18n:AlexGrandmaToken.Mexican}}",
+      "When": 
+      {
+        "HasMod": "DSV.Core",
+        "DSV.Core/ConfigValue:EvelynVariant": "Mexican"
+      }
+    },
+    {
+      "Name": "AlexGrandmaToken",
+      "Value": "{{i18n:AlexGrandmaToken.Samoan}}",
+      "When": 
+      {
+        "HasMod": "DSV.Core",
+        "DSV.Core/ConfigValue:EvelynVariant": "Samoan"
+      }
+    },
+    {
+      "Name": "AlexGrandpaToken",
+      "Value": "{{i18n:AlexGrandpaToken.Default}}"
+    },
+    {
+      "Name": "AlexGrandpaToken",
+      "Value": "{{i18n:AlexGrandpaToken.Jewish}}",
+      "When": 
+      {
+        "HasMod": "DSV.Core",
+        "DSV.Core/ConfigValue:JewishMullners": "true"
+      }
+    },
+    {
+      "Name": "AlexGrandpaToken",
+      "Value": "{{i18n:AlexGrandpaToken.Mexican}}",
+      "When": 
+      {
+        "HasMod": "DSV.Core",
+        "DSV.Core/ConfigValue:GeorgeVariant": "Mexican"
+      }
+    },
+    {
+      "Name": "AlexGrandpaToken",
+      "Value": "{{i18n:AlexGrandpaToken.Samoan}}",
+      "When": 
+      {
+        "HasMod": "DSV.Core",
+        "DSV.Core/ConfigValue:GeorgeVariant": "Samoan"
+      }
+    },
+    {
+      "Name": "GenderNeutralCompat",
+      "Value": ""
+    },
+    {
+      "Name": "GenderNeutralCompat",
+      "Value": "_GN",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GenderNeutralSingular",
+      "Value": "_Plural",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GenderNeutralSingular",
+      "Value": "_Singular",
+      "When": {
+        "Hana.GNMTokens/Singular": true,
+        "HasMod": "Hana.GNMTokens"
+      }
+    },
+    {
+      "Name": "GNMTObjectivePronoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTObjectivePronoun",
+      "Value": "{{Hana.GNMTokens/ObjectivePronoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTSubjectivePronoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTSubjectivePronoun",
+      "Value": "{{Hana.GNMTokens/SubjectivePronoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTTitle",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTTitle",
+      "Value": "{{Hana.GNMTokens/Title}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTAdjective",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTAdjective",
+      "Value": "{{Hana.GNMTokens/Adjective}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTSpouseNoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTSpouseNoun",
+      "Value": "{{Hana.GNMTokens/SpouseNoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTGenericNoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTGenericNoun",
+      "Value": "{{Hana.GNMTokens/GenericNoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTAdultFamilialNoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTAdultFamilialNoun",
+      "Value": "{{Hana.GNMTokens/AdultFamilialNoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTAdultInformalNoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTAdultInformalNoun",
+      "Value": "{{Hana.GNMTokens/AdultInformalNoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTElderInformalNoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTElderInformalNoun",
+      "Value": "{{Hana.GNMTokens/ElderInformalNoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTTermOfEndearment",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTTermOfEndearment",
+      "Value": "{{Hana.GNMTokens/TermOfEndearment}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTSiblingNoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTSiblingNoun",
+      "Value": "{{Hana.GNMTokens/SiblingNoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    }
+  ],
+  "Changes": [
+    {
+      "LogName": "CFE_Abigail_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Abigail.json",
+      "When": { "CFE_Abigail |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Alex_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Alex.json",
+      "When": { "CFE_Alex |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Birdie_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Birdie.json",
+      "When": { "CFE_Birdie |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Caroline_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Caroline.json",
+      "When": { "CFE_Caroline |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Clint_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Clint.json",
+      "When": { "CFE_Clint |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Demetrius_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Demetrius.json",
+      "When": { "CFE_Demetrius |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Dwarf_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Dwarf.json",
+      "When": { "CFE_Dwarf |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Elliott_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Elliott.json",
+      "When": { "CFE_Elliott |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Emily_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Emily.json",
+      "When": { "CFE_Emily |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Evelyn_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Evelyn.json",
+      "When": { "CFE_Evelyn |contains= false": false }
+    },
+    {
+      "LogName": "CFE_George_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/George.json",
+      "When": { "CFE_George |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Gus_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Gus.json",
+      "When": { "CFE_Gus |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Haley_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Haley.json",
+      "When": { "CFE_Haley |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Harvey_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Harvey.json",
+      "When": { "CFE_Harvey |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Jas_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Jas.json",
+      "When": { "CFE_Jas |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Jodi_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Jodi.json",
+      "When": { "CFE_Jodi |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Kent_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Kent.json",
+      "When": { "CFE_Kent |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Krobus_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Krobus.json",
+      "When": { "CFE_Krobus |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Leah_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Leah.json",
+      "When": { "CFE_Caroline |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Leo_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Leo.json",
+      "When": { "CFE_Leo |contains= false": false }
+    },
+    {
+      "LogName": "CFE_LeoMainland_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/LeoMainland.json",
+      "When": { "CFE_Leo |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Lewis_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Lewis.json",
+      "When": { "CFE_Lewis |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Linus_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Linus.json",
+      "When": { "CFE_Linus |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Marnie_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Marnie.json",
+      "When": { "CFE_Marnie |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Maru_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Maru.json",
+      "When": { "CFE_Maru |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Pam_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Pam.json",
+      "When": { "CFE_Pam |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Penny_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Penny.json",
+      "When": { "CFE_Penny |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Pierre_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Pierre.json",
+      "When": { "CFE_Pierre |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Robin_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Robin.json",
+      "When": { "CFE_Robin |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Sam_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Sam.json",
+      "When": { "CFE_Sam |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Sandy_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Sandy.json",
+      "When": { "CFE_Sandy |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Sebastian_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Sebastian.json",
+      "When": { "CFE_Sebastian |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Shane_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Shane.json",
+      "When": { "CFE_Shane |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Vincent_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Vincent.json",
+      "When": { "CFE_Vincent |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Willy_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Willy.json",
+      "When": { "CFE_Willy |contains= false": false }
+    },
+    {
+      "LogName": "CFE_Wizard_Include",
+      "Action": "Include",
+      "FromFile": "Data/NPCs/Wizard.json",
+      "When": { "CFE_Wizard |contains= false": false }
+    },
+    {
+      "LogName": "CFE_FestivalAlt_Include",
+      "Action": "Include",
+      "FromFile": "Data/Festivals/Fest_True.json",
+      "When": {
+        "Year": "3, 4",
+        "CFE_Festivals": "true"
+      }
+    },
+    {
+      "LogName": "CFE_FestivalRandom_Include",
+      "Action": "Include",
+      "FromFile": "Data/Festivals/Fest_True.json",
+      "When": {
+        "SyncedRandom": "True",
+        "Year |contains= 1, 2, 3, 4": false,
+        "CFE_Festivals": "true"
+      }
+    },
+    {
+      "LogName": "DSV_Compatibility",
+      "Action": "Include",
+      "FromFile": "Data/Compat/DSV.json",
+      "When": {
+        "HasMod": "DSV.Core",
+        "DSV.Core/ConfigValue:EnableVariantBasedDialogue": "True"
+      }
+    }
+  ]
+}

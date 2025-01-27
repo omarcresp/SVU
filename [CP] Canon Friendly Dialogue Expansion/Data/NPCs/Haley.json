@@ -1,0 +1,245 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Haley_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Haley",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)221": "{{i18n: CFE_Haley_PinkCake{{GenderNeutralCompat}}}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Haley_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Haley",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Haley_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Haley_Pearl}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Haley_RabbitsFoot}}",
+        "AcceptGift_(O)610": "{{i18n: CFE_Haley_FruitSalad}}",
+      },
+      "When": { "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Haley_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Haley": "{{i18n: CFE_Haley_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Haley_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Haley",
+      "Entries": {
+        //special dialogue
+
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Haley_spring1y2}}",
+        "summer_12_1": "{{i18n: CFE_Haley_summer12}}",
+        "summer_12_2": "{{i18n: CFE_Haley_summer12}}",
+        "fall_1": "{{i18n: CFE_Haley_fall1}}",
+        "winter_28_1": "{{i18n: CFE_Haley_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Haley_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon4": "{{i18n: CFE_Haley_summerMon4}}",
+        "summer_Mon2": "{{i18n: CFE_Haley_summerMon2}}",
+        "summer_Tue8": "{{i18n: CFE_Haley_summerTue8}}",
+        "summer_Tue4": "{{i18n: CFE_Haley_summerTue4}}",
+        "summer_Tue2": "{{i18n: CFE_Haley_summerTue2}}",
+        "summer_Wed10": "{{i18n: CFE_Haley_summerWed10}}",
+        "summer_Wed6": "{{i18n: CFE_Haley_summerWed6}}",
+        "summer_Wed4": "{{i18n: CFE_Haley_summerWed4}}",
+        "summer_Thu6": "{{i18n: CFE_Haley_summerThu6}}",
+        "summer_Thu4": "{{i18n: CFE_Haley_summerThu4}}",
+        "summer_Thu2": "{{i18n: CFE_Haley_summerThu2{{GenderNeutralCompat}}}}",
+        "summer_Fri10": "{{i18n: CFE_Haley_summerFri10}}",
+        "summer_Fri8": "{{i18n: CFE_Haley_summerFri8}}",
+        "summer_Fri4": "{{i18n: CFE_Haley_summerFri4{{GenderNeutralCompat}}}}",
+        "summer_Sat10": "{{i18n: CFE_Haley_summerSat10}}",
+        "summer_Sat6": "{{i18n: CFE_Haley_summerSat6}}",
+        "summer_Sun8_inlaw_Emily": "{{i18n: CFE_Haley_summerSun8inlawEmily}}",
+        "summer_Sun6_inlaw_Emily": "{{i18n: CFE_Haley_repeated_1}}",
+        "summer_Sun4_inlaw_Emily": "{{i18n: CFE_Haley_summerSun4inlawEmily}}",
+        "summer_Sun4": "{{i18n: CFE_Haley_summerSun4}}",
+        "summer_Sun2": "{{i18n: CFE_Haley_summerSun2}}",
+
+        "fall_Mon10": "{{i18n: CFE_Haley_fallMon10}}",
+        "fall_Mon6": "{{i18n: CFE_Haley_fallMon6}}",
+        "fall_Mon4": "{{i18n: CFE_Haley_fallMon4}}",
+        "fall_Mon2": "{{i18n: CFE_Haley_fallMon2}}",
+        "fall_Tue8": "{{i18n: CFE_Haley_fallTue8}}",
+        "fall_Tue4": "{{i18n: CFE_Haley_fallTue4}}",
+        "fall_Tue2": "{{i18n: CFE_Haley_fallTue2}}",
+        "fall_Wed8": "{{i18n: CFE_Haley_fallWed8}}",
+        "fall_Wed6": "{{i18n: CFE_Haley_fallWed6}}",
+        "fall_Wed4": "{{i18n: CFE_Haley_fallWed4}}",
+        "fall_Thu6": "{{i18n: CFE_Haley_fallThu6}}",
+        "fall_Thu4": "{{i18n: CFE_Haley_fallThu4}}",
+        "fall_Fri10": "{{i18n: CFE_Haley_fallFri10{{GenderNeutralCompat}} |Adjective={{lowercase:{{Random:{{GNMTAdjective}}}}}}}}",
+        "fall_Fri8": "{{i18n: CFE_Haley_fallFri8}}",
+        "fall_Fri4": "{{i18n: CFE_Haley_fallFri4}}",
+        "fall_Sat8": "{{i18n: CFE_Haley_fallSat8}}",
+        "fall_Sun10": "{{i18n: CFE_Haley_fallSun10}}",
+        "fall_Sun8_inlaw_Emily": "{{i18n: CFE_Haley_fallSun8inlawEmily}}",
+        "fall_Sun6_inlaw_Emily": "{{i18n: CFE_Haley_repeated_1}}",
+        "fall_Sun4_inlaw_Emily": "{{i18n: CFE_Haley_fallSun4inlawEmily}}",
+
+        "winter_Mon8": "{{i18n: CFE_Haley_winterMon8}}",
+        "winter_Mon6": "{{i18n: CFE_Haley_winterMon6}}",
+        "winter_Tue10": "{{i18n: CFE_Haley_winterTue10}}",
+        "winter_Tue6": "{{i18n: CFE_Haley_winterTue6}}",
+        "winter_Wed4": "{{i18n: CFE_Haley_winterWed4}}",
+        "winter_Fri10": "{{i18n: CFE_Haley_winterFri10}}",
+        "winter_Fri6": "{{i18n: CFE_Haley_winterFri6}}",
+        "winter_Sat6": "{{i18n: CFE_Haley_winterSat6}}",
+        "winter_Sat4": "{{i18n: CFE_Haley_winterSat4}}",
+        "winter_Sat2": "{{i18n: CFE_Haley_winterSat2}}",
+        "winter_Sun8_inlaw_Emily": "{{i18n: CFE_Haley_winterSun8inlawEmily}}",
+        "winter_Sun6_inlaw_Emily": "{{i18n: CFE_Haley_winterSun6inlawEmily}}",
+        "winter_Sun6": "{{i18n: CFE_Haley_winterSun6}}",
+        "winter_Sun4_inlaw_Emily": "{{i18n: CFE_Haley_winterSun4inlawEmily}}",
+
+        "Mon6": "{{i18n: CFE_Haley_Mon6}}",
+        "Mon4": "{{i18n: CFE_Haley_Mon4}}",
+        "Tue10": "{{i18n: CFE_Haley_Tue10}}",
+        "Tue6": "{{i18n: CFE_Haley_Tue6}}",
+        "Tue2": "{{i18n: CFE_Haley_Tue2}}",
+        "Wed8": "{{i18n: CFE_Haley_Wed8}}",
+        "Wed4": "{{i18n: CFE_Haley_Wed4}}",
+        "Wed2": "{{i18n: CFE_Haley_Wed2}}",
+        "Thu10": "{{i18n: CFE_Haley_Thu10}}",
+        "Thu6": "{{i18n: CFE_Haley_Thu6}}",
+        "Thu4": "{{i18n: CFE_Haley_Thu4{{GenderNeutralCompat}} |ObjectivePronoun={{lowercase:{{Random:{{GNMTObjectivePronoun}}}}}}}}",
+        "Thu2": "{{i18n: CFE_Haley_Thu2}}",
+        "Sat8": "{{i18n: CFE_Haley_Sat8}}",
+        "Sat6": "{{i18n: CFE_Haley_Sat6}}",
+        "Sat4": "{{i18n: CFE_Haley_Sat4}}",
+        "Sat2": "{{i18n: CFE_Haley_Sat2{{GenderNeutralCompat}} |GenericNoun={{lowercase:{{Random:{{GNMTGenericNoun}}}}}}}}",
+        "Sat2_old": "{{i18n: CFE_Haley_Sat2_old}}",
+        "Sat2_070": "{{i18n: CFE_Haley_Sat2_070}}",
+        "Sat2_072": "{{i18n: CFE_Haley_Sat2_072}}",
+        "Sat2_073": "{{i18n: CFE_Haley_Sat2_073}}",
+        "Sun10_inlaw_Emily": "{{i18n: CFE_Haley_Sun10inlawEmily}}",
+        "Sun8_inlaw_Emily": "{{i18n: CFE_Haley_Sun8inlawEmily}}",
+        "Sun6": "{{i18n: CFE_Haley_Sun6}}",
+        "Sun4_inlaw_Emily": "{{i18n: CFE_Haley_Sun4inlawEmily}}",
+        "Sun4": "{{i18n: CFE_Haley_Sun4}}",
+        "Sun2": "{{i18n: CFE_Haley_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Sun_inlaw_Emily": "{{i18n: CFE_Haley_repeated_2}}",
+        "fall_Sun_inlaw_Emily": "{{i18n: CFE_Haley_repeated_2}}",
+        "winter_Sun_inlaw_Emily": "{{i18n: CFE_Haley_repeated_2}}"
+      },
+      "When": { "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Haley_Marriage_GenericDialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Haley": "{{i18n: CFE_Haley_Married_spouseRoom_{{random: 1,2,3,4,5}}}}"
+      },
+      "When": { "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Haley_Marriage",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueHaley",
+      "Entries": {
+        //these lines follow different priority rules than unmarried dialogue does, with different options having different % likelihoods to show up each day when the right conditions are met.
+
+        //Weather specific dialogue
+        //note that Indoor_Day is the key for any weather besides rain, even when the Haley is outside. Day means prior to 6pm. Indoor_Night is specific to inside the farmhouse when it's not raining after 6pm.
+        "Rainy_Day_0": "{{i18n: CFE_Haley_Married_RainyDay_{{Random: 1,2}}}}",
+        "Rainy_Day_1": "{{i18n: CFE_Haley_Married_RainyDay_{{Random: 3,4}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Haley_Married_RainyDay_{{Random: 5,6}}}}",
+        "Rainy_Day_3": "{{i18n: CFE_Haley_Married_RainyDay_{{Random: 7,8}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Haley_Married_RainyDay_{{Random: 9,10}}{{GenderNeutralCompat}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Haley_Married_RainyNight_{{Random: 1,2}}}}",
+        "Rainy_Night_1": "{{i18n: CFE_Haley_Married_RainyNight_{{Random: 3,4}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Haley_Married_RainyNight_{{Random: 5,6}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Haley_Married_RainyNight_{{Random: 7,8}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Haley_Married_RainyNight_{{Random: 9,10}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Haley_Married_IndoorDay_{{Random: 1,2,3}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Haley_Married_IndoorDay_{{Random: 4,5,6}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Haley_Married_IndoorDay_{{Random: 7,8,9}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Haley_Married_IndoorDay_{{Random: 10,11,12}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Haley_Married_IndoorDay_{{Random: 13,14,15}}{{GenderNeutralCompat}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Haley_Married_IndoorNight_{{Random: 1,2}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Haley_Married_IndoorNight_{{Random: 3,4}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Haley_Married_IndoorNight_{{Random: 5,6,7,8}}{{GenderNeutralCompat}} |TermOfEndearment={{lowercase:{{Random:{{GNMTTermOfEndearment}}}}}}}}",
+        "Indoor_Night_4": "{{i18n: CFE_Haley_Married_IndoorNight_{{Random: 9,10}}}}",
+
+        //locational specific dialogue
+        //funleave and return only show up on Mondays or Fridays (except for characters with jobs), and only while the Haley is leaving or entering the farmhouse. fun return will not display once the Haley has reached their target location.
+        //Kid dialogue only displays when the Haley is standing in the farmhouse kitchen
+        //Outdoor Dialogue only displays on the farm. _num has an 80% chance of being displayed, _Haley has a 20% chance. _Haley is currently unused here
+
+        "funLeave_Haley": "{{i18n: CFE_Haley_Married_funLeave_{{Random: 1,2}}}}",
+        "funReturn_Haley": "{{i18n: CFE_Haley_Married_funReturn_{{Random: 1,2}}}}",
+
+        "OneKid_0": "{{i18n: CFE_Haley_Married_OneKid_{{Random: 1,2}}}}",
+        "OneKid_1": "{{i18n: CFE_Haley_Married_OneKid_{{Random: 3,4}}}}",
+        "OneKid_2": "{{i18n: CFE_Haley_Married_OneKid_{{Random: 5,6}}}}",
+        "OneKid_3": "{{i18n: CFE_Haley_Married_OneKid_{{Random: 7,8}}}}",
+
+        "TwoKids_0": "{{i18n: CFE_Haley_Married_TwoKids_{{Random: 1,2}}}}",
+        "TwoKids_1": "{{i18n: CFE_Haley_Married_TwoKids_{{Random: 3,4}}{{GenderNeutralCompat}}}}",
+        "TwoKids_2": "{{i18n: CFE_Haley_Married_TwoKids_{{Random: 5,6}}}}",
+        "TwoKids_3": "{{i18n: CFE_Haley_Married_TwoKids_{{Random: 7,8}}}}",
+
+        "Outdoor_0": "{{i18n: CFE_Haley_Married_Outdoor_{{Random: 1,2}}}}",
+        "Outdoor_1": "{{i18n: CFE_Haley_Married_Outdoor_{{Random: 3,4}}}}",
+        "Outdoor_2": "{{i18n: CFE_Haley_Married_Outdoor_{{Random: 5,6}}}}",
+        "Outdoor_3": "{{i18n: CFE_Haley_Married_Outdoor_{{Random: 7,8}}}}",
+        "Outdoor_4": "{{i18n: CFE_Haley_Married_Outdoor_{{Random: 9,10}}}}",
+
+        "patio_Haley": "{{i18n: CFE_Haley_Married_patio_{{Random: 1,2,3}}}}",
+
+        //Date Specific Dialogue
+        "spring_8": "{{i18n: CFE_Haley_Married_spring8}}",
+        "spring_14": "{{i18n: CFE_Haley_Married_spring14}}",
+        "spring_22": "{{i18n: CFE_Haley_Married_spring22}}",
+        "spring_23": "{{i18n: CFE_Haley_Married_spring23}}",
+        "spring_28": "{{i18n: CFE_Haley_Married_spring28}}",
+
+        "summer_6": "{{i18n: CFE_Haley_Married_summer6}}",
+        "summer_8": "{{i18n: CFE_Haley_Married_summer8}}",
+        "summer_12": "{{i18n: CFE_Haley_Married_summer12}}",
+        "summer_22": "{{i18n: CFE_Haley_Married_summer22}}",
+        "summer_27": "{{i18n: CFE_Haley_Married_summer27}}",
+
+        "fall_3": "{{i18n: CFE_Haley_Married_fall3}}",
+        "fall_8": "{{i18n: CFE_Haley_Married_fall8}}",
+        "fall_13": "{{i18n: CFE_Haley_Married_fall13}}",
+        "fall_22": "{{i18n: CFE_Haley_Married_fall22}}",
+        "fall_28": "{{i18n: CFE_Haley_Married_fall28}}",
+
+        "winter_8": "{{i18n: CFE_Haley_Married_winter8}}",
+        "winter_22": "{{i18n: CFE_Haley_Married_winter22}}",
+        "winter_24": "{{i18n: CFE_Haley_Married_winter24}}",
+        "winter_28": "{{i18n: CFE_Haley_Married_winter28}}"
+
+        //Seasonal Dialogue
+        //shown at 9+ hearts, with a 5% chance each day
+        //currently unused. key looks like "fall_Haley"
+
+        //Affection Specific Dialogue
+      },
+      "When": { "Query: '{{CFE_Haley}}' = 'true' OR ('{{CFE_Haley}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

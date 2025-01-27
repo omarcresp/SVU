@@ -1,0 +1,108 @@
+
+{
+
+ "Changes": [
+ 
+		{ 
+      "LogName": "ZicScheduleDefault",
+      "Action": "Load",
+      "Target": "Characters/schedules/{{ModId}}_GoblinZic",
+      "FromFile": "assets/NPC/schedules/ZicSchedule.json",
+	  //"When": { "HasWalletItem |contains=MagicInk": true,	},	
+	  //"When": {
+	   
+	   //"HasSeenEvent |contains=181091239": false,
+	   //"HasSeenEvent |contains=181091248": false,
+	   //"HasSeenEvent |contains=181091263": false,
+			//},
+			},
+			
+			//schedule 4h gardening
+		{   
+		"LogName": "Schedule4h - gardening",
+		 "Action": "EditData",
+         "Target": "Characters/schedules/{{ModId}}_GoblinZic",
+		 "When": {
+			"HasSeenEvent |contains=181091239": true,
+			//"HasSeenEvent |contains=181091248": false,
+			//"HasSeenEvent |contains=181091263": false,
+			},
+			
+		  "Entries": {
+  
+		//gardening
+				"spring_Tue_4": "610 WitchSwamp 8 27 2/1000 WitchSwamp 25 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1200 WitchSwamp 14 19 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1400 WitchSwamp 5 13 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1600 WitchSwamp 32 9 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1900 WitchSwamp 18 22 0/2100 WitchSwamp 6 28 2 goblin_cooking/2400 WitchSwamp 8 27 2 goblin_sleeping",
+
+				"spring_Thu_4": "610 WitchSwamp 8 27 2/1100 WitchSwamp 13 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1300 WitchSwamp 31 9 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1500 WitchSwamp 25 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1700 WitchSwamp 19 22 2 /1900 WitchSwamp 7 24 1 goblin_harvesting1/2100 WitchSwamp 8 27 2/2400 WitchSwamp 8 27 2 goblin_sleeping",
+
+				"spring_Sat_4": "610 WitchSwamp 8 27 2/800 WitchSwamp 7 24 1 goblin_harvesting1/900 WitchSwamp 8 12 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1300 WitchSwamp 14 19 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1400 WitchSwamp 13 18 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1700 WitchSwamp 32 9 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1900 WitchSwamp 22 21 2/2100 WitchSwamp 7 29 3/2300 WitchSwamp 6 28 2 goblin_sleeping",
+
+
+
+
+
+				"summer_Tue_4": "610 WitchSwamp 8 27 2/1000 WitchSwamp 25 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1200 WitchSwamp 14 19 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1400 WitchSwamp 5 13 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1600 WitchSwamp 32 9 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1900 WitchSwamp 18 22 0/2100 WitchSwamp 6 28 2 goblin_cooking/2400 WitchSwamp 8 27 2 goblin_sleeping",
+
+				"summer_Thu_4": "610 WitchSwamp 8 27 2/1100 WitchSwamp 13 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1300 WitchSwamp 31 9 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1500 WitchSwamp 25 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1700 WitchSwamp 19 22 2 /1900 WitchSwamp 7 24 1 goblin_harvesting1/2100 WitchSwamp 8 27 2/2400 WitchSwamp 8 27 2 goblin_sleeping",
+
+				"summer_Sat_4": "610 WitchSwamp 8 27 2/800 WitchSwamp 7 24 1 goblin_harvesting1/900 WitchSwamp 8 12 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1300 WitchSwamp 14 19 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1400 WitchSwamp 13 18 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1700 WitchSwamp 32 9 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1900 WitchSwamp 22 21 2/2100 WitchSwamp 7 29 3/2300 WitchSwamp 6 28 2 goblin_sleeping",
+
+
+
+
+				"fall_Tue_4": "610 WitchSwamp 8 27 2/1000 WitchSwamp 25 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1200 WitchSwamp 14 19 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1400 WitchSwamp 5 13 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1600 WitchSwamp 32 9 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1900 WitchSwamp 18 22 0/2100 WitchSwamp 6 28 2 goblin_cooking/2400 WitchSwamp 8 27 2 goblin_sleeping",
+
+				"fall_Thu_4": "610 WitchSwamp 8 27 2/1100 WitchSwamp 13 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1300 WitchSwamp 31 9 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1500 WitchSwamp 25 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1700 WitchSwamp 19 22 2 /1900 WitchSwamp 7 24 1 goblin_harvesting1/2100 WitchSwamp 8 27 2/2400 WitchSwamp 8 27 2 goblin_sleeping",
+
+				"fall_Sat_4": "610 WitchSwamp 8 27 2/800 WitchSwamp 7 24 1 goblin_harvesting1/900 WitchSwamp 8 12 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1300 WitchSwamp 14 19 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1400 WitchSwamp 13 18 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1700 WitchSwamp 32 9 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1900 WitchSwamp 22 21 2/2100 WitchSwamp 7 29 3/2300 WitchSwamp 6 28 2 goblin_sleeping",
+
+
+
+
+				"winter_Tue_4": "610 WitchSwamp 8 27 2/1000 WitchSwamp 25 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1200 WitchSwamp 14 19 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1400 WitchSwamp 5 13 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1600 WitchSwamp 32 9 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening2.000\"/1900 WitchSwamp 18 22 0/2100 WitchSwamp 6 28 2 goblin_cooking/2400 WitchSwamp 8 27 2 goblin_sleeping",
+
+				"winter_Thu_4": "610 WitchSwamp 8 27 2/1100 WitchSwamp 13 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1300 WitchSwamp 31 9 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1500 WitchSwamp 25 19 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening3.000\"/1700 WitchSwamp 19 22 2 /1900 WitchSwamp 7 24 1 goblin_harvesting1/2100 WitchSwamp 8 27 2/2400 WitchSwamp 8 27 2 goblin_sleeping",
+
+				"winter_Sat_4": "610 WitchSwamp 8 27 2/800 WitchSwamp 7 24 1 goblin_harvesting1/900 WitchSwamp 8 12 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1300 WitchSwamp 14 19 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1400 WitchSwamp 13 18 3 goblin_harvesting \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1700 WitchSwamp 32 9 1 goblin_harvesting1 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:gardening1.000\"/1900 WitchSwamp 22 21 2/2100 WitchSwamp 7 29 3/2300 WitchSwamp 6 28 2 goblin_sleeping",
+            }
+		},
+			//Schedule10h rain surface
+		{   
+		"LogName": "Schedule10h rain surface",
+		 "Action": "EditData",
+         "Target": "Characters/schedules/{{ModId}}_GoblinZic",
+		 "When": {
+			//"HasSeenEvent |contains=181091239": true,
+	   "HasSeenEvent |contains=181091248": true,
+	  // "HasSeenEvent |contains=181091263": false,
+			},		
+	"Entries": {
+			"rain":  "610 WitchSwamp 7 29 3/1000 Railroad 53 40 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.000\"/1100 Railroad 54 40 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.000\"/1400 Railroad 50 36 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.000\"/1600 Railroad 32 37 3 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.002\"/1800 Railroad 29 37 0 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalktrash.000\"/2000 Railroad 50 36 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.000\"/2100 WitchSwamp 7 29 2 goblin_sleeping",
+
+			"rain2":  "610 WitchSwamp 7 29 3/800 WitchSwamp 20 37 0 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:skulltalk.000\"/1000 Railroad 54 40 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.000\"/1100 Railroad 54 40 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.000\"/1200 Railroad 50 36 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.000\"/1300 Railroad 17 39 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.002\"/1500 Railroad 22 48 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.002\"/1700 Railroad 33 58 0 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.002/1900 Railroad 32 37 3 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.002/2000 Railroad 50 36 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalk.000\"/2100 WitchSwamp 7 29 2 goblin_sleeping",
+		}
+		},
+		
+		//Schedule10h Winter surface
+		
+	{   
+		"LogName": "Schedule10h winter surface",
+		 "Action": "EditData",
+         "Target": "Characters/schedules/{{ModId}}_GoblinZic",
+		 "When": {
+			//"HasSeenEvent |contains=181091239": true,
+			//"HasSeenEvent |contains=181091248": true,
+			"HasSeenEvent |contains=181091263": true,
+			},		
+	"Entries": {
+			"winter_Mon": "610 WitchSwamp 7 28 2 goblin_sleeping/1000 Railroad 54 40 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/1100 Railroad 54 40 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/1400 Railroad 50 36 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/1600 Railroad 32 37 3 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/1700 Railroad 29 37 0 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalktrash.000\"/1900 Railroad 50 36 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/2000 Railroad 54 33 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/2100 WitchSwamp 7 29 2 goblin_sleeping",
+
+			"winter_Wed": "610 WitchSwamp 7 28 2/1000 WitchSwamp 10 30 2/1200 WitchSwamp 7 29 3/1500 WitchSwamp 6 28 2 goblin_cooking \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:givefoodtalk.000\"/1900 WitchSwamp 7 29 3/2200 WitchSwamp 7 29 2 goblin_sleeping",
+
+			"winter_Fri": "610 WitchSwamp 6 28 2/800 WitchSwamp 20 37 0 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:skulltalk.000\"/1000 Railroad 54 40 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/1100 Railroad 54 40 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/1200 Railroad 50 36 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/1300 Railroad 17 39 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/1600 Railroad 22 48 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/1700 Railroad 33 58 0 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002/1800 Railroad 32 37 3 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002/1900 Railroad 50 36 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/2000 Railroad 54 33 2 \"Strings\\schedules\\Aimon111.WitchSwampOverhaulCP_GoblinZic:surfacetalkWinter.002\"/2100 WitchSwamp 7 29 2 goblin_sleeping",
+		}
+		},
+	
+
+	]
+}

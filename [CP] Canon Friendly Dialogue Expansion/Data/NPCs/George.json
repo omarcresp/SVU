@@ -1,0 +1,112 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_George_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/George",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)20": "{{i18n: CFE_George_Leek_{{Random: 1,2}}}}",
+        "AcceptGift_(O)205": "{{i18n: CFE_George_FriedMushroom}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_George}}' = 'true' OR ('{{CFE_George}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_George_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/George",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_George_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_George_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_George_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_George_PrismaticShard}}"
+      },
+      "When": { "Query: '{{CFE_George}}' = 'true' OR ('{{CFE_George}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_George_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "George": "{{i18n: CFE_George_rainy_{{random: 1,2,3}}}}"
+      },
+      "Query: '{{CFE_George}}' = 'true' OR ('{{CFE_George}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+    },
+    {
+      "LogName": "CFE_George_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/George",
+      "Entries": {
+        //special dialogue
+        //
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_George_spring1y2}}",
+
+        "summer_10_1": "{{i18n: CFE_George_summer10}}",
+        "summer_10_2": "{{i18n: CFE_George_summer10}}",
+
+        "winter_15_1": "{{i18n: CFE_George_winter15}}",
+        "winter_15_2": "{{i18n: CFE_George_winter15}}",
+        "winter_24_1": "{{i18n: CFE_George_winter24}}",
+        "winter_24_2": "{{i18n: CFE_George_winter24}}",
+        "winter_28_1": "{{i18n: CFE_George_winter28}}",
+        "winter_28_2": "{{i18n: CFE_George_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_George_summerMon10}}",
+        "summer_Tue10": "{{i18n: CFE_George_summerTue10}}",
+        "summer_Wed10": "{{i18n: CFE_George_summerWed10}}",
+        "summer_Fri10": "{{i18n: CFE_George_summerFri10}}",
+        "summer_Sun10": "{{i18n: CFE_George_summerSun10}}",
+
+        "fall_Mon10": "{{i18n: CFE_George_fallMon10}}",
+        "fall_Tue10": "{{i18n: CFE_George_fallTue10}}",
+        "fall_Thu10": "{{i18n: CFE_George_fallThu10}}",
+        "fall_Fri10": "{{i18n: CFE_George_fallFri10}}",
+        "fall_Sat10": "{{i18n: CFE_George_fallSat10}}",
+        "fall_Sun10": "{{i18n: CFE_George_fallSun10}}",
+
+        "winter_Wed10": "{{i18n: CFE_George_winterWed10}}",
+        "winter_Thu10": "{{i18n: CFE_George_winterThu10}}",
+        "winter_Sat10": "{{i18n: CFE_George_winterSat10}}",
+        "winter_Sun10": "{{i18n: CFE_George_winterSun10}}",
+
+        "Mon10": "{{i18n: CFE_George_Mon10}}",
+        "Mon8": "{{i18n: CFE_George_Mon8}}",
+        "Mon6": "{{i18n: CFE_George_Mon6}}",
+        "Mon4": "{{i18n: CFE_George_Mon4}}",
+        "Mon2": "{{i18n: CFE_George_Mon2}}",
+        "Tue10": "{{i18n: CFE_George_Tue10}}",
+        "Tue6": "{{i18n: CFE_George_Tue6}}",
+        "Tue4": "{{i18n: CFE_George_Tue4}}",
+        "Tue2": "{{i18n: CFE_George_Tue2}}",
+        "Wed10": "{{i18n: CFE_George_Wed10}}",
+        "Wed8": "{{i18n: CFE_George_Wed8}}",
+        "Wed4": "{{i18n: CFE_George_Wed4}}",
+        "Wed2": "{{i18n: CFE_George_Wed2}}",
+        "Thu10": "{{i18n: CFE_George_Thu10}}",
+        "Thu8": "{{i18n: CFE_George_Thu8}}",
+        "Thu4": "{{i18n: CFE_George_Thu4}}",
+        "Thu2": "{{i18n: CFE_George_Thu2}}",
+        "Fri6": "{{i18n: CFE_George_Fri6}}",
+        "Fri2": "{{i18n: CFE_George_Fri2}}",
+        "Sat8": "{{i18n: CFE_George_Sat8}}",
+        "Sat6": "{{i18n: CFE_George_Sat6}}",
+        "Sat4": "{{i18n: CFE_George_Sat4}}",
+        "Sat2": "{{i18n: CFE_George_Sat2}}",
+        "Sun10": "{{i18n: CFE_George_Sun10}}",
+        "Sun6": "{{i18n: CFE_George_Sun6{{GenderNeutralCompat}} |ElderInformalNoun={{lowercase:{{Random:{{GNMTElderInformalNoun}}}}}}}}",
+        "Sun4": "{{i18n: CFE_George_Sun4}}",
+        "Sun2": "{{i18n: CFE_George_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "Fri": "{{i18n: CFE_George_Fri}}",
+        "Sun": "{{i18n: CFE_George_Sun}}"
+      },
+      "Query: '{{CFE_George}}' = 'true' OR ('{{CFE_George}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+    }
+  ]
+}

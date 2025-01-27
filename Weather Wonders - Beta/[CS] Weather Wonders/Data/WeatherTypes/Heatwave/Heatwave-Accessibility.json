@@ -1,0 +1,78 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Heatwave Weather (Accessibility)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_Heatwave": {
+          "Id": "Kana.WeatherWonders_Heatwave",
+          "DisplayName": "{{i18n: Weather.Heatwave}}",
+          "SoftMusicOverrides": [{}],
+          "Forecast": "{{i18n: Weather.Heatwave.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "IconSource": {
+            "X": 96,
+            "Y": 0
+          },
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 104
+          },
+          "UseNightTiles": false,
+          "SpawnCritters": true,
+          "SpawnFrogs": true,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "HeatwaveTint1",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 600 1800",
+              "Color": "255, 140, 0",
+              "Opacity": "{{LayerOpacityHeatwave1}}",
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "HeatwaveTint2",
+              "Type": "Color",
+              "Mode": "Normal",
+              "Condition": "TIME 1810 2600",
+              "Color": "255, 140, 0",
+              "Opacity": "{{LayerOpacityHeatwave2}}",
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": [],
+          "Effects": [
+            {
+              "Id": "HeatwaveEffect1",
+              "Type": "ModifyStamina",
+              "Amount": -4,
+              "MinValue": 15,
+              "Chance": 0.25,
+              "Rate": "150",
+              "TargetMapType": "Indoors"
+            },
+            {
+              "Id": "HeatwaveEffect2",
+              "Type": "ModifyStamina",
+              "Amount": -4,
+              "MinValue": 15,
+              "Chance": 0.5,
+              "Rate": "150",
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "HeatwaveEffect3",
+              "Type": "Buff",
+              "BuffId": "Kana.WeatherWonders_Hot",
+              "TargetMapType": "Indoors, Outdoors"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

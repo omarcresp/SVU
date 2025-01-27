@@ -1,0 +1,1100 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "Elaho.JosephsSeedShopCP_JosephShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyorNone",
+							"Portrait": "{{InternalAssetKey: assets/Portraits/Joseph.png}}",
+                            "Dialogues": [
+								//Spring Dialogue
+                                // dialogue on sunny spring days
+                                {
+                                    "Id": "Joseph_Seed_Shop_SpringSun",
+                                    "Condition": "SEASON Spring, WEATHER Here Sun",
+                                    "Dialogue": "{{i18n:dialogue-spring-sun}}",
+                                },
+                                // dialogue on rainy spring days
+                                {
+                                    "Id": "Joseph_Seed_Shop_SpringRain",
+                                    "Condition": "SEASON Spring, WEATHER Here Rain",
+                                    "Dialogue": "{{i18n:dialogue-spring-rain}}",
+                                },
+                                // dialogue on stormy spring days
+                                {
+                                    "Id": "Joseph_Seed_Shop_SpringStorm",
+                                    "Condition": "SEASON Spring, WEATHER Here Storm",
+                                    "Dialogue": "{{i18n:dialogue-spring-storm}}",
+                                },
+                                // dialogue on windy spring days
+                                {
+                                    "Id": "Joseph_Seed_Shop_SpringWind",
+                                    "Condition": "SEASON Spring, WEATHER Here Wind",
+                                    "Dialogue": "{{i18n:dialogue-spring-wind}}",
+                                },
+                                //Summer Dialogue 
+								// dialogue on sunny summer days
+                                {
+                                    "Id": "Joseph_Seed_Shop_SummerSun",
+                                    "Condition": "SEASON Summer, WEATHER Here Sun",
+                                    "Dialogue": "{{i18n:dialogue-summer-sun}}",
+                                },
+                                // dialogue on rainy summer days
+                                {
+                                    "Id": "Joseph_Seed_Shop_SummerRain",
+                                    "Condition": "SEASON Summer, WEATHER Here Rain",
+                                    "Dialogue": "{{i18n:dialogue-summer-rain}}",
+                                },
+								// dialogue on stormy summer days
+                                {
+                                    "Id": "Joseph_Seed_Shop_SummerStorm",
+                                    "Condition": "SEASON Summer, WEATHER Here Storm",
+                                    "Dialogue": "{{i18n:dialogue-summer-storm}}",
+                                },
+								//Fall Dialogue
+	                            // dialogue on sunny fall days
+                                {
+                                    "Id": "Joseph_Seed_Shop_FallSun",
+                                    "Condition": "SEASON Fall, WEATHER Here Sun",
+                                    "Dialogue": "{{i18n:dialogue-fall-sun}}",
+                                },
+                                // dialogue on rainy fall days
+                                {
+                                    "Id": "Joseph_Seed_Shop_FallRain",
+                                    "Condition": "SEASON Fall, WEATHER Here Rain",
+                                    "Dialogue": "{{i18n:dialogue-fall-rain}}",
+                                },
+                                // dialogue on stormy fall days
+                                {
+                                    "Id": "Joseph_Seed_Shop_FallStorm",
+                                    "Condition": "SEASON Fall, WEATHER Here Storm",
+                                    "Dialogue": "{{i18n:dialogue-fall-storm}}",
+                                },
+                                // dialogue on windy fall days
+                                {
+                                    "Id": "Joseph_Seed_Shop_FallWind",
+                                    "Condition": "SEASON Fall, WEATHER Here Wind",
+                                    "Dialogue": "{{i18n:dialogue-fall-wind}}",
+                                },
+                                // dialogue any other time
+                                {
+                                    "Id": "Joseph_Seed_Shop_Default",
+                                    "Dialogue": "{{i18n:dialogue-default}}",
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+					//Always Available
+
+                        {
+                            "Id": "Joseph_Seed_Shop_Acorn_Seed",
+                            "ItemId": "(O)309",
+							"Price": 125,
+                            "AvailableStock": 5,
+							
+                        },
+                        {
+                            "Id": "Joseph_Seed_Shop_Maple_Seed",
+                            "ItemId": "(O)310",
+							"Price": 125,
+                            "AvailableStock": 5,
+							
+                        },
+                        {
+                            "Id": "Joseph_Seed_Shop_Pine_Cone",
+                            "ItemId": "(O)311",
+							"Price": 125,
+                            "AvailableStock": 5,
+							
+                        },
+
+		
+			//All forage
+			
+				//Years 1 to 5
+			
+						//Spring Forage Y1
+						
+                       {
+                            "Id": "Joseph_Seed_Shop_Salmonberry",
+                            "ItemId": "(O)296",
+                            "Condition": "SEASON Spring, YEAR 1",
+							"Quality": 4,
+							"Price": 250,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Joseph_Seed_Shop_Dandelion",
+                            "ItemId": "(O)22",
+                            "Condition": "SEASON Spring, YEAR 1",
+							"Quality": 4,
+							"Price": 250,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Summer Forage Y1
+						
+                       {
+                            "Id": "Joseph_Seed_Shop_Morel",
+                            "ItemId": "(O)257",
+                            "Condition": "SEASON Summer, YEAR 1",
+							"Quality": 4,
+							"Price": 350,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Joseph_Seed_Shop_Fiddlehead_Fern",
+                            "ItemId": "(O)259",
+                            "Condition": "SEASON Summer, YEAR 1",
+							"Quality": 4,
+							"Price": 250,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Joseph_Seed_Shop_Spice_Berry",
+                            "ItemId": "(O)396",
+                            "Condition": "SEASON Summer, YEAR 1",
+							"Quality": 4,
+							"Price": 200,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Fall Forage Y1
+						
+                       {
+                            "Id": "Joseph_Seed_Shop_Blackberry",
+                            "ItemId": "(O)410",
+                            "Condition": "SEASON Fall, YEAR 1",
+							"Quality": 4,
+							"Price": 150,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Joseph_Seed_Shop_Sunflower",
+                            "ItemId": "(O)421",
+                            "Condition": "SEASON Fall, YEAR 1",
+							"Quality": 4,
+							"Price": 220,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Spring Forage Y2
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Wild_Basil",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Wild_Basil",
+                            "Condition": "SEASON Spring, YEAR 2",
+							"Quality": 4,
+							"Price": 185,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+
+						//Summer Forage Y2
+					
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Wild_Spinach",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Wild_Spinach",
+                            "Condition": "SEASON Summer, YEAR 2",
+							"Quality": 4,
+							"Price": 245,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+						
+						//Fall Forage Y2
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_White_Sage",
+                            "ItemId": "Elaho.JosephsSeedShopCP_White_Sage",
+                            "Condition": "SEASON Fall, YEAR 2",
+							"Quality": 4,
+							"Price": 210,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Spring Forage Y3
+                       
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Spruce_Tip",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Spruce_Tip",
+                            "Condition": "SEASON Spring, YEAR 3",
+							"Quality": 4,
+							"Price": 1457,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+						
+						//Summer Forage Year 3
+                       
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Salal_Berry",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Salal_Berry",
+                            "Condition": "SEASON Summer, YEAR 3",
+							"Quality": 4,
+							"Price": 1550,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Golden_Currant",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Golden_Currant",
+                            "Condition": "SEASON Summer, YEAR 3",
+							"Quality": 4,
+							"Price": 1345,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+						
+						//Fall Forage Year 3
+                       
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Juniper_Berry",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Juniper_Berry",
+                            "Condition": "SEASON Fall, YEAR 3",
+							"Quality": 4,
+							"Price": 1150,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+
+						//Spring Forage Y4
+						
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Stinging_Nettle",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Stinging_Nettle",
+                            "Condition": "SEASON Spring, YEAR 4",
+							"Quality": 4,
+							"Price": 1675,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_White_Pine_Needles",
+                            "ItemId": "Elaho.JosephsSeedShopCP_White_Pine_Needles",
+                            "Condition": "SEASON Spring, YEAR 4",
+							"Quality": 4,
+							"Price": 1355,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+						
+						//Summer Forage Y4
+						
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Red_Huckleberry",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Red_Huckleberry",
+                            "Condition": "SEASON Summer, YEAR 4",
+							"Quality": 4,
+							"Price": 1425,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Fall Forage Y4
+						
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Soapberry",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Soapberry",
+                            "Condition": "SEASON Fall, YEAR 4",
+							"Quality": 4,
+							"Price": 1850,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },
+
+						//Spring Forage Y5
+						
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Licorice_Fern",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Licorice_Fern",
+                            "Condition": "SEASON Spring, YEAR 5",
+							"Quality": 4,
+							"Price": 1865,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },
+
+						//Summer Forage Y5
+						
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Thimbleberry",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Thimbleberry",
+                            "Condition": "SEASON Summer, YEAR 5",
+							"Quality": 4,
+							"Price": 1600,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Camas_Bulb",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Camas_Bulb",
+                            "Condition": "SEASON Summer, YEAR 5",
+							"Quality": 4,
+							"Price": 2210,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Fall Forage Y5
+						
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Rosehip",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Rosehip",
+                            "Condition": "SEASON Fall, YEAR 5",
+							"Quality": 4,
+							"Price": 1950,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					   {
+                            "Id": "Elaho.JosephsSeedShopCP_Oregon_Grape",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Oregon_Grape",
+                            "Condition": "SEASON Fall, YEAR 5",
+							"Quality": 4,
+							"Price": 2250,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },
+				
+			//All crops
+			
+					//Always Available
+			
+					//Trees
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Pussy_Willow_Sapling",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Pussy_Willow_Sapling",
+                            "Condition": "YEAR 3",
+							"Price": 12000,
+                            "AvailableStock": 3,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					//Seeds
+                        {
+                            "Id": "Joseph_Seed_Shop_Ancient_Seed",
+                            "ItemId": "(O)499",
+							"Price": 1250,
+                            "AvailableStock": 1,
+							
+                        }, 
+                        {
+                            "Id": "Joseph_Seed_Shop_Rare_Seed",
+                            "ItemId": "(O)347",
+							"Price": 800,
+                            "AvailableStock": 1,
+							
+                        },
+				
+					//Years 1 to 5
+				
+						//Spring Crop Seeds Y1
+                       {
+                            "Id": "Joseph_Seed_Shop_Rhubarb_Seeds",
+                            "ItemId": "(O)478",
+                            "Condition": "SEASON Spring, YEAR 1",
+							"Price": 250,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+                       {
+                            "Id": "Joseph_Seed_Shop_Green_Bean_Starter",
+                            "ItemId": "(O)473",
+                            "Condition": "SEASON Spring, YEAR 1",
+							"Price": 50,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        }, 
+						
+						//Summer Crop Seeds Y1
+					
+                       {
+                            "Id": "Joseph_Seed_Shop_Sunflower_Seeds",
+                            "ItemId": "(O)431",
+                            "Condition": "SEASON Summer, YEAR 1",
+							"Price": 100,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Joseph_Seed_Shop_Summer_Squash_Seeds",
+                            "ItemId": "SummerSquashSeeds",
+                            "Condition": "SEASON Summer, YEAR 1",
+							"Price": 75,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Joseph_Seed_Shop_Hot_Pepper_Seeds",
+                            "ItemId": "(O)482",
+                            "Condition": "SEASON Summer, YEAR 1",
+							"Price": 35,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Joseph_Seed_Shop_Taro_Tuber",
+                            "ItemId": "(O)831",
+                            "Condition": "SEASON Summer, YEAR 1",
+							"Price": 150,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					
+						//Fall Crop Seeds Y1
+						
+                       {
+                            "Id": "Joseph_Seed_Shop_Amaranth_Seeds",
+                            "ItemId": "(O)299",
+                            "Condition": "SEASON Fall, YEAR 1",
+							"Price": 60,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Joseph_Seed_Shop_Pumpkin_Seeds",
+                            "ItemId": "(O)490",
+                            "Condition": "SEASON Fall, YEAR 1",
+							"Price": 75,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Joseph_Seed_Shop_Corn_Seeds",
+                            "ItemId": "(O)487",
+                            "Condition": "SEASON Fall, YEAR 1",
+							"Price": 130,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+
+						//Spring Crop Seeds Y2
+					
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Wild_Rice_Shoot",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Wild_Rice_Shoot",
+                            "Condition": "SEASON Spring, YEAR 2",
+							"Price": 225,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Chickpea_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Chickpea_Seeds",
+                            "Condition": "SEASON Spring, YEAR 2",
+							"Price": 185,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Spring Flower Seeds Y2
+						
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Fireweed_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Fireweed_Seeds",
+                            "Condition": "SEASON Spring, YEAR 2",
+							"Price": 210,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Clover_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Clover_Seeds",
+                            "Condition": "SEASON Spring, YEAR 2",
+							"Price": 125,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Johnny_Jump_Up_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Johnny_Jump_Up_Seeds",
+                            "Condition": "SEASON Spring, YEAR 2",
+							"Price": 85,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Summer Crops Y2
+						
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Vanilla_Bean_Vine",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Vanilla_Bean_Vine",
+                            "Condition": "SEASON Summer, YEAR 2",
+							"Price": 1350,
+                            "AvailableStock": 1,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Blood_Red_Corn_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Blood_Red_Corn_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 2",
+							"Price": 270,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Ice_Blue_Corn_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Ice_Blue_Corn_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 2",
+							"Price": 250,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Twilight_Corn_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Twilight_Corn_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 2",
+							"Price": 260,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Rainbow_Corn_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Rainbow_Corn_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 2",
+							"Price": 280,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Salmon_Corn_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Salmon_Corn_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 2",
+							"Price": 235,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Millet_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Millet_Seeds",
+                            "Condition": "SEASON Summer, YEAR 2",
+							"Price": 245,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Sorghum_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Sorghum_Seeds",
+                            "Condition": "SEASON Summer, YEAR 2",
+							"Price": 160,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },		
+						
+						//Fall Crops Y2
+					
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Stardrop_Corn_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Stardrop_Corn_Seeds",
+                            "Condition": "SEASON Fall, YEAR 2",
+							"Price": 575,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Cattail_Shoot",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Cattail_Shoot",
+                            "Condition": "SEASON Fall, YEAR 2",
+							"Price": 125,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Acorn_Squash_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Acorn_Squash_Seeds",
+                            "Condition": "SEASON Fall, YEAR 2",
+							"Price": 140,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Spaghetti_Squash_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Spaghetti_Squash_Seeds",
+                            "Condition": "SEASON Fall, YEAR 2",
+							"Price": 160,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },		
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Butternut_Squash_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Butternut_Squash_Seeds",
+                            "Condition": "SEASON Fall, YEAR 2",
+							"Price": 140,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+						
+						//Spring Crop Seeds Y3
+						
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Barley_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Barley_Seeds",
+                            "Condition": "SEASON Spring Fall, YEAR 3",
+							"Price": 35,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Hopi_Red_Bean_Starter",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Hopi_Red_Bean_Starter",
+                            "Condition": "SEASON Spring, YEAR 3",
+							"Price": 350,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Prairie_Potato_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Prairie_Potato_Seeds",
+                            "Condition": "SEASON Spring, YEAR 3",
+							"Price": 220,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Spring Flower Seeds Y3
+						
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Evening_Star_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Evening_Star_Seeds",
+                            "Condition": "SEASON Spring, YEAR 3",
+							"Price": 55,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+
+						//Summer Crop Seeds Y3
+						
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Sunburst_Squash_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Sunburst_Squash_Seeds",
+                            "Condition": "SEASON Summer, YEAR 3",
+							"Price": 85,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Oat_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Oat_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 3",
+							"Price": 45,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Rye_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Rye_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 3",
+							"Price": 50,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Flax_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Flax_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 3",
+							"Price": 85,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Summer Flower Seeds Y3
+						
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Coneflower_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Coneflower_Seeds",
+                            "Condition": "SEASON Summer, YEAR 3",
+							"Price": 65,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					
+						//Fall Crop Seeds Y3
+			            
+						{
+                            "Id": "Elaho.JosephsSeedShopCP_Delicata_Squash_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Delicata_Squash_Seeds",
+                            "Condition": "SEASON Fall, YEAR 3",
+							"Price": 90,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Buckwheat_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Buckwheat_Seeds",
+                            "Condition": "SEASON Fall, YEAR 3",
+							"Price": 40,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Spring Flower Seeds Y4
+						
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_French_Lavender_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_French_Lavender_Seeds",
+                            "Condition": "SEASON Spring, YEAR 4",
+							"Price": 230,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Pickerelweed_Shoot",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Pickerelweed_Shoot",
+                            "Condition": "SEASON Spring, YEAR 4",
+							"Price": 175,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Summer Crop Seeds Y4
+						
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Cassava_Tuber",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Cassava_Tuber",
+                            "Condition": "SEASON Summer, YEAR 4",
+							"Price": 165,
+                            "AvailableStock": 5,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Einkorn_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Einkorn_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 65,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Emmer_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Emmer_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 70,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Kamut_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Kamut_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 75,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Spelt_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Spelt_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 45,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+
+						//Summer Flowers Y4
+						
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Autumn_Beauty_Sunflower_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Autumn_Beauty_Sunflower_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 150,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Jerusalem_Gold_Sunflower_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Jerusalem_Gold_Sunflower_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 150,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Peredovik_Sunflower_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Peredovik_Sunflower_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 180,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Solar_Power_Sunflower_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Solar_Power_Sunflower_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 150,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Velvet_Queen_Sunflower_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Velvet_Queen_Sunflower_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 150,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_White_Lite_Sunflower_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_White_Lite_Sunflower_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 150,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Zohar_Sunflower_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Zohar_Sunflower_Seeds",
+                            "Condition": "SEASON Summer Fall, YEAR 4",
+							"Price": 150,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Fall Crop Seeds Y4 
+					
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Balsamroot_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Balsamroot_Seeds",
+                            "Condition": "SEASON Fall, YEAR 4",
+							"Price": 85,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Quinoa_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Quinoa_Seeds",
+                            "Condition": "SEASON Fall, YEAR 4",
+							"Price": 230,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Sunchoke_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Sunchoke_Seeds",
+                            "Condition": "SEASON Fall, YEAR 4",
+							"Price": 250,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						
+						//Fall Flower Seeds Y4
+					
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Musk_Mallow_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Musk_Mallow_Seeds",
+                            "Condition": "SEASON Fall, YEAR 4",
+							"Price": 165,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Spring Crop Seeds Y5
+							
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Arrowroot_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Arrowroot_Seeds",
+                            "Condition": "SEASON Spring, YEAR 5",
+							"Price": 115,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Hopniss_Tuber",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Hopniss_Tuber",
+                            "Condition": "SEASON Spring, YEAR 5",
+							"Price": 185,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Spring Flower Seeeds Y5
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Painted_Daisy_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Painted_Daisy_Seeds",
+                            "Condition": "SEASON Spring, YEAR 5",
+							"Price": 275,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+					
+						//Summer Crop Seeds Y5
+					
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Ground_Cherry_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Ground_Cherry_Seeds",
+                            "Condition": "SEASON Summer, YEAR 5",
+							"Price": 185,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Chicory_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Chicory_Seeds",
+                            "Condition": "SEASON Summer, YEAR 5",
+							"Price": 130,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Roseroot_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Roseroot_Seeds",
+                            "Condition": "SEASON Summer, YEAR 5",
+							"Price": 160,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Summer Flower Seeds Y5
+						
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Water_Lily_Shoot",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Water_Lily_Shoot",
+                            "Condition": "SEASON Summer, YEAR 5",
+							"Price": 240,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Fall Crop Seeds Y5
+					
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Teff_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Teff_Seeds",
+                            "Condition": "SEASON Fall, YEAR 5",
+							"Price": 260,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Kabocha_Squash_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Kabocha_Squash_Seeds",
+                            "Condition": "SEASON Fall, YEAR 5",
+							"Price": 160,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Red_Kuri_Squash_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Red_Kuri_Squash_Seeds",
+                            "Condition": "SEASON Fall, YEAR 5",
+							"Price": 155,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },
+						
+						//Fall Flower Seeds Y5
+						
+			                       {
+                            "Id": "Elaho.JosephsSeedShopCP_Goldenrod_Seeds",
+                            "ItemId": "Elaho.JosephsSeedShopCP_Goldenrod_Seeds",
+                            "Condition": "SEASON Fall, YEAR 5",
+							"Price": 195,
+                            "AvailableStock": 10,
+							"AvailableStockLimit": "Player",
+							
+                        },	
+					],
+				},
+			},
+		}
+	]
+}

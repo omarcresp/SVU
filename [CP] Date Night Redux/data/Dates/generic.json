@@ -1,0 +1,549 @@
+{
+	"Changes": [
+
+		// *** SALOON DATE ****
+
+		//Saloon Date Initiation
+		{
+			"LogName": "Saloon Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116009/f {{Date}} {{MinFriendship}}/O {{Date}}/t 500 1500": "continue/-10000 -1000/farmer -100 -100 2 {{Date}} -100 -100 2/skippable/warp {{Date}} -100 -100/warp farmer -100 -100/faceDirection {{Date}} 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp {{Date}} 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak {{Date}} \"{{Random: {{i18n:SaloonDateIntro.1}} @@ {{i18n:SaloonDateIntro.2}} @@ {{i18n:SaloonDateIntro.3}} @@ {{i18n:SaloonDateIntro.4}} |inputSeparator=@@}}\"/pause 500/emote farmer 8/pause 500/speak {{Date}} \"{{Random:{{i18n:SaloonDateIntro.5}}#$b# @@ {{i18n:SaloonDateIntro.6}}#$b# |inputSeparator=@@}}{{Random: {{i18n:SaloonDateIntro.7.{{Gender}} }} @@ {{i18n:SaloonDateIntro.8.{{Gender}} }} @@ {{i18n:SaloonDateIntro.9}} |inputSeparator=@@}}\"/pause 1000/question fork0 \"{{i18n:AcceptDate.Choice | Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork dateYes/playMusic none/pause 1000/emote {{Date}} 28/speak {{Date}} \"{{i18n:RejectDate.1}}\"/pause 500/faceDirection {{Date}} 3 true/pause 1000/emote {{Date}} 40/pause 400/faceDirection {{Date}} 2/pause 400/speak {{Date}} \"{{i18n:RejectDate.2}}\"/pause 800/faceDirection {{Date}} 1 true/pause 100/faceDirection {{Date}} 0/pause 400/playSound doorClose/warp {{Date}} -100 -100/pause 2000/end dialogue {{Date}} \"{{i18n:RejectDate.3}}\"",
+
+				"dateYes": "pause 200/addMailReceived saloonDateAgree/emote {{Date}} 20/pause 500/speak {{Date}} \"{{i18n:SaloonDateIntro.10}}\"/pause 500/end dialogue {{Date}} \"{{i18n:SaloonDateIntro.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": false,
+				"DateType": "saloon",
+				"GenericPossible": "true",
+			},
+		},
+
+
+		//Saloon Date - Suggestive
+		{
+			"LogName": "Saloon Date - Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/Saloon",
+			"Entries": {
+				"1116010/n saloonDateAgree/t 1800 2600": "Saloon1/39 19/farmer 25 19 1 {{Date}} 43 22 3 {{Gus}} 18 18 2 {{Caroline}} 9 22 1 {{Pierre}} 10 21 2 {{Robin}} 21 22 1 {{Demetrius}} 22 22 3 {{Gunther}} 2 20 1/skippable/move farmer 7 0 1/pause 500/emote {{Date}} 16/pause 500/friendship {{Date}} {{FriendBonus}}/speak {{Date}} \"{{i18n:SaloonDate.1}}\"/pause 500/emote farmer 32/pause 500/speak {{Date}} \"{{i18n:SaloonDate.2 |Gus={{Gus}} }}\"/pause 500/speak {{Date}} \"{{i18n:SaloonDate.3}}\"/pause 500/move farmer 10 0 1/move farmer 0 3 1 true/speak {{Date}} \"{{i18n:SaloonDate.4}}\"/pause 500/emote farmer 20/pause 500/speak {{Date}} \"{{i18n:SaloonDate.5 |Gus={{Gus}} }}\"/pause 500/emote farmer 32/pause 500/speak {{Date}} \"{{i18n:SaloonDate.6}}\"/pause 500/speak {{Date}} \"{{i18n:SaloonDate.7}}\"/emote {{Date}} 20/emote farmer 20/speed {{Gus}} 4/move {{Gus}} 0 -1 0/speed {{Gus}} 4/move {{Gus}} 3 0 1/speed {{Gus}} 4/move {{Gus}} 0 2 2/speed {{Gus}} 4/move {{Gus}} 21 0 2 true/speak {{Date}} \"{{i18n:SaloonDate.8}}\"/pause 1000/speak {{Gus}} \"{{i18n:SaloonDate.9 |Date={{Date}} }}\"/faceDirection farmer 0/faceDirection {{Date}} 0/pause 500/emote {{Date}} 32/pause 500/speak {{Date}} \"{{i18n:SaloonDate.10 |Gus={{Gus}} }}\"/pause 500/move {{Date}} 0 -2 3/faceDirection {{Gus}} 2/pause 500/playSound pickUpItem/pause 500/move {{Date}} 0 2 3/move {{Gus}} -22 0 3 true/pause 250/playSound pickUpItem/pause 500/farmerEat {{SpouseFood}}/pause 500/emote {{Date}} 32/pause 500/message \"{{i18n:SaloonDate.11 |Date={{Date}} }}\"/pause 500/faceDirection farmer 1/speak {{Date}} \"{{i18n:SaloonDate.12}}#$b#[{{SpouseFood}}] {{i18n:SaloonDate.13}}\"/pause 750/speak {{Date}} \"{{i18n:SaloonDate.14}}\"/pause 500/question fork0 \"{{i18n:SaloonDate.15}}#{{i18n:SaloonDate.16}}#{{i18n:SaloonDate.17}}\"/fork poolEnding/pause 200/speak {{Date}} \"{{i18n:Waves.1}}\"/pause 500/globalFade/viewport -1000 1000/changeLocation Beach/warp farmer 12 39/warp {{Date}} 11 39/warp {{Gus}} 1000 1000/warp {{Caroline}} 1000 1000/warp {{Pierre}} 1000 1000/warp {{Robin}} 1000 1000/warp {{Demetrius}} 1000 1000/warp {{Gunther}} 1000 1000/faceDirection farmer 2/faceDirection {{Date}} 2/fade/viewport 12 38/playMusic musicboxsong/pause 1000/speak {{Date}} \"{{i18n:Waves.2}}\"/pause 500/emote farmer 8/pause 500/speak {{Date}} \"{{i18n:Waves.3}}\"/pause 500/speak {{Date}} \"{{i18n:Waves.4}}\"/pause 500/faceDirection {{Date}} 1/faceDirection farmer 3/pause 500/speak {{Date}} \"{{i18n:Waves.5}}\"/pause 500/emote farmer 20/pause 500/speak {{Date}} \"{{i18n:Waves.6}}\"/pause 250/emote farmer 20/pause 1000/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 3/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/stopAnimation {{Date}} 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/globalFade/viewport -1000 -1000/message \"{{i18n:Waves.7 |Date={{Date}} }}\"/pause 500/warp farmer 39 5/warp {{Date}} 38 5/faceDirection farmer 3/faceDirection {{Date}} 1/fade/viewport 39 9/pause 1000/speak {{Date}} \"{{i18n:Waves.8}}\"/emote farmer 20/pause 500/speak {{Date}} \"{{i18n:Waves.9}}\"/pause 500/emote farmer 16/pause 500/faceDirection farmer 0/speed farmer 7/move farmer 0 -5 0/warp farmer 1000 1000/move {{Date}} 1 0 1/move {{Date}} 0 -6 0/globalFade/viewport -1000 -1000/{{SuggestiveCommand}}/playSound doorClose/pause 3000/speak {{Date}} \"{{i18n:Waves.10}}\"/end dialogue {{Date}} \"{{i18n:SaloonDate.End}}\"",
+
+				"poolEnding": "addMailReceived PoolDate/pause 200/speak {{Date}} \"{{i18n:Pool{{Result}}.1}}\"/pause 500/globalFade/viewport -1000 1000/warp farmer 36 21/warp {{Date}} 42 20/fade/viewport 39 19/playMusic musicboxsong/pause 1000/pause 500/speak {{Date}} \"{{i18n:Pool{{Result}}.2.{{Gender}} }}\"/shake {{Date}} 1000/textAboveHead {{Date}} \"{{i18n:Pool{{Result}}.3}}\"/pause 1000/message \"{{i18n:Pool{{Result}}.4}}\"/textAboveHead {{Date}} \"{{i18n:Pool{{Result}}.5}}\"/pause 500/faceDirection farmer 2/animate farmer false true 100 102 103/pause 1000/globalFade/viewport -1000 -1000/message \"{{i18n:Pool{{Result}}.6 |Date={{Date}} }}\"/pause 500/stopAnimation farmer/warp farmer 14 22/warp {{Date}} 15 22/warp {{Gus}} 10 18/faceDirection {{Gus}} 2/fade/viewport 14 17/pause 1000/speak {{Date}} \"{{i18n:Pool{{Result}}.7}}\"/emote farmer 32/pause 1000/speak {{Date}} \"{{i18n:Pool{{Result}}.8}}\"/pause 500/emote farmer 16/pause 500/faceDirection farmer 2/speed farmer 7/move farmer 0 1 2/warp farmer 1000 -1000/playSound doorClose/move {{Date}} -1 0 3/move {{Date}} 0 1 2/globalFade/viewport -1000 -1000/{{SuggestiveCommand}}/playSound doorClose/pause 1000/playSound doorClose/pause 2000/speak {{Date}} \"{{i18n:Pool{{Result}}.9}}\"/end dialogue {{Date}} \"{{i18n:SaloonDate.{{PoolEnd}} }}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "enabled",
+			},
+		},
+
+		//Saloon Date - Not Suggestive
+		{
+			"LogName": "Saloon Date - Not Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/Saloon",
+			"Entries": {
+				"1116010/n saloonDateAgree/t 1800 2600": "Saloon1/39 19/farmer 25 19 1 {{Date}} 43 22 3 {{Gus}} 18 18 2 {{Caroline}} 9 22 1 {{Pierre}} 10 21 2 {{Robin}} 21 22 1 {{Demetrius}} 22 22 3 {{Gunther}} 2 20 1/skippable/move farmer 7 0 1/pause 500/emote {{Date}} 16/pause 500/friendship {{Date}} {{FriendBonus}}/speak {{Date}} \"{{i18n:SaloonDate.1}}\"/pause 500/emote farmer 32/pause 500/speak {{Date}} \"{{i18n:SaloonDate.2 |Gus={{Gus}} }}\"/pause 500/speak {{Date}} \"{{i18n:SaloonDate.3}}\"/pause 500/move farmer 10 0 1/move farmer 0 3 1 true/speak {{Date}} \"{{i18n:SaloonDate.4}}\"/pause 500/emote farmer 20/pause 500/speak {{Date}} \"{{i18n:SaloonDate.5 |Gus={{Gus}} }}\"/pause 500/emote farmer 32/pause 500/speak {{Date}} \"{{i18n:SaloonDate.6}}\"/pause 500/speak {{Date}} \"{{i18n:SaloonDate.7}}\"/emote {{Date}} 20/emote farmer 20/speed {{Gus}} 4/move {{Gus}} 0 -1 0/speed {{Gus}} 4/move {{Gus}} 3 0 1/speed {{Gus}} 4/move {{Gus}} 0 2 2/speed {{Gus}} 4/move {{Gus}} 21 0 2 true/speak {{Date}} \"{{i18n:SaloonDate.8}}\"/pause 1000/speak {{Gus}} \"{{i18n:SaloonDate.9 |Date={{Date}} }}\"/faceDirection farmer 0/faceDirection {{Date}} 0/pause 500/emote {{Date}} 32/pause 500/speak {{Date}} \"{{i18n:SaloonDate.10 |Gus={{Gus}} }}\"/pause 500/move {{Date}} 0 -2 3/faceDirection {{Gus}} 2/pause 500/playSound pickUpItem/pause 500/move {{Date}} 0 2 3/move {{Gus}} -22 0 3 true/pause 250/playSound pickUpItem/pause 500/farmerEat {{SpouseFood}}/pause 500/emote {{Date}} 32/pause 500/message \"{{i18n:SaloonDate.11 |Date={{Date}} }}\"/pause 500/faceDirection farmer 1/speak {{Date}} \"{{i18n:SaloonDate.12}}#$b#[{{SpouseFood}}] {{i18n:SaloonDate.13}}\"/pause 750/speak {{Date}} \"{{i18n:SaloonDate.14}}\"/pause 500/question fork0 \"{{i18n:SaloonDate.15}}#{{i18n:SaloonDate.16}}#{{i18n:SaloonDate.17}}\"/fork poolEnding/pause 200/speak {{Date}} \"{{i18n:Waves.1}}\"/pause 500/globalFade/viewport -1000 1000/changeLocation Beach/warp farmer 12 39/warp {{Date}} 11 39/warp {{Gus}} 1000 1000/warp {{Caroline}} 1000 1000/warp {{Pierre}} 1000 1000/warp {{Robin}} 1000 1000/warp {{Demetrius}} 1000 1000/warp {{Gunther}} 1000 1000/faceDirection farmer 2/faceDirection {{Date}} 2/fade/viewport 12 38/playMusic musicboxsong/pause 1000/speak {{Date}} \"{{i18n:Waves.2}}\"/pause 500/emote farmer 8/pause 500/speak {{Date}} \"{{i18n:Waves.3}}\"/pause 500/speak {{Date}} \"{{i18n:Waves.4}}\"/pause 500/faceDirection {{Date}} 1/faceDirection farmer 3/pause 500/speak {{Date}} \"{{i18n:Waves.5}}\"/pause 500/emote farmer 20/pause 500/speak {{Date}} \"{{i18n:Waves.6}}\"/pause 250/emote farmer 20/pause 1000/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 3/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/stopAnimation {{Date}} 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/globalFade/viewport -1000 -1000/message \"{{i18n:Waves.7 |Date={{Date}} }}\"/pause 1000/end dialogue {{Date}} \"{{i18n:SaloonDate.End}}\"",
+
+				"poolEnding": "addMailReceived PoolDate/pause 200/speak {{Date}} \"{{i18n:Pool{{Result}}.1}}\"/pause 500/globalFade/viewport -1000 1000/warp farmer 36 21/warp {{Date}} 42 20/fade/viewport 39 19/playMusic musicboxsong/pause 1000/pause 500/speak {{Date}} \"{{i18n:Pool{{Result}}.2.{{Gender}} }}\"/shake {{Date}} 1000/textAboveHead {{Date}} \"{{i18n:Pool{{Result}}.3}}\"/pause 1000/message \"{{i18n:Pool{{Result}}.4}}\"/textAboveHead {{Date}} \"{{i18n:Pool{{Result}}.5}}\"/pause 500/faceDirection farmer 2/animate farmer false true 100 102 103/pause 1000/globalFade/viewport -1000 -1000/message \"{{i18n:Pool{{Result}}.6 |Date={{Date}} }}\"/pause 1000/end dialogue {{Date}} \"{{i18n:SaloonDate.{{PoolEnd}} }}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "disabled",
+			},
+		},
+
+		// *** PICNIC DATE ***
+
+		//Forest Date Initiation
+		{
+			"LogName": "Picnic Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116011/f {{Date}} {{MinFriendship}}/O {{Date}}/t 500 1100": "continue/-10000 -1000/farmer -100 -100 2 {{Date}} -100 -100 2/skippable/warp {{Date}} -100 -100/warp farmer -100 -100/faceDirection {{Date}} 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp {{Date}} 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak {{Date}} \"{{Random:{{i18n:PicnicDateIntro.1}} @@ {{i18n:PicnicDateIntro.2}} @@ {{i18n:PicnicDateIntro.3}} @@ {{i18n:PicnicDateIntro.4}} |inputSeparator=@@}}\"/pause 500/emote farmer 8/pause 500/speak {{Date}} \"{{Random:{{i18n:PicnicDateIntro.5}}#$b# @@ {{i18n:PicnicDateIntro.6}}#$b# @@ {{i18n:PicnicDateIntro.7}}#$b# |inputSeparator=@@}}{{Random:{{i18n:PicnicDateIntro.8.{{Gender}} }} @@ {{i18n:PicnicDateIntro.9.{{Gender}} }} @@ {{i18n:PicnicDateIntro.10}} @@ {{i18n:PicnicDateIntro.11}} |inputSeparator=@@}}\"/pause 1000/question fork0 \"{{i18n:AcceptDate.Choice | Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork dateYes/playMusic none/pause 1000/emote {{Date}} 28/speak {{Date}} \"{{i18n:RejectDate.1}}\"/pause 500/faceDirection {{Date}} 3 true/pause 1000/emote {{Date}} 40/pause 400/faceDirection {{Date}} 2/pause 400/speak {{Date}} \"{{i18n:RejectDate.2}}\"/pause 800/faceDirection {{Date}} 1 true/pause 100/faceDirection {{Date}} 0/pause 400/playSound doorClose/warp {{Date}} -100 -100/pause 2000/end dialogue {{Date}} \"{{i18n:RejectDate.3}}\"",
+
+				"dateYes": "pause 200/addMailReceived forestDateAgree/emote {{Date}} 20/pause 500/speak {{Date}} \"{{i18n:PicnicDateIntro.12}}\"/pause 500/end dialogue {{Date}} \"{{i18n:PicnicDateIntro.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": false,
+				"DateType": "forest",
+				"GenericPossible": "true",
+			},
+		},
+		
+		//Ornithologist's Guild Compatibility Map
+		{
+			"LogName": "Temporary Forest Map",
+			"Action": "Load",
+			"Target": "Maps/Forest_DNR",
+			"FromFile": "assets/Maps/Forest_DNR.tmx",
+		},
+		
+		//Forest Date - Suggestive
+		{
+			"LogName": "Picnic Date - Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/Forest",
+			"Entries": {
+
+				"1116012/n forestDateAgree/t 1100 1500": "playful/-1000 -1000/farmer 70 37 2 {{Date}} 70 46 0/skippable/removeTile 69 43 AlwaysFront/removeTile 70 43 AlwaysFront/removeTile 69 44 AlwaysFront/removeTile 69 45 Front/removeTile 69 46 Buildings/removeTile 70 44 AlwaysFront/removeTile 70 45 Front/removeTile 70 46 Buildings/specificTemporarySprite pennyFieldTrip/addObject 71 45 240/addObject 71 46 {{SpouseFood}}/viewport 70 45 true/move farmer 0 8 2 true/pause 750/jump {{Date}}/pause 300/friendship {{Date}} {{FriendBonus}}/speak {{Date}} \"{{i18n:PicnicDate.1}}\"/pause 250/emote farmer 32/pause 500/speak {{Date}} \"{{i18n:PicnicDate.2}}\"/pause 400/emote farmer 20/pause 300/speak {{Date}} \"{{i18n:PicnicDate.3}}\"/pause 400/emote farmer 32/pause 500/faceDirection farmer 1/pause 300/removeObject 71 45 240/farmerEat 240/pause 1250/emote farmer 32/pause 500/message \"{{i18n:PicnicDate.4}}\"/pause 500/speak {{Date}} \"{{i18n:PicnicDate.5}}\"/pause 500/faceDirection {{Date}} 3/pause 300/faceDirection {{Date}} 2/pause 300/faceDirection {{Date}} 1/pause 1000/faceDirection {{Date}} 0/pause 300/speak {{Date}} \"{{i18n:PicnicDate.6}}\"/pause 500/speak {{Date}} \"{{i18n:PicnicDate.7.{{Gender}} }}\"/pause 250/emote farmer 20/pause 250/speak {{Date}} \"{{i18n:PicnicDate.8}}\"/pause 300/speak {{Date}} \"{{i18n:PicnicDate.9}}\"/pause 250/emote farmer 32/pause 300/faceDirection {{Date}} 1/pause 250/shake {{Date}} 250/playSound eat/pause 300/shake {{Date}} 200/playSound eat/removeObject 71 46/pause 500/speak {{Date}} \"{{i18n:PicnicDate.10}}\"/pause 600/faceDirection {{Date}} 0/speak {{Date}} \"{{i18n:PicnicDate.11}}#$b#[{{SpouseFood}}] {{i18n:PicnicDate.12}}\"/pause 500/question fork0 \"{{i18n:PicnicDate.13}}#{{i18n:PicnicDate.14}}#{{i18n:PicnicDate.15}}\"/fork lakeEnding/pause 200/speak {{Date}} \"{{i18n:Forest.1}}\"/pause 250/speak {{Date}} \"{{i18n:Forest.2}}\"/pause 500/globalFade/viewport -1000 1000/{{Ornithologist}}/playSound stairsdown/warp farmer 15 57/warp {{Date}} 13 57/faceDirection farmer 3/faceDirection {{Date}} 1/fade/viewport 21 56 true/playMusic musicboxsong/pause 300/emote farmer 16/pause 250/speak {{Date}} \"{{i18n:Forest.3}}\"/pause 300/emote farmer 60/pause 250/move {{Date}} 1 0 1/pause 250/speak {{Date}} \"{{i18n:Forest.4}}\"/pause 250/globalFade/viewport -1000 -1000/playSound stairsdown/warp farmer 13 57/warp {{Date}} 12 57/faceDirection farmer 3/faceDirection {{Date}} 1/fade/viewport 21 56 true/pause 500/emote {{Date}} 32/faceDirection {{Date}} 2/speak {{Date}} \"{{i18n:Forest.5}}\"/pause 300/faceDirection farmer 2/pause 300/faceDirection {{Date}} 1/speak {{Date}} \"{{i18n:Forest.6}}\"/pause 300/faceDirection farmer 3/emote farmer 20/pause 250/speak {{Date}} \"{{i18n:Forest.7}}\"/pause 300/speak {{Date}} \"{{i18n:Forest.8}}\"/pause 350/emote farmer 20/pause 1000/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 3/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/viewport move 1 0 5000/pause 1000/globalFade/viewport -1000 -1000/stopAnimation {{Date}} 4/showFrame farmer 6/message \"{{i18n:Forest.9 |Date={{Date}} }}\"/pause 500/globalFade/viewport -1000 1000/warp farmer 68 9/warp {{Date}} 68 10/faceDirection farmer 0/faceDirection {{Date}} 0/fade/viewport 69 12 true/move farmer 0 -2 2 true/pause 300/faceDirection {{Date}} 1/pause 400/emote farmer 8/pause 250/faceDirection {{Date}} 0/pause 250/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.1}}\"/pause 300/faceDirection {{Date}} 1/pause 500/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.2}}\"/faceDirection {{Date}} 0/pause 250/emote farmer 60/animate farmer false true 350 104 105/pause 2000/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.3}}\"/pause 300/stopAnimation farmer/pause 250/emote farmer 32/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.4}}\"/pause 500/emote farmer 16/pause 500/faceDirection farmer 0/speed farmer 7/move farmer 0 -5 0/warp farmer 1000 1000/move {{Date}} 0 -7 0 true/globalFade/viewport -1000 -1000/{{SuggestiveCommand}}/playSound doorClose/pause 3000/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.5}}\"/end dialogue {{Date}} \"{{i18n:PicnicDate.End}}\"",
+
+				"lakeEnding": "pause 200/speak {{Date}} \"{{i18n:Lake.1}}\"/pause 500/speak {{Date}} \"{{i18n:Lake.2}}\"/pause 500/globalFade/viewport -1000 1000/warp farmer 34 25/warp {{Date}} 33 25/faceDirection farmer 2/faceDirection {{Date}} 2/fade/viewport 34 25/playMusic musicboxsong/pause 1000/speak {{Date}} \"{{i18n:Lake.3}}\"/pause 500/faceDirection {{Date}} 1/speak {{Date}} \"{{i18n:Lake.4}}\"/faceDirection farmer 3/pause 500/emote farmer 20/pause 250/faceDirection {{Date}} 2/faceDirection farmer 2/pause 250/speak {{Date}} \"{{i18n:Lake.5}}\"/pause 500/speak {{Date}} \"{{i18n:Lake.6}}\"/pause 500/faceDirection {{Date}} 1/pause 250/speak {{Date}} \"{{i18n:Lake.7}}\"/pause 300/faceDirection farmer 3/pause 300/speak {{Date}} \"{{i18n:Lake.8}}\"/pause 250/emote farmer 20/pause 1000/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 3/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/viewport move 0 1 5000/pause 1000/globalFade/viewport -1000 -1000/stopAnimation {{Date}} 4/showFrame farmer 6/message \"{{i18n:Lake.9 |Date={{Date}} }}\"/pause 500/globalFade/viewport -1000 1000/warp farmer 68 9/warp {{Date}} 68 10/faceDirection farmer 0/faceDirection {{Date}} 0/fade/viewport 69 12 true/move farmer 0 -2 2 true/pause 300/faceDirection {{Date}} 1/pause 400/emote farmer 8/pause 250/faceDirection {{Date}} 0/pause 250/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.1}}\"/pause 300/faceDirection {{Date}} 1/pause 500/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.2}}\"/faceDirection {{Date}} 0/pause 250/emote farmer 60/animate farmer false true 350 104 105/pause 2000/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.3}}\"/pause 300/stopAnimation farmer/pause 250/emote farmer 32/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.4}}\"/pause 500/emote farmer 16/pause 500/faceDirection farmer 0/speed farmer 7/move farmer 0 -5 0/warp farmer 1000 1000/move {{Date}} 0 -7 0 true/globalFade/viewport -1000 -1000/{{SuggestiveCommand}}/playSound doorClose/pause 3000/speak {{Date}} \"{{i18n:PicnicDate.Suggestive.5}}\"/end dialogue {{Date}} \"{{i18n:PicnicDate.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "enabled",
+			},
+		},
+
+		//Forest Date - Not Suggestive
+		{
+			"LogName": "Picnic Date - Not Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/Forest",
+			"Entries": {
+
+				"1116012/n forestDateAgree/t 1100 1500": "playful/-1000 -1000/farmer 70 37 2 {{Date}} 70 46 0/skippable/removeTile 69 43 AlwaysFront/removeTile 70 43 AlwaysFront/removeTile 69 44 AlwaysFront/removeTile 69 45 Front/removeTile 69 46 Buildings/removeTile 70 44 AlwaysFront/removeTile 70 45 Front/removeTile 70 46 Buildings/specificTemporarySprite pennyFieldTrip/addObject 71 45 240/addObject 71 46 {{SpouseFood}}/viewport 70 45 true/move farmer 0 8 2 true/pause 750/jump {{Date}}/pause 300/friendship {{Date}} {{FriendBonus}}/speak {{Date}} \"{{i18n:PicnicDate.1}}\"/pause 250/emote farmer 32/pause 500/speak {{Date}} \"{{i18n:PicnicDate.2}}\"/pause 400/emote farmer 20/pause 300/speak {{Date}} \"{{i18n:PicnicDate.3}}\"/pause 400/emote farmer 32/pause 500/faceDirection farmer 1/pause 300/removeObject 71 45 240/farmerEat 240/pause 1250/emote farmer 32/pause 500/message \"{{i18n:PicnicDate.4}}\"/pause 500/speak {{Date}} \"{{i18n:PicnicDate.5}}\"/pause 500/faceDirection {{Date}} 3/pause 300/faceDirection {{Date}} 2/pause 300/faceDirection {{Date}} 1/pause 1000/faceDirection {{Date}} 0/pause 300/speak {{Date}} \"{{i18n:PicnicDate.6}}\"/pause 500/speak {{Date}} \"{{i18n:PicnicDate.7.{{Gender}} }}\"/pause 250/emote farmer 20/pause 250/speak {{Date}} \"{{i18n:PicnicDate.8}}\"/pause 300/speak {{Date}} \"{{i18n:PicnicDate.9}}\"/pause 250/emote farmer 32/pause 300/faceDirection {{Date}} 1/pause 250/shake {{Date}} 250/playSound eat/pause 300/shake {{Date}} 200/playSound eat/removeObject 71 46/pause 500/speak {{Date}} \"{{i18n:PicnicDate.10}}\"/pause 600/faceDirection {{Date}} 0/speak {{Date}} \"{{i18n:PicnicDate.11}}#$b#[{{SpouseFood}}] {{i18n:PicnicDate.12}}\"/pause 500/question fork0 \"{{i18n:PicnicDate.13}}#{{i18n:PicnicDate.14}}#{{i18n:PicnicDate.15}}\"/fork lakeEnding/pause 200/speak {{Date}} \"{{i18n:Forest.1}}\"/pause 250/speak {{Date}} \"{{i18n:Forest.2}}\"/pause 500/globalFade/viewport -1000 1000/{{Ornithologist}}/playSound stairsdown/warp farmer 15 57/warp {{Date}} 13 57/faceDirection farmer 3/faceDirection {{Date}} 1/fade/viewport 21 56 true/playMusic musicboxsong/pause 300/emote farmer 16/pause 250/speak {{Date}} \"{{i18n:Forest.3}}\"/pause 300/emote farmer 60/pause 250/move {{Date}} 1 0 1/pause 250/speak {{Date}} \"{{i18n:Forest.4}}\"/pause 250/globalFade/viewport -1000 -1000/playSound stairsdown/warp farmer 13 57/warp {{Date}} 12 57/faceDirection farmer 3/faceDirection {{Date}} 1/fade/viewport 21 56 true/pause 500/emote {{Date}} 32/faceDirection {{Date}} 2/speak {{Date}} \"{{i18n:Forest.5}}\"/pause 300/faceDirection farmer 2/pause 300/faceDirection {{Date}} 1/speak {{Date}} \"{{i18n:Forest.6}}\"/pause 300/faceDirection farmer 3/emote farmer 20/pause 250/speak {{Date}} \"{{i18n:Forest.7}}\"/pause 300/speak {{Date}} \"{{i18n:Forest.8}}\"/pause 350/emote farmer 20/pause 1000/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 3/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/viewport move 1 0 5000/pause 1000/globalFade/viewport -1000 -1000/stopAnimation {{Date}} 4/showFrame farmer 6/message \"{{i18n:Forest.9 |Date={{Date}} }}\"/end dialogue {{Date}} \"{{i18n:PicnicDate.End}}\"",
+
+				"lakeEnding": "pause 200/speak {{Date}} \"{{i18n:Lake.1}}\"/pause 500/speak {{Date}} \"{{i18n:Lake.2}}\"/pause 500/globalFade/viewport -1000 1000/warp farmer 34 25/warp {{Date}} 33 25/faceDirection farmer 2/faceDirection {{Date}} 2/fade/viewport 34 25/playMusic musicboxsong/pause 1000/speak {{Date}} \"{{i18n:Lake.3}}\"/pause 500/faceDirection {{Date}} 1/speak {{Date}} \"{{i18n:Lake.4}}\"/faceDirection farmer 3/pause 500/emote farmer 20/pause 250/faceDirection {{Date}} 2/faceDirection farmer 2/pause 250/speak {{Date}} \"{{i18n:Lake.5}}\"/pause 500/speak {{Date}} \"{{i18n:Lake.6}}\"/pause 500/faceDirection {{Date}} 1/pause 250/speak {{Date}} \"{{i18n:Lake.7}}\"/pause 300/faceDirection farmer 3/pause 300/speak {{Date}} \"{{i18n:Lake.8}}\"/pause 250/emote farmer 20/pause 1000/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 3/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/viewport move 0 1 5000/pause 1000/globalFade/viewport -1000 -1000/stopAnimation {{Date}} 4/showFrame farmer 6/message \"{{i18n:Lake.9 |Date={{Date}} }}\"/end dialogue {{Date}} \"{{i18n:PicnicDate.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "disabled",
+			},
+		},
+
+		// *** LIBRARY DATE ****
+		
+		//Mountain Temporary Map - SVE Compat
+		{
+			"LogName": "Load Mountain Map For SVE",
+			"Action": "Load",
+			"Target": "Maps/Mountain_temp",
+			"FromFile": "assets/Maps/Mountain_Temp.tbin",
+		},
+		
+		//Library Date Initiation
+		{
+			"LogName": "Library Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116013/f {{Date}} {{MinFriendship}}/O {{Date}}/t 500 1500": "continue/-10000 -1000/farmer -100 -100 2 {{Date}} -100 -100 2/skippable/warp {{Date}} -100 -100/warp farmer -100 -100/faceDirection {{Date}} 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp {{Date}} 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak {{Date}} \"{{Random:{{i18n:LibraryDateIntro.1}} @@ {{i18n:LibraryDateIntro.2}} @@ {{i18n:LibraryDateIntro.3}} @@ {{i18n:LibraryDateIntro.4}} |inputSeparator=@@}}\"/pause 500/emote farmer 8/pause 500/faceDirection {{Date}} 1/pause 500/faceDirection {{Date}} 3/pause 500/faceDirection {{Date}} 2/pause 500/shake {{Date}} 250/textAboveHead {{Date}} \"{{i18n:LibraryDateIntro.5}}\"/pause 250/speak {{Date}} \"{{Random:{{i18n:LibraryDateIntro.6}} @@ {{i18n:LibraryDateIntro.7}} @@ {{i18n:LibraryDateIntro.8}} |inputSeparator=@@}}\"/pause 300/speak {{Date}} \"{{Random: {{i18n:LibraryDateIntro.9}} @@ {{i18n:LibraryDateIntro.10}} @@ {{i18n:LibraryDateIntro.11}}|inputSeparator=@@}}$h#$b#{{i18n:LibraryDateIntro.12}}\"/pause 1000/question fork0 \"{{i18n:AcceptDate.Choice | Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork dateYes/playMusic none/pause 1000/emote {{Date}} 28/speak {{Date}} \"{{i18n:RejectDate.1}}\"/pause 500/faceDirection {{Date}} 3 true/pause 1000/emote {{Date}} 40/pause 400/faceDirection {{Date}} 2/pause 400/speak {{Date}} \"{{i18n:RejectDate.2}}\"/pause 800/faceDirection {{Date}} 1 true/pause 100/faceDirection {{Date}} 0/pause 400/playSound doorClose/warp {{Date}} -100 -100/pause 2000/end dialogue {{Date}} \"{{i18n:RejectDate.3}}\"",
+
+				"dateYes": "pause 200/addMailReceived libraryDateAgree/emote {{Date}} 20/pause 500/speak {{Date}} \"{{i18n:LibraryDateIntro.13}}\"/pause 500/end dialogue {{Date}} \"{{i18n:LibraryDateIntro.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": false,
+				"DateType": "library",
+				"GenericPossible": "true",
+			},
+		},
+		
+		//Library Date, Common Beginning
+		{
+			"LogName": "Library Date - Beginning",
+			"Action": "EditData",
+			"Target": "Data/Events/ArchaeologyHouse",
+			"Entries": {
+				"1116014/n libraryDateAgree": "libraryTheme/16 10/farmer 10 14 1 {{Date}} 16 10 1 {{Gunther}} 5 8 2 {{Caroline}} 16 5 0 {{Jodi}} 14 14 2 Jas 15 15 3 Vincent 14 16 0 {{Demetrius}} 22 9 3/skippable/addObject 17 10 395 1/move farmer 2 0 0/move farmer 0 -4 1/pause 300/emote farmer 8/pause 300/shake {{Date}} 300/playSound waterSlosh/pause 300/shake {{Date}} 300/playSound waterSlosh/move farmer 3 0 1/pause 500/emote farmer 40/pause 300/showFrame 34/positionOffset farmer 20 0/playSound pickUpItem/pause 400/positionOffset farmer -20 0/showFrame 6/emote {{Date}} 16/faceDirection {{Date}} 3/pause 100/friendship {{Date}} {{FriendBonus}}/emote {{Date}} 32/speak {{Date}} \"{{i18n:LibraryDate.1}}\"/pause 400/emote farmer 32/speak {{Date}} \"{{i18n:LibraryDate.2}}\"/pause 300/faceDirection {{Date}} 1/pause 400/shake {{Date}} 200/playSound pickUpItem/removeObject 17 10/pause 300/faceDirection {{Date}} 3/shake {{Date}} 200/playSound pickUpItem/pause 200/farmerEat 395/pause 1500/emote farmer 32/pause 500/message \"{{i18n:LibraryDate.3}}\"/pause 500/faceDirection farmer 1/emote {{Date}} 32/pause 300/speak {{Date}} \"{{i18n:LibraryDate.4}}#$b#[395] {{i18n:LibraryDate.5}}\"/pause 1000/speak {{Date}} \"{{i18n:LibraryDate.6}}\"/pause 400/emote farmer 32/pause 300/speak {{Date}} \"{{i18n:LibraryDate.7}}\"/pause 200/faceDirection {{Date}} 1/move farmer 0 -1 0/pause 1000/quickQuestion {{i18n:LibraryDate.BookChoice}}#{{i18n:LibraryDate.Detective |PlayerName={{PlayerName}} }}(break)switchEvent 1116014_detective",
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"DateType": "library",
+			},
+		},
+		
+		//Library Date - Suggestive + Cutscene
+		{
+			"LogName": "Library Date - Book Scene, Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/ArchaeologyHouse",
+			"Entries": {
+				"1116014_detective": "pause 500/playSound pickUpItem/pause 300/move farmer 2 0 2/pause 400/playSound pickUpItem/addObject 17 10 102/pause 750/speak {{Date}} \"{{i18n:Detective.1 |PlayerName={{PlayerName}} }}\"/pause 750/move farmer 1 0 2/move {{Date}} 0 -1 1/move {{Date}} 1 0 2/pause 750/animate {{Date}} false true 100 0 1/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/stopAnimation {{Date}} 0/pause 250/message \"{{i18n:Detective.2 |Date={{Date}} }}\"/pause 300/emote farmer 20/pause 300/speak {{Date}} \"{{i18n:Detective.3}}\"/pause 300/emote farmer 32/pause 750/message \"{{i18n:Detective.4 |PlayerName={{PlayerName}} }}\"/pause 500/message \"{{i18n:Detective.5.{{LibraryGender}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.6}}\"/pause 500/emote farmer 32/pause 500/message \"{{i18n:Detective.7 |PlayerName={{PlayerName}} }}\"/pause 500/emote {{Date}} 8/pause 500/message \"{{i18n:Detective.8.{{LibraryGender}} }}\"/pause 300/emote {{Date}} 16/pause 250/speak {{Date}} \"{{i18n:Detective.9}}\"/pause 500/textAboveHead {{Date}} \"{{i18n:Detective.10}}\"/pause 750/textAboveHead {{Date}} \"{{i18n:Detective.11}}\"/pause 750/speak {{Date}} \"{{i18n:Detective.12}}\"/stopMusic/globalFade/viewport -1000 1000/changeLocation Town/warp farmer -2 90/warp {{Date}} 1000 1000/warp {{Gunther}} 1000 1000/warp {{Jodi}} 1000 1000/warp Vincent 1000 1000/warp Jas 1000 1000/warp {{Demetrius}} 1000 1000/warp {{Caroline}} 1000 1000/addTemporaryActor Bouncer 16 32 1000 1000 down/faceDirection farmer 1/faceDirection {{Date}} 2/faceDirection Bouncer 2/glow 200 0 0 true/fade/viewport 15 88/playMusic junimoKart_mushroomMusic/pause 1000/warp Bouncer 10 86/playSound doorClose/speed Bouncer 6/move Bouncer 0 5 2/pause 500/playSound wand/screenFlash 3/warp Bouncer 1000 1000/pause 750/warp {{Jodi}} 10 86/playSound doorClose/pause 100/emote {{Jodi}} 16/textAboveHead {{Jodi}} \"{{i18n:Detective.13}}\"/speed {{Jodi}} 4/move {{Jodi}} 0 5 1/message \"{{i18n:Detective.14}}\"/pause 500/warp farmer 2 91/pause 600/emote farmer 8/pause 100/faceDirection {{Jodi}} 3/emote {{Jodi}} 16/pause 100/move farmer 7 0 1 true/message \"{{i18n:Detective.15 |PlayerName={{PlayerName}} }}\"/pause 200/emote farmer 8/message \"{{i18n:Detective.16 |PlayerName={{PlayerName}} }}\"/pause 250/emote {{Jodi}} 28/pause 250/faceDirection {{Jodi}} 1/pause 250/message \"{{i18n:Detective.17}}\"/pause 500/speak {{Date}} \"{{i18n:Detective.18.{{LibraryGender}} |PlayerName={{PlayerName}} }}\"/pause 500/globalFade/viewport -1000 1000/changeToTemporaryMap Mountain_Temp false/warp farmer 36 29/warp {{Jodi}} 1000 1000/warp Bouncer 44 29/faceDirection farmer 1/faceDirection Bouncer 2/speak {{Date}} \"{{i18n:Detective.19 |PlayerName={{PlayerName}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.20.{{LibraryGender}} }}\"/pause 500/fade/viewport 40 29 true/pause 300/move farmer 5 0 1 true/speak {{Date}} \"{{i18n:Detective.21}}\"/pause 300/emote farmer 40/pause 500/message \"{{i18n:Detective.22 |PlayerName={{PlayerName}} }}\"/pause 350/move farmer 2 0 1/playSound leafrustle/emote farmer 16/emote Bouncer 16/pause 100/jump Bouncer/pause 400/playSound wand/screenFlash 3/warp Bouncer 44 31/move farmer -1 0 2/move farmer 0 2 1/pause 500/message \"{{i18n:Detective.23 |PlayerName={{PlayerName}} }}\"/pause 300/move farmer 1 0 1/message \"{{i18n:Detective.24}}\"/pause 350/speak {{Date}} \"{{i18n:Detective.25}}\"/pause 350/playSound wand/screenFlash 3/warp Bouncer 1000 1000/warp {{Date}} 44 31/faceDirection {{Date}} 3/pause 300/emote farmer 8/message \"{{i18n:Detective.26 |Date={{Date}} }}\"/pause 500/message \"{{i18n:Detective.27 |PlayerName={{PlayerName}} |Date={{Date}} }}\"/pause 300/message \"{{i18n:Detective.28 |Date={{Date}} }}\"/pause 500/faceDirection {{Date}} 2/pause 500/playSound pickUpItem/shake {{Date}} 250/temporaryAnimatedSprite Maps\\springobjects 96 304 16 16 7777 1 7777777 44 32 false false 65 0 1 0 0 0/pause 500/message \"{{i18n:Detective.29 |Date={{Date}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.30}}\"/pause 400/playSound thunder/screenFlash 3/pause 1000/playSound thunder/screenFlash 3/pause 500/message \"{{i18n:Detective.31 |Date={{Date}} }}\"/pause 200/stopMusic/speak {{Gunther}} \"{{i18n:Detective.32 |Date={{Date}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.33}}\"/pause 500/globalFade/viewport -1000 1000/stopGlowing/changeLocation ArchaeologyHouse/warp farmer 18 9/warp {{Date}} 17 9/warp {{Gunther}} 17 14/faceDirection {{Gunther}} 0/faceDirection farmer 2/faceDirection {{Date}} 2/positionOffset farmer 0 15/fade/viewport 16 10/pause 500/speak {{Gunther}} \"{{i18n:Detective.34}}\"/pause 500/emote {{Date}} 16/pause 250/speak {{Date}} \"{{i18n:Detective.35}}\"/pause 300/faceDirection {{Date}} 1/pause 300/playMusic musicboxsong/speak {{Date}} \"{{i18n:Detective.36}}\"/emote farmer 20/pause 300/faceDirection {{Date}} 2/pause 300/speak {{Date}} \"{{i18n:Detective.37 |Gunther={{Gunther}} }}\"/pause 300/speak {{Gunther}} \"{{i18n:Detective.38 |Date={{Date}} }}\"/faceDirection {{Gunther}} 2/pause 400/faceDirection {{Date}} 1/faceDirection farmer 3/pause 250/speak {{Date}} \"{{i18n:Detective.39 |Jodi={{Jodi}} |PlayerName={{PlayerName}} |Date={{Date}} }}\"/pause 200/emote farmer 32/pause 200/speak {{Date}} \"{{i18n:Detective.40.Suggestive}}\"/pause 200/faceDirection {{Date}} 2/pause 300/faceDirection {{Date}} 1/pause 200/speak {{Date}} \"{{i18n:Detective.41.Suggestive}}\"/pause 200/emote farmer 16/speed farmer 7/move farmer 1 0 2/move farmer 0 4 3/faceDirection {{Date}} 2/move farmer -9 0 2 true/globalFade/viewport -1000 -1000/{{SuggestiveCommand}}/playSound doorClose/pause 3000/speak {{Date}} \"{{i18n:Detective.42.Suggestive}}\"/end dialogueWarpOut {{Date}} \"{{i18n:LibraryDate.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "enabled",
+				"LibraryDateCutscene": "enabled",
+			},
+		},
+		
+		//Library Date - Suggestive + No Cutscene
+		{
+			"LogName": "Library Date - No Book Scene, Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/ArchaeologyHouse",
+			"Entries": {
+				"1116014_detective": "pause 500/playSound pickUpItem/pause 300/move farmer 2 0 2/pause 400/playSound pickUpItem/addObject 17 10 102/pause 750/speak {{Date}} \"{{i18n:Detective.1 |PlayerName={{PlayerName}} }}\"/pause 750/move farmer 1 0 2/move {{Date}} 0 -1 1/move {{Date}} 1 0 2/pause 750/animate {{Date}} false true 100 0 1/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/stopAnimation {{Date}} 0/pause 250/message \"{{i18n:Detective.2 |Date={{Date}} }}\"/pause 300/emote farmer 20/pause 300/speak {{Date}} \"{{i18n:Detective.3}}\"/pause 300/emote farmer 32/pause 750/message \"{{i18n:Detective.4 |PlayerName={{PlayerName}} }}\"/pause 500/message \"{{i18n:Detective.5.{{LibraryGender}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.6}}\"/pause 500/emote farmer 32/pause 500/message \"{{i18n:Detective.7 |PlayerName={{PlayerName}} }}\"/pause 500/emote {{Date}} 8/pause 500/message \"{{i18n:Detective.8.{{LibraryGender}} }}\"/pause 300/emote {{Date}} 16/pause 250/speak {{Date}} \"{{i18n:Detective.9}}\"/pause 500/textAboveHead {{Date}} \"{{i18n:Detective.10}}\"/pause 750/textAboveHead {{Date}} \"{{i18n:Detective.11}}\"/pause 750/speak {{Date}} \"{{i18n:Detective.12}}\"/stopMusic/globalFade/viewport -1000 1000/warp {{Gunther}} 17 14/faceDirection {{Gunther}} 0/warp {{Jodi}} 1000 1000/warp Vincent 1000 1000/warp Jas 1000 1000/warp {{Demetrius}} 1000 1000/warp {{Caroline}} 1000 1000/pause 1000/message \"[CharacterName {{Date}}] and I read the book all day long. It was so interesting! [CharacterName {{Date}}] says that La{{PlayerName}} reminds them of me somehow...\"/pause 1000/fade/viewport 16 10/pause 500/speak {{Gunther}} \"{{i18n:Detective.32 |Date={{Date}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.33}}\"/pause 300/speak {{Gunther}} \"{{i18n:Detective.34}}\"/pause 500/emote {{Date}} 16/pause 250/speak {{Date}} \"{{i18n:Detective.35}}\"/pause 300/faceDirection {{Date}} 1/pause 300/playMusic musicboxsong/speak {{Date}} \"{{i18n:Detective.36}}\"/emote farmer 20/pause 300/faceDirection {{Date}} 2/pause 300/speak {{Date}} \"{{i18n:Detective.37 |Gunther={{Gunther}} }}\"/pause 300/speak {{Gunther}} \"{{i18n:Detective.38 |Date={{Date}} }}\"/faceDirection {{Gunther}} 2/pause 400/faceDirection {{Date}} 1/faceDirection farmer 3/pause 250/speak {{Date}} \"{{i18n:Detective.39.NoStory |Jodi={{Jodi}} |PlayerName={{PlayerName}} |Date={{Date}} }}\"/pause 200/emote farmer 32/pause 200/speak {{Date}} \"Thanks for coming today, @. I had a lot of fun.\"/pause 200/faceDirection {{Date}} 2/pause 300/faceDirection {{Date}} 1/pause 200/speak {{Date}} \"{{i18n:Detective.40.Suggestive}}\"/pause 200/faceDirection {{Date}} 2/pause 300/faceDirection {{Date}} 1/pause 200/speak {{Date}} \"{{i18n:Detective.41.Suggestive}}\"/pause 200/emote farmer 16/speed farmer 7/move farmer 1 0 2/move farmer 0 4 3/faceDirection {{Date}} 2/move farmer -9 0 2 true/globalFade/viewport -1000 -1000/{{SuggestiveCommand}}/playSound doorClose/pause 3000/speak {{Date}} \"{{i18n:Detective.42.Suggestive}}\"/end dialogueWarpOut {{Date}} \"{{i18n:LibraryDate.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "enabled",
+				"LibraryDateCutscene": "disabled",
+			},
+		},
+		
+		//Library Date - Not Suggestive + Cutscene
+		{
+			"LogName": "Library Date - Book Scene, Not Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/ArchaeologyHouse",
+			"Entries": {
+				"1116014_detective": "pause 500/playSound pickUpItem/pause 300/move farmer 2 0 2/pause 400/playSound pickUpItem/addObject 17 10 102/pause 750/speak {{Date}} \"{{i18n:Detective.1 |PlayerName={{PlayerName}} }}\"/pause 750/move farmer 1 0 2/move {{Date}} 0 -1 1/move {{Date}} 1 0 2/pause 750/animate {{Date}} false true 100 0 1/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/stopAnimation {{Date}} 0/pause 250/message \"{{i18n:Detective.2 |Date={{Date}} }}\"/pause 300/emote farmer 20/pause 300/speak {{Date}} \"{{i18n:Detective.3}}\"/pause 300/emote farmer 32/pause 750/message \"{{i18n:Detective.4 |PlayerName={{PlayerName}} }}\"/pause 500/message \"{{i18n:Detective.5.{{LibraryGender}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.6}}\"/pause 500/emote farmer 32/pause 500/message \"{{i18n:Detective.7 |PlayerName={{PlayerName}} }}\"/pause 500/emote {{Date}} 8/pause 500/message \"{{i18n:Detective.8.{{LibraryGender}} }}\"/pause 300/emote {{Date}} 16/pause 250/speak {{Date}} \"{{i18n:Detective.9}}\"/pause 500/textAboveHead {{Date}} \"{{i18n:Detective.10}}\"/pause 750/textAboveHead {{Date}} \"{{i18n:Detective.11}}\"/pause 750/speak {{Date}} \"{{i18n:Detective.12}}\"/stopMusic/globalFade/viewport -1000 1000/changeLocation Town/warp farmer -2 90/warp {{Date}} 1000 1000/warp {{Gunther}} 1000 1000/warp {{Jodi}} 1000 1000/warp Vincent 1000 1000/warp Jas 1000 1000/warp {{Demetrius}} 1000 1000/warp {{Caroline}} 1000 1000/addTemporaryActor Bouncer 16 32 1000 1000 down/faceDirection farmer 1/faceDirection {{Date}} 2/faceDirection Bouncer 2/glow 200 0 0 true/fade/viewport 15 88/playMusic junimoKart_mushroomMusic/pause 1000/warp Bouncer 10 86/playSound doorClose/speed Bouncer 6/move Bouncer 0 5 2/pause 500/playSound wand/screenFlash 3/warp Bouncer 1000 1000/pause 750/warp {{Jodi}} 10 86/playSound doorClose/pause 100/emote {{Jodi}} 16/textAboveHead {{Jodi}} \"{{i18n:Detective.13}}\"/speed {{Jodi}} 4/move {{Jodi}} 0 5 1/message \"{{i18n:Detective.14}}\"/pause 500/warp farmer 2 91/pause 600/emote farmer 8/pause 100/faceDirection {{Jodi}} 3/emote {{Jodi}} 16/pause 100/move farmer 7 0 1 true/message \"{{i18n:Detective.15 |PlayerName={{PlayerName}} }}\"/pause 200/emote farmer 8/message \"{{i18n:Detective.16 |PlayerName={{PlayerName}} }}\"/pause 250/emote {{Jodi}} 28/pause 250/faceDirection {{Jodi}} 1/pause 250/message \"{{i18n:Detective.17}}\"/pause 500/speak {{Date}} \"{{i18n:Detective.18.{{LibraryGender}} |PlayerName={{PlayerName}} }}\"/pause 500/globalFade/viewport -1000 1000/changeToTemporaryMap Mountain_Temp false/warp farmer 36 29/warp {{Jodi}} 1000 1000/warp Bouncer 44 29/faceDirection farmer 1/faceDirection Bouncer 2/speak {{Date}} \"{{i18n:Detective.19 |PlayerName={{PlayerName}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.20.{{LibraryGender}} }}\"/pause 500/fade/viewport 40 29 true/pause 300/move farmer 5 0 1 true/speak {{Date}} \"{{i18n:Detective.21}}\"/pause 300/emote farmer 40/pause 500/message \"{{i18n:Detective.22 |PlayerName={{PlayerName}} }}\"/pause 350/move farmer 2 0 1/playSound leafrustle/emote farmer 16/emote Bouncer 16/pause 100/jump Bouncer/pause 400/playSound wand/screenFlash 3/warp Bouncer 44 31/move farmer -1 0 2/move farmer 0 2 1/pause 500/message \"{{i18n:Detective.23 |PlayerName={{PlayerName}} }}\"/pause 300/move farmer 1 0 1/message \"{{i18n:Detective.24}}\"/pause 350/speak {{Date}} \"{{i18n:Detective.25}}\"/pause 350/playSound wand/screenFlash 3/warp Bouncer 1000 1000/warp {{Date}} 44 31/faceDirection {{Date}} 3/pause 300/emote farmer 8/message \"{{i18n:Detective.26 |Date={{Date}} }}\"/pause 500/message \"{{i18n:Detective.27 |PlayerName={{PlayerName}} |Date={{Date}} }}\"/pause 300/message \"{{i18n:Detective.28 |Date={{Date}} }}\"/pause 500/faceDirection {{Date}} 2/pause 500/playSound pickUpItem/shake {{Date}} 250/temporaryAnimatedSprite Maps\\springobjects 96 304 16 16 7777 1 7777777 44 32 false false 65 0 1 0 0 0/pause 500/message \"{{i18n:Detective.29 |Date={{Date}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.30}}\"/pause 400/playSound thunder/screenFlash 3/pause 1000/playSound thunder/screenFlash 3/pause 500/message \"{{i18n:Detective.31 |Date={{Date}} }}\"/pause 200/stopMusic/speak {{Gunther}} \"{{i18n:Detective.32 |Date={{Date}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.33}}\"/pause 500/globalFade/viewport -1000 1000/stopGlowing/changeLocation ArchaeologyHouse/warp farmer 18 9/warp {{Date}} 17 9/warp {{Gunther}} 17 14/faceDirection {{Gunther}} 0/faceDirection farmer 2/faceDirection {{Date}} 2/positionOffset farmer 0 15/fade/viewport 16 10/pause 500/speak {{Gunther}} \"{{i18n:Detective.34}}\"/pause 500/emote {{Date}} 16/pause 250/speak {{Date}} \"{{i18n:Detective.35}}\"/pause 300/faceDirection {{Date}} 1/pause 300/playMusic musicboxsong/speak {{Date}} \"{{i18n:Detective.36}}\"/emote farmer 20/pause 300/faceDirection {{Date}} 2/pause 300/speak {{Date}} \"{{i18n:Detective.37 |Gunther={{Gunther}} }}\"/pause 300/speak {{Gunther}} \"{{i18n:Detective.38 |Date={{Date}} }}\"/faceDirection {{Gunther}} 2/pause 400/faceDirection {{Date}} 1/faceDirection farmer 3/pause 250/speak {{Date}} \"{{i18n:Detective.39 |Jodi={{Jodi}} |PlayerName={{PlayerName}} |Date={{Date}} }}\"/pause 200/emote farmer 32/pause 200/speak {{Date}} \"{{i18n:Detective.40}}\"/pause 1000/message \"{{i18n:Detective.41 |Date={{Date}} }}\"/pause 250/end dialogueWarpOut {{Date}} \"{{i18n:LibraryDate.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "disabled",
+				"LibraryDateCutscene": "enabled",
+			},
+		},
+		
+		//Library Date - Not Suggestive + No Cutscene
+		{
+			"LogName": "Library Date - No Book Scene, Not Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/ArchaeologyHouse",
+			"Entries": {
+				"1116014_detective": "pause 500/playSound pickUpItem/pause 300/move farmer 2 0 2/pause 400/playSound pickUpItem/addObject 17 10 102/pause 750/speak {{Date}} \"{{i18n:Detective.1 |PlayerName={{PlayerName}} }}\"/pause 750/move farmer 1 0 2/move {{Date}} 0 -1 1/move {{Date}} 1 0 2/pause 750/animate {{Date}} false true 100 0 1/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/stopAnimation {{Date}} 0/pause 250/message \"{{i18n:Detective.2 |Date={{Date}} }}\"/pause 300/emote farmer 20/pause 300/speak {{Date}} \"{{i18n:Detective.3}}\"/pause 300/emote farmer 32/pause 750/message \"{{i18n:Detective.4 |PlayerName={{PlayerName}} }}\"/pause 500/message \"{{i18n:Detective.5.{{LibraryGender}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.6}}\"/pause 500/emote farmer 32/pause 500/message \"{{i18n:Detective.7 |PlayerName={{PlayerName}} }}\"/pause 500/emote {{Date}} 8/pause 500/message \"{{i18n:Detective.8.{{LibraryGender}} }}\"/pause 300/emote {{Date}} 16/pause 250/speak {{Date}} \"{{i18n:Detective.9}}\"/pause 500/textAboveHead {{Date}} \"{{i18n:Detective.10}}\"/pause 750/textAboveHead {{Date}} \"{{i18n:Detective.11}}\"/pause 750/speak {{Date}} \"{{i18n:Detective.12}}\"/stopMusic/globalFade/viewport -1000 1000/warp {{Gunther}} 17 14/faceDirection {{Gunther}} 0/warp {{Jodi}} 1000 1000/warp Vincent 1000 1000/warp Jas 1000 1000/warp {{Demetrius}} 1000 1000/warp {{Caroline}} 1000 1000/pause 1000/message \"{{i18n:Detective.Skip |Date={{Date}} |PlayerName={{PlayerName}} }}\"/pause 1000/fade/viewport 16 10/pause 500/speak {{Gunther}} \"{{i18n:Detective.32 |Date={{Date}} }}\"/pause 500/speak {{Date}} \"{{i18n:Detective.33}}\"/pause 300/speak {{Gunther}} \"{{i18n:Detective.34}}\"/pause 500/emote {{Date}} 16/pause 250/speak {{Date}} \"{{i18n:Detective.35}}\"/pause 300/faceDirection {{Date}} 1/pause 300/playMusic musicboxsong/speak {{Date}} \"{{i18n:Detective.36}}\"/emote farmer 20/pause 300/faceDirection {{Date}} 2/pause 300/speak {{Date}} \"{{i18n:Detective.37 |Gunther={{Gunther}} }}\"/pause 300/speak {{Gunther}} \"{{i18n:Detective.38 |Date={{Date}} }}\"/faceDirection {{Gunther}} 2/pause 400/faceDirection {{Date}} 1/faceDirection farmer 3/pause 250/speak {{Date}} \"{{i18n:Detective.39.NoStory |Jodi={{Jodi}} |PlayerName={{PlayerName}} |Date={{Date}} }}\"/pause 200/emote farmer 32/pause 200/speak {{Date}} \"{{i18n:Detective.40}}\"/pause 1000/message \"{{i18n:Detective.41 |Date={{Date}} }}\"/pause 250/end dialogueWarpOut {{Date}} \"{{i18n:LibraryDate.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "disabled",
+				"LibraryDateCutscene": "disabled",
+			},
+		},
+		
+		
+		// *** DANCE RARE DATE ****
+		
+		//Load Radio
+		{
+			"LogName": "Load Radio",
+			"Action": "Load",
+			"Target": "Characters/RadioDN",
+			"FromFile": "assets/Characters/Radio_DN.png",
+		},
+
+		//Dance Date - Suggestive
+		{
+			"LogName": "Dance Date - Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116019/f {{Date}} {{MinFriendship}}/O {{Date}}/t 500 1500": "summer_day_ambient/-10000 -1000/farmer -100 -100 2 {{Date}} -100 -100 2/skippable/warp {{Date}} -100 -100/warp farmer -100 -100/faceDirection {{Date}} 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp {{Date}} 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/pause 200/speak {{Date}} \"{{i18n:DanceDate.1}}\"/pause 400/speak {{Date}} \"{{i18n:DanceDate.2 |Season={{Season}} }}\"/pause 200/emote farmer 20/pause 200/speak {{Date}} \"{{i18n:DanceDate.3}}\"/pause 300/move {{Date}} 0 1 2/pause 200/shake {{Date}} 250/playSound pickUpItem/pause 250/speak {{Date}} \"[{{FlowerGift}}] {{i18n:DanceDate.4}}\"/pause 300/emote farmer 20/pause 200/speak {{Date}} \"{{i18n:DanceDate.5}}\"/pause 200/emote farmer 8/pause 200/speak {{Date}} \"{{i18n:DanceDate.6}}\"/pause 500/question fork1 \"{{i18n:DanceDate.7 |Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork danceNo/friendship {{Date}} {{FriendBonus}}/pause 500/emote {{Date}} 20/pause 200/speak {{Date}} \"{{i18n:DanceDate.8}}\"/move {{Date}} 0 -1 1/faceDirection farmer 1 true/move {{Date}} 1 0 1/pause 250/shake {{Date}} 250/playSound pickUpItem/addTemporaryActor RadioDN 16 32 66 15 2 false/pause 600/shake {{Date}} 250/playSound select/shake RadioDN 600000/playMusic {{SpouseMusic}}/pause 300/faceDirection farmer 0 true/move {{Date}} -2 0 1/move farmer 0 -2 3/pause 700/pause 10/playSound pickUpItem/faceDirection farmer 3 true/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 800/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/viewport move -1 1 15000/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 1000/globalFade/viewport -10000 -10000/pause 500/speak {{Date}} \"{{i18n:DanceDate.9.Suggestive}}\"/pause 500/speak {{Date}} \"{{i18n:DanceDate.10.Suggestive}}\"/pause 1000/{{SuggestiveCommand}}/playSound doorClose/pause 3500/speak {{Date}} \"{{i18n:DanceDate.11.Suggestive}}\"/pause 500/message \"{{i18n:DanceDate.ILoveYou |Date={{Date}} }}\"/end dialogue {{Date}} \"{{i18n:DanceDate.End |Season={{Season}} }}\"",
+
+				"danceNo": "pause 500/emote {{Date}} 28/speak {{Date}} \"{{i18n:DanceRefusal.1}}\"/pause 500/faceDirection {{Date}} 3 true/pause 1000/emote {{Date}} 40/pause 400/faceDirection {{Date}} 2/pause 400/speak {{Date}} \"{{i18n:DanceRefusal.2}}\"/pause 800/faceDirection {{Date}} 1 true/pause 100/faceDirection {{Date}} 0/pause 400/move {{Date}} 0 -1 0/playSound doorClose/warp {{Date}} -100 -100/pause 2000/end dialogue {{Date}} \"{{i18n:DanceRefusal.3}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": false,
+				"SuggestiveEndings": "enabled",
+				"DateType": "dance",
+			},
+		},
+		
+		//Dance Date - Non Suggestive
+		{
+			"LogName": "Dance Date - Not Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116019/f {{Date}} {{MinFriendship}}/O {{Date}}/t 500 1500": "summer_day_ambient/-10000 -1000/farmer -100 -100 2 {{Date}} -100 -100 2/skippable/warp {{Date}} -100 -100/warp farmer -100 -100/faceDirection {{Date}} 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp {{Date}} 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/pause 200/speak {{Date}} \"{{i18n:DanceDate.1}}\"/pause 400/speak {{Date}} \"{{i18n:DanceDate.2 |Season={{Season}} }}\"/pause 200/emote farmer 20/pause 200/speak {{Date}} \"{{i18n:DanceDate.3}}\"/pause 300/move {{Date}} 0 1 2/pause 200/shake {{Date}} 250/playSound pickUpItem/pause 250/speak {{Date}} \"[{{FlowerGift}}] {{i18n:DanceDate.4}}\"/pause 300/emote farmer 20/pause 200/speak {{Date}} \"{{i18n:DanceDate.5}}\"/pause 200/emote farmer 8/pause 200/speak {{Date}} \"{{i18n:DanceDate.6}}\"/pause 500/question fork1 \"{{i18n:DanceDate.7 |Date={{Date}} }}?#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork danceNo/friendship {{Date}} {{FriendBonus}}/pause 500/emote {{Date}} 20/pause 200/speak {{Date}} \"{{i18n:DanceDate.8}}\"/move {{Date}} 0 -1 1/faceDirection farmer 1 true/move {{Date}} 1 0 1/pause 250/shake {{Date}} 250/playSound pickUpItem/addTemporaryActor RadioDN 16 32 66 15 2 false/pause 600/shake {{Date}} 250/playSound select/shake RadioDN 600000/playMusic {{SpouseMusic}}/pause 300/faceDirection farmer 0 true/move {{Date}} -2 0 1/move farmer 0 -2 3/pause 700/pause 10/playSound pickUpItem/faceDirection farmer 3 true/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 800/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/viewport move -1 1 15000/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer 2 0/positionOffset {{Date}} 2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 200/positionOffset farmer -2 0/positionOffset {{Date}} -2 0/pause 1000/globalFade/viewport -10000 -10000/pause 500/speak {{Date}} \"{{i18n:DanceDate.9}}\"/pause 500/message \"{{i18n:DanceDate.ILoveYou |Date={{Date}} }}\"/end dialogue {{Date}} \"{{i18n:DanceDate.End |Season={{Season}} }}\"",
+
+				"danceNo": "pause 500/emote {{Date}} 28/speak {{Date}} \"{{i18n:DanceRefusal.1}}\"/pause 500/faceDirection {{Date}} 3 true/pause 1000/emote {{Date}} 40/pause 400/faceDirection {{Date}} 2/pause 400/speak {{Date}} \"{{i18n:DanceRefusal.2}}\"/pause 800/faceDirection {{Date}} 1 true/pause 100/faceDirection {{Date}} 0/pause 400/move {{Date}} 0 -1 0/playSound doorClose/warp {{Date}} -100 -100/pause 2000/end dialogue {{Date}} \"{{i18n:DanceRefusal.3}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": false,
+				"SuggestiveEndings": "disabled",
+				"DateType": "dance",
+			},
+		},
+
+		// *** BEACH DATE ****
+
+		//Load Blue Crab
+		{
+			"LogName": "Load Blue Crab",
+			"Action": "Load",
+			"Target": "Characters/Crab1DN",
+			"FromFile": "assets/Characters/Crab1_DN.png",
+		},
+		
+		//Load Original Crab Sprite
+		{
+			"LogName": "Load Regular Crab",
+			"Action": "Load",
+			"Target": "Characters/Crab2DN",
+			"FromFile": "assets/Characters/Crab2_DN.png",
+		},
+
+		//Load Umbrella
+		{
+			"LogName": "Load Umbrella",
+			"Action": "Load",
+			"Target": "Characters/UmbrellaDN",
+			"FromFile": "assets/Characters/Umbrella_DN.png",
+		},
+
+		//Beach Date Initiation
+		{
+			"LogName": "Beach Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116020/f {{Date}} {{MinFriendship}}/O {{Date}}/t 500 1500": "continue/-10000 -1000/farmer -100 -100 2 {{Date}} -100 -100 2/skippable/warp {{Date}} -100 -100/warp farmer -100 -100/faceDirection {{Date}} 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp {{Date}} 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak {{Date}} \"{{Random: {{i18n:BeachDateIntro.1}} @@ {{i18n:BeachDateIntro.2}} @@ {{i18n:BeachDateIntro.3}} @@ {{i18n:BeachDateIntro.4}} |inputSeparator=@@}}\"/pause 500/emote farmer 8/pause 500/faceDirection {{Date}} 1/pause 500/faceDirection {{Date}} 3/pause 500/faceDirection {{Date}} 2/pause 500/shake {{Date}} 250/speak {{Date}} \"{{Random: {{i18n:BeachDateIntro.5}} @@ {{i18n:BeachDateIntro.6}} @@ {{i18n:BeachDateIntro.7}} |inputSeparator=@@}}\"/pause 500/speak {{Date}} \"{{i18n:BeachDateIntro.8.{{Gender}} }}\"/pause 300/speak {{Date}} \"{{i18n:BeachDateIntro.9}}\"/pause 1000/question fork0 \"{{i18n:AcceptDate.Choice | Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork dateYes/playMusic none/pause 1000/emote {{Date}} 28/speak {{Date}} \"{{i18n:RejectDate.1}}\"/pause 500/faceDirection {{Date}} 3 true/pause 1000/emote {{Date}} 40/pause 400/faceDirection {{Date}} 2/pause 400/speak {{Date}} \"{{i18n:RejectDate.2}}\"/pause 800/faceDirection {{Date}} 1 true/pause 100/faceDirection {{Date}} 0/pause 400/playSound doorClose/warp {{Date}} -100 -100/pause 2000/end dialogue {{Date}} \"{{i18n:RejectDate.3}}\"",
+
+				"dateYes": "pause 200/addMailReceived beachDateAgree/emote {{Date}} 20/pause 500/speak {{Date}} \"{{i18n:BeachDateIntro.10}}\"/pause 500/speak {{Date}} \"{{i18n:BeachDateIntro.11}}\"/pause 500/end dialogue {{Date}} \"{{i18n:BeachDateIntro.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": false,
+				"DateType": "beach",
+				"GenericPossible": "true",
+			},
+		},
+		
+		//Beach Date - Suggestive
+		{
+			"LogName": "Beach Date - Suggestive Forks",
+			"Action": "EditData",
+			"Target": "Data/Events/Beach",
+			"Entries": {
+				"1116021/n beachDateAgree/t 1000 1600": "event2/17 15/farmer 28 13 3 {{Date}} 19 13 1/skippable/{{BeachPortraitCommand}}/{{BeachSpriteCommand}}/makeInvisible 12 10 10 10/makeInvisible 70 12 20 20/makeInvisible 44 20 10 10/addBigProp 15 13 22/addBigProp 16 13 23/addObject 15 12 348 1/addObject 16 12 206 1/addTemporaryActor UmbrellaDN 44 61 15 11 2 false/positionOffset UmbrellaDN -15 0/move farmer -8 0 3 true/pause 300/emote {{Date}} 32/friendship {{Date}} {{FriendBonus}}/speak {{Date}} \"{{i18n:BeachDate.1}}\"/pause 300/emote farmer 32/speak {{Date}} \"{{i18n:BeachDate.2}}\"/pause 200/emote farmer 32/faceDirection {{Date}} 3/pause 300/speak {{Date}} \"{{i18n:BeachDate.3}}\"/pause 300/faceDirection {{Date}} 1/speak {{Date}} \"{{i18n:BeachDate.4}}\"/pause 200/emote farmer 20/speak {{Date}} \"{{i18n:BeachDate.5}}\"/pause 500/move {{Date}} 0 -1 0/move farmer -3 0 3 true/move {{Date}} -5 0 2 false/move {{Date}} 0 1 1/speak {{Date}} \"{{i18n:BeachDate.6}}\"/pause 500/shake {{Date}} 250/playSound eat/pause 600/removeObject 16 12/farmerEat 206/pause 1500/message \"{{i18n:BeachDate.7}}\"/faceDirection farmer 3/pause 500/speak {{Date}} \"{{i18n:BeachDate.8}}\"/pause 500/shake {{Date}} 250/playSound gulp/pause 100/playSound gulp/pause 500/farmerEat 184/pause 2000/faceDirection farmer 3/speak {{Date}} \"{{i18n:BeachDate.9}}\"/pause 750/shake {{Date}} 250/playSound pickUpItem/removeObject 15 12/pause 250/move {{Date}} 0 -1 1/move {{Date}} 3 0 2/faceDirection farmer 0/pause 500/shake {{Date}} 250/playSound pickUpItem/pause 500/speak {{Date}} \"[348] {{i18n:BeachDate.10}}\"/pause 500/speak {{Date}} \"{{i18n:BeachDate.11}}\"/pause 500/quickQuestion {{i18n:BeachDate.12}}#{{i18n:BeachDate.13}}#{{i18n:BeachDate.14}}(break)switchEvent 1116021_swim(break)switchEvent 1116021_tidepools",
+
+				"1116021_swim": "pause 200/addMailReceived swimmingDateFix/ignoreCollisions farmer/speak {{Date}} \"{{i18n:Swim.1}}\"/pause 500/speak {{Date}} \"{{i18n:Swim.2}}\"/pause 500/globalFade/viewport -1000 -1000/beginSimultaneousCommand/warp farmer 51 24/warp {{Date}} 52 24/faceDirection {{Date}} 2/faceDirection farmer 2/endSimultaneousCommand/pause 600/fade/viewport 52 25/playMusic musicboxsong/pause 400/emote {{Date}} 56/pause 200/speak {{Date}} \"{{i18n:Swim.3}}\"/pause 500/speak {{Date}} \"{{i18n:Swim.4}}\"/pause 300/emote farmer 20/pause 300/faceDirection {{Date}} 3/speak {{Date}} \"{{i18n:Swim.5}}\"/pause 200/faceDirection farmer 1/emote farmer 8/pause 200/speak {{Date}} \"{{i18n:Swim.6}}\"/pause 100/emote farmer 16 true/pause 600/faceDirection {{Date}} 2/faceDirection farmer 2/speed {{Date}} 5/jump {{Date}}/move {{Date}} 0 2 2/swimming {{Date}}/move {{Date}} 0 2 0/pause 200/speak {{Date}} \"{{i18n:Swim.7}}\"/pause 600/move farmer 0 1 2/emote farmer 60/pause 1000/jump farmer/move farmer 0 1 2/swimming farmer/move farmer 0 2 1/faceDirection {{Date}} 3/pause 500/speak {{Date}} \"{{i18n:Swim.8}}\"/pause 300/emote farmer 60/pause 200/speak {{Date}} \"{{i18n:Swim.9}}\"/pause 200/emote farmer 20/pause 200/speak {{Date}} \"{{i18n:Swim.10}}\"/pause 200/emote farmer 20/speak {{Date}} \"{{i18n:Swim.11}}\"/pause 400/question null \"#{{i18n:Swim.12 |Date={{Date}} }}#{{i18n:Swim.13}}#{{i18n:Swim.14}}\"/pause 300/emote {{Date}} 20/pause 400/jump {{Date}} 4/shake {{Date}} 500/pause 400/playSound dropItemInWater/pause 200/emote farmer 16/pause 200/speak {{Date}} \"{{i18n:Swim.15}}\"/pause 300/emote farmer 40/pause 300/jump farmer 4/startJittering/pause 400/playSound dropItemInWater/pause 300/stopJittering/emote {{Date}} 32/pause 200/speak {{Date}} \"{{i18n:Swim.16}}\"/pause 300/jump {{Date}} 4/shake {{Date}} 500/pause 400/playSound dropItemInWater/pause 1000/jump farmer 4/startJittering/pause 400/playSound dropItemInWater/pause 300/stopJittering/pause 1000/jump {{Date}}/shake {{Date}} 500/pause 300/playSound fallDown/pause 100/playSound dropItemInWater/pause 300/emote farmer 16/message \"{{i18n:Swim.17 |Date={{Date}} }}\"/pause 300/speak {{Date}} \"{{i18n:Swim.18}}\"/pause 300/emote farmer 12/pause 200/emote {{Date}} 16/pause 400/speed {{Date}} 5/speed farmer 4/move {{Date}} 15 0 2 true/pause 500/move farmer 15 0 2 true/globalFade/viewport -1000 -1000/pause 1000/message \"{{i18n:Swim.19 |Date={{Date}} }}\"/pause 300/message \"{{i18n:Swim.20}}\"/pause 200/playSound fallDown/pause 100/playSound dropItemInWater/pause 100/playSound dropItemInWater/pause 800/speak {{Date}} \"{{i18n:Swim.21}}\"/pause 200/speak {{Date}} \"{{i18n:Swim.22}}\"/pause 300/message \"{{i18n:Swim.23 |Date={{Date}} }}\"/pause 600/speak {{Date}} \"{{i18n:Swim.24}}\"/pause 600/playSound doorClose/stopSwimming farmer/pause 2000/speak {{Date}} \"{{i18n:Swim.25}}\"/pause 500/end dialogueWarpOut {{Date}} \"{{i18n:BeachDate.End}}\"",
+
+				"1116021_tidepools": "pause 200/ignoreCollisions farmer/speak {{Date}} \"{{i18n:TidePool.1}}\"/pause 500/speak {{Date}} \"{{i18n:TidePool.2}}\"/pause 500/globalFade/viewport -1000 -1000/beginSimultaneousCommand/warp farmer 77 16/warp {{Date}} 78 16/faceDirection {{Date}} 2/faceDirection farmer 2/addTemporaryActor Crab1DN 16 32 78 24 0/addTemporaryActor Crab2DN 16 32 1000 1000 0/swimming Crab2DN/endSimultaneousCommand/pause 600/fade/viewport 77 14/playMusic musicboxsong/pause 1250/viewport move 0 1 8000/emote {{Date}} 32 true/move {{Date}} 0 6 2 true/move farmer 0 6 2 false/speak {{Date}} \"{{i18n:TidePool.3}}\"/emote {{Date}} 8/speak {{Date}} \"{{i18n:TidePool.4}}\"/pause 300/emote Crab1DN 28/pause 300/emote {{Date}} 16 true/pause 600/speak {{Date}} \"{{i18n:TidePool.5}}\"/pause 300/move {{Date}} 0 1 2/speak {{Date}} \"{{i18n:TidePool.6.{{Gender}} }}\"/pause 300/emote Crab1DN 28 true/move farmer 0 1 2/pause 1000/textAboveHead Crab1DN \"{{i18n:TidePool.7}}\"/pause 300/emote {{Date}} 28/pause 200/faceDirection {{Date}} 3/faceDirection farmer 1/speak {{Date}} \"{{i18n:TidePool.8}}\"/pause 200/faceDirection {{Date}} 2/faceDirection farmer 2/pause 200/speak {{Date}} \"{{i18n:TidePool.9.{{Gender}} }}\"/pause 300/faceDirection {{Date}} 0/textAboveHead {{Date}} \"{{i18n:TidePool.10}}\"/pause 700/warp Crab2DN 77 26/playSound dropItemInWater/pause 100/emote farmer 16 true/pause 300/jump farmer/pause 300/textAboveHead {{Date}} \"{{i18n:TidePool.11}}\"/pause 200/faceDirection {{Date}} 2/pause 100/emote {{Date}} 16 true/pause 300/move Crab2DN 0 -1 0/stopSwimming Crab2DN/move Crab2DN 0 -1 0/pause 200/emote Crab2DN 56 true/pause 400/emote Crab1DN 56/pause 400/emote {{Date}} 32 true/pause 450/speak {{Date}} \"{{i18n:TidePool.12.{{Gender}} }}\"/faceDirection {{Date}} 3/faceDirection farmer 1/pause 200/speak {{Date}} \"{{i18n:TidePool.13.{{Gender}} }}\"/speak {{Date}} \"{{i18n:TidePool.14.{{Gender}} }}\"/pause 200/emote farmer 20/faceDirection {{Date}} 2/speak {{Date}} \"{{i18n:TidePool.15}}\"/pause 200/faceDirection {{Date}} 3/speak {{Date}} \"{{i18n:TidePool.16}}\"/pause 300/question null \"#{{i18n:TidePool.17 |Date={{Date}} }}#{{i18n:TidePool.18}}#{{i18n:TidePool.19}}\"/pause 300/emote farmer 20/pause 300/jump Crab2DN 6/pause 300/faceDirection {{Date}} 2/faceDirection farmer 2/pause 300/move Crab2DN 0 1 2/swimming Crab2DN/move Crab2DN 0 1 2/playSound dropItemInWater/warp Crab2DN 1000 1000/move Crab1DN 0 1 2/pause 600/faceDirection Crab1DN 0/emote Crab1DN 20/pause 500/textAboveHead Crab1DN \"{{i18n:TidePool.20}}\"/emote {{Date}} 20 true/pause 500/faceDirection Crab1DN 2/swimming Crab1DN/move Crab1DN 0 1 2/playSound dropItemInWater/warp Crab1DN 1000 1000/pause 500/faceDirection {{Date}} 3/faceDirection farmer 1/pause 200/speak {{Date}} \"{{i18n:TidePool.21}}\"/pause 200/emote farmer 32/pause 200/speak {{Date}} \"{{i18n:TidePool.22}}\"/pause 300/emote farmer 16/speed farmer 7/move farmer -12 0 1 true/pause 200/move {{Date}} -12 0 1 true/globalFade/viewport -1000 -1000/pause 1000/playSound doorClose/pause 2000/speak {{Date}} \"{{i18n:TidePool.23}}\"/pause 500/end dialogueWarpOut {{Date}} \"{{i18n:BeachDate.End}}\"",
+
+				"1116022/n swimmingDateFix": "none/-1000 -1000/farmer 0 0 0/stopSwimming farmer/end", //fixes being stuck swimming if date is skipped during the water
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "enabled",
+			},
+		},
+
+		//Beach Date - Non Suggestive
+		{
+			"LogName": "Beach Date - Not Suggestive Forks",
+			"Action": "EditData",
+			"Target": "Data/Events/Beach",
+			"Entries": {
+				"1116021/n beachDateAgree/t 1000 1600": "event2/17 15/farmer 28 13 3 {{Date}} 19 13 1/skippable/{{BeachPortraitCommand}}/{{BeachSpriteCommand}}/makeInvisible 12 10 10 10/makeInvisible 70 12 20 20/makeInvisible 44 20 10 10/addBigProp 15 13 22/addBigProp 16 13 23/addObject 15 12 348 1/addObject 16 12 206 1/addTemporaryActor UmbrellaDN 44 61 15 11 2 false/positionOffset UmbrellaDN -15 0/move farmer -8 0 3 true/pause 300/emote {{Date}} 32/friendship {{Date}} {{FriendBonus}}/speak {{Date}} \"{{i18n:BeachDate.1}}\"/pause 300/emote farmer 32/speak {{Date}} \"{{i18n:BeachDate.2}}\"/pause 200/emote farmer 32/faceDirection {{Date}} 3/pause 300/speak {{Date}} \"{{i18n:BeachDate.3}}\"/pause 300/faceDirection {{Date}} 1/speak {{Date}} \"{{i18n:BeachDate.4}}\"/pause 200/emote farmer 20/speak {{Date}} \"{{i18n:BeachDate.5}}\"/pause 500/move {{Date}} 0 -1 0/move farmer -3 0 3 true/move {{Date}} -5 0 2 false/move {{Date}} 0 1 1/speak {{Date}} \"{{i18n:BeachDate.6}}\"/pause 500/shake {{Date}} 250/playSound eat/pause 600/removeObject 16 12/farmerEat 206/pause 1500/message \"{{i18n:BeachDate.7}}\"/faceDirection farmer 3/pause 500/speak {{Date}} \"{{i18n:BeachDate.8}}\"/pause 500/shake {{Date}} 250/playSound gulp/pause 100/playSound gulp/pause 500/farmerEat 184/pause 2000/faceDirection farmer 3/speak {{Date}} \"{{i18n:BeachDate.9}}\"/pause 750/shake {{Date}} 250/playSound pickUpItem/removeObject 15 12/pause 250/move {{Date}} 0 -1 1/move {{Date}} 3 0 2/faceDirection farmer 0/pause 500/shake {{Date}} 250/playSound pickUpItem/pause 500/speak {{Date}} \"[348] {{i18n:BeachDate.10}}\"/pause 500/speak {{Date}} \"{{i18n:BeachDate.11}}\"/pause 500/quickQuestion {{i18n:BeachDate.12}}#{{i18n:BeachDate.13}}#{{i18n:BeachDate.14}}(break)switchEvent 1116021_swim(break)switchEvent 1116021_tidepools",
+
+				"1116021_swim": "pause 200/addMailReceived swimmingDateFix/ignoreCollisions farmer/speak {{Date}} \"{{i18n:Swim.1}}\"/pause 500/speak {{Date}} \"{{i18n:Swim.2}}\"/pause 500/globalFade/viewport -1000 -1000/beginSimultaneousCommand/warp farmer 51 24/warp {{Date}} 52 24/faceDirection {{Date}} 2/faceDirection farmer 2/endSimultaneousCommand/pause 600/fade/viewport 52 25/playMusic musicboxsong/pause 400/emote {{Date}} 56/pause 200/speak {{Date}} \"{{i18n:Swim.3}}\"/pause 500/speak {{Date}} \"{{i18n:Swim.4}}\"/pause 300/emote farmer 20/pause 300/faceDirection {{Date}} 3/speak {{Date}} \"{{i18n:Swim.5}}\"/pause 200/faceDirection farmer 1/emote farmer 8/pause 200/speak {{Date}} \"{{i18n:Swim.6}}\"/pause 100/emote farmer 16 true/pause 600/faceDirection {{Date}} 2/faceDirection farmer 2/speed {{Date}} 5/jump {{Date}}/move {{Date}} 0 2 2/swimming {{Date}}/move {{Date}} 0 2 0/pause 200/speak {{Date}} \"{{i18n:Swim.7}}\"/pause 600/move farmer 0 1 2/emote farmer 60/pause 1000/jump farmer/move farmer 0 1 2/swimming farmer/move farmer 0 2 1/faceDirection {{Date}} 3/pause 500/speak {{Date}} \"{{i18n:Swim.8}}\"/pause 300/emote farmer 60/pause 200/speak {{Date}} \"{{i18n:Swim.9}}\"/pause 200/emote farmer 20/pause 200/speak {{Date}} \"{{i18n:Swim.10}}\"/pause 200/emote farmer 20/speak {{Date}} \"{{i18n:Swim.11}}\"/pause 400/question null \"#{{i18n:Swim.12 |Date={{Date}} }}#{{i18n:Swim.13}}#{{i18n:Swim.14}}\"/pause 300/emote {{Date}} 20/pause 400/jump {{Date}} 4/shake {{Date}} 500/pause 400/playSound dropItemInWater/pause 200/emote farmer 16/pause 200/speak {{Date}} \"{{i18n:Swim.15}}\"/pause 300/emote farmer 40/pause 300/jump farmer 4/startJittering/pause 400/playSound dropItemInWater/pause 300/stopJittering/emote {{Date}} 32/pause 200/speak {{Date}} \"{{i18n:Swim.16}}\"/pause 300/jump {{Date}} 4/shake {{Date}} 500/pause 400/playSound dropItemInWater/pause 1000/jump farmer 4/startJittering/pause 400/playSound dropItemInWater/pause 300/stopJittering/pause 1000/jump {{Date}}/shake {{Date}} 500/pause 300/playSound fallDown/pause 100/playSound dropItemInWater/pause 300/emote farmer 16/message \"{{i18n:Swim.17 |Date={{Date}} }}\"/pause 300/speak {{Date}} \"{{i18n:Swim.18}}\"/pause 300/emote farmer 12/pause 200/emote {{Date}} 16/pause 400/speed {{Date}} 5/speed farmer 4/move {{Date}} 15 0 2 true/pause 500/move farmer 15 0 2 true/globalFade/viewport -1000 -1000/pause 1000/message \"{{i18n:Swim.19 |Date={{Date}} }}\"/pause 300/message \"{{i18n:Swim.20}}\"/pause 200/playSound fallDown/pause 100/playSound dropItemInWater/pause 100/playSound dropItemInWater/pause 800/speak {{Date}} \"{{i18n:Swim.21}}\"/pause 200/speak {{Date}} \"{{i18n:Swim.22}}\"/pause 300/message \"{{i18n:Swim.23 |Date={{Date}} }}\"/pause 600/end dialogueWarpOut {{Date}} \"{{i18n:BeachDate.End}}\"",
+
+				"1116021_tidepools": "pause 200/ignoreCollisions farmer/speak {{Date}} \"{{i18n:TidePool.1}}\"/pause 500/speak {{Date}} \"{{i18n:TidePool.2}}\"/pause 500/globalFade/viewport -1000 -1000/beginSimultaneousCommand/warp farmer 77 16/warp {{Date}} 78 16/faceDirection {{Date}} 2/faceDirection farmer 2/addTemporaryActor Crab1DN 16 32 78 24 0/addTemporaryActor Crab2DN 16 32 1000 1000 0/swimming Crab2DN/endSimultaneousCommand/pause 600/fade/viewport 77 14/playMusic musicboxsong/pause 1250/viewport move 0 1 8000/emote {{Date}} 32 true/move {{Date}} 0 6 2 true/move farmer 0 6 2 false/speak {{Date}} \"{{i18n:TidePool.3}}\"/emote {{Date}} 8/speak {{Date}} \"{{i18n:TidePool.4}}\"/pause 300/emote Crab1DN 28/pause 300/emote {{Date}} 16 true/pause 600/speak {{Date}} \"{{i18n:TidePool.5}}\"/pause 300/move {{Date}} 0 1 2/speak {{Date}} \"{{i18n:TidePool.6.{{Gender}} }}\"/pause 300/emote Crab1DN 28 true/move farmer 0 1 2/pause 1000/textAboveHead Crab1DN \"{{i18n:TidePool.7}}\"/pause 300/emote {{Date}} 28/pause 200/faceDirection {{Date}} 3/faceDirection farmer 1/speak {{Date}} \"{{i18n:TidePool.8}}\"/pause 200/faceDirection {{Date}} 2/faceDirection farmer 2/pause 200/speak {{Date}} \"{{i18n:TidePool.9.{{Gender}} }}\"/pause 300/faceDirection {{Date}} 0/textAboveHead {{Date}} \"{{i18n:TidePool.10}}\"/pause 700/warp Crab2DN 77 26/playSound dropItemInWater/pause 100/emote farmer 16 true/pause 300/jump farmer/pause 300/textAboveHead {{Date}} \"{{i18n:TidePool.11}}\"/pause 200/faceDirection {{Date}} 2/pause 100/emote {{Date}} 16 true/pause 300/move Crab2DN 0 -1 0/stopSwimming Crab2DN/move Crab2DN 0 -1 0/pause 200/emote Crab2DN 56 true/pause 400/emote Crab1DN 56/pause 400/emote {{Date}} 32 true/pause 450/speak {{Date}} \"{{i18n:TidePool.12.{{Gender}} }}\"/faceDirection {{Date}} 3/faceDirection farmer 1/pause 200/speak {{Date}} \"{{i18n:TidePool.13.{{Gender}} }}\"/speak {{Date}} \"{{i18n:TidePool.14.{{Gender}} }}\"/pause 200/emote farmer 20/faceDirection {{Date}} 2/speak {{Date}} \"{{i18n:TidePool.15}}\"/pause 200/faceDirection {{Date}} 3/speak {{Date}} \"{{i18n:TidePool.16}}\"/pause 300/question null \"#{{i18n:TidePool.17 |Date={{Date}} }}#{{i18n:TidePool.18}}#{{i18n:TidePool.19}}\"/pause 300/emote farmer 20/pause 300/jump Crab2DN 6/pause 300/faceDirection {{Date}} 2/faceDirection farmer 2/pause 300/move Crab2DN 0 1 2/swimming Crab2DN/move Crab2DN 0 1 2/playSound dropItemInWater/warp Crab2DN 1000 1000/move Crab1DN 0 1 2/pause 600/faceDirection Crab1DN 0/emote Crab1DN 20/pause 500/textAboveHead Crab1DN \"{{i18n:TidePool.20}}\"/emote {{Date}} 20 true/pause 500/faceDirection Crab1DN 2/swimming Crab1DN/move Crab1DN 0 1 2/playSound dropItemInWater/warp Crab1DN 1000 1000/pause 500/faceDirection {{Date}} 3/faceDirection farmer 1/pause 200/speak {{Date}} \"{{i18n:TidePool.21}}\"/pause 200/emote farmer 32/pause 500/globalFade/viewport -1000 -1000/pause 500/message \"{{i18n:TidePool.22.NotSuggestive |Date={{Date}} }}\"/pause 500/end dialogueWarpOut {{Date}} \"{{i18n:BeachDate.End}}\"",
+
+				"1116022/n swimmingDateFix": "none/-1000 -1000/farmer 0 0 0/stopSwimming farmer/end", //fixes being stuck swimming if date is skipped during the water
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "disabled",
+			},
+		},
+
+		// *** GROCERY DATE ****
+
+		//Grocery Date Initiation
+		{
+			"LogName": "Grocery Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116023/f {{Date}} {{MinFriendship}}/O {{Date}}/t 500 1500": "continue/-10000 -1000/farmer -100 -100 2 {{Date}} -100 -100 2/skippable/warp {{Date}} -100 -100/warp farmer -100 -100/faceDirection {{Date}} 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp {{Date}} 64 15/pause 500/move {{Date}} 0 2 2/playSound doorClose/warp farmer 64 15/emote farmer 8 true/pause 300/faceDirection {{Date}} 1 true/pause 100/faceDirection {{Date}} 0/speak {{Date}} \"{{i18n:GroceryDateIntro.1}}\"/pause 500/speak {{Date}} \"{{i18n:GroceryDateIntro.2}}\"/emote farmer 32/pause 200/speak {{Date}} \"{{i18n:GroceryDateIntro.3}}\"/pause 500/question fork0 \"{{i18n:AcceptDate.Choice | Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork dateYes/playMusic none/pause 1000/emote {{Date}} 28/speak {{Date}} \"{{i18n:GroceryDate.Refusal.1}}\"/pause 500/faceDirection {{Date}} 3 true/pause 1000/emote {{Date}} 40/pause 400/faceDirection {{Date}} 0/pause 400/speak {{Date}} \"{{i18n:GroceryDate.Refusal.2}}\"/pause 800/end dialogue {{Date}} \"{{i18n:GroceryDate.Refusal.3}}\"",
+
+				"dateYes": "pause 200/addMailReceived groceryDateAgree/emote {{Date}} 20/pause 500/speak {{Date}} \"{{i18n:GroceryDateIntro.4}}\"/pause 500/end dialogue {{Date}} \"{{i18n:GroceryDateIntro.End}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": false,
+				"DateType": "grocery",
+				"GenericPossible": "true",
+			},
+		},
+
+		//Grocery Date
+		{
+			"LogName": "Grocery Date",
+			"Action": "EditData",
+			"Target": "Data/Events/SeedShop",
+			"Entries": {
+				"1116024/n groceryDateAgree/t 900 1700": "archaeo/9 23/farmer -1000 -1000 0 {{Date}} -1000 -1000 0 {{Pierre}} 4 17 2 {{Marnie}} 12 20 0 {{Demetrius}} 13 26 1 {{Jodi}} 11 23 0 {{Caroline}} 4 23 0 {{Gus}} 2 20 3/skippable/pause 1000/warp farmer 6 29/playSound doorClose/pause 300/move farmer 0 -4 0/friendship {{Date}} {{FriendBonus}}/warp {{Date}} 6 29/playSound doorClose/pause 200/faceDirection farmer 2/move {{Date}} 0 -3 0 true/speak {{Date}} \"{{i18n:GroceryDate.1}}\"/pause 200/emote farmer 32/speak {{Date}} \"{{i18n:GroceryDate.2}}\"/pause 300/move farmer 3 0 1 true/move {{Date}} 3 0 1 false/pause 200/speak {{Date}} \"{{i18n:GroceryDate.3}}\"/pause 300/shake {{Date}} 250/playSound pickUpItem/faceDirection {{Date}} 0/faceDirection farmer 2 true/speak {{Date}} \"{{i18n:GroceryDate.4}}\"/pause 300/quickQuestion {{i18n:GroceryDate.5}}#{{i18n:GroceryDate.6}}#{{i18n:GroceryDate.7}}#{{i18n:GroceryDate.8}}#{{i18n:GroceryDate.9}}#{{i18n:GroceryDate.10}}#{{i18n:GroceryDate.11}}(break)switchEvent 1116024_eggs(break)switchEvent 1116024_milk(break)switchEvent 1116024_fruit(break)switchEvent 1116024_seeds(break)switchEvent 1116024_treats(break)switchEvent 1116024_end1",
+
+				"1116024_eggs": "pause 200/speak {{Date}} \"{{i18n:Eggs.1}}\"/pause 200/speak {{Date}} \"{{i18n:Eggs.2}}\"/pause 300/move {{Date}} -1 0 0/faceDirection farmer 3 true/move {{Date}} 0 -2 1/faceDirection farmer 0 true/move {{Date}} 5 0 0/move farmer 0 -1 1 true/move {{Date}} 0 -1 0 false/move farmer 5 0 0/move farmer 0 -1 3/pause 400/shake {{Date}} 250/playSound pickUpItem/pause 300/faceDirection {{Date}} 1/shake {{Date}} 250/playSound pickUpItem/pause 300/speak {{Date}} \"[176] {{i18n:Eggs.3}}\"/pause 300/emote farmer 32/pause 100/switchEvent 1116024_end1",
+
+				"1116024_milk": "pause 200/speak {{Date}} \"{{i18n:Milk.1}}\"/pause 200/speak {{Date}} \"{{i18n:Milk.2}}\"/pause 300/move {{Date}} -1 0 0/faceDirection farmer 3 true/move {{Date}} 0 -2 1/faceDirection farmer 0 true/move {{Date}} 5 0 0/move farmer 0 -1 1 true/move {{Date}} 0 -1 0 false/move farmer 5 0 0/move farmer 0 -1 3/pause 400/shake {{Date}} 250/playSound pickUpItem/pause 300/faceDirection {{Date}} 1/shake {{Date}} 250/playSound pickUpItem/pause 300/speak {{Date}} \"[184] {{i18n:Milk.3}}\"/pause 300/emote farmer 32/pause 100/switchEvent 1116024_end1",
+
+				"1116024_fruit": "pause 200/speak {{Date}} \"{{i18n:Fruit.1}}\"/pause 200/speak {{Date}} \"{{i18n:Fruit.2}}\"/pause 300/move {{Date}} -1 0 0/faceDirection farmer 3 true/move {{Date}} 0 -2 1/faceDirection farmer 0 true/move {{Date}} 5 0 0/move farmer 0 -1 1 true/move {{Date}} 0 -1 0 false/move farmer 5 0 0/move farmer 0 -1 3/pause 400/shake {{Date}} 250/playSound pickUpItem/pause 300/faceDirection {{Date}} 1/shake {{Date}} 250/playSound pickUpItem/pause 300/speak {{Date}} \"[634 635 637 638 613 400 398 396 410 296 268 258 91 90 254 282 834] {{i18n:Fruit.3}}\"/pause 300/emote farmer 32/pause 100/switchEvent 1116024_end1",
+
+				"1116024_seeds": "pause 200/speak {{Date}} \"{{i18n:Seeds.1}}\"/pause 200/speak {{Date}} \"{{i18n:Seeds.2}}\"/pause 300/move {{Date}} -1 0 0/faceDirection farmer 3 true/move {{Date}} 0 -2 1/faceDirection farmer 0 true/move {{Date}} 5 0 0/move farmer 0 -1 1 true/move {{Date}} 0 -1 0 false/move farmer 5 0 0/move farmer 0 -1 3/pause 400/shake {{Date}} 250/playSound pickUpItem/pause 300/faceDirection {{Date}} 1/shake {{Date}} 250/playSound pickUpItem/pause 300/speak {{Date}} \"[{{Seeds}}] {{i18n:Seeds.3}}\"/pause 300/emote farmer 32/pause 100/switchEvent 1116024_end1",
+
+				"1116024_treats": "pause 200/speak {{Date}} \"{{i18n:Treats.1}}\"/pause 200/speak {{Date}} \"{{i18n:Treats.2}}\"/pause 300/move {{Date}} -1 0 0/faceDirection farmer 3 true/move {{Date}} 0 -2 1/faceDirection farmer 0 true/move {{Date}} 5 0 0/move farmer 0 -1 1 true/move {{Date}} 0 -1 0 false/move farmer 5 0 0/move farmer 0 -1 3/pause 400/shake {{Date}} 250/playSound pickUpItem/pause 300/faceDirection {{Date}} 1/shake {{Date}} 250/playSound pickUpItem/pause 300/speak {{Date}} \"[220 221 222 223 233 234 243 611 612 731 238 232 231 604 608 93 905] {{i18n:Treats.2}}\"/pause 300/emote farmer 32/pause 100/switchEvent 1116024_end1",
+
+				"1116024_end1": "pause 200/speak {{Date}} \"{{i18n:GroceryDate.12 |Pierre={{Pierre}} }}\"/pause 500/globalFade/viewport -1000 -1000/beginSimultaneousCommand/warp {{Date}} 4 19/warp farmer 5 19/faceDirection {{Date}} 0/faceDirection farmer 0/endSimultaneousCommand/fade/viewport 9 19/pause 600/speak {{Date}} \"{{i18n:GroceryDate.13 |Pierre={{Pierre}} }}\"/pause 500/speak {{Pierre}} \"{{i18n:GroceryDate.14 |Date={{Date}} }}\"/pause 400/speak {{Date}} \"{{i18n:GroceryDate.15}}\"/pause 400/speak {{Pierre}} \"{{i18n:GroceryDate.16}}\"/pause 300/speak {{Date}} \"{{i18n:GroceryDate.17}}\"/faceDirection farmer 3/pause 200/quickQuestion #{{i18n:GroceryDate.18}}#{{i18n:GroceryDate.19 |Date={{Date}} }}(break)switchEvent 1116024_offered(break)switchEvent 1116024_spousepay",
+
+				"1116024_offered": "pause 200/faceDirection {{Date}} 1/speak {{Date}} \"{{i18n:Offer.1}}\"/pause 300/quickQuestion #{{i18n:Offer.2}}#{{i18n:Offer.3 |Date={{Date}} }}(break)switchEvent 1116024_paid(break)switchEvent 1116024_spousepay",
+
+				"1116024_spousepay": "pause 100/faceDirection {{Date}} 0/pause 100/shake {{Date}} 250/playSound money/pause 200/speak {{Pierre}} \"{{i18n:DatePay.1 |Date={{Date}} }}\"/pause 500/speak {{Date}} \"{{i18n:DatePay.2}}\"/pause 500/faceDirection {{Date}} 1/speak {{Date}} \"{{i18n:DatePay.3}}\"/pause 200/emote farmer 32/switchEvent 1116024_end2",
+
+				"1116024_paid": "pause 200/speak {{Date}} \"{{i18n:PlayerPay.1}}\"/pause 200/emote farmer 32/pause 200/move {{Date}} -1 0 1 true/move farmer -1 0 0 false/pause 400/playSound money/money -700/message \"{{i18n:PlayerPay.2}}\"/pause 200/speak {{Pierre}} \"{{i18n:PlayerPay.3}}\"/pause 500/faceDirection farmer 3/pause 400/switchEvent 1116024_end2",
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+			},
+		},
+		
+			//Minor Abigail line edit when she is the date
+			
+		{
+			"LogName": "Abigail Grocery Date Consistency Edit",
+			"Action": "EditData",
+			"Target": "Data/Events/SeedShop",
+			"Fields": {
+				"1116024_end1": {
+					14: "speak {{Date}} \"{{i18n:GroceryDate.13.Abigail}}\"",
+				}
+			},
+			"When": {
+				"Date": "Abigail",
+				"DateType": "grocery",
+			},
+        },
+
+		//Grocery Date Suggestive Ending
+		{
+			"LogName": "Grocery Date Suggestive End",
+			"Action": "EditData",
+			"Target": "Data/Events/SeedShop",
+			"Entries": {
+				"1116024_end2": "pause 200/speak {{Date}} \"{{i18n:GroceryDate.20}}\"/pause 200/globalFade/viewport -1000 -1000/beginSimultaneousCommand/warp farmer 6 26/warp {{Date}} 7 26/faceDirection farmer 1/faceDirection {{Date}} 3/endSimultaneousCommand/fade/viewport 9 23/playMusic musicboxsong/pause 300/speak {{Date}} \"{{i18n:GroceryDate.21}}\"/pause 200/emote farmer 20/speak {{Date}} \"{{i18n:GroceryDate.22}}\"/pause 400/message \"{{i18n:GroceryDate.23 |Date={{Date}} }}\"/speak {{Date}} \"{{i18n:GroceryDate.24}}\"/pause 500/emote farmer 16/pause 200/speed farmer 7/faceDirection farmer 2/move farmer 0 2 2/warp farmer -1000 -1000/playSound doorClose/move {{Date}} -1 0 2/move {{Date}} 0 2 2/warp {{Date}} -1000 -1000/playSound doorClose/globalFade/viewport 1000 -1000/{{SuggestiveCommand}}/pause 400/playSound doorClose/pause 1250/speak {{Date}} \"{{i18n:GroceryDate.25}}\"/pause 500/message \"{{i18n:GroceryDate.DateEnd |Date={{Date}} }}\"/pause 500/end dialogueWarpOut {{Date}} \"{{i18n:GroceryDate.End}}\"",
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "enabled",
+			},
+		},
+
+		//Grocery Date Non Suggestive Ending
+		{
+			"LogName": "Grocery Date Normal End",
+			"Action": "EditData",
+			"Target": "Data/Events/SeedShop",
+			"Entries": {
+				"1116024_end2": "pause 200/speak {{Date}} \"{{i18n:GroceryDate.20}}\"/pause 200/globalFade/viewport -1000 -1000/beginSimultaneousCommand/warp farmer 6 26/warp {{Date}} 7 26/faceDirection farmer 1/faceDirection {{Date}} 3/endSimultaneousCommand/fade/viewport 9 23/playMusic musicboxsong/pause 300/speak {{Date}} \"{{i18n:GroceryDate.21}}\"/pause 200/emote farmer 20/speak {{Date}} \"{{i18n:GroceryDate.22.NotSuggestive}}\"/pause 200/faceDirection farmer 2/move farmer 0 2 2/warp farmer -1000 -1000/playSound doorClose/move {{Date}} -1 0 2/move {{Date}} 0 2 2/warp {{Date}} -1000 -1000/playSound doorClose/globalFade/viewport 1000 -1000/pause 1250/speak {{Date}} \"{{i18n:GroceryDate.23.NotSuggestive}}\"/pause 500/message \"{{i18n:GroceryDate.DateEnd |Date={{Date}} }}\"/pause 500/end dialogueWarpOut {{Date}} \"{{i18n:GroceryDate.End}}\"",
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "disabled",
+			},
+		},
+
+		// *** CAMPING DATE ****
+
+		//Camping Date Initiation
+		{
+			"LogName": "Camping Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116025/f {{Date}} {{MinFriendship}}/O {{Date}}/t 500 1100": "continue/-10000 -1000/farmer -100 -100 2 {{Date}} -100 -100 2/skippable/warp {{Date}} -100 -100/warp farmer -100 -100/faceDirection {{Date}} 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp {{Date}} 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak {{Date}} \"{{Random:{{i18n:CampingDateIntro.1}} @@ {{i18n:CampingDateIntro.2}} @@ {{i18n:CampingDateIntro.3}} @@ {{i18n:CampingDateIntro.4}} |inputSeparator=@@}}\"/pause 500/emote farmer 8/pause 500/speak {{Date}} \"{{i18n:CampingDateIntro.5}}\"/pause 1000/question fork0 \"{{i18n:AcceptDate.Choice | Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork dateYes/playMusic none/pause 1000/emote {{Date}} 28/speak {{Date}} \"{{i18n:RejectDate.1}}\"/pause 500/faceDirection {{Date}} 3 true/pause 1000/emote {{Date}} 40/pause 400/faceDirection {{Date}} 2/pause 400/speak {{Date}} \"{{i18n:RejectDate.2}}\"/pause 800/faceDirection {{Date}} 1 true/pause 100/faceDirection {{Date}} 0/pause 400/playSound doorClose/warp {{Date}} -100 -100/pause 2000/end dialogue {{Date}} \"{{i18n:RejectDate.3}}\"",
+
+				"dateYes": "pause 200/addMailReceived campingDateAgree/emote {{Date}} 20/pause 500/speak {{Date}} \"{{i18n:CampingDateIntro.6}}\"/pause 500/end dialogue {{Date}} \"{{i18n:CampingDateIntro.7}}\"",
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": false,
+				"DateType": "camping",
+				"GenericPossible": "true",
+			},
+		},
+		
+		//Load Tent
+		{
+			"LogName": "Load Tent",
+			"Action": "Load",
+			"Target": "Characters/TentDN",
+			"FromFile": "assets/Characters/Tent_DN.png",
+		},
+
+		//Load Campfire
+		{
+			"LogName": "Load Campfire",
+			"Action": "Load",
+			"Target": "Characters/CampfireDN",
+			"FromFile": "assets/Characters/Campfire_DN.png",
+		},
+
+		//Camping Date - Suggestive
+		{
+			"LogName": "Camping Date - Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/Forest",
+			"Entries": {
+				"1116026/n campingDateAgree/t 2000 2600": "spaceMusic/70 47/farmer 76 47 3 {{Date}} 70 47 1/removeTile 69 43 AlwaysFront/removeTile 70 43 AlwaysFront/removeTile 69 44 AlwaysFront/removeTile 69 45 Front/removeTile 69 46 Buildings/removeTile 70 44 AlwaysFront/removeTile 70 45 Front/removeTile 70 46 Buildings/makeInvisible 66 46 10 10/addTemporaryActor CampfireDN 16 32 70 48 2 false/showFrame CampfireDN 2/addTemporaryActor TentDN 49 80 69 45 2 false/addLantern 925 70 48 3/skippable/move farmer -5 0 3 true/pause 1000/emote {{Date}} 32/speak {{Date}} \"{{i18n:CampingDate.1}}\"/emote farmer 20/speak {{Date}} \"[198] {{i18n:CampingDate.2}}\"/pause 200/shake {{Date}} 250/playSound pickUpItem/pause 400/farmerEat 198/pause 2000/message \"{{i18n:CampingDate.3}}\"/faceDirection farmer 3/emote {{Date}} 32/speak {{Date}} \"{{i18n:CampingDate.4}}\"/move {{Date}} -1 0 2 true/move farmer -1 0 2 false/pause 500/animate {{Date}} false true 100 0 1/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/stopAnimation {{Date}} 0/pause 250/message \"{{i18n:CampingDate.5 |Date={{Date}} }}\"/pause 300/emote farmer 20/speak {{Date}} \"{{i18n:CampingDate.6}}\"/emote farmer 20/faceDirection {{Date}} 1/pause 500/speak {{Date}} \"{{i18n:CampingDate.7}}\"/faceDirection farmer 3/quickQuestion {{i18n:CampingDate.8}}#{{i18n:CampingDate.9}}#{{i18n:CampingDate.10}}(break)switchEvent 1116026_rocks(break)switchEvent 1116026_stars",
+
+				"1116026_rocks": "pause 300/speak {{Date}} \"{{i18n:RockSkip.1}}\"/pause 300/fade/viewport -1000 -1000/beginSimultaneousCommand/warp farmer 70 50/warp {{Date}} 69 50/faceDirection {{Date}} 2/positionOffset farmer 0 25/endSimultaneousCommand/fade/viewport 70 54/playMusic musicboxsong/pause 700/speak {{Date}} \"{{i18n:RockSkip.2}}\"/pause 400/speak {{Date}} \"{{i18n:RockSkip.3}}\"/faceDirection {{Date}} 3/shake {{Date}} 250/playSound pickUpItem/pause 300/faceDirection {{Date}} 2/pause 200/shake {{Date}} 250/playSound dropItemInWater/addObject 70 53 390 2/pause 200/playSound dropItemInWater/removeObject 70 53/addObject 71 55 390 2/pause 200/playSound dropItemInWater/removeObject 71 55/addObject 72 57 390 2/pause 200/playSound dropItemInWater/removeObject 72 57/addObject 73 59 390 2/pause 300/playSound dropItemInWater/removeObject 73 59/pause 500/jump {{Date}}/speak {{Date}} \"{{i18n:RockSkip.4}}\"/faceDirection {{Date}} 1/faceDirection farmer 3/speak {{Date}} \"{{i18n:RockSkip.5}}\"/pause 200/emote farmer 32/faceDirection farmer 1/startJittering/playSound pickUpItem/pause 550/stopJittering/faceDirection farmer 2/faceDirection {{Date}} 2/startJittering/playSound dropItemInWater/addObject 71 53 390 2/pause 200/stopJittering/removeObject 71 53/playSound dropItemInWater/pause 300/emote farmer 60/faceDirection {{Date}} 1/faceDirection farmer 3/speak {{Date}} \"{{i18n:RockSkip.6}}\"/emote farmer 32/faceDirection farmer 2/speak {{Date}} \"{{i18n:RockSkip.7}}\"/message \"{{i18n:RockSkip.8 |Date={{Date}} }}\"/speak {{Date}} \"{{i18n:RockSkip.9}}\"/speak {{Date}} \"{{i18n:RockSkip.10}}\"/pause 400/startJittering/playSound dropItemInWater/addObject 71 53 390 2/pause 200/stopJittering/removeObject 71 53/addObject 73 57 390 2/playSound dropItemInWater/pause 200/playSound dropItemInWater/removeObject 73 57/addObject 74 59 390 2/pause 300/playSound dropItemInWater/removeObject 74 59/pause 500/jump farmer/speak {{Date}} \"{{i18n:RockSkip.11}}\"/faceDirection farmer 3/emote farmer 20/speak {{Date}} \"{{i18n:RockSkip.12}}\"/emote farmer 20/pause 1000/positionOffset farmer -5 0/pause 10/playSound pickUpItem/faceDirection farmer 3 true/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/stopAnimation {{Date}} 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/speak {{Date}} \"{{i18n:RockSkip.13.Suggestive}}\"/emote farmer 16/jump farmer/fade/viewport 1000 1000/beginSimultaneousCommand/warp farmer 70 47/warp {{Date}} 71 47/faceDirection {{Date}} 3/faceDirection farmer 0/endSimultaneousCommand/fade/viewport 70 47/pause 2000/warp farmer 1000 1000/move {{Date}} -1 0 2/pause 500/shake {{Date}} 250/removeObject 70 48/showFrame CampfireDN 0/pause 1000/faceDirection {{Date}} 0/pause 500/emote {{Date}} 32/warp {{Date}} 1000 1000/pause 1000/shake TentDN 60000/pause 1500/globalFade/viewport -1000 1000/pause 2000/{{SuggestiveCommand}}/speak {{Date}} \"{{i18n:RockSkip.14.Suggestive}}\"/pause 1000/end newDay",
+
+				"1116026_stars": "pause 300/speak {{Date}} \"{{i18n:Stars.1}}\"/pause 500/fade/viewport -1000 -1000/changeToTemporaryMap NightSceneMaruMap false/pause 1000/fade/playMusic musicboxsong/viewport 15 7/pause 1000/speak {{Date}} \"{{i18n:Stars.2}}\"/pause 1500/speak {{Date}} \"{{i18n:Stars.3}}\"/pause 1000/fade/viewport -1000 -1000/changeLocation Forest/addLantern 925 70 48 3/faceDirection {{Date}} 1/faceDirection farmer 3/pause 600/fade/viewport 70 47/pause 1000/emote {{Date}} 32/speak {{Date}} \"{{i18n:Stars.4}}\"/emote farmer 20/speak {{Date}} \"{{i18n:Stars.5}}\"/emote farmer 32/pause 1000/playSound dwop/faceDirection farmer 3 true/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/stopAnimation {{Date}} 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/speak {{Date}} \"{{i18n:Stars.6.Suggestive}}\"/emote farmer 8/speak {{Date}} \"{{i18n:Stars.7.Suggestive}}\"/emote farmer 16/jump farmer/pause 600/faceDirection farmer 0/warp farmer 1000 1000/move {{Date}} 1 0 2/pause 500/shake {{Date}} 250/removeObject 70 48/showFrame CampfireDN 0/pause 1000/faceDirection {{Date}} 0/pause 500/emote {{Date}} 32/warp {{Date}} 1000 1000/pause 1000/shake TentDN 60000/pause 1500/globalFade/viewport -1000 1000/pause 2000/{{SuggestiveCommand}}/speak {{Date}} \"{{i18n:Stars.8.Suggestive}}\"/pause 1000/end newDay",
+
+
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "enabled",
+			},
+		},
+
+		//Camping Date - Non Suggestive End
+		{
+			"LogName": "Camping Date - Not Suggestive",
+			"Action": "EditData",
+			"Target": "Data/Events/Forest",
+			"Entries": {
+				"1116026/n campingDateAgree/t 2000 2600": "spaceMusic/70 47/farmer 76 47 3 {{Date}} 70 47 1/removeTile 69 43 AlwaysFront/removeTile 70 43 AlwaysFront/removeTile 69 44 AlwaysFront/removeTile 69 45 Front/removeTile 69 46 Buildings/removeTile 70 44 AlwaysFront/removeTile 70 45 Front/removeTile 70 46 Buildings/makeInvisible 66 46 10 10/addTemporaryActor CampfireDN 16 32 70 48 2 false/showFrame CampfireDN 2/addTemporaryActor TentDN 49 80 69 45 2 false/addLantern 925 70 48 3/skippable/move farmer -5 0 3 true/pause 1000/emote {{Date}} 32/speak {{Date}} \"{{i18n:CampingDate.1}}\"/emote farmer 20/speak {{Date}} \"[198] {{i18n:CampingDate.2}}\"/pause 200/shake {{Date}} 250/playSound pickUpItem/pause 400/farmerEat 198/pause 2000/message \"{{i18n:CampingDate.3}}\"/faceDirection farmer 3/emote {{Date}} 32/speak {{Date}} \"{{i18n:CampingDate.4}}\"/move {{Date}} -1 0 2 true/move farmer -1 0 2 false/pause 500/animate {{Date}} false true 100 0 1/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/pause 250/pause 250/playSound dwop/positionOffset {{Date}} 4 0/stopAnimation {{Date}} 0/pause 250/message \"{{i18n:CampingDate.5 |Date={{Date}} }}\"/pause 300/emote farmer 20/speak {{Date}} \"{{i18n:CampingDate.6}}\"/emote farmer 20/faceDirection {{Date}} 1/pause 500/speak {{Date}} \"{{i18n:CampingDate.7}}\"/faceDirection farmer 3/quickQuestion {{i18n:CampingDate.8}}#{{i18n:CampingDate.9}}#{{i18n:CampingDate.10}}(break)switchEvent 1116026_rocks(break)switchEvent 1116026_stars",
+
+				"1116026_rocks": "pause 300/speak {{Date}} \"{{i18n:RockSkip.1}}\"/pause 300/fade/viewport -1000 -1000/beginSimultaneousCommand/warp farmer 70 50/warp {{Date}} 69 50/faceDirection {{Date}} 2/positionOffset farmer 0 25/endSimultaneousCommand/fade/viewport 70 54/playMusic musicboxsong/pause 700/speak {{Date}} \"{{i18n:RockSkip.2}}\"/pause 400/speak {{Date}} \"{{i18n:RockSkip.3}}\"/faceDirection {{Date}} 3/shake {{Date}} 250/playSound pickUpItem/pause 300/faceDirection {{Date}} 2/pause 200/shake {{Date}} 250/playSound dropItemInWater/addObject 70 53 390 2/pause 200/playSound dropItemInWater/removeObject 70 53/addObject 71 55 390 2/pause 200/playSound dropItemInWater/removeObject 71 55/addObject 72 57 390 2/pause 200/playSound dropItemInWater/removeObject 72 57/addObject 73 59 390 2/pause 300/playSound dropItemInWater/removeObject 73 59/pause 500/jump {{Date}}/speak {{Date}} \"{{i18n:RockSkip.4}}\"/faceDirection {{Date}} 1/faceDirection farmer 3/speak {{Date}} \"{{i18n:RockSkip.5}}\"/pause 200/emote farmer 32/faceDirection farmer 1/startJittering/playSound pickUpItem/pause 550/stopJittering/faceDirection farmer 2/faceDirection {{Date}} 2/startJittering/playSound dropItemInWater/addObject 71 53 390 2/pause 200/stopJittering/removeObject 71 53/playSound dropItemInWater/pause 300/emote farmer 60/faceDirection {{Date}} 1/faceDirection farmer 3/speak {{Date}} \"{{i18n:RockSkip.6}}\"/emote farmer 32/faceDirection farmer 2/speak {{Date}} \"{{i18n:RockSkip.7}}\"/message \"{{i18n:RockSkip.8 |Date={{Date}} }}\"/speak {{Date}} \"{{i18n:RockSkip.9}}\"/speak {{Date}} \"{{i18n:RockSkip.10}}\"/pause 400/startJittering/playSound dropItemInWater/addObject 71 53 390 2/pause 200/stopJittering/removeObject 71 53/addObject 73 57 390 2/playSound dropItemInWater/pause 200/playSound dropItemInWater/removeObject 73 57/addObject 74 59 390 2/pause 300/playSound dropItemInWater/removeObject 74 59/pause 500/jump farmer/speak {{Date}} \"{{i18n:RockSkip.11}}\"/faceDirection farmer 3/emote farmer 20/speak {{Date}} \"{{i18n:RockSkip.12}}\"/emote farmer 20/pause 1000/positionOffset farmer -5 0/pause 10/playSound pickUpItem/faceDirection farmer 3 true/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/stopAnimation {{Date}} 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/speak {{Date}} \"{{i18n:RockSkip.13}}\"/globalFade/viewport 2000 1000/pause 1000/speak {{Date}} \"{{i18n:RockSkip.14}}\"/pause 1000/message \"{{i18n:RockSkip.15 |Date={{Date}} }}\"/pause 1000/speak {{Date}} \"{{i18n:RockSkip.16}}\"/pause 500/end newDay",
+
+
+				"1116026_stars": "pause 300/speak {{Date}} \"{{i18n:Stars.1}}\"/pause 500/fade/viewport -1000 -1000/changeToTemporaryMap NightSceneMaruMap false/pause 1000/fade/playMusic musicboxsong/viewport 15 7/pause 1000/speak {{Date}} \"{{i18n:Stars.2}}\"/pause 1500/speak {{Date}} \"{{i18n:Stars.3}}\"/pause 1000/fade/viewport -1000 -1000/changeLocation Forest/addLantern 925 70 48 3/faceDirection {{Date}} 1/faceDirection farmer 3/pause 600/fade/viewport 70 47/pause 1000/emote {{Date}} 32/speak {{Date}} \"{{i18n:Stars.4}}\"/emote farmer 20/speak {{Date}} \"{{i18n:Stars.5}}\"/emote farmer 32/pause 1000/playSound dwop/faceDirection farmer 3 true/showFrame farmer 101 true/animate {{Date}} {{KissFrameFlip}} true 500 {{KissFrame}}/pause 2500/stopAnimation {{Date}} 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/speak {{Date}} \"{{i18n:Stars.6}}\"/globalFade/viewport 2000 1000/pause 1000/speak {{Date}} \"{{i18n:Stars.7}}\"/pause 1000/message \"{{i18n:Stars.8 |Date={{Date}} }}\"/pause 1000/speak {{Date}} \"{{i18n:Stars.9}}\"/pause 500/end newDay",
+			},
+			"When": {
+				"Date": "{{Date}}, default",
+				"SuggestiveEndings": "disabled",
+			},
+		},
+	],
+}

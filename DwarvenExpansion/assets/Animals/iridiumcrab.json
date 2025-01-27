@@ -1,0 +1,300 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/IridiumCrabAdult",
+			"FromFile": "assets/Animals/IridiumCrabFarmAnimal.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/IridiumCrabBaby",
+			"FromFile": "assets/Animals/IridiumCrabFarmAnimalBaby.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/DwarvenExpansion/Animals/IridiumCrabSheared",
+			"FromFile": "assets/Animals/IridiumCrabFarmAnimalSheared.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Animals_CrabEgg_Iridium": {
+					"Name": "Iridium Crab Egg",
+					"DisplayName": "{{i18n:Animals_CrabEgg_Iridium.DisplayName}}",
+					"Description": "{{i18n:Animals_CrabEgg_Iridium.Description}}",
+					"Type": "Basic",
+					"Category": "-20",
+					"Price": 180,
+					"Edibility": -20,
+					"ContextTags": [
+						"{{ModId}}",
+						"{{ModId}}_CrabEgg"
+					],
+					"Texture": "Mods/DwarvenExpansion/ObjectSpritesheet",
+                    "SpriteIndex": 243,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": [
+						{
+							"Chance": 0.05,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O)717",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 3,
+							"MaxStack": 3,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.1575,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O)717",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 2,
+							"MaxStack": 2,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.375,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O){{ModId}}_OreCluster_Iridium",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 2,
+							"MaxStack": 5,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 1.0,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": "(O)386",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 3,
+							"MaxStack": 7,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					]
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Animals_CrabEgg_Iridium": {
+                    "ID": "{{ModId}}_Animals_CrabEgg_Iridium",
+                    "ItemId": "(O){{ModId}}_Animals_CrabEgg_Iridium",
+                    "MaxItems": 1,
+                    "IsRecipe": false,
+                    "AvoidRepeat": true,
+                    "Price": "1500",
+                    "AvailableStock": 1,
+					"Condition": "SYNCED_RANDOM day iridium_crab_egg 0.1 @addDailyLuck"
+                }
+            },
+			"When": {
+                "BuyCrabEggsAtMarlons": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "SalableItemTags"
+            ],
+            "Entries": {
+                "#-1": "{{ModId}}_Animals_CrabEgg_Iridium"
+            }
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Iridium Crab",
+						6
+					],
+					"Value": "{{ModId}}_Animals_CrabEgg_Iridium .05",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Hate"
+					],
+					"Value": "{{ModId}}_Animals_CrabEgg_Iridium",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}_IridiumCrab": {
+					"DisplayName": "{{i18n:IridiumCrab.DisplayName}}",
+					"House": "{{ModId}}_CaveCoop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": 1600,
+					"SellPrice": 3200,
+					"ShopTexture": "Mods/DwarvenExpansion/Animals/ShopImages",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 64,
+						"Width": 32,
+						"Height": 16
+					},
+					"ShopDisplayName": "{{i18n:IridiumCrab.ShopDisplayName}}",
+					"ShopDescription": "{{i18n:IridiumCrab.ShopDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n:IridiumCrab.ShopMissingBuildingDescription}}",
+					"RequiredBuilding": "{{ModId}}_DeluxeCaveCoop",
+					"UnlockCondition": "MINE_LOWEST_LEVEL_REACHED 120",
+					"EggItemIds": [
+						"{{ModId}}_Animals_CrabEgg_Iridium"
+					],
+					"IncubationTime": 8640,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{i18n:IridiumCrab.BirthText}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": true,
+					"DaysToProduce": 2,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+					"ProduceItemIds": [
+						{
+							"Id": "Egg",
+							"ItemId": "{{ModId}}_Animals_CrabEgg_Iridium",
+							"Condition": "RANDOM 0.05"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "386"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Egg",
+							"ItemId": "{{ModId}}_Animals_CrabEgg_Iridium",
+							"Condition": "RANDOM 0.3"
+						},
+						{
+							"Id": "Default",
+							"ItemId": "{{ModId}}_OreCluster_Iridium"
+						}
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": -1,
+					"ProfessionForQualityBoost": -1,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "stoneCrack",
+					"BabySound": "stoneCrack",
+					"Texture": "Mods/DwarvenExpansion/Animals/IridiumCrabAdult",
+					"HarvestedTexture": "Mods/DwarvenExpansion/Animals/IridiumCrabSheared",
+					"BabyTexture": "Mods/DwarvenExpansion/Animals/IridiumCrabBaby",
+					"UseFlippedRightForLeft": false,
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": -16
+					},
+					"SwimOffset": {
+						"X": 0,
+						"Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 1,
+					"HappinessDrain": 7,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": [],
+					"ShowInSummitCredits": false,
+					"CustomFields": {
+						"meatIndex": "717"
+					}
+				}
+			}
+		}
+	]
+}

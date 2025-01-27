@@ -1,0 +1,146 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"Spring Onion Crop": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a crop for spring onions."
+		},
+		"Ginger Crop": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a late-game crop for ginger."
+		},
+		"Sweet Pea Crop": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a crop for sweet pea flowers."
+		},
+		"Crocus Crop": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a crop for crocus flowers."
+		},
+		"Common Mushroom Planter": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a 'bush' crop for common mushrooms (if you have Custom Bush installed)."
+		},
+		"Morel Planter": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a 'bush' crop for morels (if you have Custom Bush installed)."
+		},
+		"Chanterelle Planter": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a 'bush' crop for chanterelles (if you have Custom Bush installed)."
+		},
+		"Salmonberry Bush": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a bush crop for salmonberries (if you have Custom Bush installed)."
+		},
+		"Blackberry Bush": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a bush crop for blackberries (if you have Custom Bush installed)."
+		},
+		"Holly Bush": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a bush crop for holly (if you have Custom Bush installed)."
+		},
+		"Coffee Bush": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Turns coffee beans from a crop into a bush (if you have Custom Bush installed). Requires restarting the game to change."
+		},
+		"Blueberry Bush": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Turns blueberries from a crop into a bush (if you have Custom Bush installed). Requires restarting the game to change."
+		},
+		"Cactus Bush": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Turns cactus fruit from a crop into a bush (if you have Custom Bush installed). Requires restarting the game to change."
+		},
+		"Hops Bush": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Turns hops from a crop into a bush (if you have Custom Bush installed). Visually still looks like a trellis. Requires restarting the game to change."
+		},
+		"Grapes Bush": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Turns grapes from a crop into a bush (if you have Custom Bush installed). Visually still looks like a trellis. Requires restarting the game to change."
+		},
+		"Hazelnut Tree": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a tree sapling for hazelnuts."
+		},
+		"Coconut Tree": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds a tropical tree sapling for coconut."
+		},
+	},
+	"DynamicTokens": [],
+	"Changes": [
+			//mail flags
+			{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Cornucopia.GrowableForage_RemoveConfigFlags": { 
+                    "Id": "Cornucopia.GrowableForage_RemoveConfigFlags",
+                    "Trigger": "DayStarted DayEnding", 
+                    "HostOnly": true,
+                    "Action": null,
+                    "Actions": [
+						"MarkActionApplied All Cornucopia.GrowableForage_RepeatConfigFlags false",
+						"MarkActionApplied All Cornucopia.GrowableForage_SetGingerCropFlags false",
+						"RemoveMail All Cornucopia.GrowableForage_GingerSeedsEnabled all",
+                    ]
+                },
+				//Entries to set flags based on config
+				"Cornucopia.GrowableForage_SetExtendedFlowersPackFlags": {
+                    "Id": "Cornucopia.GrowableForage_SetGingerCropFlags",
+                    "Trigger": "DayStarted",
+                    "Condition": "{{Ginger Crop}}",
+                    "HostOnly": true,
+                    "Action": "AddMail All Cornucopia.GrowableForage_GingerSeedsEnabled received",
+                    "Actions": null
+                },
+				"Cornucopia.GrowableForage_RepeatConfigFlags": { 
+                    "Id": "Cornucopia.GrowableForage_RepeatConfigFlags",
+                    "Trigger": "DayStarted DayEnding", 
+                    "HostOnly": true,
+                    "Action": null,
+                    "Actions": [
+						"MarkActionApplied All Cornucopia.GrowableForage_RemoveConfigFlags false",
+                    ]
+                },
+            }
+        },
+		{
+		"LogName": "Textures",
+		"Action": "Load",
+		"Target": "Cornucopia.GrowableForage/objects, Cornucopia.GrowableForage/crops, Cornucopia.GrowableForage/fruittrees, Cornucopia.GrowableForage/teabushes_indoors",
+		"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+		"LogName": "Tea Bush",
+		"Action": "Load",
+		"Target": "Cornucopia.GrowableForage/teabushes",
+		"FromFile": "assets/teabushes_{{season}}.png"
+		},
+		{
+		"LogName": "Vanilla Forage Crops",
+		"Action": "Include",
+		"FromFile": "data/crops.json, data/fruittrees.json, data/objects.json, data/objectsreplacement.json, data/shop_dwarf.json, data/shop_joja.json, data/shop_islandtrader.json, data/shop_oasis.json, data/shop_pierre.json, data/teabushes.json,",
+		},
+	]
+}

@@ -1,0 +1,272 @@
+{
+	"Changes": [
+		//Coffee Bean changes
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Coffee Bush": true
+			},
+			"Fields": { 
+				"433": {
+					"Description": 	"{{i18n:CoffeeBean_description}}"
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Crops",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Coffee Bush": true
+			},
+			"Entries": { 
+				"433": null,
+			}
+		},
+		//Blueberry Seeds changes
+		{
+			"Action": "EditImage",
+			"Target": "maps/springobjects",
+			"FromFile": "assets/objects.png",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Blueberry Bush": true
+			},
+			"FromArea": { "X": 112, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 16, "Y": 320, "Width": 16, "Height": 16 }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Blueberry Bush": true
+			},
+			"Fields": { 
+				"481": {
+					"Price": 300,
+					"DisplayName": "{{i18n:BlueberrySeeds_name}}",
+					"Description": 	"{{i18n:BlueberrySeeds_description}}",
+					"Type": "Basic",
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Crops",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Blueberry Bush": true
+			},
+			"Entries": { 
+				"481": null,
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Blueberry Bush": true
+			},
+			"Fields": {
+				"(O)481": {
+					"Condition": null,
+				},
+			},
+			"MoveEntries": [
+				{
+					"Id": "(O)481",
+					"BeforeId": "(O)628"
+				}
+			]
+		},
+		//Cactus Seeds changes
+		{
+			"Action": "EditImage",
+			"Target": "maps/springobjects",
+			"FromFile": "assets/objects.png",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Cactus Bush": true
+			},
+			"FromArea": { "X": 96, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 160, "Y": 528, "Width": 16, "Height": 16 }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Cactus Bush": true
+			},
+			"Fields": { 
+				"802": {
+					"Price": 200,
+					"DisplayName": "{{i18n:CactusFruitSeeds_name}}",
+					"Description": "{{i18n:CactusFruitSeeds_description}}",
+					"Type": "Basic",
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Crops",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Cactus Bush": true
+			},
+			"Entries": { 
+				"802": null,
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Sandy",
+				"Items"
+			],
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Cactus Bush": true
+			},
+			"Fields": {
+				"(O)802": {
+					"Condition": null,
+					"Price": -1,
+				}
+			}
+		},
+		//Hops Starter changes
+		{
+			"Action": "EditImage",
+			"Target": "maps/springobjects",
+			"FromFile": "assets/objects.png",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Hops Bush": true
+			},
+			"FromArea": { "X": 144, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 224, "Y": 192, "Width": 16, "Height": 16 }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Hops Bush": true
+			},
+			"Fields": { 
+				"302": {
+					"Price": 300,
+					"DisplayName": "{{i18n:HopsSeeds_name}}",
+					"Description": "{{i18n:HopsSeeds_description}}",
+					"Type": "Basic",
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Crops",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Hops Bush": true
+			},
+			"Entries": { 
+				"302": null,
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Hops Bush": true
+			},
+			"Fields": {
+				"(O)302": {
+					"Condition": null,
+				},
+			},
+			"MoveEntries": [
+				{
+					"Id": "(O)302",
+					"BeforeId": "(O)628"
+				}
+			]
+		},
+		//Grape Starter changes
+		{
+			"Action": "EditImage",
+			"Target": "maps/springobjects",
+			"FromFile": "assets/objects.png",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Grapes Bush": true
+			},
+			"FromArea": { "X": 128, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 16 }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Grapes Bush": true
+			},
+			"Fields": { 
+				"301": {
+					"Price": 300,
+					"DisplayName": "{{i18n:GrapeSeeds_name}}",
+					"Description": "{{i18n:GrapeSeeds_description}}",
+					"Type": "Basic",
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Crops",
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Grapes Bush": true
+			},
+			"Entries": { 
+				"301": null,
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"When": {
+				"HasMod": "furyx639.CustomBush",
+				"Grapes Bush": true
+			},
+			"Fields": {
+				"(O)301": {
+					"Condition": null,
+				},
+			},
+			"MoveEntries": [
+				{
+					"Id": "(O)301",
+					"BeforeId": "(O)628"
+				}
+			]
+		},
+	]
+}

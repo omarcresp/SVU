@@ -1,0 +1,138 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "Entries": {
+        //"Introduction": "{{i18n: HeliaDialogueIntroduction}}",
+        "Mon": "{{i18n: HeliaDialogueMon}}",
+        "Tue": "{{i18n: HeliaDialogueTue}}",
+        "Wed": "{{i18n: HeliaDialogueWed}}",
+        "Thu": "{{i18n: HeliaDialogueThu}}",
+        "Fri": "{{i18n: HeliaDialogueFri}}",
+        "Sat": "{{i18n: HeliaDialogueSat{{Random:R01, R02, R03}}}}",
+        "Sun": "{{i18n: HeliaDialogueSun}}",
+		//2
+        "Mon4": "{{i18n: HeliaDialogueMon2{{Random:R01, R02}}}}",
+        "Tue2": "{{i18n: HeliaDialogueTue2}}",
+        "Wed2": "{{i18n: HeliaDialogueWed2{{Random:R01, R02}}}}",
+        "Thu2": "{{i18n: HeliaDialogueThu2}}",
+        "Fri2": "{{i18n: HeliaDialogueFri2{{Random:R01, R02}}}}",
+        "Sat2": "{{i18n: HeliaDialogueSat2{{Random:R01, R02}}}}",
+        "Sun2": "{{i18n: HeliaDialogueSun2}}",
+		//4
+        "Mon4": "{{i18n: HeliaDialogueMon4{{Random:R01, R02}}}}",
+        "Tue4": "{{i18n: HeliaDialogueTue4{{Random:R01, R02}}}}",
+        "Wed4": "{{i18n: HeliaDialogueWed4{{Random:R01, R02}}}}",
+        "Thu4": "{{i18n: HeliaDialogueThu4{{Random:R01, R02}}}}",
+        "Fri4": "{{i18n: HeliaDialogueFri4{{Random:R01, R02}}}}",
+        "Sat4": "{{i18n: HeliaDialogueSat4{{Random:R01, R02, R03, R04}}}}",
+        "Sun4": "{{i18n: HeliaDialogueSun4{{Random:R01, R02}}}}",
+		//6
+        "Mon6": "{{i18n: HeliaDialogueMon6{{Random:R01, R02}}}}",
+        "Tue6": "{{i18n: HeliaDialogueTue6{{Random:R01, R02}}}}",
+        "Wed6": "{{i18n: HeliaDialogueWed6{{Random:R01, R02}}}}",
+        "Thu6": "{{i18n: HeliaDialogueThu6{{Random:R01, R02}}}}",
+        "Fri6": "{{i18n: HeliaDialogueFri6{{Random:R01, R02}}|TravelingLadyIsLotti={{TravelingLadyIsLotti}}}}",
+        "Sat6": "{{i18n: HeliaDialogueSat6{{Random:R01, R02, R03, R04, R05}}}}",
+        "Sun6": "{{i18n: HeliaDialogueSun6{{Random:R01, R02}}}}",
+		
+		//Resort
+		"Resort": "{{i18n: HeliaDialogueResort}}",
+		//Conversation Topics
+        "Lumisteria.MtVapius.Arrival": "{{i18n: HeliaDialogueLumisteria.MtVapius.Arrival}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisIntroduction_memory_oneday": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisIntroduction_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneweek": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneweek": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday}}",
+      }
+    },
+    {
+      "LogName": "Helia Season Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "Entries": {
+        "fall_Tue4": "{{i18n: HeliaDialoguefall_Tue4}}",
+        "fall_Fri4": "{{i18n: HeliaDialoguefall_Fri4}}",
+        "fall_Sat6": "{{i18n: HeliaDialoguefall_Sat6}}",
+        "winter_Thu6": "{{i18n: HeliaDialoguewinter_Tue6}}",
+        "summer_Fri6": "{{i18n: HeliaDialoguesummer_Fri6}}",
+      },
+	  "When": { "Random: true, true, false": "true"}
+
+    },
+    {
+      "LogName": "Helia 8 Heart Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "Entries": {
+        "Mon8": "{{i18n: HeliaDialogueMon8{{Random:R01, R02}}}}",
+        "Tue8": "{{i18n: HeliaDialogueTue8}}",
+        "Wed8": "{{i18n: HeliaDialogueWed8}}",
+        "Thu8": "{{i18n: HeliaDialogueThu8{{Random:R01, R02}}}}",
+        "Fri8": "{{i18n: HeliaDialogueFri8}}",
+        "Sat8": "{{i18n: HeliaDialogueSat8{{Random:R01, R02, R03, R04}}|RandomPlaceName={{RandomPlaceName}}}}",
+        "Sun8": "{{i18n: HeliaDialogueSun8}}",
+		
+      },
+	  "When": { "Random: true, true, true, true, false": "true"}
+
+    },
+    /*{
+      "LogName": "Helia 8 Heart Seasonal Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "Entries": {
+        "summer_Fri8": "{{i18n: HeliaDialoguesummer_Fri8}}",
+      },
+	  "When": { "Random: true, true, true, true, false": "true"}
+
+    },*/
+    {
+      "LogName": "Helia 10 Heart Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "Entries": {
+	  
+		//10
+        //"Mon10": "{{i18n: HeliaDialogueMon10}}",
+        //"Tue10": "{{i18n: HeliaDialogueTue10}}",
+        //"Wed10": "{{i18n: HeliaDialogueWed10}}",
+        //"Thu10": "{{i18n: HeliaDialogueThu10}}",
+        "Fri10": "{{i18n: HeliaDialogueFri10}}",
+        //"Sat10": "{{i18n: HeliaDialogueSat10}}",
+        //"Sun10": "{{i18n: HeliaDialogueSun10}}",
+		
+		
+      },
+	  "When": { "Random: true, true, true, true, false": "true"}
+
+    },
+    {
+      "LogName": "Helia Dialogue Gift Taste",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "Entries": {
+		"AcceptGift_(O)StardropTea": "{{i18n: HeliaDialogueAcceptGift_(O)StardropTea}}",
+		//"AcceptGift_(O)809": "{{i18n: HeliaDialogueAcceptGift_(O)809}}",
+      },
+    },
+    {
+      "LogName": "Helia Inlaw Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "Entries": {
+	  
+		//Inlaw
+        "Fri2_inlaw_Harvey": "{{i18n: HeliaDialogueFri2_inlaw_Harvey}}",
+		
+		
+      },
+	  "When": { "Random: true, true, true, true, false": "true"}
+
+    },
+	
+	
+	
+  ]
+}

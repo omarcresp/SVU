@@ -1,0 +1,58 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Blood Moon Lunar Event Music",
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Kana.WeatherWonders_BloodMoonMusic": {
+          "ID": "Kana.WeatherWonders_BloodMoonMusic",
+          "Category": "Music",
+          "FilePaths": ["{{AbsoluteFilePath: assets/BloodMoonMusic.ogg}}"],
+          "StreamedVorbis": false,
+          "Looped": false
+        }
+      }
+    },
+    {
+      "LogName": "Load WW's Blood Moon Lunar Event Sound Effect",
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Kana.WeatherWonders_BloodMoonSoundEffect": {
+          "ID": "Kana.WeatherWonders_BloodMoonSoundEffect",
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/BloodMoonSoundEffect.ogg}}"
+          ],
+          "StreamedVorbis": false,
+          "Looped": false
+        }
+      },
+      "When": {
+        "BloodMoonSoundEffect": true,
+        "Weather": "Kana.WeatherWonders_BloodMoon"
+      }
+    },
+    {
+      "LogName": "Load WW's Blood Moon Lunar Event Music Context",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "TargetField": ["Kana.WeatherWonders_BloodMoon"],
+      "Update": "OnLocationChange",
+      "Entries": {
+        "SoftMusicOverrides": [
+          {
+            "ID": "Kana.WeatherWonders_BloodMoonMusic",
+            "Track": "Kana.WeatherWonders_BloodMoonMusic",
+            "Condition": "TIME 2000 2600",
+            "Looped": false
+          }
+        ]
+      },
+      "When": {
+        "BloodMoonMusic": true
+      }
+    }
+  ]
+}

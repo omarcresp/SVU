@@ -1,0 +1,1205 @@
+{
+  "Changes":
+    [
+	{
+	  "LogName": "BaublesCrystalariumRules",
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)21", "OutputRules" ],
+	  "Entries":
+		{
+		  "appleseed.BCP.Petuntse":
+		    {
+			"Id": "appleseed.BCP.Petuntse",
+			"Triggers":
+			  [
+			    {
+				"Id": "OutputCollected",
+				"Trigger": "OutputCollected",
+				"RequiredItemId": null,
+				"RequiredCount": 1
+			    },
+			    {
+				"Id": "appleseed.BCP.Petuntse",
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.Petuntse",
+				"RequiredCount": 1
+			    },
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.Petuntse",
+				"ItemId": "DROP_IN"
+			    }
+			  ],
+			"DaysUntilReady": 2
+		    }
+		}
+	},
+	{
+	  "LogName": "BaublesCharcoalKilnRules",
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)114", "OutputRules" ],
+	  "Entries":
+		{
+		  "appleseed.BCP.CrystalizedStarJelly":
+		    {
+			"Id": "appleseed.BCP.StarJelly",
+			"Triggers":
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.StarJelly",
+				"RequiredCount": 2
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.CrystalizedStarJelly",
+				"ItemId": "(O)appleseed.BCP.CrystalizedStarJelly"
+			    }
+			  ],
+			"MinutesUntilReady": 90
+		    }
+		}
+	},
+	{
+	  "LogName": "BaublesFurnaceRules",
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)13", "OutputRules" ],
+	  "Entries":
+		{
+		  "appleseed.BCP.Porcelain":
+		    {
+			"Id": "appleseed.BCP.Porcelain",
+			"Triggers":
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.Petuntse",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem":
+			[
+			  {
+				"Id": "appleseed.BCP.Porcelain",
+				"ItemId": "(O)appleseed.BCP.Porcelain"
+			  }
+			],
+			"MinutesUntilReady": 300
+		    }
+		}
+	},
+	{
+	  "LogName": "BaublesHeavyFurnaceRules",
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace", "OutputRules" ],
+	  "Entries":
+		{
+		  "appleseed.BCP.Porcelain":
+		    {
+			"Id": "appleseed.BCP.Porcelain",
+			"Triggers":
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.Petuntse",
+				"RequiredCount": 5
+			    }
+			  ],
+			"OutputItem":
+			[
+			  {
+				"Id": "appleseed.BCP.Porcelain",
+				"ItemId": "(O)appleseed.BCP.Porcelain",
+				"MinStack": 5,
+				"MaxStack": 6
+			  }
+			],
+			"MinutesUntilReady": 300
+		    }
+		}
+	},
+	{
+	  "LogName": "BaublesLoomRules",
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)17", "OutputRules" ],
+	  "Entries":
+		{
+		  "appleseed.BCP.SpoolOfThread":
+		    {
+			"Id": "appleseed.BCP.SpoolOfThread",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.PimaCotton",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.SpoolOfThread",
+				"ItemId": "(O)appleseed.BCP.SpoolOfThread"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.RedCloth":
+		    {
+			"Id": "appleseed.BCP.RedCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.RedWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.RedCloth",
+				"ItemId": "(O)appleseed.BCP.RedCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.YellowCloth":
+		    {
+			"Id": "appleseed.BCP.YellowCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.YellowWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.YellowCloth",
+				"ItemId": "(O)appleseed.BCP.YellowCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.BlueCloth":
+		    {
+			"Id": "appleseed.BCP.BlueCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.BlueWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.BlueCloth",
+				"ItemId": "(O)appleseed.BCP.BlueCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.OrangeCloth":
+		    {
+			"Id": "appleseed.BCP.OrangeCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.OrangeWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.OrangeCloth",
+				"ItemId": "(O)appleseed.BCP.OrangeCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.GreenCloth":
+		    {
+			"Id": "appleseed.BCP.GreenCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.GreenWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.GreenCloth",
+				"ItemId": "(O)appleseed.BCP.GreenCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.VioletCloth":
+		    {
+			"Id": "appleseed.BCP.VioletCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.VioletWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.VioletCloth",
+				"ItemId": "(O)appleseed.BCP.VioletCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.BrownCloth":
+		    {
+			"Id": "appleseed.BCP.BrownCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.BrownWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.BrownCloth",
+				"ItemId": "(O)appleseed.BCP.BrownCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.BlackCloth":
+		    {
+			"Id": "appleseed.BCP.BlackCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.BlackWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.BlackCloth",
+				"ItemId": "(O)appleseed.BCP.BlackCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.WhiteCloth":
+		    {
+			"Id": "appleseed.BCP.WhiteCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.WhiteWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.WhiteCloth",
+				"ItemId": "(O)appleseed.BCP.WhiteCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.GreyCloth":
+		    {
+			"Id": "appleseed.BCP.GreyCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.GreyWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.GreyCloth",
+				"ItemId": "(O)appleseed.BCP.GreyCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    },
+		  "appleseed.BCP.PinkCloth":
+		    {
+			"Id": "appleseed.BCP.PinkCloth",
+			"Triggers": 
+			  [
+			    {
+				"Trigger": "ItemPlacedInMachine",
+				"RequiredItemId": "appleseed.BCP.PinkWool",
+				"RequiredCount": 1
+			    }
+			  ],
+			"OutputItem": 
+			  [
+			    {
+				"Id": "appleseed.BCP.PinkCloth",
+				"ItemId": "(O)appleseed.BCP.PinkCloth"
+			    }
+			  ],
+			"MinutesUntilReady": 240
+		    }
+		}		  
+	},
+	{
+	  "LogName": "BaublesDyeingPotRules",
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "Entries": 
+		{
+		  "(BC)appleseed.BCP.DyeingPot":
+		    {
+			"OutputRules":
+			  [
+			    {
+				"Id": "appleseed.BCP.RedWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)591"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.RedWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)440"
+
+					  }
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.YellowWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)421"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.YellowWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)440"
+
+					  }
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.BlueWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)597"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.BlueWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)440"
+
+					  }
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.OrangeWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)appleseed.BCP.RedWool"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.OrangeWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)421"
+
+					  },
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.GreenWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)appleseed.BCP.YellowWool"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.GreenWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)597"
+
+					  },
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.VioletWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)appleseed.BCP.BlueWool"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.VioletWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)591"
+
+					  },
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.BrownWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)appleseed.BCP.VioletWool"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.BrownWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)421"
+
+					  },
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.WhiteWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)appleseed.BCP.PelicanBell"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.WhiteWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)440"
+
+					  }
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.BlackWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)appleseed.BCP.BatFlower"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.BlackWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)440"
+
+					  }
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.GreyWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)appleseed.BCP.BlackWool"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.GreyWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)appleseed.BCP.PelicanBell"
+
+					  }
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			    {
+				"Id": "appleseed.BCP.PinkWool",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)appleseed.BCP.WhiteWool"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.PinkWool",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)591"
+
+					  }
+				    }
+				  ],
+				"MinutesUntilReady": 120
+			    },
+			  ],
+			"LoadEffects": 
+				[
+				  {
+				    "Sounds":
+				    	[ { "Id": "dropItemInWater" } ],
+				    "WobbleWhileWorking": true,
+				    "ShowNextIndexWhileWorking": false
+				  }
+				]
+		    }
+		}
+	},
+	{
+	  "LogName": "BaublesWhimyschineRules",
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "Entries":
+		{
+		  "(BC)appleseed.BCP.Whimsychine":
+		    {
+			"OutputRules":
+			  [
+			    {
+				"Id": "appleseed.BCP.PetrichorHeart",
+				"Triggers":
+				  [
+				    {
+					"RequiredItemId": "(O)577"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.PetrichorHeart",
+					"CustomData": 
+					  {
+					    "selph.ExtraMachineConfig.RequirementId.1": "(O)appleseed.BCP.CrystalizedStarJelly",
+					    "selph.ExtraMachineConfig.RequirementCount.1": 10,
+					    "selph.ExtraMachineConfig.RequirementId.2": "(O)769",
+					    "selph.ExtraMachineConfig.RequirementCount.2": 5,
+					    "selph.ExtraMachineConfig.RequirementId.3": "(O)768",
+					    "selph.ExtraMachineConfig.RequirementCount.3": 5,
+					    "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:appleseed.BCP.WhimsychineFailureAlert1}}"
+					  }
+				    }
+				  ],
+				"DaysUntilReady": 1
+			    },
+			    {
+				"Id": "appleseed.BCP.WoodenDollVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "wooden_doll" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.WoodenDollPurple", "(O)appleseed.BCP.WoodenDollRed" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltSlimeVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_slime" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.FeltSlimeGreenF", "(O)appleseed.BCP.FeltSlimeBlue", "(O)appleseed.BCP.FeltSlimeBlueF", "(O)appleseed.BCP.FeltSlimeRed", "(O)appleseed.BCP.FeltSlimeRedF", "(O)appleseed.BCP.FeltSlimePurple", "(O)appleseed.BCP.FeltSlimePurpleF", "(O)appleseed.BCP.FeltSlimeTiger", "(O)appleseed.BCP.FeltSlimeTigerF" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltGrubVariant",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_grub" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.FeltGrubGreen",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltCrabVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_crab" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.FeltRockCrabRed", "(O)appleseed.BCP.FeltRockCrabIridium", "(O)appleseed.BCP.FeltRockCrabTruffle" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltBatVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_bat" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.FeltBatBlue", "(O)appleseed.BCP.FeltBatRed", "(O)appleseed.BCP.FeltBatIridium" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltSpriteVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_sprite" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.FeltDustSpriteAlt",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltGhostVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_ghost" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.FeltGhostGreen",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltSkeletonVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_skeleton" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.FeltSkeletonBlue",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltMetalHeadVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_metalhead" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.FeltMetalHeadOrange",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltSquidKidVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_squidkid" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.FeltSquidKidCool",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FeltHauntedSkullVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "felt_skull" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.FeltHauntedSkullBlue",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.PlushChickenVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "plush_chicken" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.PlushChickenWhite", "(O)appleseed.BCP.PlushChickenBrown" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.PlushCowVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "plush_cow" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.PlushCowBrown",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.PlushDogVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "plush_dog" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.PlushDogShepard", "(O)appleseed.BCP.PlushDogPoodle", "(O)appleseed.BCP.PlushDogHound", "(O)appleseed.BCP.PlushDogChocolate" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.PlushCatVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "plush_cat" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.PlushCatGrey", "(O)appleseed.BCP.PlushCatYellow", "(O)appleseed.BCP.PlushCatWhite", "(O)appleseed.BCP.PlushCatBlack" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.PlushSheepVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "plush_sheep" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.PlushSheepInverted",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.PlushTurtleVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "plush_turtle" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.PlushTurtleGreen",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.Pawn",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "ceramic_pawn" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.BlackPawn",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.Rook",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "ceramic_rook" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.BlackRook",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.Knight",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "ceramic_knight" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.BlackKnight",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.Bishop",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "ceramic_bishop" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.BlackBishop",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.Queen",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "ceramic_queen" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.BlackQueen",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.King",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "ceramic_king" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.BlackKing",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.TeacupVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "ceramic_teacup" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.TeacupBlue", "(O)appleseed.BCP.TeacupRed" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.TeapotVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "ceramic_teapot" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.TeapotBlue", "(O)appleseed.BCP.TeapotRed" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.FlowerVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "ceramic_flower" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"RandomItemId": [ "(O)appleseed.BCP.FigurineSunflower", "(O)appleseed.BCP.FigurineJazz" ],
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.BoatVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "toy_boat" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.ToyBoatAlt",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			    {
+				"Id": "appleseed.BCP.ShuttleVariants",
+				"Triggers":
+				  [
+				    {
+					"RequiredTags": [ "toy_shuttle" ]
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.ToyShuttleAlt",
+					"IncrementMachineParentSheetIndex": 1
+				    }
+				  ],
+				"MinutesUntilReady": 10
+			    },
+			  ],
+			"LoadEffects":
+			  [
+			    {
+				    "Sounds":
+				    	[ { "Id": "seeds" } ],
+				    "ShakeDuration": 400
+			    }
+			  ],
+			"LightWhileWorking":
+			    {
+				    "Radius": 1.2,
+				    "Color": "MidnightBlue"
+			    },
+			"WobbleWhileWorking": true,
+			"ShowNextIndexWhileWorking": true		
+		    }
+		}
+	  
+	},
+	{
+	  "LogName": "BaublesFrogstoneRules",
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "Entries":
+		{
+		  "(BC)appleseed.BCP.Frogstone":
+		    {
+			"OutputRules":
+			  [
+			    {
+				"Id": "appleseed.BCP.StarJelly",
+				"Triggers":
+				  [
+				    {
+					"Trigger": "MachinePutDown, DayUpdate, OutputCollected",
+					"Condition": "WEATHER Here Rain Storm Snow"
+				    }
+				  ],
+				"OutputItem":
+				  [
+				    {
+					"ItemId": "(O)appleseed.BCP.StarJelly",
+					"MinStack": 3,
+				 	"MaxStack": 8
+				    }
+				  ],
+				"DaysUntilReady": 1
+			    }
+			  ],
+			"PreventTimePass": [ "Inside" ],
+			"WobbleWhileWorking": false,
+			"ShowNextIndexWhenReady": true,
+			"ExperienceGainOnHarvest": "Foraging 15"
+		    }
+		}
+		    
+	}	
+
+    ]
+
+}

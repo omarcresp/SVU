@@ -1,0 +1,298 @@
+{
+    "Changes": [
+        {
+	    "Logname": "Emily dialogue edits, RomanceWithoutSex, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "SpouseStardrop": "I woke from a strange dream with that fruit clasped in my hands... $l#$b#I want you to have it as a thank you for always sharing your true feelings with me.$u#$b#I like to think I'm good at reading people, but... romantic interest is a blind spot for me.$u#$b#There are so many people I love, but I'm never sure what kind of love they want from me.$s#$b#But the day you pressed that bouquet into my hand... When I held it and stared into your eyes...$l#$b#I didn't have to wonder anymore. And I knew that what you wanted was what I wanted, too.$l#$b#I think that's why we were always meant to find each other. Some cosmic thread connected us... knowing that if our souls ever met, they would be in perfect harmony.#$b#I love you, @. Of all the infinite possibilities, all I want is to be here, right now, with you.$l",
+  "eventSeen_2123343_memory_oneday": "I won't forget that camping trip anytime soon!",
+            },
+                "UseLovePortraits": true,
+        },
+        {
+	    "Logname": "Emily dialogue edits, RomanceWithoutSex, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "SpouseStardrop": "I woke from a strange dream with that fruit clasped in my hands... $u#$b#I want you to have it as a thank you for always sharing your true feelings with me.$u#$b#I like to think I'm good at reading people, but... romantic interest is a blind spot for me.$u#$b#There are so many people I love, but I'm never sure what kind of love they want from me.$s#$b#But the day you pressed that bouquet into my hand... When I held it and stared into your eyes...#$b#I didn't have to wonder anymore. And I knew that what you wanted was what I wanted, too.#$b#I think that's why we were always meant to find each other. Some cosmic thread connected us... knowing that if our souls ever met, they would be in perfect harmony.#$b#I love you, @. Of all the infinite possibilities, all I want is to be here, right now, with you.$h",
+  "eventSeen_2123343_memory_oneday": "I won't forget that camping trip anytime soon!",
+            },
+                "UseLovePortraits": false,
+        },
+        {
+            "LogName": "Emily terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Emily terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+	    "Logname": "Emily marriage dialogue edits, aro no, ace yes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Indoor_Night_3": "Ah, that aroma! It can only be you.$h#$e#You always bring the smell of the outdoors home with you.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+	    "Logname": "Emily 10 heart, love portraits true, aro no, ace yes",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries":
+            {
+                "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily": null,
+		"2123343/e 2111294/t 2200 2540/w sunny/F": "nightTime/-1000 -1000/farmer 29 14 3 Emily 26 14 1/skippable/specificTemporarySprite EmilyCamping/viewport 27 12 true/pause 5000/faceDirection Emily 2/pause 1000/faceDirection Emily 3/pause 1500/faceDirection Emily 2 true/pause 50/faceDirection Emily 1/pause 1000/speak Emily \"Well, this is fun, isn't it?\"/pause 500/faceDirection farmer 2/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Kind of spooky, actually...$u\"/pause 1000/playSound grunt/pause 800/faceDirection Emily 0/emote Emily 8/pause 500/faceDirection farmer 0/move Emily 0 -1 1/move Emily 1 0 2/faceDirection farmer 3/move farmer 0 -1 3/move farmer -1 0 2/pause 2000/shake Emily 2000/pause 1500/speak Emily \"Heh... it's chilly out here...$4\"/pause 1000/faceDirection Emily 1/pause 500/faceDirection Emily 2/pause 500/animate Emily false true 250 52 53/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/stopAnimation Emily/pause 3000/showFrame Emily 55/pause 1000/eyes 1 -8500/pause 2000/emote farmer 32/pause 500/pause 1000/playSound leafrustle/pause 2000/addTemporaryActor Bear 32 32 23 4 2 true character/playSound leafrustle/pause 1000/move Bear 0 7 2/pause 1000/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 1000/shake Bear 1000/playSound grunt/faceDirection farmer 3 true/faceDirection Emily 3 true/pause 1200/showFrame Emily 26/showFrame farmer 0/faceDirection farmer 2 true/showFrame farmer 94/jump Emily/jump farmer/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/jump Bear/positionOffset Emily -4 0/pause 400/speed Emily 4/speed farmer 4/move Emily 0 -1 0/warp Emily -1000 -1000/playSound Ship/move farmer 0 -1 0/warp farmer -1000 -1000/playSound Ship/specificTemporarySprite shakeTent/pause 1000/specificTemporarySprite stopShakeTent/pause 1000/move Bear 0 1 2/pause 500/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 500/faceDirection Bear 1/pause 1000/playSound grunt/shake Bear 500/pause 700/move Bear -4 0 2/move Bear 0 3 2/move Bear -3 0 3/warp Bear -1000 -1000/playSound leafrustle/pause 1000/speak Emily \"A bear! I hope he's not hungry... $6#$b#At least we should be safe in here.$u\"/pause 2000/speak Emily \"Um... @? There isn't much to do in here but talk... and there’s something I’ve been wanting to say to you.$u#$b#I wanted to tell you why I'm glad we're together.$l\"/playMusic echos/pause 2000/speak Emily \"You see... I truly believe what I tell people about the power of self-expression. That’s how I try to live my own life.$u#$b#My style, my feelings, my beliefs... For the most part, I keep them on the surface. I want to connect with others as myself, not from behind a mask.$u#$b#Living that way makes me feel free and empowered. But it also means having to wonder...$u#$b#If what I’m showing people is the real me, what if they don’t like what they see?$s#$b#When I told Clint that self-expression can feel scary and vulnerable... I was speaking from experience. That's why I kept my dancing hobby secret for so long.$u#$b#But it’s easy to be myself with you, @. You make me feel safe.$l#$b#I don’t really think the bear is going to eat us, but if he does... I’m glad I got to tell you that first.$l\"/pause 2000/globalFade/viewport -2000 -2000/pause 1000/mail EmilyDoneCamping/end newDay",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+	    "Logname": "Emily post 10 heart event mail, aro no, ace yes",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "EmilyDoneCamping": "Thanks for joining me last night. I’m glad we had that talk.^Do you think the forest spirits sent that bear to make sure it happened...?^^See you soon^^  Love, Emily[#]Emily's Note",
+            },
+        },
+        {
+	    "Logname": "Emily 10 heart, love portraits false, aro no, ace yes",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries":
+            {
+                "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily": null,
+		"2123343/e 2111294/t 2200 2540/w sunny/F": "nightTime/-1000 -1000/farmer 29 14 3 Emily 26 14 1/skippable/specificTemporarySprite EmilyCamping/viewport 27 12 true/pause 5000/faceDirection Emily 2/pause 1000/faceDirection Emily 3/pause 1500/faceDirection Emily 2 true/pause 50/faceDirection Emily 1/pause 1000/speak Emily \"Well, this is fun, isn't it?\"/pause 500/faceDirection farmer 2/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Kind of spooky, actually...$u\"/pause 1000/playSound grunt/pause 800/faceDirection Emily 0/emote Emily 8/pause 500/faceDirection farmer 0/move Emily 0 -1 1/move Emily 1 0 2/faceDirection farmer 3/move farmer 0 -1 3/move farmer -1 0 2/pause 2000/shake Emily 2000/pause 1500/speak Emily \"Heh... it's chilly out here...$4\"/pause 1000/faceDirection Emily 1/pause 500/faceDirection Emily 2/pause 500/animate Emily false true 250 52 53/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/stopAnimation Emily/pause 3000/showFrame Emily 55/pause 1000/eyes 1 -8500/pause 2000/emote farmer 32/pause 500/pause 1000/playSound leafrustle/pause 2000/addTemporaryActor Bear 32 32 23 4 2 true character/playSound leafrustle/pause 1000/move Bear 0 7 2/pause 1000/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 1000/shake Bear 1000/playSound grunt/faceDirection farmer 3 true/faceDirection Emily 3 true/pause 1200/showFrame Emily 26/showFrame farmer 0/faceDirection farmer 2 true/showFrame farmer 94/jump Emily/jump farmer/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/jump Bear/positionOffset Emily -4 0/pause 400/speed Emily 4/speed farmer 4/move Emily 0 -1 0/warp Emily -1000 -1000/playSound Ship/move farmer 0 -1 0/warp farmer -1000 -1000/playSound Ship/specificTemporarySprite shakeTent/pause 1000/specificTemporarySprite stopShakeTent/pause 1000/move Bear 0 1 2/pause 500/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 500/faceDirection Bear 1/pause 1000/playSound grunt/shake Bear 500/pause 700/move Bear -4 0 2/move Bear 0 3 2/move Bear -3 0 3/warp Bear -1000 -1000/playSound leafrustle/pause 1000/speak Emily \"A bear! I hope he's not hungry... $6#$b#At least we should be safe in here.$u\"/pause 2000/speak Emily \"Um... @? There isn't much to do in here but talk... and there’s something I’ve been wanting to say to you.$u#$b#I wanted to tell you why I'm glad we're together.\"/playMusic echos/pause 2000/speak Emily \"You see... I truly believe what I tell people about the power of self-expression. That’s how I try to live my own life.$u#$b#My style, my feelings, my beliefs... For the most part, I keep them on the surface. I want to connect with others as myself, not from behind a mask.$u#$b#Living that way makes me feel free and empowered. But it also means having to wonder...$u#$b#If what I’m showing people is the real me, what if they don’t like what they see?$s#$b#When I told Clint that self-expression can feel scary and vulnerable... I was speaking from experience. That's why I kept my dancing hobby secret for so long.$u#$b#But it’s easy to be myself with you, @. You make me feel safe.#$b#I don’t really think the bear is going to eat us, but if he does... I’m glad I got to tell you that first.\"/pause 2000/globalFade/viewport -2000 -2000/pause 1000/mail EmilyDoneCamping/end newDay",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "2111294/e 2123243/f Emily 2502/w sunny/D Emily/x EmilyCamping": null,
+                "2111294/e 2123243/f Emily 2502/w sunny/x EmilyCamping": "null",
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/Sprites/NoSleepingBag.png",
+            "ToArea":
+            {
+                "X": 585,
+                "Y": 1846,
+                "Width": 26,
+                "Height": 22
+            },
+            "When":
+            {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            },
+        },
+        {
+	    "Logname": "Emily no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Emily",
+            "FromFile": "assets/Portraits/EmilyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 256
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname": "Emily no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Emily_Winter",
+            "FromFile": "assets/Portraits/EmilyWinterNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 256
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Emily",
+            "FromFile": "assets/Portraits/EmilyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 256
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Emily_Winter",
+            "FromFile": "assets/Portraits/EmilyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 256
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+//CFDE
+        {
+	    "Logname": "Emily marriage dialogue edits, aro no, ace yes, love portraits true, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Rainy_Night_5": "#$c .5#Does the sound of rain ever put you in a trance?#I feel like our souls are especially in step tonight.$l",
+                "Indoor_Night_3": "#$c .5#Ah, that aroma! You always bring the smell of the outdoors home with you.$h#I feel so comforted, the split-second I hear your footsteps land on the deck.$l",
+                "summer_7": "I'll never forget that bear that showed up on our camping trip.#$b#Nor the intimate conversation we shared after that.",
+            },
+            "When":
+            {
+		"UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+	    "Logname": "Emily marriage dialogue edits, aro no, ace yes, love portraits false, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Rainy_Night_5": "#$c .5#Does the sound of rain ever put you in a trance?#I feel like our souls are especially in step tonight.",
+                "Indoor_Night_3": "#$c .5#Ah, that aroma! You always bring the smell of the outdoors home with you.$h#I feel so comforted, the split-second I hear your footsteps land on the deck.",
+                "summer_7": "I'll never forget that bear that showed up on our camping trip.#$b#Nor the intimate conversation we shared after that.",
+            },
+            "When":
+            {
+		"UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+//SVE
+        {
+	    "Logname": "Emily 10 heart, love portraits true, aro no, ace yes, SVE",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries":
+            {
+                "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily": null,
+		"2123343/e 2111294/t 2200 2540/w sunny/F": "nightTime/-1000 -1000/farmer 47 59 3 Emily 44 59 1/skippable/addTemporaryActor EmilyTent 64 160 44 55 2 false/AddTemporaryActor EmilyCampFire 32 32 45 60 2 false/animate EmilyCampFire false true 150 0 1 2 3/addLantern 1000 45 59 1/addLantern 1000 46 59 1/addLantern 1000 45 60 1/addLantern 1000 46 60 1/makeInvisible 32 54 19 12/viewport 45 59 true/pause 5000/faceDirection Emily 2/pause 1000/faceDirection Emily 3/pause 1500/faceDirection Emily 2 true/pause 50/faceDirection Emily 1/pause 1000/speak Emily \"Well, this is fun, isn't it?\"/pause 500/faceDirection farmer 2/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Kind of spooky, actually...$u\"/pause 1000/playSound grunt/pause 800/faceDirection Emily 0/emote Emily 8/pause 500/faceDirection farmer 0/move Emily 0 -1 1/move Emily 1 0 2/faceDirection farmer 3/move farmer 0 -1 3/move farmer -1 0 2/pause 2000/shake Emily 2000/pause 1500/speak Emily \"Heh... it's chilly out here...$4\"/pause 1000/faceDirection Emily 1/pause 500/faceDirection Emily 2/pause 500/animate Emily false true 250 52 53/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/stopAnimation Emily/pause 3000/showFrame Emily 55/pause 1000/eyes 1 -8500/pause 2000/emote farmer 32/pause 500/pause 1000/playSound leafrustle/pause 2000/addTemporaryActor Bear 32 32 32 58 1 true character/playSound leafrustle/pause 1000/move Bear 7 0 1/pause 1000/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 1000/shake Bear 1000/playSound grunt/faceDirection farmer 3 true/faceDirection Emily 3 true/pause 1200/showFrame Emily 26/showFrame farmer 0/faceDirection farmer 2 true/showFrame farmer 94/jump Emily/jump farmer/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/jump Bear/positionOffset Emily -4 0/pause 400/speed Emily 4/speed farmer 4/move Emily 0 -1 0/warp Emily -1000 -1000/playSound Ship/move farmer 0 -1 0/warp farmer -1000 -1000/playSound Ship/shake EmilyTent 500/pause 1000/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/pause 1000/playSound grunt/shake Bear 500/pause 800/shake Bear 500/pause 1000/faceDirection Bear 2 true/pause 300/faceDirection Bear 3 true/pause 600/move Bear -9 0 2 true/pause 4500/playSound leafrustle/pause 1000/speak Emily \"A bear! I hope he's not hungry... $6#$b#At least we should be safe in here.$u\"/pause 2000/speak Emily \"Um... @? There isn't much to do in here but talk... and there’s something I’ve been wanting to say to you.$u#$b#I wanted to tell you why I'm glad we're together.$l\"/playMusic echos/pause 2000/speak Emily \"You see... I truly believe what I tell people about the power of self-expression. That’s how I try to live my own life.$u#$b#My style, my feelings, my beliefs... For the most part, I keep them on the surface. I want to connect with others as myself, not from behind a mask.$u#$b#Living that way makes me feel free and empowered. But it also means having to wonder...$u#$b#If what I’m showing people is the real me, what if they don’t like what they see?$s#$b#When I told Clint that self-expression can feel scary and vulnerable... I was speaking from experience. That's why I kept my dancing hobby secret for so long.$u#$b#But it’s easy to be myself with you, @. You make me feel safe.$l#$b#I don’t really think the bear is going to eat us, but if he does... I’m glad I got to tell you that first.$l\"/pause 2000/globalFade/viewport -2000 -2000/pause 1000/mail EmilyDoneCamping/end newDay",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        {
+	    "Logname": "Emily 10 heart, love portraits false, aro no, ace yes, SVE",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries":
+            {
+                "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily": null,
+		"2123343/e 2111294/t 2200 2540/w sunny/F": "nightTime/-1000 -1000/farmer 47 59 3 Emily 44 59 1/skippable/addTemporaryActor EmilyTent 64 160 44 55 2 false/AddTemporaryActor EmilyCampFire 32 32 45 60 2 false/animate EmilyCampFire false true 150 0 1 2 3/addLantern 1000 45 59 1/addLantern 1000 46 59 1/addLantern 1000 45 60 1/addLantern 1000 46 60 1/makeInvisible 32 54 19 12/viewport 45 59 true/pause 5000/faceDirection Emily 2/pause 1000/faceDirection Emily 3/pause 1500/faceDirection Emily 2 true/pause 50/faceDirection Emily 1/pause 1000/speak Emily \"Well, this is fun, isn't it?\"/pause 500/faceDirection farmer 2/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Kind of spooky, actually...$u\"/pause 1000/playSound grunt/pause 800/faceDirection Emily 0/emote Emily 8/pause 500/faceDirection farmer 0/move Emily 0 -1 1/move Emily 1 0 2/faceDirection farmer 3/move farmer 0 -1 3/move farmer -1 0 2/pause 2000/shake Emily 2000/pause 1500/speak Emily \"Heh... it's chilly out here...$4\"/pause 1000/faceDirection Emily 1/pause 500/faceDirection Emily 2/pause 500/animate Emily false true 250 52 53/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/stopAnimation Emily/pause 3000/showFrame Emily 55/pause 1000/eyes 1 -8500/pause 2000/emote farmer 32/pause 500/pause 1000/playSound leafrustle/pause 2000/addTemporaryActor Bear 32 32 32 58 1 true character/playSound leafrustle/pause 1000/move Bear 7 0 1/pause 1000/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 1000/shake Bear 1000/playSound grunt/faceDirection farmer 3 true/faceDirection Emily 3 true/pause 1200/showFrame Emily 26/showFrame farmer 0/faceDirection farmer 2 true/showFrame farmer 94/jump Emily/jump farmer/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/positionOffset Emily -4 0/pause 100/jump Bear/positionOffset Emily -4 0/pause 400/speed Emily 4/speed farmer 4/move Emily 0 -1 0/warp Emily -1000 -1000/playSound Ship/move farmer 0 -1 0/warp farmer -1000 -1000/playSound Ship/shake EmilyTent 500/pause 1000/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/pause 1000/playSound grunt/shake Bear 500/pause 800/shake Bear 500/pause 1000/faceDirection Bear 2 true/pause 300/faceDirection Bear 3 true/pause 600/move Bear -9 0 2 true/pause 4500/playSound leafrustle/pause 1000/speak Emily \"A bear! I hope he's not hungry... $6#$b#At least we should be safe in here.$u\"/pause 2000/speak Emily \"Um... @? There isn't much to do in here but talk... and there’s something I’ve been wanting to say to you.$u#$b#I wanted to tell you why I'm glad we're together.\"/playMusic echos/pause 2000/speak Emily \"You see... I truly believe what I tell people about the power of self-expression. That’s how I try to live my own life.$u#$b#My style, my feelings, my beliefs... For the most part, I keep them on the surface. I want to connect with others as myself, not from behind a mask.$u#$b#Living that way makes me feel free and empowered. But it also means having to wonder...$u#$b#If what I’m showing people is the real me, what if they don’t like what they see?$s#$b#When I told Clint that self-expression can feel scary and vulnerable... I was speaking from experience. That's why I kept my dancing hobby secret for so long.$u#$b#But it’s easy to be myself with you, @. You make me feel safe.#$b#I don’t really think the bear is going to eat us, but if he does... I’m glad I got to tell you that first.\"/pause 2000/globalFade/viewport -2000 -2000/pause 1000/mail EmilyDoneCamping/end newDay",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+//Immersive Spouses
+	{
+	    "Logname": "Emily marriage dialogue edits, aro no, ace yes, Immersive Spouses",
+		"Action": "EditData",
+		"Target": "Strings/schedules/Emily",
+		"Entries": {
+			"marriage_13": "You're going to win today, I have a good feeling about it.$h#$b#If I'm wrong? Then we'll still have spent a wonderful day with our neighbors.",
+		},
+		"When": {
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+    ]
+}

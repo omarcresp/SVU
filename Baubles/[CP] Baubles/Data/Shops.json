@@ -1,0 +1,293 @@
+{
+  "Changes": 
+    [
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "TargetField": [ "SeedShop", "Items" ],
+	  "Entries":
+	    {
+		"BCP.Seeds":
+		  {
+		    "Id": "BCP.Seeds",
+		    "ItemId": "(O)appleseed.BCP.PimaCottonSeeds",
+		    "Condition": "SEASON summer",
+		    "Price": 50,
+		    "IgnoreShopPriceModifiers": false
+		  }
+	    },
+	  "MoveEntries":
+	    [
+		{
+		  "Id": "BCP.Seeds",
+		  "BeforeId": "GrassStarter"
+		}
+	    ]
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "TargetField": [ "Carpenter", "Items" ],
+	  "Entries":
+	    {
+		"appleseed.BCP.DyeingPot":
+		  {
+		    "Id": "appleseed.BCP.DyeingPot",
+		    "ItemId": "appleseed.BCP.DyeingPot",
+		    "Price": 500,
+		    "AvailableStock": 1,
+		    "ActionsOnPurchase": 
+			[
+			  "AddItem appleseed.BCP.DyeingGuide",
+			  "MarkCraftingRecipeKnown Current appleseed.BCP.DyeingPot"
+			],
+		    "IgnoreShopPriceModifiers": false
+		  }
+	    },
+	  "MoveEntries":
+	    [
+		{
+		  "Id": "appleseed.BCP.DyeingPot",
+		  "AfterId": "(O)390"
+		}
+	    ]
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "TargetField": [ "Carpenter", "Items" ],
+	  "Entries":
+	    {
+		"appleseed.BCP.FancyTable":
+		  {
+		    "Id": "appleseed.BCP.FancyTable",
+		    "ItemId": "appleseed.BCP.FancyTable",
+		    "Price": 500,
+		    "IgnoreShopPriceModifiers": false
+		  },
+		"appleseed.BCP.FancyTableBlack":
+		  {
+		    "Id": "appleseed.BCP.FancyTableBlack",
+		    "ItemId": "appleseed.BCP.FancyTableBlack",
+		    "Price": 500,
+		    "IgnoreShopPriceModifiers": false
+		  },
+		"appleseed.BCP.FancyEndTable":
+		  {
+		    "Id": "appleseed.BCP.FancyEndTable",
+		    "ItemId": "appleseed.BCP.FancyEndTable",
+		    "Price": 500,
+		    "IgnoreShopPriceModifiers": false
+		  },
+		"appleseed.BCP.FancyEndTableBlack":
+		  {
+		    "Id": "appleseed.BCP.FancyEndTableBlack",
+		    "ItemId": "appleseed.BCP.FancyEndTableBlack",
+		    "Price": 500,
+		    "IgnoreShopPriceModifiers": false
+		  },
+		"appleseed.BCP.InvisibleTable":
+		  {
+		    "Id": "appleseed.BCP.InvisibleTable",
+		    "ItemId": "appleseed.BCP.InvisibleTable",
+		    "Price": 500,
+		    "IgnoreShopPriceModifiers": false
+		  },
+		"appleseed.BCP.InvisibleEndTable":
+		  {
+		    "Id": "appleseed.BCP.InvisibleEndTable",
+		    "ItemId": "appleseed.BCP.InvisibleEndTable",
+		    "Price": 500,
+		    "IgnoreShopPriceModifiers": false
+		  },
+		"appleseed.BCP.Clock":
+		  {
+		    "Id": "appleseed.BCP.Clock",
+		    "ItemId": "appleseed.BCP.Clock",
+		    "TradeItemId": "appleseed.BCP.CuckooClock",
+		    "Price": 5000,
+		    "IgnoreShopPriceModifiers": false
+		  }
+	    },
+	  "MoveEntries":
+	    [
+		{
+		  "Id": "appleseed.BCP.FancyTable",
+		  "BeforeId": "(F)1614"
+		},
+		{
+		  "Id": "appleseed.BCP.FancyEndTable",
+		  "BeforeId": "(F)1614"
+		},
+		{
+		  "Id": "appleseed.BCP.FancyTableBlack",
+		  "BeforeId": "(F)1614"
+		},
+		{
+		  "Id": "appleseed.BCP.FancyEndTableBlack",
+		  "BeforeId": "(F)1614"
+		},
+		{
+		  "Id": "appleseed.BCP.InvisibleTable",
+		  "BeforeId": "(F)1614"
+		},
+		{
+		  "Id": "appleseed.BCP.InvisibleEndTable",
+		  "BeforeId": "(F)1614"
+		},
+		{
+		  "Id": "appleseed.BCP.Clock",
+		  "BeforeId": "(F)1614"
+		}
+	    ]
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "TargetField": [ "Traveler", "Items" ],
+	  "Entries":
+	    {
+		"BCP.Minerals":
+		  {
+		    "Id": "BCP.Minerals",
+		    "ItemId": "(O)appleseed.BCP.Petuntse",
+		    "Condition": "DAY_OF_WEEK 0",
+		    "AvailableStock": "{{Random: 1, 1, 1, 1, 5}}",
+		    "AvailableStockLimit": "Player",
+		    "Price": 2000
+		  }
+	    },
+	  "MoveEntries":
+	    [
+		{
+		  "Id": "BCP.Minerals",
+		  "BeforeId": "(O)347"
+		}
+	    ]
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "TargetField": [ "IslandTrade", "Items" ],
+	  "Entries":
+	    {
+		"BCP.MineralsIsland":
+		  {
+		    "Id": "BCP.MineralsIsland",
+		    "ItemId": "(O)appleseed.BCP.Petuntse",
+		    "TradeItemId": "(O)72",
+		    "TradeItemAmount": 1,
+		    "IgnoreShopPriceModifiers": true,
+		  }
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "TargetField": [ "DesertTrade", "Items" ],
+	  "Entries":
+	    {
+		"BCP.MineralsDesert":
+		  {
+		    "Id": "BCP.MineralsDesert",
+		    "ItemId": "(O)appleseed.BCP.Petuntse",
+		    "TradeItemId": "(O)637",
+		    "TradeItemAmount": 1,
+		    "IgnoreShopPriceModifiers": true,
+		  }
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "TargetField": [ "Dwarf", "Items" ],
+	  "Entries":
+	    {
+		"BCP.MaterialsDwarf":
+		  {
+		    "Id": "BCP.MaterialsDwarf",
+		    "ItemId": "(O)appleseed.BCP.SmallGears",
+		    "Price": 100,
+		    "AvailableStock": 5,
+		    "IgnoreShopPriceModifiers": false
+		  },
+		"BCP.MaterialsDwarf2":
+		  {
+		    "Id": "BCP.MaterialsDwarf2",
+		    "ItemId": "(O)appleseed.BCP.SpoolOfThread",
+		    "Price": 175,
+		    "AvailableStock": 3,
+		    "IgnoreShopPriceModifiers": false
+		  },
+	    },
+	  "MoveEntries":
+	    [
+		{
+		  "Id": "BCP.MaterialsDwarf",
+		  "BeforeId": "(O)243"
+		},
+		{
+		  "Id": "BCP.MaterialsDwarf2",
+		  "BeforeId": "(O)243"
+		}
+	    ]
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "TargetField": [ "ShadowShop", "Items" ],
+	  "Entries":
+	    {
+		"BCP.MaterialsKrobus":
+		  {
+		    "Id": "BCP.MaterialsKrobus",
+		    "ItemId": "(O)appleseed.BCP.WindingKey",
+		    "Price": 111,
+		    "AvailableStock": 5,
+		    "IgnoreShopPriceModifiers": false
+		  },
+		"BCP.MaterialsKrobus2":
+		  {
+		    "Id": "BCP.MaterialsKrobus2",
+		    "ItemId": "(O)appleseed.BCP.StarJelly",
+		    "Price": 30,
+		    "AvailableStock": 10,
+		    "IgnoreShopPriceModifiers": false
+		  },
+	    },
+	  "MoveEntries":
+	    [
+		{
+		  "Id": "BCP.MaterialsKrobus",
+		  "BeforeId": "(BC)34"
+		},
+		{
+		  "Id": "BCP.MaterialsKrobus2",
+		  "BeforeId": "(BC)34"
+		}
+	    ]
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shops",
+	  "TargetField": [ "Bookseller", "Items" ],
+	  "When": { "CurioUnlockMode": "Bookseller" },
+	  "Entries":
+	    {
+		"appleseed.BCP.CurioBookShop":
+		  {
+		    "Id": "(O)appleseed.BCP.CurioBook",
+		    "ItemId": "(O)appleseed.BCP.CurioBook",
+		    "Price": 25000,
+		    "AvailableStock": 1,
+		    "AvailableStockLimit": "Player",
+		    "ActionsOnPurchase": 
+			[
+			  "AddMail Current appleseed.BCP.WhimsychineHint Tomorrow"
+			]
+		  }
+	    },
+	}
+    ]
+
+}

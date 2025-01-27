@@ -1,0 +1,220 @@
+{
+	"Name": "Horse_B_WA",
+	"Type": "Walking",
+	"EnableCharacterCollision": false,
+	"EnableFarmerCollision": true,
+	"TravelSpeed": 4,
+	"MaxIdleDistance": -1,
+	"IdleBehavior": "Wander",
+	"FrameSizeWidth": 32,
+	"FrameSizeHeight": 32,
+	"TileSheetPath": "Characters\\Horse_B_WA",
+
+	// This plays when the companion travels upwards
+	"UpAnimation": {
+		"StartingFrame": 15,
+		"NumberOfFrames": 6,
+		"Duration": 100,
+	},
+	"IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 14,
+		"Duration": 3000,
+		"Flip": true
+		},
+		{
+		"Frame": 25,
+		"Duration": 250,
+		"Flip": true
+		},
+		{
+		"Frame": 14,
+		"Duration": 250,
+		"Flip": true
+		},
+		{
+		"Frame": 25,
+		"Duration": 250,
+		"Flip": true
+		},
+		]
+	},
+	// This plays when the companion travels downwards
+	"DownAnimation": {
+		"StartingFrame": 1,
+		"NumberOfFrames": 6,
+		"Duration": 100,
+	"IdleAnimation": {
+		"StartingFrame": 0,
+		"NumberOfFrames": 1,
+		"Duration": 500
+	}
+	},
+	// This plays when the companion travels left
+	"LeftAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 8,
+		"Duration": 100,
+		"Flip": true
+		},
+		{
+		"Frame": 9,
+		"Duration": 100,
+		"Flip": true
+		},
+		{
+		"Frame": 10,
+		"Duration": 100,
+		"Flip": true
+		},
+		{
+		"Frame": 11,
+		"Duration": 100,
+		"Flip": true
+		},
+		{
+		"Frame": 12,
+		"Duration": 100,
+		"Flip": true
+		},
+		{
+		"Frame": 13,
+		"Duration": 100,
+		"Flip": true
+		}
+		],
+	"IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 7,
+		"Duration": 3000,
+		"Flip": true
+		},
+		{
+		"Frame": 21,
+		"Duration": 150,
+		"Flip": true
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		"Flip": true
+		},
+		{
+		"Frame": 23,
+		"Duration": 350,
+		"Flip": true
+		},
+		{
+		"Frame": 24,
+		"Duration": 350,
+		"Flip": true
+		},
+		{
+		"Frame": 23,
+		"Duration": 350,
+		"Flip": true
+		},
+		{
+		"Frame": 24,
+		"Duration": 350,
+		"Flip": true
+		},
+		{
+		"Frame": 23,
+		"Duration": 350,
+		"Flip": true
+		},
+		{
+		"Frame": 24,
+		"Duration": 350,
+		"Flip": true
+		},
+		{
+		"Frame": 23,
+		"Duration": 350,
+		"Flip": true
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		"Flip": true
+		},
+		{
+		"Frame": 21,
+		"Duration": 150,
+		"Flip": true
+		},
+		]
+	}
+	},
+	// This plays when the companion travels right
+	"RightAnimation": {
+		"StartingFrame": 8,
+		"NumberOfFrames": 6,
+		"Duration": 100,
+	"IdleAnimation": {
+		"ManualFrames": [
+		{
+		"Frame": 7,
+		"Duration": 3000,
+		},
+		{
+		"Frame": 21,
+		"Duration": 150,
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		},
+		{
+		"Frame": 23,
+		"Duration": 350,
+		},
+		{
+		"Frame": 24,
+		"Duration": 350,
+		},
+		{
+		"Frame": 23,
+		"Duration": 350,
+		},
+		{
+		"Frame": 24,
+		"Duration": 350,
+		},
+		{
+		"Frame": 23,
+		"Duration": 350,
+		},
+		{
+		"Frame": 24,
+		"Duration": 350,
+		},
+		{
+		"Frame": 23,
+		"Duration": 350,
+		},
+		{
+		"Frame": 22,
+		"Duration": 150,
+		},
+		{
+		"Frame": 21,
+		"Duration": 150,
+		},
+		]
+	}
+	},
+
+"Sounds": [
+	{
+	"SoundName": "camel",
+	"WhenToPlay": "Idle",
+	"TimeBetweenSound": 5000,
+	"ChanceOfPlaying": 0.3
+	}
+]  
+}

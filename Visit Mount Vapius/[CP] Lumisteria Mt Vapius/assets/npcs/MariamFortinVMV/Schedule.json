@@ -1,0 +1,47 @@
+{
+  "Changes": [
+    {
+      "LogName": "Blank Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/MariamFortinVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    {
+      "LogName": "Default Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/MariamFortinVMV",
+      "Entries": {
+        "Tue": "a900 Lumisteria.MtVapius_Hamlet 23 65 2/1220 Lumisteria.MtVapius_Hamlet 34 84 2/1440 Lumisteria.MtVapius_Hamlet 23 65 2/1900 Lumisteria.MtVapius_Lodge 13 7 2",
+        "spring": "900 Lumisteria.MtVapius_ForestCrystalLake 23 19 2/1200 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1800 Lumisteria.MtVapius_Lodge 17 8 2",
+        "summer": "800 Lumisteria.MtVapius_ForestCrystalLake 23 19 2/1030 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1600 Lumisteria.MtVapius_ForestCrystalLake 6 15 2/1800 Lumisteria.MtVapius_Lodge 17 8 2",
+		"winter": "1000 Lumisteria.MtVapius_ForestCrystalLake 22 40 2 square_5_7/1730 Lumisteria.MtVapius_Lodge 17 8 2",
+
+      }
+    },
+    {
+      "LogName": "Encounter Clint Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/MariamFortinVMV",
+      "Entries": {
+        "7": "000 AdventureGuild 11 14 0/900 Town 101 15 2/1200 Blacksmith 9 18 2/2300 AdventureGuild 10 4 2",
+      },
+      "When":
+      {   
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_ClintMeetMariam",
+      }
+    },
+    {
+      "LogName": "Shortcuts Fixed Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/MariamFortinVMV",
+      "Entries": {
+        "12": "000 AdventureGuild 11 14 0/900 Mine 23 5 2 square_2_2/1200 Mountains 43 6 2/1800 AdventureGuild 11 14 0/2300 AdventureGuild 10 4 2",
+        "26": "000 AdventureGuild 11 14 0/900 Mine 23 5 2 square_2_2/1200 Mountains 43 6 2/1800 AdventureGuild 11 14 0/2300 AdventureGuild 10 4 2",
+      },
+      "When":
+      {   
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Lodge_ShortcutsFixed",
+      }
+    },
+  ]
+}

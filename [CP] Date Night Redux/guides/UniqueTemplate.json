@@ -1,0 +1,111 @@
+{
+	"Changes": [
+	
+		// **** Add Unique Dates ****
+		
+		{
+			"LogName": "Flag Adds for Unique Dates",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				
+				//Add Flag for the Unique Date token to pick up. Without this, Unique Date will not be chosen. You can copy and paste this trigger action, replacing 1 with 2 and so forth, up to 20 without needing to edit the content.json.
+				"{{ModId}}_Unique1Flag": {
+					"Id": "{{ModId}}_Unique1Flag",
+					"Trigger": "DayStarted",				
+					"Condition": "TRUE", //If this file is naturally included, then the condition is already satisfied, so this is always true.
+					"HostOnly": false, 
+					"Action": "AddMail Current {{Date}}Unique1 Received",
+					"MarkActionApplied": false,
+				},
+			},
+		},
+
+		// **** UNIQUE DATE 1 ****
+		
+		//Date Initiation
+		{
+			"LogName": "Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1117001": "",
+
+				"dateYes": "addMailReceived unique1Agree",
+
+			},
+			"When": {
+				"Date": "{{Date}}",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": true,
+				"UniqueDateType": "{{Date}}Unique1",
+			},
+		},
+		
+		//Date - Suggestive
+		{
+			"LogName": "Date",
+			"Action": "EditData",
+			"Target": "Data/Events/HaleyHouse", //***THE LOCATION CAN BE CHANGED
+			"Entries": {
+				"1117101/n unique1Agree": "",
+			},
+			"When": {
+				"Date": "{{Date}}",
+				"SuggestiveEndings": "enabled",
+			},
+		},
+		
+		//Date - Non Suggestive
+		{
+			"LogName": "Date",
+			"Action": "EditData",
+			"Target": "Data/Events/HaleyHouse", //***THE LOCATION CAN BE CHANGED
+			"Entries": {
+				"1117101/n unique1Agree": "",
+			},
+			"When": {
+				"Date": "{{Date}}",
+				"SuggestiveEndings": "disabled",
+			},
+		},
+		
+		{
+			"LogName": "Trigger Removals (Needed to Repeat the Event)",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				
+				//Reset Date Initiation
+				"{{ModId}}_Unique1Initiation": {
+					"Id": "{{ModId}}_Unique1Initiation",
+					"Trigger": "DayEnding",				
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current 1117001",
+					"HostOnly": false, 
+					"Action": "MarkEventSeen Current 1117001 false",
+					"MarkActionApplied": false,
+				},
+				
+				//Reset Unique 1 Mail
+				"{{ModId}}_Unique1Mail": {
+					"Id": "{{ModId}}_Unique1Mail",
+					"Trigger": "DayEnding",				
+					"Condition": "PLAYER_HAS_MAIL Current unique1Agree",
+					"HostOnly": false, 
+					"Action": "RemoveMail Current unique1Agree",
+					"MarkActionApplied": false,
+				},
+				
+				//Reset Unique 1 Date
+				"{{ModId}}_Unique1Date": {
+					"Id": "{{ModId}}_Unique1Date",
+					"Trigger": "DayEnding",				
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current 1117101",
+					"HostOnly": false, 
+					"Action": "MarkEventSeen Current 1117101 false",
+					"MarkActionApplied": false,
+				},
+			},
+		},
+	],
+}

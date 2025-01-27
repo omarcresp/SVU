@@ -1,0 +1,288 @@
+{
+	"Changes": [
+		// VANILLA EDITS
+		{
+			"LogName": "Winter Star Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Abigail_spouse": "{{i18n:SWS.Vanilla.FestivalDialogue.AbigailSpouse}}",
+				"Sam_spouse": "{{i18n:SWS.Vanilla.FestivalDialogue.SamSpouse}}",
+				"Elliott_spouse": "{{i18n:SWS.Vanilla.FestivalDialogue.ElliottSpouse}}",
+				"Demetrius": "{{i18n:SWS.Vanilla.FestivalDialogue.Demetrius}}",
+				"Maru": "{{i18n:SWS.Vanilla.FestivalDialogue.Maru}}",
+				"Shane": "{{i18n:SWS.Vanilla.FestivalDialogue.Shane}}",
+				"Pierre": "{{i18n:SWS.Vanilla.FestivalDialogue.Pierre}}",
+				"Caroline": "{{i18n:SWS.Vanilla.FestivalDialogue.Caroline}}",
+				"Linus": "{{i18n:SWS.Vanilla.FestivalDialogue.Linus}}",
+				"Alex": "{{i18n:SWS.Vanilla.FestivalDialogue.Alex |AlexGrandma={{AlexGrandmaToken}}}}",
+				"George": "{{i18n:SWS.Vanilla.FestivalDialogue.George}}",
+				"Evelyn": "{{i18n:SWS.Vanilla.FestivalDialogue.Evelyn}}",
+				"Clint": "{{i18n:SWS.Vanilla.FestivalDialogue.Clint}}",
+				"Emily": "{{i18n:SWS.Vanilla.FestivalDialogue.Emily}}",
+				"Penny": "{{i18n:SWS.Vanilla.FestivalDialogue.Penny}}",
+				"Haley": "{{i18n:SWS.Vanilla.FestivalDialogue.Haley}}",
+				"Jodi": "{{i18n:SWS.Vanilla.FestivalDialogue.Jodi}}",
+				"Sam": "{{i18n:SWS.Vanilla.FestivalDialogue.Sam}}",
+				"Leah": "{{i18n:SWS.Vanilla.FestivalDialogue.Leah{{DSVGus}}}}",
+				"Elliott": "{{i18n:SWS.Vanilla.FestivalDialogue.Elliott}}",
+				"Gus": "{{i18n:SWS.Vanilla.FestivalDialogue.Gus{{DSVGus}}}}",
+				"Jas": "{{i18n:SWS.Vanilla.FestivalDialogue.Jas}}",
+				"Vincent": "{{i18n:SWS.Vanilla.FestivalDialogue.Vincent}}",
+				"Marlon": "{{i18n:SWS.Vanilla.FestivalDialogue.Marlon}}",
+				"Sebastian_spouse_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Sebastian_spouse_y2}}",
+				"Sam_spouse_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Sam_spouse_y2}}",
+				"Elliott_spouse_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Elliott_spouse_y2}}",
+				"Abigail_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Abigail_y2}}",
+				"Robin_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Robin_y2}}",
+				"Pierre_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Pierre_y2}}",
+				"Caroline_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Caroline_y2}}",
+				"Alex_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Alex_y2}}",
+				"George_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.George_y2}}",
+				"Clint_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Clint_y2}}",
+				"Penny_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Penny_y2}}",
+				"Jodi_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Jodi_y2}}",
+				"Gus_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Gus_y2}}",
+				"Sam_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Sam_y2}}",
+				"Jas_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Jas_y2}}",
+				"Vincent_y2": "{{i18n:SWS.Vanilla.FestivalDialogue.Vincent_y2}}"
+			}
+		},
+		{
+			"LogName": "Penny Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries": {
+				"winter_Mon": "{{i18n:SWS.Vanilla.RegularDialogue.Penny}}"
+			}
+		},
+		{
+			"LogName": "Winter Star Strings Changes",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Event.cs.1740": "{{i18n:SWS.UI.YourGiftMale.1740}}",
+				"Event.cs.1741": "{{i18n:SWS.UI.YourGiftFemale.1741}}",
+				"Event.cs.1497": "{{i18n:SWS.UI.KidGive.1497}}",
+				"Event.cs.1499": "{{i18n:SWS.UI.TownieGive.1499}}",
+				"Event.cs.1500": "{{i18n:SWS.UI.FollowupOne.1500}}",
+				"Event.cs.1501": "{{i18n:SWS.UI.GruffGive.1501}}",
+				"Event.cs.1503": "{{i18n:SWS.UI.GrumpyGive.1503}}",
+				"Event.cs.1504": "{{i18n:SWS.UI.FollowupTwo.1504}}"
+			}
+		},
+		// COLA SHOP COMPAT
+		{
+			"LogName": "Cola Shop Vincent Changes",
+			"Action": "EditData",
+			"Target": "Strings/schedules/Vincent",
+			"Entries": {
+				"colashop.000": "{{i18n:SWS.Compat.ColaShop.Vincent}}"
+			},
+			"When": {
+				"Season": "winter",
+				"Day": "21",
+				"HasMod |contains= CopperSun.SamVincentShopCP": true
+			}
+		},
+		// JUNA COMPAT
+		{
+			"LogName": "Juna Festival Y1 Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Juna": "{{i18n:SWS.Compat.Juna.Festival.One}}"
+			},
+			"When": {
+				"HasMod |contains= elhrvy.NPCJuna": true
+			}
+		},
+		{
+			"LogName": "Juna Festival Y2 Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Juna": "{{i18n:SWS.Compat.Juna.Festival.Two}}"
+			},
+			"When": {
+				"HasMod |contains= elhrvy.NPCJuna": true,
+				"Year |contains= 1": false
+			}
+		},
+		{
+			"LogName": "Juna Festival Roommate Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Juna": "{{i18n:SWS.Compat.Juna.Festival.Roommate}}"
+			},
+			"When": {
+				"HasMod |contains= elhrvy.NPCJuna": true,
+				"Roommate": "Juna"
+			}
+		},
+		{
+			"LogName": "SWS Juna Gift Changes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Juna", "WinterStarGifts" ],
+			"Entries": {
+				"{{ModId}}_Juna_Hashbrowns": {
+					"Id": "{{ModId}}_Juna_Hashbrowns",
+					"ItemId": "(O)210"
+				},
+				"{{ModId}}_Juna_Pancakes": {
+					"Id": "{{ModId}}_Juna_Pancakes",
+					"ItemId": "(O)211"
+				},
+				"{{ModId}}_Juna_JojaCola": {
+					"Id": "{{ModId}}_Juna_JojaCola",
+					"ItemId": "(O)167"
+				}
+			},
+			"When": {
+				"HasMod |contains= elhrvy.NPCJuna": true
+			}
+		},
+		// MR GINGER COMPAT
+		{
+			"LogName": "Mr Ginger Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"MisterGinger": "{{i18n:SWS.Compat.MrGinger.Festival.Regular}}"
+			},
+			"When": {
+				"HasMod |contains= LemurKat.Mr.Ginger.NPC": true,
+				"HasSeenEvent |contains=50706121": true,
+				"HasSeenEvent |contains= 5295000": false
+			}
+		},
+		{
+			"LogName": "Mr Ginger Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueMisterGinger",
+			"Entries": {
+				"winter_25": "{{i18n:SWS.Compat.MrGinger.Festival.Roommate}}"
+			},
+			"When": {
+				"HasMod |contains= LemurKat.Mr.Ginger.NPC": true,
+				"HasSeenEvent |contains= 5295000": false
+			}
+		},
+		// JASPER COMPAT
+		{
+			"LogName": "Jasper Festival Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Jasper": "{{i18n:SWS.Compat.Jasper.Jasper.Festival}}",
+				"Gunther": "{{i18n:SWS.Compat.Jasper.Gunther.Festival}}"
+			},
+			"When": {
+				"HasMod |contains= Lemurkat.NPCJasper": true
+			}
+		},
+		{
+			"LogName": "Jasper Daily Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jasper",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.Jasper.Daily.Y1}}",
+				"winter_24_2": "{{i18n:SWS.Compat.Jasper.Daily.Y2}}"
+			},
+			"When": {
+				"HasMod |contains= Lemurkat.NPCJasper": true
+			}
+		},
+		// EAST SCARP COMPAT
+		{
+			"LogName": "East Scarp Festival Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Aideen": "{{i18n:SWS.Compat.ES.Aideen.Festival}}",
+				"Eloise": "{{i18n:SWS.Compat.ES.Eloise.Festival}}",
+				"Jacob": "{{i18n:SWS.Compat.ES.Jacob.Festival}}"
+			},
+			"When": {
+				"HasMod |contains= Lemurkat.EastScarpNPCs.CP": true
+			}
+		},
+		{
+			"LogName": "Lady Sheba Festival Changes",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"LadySheba": "{{i18n:SWS.Compat.ES.LadySheba.Festival}}"
+			},
+			"When": {
+				"HasMod |contains= Lemurkat.EastScarpNPCs.CP": true,
+				"HasSeenEvent |contains=50706121": true
+			}
+		},
+		{
+			"LogName": "Eloise Daily Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Eloise",
+			"Entries": {
+				"winter_24": "{{i18n:SWS.Compat.ES.Eloise.Y1}}",
+				"winter_24_2": "{{i18n:SWS.Compat.ES.Eloise.Y2}}"
+			},
+			"When": {
+				"HasMod |contains= Lemurkat.EastScarpNPCs.CP": true
+			}
+		},
+		{
+			"LogName": "Jacob Daily Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jacob",
+			"Entries": {
+				"winter_24_2": "{{i18n:SWS.Compat.ES.Jacob.Y2}}"
+			},
+			"When": {
+				"HasMod |contains= Lemurkat.EastScarpNPCs.CP": true
+			}
+		},
+		// CFDE DIALOGUE COMPAT
+		{
+			"Action": "Include",
+			"FromFile": "Data/ModDialogue/CFDEEdits.json",
+			"When": {
+				"HasMod |contains= gizzymo.canonfriendlyexpansion": true
+			}
+		},
+		// IMMERSIVE FESTIVAL DIALOGUE COMPAT
+		{
+			"Action": "Include",
+			"FromFile": "Data/ModDialogue/IFDEdits.json",
+			"When": {
+				"HasMod |contains= tangeriney.FestivalDialogue": true
+			}
+		},
+		// FARMERJACK'S DIALOGUE EXPANSIONS COMPAT
+		{
+			"Action": "Include",
+			"FromFile": "Data/ModDialogue/FJDEEdits.json",
+			"When": {
+				"HasMod |contains= farmerjack.dialogue_expansions": true
+			}
+		},
+		// RSV DIALOGUE COMPAT
+		{
+			"Action": "Include",
+			"FromFile": "Data/RSVEdits.json",
+			"When": {
+				"HasMod |contains= Rafseazz.RSVCP": true
+			}
+		},
+		// IMMERSIVE SHANE DIALOGUE COMPAT
+		{
+			"Action": "Include",
+			"FromFile": "Data/ModDialogue/ICShaneEdits.json",
+			"When": {
+				"HasMod |contains= tenthousandcats.ImmersiveCShane": true
+			}
+		}
+	],
+}

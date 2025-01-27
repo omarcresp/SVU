@@ -1,0 +1,264 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "TargetField": [
+                "GarbageCans"
+            ],
+            "Entries": {
+                "Lumisteria.MtVapius_Aster": {
+                    "BaseChance": 0.4,
+                    "Items": [
+                        {
+                            "ID": "Lumisteria.MtVapius_GardenPot",
+                            "Condition": "RANDOM 0.05, DAYS_PLAYED 38",
+                            "ItemId": "(BC)62"
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_Clay",
+                            "MinStack": 3,
+                            "MaxStack": 6,
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)330"
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_Seeds",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": [
+                                "Lumisteria.MtVapius_TagetesSeeds",
+                                "Lumisteria.MtVapius_BlueMorningGloryStarter",
+                                "Lumisteria.MtVapius_PinkMorningGloryStarter",
+                                "Lumisteria.MtVapius_WildVapiusSeeds",
+                                "(O)431",
+                                "(O)770"
+                            ],
+                        },
+                    ]
+                },
+                "Lumisteria.MtVapius_Inn01": {
+                    "BaseChance": 0.6,
+                    "Items": [
+                        {
+                            "ID": "Lumisteria.MtVapius_Dish",
+                            "Condition": "RANDOM 0.01",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_Cooking_",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_Eggs",
+                            "MaxStack": 3,
+                            "Condition": "RANDOM 0.1",
+                            "ItemId": "(O)176",
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_Coffee",
+                            "Condition": "RANDOM 0.1",
+                            "ItemId": "(O)395",
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_FishingItem",
+                            "Condition": "RANDOM 0.25, DAY_OF_WEEK Sun",
+                            "RandomItemId": [
+                                "(O)686",
+                                "(O)687",
+                                "(O)691",
+                                "(O)692",
+                                "(O)693",
+                                "(O)694",
+                                "(O)695",
+                                "(O)703",
+                            ],
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_Fish",
+                            "Condition": "RANDOM 0.25, DAY_OF_WEEK Sun",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CATEGORY Target -4, ITEM_NUMERIC_ID Target 136 145",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_LotOfTrash",
+                            "Condition": "RANDOM 0.3",
+                            "MinStack": 2,
+                            "MaxStack": 5,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CATEGORY Target -20",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_Newspapers",
+                            "Condition": "RANDOM 0.3",
+                            "MinStack": 4,
+                            "MaxStack": 7,
+                            "ItemId": "172",
+                            "MaxItems": 1,
+                        },
+                    ]
+                },
+                "Lumisteria.MtVapius_Inn02": {
+                    "BaseChance": 0.5,
+                    "Items": [
+                        {
+                            "ID": "Lumisteria.MtVapius_RandomMtVapiusGem",
+                            "Condition": "RANDOM 0.03 @addDailyLuck",
+                            "RandomItemId": [
+                                "Lumisteria.MtVapius_Demantoide",
+                                "Lumisteria.MtVapius_Carnelian",
+                                "Lumisteria.MtVapius_Turquoise",
+                                "Lumisteria.MtVapius_Garnet",
+                                "Lumisteria.MtVapius_Morganite",
+                                "Lumisteria.MtVapius_Heliodor",
+                                "Lumisteria.MtVapius_Labradorite",
+                            ],
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_RandomGem",
+                            "Condition": "RANDOM 0.04 @addDailyLuck",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CATEGORY Target -2, !ITEM_ID_PREFIX Target Lumisteria.MtVapius",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_RareStamp",
+                            "Condition": "RANDOM 0.1",
+                            "ItemId": "(O)Lumisteria.MtVapius_Treasures_RareStamp",
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_RandomArtifact",
+                            "Condition": "RANDOM 0.05 @addDailyLuck",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CATEGORY Target -12",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_OwlCarving",
+                            "Condition": "RANDOM 0.20",
+                            "ItemId": "(O)Lumisteria.MtVapius_OwlCarving",
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_Feather",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)444",
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_JarItem",
+                            "Condition": "RANDOM 0.1",
+                            "RandomItemId": [
+                                "(O)340",
+                                "(O)342",
+                                "(O)344",
+                            ],
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_Hay",
+                            "Condition": "RANDOM 0.15",
+                            "ItemId": "(O)178",
+                            "MinStack": 5,
+                            "MaxStack": 8,
+                        },
+                    ]
+                },
+                "Lumisteria.MtVapius_MarketDay": {
+                    "BaseChance": 0.8,
+                    "Items": [
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketMtVapiusGem",
+                            "Condition": "RANDOM 0.1 @addDailyLuck",
+                            "RandomItemId": [
+                                "Lumisteria.MtVapius_Demantoide",
+                                "Lumisteria.MtVapius_Carnelian",
+                                "Lumisteria.MtVapius_Turquoise",
+                                "Lumisteria.MtVapius_Garnet",
+                                "Lumisteria.MtVapius_Morganite",
+                                "Lumisteria.MtVapius_Heliodor",
+                                "Lumisteria.MtVapius_Labradorite",
+                            ],
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketGem",
+                            "Condition": "RANDOM 0.1 @addDailyLuck",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CATEGORY Target -2, ITEM_NUMERIC_ID Target 2 789",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketMtVapiusArtifact",
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CATEGORY Target -12, ITEM_ID_PREFIX Target Lumisteria.MtVapius_",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketArtifact",
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CATEGORY Target -12, ITEM_NUMERIC_ID Target 2 789",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketMachine",
+                            "Condition": "RANDOM 0.03 @addDailyLuck",
+                            "RandomItemId": [
+                                "(BC)10",
+                                "(BC)12",
+                                "(BC)13",
+                                "(BC)15",
+                                "(BC)20",
+                            ],
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketMixedSeeds",
+                            "MinStack": 4,
+                            "MaxStack": 5,
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": [
+                                "Lumisteria.MtVapius_WildVapiusSeeds",
+                                "Lumisteria.MtVapius_MountainMeadowSeeds",
+                                "Lumisteria.MtVapius_BlueCloverSeeds",
+                            ],
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketSeedsTuesday",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "Condition": "RANDOM 0.25, DAY_OF_WEEK Tuesday",
+                            "RandomItemId": [
+                                "Lumisteria.MtVapius_FireBeansStarter",
+                                "Lumisteria.MtVapius_RyeSeeds",
+                                "Lumisteria.MtVapius_BasilSeeds",
+                                "Lumisteria.MtVapius_LambLettuceSeeds",
+                                "Lumisteria.MtVapius_SunrootSeeds",
+                                "Lumisteria.MtVapius_WoodSilkFlowerSeeds",
+                            ],
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketSeedsSaturday",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "Condition": "RANDOM 0.25, DAY_OF_WEEK Saturday",
+                            "RandomItemId": [
+                                "Lumisteria.MtVapius_TagetesSeeds",
+                                "Lumisteria.MtVapius_BlueMorningGloryStarter",
+                                "Lumisteria.MtVapius_PinkMorningGloryStarter",
+                            ],
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketLotOfTrash",
+                            "IgnoreBaseChance": true,
+                            "Condition": "RANDOM 0.7",
+                            "MinStack": 3,
+                            "MaxStack": 7,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CATEGORY Target -20",
+                            "MaxItems": 1,
+                        },
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+{
+  "Changes": [
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //scarecrow test zone
+    {
+      "LogName": "Scare Bear Time",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "MadDog.HashtagBearFam_BearScarecrow": {
+          "Name": "MadDog.HashtagBearFam_BearScarecrow",
+          "DisplayName": "{{i18n:MadDog.HashtagBearfam.BearCrow}}",
+          "Description": "{{i18n:MadDog.HashtagBearfam.BearCrow.Description}}",
+          //"Type": "Crafting",
+          //"Category": -9,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 50,
+          "Fragility": 0,
+          "CanBePlacedOutdoors": true,
+          "CanBePlacedIndoors": true,
+          "IsLamp": false,
+          "Texture": "{{InternalAssetKey: assets/MadDog.BearFamScarecrow.png}}",
+          "SpriteIndex": 0,
+          "ContextTags": [
+            "crow_scare"
+          ]
+        }
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //machine rules
+    {
+      "LogName": "Keg It Up",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)12",
+        "OutputRules"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach_Mead": {
+          "Id": "MadDog.HashtagBearFam_FerskenPeach_Mead",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)MadDog.HashtagBearFam_FerskenPeach_Honey",
+              "RequiredCount": 3
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)MadDog.HashtagBearFam_FerskenPeach_Mead"
+            }
+          ],
+          "MinutesUntilReady": 7500
+        }
+
+      }
+    },
+
+    {
+      "LogName": "Age It Up",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)163",
+        "OutputRules"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach_PotentMead": {
+          "Id": "MadDog.HashtagBearFam_FerskenPeach_PotentMead",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)MadDog.HashtagBearFam_FerskenPeach_Mead",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "CustomData": {
+                "AgingMultiplier": "4"
+              },
+              "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+              "ItemId": "(O)MadDog.HashtagBearFam_FerskenPeach_Mead"
+            }
+          ],
+          "MinutesUntilReady": -1
+        }
+
+      }
+    },
+
+
+
+    {
+      "LogName": "Burn it Out",
+      "Action": "EditData",
+      /*"When": {
+        "HasFlag": "SigMansplainsHoney"
+      },*/
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)13",
+        "OutputRules"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeachHoney": {
+          "Id": "MadDog.HashtagBearFam_FerskenPeachHoney",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)MadDog.HashtagBearFam_FerskenPeach",
+              "RequiredCount": 1,
+              "Condition": "PLAYER_HAS_MAIL Current SigMansplainsHoney Any"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)MadDog.HashtagBearFam_FerskenPeach_Honey",
+              "MinStack": 3,
+              "MaxStack": 6
+            }
+          ],
+          "MinutesUntilReady": 90
+        }
+
+      }
+    },
+
+//Do you have Sword & Sorcery by DestyNOVA?
+    
+    {
+      "LogName": "Turn it into Jon Moxley friendly beer",
+      "Action": "EditData",
+      "When": {
+        "HasMod": "DN.SnS"
+      },
+      "Priority": "Late",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)DN.SnS_oldfashionedfermenter",
+        "OutputRules"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach_GingerBeer": {
+          "Id": "MadDog.HashtagBearFam_FerskenPeach_GingerBeer",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)MadDog.HashtagBearFam_FerskenPeach",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)MadDog.HashtagBearFam_FerskenPeach_GingerBeer"
+            }
+          ],
+          "MinutesUntilReady": 7500
+        },
+        "MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer": {
+          "Id": "MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)MadDog.HashtagBearFam_StoneBrambleBerry",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer"
+            }
+          ],
+          "MinutesUntilReady": 7500
+        }
+
+      }
+    },
+    {
+      "LogName": "Age It Up Part 2: Electric Boogaloo",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)163",
+        "OutputRules"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam_FerskenPeach_GingerBeer": {
+          "Id": "MadDog.HashtagBearFam_FerskenPeach_GingerBeer",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)MadDog.HashtagBearFam_FerskenPeach_GingerBeer",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "CustomData": {
+                "AgingMultiplier": "4"
+              },
+              "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+              "ItemId": "(O)MadDog.HashtagBearFam_FerskenPeach_GingerBeer"
+            }
+          ],
+          "MinutesUntilReady": -1
+        },
+        "MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer": {
+          "Id": "MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "CustomData": {
+                "AgingMultiplier": "4"
+              },
+              "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+              "ItemId": "(O)MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer"
+            }
+          ],
+          "MinutesUntilReady": -1
+        }
+
+      }
+    }
+
+  ]
+}

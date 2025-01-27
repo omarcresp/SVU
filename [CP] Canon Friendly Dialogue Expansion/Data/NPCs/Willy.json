@@ -1,0 +1,124 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Willy_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Willy",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)143": "{{i18n: CFE_Willy_Catfish{{GenderNeutralCompat}} |ElderInformalNoun={{lowercase:{{Random:{{GNMTElderInformalNoun}}}}}}}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Willy}}' = 'true' OR ('{{CFE_Willy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Willy_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Willy",
+      "Entries": {
+        // we can also add reveal gift taste code to these now that they use i18n.
+        "AcceptGift_(O)373": "{{i18n: CFE_Willy_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Willy_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Willy_PrismaticShard{{GenderNeutralCompat}} |ElderInformalNoun={{lowercase:{{Random:{{GNMTElderInformalNoun}}}}}}}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Willy_RabbitsFoot}}",
+        "AcceptGift_(O)72": "{{i18n: CFE_Willy_Diamond}}",
+        "AcceptGift_(O)337": "{{i18n: CFE_Willy_IridiumBar}}",
+        "AcceptGift_(O)459": "{{i18n: CFE_Willy_Mead{{GenderNeutralCompat}} |ElderInformalNoun={{lowercase:{{Random:{{GNMTElderInformalNoun}}}}}}}}",
+        "AcceptGift_(O)149": "{{i18n: CFE_Willy_Squid}}",
+        "AcceptGift_(O)276": "{{i18n: CFE_Willy_Pumpkin}}",
+        "AcceptGift_(O)154": "{{i18n: CFE_Willy_SeaCucumber{{GenderNeutralCompat}} |GenericNoun={{lowercase:{{Random:{{GNMTGenericNoun}}}}}}}}",
+        "AcceptGift_(O)698": "{{i18n: CFE_Willy_Sturgeon}}"
+      },
+      "When": { "Query: '{{CFE_Willy}}' = 'true' OR ('{{CFE_Willy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    /* {
+      "LogName": "CFE_Willy_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": { //left for future use }
+      "When": { "Query: '{{CFE_Willy}}' = 'true' OR ('{{CFE_Willy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }, */
+    {
+      "LogName": "CFE_Willy_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Willy",
+      "Entries": {
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Willy_spring1y2}}",
+
+        "summer_4_1": "{{i18n: CFE_Willy_summer4}}",
+        "summer_4_2": "{{i18n: CFE_Willy_summer4}}",
+
+        "winter_7_1": "{{i18n: CFE_Willy_winter7}}",
+        "winter_7_2": "{{i18n: CFE_Willy_winter7}}",
+        "winter_15_1": "{{i18n: CFE_Willy_winter15}}",
+        "winter_15_2": "{{i18n: CFE_Willy_winter15}}",
+        "winter_28_1": "{{i18n: CFE_Willy_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Willy_winter28}}",
+
+        //Heart Specific Dialogue
+        "spring_Fri8": "{{i18n: CFE_Willy_springFri8}}",
+        "spring_Fri2": "{{i18n: CFE_Willy_springFri2}}",
+
+        "summer_Mon10": "{{i18n: CFE_Willy_summerMon10}}",
+        "summer_Tue10": "{{i18n: CFE_Willy_summerTue10}}",
+        "summer_Wed10": "{{i18n: CFE_Willy_summerWed10}}",
+        "summer_Wed6": "{{i18n: CFE_Willy_repeated_4}}",
+        "summer_Wed2": "{{i18n: CFE_Willy_summerWed2}}",
+        "summer_Thu6": "{{i18n: CFE_Willy_summerThu6}}",
+        "summer_Thu2": "{{i18n: CFE_Willy_summerThu2}}",
+        "summer_Fri4": "{{i18n: CFE_Willy_summerFri4}}",
+        "summer_Sat10": "{{i18n: CFE_Willy_summerSat10}}",
+        "summer_Sun10": "{{i18n: CFE_Willy_summerSun10}}",
+
+        "fall_Mon2": "{{i18n: CFE_Willy_fallMon2}}",
+        "fall_Tue10": "{{i18n: CFE_Willy_fallTue10}}",
+        "fall_Wed10": "{{i18n: CFE_Willy_fallWed10}}",
+        "fall_Thu10": "{{i18n: CFE_Willy_repeated_1}}",
+        "fall_Fri6": "{{i18n: CFE_Willy_fallFri6}}",
+        "fall_Fri2": "{{i18n: CFE_Willy_fallFri2}}",
+        "fall_Sat10": "{{i18n: CFE_Willy_repeated_2}}",
+        "fall_Sun10": "{{i18n: CFE_Willy_fallSun10}}",
+
+        "winter_Mon10": "{{i18n: CFE_Willy_repeated_3}}",
+        "winter_Tue8": "{{i18n: CFE_Willy_winterTue8}}",
+        "winter_Wed10": "{{i18n: CFE_Willy_winterWed10}}",
+        "winter_Wed6": "{{i18n: CFE_Willy_repeated_4}}",
+        "winter_Thu10": "{{i18n: CFE_Willy_winterThu10}}",
+        "winter_Sat10": "{{i18n: CFE_Willy_winterSat10}}",
+        "winter_Sun10": "{{i18n: CFE_Willy_winterSun10}}",
+
+        "Mon8": "{{i18n: CFE_Willy_Mon8}}",
+        "Mon6": "{{i18n: CFE_Willy_Mon6}}",
+        "Mon2": "{{i18n: CFE_Willy_Mon2{{GenderNeutralCompat}} |ElderInformalNoun={{lowercase:{{Random:{{GNMTElderInformalNoun}}}}}}}}",
+        "Tue8": "{{i18n: CFE_Willy_Tue8}}",
+        "Tue4": "{{i18n: CFE_Willy_Tue4}}",
+        "Tue2": "{{i18n: CFE_Willy_repeated_2}}",
+        "Wed8": "{{i18n: CFE_Willy_Wed8}}",
+        "Wed4": "{{i18n: CFE_Willy_Wed4}}",
+        "Wed2": "{{i18n: CFE_Willy_Wed2}}",
+        "Thu8": "{{i18n: CFE_Willy_Thu8}}",
+        "Thu6": "{{i18n: CFE_Willy_Thu6}}",
+        "Thu4": "{{i18n: CFE_Willy_repeated_3}}",
+        "Thu2": "{{i18n: CFE_Willy_Thu2}}",
+        "Fri8": "{{i18n: CFE_Willy_Fri8}}",
+        "Fri6": "{{i18n: CFE_Willy_Fri6}}",
+        "Fri2": "{{i18n: CFE_Willy_Fri2}}",
+        "Sat6": "{{i18n: CFE_Willy_Sat6}}",
+        "Sat4": "{{i18n: CFE_Willy_repeated_1}}",
+        "Sat2": "{{i18n: CFE_Willy_Sat2}}",
+        "Sun8": "{{i18n: CFE_Willy_Sun8}}",
+        "Sun6": "{{i18n: CFE_Willy_Sun6}}",
+        "Sun4": "{{i18n: CFE_Willy_Sun4}}",
+
+        //Generic Weekday Dialogue
+        "winter_Tue": "{{i18n: CFE_Willy_winterTue}}",
+        "Mon": "{{i18n: CFE_Willy_Mon}}",
+        "Fri": "{{i18n: CFE_Willy_Fri}}"
+      },
+      "When": { "Query: '{{CFE_Willy}}' = 'true' OR ('{{CFE_Willy}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

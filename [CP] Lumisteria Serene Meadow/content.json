@@ -1,0 +1,46 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+		{
+			"LogName": "Objects",
+			"Action": "Include",
+			"FromFile": "Assets/Objects.json",
+		},
+		{
+			"LogName": "Shops",
+			"Action": "Include",
+			"FromFile": "Assets/Shops.json",
+		},
+		{
+			"LogName": "Mails",
+			"Action": "Include",
+			"FromFile": "Assets/Mails.json",
+		},
+		{
+			"LogName": "GiftTastes",
+			"Action": "Include",
+			"FromFile": "Assets/GiftTastes.json",
+		},
+		{
+			"LogName": "Spawn",
+			"Action": "Include",
+			"FromFile": "Assets/Spawn.json",
+		},
+		{
+			"LogName": "MixedSeed",
+			"Action": "Include",
+			"FromFile": "Assets/MixedSeed.json",
+			"When": {
+				"HasMod |contains=mistyspring.ItemExtensions": "true",
+			}
+		},
+		{
+			"LogName": "ExtraYield",
+			"Action": "Include",
+			"FromFile": "Assets/ExtraYield.json",
+				"When": {
+			"HasMod |contains=spacechase0.SpaceCore": "true",
+				}
+		},
+	]
+}

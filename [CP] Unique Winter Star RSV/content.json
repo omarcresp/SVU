@@ -1,0 +1,636 @@
+{
+    "Format": "2.4.0",
+    "ConfigSchema": {
+		"Enable Spicy Dialogue": {
+            "AllowValues": "true, false",
+            "Default": "false",
+			"Description": "Enables somewhat spicier dialogue from relevant spouses. Will not do anything without corresponding enabled options below.",
+			"Section": "Main Mod Changes",
+        },
+		/*"In-Law Dialogue": { //Currently commented out - this will require another long update for, and I'm out of Christmas time to work on these in a decent manner! (The lines may still be updated at a non-Christmas time.)
+			"AllowValues": "enabled, disabled",
+            "Default": "enabled",
+			"Description": "Adds extra dialogue for relatives of your spouses! Set to disabled if you'd prefer that the dialogues do not mention your spouse and just focus on the character in question.",
+			"Section": "Main Mod Changes",
+        },*/
+		"Daia": {
+			"AllowValues": "disabled, enabled, spicy",
+            "Default": "disabled",
+			"Description": "Allows Daia to participate in the secret gift exchange at the Winter Star once she has been unlocked. If Spicy Dialogue is enabled and Daia is set to 'use spicy dialogues', allow Daia to say a slightly spicier end dialogue when married.",
+			"Section": "Additional Winter Star Villagers",
+        },
+		"Jio": {
+			"AllowValues": "disabled, enabled, spicy",
+            "Default": "disabled",
+			"Description": "Allows Jio to participate in the secret gift exchange at the Winter Star once he has been unlocked. If Spicy Dialogue is enabled and Jio is set to 'use spicy dialogues', allow Jio to say a slightly spicier end dialogue when married.",
+			"Section": "Additional Winter Star Villagers",
+        },
+		"Bryle": {
+			"AllowValues": "disabled, enabled, spicy",
+            "Default": "disabled",
+			"Description": "Allows Bryle to participate in the secret gift exchange at the Winter Star once he has been unlocked. If Spicy Dialogue is enabled and Bryle is set to 'use spicy dialogues', allow Bryle to say a slightly spicier end dialogue when married.",
+			"Section": "Additional Winter Star Villagers",
+        },
+		"Zayne": {
+			"AllowValues": "disabled, enabled, spicy",
+            "Default": "disabled",
+			"Description": "Allows Zayne to participate in the secret gift exchange at the Winter Star once he has been unlocked. If Spicy Dialogue is enabled and Zayne is set to 'use spicy dialogues', allow Zayne to say a slightly spicier end dialogue when married.",
+			"Section": "Additional Winter Star Villagers",
+        },
+		"Ian": {
+			"AllowValues": "off, disabled, normal, spicy, platonic",
+            "Default": "normal",
+			"Description": "Determines if Ian's dialogue changes are enabled and/or if he's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Ian is set to 'spicy dialogue enabled', allow Ian to say a slightly spicier end dialogue when married. Set to 'Platonic' if using any non-vanilla PPAF options from the Platonic Ridgeside Beta.",
+			"Section": "Bachelor Changes",
+        },
+		"Jeric": {
+			"AllowValues": "off, disabled, normal, spicy, platonic",
+            "Default": "normal",
+			"Description": "Determines if Jeric's dialogue changes are enabled and/or if he's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Jeric is set to 'spicy dialogue enabled', allow Jeric to say a slightly spicier end dialogue when married. Set to 'Platonic' if using any non-vanilla PPAF options from the Platonic Ridgeside Beta.",
+			"Section": "Bachelor Changes",
+        },
+		"June": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Determines if June's dialogue changes are enabled and/or if he's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and June is set to 'spicy dialogue enabled', allow June to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelor Changes",
+        },
+		"Kenneth": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Determines if Kenneth's dialogue changes are enabled and/or if he's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Kenneth is set to 'spicy dialogue enabled', allow Kenneth to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelor Changes",
+        },
+		"Philip": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Philip's dialogue changes at the Winter Star and/or if he's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Philip is set to 'spicy dialogue enabled', allow Philip to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelor Changes",
+        },
+		"Sean": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Sean's dialogue changes at the Winter Star and/or if he's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Sean is set to 'spicy dialogue enabled', allow Sean to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelor Changes",
+        },
+		"Shiro": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Shiro's dialogue changes at the Winter Star and/or if he's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Shiro is set to 'spicy dialogue enabled', allow Shiro to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelor Changes",
+        },
+		"Anton": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Anton's dialogue changes at the Winter Star and/or if he's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Anton is set to 'spicy dialogue enabled', allow Anton to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelor Changes",
+        },
+		"Alissa": {
+			"AllowValues": "off, disabled, normal, spicy, platonic",
+            "Default": "normal",
+			"Description": "Enables or disables Alissa's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Alissa is set to 'spicy dialogue enabled', allow Alissa to say a slightly spicier end dialogue when married. Set to 'Platonic' if using any non-vanilla PPAF options from the PPAF Ridgeside Beta.",
+			"Section": "Bachelorette Changes",
+        },
+		"Blair": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Blair's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Blair is set to 'spicy dialogue enabled', allow Blair to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelorette Changes",
+        },
+		"Corine": {
+			"AllowValues": "off, disabled, normal, spicy, platonic",
+            "Default": "normal",
+			"Description": "Enables or disables Corine's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Corine is set to 'spicy dialogue enabled', allow Corine to say a slightly spicier end dialogue when married. Set to 'Platonic' if using any non-vanilla PPAF options from the PPAF Ridgeside Beta.",
+			"Section": "Bachelorette Changes",
+        },
+		"Flor": {
+			"AllowValues": "off, disabled, normal, spicy, platonic",
+            "Default": "normal",
+			"Description": "Enables or disables Flor's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Flor is set to 'spicy dialogue enabled', allow Flor to say a slightly spicier end dialogue when married. Set to 'Platonic' if using any non-vanilla PPAF options from the PPAF Ridgeside Beta.",
+			"Section": "Bachelorette Changes",
+        },
+		"Kiarra": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Kiarra's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Kiarra is set to 'spicy dialogue enabled', allow Kiarra to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelorette Changes",
+        },
+		"Maddie": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Maddie's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Maddie is set to 'spicy dialogue enabled', allow Maddie to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelorette Changes",
+        },
+		"Ysabelle": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Ysabelle's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Ysabelle is set to 'spicy dialogue enabled', allow Ysabelle to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelorette Changes",
+        },
+		"Faye": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Faye's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Faye is set to 'spicy dialogue enabled', allow Faye to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelorette Changes",
+        },
+		"Irene": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Irene's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Irene is set to 'spicy dialogue enabled', allow Irene to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelorette Changes",
+        },
+		"Paula": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Enables or disables Paula's dialogue changes at the Winter Star and/or if she's in the gift pool at the Winter Star. If Spicy Dialogue is enabled and Paula is set to 'spicy dialogue enabled', allow Paula to say a slightly spicier end dialogue when married.",
+			"Section": "Bachelorette Changes",
+        },
+		"Bert": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Bert can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Carmen": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Carmen can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Ezekiel": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Ezekiel can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Freddie": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Freddie can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Kimpoi": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Kimpoi can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Lenny": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Lenny can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Lola": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Lola can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Lorenzo": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Lorenzo can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Maive": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Maive can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Malaya": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Malaya can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Aguar": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Aguar can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Naomi": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Aguar can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Olga": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Olga can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Pika": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Pika can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Richard": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Richard can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Shanice": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Shanice can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Sonny": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Sonny can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Ariah": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Ariah can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Keahi": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Keahi can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Louie": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Louie can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Trinnie": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Trinnie can gift you at the Winter Star and if her dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+		"Yuuma": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines whether Yuuma can gift you at the Winter Star and if his dialogue changes are applied.",
+			"Section": "Townspeople Changes",
+        },
+    },
+	
+	"DynamicTokens": [		
+		{
+			"Name": "TempBlock",
+			"Value": "Errors",
+		},
+		{
+			"Name": "TempBlock",
+			"Value": "all",
+			"When": {
+				 "HasSeenEvent": "75160263, 75160440, 75160375" // has seen any of these
+			},
+		},
+	],
+	
+	"Changes":[
+		//Gifting a Villager Lines
+		
+		//Winter Star
+		{
+			"LogName": "Regular Villagers - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/RSV/regular.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/RSV/datables.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Dating, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/RSV/dating.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Married, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/RSV/marriage.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+			},
+		},
+		
+		{
+			"LogName": "Marriage Candidates - Platonic Variants for PPAF Ridgeside Beta, Best Friends, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/Platonic/RSV/bestfriend.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+				
+				"HasMod |contains=PPAF.Core": true,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Platonic Variants for PPAF Ridgeside Beta, Cohabitation, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/Platonic/RSV/housemate.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+				
+				"HasMod |contains=PPAF.Core": true,
+			},
+		},
+		
+		//Solstice
+		{
+			"LogName": "Regular Villagers - Solstice",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/Solstice/regular.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Solstice",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/Solstice/datables.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Dating, Solstice",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/Solstice/dating.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Married, Solstice",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/Solstice/marriage.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Platonic Variants for PPAF Ridgeside Beta, Best Friends, Solstice",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/Platonic/Solstice/bestfriend.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+				
+				"HasMod |contains=PPAF.Core": true,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Platonic Variants for PPAF Ridgeside Beta, Cohabitation, Solstice",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/Platonic/Solstice/housemate.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+				
+				"HasMod |contains=PPAF.Core": true,
+			},
+		},
+		
+		//Villagers Gifting Farmer
+		{
+			"LogName": "Regular Villagers - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/RSV/regular.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+			},
+		},
+		/*{
+			"LogName": "Regular Villagers, In-Law Edits - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/RSV/inlaw.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+				"In-Law Dialogue": "enabled",
+			},
+		},*/
+		{
+			"LogName": "Marriage Candidates - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/RSV/datables.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Dating, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/RSV/dating.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Married, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/RSV/marriage.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+			},
+		},
+		
+			//Platonic Variants
+		{
+			"LogName": "Winter Star, PPAF Candidates, Platonic 9 & 10 Hearts",
+			"Action": "Include",
+			"FromFile": "assets/Platonic/RSV/bestfriend.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,				
+				"HasMod |contains=PPAF.Core": true,
+			},
+		},
+		{
+			"LogName": "Winter Star, PPAF Candidates, Roommating",
+			"Action": "Include",
+			"FromFile": "assets/Platonic/RSV/housemate.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,				
+				"HasMod |contains=PPAF.Core": true,
+			},
+		},
+		/*{
+			"LogName": "Winter Star, PPAF Candidates, Roommate In-Law Dialogue",
+			"Action": "Include",
+			"FromFile": "assets/Platonic/RSV/houselaw.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,				
+				"HasMod |contains=PPAF.Core": true,
+				"In-Law Dialogue": "enabled",
+			},
+		},*/
+		
+		//Solstice
+		{
+			"LogName": "Regular Villagers - Solstice",
+			"Action": "Include",
+			"FromFile": "assets/Solstice/regular.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+			},
+		},
+		/*{
+			"LogName": "Regular Villagers, In-Law Edits - Solstice",
+			"Action": "Include",
+			"FromFile": "assets/Solstice/inlaw.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+				"In-Law Dialogue": "enabled",
+			},
+		},
+		{
+			"LogName": "Regular Villagers, PPAF Housemate Edits - Solstice",
+			"Action": "Include",
+			"FromFile": "assets/PPAFSolstice/houselaw.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+				"HasMod": "Amaranthacyan.PlatonicRidgeside",
+				"HasMod |contains=PPAF.Core": true,
+				"In-Law Dialogue": "enabled",
+			},
+		},*/
+		{
+			"LogName": "Marriage Candidates - Solstice",
+			"Action": "Include",
+			"FromFile": "assets/Solstice/datables.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+			},
+		},
+		/*{
+			"LogName": "Marriage Candidates, 'In-Law' PPAF Housemate Edits - Solstice",
+			"Action": "Include",
+			"FromFile": "assets/PPAFSolstice/housedate.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+				"HasMod": "Amaranthacyan.PlatonicRidgeside",
+				"HasMod |contains=PPAF.Core": true,
+				"In-Law Dialogue": "enabled",
+			},
+		},*/
+		{
+			"LogName": "Marriage Candidates - Dating, Solstice",
+			"Action": "Include",
+			"FromFile": "assets/Solstice/dating.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+			},
+		},
+		{
+			"LogName": "Marriage Candidates - Married, Solstice",
+			"Action": "Include",
+			"FromFile": "assets/Solstice/marriage.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+			},
+		},
+		
+			//Platonic Variants
+		{
+			"LogName": "Solstice, PPAF Candidates, Platonic 9 & 10 Hearts",
+			"Action": "Include",
+			"FromFile": "assets/Platonic/Solstice/bestfriend.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+				"HasMod |contains=PPAF.Core": true,
+			},
+		},
+		{
+			"LogName": "Solstice, PPAF Candidates, Roommating",
+			"Action": "Include",
+			"FromFile": "assets/Platonic/Solstice/housemate.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,				
+				"HasMod |contains=PPAF.Core": true,
+			},
+		},
+		/*{
+			"LogName": "Solstice, PPAF Candidates, Roommate In-Law Dialogue",
+			"Action": "Include",
+			"FromFile": "assets/Platonic/Solstice/houselaw.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,				
+				"HasMod |contains=PPAF.Core": true,
+			},
+		},*/
+		
+		
+		//NEW IN 1.6
+		
+		//Extra People! Zayne and Bryle (potentially temporarily), Daia and Jio (permanently)
+		{
+			"LogName": "Extra Attendee Data",
+			"Action": "Include",
+			"FromFile": "assets/Additions/AdditionData.json",
+		},
+		
+		//Winter Star Data
+		
+		{
+			"LogName": "Gifting Villagers - Extra People, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/Additions/AdditionsGiftee.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+				"TempBlock": "all",
+			},
+		},
+		
+		{
+			"LogName": "Gifted By Villagers - Extra People, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/Additions/AdditionsGifter.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+				"TempBlock": "all",
+			},
+		},
+		
+		//Solstice Data
+		
+		{
+			"LogName": "Gifting Villagers - Extra People, Solstice",
+			"Action": "Include",
+			"FromFile": "assets/Additions/AdditionsGifteeSolstice.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+				"TempBlock": "all",
+			},
+		},
+		
+		{
+			"LogName": "Gifted By Villagers - Extra People, Solstice",
+			"Action": "Include",
+			"FromFile": "assets/Additions/AdditionsGifterSolstice.json",
+			"When": {
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": true,
+				"TempBlock": "all",
+			},
+		},
+		
+		//Whether Villagers are included or not
+		{
+			"LogName": "Turn off RSV Gifters via config",
+			"Action": "Include",
+			"FromFile": "assets/Misc/VillagerPool.json",
+		},
+    ]
+}

@@ -1,0 +1,72 @@
+{
+   "Changes": [
+        {
+            "LogName": "Geology Museum Patch",
+            "Action": "EditMap",
+            "Target": "Maps/ArchaeologyHouse",
+            "PatchMode": "Replace",
+            "FromFile": "assets/Maps/GeologyArchaeologyHouse.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 10,
+                "Height": 10
+            },
+            "ToArea": {
+                "X": 47,
+                "Y": 10,
+                "Width": 10,
+                "Height": 10
+            },
+            "When": {
+                "HasMod |contains=Wolf.Gun": "false",
+            },
+        },
+        {
+            "LogName": "SVE Geology Glass Museum Patch",
+            "Action": "EditMap",
+            "Target": "Maps/ArchaeologyHouse",
+            "PatchMode": "Replace",
+            "FromFile": "assets/Maps/SVEGeologyArchaeologyHouse.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 10,
+                "Height": 10
+            },
+            "ToArea": {
+                "X": 47,
+                "Y": 10,
+                "Width": 10,
+                "Height": 10
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            },
+        },
+        {
+            "LogName": "MGR Geology Museum Patch",
+            "Action": "EditMap",
+            "Target": "Maps/ArchaeologyHouse",
+            "PatchMode": "Replace",
+            "FromFile": "assets/Maps/MGRGeologyArchaeologyHouse.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 11,
+                "Height": 9
+            },
+            "ToArea": {
+                "X": 39,
+                "Y": 9,
+                "Width": 11,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=Wolf.Gun": "true",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            },
+        },
+    ]
+}
+

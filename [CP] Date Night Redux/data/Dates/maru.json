@@ -1,0 +1,71 @@
+{
+	"Changes": [
+
+		// **** MARU LUNAR ECLIPSE DATE ****
+
+		//Load Telescope
+		{
+			"LogName": "Load Telescope",
+			"Action": "Load",
+			"Target": "Characters/TelescopeDN",
+			"FromFile": "assets/Characters/Telescope_DN.png",
+		},
+		
+		//Load Lunar Eclipse Moon
+		{
+			"LogName": "Load Lunar Eclipse Moon",
+			"Action": "Load",
+			"Target": "Characters/MoonLunarEclipseDN",
+			"FromFile": "assets/Characters/MoonLunarEclipse_DN.png",
+		},
+		
+		//Date Initiation
+		{
+			"LogName": "Date Initiation",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"1116027/f Maru {{MinFriendship}}/O Maru/t 500 2000": "continue/-10000 -1000/farmer -100 -100 2 Maru -100 -100 2/skippable/warp Maru -100 -100/warp farmer -100 -100/faceDirection Maru 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Maru 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Maru \"{{i18n:Maru.EclipseDate.Intro.1}}\"/pause 500/emote farmer 8/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.Intro.2}}\"/pause 1000/question fork0 \"{{i18n:AcceptDate.Choice | Date={{Date}} }}#{{i18n:AcceptDate.Yes}}#{{i18n:AcceptDate.No}}\"/fork dateYes/playMusic none/pause 1000/emote Maru 28/speak Maru \"{{i18n:Maru.EclipseDate.Intro.Refuse.1}}\"/pause 500/faceDirection Maru 3 true/pause 1000/emote Maru 40/pause 400/faceDirection Maru 2/pause 400/speak Maru \"{{i18n:Maru.EclipseDate.Intro.Refuse.2}}\"/pause 800/faceDirection Maru 1 true/pause 100/faceDirection Maru 0/pause 400/playSound doorClose/warp Maru -100 -100/pause 2000/end dialogue Maru \"{{i18n:Maru.EclipseDate.Intro.Refuse.End}}\"",
+
+				"dateYes": "pause 200/addMailReceived maruLunarDateAgree/emote Maru 20/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.Intro.3}}\"/pause 500/end dialogue Maru \"{{i18n:Maru.EclipseDate.Intro.End}}\"",
+
+			},
+			"When": {
+				"Date": "Maru",
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": true,
+				"UniqueDateType": "maruLunar",
+			},
+		},
+
+		//Maru Lunar Eclipse Date - Suggestive
+		{
+			"LogName": "Maru Lunar Date",
+			"Action": "EditData",
+			"Target": "Data/Events/Backwoods",
+			"Entries": {
+				"1116028/n maruLunarDateAgree/t 2000 2600": "spaceMusic/21 14/farmer 20 18 0 Maru 22 15 1/makeInvisible 16 9 15 15/addTemporaryActor TelescopeDN 16 32 20 14 2 false/addTemporaryActor CampfireDN 16 32 23 15 2 false/addTemporaryActor TentDN 49 80 22 12 2 false/skippable/friendship Maru {{FriendBonus}}/move farmer 0 -1 1/move farmer 1 0 0/faceDirection Maru 2/move farmer 0 -2 1/faceDirection Maru 3 true/speak Maru \"{{i18n:Maru.EclipseDate.1}}\"/pause 300/emote farmer 32/speak Maru \"{{i18n:Maru.EclipseDate.2}}\"/pause 200/move Maru 0 -1 1/move farmer 1 0 1 true/move Maru 1 0 2 false/pause 100/shake Maru 250/showFrame CampfireDN 1/playSound fireball/pause 800/question null \"#{{i18n:Maru.EclipseDate.3}}#{{i18n:Maru.EclipseDate.4}}#{{i18n:Maru.EclipseDate.5}}\"/pause 200/emote Maru 32/pause 200/speak Maru \"{{i18n:Maru.EclipseDate.6}}\"/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.7}}\"/shake Maru 250/playSound pickUpItem/showFrame CampfireDN 2/emote farmer 16/pause 200/speak Maru \"{{i18n:Maru.EclipseDate.8}}\"/pause 200/emote farmer 32/pause 200/move Maru -1 0 2/faceDirection farmer 0/shake Maru 250/playSound pickUpItem/pause 200/speak Maru \"[198] {{i18n:Maru.EclipseDate.9}}\"/pause 200/move Maru 1 0 2/faceDirection farmer 1/pause 300/farmerEat 198/pause 1250/message \"{{i18n:Maru.EclipseDate.10}}\"/pause 300/faceDirection farmer 1/pause 200/shake Maru 250/playSound eat/pause 200/shake Maru 250/playSound eat/pause 400/speak Maru \"{{i18n:Maru.EclipseDate.11}}\"/pause 400/speak Maru \"{{i18n:Maru.EclipseDate.12}}\"/pause 300/speak Maru \"{{i18n:Maru.EclipseDate.13}}\"/pause 600/playSound shadowpeep/glow 255 0 0 true/pause 100/emote Maru 16 true/emote farmer 16/pause 200/speak Maru \"{{i18n:Maru.EclipseDate.14}}\"/pause 600/faceDirection farmer 0/move Maru -2 0 3/move farmer 0 -1 3/globalFade/viewport -1000 -1000/beginSimultaneousCommand/changeToTemporaryMap NightSceneMaruMap/viewport -1000 -1000/warp CampfireDN 1000 1000/removeObject 23 15/warp TelescopeDN 1000 1000/warp TentDN 1000 1000/addTemporaryActor MoonLunarEclipseDN 40 40 13 9 2 false/addLantern 935 14 9 3/warp Maru 14 29/faceDirection Maru 3/warp farmer 15 29/faceDirection farmer 3/endSimultaneousCommand/pause 400/fade/viewport 14 25/pause 300/speak Maru \"{{i18n:Maru.EclipseDate.15}}\"/pause 300/faceDirection Maru 1/speak Maru \"{{i18n:Maru.EclipseDate.16}}\"/pause 200/move Maru 0 1 0/move farmer -1 0 3/pause 300/viewport move 0 -2 7500/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.17}}\"/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.18}}\"/pause 1000/viewport move 0 2 7500/speak Maru \"{{i18n:Maru.EclipseDate.19}}\"/pause 300/faceDirection farmer 2/pause 200/speak Maru \"{{i18n:Maru.EclipseDate.20}}\"/pause 300/speak Maru \"{{i18n:Maru.EclipseDate.21}}\"/pause 300/globalFade/viewport -1000 -1000/beginSimultaneousCommand/changeLocation Backwoods/makeInvisible 16 9 15 15/warp MoonLunarEclipseDN 1000 1000/removeObject 14 9/warp CampfireDN 23 15/addLantern 935 23 15 3/warp TelescopeDN 20 14/warp TentDN 22 12/warp Maru 21 14/warp farmer 22 14/faceDirection Maru 1/faceDirection farmer 3/endSimultaneousCommand/pause 400/fade/viewport 21 14/pause 1000/speak Maru \"{{i18n:Maru.EclipseDate.22}}\"/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.23}}\"/pause 200/emote farmer 20/pause 200/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 1 true/showFrame farmer 101 true/animate Maru true true 500 28/pause 2500/stopAnimation Maru 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/playSound shadowpeep/stopGlowing/emote Maru 16/pause 200/faceDirection Maru 2/speak Maru \"{{i18n:Maru.EclipseDate.24}}\"/pause 300/textAboveHead Maru \"{{i18n:Maru.EclipseDate.25}}\"/pause 500/faceDirection Maru 1/speak Maru \"{{i18n:Maru.EclipseDate.26}}\"/pause 300/move farmer 2 0 3 true/move Maru 2 0 1 false/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.27.Suggestive}}\"/pause 200/emote farmer 16/faceDirection Maru 0/pause 100/warp Maru 1000 1000/move farmer -1 0 0/pause 500/warp farmer 1000 1000/pause 1000/shake TentDN 60000/globalFade/viewport -1000 -1000/changePortrait Maru Beach/pause 1000/speak Maru \"{{i18n:Maru.EclipseDate.28.Suggestive}}\"/pause 500/message \"{{i18n:Maru.EclipseDate.End}}\"/pause 1300/end newDay",
+
+			},
+			"When": {
+				"Date": "Maru",
+				"SuggestiveEndings": "enabled",
+			},
+		},
+
+		//Maru Lunar Eclipse Date - Non Suggestive
+		{
+			"LogName": "Maru Lunar Date",
+			"Action": "EditData",
+			"Target": "Data/Events/Backwoods",
+			"Entries": {
+				"1116028/n maruLunarDateAgree/t 2000 2600": "spaceMusic/21 14/farmer 20 18 0 Maru 22 15 1/makeInvisible 16 9 15 15/addTemporaryActor TelescopeDN 16 32 20 14 2 false/addTemporaryActor CampfireDN 16 32 23 15 2 false/addTemporaryActor TentDN 49 80 22 12 2 false/skippable/friendship Maru {{FriendBonus}}/move farmer 0 -1 1/move farmer 1 0 0/faceDirection Maru 2/move farmer 0 -2 1/faceDirection Maru 3 true/speak Maru \"{{i18n:Maru.EclipseDate.1}}\"/pause 300/emote farmer 32/speak Maru \"{{i18n:Maru.EclipseDate.2}}\"/pause 200/move Maru 0 -1 1/move farmer 1 0 1 true/move Maru 1 0 2 false/pause 100/shake Maru 250/showFrame CampfireDN 1/playSound fireball/pause 800/question null \"#{{i18n:Maru.EclipseDate.3}}#{{i18n:Maru.EclipseDate.4}}#{{i18n:Maru.EclipseDate.5}}\"/pause 200/emote Maru 32/pause 200/speak Maru \"{{i18n:Maru.EclipseDate.6}}\"/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.7}}\"/shake Maru 250/playSound pickUpItem/showFrame CampfireDN 2/emote farmer 16/pause 200/speak Maru \"{{i18n:Maru.EclipseDate.8}}\"/pause 200/emote farmer 32/pause 200/move Maru -1 0 2/faceDirection farmer 0/shake Maru 250/playSound pickUpItem/pause 200/speak Maru \"[198] {{i18n:Maru.EclipseDate.9}}\"/pause 200/move Maru 1 0 2/faceDirection farmer 1/pause 300/farmerEat 198/pause 1250/message \"{{i18n:Maru.EclipseDate.10}}\"/pause 300/faceDirection farmer 1/pause 200/shake Maru 250/playSound eat/pause 200/shake Maru 250/playSound eat/pause 400/speak Maru \"{{i18n:Maru.EclipseDate.11}}\"/pause 400/speak Maru \"{{i18n:Maru.EclipseDate.12}}\"/pause 300/speak Maru \"{{i18n:Maru.EclipseDate.13}}\"/pause 600/playSound shadowpeep/glow 255 0 0 true/pause 100/emote Maru 16 true/emote farmer 16/pause 200/speak Maru \"{{i18n:Maru.EclipseDate.14}}\"/pause 600/faceDirection farmer 0/move Maru -2 0 3/move farmer 0 -1 3/globalFade/viewport -1000 -1000/beginSimultaneousCommand/changeToTemporaryMap NightSceneMaruMap/viewport -1000 -1000/warp CampfireDN 1000 1000/removeObject 23 15/warp TelescopeDN 1000 1000/warp TentDN 1000 1000/addTemporaryActor MoonLunarEclipseDN 40 40 13 9 2 false/addLantern 935 14 9 3/warp Maru 14 29/faceDirection Maru 3/warp farmer 15 29/faceDirection farmer 3/endSimultaneousCommand/pause 400/fade/viewport 14 25/pause 300/speak Maru \"{{i18n:Maru.EclipseDate.15}}\"/pause 300/faceDirection Maru 1/speak Maru \"{{i18n:Maru.EclipseDate.16}}\"/pause 200/move Maru 0 1 0/move farmer -1 0 3/pause 300/viewport move 0 -2 7500/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.17}}\"/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.18}}\"/pause 1000/viewport move 0 2 7500/speak Maru \"{{i18n:Maru.EclipseDate.19}}\"/pause 300/faceDirection farmer 2/pause 200/speak Maru \"{{i18n:Maru.EclipseDate.20}}\"/pause 300/speak Maru \"{{i18n:Maru.EclipseDate.21}}\"/pause 300/globalFade/viewport -1000 -1000/beginSimultaneousCommand/changeLocation Backwoods/makeInvisible 16 9 15 15/warp MoonLunarEclipseDN 1000 1000/removeObject 14 9/warp CampfireDN 23 15/addLantern 935 23 15 3/warp TelescopeDN 20 14/warp TentDN 22 12/warp Maru 21 14/warp farmer 22 14/faceDirection Maru 1/faceDirection farmer 3/endSimultaneousCommand/pause 400/fade/viewport 21 14/pause 1000/speak Maru \"{{i18n:Maru.EclipseDate.22}}\"/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.23}}\"/pause 200/emote farmer 20/pause 200/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 1 true/showFrame farmer 101 true/animate Maru true true 500 28/pause 2500/stopAnimation Maru 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/playSound shadowpeep/stopGlowing/emote Maru 16/pause 200/faceDirection Maru 2/speak Maru \"{{i18n:Maru.EclipseDate.24}}\"/pause 300/textAboveHead Maru \"{{i18n:Maru.EclipseDate.25}}\"/pause 500/faceDirection Maru 1/speak Maru \"{{i18n:Maru.EclipseDate.26}}\"/pause 300/move farmer 2 0 3 true/move Maru 2 0 1 false/pause 500/speak Maru \"{{i18n:Maru.EclipseDate.27}}\"/pause 200/emote farmer 20/faceDirection Maru 0/pause 100/warp Maru 1000 1000/move farmer -1 0 0/pause 500/warp farmer 1000 1000/pause 1000/globalFade/viewport -1000 -1000/pause 500/message \"{{i18n:Maru.EclipseDate.End}}\"/pause 1300/end newDay",
+
+			},
+			"When": {
+				"Date": "Maru",
+				"SuggestiveEndings": "disabled",
+			},
+		},
+	],
+}

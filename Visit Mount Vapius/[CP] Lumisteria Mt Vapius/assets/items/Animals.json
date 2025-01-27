@@ -1,0 +1,619 @@
+{
+  "Changes": [
+    /*Animal Data*/
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Lumisteria.MtVapius_SpeckledFowl": {
+          "DisplayName": "{{i18n: MtVapiusSpeckledFowl_Translated}}",
+          "House": "Coop",
+          "Gender": "Female",
+          "PurchasePrice": 1400,
+          "SellPrice": 2800,
+          "ShopTexture": "Mods\\Lumisteria.MtVapius\\animals\\icons",
+          "ShopSourceRect": {
+            "X": 96,
+            "Y": 0,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": "{{i18n: MtVapiusSpeckledFowl_Translated}}",
+          "ShopDescription": "{{i18n: MtVapiusSpeckledFowl_Description_Translated}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11335]",
+          "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5947]",
+          "RequiredBuilding": "Deluxe Coop",
+          "UnlockCondition": "!{{HamletProgress|contains={{Range: 0, 4}}}}",
+          "EggItemIds": [
+            "Lumisteria.MtVapius_SpeckledFowlEgg",
+          ],
+          "BirthText": "{{i18n: MtVapiusSpeckledFowlHatched_Translated}}",
+          "DaysToMature": 3,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "ProduceItemIds": [
+            {
+              "Id": "Lumisteria.MtVapius_Default",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlEgg"
+            },
+            {
+              "Id": "Lumisteria.MtVapius_RareSpeckledFowlVoidEgg",
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlVoidEgg",
+              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 2",
+            },
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "Lumisteria.MtVapius_SpeckledFowlVoidEgg",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlVoidEgg",
+              "Condition": "RANDOM .05",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_Default",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlFeather"
+            },
+            {
+              "Id": "Lumisteria.MtVapius_BaseEgg",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlEgg",
+              "Condition": "RANDOM .01",
+            },
+          ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "cluck",
+          "Texture": "Mods\\Lumisteria.MtVapius\\animals\\SpeckledFowl",
+          "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\SpeckledFowlBaby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": -16
+          },
+          "Skins": [
+            {
+              "Id": "Lumisteria.MtVapius_SpeckledFowlTawny",
+              "Weight": 0.5,
+              "Texture": "Mods\\Lumisteria.MtVapius\\animals\\SpeckledFowlTawny",
+              "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\SpeckledFowlTawnyBaby",
+            },
+          ],
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 7,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "ShowInSummitCredits": true,
+          "CustomFields": {}
+        },
+        //Void Fowl
+        "Lumisteria.MtVapius_SpeckledFowlVoid": {
+          "DisplayName": "{{i18n: MtVapiusSpeckledFowlVoid_Translated}}",
+          "House": "Coop",
+          "Gender": "Female",
+          //"PurchasePrice": 2000,
+          "SellPrice": 4400,
+          //"RequiredBuilding": "Deluxe Coop",
+          "EggItemIds": [
+            "Lumisteria.MtVapius_SpeckledFowlVoidEgg",
+          ],
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n: MtVapiusSpeckledFowlVoidHatched_Translated}}",
+          "DaysToMature": 3,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "ProduceItemIds": [
+            {
+              "Id": "Default",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlVoidFeather"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "Lumisteria.MtVapius_VoidFeather",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_VoidFeather",
+              "Condition": "RANDOM .05",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_SpeckledFowlVoidFeather",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlVoidFeather",
+              "Condition": "RANDOM .01",
+            },
+            {
+              "Id": "Default",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlVoidEgg"
+            },
+          ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "cluck",
+          "Texture": "Mods\\Lumisteria.MtVapius\\animals\\SpeckledFowlVoid",
+          "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\SpeckledFowlVoidBaby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": -16
+          },
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 7,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "ShowInSummitCredits": true,
+          "CustomFields": {}
+        },
+        "Lumisteria.MtVapius_Ewe": {
+          "Gender": "Female",
+          "ShopTexture": "Mods\\Lumisteria.MtVapius\\animals\\icons",
+          "ShopSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 32,
+            "Height": 16
+          },
+          "RequiredBuilding": "Deluxe Barn",
+          "UnlockCondition": "!{{HamletProgress|contains={{Range: 0, 2}}}}",
+          "ShopDisplayName": "{{i18n: MtVapiusEwe_Translated}}",
+          "ShopDescription": "{{i18n: MtVapiusEwe_Description_Translated}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11344]",
+          "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5950]",
+          "PurchasePrice": 1100,
+          "SellPrice": 4600,
+          "DaysToProduce": 1,
+          "DaysToMature": 5,
+          "ProduceItemIDs": [
+            {
+              "Condition": "LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+              "ItemID": "Lumisteria.MtVapius_EweMilkLarge"
+            },
+            {
+              //"Condition": null,
+              "ItemID": "Lumisteria.MtVapius_EweMilk"
+            }
+          ],
+          "DeluxeProduceItemIDs": [
+            {
+              "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
+              "ItemID": "Lumisteria.MtVapius_EweMilkExtraLarge"
+            },
+            {
+              "Id": "Lumisteria.MtVapius_RareEweMilkExtraLarge",
+              "ItemId": "Lumisteria.MtVapius_EweMilkExtraLarge",
+              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+            },
+            {
+              //"Condition": null,
+              "ItemID": "Lumisteria.MtVapius_EweMilkLarge"
+            }
+          ],
+          "ProduceOnMature": false,
+          "ProfessionForQualityBoost": 3,
+          "ProfessionForFasterProduce": -1,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanGetPregnant": true,
+          "Sound": "sheep",
+          "HarvestType": "HarvestWithTool",
+          "Texture": "Mods\\Lumisteria.MtVapius\\animals\\ewe",
+          "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\ewebaby",
+          "UseFlippedRightForLeft": true,
+          "House": "Barn",
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "Skins": [
+            {
+              "Id": "Lumisteria.MtVapius_EweBrown",
+              "Weight": 0.3,
+              "Texture": "Mods\\Lumisteria.MtVapius\\animals\\EweBrown",
+              "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\EweBrownBaby",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_EweBlack",
+              "Weight": 0.1,
+              "Texture": "Mods\\Lumisteria.MtVapius\\animals\\EweBlack",
+              "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\EweBlackBaby",
+            },
+          ],
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "HappinessDrain": 5,
+          "HarvestTool": "Milk Pail",
+          "DisplayName": "{{i18n: MtVapiusEwe_Translated}}"
+        },
+        "Lumisteria.MtVapius_GemPigeon": {
+          "DisplayName": "{{i18n: MtVapiusGemPigeon_Translated}}",
+          "House": "Coop",
+          "Gender": "Female",
+          //"PurchasePrice": 1300,
+          "SellPrice": 4200,
+          /*
+		  "ShopTexture": "Mods\\Lumisteria.MtVapius\\animals\\icons",
+          "ShopSourceRect": {
+            "X": 96,
+            "Y": 0,
+            "Width": 32,
+            "Height": 16
+          },
+		  "ShopDisplayName": "{{i18n: MtVapiusGemPigeon_Translated}}",
+          "ShopDescription": "{{i18n: MtVapiusGemPigeon_Description_Translated}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11335]",
+          "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5947]",
+          "RequiredBuilding": "Deluxe Coop",
+          "UnlockCondition": "!{{HamletProgress|contains={{Range: 0, 4}}}}",
+		  */
+          "EggItemIds": [
+            "Lumisteria.MtVapius_GemPigeonEgg",
+          ],
+          "BirthText": "{{i18n: MtVapiusGemPigeonHatched_Translated}}",
+          "DaysToMature": 3,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "ProduceItemIds": [
+            {
+              "Id": "Default",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_GemPigeonFeather"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "Lumisteria.MtVapius_RareEgg",
+              "ItemId": "Lumisteria.MtVapius_GemPigeonEgg",
+              "Condition": "RANDOM .05",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_RareCoopmasterEgg",
+              "ItemId": "Lumisteria.MtVapius_GemPigeonEgg",
+              "Condition": "RANDOM .05, PLAYER_HAS_PROFESSION Any 2",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_RareBlackGeode",
+              "ItemId": "Lumisteria.MtVapius_BlackGeode",
+              "Condition": "RANDOM .1",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_RareGeode",
+              "ItemId": "749",
+              "Condition": "RANDOM .1",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_UncommonMagmaGeode",
+              "ItemId": "537",
+              "Condition": "RANDOM .5",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_UncommonFrozenGeode",
+              "ItemId": "536",
+              "Condition": "RANDOM .5",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_CloudFeather",
+              "ItemId": "Lumisteria.MtVapius_CloudFeather",
+              "Condition": "RANDOM .5",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_Default",
+              "ItemId": "535",
+            }
+          ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "cluck",
+          "Texture": "Mods\\Lumisteria.MtVapius\\animals\\GemPigeon",
+          "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\GemPigeonBaby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": -16
+          },
+          "Skins": [
+            {
+              "Id": "Lumisteria.MtVapius_GemPigeonPurple",
+              "Weight": 0.5,
+              "Texture": "Mods\\Lumisteria.MtVapius\\animals\\GemPigeonPurple",
+              "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\GemPigeonPurpleBaby",
+            },
+          ],
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 7,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "ShowInSummitCredits": true,
+          "CustomFields": {}
+        },
+        "Lumisteria.MtVapius_Goose": {
+          "Gender": "Female",
+          "ShopTexture": "Mods\\Lumisteria.MtVapius\\animals\\icons",
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 0,
+            "Width": 32,
+            "Height": 16
+          },
+          "RequiredBuilding": "Deluxe Barn",
+          "UnlockCondition": "!{{HamletProgress|contains={{Range: 0, 7}}}}",
+          "ShopDisplayName": "{{i18n: MtVapiusGoose_Translated}}",
+          "ShopDescription": "{{i18n: MtVapiusGoose_Description_Translated}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11344]",
+          "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5931]",
+          "PurchasePrice": 1800,
+          "SellPrice": 3800,
+          "EggItemIDs": [
+            "Lumisteria.MtVapius_GooseEgg"
+          ],
+          "IncubationTime": 1400,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n: MtVapiusGooseHatched_Translated}}",
+          "DaysToProduce": 1,
+          "DaysToMature": 5,
+          "ProduceItemIDs": [
+            {
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Inn_StellarSecret, RANDOM .03",
+              "ItemID": "Lumisteria.MtVapius_StellarGooseEgg"
+            },
+            {
+              "Condition": null,
+              "ItemID": "Lumisteria.MtVapius_GooseEgg"
+            },
+          ],
+          "DeluxeProduceItemIDs": [
+            {
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Inn_StellarSecret, RANDOM .15",
+              "ItemID": "Lumisteria.MtVapius_StellarGooseEgg"
+            },
+            {
+              "Condition": null,
+              "ItemID": "Lumisteria.MtVapius_GooseDown"
+            },
+          ],
+          "ProduceOnMature": false,
+          "ProfessionForQualityBoost": 3,
+          "ProfessionForFasterProduce": -1,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanGetPregnant": false,
+          "Sound": "Duck",
+          "HarvestType": "DropOvernight",
+          "Texture": "Mods\\Lumisteria.MtVapius\\animals\\goose",
+          "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\goosebaby",
+          "UseFlippedRightForLeft": true,
+          "House": "Barn",
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "HappinessDrain": 5,
+          "HarvestTool": null,
+          "DisplayName": "{{i18n: MtVapiusGoose_Translated}}"
+        },
+        "Lumisteria.MtVapius_StellarGoose": {
+          "Gender": "Female",
+          "EggItemIDs": [
+            "Lumisteria.MtVapius_StellarGooseEgg"
+          ],
+          "IncubationTime": 1400,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n: MtVapiusStellarGooseHatched_Translated}}",
+          "DaysToProduce": 1,
+          "DaysToMature": 5,
+          "ProduceItemIDs": [
+            {
+              "ItemID": "386"
+            },
+          ],
+          "DeluxeProduceItemIDs": [
+            {
+              "ItemID": "386"
+            },
+            {
+              "Condition": "RANDOM .1",
+              "ItemID": "578",
+              "MinimumFriendship": 400,
+            },
+            {
+              "Condition": null,
+              "ItemID": "Lumisteria.MtVapius_StellarGooseEgg"
+            }
+          ],
+          "ProduceOnMature": false,
+          "ProfessionForQualityBoost": 3,
+          "ProfessionForFasterProduce": -1,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanGetPregnant": false,
+          "Sound": "Duck",
+          "HarvestType": "DropOvernight",
+          "Texture": "Mods\\Lumisteria.MtVapius\\animals\\stellargoose",
+          "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\stellargoosebaby",
+          "UseFlippedRightForLeft": true,
+          "House": "Barn",
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "HappinessDrain": 5,
+          "HarvestTool": null,
+          "SellPrice": 3800,
+          "DisplayName": "{{i18n: MtVapiusGoose_Translated}}"
+        }
+      }
+    },
+    //Edit Cow
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "White Cow",
+        "ProduceItemIds"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_MilkLarge": {
+          "Condition": "LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+          "ItemID": "(O)186"
+        },
+      },
+    },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "Brown Cow",
+        "ProduceItemIds"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_MilkLarge": {
+          "Condition": "LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+          "ItemID": "(O)186"
+        },
+      },
+    },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "Goat",
+        "ProduceItemIds"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_MilkLarge": {
+          "Condition": "LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+          "ItemID": "(O)438"
+        },
+      },
+    },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "White Cow",
+        "DeluxeProduceItemIds"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_MilkExtraLarge": {
+          "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
+          "ItemID": "Lumisteria.MtVapius_MilkExtraLarge"
+        },
+        "Lumisteria.MtVapius_RareMilkExtraLarge": {
+          "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
+          "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
+          "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+        },
+      },
+    },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "Brown Cow",
+        "DeluxeProduceItemIds"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_MilkExtraLarge": {
+          "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
+          "ItemID": "Lumisteria.MtVapius_MilkExtraLarge"
+        },
+        "Lumisteria.MtVapius_RareMilkExtraLarge": {
+          "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
+          "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
+          "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+        },
+      },
+    },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "Goat",
+        "DeluxeProduceItemIds"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_MilkExtraLarge": {
+          "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
+          "ItemID": "Lumisteria.MtVapius_GoatMilkExtraLarge"
+        },
+        "Lumisteria.MtVapius_RareMilkExtraLarge": {
+          "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
+          "ItemId": "Lumisteria.MtVapius_GoatMilkExtraLarge",
+          "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+        },
+      },
+    },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "Void Chicken",
+        "DeluxeProduceItemIds"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_VoidFeather": {
+              "Id": "Lumisteria.MtVapius_VoidFeather",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_VoidFeather",
+              "Condition": "RANDOM .025",
+            },
+      },
+    },
+    /* add animal  images*/ ,
+    {
+      "LogName": "Load images",
+      "Action": "Load",
+      "Target": "Mods/Lumisteria.MtVapius/animals/ewe, Mods/Lumisteria.MtVapius/animals/ewebaby, Mods/Lumisteria.MtVapius/animals/eweblack, Mods/Lumisteria.MtVapius/animals/eweblackbaby, Mods/Lumisteria.MtVapius/animals/ewebrown, Mods/Lumisteria.MtVapius/animals/ewebrownbaby, Mods/Lumisteria.MtVapius/animals/goose, Mods/Lumisteria.MtVapius/animals/goosebaby, Mods/Lumisteria.MtVapius/animals/stellargoose, Mods/Lumisteria.MtVapius/animals/stellargoosebaby, Mods/Lumisteria.MtVapius/animals/speckledfowl, Mods/Lumisteria.MtVapius/animals/speckledfowlbaby, Mods/Lumisteria.MtVapius/animals/speckledfowltawny, Mods/Lumisteria.MtVapius/animals/speckledfowltawnybaby, Mods/Lumisteria.MtVapius/animals/speckledfowlvoid, Mods/Lumisteria.MtVapius/animals/speckledfowlvoidbaby, Mods/Lumisteria.MtVapius/animals/gempigeon, Mods/Lumisteria.MtVapius/animals/gempigeonbaby, Mods/Lumisteria.MtVapius/animals/gempigeonpurple, Mods/Lumisteria.MtVapius/animals/gempigeonpurplebaby,Mods/Lumisteria.MtVapius/animals/icons",
+      "FromFile": "assets/images/animals/{{TargetWithoutPath}}.png"
+    }
+  ]
+}

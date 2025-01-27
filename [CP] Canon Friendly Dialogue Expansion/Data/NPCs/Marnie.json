@@ -1,0 +1,117 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Marnie_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Marnie",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)446": "{{i18n: CFE_Marnie_RabbitsFoot}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Marnie}}' = 'true' OR ('{{CFE_Marnie}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Marnie_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Marnie",
+      "Entries": {
+        "AcceptGift_(O)373": "{{i18n: CFE_Marnie_GoldPumpkin}}",
+        "AcceptGift_(O)279": "{{i18n: CFE_Marnie_RockCandy}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Marnie_Pearl}}",
+        "AcceptGift_(O)72": "{{i18n: CFE_Marnie_Diamond}}",
+        "AcceptGift_(O)240": "{{i18n: CFE_Marnie_FarmersLunch}}",
+        "AcceptGift_(O)221": "{{i18n: CFE_Marnie_PinkCake}}",
+        "AcceptGift_(O)608": "{{i18n: CFE_Marnie_PumpkinPie}}"
+      },
+      "When": { "Query: '{{CFE_Marnie}}' = 'true' OR ('{{CFE_Marnie}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Marnie_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Marnie": "{{i18n: CFE_Marnie_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Marnie}}' = 'true' OR ('{{CFE_Marnie}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Marnie_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Marnie",
+      "Entries": {
+        //Date Specific Dialogue
+
+        "spring_1_2": "{{i18n: CFE_Marnie_spring1y2}}",
+        "spring_12_1": "{{i18n: CFE_Marnie_spring12}}",
+        "spring_12_2": "{{i18n: CFE_Marnie_spring12}}",
+
+        "fall_15_1": "{{i18n: CFE_Marnie_fall15}}",
+        "fall_15_2": "{{i18n: CFE_Marnie_fall15}}",
+
+        "winter_24_1": "{{i18n: CFE_Marnie_winter24}}",
+        "winter_24_2": "{{i18n: CFE_Marnie_winter24}}",
+        "winter_28_1": "{{i18n: CFE_Marnie_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Marnie_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon2": "{{i18n: CFE_Marnie_summerMon2}}",
+        "summer_Tue10": "{{i18n: CFE_Marnie_summerTue10}}",
+        "summer_Wed6": "{{i18n: CFE_Marnie_summerWed6}}",
+        "summer_Wed4": "{{i18n: CFE_Marnie_summerWed4}}",
+        "summer_Thu6": "{{i18n: CFE_Marnie_summerThu6}}",
+        "summer_Fri8": "{{i18n: CFE_Marnie_summerFri8}}",
+        "summer_Fri6": "{{i18n: CFE_Marnie_summerFri6}}",
+
+        "fall_Tue10": "{{i18n: CFE_Marnie_fallTue10}}",
+        "fall_Wed8": "{{i18n: CFE_Marnie_fallWed8}}",
+        "fall_Thu6": "{{i18n: CFE_Marnie_fallThu6}}",
+        "fall_Sat10": "{{i18n: CFE_Marnie_fallSat10}}",
+        "fall_Sun10": "{{i18n: CFE_Marnie_fallSun10}}",
+
+        "winter_Mon10": "{{i18n: CFE_Marnie_winterMon10}}",
+        "winter_Thu8": "{{i18n: CFE_Marnie_winterThu8}}",
+        "winter_Fri8": "{{i18n: CFE_Marnie_winterFri8}}",
+        "winter_Fri4": "{{i18n: CFE_Marnie_winterFri4}}",
+
+        "Mon8": "{{i18n: CFE_Marnie_Mon8}}",
+        "Mon6": "{{i18n: CFE_Marnie_Mon6}}",
+        "Mon4": "{{i18n: CFE_Marnie_Mon4}}",
+        "Mon2": "{{i18n: CFE_Marnie_Mon2}}",
+        "Tue10": "{{i18n: CFE_Marnie_Tue10}}",
+        "Tue8_inlaw_Shane": "{{i18n: CFE_Marnie_Tue8inlawShane}}",
+        "Tue8": "{{i18n: CFE_Marnie_Tue8}}",
+        "Tue6": "{{i18n: CFE_Marnie_Tue6}}",
+        "Tue4": "{{i18n: CFE_Marnie_Tue4}}",
+        "Tue2": "{{i18n: CFE_Marnie_Tue2}}",
+        "Wed8": "{{i18n: CFE_Marnie_Wed8}}",
+        "Wed4": "{{i18n: CFE_Marnie_Wed4}}",
+        "Wed2": "{{i18n: CFE_Marnie_Wed2}}",
+        "Fri10": "{{i18n: CFE_Marnie_Fri10}}",
+        "Fri2": "{{i18n: CFE_Marnie_Fri2}}",
+        "Sat8_inlaw_Shane": "{{i18n: CFE_Marnie_Sat8inlawShane}}",
+        "Sat8": "{{i18n: CFE_Marnie_Sat8}}",
+        "Sat6": "{{i18n: CFE_Marnie_Sat6}}",
+        "Sat4": "{{i18n: CFE_Marnie_Sat4}}",
+        "Sat2": "{{i18n: CFE_Marnie_Sat2}}",
+        "Sun6": "{{i18n: CFE_Marnie_Sun6}}",
+        "Sun4": "{{i18n: CFE_Marnie_Sun4}}",
+        "Sun2": "{{i18n: CFE_Marnie_Sun2}}",
+
+        //Generic Weekday Dialogue
+        "summer_Thu": "{{i18n: CFE_Marnie_summerThu}}",
+        "fall_Wed": "{{i18n: CFE_Marnie_fallWed}}",
+        "fall_Thu": "{{i18n: CFE_Marnie_fallThu}}",
+        "winter_Wed": "{{i18n: CFE_Marnie_winterWed}}",
+        "winter_Thu": "{{i18n: CFE_Marnie_winterThu}}",
+        "winter_Fri": "{{i18n: CFE_Marnie_winterFri}}",
+
+        "Tue_inlaw_Shane": "{{i18n: CFE_Marnie_TueinlawShane}}",
+        "Wed": "{{i18n: CFE_Marnie_Wed}}"
+      },
+      "When": { "Query: '{{CFE_Marnie}}' = 'true' OR ('{{CFE_Marnie}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

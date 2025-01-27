@@ -1,0 +1,517 @@
+{
+    "Changes": [
+        {
+	    "LogName": "Changes general birth-related messages to be about adoption",
+            "Action": "EditData",
+            "Target": "Strings/Events",
+            "Entries":
+            {
+                "BirthMessage_PlayerMother": "During the night, the adoption agency dropped off your new baby {0}.",
+                "BirthMessage_SpouseMother": "During the night, the adoption agency dropped off your new baby {0}.",
+                "HaveBabyQuestion": "{{TermofEndearment}}, I'd like to coparent with you. Should we adopt a baby?",
+                "HaveBabyQuestion_Adoption": "{{TermofEndearment}}, I'd like to coparent with you. Should we adopt a baby?",
+                "HavePlayerBabyQuestion": "Do you want to adopt a baby with {0}?",
+                "HavePlayerBabyQuestion_Adoption": "Do you want to adopt a baby with {0}?"
+            },
+        },
+        {
+	    "Logname": "Universal adoption edits with Multiple Spouses/Free Love, love portraits true",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"NPC.cs.4442": "Ugh... I feel anxious this morning.$s",
+		"NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+		"NPC.cs.4444": "The adoption agency approved our application! I can't wait to meet our new baby.$l",
+		"NPC.cs.4445": "{{TermofEndearment}}, our baby will be here any day now. Isn't it wonderful?$l",
+		"NPC.cs.4446": "I just feel like sleeping today. I was up late filling out paperwork for the adoption agency.",
+		"NPC.cs.4447": "The adoption agency approved our application! I can't wait to meet our new baby.$l",
+		"NPC.cs.4448": "{{TermofEndearment}}, our baby will be here any day now. Isn't it wonderful?$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "true",
+            }
+        },
+        {
+	    "Logname": "Universal adoption edits with Multiple Spouses/Free Love, love portraits false",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"NPC.cs.4442": "Ugh... I feel anxious this morning.$s",
+		"NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+		"NPC.cs.4444": "The adoption agency approved our application! I can't wait to meet our new baby.$h",
+		"NPC.cs.4445": "{{TermofEndearment}}, our baby will be here any day now. Isn't it wonderful?$h",
+		"NPC.cs.4446": "I just feel like sleeping today. I was up late filling out paperwork for the adoption agency.",
+		"NPC.cs.4447": "The adoption agency approved our application! I can't wait to meet our new baby.$h",
+		"NPC.cs.4448": "{{TermofEndearment}}, our baby will be here any day now. Isn't it wonderful?$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "true",
+            }
+        },
+        {
+	    "Logname": "Abigail adoption",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel a little nauseated this morning...I've been so anxious about the adoption paperwork that it's making me feel sick.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I stayed up too late refreshing my email...$s#$b#I hope the adoption agency gets back to us soon.",
+                "NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, I can't believe we're really adopting. This is going to be a whole new kind of adventure!$h",
+                "NPC.cs.4447": "{{TermofEndearment}}, I can't believe we're really adopting. This is going to be a whole new kind of adventure!$h",
+                "NPC.cs.4445": "{{TermofEndearment}}, I'm feeling optimistic about the adoption.",
+                "NPC.cs.4448": "{{TermofEndearment}}, I'm feeling optimistic about the adoption.",
+            },
+            "When":
+            {
+                "Relationship:Abigail": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove":  "false",
+            }
+        },
+        {
+	    "Logname": "Abigail adoption, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+            "Entries":
+            {
+                "TwoKids_3": "#$c .5#We adopted young, but look on the bright side! At least we won't be super old when our kids are grown up.#A cool old house, a couple kids, and an amazing farm. I never thought I'd come this far... but, hey! Our lives are just getting started.$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+            },
+        },
+        {
+	    "Logname": "Elliott adoption, love portraits true, platonic",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel ill this morning...I think it's my nerves about the adoption paperwork. I hope I filled it out correctly.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late writing out my fears surrounding parenthood, as a form of catharsis...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... could you make your own breakfast?$s",
+                "NPC.cs.4444": "My dearest friend... There's no one I'd rather raise a child with than you.$l#$e#Do you think I should write a short story about a writer who adopts a baby? ...No, too obvious.$s",
+                "NPC.cs.4447": "My dearest friend... There's no one I'd rather raise a child with than you.$l#$e#Do you think I should write a short story about a writer who adopts a baby? ...No, too obvious.$s",
+                "NPC.cs.4445": "{{TermofEndearment}}, between my affinity for the fine arts and yours for the natural world, we can't help but raise a well-rounded child. Don't you think so?$h",
+                "NPC.cs.4448": "{{TermofEndearment}}, between my affinity for the fine arts and yours for the natural world, we can't help but raise a well-rounded child. Don't you think so?$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "Relationship:Elliott": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+		"Elliott |contains=FullyPlatonic, SexWithoutRomance": "true",
+            }
+        },
+        {
+	    "Logname": "Elliott adoption, love portraits false, platonic",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel ill this morning...I think it's my nerves about the adoption paperwork. I hope I filled it out correctly.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late writing out my fears surrounding parenthood, as a form of catharsis...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... could you make your own breakfast?$s",
+                "NPC.cs.4444": "My dearest friend... There's no one I'd rather raise a child with than you.#$e#Do you think I should write a short story about a writer who adopts a baby? ...No, too obvious.$s",
+                "NPC.cs.4447": "My dearest friend... There's no one I'd rather raise a child with than you.#$e#Do you think I should write a short story about a writer who adopts a baby? ...No, too obvious.$s",
+                "NPC.cs.4445": "{{TermofEndearment}}, between my affinity for the fine arts and yours for the natural world, we can't help but raise a well-rounded child. Don't you think so?$h",
+                "NPC.cs.4448": "{{TermofEndearment}}, between my affinity for the fine arts and yours for the natural world, we can't help but raise a well-rounded child. Don't you think so?$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "Relationship:Elliott": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+		"Elliott |contains=FullyPlatonic, SexWithoutRomance": "true",
+            }
+        },
+        {
+	    "Logname": "Elliott adoption, love portraits true, romantic",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel ill this morning...I think it's my nerves about the adoption paperwork. I hope I filled it out correctly.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late writing out my fears surrounding parenthood, as a form of catharsis...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... could you make your own breakfast?$s",
+                "NPC.cs.4444": "Dearest... there's no one I'd rather raise a child with than you.$l#$e#Do you think I should write a short story about a writer who adopts a baby? ...No, too obvious.$s",
+                "NPC.cs.4447": "Dearest... there's no one I'd rather raise a child with than you.$l#$e#Do you think I should write a short story about a writer who adopts a baby? ...No, too obvious.$s",
+                "NPC.cs.4445": "{{TermofEndearment}}, between my affinity for the fine arts and yours for the natural world, we can't help but raise a well-rounded child. Don't you think so?$h",
+                "NPC.cs.4448": "{{TermofEndearment}}, between my affinity for the fine arts and yours for the natural world, we can't help but raise a well-rounded child. Don't you think so?$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "Relationship:Elliott": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+		"Elliott |contains=RomanceWithoutSex, RomanceAndSex": "true",
+            }
+        },
+        {
+	    "Logname": "Elliott adoption, love portraits false, romantic",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel ill this morning...I think it's my nerves about the adoption paperwork. I hope I filled it out correctly.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late writing out my fears surrounding parenthood, as a form of catharsis...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... could you make your own breakfast?$s",
+                "NPC.cs.4444": "Dearest... there's no one I'd rather raise a child with than you.#$e#Do you think I should write a short story about a writer who adopts a baby? ...No, too obvious.$s",
+                "NPC.cs.4447": "Dearest... there's no one I'd rather raise a child with than you.#$e#Do you think I should write a short story about a writer who adopts a baby? ...No, too obvious.$s",
+                "NPC.cs.4445": "{{TermofEndearment}}, between my affinity for the fine arts and yours for the natural world, we can't help but raise a well-rounded child. Don't you think so?$h",
+                "NPC.cs.4448": "{{TermofEndearment}}, between my affinity for the fine arts and yours for the natural world, we can't help but raise a well-rounded child. Don't you think so?$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "Relationship:Elliott": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+		"Elliott |contains=RomanceWithoutSex, RomanceAndSex": "true",
+            }
+        },
+        {
+	    "Logname": "Emily adoption",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel a little sick this morning...I think my anxiety about the adoption paperwork caused my body to release harmful toxins.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late meditating to center myself...$s#$b#I hope the adoption agency gets back to us soon.",
+                "NPC.cs.4443": "I'm tired... can you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, I feel so blessed to be adopting with you. We'll raise our child in love and compassion, close to nature...",
+                "NPC.cs.4447": "{{TermofEndearment}}, I feel so blessed to be adopting with you. We'll raise our child in love and compassion, close to nature...",
+                "NPC.cs.4445": "{{TermofEndearment}}, I think we were always destined to raise a child together.",
+                "NPC.cs.4448": "{{TermofEndearment}}, I know you're going to share your best qualities with our child.",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Haley adoption, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel sick this morning...I think I'm just nervous. I hope I did the adoption paperwork right.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late looking for deals on toys and baby clothes...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, I'm so happy you want to adopt with me!$l#$b#I can't wait to dress our kid in cute little outfits, and teach them about color theory...$h",
+                "NPC.cs.4447": "{{TermofEndearment}}, I'm so happy you want to adopt with me!$l#$b#I can't wait to dress our kid in cute little outfits, and teach them about color theory...$h",
+                "NPC.cs.4448": "{{TermofEndearment}}, I'm really glad we're adopting. You're going to be a great role model.$h",
+                "NPC.cs.4445": "{{TermofEndearment}}, I'm really glad we're adopting. You're going to be a great role model.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "Relationship:Haley": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Haley adoption, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel sick this morning...I think I'm just nervous. I hope I did the adoption paperwork right.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late looking for deals on toys and baby clothes...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, I'm so happy you want to adopt with me!#$b#I can't wait to dress our kid in cute little outfits, and teach them about color theory...$h",
+                "NPC.cs.4447": "{{TermofEndearment}}, I'm so happy you want to adopt with me!#$b#I can't wait to dress our kid in cute little outfits, and teach them about color theory...$h",
+                "NPC.cs.4445": "{{TermofEndearment}}, I'm really glad we're adopting. You're going to be a great role model.",
+                "NPC.cs.4448": "{{TermofEndearment}}, I'm really glad we're adopting. You're going to be a great role model.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "Relationship:Haley": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Haley adoption, CFD, platonic",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                 "TwoKids_3": "#$c .5#A big house, two kids, a beautiful plot of land, and my BFF by my side... I'm not sure what else I could ask for.#One more positive thing about adopting? I got to keep my figure.$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+		"Haley |contains=FullyPlatonic, SexWithoutRomance": "true",
+            },
+        },
+        {
+	    "Logname": "Haley adoption, CFD, romantic",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                 "TwoKids_3": "#$c .5#A big house, two kids, a beautiful plot of land, and the one I love by my side... I'm not sure what else I could ask for.#One more positive thing about adopting? I got to keep my figure.$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+		"Haley |contains=RomanceWithoutSex, RomanceAndSex": "true",
+            },
+        },
+        {
+	    "Logname": "Harvey adoption, love portraits true",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel nauseated this morning... I think it's psychosomatic. I'm anxious about the adoption paperwork.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late reading the latest research on infant care...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... could you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, I'm so happy that we're adopting.$l#$b#You know, before we met, I thought my chance to have a family had passed me by.",
+                "NPC.cs.4447": "{{TermofEndearment}}, I'm so happy that we're adopting.$l#$b#You know, before we met, I thought my chance to have a family had passed me by.",
+                "NPC.cs.4445": "{{TermofEndearment}}, I couldn't be happier about the adoption. Just so you know, I'm open to taking in a child with medical needs if you are.",
+                "NPC.cs.4448": "{{TermofEndearment}}, I couldn't be happier about the adoption. Just so you know, I'm open to taking in a child with medical needs if you are.",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "Relationship:Harvey": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Harvey adoption, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel nauseated this morning... I think it's psychosomatic. I'm anxious about the adoption paperwork.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late reading the latest research on infant care...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... could you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, I'm so happy that we're adopting.$h#$b#You know, before we met, I thought my chance to have a family had passed me by.",
+                "NPC.cs.4447": "{{TermofEndearment}}, I'm so happy that we're adopting.$h#$b#You know, before we met, I thought my chance to have a family had passed me by.",
+                "NPC.cs.4445": "{{TermofEndearment}}, I couldn't be happier about the adoption. Just so you know, I'm open to taking in a child with medical needs if you are.",
+                "NPC.cs.4448": "{{TermofEndearment}}, I couldn't be happier about the adoption. Just so you know, I'm open to taking in a child with medical needs if you are.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "Relationship:Harvey": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Leah adoption",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel a little nauseated this morning... I think I'm just nervous about the adoption paperwork.$s",
+                "NPC.cs.4446": "I just feel like sleeping. I was up late thinking about our child... $s#$b#I hope the adoption agency gets back to us soon.",
+                "NPC.cs.4443": "I'm tired... could you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, I'm so happy we're adopting a child. I can't wait to hang their first finger painting on the fridge.",
+                "NPC.cs.4447": "{{TermofEndearment}}, I'm so happy we're adopting a child. I can't wait to hang their first finger painting on the fridge.",
+                "NPC.cs.4445": "{{TermofEndearment}}, I'm looking forward to the adoption. Getting to help mold a young mind... isn't it an inspiring thought?",
+                "NPC.cs.4448": "{{TermofEndearment}}, I'm looking forward to the adoption. Getting to help mold a young mind... isn't it an inspiring thought?",
+            },
+            "When":
+            {
+                "Relationship:Leah": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Maru adoption",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel a little nauseated this morning...I'm sure I filled out the adoption paperwork correctly, but I'm still nervous.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I stayed up too late refreshing my email...$s#$b#I hope the adoption agency gets back to us soon.",
+                "NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, I'm so excited that we're adopting. Raising a child can't be that much harder than building an AI, can it?$h",
+                "NPC.cs.4447": "{{TermofEndearment}}, I'm so excited that we're adopting. Raising a child can't be that much harder than building an AI, can it?$h",
+                "NPC.cs.4445": "{{TermofEndearment}}, I'm feeling optimistic about the adoption.",
+                "NPC.cs.4448": "{{TermofEndearment}}, I can tell you're going to be a great parent.",
+            },
+            "When":
+            {
+                "Relationship:Maru": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Penny adoption",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel a little nauseated this morning...I've just been so anxious about the adoption paperwork.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was awake half the night wondering what our child will be like...$s#$b#I hope the adoption agency gets back to us soon.",
+                "NPC.cs.4443": "I'm tired... could you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, I can't believe we're really adopting. It's... *sniff*... It's everything I've ever wanted.#$b#Do you remember when I asked you to be my children's godparent? I can't believe I actually get to raise them with you.$h",
+                "NPC.cs.4447": "{{TermofEndearment}}, I can't believe we're really adopting. It's... *sniff*... It's everything I've ever wanted.#$b#Do you remember when I asked you to be my children's godparent? I can't believe I actually get to raise them with you.$h",
+                "NPC.cs.4445": "{{TermofEndearment}}, I'm so happy about the adoption. I can tell you're going to be a wonderful parent.",
+                "NPC.cs.4448": "{{TermofEndearment}}, I'm so happy about the adoption. I can tell you're going to be a wonderful parent.",
+            },
+            "When":
+            {
+                "Relationship:Penny": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Sam adoption, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel sick this morning...I think I'm just nervous. I hope I did the adoption paperwork right.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late looking for deals on toys and baby clothes...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, wow... You and me, adopting a baby... $l#$b#I'm going to give them the best childhood anyone's ever had. I'll be by their side every step of the way.$u",
+                "NPC.cs.4447": "{{TermofEndearment}}, wow... You and me, adopting a baby... $l#$b#I'm going to give them the best childhood anyone's ever had. I'll be by their side every step of the way.$u",
+                "NPC.cs.4445": "{{TermofEndearment}}, I'm stoked about the adoption. I feel like I'm meant to be a dad.$h",
+                "NPC.cs.4448": "{{TermofEndearment}}, I'm stoked about the adoption. I feel like I'm meant to be a dad.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "Relationship:Sam": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Sam adoption, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel sick this morning...I think I'm just nervous. I hope I did the adoption paperwork right.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late looking for deals on toys and baby clothes...$s#$b#I hope the adoption agency gets back to us soon.$7",
+                "NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, wow... You and me, adopting a baby... #$b#I'm going to give them the best childhood anyone's ever had. I'll be by their side every step of the way.$u",
+                "NPC.cs.4447": "{{TermofEndearment}}, wow... You and me, adopting a baby... #$b#I'm going to give them the best childhood anyone's ever had. I'll be by their side every step of the way.$u",
+                "NPC.cs.4445": "{{TermofEndearment}}, I'm stoked about the adoption. I feel like I'm meant to be a dad.$h",
+                "NPC.cs.4448": "{{TermofEndearment}}, I'm stoked about the adoption. I feel like I'm meant to be a dad.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "Relationship:Sam": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Sam adoption dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "OneKid_3": "I think we should adopt another kid. Vincent keeps asking when he gets to be a 'double uncle.'$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false",
+            },
+        },
+        {
+	    "Logname": "Sam adoption dialogue, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSam",
+            "Entries":
+            {
+                "OneKid_3": "#$c .5#I think we should adopt another kid. Vincent keeps asking when he gets to be a 'double uncle.'$h#Sure, being a dad is way more exhausting than I imagined, but I'm up for the challenge!$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+            },
+        },
+        {
+	    "Logname": "Sebastian adoption, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel a little nauseous this morning...I think I'm just anxious about the adoption paperwork. I hope I filled it out right.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late writing a program for coordinating nighttime feedings...$s#$b#I hope the adoption agency gets back to us soon.",
+                "NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, we're really adopting... Wow.$l#$b#I guess this means I won't have as much time to myself... but I know it's going to be worth it.$h",
+                "NPC.cs.4447": "{{TermofEndearment}}, we're really adopting... Wow.$l#$b#I guess this means I won't have as much time to myself... but I know it's going to be worth it.$h",
+                "NPC.cs.4445": "{{TermofEndearment}}, I think you're going to be great with the child we're adopting. You've always been respectful of my boundaries, and that's important for kids too.$7",
+                "NPC.cs.4448": "{{TermofEndearment}}, I think you're going to be great with the child we're adopting. You've always been respectful of my boundaries, and that's important for kids too.$7",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "Relationship:Sebastian": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Sebastian adoption, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel a little nauseous this morning...I think I'm just anxious about the adoption paperwork. I hope I filled it out right.$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late writing a program for coordinating nighttime feedings...$s#$b#I hope the adoption agency gets back to us soon.",
+                "NPC.cs.4443": "I'm tired... can't you make your own breakfast?$s",
+                "NPC.cs.4444": "{{TermofEndearment}}, we're really adopting... Wow.$7#$b#I guess this means I won't have as much time to myself... but I know it's going to be worth it.$h",
+                "NPC.cs.4447": "{{TermofEndearment}}, we're really adopting... Wow.$7#$b#I guess this means I won't have as much time to myself... but I know it's going to be worth it.$h",
+                "NPC.cs.4445": "{{TermofEndearment}}, I'm glad to have you as a coparent. You've always been respectful of my boundaries, and that's important for kids too.$7",
+                "NPC.cs.4448": "{{TermofEndearment}}, I'm glad to have you as a coparent. You've always been respectful of my boundaries, and that's important for kids too.$7",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "Relationship:Sebastian": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            }
+        },
+        {
+	    "Logname": "Shane adoption",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "NPC.cs.4442": "I feel a little nauseated this morning...What if I messed up the adoption paperwork somehow?$s",
+                "NPC.cs.4446": "I just feel like sleeping today. I was up late spiraling out about the adoption.$u#$e#I hope the agency gets back to us soon.$u",
+                "NPC.cs.4443": "I'm tired... can't you make your own breakfast?$a",
+                "NPC.cs.4444": "{{TermofEndearment}}, I can't believe we're adopting a kid. I know it was my idea, but what if I mess everything up?$10",
+                "NPC.cs.4447": "{{TermofEndearment}}, I can't believe we're adopting a kid. I know it was my idea, but what if I mess everything up?$10",
+                "NPC.cs.4445": "{{TermofEndearment}}, I actually feel optimistic about the adoption. Not a feeling I'm used to!$h",
+                "NPC.cs.4448": "{{TermofEndearment}}, I actually feel optimistic about the adoption. Not a feeling I'm used to!$h",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "false",
+                "Relationship:Shane": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            },
+        },
+        {
+	    "Logname": "Shane adoption, IC Shane",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "NPC.cs.4448": "I hope our adoption request gets approved. They'll see that we can raise a kid right, right?",
+            },
+            "When":
+            {
+                "HasMod |contains=tenthousandcats.ImmersiveCShane": "true",
+                "Relationship:Shane": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+            },
+        },
+    ]
+}

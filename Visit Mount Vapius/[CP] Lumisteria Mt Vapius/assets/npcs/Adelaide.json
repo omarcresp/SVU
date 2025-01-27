@@ -1,0 +1,128 @@
+{
+  "Changes": [
+    /*{
+      "LogName": "Adelaide Rosier Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "AdelaideRosierVMV": "adult/polite/neutral/neutral/female/not-datable/CelestineDuboisVMV/Other/winter 5/CelestineDuboisVMV 'douce_Célestine' MoiraDuboisVMV 'granddaughter_Moïra'/Lumisteria.MtVapius_TrainStationIndoor 18 9/Adélaïde"
+      }
+    },*/
+    {
+      "LogName": "Adelaide Rosier Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "AdelaideRosierVMV": {
+          "DisplayName": "{{i18n: AdelaideDisplayName}}",
+          "BirthSeason": "winter",
+          "BirthDay": 5,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "CanBeRomanced": false,
+          "LoveInterest": "CelestineDuboisVMV",
+          "SocialTab": "UnknownUntilMet",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "FriendsAndFamily": {
+            "CelestineDuboisVMV": "{{i18n: AdelaideCelestineName}}",
+            "MoiraDuboisVMV": "{{i18n: AdelaideMoiraName}}"
+          },
+          "SpawnIfMissing": true,
+			"Appearance": [
+			  {
+				"Id": "Lumisteria.MtVapiusAdelaideSummer",
+				"Condition": "LOCATION_SEASON Here Summer",
+				"Portrait": "Portraits/AdelaideRosierVMV_Summer",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusAdelaideWinter",
+				"Condition": "LOCATION_SEASON Here Winter",
+				"Portrait": "Portraits/AdelaideRosierVMV_Winter",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			],
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_TrainStationIndoor",
+					"Tile": { "X": 18, "Y": 9 },
+					"Direction": "down"
+				}
+			],
+          /*
+		  "HomeLocation": "Lumisteria.MtVapius_TrainStationIndoor",
+          "HomeTile": {
+            "X": 18,
+            "Y": 9
+          },
+          "HomeDirection": "down",*/
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "LogName": "Adelaide Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/AdelaideRosierVMV, Characters/AdelaideRosierVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Adelaide Winter Portraits",
+      "Action": "Load",
+      "Target": "Portraits/AdelaideRosierVMV_Winter",
+      "FromFile": "assets/npcs/Portraits/AdelaideRosierVMVExtra/Winter.png",
+    },
+    {
+      "LogName": "Adelaide Summer Portraits",
+      "Action": "Load",
+      "Target": "Portraits/AdelaideRosierVMV_Summer",
+      "FromFile": "assets/npcs/Portraits/AdelaideRosierVMVExtra/Summer.png",
+    },
+    {
+      "LogName": "Adelaide Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+		"AdelaideRosierVMV_sitCelestine": "16/17/16",
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/AdelaideRosierVMV/Schedule.json"
+    },
+    {
+      "LogName": "Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "AdelaideRosierVMV": "{{i18n: AdelaideGiftLoved{{GiftAnswerAdelaide}}}}/445 340 348 614 231 Lumisteria.MtVapius_Treasures_RareStamp/{{i18n: AdelaideGiftLiked{{GiftAnswerAdelaide}}}}/-81/{{i18n: AdelaideGiftDislike{{GiftAnswerAdelaide}}}}/30/{{i18n: AdelaideGiftHate{{GiftAnswerAdelaide}}}}/206 213 224 241/{{i18n: AdelaideGiftNeutral{{GiftAnswerAdelaide}}}}/-4/",
+      },
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/AdelaideRosierVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/AdelaideRosierVMV/Dialogue.json"
+    },
+  ]
+}

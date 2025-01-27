@@ -1,0 +1,241 @@
+{
+    "Changes": [
+    
+      
+        
+        {
+            "LogName": "Sterling custom gift reactions - not dating, engaged, or married",
+            "When": {
+                "Relationship:Sterling |contains=Dating, Engaged, Married": false,
+            },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sterling",
+            "Entries": {
+
+                // Stardrop Tea
+                "AcceptGift_(O)StardropTea": "Tea? For me?#$b#This is cute. Thanks farmer, nothing like some good valley hospitality. I'll enjoy this with a biscuit and think of you.",
+
+                // Sunflower
+                "AcceptBirthdayGift_(O)421": "... F-For- Me?$7#$b#I-I....$7#$b#Sorry farmer, I'm making a scene- It's just...$13#$b#It's... It's my favorite flower.$4#$b#It feels weird to admit that. Even weirder to receive them on my birthday...$4#$e#It's so touching, thank you.$13#$b#I won't forget this birthday in quite some time.$4#$b#I'll be sure to get you something extra nice for yours, alright?$1",
+                "AcceptGift_(O)421":"...!$7#$b#These... They're, so pretty.$4#$b#I knew sunflowers were pretty but I never thought about someone gifting them to me I...$4#$b#Sorry, I'm getting self conscious. Been the one giving flowers all my life, I suppose. It's a strange... Welcome change",
+                
+                //Flowers category
+                "AcceptGift_category_flowers": "...!$7#$b#For... Me? Do you have the right person?$7#$b#N-No I just... Sorry, I don't mean to be weird.$7#$b#I've never really... Gotten flowers before in my life. Didn't really think dudes could get them.#$b#...Thank you.$4",
+
+                // Beer
+                "AcceptBirthdayGift_(O)346": "Ah, thanks for the drink farmer. I'll invite the next round next time you come by the Saloon.#$e#Oh! It's for my birthday? Thanks for remembering.$1",
+                "AcceptGift_(O)346": "{{Random:Ah! Nothing like a good beer to really hit it where it matters. Thanks farmer, you're a doll. $1++Are you trying to like speedrun our friendship with my favorite drinks farmer?$10#$b#Because if you are, it's working. Keep it up, I can feel my imaginary heart     going  up.$10++What's that, trying to get me drunk to lower my standards, @?$10#$b#Worry not, alcohol in my system or not, you're just as hot.$10#$b#And also my standards are already on the ground. $1++Nothing like a beer to lighten the spirits, you're really trying to get on my good side, aren't you?$10#$b#Worry not farmer, you've already stolen my heart away. Lucky you I'll take the beer as due payment for it.$10|inputSeparator=++}}",
+
+                // Pale Ale
+                "AcceptGift_(O)303": "{{Random:OH! You're the best farmer, thank you!#$b#You know, back in the city it was really hard getting your hands on pale ale. Some hipster drink it was. Happy to get my hands on this treat.++Oh this looks so good. Are the hops from your farm? $1#$b#I look forwards to trying it.$9++%farm 's pale ale? I can't wait to try!#$b#You know, I was really excited to try Gus' pale ale when I came to town.#$b#Unfortunately it wasn't ale it's cracked up to be!$10|inputSeparator=++}}",
+                
+                // Mead
+                "AcceptGift_(O)459": "{{Random:You're a true friend, you know that farmer?$10#$b#After all, a friend in Mead is a friend indeed!$9++OHO, I mead to know why you're so kind to me. Why thank you, farmer.$10++Mmm, nothing like a drink to lighten up a day. You're the best!$10#$b#Had I known valley people were so generous I would've moved sooner.|inputSeparator=++}}",
+                
+                // Wine
+                "AcceptGift_(O)348": "{{Random:You have no idea how much I needed a drink today.#$b#Ahhh... Yeah, that hits the spot. Thanks, farmer.$9++Are you trying to like speedrun our friendship with my favorite drinks farmer?$10#$b#Because if you are, it's working. Keep it up, I can feel my imaginary heart meter going  up.$10++Ohhh farmer, you're so bottleful to me when you're so generous. I love it when great minds drink alike.#$b#Nothing like a good drink to wine down.$9|inputSeparator=++}}",
+                
+                // Piña Colada
+                "AcceptGift_(O)873": "{{Random:Are you trying to like speedrun our friendship with my favorite drinks farmer?$10#$b#Because if you are, it's working. Keep it up, I can feel my imaginary heart meter going  up.$10++Mmm, nothing like a pina colada and getting caught in the rain. $1++You have no idea how much I needed a drink today.#$b#Ahhh... Yeah, that hits the spot. Thanks, farmer.$9|inputSeparator=++}}",
+
+                // Strange Bun
+                "AcceptBirthdayGift_(O)203": "Yoba's wrinkly mother-- For me?!$7#$b#This is the BEST birthday gift! These things are so tasty, I don't know why my family thinks I'm insane.#$e#Thank you so much farmer!$1#$b#Here, wanna split it with me$10?#$b#Nothing like a Strange Bun to say 'Live another long, happy year.'$10",
+                "AcceptGift_(O)203": "Ohh farmer, you have no idea how much I kneaded one of these.$10#$b#I was so bready for a tasty snack. Dough you want to share it with me?$9",
+                
+                // Field Snack
+                "AcceptBirthdayGift_(O)403": "Mmm, nothing like a good energy bar to get my birthday started. Thanks, farmer!#$b#To top it all off, the ones you make are BOMB.$1#$b#Thanks for thinking of me.$9",
+                "AcceptGift_(O)403": "{{Random: Mmm, nothing like a good snack to get through the day.#$b#Thanks farmer!++Oh man I love these, nothing like your field snacks, farmer.++Ohhh yes, come to me baby.$10#$b#Sorry farmer, I was talking to the field-snacks.$|inputSeparator=++}}",
+                
+                // Bear Pancakes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Pancakes": "For me? $7#$b#Oh my god these are JUST like Mia makes them. You are the BEST farmer.$1#$b#This is such a birthday treat, has to be my favorite.",
+                "AcceptGift_(O)HimeTarts.ARV_Bear_Pancakes": "Oh dear Yoba these are so cute. I lose my mind when Mia makes them.$1#$b#Thanks, hotstuff. You're a real one.$9",
+                
+                // Scalloped Potatoes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "Mmm, just like grandma used to make them.#$b#Henry's been the only one who has really been able to capture the flavor but he rarely has time to make it.#$b#The flavor always brings me back to her warm touch...$4#$b#Thank you, @. This genuinely means a lot to me.#$b#Best birthday gift ever.$9",
+                "AcceptGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "Potatoes? Butter? Chives? LOADS of cream?$9#$b#Dear lord, farmer, you're just trying to earn your way straight into my heart.$10",
+                
+                // Kitty Muffin
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Kitty_Muffin": "OHHH. I LOVE these!$1#$b#It's for my birthday? You're the BEST farmer.$9",
+                "AcceptGift_(O)HimeTarts.ARV_Kitty_Muffin": "Ohhh, shoot, farmer! The day ain't got muffin on me with one of these bad boys.$10#$b#Thank you so much, hotstuff.$10",
+                
+                // Morning Cat Toast
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Cat_Toast": "MMM Nothing like a breakfast of champions before a GREAT birthday day.$1#$b#Thank you so much farmer! These are just how Mia makes them too.$1",
+                "AcceptGift_(O)HimeTarts.ARV_Cat_Toast": "Man, this reminds me how much I hate cat puns.$11#$b#Just kitten!$9#$b#I find them HISSterical.$10",
+                
+                // Bear Muffin
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Muffin": "OHHH. I LOVE these!$1#$b#It's for my birthday? You're the BEST farmer.$9",             
+                "AcceptGift_(O)HimeTarts.ARV_Bear_Muffin": "OH! Thanks farmer, these are....#$b#These are...$2#$b#Bear with me farmer, I'll think of a pun soon.$3",
+                
+                // Summer Pink Lemonade
+                "AcceptGift_(O)HimeTarts.ARV_Summer_Pink_Lemonade": "Ah!$1#$b#Thanks farmer, I was real thirsty. This is great.$10",
+
+                // Crab Croissant
+                "AcceptGift_(O)HimeTarts.ARV_Crab_Croissant": "I see you've developed an appreciation for Mia's food.$10#$b#Oh don't worry, that is the HIGHEST of compliments.$10#$b#Mia is a great cook, isn't she? These are delicious, thank you farmer.",
+    
+                // Cranberries - reject
+                "RejectItem_(O)282": "Uhh, careful there farmer! I'm incredibly allergic to these, and the reaction if I come near them won't be any pretty, I promise.$3",
+            }
+        },
+        {
+            "LogName": "Sterling custom gift reactions - dating or engaged",
+            "When": {
+                "Relationship:Sterling |contains=Dating, Engaged": true
+            },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sterling",
+            "Entries": {
+                
+                /* Vanilla Items */
+
+                //Stardrop Tea
+                "AcceptGift_(O)StardropTea": "Mm?$1#$b#Oh! Thanks, snugglebun.$1#$b#This looks so good... Thank you.$4",
+                
+                // Sunflower
+                "AcceptBirthdayGift_(O)421": "... Holy crap.$13#$b#F-For like, me?$1#$b#You really went and grew my favorite flowers for my birthday- I-- Holy crap, love.$4#$b#I've never felt this loved before. Thank you so much. Thank you.$13",
+                "AcceptGift_(O)421":"Ahh man I...$4#$b#These are gorgeous, thank you so much. I-I don't know what to say, they're my favorite.#$b#No partner had ever given me flowers before.$4",
+                
+                // Flowers category
+                "AcceptGift_category_flowers": "... @!$9#$b#Thank you so much, I... I really like flowers.#$b#It feels weird to admit, isn't that normally a girl thing?$9",
+                
+                // Strange Bun
+                "AcceptBirthdayGift_(O)203": "!$7#$b#Shoot muffin. You really want me to go and marry you, don'tcha?$10#$b#Happy birthday to me! I love these things.$9#$b#Now tell me, did you happen to loot these from some weird monster? Or maybe uncovered it in a deep level of the mines?",
+                "AcceptGift_(O)203": "You know? I still have no clue what any of these have inside them or what makes them so damn good.$11#$b#I know I should *technically* be more concerned but it's not my fault these are my favorite treat.$10",
+                
+                // Beer
+                "AcceptBirthdayGift_(O)346": "Oh my. No better birthday gift than my love enabling my addiction.$10#$b#Thanks, lover.$9",
+                "AcceptGift_(O)346": "{{Random:Why thank you, hotstuff. This one is going straight to daddy's gut.$10#$b#.... I promise to never call myself daddy again if you don't stop getting me drinks.$3++You don't need to get me drunk, darling, I'm already *madly* into you. This is just icing on the cake.++Mmm, finally someone who'll actually enable me. It was getting tiring getting yelled at every time I opened a beer.#$b#*smooch* Thank you, love! I'll think of you while I drink it.$1++Thank you, love. I.... I don't know, should I really?#$b#I think I'll save it for tomorrow...|inputSeparator=++}}",
+                
+                // Pale Ale
+                "AcceptGift_(O)303": "{{Random:Ah, thank you dearest! You're the best. Alcohol budget was starting to get tight.$1++When my friend fell asleep at the bar I poured ale at him. It was a brewed awakening.$9++Ahh... Just when I said I tried not drinking tonight.$3#$b#Oh well! There's always tomorrow!$9|inputSeparator=++}}",
+                
+                // Alcoholic Drinks - generic
+                "AcceptGift_(O)459": "{{Random:You don't need to get me drunk, darling, I'm already *madly* into you. This is just icing on the cake++Ah, thank you dearest! You're the best. Alcohol budget was starting to get tight.$1++Oh sweet, refreshments! Thanks love, you're positively the best.$9|inputSeparator=++}}",
+                "AcceptGift_(O)348": "{{Random:You don't need to get me drunk, darling, I'm already *madly* into you. This is just icing on the cake++Ah, thank you dearest! You're the best. Alcohol budget was starting to get tight.$1++Oh sweet, refreshments! Thanks love, you're positively the best.$9|inputSeparator=++}}",
+                "AcceptGift_(O)873": "{{Random:You don't need to get me drunk, darling, I'm already *madly* into you. This is just icing on the cake++Ah, thank you dearest! You're the best. Alcohol budget was starting to get tight.$1++Oh sweet, refreshments! Thanks love, you're positively the best.$9|inputSeparator=++}}",  
+                
+                // Field Snack
+                "AcceptBirthdayGift_(O)403": "OH! Did you make these love?$1#$b#For my birthday? Thank you!$9#$b#You know it's funny, one day you live at the city, and the next you live in the valley and your significant other is making you tree-seed snacks for your birthday.$10",
+                "AcceptGift_(O)403": "{{Random: Mmm, this one tastes like maple! Making me crave some pancake dinner.$1++Oh this is just seed-sational. Thank you, darling.$10++Oh thank Yoba, I need the extra shot of energy so bad.$6#$b#*MWAH* Thanks, poppet! You're a treat.$1|inputSeparator=++}}",
+                
+                /* ARV Modded Items */
+                
+                // Bear Pancakes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Pancakes": "Mia's special pancakes? For MY birthday?$1#$b#Love did you learn how to make these from Mia just for me?$1#$b#I swear I don't deserve you, thank you, sunshine.$9",
+                "AcceptGift_(O)HimeTarts.ARV_Bear_Pancakes": "Mmmm, with fresh strawberries on the side. Thanks, poppet. This is going straight down.$1#$b#Yoba, these pancakes really are just the bomb.$9",
+                
+                // Scalloped Potatoes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "Yoba this smells wonderful. Did you make this for me? $1#$b#God, love. You're a Yoba sent, my grandma and Henry would be jealous at how much you nailed this.$9#$b#Thank you, cupcake, you didn't have to go this far just for my birthday.",
+                "AcceptGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "Potatoes? Butter? Chives? LOADS of cream?$9#$b#Just as terrible and fattening as my Grams would've wanted it. She'd be proud of you, lover.$10#$b#Man... These are so good.$4",
+                
+                // Kitty Muffin
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Kitty_Muffin": "Yoba cupcake, you're such a great cook. Do you ever get tired being this awesome?$1#$b#These muffins are my favorite birthday treat, thanks doll.$10",
+                
+                // Morning Cat Toast
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Cat_Toast": "For my birthday? Thank you love!$9#$b#Why don't we toast to us?$10 ",
+                "AcceptGift_(O)HimeTarts.ARV_Cat_Toast": "For me? Oh, thank you darling.#$b#I loaf you.$4",
+                
+                // Bear Muffin
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Muffin": "Yoba cupcake, you're such a great cook. Do you ever get tired being this awesome?$1#$b#These muffins are my favorite birthday treat, thanks doll.$10",    
+                
+                // Summer Pink Lemonade
+                "AcceptGift_(O)HimeTarts.ARV_Summer_Pink_Lemonade": "OH, thank you!$1#$b#Yoba, I hate drinking normal water, these are so much better. Thank you, love.#$e#Mia didn't happen to put you up to this, did she?$10",
+                
+                // Crab Croissant
+                "AcceptGift_(O)HimeTarts.ARV_Crab_Croissant": "For me? Man. This breakfast is almost too adorable for me to eat it.#$b#Almost.$10",          
+                
+                /* Rejections */
+                
+                //Cranberries - reject
+                "RejectItem_(O)282": "Ahhh, love, you should know I'm *very* allergic to Cranberries. They come near me, and I grow very, very sick.$3#$b#Best sell them, poppet, I'm not eager on dying any time soon.$3", 
+            }
+        },
+        {
+            "LogName": "Sterling custom gift reactions - marriage",
+            "When": 
+            {
+                "Relationship:Sterling |contains=Married": true,
+            },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sterling",
+            "Entries": 
+            {
+                
+                /* Vanilla */
+                
+                //Stardrop Tea
+                "AcceptGift_(O)StardropTea": "This smells wonderful!$1#$b#Thanks, darlin'.#$b#Here, let's share it. I think we still have some biscuits in the fridge.$4",
+
+                // Sunflower
+                "AcceptGift_(O)421":"God, you're such a sweetheart, you know that?#$b#Sunflowers are my favorite, it makes me so happy every time you remember.$4",
+                
+                // Flowers
+                "AcceptGift_category_flowers": "{{Random:I never thought I would like getting flowers so much, thank you, poppet.$4++ These are so gorgeous, I'll go grab a vase for them!#$b#Just not nearly as beautiful as you.$4 ++ God, I can't believe I still blush every time you give me flowers. Thank you, sugar. These are beautiful.|inputSeparator=++}}",
+                
+                // Blueberry Tart
+                "AcceptGift_(O)234": "Y'know, when I first got to the city I had a few dollars to my name and a crap studio appartment I lived in until I left.#$b#But I'd wake up every morning and run down to the bakery to spend my few dollars on a blueberry tart they were just so good.#$b#My former friends thought they were stupid and I eventually lost all interest in buying them.$13#$b#But smelling this treat that you made for me? Oh, darling. I never thought it'd be possible for me to feel 17 and full of hopes and dreams again. Thank you, love.$4",
+                
+                /* ARV Modded Items */
+                
+                // Scalloped Potatoes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "For my birthday?$7#$b#Oh, love I.... I think you're going to make me cry.$4#$b#No, nothing bad. This just smells so wonderful... It's making me realize how much I miss my grandma.$9#$b#Thank you, darling.$4",
+
+                /* Rejections */
+                
+                // Wine - reject
+                "RejectItem_(O)348": "{{Random:... This isn't really funny, @.$5#$b#I'm really trying to stay sober, you don't have to mock me like this.$11++Just... One cup of wine won't hurt, right?$3#$b#.... Fuck.$6#$b#Don't do that, okay? Don't try to give me alcohol. I'm going to end up rationalizing it, and drinking it and....$5#$b#You're the biggest support I have right now. I need you to be on my side, addiction is hard.$11++Hmmm, maybe we could cook with this? Some salmon maybe, like Mia used to make it.#$b#But if that's the case please... Please don't bring it to me. You know how tempted I get. I need your support in this.$3|inputSeparator=++}}",
+                
+                // Generic alcohol - reject
+                "RejectItem_alcohol_item": "{{Random:... This isn't really funny, @.$5#$b#I'm really trying to stay sober, you don't have to mock me like this.$11++Do you think I'm not fighting the urge to go to the saloon and drink myself until I don't wake up every day, @?$8#$b#Yeah? Then I'd appreciate it if you didn't try to shove alcohol in my face.++I... I didn't cut off Shane and my old friends for you to be the one to start enabling me.$5#$b#Please, I don't want it to be you too.$2++This is very cruel of you, @. You know I'm struggling.$11#$b#You're supposed to be there for me, not drag me further into the hole.$5|inputSeparator=++}}",
+                
+                //Cranberries - reject
+                "RejectItem_(O)282": "Woah there! Careful stallion. I am INCREDIBLY allergic. Unless you're trying to become a young widower, best keep those away from me.$3^Woah there! Careful dollface. I am INCREDIBLY allergic. Unless you're trying to become a young widow, best keep those away from me.$3",
+            
+                
+                // Sunflower birthday gift
+               "AcceptBirthdayGift_(O)421": "... ! $7#$b#Yoba. It's never going to stop catching me off guard when you hand these to me. $4#$b#Thank you love. Nothing quite says 'Glad to be here another year' like a beautiful bouquet of sunflowers that's half my size.$10#$b#You just can't get this type of thing in the city. Thanks darlin', you know how to make a man's special day even more special.$1",
+                
+                // Strange Bun
+                 "AcceptBirthdayGift_(O)203": "Did you go down the mines just to grab one of these for my birthday? $1#$b#Ugh, poppet. You're the absolute best.$10#$b#I still have no idea what all these got or why you randomly find them on the floor, but what didn't kill you down the mines sure tastes great in my stomach.$1#$b#Thank you, boo. I love you. Happy birthday to me.$4",
+                "AcceptGift_(O)203": "Sheesh, sexy! Howdya know I was feeling a strange food item found on the monster stomped floor?$1#$b#That sounds like sarcasm but I really do mean it. A strange bun sounded just like the thing I needed today.$10#$b#Thanks, pookie.$0",
+                
+                // Field Snack
+                 "AcceptBirthdayGift_(O)403": "Mmn! Field snacks!$9#$b# You'd think I would've grown tired of these by now but there is absolutely nothing quite like your treats for my birthday.#$b#Delicious, nutritious, crunchy and satisfying to the bite.$0#$b#Just like you, lover.$10#$b#Thank you for always remembering my birthday, poppet. Nothing like spending another year at your side to make all the hardships have felt worth it.$0",
+                 "AcceptGift_(O)403": "{{Random: Mmm, this one tastes like maple! Making me crave some pancake dinner.$1++Oh this is just seed-sational. Thank you, darling.$10++Oh thank Yoba, I need the extra shot of energy so bad.$6#$b#*MWAH* Thanks, poppet! You're a treat.$1|inputSeparator=++}}",
+                
+                // Scalloped Potatoes
+                "AcceptGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "Scalloped Potatoes for dinner?$9#$b#You're the BEST!$1#$b#I'll make it up to you later tonight. Maybe a massage? A nice bath? Spouse's request.$10",                
+
+                // Bear Pancakes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Pancakes": "Ah! My birthday, you remembered!$1#$b#My favorite breakfast in bed by my favorite person in the world...? What else could a man possibly ever want?$4#$b#And you even added a bowtie to the bear. Shit. Being alive is good.$9#$b#I'm so happy to be here another year with you.",
+                "AcceptGift_(O)HimeTarts.ARV_Bear_Pancakes": "Well you can't just give your husband this kind of fancy breakfast and not expect him to drag you right back to bed.$10#$b#To cuddle his thanks, of course.$10",
+
+                // Kitty Muffin
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Kitty_Muffin": "Thank you love! Another happy birthday to me spent with you and %pet.$9#$b#But next time, can I request we bake them together? Any excuse to spend my day with my favorite person in the world.$4#$b#%Sterling leans in to give you a gentle kiss.#$b#Mmm... That tastes wonderful.$4#$b#The cupcakes, of course.$10",
+                "AcceptGift_(O)HimeTarts.ARV_Kitty_Muffin": "Muffin from my muffin? What else could a man want?$10#$b#%Sterling presses a kiss to your cheek.#$b#I'll enjoy it to the last crumb, thank you, darling.",
+
+                // Bear Muffin
+                "AcceptGift_(O)HimeTarts.ARV_Bear_Muffin": "Mm. These are unbearably good. I actually need to get my bearings. One second. Bear with me.#$b#$There. Delicious. I'm pawsite you're the best cook in the entire valley.$10",
+                
+                // Summer Pink Lemonade
+                "AcceptGift_(O)HimeTarts.ARV_Summer_Pink_Lemonade": "{{Random: OH, thank you!$1#$b#Yoba, I hate drinking normal water, these are so much better. Thank you, love.#$e#Mia didn't happen to put you up to this, did she?$10++Oh sweet mother of refreshments.$10#$b#Thanks, honey. These are as good as when Mia makes them, you really have the magic touch.$1#$b#Man really can't go dehydrated in this corner of Sunberry when Mia and my darling are on the case.$10|InputSeparator=++}}",
+                
+            }
+        }
+        
+        /* Henry */
+        
+        //{
+        //    "LogName": "Henry Trash flowers",
+        //    "Action": "EditData",
+        //    "Target": "Characters/Dialogue/Henry",
+        //    "Entries": {
+        //        
+        //        "AcceptGiftCategory_-20": "More litter? Where does this stuff keep coming from?#$b#Whatever the case, thanks for picking that up. I'll go ahead and throw that away for you.$10",
+        //
+        //    
+        //    
+        //
+        //    }
+        //}
+    ]
+}

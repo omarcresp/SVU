@@ -1,0 +1,90 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Sandstorm Weather",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_Sandstorm": {
+          "Id": "Kana.WeatherWonders_Sandstorm",
+          "DisplayName": "{{i18n: Weather.Sandstorm}}",
+          "Forecast": "{{i18n: Weather.Sandstorm.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "IconSource": {
+            "X": 108,
+            "Y": 0
+          },
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 117
+          },
+          "MusicOverride": "Kana.WeatherWonders_SandstormSound",
+          "MusicFrequencyOutside": 100,
+          "MusicFrequencyInside": 15,
+          "IsRaining": true,
+          "UseNightTiles": true,
+          "SpawnCritters": false,
+          "SpawnFrogs": false,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "SandstormDustLayer1",
+              "Type": "TextureScroll",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/SandstormLayer",
+              "Scale": 1,
+              "Opacity": 1.0,
+              "Speed": "0.74, 0.0",
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "SandstormDustLayer2",
+              "Type": "TextureScroll",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/SandstormLayer",
+              "Scale": 1.1,
+              "Opacity": 1.0,
+              "Speed": "0.7, 0.0",
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "DebrisLongWindBlown",
+              "Type": "Rain",
+              "Mode": "Normal",
+              "Texture": "Mods/Kana.WeatherWonders/LongWindBlown",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 32,
+                "Height": 32
+              },
+              "Frames": 30,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "12, 0",
+              "Count": 8,
+              "Color": "White",
+              "Opacity": 0.5,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": [
+            {
+              "Id": "SandstormTint1",
+              "AmbientColor": "255, 200, 80",
+              "AmbientOutdoorOpacity": null,
+              "LightingTint": "255, 255, 0",
+              "LightingTintOpacity": 0.45,
+              "PostLightingTint": "255, 165, 0",
+              "PostLightingTintOpacity": 0.5
+            }
+          ],
+          "Effects": []
+        }
+      }
+    }
+  ]
+}

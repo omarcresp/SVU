@@ -1,0 +1,158 @@
+{
+  "Changes": [
+    /*{
+      "LogName": "Celestine Dubois Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "CelestineDuboisVMV": "adult/polite/outgoing/positive/female/not-datable/AdelaideRosierVMV/Other/fall 17/AdelaideRosierVMV 'tendre_Adélaïde'/Lumisteria.MtVapius_Inn 38 37/Célestine"
+      }
+    },*/
+    {
+      "LogName": "Célestine Dubois Dispositions",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "CelestineDuboisVMV": {
+          "DisplayName": "{{i18n: CelestineDisplayName}}",
+          "BirthSeason": "fall",
+          "BirthDay": 17,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Negative",
+          "CanBeRomanced": false,
+          "SocialTab": "UnknownUntilMet",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "FriendsAndFamily": {
+            "AsterPellegrinVMV": "",
+            "AdelaideRosierVMV": "{{i18n: CelestineAdelaideName}}",
+            "MoiraDuboisVMV": "{{i18n: CelestineMoiraName}}"
+          },
+          //"UnlockConditions": null,
+          "SpawnIfMissing": true,
+			"Appearance": [
+			  {
+				"Id": "Lumisteria.MtVapiusCelestineSummer",
+				"Condition": "LOCATION_SEASON Here Summer",
+				"Sprite": "Characters/CelestineDuboisVMV_Summer",
+				"Portrait": "Portraits/CelestineDuboisVMV_Summer",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusCelestineFall",
+				"Condition": "LOCATION_SEASON Here Fall",
+				"Portrait": "Portraits/CelestineDuboisVMV_Fall",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusCelestineSpring",
+				"Condition": "LOCATION_SEASON Here Spring",
+				"Portrait": "Portraits/CelestineDuboisVMV_Spring",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 0
+			  },
+			],
+		  "Home": [
+				{
+					"Id": "Default",
+					"Location": "Lumisteria.MtVapius_Inn",
+					"Tile": { "X": 38, "Y": 37 },
+					"Direction": "down"
+				}
+			],
+          /*
+          "HomeLocation": "Lumisteria.MtVapius_Inn",
+          "HomeTile": {
+            "X": 38,
+            "Y": 37
+          },
+          "HomeDirection": "down",*/
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+        },
+      },
+    },
+    {
+      "LogName": "Celestine Portraits and Sprites",
+      "Action": "Load",
+      "Target": "Portraits/CelestineDuboisVMV, Characters/CelestineDuboisVMV",
+      "FromFile": "assets/npcs/{{Target}}.png"
+    },
+    {
+      "LogName": "Celestine Spring Portraits",
+      "Action": "Load",
+      "Target": "Portraits/CelestineDuboisVMV_Spring",
+      "FromFile": "assets/npcs/Portraits/CelestineDuboisVMVExtra/Spring.png",
+    },
+    {
+      "LogName": "Celestine Summer Sprites",
+      "Action": "Load",
+      "Target": "Characters/CelestineDuboisVMV_Summer",
+      "FromFile": "assets/npcs/Characters/CelestineDuboisVMVExtra/Summer.png",
+    },
+    {
+      "LogName": "Celestine Summer Portraits",
+      "Action": "Load",
+      "Target": "Portraits/CelestineDuboisVMV_Summer",
+      "FromFile": "assets/npcs/Portraits/CelestineDuboisVMVExtra/Summer.png",
+    },
+    {
+      "LogName": "Celestine Fall Portraits",
+      "Action": "Load",
+      "Target": "Portraits/CelestineDuboisVMV_Fall",
+      "FromFile": "assets/npcs/Portraits/CelestineDuboisVMVExtra/Fall.png",
+    },
+    {
+      "LogName": "Celestine Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+		"CelestineDuboisVMV_sitAdelaide": "16/17/16",
+		"CelestineDuboisVMV_read": "19/20 20 20 20 20 20 20 20 21 21 21 21 21 21 20 20 20 20 20 20 21 21 21 21 21 21 21 21/19",
+      }
+    },
+    {
+      "LogName": "Celestine - Include Schedule",
+      "Action": "Include",
+      "FromFile": "assets/npcs/CelestineDuboisVMV/Schedule.json"
+    },
+    {
+      "LogName": "Celestine - Include Schedule Strings",
+      "Action": "Include",
+      "FromFile": "assets/npcs/CelestineDuboisVMV/StringSchedule.json"
+    },
+    {
+      "LogName": "Celestine - Gift Taste",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "CelestineDuboisVMV": "{{i18n: CelestineGiftLoved{{GiftAnswerCelestine}}}}/257 717 397 231 Lumisteria.MtVapius_Cooking_UrchinSouffle/{{i18n: CelestineGiftLiked{{GiftAnswerCelestine}}}}/267 614 276 399/{{i18n: CelestineGiftDislike{{GiftAnswerCelestine}}}}/-81/{{i18n: CelestineGiftHate{{GiftAnswerCelestine}}}}/-2 -12/{{i18n: CelestineGiftNeutral{{GiftAnswerCelestine}}}}/-4 -80 566/",
+      },
+    },
+    {
+      "LogName": "Celestine - Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/CelestineDuboisVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "LogName": "Celestine - Include Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/npcs/CelestineDuboisVMV/Dialogue.json"
+    },
+  ]
+}

@@ -1,0 +1,4741 @@
+{
+	"Changes": [
+		/*Machines*/
+		{
+			"LogName": "Machines",
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"Lumisteria.MtVapius_GemPolisher": {
+					"Name": "Lumisteria.MtVapius_GemPolisher",
+					"DisplayName": "{{i18n: MtVapiusGemPolisher_Translated}}",
+					"Description": "{{i18n: MtVapiusGemPolisher_Description_Translated}}",
+					"Price": 50,
+					"Fragility": 0,
+					"CanBePlacedOutdoors": true,
+					"CanBePlacedIndoors": true,
+					"IsLamp": false,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Machines",
+					"SpriteIndex": 0,
+					"CustomFields": {}
+				},
+				"Lumisteria.MtVapius_CandyMaker": {
+					"Name": "Lumisteria.MtVapius_CandyMaker",
+					"DisplayName": "{{i18n: MtVapiusCandyMaker_Translated}}",
+					"Description": "{{i18n: MtVapiusCandyMaker_Description_Translated}}",
+					"Price": 50,
+					"Fragility": 0,
+					"CanBePlacedOutdoors": true,
+					"CanBePlacedIndoors": true,
+					"IsLamp": false,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Machines",
+					"SpriteIndex": 3,
+					"CustomFields": {}
+				},
+				"Lumisteria.MtVapius_JewelerWorkshop": {
+					"Name": "Lumisteria.MtVapius_JewelerWorkshop",
+					"DisplayName": "{{i18n: MtVapiusJewelerWorkshop_Translated}}",
+					"Description": "{{i18n: MtVapiusJewelerWorkshop_Description_Translated}}",
+					"Price": 50,
+					"Fragility": 0,
+					"CanBePlacedOutdoors": true,
+					"CanBePlacedIndoors": true,
+					"IsLamp": false,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Machines",
+					"SpriteIndex": 5,
+					"CustomFields": {}
+				},
+				"Lumisteria.MtVapius_MaturingShelves": {
+					"Name": "Lumisteria.MtVapius_MaturingShelves",
+					"DisplayName": "{{i18n: MtVapiusMaturingShelves_Translated}}",
+					"Description": "{{i18n: MtVapiusMaturingShelves_Description_Translated}}",
+					"Price": 50,
+					"Fragility": 0,
+					"CanBePlacedOutdoors": true,
+					"CanBePlacedIndoors": true,
+					"IsLamp": false,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Machines",
+					"SpriteIndex": 7,
+					"CustomFields": {}
+				},
+				"Lumisteria.MtVapius_InsectHotel": {
+					"Name": "Lumisteria.MtVapius_InsectHotel",
+					"DisplayName": "{{i18n: MtVapiusInsectHotel_Translated}}",
+					"Description": "{{i18n: MtVapiusInsectHotel_Description_Translated}}",
+					"Price": 50,
+					"Fragility": 0,
+					"CanBePlacedOutdoors": true,
+					"CanBePlacedIndoors": true,
+					"IsLamp": false,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Machines",
+					"SpriteIndex": 10,
+					"CustomFields": {}
+				},
+				"Lumisteria.MtVapius_CompostBin": {
+					"Name": "Lumisteria.MtVapius_CompostBin",
+					"DisplayName": "{{i18n: MtVapiusCompostBin_Translated}}",
+					"Description": "{{i18n: MtVapiusCompostBin_Description_Translated}}",
+					"Price": 50,
+					"Fragility": 0,
+					"CanBePlacedOutdoors": true,
+					"CanBePlacedIndoors": true,
+					"IsLamp": false,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Machines",
+					"SpriteIndex": 12,
+					"CustomFields": {}
+				},
+				  "Lumisteria.MtVapius_StrangeRarecrow": {
+					"Name": "Strange Rarecrow",
+					"DisplayName": "{{i18n: MtVapiusStrangeRarecrow_Translated}}",
+					"Description": "{{i18n: MtVapiusStrangeRarecrow_Description_Translated}}",
+					"Price": 0,
+					"Fragility": 0,
+					"CanBePlacedOutdoors": true,
+					"CanBePlacedIndoors": true,
+					"IsLamp": false,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Scarecrow",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"crow_scare",
+						"crow_scare_radius_12",
+					],
+				  },
+			}
+		},
+		/* add machine  images*/
+		{
+			"LogName": "Load images",
+			"Action": "Load",
+			"Target": "Mods/Lumisteria.MtVapius/Machines",
+			"FromFile": "assets/images/craftable/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Load images scarecrow",
+			"Action": "Load",
+			"Target": "Mods/Lumisteria.MtVapius/Scarecrow",
+			"FromFile": "assets/images/craftable/{{TargetWithoutPath}}.png"
+		},
+		{
+		  "LogName": "Edit images scarecrow",
+		  "Action": "EditImage",
+		  "Target": "Mods/Lumisteria.MtVapius/Scarecrow",
+		  "FromFile": "assets/images/craftable/Scarecrow{{Random:01, 02, 03, 04|key=Lumisteria.MtVapius_RandomRoom}}.png",
+		},
+		/*Do machine stuff*/
+		{
+			"LogName": "Machines",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC)Lumisteria.MtVapius_GemPolisher": {
+					"HasInput": false,
+					"HasOutput": false,
+					"OutputRules": [
+						{
+							"Id": "Lumisteria.MtVapius_Demantoide_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_Demantoide",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Demantoide_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Demantoide_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Carnelian_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Carnelian",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Carnelian_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Carnelian_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Turquoise_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Turquoise",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Turquoise_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Turquoise_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Garnet_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Garnet",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Garnet_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Garnet_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Morganite_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Morganite",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Morganite_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Morganite_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Heliodor_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Heliodor",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Heliodor_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Heliodor_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Labradorite_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Labradorite",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Labradorite_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Labradorite_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Larimar_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Larimar",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Larimar_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Larimar_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Tourmaline_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Tourmaline",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Tourmaline_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Tourmaline_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_BlueAgathe_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_BlueAgathe",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_BlueAgathe_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_BlueAgathe_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 5000,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_VoidDiamond_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_VoidDiamond",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_VoidDiamond_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_VoidDiamond_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 6000,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Emerald_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)60",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Emerald_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Emerald_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 3000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Aquamarine_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)62",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Aquamarine_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Aquamarine_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 2240,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Ruby_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)64",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Ruby_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Ruby_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 3000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Amethyst_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)66",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Amethyst_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Amethyst_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 1360,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Topaz_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)68",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Topaz_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Topaz_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 1120,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Jade_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)70",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Jade_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Jade_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 2400,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Diamond_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)72",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Diamond_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_Diamond_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 7200,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_SweetGemBerry_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)417",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_NaveenGemSecretMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_SweetGemBerry_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_SweetGemBerry_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 7200,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_QuartzGemPolished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)338",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_QuartzGem_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_QuartzGem_Polished",
+									"CopyQuality": true,
+								}
+							],
+							"MinutesUntilReady": 2400,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_GenericGemPolished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredTags": [
+										"category_gem",
+										"!id_(o)74",
+										"!polished_gem"
+									],
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"ObjectInternalName": "{0} Gem Polished",
+									"ObjectDisplayName": "[LocalizedText Strings\\Objects:Lumisteria.MtVapius_Polished %PRESERVED_DISPLAY_NAME]",
+									"Id": "Lumisteria.MtVapius_QuartzGem_Polished",
+									"ItemId": "(O)Lumisteria.MtVapius_QuartzGem_Polished",
+									"PreserveId": "DROP_IN",
+									"CopyQuality": true,
+									"CopyPrice": true,
+									//"CopyColor": true,
+									"PriceModifierMode": "Minimum",
+									"PriceModifiers": [
+										{
+											"Modification": "Multiply",
+											"Amount": 2.5
+										},
+										{
+											"Modification": "Set",
+											"Amount": 4000
+										},
+									],
+								}
+							],
+							"MinutesUntilReady": 7200,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+					],
+					"AdditionalConsumedItems": [
+						{
+							"ItemID": "(O)92",
+							"RequiredCount": 8,
+							"InvalidCountMessage": "{{i18n: MtVapiusGemPolisher_MissingSap_Translated}}"
+						}
+					],
+					"InvalidItemMessage": "{{i18n: MtVapiusGemPolisher_InvalidItem_Translated}}",
+					"InvalidCountMessage": "[LocalizedText Strings\\StringsFromCSFiles:Object.cs.12777]",
+					"LoadEffects": [
+						{
+							"Sound": "select",
+							"Interval": 100,
+							"ShakeDuration": -1,
+						}
+					],
+					"AllowLoadWhenFull": false,
+					"WobbleWhileWorking": true,
+					"ShowNextIndexWhileWorking": true,
+					"ShowNextIndexWhenReady": true,
+					"IsIncubator": false,
+				},
+				"(BC)Lumisteria.MtVapius_CandyMaker": {
+					"HasInput": false,
+					"HasOutput": false,
+					"OutputRules": [
+						{
+							"Id": "Lumisteria.MtVapius_ArtisanGoods_MoscoCotto",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)398", //Grape
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_ArtisanGoods_MoscoCotto",
+									"ItemId": "(O)Lumisteria.MtVapius_ArtisanGoods_MoscoCotto",
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 1000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Candy_Praline",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)408", //Hazelnut
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Candy_Praline",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_Praline",
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 1000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Candy_HoneyDrop",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)340",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"ObjectInternalName": "{0} Honey Drop",
+									"Id": "Lumisteria.MtVapius_Candy_HoneyDrop",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_HoneyDrop",
+									"ObjectDisplayName": "[LocalizedText Strings\\Objects:Lumisteria.MtVapius_Candy_HoneyDrop %PRESERVED_DISPLAY_NAME]",
+									"PreserveId": "DROP_IN",
+									"Quality": -1,
+									"CopyPrice": true,
+									"PriceModifierMode": "Minimum",
+									"PriceModifiers": [
+										{
+											"Modification": "Multiply",
+											"Amount": 2.2
+										},
+										{
+											"Modification": "Set",
+											"Amount": 1500
+										},
+									],
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Candy_CoffeeCandy",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)433",
+									"RequiredCount": 3,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Candy_CoffeeCandy",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_CoffeeCandy",
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Ringfruit",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Ringfruit",
+									"RequiredCount": 2,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Candy_CandyCane",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_CandyCane",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Candy_Calisson",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)254",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Candy_Calisson",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_Calisson",
+									"MinStack": 2,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Candy_SweetFruitPaste",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Candy_SweetExtract",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_NaveenSecretMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Candy_SweetFruitPaste",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_SweetFruitPaste",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Candy_SweetExtract",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)417",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_NaveenSecretMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Candy_SweetExtract",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_SweetExtract",
+									"MinStack": 8,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Candy_CottonCandy",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_CloudFeather",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Candy_CottonCandy",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_CottonCandy",
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_BirchSap",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_BirchSap",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Candy_BirchSapBerlingot",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_BirchSapBerlingot",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Candy_CandiedFruit",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredTags": [
+										"category_fruits",
+									],
+									"RequiredCount": 2,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"ObjectInternalName": "{0} Candied Fruit",
+									"ObjectDisplayName": "[LocalizedText Strings\\Objects:Lumisteria.MtVapius_Candied %PRESERVED_DISPLAY_NAME]",
+									"Id": "Lumisteria.MtVapius_Candy_CandiedFruit",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_CandiedFruit",
+									"PreserveId": "DROP_IN",
+									"Quality": -1,
+									"CopyPrice": true,
+									"PriceModifierMode": "Stack",
+									"PriceModifiers": [
+										{
+											"Modification": "Multiply",
+											"Amount": 1.1
+										},
+										{
+											"Modification": "Add",
+											"Amount": 400
+										},
+									],
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Candy_CandiedFlower",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredTags": [
+										"edible_flower_item",
+									],
+									"RequiredCount": 2,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"ObjectInternalName": "{0} Candied Flower",
+									"ObjectDisplayName": "[LocalizedText Strings\\Objects:Lumisteria.MtVapius_Candied %PRESERVED_DISPLAY_NAME]",
+									"Id": "Lumisteria.MtVapius_Candy_CandiedFlower",
+									"ItemId": "(O)Lumisteria.MtVapius_Candy_CandiedFlower",
+									"PreserveId": "DROP_IN",
+									"Quality": -1,
+									"CopyPrice": true,
+									"PriceModifierMode": "Stack",
+									"PriceModifiers": [
+										{
+											"Modification": "Multiply",
+											"Amount": 1.1
+										},
+										{
+											"Modification": "Add",
+											"Amount": 400
+										},
+									],
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillConfectionerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								}
+							],
+							"MinutesUntilReady": 4000,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+					],
+					"AdditionalConsumedItems": [
+						{
+							"ItemID": "(O)245",
+							"RequiredCount": 2,
+							"InvalidCountMessage": "{{i18n: MtVapiusCandyMaker_MissingSugar_Translated}}"
+						}
+					],
+					"InvalidItemMessage": "{{i18n: MtVapiusCandyMaker_InvalidItem_Translated}}",
+					"InvalidCountMessage": "{{i18n: MtVapiusCandyMaker_InvalidCount_Translated}}",
+					"LoadEffects": [
+						{
+							"Sound": "select",
+							"Interval": 100,
+							"ShakeDuration": -1,
+						}
+					],
+					"AllowLoadWhenFull": false,
+					"WobbleWhileWorking": true,
+					"ShowNextIndexWhileWorking": false,
+					"ShowNextIndexWhenReady": false,
+					"IsIncubator": false,
+				},
+				"(BC)Lumisteria.MtVapius_JewelerWorkshop": {
+					"HasInput": false,
+					"HasOutput": false,
+					"OutputRules": [
+						/*{
+							"Id": "Lumisteria.MtVapius_Emerald_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Emerald_Polished",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Earrings_EmeraldEarrings",
+									"ItemId": "(O)Lumisteria.MtVapius_Earrings_EmeraldEarrings",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+									  {
+										"Id": "RareDouble",
+										"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+										"Modification": "Multiply",
+										"Amount": 2.0,
+									  }
+									],
+									"StackModifierMode": "Stack",
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Aquamarine_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Aquamarine_Polished",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Earrings_AquamarineEarrings",
+									"ItemId": "(O)Lumisteria.MtVapius_Earrings_AquamarineEarrings",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+									  {
+										"Id": "RareDouble",
+										"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+										"Modification": "Multiply",
+										"Amount": 2.0,
+									  }
+									],
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Ruby_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Ruby_Polished",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Earrings_RubyEarrings",
+									"ItemId": "(O)Lumisteria.MtVapius_Earrings_RubyEarrings",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+									  {
+										"Id": "RareDouble",
+										"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+										"Modification": "Multiply",
+										"Amount": 2.0,
+									  }
+									],
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Amethyst_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Amethyst_Polished",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Earrings_AmethystEarrings",
+									"ItemId": "(O)Lumisteria.MtVapius_Earrings_AmethystEarrings",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+									  {
+										"Id": "RareDouble",
+										"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+										"Modification": "Multiply",
+										"Amount": 2.0,
+									  }
+									],
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Topaz_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Topaz_Polished",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Earrings_TopazEarrings",
+									"ItemId": "(O)Lumisteria.MtVapius_Earrings_TopazEarrings",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+									  {
+										"Id": "RareDouble",
+										"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+										"Modification": "Multiply",
+										"Amount": 2.0,
+									  }
+									],
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Jade_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Jade_Polished",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Earrings_JadeEarrings",
+									"ItemId": "(O)Lumisteria.MtVapius_Earrings_JadeEarrings",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+									  {
+										"Id": "RareDouble",
+										"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+										"Modification": "Multiply",
+										"Amount": 2.0,
+									  }
+									],
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Diamond_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_Diamond_Polished",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Earrings_DiamondEarrings",
+									"ItemId": "(O)Lumisteria.MtVapius_Earrings_DiamondEarrings",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+									  {
+										"Id": "RareDouble",
+										"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+										"Modification": "Multiply",
+										"Amount": 2.0,
+									  }
+									],
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_SweetGemBerry_Polished",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_SweetGemBerry_Polished",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_NaveenGemSecretMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Earrings_SweetGemBerryEarrings",
+									"ItemId": "(O)Lumisteria.MtVapius_Earrings_SweetGemBerryEarrings",
+									"MinStack": 1,
+									"MaxStack": -1,
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},*/
+						{
+							"Id": "Lumisteria.MtVapius_Earrings",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredTags": [
+										"polished_gem"
+									],
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"ObjectInternalName": "{0} Earrings",
+									"ObjectDisplayName": "[LocalizedText Strings\\Objects:Lumisteria.MtVapius_Earrings %PRESERVED_DISPLAY_NAME]",
+									"Id": "Lumisteria.MtVapius_Earrings_EmeraldEarrings",
+									"ItemId": "(O)Lumisteria.MtVapius_Earrings_EmeraldEarrings",
+									"PreserveId": "DROP_IN",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"CopyQuality": true,
+									"CopyPrice": true,
+									"PriceModifierMode": "Minimum",
+									"PriceModifiers": [
+										{
+											"Modification": "Multiply",
+											"Amount": 2
+										},
+										{
+											"Modification": "Set",
+											"Amount": 10000
+										},
+									],
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}",
+									"selph.ExtraMachineConfig.CopyColor": "true",
+								  },
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Jewel_CraftedCameo",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)394",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_CameoMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Jewel_CraftedCameo",
+									"ItemId": "(O)Lumisteria.MtVapius_Jewel_CraftedCameo",
+									"MinStack": 2,
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}",
+								  },
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Jewel_CraftedCameoAgathe",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_BlueAgathe",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_CameoMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Jewel_CraftedCameo",
+									"ItemId": "(O)Lumisteria.MtVapius_Jewel_CraftedCameo",
+									"MinStack": 2,
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}",
+								  },
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Duck Feather",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)444",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_OrnamentalFanMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Fan_GreenFan",
+									"ItemId": "(O)Lumisteria.MtVapius_Fan_GreenFan",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}",
+								  },
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_GemPigeonFeather",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_GemPigeonFeather",
+									"RequiredCount": 2,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_OrnamentalFanMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Fan_PinkFan",
+									"ItemId": "(O)Lumisteria.MtVapius_Fan_PinkFan",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}",
+								  },
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_CloudFeather",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "Lumisteria.MtVapius_CloudFeather",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_OrnamentalFanMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Fan_PinkFan",
+									"ItemId": "(O)Lumisteria.MtVapius_Fan_PinkFan",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}",
+								  },
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "OrnamentalFan",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)106",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_OrnamentalFanMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Fan_ClassicFan",
+									"ItemId": "(O)Lumisteria.MtVapius_Fan_ClassicFan",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}",
+								  },
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "GooseFan",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_GooseDown",
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_OrnamentalFanMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Fan_GooseFan",
+									"ItemId": "(O)Lumisteria.MtVapius_Fan_GooseFan",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}",
+								  },
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "GenericFan",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredTags": [
+										"feather_item",
+										"!id_(o)lumisteria.mtvapius_gempigeonfeather"
+									],
+									"RequiredCount": 1,
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_OrnamentalFanMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"ObjectInternalName": "{0} Classic Fan",
+									"ObjectDisplayName": "[LocalizedText Strings\\Objects:Lumisteria.MtVapius_Fan %PRESERVED_DISPLAY_NAME]",
+									"Id": "Lumisteria.MtVapius_Fan_ClassicFan",
+									"ItemId": "(O)Lumisteria.MtVapius_Fan_ClassicFan",
+									"PreserveId": "DROP_IN",
+									"MinStack": 1,
+									"MaxStack": -1,
+									"CopyPrice": true,
+									"PriceModifierMode": "Maximum",
+									"PriceModifiers": [
+										{
+											"Modification": "Multiply",
+											"Amount": 2.7 //change to 2.3 if using another material
+										},
+										{
+											"Modification": "Set",
+											"Amount": 400
+										},
+									],
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}",
+									"selph.ExtraMachineConfig.CopyColor": "true",
+								  },
+								}
+							],
+							"MinutesUntilReady": 2160,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_FlowersInGlobe",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredCount": 1,
+									"RequiredTags": [
+										"category_flowers"
+									],
+									//"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_OrnamentalFanMail"
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"ObjectInternalName": "{0} Flower Globe",
+									"ObjectDisplayName": "[LocalizedText Strings\\Objects:Lumisteria.MtVapius_Globe %PRESERVED_DISPLAY_NAME]",
+									"Id": "Lumisteria.MtVapius_Jewel_FlowerGlobe",
+									"ItemId": "(O)Lumisteria.MtVapius_Jewel_FlowerGlobe",
+									"PreserveId": "DROP_IN",
+									"Quality": -1,
+									"CopyPrice": true,
+									"PriceModifierMode": "Minimum",
+									"PriceModifiers": [
+										{
+											"Modification": "Multiply",
+											"Amount": 4 //change to 2.3 if using another material
+										},
+										{
+											"Modification": "Set",
+											"Amount": 1300
+										},
+									],
+									"MinStack": 1,
+									"MaxStack": -1,
+									"StackModifiers": [
+										{
+											"Id": "RareDouble",
+											"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SkillJewelerMail, RANDOM .1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)118",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusJewelerWorkshop_MissingGlassShards_Translated}}",
+									"selph.ExtraMachineConfig.CopyColor": "true",
+								  },
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+					],
+					"AdditionalConsumedItems": [
+					],
+					"InvalidItemMessage": "{{i18n: MtVapiusJewelerWorkshop_InvalidItem_Translated}}",
+					"InvalidCountMessage": "{{i18n: MtVapiusJewelerWorkshop_InvalidCount_Translated}}",
+					"LoadEffects": [
+						{
+							"Sound": "select",
+							"Interval": 100,
+							"ShakeDuration": -1,
+						}
+					],
+					"AllowLoadWhenFull": false,
+					"WobbleWhileWorking": true,
+					"ShowNextIndexWhileWorking": false,
+					"ShowNextIndexWhenReady": false,
+					"IsIncubator": false,
+				},
+				"(BC)Lumisteria.MtVapius_MaturingShelves": {
+					"HasInput": false,
+					"HasOutput": false,
+					"OutputRules": [
+						{
+							"Id": "Lumisteria.MtVapius_Grape",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_WhiteGrape",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_SunGrape",
+									"ItemId": "(O)Lumisteria.MtVapius_SunGrape",
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Raisins",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)398",
+									"RequiredCount": 5,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_Raisins",
+									"ItemId": "(O)Raisins",
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "[LocalizedText Strings\\1_6_Strings:HeavyFurnace_pieces]",
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Cornucopia_WhiteGrape",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Cornucopia_WhiteGrape",
+									"RequiredCount": 5,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_SunGrape",
+									"ItemId": "(O)Lumisteria.MtVapius_SunGrape",
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "{{i18n: MtVapiusMaturingShelves_InvalidGrapeCount_Translated}}",
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Milk",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)184",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_SaltspringCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_SaltspringCheese",
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_MilkLarge",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)186",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_SaltspringCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_SaltspringCheese",
+									"MinStack": 1,
+									"MaxStack": 2,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_MilkExtraLarge",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_MilkExtraLarge",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_SaltspringCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_SaltspringCheese",
+									"MinStack": 2,
+									"MaxStack": 2,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_GoatMilk",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)436",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_SkyshardSharpCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_SkyshardSharpCheese",
+									"MinStack": 1,
+									"MaxStack": 1,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_GoatMilkLarge",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)438",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_SkyshardSharpCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_SkyshardSharpCheese",
+									"MinStack": 1,
+									"MaxStack": 2,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_GoatMilkExtraLarge",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_GoatMilkExtraLarge",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_SkyshardSharpCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_SkyshardSharpCheese",
+									"MinStack": 2,
+									"MaxStack": 2,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_EweMilk",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_EweMilk",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_BlueVapiusCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_BlueVapiusCheese",
+									"MinStack": 1,
+									"MaxStack": 1,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_EweMilkLarge",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_EweMilkLarge",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_BlueVapiusCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_BlueVapiusCheese",
+									"MinStack": 1,
+									"MaxStack": 2,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_EweMilkExtraLarge",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_EweMilkExtraLarge",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_BlueVapiusCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_BlueVapiusCheese",
+									"MinStack": 2,
+									"MaxStack": 2,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Cheese",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)424",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_FaycombeCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_FaycombeCheese",
+									"MinStack": 1,
+									"MaxStack": 1,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_GoatCheese",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)426",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_QueryngesCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_QueryngesCheese",
+									"MinStack": 1,
+									"MaxStack": 1,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_EweCheese",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_EweCheese",
+									"RequiredCount": 1,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_HighPlateauCheese",
+									"ItemId": "(O)Lumisteria.MtVapius_HighPlateauCheese",
+									"MinStack": 1,
+									"MaxStack": 1,
+								}
+							],
+							"MinutesUntilReady": 1440,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+					],
+					"AdditionalConsumedItems": [
+						{
+							"ItemID": "(O)178", //Hay
+							"RequiredCount": 3,
+							"InvalidCountMessage": "{{i18n: MtVapiusMaturingShelves_MissingHay_Translated}}"
+						}
+					],
+					"InvalidItemMessage": "{{i18n: MtVapiusMaturingShelves_InvalidItem_Translated}}",
+					"InvalidCountMessage": "{{i18n: MtVapiusMaturingShelves_InvalidCount_Translated}}",
+					"LoadEffects": [
+						{
+							"Sound": "select",
+							"Interval": 100,
+							"ShakeDuration": -1,
+						}
+					],
+					"AllowLoadWhenFull": false,
+					"WobbleWhileWorking": true,
+					"ShowNextIndexWhileWorking": true,
+					"ShowNextIndexWhenReady": true,
+					"IsIncubator": false,
+					"ReadyTimeModifiers": [
+						{
+							"Id": "OutdoorPenalty",
+							"Condition": "LOCATION_IS_OUTDOORS Target",
+							"Modification": "Multiply",
+							"Amount": 2.0,
+						},
+					],
+				},
+				"(BC)Lumisteria.MtVapius_InsectHotel": {
+					"OutputRules": [
+						{
+							"Id": "Default",
+							"Triggers": [
+								{
+									"Trigger": "DayUpdate",
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_RareMixedSeeds",
+									"ItemId": "(O)Lumisteria.MtVapius_MountainMeadowSeeds",
+									"MinStack": 3,
+									"MaxStack": 5,
+									"Condition": "RANDOM 0.1, LOCATION_CONTEXT Target Lumisteria_MtVapius_Main",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+								{
+									"Id": "Lumisteria.MtVapius_RareSpringSeeds",
+									"RandomItemId": [
+										"(O)Lumisteria.MtVapius_PrimroseSeeds",
+										"(O)Lumisteria.MtVapius_MountainMeadowSeeds",
+									],
+									"MinStack": 3,
+									"MaxStack": 5,
+									"Condition": "RANDOM 0.2, SEASON spring",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+								{
+									"Id": "Lumisteria.MtVapius_SpringSeeds",
+									"RandomItemId": [
+										"(O)Lumisteria.MtVapius_TagetesSeeds",
+										"(O)Lumisteria.MtVapius_WoodSilkFlowerSeeds",
+										"(O)427", //tulip
+										"(O)429", //jazz
+										"(O)MixedFlowerSeeds",
+										"(O)92", //sap
+									],
+									"MinStack": 4,
+									"MaxStack": 7,
+									"Condition": "SEASON spring",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+								{
+									"Id": "Lumisteria.MtVapius_RareSummerSeeds",
+									"RandomItemId": [
+										"(O)Lumisteria.MtVapius_VelvetIrisRhizome",
+										"(O)Lumisteria.MtVapius_MountainMeadowSeeds",
+									],
+									"MinStack": 3,
+									"MaxStack": 5,
+									"Condition": "RANDOM 0.2, SEASON summer",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+								{
+									"Id": "Lumisteria.MtVapius_SummerSeeds",
+									"RandomItemId": [
+										"(O)Lumisteria.MtVapius_TagetesSeeds",
+										"(O)Lumisteria.MtVapius_PinkMorningGloryStarter",
+										"(O)Lumisteria.MtVapius_BlueMorningGloryStarter",
+										"(O)453",
+										"(O)455",
+										"(O)431", //sunflower
+										"(O)MixedFlowerSeeds",
+										"(O)92", //sap
+									],
+									"MinStack": 4,
+									"MaxStack": 7,
+									"Condition": "SEASON summer",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+								{
+									"Id": "Lumisteria.MtVapius_RareFallSeeds",
+									"RandomItemId": [
+										"(O)Lumisteria.MtVapius_RedBouquetSeeds",
+										"(O)Lumisteria.MtVapius_MountainMeadowSeeds",
+									],
+									"MinStack": 3,
+									"MaxStack": 5,
+									"Condition": "RANDOM 0.2, SEASON fall",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+								{
+									"Id": "Lumisteria.MtVapius_FallSeeds",
+									"RandomItemId": [
+										"(O)425", //fairy rose
+										"(O)431", //sunflower
+										"(O)MixedFlowerSeeds",
+										"(O)92",
+									],
+									"MinStack": 4,
+									"MaxStack": 7,
+									"Condition": "SEASON fall",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+								{
+									"Id": "Lumisteria.MtVapius_RareWinterSeeds",
+									"RandomItemId": [
+										"(O)Lumisteria.MtVapius_CloudFeatherSeeds",
+										"(O)Lumisteria.MtVapius_MountainMeadowSeeds",
+									],
+									"MinStack": 2,
+									"MaxStack": 5,
+									"Condition": "SEASON winter, RANDOM 0.3",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+								{
+									"Id": "Lumisteria.MtVapius_UncommonWinterSeeds",
+									"RandomItemId": [
+										"(O)Lumisteria.MtVapius_WildVapiusSeeds",
+									],
+									"MinStack": 2,
+									"MaxStack": 5,
+									"Condition": "SEASON winter, RANDOM 0.3",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+								{
+									"Id": "Lumisteria.MtVapius_WinterDrop",
+									"RandomItemId": [
+										"(O)92",
+									],
+									"MinStack": 4,
+									"MaxStack": 7,
+									"Condition": "SEASON winter",
+									"StackModifiers": [
+										{
+											"Id": "Lumisteria.MtVapius_RareDouble",
+											"Condition": "PLAYER_FORAGING_LEVEL Current 10, RANDOM 0.1",
+											"Modification": "Multiply",
+											"Amount": 2.0,
+										}
+									],
+								},
+							],
+							"DaysUntilReady": 6,
+							"RecalculateOnCollect": false
+						}
+					],
+					"AllowLoadWhenFull": true,
+					"WobbleWhileWorking": true,
+					"ShowNextIndexWhenReady": true,
+					"AllowFairyDust": true,
+					"ReadyTimeModifiers": [
+						{
+							"Id": "IndoorPenalty",
+							"Condition": "LOCATION_IS_INDOORS Target",
+							"Modification": "Multiply",
+							"Amount": 2.0,
+						},
+					],
+				},
+				"(BC)Lumisteria.MtVapius_CompostBin": {
+					"HasInput": false,
+					"HasOutput": false,
+					"OutputRules": [
+						{
+							"Id": "Lumisteria.MtVapius_RottenPlantRecycling",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)747",
+									"RequiredCount": 2,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_QualityFertilizer",
+									"ItemId": "(O)369",
+									"MinStack": 5,
+								}
+							],
+							"MinutesUntilReady": 1750,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "{{i18n: MtVapiusCompostBin_InvalidCountPlant_Translated}}",
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_RottenPlantRecycling",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)748",
+									"RequiredCount": 2,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_QualityFertilizer",
+									"ItemId": "(O)369",
+									"MinStack": 5,
+								}
+							],
+							"MinutesUntilReady": 1750,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "{{i18n: MtVapiusCompostBin_InvalidCountPlant_Translated}}",
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_Fertiliser",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)368",
+									"RequiredCount": 5,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_QualityFertilizer",
+									"ItemId": "(O)369",
+									"MinStack": 5,
+								}
+							],
+							"MinutesUntilReady": 1750,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "{{i18n: MtVapiusCompostBin_InvalidCountFertiliser_Translated}}",
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_QualityFertiliser",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)369",
+									"RequiredCount": 5,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_DeluxeFertiliser",
+									"ItemId": "(O)919",
+									"MinStack": 5,
+								}
+							],
+							"MinutesUntilReady": 1750,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "{{i18n: MtVapiusCompostBin_InvalidCountFertiliser_Translated}}",
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_SpeedGro",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)465",
+									"RequiredCount": 5,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_DeluxeSpeedGro",
+									"ItemId": "(O)466",
+									"MinStack": 5,
+								}
+							],
+							"MinutesUntilReady": 1750,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "{{i18n: MtVapiusCompostBin_InvalidCountFertiliser_Translated}}",
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_DeluxeSpeedGro",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)466",
+									"RequiredCount": 5,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_HyperSpeedGro",
+									"ItemId": "(O)918",
+									"MinStack": 5,
+								}
+							],
+							"MinutesUntilReady": 1750,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "{{i18n: MtVapiusCompostBin_InvalidCountFertiliser_Translated}}",
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_RetainingSoil",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)370",
+									"RequiredCount": 5,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_DeluxeSpeedGro",
+									"ItemId": "(O)371",
+									"MinStack": 5,
+								}
+							],
+							"MinutesUntilReady": 1750,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "{{i18n: MtVapiusCompostBin_InvalidCountFertiliser_Translated}}",
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "Lumisteria.MtVapius_DeluxeRetainingSoil",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)371",
+									"RequiredCount": 5,
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "Lumisteria.MtVapius_HyperSpeedGro",
+									"ItemId": "(O)920",
+									"MinStack": 5,
+								}
+							],
+							"MinutesUntilReady": 1750,
+							"DaysUntilReady": -1,
+							"InvalidCountMessage": "{{i18n: MtVapiusCompostBin_InvalidCountFertiliser_Translated}}",
+							"RecalculateOnCollect": false
+						},
+					],
+					"InvalidItemMessage": "{{i18n: MtVapiusCompostBin_InvalidItem_Description_Translated}}",
+					"InvalidCountMessage": "[LocalizedText Strings\\StringsFromCSFiles:Object.cs.12777]",
+					"LoadEffects": [
+						{
+							"Sound": "select",
+							"Interval": 100,
+							"ShakeDuration": -1,
+						}
+					],
+					"AllowLoadWhenFull": false,
+					"WobbleWhileWorking": true,
+					"ShowNextIndexWhileWorking": false,
+					"ShowNextIndexWhenReady": false,
+					"IsIncubator": false,
+					"ReadyTimeModifiers": [
+						{
+							"Id": "IndoorPenalty",
+							"Condition": "LOCATION_IS_INDOORS Target",
+							"Modification": "Multiply",
+							"Amount": 2.0,
+						},
+					],
+				},
+			}
+		},
+		{
+			"LogName": "Editing Jeweler Workshop",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)Lumisteria.MtVapius_JewelerWorkshop", "AdditionalConsumedItems",
+			],
+			"Entries": {
+				
+						"Lumisteria.MtVapius_GoldBar":{
+							"ID":"Lumisteria.MtVapius_GoldBar",
+							"ItemID": "(O)336",
+							"RequiredCount": 1,
+							"InvalidCountMessage": "{{i18n: MtVapiusJewelerWorkshop_MissingGoldBar_Translated}}"
+						}
+			},
+			"When":{
+				"HasMod |contains=selph.ExtraMachineConfig": "false",
+						}
+		},
+		{
+			"LogName": "Editing Oil Maker",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)19",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_OilMakerOliveOil": {
+					"Id": "Lumisteria.MtVapius_OilMakerOliveOil",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Olive",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_ArtisanGoods_OliveOil",
+							"ItemId": "(O)Lumisteria.MtVapius_ArtisanGoods_OliveOil",
+						}
+					],
+					"MinutesUntilReady": 360,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_OilMakerVoidOliveOil": {
+					"Id": "Lumisteria.MtVapius_OilMakerVoidOliveOil",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_VoidOlive",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_ArtisanGoods_VoidOliveOil",
+							"ItemId": "(O)Lumisteria.MtVapius_ArtisanGoods_VoidOliveOil",
+						}
+					],
+					"MinutesUntilReady": 360,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_OilMakerOrangeBlossomWater": {
+					"Id": "Lumisteria.MtVapius_OilMakerOrangeBlossomWater",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_OrangeBlossom",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_ArtisanGoods_OrangeBlossomWater",
+							"ItemId": "(O)Lumisteria.MtVapius_ArtisanGoods_OrangeBlossomWater",
+						}
+					],
+					"MinutesUntilReady": 360,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_OilMakerSeaBuckthornBerryOil": {
+					"Id": "Lumisteria.MtVapius_OilMakerSeaBuckthornBerryOil",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_SeaBuckthornBerry",
+							"RequiredCount": 5,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_ArtisanGoods_SeaBuckthornBerryOil",
+							"ItemId": "(O)Lumisteria.MtVapius_ArtisanGoods_SeaBuckthornBerryOil",
+						}
+					],
+					"MinutesUntilReady": 360,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+			},
+		},
+		{
+			"LogName": "Editing Keg",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)12",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_KegBasalmicVinegar": {
+					"Id": "Lumisteria.MtVapius_KegBasalmicVinegar",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_ArtisanGoods_MoscoCotto",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_ArtisanGoods_BalsamicVinegar",
+							"ItemId": "(O)Lumisteria.MtVapius_ArtisanGoods_BalsamicVinegar",
+						}
+					],
+					"MinutesUntilReady": 10000,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_KegMyriadinTea": {
+					"Id": "Lumisteria.MtVapius_KegMyriadinTea",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_SweetMyriadin",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_ArtisanGoods_MyriadinTea",
+							"ItemId": "(O)Lumisteria.MtVapius_ArtisanGoods_MyriadinTea",
+							"MinStack": 3,
+							"MaxStack": 4,
+						}
+					],
+					"MinutesUntilReady": 2400,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+			},
+		},
+		{
+			"LogName": "Editing Loom",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)17",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_LoomSugar": {
+					"Id": "Lumisteria.MtVapius_LoomSugar",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_CloudFeather",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+							"Condition": null
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Sugar",
+							"ItemId": "245",
+							"MinStack": 5,
+							"MaxStack": 7,
+							"Quality": -1,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": [
+								{
+									"Id": "DoubleQuality",
+									"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.1\" \"ITEM_QUALITY Input 2 2, RANDOM 0.25\" \"ITEM_QUALITY Input 4 4, RANDOM 0.5\"",
+									"Modification": "Multiply",
+									"Amount": 2.0,
+									"RandomAmount": null
+								}
+							],
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": 240,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_LoomNightSilk": {
+					"Id": "Lumisteria.MtVapius_LoomNightSilk",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_NightMiscanthus",
+							"RequiredCount": 3,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_Fabric_NightSilk",
+							"ItemId": "(O)Lumisteria.MtVapius_Fabric_NightSilk",
+							"MinStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "DoubleQuality",
+									"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.05\" \"ITEM_QUALITY Input 2 2, RANDOM 0.1\" \"ITEM_QUALITY Input 4 4, RANDOM 0.25\"",
+									"Modification": "Multiply",
+									"Amount": 2.0,
+								},
+								{
+									"Id": "Lumisteria.MtVapius_BonusBatWings",
+									"Condition": "{{HasMod |contains=selph.ExtraMachineConfig}}, RANDOM 0.50",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+							
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)767",
+									"selph.ExtraMachineConfig.RequirementCount.1": "5",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusLoom_MissingBatWings_Translated}}",
+								  },
+						}
+					],
+					"MinutesUntilReady": 240,
+					"DaysUntilReady": -1,
+					"InvalidCountMessage": "{{i18n: MtVapiusLoom_InvalidCount_Miscanthus_Translated}}",
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_LoomNightSilkSilkFlower": {
+					"Id": "Lumisteria.MtVapius_LoomNightSilkSilkFlower",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_WoodSilkFlower",
+							"RequiredCount": 1,
+							"Condition": "{{HasMod |contains=selph.ExtraMachineConfig}}",
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_Fabric_NightSilk",
+							"ItemId": "(O)Lumisteria.MtVapius_Fabric_NightSilk",
+							"MinStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "DoubleQuality",
+									"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.05\" \"ITEM_QUALITY Input 2 2, RANDOM 0.1\" \"ITEM_QUALITY Input 4 4, RANDOM 0.25\"",
+									"Modification": "Multiply",
+									"Amount": 2.0,
+								}
+							],
+							
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)767",
+									"selph.ExtraMachineConfig.RequirementCount.1": "5",
+									"selph.ExtraMachineConfig.RequirementId.2": "(O)440",
+									"selph.ExtraMachineConfig.RequirementCount.2": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusLoom_MissingBatWingsWool_Translated}}",
+								  },
+						}
+					],
+					"MinutesUntilReady": 240,
+					"DaysUntilReady": -1,
+					"RecalculateOnCollect": false
+				},
+			},
+		},
+		{
+			"LogName": "Editing Charcoal Kiln",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)114",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_CharcoalKilnRules": {
+					"Id": "Lumisteria.MtVapius_CharcoalKilnRules",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_NightMiscanthus",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+							"Condition": null
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Coal",
+							"ItemId": "(O)382",
+							"MinStack": 4,
+							"MaxStack": 6,
+							"Quality": -1,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": [
+								{
+									"Id": "DoubleSilverQuality",
+									"Condition": "ITEM_QUALITY Input 1, !ITEM_QUALITY Input 2, RANDOM 0.1",
+									"Modification": "Multiply",
+									"Amount": 2.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "DoubleGoldQuality",
+									"Condition": "ITEM_QUALITY Input 2, !ITEM_QUALITY Input 3, RANDOM 0.25",
+									"Modification": "Multiply",
+									"Amount": 2.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "DoubleIridiumQuality",
+									"Condition": "ITEM_QUALITY Input 4, !ITEM_QUALITY Input 5, RANDOM 0.5",
+									"Modification": "Multiply",
+									"Amount": 2.0,
+									"RandomAmount": null
+								}
+							],
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": 240,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+			},
+		},
+		{
+			"LogName": "Editing Seed Maker",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)25",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_SeedMaker_CometRoots": {
+					"Id": "Lumisteria.MtVapius_SeedMaker_CometRoots",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_CometRoots",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_GalaxySeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_GalaxySeeds",
+							"Condition": "RANDOM 0.05",
+							"MinStack": 1,
+							"MaxStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "KnownCrop",
+									"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any Lumisteria.MtVapius_GalaxyFruit 1",
+									"Modification": "Add",
+									"Amount": 3.0,
+								},
+							],
+						},
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_CometRootsSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_CometRootsSeeds",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"StackModifiers": [
+								{
+									"Id": "ImprovedSeedMaking",
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SeedMakerMail",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 20,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_SeedMaker_StarShapedFlower": {
+					"Id": "Lumisteria.MtVapius_SeedMaker_StarShapedFlower",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_StarShapedFlower",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_CometRootsSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_CometRootsSeeds",
+							"Condition": "RANDOM 0.05",
+							"MinStack": 1,
+							"MaxStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "KnownCrop",
+									"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any Lumisteria.MtVapius_CometRoots 1",
+									"Modification": "Add",
+									"Amount": 3.0,
+								},
+							],
+						},
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_StarShapedFlowerSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_StarShapedFlowerSeeds",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"StackModifiers": [
+								{
+									"Id": "ImprovedSeedMaking",
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SeedMakerMail",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 20,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_SeedMaker_ConstellatedWatermelon": {
+					"Id": "Lumisteria.MtVapius_SeedMaker_ConstellatedWatermelon",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_ConstellatedWatermelon",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_StarShapedFlowerSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_StarShapedFlowerSeeds",
+							"Condition": "RANDOM 0.08",
+							"MinStack": 1,
+							"MaxStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "KnownCrop",
+									"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any Lumisteria.MtVapius_StarShapedFlower 1",
+									"Modification": "Add",
+									"Amount": 3.0,
+								},
+							],
+						},
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_ConstellatedWatermelonSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_ConstellatedWatermelonSeeds",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"StackModifiers": [
+								{
+									"Id": "ImprovedSeedMaking",
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SeedMakerMail",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 20,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_SeedMaker_Cosmos": {
+					"Id": "Lumisteria.MtVapius_SeedMaker_Cosmos",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Cosmos",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_ConstellatedWatermelonSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_ConstellatedWatermelonSeeds",
+							"Condition": "RANDOM 0.1",
+							"MinStack": 1,
+							"MaxStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "KnownCrop",
+									"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any Lumisteria.MtVapius_StarShapedFlower 1",
+									"Modification": "Add",
+									"Amount": 3.0,
+								},
+							],
+						},
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_CosmosSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_CosmosSeeds",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"StackModifiers": [
+								{
+									"Id": "ImprovedSeedMaking",
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SeedMakerMail",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 20,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_SeedMaker_CloudFeather": {
+					"Id": "Lumisteria.MtVapius_SeedMaker_CloudFeather",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_CloudFeather",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_CosmosSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_CosmosSeeds",
+							"Condition": "RANDOM 0.1",
+							"MinStack": 1,
+							"MaxStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "KnownCrop",
+									"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any Lumisteria.MtVapius_StarShapedFlower 1",
+									"Modification": "Add",
+									"Amount": 3.0,
+								},
+							],
+						},
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_CloudFeatherSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_CloudFeatherSeeds",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"StackModifiers": [
+								{
+									"Id": "ImprovedSeedMaking",
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SeedMakerMail",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 20,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_SeedMaker_NightMiscanthus": {
+					"Id": "Lumisteria.MtVapius_SeedMaker_NightMiscanthus",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_NightMiscanthus",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_CloudFeatherSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_CloudFeatherSeeds",
+							"Condition": "RANDOM 0.1",
+							"MinStack": 1,
+							"MaxStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "KnownCrop",
+									"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any Lumisteria.MtVapius_CloudFeather 1",
+									"Modification": "Add",
+									"Amount": 3.0,
+								},
+							],
+						},
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_NightMiscanthusSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_NightMiscanthusSeeds",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"StackModifiers": [
+								{
+									"Id": "ImprovedSeedMaking",
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SeedMakerMail",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 20,
+					"DaysUntilReady": -1,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_SeedMaker_MoonPods": {
+					"Id": "Lumisteria.MtVapius_SeedMaker_MoonPods",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_MoonPods",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_NightMiscanthusSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_NightMiscanthusSeeds",
+							"Condition": "RANDOM 0.05",
+							"MinStack": 1,
+							"MaxStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "KnownCrop",
+									"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any Lumisteria.MtVapius_NightMiscanthus 1",
+									"Modification": "Add",
+									"Amount": 3.0,
+								},
+							],
+						},
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_MoonPodsSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_MoonPodsSeeds",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"StackModifiers": [
+								{
+									"Id": "ImprovedSeedMaking",
+									"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SeedMakerMail",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 20,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_SeedMaker_PixieBell": {
+					"Id": "Lumisteria.MtVapius_SeedMaker_PixieBell",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_PixieBell",
+							"RequiredCount": 3,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_PixieBellSeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_PixieBellSeeds",
+							"MinStack": 4,
+							"MaxStack": 6,
+						},
+					],
+					"MinutesUntilReady": 20,
+					"DaysUntilReady": -1,
+					"InvalidCountMessage": "{{i18n: MtVapiusSeedMaker_InvalidCount_Translated}}",
+					"RecalculateOnCollect": false
+				},
+			},
+			"MoveEntries": [
+				{
+					"ID": "Lumisteria.MtVapius_SeedMaker_MoonPods",
+					"BeforeId": "Default"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_SeedMaker_NightMiscanthus",
+					"BeforeId": "Lumisteria.MtVapius_SeedMaker_MoonPods"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_SeedMaker_CloudFeather",
+					"BeforeId": "Lumisteria.MtVapius_SeedMaker_NightMiscanthus"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_SeedMaker_Cosmos",
+					"BeforeId": "Lumisteria.MtVapius_SeedMaker_CloudFeather"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_SeedMaker_ConstellatedWatermelon",
+					"BeforeId": "Lumisteria.MtVapius_SeedMaker_Cosmos"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_SeedMaker_StarShapedFlower",
+					"BeforeId": "Lumisteria.MtVapius_SeedMaker_ConstellatedWatermelon"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_SeedMaker_CometRoots",
+					"BeforeId": "Lumisteria.MtVapius_SeedMaker_StarShapedFlower"
+				},
+			]
+		},
+		{
+			"LogName": "Editing Cheese press",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)16",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_CheesePressButter": {
+					"Id": "Lumisteria.MtVapius_CheesePressButter",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Cream",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_Butter",
+							"ItemId": "(O)Lumisteria.MtVapius_Butter",
+							"MinStack": 2,
+							"MaxStack": 3,
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_CheesePressWoodgoatCheese": {
+					"Id": "Lumisteria.MtVapius_CheesePressWoodgoatCheese",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_WoodgoatMushroom",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "GoatCheese",
+							"ItemId": "(O)426",
+							"MinStack": 1,
+							"MaxStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "IncreaseSilverQuality",
+									"Condition": "ITEM_QUALITY Input 1, !ITEM_QUALITY Input 2, RANDOM 0.1",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+								{
+									"Id": "IncreaseGoldQuality",
+									"Condition": "ITEM_QUALITY Input 2, !ITEM_QUALITY Input 3, RANDOM 0.25",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+								{
+									"Id": "DoubleIridiumQuality",
+									"Condition": "ITEM_QUALITY Input 4, !ITEM_QUALITY Input 5, RANDOM 0.5",
+									"Modification": "Add",
+									"Amount": 1.0,
+								}
+							],
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_CheesePressEweMilk": {
+					"Id": "Lumisteria.MtVapius_CheesePressEweMilk",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_EweMilk",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_EweCheese",
+							"ItemId": "(O)Lumisteria.MtVapius_EweCheese",
+							"MinStack": 1,
+							"MaxStack": 1,
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.None",
+									"Amount": 0,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 0"
+								},
+								{
+									"Id": "Kedi.VPP.Pastoralism.Silver",
+									"Amount": 1,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 1"
+								},
+								{
+									"Id": "Kedi.VPP.Pastoralism.Gold",
+									"Amount": 2,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 2"
+								},
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_CheesePressEweMilkLarge": {
+					"Id": "Lumisteria.MtVapius_CheesePressEweMilkLarge",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_EweMilkLarge",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_EweCheese",
+							"ItemId": "(O)Lumisteria.MtVapius_EweCheese",
+							"MinStack": 1,
+							"Quality": 2,
+							"StackModifiers": [
+								{
+									"Id": "IncreaseSilverQuality",
+									"Condition": "ITEM_QUALITY Input 1, !ITEM_QUALITY Input 2, RANDOM 0.1",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "IncreaseGoldQuality",
+									"Condition": "ITEM_QUALITY Input 2, !ITEM_QUALITY Input 3, RANDOM 0.25",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+								{
+									"Id": "DoubleIridiumQuality",
+									"Condition": "ITEM_QUALITY Input 4, RANDOM 0.5",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+								{
+									"Id": "Kedi.VPP.Bio-Engineering",
+									"Amount": 2.0,
+									"Modification": "Add",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Bio-Engineering Received"
+								}
+							],
+							"StackModifierMode": "Stack",
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								}
+							],
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_CheesePressEweMilkExtraLarge": {
+					"Id": "Lumisteria.MtVapius_CheesePressEweMilkExtraLarge",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_EweMilkExtraLarge",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_EweCheese",
+							"ItemId": "(O)Lumisteria.MtVapius_EweCheese",
+							"MinStack": 2,
+							"Quality": 2,
+							"StackModifiers": [
+								{
+									"Id": "IncreaseSilverQuality",
+									"Condition": "ITEM_QUALITY Input 1, !ITEM_QUALITY Input 2, RANDOM 0.1",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "IncreaseGoldQuality",
+									"Condition": "ITEM_QUALITY Input 2, !ITEM_QUALITY Input 3, RANDOM 0.25",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "DoubleIridiumQuality",
+									"Condition": "ITEM_QUALITY Input 4, RANDOM 0.5",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "Kedi.VPP.Bio-Engineering",
+									"Amount": 2.0,
+									"Modification": "Add",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Bio-Engineering Received"
+								}
+							],
+							"StackModifierMode": "Stack",
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								}
+							],
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_CheesePressGoatMilkExtraLarge": {
+					"Id": "Lumisteria.MtVapius_CheesePressGoatMilkExtraLarge",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_GoatMilkExtraLarge",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "GoatCheese",
+							"ItemId": "(O)426",
+							"MinStack": 2,
+							"Quality": 2,
+							"StackModifiers": [
+								{
+									"Id": "IncreaseSilverQuality",
+									"Condition": "ITEM_QUALITY Input 1, !ITEM_QUALITY Input 2, RANDOM 0.1",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "IncreaseGoldQuality",
+									"Condition": "ITEM_QUALITY Input 2, !ITEM_QUALITY Input 3, RANDOM 0.25",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "DoubleIridiumQuality",
+									"Condition": "ITEM_QUALITY Input 4, RANDOM 0.5",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "Kedi.VPP.Bio-Engineering",
+									"Amount": 2.0,
+									"Modification": "Add",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Bio-Engineering Received"
+								}
+							],
+							"StackModifierMode": "Stack",
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								}
+							],
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_CheesePressMilkExtraLarge": {
+					"Id": "Lumisteria.MtVapius_CheesePressMilkExtraLarge",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_MilkExtraLarge",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Cheese",
+							"ItemId": "(O)424",
+							"MinStack": 2,
+							"Quality": 2,
+							"StackModifiers": [
+								{
+									"Id": "IncreaseSilverQuality",
+									"Condition": "ITEM_QUALITY Input 1, !ITEM_QUALITY Input 2, RANDOM 0.1",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "IncreaseGoldQuality",
+									"Condition": "ITEM_QUALITY Input 2, !ITEM_QUALITY Input 3, RANDOM 0.25",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								},
+								{
+									"Id": "DoubleIridiumQuality",
+									"Condition": "ITEM_QUALITY Input 4, !ITEM_QUALITY Input 5, RANDOM 0.5",
+									"Modification": "Add",
+									"Amount": 1.0,
+									"RandomAmount": null
+								}
+							],
+							"StackModifierMode": "Stack",
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								}
+							],
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+			},
+			/*"MoveEntries": [
+				{
+					"ID": "Lumisteria.MtVapius_CheesePressRules",
+					"BeforeId": "Default_GoatMilk"
+				}
+			]*/
+		},
+		{
+			"LogName": "Editing Mayonnaise Machine",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_MayonnaiseMachineGooseMayoRules": {
+					"Id": "Lumisteria.MtVapius_MayonnaiseMachineGooseMayoRules",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_GooseEgg",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_GooseMayonnaise",
+							"ItemId": "(O)Lumisteria.MtVapius_GooseMayonnaise",
+						}
+					],
+					"MinutesUntilReady": 180,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_MayonnaiseMachineStellarGooseMayoRules": {
+					"Id": "Lumisteria.MtVapius_MayonnaiseMachineStellarGooseMayoRules",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_StellarGooseEgg",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_StellarGooseMayonnaise",
+							"ItemId": "(O)Lumisteria.MtVapius_StellarGooseMayonnaise",
+						}
+					],
+					"MinutesUntilReady": 180,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_MayonnaiseMachineSpeckledFowlMayoRules": {
+					"Id": "Lumisteria.MtVapius_MayonnaiseMachineSpeckledFowlMayoRules",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_SpeckledFowlEgg",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_SpeckledFowlMayonnaise",
+							"ItemId": "(O)Lumisteria.MtVapius_SpeckledFowlMayonnaise",
+						}
+					],
+					"MinutesUntilReady": 180,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_MayonnaiseMachineSpeckledFowlVoidMayoRules": {
+					"Id": "Lumisteria.MtVapius_MayonnaiseMachineSpeckledFowlVoidMayoRules",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_SpeckledFowlVoidEgg",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_SpeckledFowlVoidMayonnaise",
+							"ItemId": "(O)Lumisteria.MtVapius_SpeckledFowlVoidMayonnaise",
+						}
+					],
+					"MinutesUntilReady": 180,
+					"DaysUntilReady": -1,
+				},
+			},
+			"MoveEntries": [
+				{
+					"ID": "Lumisteria.MtVapius_MayonnaiseMachineGooseMayoRules",
+					"BeforeId": "Default_LargeEgg"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_MayonnaiseMachineStellarGooseMayoRules",
+					"BeforeId": "Lumisteria.MtVapius_MayonnaiseMachineGooseMayoRules"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_MayonnaiseMachineSpeckledFowlMayoRules",
+					"BeforeId": "Lumisteria.MtVapius_MayonnaiseMachineStellarGooseMayoRules"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_MayonnaiseMachineSpeckledFowlVoidMayoRules",
+					"BeforeId": "Lumisteria.MtVapius_MayonnaiseMachineSpeckledFowlMayoRules"
+				},
+			]
+		},
+		{
+			"LogName": "Editing Preserve Jar",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)15",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_PreserveJarCreamRules": {
+					"Id": "Lumisteria.MtVapius_PreserveJarCreamRules",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)184",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Cream",
+							"ItemId": "(O)Lumisteria.MtVapius_Cream",
+							"MinStack": 1,
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_PreserveJarCreamRules2": {
+					"Id": "Lumisteria.MtVapius_PreserveJarCreamRules2",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)186",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Cream",
+							"ItemId": "(O)Lumisteria.MtVapius_Cream",
+							"MinStack": 1,
+							"MaxStack": 2,
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_PreserveJarCreamRules3": {
+					"Id": "Lumisteria.MtVapius_PreserveJarCreamRules3",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)Lumisteria.MtVapius_MilkExtraLarge",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Cream",
+							"ItemId": "(O)Lumisteria.MtVapius_Cream",
+							"MinStack": 2,
+							"MaxStack": 3,
+						}
+					],
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_PreserveJarWhiteVendaceRoeRules": {
+					"Id": "Lumisteria.MtVapius_PreserveJarWhiteVendaceRoeRules",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)812",
+							"RequiredTags": [
+								"preserve_sheet_index_lumisteria.mtvapius_whitevendace"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_ArtisanGoods_VendaceCaviar",
+							"ItemId": "(O)Lumisteria.MtVapius_ArtisanGoods_VendaceCaviar",
+							"MinStack": 1,
+						}
+					],
+					"MinutesUntilReady": 4000,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_PreserveJarTapenadeRules": {
+					"Id": "Lumisteria.MtVapius_PreserveJarTapenadeRules",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)Lumisteria.MtVapius_Olive",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Cooking_Tapenade",
+							"ItemId": "(O)Lumisteria.MtVapius_Cooking_Tapenade",
+							"MinStack": 1,
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_BonusAnchovy",
+									"Condition": "{{HasMod |contains=selph.ExtraMachineConfig}}",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+							
+								  "CustomData": {
+									"selph.ExtraMachineConfig.RequirementId.1": "(O)129",
+									"selph.ExtraMachineConfig.RequirementCount.1": "1",
+									"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: MtVapiusPreserveJar_MissingAnchovy_Translated}}",
+								  },
+						}
+					],
+					"MinutesUntilReady": 4000,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_PreserveJarTapenadeVoidOliveRules": {
+					"Id": "Lumisteria.MtVapius_PreserveJarTapenadeVoidOliveRules",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)Lumisteria.MtVapius_VoidOlive",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Cooking_Tapenade",
+							"ItemId": "(O)Lumisteria.MtVapius_Cooking_Tapenade",
+							"MinStack": 3,
+							"MaxStack": 4,
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_BonusAnchovy",
+									"Condition": "{{HasMod |contains=selph.ExtraMachineConfig}}",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						}
+					],
+					"MinutesUntilReady": 4000,
+					"DaysUntilReady": -1,
+				},
+			},
+			"MoveEntries": [
+				/*{
+					"ID": "Lumisteria.MtVapius_PreserveJarCreamRules2",
+					"BeforeId": "Lumisteria.MtVapius_PreserveJarCreamRules"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_PreserveJarCreamRules",
+					"BeforeId": "Default_SturgeonRoe"
+				},*/
+				{
+					"ID": "Lumisteria.MtVapius_PreserveJarTapenadeRules",
+					"BeforeId": "Default_Pickled"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_PreserveJarTapenadeVoidOliveRules",
+					"BeforeId": "Default_Pickled"
+				},
+				{
+					"ID": "Lumisteria.MtVapius_PreserveJarWhiteVendaceRoeRules",
+					"BeforeId": "Default_SturgeonRoe"
+				}
+			]
+		},
+		{
+			"LogName": "Editing RecyclingMachine",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)20",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_Recycling_Trash_BrokenBottle": {
+					"Id": "Lumisteria.MtVapius_Recycling_Trash_BrokenBottle",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)Lumisteria.MtVapius_Trash_BrokenBottle",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_VeryRareDust",
+							"Condition": "RANDOM 0.03",
+							"ItemId": "(O)872",
+							"MinStack": 1,
+						},
+						{
+							"Id": "Lumisteria.MtVapius_GlassShardMore",
+							"Condition": "RANDOM 0.1",
+							"ItemId": "(O)118",
+							"MinStack": 2,
+							"MaxStack": 4,
+						},
+						{
+							"Id": "Lumisteria.MtVapius_PolishedQuartz",
+							"Condition": "RANDOM 0.2",
+							"ItemId": "(O)338",
+							"MinStack": 2,
+							"MaxStack": 8,
+						},
+						{
+							"Id": "Lumisteria.MtVapius_GlassShard",
+							"ItemId": "(O)118",
+							"MinStack": 1,
+							"MaxStack": 2,
+						},
+					],
+					"MinutesUntilReady": 60,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_RecyclingMachine_Cog": {
+					"Id": "Lumisteria.MtVapius_RecyclingMachine_Cog",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)112",
+							"RequiredCount": 1,
+							"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_CogsMail"
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Treasures_EfficientCog",
+							"ItemId": "(O)Lumisteria.MtVapius_Treasures_EfficientCog",
+							"MinStack": 1,
+							"MaxStack": 1,
+						},
+					],
+					"MinutesUntilReady": 60,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_RecyclingMachine_Better_Trash": {
+					"Id": "Lumisteria.MtVapius_RecyclingMachine_Better_Trash",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_HeliaRecyclingAdviceMail",
+							"RequiredItemId": "(O)168",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "335",
+							"Condition": "RANDOM 0.1",
+							"ItemId": "(O)382",
+							"MinStack": 1,
+							"MaxStack": 2,
+						},
+						{
+							"Id": "384",
+							"Condition": "RANDOM 0.2",
+							"ItemId": "(O)384",
+							"MinStack": 2,
+							"MaxStack": 8,
+						},
+						{
+							"Id": "382",
+							"Condition": "RANDOM 0.2",
+							"ItemId": "(O)382",
+							"MinStack": 2,
+							"MaxStack": 8,
+						},
+						{
+							"Id": "380",
+							"Condition": "RANDOM 0.2",
+							"ItemId": "(O)380",
+							"MinStack": 2,
+							"MaxStack": 8,
+						},
+						{
+							"Id": "390",
+							"ItemId": "(O)390",
+							"MinStack": 2,
+							"MaxStack": 8,
+						}
+					],
+					"MinutesUntilReady": 60,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_RecyclingMachine_Better_Driftwood": {
+					"Id": "Lumisteria.MtVapius_RecyclingMachine_Better_Driftwood",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_HeliaRecyclingAdviceMail",
+							"RequiredItemId": "(O)169",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Amber",
+							"Condition": "RANDOM 0.1",
+							"ItemId": "(O)Lumisteria.MtVapius_Amber",
+							"MinStack": 1,
+							"MaxStack": 2,
+						},
+						{
+							"Id": "Hardwood",
+							"Condition": "RANDOM 0.2",
+							"ItemId": "(O)709",
+							"MinStack": 2,
+							"MaxStack": 8,
+						},
+						{
+							"Id": "382",
+							"Condition": "RANDOM 0.2",
+							"ItemId": "(O)382",
+							"MinStack": 2,
+							"MaxStack": 8,
+						},
+						{
+							"Id": "388",
+							"ItemId": "(O)388",
+							"MinStack": 4,
+							"MaxStack": 10,
+						}
+					],
+					"MinutesUntilReady": 60,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_RecyclingMachine_Better_BrokenGlasses": {
+					"Id": "Lumisteria.MtVapius_RecyclingMachine_Better_BrokenGlasses",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_HeliaRecyclingAdviceMail",
+							"RequiredItemId": "(O)170",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Iridium Ore",
+							"ItemId": "(O)386",
+							"Condition": "RANDOM 0.05",
+							"MinStack": 2,
+							"MaxStack": 3,
+						},
+						{
+							"Id": "Gold Ore",
+							"ItemId": "(O)384",
+							"Condition": "RANDOM 0.2",
+							"MinStack": 4,
+							"MaxStack": 5,
+						},
+						{
+							"Id": "Glass Shard",
+							"ItemId": "(O)118",
+							"Condition": "RANDOM 0.08",
+							"MinStack": 6,
+							"MaxStack": 8,
+						},
+						{
+							"Id": "RefinedQuartz",
+							"ItemId": "(O)338",
+							"MinStack": 2,
+							"MaxStack": 3,
+						}
+					],
+					"MinutesUntilReady": 60,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_RecyclingMachine_Better_BrokenCD": {
+					"Id": "Lumisteria.MtVapius_RecyclingMachine_Better_CD",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_HeliaRecyclingAdviceMail",
+							"RequiredItemId": "(O)171",
+							"RequiredTags": null,
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Iridium Ore",
+							"ItemId": "(O)386",
+							"Condition": "RANDOM 0.05",
+							"MinStack": 2,
+							"MaxStack": 3,
+						},
+						{
+							"Id": "Rare Disc",
+							"ItemId": "(O)108",
+							"Condition": "RANDOM 0.08",
+							"MinStack": 2,
+							"MaxStack": 3,
+						},
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "RefinedQuartz",
+							"ItemId": "(O)338",
+							"MinStack": 2,
+							"MaxStack": 3,
+						}
+					],
+					"MinutesUntilReady": 60,
+					"DaysUntilReady": -1,
+				},
+				"Lumisteria.MtVapius_RecyclingMachine_Better_SoggyNewspaper": {
+					"Id": "Lumisteria.MtVapius_RecyclingMachine_Better_SoggyNewspaper",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_HeliaRecyclingAdviceMail",
+							"RequiredItemId": "(O)172",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Ink",
+							"Condition": "RANDOM 0.05",
+							"ItemId": "(O)814",
+							"MinStack": 1,
+							"MaxStack": 1,
+						},
+						{
+							"Id": "Cloth",
+							"Condition": "RANDOM 0.1",
+							"ItemId": "(O)428",
+							"MinStack": 1,
+							"MaxStack": 3,
+						},
+						{
+							"Id": "DwarfScroll",
+							"Condition": "RANDOM 0.1, !PLAYER_HAS_MET Any Dwarf",
+							"RandomItemId": [
+								"(O)96",
+								"(O)97",
+								"(O)98",
+								"(O)99",
+							],
+							"MinStack": 1,
+							"MaxStack": -1,
+						},
+						{
+							"Id": "Torch",
+							"ItemId": "(O)93",
+							"MinStack": 6,
+							"MaxStack": -1,
+							"Quality": -1,
+						}
+					],
+					"MinutesUntilReady": 60,
+					"DaysUntilReady": -1,
+				},
+				/*"Lumisteria.MtVapius_RecyclingMachine_Torch": {
+					"Id": "Lumisteria.MtVapius_RecyclingMachine_Torch",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_HeliaRecyclingAdvice",
+							"RequiredItemId": "(O)93",
+							"RequiredCount": 2,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Diamond",
+							"Condition": "RANDOM 0.002",
+							"ItemId": "(O)72",
+							"MinStack": 1,
+							"MaxStack": -1,
+						},
+						{
+							"Id": "Cloth",
+							"Condition": "RANDOM 0.02",
+							"ItemId": "(O)428",
+							"MinStack": 1,
+							"MaxStack": -1,
+						},
+						{
+							"Id": "Solar Essence",
+							"Condition": "RANDOM 0.1",
+							"ItemId": "(O)768",
+							"MinStack": 1,
+							"MaxStack": -1,
+						},
+						{
+							"Id": "Hardwood",
+							"Condition": "RANDOM 0.2",
+							"ItemId": "(O)709",
+							"MinStack": 2,
+							"MaxStack": 3,
+						},
+						{
+							"Id": "Coal",
+							"ItemId": "(O)382",
+							"MinStack": 3,
+							"MaxStack": 5,
+							"Quality": -1,
+						}
+					],
+					"MinutesUntilReady": 60,
+					"DaysUntilReady": -1,
+				},*/
+				"Lumisteria.MtVapius_RecyclingWeirdCoins": {
+					"Id": "Lumisteria.MtVapius_RecyclingWeirdCoins",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_WeirdCoins",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Gold Ore",
+							"ItemId": "(O)384",
+							"Condition": "RANDOM 0.1",
+							"MinStack": 2,
+							"MaxStack": 3,
+						},
+						{
+							"Id": "Iron Ore",
+							"ItemId": "(O)380",
+							"MinStack": 3,
+							"MaxStack": 4,
+						},
+					],
+					"MinutesUntilReady": 60,
+					"DaysUntilReady": -1,
+				},
+			},
+			"MoveEntries": [
+				{
+					"ID": "Lumisteria.MtVapius_RecyclingMachine_Better_Driftwood",
+					"BeforeId": "Default_Trash",
+				},
+				{
+					"ID": "Lumisteria.MtVapius_RecyclingMachine_Better_Trash",
+					"BeforeId": "Lumisteria.MtVapius_RecyclingMachine_Better_Driftwood",
+				},
+				{
+					"ID": "Lumisteria.MtVapius_RecyclingMachine_Better_BrokenGlasses",
+					"BeforeId": "Lumisteria.MtVapius_RecyclingMachine_Better_Trash",
+				},
+				{
+					"ID": "Lumisteria.MtVapius_RecyclingMachine_Better_CD",
+					"BeforeId": "Lumisteria.MtVapius_RecyclingMachine_Better_BrokenGlasses",
+				},
+				{
+					"ID": "Lumisteria.MtVapius_RecyclingMachine_Better_SoggyNewspaper",
+					"BeforeId": "Lumisteria.MtVapius_RecyclingMachine_Better_CD",
+				},
+				/*{
+					"ID": "Lumisteria.MtVapius_RecyclingMachine_Torch",
+					"BeforeId": "Lumisteria.MtVapius_RecyclingMachine_Better_SoggyNewspaper",
+				}*/
+			]
+		},
+		{
+			"LogName": "Editing Cask",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)163",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_Cheeses": {
+					"Id": "Lumisteria.MtVapius_Cheeses",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"mt_vapius_cheese"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+							"Id": "Lumisteria.MtVapius_Cheeses",
+						}
+					],
+					"MinutesUntilReady": -1,
+					"DaysUntilReady": -1,
+					"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_CaskBalsamicVinegar": {
+					"Id": "Lumisteria.MtVapius_CaskBalsamicVinegar",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_ArtisanGoods_BalsamicVinegar",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+							"Id": "Lumisteria.MtVapius_CaskBalsamicVinegar",
+						}
+					],
+					"MinutesUntilReady": -1,
+					"DaysUntilReady": -1,
+					"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+			},
+		},
+		{
+			"LogName": "SeedChange",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)25",
+				"OutputRules",
+				"Default",
+				"OutputItem",
+				"Default",
+				"StackModifiers"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_ImprovedSeedMaking": {
+					"Id": "Lumisteria.MtVapius_ImprovedSeedMaking",
+					"Condition": "ITEM_CONTEXT_TAG Input mt_vapius", //PLAYER_HAS_MAIL Any Lumisteria.MtVapius_SeedMakerMail,
+					"Modification": "Add",
+					"Amount": 1.0,
+				},
+			},
+		},
+		{
+			"LogName": "Editing Smoker",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)FishSmoker",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_SmokerCheese": {
+					"Id": "Lumisteria.MtVapius_SmokerCheese",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)424",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_Embertin",
+							"ItemId": "(O)Lumisteria.MtVapius_Embertin",
+						}
+					],
+					"MinutesUntilReady": 50,
+				},
+				"Lumisteria.MtVapius_SmokerGoatCheese": {
+					"Id": "Lumisteria.MtVapius_SmokerGoatCheese",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)426",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_SmokedGoatCheese",
+							"ItemId": "(O)Lumisteria.MtVapius_SmokedGoatCheese"
+						}
+					],
+					"MinutesUntilReady": 50,
+				},
+				"Lumisteria.MtVapius_SmokerEweCheese": {
+					"Id": "Lumisteria.MtVapius_SmokerEweCheese",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)Lumisteria.MtVapius_EweCheese",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_AshgourdCheese",
+							"ItemId": "(O)Lumisteria.MtVapius_AshgourdCheese",
+						}
+					],
+					"MinutesUntilReady": 50,
+				},
+			},
+		},
+		{
+			"LogName": "Editing Dehydrator",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_Dehydrator_SunGrape": {
+					"Id": "Lumisteria.MtVapius_Dehydrator_SunGrape",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)Lumisteria.MtVapius_WhiteGrape",
+							"RequiredCount": 5,
+						}
+					],
+					"UseFirstValidOutput": true,
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_SunGrape",
+							"ItemId": "(O)Lumisteria.MtVapius_SunGrape",
+							"MinStack": 3,
+							"MaxStack": 4,
+						}
+					],
+					"MinutesUntilReady": 1750,
+				},
+			},
+			"MoveEntries": [
+				{
+					"ID": "Lumisteria.MtVapius_Dehydrator_SunGrape",
+					"BeforeId": "DriedFruit"
+				},
+			]
+		},
+		{
+			"LogName": "TimeChange",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)21",
+				"ReadyTimeModifiers"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_Amber": {
+					"Id": "Lumisteria.MtVapius_Amber",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Amber",
+					"Modification": "Set",
+					"Amount": 1400.0,
+				},
+				"Lumisteria.MtVapius_AmberFern": {
+					"Id": "Lumisteria.MtVapius_AmberFern",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_AmberFern",
+					"Modification": "Set",
+					"Amount": 9000.0,
+				},
+				"Lumisteria.MtVapius_Demantoide": {
+					"Id": "Lumisteria.MtVapius_Demantoide",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Demantoide",
+					"Modification": "Set",
+					"Amount": 2280.0,
+				},
+				"Lumisteria.MtVapius_Carnelian": {
+					"Id": "Lumisteria.MtVapius_Carnelian",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Carnelian",
+					"Modification": "Set",
+					"Amount": 3960.0,
+				},
+				"Lumisteria.MtVapius_Turquoise": {
+					"Id": "Lumisteria.MtVapius_Turquoise",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Turquoise",
+					"Modification": "Set",
+					"Amount": 5400.0,
+				},
+				"Lumisteria.MtVapius_Garnet": {
+					"Id": "Lumisteria.MtVapius_Garnet",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Garnet",
+					"Modification": "Set",
+					"Amount": 6600.0,
+				},
+				"Lumisteria.MtVapius_Morganite": {
+					"Id": "Lumisteria.MtVapius_Morganite",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Morganite",
+					"Modification": "Set",
+					"Amount": 6900.0,
+				},
+				"Lumisteria.MtVapius_Heliodor": {
+					"Id": "Lumisteria.MtVapius_Heliodor",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Heliodor",
+					"Modification": "Set",
+					"Amount": 7200.0,
+				},
+				"Lumisteria.MtVapius_Labradorite": {
+					"Id": "Lumisteria.MtVapius_Labradorite",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Labradorite",
+					"Modification": "Set",
+					"Amount": 7200.0,
+				},
+				"Lumisteria.MtVapius_VoidDiamond": {
+					"Id": "Lumisteria.MtVapius_VoidDiamond",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_VoidDiamond",
+					"Modification": "Set",
+					"Amount": 12000.0,
+				},
+				"Lumisteria.MtVapius_Tourmaline": {
+					"Id": "Lumisteria.MtVapius_Tourmaline",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Tourmaline",
+					"Modification": "Set",
+					"Amount": 6700.0,
+				},
+				"Lumisteria.MtVapius_Larimar": {
+					"Id": "Lumisteria.MtVapius_Larimar",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_Larimar",
+					"Modification": "Set",
+					"Amount": 6800.0,
+				},
+				"Lumisteria.MtVapius_BlueAgathe": {
+					"Id": "Lumisteria.MtVapius_BlueAgathe",
+					"Condition": "ITEM_ID Target (O)Lumisteria.MtVapius_BlueAgathe",
+					"Modification": "Set",
+					"Amount": 3000.0,
+				},
+			},
+		},
+		{
+			"LogName": "Editing KitchenMortar",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)wildflour.gourmetpantry_KitchenMortar",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_KitchenMortarCloudFeather": {
+					"Id": "Lumisteria.MtVapius_KitchenMortarCloudFeather",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_CloudFeather",
+							"RequiredCount": 1,
+						}
+					],
+                    "OutputItem": [
+                        {
+                            "Id": "wildflour.gourmetpantry_confectioners_sugar",
+                            "ItemId": "(O)wildflour.gourmetpantry_confectioners_sugar",
+                            "CopyQuality":true,
+							"MinStack": 6,
+							"MaxStack": 8,
+                        }
+                    ],
+                    "MinutesUntilReady": 20
+				},
+			},
+				"When": {
+					"HasMod |contains=wildflour.gourmetpantry": "true"
+				},
+				"Priority":"Late",
+		},
+		{
+			"LogName": "Editing SyrupMaker",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)wildflour.gourmetpantry_SyrupMaker",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_SyrupMakerCloudFeather": {
+					"Id": "Lumisteria.MtVapius_SyrupMakerCloudFeather",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_CloudFeather",
+							"RequiredCount": 1,
+						}
+					],
+                    "OutputItem": [
+                        {
+                            "Id": "wildflour.gourmetpantry_simple_syrup",
+                            "ItemId": "(O)wildflour.gourmetpantry_simple_syrup",
+                            "CopyQuality":true,
+							"MinStack": 2,
+							"MaxStack": 3,
+                        }
+                    ],
+                    "MinutesUntilReady": 20
+				},
+			},
+				"When": {
+					"HasMod |contains=wildflour.gourmetpantry": "true"
+				},
+				"Priority":"Late",
+			"MoveEntries": [
+				{
+					"ID": "Lumisteria.MtVapius_SyrupMakerCloudFeather",
+					"BeforeId": "wildflour.gourmetpantry_fruit_syrup"
+				},
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)miru.forestamber_ResinCraftingBench",
+				"OutputRules"
+			],
+			"Entries": {
+				"Lumisteria.MtVapius_AmberLiquidResin": {
+					"Id": "Lumisteria.MtVapius_AmberLiquidResin",
+					"Triggers": [
+						{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Lumisteria.MtVapius_Amber",
+									"RequiredCount": 2,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"Id": "Amber Liquid Resin",
+							"ItemId": "(O)miru.forestamber_AmberResinLiquid",
+							"MinStack": 1,
+							"MaxStack": 2,
+						},
+					],
+					"MinutesUntilReady": 600,
+				},
+			},
+				"When": {
+					"HasMod |contains=miru.forestamber": "true"
+				},
+				"Priority":"Late",
+		},
+	]
+}

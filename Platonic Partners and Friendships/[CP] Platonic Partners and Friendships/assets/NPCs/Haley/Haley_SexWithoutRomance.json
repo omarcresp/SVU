@@ -1,0 +1,1376 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "summer_Fri10": "Oh, hi @!#$e#Let's get a selfie together! Say cheese!$h#",
+                "winter_Sun6": "If you see Alex, could you tell him I'm running late? There are a few photos I want to take before I lose this light.#$e#Thanks!",
+                "winter_Sun10": "@, you look so nice today! I think your style is really growing on me.$h",
+                "AcceptBouquet": "{{Random: You want us to spend more time together? I'd love that!#$e#*gasp* We should go to Zuzu City and get makeovers!$h @@ You want to be better friends with me? Haha, who wouldn't!$h#$e#Oh no, that was rude, wasn't it? I really do want to be friends!$8 |inputSeparator=@@}}",
+                "SpouseGiftJealous": "I heard you gave {0} a gift today.#$e#You're such a kind friend. I should give presents more often...",
+                "SpouseStardrop": "My favorite makeup brand sent me that fruit as a loyalty reward... It's supposed to promote youth and vitality.#$b#I gave it to you because... well, because it's what I think you would have done.$l#$b#I know I used to be pretty self-centered and judgmental... I was awful to you when we first met.$s#$b#But as I got to know you, I saw how you'd stop to chat with people I never gave the time of day... Remember their birthdays... Give them gifts just to make them happy... #$b#It got me thinking about how I want to treat people. Being kind to someone I'm close to is just a start... I'm going to look for more ways to practice generosity in my daily life.#$b#But for now... I love you, @. I hope you enjoyed the gift.$l",
+		"dating_Haley": "I've been looking forward to you giving me one of these.",
+		"dating_Haley_memory_oneday": "You look so cute today, bestie!",
+		"dating_Haley_memory_oneyear": "We've been friends for a long time now, haven't we? It's hard to believe you didn't even used to live here.",
+		"FlowerDance_Accept": "Oh? Sure! I'll dance with you! We'll have a great time!$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "summer_Fri10": "Oh, hi @!#$e#Let's get a selfie together! Say cheese!$h#",
+                "winter_Sun6": "If you see Alex, could you tell him I'm running late? There are a few photos I want to take before I lose this light.#$e#Thanks!",
+                "winter_Sun10": "@, you look so nice today! I think your style is really growing on me.$h",
+                "AcceptBouquet": "{{Random: You want us to spend more time together? I'd love that!#$e#*gasp* We should go to Zuzu City and get makeovers!$h @@ You want to be better friends with me? Haha, who wouldn't!$h#$e#Oh no, that was rude, wasn't it? I really do want to be friends!$8 |inputSeparator=@@}}",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're such a kind friend. I should give presents more often...",
+                "SpouseStardrop": "My favorite makeup brand sent me that fruit as a loyalty reward... It's supposed to promote youth and vitality.#$b#I gave it to you because... well, because it's what I think you would have done.#$b#I know I used to be pretty self-centered and judgmental... I was awful to you when we first met.$s#$b#But as I got to know you, I saw how you'd stop to chat with people I never gave the time of day... Remember their birthdays... Give them gifts just to make them happy... #$b#It got me thinking about how I want to treat people. Being kind to someone I'm close to is just a start... I'm going to look for more ways to practice generosity in my daily life.#$b#But for now... I love you, @. I hope you enjoyed the gift.",
+		"dating_Haley": "I've been looking forward to you giving me one of these.",
+		"dating_Haley_memory_oneday": "You look so cute today, bestie!",
+		"dating_Haley_memory_oneyear": "We've been friends for a long time now, haven't we? It's hard to believe you didn't even used to live here.",
+		"FlowerDance_Accept": "Oh? Sure! I'll dance with you! We'll have a great time!$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false
+            }
+        },
+        {
+            "LogName": "Haley pendant and bracelet proposal acceptance",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Haley_Engaged": "...$8#$b#Y...You really want to be {{RelationshipLabel}}?$8#$b#Oh, @, I'm so happy! We're going to be BFFs forever! BFFFs!$h#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Haley_EngagedRoommate": "...$8#$b#Y...You really want to be {{RelationshipLabel}}?$8#$b#Oh, @, I'm so happy! We're going to be BFFs forever! BFFFs!$h#$b#I need some time to pack up my things. I'll be there in 3 days, okay?",
+            },
+        },
+        {
+            "LogName": "Haley engagement dialogue, love portraits",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Haley0": "I'm so happy!$h#$e#It's just like I always dreamed.$l",
+                "HaleyRoommate0": "I'm so happy!$h#$e#It's just like I always dreamed.$l",
+                "Haley1": "It's okay. I know we can't celebrate with a resort vacation, since your farm needs to be taken care of.#$e#I'm a farmer now, too!",
+                "HaleyRoommate1": "It's okay. I know we can't celebrate with a resort vacation, since your farm needs to be taken care of.#$e#I'm a farmer now, too!",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "LogName": "Haley engagement dialogue, no love portraits",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "Haley0": "I'm so happy!$h#$e#It's just like I always dreamed.",
+                "HaleyRoommate0": "I'm so happy!$h#$e#It's just like I always dreamed.",
+                "Haley1": "It's okay. I know we can't celebrate with a resort vacation, since your farm needs to be taken care of.#$e#I'm a farmer now, too!",
+                "HaleyRoommate1": "It's okay. I know we can't celebrate with a resort vacation, since your farm needs to be taken care of.#$e#I'm a farmer now, too!",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+//Haley post-ceremony line: generic
+        {
+            "LogName": "Haley terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Bestie",
+                "NPC.cs.4518": "Bestie",
+                "NPC.cs.4519": "Bestie",
+                "NPC.cs.4522": "BFF",
+                "NPC.cs.4523": "BFF",
+                "Event.cs.1736": "$q -1 null#Oh, what could you want to ask me~#$r -1 0 danceAsk#(Ask Haley to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Haley terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Bestie",
+                "NPC.cs.4518": "Bestie",
+                "NPC.cs.4519": "Bestie",
+                "NPC.cs.4522": "BFF",
+                "NPC.cs.4523": "BFF",
+                "Event.cs.1736": "$q -1 null#Oh, what could you want to ask me~#$r -1 0 danceAsk#(Ask Haley to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Haley roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#Oh, what could you want to ask me~#$r -1 0 danceAsk#(Ask Haley to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: These pendants are beautiful, aren't they? It's too bad no one sells a matching earring set. @@ I wear my pendant every day, even when it clashes with my outfit... But two of them would be pushing it.$7 |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Haley and I are our own people with our own destinies. I don't want to move in with you just because she is.$u @@ I love my sister, but I think our relationship would be healthier if we didn't live together.$u |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Haley and I are our own people with our own destinies. I don't want to move in with you just because she did.$u @@ I love my sister, but I think our relationship is healthier when we don't live together.$u |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Engaged"
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Rainy_Night_Haley": "Hi, bestie. I'm so glad you're home. I was starting to get kind of lonely.",
+                "Outdoor_Haley": "Looks like a good day for me to get some sun, don't you think?$h",
+                "spring_Haley": "Aren't you glad winter's over? Things seem more hopeful now.",
+                "summer_3": "I don't look my best today... the air is just so humid that my hair doesn't hold up too well.$s",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Indoor_Day_Haley": "I felt like I had no direction in life before I met you. Now I have exactly what I want.",
+                "winter_Haley": "I was just thinking about the time you helped me open a jar of pickles. Remember that?$h#$e#We've come a long way since then."
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+	    "Logname":"Emily dialogue about Haley",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+		"divorced_Haley": "Haley is too proud to be heartbroken about losing your friendship... Or at least to show it.$3",
+            },
+        },
+        {
+	    "Logname":"Emily dialogue about Haley -- ceremony",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+		"married_Haley": "That was a beautiful ceremony... I'm really happy you and Haley are {{RelationshipLabel}}!$h",
+            },
+            "When":
+            {
+                   "Roommate |contains=Haley": "false",
+            }
+        },
+        {
+	    "Logname":"Emily dialogue about Haley -- no ceremony",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+		"married_Haley": "Is Haley all moved in? I'm really happy you two are {{RelationshipLabel}}!$h",
+            },
+            "When":
+            {
+                   "Roommate": "Haley",
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Rainy_Day_3": "I can't go outside today... it'll mess up my hair. Sorry, @...$s#$e#Maybe some people would think it's silly, but these things are important to me.$7",
+                "Rainy_Day_4": "Are you going out in this weather? Just make sure to wipe your boots on the way back in, {{Lowercase:{{TermofEndearment}}}}.#$e#I'll just stay here and do some housework.",
+                "Rainy_Night_4": "I made a hot meal for you, {{Lowercase:{{TermofEndearment}}}}. Lots of spice, just how you like it. Enjoy! [727 231 207 199]$h",
+                "Indoor_Day_1": "Good morning, {{Lowercase:{{TermofEndearment}}}}! Smells good, doesn't it? I made you breakfast! [194 195 210 211 216]#$e#I know you're busy with your work. I'm here to support you in any way I can!",
+                "Indoor_Day_2": "Did you sleep okay? I thought I could hear you snoring.$h#$e#I've got some chores to do in here. Have a good day.",
+                "Indoor_Day_3": "I'm glad I've learned to enjoy cleaning! The house gets dirty very easily.$10#$e#It's satisfying to get everything squeaky clean.#$e#Can I have a hug before you leave?",
+                "Indoor_Day_4": "Good morning, {{Lowercase:{{TermofEndearment}}}}. Another day of farm chores, huh?#$e#I'll be thinking of you.$h",
+                "Outdoor_1": "We've got to make sure the farm is cute! That might be important... right, @?",
+                "Outdoor_2": "Hi, {{Lowercase:{{TermofEndearment}}}}! If I knew more about farm work I'd help you out more. Sorry!#$e#I'll be thinking of you.$h",
+                "Outdoor_4": "Don't overwork yourself, {{Lowercase:{{TermofEndearment}}}}.#$e#Make sure and take a break every now and then, or get something to eat.$h",
+                "funReturn_Haley": "It was nice seeing everyone in town. Did you have a good day, {{Lowercase:{{TermofEndearment}}}}?",
+                "TwoKids_3": "A big house, two kids, a beautiful plot of land, and my BFF by my side... I'm not sure what else I could ask for.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Rainy_Day_3": "I can't go outside today... it'll mess up my hair. Sorry, @...$s#$e#Maybe some people would think it's silly, but these things are important to me.$7",
+                "Rainy_Day_4": "Are you going out in this weather? Just make sure to wipe your boots on the way back in, {{TermofEndearment}}.#$e#I'll just stay here and do some housework.",
+                "Rainy_Night_4": "I made a hot meal for you, {{TermofEndearment}}. Lots of spice, just how you like it. Enjoy! [727 231 207 199]$h",
+                "Indoor_Day_1": "Good morning, {{TermofEndearment}}! Smells good, doesn't it? I made you breakfast! [194 195 210 211 216]#$e#I know you're busy with your work. I'm here to support you in any way I can!",
+                "Indoor_Day_2": "Did you sleep okay? I thought I could hear you snoring.$h#$e#I've got some chores to do in here. Have a good day.",
+                "Indoor_Day_3": "I'm glad I've learned to enjoy cleaning! The house gets dirty very easily.$10#$e#It's satisfying to get everything squeaky clean.#$e#Can I have a hug before you leave?",
+                "Indoor_Day_4": "Good morning, {{TermofEndearment}}. Another day of farm chores, huh?#$e#I'll be thinking of you.$h",
+                "Outdoor_1": "We've got to make sure the farm is cute! That might be important... right, @?",
+                "Outdoor_2": "Hi, {{TermofEndearment}}! If I knew more about farm work I'd help you out more. Sorry!#$e#I'll be thinking of you.$h",
+                "Outdoor_4": "Don't overwork yourself, {{TermofEndearment}}.#$e#Make sure and take a break every now and then, or get something to eat.$h",
+                "funReturn_Haley": "It was nice seeing everyone in town. Did you have a good day, {{TermofEndearment}}?",
+                "TwoKids_3": "A big house, two kids, a beautiful plot of land, and my BFF by my side... I'm not sure what else I could ask for.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "spouseRoom_Haley": "Go ahead and start your day, {{Lowercase:{{TermofEndearment}}}}. I'm just putting on my make-up.#$e#Have any plans for the day?",
+                "Rainy_Night_Haley": "Hi, bestie. I'm so glad you're home. I was starting to get kind of lonely.",
+                "Outdoor_Haley": "Looks like a good day for me to get some sun, don't you think?$h",
+                "spring_Haley": "Aren't you glad winter's over, {{Lowercase:{{TermofEndearment}}}}? Things seem more hopeful now.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "spouseRoom_Haley": "Go ahead and start your day, {{TermofEndearment}}. I'm just putting on my make-up.#$e#Have any plans for the day?",
+                "Rainy_Night_Haley": "Hi, bestie. I'm so glad you're home. I was starting to get kind of lonely.",
+                "Outdoor_Haley": "Looks like a good day for me to get some sun, don't you think?$h",
+                "spring_Haley": "Aren't you glad winter's over, {{TermofEndearment}}? Things seem more hopeful now.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+	    "Logname": "Haley aro yes, ace no",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Indoor_Night_Haley": "You look like you've been working hard. Let me help you de-stress.$l",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "winter_Haley": "I was just thinking about the time you helped me open a jar of pickles.$h#$e#We've come a long way since then.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Haley",
+            "Entries":
+            {
+		"marriage_Mon.000": "Hi, {{Lowercase:{{TermofEndearment}}}}! I'm mostly just here to visit Emily.",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Haley",
+            "Entries":
+            {
+		"marriage_Mon.000": "Hi, {{TermofEndearment}}! I'm mostly just here to visit Emily.",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "winter_Tue_inlaw_Haley": "Oh, hey. How's life with Haley?$9",
+                "winter_Tue4_inlaw_Haley": "I'll admit... At first, I was a little jealous about Haley moving in with you. But I get that it's not a romantic thing.#$e#Maybe I still have a chance with her!$h",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Engaged, Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries":
+            {
+                "MovieInvite_Spouse_Haley": "Oooh... a night out, huh? Let me just freshen up a little and I'll meet you at the theater.$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries":
+            {
+                "127": "Basic/Haley's Cake-Walk/Haley is organizing a charity cake-walk in the town square. She asked you to bring a chocolate cake./Enter Town on a sunny morning with a chocolate cake./-1/-1/0/-1/true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries":
+            {
+                "Haley_spouse": "Brr... my hands are freezing from making this snowman.$8",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Haley": "*giggle*... $h\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"Oh, it's just that...#$b#As a little girl, I always dreamed that one day I would climb to the summit with my best friend. We'd hold hands and gaze out at the horizon, and promise to never be apart...$l#$b#In a way, that dream already came true. It was never really about the fancy backdrop.$l#$b#But... I'm still glad we're here today, @. This is going to be a beautiful memory.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Haley": "*giggle*... $h\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"Oh, it's just that...#$b#As a little girl, I always dreamed that one day I would climb to the summit with my best friend. We'd hold hands and gaze out at the horizon, and promise to never be apart...#$b#In a way, that dream already came true. It was never really about the fancy backdrop.#$b#But... I'm still glad we're here today, @. This is going to be a beautiful memory.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries":
+            {
+                "13/f Haley 1500/z winter/t 1000 1600": "desolate/35 11/farmer 35 3 2 Haley 35 11 2/speed Haley 4/skippable/move Haley -2 0 3/pause 300/faceDirection Haley 2/move Haley 4 0 1/pause 300/faceDirection Haley 0/move Haley -2 0 2/emote Haley 28/move farmer 0 5 2/faceDirection Haley 0/emote Haley 16/speak Haley \"@! Come here, quick!$s\"/move farmer 0 2 2/speak Haley \"My bracelet is gone! I know I had it on when I got here... $s#$b#But now it's gone and I can't find it anywhere...$s\"/emote farmer 16/faceDirection farmer 3/faceDirection farmer 1/faceDirection farmer 2/emote farmer 8/speak Haley \"$q 48 null#I'll never find another one like it...$s#$r 48 -30 Event_beach1#Relax, I'll just buy you a new one!#$r 48 50 Event_beach2#I'm really sorry...\"/faceDirection Haley 2/move farmer 1 0 2/move farmer 0 1 3/pause 500/faceDirection farmer 2/pause 600/showFrame Haley 22/pause 500/speak Haley \"Sorry, Great-Grandma. I lost your precious bracelet. Please forgive me.$s\"/playMusic ocean/pause 1000/message \"Could she have dropped it nearby?\"/playerControl haleyBeach/globalFade .015/viewport -1000 -1000/warp farmer 36 11/faceDirection farmer 3/positionOffset farmer 0 16/faceDirection Haley 1/pause 500/viewport 35 11 true/pause 800/playMusic sadpiano/speak Haley \"Is that...?$8\"/emote Haley 16/jump Haley/pause 600/speak Haley \"You found it!$h\"/showFrame Haley 23/positionOffset Haley 2 0/pause 50/positionOffset Haley 2 0/pause 50/positionOffset Haley 2 0/pause 50/positionOffset Haley 2 0/pause 50/positionOffset Haley 2 1/pause 50/positionOffset Haley 2 1/pause 50/positionOffset Haley 2 1/pause 50/positionOffset Haley 2 1/pause 50/positionOffset Haley 2 0/pause 50/positionOffset Haley 2 0/pause 50/positionOffset Haley 2 0/pause 50/positionOffset Haley 2 0/pause 50/positionOffset Haley 2 0/pause 50/speak Haley \"Thank you so much, @. You're a lifesaver.\"/pause 3000/speak Haley \"I won't forget what you did for me here.\"/end dialogue Haley \"I really owe you one, @.\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+	    "Logname": "Haley 8 heart event",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "14/f Haley 2000/z winter/t 1000 1600/w sunny": "spring_day_ambient/100 23/farmer 94 23 1 Haley 100 23 1/skippable/pause 2000/showFrame Haley 25/pause 500/playSound cameraNoise/shake Haley 50/screenFlash .5/pause 800/pause 500/faceDirection Haley 2 true/showFrame Haley 24/pause 500/playSound cameraNoise/shake Haley 50/screenFlash .5/move farmer 5 0 1 true/pause 1200/faceDirection Haley 3 true/showFrame Haley 27/pause 400/jump Haley/pause 600/showFrame Haley 12/faceDirection Haley 3/pause 300/speak Haley \"Oh! @.$8\"/pause 500/faceDirection Haley 2/pause 800/speak Haley \"The lighting is so nice right now... I had to come out and take some nature shots.\"/pause 600/faceDirection Haley 3/pause 600/faceDirection Haley 3/pause 400/speak Haley \"I've been trying to connect with the outdoors a little more...#$b#I wanna know what it's like, being a farmer. It's a way of life I never really thought about before I met you.\"/pause 500/faceDirection Haley 0/pause 800/speak Haley \"Heh, these cows are so cute...\"/pause 600/emote Haley 16/faceDirection Haley 3/speak Haley \"Hey, I have an idea!$h\"/move Haley 0 1 2/faceDirection farmer 2/playSound sandyStep/addBigProp 100 25 106/pause 600/move Haley 0 -1 3/faceDirection farmer 1/speak Haley \"Let's take some pictures with these cows! You can show me how to approach one.$h#$b#I'll just set it to shoot on a timer.\"/move Haley 0 1 2/faceDirection farmer 2/pause 900/playSound openBox/move Haley 0 -1 3/faceDirection farmer 1/pause 700/faceDirection farmer 0/faceDirection Haley 0/playMusic 50s/globalFade/viewport -1000 -1000/cutscene haleyCows/pause 2000/speak Haley \"...geh...$9\"/pause 1000/speak Haley \"*giggle*$10#$b#That was fun, @! ...And these photos are hilarious!$10\"/pause 500/speak Haley \"I'm gonna go home and take a shower now...$10\"/pause 1000/mail haleyGarden/end dialogue Haley \"Well, that was the dirtiest I've ever been.$h\"",
+            },
+            "When":
+            {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+	    "Logname": "Haley 10 heart event, love portraits true",
+            "Action": "EditData",
+            "Target": "Data/Events/HaleyHouse",
+            "Entries":
+            {
+                "15/f Haley 2500/p Haley": "Hospital_Ambient/-1000 -1000/farmer 5 9 0 Haley -100 -100 2/skippable/specificTemporarySprite haleyRoomDark/viewport 5 4 true/pause 500/emote farmer 8/move farmer 0 -4 0/move farmer -1 0 0/move farmer 0 -1 0/pause 1000/animate farmer false false 650 15/playSound woodyStep/pause 200/playSound woodyStep/pause 200/playSound woodyStep/pause 200/pause 800/speak Haley \"Come in! Just make sure to close the door quickly behind you!\"/pause 1000/warp farmer -100 -100/playSound doorClose/globalFade/viewport -1000 -1000/changeToTemporaryMap Darkroom/viewport -1000 -1000/warp Haley 1 5/warp farmer 3 7/viewport 4 4 true/pause 800/faceDirection Haley 2/jump Haley/pause 600/speak Haley \"@, you're here!\"/move farmer 0 -1 3/move farmer -1 0 0/move farmer 0 -1 3/faceDirection Haley 1/speak Haley \"Welcome to my brand new dark room!$h\"/faceDirection farmer 2/pause 500/faceDirection farmer 1/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 3/pause 500/emote Haley 40/pause 500/speak Haley \"So, um... do you like it? I know there isn't much to look at...$s\"/faceDirection Haley 0/question haleyDarkRoom \" #Offer to help decorate the dark room.#Make an excuse and leave.#Ask about the process for developing photos.\"/faceDirection Haley 1/fork leave/speak Haley \"Oh! Yeah, I can tell you about that!$h#$b#So the film has a layer of silver halide crystals that react to light, plus three color-sensitive layers...#$b#I put the film in a tray of developer... that's like, a chemical that gives electrons to the crystals that were exposed to light, so they turn into regular silver.#$b#And it's really efficient, because losing those electrons also lets the developer react with the color-sensitive layers to make dyes...#$b#*giggle* Listen to me. My old science teacher would be pinching herself.$h\"/pause 600/faceDirection Haley 2/pause 200/textAboveHead Haley \"Haha...\"/pause 2500/playMusic musicboxsong/pause 500/faceDirection Haley 1/pause 400/speak Haley \"You know... I first got into photography just to take fashion shots of myself.$7#$b#But since you moved here, I've watched you pick up all kinds of new skills... Like, learning how to mine and fish and forage made you a better farmer, right?#$b#It got me thinking about how I could expand my horizons. I started experimenting with lighting and composition... branched out into nature shots...#$b#Now I'm even learning all this nerdy chemistry stuff so I can develop my own film.$h#$b#I don't think it's wrong that I care about... I guess you'd call it aesthetics? We all have things that matter to us that not everyone takes seriously.$s#$b#But... it's been fun finding these connections to subjects I never thought I'd be interested in. Having a creative hobby helps me feel closer to Emily, too.#$b#So I wanted you to know that... that you're the one who set that example for me, and you've encouraged me the whole way, and... *sniff*...$8\"/pause 800/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 100/showFrame Haley 28/pause 400/showFrame farmer 101 true/pause 2500/speak Haley \"@... I'm really, really, really glad we're friends.$l\"/pause 2500/globalFade/viewport -1000 -1000/pause 1000/end dialogue Haley \"Thanks again, @.\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+	    "Logname": "Haley 10 heart event branches, love portraits true",
+            "Action": "EditData",
+            "Target": "Data/Events/Temp",
+            "Entries":
+            {
+                "decorate": "faceDirection Haley 1/speak Haley \"...Decorate?$h#$b#*giggle* Normally I'd be all for that, but you can't see much in here... It's, you know, a 'dark' room...$h#$b#But I really appreciate you wanting to support my hobby. It means a lot.\"/pause 600/faceDirection Haley 2/pause 200/textAboveHead Haley \"Haha...\"/pause 2500/playMusic musicboxsong/pause 500/faceDirection Haley 1/pause 400/speak Haley \"You know... I first got into photography just to take fashion shots of myself.$7#$b#But since you moved here, I've watched you pick up all kinds of new skills... Like, learning how to mine and fish and forage made you a better farmer, right?#$b#It got me thinking about how I could expand my horizons. I started experimenting with lighting and composition... branched out into nature shots...#$b#Now I'm even learning about nerdy chemistry stuff so I can develop my own film.$h#$b#I don't think it's wrong that I care about... I guess you'd call it aesthetics? We all have things that matter to us that not everyone takes seriously.$s#$b#But... it's been fun finding these connections to subjects I never thought I'd be interested in. Having a creative hobby helps me feel closer to Emily, too.#$b#So I wanted you to know that... that you're the one who set that example for me, and you've encouraged me the whole way, and... *sniff*...$8\"/pause 800/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 100/showFrame Haley 28/pause 400/showFrame farmer 101 true/pause 2500/speak Haley \"@... I'm really, really, really glad we're friends.$l\"/pause 2500/globalFade/viewport -1000 -1000/pause 1000/end dialogue Haley \"Thanks again, @.\"",
+                "leave": "speak Haley \"Oh, you have to leave already?$s#$b#Well... alright. Bye.$s\"/pause 500/move farmer 0 1 1/faceDirection Haley 2 true/move farmer 1 0 2/move farmer 0 1 2/playSound doorClose/warp farmer -1000 -1000/pause 1000/showFrame Haley 22/pause 1000/speak Haley \"...Is my hobby that boring?$s\"/end dialogue Haley \"I thought you had something important to do...$u\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+            }
+        },
+        {
+	    "Logname": "Haley 10 heart event, love portraits false",
+            "Action": "EditData",
+            "Target": "Data/Events/HaleyHouse",
+            "Entries":
+            {
+                "15/f Haley 2500/p Haley": "Hospital_Ambient/-1000 -1000/farmer 5 9 0 Haley -100 -100 2/skippable/specificTemporarySprite haleyRoomDark/viewport 5 4 true/pause 500/emote farmer 8/move farmer 0 -4 0/move farmer -1 0 0/move farmer 0 -1 0/pause 1000/animate farmer false false 650 15/playSound woodyStep/pause 200/playSound woodyStep/pause 200/playSound woodyStep/pause 200/pause 800/speak Haley \"Come in! Just make sure to close the door quickly behind you!\"/pause 1000/warp farmer -100 -100/playSound doorClose/globalFade/viewport -1000 -1000/changeToTemporaryMap Darkroom/viewport -1000 -1000/warp Haley 1 5/warp farmer 3 7/viewport 4 4 true/pause 800/faceDirection Haley 2/jump Haley/pause 600/speak Haley \"@, you're here!\"/move farmer 0 -1 3/move farmer -1 0 0/move farmer 0 -1 3/faceDirection Haley 1/speak Haley \"Welcome to my brand new dark room!$h\"/faceDirection farmer 2/pause 500/faceDirection farmer 1/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 3/pause 500/emote Haley 40/pause 500/speak Haley \"So, um... do you like it? I know there isn't much to look at...$s\"/faceDirection Haley 0/question haleyDarkRoom \" #Offer to help decorate the dark room.#Make an excuse and leave.#Ask about the process for developing photos.\"/faceDirection Haley 1/fork leave/speak Haley \"Oh! Yeah, I can tell you about that!$h#$b#So the film has a layer of silver halide crystals that react to light, plus three color-sensitive layers...#$b#I put the film in a tray of developer... that's like, a chemical that gives electrons to the crystals that were exposed to light, so they turn into regular silver.#$b#And it's really efficient, because losing those electrons also lets the developer react with the color-sensitive layers to make dyes...#$b#*giggle* Listen to me. My old science teacher would be pinching herself.$h\"/pause 600/faceDirection Haley 2/pause 200/textAboveHead Haley \"Haha...\"/pause 2500/playMusic musicboxsong/pause 500/faceDirection Haley 1/pause 400/speak Haley \"You know... I first got into photography just to take fashion shots of myself.$7#$b#But since you moved here, I've watched you pick up all kinds of new skills... Like, learning how to mine and fish and forage made you a better farmer, right?#$b#It got me thinking about how I could expand my horizons. I started experimenting with lighting and composition... branched out into nature shots...#$b#Now I'm even learning all this nerdy chemistry stuff so I can develop my own film.$h#$b#I don't think it's wrong that I care about... I guess you'd call it aesthetics? We all have things that matter to us that not everyone takes seriously.$s#$b#But... it's been fun finding these connections to subjects I never thought I'd be interested in. Having a creative hobby helps me feel closer to Emily, too.#$b#So I wanted you to know that... that you're the one who set that example for me, and you've encouraged me the whole way, and... *sniff*...$8\"/pause 800/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 100/showFrame Haley 28/pause 400/showFrame farmer 101 true/pause 2500/speak Haley \"@... I'm really, really, really glad we're friends.$l\"/pause 2500/globalFade/viewport -1000 -1000/pause 1000/end dialogue Haley \"Thanks again, @.\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+	    "Logname": "Haley 10 heart event branches, love portraits false",
+            "Action": "EditData",
+            "Target": "Data/Events/Temp",
+            "Entries":
+            {
+                "decorate": "faceDirection Haley 1/speak Haley \"...Decorate?$h#$b#*giggle* Normally I'd be all for that, but you can't see much in here... It's, you know, a 'dark' room...$h#$b#But I really appreciate you wanting to support my hobby. It means a lot.\"/pause 600/faceDirection Haley 2/pause 200/textAboveHead Haley \"Haha...\"/pause 2500/playMusic musicboxsong/pause 500/faceDirection Haley 1/pause 400/speak Haley \"You know... I first got into photography just to take fashion shots of myself.$7#$b#But since you moved here, I've watched you pick up all kinds of new skills... Like, learning how to mine and fish and forage made you a better farmer, right?#$b#It got me thinking about how I could expand my horizons. I started experimenting with lighting and composition... branched out into nature shots...#$b#Now I'm even learning about nerdy chemistry stuff so I can develop my own film.$h#$b#I don't think it's wrong that I care about... I guess you'd call it aesthetics? We all have things that matter to us that not everyone takes seriously.$s#$b#But... it's been fun finding these connections to subjects I never thought I'd be interested in. Having a creative hobby helps me feel closer to Emily, too.#$b#So I wanted you to know that... that you're the one who set that example for me, and you've encouraged me the whole way, and... *sniff*...$8\"/pause 800/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 30/positionOffset Haley 2 0/pause 100/showFrame Haley 28/pause 400/showFrame farmer 101 true/pause 2500/speak Haley \"@... I'm really, really, really glad we're friends.$l\"/pause 2500/globalFade/viewport -1000 -1000/pause 1000/end dialogue Haley \"Thanks again, @.\"",
+                "leave": "speak Haley \"Oh, you have to leave already?$s#$b#Well... alright. Bye.$s\"/pause 500/move farmer 0 1 1/faceDirection Haley 2 true/move farmer 1 0 2/move farmer 0 1 2/playSound doorClose/warp farmer -1000 -1000/pause 1000/showFrame Haley 22/pause 1000/speak Haley \"...Is my hobby that boring?$s\"/end dialogue Haley \"I thought you had something important to do...$u\"",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "8675611/e 6184643/O Haley/A haleyCakewalk1/t 620 1700/p Haley": "continue/-1000 -1000/farmer 23 24 3 Haley 22 24 1/makeInvisible 23 24/addQuest 127/addConversationTopic haleyCakewalk2 0/skippable/viewport -100 -100 true unfreeze/pause 3000/speak Haley \"Hi, {{Lowercase:{{TermofEndearment}}}}.#$b#Hey... I have an idea... I want to get everyone together for a charity cake-walk.\"/pause 500/emote farmer 8/pause 1000/speak Haley \"Uh... It's kind of like musical chairs, but everyone wins and gets cake! You'll see...$h#$b#It'll be on the next sunny day in the town square.#$b#Um... would you mind bringing a chocolate cake?\"/quickQuestion Do you agree to bring chocolate cake?#Yes#Yes (begrudgingly)(break)speak Haley \"Great! I'll meet you in the town square tomorrow, weather permitting.$h\"\\animate Haley false true 100 28\\animate farmer true true 100 101\\positionOffset Haley 8 0\\positionOffset farmer -8 0(break)emote Haley 12\\speak Haley \"What's up with the snarky attitude? Just show up with the cake, okay?$3\"/pause 2000/fade/viewport -1000 -1000/end dialogue Haley \"I'm bringing a pink cake.\"",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "8675611/e 6184643/O Haley/A haleyCakewalk1/t 620 1700/p Haley": "continue/-1000 -1000/farmer 23 24 3 Haley 22 24 1/makeInvisible 23 24/addQuest 127/addConversationTopic haleyCakewalk2 0/skippable/viewport -100 -100 true unfreeze/pause 3000/speak Haley \"Hi, {{TermofEndearment}}.#$b#Hey... I have an idea... I want to get everyone together for a charity cake-walk.\"/pause 500/emote farmer 8/pause 1000/speak Haley \"Uh... It's kind of like musical chairs, but everyone wins and gets cake! You'll see...$h#$b#It'll be on the next sunny day in the town square.#$b#Um... would you mind bringing a chocolate cake?\"/quickQuestion Do you agree to bring chocolate cake?#Yes#Yes (begrudgingly)(break)speak Haley \"Great! I'll meet you in the town square tomorrow, weather permitting.$h\"\\animate Haley false true 100 28\\animate farmer true true 100 101\\positionOffset Haley 8 0\\positionOffset farmer -8 0(break)emote Haley 12\\speak Haley \"What's up with the snarky attitude? Just show up with the cake, okay?$3\"/pause 2000/fade/viewport -1000 -1000/end dialogue Haley \"I'm bringing a pink cake.\"",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "Event.cs.1621": "How lucky are you? You get to dance with the Flower Queen every year!$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+                "6184644/e 8675611/O Haley/A haleyCakewalk2/t 600 1500/w sunny/i 220": "ragtime/-100 -100/farmer 29 60 2 Haley 27 64 2 Marnie 27 66 1 Caroline 29 66 1 Emily 31 66 2 Jodi 31 68 2 Lewis 25 68 1 Robin 25 70 1 Jas 31 70 3 Vincent 29 70 3 Pam 27 70 0 Clint 27 68 0 Penny 31 64 2 Pierre 25 66 1 Gus 35 66 3 Evelyn 23 67 1 George 24 67 1/removeQuest 127/removeItem 220/specificTemporarySprite haleyCakeWalk/beginSimultaneousCommand/advancedMove Marnie true 2 0 2 0 0 2 0 2 -2 0 -2 0 0 -2 0 -2/advancedMove Caroline true 2 0 0 2 0 2 -2 0 -2 0 0 -2 0 -2 2 0/advancedMove Emily true 0 2 0 2 -2 0 -2 0 0 -2 0 -2 2 0 2 0/advancedMove Jodi true 0 2 -2 0 -2 0 0 -2 0 -2 2 0 2 0 0 2/advancedMove Jas true -2 0 -2 0 0 -2 0 -2 2 0 2 0 0 2 0 2/advancedMove Vincent true -2 0 0 -2 0 -2 2 0 2 0 0 2 0 2 -2 0/advancedMove Pam true 0 -2 0 -2 2 0 2 0 0 2 0 2 -2 0 -2 0/advancedMove Clint true 0 -2 2 0 2 0 0 2 0 2 -2 0 -2 0 0 -2/endSimultaneousCommand/viewport 29 68 true/move farmer 0 4 3/pause 1000/addObject 28 64 220/playSound coin/faceDirection farmer 3/faceDirection Haley 1/speak Haley \"Hey! Oh, good, you brought the cake!...\"/showFrame Haley 23/playSound slimeHit/pause 400/showFrame Haley 4/pause 500/showFrame Haley 23/playSound slimeHit/pause 400/showFrame Haley 4/pause 1000/speak Haley \"Seems really moist. Thanks, @.\"/faceDirection Haley 2/faceDirection farmer 2/speak Haley \"It's a pretty good turnout, huh?\"/emote farmer 32/speak Marnie \"Um... Haley? When do we stop? M... My legs... *pant* *pant*$s\"/jump Haley/pause 500/speak Haley \"Whoops! Forgot to blow the whistle.$h\"/showFrame Haley 19/playMusic none/playSound whistle/shake Haley 500/stopAdvancedMoves next/pause 500/showFrame Haley 0/pause 1000/playMusic distantBanjo/pause 2000/speak Haley \"Alright! Everyone should be standing on a numbered square.\"/textAboveHead Emily \"I am!\"/jump Vincent/textAboveHead Marnie \"Yep\"/textAboveHead Pam \"That's right\"/faceDirection Pam 0 true/faceDirection Marnie 0 true/faceDirection Vincent 0 true/faceDirection Jas 0 true/faceDirection Marnie 0 true/faceDirection Clint 0 true/faceDirection Emily 0 true/faceDirection Caroline 0 true/faceDirection Jodi 0 true/pause 1000/speak Haley \"Your number determines which cake you win!#$b#Okay, let's see who gets what...\"/move Haley 0 -1 1/move Haley 6 0 2/move Haley 0 2 2/speak Haley \"Okay, Let's see here... #$b#Caroline, what number are you? Okay... you've won...#$b#Mayor Lewis' cave carrot loaf... with extra fiber!\"/emote Marnie 28 true/textAboveHead Caroline \"Oh, joy\"/pause 1000/speak Haley \"Emily, you've got...#$b#Pam's chocolate stout cupcakes, with aged bourbon buttercream.\"/emote Emily 32/textAboveHead Gus \"Nice!\"/pause 1000/speak Pam \"You're in for a treat, kid.$h\"/pause 500/speak Haley \"Next... Jas, you've got...#$b#Clint's wild horseradish cobbler.\"/emote Jas 28 true/pause 200/speak Clint \"It's an old family recipe. I baked it right in the smelting oven.#$b#Oh, um... I may have burnt the bottom a little, so... uh... you might have to peel off a layer of charred matter. But the rest is totally edible.\"/pause 200/emote Jas 28/pause 500/speak Haley \"Uh, Okay... Next up is Vincent. We've got...#$b# Robin's Triple syrup n' cream strawberry sugar log!\"/jump Vincent/textAboveHead Jodi \"Oh no...\"/pause 800/jump Vincent/pause 800/jump Vincent/pause 800/speak Haley \"Next up, Jodi. You're gonna take home...#$b# Emily's organic red velvet cake... colored with beets!\"/pause 200/textAboveHead Jodi \"Yum!\"/pause 800/viewport move 0 -1 1500/move Haley 0 -2 3/move Haley -5 0 2/speak Haley \"...and last, but not least: Pam! You're the lucky winner of my best friend @'s deluxe chocolate cake.\"/pause 500/textAboveHead Pam \"Thanks, kid\"/pause 1000/speak Haley \"Thanks everyone for joining in. We raised over 5,000g!\"/pause 500/speak George \"What's the money for, anyway? You buyin' a new purse?\"/pause 200/faceDirection Haley 1/speak Haley \"Actually... it's for Penny.\"/faceDirection Penny 3/faceDirection farmer 1 true/emote Penny 8/speak Haley \"Penny, the other day I overheard you talking with Jas and Vincent about their school books. It sounded like you could use some help...\"/jump Penny/pause 500/textAboveHead Penny \"New books!\"/pause 800/faceDirection Penny 2/speak Penny \"Did you hear that, kids? You're getting brand new school books!\"/emote Jas 20 true/emote Vincent 28/pause 500/faceDirection Penny 3/speak Penny \"I don't know what to say... Thank you so much.$h#$b#...to both of you!$h\"/emote farmer 32/viewport move -1 0 3000/advancedMove George false 0 -5 24 0/advancedMove Evelyn false 1 0 0 -5 24 0/move Haley 2 0 2/pause 2000/faceDirection Robin 0/faceDirection Pierre 2/speak Robin \"Hey Lewis... since we're funding education without touching the town's coffers, you'll be lowering our business tax, right?$h\"/pause 500/showFrame Lewis 26/jump Lewis/playSound Duck/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/advancedMove Robin false 0 -1 3 100/advancedMove Pierre false 0 1 3 100/pause 1500/end dialogue Haley \"It was a big success! Thanks for helping out, {{Lowercase:{{TermofEndearment}}}}.\"",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+                "6184644/e 8675611/O Haley/A haleyCakewalk2/t 600 1500/w sunny/i 220": "ragtime/-100 -100/farmer 29 60 2 Haley 27 64 2 Marnie 27 66 1 Caroline 29 66 1 Emily 31 66 2 Jodi 31 68 2 Lewis 25 68 1 Robin 25 70 1 Jas 31 70 3 Vincent 29 70 3 Pam 27 70 0 Clint 27 68 0 Penny 31 64 2 Pierre 25 66 1 Gus 35 66 3 Evelyn 23 67 1 George 24 67 1/removeQuest 127/removeItem 220/specificTemporarySprite haleyCakeWalk/beginSimultaneousCommand/advancedMove Marnie true 2 0 2 0 0 2 0 2 -2 0 -2 0 0 -2 0 -2/advancedMove Caroline true 2 0 0 2 0 2 -2 0 -2 0 0 -2 0 -2 2 0/advancedMove Emily true 0 2 0 2 -2 0 -2 0 0 -2 0 -2 2 0 2 0/advancedMove Jodi true 0 2 -2 0 -2 0 0 -2 0 -2 2 0 2 0 0 2/advancedMove Jas true -2 0 -2 0 0 -2 0 -2 2 0 2 0 0 2 0 2/advancedMove Vincent true -2 0 0 -2 0 -2 2 0 2 0 0 2 0 2 -2 0/advancedMove Pam true 0 -2 0 -2 2 0 2 0 0 2 0 2 -2 0 -2 0/advancedMove Clint true 0 -2 2 0 2 0 0 2 0 2 -2 0 -2 0 0 -2/endSimultaneousCommand/viewport 29 68 true/move farmer 0 4 3/pause 1000/addObject 28 64 220/playSound coin/faceDirection farmer 3/faceDirection Haley 1/speak Haley \"Hey! Oh, good, you brought the cake!...\"/showFrame Haley 23/playSound slimeHit/pause 400/showFrame Haley 4/pause 500/showFrame Haley 23/playSound slimeHit/pause 400/showFrame Haley 4/pause 1000/speak Haley \"Seems really moist. Thanks, @.\"/faceDirection Haley 2/faceDirection farmer 2/speak Haley \"It's a pretty good turnout, huh?\"/emote farmer 32/speak Marnie \"Um... Haley? When do we stop? M... My legs... *pant* *pant*$s\"/jump Haley/pause 500/speak Haley \"Whoops! Forgot to blow the whistle.$h\"/showFrame Haley 19/playMusic none/playSound whistle/shake Haley 500/stopAdvancedMoves next/pause 500/showFrame Haley 0/pause 1000/playMusic distantBanjo/pause 2000/speak Haley \"Alright! Everyone should be standing on a numbered square.\"/textAboveHead Emily \"I am!\"/jump Vincent/textAboveHead Marnie \"Yep\"/textAboveHead Pam \"That's right\"/faceDirection Pam 0 true/faceDirection Marnie 0 true/faceDirection Vincent 0 true/faceDirection Jas 0 true/faceDirection Marnie 0 true/faceDirection Clint 0 true/faceDirection Emily 0 true/faceDirection Caroline 0 true/faceDirection Jodi 0 true/pause 1000/speak Haley \"Your number determines which cake you win!#$b#Okay, let's see who gets what...\"/move Haley 0 -1 1/move Haley 6 0 2/move Haley 0 2 2/speak Haley \"Okay, Let's see here... #$b#Caroline, what number are you? Okay... you've won...#$b#Mayor Lewis' cave carrot loaf... with extra fiber!\"/emote Marnie 28 true/textAboveHead Caroline \"Oh, joy\"/pause 1000/speak Haley \"Emily, you've got...#$b#Pam's chocolate stout cupcakes, with aged bourbon buttercream.\"/emote Emily 32/textAboveHead Gus \"Nice!\"/pause 1000/speak Pam \"You're in for a treat, kid.$h\"/pause 500/speak Haley \"Next... Jas, you've got...#$b#Clint's wild horseradish cobbler.\"/emote Jas 28 true/pause 200/speak Clint \"It's an old family recipe. I baked it right in the smelting oven.#$b#Oh, um... I may have burnt the bottom a little, so... uh... you might have to peel off a layer of charred matter. But the rest is totally edible.\"/pause 200/emote Jas 28/pause 500/speak Haley \"Uh, Okay... Next up is Vincent. We've got...#$b# Robin's Triple syrup n' cream strawberry sugar log!\"/jump Vincent/textAboveHead Jodi \"Oh no...\"/pause 800/jump Vincent/pause 800/jump Vincent/pause 800/speak Haley \"Next up, Jodi. You're gonna take home...#$b# Emily's organic red velvet cake... colored with beets!\"/pause 200/textAboveHead Jodi \"Yum!\"/pause 800/viewport move 0 -1 1500/move Haley 0 -2 3/move Haley -5 0 2/speak Haley \"...and last, but not least: Pam! You're the lucky winner of my best friend @'s deluxe chocolate cake.\"/pause 500/textAboveHead Pam \"Thanks, kid\"/pause 1000/speak Haley \"Thanks everyone for joining in. We raised over 5,000g!\"/pause 500/speak George \"What's the money for, anyway? You buyin' a new purse?\"/pause 200/faceDirection Haley 1/speak Haley \"Actually... it's for Penny.\"/faceDirection Penny 3/faceDirection farmer 1 true/emote Penny 8/speak Haley \"Penny, the other day I overheard you talking with Jas and Vincent about their school books. It sounded like you could use some help...\"/jump Penny/pause 500/textAboveHead Penny \"New books!\"/pause 800/faceDirection Penny 2/speak Penny \"Did you hear that, kids? You're getting brand new school books!\"/emote Jas 20 true/emote Vincent 28/pause 500/faceDirection Penny 3/speak Penny \"I don't know what to say... Thank you so much.$h#$b#...to both of you!$h\"/emote farmer 32/viewport move -1 0 3000/advancedMove George false 0 -5 24 0/advancedMove Evelyn false 1 0 0 -5 24 0/move Haley 2 0 2/pause 2000/faceDirection Robin 0/faceDirection Pierre 2/speak Robin \"Hey Lewis... since we're funding education without touching the town's coffers, you'll be lowering our business tax, right?$h\"/pause 500/showFrame Lewis 26/jump Lewis/playSound Duck/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/pause 30/positionOffset Lewis -4 0/advancedMove Robin false 0 -1 3 100/advancedMove Pierre false 0 1 3 100/pause 1500/end dialogue Haley \"It was a big success! Thanks for helping out, {{TermofEndearment}}.\"",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Haley",
+            "FromFile": "assets/Sprites/HaleyDressRecolor.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 304,
+                "Width": 45,
+                "Height": 16
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnableSpriteEdits": true,
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+            },
+        },
+        {
+	    "Logname": "Haley no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley",
+            "FromFile": "assets/Portraits/HaleyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname": "Haley no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley_Winter",
+            "FromFile": "assets/Portraits/HaleyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Haley no blush portrait edit, Slightly Cuter",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley",
+            "FromFile": "assets/Portraits/HaleyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+	    "Logname": "Haley no blush portrait edit, Slightly Cuter, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley_Winter",
+            "FromFile": "assets/Portraits/HaleyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        //COMPATIBILITY: PLATONIC RELATIONSHIPS 
+        //This section prevents the dating-flag-required version of the vanilla 10 heart event added by Platonic Relationships from triggering. Thanks to Cherry for providing the event codes!
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/HaleyHouse",
+            "Entries":
+            {
+                "15/f Haley 2500/D Haley/p Haley": null,
+            },
+            "When":
+            {
+                "HasMod |contains=Cherry.PlatonicRelationships": "true"
+            },
+        },
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "Tue10": "Oof. I stayed up late reading cookbooks and trying out a couple of new recipes.$s#$e#Why? ...It's embarrassing, but I guess I want you to see me as a responsible adult? Part of that is learning to cook for myself.$s#$e#I'll share some with you sometime!",
+                "Sun10_inlaw_Emily": "The house is so empty and quiet without Emily around. I get so lonely.$s#$e#Why don't you two come by sometime? We can have a little dinner party.",
+                "summer_Wed10": "Oh, I was just about to reapply my sunscreen. Can you help?$h#$e#I just need some right between my shoulder blades. Thanks so much!",
+                "summer_Sat10": "Well, I thought this day couldn't get any nicer!$h#$e#It's good to see you.",
+                "summer_Sun10_inlaw_Emily": "The house is so empty and quiet without Emily around. I get so lonely.$s#$e#Why don't you two come by sometime? We can have a little dinner party.",
+                "fall_Fri10": "Hey, bestie. I was just thinking about you.#$e#I'm glad you came by.",
+                "fall_Sun10_inlaw_Emily": "The house is so empty and quiet without Emily around. I get so lonely.$s#$e#Why don't you two come by sometime? We can have a little dinner party.",
+                "winter_Tue10": "Alex and I have had kind of an on-again off-again thing since we were kids.$u#$e#He's a good guy. I'd like it to work out, but there might be too much history and hurt feelings there.$s#$e#Thanks for letting me talk through this stuff with you.",
+                "winter_Fri10": "I never thought I'd say this, but I actually think it's really cool that you live on a farm. I wish I did, too.#$e#I just keep thinking about how it'll look when all of the plants bloom again in the spring.#$e#I like thinking of you out in the field, too. I'm happy you found work that fulfills you.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "fall_Sun10": "I don't think I'd be very happy in this town without you, @. So, thank you.#$e#Seriously, I'll do anything for you if you need it.$8",
+                "Thu10": "I was thinking I could try to move away someday, whenever it became clear that Alex's career wouldn't ever get off the ground.$s#$b#But now, I don't think I would move away, even if I could. I have too much to lose here.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Rainy_Day_3": "#$c .5#You want me to go out there with you and ruin my hair? Heehee, no, I'll pass.$h#I can't go outside today... it'll mess up my hair. Sorry, @...$s#$e#Maybe some people would think it's silly, but these things are important to me.$7",
+                "Rainy_Day_4": "#$c .5#Oh no... If this weather keeps up I'll get so pale.$s#Are you going out in this weather? Just make sure to wipe your boots on the way back in, {{Lowercase:{{TermofEndearment}}}}.#$e#I'll just stay here and do some housework.",
+                "Rainy_Night_4": "#$c .5#Cooking helped pass the time today. It just took a little effort to get started. [727 231 207 199]#I made a hot meal for you, {{Lowercase:{{TermofEndearment}}}}. Lots of spice, just how you like it. Enjoy! [727 231 207 199]$h",
+                "Indoor_Day_1": "Good morning, {{Lowercase:{{TermofEndearment}}}}! Smells good, doesn't it? I made you breakfast! [194 195 210 211 216]#$e#$c .5#Cooking's a lot more fun when you've got someone to cook for.$11#I know you're busy with your work. I'm here to support you in any way I can!",
+                "Indoor_Day_2": "#$c .5#Morning, sunshine! You still look a little sleepy.$h#Did you sleep okay? I thought I could hear you snoring.$h#$e#I've got some chores to do in here. Have a good day.",
+                "Indoor_Day_3": "#$c .5#I'm glad I've learned to enjoy cleaning! The house gets dirty very easily. It's satisfying to get everything squeaky clean.#I hope today's not too busy of a day. We should spend some time with each other.#$e#Can I have a hug before you leave?",
+                "Indoor_Day_4": "#$c .5#I felt like I had no direction in life before I met you. Now I have exactly what I want.#Good morning, {{Lowercase:{{TermofEndearment}}}}. Another day of farm chores, huh? I'll be thinking of you. <$h",
+                "Indoor_Night_1": "#$c .5#Thanks for letting me handle the domestic side of things. I really like supporting you in that way.#Good evening, {{Lowercase:{{TermofEndearment}}}}. Anything I can get you to help you unwind?",
+                "Indoor_Night_2": "Oh good, you're back!$h#$e#$c .5#This is probably my favorite time of the day.$h#How was your day?",
+                "Indoor_Night_3": "#$c .5#Oh, that smell? I'm trying out this new fleur de cerisier perfume. What do you think, does it suit me?#Good evening, {{Lowercase:{{TermofEndearment}}}}. Ready to wind down?",
+                "Outdoor_1": "#$c .5#I'm going to give Emily a call today. I just need to wait until she gets up.#We've got to make sure the farm is cute! That might be important... right, @?",
+                "Outdoor_2": "#$c .5#Is today going to be another busy day?#Hi, {{Lowercase:{{TermofEndearment}}}}! If I knew more about farm work I'd help you out more. Sorry!#$e#I'll be thinking of you.$h",
+                "Outdoor_4": "#$c .5#Looks like a good day for me to get some sun, don't you think?$h#Don't overwork yourself, {{Lowercase:{{TermofEndearment}}}}. Make sure and take a break every now and then, or get something to eat.",
+                "funReturn_Haley": "#$c .5#Everyone's so much nicer to me these days. It's probably because I'm nicer to them, too.$h#It was nice seeing everyone in town. Did you have a good day, {{Lowercase:{{TermofEndearment}}}}?",
+                "spring_14": "I hope you don't mind if I catch up with Alex during the festivals. I don't mean to ditch you... I want to celebrate with you, too.$7#$e#You'll always be my first priority, but my relationship with Alex is also important to me.",
+                "spring_23": "What? Of course we're still young enough for the flower dance. Don't be silly.$h#$e#And I'm looking forward to showing the whole town how proud I am to be {{RelationshipLabel}} with you.",
+                "summer_27": "The moonlight jellies are tomorrow night. You're coming to see them with me, right?",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Rainy_Day_3": "#$c .5#You want me to go out there with you and ruin my hair? Heehee, no, I'll pass.$h#I can't go outside today... it'll mess up my hair. Sorry, @...$s#$e#Maybe some people would think it's silly, but these things are important to me.$7",
+                "Rainy_Day_4": "#$c .5#Oh no... If this weather keeps up I'll get so pale.$s#Are you going out in this weather? Just make sure to wipe your boots on the way back in, {{TermofEndearment}}.#$e#I'll just stay here and do some housework.",
+                "Rainy_Night_4": "#$c .5#Cooking helped pass the time today. It just took a little effort to get started. [727 231 207 199]#I made a hot meal for you, {{TermofEndearment}}. Lots of spice, just how you like it. Enjoy! [727 231 207 199]$h",
+                "Indoor_Day_1": "Good morning, {{TermofEndearment}}! Smells good, doesn't it? I made you breakfast! [194 195 210 211 216]#$e#$c .5#Cooking's a lot more fun when you've got someone to cook for.$11#I know you're busy with your work. I'm here to support you in any way I can!",
+                "Indoor_Day_2": "#$c .5#Did you sleep okay? I thought I could hear you snoring.$h#Morning, sunshine! You still look a little sleepy.$h#$e#I've got some chores to do in here. Have a good day.",
+                "Indoor_Day_3": "#$c .5#I'm glad I've learned to enjoy cleaning! The house gets dirty very easily. It's satisfying to get everything squeaky clean.#I hope today's not too busy of a day. We should spend some time with each other.#$e#Can I have a hug before you leave?",
+                "Indoor_Day_4": "#$c .5#I felt like I had no direction in life before I met you. Now I have exactly what I want.#Good morning, {{TermofEndearment}}. Another day of farm chores, huh? I'll be thinking of you. <$h",
+                "Indoor_Night_1": "#$c .5#Thanks for letting me handle the domestic side of things. I really like supporting you in that way.#Good evening, {{TermofEndearment}}. Anything I can get you to help you unwind?",
+                "Indoor_Night_2": "Oh good, you're back!$h#$e#$c .5#This is probably my favorite time of the day.$h#How was your day?",
+                "Indoor_Night_3": "#$c .5#Oh, that smell? I'm trying out this new fleur de cerisier perfume. What do you think, does it suit me?#Good evening, {{TermofEndearment}}. Ready to wind down?",
+                "Outdoor_1": "#$c .5#I'm going to give Emily a call today. I just need to wait until she gets up.#We've got to make sure the farm is cute! That might be important... right, @?",
+                "Outdoor_2": "#$c .5#Is today going to be another busy day?#Hi, {{TermofEndearment}}! If I knew more about farm work I'd help you out more. Sorry!#$e#I'll be thinking of you.$h",
+                "Outdoor_4": "#$c .5#Looks like a good day for me to get some sun, don't you think?$h#Don't overwork yourself, {{TermofEndearment}}. Make sure and take a break every now and then, or get something to eat.",
+                "funReturn_Haley": "#$c .5#Everyone's so much nicer to me these days. It's probably because I'm nicer to them, too.$h#It was nice seeing everyone in town. Did you have a good day, {{TermofEndearment}}?",
+                "spring_14": "I hope you don't mind if I catch up with Alex during the festivals. I don't mean to ditch you... I want to celebrate with you, too.$7#$e#You'll always be my first priority, but my relationship with Alex is also important to me.",
+                "spring_23": "What? Of course we're still young enough for the flower dance. Don't be silly.$h#$e#And I'm looking forward to showing the whole town how proud I am to be {{RelationshipLabel}} with you.",
+                "summer_27": "The moonlight jellies are tomorrow night. You're coming to see them with me, right?",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                 "TwoKids_3": "A big house, two kids, a beautiful plot of land, and my BFF by my side... I'm not sure what else I could ask for.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+		"AlwaysAdopt": false,
+            },
+        },
+        {
+	    "Logname": "Haley aro yes, ace no, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries":
+            {
+                "Indoor_Night_0": "#$c .5#You look like you've been working hard. Let me help you de-stress.$l#I never thought I'd say this, but the country lifestyle really suits me.$h",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "Sun_inlaw_Haley": "Oh, hey. How's life with Haley?$9",
+                "Sun6_inlaw_Haley": "I'll admit... At first, I was a little jealous about Haley moving in with you. But I get that it's not a romantic thing.#$e#Maybe I still have a chance with her!$h",
+                "summer_Sun_inlaw_Haley": "Oh, hey. How's life with Haley?$9",
+                "summer_Sun6_inlaw_Haley": "I'll admit... At first, I was a little jealous about Haley moving in with you. But I get that it's not a romantic thing.#$e#Maybe I still have a chance with her!$h",
+            },
+            "When":
+            {
+                "Relationship:Haley": "Engaged, Married",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true",
+            }
+        },
+	//COMPATIBILITY: STARDEW VALLEY EXPANDED
+        {
+	    "Logname": "Haley 8 heart event, SVE",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+            {
+                "14/f Haley 2000/z winter/t 1000 1600/w sunny": "spring_day_ambient/100 23/farmer 94 24 1 Haley 100 23 1/skippable/pause 2000/showFrame Haley 25/pause 500/playSound cameraNoise/shake Haley 50/screenFlash .5/pause 800/pause 500/faceDirection Haley 2 true/showFrame Haley 24/pause 500/playSound cameraNoise/shake Haley 50/screenFlash .5/move farmer 5 0 1 true/pause 1200/faceDirection Haley 3 true/showFrame Haley 27/pause 400/jump Haley/pause 600/showFrame Haley 12/faceDirection Haley 3/move farmer 0 -1 1/pause 300/speak Haley \"Oh! @.$8\"/pause 500/faceDirection Haley 2/pause 800/speak Haley \"The lighting is so nice right now... I had to come out and take some nature shots.\"/pause 600/faceDirection Haley 3/pause 600/faceDirection Haley 3/pause 400/speak Haley \"I've been trying to connect with the outdoors a little more...#$b#I wanna know what it's like, being a farmer. It's a way of life I never really thought about before I met you.\"/pause 500/faceDirection Haley 0/pause 800/speak Haley \"Heh, these cows are so cute...\"/pause 600/emote Haley 16/faceDirection Haley 3/speak Haley \"Hey, I have an idea!$h\"/move Haley 0 1 2/faceDirection farmer 2/playSound sandyStep/addBigProp 100 25 106/pause 600/move Haley 0 -1 3/faceDirection farmer 1/speak Haley \"Let's take some pictures with these cows! You can show me how to approach one.$h#$b#I'll just set it to shoot on a timer.\"/move Haley 0 1 2/faceDirection farmer 2/pause 900/playSound openBox/move Haley 0 -1 3/faceDirection farmer 1/pause 700/faceDirection farmer 0/faceDirection Haley 0/playMusic 50s/globalFade/viewport -1000 -1000/cutscene haleyCows/pause 2000/speak Haley \"...geh...$9\"/pause 1000/speak Haley \"*giggle*$10#$b#That was fun, @! ...And these photos are hilarious!$10\"/pause 500/speak Haley \"I'm gonna go home and take a shower now...$10\"/pause 1000/mail haleyGarden/end dialogue Haley \"Well, that was the dirtiest I've ever been.$h\"",
+            },
+            "When":
+            {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Haley
+	        "LogName": "KO Mines- Haley love portrait true",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Haley 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Haley \"There you are, @. Can you stand up? Your clothes are getting all muddy.$7\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Haley \"The most awful thing happened! I read my horoscope and it said I'd lose something important today...$2#$b#All of my stuff was still there, though, so I got worried that it was about you! Good thing I came to find you...$8\"/pause 1000/speak Marlon \"Haley came to get me as soon as possible. I ventured into the mines to find you as requested.#$b#She was quite worried about you. You're blessed to have ended up sharing your life with someone so compassionate.\"/emote Haley 16/pause 500/speak Haley \"Well, yeah. I wouldn't have gone there myself. I knew I'd only get in the way, and on top of that, my shoes would be ruined.$3#$b#It wasn't compassion. Giving it my all is just my duty as @'s {{PlatonicSocialMenuLabel}}.\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I observed. You did well to fetch me.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Haley \"Let's go home. It smells bad in here, and you need to change before you catch a cold.$7#$b#You know... Even if my horoscope didn't say anything, I think I would've felt you running into trouble. I think my heart would've known.#$b#I guess that's just what it means to love someone, huh?$4\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Haley \"Welcome back, bestie. The bruises make you look real tough. For real, though, I'm glad it's nothing too serious.$1$c 0.7#I'm trying to stay positive about the situation. You could've gotten seriously hurt, but you didn't, so I have to count my blessings there.$7#Want to eat something? I didn't have time to cook, or anything, but we've always got snacks around.[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Haley",
+                	"UseLovePortraits": true,
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Mine death with Haley
+	        "LogName": "KO Mines- Haley love portrait false",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Haley 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Haley \"There you are, @. Can you stand up? Your clothes are getting all muddy.$7\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Haley \"The most awful thing happened! I read my horoscope and it said I'd lose something important today...$2#$b#All of my stuff was still there, though, so I got worried that it was about you! Good thing I came to find you...$8\"/pause 1000/speak Marlon \"Haley came to get me as soon as possible. I ventured into the mines to find you as requested.#$b#She was quite worried about you. You're blessed to have ended up sharing your life with someone so compassionate.\"/emote Haley 16/pause 500/speak Haley \"Well, yeah. I wouldn't have gone there myself. I knew I'd only get in the way, and on top of that, my shoes would be ruined.$3#$b#It wasn't compassion. Giving it my all is just my duty as @'s {{PlatonicSocialMenuLabel}}.\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I observed. You did well to fetch me.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Haley \"Let's go home. It smells bad in here, and you need to change before you catch a cold.$7#$b#You know... Even if my horoscope didn't say anything, I think I would've felt you running into trouble. I think my heart would've known.$7#$b#I guess that's just what it means to love someone, huh?\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Haley \"Welcome back, bestie. The bruises make you look real tough. For real, though, I'm glad it's nothing too serious.$1$c 0.7#I'm trying to stay positive about the situation. You could've gotten seriously hurt, but you didn't, so I have to count my blessings there.$7#Want to eat something? I didn't have time to cook, or anything, but we've always got snacks around.[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Haley",
+                	"UseLovePortraits": false,
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Hospital Death- Haley
+            "LogName": "Player 'Killed'- Haley lowercase",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Haley 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Haley 5/move Haley 0 3 2/textAboveHead Haley \"{0}!\"/emote farmer 16/move Haley -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Haley 0 1 3/speak Haley \"@, you look terrible! What happened?$2\"/emote farmer 60/pause 500/speak Haley \"Look at those bruises... And those injuries! Not only are you hurt, but your clothes are all messed up, too.$2#$b#You worry me so much sometimes, {{Lowercase:{{TermofEndearment}}}}.$2\"/emote Haley 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Haley 3/speak Haley \"... Pelican Town never really felt like home until you came. There were always people around me, but no one I felt like I had to stay strong for.$7#$b#@, I know I can't do much for you when you're out there, but I'll always be waiting at home for you.$7#$b#So, please be careful. Don't make me wait forever.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Haley \"Hi, {{Lowercase:{{TermofEndearment}}}}. You're not looking too bad, compared to when you left the hospital. I'm really glad you're getting better by the minute.#$c 0.7#Want to watch some cheesy reality TV with me? You'll see; it's the best for forgetting your problems. And if you want to talk... I'll be right beside you.#Have some of this. You're still looking a little pale, and exhaustion's definitely not a good look on you! [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Haley",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+                	"TermofEndearment |contains=@": "false",
+                	"TermofEndearment |contains=BFF": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //Hospital Death- Haley
+            "LogName": "Player 'Killed'- Haley capital",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Haley 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Haley 5/move Haley 0 3 2/textAboveHead Haley \"{0}!\"/emote farmer 16/move Haley -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Haley 0 1 3/speak Haley \"@, you look terrible! What happened?$2\"/emote farmer 60/pause 500/speak Haley \"Look at those bruises... And those injuries! Not only are you hurt, but your clothes are all messed up, too.$2#$b#You worry me so much sometimes, {{TermofEndearment}}.$2\"/emote Haley 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Haley 3/speak Haley \"... Pelican Town never really felt like home until you came by. There were always people around me, but no one I felt like I had to stay strong for.$7#$b#@, I know I can't do much for you when you're out there, but I'll always be waiting at home for you.$7#$b#So, please be careful. Don't make me wait forever.$2\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Haley \"Hi, {{TermofEndearment}}. You're not looking too bad, compared to when you left the hospital. I'm really glad you're getting better by the minute.#$c 0.7#Want to watch some cheesy reality TV with me? You'll see; it's the best for forgetting your problems. And if you want to talk... I'll be right beside you.#Have some of this. You're still looking a little pale, and exhaustion's definitely not a good look on you! [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Haley",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+			"TermofEndearment": "@, BFF",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //Hospital death- Haley ex
+            "LogName": "Player 'Killed'- Haley Ex-Partner",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Haley 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"@ is ready to see you.#$b#It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.#$b#...And you should think of your own wellbeing, too.$2\"/pause 500/speak Haley \"Don't worry. I don't think I can handle staying long, anyway.$7\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Haley 0 4 3/emote farmer 16/faceDirection Haley 3/pause 1000/speak Haley \"Hi, @. Looks like you really turned things around and got right back on your feet. Good for you.$7#$b#Me? I just wanted to see that you were going to pull through before I left.$7#$b#I heard gossip that you'd been seriously hurt, and before I knew it, I was here. I guess I just didn't want you to wake up alone after all that.$2\"/emote farmer 16/pause 1000/speak Haley \"You may have thrown away our friendship, but I don't hate you. I can't hate the person from my dearest memories, even if you're not that person for me anymore.$2#$b#It would just have really sucked if you woke up thinking that no one cares what happens to you anymore.$2#$b#... That's all I have for you. Bye, @.$2\"/pause 500/move Haley 0 -4 0/move Haley -8 0 0/move Haley 0 -3 0/warp Haley -100 -100/emote farmer 28/hospitaldeath/end dialogue Haley \"It's better if we don't talk, @. We've already gone our separate ways, and it's better for both of us like that.$2#$b#I realized today that I just can't forget you... but that's not something I'm doing by choice.$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Haley": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+     {       //Island death before Leo - Haley
+	        "LogName": "Island Death Haley",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Haley \"Oh my gosh! {{TermofEndearment}}, what are you wearing?$2#$b#Oh, those clothes really suited you... But we'll have to throw them out. They're burnt through and through.$2#$b#Are you okay? Good. Go wash all the ash off, and I'll start shopping for new clothes in the meantime.#$b#Please hurry... you smell like the time I ironed my wet hair...$3\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Haley",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     }, 
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo, Haley",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Haley \"Oh my gosh! {{TermofEndearment}}, what are you wearing?$2#$b#Oh, those clothes really suited you... But we'll have to throw them out. They're burnt through and through.$2#$b#Are you okay? Good. Go wash all the ash off, and I'll start shopping for new clothes in the meantime.#$b#Please hurry... you smell like the time I ironed my wet hair...$3\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Haley",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Haley",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Haley \"Oh my gosh! {{TermofEndearment}}, what are you wearing?$2#$b#Oh, those clothes really suited you... But we'll have to throw them out. They're burnt through and through.$2#$b#Are you okay? Good. Go wash all the ash off, and I'll start shopping for new clothes in the meantime.#$b#Please hurry... you smell like the time I ironed my wet hair...$3\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Haley",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+    {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "funLeave_Haley": "#$c .5#Hi, {{Lowercase:{{TermofEndearment}}}}. Did you sleep well?#Good morning! Another day of farmwork, huh?#$e#$c .5#Make sure you wipe your boots when you come back home. I cleaned the floors just yesterday.#You look like you already have things handled, so I'm heading into town. But let me know if you need help with anything!",
+            },
+            "When": {
+                "DayOfWeek": "Monday",
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "funLeave_Haley": "#$c .5#Hi, {{TermofEndearment}}. Did you sleep well?#Good morning! Another day of farmwork, huh?#$e#$c .5#Make sure you wipe your boots when you come back home. I cleaned the floors just yesterday.#You look like you already have things handled, so I'm heading into town. But let me know if you need help with anything!",
+            },
+            "When": {
+                "DayOfWeek": "Monday",
+              	 "TermofEndearment": "@, BFF",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "funLeave_Haley": "#$c .5#I tried to help out around the farm this morning but I had no idea where to start. How can you multitask so well?#Hey, I'm going to be-Oooh! You look so cute this morning!$8#$e#$c .5#I don't think I'd enjoy this country life as much without you by my side.#Anyways, I'll be in town today. I need to take some photos for a local newspaper.",
+            },
+            "When": {
+                "DayOfWeek": "Tuesday",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "funLeave_Haley": "#$c .5#Hey, {{Lowercase:{{TermofEndearment}}}}. Heading out? Want me to pack you some lunch?#Up to anything special today, {{Lowercase:{{TermofEndearment}}}}? You seem to always have an interesting day.#$e#$c .5#The Mayor is asking for some more photos. Supposedly they're a huge hit in the Fern Islands when it's {{season}}.#I'll be in town today. Mayor Lewis is asking for some more pictures of the valley.#$e#$c .7#I'm gonna head out later but have a good day, dear!$h#I swear he runs out so quickly. If you ask me, he's probably planning to give them to Marnie again...$3",
+            },
+            "When": {
+                "Season": "Fall, Winter",
+                "DayOfWeek": "Thursday",
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "funLeave_Haley": "#$c .5#Hey, {{TermofEndearment}}. Heading out? Want me to pack you some lunch?#Up to anything special today, {{TermofEndearment}}? You seem to always have an interesting day.#$e#$c .5#The Mayor is asking for some more photos. Supposedly they're a huge hit in the Fern Islands when it's {{season}}.#I'll be in town today. Mayor Lewis is asking for some more pictures of the valley.#$e#$c .7#I'm gonna head out later but have a good day, dear!$h#I swear he runs out so quickly. If you ask me, he's probably planning to give them to Marnie again...$3",
+            },
+            "When": {
+                "Season": "Fall, Winter",
+                "DayOfWeek": "Thursday",
+              	"TermofEndearment": "@, BFF",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+	    "Logname": "Haley aro yes, ace no, Immersive Spouses",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "funLeave_Haley": "#$c .4#Good morning. Last night was fun! *giggle*$l#Mornin'! Look at the sun shine today, bestie. It's perfect photography and farming weather!$h#$e#$c .5#Think I'll practice my photography for a while in the forest!#I'm heading out today. Don't take this the wrong way, but the fresh air in the forest is unrivaled.#$e#Stay safe, you hear?",
+                "funReturn_Haley": "#$c .5#Welcome back, did you have a productive day?#You've got some dirt on your face. Lemme get it for you... So how was your day?#$e#$c .5#If you don't mind, I'm heading straight to bed. The sun makes me so drowsy.$s#I already had dinner back at my old house. Sorry, I left the leftovers for Emily.#$e#Hmm? I'm your best friend? Well, I already know that!$h#$b#I love you too, bestie."
+            },
+            "When": {
+                "Season": "Spring, Summer",
+                "DayOfWeek": "Thursday",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "funLeave_Haley": "#$c .5#Are you busy this morning? I was thinking we could walk down to the beach.#I'm heading out so I did my makeup this morning. How do I look? Oh, and good morning!#$e#$c .5#I'll admit, I'm a little obsessed with the ocean. I need some more pictures!$h#Right, my advice for today {{Random:is to not spend the last day of the weekend just working!, ...Wow. My mind just went blank. Sorry!$h, is to make sure the farm looks extra cute today!$h, is to work hard. But don't break a finger., ...Hmm. How about take a break? You already do that don't you...? Well just a reminder}}, {{Lowercase:{{TermofEndearment}}}}!",
+                "funReturn_Haley": "#$c .5#How'd your day go? It was nice seeing everyone in town.#Hey, {{Lowercase:{{TermofEndearment}}}}, I'm glad you're back. I've missed you.#$e#$c .5#I took some pretty pictures! I'll show you them in bed.#Hmm. I feel like cleaning the floors tonight. Try not to get them any dirtier, please."
+            },
+            "When": {
+                "DayOfWeek": "Sunday",
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "funLeave_Haley": "#$c .5#Are you busy this morning? I was thinking we could walk down to the beach.#I'm heading out so I did my makeup this morning. How do I look? Oh, and good morning!#$e#$c .5#I'll admit, I'm a little obsessed with the ocean. I need some more pictures!$h#Right, my advice for today {{Random:is to not spend the last day of the weekend just working!, ...Wow. My mind just went blank. Sorry!$h, is to make sure the farm looks extra cute today!$h, is to work hard. But don't break a finger., ...Hmm. How about take a break? You already do that don't you...? Well just a reminder}}, {{TermofEndearment}}!",
+                "funReturn_Haley": "#$c .5#How'd your day go? It was nice seeing everyone in town.#Hey, {{TermofEndearment}}, I'm glad you're back. I've missed you.#$e#$c .5#I took some pretty pictures! I'll show you them in bed.#Hmm. I feel like cleaning the floors tonight. Try not to get them any dirtier, please."
+            },
+            "When": {
+                "DayOfWeek": "Sunday",
+              	"TermofEndearment": "@, BFF",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHaley",
+            "Entries": {
+                "winter_16": "It looks chilly tonight...$s#$e#I-I think I'm heading down to the Night Market tonight. If I procrastinate any longer it's only gonna get colder."
+            },
+            "When": {
+                "DayOfWeek": "Sunday",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Haley",
+            "Entries": {
+                "marriage_r3": "Hi, @. You look really stylish today.",
+                "marriage_r4": "Is it weird for me to say that I'm missing the farm right now?#$b#Love you, bestie!$h",
+                "marriage_marriageroom": "Hi, {{Lowercase:{{TermofEndearment}}}}. I'm just processing some film in the darkroom. I'll be home soon.",
+                "marriage_doctorafter": "Well that wasn't as bad as I thought it would be.#$b#It's my turn to comfort you at your next check up. You can count on me!$h#$b#Say, when *is* your next check up?",
+                "marriage_photobus": "The angle of the town is perfect from here! Why did no one tell me?#$b#Now I wish you'd have asked me to move in sooner!$h",
+                "marriage_photobus2": "Be honest, do I look like a creep standing here and taking pictures?$s#$b#Aw, you're just buttering me up.$h",
+                "marriage_photobus3": "Hi, {{Lowercase:{{TermofEndearment}}}}! You look great today.",
+                "marriage_photobeach": "The ocean is only the second most beautiful thing in this town... at least when I get my makeup just right. *giggle*$h",
+                "marriage_nmpre": "Hey, {{Lowercase:{{TermofEndearment}}}}! Don't mind me, I'm just gonna stay here and warm up until the Night Market is open!$h#$b#It turns out Emily already went, so it's just us two tonight.",
+                "marriage_nm": "%Haley leans on you.#$b#Brrr! It's so cold! I knew I should've worn an extra layer!",
+                "marriage_13": "Mayor Lewis asked me to stay out here, but I can still see where they're placing some of the eggs.#$b#A hint? Hmm... I'll think about it!$h",
+            },
+            "When": {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Haley",
+            "Entries": {
+                "marriage_r3": "Hi, @. You look really stylish today.",
+                "marriage_r4": "Is it weird for me to say that I'm missing the farm right now?#$b#Love you, bestie!$h",
+                "marriage_marriageroom": "Hi, {{TermofEndearment}}. I'm just processing my films in the darkroom. I'll be home soon.",
+                "marriage_doctorafter": "Well that wasn't as bad as I thought it would be.#$b#It's my turn to comfort you at your next check up. You can count on me!$h#$b#Say, when *is* your next check up?",
+                "marriage_photobus": "The angle of the town is perfect from here! Why did no one tell me?#$b#Now I wish you'd have asked me to move in sooner!$h",
+                "marriage_photobus2": "Be honest, do I look like a creep standing here and taking pictures?$s#$b#Aw, you're just buttering me up.$h",
+                "marriage_photobus3": "Hi, {{TermofEndearment}}! You look great today.",
+                "marriage_photobeach": "The ocean is only the second most beautiful thing in this town... at least when I get my makeup just right. *giggle*$h",
+                "marriage_nmpre": "Hey, {{TermofEndearment}}! Don't mind me, I'm just gonna stay here and warm up until the Night Market is open!$h#$b#It turns out Emily already went, so it's just us two tonight.",
+                "marriage_nm": "%Haley leans on you.#$b#Brrr! It's so cold! I knew I should've worn an extra layer!",
+                "marriage_13": "Mayor Lewis asked me to stay out here, but I can still see where they're placing some of the eggs.#$b#A hint? Hmm... I'll think about it!$h",
+            },
+            "When": {
+              	"TermofEndearment": "@, BFF",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname": "Haley PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "spring_Tue8_inlaw_Haley":"I knew you and Haley would be friends the first time I met you.$0#$b#You're such a great match.$1",
+            "spring_Sun8_inlaw_Haley":"Hi, @.$0#$e#Are you and Haley enjoying life as {{RelationshipLabel}}?$0#$b#I hope you're both happy!$1",
+            "summer_Mon8_inlaw_Haley":"I knew you and Haley would be friends the first time I met you.$0#$b#You're such a great match.$1",
+            "fall_Mon8_inlaw_Haley":"I'm happy my two best friends ended up getting along so well.$0#$b#You and Haley are great as {{RelationshipLabel}}.$1",
+            "fall_Thu8_inlaw_Haley":"Hi, @.$0#$e#Are you and Haley enjoying life as {{RelationshipLabel}}?$0#$b#I hope you're both happy!$1",
+            "winter_Wed8_inlaw_Haley":"I'm happy my two best friends ended up getting along so well.$0#$b#You and Haley are great as {{RelationshipLabel}}.$1",
+            "spring_Tue8_roommate_Haley":"I knew you and Haley would be friends the first time I met you.$0#$b#You're such a great match.$1",
+            "spring_Sun8_roommate_Haley":"Hi, @.$0#$e#Are you and Haley enjoying life as {{RelationshipLabel}}?$0#$b#I hope you're both happy!$1",
+            "summer_Mon8_roommate_Haley":"I knew you and Haley would be friends the first time I met you.$0#$b#You're such a great match.$1",
+            "fall_Mon8_roommate_Haley":"I'm happy my two best friends ended up getting along so well.$0#$b#You and Haley are great as {{RelationshipLabel}}.$1",
+            "fall_Thu8_roommate_Haley":"Hi, @.$0#$e#Are you and Haley enjoying life as {{RelationshipLabel}}?$0#$b#I hope you're both happy!$1",
+            "winter_Wed8_roommate_Haley":"I'm happy my two best friends ended up getting along so well.$0#$b#You and Haley are great as {{RelationshipLabel}}.$1",
+           },
+		"When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Haley": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Haley make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Haley": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Haley will have any problems with that.$1",
+            "fall_Fri8_inlaw_Haley": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Haley make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Haley": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Haley will have any problems with that.$1",
+            "spring_Tue8_roommate_Haley": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Haley make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Haley": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Haley will have any problems with that.$1",
+            "fall_Fri8_roommate_Haley": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Haley make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Haley": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Haley will have any problems with that.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sam",
+	"Entries": {
+            "summer_Mon8_inlaw_Haley":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Haley":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "summer_Mon8_roommate_Haley":"Hey, @. How's life with Haley?$0#$b#You should get her to learn an instrument so I can come over and jam with you two.$1",
+            "fall_Sat8_roommate_Haley":"Hey, @. How's life with Haley?$0#$b#You should get her to learn an instrument so I can come over and jam with you two.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Emily",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Emily",
+	"Entries": {
+            "spring_Sun_inlaw_Haley":"I'm happy Haley has you as a friend.$0#$b#It seems the universe has great plans for both of you.$1",
+            "summer_Tue8_inlaw_Haley":"I did think you and Haley would get along well.$0#$b#It really makes me happy to see the two of you as {{RelationshipLabel}}.$1",
+            "summer_Wed_inlaw_Haley":"I clearly see that you and Haley were made to be {{RelationshipLabel}}.$0",
+            "summer_Sat8_inlaw_Haley":"Haley and I don't always see eye to eye, but I really miss her since she moved to the farm.$2#$b#That's inevitable, isn't it?$0#$e#But I know she's happy there.$0",
+            "fall_Fri_inlaw_Haley":"I'd like to catch up with you and Haley at the saloon sometime. What do you say?$0",
+            "winter_Tue_inlaw_Haley":"I couldn't be happier that you and Haley are {{RelationshipLabel}}, @.$1#$b#You've been wonderful for her.$0",
+            "winter_Thu8_inlaw_Haley":"Haley has changed a lot. She seems like a completely different person.$0#$e#At first I thought it was a temporary effect of your blooming friendship, but it was not.$0",
+            "spring_Sun_roommate_Haley":"I'm happy Haley has you as a friend.$0#$b#It seems the universe has great plans for both of you.$1",
+            "summer_Tue8_roommate_Haley":"I did think you and Haley would get along well.$0#$b#It really makes me happy to see the two of you as {{RelationshipLabel}}.$1",
+            "summer_Wed_roommate_Haley":"I clearly see that you and Haley were made to be {{RelationshipLabel}}.$0",
+            "summer_Sat8_roommate_Haley":"Haley and I don't always see eye to eye, but I really miss her since she moved to the farm.$2#$b#That's inevitable, isn't it?$0#$e#But I know she's happy there.$0",
+            "fall_Fri_roommate_Haley":"I'd like to catch up with you and Haley at the saloon sometime. What do you say?$0",
+            "winter_Tue_roommate_Haley":"I couldn't be happier that you and Haley are {{RelationshipLabel}}, @.$1#$b#You've been wonderful for her.$0",
+            "winter_Thu8_roommate_Haley":"Haley has changed a lot. She seems like a completely different person.$0#$e#At first I thought it was a temporary effect of your blooming friendship, but it was not.$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Haley":"Hello, @.$0#$e#You and Haley are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Haley":"Hello, @.$0#$e#You and Haley are such cute {{RelationshipLabel}}.$1",
+            "spring_Mon8_roommate_Haley":"Hello, @.$0#$e#You and Haley are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Haley":"Hello, @.$0#$e#You and Haley are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Haley":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Haley as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Haley":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Haley as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Haley":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Haley as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Haley":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Haley as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Haley":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Haley will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Haley":"A true lifelong friendship, like you have with Haley, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Haley":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Haley will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Haley":"A true lifelong friendship, like you have with Haley, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Haley":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Haley will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Haley":"A true lifelong friendship, like you have with Haley, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Haley":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Haley will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Haley":"A true lifelong friendship, like you have with Haley, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{	
+	"Logname": "Haley PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Haley":"If you and Haley want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Haley":"If you and Haley want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Haley":"If you and Haley want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Haley":"If you and Haley want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Haley":"If you and Haley want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Haley":"If you and Haley want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Haley":"If you and Haley want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Haley":"If you and Haley want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Haley":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Haley":"So are you and Ms. Haley like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Haley":"Hello, Farmer @.$0#$b#Why can't you and Ms. Haley celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Haley":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Haley":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Haley":"So are you and Ms. Haley like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Haley":"Hello, Farmer @.$0#$b#Don't you think you and Ms. Haley should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Haley":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Lewis",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Haley":"There aren't many young {{RelationshipLabel}} like you and Haley here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Haley":"There aren't many young {{RelationshipLabel}} like you and Haley here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Haley":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Haley":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Haley":"There aren't many young {{RelationshipLabel}} like you and Haley here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Haley":"There aren't many young {{RelationshipLabel}} like you and Haley here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Haley":"I know you and Haley chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Haley":"I know you and Haley chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Haley":"Hello, @.$0#$e#I wish you and Haley a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Haley":"May Yoba grant you and Haley a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Haley":"Hello, @.$0#$e#I wish you and Haley a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Haley":"May Yoba grant you and Haley a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Haley":"Hello, @.$0#$e#I wish you and Haley a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Haley":"May Yoba grant you and Haley a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Haley":"Hello, @.$0#$e#I wish you and Haley a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Haley":"May Yoba grant you and Haley a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Haley PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Haley":"Hey, kid.$0#$e#Looks like you found yourself a nice {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Haley":"Hey, kid.$0#$e#Looks like you found yourself a nice {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Haley":"Hey, kid.$0#$e#Looks like you found yourself a nice {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Haley":"Hey, kid.$0#$e#Looks like you found yourself a nice {{PlatonicSocialMenuLabel}}, huh?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },   
+{
+	"Logname": "Haley PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Haley":"You and Haley remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Haley":"You and Haley remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Haley":"You and Haley remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Haley":"You and Haley remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Abigail PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Haley":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Haley.$1",
+            "summer_Wed10_inlaw_Haley":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_inlaw_Haley":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Haley.$1",
+            "winter_Sun10_inlaw_Haley":"It's so cool how you're {{RelationshipLabel}} with Ms. Haley.$1#$e#I never thought that would have happened!$0",
+            "spring_Tue10_roommate_Haley":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Haley.$1",
+            "summer_Wed10_roommate_Haley":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_roommate_Haley":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Haley.$1",
+            "winter_Sun10_roommate_Haley":"It's so cool how you're {{RelationshipLabel}} with Ms. Haley.$1#$e#I never thought that would have happened!$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

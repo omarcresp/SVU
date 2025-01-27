@@ -1,0 +1,1040 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Sigurd 'Sig' Bear
+
+        "MadDog.HashtagBearFam.Sigurd": {
+          "DisplayName": "{{i18n:SigDisplayName}}",
+          "BirthSeason": "Fall",
+          "BirthDay": 19,
+          "HomeRegion": "Town",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Rude",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": "{{SigurdRelationshipStatus}}",
+          "FlowerDanceCanDance": true,
+          "LoveInterest": "Nova.Dylan",
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "CanGreetNearbyCharacters": false,
+          "CanCommentOnPurchasedShopItems": false,
+          "ItemDeliveryQuests": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": "PLAYER_HAS_SEEN_EVENT All MadDog.BearFam.16191006",
+          "WinterStarGifts": [
+            {
+              "Id": "Sig Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "{{Sigurd.SolsticeGift.Spot1}}", //honey
+                "{{Sigurd.SolsticeGift.Spot2}}", //peach
+                "{{Sigurd.SolsticeGift.Spot3}}" //beer
+              ]
+            }
+          ],
+          "IntroductionsQuest": "{{IncludeinIntroductionQuest}}",
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Gudrun": "{{i18n:GudrunSister}}",
+            "MadDog.HashtagBearFam.Gunnar": "{{i18n:GunBrother}}",
+            "MadDog.HashtagBearFam.Sondra": "{{i18n:SondraAunt}}",
+            "MadDog.HashtagBearFam.Teren": "{{i18n:TerenFriend}}"
+          },
+          "SpouseRoom": {
+            "MapAsset": "MadDog.Bearfam_{{FarmhouseSpouse}}_SpouseRoom",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "SpousePatio": {
+            "MapAsset": "MadDog.Bearfam_{{FarmhouseSpouse}}_SpousePatio",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            },
+            "SpriteAnimationFrames": [
+              [ 16, 1000 ],
+              [ 17, 1000 ],
+              [ 18, 1000 ],
+              [ 19, 1000 ],
+              [ 20, 1000 ]
+            ],
+            "SpriteAnimationPixelOffset": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+
+          "SpouseFloors": [
+            "12",
+            "15",
+            "34"
+          ],
+          "SpouseWallpapers": [
+            "37",
+            "46",
+            "94",
+            "104",
+            "21"
+          ],
+
+          "HiddenProfileEmoteSound": "drumkit4",
+          "HiddenProfileEmoteDuration": 4000,
+          "HiddenProfileEmoteStartFrame": 16,
+          "HiddenProfileEmoteFrameCount": 5,
+          "HiddenProfileEmoteFrameDuration": 400,
+
+          "DumpsterDiveFriendshipEffect": 0,
+          "DumpsterDiveEmote": 40,
+          "SpouseWantsChildren": "{{SigWantsChildren}}",
+          "SpouseGiftJealousy": true,
+          "SpouseGiftJealousyFriendshipChange": 0,
+          "FormerCharacterNames": [ "Sigurd" ],
+          "Appearance": [
+            //outfits 1
+            {
+              "Id": "Sigurd Spring 1",
+              "Condition": "ANY \"SEASON Spring\" \"IS_EVENT MadDog.BearFam.16191006\"",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sigurd_Spring_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sigurd_Spring_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sigurd Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sigurd_Summer_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sigurd_Summer_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sigurd Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sigurd_Fall_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sigurd_Fall_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sigurd Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sigurd_Winter_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sigurd_Winter_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sig Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sigurd_flowerdance",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sigurd_flowerdance",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sig Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sigurd_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Sig at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sigurd_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sig Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sigurd_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Sig at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sigurd_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            }
+          ],
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": 22,
+                "Y": 7
+              },
+              "Direction": "Down"
+            }
+          ]
+        },
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Sondra Brazier-Bear
+
+        "MadDog.HashtagBearFam.Sondra": {
+          "DisplayName": "{{i18n:SondraDisplayName}}",
+          "BirthSeason": "Spring",
+          "BirthDay": 19,
+          "HomeRegion": "Town",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "ItemDeliveryQuests": false,
+          "FlowerDanceCanDance": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": true,
+          "WinterStarGifts": [
+            {
+              "Id": "Sondra Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "{{Sondra.SolsticeGift.Spot1}}", //honey
+                "{{Sondra.SolsticeGift.Spot2}}", //peach
+                "{{Sondra.SolsticeGift.Spot3}}" //beer
+              ]
+            }
+          ],
+          "IntroductionsQuest": "{{IncludeinIntroductionQuest}}",
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Sigurd": "{{i18n:SigNephew}}",
+            "MadDog.HashtagBearFam.Gunnar": "{{i18n:GunNephew}}",
+            "MadDog.HashtagBearFam.Gudrun": "{{i18n:GudrunNiece}}",
+            "MadDog.HashtagBearFam.Teren": "{{i18n:TerenNephew}}"
+          },
+
+          "HiddenProfileEmoteSound": "SpringBirds",
+          "HiddenProfileEmoteDuration": 1800,
+          "HiddenProfileEmoteStartFrame": 18,
+          "HiddenProfileEmoteFrameCount": 3,
+          "HiddenProfileEmoteFrameDuration": 600,
+
+          "DumpsterDiveFriendshipEffect": 0,
+          "DumpsterDiveEmote": 60,
+          "FormerCharacterNames": [ "Sondra" ],
+          "Appearance": [
+            //outfits 1
+            {
+              "Id": "Sondra Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sondra_spring_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sondra_spring_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sondra_summer_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sondra_summer_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sondra_fall_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sondra_fall_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sondra_winter_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sondra_winter_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Sondra Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sondra_flowerdance",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sondra_flowerdance",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sondra Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sondra_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Sondra at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sondra_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Sondra Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sondra_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Sondra at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Sondra_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            }
+          ],
+
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": 7,
+                "Y": 7
+              },
+              "Direction": "Down"
+            }
+          ]
+        },
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Gunnar Bear, 'Gun'
+
+        "MadDog.HashtagBearFam.Gunnar": {
+          "DisplayName": "{{i18n:GunnarDisplayName}}",
+          "BirthSeason": "Fall",
+          "BirthDay": 19,
+          "HomeRegion": "Town",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Negative",
+          "CanBeRomanced": "{{GunnarRelationshipStatus}}",
+          "ItemDeliveryQuests": false,
+          "FlowerDanceCanDance": true,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "CanSocialize": "PLAYER_HAS_MAIL Any BearFamExtraMembers received",
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": "PLAYER_HAS_SEEN_EVENT All MadDog.BearFam.16193006",
+          "WinterStarGifts": [
+            {
+              "Id": "Gunnar Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "{{Gunnar.SolsticeGift.Spot1}}", //honey
+                "{{Gunnar.SolsticeGift.Spot2}}", //peach
+                "{{Gunnar.SolsticeGift.Spot3}}" //beer
+              ]
+            }
+          ],
+          "IntroductionsQuest": false,
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Sigurd": "{{i18n:SigBrother}}",
+            "MadDog.HashtagBearFam.Gudrun": "{{i18n:GudrunSister}}",
+            "MadDog.HashtagBearFam.Sondra": "{{i18n:SondraAunt}}",
+            "MadDog.HashtagBearFam.Teren": "{{i18n:TerenFriend}}"
+          },
+          "SpouseRoom": {
+            "MapAsset": "MadDog.Bearfam_{{FarmhouseSpouse}}_SpouseRoom",
+            "MapSourceRect": {
+              "X": 6,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "SpousePatio": {
+            "MapAsset": "MadDog.Bearfam_{{FarmhouseSpouse}}_SpousePatio",
+            "MapSourceRect": {
+              "X": 4,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            },
+            "SpriteAnimationFrames": [
+              [ 16, 1000 ],
+              [ 17, 1000 ],
+              [ 18, 1000 ],
+              [ 19, 1000 ],
+              [ 20, 1000 ],
+              [ 21, 1000 ]
+            ],
+            "SpriteAnimationPixelOffset": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+
+          "SpouseFloors": [
+            "3",
+            "36",
+            "38"
+          ],
+          "SpouseWallpapers": [
+            "47",
+            "21",
+            "85",
+            "54",
+            "78"
+          ],
+
+          "HiddenProfileEmoteSound": "potterySmash",
+          "HiddenProfileEmoteDuration": 3600,
+          "HiddenProfileEmoteStartFrame": 16,
+          "HiddenProfileEmoteFrameCount": 6,
+          "HiddenProfileEmoteFrameDuration": 600,
+
+          "DumpsterDiveFriendshipEffect": 0,
+          "DumpsterDiveEmote": 28,
+          "SpouseWantsChildren": "{{GunnarWantsChildren}}",
+          "SpouseGiftJealousy": true,
+          "SpouseGiftJealousyFriendshipChange": 0,
+          "FormerCharacterNames": [ "Gunnar" ],
+          "Appearance": [
+            //outfits 1
+            {
+              "Id": "Gunnar Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_Spring_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_1_glasses",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_Spring_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_Summer_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_Fall_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_1_glasses",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_Fall_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_Winter_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_1_glasses",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_Winter_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gunnar Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_flowerdance",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_flowerdance",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_flowerdance_glasses",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_flowerdance",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1_glasses",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Gunnar at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Gunnar at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1_glasses",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "Id": "Gunnar Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2_glasses",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Gunnar at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Gunnar at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2_glasses",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            //special
+            {
+              "ID": "Gunnar Armor",
+              "Condition": "Any \"LOCATION_NAME Target Mine\" \"LOCATION_NAME Target AdventureGuild\" \"IS_EVENT MadDog.BearFam.16193005\" \"IS_EVENT MadDog.BearFam.16193008\" \"IS_EVENT MadDog.BearFam.16193009\" \"IS_EVENT MadDog.BearFam.16191005\" \"IS_EVENT MadDog.BearFam.16193011\" \"IS_EVENT MadDog.BearFam.16193013\" \"IS_EVENT MadDog.BearFam.16193009A\" \"IS_EVENT MadDog.BearFam.16193001A\" \"IS_EVENT SnS.Ch4.Dandelion.7\" \"IS_EVENT SnS.Ch4.Finale\" \"IS_EVENT SnS.Ch4.Intermission.Mateo\" \"IS_EVENT SnS.Ch4.Intermission.Hector\" \"IS_EVENT SnS.Ch4.Intermission.Cirrus\" \"IS_EVENT SnS.Ch4.Intermission.SoloFarmer\" \"IS_EVENT SnS.Ch4.Victory.Mateo\" \"IS_EVENT SnS.Ch4.Victory.Hector\" \"IS_EVENT SnS.Ch4.Intermission.Cirrus\" \"IS_EVENT SnS.Ch4.Victory.SoloFarmer\" \"IS_EVENT SnS.Ch4.Victory.FarmerGuildmaster\" \"IS_EVENT SnS.Ch4.Intermission.Gunnar\" \"IS_EVENT SnS.Ch4.Victory.Gunnar\" \"IS_EVENT festival_fall1\" \"IS_EVENT EnD.Eli.11\" \"IS_EVENT MadDog.BearFam.GunnarCollisionDate\" \"IS_EVENT MadDog.BearFam.GunnarFlirtsBackEvent\" \"IS_EVENT MadDog.BearFam.GunnarProposalEvent\" \"IS_EVENT MadDog.BearFam.MarriedGunnarDateCave\" \"IS_EVENT SnS.Ch4.Intermission.Sen\" \"IS_EVENT SnS.Ch4.victory.Sen\"",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_armored",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_armored",
+              "IsIslandAttire": false,
+              "Precedence": -250,
+              "Weight": 1
+            },
+            {
+              "ID": "Gunnar Armor",
+              "Condition": "Any \"LOCATION_NAME Target Mine\" \"LOCATION_NAME Target AdventureGuild\" \"IS_EVENT MadDog.BearFam.16193005\" \"IS_EVENT MadDog.BearFam.16193008\" \"IS_EVENT MadDog.BearFam.16193009\" \"IS_EVENT MadDog.BearFam.16191005\" \"IS_EVENT MadDog.BearFam.16193011\" \"IS_EVENT MadDog.BearFam.16193013\" \"IS_EVENT MadDog.BearFam.16193009A\" \"IS_EVENT MadDog.BearFam.16193001A\" \"IS_EVENT SnS.Ch4.Dandelion.7\" \"IS_EVENT SnS.Ch4.Finale\" \"IS_EVENT SnS.Ch4.Intermission.Mateo\" \"IS_EVENT SnS.Ch4.Intermission.Hector\" \"IS_EVENT SnS.Ch4.Intermission.Cirrus\" \"IS_EVENT SnS.Ch4.Intermission.SoloFarmer\" \"IS_EVENT SnS.Ch4.Victory.Mateo\" \"IS_EVENT SnS.Ch4.Victory.Hector\" \"IS_EVENT SnS.Ch4.Intermission.Cirrus\" \"IS_EVENT SnS.Ch4.Victory.SoloFarmer\" \"IS_EVENT SnS.Ch4.Victory.FarmerGuildmaster\" \"IS_EVENT SnS.Ch4.Intermission.Gunnar\" \"IS_EVENT SnS.Ch4.Victory.Gunnar\" \"IS_EVENT festival_fall1\" \"IS_EVENT EnD.Eli.11\" \"IS_EVENT MadDog.BearFam.GunnarCollisionDate\" \"IS_EVENT MadDog.BearFam.GunnarFlirtsBackEvent\" \"IS_EVENT MadDog.BearFam.GunnarProposalEvent\" \"IS_EVENT MadDog.BearFam.MarriedGunnarDateCave\" \"IS_EVENT SnS.Ch4.Intermission.Sen\" \"IS_EVENT SnS.Ch4.victory.Sen\"",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gunnar_armored_glasses",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gunnar_armored",
+              "IsIslandAttire": false,
+              "Precedence": -250,
+              "Weight": 1
+            }
+          ],
+
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Gunnar Arrives",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": "53",
+                "Y": "7"
+              },
+              "Direction": "Down",
+              "Condition": "PLAYER_HAS_MAIL Any BearFamExtraMembers received"
+            },
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearFamLoadingZone",
+              "Tile": {
+                "X": "2",
+                "Y": "5"
+              },
+              "Direction": "Down"
+            }
+          ]
+        },
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Gudrun Bear
+
+        "MadDog.HashtagBearFam.Gudrun": {
+          "DisplayName": "{{i18n:GudrunDisplayName}}",
+          "BirthSeason": "Winter",
+          "BirthDay": 24,
+          "HomeRegion": "Town",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "FlowerDanceCanDance": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "CanSocialize": "PLAYER_HAS_MAIL Any BearFamExtraMembers received",
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": "PLAYER_HAS_SEEN_EVENT All MadDog.BearFam.16194007",
+          "WinterStarGifts": [
+            {
+              "Id": "Gudrun Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "{{Gudrun.SolsticeGift.Spot1}}", //honey
+                "{{Gudrun.SolsticeGift.Spot2}}", //peach
+                "{{Gudrun.SolsticeGift.Spot3}}" //beer
+              ]
+            }
+          ],
+          "IntroductionsQuest": false,
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Sigurd": "{{i18n:SigBrother}}",
+            "MadDog.HashtagBearFam.Gunnar": "{{i18n:GunnarBrother}}",
+            "MadDog.HashtagBearFam.Sondra": "{{i18n:SondraAunt}}",
+            "MadDog.HashtagBearFam.Teren": "{{i18n:TerenFriend}}"
+          },
+
+          "HiddenProfileEmoteSound": "drumkit2",
+          "HiddenProfileEmoteDuration": 2400,
+          "HiddenProfileEmoteStartFrame": 30,
+          "HiddenProfileEmoteFrameCount": 2,
+          "HiddenProfileEmoteFrameDuration": 1200,
+
+          "DumpsterDiveFriendshipEffect": 10,
+          "DumpsterDiveEmote": 32,
+          "FormerCharacterNames": [ "Gudrun" ],
+          "Appearance": [
+            //oufits 1
+            {
+              "Id": "Gudrun Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gudrun_spring_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gudrun_spring_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gudrun_summer_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gudrun_summer_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gudrun_Fall_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gudrun_Fall_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gudrun_Winter_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gudrun_Winter_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Gudrun Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gudrun_flowerdance",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gudrun_flowerdance",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gudrun Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gudrun_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Gudrun at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gudrun_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Gudrun Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gudrun_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Gudrun at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Gudrun_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            }
+          ],
+
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Gudrun Arrives",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": "35",
+                "Y": "7"
+              },
+              "Direction": "Down",
+              "Condition": "PLAYER_HAS_MAIL Any BearFamExtraMembers received"
+            },
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearFamLoadingZone",
+              "Tile": {
+                "X": "5",
+                "Y": "4"
+              },
+              "Direction": "Down"
+            }
+          ]
+        },
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Teren Barnes, 'Tere'
+
+        "MadDog.HashtagBearFam.Teren": {
+          "DisplayName": "{{i18n:TerenDisplayName}}",
+          "BirthSeason": "Summer",
+          "BirthDay": 1,
+          "HomeRegion": "Town",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "CanBeRomanced": "{{TerenRelationshipStatus}}",
+          "FlowerDanceCanDance": true,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "LoveInterest": "Nova.Eli",
+          "ItemDeliveryQuests": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "CanSocialize": "PLAYER_HAS_MAIL Any TerenMysteryMail received",
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": true,
+          "WinterStarParticipant": "PLAYER_HAS_MAIL All TerenMysteryMail received",
+          "WinterStarGifts": [
+            {
+              "Id": "Teren Gifts",
+              "ItemId": null,
+              "RandomItemId": [
+                "{{Teren.SolsticeGift.Spot1}}", //honey
+                "{{Teren.SolsticeGift.Spot2}}", //peach
+                "{{Teren.SolsticeGift.Spot3}}" //beer
+              ]
+            }
+          ],
+          "IntroductionsQuest": false,
+          "FriendsAndFamily": {
+            "MadDog.HashtagBearFam.Sigurd": "{{i18n:SigFriend}}",
+            "MadDog.HashtagBearFam.Gunnar": "{{i18n:GunFriend}}",
+            "MadDog.HashtagBearFam.Sondra": "{{i18n:SondraAunt}}",
+            "MadDog.HashtagBearFam.Gudrun": "{{i18n:GudrunFriend}}"
+          },
+          "SpouseRoom": {
+            "MapAsset": "MadDog.Bearfam_{{FarmhouseSpouse}}_SpouseRoom",
+            "MapSourceRect": {
+              "X": 12,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "SpousePatio": {
+            "MapAsset": "MadDog.Bearfam_{{FarmhouseSpouse}}_SpousePatio",
+            "MapSourceRect": {
+              "X": 8,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            },
+            "SpriteAnimationFrames": [
+              [ 16, 1000 ],
+              [ 17, 1000 ],
+              [ 18, 1000 ],
+              [ 19, 1000 ]
+            ],
+            "SpriteAnimationPixelOffset": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+
+          "SpouseFloors": [
+            "2",
+            "28",
+            "34"
+          ],
+          "SpouseWallpapers": [
+            "105",
+            "92",
+            "37",
+            "43",
+            "95"
+          ],
+
+          "HiddenProfileEmoteSound": "newRecipe",
+          "HiddenProfileEmoteDuration": 4000,
+          "HiddenProfileEmoteStartFrame": 16,
+          "HiddenProfileEmoteFrameCount": 4,
+          "HiddenProfileEmoteFrameDuration": 500,
+
+          "DumpsterDiveFriendshipEffect": 0,
+          "DumpsterDiveEmote": 40,
+          "SpouseWantsChildren": "{{TerenWantsChildren}}",
+          "SpouseGiftJealousy": true,
+          "SpouseGiftJealousyFriendshipChange": 0,
+          "FormerCharacterNames": [ "Teren" ],
+          "Appearance": [
+            //oufits 1
+            {
+              "Id": "Teren Spring 1",
+              "Condition": "SEASON Spring",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_spring_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_spring_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Summer 1",
+              "Condition": "SEASON Summer",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_summer_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_summer_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Fall 1",
+              "Condition": "SEASON Fall",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_Fall_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_Fall_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Winter 1",
+              "Condition": "SEASON Winter",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_Winter_1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_Winter_1",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 1
+            },
+            {
+              "Id": "Teren Flower Dance",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_flowerdance",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_flowerdance",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Teren Spirit Eve",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "ID": "Teren at ES Inn Spirit Eve",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 1 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve1",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_spiritseve1",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+            {
+              "Id": "Teren Spirit Eve Alt Year",
+              "Condition": "IS_EVENT festival_fall27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Teren at ES Inn Spirit Eve Alt Year",
+              "Condition": "LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27, {{Query: {{Year}} % 2 = 0 }}",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve2",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_spiritseve2",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Teren work uniform",
+              "Condition": "LOCATION_NAME Target MadDog.HashtagBearFam_CharityShop, PLAYER_HAS_SEEN_EVENT Current MadDog.BearFam.16199010",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            },
+            {
+              "ID": "Teren Violet Moon",
+              "Condition": "IS_EVENT festival_fall1",
+              "Portrait": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+              "Sprite": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+              "IsIslandAttire": false,
+              "Precedence": -125,
+              "Weight": 0
+            }
+          ],
+
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Teren Arrives",
+              "Location": "MadDog.BearFam.Custom_BearLodge",
+              "Tile": {
+                "X": "45",
+                "Y": "26"
+              },
+              "Direction": "Down",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any MadDog.BearFam.16199000"
+            },
+            {
+              "Id": "Default",
+              "Location": "MadDog.BearFam.Custom_BearFamLoadingZone",
+              "Tile": {
+                "X": "6",
+                "Y": "6"
+              },
+              "Direction": "Down"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}  

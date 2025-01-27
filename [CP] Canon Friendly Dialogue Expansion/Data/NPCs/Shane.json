@@ -1,0 +1,231 @@
+{
+  "Changes": [
+    {
+      "LogName": "CFE_Shane_Compat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Shane",
+      "Entries": {
+        //any keys that overlap go here
+        "AcceptGift_(O)346": "{{i18n: CFE_Shane_Beer}}",
+        "AcceptGift_(O)206": "{{i18n: CFE_Shane_Pizza}}"
+      },
+      "When": {
+        "ModdedDialogCompat": "true",
+        "Query: '{{CFE_Shane}}' = 'true' OR ('{{CFE_Shane}}' = 'random' AND '{{Random: true, false}}' = 'true')": true
+      }
+    },
+    {
+      "LogName": "CFE_Shane_GiftTastes",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Shane",
+      "Entries": {
+        // we can also add reveal gift taste code to these now that they use i18n.
+        "AcceptGift_(O)373": "{{i18n: CFE_Shane_GoldPumpkin}}",
+        "AcceptGift_(O)797": "{{i18n: CFE_Shane_Pearl}}",
+        "AcceptGift_(O)74": "{{i18n: CFE_Shane_PrismaticShard}}",
+        "AcceptGift_(O)446": "{{i18n: CFE_Shane_RabbitsFoot}}",
+        "AcceptGift_(O)260": "{{i18n: CFE_Shane_HotPepper}}",
+        "AcceptGift_(O)215": "{{i18n: CFE_Shane_PepperPoppers}}"
+      },
+      "When": { "Query: '{{CFE_Shane}}' = 'true' OR ('{{CFE_Shane}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Shane_Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Shane": "{{i18n: CFE_Shane_rainy_{{random: 1,2,3}}}}"
+      },
+      "When": { "Query: '{{CFE_Shane}}' = 'true' OR ('{{CFE_Shane}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Shane_Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Shane",
+      "Entries": {
+        //Special Dialogue
+        "Introduction": "{{i18n: CFE_Shane_Introduction}}",
+
+        //Date Specific Dialogue
+        "spring_1_2": "{{i18n: CFE_Shane_spring1y2}}",
+        "winter_28_1": "{{i18n: CFE_Shane_winter28}}",
+        "winter_28_2": "{{i18n: CFE_Shane_winter28}}",
+
+        //Heart Specific Dialogue
+        "summer_Mon10": "{{i18n: CFE_Shane_summerMon10}}",
+        "summer_Mon8": "{{i18n: CFE_Shane_summerMon8}}",
+        "summer_Mon6": "{{i18n: CFE_Shane_summerMon6}}",
+        "summer_Mon4": "{{i18n: CFE_Shane_summerMon4}}",
+        "summer_Tue10": "{{i18n: CFE_Shane_summerTue10}}",
+        "summer_Tue8": "{{i18n: CFE_Shane_summerTue8}}",
+        "summer_Wed8": "{{i18n: CFE_Shane_summerWed8}}",
+        "summer_Wed6": "{{i18n: CFE_Shane_repeated_1}}",
+        "summer_Thu10": "{{i18n: CFE_Shane_repeated_2}}",
+        "summer_Thu8": "{{i18n: CFE_Shane_summerThu8}}",
+        "summer_Thu6": "{{i18n: CFE_Shane_summerThu6}}",
+        "summer_Fri10": "{{i18n: CFE_Shane_summerFri10}}",
+        "summer_Fri8": "{{i18n: CFE_Shane_repeated_3}}",
+        "summer_Fri6": "{{i18n: CFE_Shane_repeated_4}}",
+        "summer_Fri4": "{{i18n: CFE_Shane_summerFri4}}",
+        "summer_Sun10": "{{i18n: CFE_Shane_summerSun10}}",
+        "summer_Sun8": "{{i18n: CFE_Shane_summerSun8}}",
+        "summer_Sun6": "{{i18n: CFE_Shane_summerSun6}}",
+
+        "fall_Mon10": "{{i18n: CFE_Shane_fallMon10}}",
+        "fall_Mon8": "{{i18n: CFE_Shane_fallMon8}}",
+        "fall_Mon6": "{{i18n: CFE_Shane_repeated_4}}",
+        "fall_Tue10": "{{i18n: CFE_Shane_fallTue10}}",
+        "fall_Tue8": "{{i18n: CFE_Shane_fallTue8}}",
+        "fall_Wed10": "{{i18n: CFE_Shane_fallWed10}}",
+        "fall_Wed8": "{{i18n: CFE_Shane_fallWed8}}",
+        "fall_Wed6": "{{i18n: CFE_Shane_repeated_1}}",
+        "fall_Thu10": "{{i18n: CFE_Shane_fallThu10}}",
+        "fall_Thu8": "{{i18n: CFE_Shane_fallThu8}}",
+        "fall_Thu6": "{{i18n: CFE_Shane_fallThu6}}",
+        "fall_Fri10": "{{i18n: CFE_Shane_fallFri10}}",
+        "fall_Fri8": "{{i18n: CFE_Shane_fallFri8_{{Random: 1,2}}}}",
+        "fall_Fri4": "{{i18n: CFE_Shane_fallFri4}}",
+        "fall_Sat10": "{{i18n: CFE_Shane_fallSat10{{GenderNeutralCompat}}}}",
+        "fall_Sun10": "{{i18n: CFE_Shane_fallSun10}}",
+        "fall_Sun8": "{{i18n: CFE_Shane_fallSun8}}",
+        "fall_Sun6": "{{i18n: CFE_Shane_fallSun6}}",
+
+        "winter_Mon10": "{{i18n: CFE_Shane_repeated_2}}",
+        "winter_Mon8": "{{i18n: CFE_Shane_winterMon8}}",
+        "winter_Mon4": "{{i18n: CFE_Shane_winterMon4}}",
+        "winter_Tue10": "{{i18n: CFE_Shane_winterTue10}}",
+        "winter_Tue8": "{{i18n: CFE_Shane_winterTue8}}",
+        "winter_Tue4": "{{i18n: CFE_Shane_winterTue4}}",
+        "winter_Wed8": "{{i18n: CFE_Shane_winterWed8}}",
+        "winter_Wed6": "{{i18n: CFE_Shane_repeated_1}}",
+        "winter_Thu10": "{{i18n: CFE_Shane_winterThu10}}",
+        "winter_Thu8": "{{i18n: CFE_Shane_winterThu8}}",
+        "winter_Thu6": "{{i18n: CFE_Shane_winterThu6}}",
+        "winter_Fri10": "{{i18n: CFE_Shane_winterFri10}}",
+        "winter_Fri8": "{{i18n: CFE_Shane_repeated_3}}",
+        "winter_Fri6": "{{i18n: CFE_Shane_winterFri6}}",
+        "winter_Sun10": "{{i18n: CFE_Shane_winterSun10}}",
+        "winter_Sun8": "{{i18n: CFE_Shane_winterSun8}}",
+        "winter_Sun6": "{{i18n: CFE_Shane_winterSun6}}",
+
+        "Mon8": "{{i18n: CFE_Shane_Mon8}}",
+        "Wed10": "{{i18n: CFE_Shane_Wed10}}",
+        "Wed6": "{{i18n: CFE_Shane_Wed6}}",
+        "Wed4": "{{i18n: CFE_Shane_Wed4}}",
+        "Wed2": "{{i18n: CFE_Shane_Wed2}}",
+        "Thu10": "{{i18n: CFE_Shane_Thu10}}",
+        "Thu2": "{{i18n: CFE_Shane_Thu2}}",
+        "Fri2": "{{i18n: CFE_Shane_Fri2}}",
+        "Sat10": "{{i18n: CFE_Shane_Sat10}}",
+        "Sat10_old": "{{i18n: CFE_Shane_Sat10_old}}",
+        "Sat10_530": "{{i18n: CFE_Shane_Sat10_530}}",
+        "Sat10_531": "{{i18n: CFE_Shane_Sat10_531}}",
+        "Sat10_532": "{{i18n: CFE_Shane_Sat10_532}}",
+
+        //Generic Weekday Dialogue
+        "Mon": "{{i18n: CFE_Shane_Mon}}"
+      },
+      "When": { "Query: '{{CFE_Shane}}' = 'true' OR ('{{CFE_Shane}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Shane_Married_spouseRoom",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "spouseRoom_Shane": "{{i18n: CFE_Shane_Married_spouseRoom_{{random: 1,2,3,4,5}}}}"
+      },
+      "When": { "Query: '{{CFE_Shane}}' = 'true' OR ('{{CFE_Shane}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    },
+    {
+      "LogName": "CFE_Shane_Marriage",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueShane",
+      "Entries": {
+        //these lines follow different priority rules than unmarried dialogue does, with different options having different % likelihoods to show up each day when the right conditions are met.
+
+        //Weather specific dialogue
+        //note that Indoor_Day is the key for any weather besides rain, even when the NPC is outside. Day means prior to 6pm. Indoor_Night is specific to inside the farmhouse when it's not raining after 6pm.
+        "Rainy_Day_0": "{{i18n: CFE_Shane_Married_RainyDay_1}}",
+        "Rainy_Day_1": "{{i18n: CFE_Shane_Married_RainyDay_{{Random: 2,3}}}}",
+        "Rainy_Day_2": "{{i18n: CFE_Shane_Married_RainyDay_{{Random: 4,5}}}}",
+        "Rainy_Day_3": "{{i18n: CFE_Shane_Married_RainyDay_{{Random: 6,7}}}}",
+        "Rainy_Day_4": "{{i18n: CFE_Shane_Married_RainyDay_{{Random: 8,9}}}}",
+
+        "Rainy_Night_0": "{{i18n: CFE_Shane_Married_RainyNight_1}}",
+        "Rainy_Night_1": "{{i18n: CFE_Shane_Married_RainyNight_{{Random: 2,3}}}}",
+        "Rainy_Night_2": "{{i18n: CFE_Shane_Married_RainyNight_{{Random: 4,5}}}}",
+        "Rainy_Night_3": "{{i18n: CFE_Shane_Married_RainyDay_{{Random: 6,7}}}}",
+        "Rainy_Night_4": "{{i18n: CFE_Shane_Married_RainyDay_{{Random: 8,9}}}}",
+
+        "Indoor_Day_0": "{{i18n: CFE_Shane_Married_IndoorDay_{{Random: 1,2,3}}}}",
+        "Indoor_Day_1": "{{i18n: CFE_Shane_Married_IndoorDay_{{Random: 4,5,6}}}}",
+        "Indoor_Day_2": "{{i18n: CFE_Shane_Married_IndoorDay_{{Random: 7,8,9}}}}",
+        "Indoor_Day_3": "{{i18n: CFE_Shane_Married_IndoorDay_{{Random: 10,11,12}}}}",
+        "Indoor_Day_4": "{{i18n: CFE_Shane_Married_IndoorDay_{{Random: 13,14,15}}}}",
+
+        "Indoor_Night_0": "{{i18n: CFE_Shane_Married_IndoorNight_{{Random: 1,2}}}}",
+        "Indoor_Night_1": "{{i18n: CFE_Shane_Married_IndoorNight_{{Random: 3,4}}}}",
+        "Indoor_Night_2": "{{i18n: CFE_Shane_Married_IndoorNight_{{Random: 5,6}}}}",
+        "Indoor_Night_3": "{{i18n: CFE_Shane_Married_IndoorNight_{{Random: 7,8}}}}",
+        "Indoor_Night_4": "{{i18n: CFE_Shane_Married_IndoorNight_{{Random: 9,10}}}}",
+
+        //locational specific dialogue
+        //funleave and return only show up on Mondays or Fridays (except for characters with jobs), and only while the npc is leaving or entering the farmhouse. fun return will not display once the NPC has reached their target location.
+        //Kid dialogue only displays when the NPC is standing in the farmhouse kitchen
+        //Kid dialogue only displays when the NPC is standing in the farmhouse kitchen
+        //Outdoor Dialogue only displays on the farm. _num has an 80% chance of being displayed, _npc has a 20% chance. _npc is currently unused here
+
+        "funLeave_Shane": "{{i18n: CFE_Shane_Married_funLeave_{{Random: 1,2}}}}",
+        "funReturn_Shane": "{{i18n: CFE_Shane_Married_funReturn_{{Random: 1,2}}}}",
+
+        "OneKid_0": "{{i18n: CFE_Shane_Married_OneKid_{{Random: 1,2}}}}",
+        "OneKid_1": "{{i18n: CFE_Shane_Married_OneKid_{{Random: 3,4}}}}",
+        "OneKid_2": "{{i18n: CFE_Shane_Married_OneKid_{{Random: 5,6}}}}",
+        "OneKid_3": "{{i18n: CFE_Shane_Married_OneKid_{{Random: 7,8}}}}",
+        "TwoKids_0": "{{i18n: CFE_Shane_Married_TwoKids_{{Random: 1,2}}}}",
+        "TwoKids_1": "{{i18n: CFE_Shane_Married_TwoKids_{{Random: 3,4}}}}",
+        "TwoKids_2": "{{i18n: CFE_Shane_Married_TwoKids_{{Random: 5,6}}}}",
+        "TwoKids_3": "{{i18n: CFE_Shane_Married_TwoKids_{{Random: 7,8}}}}",
+
+        "Outdoor_0": "{{i18n: CFE_Shane_Married_Outdoor_1}}",
+        "Outdoor_1": "{{i18n: CFE_Shane_Married_Outdoor_2}}",
+        "Outdoor_2": "{{i18n: CFE_Shane_Married_Outdoor_{{Random: 3,4}}}}",
+        "Outdoor_3": "{{i18n: CFE_Shane_Married_Outdoor_{{Random: 5,6}}}}",
+        "Outdoor_4": "{{i18n: CFE_Shane_Married_Outdoor_{{Random: 7,8}}}}",
+
+        "patio_Shane": "{{i18n: CFE_Shane_Married_patio_{{Random: 1,2,3}}}}",
+
+        //Date Specific Dialogue
+        "spring_2": "{{i18n: CFE_Shane_Married_spring2}}",
+        "spring_14": "{{i18n: CFE_Shane_Married_spring14}}",
+        "spring_19": "{{i18n: CFE_Shane_Married_spring19}}",
+        "spring_27": "{{i18n: CFE_Shane_Married_spring27}}",
+
+        "summer_2": "{{i18n: CFE_Shane_Married_summer2}}",
+        "summer_4": "{{i18n: CFE_Shane_Married_summer4}}",
+        "summer_12": "{{i18n: CFE_Shane_Married_summer12}}",
+        "summer_16": "{{i18n: CFE_Shane_Married_summer16}}",
+        "summer_17": "{{i18n: CFE_Shane_Married_summer17}}",
+
+        "fall_3": "{{i18n: CFE_Shane_Married_fall3}}",
+        "fall_7": "{{i18n: CFE_Shane_Married_fall7}}",
+        "fall_10": "{{i18n: CFE_Shane_Married_fall10}}",
+        "fall_12": "{{i18n: CFE_Shane_Married_fall12}}",
+        "fall_23": "{{i18n: CFE_Shane_Married_fall23}}",
+
+        "winter_1": "{{i18n: CFE_Shane_Married_winter1}}",
+        "winter_28": "{{i18n: CFE_Shane_Married_winter28}}"
+
+        //Seasonal Dialogue
+        //shown at 9+ hearts, with a 5% chance each day
+        //currently unused. key looks like "fall_NPC"
+
+        //Affection Specific Dialogue
+        //only shown inside the farmhouse between 11 and 6pm, or at the start of day if no other dialogue is chosen first.
+        //Bad or Neutral responses are randomly chosen between if the player has less than 9 hearts, Good or Neutral responses have a 50/50 chance with 10+ hearts, and the likelihood of a Good response goes up to 87% with 11+ hearts
+        //currently unused. key looks like "Bad_3"
+      },
+      "When": { "Query: '{{CFE_Shane}}' = 'true' OR ('{{CFE_Shane}}' = 'random' AND '{{Random: true, false}}' = 'true')": true }
+    }
+  ]
+}

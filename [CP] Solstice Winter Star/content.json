@@ -1,0 +1,130 @@
+{
+    "Format": "2.3.0",
+    "ConfigSchema": {
+        "FurnitureChanges": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Select 'true' if you would like to change furniture items related to the Feast of the Winter Star so that they match the new theme and colour scheme."
+        },
+        "VegetarianFoodOnly": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Description": "Select 'true' if you would like to restrict foods to only vegetarian dishes."
+        },
+        "NewLettersFast": {
+            "AllowValues": "OneYear, TwoYears, FiveYears",
+            "Default": "FiveYears",
+            "Description": "Select 'OneYear' if you would like all of the new letters to arrive in the same year, 'TwoYears' if you would like them to arrive in Years 1 and 2, or 'FiveYears' if you would like one letter each year."
+        },
+        "SaturationLevel": {
+            "AllowValues": "Saturated, Desaturated",
+            "Default": "Saturated",
+            "Description": "Select 'Desaturated' to use a darker, more desaturated colour palette designed to work alongside Way Back Pelican Town and various darker or desaturated recolours."
+        }
+    },
+    "DynamicTokens": [
+        {
+            "Name": "SyncedRandom",
+            "Value": "{{Random: True, False |key=CFE_SyncedRandom}}"
+        },
+        {
+            "Name": "DSVGus",
+            "Value": ""
+        },
+        {
+            "Name": "DSVGus",
+            "Value": ".DSV",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:GusVariant |contains= Modded": true
+            }
+        },
+        {
+            "Name": "AlexGrandmaToken",
+            "Value": "{{i18n:AlexGrandmaToken.Default}}"
+        },
+        {
+            "Name": "AlexGrandmaToken",
+            "Value": "{{i18n:AlexGrandmaToken.Jewish}}",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:JewishMullners": "true"
+            }
+        },
+        {
+            "Name": "AlexGrandmaToken",
+            "Value": "{{i18n:AlexGrandmaToken.Mexican}}",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:EvelynVariant": "Mexican"
+            }
+        },
+        {
+            "Name": "AlexGrandmaToken",
+            "Value": "{{i18n:AlexGrandmaToken.Samoan}}",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:EvelynVariant": "Samoan"
+            }
+        },
+        {
+            "Name": "EzraRandomFashion",
+            "Value": "{{i18n:SWS.EzraFashion.{{Random:1,2,3,4,5}}}}"
+        },
+    ],
+    "Changes": [
+        {
+            "LogName": "SWS Includes",
+            "Action": "Include",
+            "FromFile": "Data/GiftChanges.json, Data/Mail.json, Data/Dialogue.json, Data/Misc.json, Data/MapArt.json"
+        },
+        {
+            "LogName": "SWS Furniture Include",
+            "Action": "Include",
+            "FromFile": "Data/Furniture.json",
+            "When": {
+                "FurnitureChanges": "True"
+            }
+        },
+        {
+            "LogName": "SWS Furniture Include",
+            "Action": "Include",
+            "FromFile": "Data/GiftChangesNonVegetarian.json",
+            "When": {
+                "VegetarianFoodOnly": "False"
+            }
+        },
+        {
+            "LogName": "HSO Edits Include",
+            "Action": "Include",
+            "FromFile": "Data/HSOEdits.json",
+            "When": {
+                "HasMod |contains= CopperSun.HolidaySpecialOrders": true
+            }
+        },
+        {
+            "LogName": "RSV Edits Include",
+            "Action": "Include",
+            "FromFile": "Data/RSVEdits.json",
+            "When": {
+                "HasMod |contains= Rafseazz.RSVCP": true
+            }
+        },
+        {
+            "LogName": "SBV Edits Include",
+            "Action": "Include",
+            "FromFile": "Data/SBVEdits.json",
+            "When": {
+                "HasMod |contains= skellady.SBVCP": true
+            }
+        },
+        {
+            "LogName": "ARV Edits Include",
+            "Action": "Include",
+            "FromFile": "Data/ARVEdits.json",
+            "When": {
+                "HasMod |contains= Himetarts.ARV.CP": true
+            }
+        }
+    ]
+}

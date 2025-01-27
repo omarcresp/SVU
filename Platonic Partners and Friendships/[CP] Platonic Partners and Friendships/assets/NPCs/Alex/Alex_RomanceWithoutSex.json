@@ -1,0 +1,212 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "SpouseStardrop": "My old coach hooked me up with that fruit!$h#$b#It's my way of saying thank you for being in my life. I'm so much happier and more secure about myself since we've been together.#$b#I used to think that I unless I lived up to some impossible ideal, no one would care about or respect me.$s#$b#But you've helped me see that those expectations were all in my own head.#$b#The people who matter won't think less of me if I'm not famous, or don't have a perfect body, or if I talk about my feelings sometimes.#$b#So, even though I still feel a little sappy saying it out loud... I love you, @. I always will.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "SpouseStardrop": "My old coach hooked me up with that fruit!$h#$b#It's my way of saying thank you for being in my life. I'm so much happier and more secure about myself since we've been together.#$b#I used to think that I unless I lived up to some impossible ideal, no one would care about or respect me.$s#$b#But you've helped me see that those expectations were all in my own head.#$b#The people who matter won't think less of me if I'm not famous, or don't have a perfect body, or if I talk about my feelings sometimes.#$b#So, even though I still feel a little sappy saying it out loud... I love you, @. I always will.$h",
+
+            },
+                "UseLovePortraits": "true"
+        },
+        {
+            "LogName": "Alex terms of endearment, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Alex": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Alex terms of endearment, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+            },
+            "When":
+            {
+                "Relationship:Alex": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries":
+            {
+                "winter_28": "It's been a great year, @. I'm looking forward to next year!",
+                "Indoor_Day_2": "Wow, look at those biceps! You're getting ripped from all that farm work.",
+                "Indoor_Night_3": "I had to buy a bunch of new shorts. I shrunk my old ones in the laundry...$s",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+                "Alex_spouse": "What am I thankful for? Getting to spend my life with you.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+                "Alex_spouse": "What am I thankful for? Getting to spend my life with you.$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false"
+            },
+        },
+        {
+	    "Logname": "Alex default blush edits",
+            "Action": "EditImage",
+            "Target": "Portraits/Alex",
+            "FromFile": "assets/Portraits/AlexNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.AlexEvelynGeorge": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        {
+	    "Logname": "Alex default blush edits, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Alex_Winter",
+            "FromFile": "assets/Portraits/AlexWinterNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.AlexEvelynGeorge": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            }
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+	    "Logname": "Alex Seasonal Cute blush edits",
+            "Action": "EditImage",
+            "Target": "Portraits/Alex",
+            "FromFile": "assets/Portraits/AlexNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+        {
+	    "Logname": "Alex Seasonal Cute blush edits, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Alex_Winter",
+            "FromFile": "assets/Portraits/AlexNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 384
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_RomanceWithoutSex": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            }
+        },
+//CFDE
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries":
+            {
+                "winter_28": "It's been a great year, @. I'm looking forward to next year!",
+                "Indoor_Day_2": "#$c .5#Wow, look at those biceps! You're getting ripped from all that farm work.#Today's a good day to read something. ...Yeah, I've been keeping that going.$h",
+                "Indoor_Night_3": "#$c .5#I had to buy a bunch of new shorts. I shrunk my old ones in the laundry...$s#I feel like my mom can rest at peace, knowing how things have worked out for me. I'm lucky to have you in my life.",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+
+//Immersive Spouses 
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Alex",
+		"Entries": {
+			"marriage_beach4": "Looking good, @! {{Random: Maybe it's the sun., You been working out with that sword of yours?}}",
+			"marriage_beach5": "My body's always restless during summer.#$b#{{Random: I totally regret not bringing my ball with me today...$s, Maybe I'll go for a swim., This body was built for moving non stop.}}",
+			"marriage_beach7": "Hey, I was hoping I'd see you here. You taking a break, or are you here to fish?",				
+			"marriage_bh2": "@, you here to work out too?$6#$b#Or to relax? That heated pool is awesome for sore muscles.$6",	
+			"marriage_bh3": "Cheer me on... *huff* I'm this close... *puff* to a new personal best!$6",
+			},
+		    "When": {
+                	"HasMod |contains=iss.immersivespouses": "true"
+		    }
+	},
+    ]
+}

@@ -1,0 +1,101 @@
+{
+  "Format": "2.4.0",
+  "ConfigSchema":
+    {
+	"CurioUnlockMode":
+	  {
+	    "AllowValues": "MakeFriends, CompleteCC, Bookseller, Free",
+	    "Default": "MakeFriends"
+	  },
+	"ShipItemsForPerfection":
+	  {
+	    "AllowValues": "On, Off",
+	    "Default": "Off"
+	  },
+	"Quests":
+	  {
+	    "AllowValues": "On, Off",
+	    "Default": "On"
+	  },
+	 "Animations":
+	  {
+	    "AllowValues": "On, Off",
+	    "Default": "On"
+	  },
+	"JellyStyle":
+	  {
+	    "AllowValues": "Default, Vanilla",
+	    "Default": "Default"
+	  }
+    },
+  "DynamicTokens":
+    [
+	{
+	  "Name": "CollectionConfig",
+	  "Value": "True",
+	  "When": {"ShipItemsForPerfection": "Off"}
+	},
+	{
+	  "Name": "CollectionConfig",
+	  "Value": "False",
+	  "When": {"ShipItemsForPerfection": "On"}
+	},
+	{
+	  "Name": "JellyConfig",
+	  "Value": "Mods/appleseed.BCP/VanillaJelly",
+	  "When": {"JellyStyle": "Vanilla"}
+	},
+	{
+	  "Name": "JellyConfig",
+	  "Value": "Mods/appleseed.BCP/DefaultJelly",
+	  "When": {"JellyStyle": "Default"}
+	}
+    ],
+  "Changes":
+	[
+	  {
+	    "Action": "Include",
+	    "FromFile": "Data/BookTriggers.json, Data/CraftingData.json, Data/CraftingStation.json, Data/Crops.json, Data/GiftTastes.json, Data/GiftReactions.json, Data/Machines.json, Data/Objects.json, Data/Shops.json, Data/Letters.json, Data/Furniture.json, Data/ShopTinsel.json"
+	  },
+	  {
+	    "Action": "Include",
+	    "FromFile": "Data/Quests.json",
+	    "When":
+		{
+		  "Quests": "On"
+		}
+	  },
+	  {
+	    "Action": "Include",
+	    "FromFile": "Data/Animations.json",
+	    "When":
+		{
+		  "Animations": "On"
+		}
+	  },
+	  {
+	    "Action": "Include",
+	    "FromFile": "Data/SCCategories.json, Data/Sounds.json, Data/SCItemProperties.json",
+	    "When": 
+	      {
+		"HasMod |contains=spacechase0.SpaceCore": true
+	      }
+	  },
+	  {
+	    "Action": "Include",
+	    "FromFile": "Data/Addons/SVE/GiftTastes.json",
+	    "When": 
+		{
+		  "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+		}
+	  },
+	  {
+	    "Action": "Include",
+	    "FromFile": "Data/Addons/East Scarp/GiftTastes.json",
+	    "When": 
+		{
+		  "HasMod |contains=LemurKat.EastScarpe.CP": true
+		}
+	  }
+	]
+}

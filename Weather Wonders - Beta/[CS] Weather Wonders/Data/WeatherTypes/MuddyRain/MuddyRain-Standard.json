@@ -1,0 +1,93 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load WW's Muddy Rain Weather (Standard)",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "Kana.WeatherWonders_MuddyRain": {
+          "Id": "Kana.WeatherWonders_MuddyRain",
+          "DisplayName": "{{i18n: Weather.MuddyRain}}",
+          "Forecast": "{{i18n: Weather.MuddyRain.Forecast}}",
+          "IconTexture": "Mods/Kana.WeatherWonders/Icons",
+          "IconSource": {
+            "X": 84,
+            "Y": 0
+          },
+          "TVTexture": "Mods/Kana.WeatherWonders/TV",
+          "TVSource": {
+            "X": 0,
+            "Y": 91
+          },
+          "MusicOverride": "rain",
+          "MusicFrequencyOutside": 100,
+          "MusicFrequencyInside": 15,
+          "IsRaining": true,
+          "UseNightTiles": true,
+          "SpawnCritters": false,
+          "SpawnFrogs": true,
+          "SpawnClouds": false,
+          "Layers": [
+            {
+              "Id": "MuddyRainParticles",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "TileSheets/rain",
+              "Source": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-16, 32",
+              "Count": 35,
+              "Color": "198, 115, 51",
+              "Opacity": 0.9,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            },
+            {
+              "Id": "MuddyRainParticles2",
+              "Type": "Rain",
+              "Group": "Rain",
+              "Mode": "Normal",
+              "Texture": "TileSheets/rain",
+              "Source": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Frames": 5,
+              "Scale": 4,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "Speed": "-16, 32",
+              "Count": 35,
+              "Color": "198, 115, 51",
+              "Opacity": 0.9,
+              "Vibrancy": 1,
+              "TargetMapType": "Outdoors"
+            }
+          ],
+          "Lighting": [
+            {
+              "Id": "MuddyRainTint1",
+              "AmbientColor": "255, 200, 80",
+              "AmbientOutdoorOpacity": null,
+              "LightingTint": "orangered",
+              "LightingTintOpacity": 0.45,
+              "PostLightingTint": "43, 29, 14",
+              "PostLightingTintOpacity": 0.22
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

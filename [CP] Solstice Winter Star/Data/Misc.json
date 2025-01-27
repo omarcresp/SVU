@@ -1,0 +1,55 @@
+{
+	"Changes": [
+		// GIFT TASTES
+		{
+			"LogName": "Spice Berry Universal Love",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [ "Entries", "Universal_Love" ],
+					"Value": "396",
+					"Delimiter": " "
+				}
+			],
+			"When": {
+				"Season": "Winter"
+			}
+		},
+		{
+			"LogName": "Winter Star Universal Loves & Dislikes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Universal_Love": "-7 -75 -79",
+				"Universal_Dislike": "-2 -4 -7 -8 -12 -15 -16 -19 -22 -24 -26 -28 -74 -75 -80 Book_PriceCatalogue category_trinket"
+			},
+			"When": {
+				"Season": "Winter",
+				"Day": "25"
+			}
+		},
+		{
+			"LogName": "Miracle at Coldstar Ranch Art Edit",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Movies",
+			"FromFile": "Assets/Movie_WinterStar.png",
+            "ToArea": {
+                "X": 16,
+                "Y": 640,
+                "Width": 474,
+                "Height": 125
+            }
+		},
+		{
+			"LogName": "Miracle at Coldstar Ranch Dialogue Edit",
+			"Action": "EditData",
+			"Target": "Strings/Movies",
+			"Entries":{
+				"MiracleAtColdstarRanch_Scene7": "{{i18n:SWS.Movie.MiracleAtColdstarRanch_Scene7}}",
+				"MiracleAtColdstarRanch_Scene9": "{{i18n:SWS.Movie.MiracleAtColdstarRanch_Scene9}}"
+			}
+		}
+	]
+}

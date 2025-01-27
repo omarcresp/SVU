@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="3">
+ <properties>
+  <property name="AmbientLight" value="120 160 80"/>
+  <property name="Music" value="Upper_Ambient"/>
+  <property name="Warp" value="4 10 Railroad 54 34"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine_dark" width="256" height="288"/>
+ </tileset>
+ <layer id="1" name="Back" width="1" height="2">
+  <data encoding="csv">
+175,
+255
+</data>
+ </layer>
+ <layer id="9" name="Back1" width="1" height="2">
+  <data encoding="csv">
+0,
+159
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="1" height="2">
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="1" height="2" visible="0">
+  <data encoding="csv">
+0,
+9
+</data>
+ </layer>
+ <layer id="4" name="Front" width="1" height="2">
+  <data encoding="csv">
+119,
+0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back">
+  <object id="2" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+</map>

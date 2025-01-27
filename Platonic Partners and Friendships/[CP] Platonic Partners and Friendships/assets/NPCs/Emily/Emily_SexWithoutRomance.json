@@ -1,0 +1,1236 @@
+{
+    "Changes": [
+        {
+	    "Logname": "Emily dialogue, fully platonic, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "Wed8": "Hi, @.$u#$e#I always knew we'd become close like this.",
+		"fall_Thu8": "I always thought Clint and I were friends, but I'm starting to think it's one-sided.$u#$e#I keep getting the feeling that he's... disappointed by our friendship, somehow. I don't know what I'm doing wrong.$s",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're such a kind friend!$h",
+                "SpouseStardrop": "I woke from a strange dream with that fruit clasped in my hands... $l#$b#I gave it to you to thank you for being my friend. I mean, for being my friend honestly and unconditionally.$u#$b#I like to think I'm good at reading people, but... romantic interest is a blind spot for me.$u#$b#Sometimes I'm not sure if my friendship brings someone joy... or if it's just frustrating and painful for them, because it's not what they really want from me.$s#$b#But it's not like that with you. I know that we're {{RelationshipLabel}} because that's truly what you want, not just what you're settling for. And it's what I want, too.$l#$b#I think that's why we were always meant to find each other. Some cosmic thread connected us... knowing that if our souls ever met, they would be in perfect harmony.#$b#I love you, @. You're my person.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true
+            }
+        },
+        {
+	    "Logname": "Emily dialogue, fully platonic, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "Wed8": "Hi, @.$u#$e#I always knew we'd become close like this.",
+		"fall_Thu8": "I always thought Clint and I were friends, but I'm starting to think it's one-sided.$u#$e#I keep getting the feeling that he's... disappointed by our friendship, somehow. I don't know what I'm doing wrong.$s",
+                "SpouseGiftJealous": "I heard you gave someone a gift today.#$e#You're such a kind friend!$h",
+                "SpouseStardrop": "I woke from a strange dream with that fruit clasped in my hands... $u#$b#I gave it to you to thank you for being my friend. I mean, for being my friend honestly and unconditionally.$u#$b#I like to think I'm good at reading people, but... romantic interest is a blind spot for me.$u#$b#Sometimes I'm not sure if my friendship brings someone joy... or if it's just frustrating and painful for them, because it's not what they really want from me.$s#$b#But it's not like that with you. I know that we're {{RelationshipLabel}} because that's truly what you want, not just what you're settling for. And it's what I want, too.#$b#I think that's why we were always meant to find each other. Some cosmic thread connected us... knowing that if our souls ever met, they would be in perfect harmony.$h#$b#I love you, @. You're my person.",
+            },
+            "When":
+            {
+                "UseLovePortraits": false
+            }
+        },
+        {
+	    "Logname": "Emily bouquet reactions, no Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: I'm so happy you want to get to know me better! All souls are connected, but I'm ready to be even more closely connected to yours.#$e#And the flowers are beautiful, too!$h @@ You want us to spend more time together? Of course... We were always meant to!#$e#Look, if we press our palms together, the lifelines cross... Haha, I don't mean look with your eyes! |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "false",
+            }
+        },
+        {
+	    "Logname": "Emily bouquet reactions, Love Letters",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "AcceptBouquet": "{{Random: I'm so happy you want to get to know me better! All souls are connected, but I'm ready to be even more closely connected to yours.#$e#And the letter is beautiful, too... in every respect!$h @@ You want us to spend more time together? Of course... We were always meant to!#$e#Look, if we press our palms together, the lifelines cross... Haha, I don't mean look with your eyes! |inputSeparator=@@}}",
+            },
+            "When":
+            {
+		"HasMod |contains=applesauce.LoveLetters": "true",
+            }
+        },
+        {
+            "LogName": "Emily pendant and bracelet proposal acceptance",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+		"Emily_Engaged": "You want us to be {{RelationshipLabel}} forever? I knew it... Visualizing my wish made it come true!$h#$b#Normally I'd ask to do a sage cleanse before I move in, but I can tell you only attract kind spirits.#$b#In the valley, we celebrate pacts like this the same way as weddings. I'll set everything up. We'll have the commitment ceremony in 3 days, okay?",
+		"Emily_EngagedRoommate": "You want us to be {{RelationshipLabel}} forever? I knew it... Visualizing my wish made it come true!$h#$b#Normally I'd ask to do a sage cleanse before I move in, but I can tell you only attract kind spirits.#$b#I need some time to pack up my belongings. I'll be there in 3 days, okay?",
+            },
+        },
+        {
+            "LogName": "Emily engagement dialogue",	
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries":
+            {
+                "EmilyRoommate0": "Can you believe we're about to move in together? I've never lived with anyone but my family.#$e#It's... exciting.",
+                "EmilyRoommate1": "I always knew something important would happen between us... I just never thought it would be this!$h#$e#The parrot is excited too.",
+            },
+        },
+        {
+            "LogName": "Emily terms of endearment and other misc lines, no poly",	
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Light of my life",
+                "NPC.cs.4518": "Light of my life",
+                "NPC.cs.4519": "Light of my life",
+                "NPC.cs.4522": "My kindred soul",
+                "NPC.cs.4523": "My kindred soul",
+                "Event.cs.1736": "$q -1 null#I sense you want to ask me something...#$r -1 0 danceAsk#(Ask Emily to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "false",
+            },
+        },
+        {
+            "LogName": "Emily terms of endearment and other misc lines, poly with CFD",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "NPC.cs.4425": "Life sure is different since we've been {{RelationshipLabel}}...$s",
+                "NPC.cs.4507": "@",
+                "NPC.cs.4508": "@",
+                "NPC.cs.4509": "@",
+                "NPC.cs.4510": "@",
+                "NPC.cs.4511": "@",
+                "NPC.cs.4512": "{{TermofEndearment}}",
+                "NPC.cs.4513": "{{TermofEndearment}}",
+                "NPC.cs.4514": "{{TermofEndearment}}",
+                "NPC.cs.4515": "{{TermofEndearment}}",
+                "NPC.cs.4516": "{{TermofEndearment}}",
+                "NPC.cs.4517": "Light of my life",
+                "NPC.cs.4518": "Light of my life",
+                "NPC.cs.4519": "Light of my life",
+                "NPC.cs.4522": "My kindred soul",
+                "NPC.cs.4523": "My kindred soul",
+                "Event.cs.1736": "$q -1 null#I sense you want to ask me something...#$r -1 0 danceAsk#(Ask Emily to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Married",
+                "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove, ApryllForever.PolyamorySweetLove": "true",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "LogName": "Emily roommate flower dance ask",	
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "Event.cs.1738": "$q -1 null#I sense you want to ask me something...#$r -1 0 danceAsk#(Ask Emily to be your dance partner)#$r -1 0 null#Nevermind...",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Married",
+                "HasMod |contains=aedenthorn.CustomFixedDialogue": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: My answer isn't going to change, you know! I don't have any doubts about this.$h @@ I'll say 'yes' as many times as you need to affirm our bond. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: My answer isn't going to change, you know! I don't have any doubts about this.$h @@ I'll say 'yes' as many times as you need to affirm our bond. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Engaged"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: You don't have to keep asking me to live with you. I'm already here, body and soul. @@ You're sweet, but I can't accept another pendant. When you bring two of them close together, their energies resonate disharmoniously.$u |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{Random: Um, don't be weird. Emily and I aren't a matched set.$u @@ I love my sister, but I think it's actually better for our relationship if we don't live together. |inputSeparator=@@}}",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Engaged, Married"
+            }
+        },  
+        {
+	    "Logname": "Clint dialogue about Emily",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries":
+            {
+		"dating_Emily": "So... um... you and Emily, you're...$s#$b#Friends? That's good. Um. It's good that she has friends.#$e#I was just wondering because I heard you gave her... Anyway, thanks for clearing that up.$a",
+		"married_Emily": "%Clint is muttering to himself.#$b#Maybe if *I* had a big beautiful house on a farm... *sigh*$a",
+		"divorced_Emily": "I can't believe you kicked Emily out.$a#$b#You had everything I... Okay, not *everything,* but more than I ever had. And you just threw it away.$s",
+            },
+        }, 
+        {
+	    "Logname": "Gus dialogue about Emily",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries":
+            {
+		"dating_Emily_memory_oneweek": "Emily has a real pep in her step since you two started spending more time together.",
+            },
+        },    
+        {
+	    "Logname": "Haley dialogue about Emily",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries":
+            {
+		"married_Emily": "Well, I guess Emily and I won't be arguing about chores anymore.$h#$b#Actually, she did most of them... Can you ask her to tell me where she was keeping the bleach?$s",
+		"divorced_Emily": "You and Emily didn't work out as {{RelationshipLabel}}, huh? Well... It happens.#$e#It *is* kind of awkward that you're both still living in this tiny town, though.",
+		"married_Emily_memory_oneweek": "Is Emily settling into the farm life?#$e#I have to admit, I miss having her around more than I thought I would.$s",
+            },
+        },        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Good_1": "It's so fun to live together! I always thought I'd have my own place one day, but I like this better.",
+                "Good_3": "Thanks for taking me into your home. I love this new life.$h",
+                "Neutral_0": "I hope you'll still like me when I'm old and not as fun to be around.",
+                "spring_1": "Happy new year, @. Let's make this a special one.",
+            },
+        },
+        {
+	    "Logname": "Emily -'Admiring the pendant' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my amulet... The shell is beautiful! I can feel the pure blue energy radiating from it.",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Married",
+                "Roommate |contains=Emily": "false",
+            },	
+        },
+        {
+	    "Logname": "Emily - Bracelet version of 'admiring the pendant' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Good_5": "I was just admiring my bracelet... The design is beautiful! I can feel the positive energy you wove into it.",
+            },
+            "When":
+            {
+                "Roommate": "Emily"
+            },	
+        },
+        {
+	    "Logname": "Emily - Ambiguous version of 'admiring the pendant' line",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Good_5": "I was just admiring the gift you gave me when you asked me to move in... It's so beautiful! I can feel the positive energy radiating from it.",
+            },
+            "When":
+            {
+                "Relationship:Emily": "Married",
+                "Roommate |contains=Emily": "false",
+                "Spouse |contains=Emily": "false",
+            },	
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Rainy_Day_4": "I never told you this... but when you first moved here I had a dream about you. I knew right then that our life-paths would intertwine.",
+                "Outdoor_1": "What's on the agenda today?",
+                "TwoKids_2": "Well, %kid2 certainly has your personality!",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "false"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Rainy_Day_Emily": "I know you pride yourself on your work, but don't overdo it today. Okay, {{Lowercase:{{TermofEndearment}}}}?$u",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "Entries":
+            {
+                "Rainy_Day_Emily": "I know you pride yourself on your work, but don't overdo it today. Okay, {{TermofEndearment}}?$u",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries":
+            {
+                "126": "ItemDelivery/Errand for Emily/Emily asked you to bring her 200 pieces of fiber for a secret project./Bring Emily 200 fiber./Emily 771 200/-1/0/-1/false/Oh, this looks perfect... and it's sustainably sourced, too! Thanks so much, @.$h#$b#Now, I've got my work cut out for me. It'll be a few more days before it's ready...",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Events",
+            "Entries":
+            {
+                "SpouseFlowerDanceAccept_Emily": "Of course, {{Lowercase:{{TermofEndearment}}}}. I've been looking forward to this!$h",
+            },
+            "When":
+            {
+                "TermofEndearment |contains=@": "false",
+                "TermofEndearment |contains=BFF": "false",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Events",
+            "Entries":
+            {
+                "SpouseFlowerDanceAccept_Emily": "Of course, {{TermofEndearment}}. I've been looking forward to this!$h",
+            },
+            "When":
+            {
+                "TermofEndearment": "@, BFF",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries":
+            {
+                "SummitEvent_Dialogue3_Emily": "This is a special moment...#$b#I've always known I would be standing here with you, someday. I've always felt it in my heart.#$b#Now, it's all come true.\"/pause 500/speak Emily \"The world is a mysterious and special place...$h",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                "EmilyDoneCamping": "Thanks for joining me last night. I was happy we could have that talk... and afterwards was fun, too.^I'm actually glad that bear showed up!^^See you soon^^  Love, Emily[#]Emily's Note",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ManorHouse",
+            "Entries":
+            {
+                "2123243/e 2111194": "EmilyTheme/-1000 -1000/farmer -2000 -2000 0 Emily 7 6 2 Lewis 3 7 1 Clint 11 9 3 Shane 8 8 0 Abigail 7 8 0 Robin 2 9 1/skippable/specificTemporarySprite ClothingTherapy/viewport 5 7 true/pause 2000/speak Emily \"Welcome to clothing therapy!\"/faceDirection Abigail 1/emote Robin 8 true/faceDirection Shane 3/pause 500/faceDirection Shane 0/faceDirection Abigail 0/pause 500/speak Emily \"You're probably wondering... what is clothing therapy?#$b#I'll try to explain.\"/move Emily 0 1 2/speak Emily \"So many of us are struggling with personal issues... things holding us back from living how we want.$u#$b#It's important to me that everyone has a free and happy life... so I came up with a new kind of therapy to help people achieve that.$u\"/move Emily 0 -1 2/pause 500/speak Emily \"It's based on the amazing power of self-expression. Self-expression is a wonderful healing tool, did you know that?\"/faceDirection Emily 3/pause 1000/speak Emily \"Behind this curtain, you'll find racks and racks of clothes. There's endless options to choose from.\"/faceDirection Emily 2/speak Emily \"Your job is simple: find the outfit that truly speaks to you, and put it on.#$b#Feel confident in yourself and your choice. You all have a unique style to share with the world!#$b#Shane, you're up first!$h\"/specificTemporarySprite curtainOpen/pause 1500/showFrame Shane 18/jump Shane/pause 1400/showFrame Shane 0/pause 1000/textAboveHead Shane \"Okay\"/move Shane 0 -1 0/move Shane -3 0 0/move Shane 0 -2 2/pause 1000/specificTemporarySprite curtainClose/pause 1000/playSound doorClose/warp farmer 4 11/move farmer 0 -1 0/speak Emily \"Ah, @. You're just in time. Just observe and keep an open mind... okay?\"/pause 1000/move farmer -1 0 0/warp Shane -1000 -1000/addTemporaryActor ClothesTherapyCharacters 16 32 5 5 2 true character/pause 3000/specificTemporarySprite curtainOpen/pause 1000/faceDirection Emily 3/move ClothesTherapyCharacters 0 2 2/textAboveHead Robin \"Wow...\"/pause 1000/move ClothesTherapyCharacters 0 2 2/faceDirection Abigail 3/textAboveHead Abigail \"Cool\"/pause 1000/faceDirection Emily 2/speak Emily \"Shane, it's a new side of you we've never known about. That's great!#$b#Now, go outside with confidence and show the world!\"/pause 1000/emote ClothesTherapyCharacters 40/pause 500/textAboveHead ClothesTherapyCharacters \"Sure\"/move ClothesTherapyCharacters 0 2 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/pause 2000/speak Emily \"Okay, everyone gets a turn!\"/faceDirection Abigail 0 true/move Robin 3 0 0/faceDirection Clint 2 true/textAboveHead Clint \"Oh no...\"/move Robin 0 -4 2/pause 1000/specificTemporarySprite curtainClose/pause 3000/warp Robin -1000 -1000/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 128/textAboveHead ClothesTherapyCharacters \"Heehee\"/pause 1000/specificTemporarySprite curtainOpen/pause 1000/textAboveHead Lewis \"Oh my!\"/move ClothesTherapyCharacters 0 3 2/textAboveHead Emily \"Beautiful!\"/pause 1000/showFrame ClothesTherapyCharacters 5/specificTemporarySprite heart 5 8/pause 2000/textAboveHead ClothesTherapyCharacters \"Let's see what Demetrius thinks...\"/pause 1000/move ClothesTherapyCharacters 0 3 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/pause 2000/textAboveHead Lewis \"Why not...\"/move Lewis 2 0 0/move Lewis 0 -2 2/pause 1000/specificTemporarySprite curtainClose/faceDirection Emily 3/pause 2000/warp Lewis -1000 -1000/playSound shwip/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 64/pause 1000/textAboveHead ClothesTherapyCharacters \"Hehe... not bad!\"/pause 2000/specificTemporarySprite curtainOpen/pause 1000/move ClothesTherapyCharacters 0 3 2/textAboveHead Emily \"Lookin' sharp!\"/faceDirection Emily 2/pause 3000/move ClothesTherapyCharacters 0 3 2/playSound doorClose/warp ClothesTherapyCharacters -1000 -1000/textAboveHead Abigail \"Me next!\"/move Abigail -2 0 0/move Abigail 0 -3 2/pause 2000/specificTemporarySprite curtainClose/pause 2000/warp Abigail -1000 -1000/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 32/pause 3000/specificTemporarySprite curtainOpen/pause 1000/move ClothesTherapyCharacters 0 3 2/textAboveHead Emily \"Very nice!\"/pause 2000/showFrame ClothesTherapyCharacters 16/playSound clank/pause 1000/textAboveHead ClothesTherapyCharacters \"It's sweaty in here...\"/pause 3000/move ClothesTherapyCharacters 0 3 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/pause 1000/faceDirection Emily 3/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Clint? You're up!\"/pause 500/jump Clint/shake Clint 4000/pause 1000/textAboveHead Clint \"M...Me?\"/pause 2000/speak Clint \"*gulp*... Okay, Emily. I'll do it.$4\"/pause 1000/move Clint -6 0 0/move Clint 0 -4 2/pause 1000/faceDirection Emily 3/specificTemporarySprite curtainClose/pause 4000/warp Clint -1000 -1000/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 96/pause 1000/specificTemporarySprite curtainOpen/pause 2000/move ClothesTherapyCharacters 0 3 2/faceDirection Emily 2/textAboveHead Emily \"Awww, cute!\"/pause 1600/showFrame ClothesTherapyCharacters 10/pause 800/speak Clint \"Aww? Cute? ...*sigh*...$7\"/pause 2000/move ClothesTherapyCharacters 0 3 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/move Emily 0 3 3/move farmer 0 -1 1/move farmer 1 0 1/speak Emily \"Well, that went very well!#$b#I just hope this experience helps everyone break out of their shells a bit.\"/pause 200/emote farmer 32/pause 200/speak Emily \"@, have you ever thought of trying a new style? Or are you happy with your work clothes?#$b#After all the time you’ve spent wearing them on your farm, they must be imbued with natural energy.\"/move Emily -2 0 3 true/pause 200/positionOffset Emily 0 6/pause 300/positionOffset Emily 0 4/pause 300/positionOffset Emily 0 6/pause 180/showFrame Emily 15/positionOffset Emily -8 0/pause 180/showFrame Emily 12/positionOffset Emily -8 0/pause 800/speak Emily \"Hmm... They look a little worn. I could patch them up for you.$u#$b#See, the collar is frayed...$u\"/showFrame ClothesTherapyCharacters 11/playSound doorClose/warp ClothesTherapyCharacters 5 11/speak Clint \"I couldn't do it! I don't wanna break out of my shell!$6\"/positionOffset Emily 5 0/pause 10/positionOffset Emily 5 0/pause 10/positionOffset Emily 5 0/faceDirection Emily 2 true/faceDirection farmer 2 true/emote Emily 16/pause 1000/showFrame Emily 0/speak Clint \"...Oh. I... I guess I'm interrupting something here, aren't I?$7\"/pause 500/emote Emily 8/pause 200/speak Emily \"No, not at all. I was just offering to repair @’s work clothes.\"/pause 400/speak Clint \"Oh... Good! I mean, um...$6#$b#This outfit... I’m sorry, I just can’t... $7\"/pause 600/speak Emily \"Why don’t you take it home with you? It’s okay if you’re not ready to wear it in public.#$b#For some people, self-expression is an epiphany... While for others, it’s a process.#$b#Sharing your personal style is like exposing a piece of your heart. To truly connect with others, you have to make yourself vulnerable... and that can be scary!#$b#So take your time. When you’re ready, you’ll know.\"/pause 400/speak Clint \"I...$6\"/pause 1200/showFrame ClothesTherapyCharacters 0/pause 1000/showFrame ClothesTherapyCharacters 10/pause 1500/showFrame ClothesTherapyCharacters 0/pause 500/speak Clint \"Thank you, Emily. I'll think about it.$7\"/pause 1000/playSound doorClose/warp ClothesTherapyCharacters -1000 -1000/pause 1000/speak Emily \"I think that was a step forward!#$b#But what did he think he was interrupting? Unless... Hmm.$s#$b#Well, let me see what I can do about that collar...$u\"/faceDirection Emily 3/faceDirection farmer 1/pause 1000/end",
+            },
+        },
+        {
+	    "Logname": "Emily 10 heart, love portraits true, aro yes, ace no",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries":
+            {
+                "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily": null,
+                "2123343/e 2111294/t 2200 2540/w sunny/F": "nightTime/-1000 -1000/farmer 29 14 3 Emily 26 14 1/skippable/specificTemporarySprite EmilyCamping/viewport 27 12 true/pause 5000/faceDirection Emily 2/pause 1000/faceDirection Emily 3/pause 1500/faceDirection Emily 2 true/pause 50/faceDirection Emily 1/pause 1000/speak Emily \"Well, this is fun, isn't it?\"/pause 500/faceDirection farmer 2/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Kind of spooky, actually...$u\"/pause 1000/playSound grunt/pause 800/faceDirection Emily 0/emote Emily 8/pause 500/faceDirection farmer 0/move Emily 0 -1 1/move Emily 1 0 2/faceDirection farmer 3/move farmer 0 -1 3/move farmer -1 0 2/pause 1800/speak Emily \"Oh, I brought apples and pears to roast over the fire! Chopped fruit is a healthy alternative to marshmallows.#$b#Here, I'll show you my technique for the perfect 'toasted apple'.\"/pause 500/positionOffset Emily 4 0/pause 50/positionOffset Emily 4 0/pause 50/positionOffset Emily 4 0/pause 100/showFrame Emily 52/pause 400/positionOffset farmer -4 0/pause 50/positionOffset farmer -4 0/pause 50/positionOffset farmer -4 0/pause 100/showFrame farmer 96/pause 1000/emote farmer 32/pause 2000/playSound leafrustle/pause 2000/addTemporaryActor Bear 32 32 23 4 2 true character/playSound leafrustle/pause 1000/move Bear 0 7 2/pause 1000/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 1000/shake Bear 1000/playSound grunt/faceDirection farmer 3 true/faceDirection Emily 3 true/pause 1200/showFrame Emily 26/showFrame farmer 0/faceDirection farmer 2 true/showFrame farmer 94/jump Emily/jump farmer/pause 100/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 100/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 100/jump Bear/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 400/speed Emily 4/speed farmer 4/move Emily 0 -1 0/warp Emily -1000 -1000/playSound Ship/faceDirection farmer 0 true/move farmer 0 -1 0/warp farmer -1000 -1000/playSound Ship/specificTemporarySprite shakeTent/pause 1000/specificTemporarySprite stopShakeTent/pause 1000/move Bear 0 1 2/pause 500/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 500/faceDirection Bear 1/pause 1000/playSound grunt/shake Bear 500/pause 700/move Bear -4 0 2/move Bear 0 3 2/move Bear -3 0 3/warp Bear -1000 -1000/playSound leafrustle/pause 1000/speak Emily \"A bear! I hope he's not hungry... $6#$b#At least we should be safe in here.$u\"/pause 3000/speak Emily \"Um... @? As long as we're stuck in here... there’s something I’ve been wanting to say to you.$u#$b#I wanted to tell you why I'm glad we're friends.$l\"/playMusic echos/pause 2000/speak Emily \"You see... I truly believe what I tell people about the power of self-expression. That’s how I try to live my own life.$u#$b#My style, my feelings, my beliefs... For the most part, I keep them on the surface. I want to connect with others as myself, not from behind a mask.$u#$b#Living that way makes me feel free and empowered. But it also means having to wonder...$u#$b#If what I’m showing people is the real me, what if they don’t like what they see?$s#$b#When I told Clint that self-expression can feel scary and vulnerable... I was speaking from experience. That's why I kept my dancing hobby secret for so long.$u#$b#But it’s easy to be myself around you, @. You make me feel safe.$l#$b#I don’t really think the bear is going to eat us, but if he does... I’m glad I got to tell you that first.$l\"/pause 2000/speak Emily \"Now let's get some... Oh! Did we leave the other sleeping bag outside?$6#$b#@, would you... like to share with me tonight?$l\"/pause 2000/specificTemporarySprite shakeTent/playSound grassyStep/pause 500/specificTemporarySprite stopShakeTent/pause 500/specificTemporarySprite shakeTent/playSound grassyStep/pause 500/specificTemporarySprite stopShakeTent/pause 500/specificTemporarySprite shakeTent/playSound grassyStep/pause 500/specificTemporarySprite stopShakeTent/pause 1200/specificTemporarySprite shakeTent/playSound grassyStep/pause 500/specificTemporarySprite stopShakeTent/pause 1000/playSound woodyHit/pause 3500/globalFade/viewport -2000 -2000/pause 1000/mail EmilyDoneCamping/end newDay",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+	    "Logname": "Emily 10 heart, love portraits false, aro yes, ace no",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries":
+            {
+                "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily": null,
+                "2123343/e 2111294/t 2200 2540/w sunny/F": "nightTime/-1000 -1000/farmer 29 14 3 Emily 26 14 1/skippable/specificTemporarySprite EmilyCamping/viewport 27 12 true/pause 5000/faceDirection Emily 2/pause 1000/faceDirection Emily 3/pause 1500/faceDirection Emily 2 true/pause 50/faceDirection Emily 1/pause 1000/speak Emily \"Well, this is fun, isn't it?\"/pause 500/faceDirection farmer 2/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Kind of spooky, actually...$u\"/pause 1000/playSound grunt/pause 800/faceDirection Emily 0/emote Emily 8/pause 500/faceDirection farmer 0/move Emily 0 -1 1/move Emily 1 0 2/faceDirection farmer 3/move farmer 0 -1 3/move farmer -1 0 2/pause 1800/speak Emily \"Oh, I brought apples and pears to roast over the fire! Chopped fruit is a healthy alternative to marshmallows.#$b#Here, I'll show you my technique for the perfect 'toasted apple'.\"/pause 500/positionOffset Emily 4 0/pause 50/positionOffset Emily 4 0/pause 50/positionOffset Emily 4 0/pause 100/showFrame Emily 52/pause 400/positionOffset farmer -4 0/pause 50/positionOffset farmer -4 0/pause 50/positionOffset farmer -4 0/pause 100/showFrame farmer 96/pause 1000/emote farmer 32/pause 2000/playSound leafrustle/pause 2000/addTemporaryActor Bear 32 32 23 4 2 true character/playSound leafrustle/pause 1000/move Bear 0 7 2/pause 1000/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 1000/shake Bear 1000/playSound grunt/faceDirection farmer 3 true/faceDirection Emily 3 true/pause 1200/showFrame Emily 26/showFrame farmer 0/faceDirection farmer 2 true/showFrame farmer 94/jump Emily/jump farmer/pause 100/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 100/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 100/jump Bear/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 400/speed Emily 4/speed farmer 4/move Emily 0 -1 0/warp Emily -1000 -1000/playSound Ship/faceDirection farmer 0 true/move farmer 0 -1 0/warp farmer -1000 -1000/playSound Ship/specificTemporarySprite shakeTent/pause 1000/specificTemporarySprite stopShakeTent/pause 1000/move Bear 0 1 2/pause 500/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 500/faceDirection Bear 1/pause 1000/playSound grunt/shake Bear 500/pause 700/move Bear -4 0 2/move Bear 0 3 2/move Bear -3 0 3/warp Bear -1000 -1000/playSound leafrustle/pause 1000/speak Emily \"A bear! I hope he's not hungry... $6#$b#At least we should be safe in here.$u\"/pause 3000/speak Emily \"Um... @? As long as we're stuck in here... there’s something I’ve been wanting to say to you.$u#$b#I wanted to tell you why I'm glad we're friends.\"/playMusic echos/pause 2000/speak Emily \"You see... I truly believe what I tell people about the power of self-expression. That’s how I try to live my own life.$u#$b#My style, my feelings, my beliefs... For the most part, I keep them on the surface. I want to connect with others as myself, not from behind a mask.$u#$b#Living that way makes me feel free and empowered. But it also means having to wonder...$u#$b#If what I’m showing people is the real me, what if they don’t like what they see?$s#$b#When I told Clint that self-expression can feel scary and vulnerable... I was speaking from experience. That's why I kept my dancing hobby secret for so long.$u#$b#But it’s easy to be myself around you, @. You make me feel safe.#$b#I don’t really think the bear is going to eat us, but if he does... I’m glad I got to tell you that first.\"/pause 2000/speak Emily \"Now let's get some... Oh! Did we leave the other sleeping bag outside?$6#$b#@, would you... like to share with me tonight?\"/pause 2000/specificTemporarySprite shakeTent/playSound grassyStep/pause 500/specificTemporarySprite stopShakeTent/pause 500/specificTemporarySprite shakeTent/playSound grassyStep/pause 500/specificTemporarySprite stopShakeTent/pause 500/specificTemporarySprite shakeTent/playSound grassyStep/pause 500/specificTemporarySprite stopShakeTent/pause 1200/specificTemporarySprite shakeTent/playSound grassyStep/pause 500/specificTemporarySprite stopShakeTent/pause 1000/playSound woodyHit/pause 3500/globalFade/viewport -2000 -2000/pause 1000/mail EmilyDoneCamping/end newDay",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+                "2111294/e 2123243/f Emily 2502/w sunny/D Emily/x EmilyCamping": null,
+                "2111294/e 2123243/f Emily 2502/w sunny/x EmilyCamping": "null",
+                "3917600/f Emily 3500/O Emily/t 500 820": "continue/-10000 -1000/farmer -100 -100 2 Emily -100 -100 2/warp Emily -100 -100/warp farmer -100 -100/faceDirection Emily 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Emily 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Emily \"Hey, @... before you get to work today, do you have a moment?#$b#I've been working on something special for you... but I need a little help finishing it.\"/move farmer 0 -1 0/speak Emily \"It's a secret, so I can't tell you what it is... but could you bring me 200 pieces of fiber?\"/addQuest 126/pause 500/speak Emily \"That's all I need! Just bring the 200 fiber by when you have a chance... no rush!\"/pause 2000/end dialogue Emily \"No peeking! You'll see the end result soon.\"",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries":
+            {
+                "3917601/f Emily 3500/O Emily/n emilyFiber/A emilyFiber/t 2000 2400/p Emily": "EmilyTheme/-1000 -1000/farmer 8 14 3 Emily 7 14 1/makeInvisible 8 14/viewport -100 -100 true unfreeze/pause 3000/speak Emily \"Welcome home, @. I hope you had a nice day.\"/pause 1000/emote farmer 32/pause 1200/speak Emily \"So... I finished that secret project I was working on.\"/emote farmer 8/pause 500/speak Emily \"It's a brand new hand-made outfit for you!$h\"/pause 500/awardFestivalPrize emilyClothes/pause 500/playSound coin/message \"Received Emily's Magic Hat, Emily's Magic Boots, Emily's Magic Shirt, and a matching set of pants!\"/pause 500/speak Emily \"I've always loved sewing and making crafts... So I thought it'd be nice to make you something by hand. I had a lot of fun!#$b#I hope it fits right... and that the fiber isn't too itchy.#$b#There's boots, a hat, a shirt, and pants! It's a complete outfit.\"/pause 800/speak Emily \"Now, when you wear those clothes, you'll think of me... and you'll know I'm here waiting for you to come home safe... okay?\"/pause 500/faceDirection Emily 2/pause 500/animate Emily false true 250 53 53/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/faceDirection farmer 2 true/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/stopAnimation Emily/pause 3000/showFrame Emily 55/pause 500/eyes 1 -4500/pause 3000/fade/viewport -100 -100/pause 500/end dialogue Emily \"Time for bed.\"",
+            },
+        },
+	//removes the conditions that keep this event from triggering if you've seen Emily's heart events or are partnered with her
+        {
+		"Logname": "Clint 6 heart",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+            {
+		"101/f Clint 1500/e 97/k 2123243/k 2123343/o Emily/t 900 1830/a 0 90": null,
+		"101/f Clint 1500/e 97/o Emily/t 900 1830/a 0 90": "jaunty/11 90/farmer 5 90 1 Clint 6 92 1 Emily 15 90 1 Caroline 16 90 3/move farmer 1 0 2/skippable/emote farmer 16/faceDirection Clint 0 true/emote Clint 16/speak Clint \"@!$4#$b#...You caught me.$s\"/pause 500/move farmer 0 1 2/faceDirection Clint 1/emote Clint 28/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 2/pause 800/speak Clint \"I was planning to ask Emily on a date. I was at her doorstep and everything... but then I heard her coming and I dove into this bush.$s#$b#Now I'm waiting until she's done talking with Caroline so I can sneak back into my house.$s\"/pause 800/emote farmer 12/pause 800/pause 500/faceDirection Clint 0/speak Clint \"What did you just say? You'll never upgrade your tools again if I don't ask her out?$s\"/faceDirection Clint 1/pause 1500/speak Clint \"You're a villain, @.#$b#*sigh* ...alright, I'll do it.$s\"/pause 600/move farmer 1 0 1/move Clint 0 -2 1/speak Clint \"I gotta remember that advice @ gave me in the saloon.\"/move Clint 8 0 1/stopMusic/pause 500/speak Clint \"Um... Emily?\"/pause 800/faceDirection Emily 3/pause 800/faceDirection Emily 1/speak Emily \"Sorry, Caroline. Could you excuse me for a minute?\"/pause 500/move Caroline 7 0 0/faceDirection Emily 3/pause 400/speak Emily \"Yes, Clint?\"/pause 500/faceDirection Clint 2/pause 400/faceDirection Clint 1/speak Clint \"I was wondering if you'd go w... with... tomorrow, me... *gulp*$4\"/pause 200/faceDirection Clint 3/pause 300/emote Emily 8/pause 300/faceDirection Clint 1/pause 500/jump Clint/pause 800/speak Clint \"I've got two tickets for the Grampleton Carnival tomorrow. W... Would you go with me? $4\"/jump Emily/pause 800/emote Emily 16/pause 400/playMusic musicboxsong/speak Emily \"Sure, Clint! That sounds fun!$h\"/pause 800/speak Clint \"Really? Okay! I'll pick you up at five.$h\"/speak Emily \"Okay! See you tomorrow!\"/move Emily 7 0 1/faceDirection Caroline 3/speed Clint 4/move Clint -7 0 2/faceDirection farmer 0/speak Clint \"Did you see that?! I've got a date tomorrow night!$h\"/pause 500/jump farmer/pause 1000/faceDirection Clint 1/pause 400/faceDirection Clint 2/speak Clint \"Oh man...I'm so nervous.$s\"/end dialogue Clint \"Thanks for forcing me to do that, earlier. I'm scared, but also very pleased.$h\"",
+		"101/f Clint 1500/e 97/O Emily/t 900 1830/a 0 90": "jaunty/11 90/farmer 5 90 1 Clint 6 92 1 Emily 15 90 1 Caroline 16 90 3/move farmer 1 0 2/skippable/emote farmer 16/faceDirection Clint 0 true/emote Clint 16/speak Clint \"@!$4#$b#...You caught me.$s\"/pause 500/move farmer 0 1 2/faceDirection Clint 1/emote Clint 28/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 2/pause 800/speak Clint \"I was planning to ask Emily on a date. She's in town visiting her sister, and I was at the doorstep and everything... but then I heard her coming and I dove into this bush.$s#$b#Now I'm waiting until she's done talking with Caroline so I can sneak back into my house.$s\"/pause 800/emote farmer 12/pause 800/pause 500/faceDirection Clint 0/speak Clint \"What did you just say? You'll never upgrade your tools again if I don't ask her out?$s\"/faceDirection Clint 1/pause 1500/speak Clint \"You're a villain, @.#$b#*sigh* ...alright, I'll do it.$s\"/pause 600/move farmer 1 0 1/move Clint 0 -2 1/speak Clint \"I gotta remember that advice @ gave me in the saloon.\"/move Clint 8 0 1/stopMusic/pause 500/speak Clint \"Um... Emily?\"/pause 800/faceDirection Emily 3/pause 800/faceDirection Emily 1/speak Emily \"Sorry, Caroline. Could you excuse me for a minute?\"/pause 500/move Caroline 7 0 0/faceDirection Emily 3/pause 400/speak Emily \"Yes, Clint?\"/pause 500/faceDirection Clint 2/pause 400/faceDirection Clint 1/speak Clint \"I was wondering if you'd go w... with... tomorrow, me... *gulp*$4\"/pause 200/faceDirection Clint 3/pause 300/emote Emily 8/pause 300/faceDirection Clint 1/pause 500/jump Clint/pause 800/speak Clint \"I've got two tickets for the Grampleton Carnival in a few days. W... Would you go with me? $4\"/jump Emily/pause 800/emote Emily 16/pause 400/playMusic musicboxsong/speak Emily \"Sure, Clint! That sounds fun!$h\"/pause 800/speak Clint \"Really? Okay! We can meet up in town and head over there together.$h\"/speak Emily \"Okay! See you then!\"/move Emily 7 0 1/faceDirection Caroline 3/speed Clint 4/move Clint -7 0 2/faceDirection farmer 0/speak Clint \"Did you see that?! I've got a date tomorrow night!$h\"/pause 500/jump farmer/pause 1000/faceDirection Clint 1/pause 400/faceDirection Clint 2/speak Clint \"Oh man...I'm so nervous.$s\"/end dialogue Clint \"Thanks for forcing me to do that, earlier. I'm scared, but also very pleased.$h\"",
+            },
+            "When":
+            {
+                "HasMod |contains=agentlyoko.rewrittenclint": "false",
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Emily",
+            "FromFile": "assets/Sprites/EmilyStick.png",
+            "ToArea":
+            {
+                "X": 3,
+                "Y": 439,
+                "Width": 7,
+                "Height": 3
+            },
+            "PatchMode": "Overlay",
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Emily",
+            "FromFile": "assets/Sprites/EmilyDressRecolor.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 305,
+                "Width": 45,
+                "Height": 15
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnableSpriteEdits": true,
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+            },
+        },
+        {
+	    "Logname": "Emily no blush portrait edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Emily",
+            "FromFile": "assets/Portraits/EmilyNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 256
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        {
+	    "Logname": "Emily no blush portrait edit, winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Emily_Winter",
+            "FromFile": "assets/Portraits/EmilyWinterNoBlush.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 256
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits": "false",
+                "HasMod |contains=DSVTeam.DSVNonSeasonal": "false",
+                "HasMod |contains=DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy": "false",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false",
+            },
+        },
+        //COMPATIBILITY: SEASONAL OUTFITS - SLIGHTLY CUTER AESTHETIC
+        //This section uses (with permission) overlays copied from Poltergeister's portrait assets to implement blush edits compatible with Seasonal Cute Characters. (Thank you, Poltergeister!)
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Emily",
+            "FromFile": "assets/Portraits/EmilyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 256
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Emily_Winter",
+            "FromFile": "assets/Portraits/EmilyNoBlush_SeasonalCuteCharacters.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 256
+            },
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "EnablePortraitEdits_SexWithoutRomance": "true",
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": "true",
+            },
+        },
+        //COMPATIBILITY: CANON-FRIENDLY DIALOGUE EXPANSION FOR ALL FRIEND-ABLE CHARACTERS v2.0.2
+        //Lines in this section are based on the original lines written by gizzymo, used and edited with permission. (Thank you, gizzymo!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "Tue10": "Hey, @.$l#$b#%*hug*#$b#You don't mind if I do that, do you? Physical touch is really important to me.$l",
+                "Fri10": "I don't think anyone will get the wrong idea about our relationship if they see us hugging. Everyone knows I'm the touchy-feely type.#$e#Oh?#$b#%*hug*#$b#Heehee...$h",
+                "Sun10": "@, you're very special to me. You know that, right?$u#$e#Everyone and everything around me is also special, but you... you're a priority to me.$l",
+                "summer_Mon10": "@, hold on a sec.$l#$b#%*hug*#$b#Have a wonderful day!$l",
+                "summer_Wed10": "@... do you think we're... destined for more than just our day-to-day conversations?$l#$b#No, of course I don't mean like that... I just wonder if there's some deeper commitment we could share as friends.$l",
+                "summer_Sat10": "I want to love everyone equally, @, but I can't deny that what I feel for you is a little deeper.$u#$e#Do you think you'll live here a long time? Your friendship is really important to me.$u",
+                "fall_Fri10": "I don't think anyone will get the wrong idea about our relationship if they see us hugging. Everyone knows I'm the touchy-feely type.#$e#Oh?#$b#%*hug*#$b#Heehee...$h",
+                "fall_Sat10": "Hi @. I was hoping we'd cross paths today.$l#$e#I'm so glad you came by!",
+                "winter_Mon10": "@, hold on a sec.$l#$b#%*hug*#$b#Have a wonderful day!$h",
+                "winter_Thu10": "You look like you could use a little human connection.$h#$b#%*hug*#$b#Touch is important. I wish more people were open about it.$h",
+                "winter_Sun10": "The spiritual connection that I feel to you... do you feel it too?$l#$b#It's like a million invisible threads connecting the two of us.$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+                "Tue10": "Hey, @.#$b#%*hug*#$b#You don't mind if I do that, do you? Physical touch is really important to me.",
+                "Fri10": "I don't think anyone will get the wrong idea about our relationship if they see us hugging. Everyone knows I'm the touchy-feely type.#$e#Oh?#$b#%*hug*#$b#Heehee...$h",
+                "Sun10": "@, you're very special to me. You know that, right?$u#$e#Everyone and everything around me is also special, but you... you're a priority to me.$u",
+                "summer_Mon10": "@, hold on a sec.#$b#%*hug*#$b#Have a wonderful day!$h",
+                "summer_Wed10": "@... do you think we're... destined for more than just our day-to-day conversations?$u#$b#No, of course I don't mean like that... I just wonder if there's some deeper commitment we could share as friends.",
+                "summer_Sat10": "I want to love everyone equally, @, but I can't deny that what I feel for you is a little deeper.$u#$e#Do you think you'll live here a long time? Your friendship is really important to me.$u",
+                "fall_Fri10": "I don't think anyone will get the wrong idea about our relationship if they see us hugging. Everyone knows I'm the touchy-feely type.#$e#Oh?#$b#%*hug*#$b#Heehee...$h",
+                "fall_Sat10": "Hi @. I was hoping we'd cross paths today.#$e#I'm so glad you came by!",
+                "winter_Mon10": "@, hold on a sec.#$b#%*hug*#$b#Have a wonderful day!$h",
+                "winter_Thu10": "You look like you could use a little human connection.$h#$b#%*hug*#$b#Touch is important. I wish more people were open about it.$h",
+                "winter_Sun10": "The spiritual connection that I feel to you... do you feel it too?$u#$b#It's like a million invisible threads connecting the two of us.",
+                "summer_Sun10": "Souls swirl together like clouds forming and reshaping in the sky. I'm glad we've crossed paths as we have, @.$u",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Indoor_Day_4": "#$c .5#Ughh... *gurgle*... I ate too many bran muffins for breakfast.$s#Good morning! Give me a hug before you go.$l",
+                "Indoor_Night_1": "Welcome home. I hope you had a wonderful day.$l",
+                "Outdoor_1": "#$c .5#What's on the agenda today?#If you need a break later today, you can meditate over at the crystal garden. There's no wrong way to do it.",
+                "OneKid_1": "#$c .5#Is one child enough, or should we raise another? I guess we'll just see where fate leads us.#To think... if you'd never felt upset at your old job, you never would've moved here, we'd have never met, and %kid1 wouldn't be in our lives.$l",
+                "TwoKids_2": "#$c .5#I hope the parrot doesn't feel neglected, but I have to admit that these kids keep my hands more than full.$s#Well, %kid2 certainly has your personality!$u",
+                "summer_7": "I'll never forget that bear that showed up on our camping trip.#$b#Nor the intimate conversation we shared after that.$l",
+                "fall_14": "When I realized I felt closer to you than my other friends, I secretly feared I'd lose my passion for loving the world around me...$u#$b#...that all my love was diverted into you.$u#$b#But now, I can see it's not a problem at all. The bond I share with you just spurs me on, to love everyone and everything even more!$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "Indoor_Day_4": "#$c .5#Ughh... *gurgle*... I ate too many bran muffins for breakfast.$s#Good morning! Give me a hug before you go.",
+                "Indoor_Night_1": "Welcome home. I hope you had a wonderful day.$",
+                "Outdoor_1": "#$c .5#What's on the agenda today?#If you need a break later today, you can meditate over at the crystal garden. There's no wrong way to do it.",
+                "OneKid_1": "#$c .5#Is one child enough, or should we raise another? I guess we'll just see where fate leads us.#To think... if you'd never felt upset at your old job, you never would've moved here, we'd have never met, and %kid1 wouldn't be in our lives.",
+                "Rainy_Day_4": "#$c .5#I never told you this... but when you first moved here I had a dream about you. I knew right then that our life-paths would intertwine.#I've already forgotten last night's dreams. How strange. They were crystal clear when I first awoke.$u",
+                "TwoKids_2": "#$c .5#I hope the parrot doesn't feel neglected, but I have to admit that these kids keep my hands more than full.$s#Well, %kid2 certainly has your personality!$u",
+
+                "fall_14": "When I realized I felt closer to you than my other friends, I secretly feared I'd lose my passion for loving the world around me...$u#$b#...that all my love was diverted into you.$u#$b#But now, I can see it's not a problem at all. The bond I share with you just spurs me on, to love everyone and everything even more!$h",
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+	    "Logname": "Emily dialogue, ace yes, aro no, CFD, love portraits true",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "summer_7": "I'll never forget that bear that showed up on our camping trip.#$b#Nor the intimate conversation we shared... nor the part after that...$l",
+            },
+            "When":
+            {
+                "UseLovePortraits": "true",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+	    "Logname": "Emily dialogue, ace yes, aro no, CFD, love portraits false",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries":
+            {
+                "summer_7": "I'll never forget that bear that showed up on our camping trip.#$b#Nor the intimate conversation we shared... nor the part after that...",
+            },
+            "When":
+            {
+                "UseLovePortraits": "false",
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "winter_Sun8_inlaw_Emily": "I've started thinking about my future a bit more. I don't want to live alone forever.$s#$e#I always thought someone nice would come and sweep me off my feet, but I think I need to be more proactive.$7",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+        {
+	    "Logname": "Clint inlaw dialogue, CFD",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries":
+            {
+		"summer_Thu_inlaw_Emily":"...$s#$e#...What? Oh...#$e#...I was just thinking that I don't see Emily much now that you're {{RelationshipLabel}}.$s#$e#What do you need?",
+		"fall_Mon_inlaw_Emily":"How are you and Emily?#$e#Oh, that's great!#$e#And, um... Is it really not... I mean, the two of you aren't...#$b#Sorry. It's none of my business.",
+		"winter_Sun_inlaw_Emily":"I'm not in the mood to chat today.$s#$e#Why don't you just go talk to Emily? She likes you better anyway.$3#$e#Sorry I... that was...$4#$b#I'm sorry. What do you need?$s",
+		"summer_Thu_roommate_Emily":"...$s#$e#...What? Oh...#$e#...I was just thinking that I don't see Emily much now that you're {{RelationshipLabel}}.$s#$e#What do you need?",
+		"fall_Mon_roommate_Emily":"How are you and Emily?#$e#Oh, that's great!#$e#And, um... Is it really not... I mean, the two of you aren't...#$b#Sorry. It's none of my business.",
+		"winter_Sun_roommate_Emily":"I'm not in the mood to chat today.$s#$e#Why don't you just go talk to Emily? She likes you better anyway.$3#$e#Sorry I... that was...$4#$b#I'm sorry. What do you need?$s",
+            },
+            "When":
+            {
+                "HasMod |contains=gizzymo.canonfriendlyexpansion": "true"
+            },
+        },
+	//COMPATIBILITY: STARDEW VALLEY EXPANDED
+        {
+	    "Logname": "Emily 10 heart, love portraits true, aro yes, ace no, SVE",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries":
+            {
+                "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily": null,
+		"2123343/e 2111294/t 2200 2540/w sunny/F": "nightTime/-1000 -1000/farmer 47 59 3 Emily 44 59 1/skippable/addTemporaryActor EmilyTent 64 160 44 55 2 false/AddTemporaryActor EmilyCampFire 32 32 45 60 2 false/AddTemporaryActor EmilyCampingSet 32 32 42 58 2 false/positionOffset EmilyCampingSet 0 10 true/animate EmilyCampFire false true 150 0 1 2 3/addLantern 1000 45 59 1/addLantern 1000 46 59 1/addLantern 1000 45 60 1/addLantern 1000 46 60 1/makeInvisible 32 54 19 12/positionOffset EmilyCampingSet -8 10 true/viewport 45 59 true/pause 5000/faceDirection Emily 2/pause 1000/faceDirection Emily 3/pause 1500/faceDirection Emily 2 true/pause 50/faceDirection Emily 1/pause 1000/speak Emily \"Well, this is fun, isn't it?\"/pause 500/faceDirection farmer 2/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Kind of spooky, actually...$u\"/pause 1000/playSound grunt/pause 800/faceDirection Emily 0/emote Emily 8/pause 500/faceDirection farmer 0/move Emily 0 -1 1/move Emily 1 0 2/faceDirection farmer 3/move farmer 0 -1 3/move farmer -1 0 2/pause 1800/speak Emily \"Oh, I brought apples and pears to roast over the fire! Chopped fruit is a healthy alternative to marshmallows.#$b#Here, I'll show you my technique for the perfect 'toasted apple'.\"/pause 500/positionOffset Emily 4 0/pause 50/positionOffset Emily 4 0/pause 50/positionOffset Emily 4 0/pause 100/showFrame Emily 52/pause 400/positionOffset farmer -4 0/pause 50/positionOffset farmer -4 0/pause 50/positionOffset farmer -4 0/pause 100/showFrame farmer 96/pause 1000/emote farmer 32/pause 2000/playSound leafrustle/pause 2000/addTemporaryActor Bear 32 32 32 58 1 true character/playSound leafrustle/pause 1000/move Bear 7 0 1/pause 1000/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 1000/shake Bear 1000/playSound grunt/faceDirection farmer 3 true/faceDirection Emily 3 true/pause 1200/showFrame Emily 26/showFrame farmer 0/faceDirection farmer 2 true/showFrame farmer 94/jump Emily/jump farmer/pause 100/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 100/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 100/jump Bear/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 400/speed Emily 4/speed farmer 4/move Emily 0 -1 0/warp Emily -1000 -1000/playSound Ship/faceDirection farmer 0 true/move farmer 0 -1 0/warp farmer -1000 -1000/playSound Ship/shake EmilyTent 500/pause 1000/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/pause 1000/playSound grunt/shake Bear 500/pause 800/shake Bear 500/pause 1000/faceDirection Bear 2 true/pause 300/faceDirection Bear 3 true/pause 600/move Bear -9 0 2 true/pause 4500/playSound leafrustle/pause 1000/speak Emily \"A bear! I hope he's not hungry... $6#$b#At least we should be safe in here.$u\"/pause 3000/speak Emily \"Um... @? As long as we're stuck in here... there’s something I’ve been wanting to say to you.$u#$b#I wanted to tell you why I'm glad we're friends.$l\"/playMusic echos/pause 2000/speak Emily \"You see... I truly believe what I tell people about the power of self-expression. That’s how I try to live my own life.$u#$b#My style, my feelings, my beliefs... For the most part, I keep them on the surface. I want to connect with others as myself, not from behind a mask.$u#$b#Living that way makes me feel free and empowered. But it also means having to wonder...$u#$b#If what I’m showing people is the real me, what if they don’t like what they see?$s#$b#When I told Clint that self-expression can feel scary and vulnerable... I was speaking from experience. That's why I kept my dancing hobby secret for so long.$u#$b#But it’s easy to be myself around you, @. You make me feel safe.$l#$b#I don’t really think the bear is going to eat us, but if he does... I’m glad I got to tell you that first.$l\"/pause 2000/speak Emily \"Now let's get some... Oh! Did we leave the other sleeping bag outside?$6#$b#@, would you... like to share with me tonight?$l\"/pause 2000/shake EmilyTent 500/playSound grassyStep/pause 500/shake EmilyTent 250/pause 500/shake EmilyTent 250/playSound grassyStep/pause 500/shake EmilyTent 250/pause 500/shake EmilyTent 250/playSound grassyStep/pause 500/shake EmilyTent 250/pause 1200/shake EmilyTent 250/playSound grassyStep/pause 500/shake EmilyTent 250/pause 1000/playSound woodyHit/pause 1500/viewport move 0 -1 6500 true/pause 3500/globalFade/viewport -2000 -2000/pause 1000/mail EmilyDoneCamping/end newDay"
+            },
+            "When":
+            {
+                "UseLovePortraits": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        {
+	    "Logname": "Emily 10 heart, love portraits false, aro yes, ace no, SVE",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries":
+            {
+                "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily": null,
+		"2123343/e 2111294/t 2200 2540/w sunny/F": "nightTime/-1000 -1000/farmer 47 59 3 Emily 44 59 1/skippable/addTemporaryActor EmilyTent 64 160 44 55 2 false/AddTemporaryActor EmilyCampFire 32 32 45 60 2 false/AddTemporaryActor EmilyCampingSet 32 32 42 58 2 false/positionOffset EmilyCampingSet 0 10 true/animate EmilyCampFire false true 150 0 1 2 3/addLantern 1000 45 59 1/addLantern 1000 46 59 1/addLantern 1000 45 60 1/addLantern 1000 46 60 1/makeInvisible 32 54 19 12/positionOffset EmilyCampingSet -8 10 true/viewport 45 59 true/pause 5000/faceDirection Emily 2/pause 1000/faceDirection Emily 3/pause 1500/faceDirection Emily 2 true/pause 50/faceDirection Emily 1/pause 1000/speak Emily \"Well, this is fun, isn't it?\"/pause 500/faceDirection farmer 2/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Kind of spooky, actually...$u\"/pause 1000/playSound grunt/pause 800/faceDirection Emily 0/emote Emily 8/pause 500/faceDirection farmer 0/move Emily 0 -1 1/move Emily 1 0 2/faceDirection farmer 3/move farmer 0 -1 3/move farmer -1 0 2/pause 1800/speak Emily \"Oh, I brought apples and pears to roast over the fire! Chopped fruit is a healthy alternative to marshmallows.#$b#Here, I'll show you my technique for the perfect 'toasted apple'.\"/pause 500/positionOffset Emily 4 0/pause 50/positionOffset Emily 4 0/pause 50/positionOffset Emily 4 0/pause 100/showFrame Emily 52/pause 400/positionOffset farmer -4 0/pause 50/positionOffset farmer -4 0/pause 50/positionOffset farmer -4 0/pause 100/showFrame farmer 96/pause 1000/emote farmer 32/pause 2000/playSound leafrustle/pause 2000/addTemporaryActor Bear 32 32 32 58 1 true character/playSound leafrustle/pause 1000/move Bear 7 0 1/pause 1000/animate Bear false true 500 16 17/pause 500/playSound rabbit/pause 1000/playSound rabbit/pause 500/stopAnimation Bear/pause 1000/shake Bear 1000/playSound grunt/faceDirection farmer 3 true/faceDirection Emily 3 true/pause 1200/showFrame Emily 26/showFrame farmer 0/faceDirection farmer 2 true/showFrame farmer 94/jump Emily/jump farmer/pause 100/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 100/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 100/jump Bear/positionOffset Emily -4 0/positionOffset farmer 4 0/pause 400/speed Emily 4/speed farmer 4/move Emily 0 -1 0/warp Emily -1000 -1000/playSound Ship/faceDirection farmer 0 true/move farmer 0 -1 0/warp farmer -1000 -1000/playSound Ship/shake EmilyTent 500/pause 1000/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 -2 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/positionOffset Bear 2 0 true/pause 40/pause 1000/playSound grunt/shake Bear 500/pause 800/shake Bear 500/pause 1000/faceDirection Bear 2 true/pause 300/faceDirection Bear 3 true/pause 600/move Bear -9 0 2 true/pause 4500/playSound leafrustle/pause 1000/speak Emily \"A bear! I hope he's not hungry... $6#$b#At least we should be safe in here.$u\"/pause 3000/speak Emily \"Um... @? As long as we're stuck in here... there’s something I’ve been wanting to say to you.$u#$b#I wanted to tell you why I'm glad we're friends.\"/playMusic echos/pause 2000/speak Emily \"You see... I truly believe what I tell people about the power of self-expression. That’s how I try to live my own life.$u#$b#My style, my feelings, my beliefs... For the most part, I keep them on the surface. I want to connect with others as myself, not from behind a mask.$u#$b#Living that way makes me feel free and empowered. But it also means having to wonder...$u#$b#If what I’m showing people is the real me, what if they don’t like what they see?$s#$b#When I told Clint that self-expression can feel scary and vulnerable... I was speaking from experience. That's why I kept my dancing hobby secret for so long.$u#$b#But it’s easy to be myself around you, @. You make me feel safe.#$b#I don’t really think the bear is going to eat us, but if he does... I’m glad I got to tell you that first.\"/pause 2000/speak Emily \"Now let's get some... Oh! Did we leave the other sleeping bag outside?$6#$b#@, would you... like to share with me tonight?\"/pause 2000/shake EmilyTent 500/playSound grassyStep/pause 500/shake EmilyTent 250/pause 500/shake EmilyTent 250/playSound grassyStep/pause 500/shake EmilyTent 250/pause 500/shake EmilyTent 250/playSound grassyStep/pause 500/shake EmilyTent 250/pause 1200/shake EmilyTent 250/playSound grassyStep/pause 500/shake EmilyTent 250/pause 1000/playSound woodyHit/pause 1500/viewport move 0 -1 6500 true/pause 3500/globalFade/viewport -2000 -2000/pause 1000/mail EmilyDoneCamping/end newDay"
+            },
+            "When":
+            {
+                "UseLovePortraits": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        //COMPATIBILITY: SPOUSES REACT TO PLAYER 'DEATH' v1.1.0
+        //Lines in this section are based on the original lines written by CasualInvidia, used and edited with permission. (Thank you, CasualInvidia!)
+    {       //Mine death with Emily
+	        "LogName": "KO Mines- Emily lowercase",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Emily 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Emily \"Hello, @! I was just about to pinch your cheeks, but it seems you didn't need my help waking up, after all.\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Emily \"The crystals warned me that something evil would come after you today.$3#$b#They weren't too specific, so I didn't take any chances and came to find you. It seems I was only a moment too late.$2\"/pause 1000/speak Marlon \"And I simply came along to clear a path for Emily while we brought you back up to the surface.#$b#At first, I was to venture in alone, but she insisted on coming along.#$b#You're blessed to have ended up sharing your life with someone so courageous.\"/emote Emily 16/pause 500/speak Emily \"Oh, that's nice of you to say! I'm not courageous at all, though. I just knew you'd keep me safe while I searched for @.$h\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I saw. You did well, standing by my side.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Emily \"We should leave, {{Lowercase:{{TermofEndearment}}}}. I'll be heading home to continue meditating.#$b#My heart is so much lighter now that I know you're okay. I'll be able to focus a lot better.#$b#And to tell you the truth, I'm relieved that fate is protecting us like this. It feels like nature itself is on our side.#$b#It really was destiny for us to find one another in this life, don't you think?$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Emily \"Welcome back! I tidied up before you came, so feel free to relax. I'm really glad that you got out of that sticky situation with only scratches.$1#$c 0.7#I don't want to think negatively, so I'm just going to thank the stars that you're safe and hope it doesn't happen again.$1#$b#Here, I got some snacks from Gus' kitchen for us. Eat a little and go rest up, okay?[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Emily",
+                	"TermofEndearment |contains=@": "false",
+               		"TermofEndearment |contains=BFF": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Mine death with Emily
+	        "LogName": "KO Mines- Emily capital",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Emily 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {{TermofEndearment}}, wake up!\"/viewport 19 10 true/pause 1500/speak Emily \"Hello, @! I was just about to pinch your cheeks, but it seems you didn't need my help waking up, after all.\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Emily \"The crystals warned me that something evil would come after you today.$3#$b#They weren't too specific, so I didn't take any chances and came to find you. It seems I was only a moment too late.$2\"/pause 1000/speak Marlon \"And I simply came along to clear a path for Emily while we brought you back up to the surface.#$b#At first, I was to venture in alone, but Emily insisted on coming along.#$b#You're blessed to have ended up sharing your life with someone so courageous.\"/emote Emily 16/pause 500/speak Emily \"Oh, that's nice of you to say! I'm not courageous at all, though. I just knew you'd keep me safe while I searched for @.$h\"/pause 1000/speak Marlon \"It's in my nature to be frank. I'm simply stating the fact of what I saw. You did well, standing by my side.\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"At any rate, it's best to leave for now. @ needs to rest and recuperate. You two shouldn't linger.\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak Emily \"We should leave, {{TermofEndearment}}. I'll be heading home to continue meditating.#$b#My heart is so much lighter now that I know you're okay. I'll be able to focus a lot better.#$b#And to tell you the truth, I'm relieved that fate is protecting us like this. It feels like nature itself is on our side.#$b#It really was destiny for us to find one another in this life, don't you think?$1\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Emily \"Welcome back! I tidied up before you came, so feel free to relax. I'm really glad that you got out of that sticky situation with only scratches.$1#$c 0.7#I don't want to think negatively, so I'm just going to thank the stars that you're safe and hope it doesn't happen again.$1#$b#Here, I got some snacks from Gus' kitchen for us. Eat a little and go rest up, okay?[210 215 223 228 232 243 403 406 613 618 636 651]$1\"",
+    		},
+		    "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Emily",
+                	"TermofEndearment": "@, BFF",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+    {       //Hospital Death- Emily
+            "LogName": "Player 'Killed'- Emily lowercase",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Emily 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Emily 5/move Emily 0 3 2/textAboveHead Emily \"{0}!\"/emote farmer 16/move Emily -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Emily 0 1 3/speak Emily \"How are you, {{Lowercase:{{TermofEndearment}}}}? You look a little sore.$3\"/emote farmer 60/pause 500/speak Emily \"You certainly look better than I expected, which is a good thing. I really tried not to imagine the worst while I waited.$3#$b#Oh! Oh no... Your shirt is all torn up. I'll mend it when we get home, alright?$s\"/emote Emily 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Emily 3/speak Emily \"You know... I was a little worried at first, but then a little birdie told me you would be just fine. I had to believe it!#$b#The stars aligned for us to have found each other in this universe.#$b#They wouldn't just tear us apart so easily... I have to believe that, too.$3\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Emily \"Welcome home, {{Lowercase:{{TermofEndearment}}}}! Leave me your clothes so I can mend them, and take it easy for the rest of today. You've gone through a lot already.#$c 0.7#If it's bothering you, you can always talk to me. There's nothing to be ashamed of. It must have been scary to go through all that.#You should eat something when you're feeling up to it, alright? [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Emily",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+                	"TermofEndearment |contains=@": "false",
+                	"TermofEndearment |contains=BFF": "false",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //Hospital Death- Emily
+            "LogName": "Player 'Killed'- Emily lowercase",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Emily 22 8 2/skippable/pause 1500/showFrame 5/message \"...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/speed Emily 5/move Emily 0 3 2/textAboveHead Emily \"{0}!\"/emote farmer 16/move Emily -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Emily 0 1 3/speak Emily \"How are you, {{Lowercase:{{TermofEndearment}}}}? You look a little sore.$3\"/emote farmer 60/pause 500/speak Emily \"You certainly look better than I expected, which is a good thing. I really tried not to imagine the worst while I waited.$3#$b#Oh! Oh no... Your shirt is all torn up. I'll mend it when we get home, alright?$s\"/emote Emily 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/speak Harvey \"I'll give you two a moment together.\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection Emily 3/speak Emily \"You know... I was a little worried at first, but then a little birdie told me you would be just fine. I had to believe it!#$b#The stars aligned for us to have found each other in this universe.#$b#They wouldn't just tear us apart so easily... I have to believe that, too.$3\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue Emily \"Welcome home, {{Lowercase:{{TermofEndearment}}}}! Leave me your clothes so I can mend them, and take it easy for the rest of today. You've gone through a lot already.#$c .7#If it's bothering you, you can always talk to me. There's nothing to be ashamed of. It must have been scary to go through all that.#You should eat something when you're feeling up to it, alright? [237 241 203 204 220 244]\"",  
+            },
+            "When": {
+		        "Merge: {{Roommate}}, {{Spouse}}": "Emily",
+			"Relationship:Harvey |contains=Engaged, Married": "false",
+			"Relationship:Maru |contains=Engaged, Married": "false",
+			"TermofEndearment": "@, BFF",
+			"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            },
+         },
+    {       //only change is not triggering if you have a roommate
+            "LogName": "Hospital death - Emily Ex-Partner",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Emily 22 8 2/skippable/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Hello @, I'm glad you're finally awake.#$b#Someone brought you back here unconscious and badly injured. I had to take you in for emergency surgery!\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"Your condition is much better now, @, but please be more careful next time.$2\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"You... have a visitor, by the way. They've been here since you went into surgery, and they were just waiting to talk to you.#$b#Just as it's their right to visit, though, it's also your right to refuse visitors. I'm a button-push away, if you need me.\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"It's not my place to get involved in private matters, but all I ask is that you remember that @ needs rest.#$b#...And you should think of your own wellbeing, too.$2\"/pause 500/speak Emily \"Thank you, Harvey. It's a relief to know that you're not picking sides... I won't be long.$3\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move Emily 0 4 3/emote farmer 16/faceDirection Emily 3/pause 1000/speak Emily \"Hello, @. I just wanted to wish you a prompt recovery before I left.$3#$b#I came to keep you company until you woke up so that you wouldn't have to go through something so awful all on your own, but now I'm realizing that it may not have been such a great idea.$3#$b#I'll leave soon. I know it hurts both of us to be alone together again.$2\"/emote farmer 16/pause 1000/speak Emily \"I think that part of my soul will always recognize yours, up until the day I die. There's nothing to be done about that.$2#$b#All I can do is take my distance, as to spare both of us. Be well, @.$2#$b#And... I'm sorry. As it turns out, my heart hasn't moved on quite as fully as I expected.$2\"/pause 500/move Emily 0 -4 0/move Emily -8 0 0/move Emily 0 -3 0/warp Emily -100 -100/emote farmer 28/hospitaldeath/end dialogue Emily \"Please just be on your way, @. I'm glad your wounds have healed nicely, but mine have been torn open again.$2#$b#Please, if you have any more regard for me, you'll give me the chance to heal as well.$2\"",
+            },        
+            "When": {
+                "SpousesReact_ExInvolvement": "true",
+                "HasValue:{{Spouse}},{{Roommate}}": "false",
+                "Relationship:Emily": "Divorced",
+		"Relationship:Harvey |contains=Divorced": "false",
+		"Relationship:Maru |contains=Divorced": "false",
+                "HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+            }
+         },
+     {       //Island death before Leo - Emily
+	        "LogName": "Island Death Emily",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Emily \"Oh, you seem to have run into some trouble, @!$6#$b#Would you like to go clean the soot from your hair while I get rid of all your burnt clothes? Sadly, I don't think there's any salvaging them...$2#$b#I'm glad, though, that you're okay. Welcome home, my kindred soul.#$b#...#$b#...Is that a parrot's tail feather sticking out of your pocket?$1\"",
+   		    },
+		    "When": {
+                	"HasFlag |contains=addedParrotBoy, leoMoved": "false",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Emily",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     }, 
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo, Emily",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"Oh, you're awake! That's good!#$b#My bird friends found you in the volcano. They say the fire spirits were not happy with you and tried to cook you like food.#$b#But my friends stopped the spirits in time, and brought you here!$1\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"That's right! If my bird friends hadn't found you, the spirits may have eaten you like we eat Golden Walnuts.$1#$b#But my friends say you will be okay. Just be more careful the next time, yeah?\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"Really, though... Maybe you should wash in the river.#$b#Falling asleep on hot rocks is not good for you. You look like a coconut left too long on the fire.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue Emily \"Oh, you seem to have run into some trouble, @!$6#$b#Would you like to go clean the soot from your hair while I get rid of all your burnt clothes? Sadly, I don't think there's any salvaging them...$2#$b#I'm glad, though, that you're okay. Welcome home, my kindred soul.#$b#...#$b#...Is that a parrot's tail feather sticking out of your pocket?$1\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Emily",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },   
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved, Emily",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"Are you alright? I found you face-down on the sand here and feared the worst for a moment.\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"You should be careful when venturing in that volcano there.#$b#With that boy Leo now gone to Stardew Valley, there's much less chance of anyone finding you if you're hurt.#$b#Ah... Your clothes are singed badly and you're smeared in ash. I hope you don't give your {{PlatonicSocialMenuLabel}} a fright when you return home.$1\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Emily \"Oh, you seem to have run into some trouble, @!$6#$b#Would you like to go clean the soot from your hair while I get rid of all your burnt clothes? Sadly, I don't think there's any salvaging them...$2#$b#I'm glad, though, that you're okay. Welcome home, my kindred soul.#$b#...#$b#...Is that a parrot's tail feather sticking out of your pocket?$1\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                	"Merge: {{Roommate}}, {{Spouse}}": "Emily",
+			"Relationship:Willy |contains=Engaged, Married": "false",
+                	"HasMod |contains=CasualInvidia.SpousesReactToDeath": "true"
+		    }
+	     },
+        //COMPATIBILITY IMMERSIVE SPOUSES - IMPROVED SPOUSE SCHEDULES v0.5-beta
+        //Lines in this section are based on the original lines written by yeet (Someguy363), used and edited with permission. (Thank you, yeet!)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries": {
+                "funLeave_Emily": "#$c .5#Good morning! Do you have your day planned out?$h#Morning, @. Hope you had a good night's rest.#$e#$c .5#I'll be visiting Haley today if you need to find me.#Gus doesn't need much help on Mondays but that's where I'll be.#$b#Make sure you have a good day, alright?",
+                "funReturn_Emily": "#$c .5#Did you get to eat yet? Gus had some extra dishes he let me take home.[209 214 225 215 219]$h#My day went well... Mondays have always been a little slow.#$e#I'm heading to bed. You should get some rest too."
+            },
+            "When": {
+                "DayOfWeek": "Monday",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries": {
+                "funLeave_Emily": "#$c .5#It's aerobics day! I wonder how everyone has been doing.$h#It's another beautiful day. Today's going to be a good one, I know it.#$e#$c .5#Do you need me to pick up anything while I'm at Pierre's?#Hey... don't overwork yourself, okay?$u",
+                "funReturn_Emily": "My body's all sore from classes today. I'll be taking tomorrow off to relax.#$e#$c .5#Make sure you do so too once in a while. It's not good to keep stressing the body.$s#I can already feel my muscles cramping up. Would you mind warming up the heating pad for me?$s"
+            },
+            "When": {
+                "DayOfWeek": "Tuesday",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries": {
+                "funLeave_Emily": "#$c .5#Hmm, did I put too much fragrance on this morning? It's not overpowering, is it?#What's on the agenda today, @? Mine's the same old.$h#$e#$c .5#I'm visiting Haley again today. I have some more recipes to show her!$h#Just one more day till it's Friday!$h",
+                "funReturn_Emily": "#$c .5#How was your day? I can already tell you've worked hard.#Oh! You're still up! Sorry, you scared me.$6#$e#You like to stay up pretty late, don't you?"
+            },
+            "When": {
+                "DayOfWeek": "Thursday",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries": {
+                "funLeave_Emily": "#$c .5#I figured I'd visit the beach today. The ocean sends out positive energy.#Sometimes I feel like destiny brought us together... I'm happy for us.$l#$e#$c .5#Every day is precious as long as you look at the beauty of it. Always remember that.$h#I like to take time alone to just... be thankful for everything that's happened.$l",
+                "funReturn_Emily": "#$c .5#Whew! Friday was hectic as always. I'll be glad to spend the rest of the night with you.$h#I love working at the saloon on Friday nights. Everyone looked so happy.$h#$e#$c .5#But I wish Gus would at least hire someone to help him out when I'm not around.$s#I have the weekend off. Want to do something together?$l"
+            },
+            "When": {
+                "DayOfWeek": "Friday",
+		"UseLovePortraits": "true",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueEmily",
+            "Entries": {
+                "funLeave_Emily": "#$c .5#I figured I'd visit the beach today. The ocean sends out positive energy.#Sometimes I feel like destiny brought us together... I'm happy for us.$h#$e#$c .5#Every day is precious as long as you look at the beauty of it. Always remember that.$h#I like to take time alone to just... be thankful for everything that's happened.",
+                "funReturn_Emily": "#$c .5#Whew! Friday was hectic as always. I'll be glad to spend the rest of the night with you.$h#I love working at the saloon on Friday nights. Everyone looked so happy.$h#$e#$c .5#But I wish Gus would at least hire someone to help him out when I'm not around.$s#I have the weekend off. Want to do something together?"
+            },
+            "When": {
+                "DayOfWeek": "Friday",
+		"UseLovePortraits": "false",
+                "HasMod |contains=iss.immersivespouses": "true"
+            }
+        },
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Emily",
+		"Entries": {
+			"marriage_exercisem": "How's your day been so far, {{Lowercase:{{TermofEndearment}}}}? Care to join us?$h",
+			"marriage_saloon2": "Are you thirsty, {{Lowercase:{{TermofEndearment}}}}? How about a drink?#$b#Sorry, I can't do on the house. You'd have to ask Gus.$h",
+			"marriage_saloon4": "Are you hungry, {{Lowercase:{{TermofEndearment}}}}? Gus' dish of the day smells delicious tonight.",
+			"marriage_doc": "Oh, hi, {{Lowercase:{{TermofEndearment}}}}. Surely you don't have a check-up today too, right? Did Dr. Harvey make a mistake?$6",
+		},
+		"When": {
+                	"TermofEndearment |contains=@": "false",
+                	"TermofEndearment |contains=BFF": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Emily",
+		"Entries": {
+			"marriage_exercisem": "How's your day been so far, {{TermofEndearment}}? Care to join us?$h",
+			"marriage_saloon2": "Are you thirsty, {{TermofEndearment}}? How about a drink?#$b#Sorry, I can't do on the house. You'd have to ask Gus.$h",
+			"marriage_saloon4": "Are you hungry, {{TermofEndearment}}? Gus' dish of the day smells delicious tonight.",
+			"marriage_doc": "Oh, hi, {{TermofEndearment}}. Surely you don't have a check-up today too, right? Did Dr. Harvey make a mistake?$6",
+		},
+		"When": {
+              	 	"TermofEndearment": "@, BFF",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Emily",
+		"Entries": {
+			"marriage_nm": "I have a special feeling about this boat. I'd love to rent it for the night.#$b#We'd sail off into the sea, just the two of us.",
+		},
+		"When": {
+              	 	"UseLovePortraits": "false",
+                	"HasMod |contains=iss.immersivespouses": "true"
+		}
+	},
+        //COMPATIBILITY: PLEASE REMEMBER MY MARRIAGE v1.0.1
+        //Lines in this section are based on the original lines written by nraittanna, used and edited with permission. (Thank you, nraittanna!)
+{
+	"Logname": "Emily PRMM, Alex",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Alex",
+	"Entries": {
+            "summer_Tue8_inlaw_Emily":"Oh, hey.$0#$e#How's life with Emily coming along?$1",
+            "winter_Mon10_inlaw_Emily":"Oh, hey.$0#$e#How's life with Emily coming along?$1",
+            "summer_Tue8_roommate_Emily":"Oh, hey.$0#$e#How's life with Emily coming along?$1",
+            "winter_Mon10_roommate_Emily":"Oh, hey.$0#$e#How's life with Emily coming along?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Harvey",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Harvey",
+	"Entries": {
+            "spring_Tue8_inlaw_Emily": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Emily make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_inlaw_Emily": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Emily will have any problems with that.$1",
+            "fall_Fri8_inlaw_Emily": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Emily make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_inlaw_Emily": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Emily will have any problems with that.$1",
+            "spring_Tue8_roommate_Emily": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Emily make great {{RelationshipLabel}}.$1",
+            "summer_Mon8_roommate_Emily": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Emily will have any problems with that.$1",
+            "fall_Fri8_roommate_Emily": "The best love, romantic or otherwise, is the one that makes you a better person without changing you into someone else.$0#$e#I think you and Emily make great {{RelationshipLabel}}.$1",
+            "winter_Thu8_roommate_Emily": "Communication is the key to a healthy partnership. It's important to share your thoughts and feelings with each other.$0#$b#I don't think you and Emily will have any problems with that.$1",
+
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Sam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Sam",
+	"Entries": {
+            "summer_Mon8_inlaw_Emily":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "fall_Sat8_inlaw_Emily":"Hey, @.$0#$b#I'm not really into ballads, but it'd have been cool to sing at your ceremony.$1",
+            "summer_Mon8_roommate_Emily":"Hey, @. How's life with Emily?$0#$b#Hey, don't you play an instrument? And Emily dances? I should come over sometime and jam with you two.$1",
+            "fall_Sat8_roommate_Emily":"Hey, @. How's life with Emily?$0#$b#Hey, don't you play an instrument? And Emily dances? I should come over sometime and jam with you two.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Shane",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Shane",
+	"Entries": {
+            "spring_Tue8_inlaw_Emily":"Emily's a nice person. I'm glad she's {{RelationshipLabel}} with you.$0",
+            "fall_Fri8_inlaw_Emily":"Emily's a nice person. I'm glad she's {{RelationshipLabel}} with you.$0",
+            "spring_Tue8_roommate_Emily":"Emily's a nice person. I'm glad she's {{RelationshipLabel}} with you.$0",
+            "fall_Fri8_roommate_Emily":"Emily's a nice person. I'm glad she's {{RelationshipLabel}} with you.$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Penny",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Penny",
+	"Entries": {
+            "spring_Mon8_inlaw_Emily":"Hello, @.$0#$e#You and Emily are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_inlaw_Emily":"Hello, @.$0#$e#You and Emily are such cute {{RelationshipLabel}}.$1",
+            "spring_Mon8_roommate_Emily":"Hello, @.$0#$e#You and Emily are such cute {{RelationshipLabel}}.$1",
+            "fall_Wed8_roommate_Emily":"Hello, @.$0#$e#You and Emily are such cute {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+        {
+	    "Logname": "Emily PRMM, Haley (CFD)",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+                "winter_Sun8_inlaw_Emily": "I've started thinking about my future a bit more. I don't want to live alone forever.$s#$e#I always thought someone nice would come and sweep me off my feet, but I think I need to be more proactive.$7",
+                "winter_Sun8_roommate_Emily": "I've started thinking about my future a bit more. I don't want to live alone forever.$s#$e#I always thought someone nice would come and sweep me off my feet, but I think I need to be more proactive.$7",
+            },
+            "When":
+            {
+                "HasMod |contains=nraittanna.RememberMyMarriage": "true",
+            },
+        },
+        {
+	    "Logname": "Emily PRMM, Clint (CFD)",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries":
+            {
+		"summer_Thu_inlaw_Emily":"...$s#$e#...What? Oh...#$e#...I was just thinking that I don't see Emily much now that you're {{RelationshipLabel}}.$s#$e#What do you need?",
+		"fall_Mon_inlaw_Emily":"How are you and Emily?#$e#Oh, that's great!#$e#And, um... Is it really not... I mean, the two of you aren't...#$b#Sorry. It's none of my business.",
+		"winter_Sun_inlaw_Emily":"I'm not in the mood to chat today.$s#$e#Why don't you just go talk to Emily? She likes you better anyway.$3#$e#Sorry I... that was...$4#$b#I'm sorry. What do you need?$s",
+		"summer_Thu_roommate_Emily":"...$s#$e#...What? Oh...#$e#...I was just thinking that I don't see Emily much now that you're {{RelationshipLabel}}.$s#$e#What do you need?",
+		"fall_Mon_roommate_Emily":"How are you and Emily?#$e#Oh, that's great!#$e#And, um... Is it really not... I mean, the two of you aren't...#$b#Sorry. It's none of my business.",
+		"winter_Sun_roommate_Emily":"I'm not in the mood to chat today.$s#$e#Why don't you just go talk to Emily? She likes you better anyway.$3#$e#Sorry I... that was...$4#$b#I'm sorry. What do you need?$s",
+            },
+            "When":
+            {
+                "HasMod |contains=nraittanna.RememberMyMarriage": "true",
+            },
+        },
+{
+	"Logname": "Emily PRMM, Demetrius",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Demetrius",
+	"Entries": {
+            "spring_Tue10_inlaw_Emily":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Emily as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_inlaw_Emily":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Emily as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "spring_Tue10_roommate_Emily":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Emily as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+            "fall_Fri10_roommate_Emily":"We're all striving to reach some kind of balance in life, an equilibrium of complexity.$0#$e#It looks like having Emily as your {{PlatonicSocialMenuLabel}} was exactly what you needed to find that balance.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Evelyn",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+            "spring_Wed10_inlaw_Emily":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Emily will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_inlaw_Emily":"A true lifelong friendship, like you have with Emily, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_inlaw_Emily":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Emily will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_inlaw_Emily":"A true lifelong friendship, like you have with Emily, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "spring_Wed10_roommate_Emily":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Emily will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "summer_Tue10_roommate_Emily":"A true lifelong friendship, like you have with Emily, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+            "fall_Thu10_roommate_Emily":"Hello, dear.$0#$e#Sharing a home with someone isn't always easy. You and Emily will have to overcome many difficulties together.$0#$b#May you become greater people together.$1",
+            "winter_Sun10_roommate_Emily":"A true lifelong friendship, like you have with Emily, is something to treasure.$0#$b#I hope the two of you live a long happy life together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{	
+	"Logname": "Emily PRMM, Gus",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Gus",
+	"Entries": {
+            "spring_Fri10_inlaw_Emily":"If you and Emily want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_inlaw_Emily":"If you and Emily want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_inlaw_Emily":"If you and Emily want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_inlaw_Emily":"If you and Emily want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "spring_Fri10_roommate_Emily":"If you and Emily want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "summer_Sun_roommate_Emily":"If you and Emily want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "fall_Fri10_roommate_Emily":"If you and Emily want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+            "winter_Wed10_roommate_Emily":"If you and Emily want to have dinner at the Saloon, just tell me and I'll prepare everything.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Jas",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries": {
+            "spring_Thu10_inlaw_Emily":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_inlaw_Emily":"So are you and Ms. Emily like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_inlaw_Emily":"Hello, Farmer @.$0#$b#Why can't you and Ms. Emily celebrate being {{RelationshipLabel}} every week?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_inlaw_Emily":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you.$1",
+            "spring_Thu10_roommate_Emily":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+            "summer_Mon10_roommate_Emily":"So are you and Ms. Emily like... super best friends forever?$0#$e#Hahaha!$1",
+            "fall_Sun10_roommate_Emily":"Hello, Farmer @.$0#$b#Don't you think you and Ms. Emily should celebrate being {{RelationshipLabel}}?$0#$b#I want to eat Pink Cake!$1",
+            "winter_Sat10_roommate_Emily":"Farmer @!$1#$e#When I grow up I also want to live with my very best friend like you do.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Jodi",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jodi",
+	"Entries": {
+            "spring_Mon10_inlaw_Emily":"How are you and Emily?$0#$b#You two are so sweet as {{RelationshipLabel}}.$1",
+            "fall_Sun10_inlaw_Emily":"How are you and Emily?$0#$b#You two are so sweet as {{RelationshipLabel}}.$1",
+            "spring_Mon10_roommate_Emily":"How are you and Emily?$0#$b#You two are so sweet as {{RelationshipLabel}}.$1",
+            "fall_Sun10_roommate_Emily":"How are you and Emily?$0#$b#You two are so sweet as {{RelationshipLabel}}.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Lewis",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"Entries": {
+            "spring_Tue10_inlaw_Emily":"There aren't many young {{RelationshipLabel}} like you and Emily here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_inlaw_Emily":"There aren't many young {{RelationshipLabel}} like you and Emily here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_inlaw_Emily":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "winter_Mon10_inlaw_Emily":"I hope I can officiate another commitment ceremony soon. It's been some time since yours.$0#$b#We could even have a little banquet.$1",
+            "spring_Tue10_roommate_Emily":"There aren't many young {{RelationshipLabel}} like you and Emily here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "summer_Sun10_roommate_Emily":"There aren't many young {{RelationshipLabel}} like you and Emily here in Pelican Town.$0#$e#It's always nice to see young people find their chosen family.$1",
+            "fall_Sat10_roommate_Emily":"I know you and Emily chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+            "winter_Mon10_roommate_Emily":"I know you and Emily chose not to have a commitment ceremony, but I hope to officiate one soon.$0#$b#I'm sure it won't be long before the rest of your generation start moving in together.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Marnie",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"Entries": {
+            "spring_Thu10_inlaw_Emily":"Hello, @.$0#$e#I wish you and Emily a lifetime of happiness.$1",
+            "summer_Tue10_inlaw_Emily":"May Yoba grant you and Emily a life of blessing and joy.$1",
+            "fall_Sun10_inlaw_Emily":"Hello, @.$0#$e#I wish you and Emily a lifetime of happiness.$1",
+            "winter_Fri10_inlaw_Emily":"May Yoba grant you and Emily a life of blessing and joy.$1",
+            "spring_Thu10_roommate_Emily":"Hello, @.$0#$e#I wish you and Emily a lifetime of happiness.$1",
+            "summer_Tue10_roommate_Emily":"May Yoba grant you and Emily a life of blessing and joy.$1",
+            "fall_Sun10_roommate_Emily":"Hello, @.$0#$e#I wish you and Emily a lifetime of happiness.$1",
+            "winter_Fri10_roommate_Emily":"May Yoba grant you and Emily a life of blessing and joy.$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Pam",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Pam",
+	"Entries": {
+            "summer_Fri10_inlaw_Emily":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_inlaw_Emily":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "summer_Fri10_roommate_Emily":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+            "winter_Wed10_roommate_Emily":"Hey, kid.$0#$e#Looks like you found yourself quite the {{PlatonicSocialMenuLabel}}, huh?$1",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },   
+{
+	"Logname": "Emily PRMM, Robin",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Robin",
+	"Entries": {
+            "spring_Sat10_inlaw_Emily":"You and Emily remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_inlaw_Emily":"You and Emily remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "spring_Sat10_roommate_Emily":"You and Emily remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+            "fall_Fri10_roommate_Emily":"You and Emily remind me of Demetrius and me back in the day. We were very good friends even before we started dating.$0#$e#We were so young back then...$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+{
+	"Logname": "Emily PRMM, Vincent",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Vincent",
+	"Entries": {
+            "spring_Tue10_inlaw_Emily":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Emily.$1",
+            "summer_Wed10_inlaw_Emily":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_inlaw_Emily":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Emily.$1",
+            "winter_Sun10_inlaw_Emily":"It's so cool how you're {{RelationshipLabel}} with Ms. Emily.$1#$e#I never thought that would have happened!$0",
+            "spring_Tue10_roommate_Emily":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Emily.$1",
+            "summer_Wed10_roommate_Emily":"Can I tell you something?$3#$e#I think it must be so fun to live with your best friend!$0",
+            "fall_Mon10_roommate_Emily":"Do you like suncatchers?$3#$e#I want to make a gift for you and Ms. Emily.$1",
+            "winter_Sun10_roommate_Emily":"It's so cool how you're {{RelationshipLabel}} with Ms. Emily.$1#$e#I never thought that would have happened!$0",
+           },
+		    "When": {
+                	"HasMod |contains=nraittanna.RememberMyMarriage": "true",
+		    }
+       },
+    ]
+}

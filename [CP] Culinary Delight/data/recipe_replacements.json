@@ -1,0 +1,2113 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+			"When": {
+				"flexible_recipes": "On",
+                "HasMod |contains=spacechase0.SpaceCore": "true"
+			},
+			"Entries": {
+                //Vanilla Ice Cream
+				"{{ModId}}_vanilla_ice_cream": {
+					"ProductQualifiedId": "(O){{ModId}}_vanilla_ice_cream",
+					"ProductAmount": 1,
+					"Ingredients": [
+						{
+							"Type": "ContextTag",
+							"Value": "id_o_wildflour.gourmetpantry_cream, cream_item",
+							"Amount": 1,
+							"OverrideText": "{{i18n:ingredient.any_cream}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+							}
+						},
+                        {
+                            "Type": "Item",
+                            "Value": "(O)245",
+                            "Amount": 2
+                        },
+                        {
+							"Type": "ContextTag",
+							"Value": "vanilla_item, id_o_wildflour.ateliercrops_vanilla",
+							"Amount": 1,
+							"OverrideText": "{{i18n:ingredient.any_vanilla}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 256,
+								"Y": 112,
+								"Width": 16,
+								"Height": 16
+							}
+						}
+                        
+					]
+				},
+                //Dragonfruit Gelatin
+                "{{ModId}}_dragonfruit_gelatin": {
+					"ProductQualifiedId": "(O){{ModId}}_dragonfruit_gelatin",
+					"ProductAmount": 1,
+					"Ingredients": [
+						{
+							"Type": "ContextTag",
+							"Value": "gelatin_item, id_o_wildflour.gourmetpantry_pectin, id_o_cornucopia_gellingpowder",
+							"Amount": 1,
+							"OverrideText": "{{i18n:ingredient.any_gelatin}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+							}
+						},
+                        {
+                            "Type": "Item",
+                            "Value": "(O)245",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_DragonFruit",
+                            "Amount": 1
+                        }
+                        
+					]
+				},
+                //Chocolate Cupcake
+                "{{ModId}}_chocolate_cupcake": {
+					"ProductQualifiedId": "(O){{ModId}}_chocolate_cupcake",
+					"ProductAmount": 1,
+					"Ingredients": [
+						{
+							"Type": "ContextTag",
+							"Value": "cocoa_item, chocolate_item",
+							"Amount": 1,
+							"OverrideText": "{{i18n:ingredient.any_cocoa}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+							}
+						},
+                        {
+                            "Type": "Item",
+                            "Value": "(O)245",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "category_egg, egg_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_egg}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 128,
+                                "Y": 112,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "flour_item, item_wheat_flour",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_flour}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 96,
+                                "Y": 160,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+                        
+					]
+				},
+                //Oatmeal Raisin Cookies
+                "{{ModId}}_oatmeal_raisin_cookies": {
+					"ProductQualifiedId": "(O){{ModId}}_oatmeal_raisin_cookies",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "oat_item, oats_item",
+                            "Amount": 3,
+                            "OverrideText": "{{i18n:ingredient.any_oats}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Raisins",
+                            "Amount": 1
+                        },
+                        //Sugar
+                        {
+                            "Type": "Item",
+                            "Value": "(O)245",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Spicy Chocolate Bar
+                "{{ModId}}_spicy_chocolate_bar": {
+					"ProductQualifiedId": "(O){{ModId}}_spicy_chocolate_bar",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cocoa_item, chocolate_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cocoa}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_ChiliPowder",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_CoconutOil",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Rainbow Donut
+                "{{ModId}}_donut": {
+					"ProductQualifiedId": "(O){{ModId}}_donut",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "flour_item, item_wheat_flour",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_flour}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 96,
+                                "Y": 160,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_PrismaticEssence",
+                            "Amount": 1
+                        },
+                        //Sugar
+                        {
+                            "Type": "Item",
+                            "Value": "(O)245",
+                            "Amount": 1
+                        },
+                        //Oil
+                        {
+                            "Type": "Item",
+                            "Value": "(O)247",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Cinnamon Latte
+                "{{ModId}}_cinnamon_latte": {
+					"ProductQualifiedId": "(O){{ModId}}_cinnamon_latte",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Coffee
+                        {
+                            "Type": "Item",
+                            "Value": "(O)395",
+                            "Amount": 1
+                        },
+                        //Sugar
+                        {
+                            "Type": "Item",
+                            "Value": "(O)245",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cinnamon_item, id_o_wildflour.ateliercrops_cinnamon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cinnamon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "category_milk, milk_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_milk}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 256,
+                                "Y": 112,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Pierogies
+                "{{ModId}}_pierogies": {
+					"ProductQualifiedId": "(O){{ModId}}_pierogies",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Potato
+                        {
+                            "Type": "Item",
+                            "Value": "(O)192",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cheese_item, ingredient_cheese",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cheese}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 256,
+                                "Y": 272,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_GreenPeas",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_SweetPotato",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_BellPepper",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Egg White Greek Omelette
+                "{{ModId}}_omelette": {
+					"ProductQualifiedId": "(O){{ModId}}_omelette",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "category_egg, egg_item",
+                            "Amount": 2,
+                            "OverrideText": "{{i18n:ingredient.any_egg}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 128,
+                                "Y": 112,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        //Goat Cheese
+                        {
+                            "Type": "Item",
+                            "Value": "(O)426",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "olive_oil_item, item_olive_oil",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_olive_oil}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Groundcherries",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_BrinedOlives",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Garden Salad
+                "{{ModId}}_green_salad": {
+					"ProductQualifiedId": "(O){{ModId}}_green_salad",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "leafy_vegetable_item, item_lamblettuce",
+                            "Amount": 2,
+                            "OverrideText": "{{i18n:ingredient.any_leafy_veg}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Groundcherries",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "olive_oil_item, item_olive_oil",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_olive_oil}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "id_o_419, item_balsamic_vinegar, vinegar_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_vinegar}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Caprese Salad
+                "{{ModId}}_caprese_salad": {
+					"ProductQualifiedId": "(O){{ModId}}_caprese_salad",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Tomato
+                        {
+                            "Type": "Item",
+                            "Value": "(O)256",
+                            "Amount": 1
+                        },
+                        //Goat Cheese
+                        {
+                            "Type": "Item",
+                            "Value": "(O)426",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "olive_oil_item, item_olive_oil",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_olive_oil}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "basil_item, id_o_wildflour.ateliercrops_basil",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_basil}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Mushroom Crepes
+                "{{ModId}}_crepes": {
+					"ProductQualifiedId": "(O){{ModId}}_crepes",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "chicken_of_the_woods_item, id_o_wildflour.ateliercrops_chickenwoods",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_chicken_of_the_woods}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "onion_item, id_o_wildflour.ateliercrops_redonion",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_onion}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_TruffleMayonnaise",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "category_egg, egg_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_egg}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 128,
+                                "Y": 112,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "flour_item, item_wheat_flour",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_flour}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 96,
+                                "Y": 160,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Guacamole
+                "{{ModId}}_guacamole": {
+					"ProductQualifiedId": "(O){{ModId}}_guacamole",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "avocado_item",
+                            "Amount": 2,
+                            "OverrideText": "{{i18n:ingredient.any_avocado}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "onion_item, id_o_wildflour.ateliercrops_redonion",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_onion}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cilantro_item, id_o_wildflour.ateliercrops_cilantro",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cilantro}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lime_item, id_o_wildflour.ateliercrops_lime",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lime}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_BlueAgave",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Tomato Soup
+                "{{ModId}}_tomato_soup": {
+					"ProductQualifiedId": "(O){{ModId}}_tomato_soup",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Tomato
+                        {
+                            "Type": "Item",
+                            "Value": "(O)256",
+                            "Amount": 2
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Fennel",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "plain_yogurt_item, item_cornucopia_plainyogurt, id_o_wildflour.gourmetpantry_plain_yogurt",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_plain_yogurt}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "basil_item, id_o_wildflour.ateliercrops_basil",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_basil}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Minestrone Soup
+                "{{ModId}}_minestrone_soup": {
+					"ProductQualifiedId": "(O){{ModId}}_minestrone_soup",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Tomato
+                        {
+                            "Type": "Item",
+                            "Value": "(O)256",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_NavyBeans",
+                            "Amount": 3
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "onion_item, id_o_wildflour.ateliercrops_redonion",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_onion}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_BayLeaves",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "noodle_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_noodle}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Mushroom Stroganoff
+                "{{ModId}}_mushroom_stroganoff": {
+					"ProductQualifiedId": "(O){{ModId}}_mushroom_stroganoff",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Shiitake",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "plain_yogurt_item, item_cornucopia_plainyogurt, id_o_wildflour.gourmetpantry_plain_yogurt",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_plain_yogurt}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "noodle_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_noodle}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "thyme_item, id_o_wildflour.ateliercrops_thyme",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_thyme}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Salt",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Lobster Quinoa
+                "{{ModId}}_lobster_quinoa": {
+					"ProductQualifiedId": "(O){{ModId}}_lobster_quinoa",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Lobster
+                        {
+                            "Type": "Item",
+                            "Value": "(O)715",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Quinoa",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lemon_item, id_o_wildflour.ateliercrops_lemon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lemon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Groundcherries",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Charcuterie
+                "{{ModId}}_charcuterie": {
+					"ProductQualifiedId": "(O){{ModId}}_charcuterie",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Grapefruit",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "walnut_item, id_o_wildflour.ateliercrops_walnut, id_o_bfv.combinedcrops_redwalnut",
+                            "Amount": 2,
+                            "OverrideText": "{{i18n:ingredient.any_walnut}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_SmokedCheese",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Veggies and Dip
+                "{{ModId}}_veggies_dip": {
+					"ProductQualifiedId": "(O){{ModId}}_veggies_dip",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Cucumber",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Carrot",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_BellPepperYellow",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Dill",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "plain_yogurt_item, item_cornucopia_plainyogurt, id_o_wildflour.gourmetpantry_plain_yogurt",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_plain_yogurt}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Sauteed Vegetables
+                "{{ModId}}_sauteed_vegetables": {
+					"ProductQualifiedId": "(O){{ModId}}_sauteed_vegetables",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_ButternutSquash",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Asparagus",
+                            "Amount": 1
+                        },
+                        //Rice
+                        {
+                            "Type": "Item",
+                            "Value": "(O)423",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "olive_oil_item, item_olive_oil",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_olive_oil}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "chicken_of_the_woods_item, id_o_wildflour.ateliercrops_chickenwoods",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_chicken_of_the_woods}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Popcorn
+                "{{ModId}}_popcorn": {
+					"ProductQualifiedId": "(O){{ModId}}_popcorn",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Corn
+                        {
+                            "Type": "Item",
+                            "Value": "(O)270",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Salt",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cooking_oil_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cooking_oil}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Margherita Pizza
+                "{{ModId}}_margherita_pizza": {
+					"ProductQualifiedId": "(O){{ModId}}_margherita_pizza",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Tomato
+                        {
+                            "Type": "Item",
+                            "Value": "(O)256",
+                            "Amount": 1
+                        },
+                        //Goat Cheese
+                        {
+                            "Type": "Item",
+                            "Value": "(O)426",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_RoastedGarlic",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "flour_item, item_wheat_flour",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_flour}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 96,
+                                "Y": 160,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "basil_item, id_o_wildflour.ateliercrops_basil",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_basil}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Savory Crepes
+                "{{ModId}}_savory_crepes": {
+					"ProductQualifiedId": "(O){{ModId}}_savory_crepes",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "flour_item, item_wheat_flour",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_flour}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 96,
+                                "Y": 160,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "plain_yogurt_item, item_cornucopia_plainyogurt, id_o_wildflour.gourmetpantry_plain_yogurt",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_plain_yogurt}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Saffron",
+                            "Amount": 2
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Groundcherries",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "rosemary_item, id_o_wildflour.ateliercrops_rosemary",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_rosemary}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Sweet Potato Mash
+                "{{ModId}}_sweet_potato_mash": {
+					"ProductQualifiedId": "(O){{ModId}}_sweet_potato_mash",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_SweetPotato",
+                            "Amount": 2
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_OrangeZest",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Nutmeg",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "honey_butter_item, id_o_wildflour.gourmetpantry_honey_butter, id_o_cornucopia_honeybutter",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_honey_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cinnamon_item, id_o_wildflour.ateliercrops_cinnamon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cinnamon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Tropical Delight
+                "{{ModId}}_tropical_delight": {
+					"ProductQualifiedId": "(O){{ModId}}_tropical_delight",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_PassionFruit",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Persimmon",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cashew_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cashew}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "pistachio_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_pistachio}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "honey_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_honey}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 64,
+                                "Y": 224,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Pull Apart Bread
+                "{{ModId}}_pull_apart_bread": {
+					"ProductQualifiedId": "(O){{ModId}}_pull_apart_bread",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "flour_item, item_wheat_flour",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_flour}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 96,
+                                "Y": 160,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cinnamon_item, id_o_wildflour.ateliercrops_cinnamon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cinnamon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "maple_butter_item, id_o_wildflour.gourmetpantry_maple_butter, id_o_cornucopia_maplebutter",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_maple_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "raspberry_item, id_o_wildflour.ateliercrops_raspberry",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_raspberry}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Fried Sea Cucumber
+                "{{ModId}}_fried_sea_cucumber": {
+					"ProductQualifiedId": "(O){{ModId}}_fried_sea_cucumber",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "flour_item, item_wheat_flour",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_flour}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 96,
+                                "Y": 160,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lemon_item, id_o_wildflour.ateliercrops_lemon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lemon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Cabbage",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Enchiladas
+                "{{ModId}}_enchiladas": {
+					"ProductQualifiedId": "(O){{ModId}}_enchiladas",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Tortilla
+                        {
+                            "Type": "Item",
+                            "Value": "(O)229",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_KidneyBeans",
+                            "Amount": 2
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_ChiliOil",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lime_item, id_o_wildflour.ateliercrops_lime",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lime}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cilantro_item, id_o_wildflour.ateliercrops_cilantro",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cilantro}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Fish and Chips
+                "{{ModId}}_fish_and_chips": {
+					"ProductQualifiedId": "(O){{ModId}}_fish_and_chips",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "category_fish",
+                            "ContextTagsRequireAll": true,
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_fish}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 352,
+                                "Y": 80,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "flour_item, item_wheat_flour",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_flour}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 96,
+                                "Y": 160,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        //Potato
+                        {
+                            "Type": "Item",
+                            "Value": "(O)192",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lemon_item, id_o_wildflour.ateliercrops_lemon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lemon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        //Vinegar
+                        {
+                            "Type": "Item",
+                            "Value": "(O)419",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Broiled Tiger Trout
+                "{{ModId}}_broiled_tiger_trout": {
+					"ProductQualifiedId": "(O){{ModId}}_broiled_tiger_trout",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Tiger Trout
+                        {
+                            "Type": "Item",
+                            "Value": "(O)699",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Parsley",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lemon_item, id_o_wildflour.ateliercrops_lemon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lemon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Baked Void Salmon
+                "{{ModId}}_baked_void_salmon": {
+					"ProductQualifiedId": "(O){{ModId}}_baked_void_salmon",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Void Salmon
+                        {
+                            "Type": "Item",
+                            "Value": "(O)795",
+                            "Amount": 1
+                        },
+                        //Void Mayo
+                        {
+                            "Type": "Item",
+                            "Value": "(O)308",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "sage_item, id_o_wildflour.ateliercrops_sage",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_sage}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Tarragon",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				},
+                //Catfish Dinner
+                "{{ModId}}_catfish_dinner": {
+					"ProductQualifiedId": "(O){{ModId}}_catfish_dinner",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Catfish
+                        {
+                            "Type": "Item",
+                            "Value": "(O)143",
+                            "Amount": 1
+                        },
+                        //River Jelly
+                        {
+                            "Type": "Item",
+                            "Value": "(O)RiverJelly",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lemon_item, id_o_wildflour.ateliercrops_lemon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lemon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Salt",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Salmon Filet
+                "{{ModId}}_salmon_filet": {
+					"ProductQualifiedId": "(O){{ModId}}_salmon_filet",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Salmon
+                        {
+                            "Type": "Item",
+                            "Value": "(O)139",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "maple_butter_item, id_o_wildflour.gourmetpantry_maple_butter, id_o_cornucopia_maplebutter",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_maple_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Salt",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Parsley",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Blackened Tofu
+                "{{ModId}}_blackened_tofu": {
+					"ProductQualifiedId": "(O){{ModId}}_blackened_tofu",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Tofu",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "basil_item, id_o_wildflour.ateliercrops_basil",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_basil}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Oregano",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "thyme_item, id_o_wildflour.ateliercrops_thyme",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_thyme}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Pepper",
+                            "Amount": 1
+                        }
+					]
+				},
+                //Hot Cocoa
+                "{{ModId}}_hot_cocoa": {
+					"ProductQualifiedId": "(O){{ModId}}_hot_cocoa",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "cocoa_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_cocoa}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        //Sugar
+                        {
+                            "Type": "Item",
+                            "Value": "(O)245",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "mint_item, id_o_wildflour.ateliercrops_mint",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_mint}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+					]
+				}
+                //
+			}
+		},
+        //Pie Crust Override
+        {
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+			"When": {
+				"flexible_recipes": "On",
+                "HasMod |contains=moonslime.CookingSkill": "true"
+			},
+			"Entries": {
+				"{{ModId}}_apple_melon_pie": {
+					"ProductQualifiedId": "(O){{ModId}}_apple_melon_pie",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Apple
+						{
+                            "Type": "Item",
+                            "Value": "(O)613",
+                            "Amount": 2
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_CanaryMelon",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)moonslime.Cooking.pie_crust",
+                            "Amount": 1
+                        }
+					]
+				},
+                "{{ModId}}_gooseberry_pie": {
+					"ProductQualifiedId": "(O){{ModId}}_gooseberry_pie",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Apple
+						{
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Gooseberry",
+                            "Amount": 4
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)moonslime.Cooking.pie_crust",
+                            "Amount": 1
+                        }
+					]
+				},
+                "{{ModId}}_pecan_pie": {
+					"ProductQualifiedId": "(O){{ModId}}_pecan_pie",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Apple
+						{
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Pecan",
+                            "Amount": 2
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)245",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "category_egg, egg_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_egg}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 128,
+                                "Y": 112,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)moonslime.Cooking.pie_crust",
+                            "Amount": 1
+                        }
+					]
+				}
+			}
+		},
+        //Wildflour Overrides
+        {
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+			"When": {
+                "HasMod |contains=wildflour.gourmetpantry": "true"
+			},
+			"Entries": {
+				"{{ModId}}_smoked_salmon_bagel": {
+					"ProductQualifiedId": "(O){{ModId}}_smoked_salmon_bagel",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        //Bread
+						{
+                            "Type": "Item",
+                            "Value": "(O)216",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_SmokedSalmon",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)wildflour.gourmetpantry_cream_cheese",
+                            "Amount": 1
+                        }
+					]
+				},
+                "{{ModId}}_donut": {
+					"ProductQualifiedId": "(O){{ModId}}_donut",
+					"ProductAmount": 1,
+					"Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "flour_item, item_wheat_flour",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_flour}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 96,
+                                "Y": 160,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_PrismaticEssence",
+                            "Amount": 1
+                        },
+                        //Sugar
+                        {
+                            "Type": "Item",
+                            "Value": "(O)245",
+                            "Amount": 1
+                        },
+                        //Oil
+                        {
+                            "Type": "Item",
+                            "Value": "(O)247",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)wildflour.gourmetpantry_rainbow_sprinkles",
+                            "Amount": 1
+                        }
+					]
+				}
+			}
+		},
+        //Fugu Overrides
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+            "When": {
+                "flexible_recipes": "On",
+                "HasMod |contains=spacechase0.SpaceCore": "true",
+                "Query: {{DailyLuck}} < 0": true //spirits unhappy today
+            },
+            "Entries": {
+                "{{ModId}}_fugu": {
+                    "ProductQualifiedId": "(O){{ModId}}_unlucky_fugu",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        //Pufferfish
+                        {
+                            "Type": "Item",
+                            "Value": "(O)128",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lemon_item, id_o_wildflour.ateliercrops_lemon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lemon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Carrot",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Zoodles",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+            "When": {
+                "flexible_recipes": "On",
+                "HasMod |contains=spacechase0.SpaceCore": "true",
+                "Query: {{DailyLuck}} = 0": true //spirits neutral today
+            },
+            "Entries": {
+                "{{ModId}}_fugu": {
+                    "ProductQualifiedId": "(O){{ModId}}_neutral_fugu",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        //Pufferfish
+                        {
+                            "Type": "Item",
+                            "Value": "(O)128",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lemon_item, id_o_wildflour.ateliercrops_lemon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lemon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Carrot",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Zoodles",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+            "When": {
+                "flexible_recipes": "On",
+                "HasMod |contains=spacechase0.SpaceCore": "true",
+                "Query: {{DailyLuck}} > 0": true //spirits happy today
+            },
+            "Entries": {
+                "{{ModId}}_fugu": {
+                    "ProductQualifiedId": "(O){{ModId}}_lucky_fugu",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        //Pufferfish
+                        {
+                            "Type": "Item",
+                            "Value": "(O)128",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "lemon_item, id_o_wildflour.ateliercrops_lemon",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_lemon}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Carrot",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)Cornucopia_Zoodles",
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "butter_item",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:ingredient.any_butter}}",
+                            "OverrideTexturePath": "Maps/springobjects",
+                            "OverrideTextureRect": {
+                                "X": 16,
+                                "Y": 128,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+	]
+}
+
+
+/*
+{
+    "Type": "Item",
+    "Value": "(O)190",
+    "Amount": 1
+},
+{
+    "Type": "ContextTag",
+    "Value": "lemon_item, id_o_wildflour.ateliercrops_lemon",
+    "Amount": 1,
+    "OverrideText": "{{i18n:ingredient.any_lemon}}",
+    "OverrideTexturePath": "Maps/springobjects",
+    "OverrideTextureRect": {
+        "X": 16,
+        "Y": 128,
+        "Width": 16,
+        "Height": 16
+    }
+}
+{
+    "Type": "ContextTag",
+    "Value": "butter_item",
+    "Amount": 1,
+    "OverrideText": "{{i18n:ingredient.any_butter}}",
+    "OverrideTexturePath": "Maps/springobjects",
+    "OverrideTextureRect": {
+        "X": 16,
+        "Y": 128,
+        "Width": 16,
+        "Height": 16
+    }
+},
+{
+    "Type": "ContextTag",
+    "Value": "cheese_item, ingredient_cheese",
+    "Amount": 1,
+    "OverrideText": "{{i18n:ingredient.any_cheese}}",
+    "OverrideTexturePath": "Maps/springobjects",
+    "OverrideTextureRect": {
+        "X": 256,
+        "Y": 272,
+        "Width": 16,
+        "Height": 16
+    }
+},
+{
+	"Type": "ContextTag",
+	"Value": "flour_item, item_wheat_flour",
+	"Amount": 1,
+	"OverrideText": "{{i18n:ingredient.any_flour}}",
+	"OverrideTexturePath": "Maps/springobjects",
+	"OverrideTextureRect": {
+		"X": 96,
+		"Y": 160,
+		"Width": 16,
+		"Height": 16
+	}
+},
+{
+	"Type": "ContextTag",
+	"Value": "category_milk, milk_item",
+	"Amount": 1,
+	"OverrideText": "{{i18n:ingredient.any_milk}}",
+	"OverrideTexturePath": "Maps/springobjects",
+	"OverrideTextureRect": {
+		"X": 256,
+		"Y": 112,
+		"Width": 16,
+		"Height": 16
+	}
+},
+{
+    "Type": "ContextTag",
+    "Value": "plain_yogurt_item, item_cornucopia_plainyogurt",
+    "Amount": 1,
+    "OverrideText": "{{i18n:ingredient.any_plain_yogurt}}",
+    "OverrideTexturePath": "Maps/springobjects",
+    "OverrideTextureRect": {
+        "X": 16,
+        "Y": 128,
+        "Width": 16,
+        "Height": 16
+    }
+},
+{
+	"Type": "ContextTag",
+	"Value": "category_egg, egg_item",
+	"Amount": 1,
+	"OverrideText": "{{i18n:ingredient.any_egg}}",
+	"OverrideTexturePath": "Maps/springobjects",
+	"OverrideTextureRect": {
+		"X": 128,
+		"Y": 112,
+		"Width": 16,
+		"Height": 16
+	}
+},
+
+{
+    "Type": "ContextTag",
+    "Value": "id_o_419, item_balsamic_vinegar, vinegar_item",
+    "Amount": 1,
+    "OverrideText": "{{i18n:ingredient.any_vinegar}}",
+    "OverrideTexturePath": "Maps/springobjects",
+    "OverrideTextureRect": {
+        "X": 16,
+        "Y": 128,
+        "Width": 16,
+        "Height": 16
+    }
+}
+*/

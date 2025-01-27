@@ -1,0 +1,133 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "ConfigSchema": {
+        "DewdropFish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PurpleSpottedTrout": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Relicantlette": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Serafin": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "UmuwiCarp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        }
+    },
+    "Format": "2.4.0",
+    "Changes": [
+        {
+            "LogName": "Dewdrop Fish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "DewdropFish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedLunnaAstrayFish_DewdropFish": {
+                    "TargetTexture": "LASV/Objects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/dewdrop_fish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Purple Spotted Trout",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PurpleSpottedTrout": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedLunnaAstrayFish_PurpleSpottedTrout": {
+                    "TargetTexture": "LASV/Objects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/purple_spotted_trout.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Relicantlette",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Relicantlette": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedLunnaAstrayFish_Relicantlette": {
+                    "TargetTexture": "LASV/Objects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/relicantlette.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Serafin",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Serafin": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedLunnaAstrayFish_Serafin": {
+                    "TargetTexture": "LASV/Objects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/serafin.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Umuwi Carp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "UmuwiCarp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedLunnaAstrayFish_UmuwiCarp": {
+                    "TargetTexture": "LASV/Objects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/umuwi_carp.png}}:0..3@20"
+                }
+            }
+        }
+    ]
+}

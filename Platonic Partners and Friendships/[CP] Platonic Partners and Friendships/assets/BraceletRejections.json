@@ -1,0 +1,615 @@
+{
+    "Changes": [
+//
+//Generic rejections
+//
+        {
+	    "Logname": "Generic bracelet rejection for vanilla NPCs without unique response",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint, Characters/Dialogue/Dwarf, Characters/Dialogue/Gil, Characters/Dialogue/Gus, Characters/Dialogue/Jas, Characters/Dialogue/Krobus, Characters/Dialogue/Leo, Characters/Dialogue/LeoMainland, Characters/Dialogue/Lewis, Characters/Dialogue/Linus, Characters/Dialogue/Mister Qi, Characters/Dialogue/Sandy, Characters/Dialogue/Vincent, Characters/Dialogue/Willy, Characters/Dialogue/Wizard",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+        },
+        {
+	    "Logname": "Generic bracelet rejection for RSV NPCs if not using Platonic RSV",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Acorn, Characters/Dialogue/Aguar, Characters/Dialogue/Alissa, Characters/Dialogue/Anton, Characters/Dialogue/Ariah, Characters/Dialogue/Belinda, Characters/Dialogue/Bert, Characters/Dialogue/Blair, Characters/Dialogue/Bliss, Characters/Dialogue/Bryle, Characters/Dialogue/Carmen, Characters/Dialogue/Corine, Characters/Dialogue/Daia, Characters/Dialogue/Ezekiel, Characters/Dialogue/Faye, Characters/Dialogue/Flor, Characters/Dialogue/Freddie, Characters/Dialogue/Helen, Characters/Dialogue/Ian, Characters/Dialogue/Irene, Characters/Dialogue/Jeric, Characters/Dialogue/Jio, Characters/Dialogue/Keahi, Characters/Dialogue/Kenneth, Characters/Dialogue/Kiarra, Characters/Dialogue/Kimpoi, Characters/Dialogue/Kiwi, Characters/Dialogue/Lenny, Characters/Dialogue/Lola, Characters/Dialogue/Maddie, Characters/Dialogue/Maive, Characters/Dialogue/Malaya, Characters/Dialogue/Naomi, Characters/Dialogue/Olga, Characters/Dialogue/Paula, Characters/Dialogue/Philip, Characters/Dialogue/Pika, Characters/Dialogue/Pipo, Characters/Dialogue/Raeriyala, Characters/Dialogue/RelicSpirit, Characters/Dialogue/Richard, Characters/Dialogue/Sari, Characters/Dialogue/Sean, Characters/Dialogue/Shanice, Characters/Dialogue/Shiro, Characters/Dialogue/Sonny, Characters/Dialogue/TreehouseGirl, Characters/Dialogue/Trinnie, Characters/Dialogue/Undreya, Characters/Dialogue/Ysabelle, Characters/Dialogue/Yuuma, Characters/Dialogue/Zayne",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"HasMod |contains=Rafseazz.RSVCP": "true",
+			"HasMod |contains=Amaranthacyan.PlatonicRidgeside": "false",
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for SVE NPCs",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Brianna, Characters/Dialogue/Brock, Characters/Dialogue/Cassandra, Characters/Dialogue/Cordelia, Characters/Dialogue/Drake, Characters/Dialogue/Edmund, Characters/Dialogue/Emin, Characters/Dialogue/Freya, Characters/Dialogue/Gale, Characters/Dialogue/Gertrude, Characters/Dialogue/Sawyer, Characters/Dialogue/Alesia, Characters/Dialogue/Andy, Characters/Dialogue/Apples, Characters/Dialogue/Camilla, Characters/Dialogue/Charlie, Characters/Dialogue/Claire, Characters/Dialogue/Dusty, Characters/Dialogue/Gunther, Characters/Dialogue/HighlandsDwarf, Characters/Dialogue/Isaac, Characters/Dialogue/Jadu, Characters/Dialogue/Jolyne, Characters/Dialogue/Lance, Characters/Dialogue/Magnus, Characters/Dialogue/Marlon, Characters/Dialogue/Martin, Characters/Dialogue/Morgan, Characters/Dialogue/Morris, Characters/Dialogue/Olivia, Characters/Dialogue/Peaches, Characters/Dialogue/Scarlett, Characters/Dialogue/Sophia, Characters/Dialogue/Susan, Characters/Dialogue/Victor",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+      		  }
+        },
+//
+//Abigail and family
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Abigail",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Abigail |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for Caroline",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Abigail |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Caroline when Abigail is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: I don't need to follow Abby everywhere for the rest of her life. I know she'll be fine living with you. ++ Move in with you and Abby? ...Ask me again when I'm a widow.$2. |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Abigail": "Engaged, Married"
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for Pierre",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Abigail |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Pierre when Abigail is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: Abigail doesn't need me hovering over her shoulder. I know she's ready to live her own life.$2 ++ There are at least four reasons why I'm not going to move in with you and my daughter.$3 |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Abigail": "Engaged, Married"
+      		  }
+        },
+//
+//Alex and family
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Alex",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Alex |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for Evelyn",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Evelyn",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Alex |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Evelyn when Alex is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Evelyn",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: Move in with you and Alex? That's very kind of you, but George and I want to stay independent for as long as we can.$2 ++ I'm sorry, dear, I think I must have misheard you.$2 |inputSeparator=++}}",            
+	    },
+            "When":
+      		  {
+                   "Relationship:Alex": "Engaged, Married"
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for George",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/George",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Alex |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for George when Alex is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/George",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: Huh? Speak up! ++ Move in? So you think my wife and I are too frail to live on our own? Hmph! |inputSeparator=++}}",            
+	    },
+            "When":
+      		  {
+                   "Relationship:Alex": "Engaged, Married"
+      		  }
+        },
+//
+//Elliott
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Elliott",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thank you, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Elliott |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+//
+//Emily and Haley
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Emily",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thank you, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Emily |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Haley when Emily is your housemate and no Free Love",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: I love my sister, but I think it's actually better for our relationship if we don't live together. ++ Um, don't be weird. Emily and I aren't a matched set.$u |inputSeparator=++}}",            
+            },
+            "When":
+      		  {
+                   "Relationship:Emily": "Engaged, Married",
+                   "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for non platonic Haley",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Haley |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Emily when Haley is your housemate and no Free Love",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: I love my sister, but I think it's healthier for our relationship if we don't live together.$u ++ Haley and I are our own people with our own destinies. I don't want to move in with you just because she chose to.$u |inputSeparator=++}}",            
+            },
+            "When":
+      		  {
+                   "Relationship:Haley": "Engaged, Married",
+                   "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+      		  }
+        },
+//
+//Harvey
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Harvey",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thank you, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Harvey |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+//
+//Leah
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Leah",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thank you, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Leah |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+//
+//Maru and Sebastian family
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Maru",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Maru |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Sebastian when Maru is your housemate and no Free Love",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: I think I was unfair to Maru growing up... but I still don't want to move in with you two. It would just bring up old resentments. ++ I get that it wasn't Maru's fault, but I feel more appreciated at home since she decided to move out. I'd like to stay where I am. |inputSeparator=++}}",            
+            },
+            "When":
+      		  {
+                   "Relationship:Maru": "Engaged, Married",
+                   "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for non platonic Sebastian",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Sebastian |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Maru when Sebastian is your housemate and no Free Love",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: Um, no thanks. I'd like to have a better relationship with Sebastian, and moving in with you two would absolutely sabotage that.$s ++ Don't you think Sebastian would resent me following him to your house? I'll pass.$s |inputSeparator=++}}",            
+            },
+            "When":
+      		  {
+                   "Relationship:Sebastian": "Engaged, Married",
+                   "HasMod |contains=aedenthorn.MultipleSpouses, aedenthorn.FreeLove": "false",
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for Robin",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Maru |contains=Engaged, Married": "false",
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Robin when Maru but not Sebastian is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: If you want me to move in with you and Maru, you'll have to hire me to build my own wing.$h ++ Ha! I have faith in the quality of my work on your house, I don't need to test it myself.$h |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Maru": "Engaged, Married",
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Robin when Sebastian but not Maru is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: If you want me to move in with you and Maru, you'll have to hire me to build my own wing.$h ++ Ha! I have faith in the quality of my work on your house, I don't need to test it myself.$h |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Sebastian": "Engaged, Married",
+		   "Relationship:Maru |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Robin when Maru and Sebastian are both your housemates",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: If you want me to move in with you and my kids, you'll have to hire me to build my own wing.$h ++ Ha! I have faith in the quality of my work on your house, I don't need to test it myself.$h |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Maru": "Engaged, Married",
+                   "Relationship:Sebastian": "Engaged, Married",
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for Demetrius",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Maru |contains=Engaged, Married": "false",
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Demetrius when Maru but not Sebastian is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: I already told you I'm glad you're in Maru's life. I don't need to move in and supervise you. ++ Don't worry. I'll see plenty of Maru when I come by to collect data from the cave. |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Maru": "Engaged, Married",
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Demetrius when Sebastian but not Maru is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: You want me to... move in with you and my stepson? What?$4 ++ Is this one of those 'social experiments' I keep hearing about? Your methodology needs work.$4 |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Sebastian": "Engaged, Married",
+		   "Relationship:Maru |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Demetrius when Maru and Sebastian are both your housemates",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: You want me to... move in with you and Maru and Sebastian? What?$4 ++ Don't worry. I see plenty of Maru and Sebastian when I come by to collect data from the cave. |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Maru": "Engaged, Married",
+                   "Relationship:Sebastian": "Engaged, Married",
+      		  }
+        },
+//
+//Penny and family
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Penny",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Penny |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for Pam",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Penny |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Pam when Penny is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: Don't be weird, kid. I got my own place to live.$4 ++ You and I both know Penny don't want me living with you two. I'm respectin' her boundaries.$4 |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Penny": "Engaged, Married"
+      		  }
+        },
+//
+//Sam and family
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Sam",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Sam |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for Jodi",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Sam |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Jodi when Sam is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: Um... I already have a house. I might even get to sleep in the biggest bedroom once I clear Sam's things out of it...$4 ++ ...Is this a comment on my parenting style? I know I babied Sam a little while he was growing up, but do you really think I'd try to follow him to your house?$3 |inputSeparator=++}}",            
+	    },
+            "When":
+      		  {
+                   "Relationship:Sam": "Engaged, Married"
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for Kent",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kent",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Sam |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Kent when Sam is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kent",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: ...Are you implying I should spend more time with my son? Sam's a grown man. If he wants to get a beer with me, he can tell me himself.$2 ++ No, I am not going to leave my wife and young son to move in with you and Sam. Why would you even ask that? |inputSeparator=++}}",            
+	    },
+            "When":
+      		  {
+                   "Relationship:Sam": "Engaged, Married"
+      		  }
+        },
+//
+//Shane and family
+//
+        {
+	    "Logname": "Bracelet rejection for non platonic Shane",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+			"Shane |contains=FullyPlatonic, SexWithoutRomance": "false",
+      		  }
+        },
+        {
+	    "Logname": "Generic bracelet rejection for Marnie",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "Thanks, but I don't think you meant to give that to me."
+            },
+            "When":
+      		  {
+		   "Relationship:Shane |contains=Engaged, Married": "false",
+      		  }
+        },
+        {
+	    "Logname": "Bracelet rejection for Marnie when Shane is your housemate",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries":
+            {
+		"RejectItem_(O){{ModID}}_FriendshipBracelet": "{{Random: Oh, @. It's sweet that you're worried about Jas and I missing Shane, but we'll be fine right here. Your place isn't far. ++ That's very funny, @! I think Jas and I need to stay here and take care of the animals.$h |inputSeparator=++}}",
+            },
+            "When":
+      		  {
+                   "Relationship:Shane": "Engaged, Married"
+      		  }
+        },
+      {
+         "Action": "EditData",
+         "Target": "Data/NpcGiftTastes",
+        "TextOperations": [
+            {
+                "Operation": "Append",
+                "Target": ["Entries", "Universal_Neutral"],
+                "Value": "{{ModID}}_FriendshipBracelet",
+                "Delimiter": " "
+            }]
+         }
+]}
