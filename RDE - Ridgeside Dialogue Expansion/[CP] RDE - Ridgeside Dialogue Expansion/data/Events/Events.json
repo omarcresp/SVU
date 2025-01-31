@@ -1,0 +1,45 @@
+{
+	"Changes": [
+		//Alissa Events
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				//// Alissa's Housewarming Gift (Alissa 1 Heart Event) (Requires 1 empty inventory slot) (needs host player)
+				"75160462/w sunny/H/c 1/f Alissa 250": "continue/64 15/farmer 64 16 2 Alissa 64 18 0/addConversationTopic RSV_Alissa1Heart/skippable/pause 800/speak Alissa \"{{i18n:Alissa.event.75160462_01}}\"/emote Alissa 60/pause 500/speak Alissa \"{{i18n:Alissa.event.75160462_02}} [Rafseazz.RSVCP_Tropi_Ugli_Fruit_Sapling]\"/message \"{{i18n:Alissa.event.75160462_03}}\"/emote farmer 32/pause 500/emote Alissa 32/speak Alissa \"{{i18n:Alissa.event.75160462_04}}\"/pause 500/emote Alissa 40/speak Alissa \"{{i18n:Alissa.event.75160462_05}}\"/pause 500/emote farmer 40/emote farmer 8/emote Alissa 16/pause 500/speak Alissa \"{{i18n:Alissa.event.75160462_06}}\"/pause 500/emote Alissa 32/pause 500/speak Alissa \"{{i18n:Alissa.event.75160462_07}}\"/emote farmer 32/end",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_Ridgeside_Ridge",
+			"Entries": {
+				//Alissa's Family Situation (Alissa 3 hearts) (Malaya+Kimpoi must be back in the Valley first)
+				"75160464/F/H/w sunny/e 75160251/t 1500 2000/f Alissa 750": "desolate/19 32/farmer 24 29 3 Alissa 19 32 2/addConversationTopic RSV_Alissa5Heart/skippable/showFrame Alissa 1/pause 500/emote Alissa 40/move farmer -5 0 2/emote farmer 8/pause 1000/emote Alissa 8/pause 500/faceDirection Alissa 0/emote Alissa 16/speak Alissa \"{{i18n:Alissa.event.75160464_01}}\"/emote farmer 28/pause 500/question null \"{{i18n:Alissa.event.75160464_02.1}}\"/emote Alissa 40/pause 500/speak Alissa \"{{i18n:Alissa.event.75160464_03}}\"/pause 500/question null \"{{i18n:Alissa.event.75160464_04.1}}\"/pause 500/shake Alissa 250/emote Alissa 28/pause 500/speak Alissa \"{{i18n:Alissa.event.75160464_05}}\"/pause 1000/speak Alissa \"{{i18n:Alissa.event.75160464_06}}\"/pause 500/speak Alissa \"{{i18n:Alissa.event.75160464_07}}\"/pause 500/shake Alissa 250/emote Alissa 28/pause 1000/speak Alissa \"{{i18n:Alissa.event.75160464_08}}\"/pause 750/speak Alissa \"{{i18n:Alissa.event.75160464_09}}\"/emote farmer 28/pause 1500/emote Alissa 28/pause 500/speak Alissa \"{{i18n:Alissa.event.75160464_10}}\"/pause 1000/shake Alissa 250/emote Alissa 28/pause 500/move farmer 1 0 2/pause 500/speak Alissa \"{{i18n:Alissa.event.75160464_11}}\"/pause 500/question fork0 \"{{i18n:Alissa.event.75160464_12.1}}\"/fork 75160464.Alissa5_1/pause 500/friendship Alissa -400/emote Alissa 28/pause 500/speak Alissa \"{{i18n:Alissa.event.75160464_15}}\"/end",
+
+				"75160464.Alissa5_1": "stopMusic/pause 500/playMusic breezy/pause 1000/friendship Alissa 200/faceDirection Alissa 0/pause 500/emote farmer 32/pause 500/speak Alissa \"{{i18n:Alissa.event.75160464_13}}\"/pause 500/emote farmer 32/pause 500/emote Alissa 32/pause 2000/globalFade/viewport -1000 -1000/pause 500/speak Alissa \"{{i18n:Alissa.event.75160464_14}}\"/end",
+			}
+		},			
+
+		
+		//Daia+Jio Events
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_Ridgeside_Ridge",
+			"Entries": {
+				//// Daia and Jio reminisce about Granny (Daia+Jio 1 Heart Event)
+				"75160465/F/H/w sunny/t 1900 2400/e 75160265/f Daia 250 Jio 250": "continue/94 23/farmer -100 -100 0 Jio 94 22 2 Daia 200 200 3/addConversationTopic RSV_Jio+Daia1Heart/skippable/pause 500/emote Jio 40/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_01}}\"/pause 500/emote Jio 40/pause 650/showFrame Daia 19/pause 100/playSound shadowpeep/warp Daia 90 22/pause 500/faceDirection Daia 0/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_02}}\"/pause 500/emote Jio 12/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_03}}\"/pause 500/faceDirection Daia 1/pause 500/jump Daia/pause 500/emote Daia 32/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_04}}\"/pause 500/emote Jio 40/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_05}}\"/pause 500/jump Daia/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_06}}\"/pause 500/emote Jio 40/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_07}}\"/pause 500/emote Daia 28/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_08}}\"/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_09}}\"/pause 500/stopMusic/speak Daia \"{{i18n:Daia+Jio.event.75160465_10}}\"/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_11}}\"/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_12}}\"/pause 500/playMusic grandpas_theme/speak Jio \"{{i18n:Daia+Jio.event.75160465_13}}\"/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_14}}\"/pause 500/emote Daia 40/pause 650/jump Daia/emote Daia 16/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_15}}\"/pause 500/emote Jio 40/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_16}}\"/pause 500/emote Daia 32/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_17}}\"/pause 500/move Daia 3 0 1/pause 1250/playSound pickUpItem/pause 500/emote Jio 32/pause 500/emote Daia 32/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_18}}\"/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_19}}\"/pause 500/emote Jio 8/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_20}}\"/pause 500/emote Daia 32/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_21}}\"/pause 500/shake Jio 250/emote Jio 32/pause 500/speak Jio \"{{i18n:Daia+Jio.event.75160465_22}}\"/pause 500/jump Daia/pause 500/speak Daia \"{{i18n:Daia+Jio.event.75160465_23}}\"/pause 500/globalFade/viewport -1000 -1000/pause 500/message \"{{i18n:Daia+Jio.event.75160465_24}}\"/end",
+			}	
+		},	
+		
+		
+		//Maive Events
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_Ridgeside_PurpleMansion",
+			"Entries": {
+				//// Maive discusses the safety of the Valley (Maive 5 Heart Event)
+				"75160463/f Maive 1250/H/t 1800 2200": "spirits_eve/42 30/farmer 1000 1000 0 Maive 42 29 2 Zayne 41 29 2 Daia 41 31 0 Jio 42 31 0 Kiwi 43 31 0 Sonny 46 29 3/broadcastEvent/addConversationTopic RSV_Maive5Hearts/skippable/emote Maive 40/pause 500/speak Maive \"{{i18n:Maive.event.75160463_01}}\"/pause 500/emote Daia 32/pause 500/speak Jio \"{{i18n:Maive.event.75160463_02}}\"/pause 500/emote Maive 40/pause 500/speak Maive \"{{i18n:Maive.event.75160463_03}}\"/emote Daia 20/pause 500/speak Daia \"{{i18n:Maive.event.75160463_04}}\"/faceDirection Jio 3/emote Jio 12/pause 500/speak Jio \"{{i18n:Maive.event.75160463_05}}\"/emote Daia 16/pause 500/faceDirection Daia 1/emote Daia 32/pause 500/speak Daia \"{{i18n:Maive.event.75160463_06}}\"/pause 500/emote Maive 40/pause 500/speak Maive \"{{i18n:Maive.event.75160463_07}}\"/emote Daia 32/pause 500/faceDirection Daia 0/speak Daia \"{{i18n:Maive.event.75160463_08}}\"/emote Jio 8/pause 500/speak Maive \"{{i18n:Maive.event.75160463_09}}\"/pause 500/speak Daia \"{{i18n:Maive.event.75160463_10}}\"/pause 1000/emote Zayne 28/emote Daia 20/pause 600/speak Zayne \"{{i18n:Maive.event.75160463_11}}\"/pause 500/speak Jio \"{{i18n:Maive.event.75160463_12}}\"/pause 500/speak Maive \"{{i18n:Maive.event.75160463_13}}\"/pause 500/emote Daia 12/speak Daia \"{{i18n:Maive.event.75160463_14}}\"/emote Maive 40/pause 750/speak Maive \"{{i18n:Maive.event.75160463_15}}\"/pause 500/speak Sonny \"{{i18n:Maive.event.75160463_16}}\"/pause 1000/globalFade/viewport -1000 -1000/speak Maive \"{{i18n:Maive.event.75160463_17}}\"/pause 500/speak Zayne \"{{i18n:Maive.event.75160463_18}}\"/pause 500/speak Maive \"{{i18n:Maive.event.75160463_19}}\"/end"
+			}
+		},
+	]
+}

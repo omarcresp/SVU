@@ -1,0 +1,30 @@
+{
+	"Changes": [
+		//// ZAYNE ////
+		{
+			"LogName": "Gift tastes - Zayne",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": {
+				"HasSeenEvent: hostPlayer |contains=75160338": true
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+			"Entries": {
+				"Zayne": "{{i18n:Gift.Love.Zayne}}/SkillBook_0 Rafseazz.RSVCP_Ginger_Rangpur_Meringue Rafseazz.RSVCP_Desert_Tangelo 66 107 221 220 Rafseazz.RSVCP_Autumnal_Serenity/{{i18n:Gift.Like.Zayne}}/ 196 256 336/{{i18n:Gift.Dislike.Zayne}}/167 614 815/{{i18n:Gift.Hate.Zayne}}//{{i18n:Gift.Neutral.Zayne}}/-4/ ",
+			},
+		},
+		{
+			"LogName": "Gift tastes - Zayne",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": {
+				"HasSeenEvent: hostPlayer |contains=75160338": true,
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+			"Entries": {
+				"Zayne": "{{i18n:Gift.Love.Zayne}}/SkillBook_0 FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine Rafseazz.RSVCP_Ginger_Rangpur_Meringue Rafseazz.RSVCP_Desert_Tangelo 66 107 221 220 Rafseazz.RSVCP_Autumnal_Serenity/{{i18n:Gift.Like.Zayne}}/FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine 196 256 336/{{i18n:Gift.Dislike.Zayne}}/167 614 815/{{i18n:Gift.Hate.Zayne}}//{{i18n:Gift.Neutral.Zayne}}/-4/ ",
+			},
+		},
+	]
+}
