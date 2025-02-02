@@ -1,0 +1,1022 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+
+    "SigurdHairColor": {
+      "AllowValues": "bluehaired, blackhaired",
+      "Default": "bluehaired",
+      "AllowBlank": false,
+      "Description": "Decide if Sig has black hair like his initial concept or blue hair like his current concept. Default is bluehaired. Note, if you change the configuration while playing, the change takes effect the next day.",
+      "Section": "General"
+    },
+    "GunnarHasFreckles": {
+      "AllowValues": "freckled, nofreckles",
+      "Default": "nofreckles",
+      "AllowBlank": false,
+      "Description": "Decide if Gunnar has freckles or no freckles. Only changes portraits. Default is nofreckles. Note, if you change the configuration while playing, the change takes effect the next day.",
+      "Section": "General"
+    }
+  },
+
+  "Changes": [
+    //////////////////////////////////////////
+    //MEEP
+    //////////////////////////////////////////
+    {
+      "LogName": "EditImage army photo",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "MadDogBearFam/BearfamOldArmyPhoto",
+      "FromFile": "assets/MEEP_images/MadDog_BearFam_MEEPOldArmyPhoto_{{SigurdHairColor}}.png"
+    },
+    {
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam_Sassy",
+      "FromFile": "assets/MEEP_images/portrait.png"
+    },
+    //////////////////////////////////////////
+    //Temp Actor
+    //////////////////////////////////////////
+    {
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/TempMadDogSassy",
+      "FromFile": "assets/MEEP_images/portrait.png"
+    },
+    //////////////////////////////////////////
+    //Sigurd
+    //////////////////////////////////////////
+
+    //default
+    {
+      "LogName": "Sig Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd",
+      "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}.png"
+    },
+    //beach/resort
+    {
+      "LogName": "Sigurd Island Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Beach",
+      "FromFile": "assets/Portraits/Sigurd/Sigurd_{{SigurdHairColor}}_Beach.png"
+    },
+    //spring
+    {
+      "LogName": "Sigurd Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Spring_1",
+      "FromFile": "assets/Portraits/Sigurd/spring_{{SigurdHairColor}}_sigurd.png"
+    },
+    {
+      "LogName": "Sigurd Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Spring_2",
+      "FromFile": "assets/Portraits/Sigurd/spring_{{SigurdHairColor}}_sigurd1.png"
+    },
+    //summer
+    {
+      "LogName": "Sigurd summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Summer_1",
+      "FromFile": "assets/Portraits/Sigurd/summer_{{SigurdHairColor}}_sigurd.png"
+    },
+    {
+      "LogName": "Sigurd summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Summer_2",
+      "FromFile": "assets/Portraits/Sigurd/summer_{{SigurdHairColor}}_sigurd1.png"
+    },
+    //fall
+    {
+      "LogName": "Sigurd Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Fall_1",
+      "FromFile": "assets/Portraits/Sigurd/fall_{{SigurdHairColor}}_sigurd.png"
+    },
+    {
+      "LogName": "Sigurd Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Fall_2",
+      "FromFile": "assets/Portraits/Sigurd/fall_{{SigurdHairColor}}_sigurd1.png"
+    },
+    //winter
+    {
+      "LogName": "Sigurd Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Winter_1",
+      "FromFile": "assets/Portraits/Sigurd/winter_{{SigurdHairColor}}_sigurd.png"
+    },
+    {
+      "LogName": "Sigurd Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Winter_2",
+      "FromFile": "assets/Portraits/Sigurd/winter_{{SigurdHairColor}}_sigurd1.png"
+    },
+    //festivals
+    //eggfest
+    {
+      "LogName": "Sigurd eggfest Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_eggfest",
+      "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_eggfest.png"
+    },
+    //fLateerdance
+    {
+      "LogName": "Sigurd fLateerdance Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_fLateerdance",
+      "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_fLateerdance.png"
+    },
+
+    //moonlightjellies//summer festivals
+    {
+      "LogName": "Sigurd moonlightjellies Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_moonlightjellies",
+      "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_moonlightjellies.png"
+    },
+    //sdvfair
+    {
+      "LogName": "Sigurd sdvfair Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_sdvfair",
+      "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_sdvfair.png"
+    },
+    //spiritseve1
+    {
+      "LogName": "Sigurd spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve1",
+      "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_spiritseve.png"
+    },
+
+    //spiritseve2
+    {
+      "LogName": "Sigurd spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve2",
+      "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_spiritseve1.png"
+    },
+    //icefestival
+    {
+      "LogName": "Sigurd icefestival Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_icefestival",
+      "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_icefestival.png"
+    },
+    //winterfeast
+    {
+      "LogName": "Sigurd winterfeast Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_winterfeast",
+      "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_winterfeast.png"
+    },
+
+    //////////////////////////////////////////
+    //Sondra
+    //////////////////////////////////////////
+
+    //default
+    {
+      "LogName": "Sondra Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra",
+      "FromFile": "assets/Portraits/Sondra/sondra.png"
+    },
+
+    //beach/resort
+    {
+      "LogName": "Sondra Island Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Beach",
+      "FromFile": "assets/Portraits/Sondra/Sondra_Beach.png"
+    },
+    //spring
+    {
+      "LogName": "Sondra Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spring_1",
+      "FromFile": "assets/Portraits/Sondra/spring_sondra.png"
+    },
+    {
+      "LogName": "Sondra Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spring_2",
+      "FromFile": "assets/Portraits/Sondra/spring_sondra1.png"
+    },
+    //summer
+    {
+      "LogName": "Sondra summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_summer_1",
+      "FromFile": "assets/Portraits/Sondra/summer_sondra.png"
+    },
+    {
+      "LogName": "Sondra summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_summer_2",
+      "FromFile": "assets/Portraits/Sondra/summer_sondra1.png"
+    },
+    //fall
+    {
+      "LogName": "Sondra Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Fall_1",
+      "FromFile": "assets/Portraits/Sondra/fall_sondra.png"
+    },
+    {
+      "LogName": "Sondra Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Fall_2",
+      "FromFile": "assets/Portraits/Sondra/fall_sondra1.png"
+    },
+    //winter
+    {
+      "LogName": "Sondra Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Winter_1",
+      "FromFile": "assets/Portraits/Sondra/winter_sondra.png"
+    },
+    {
+      "LogName": "Sondra Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Winter_2",
+      "FromFile": "assets/Portraits/Sondra/winter_sondra1.png"
+    },
+    //festivals
+    //eggfest
+    {
+      "LogName": "Sondra eggfest Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_eggfest",
+      "FromFile": "assets/Portraits/Sondra/sondra_eggfest.png"
+    },
+    //fLateerdance
+    {
+      "LogName": "Sondra fLateerdance Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_fLateerdance",
+      "FromFile": "assets/Portraits/Sondra/sondra_fLateerdance.png"
+    },
+    //luau
+    {
+      "LogName": "Sondra luau Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_luau",
+      "FromFile": "assets/Portraits/Sondra/sondra_luau.png"
+    },
+    //moonlightjellies
+    {
+      "LogName": "Sondra moonlightjellies Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_moonlightjellies",
+      "FromFile": "assets/Portraits/Sondra/sondra_moonlightjellies.png"
+    },
+    //sdvfair
+    {
+      "LogName": "Sondra sdvfair Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_sdvfair",
+      "FromFile": "assets/Portraits/Sondra/sondra_sdvfair.png"
+    },
+    //spiritseve1
+    {
+      "LogName": "Sondra spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve1",
+      "FromFile": "assets/Portraits/Sondra/sondra_spiritseve.png"
+    },
+    //spiritseve2
+    {
+      "LogName": "Sondra spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve2",
+      "FromFile": "assets/Portraits/Sondra/sondra_spiritseve1.png"
+    },
+    //winterfeast
+    {
+      "LogName": "Sondra winterfeast Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Sondra_winterfeast",
+      "FromFile": "assets/Portraits/Sondra/sondra_winterfeast.png"
+    },
+
+    //////////////////////////////////////////
+    //Gunnar
+    //////////////////////////////////////////
+
+    //default
+    {
+      "LogName": "Gunnar Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_glasses.png"
+    },
+    //beach/resort
+    {
+      "LogName": "Gunnar Island Portraits",
+      "Action": "EditImage",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Beach",
+      "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_Beach_{{Random: noglasses, glasses}}.png"
+    },
+    //spring
+    {
+      "LogName": "Gunnar Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_1",
+      "FromFile": "assets/Portraits/Gunnar/spring_{{GunnarHasFreckles}}_gunnar_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_1_glasses",
+      "FromFile": "assets/Portraits/Gunnar/spring_{{GunnarHasFreckles}}_gunnar_glasses.png"
+    },
+    {
+      "LogName": "Gunnar Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_2",
+      "FromFile": "assets/Portraits/Gunnar/spring_{{GunnarHasFreckles}}_gunnar1_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_2_glasses",
+      "FromFile": "assets/Portraits/Gunnar/spring_{{GunnarHasFreckles}}_gunnar1_glasses.png"
+    },
+    //summer
+    {
+      "LogName": "Gunnar summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_1",
+      "FromFile": "assets/Portraits/Gunnar/summer_{{GunnarHasFreckles}}_gunnar.png"
+    },
+
+    {
+      "LogName": "Gunnar summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_2",
+      "FromFile": "assets/Portraits/Gunnar/summer_{{GunnarHasFreckles}}_gunnar1_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_2_glasses",
+      "FromFile": "assets/Portraits/Gunnar/summer_{{GunnarHasFreckles}}_gunnar1_glasses.png"
+    },
+    //fall
+    {
+      "LogName": "Gunnar Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_1",
+      "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_1_glasses",
+      "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar_glasses.png"
+    },
+    {
+      "LogName": "Gunnar Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_2",
+      "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar1_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_2_glasses",
+      "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar1_glasses.png"
+    },
+    //winter
+    {
+      "LogName": "Gunnar Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_1",
+      "FromFile": "assets/Portraits/Gunnar/winter_{{GunnarHasFreckles}}_gunnar_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_1_glasses",
+      "FromFile": "assets/Portraits/Gunnar/winter_{{GunnarHasFreckles}}_gunnar_glasses.png"
+    },
+    {
+      "LogName": "Gunnar Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_2",
+      "FromFile": "assets/Portraits/Gunnar/winter_{{GunnarHasFreckles}}_gunnar1_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_2_glasses",
+      "FromFile": "assets/Portraits/Gunnar/winter_{{GunnarHasFreckles}}_gunnar1_glasses.png"
+    },
+    //bonus
+    {
+      "LogName": "Gunnar Bonus Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Bonus",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_otherevent_noglasses.png" //gunnar_{{GunnarHasFreckles}}_otherevent_noglasses.png
+    },
+    {
+      "LogName": "Gunnar Bonus Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Bonus_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_otherevent_glasses.png" //gunnar_{{GunnarHasFreckles}}_otherevent_glasses.png
+    },
+    //festivals
+    //eggfest
+    {
+      "LogName": "Gunnar eggfest Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_eggfest",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_eggfest_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar eggfest Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_eggfest_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_eggfest_glasses.png"
+    },
+
+    //fLateerdance
+    {
+      "LogName": "Gunnar fLateerdance Portraits Test",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_fLateerdance",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_fLateerdance_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar fLateerdance Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_fLateerdance_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_fLateerdance_glasses.png"
+    },
+
+    //luau
+    {
+      "LogName": "Gunnar luau Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_luau",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_luau.png"
+    },
+
+    //fireworks
+    {
+      "LogName": "Gunnar fireworks Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_fireworksfestival",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_fireworksfestival.png"
+    },
+
+    //moonlightjellies
+    {
+      "LogName": "Gunnar moonlightjellies Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_moonlightjellies",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_moonlightjellies.png"
+    },
+
+    //sdvfair
+    {
+      "LogName": "Gunnar sdvfair Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_sdvfair",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_sdvfair_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar sdvfair Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_sdvfair_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_sdvfair_glasses.png"
+    },
+
+    //spiritseve1
+    {
+      "LogName": "Gunnar spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_spiritseve_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_spiritseve_glasses.png"
+    },
+    //spiritseve2
+    {
+      "LogName": "Gunnar spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_spiritseve1_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar spiritseve Portraits test",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_spiritseve1_glasses.png"
+    },
+    //icefestival
+    {
+      "LogName": "Gunnar icefestival Portraits test",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_icefestival",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_icefestival_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar icefestival Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_icefestival_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_icefestival_glasses.png"
+    },
+    //winterfeast
+    {
+      "LogName": "Gunnar winterfeast Portraits test",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_winterfeast",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_winterfeast_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar winterfeast Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_winterfeast_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_winterfeast_glasses.png"
+    },
+    //special
+    //armor1
+    {
+      "LogName": "Gunnar Armor Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_armored_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar Armor Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_armored_glasses.png"
+    },
+    //armor2
+    {
+      "LogName": "Gunnar Armor2 Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored2",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_armored1_noglasses.png"
+    },
+    {
+      "LogName": "Gunnar Armor2 Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored2_glasses",
+      "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_armored1_glasses.png"
+    },
+
+    //////////////////////////////////////////
+    //Gudrun
+    //////////////////////////////////////////
+
+    //default
+    {
+      "LogName": "Gudrun Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun",
+      "FromFile": "assets/Portraits/Gudrun/gudrun.png"
+    },
+
+    //beach/resort
+    {
+      "LogName": "Gudrun Island Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Beach",
+      "FromFile": "assets/Portraits/Gudrun/Gudrun_Beach.png"
+    },
+    //spring
+    {
+      "LogName": "Gudrun Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spring_1",
+      "FromFile": "assets/Portraits/Gudrun/spring_gudrun.png"
+    },
+    {
+      "LogName": "Gudrun Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spring_2",
+      "FromFile": "assets/Portraits/Gudrun/spring_gudrun1.png"
+    },
+    //summer
+    {
+      "LogName": "Gudrun summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_summer_1",
+      "FromFile": "assets/Portraits/Gudrun/summer_gudrun.png"
+    },
+    {
+      "LogName": "Gudrun summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_summer_2",
+      "FromFile": "assets/Portraits/Gudrun/summer_gudrun1.png"
+    },
+    //fall
+    {
+      "LogName": "Gudrun Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Fall_1",
+      "FromFile": "assets/Portraits/Gudrun/fall_gudrun.png"
+    },
+    {
+      "LogName": "Gudrun Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Fall_2",
+      "FromFile": "assets/Portraits/Gudrun/fall_gudrun1.png"
+    },
+    //winter
+    {
+      "LogName": "Gudrun Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Winter_1",
+      "FromFile": "assets/Portraits/Gudrun/winter_gudrun.png"
+    },
+    {
+      "LogName": "Gudrun Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Winter_2",
+      "FromFile": "assets/Portraits/Gudrun/winter_gudrun1.png"
+    },
+    //festivals
+    //eggfest
+    {
+      "LogName": "Gudrun eggfest Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_eggfest",
+      "FromFile": "assets/Portraits/Gudrun/gudrun_eggfest.png"
+    },
+    //fLateerdance
+    {
+      "LogName": "Gudrun fLateerdance Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_fLateerdance",
+      "FromFile": "assets/Portraits/Gudrun/gudrun_fLateerdance.png"
+    },
+    //luau
+    {
+      "LogName": "Gudrun luau Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_luau",
+      "FromFile": "assets/Portraits/Gudrun/gudrun_luau.png"
+    },
+    //moonlightjellies
+    {
+      "LogName": "Gudrun moonlightjellies Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_moonlightjellies",
+      "FromFile": "assets/Portraits/Gudrun/gudrun_moonlightjellies.png"
+    },
+    //sdvfair
+    {
+      "LogName": "Gudrun sdvfair Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_sdvfair",
+      "FromFile": "assets/Portraits/Gudrun/gudrun_sdvfair.png"
+    },
+    //spiritseve1
+    {
+      "LogName": "Gudrun spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve1",
+      "FromFile": "assets/Portraits/Gudrun/gudrun_spiritseve.png"
+    },
+    //spiritseve2
+    {
+      "LogName": "Gudrun spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve2",
+      "FromFile": "assets/Portraits/Gudrun/gudrun_spiritseve1.png"
+    },
+
+    //winterfeast
+    {
+      "LogName": "Gudrun winterfeast Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_winterfeast",
+      "FromFile": "assets/Portraits/Gudrun/gudrun_winterfeast.png"
+    },
+
+    //////////////////////////////////////////
+    //Teren
+    //////////////////////////////////////////
+
+    //default
+    {
+      "LogName": "Teren Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren",
+      "FromFile": "assets/Portraits/Teren/teren.png"
+    },
+
+    //beach/resort
+    {
+      "LogName": "Teren Island Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_Beach",
+      "FromFile": "assets/Portraits/Teren/Teren_Beach.png"
+    },
+    //spring
+    {
+      "LogName": "Teren Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_spring_1",
+      "FromFile": "assets/Portraits/Teren/spring_teren.png"
+    },
+    {
+      "LogName": "Teren Spring Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_spring_2",
+      "FromFile": "assets/Portraits/Teren/spring_teren1.png"
+    },
+    //summer
+    {
+      "LogName": "Teren summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_summer_1",
+      "FromFile": "assets/Portraits/Teren/summer_teren.png"
+    },
+    {
+      "LogName": "Teren summer Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_summer_2",
+      "FromFile": "assets/Portraits/Teren/summer_teren1.png"
+    },
+    //fall
+    {
+      "LogName": "Teren Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_Fall_1",
+      "FromFile": "assets/Portraits/Teren/fall_teren.png"
+    },
+    {
+      "LogName": "Teren Fall Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_Fall_2",
+      "FromFile": "assets/Portraits/Teren/fall_teren1.png"
+    },
+    //winter
+    {
+      "LogName": "Teren Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_Winter_1",
+      "FromFile": "assets/Portraits/Teren/winter_teren.png"
+    },
+    {
+      "LogName": "Teren Winter Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_Winter_2",
+      "FromFile": "assets/Portraits/Teren/winter_teren1.png"
+    },
+    //festivals
+    //eggfest
+    {
+      "LogName": "Teren eggfest Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_eggfest",
+      "FromFile": "assets/Portraits/Teren/teren_eggfest.png"
+    },
+    //fLateerdance
+    {
+      "LogName": "Teren fLateerdance Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_fLateerdance",
+      "FromFile": "assets/Portraits/Teren/teren_fLateerdance.png"
+    },
+    //luau
+    {
+      "LogName": "Teren luau Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_luau",
+      "FromFile": "assets/Portraits/Teren/teren_luau.png"
+    },
+
+    //moonlightjellies
+    {
+      "LogName": "Teren moonlightjellies Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_moonlightjellies",
+      "FromFile": "assets/Portraits/Teren/teren_moonlightjellies.png"
+    },
+    //sdvfair
+    {
+      "LogName": "Teren sdvfair Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_sdvfair",
+      "FromFile": "assets/Portraits/Teren/teren_sdvfair.png"
+    },
+    //spiritseve1
+    {
+      "LogName": "Teren spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve1",
+      "FromFile": "assets/Portraits/Teren/teren_spiritseve.png"
+    },
+    //spiritseve2
+    {
+      "LogName": "Teren spiritseve Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve2",
+      "FromFile": "assets/Portraits/Teren/teren_spiritseve1.png"
+    },
+    //icefestival
+    {
+      "LogName": "Teren icefestival Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_icefestival",
+      "FromFile": "assets/Portraits/Teren/teren_icefestival.png"
+    },
+    //winterfeast
+    {
+      "LogName": "Teren winterfeast Portraits",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_winterfeast",
+      "FromFile": "assets/Portraits/Teren/teren_winterfeast.png"
+    },
+    //teren work
+    {
+      "LogName": "Teren Work Assorted Portraits - Blue",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Blue",
+      "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_blue.png"
+    },
+    {
+      "LogName": "Teren Work Assorted Portraits - Dark",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Dark",
+      "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_dark.png"
+    },
+    {
+      "LogName": "Teren Work Assorted Portraits - Green",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Green",
+      "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_green.png"
+    },
+    {
+      "LogName": "Teren Work Assorted Portraits - Purple",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Purple",
+      "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_purple.png"
+    },
+    {
+      "LogName": "Teren Work Assorted Portraits - Teal",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Teal",
+      "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_teal.png"
+    },
+    {
+      "LogName": "Teren Work Assorted Portraits - Pink",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Pink",
+      "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_pink.png"
+    },
+    {
+      "LogName": "Teren Work Assorted Portraits - YelLate",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_YelLate",
+      "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_yelLate.png"
+    },
+    {
+      "LogName": "Teren Work Assorted Portraits - Red",
+      "Action": "EditImage",
+      "Priority": "Late",
+      "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+      "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_red.png"
+    }
+  ]
+  }

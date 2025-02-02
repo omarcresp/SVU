@@ -1,0 +1,564 @@
+{
+    "Changes": [
+        //Immersive "FunDay" Dialogue
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJasper",
+            "Entries": {
+                "funLeave_Jasper": "{{i18n:funLeave.{{Token}}}}",
+                "funReturn_Jasper": "{{i18n:funReturn.{{Token}}}}"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJasper",
+            "Entries": {
+                "spouseRoom_Jasper": "{{i18n:spouseRoom.scroll}}"
+            },
+            "When": {
+                "HasWalletItem |contains=DwarvishTranslationGuide": false
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJasper",
+            "Entries": {
+                "Outdoor_2": "{{i18n:outdoor2.noDwarf}}",
+                "Outdoor_3": "{{i18n:outdoor3.noDwarf}}",
+                "Outdoor_4": "{{i18n:outdoor4.noDwarf}}"
+            },
+            "When": {
+                "HasSeenEvent |contains=55990003": false
+            }
+        },
+        // Player "killed"
+        {
+            "LogName": "Player 'Killed'",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Dwarf 18 10 1/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.Mines.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.Mines.02}}\"/viewport 19 10 true/pause 1000/speak Dwarf \"{{i18n:PlayerKilled.Mines.03}}\"/move Dwarf 3 0 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end"
+            },
+            "When": {
+                "HasSeenEvent": "55990005"
+            }
+        },
+        {
+            "LogName": "Player 'Killed'",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Jasper 22 8 2/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.Skull.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.Skull.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.Skull.03}}\"/speed Jasper 5/move Jasper 0 3 2/textAboveHead Jasper \"My love!\"/move Jasper -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Jasper 0 1 3/speak Jasper \"{{i18n:PlayerKilled.Skull.04}}\"/emote farmer 60/pause 500/speak Jasper \"{{i18n:PlayerKilled.Skull.05}}\"/emote Jasper 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"{{i18n:PlayerKilled.Skull.06}}\"/pause 500/speak Harvey \"{{i18n:PlayerKilled.Skull.07}}\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/pause 500/faceDirection Jasper 3/speak Jasper \"{{i18n:PlayerKilled.Skull.08}}\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end"
+            }
+        },
+        //Archaeology House Jasper event
+        {
+            "Logname": "Arc Event Event",
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "5599016/f Jasper 2750/O Jasper/p Jasper": "playful/6 10/Gunther 3 10 0 Jasper -100 -100 0 farmer -100 -100 0/skippable/pause 1000/playSound doorOpen/warp Jasper 3 14/move Jasper 0 -2 0 true/faceDirection Gunther 2/speak Gunther \"{{i18n:5599016.01}}\"/pause 500/emote Jasper 32/speak Jasper \"{{i18n:5599016.02}}\"/pause 500/textAboveHead Gunther \"Splendid!\"/pause 1500/speak Gunther \"{{i18n:5599016.03}}\"/addObject 3 11 102 0/move Jasper -1 0 0/move Jasper 0 -1 1/emote Jasper 8/speak Gunther \"{{i18n:5599016.04}}\"/pause 500/playSound pickUpItem/removeSprite 3 11/animate Jasper false true 700 21 20 20 20 21 21 21 21/pause 1000/emote Jasper 16/pause 1000/playSound doorOpen/warp farmer 3 14/pause 500/jump Gunther 4/stopAnimation Jasper 22/speak Jasper \"{{i18n:5599016.05}}\"/emote farmer 32/move farmer 0 -3 3/faceDirection Jasper 1/pause 1000/emote Jasper 20/faceDirection farmer 0/pause 1000/move farmer 1 0 3/quickQuestion {{i18n:5599016.q1}}(break)speak Jasper \"{{i18n:5599016.q2}}\"(break)speak Jasper \"{{i18n:5599016.q3}}\"(break)speak Jasper \"{{i18n:5599016.q4}}\"/pause 1000/speak Jasper \"{{i18n:5599016.06}}\"/jump farmer 3/emote farmer 32/pause 1500/speak Jasper \"{{i18n:5599016.07}}\"/pause 500/emote Jasper 20/emote farmer 32/speak Jasper \"{{i18n:5599016.08}}\"/emote farmer 56/speak Gunther \"{{i18n:5599016.09}}\"/move Jasper 1 0 1/emote Jasper 60/pause 500/faceDirection Jasper 0/speak Jasper \"{{i18n:5599016.10}}\"/faceDirection Jasper 1/pause 5000/faceDirection Jasper 2 true/faceDirection farmer 2 true/pause 2000/end"
+            }
+        },
+        {
+            "LogName": "Beach Picnic map",
+            "Action": "Load",
+            "Target": "Maps/BeachJasperPicnic",
+            "FromFile": "assets/Maps/Beach_Jasper_Picnic.tmx",
+            "When": {
+                "HasSeenEvent |contains=5599015": false
+            }
+        },
+        {
+            "Logname": "Winter and fall Monday Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jasper",
+            "Entries": {
+                "marriage_Mon": "800 Custom_LK_Museum2 9 14 0/1200 Custom_LK_Museum2 22 5 0/1400 ArchaeologyHouse 2 10 0 \"Strings\\schedules\\Jasper:marriage_AH1\"/2030 bed"
+            },
+            "When": {
+                "Season": "fall, winter"
+            }
+        },
+        //Anniversary event
+        {
+            "Logname": "Anniversary Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "When": {
+                "Season": "{{SeasonAnniversary}}"
+            },
+            "Entries": {
+                "5599015/u {{DayAnniversary}}/e 5599017/O Jasper/t 1700 2200/n Jasper_Anniversary/w sunny": "ocean/-100 -100/Jasper 67 11 0 farmer 56 13 1/changeToTemporaryMap BeachJasperPicnic/addLantern 735 68 9 3/viewport 67 10/skippable/pause 1000/move farmer 8 0 0/move farmer 0 -2 1 true/move Jasper -2 0 3 true/pause 1000/faceDirection Jasper 3/pause 500/emote Jasper 20/pause 1500/speak Jasper \"{{i18n:5599015.01}}\"/emote farmer 32/speak Jasper \"{{i18n:5599015.02}}\"/fade/viewport -1000 -1000/warp farmer 67 7/positionOffset farmer 0 18/warp Jasper 68 7/faceDirection farmer 2/faceDirection Jasper 2/viewport 67 10/pause 1000/speak Jasper \"{{i18n:5599015.03}}\"/faceDirection Jasper 3/faceDirection farmer 1/playMusic sappypiano/speak Jasper \"{{i18n:5599015.04}}\"/positionOffset farmer 2 0/pause 10/speak Jasper \"{{i18n:5599015.05}}\"/positionOffset farmer 2 0/pause 10/speak Jasper \"{{i18n:5599015.06}}\"/pause 500/emote Jasper 20/pause 1000/positionOffset farmer 2 0/pause 10/speak Jasper \"{{i18n:5599015.07}}\"/positionOffset Jasper -2 0/speak Jasper \"{{i18n:5599015.08}}\"/emote farmer 60/pause 1000/speak Jasper \"{{i18n:5599015.09}}\"/positionOffset Jasper -2 0/positionOffset farmer 2 0/speak Jasper \"{{i18n:5599015.10}}\"/pause 1000/animate farmer false true 100 101/showFrame Jasper 26/positionOffset Jasper -2 0/pause 10/emote farmer 20/pause 3000/viewport move 0 -1 5000/globalFade/viewport -1000 -1000/end"
+            }
+        },
+        {
+            "LogName": "FlowerFestival",
+            "Action": "EditImage",
+            "Target": "Characters/Jasper",
+            "FromFile": "assets/Characters/Airyn/Jasper_FlowerDance.png",
+            "Update": "OnLocationChange",
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 128
+            },
+            "When": {
+                "LocationName": "Temp",
+                "DayEvent": "flower dance",
+                "JasperPortraits": "Airyn, Nin"
+            }
+        },
+        {
+            "LogName": "FlowerFestival",
+            "Action": "EditImage",
+            "Target": "Portraits/Jasper",
+            "FromFile": "assets/Portraits/{{JasperPortraits}}/Jasper_FlowerDance.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "LocationName": "Temp",
+                "DayEvent": "flower dance",
+                "JasperPortraits": "Airyn, Nin"
+            }
+        },
+        /**********************************************************
+        P R E G N A N C Y  A N D   K I D S 
+        (PregnancyTalk is configurable)
+        ***********************************************************/
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJasper",
+            "Entries": {
+                "patio_Jasper": "{{i18n:patio.havingchild}}",
+                "spouseRoom_Jasper": "{{i18n:spouseRoom.havingchild}}",
+                "funReturn_Jasper": "{{i18n:funReturn.havingchild}}"
+            },
+            "When": {
+                "HavingChild": "@{{playerName}}"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJasper",
+            "Entries": {
+                "Indoor_Day_0": "{{i18n:indoor0.pregnant}}",
+                "Indoor_Night_4": "{{i18n:indoor4.pregnant}}",
+                "Indoor_Day_2": "{{i18n:indoor2.pregnant}}",
+                "spouseRoom_Jasper": "{{i18n:spouseroom.pregnant}}"
+            },
+            "When": {
+                "Pregnant": "@{{playerName}}",
+                "HasSeenEvent": "5599008",
+                "PregnancyTalk": true
+            }
+        },
+        {
+            "LogName": "Player 'Killed' while Pregnant",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Jasper 22 8 2/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.pregnant.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.pregnant.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.pregnant.03}}\"/speed Jasper 5/move Jasper 0 3 2/textAboveHead Jasper \"My love!\"/move Jasper -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Jasper 0 1 3/speak Jasper \"{{i18n:PlayerKilled.pregnant.04}}\"/emote farmer 60/pause 500/speak Jasper \"{{i18n:PlayerKilled.pregnant.05}}\"/emote Jasper 40/pause 1500/faceDirection Jasper 1/emote farmer 28/pause 500/pause 500/speak Harvey \"{{i18n:PlayerKilled.pregnant.06}}\"/pause 500/speak Harvey \"{{i18n:PlayerKilled.pregnant.07}}\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/pause 500/move Jasper 0 1 3/speak Jasper \"{{i18n:PlayerKilled.pregnant.08}}\"/showFrame 0/pause 1000/emote farmer 28/hospitaldeath/end"
+            },
+            "When": {
+                "Pregnant": "@{{playerName}}",
+                "PregnancyTalk": true,
+                "HasSeenEvent": "5599008"
+            }
+        },
+        { //This sets the "birth" event to trigger
+            "LogName": "Setting event Player pregnant",
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "5599007/O Jasper/x Gunther_Letter true": "null",
+                "5599023/e 5599009/O Jasper/x Parent_Letter true": "null"
+            },
+            "When": {
+                "Pregnant": "@{{playerName}}",
+                "PregnancyTalk": true
+            }
+        },
+        { //This sets the birth event ID to be replaced with the letter code, if player is not pregnant
+            "LogName": "Setting event when player not pregnant",
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "5599008/O Jasper/x Gunther_Letter2 true": "null",
+                "5599021/e 5599009/O Jasper/x Parent_Letter2 true": "null",
+                "5599040/e 5599021/O Jasper/A Jasper_BabySleep2/x Parent_Letter3 true": "null"
+            },
+            "When": {
+                "HavingChild": "Jasper",
+                "Pregnant |contains=@{{playerName}}": "false"
+            }
+        },
+        { //This sets the birth event ID to be replaced with the letter code, if player chooses not to have PregnancyTalk
+            "LogName": "Setting event Player pregnant",
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "5599008/O Jasper/x Gunther_Letter2 true": "null",
+                "5599021/e 5599009/O Jasper/x Parent_Letter2 true": "null"
+            },
+            "When": {
+                "Pregnant": "@{{playerName}}",
+                "HavingChild": "Jasper",
+                "PregnancyTalk": false
+            }
+        },
+        {
+            "LogName": "Alien Capsule",
+            "Action": "Load",
+            "Target": "Characters/StrangeCapsule",
+            "FromFile": "assets/Characters/StrangeCapsule.png"
+        },
+        {
+            "LogName": "Farmhouse events",
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "5599008/e 5599007/O Jasper/t 600 700/L": "none/31 26/farmer 27 24 3 Jasper 22 24 1 Harvey -100 -100 2/addConversationTopic FarmerPregnantJasper 14/skippable/pause 500/move farmer -3 0 3/speak Jasper \"{{i18n:5599008.01}}\"/addObject 22 32 201 1/pause 1500/animate farmer false true 350 104 105/pause 500/jump Jasper 5/removeSprite 22 32/pause 500/textAboveHead Jasper \"{{i18n:5599008.06}}\"/pause 500/move Jasper 1 0 1/pause 500/stopAnimation farmer/showFrame 5/speak Jasper \"{{i18n:5599008.02}}\"/fade/viewport -1000 -1000/warp Jasper 5 7/warp Harvey 5 5/warp farmer 4 5/faceDirection farmer 1/faceDirection Jasper 0/faceDirection Harvey 3/changeLocation Hospital/viewport 8 8 true/animate Harvey true true 1000 21/pause 500/emote Jasper 28/pause 500/stopAnimation Harvey 12/pause 500/emote farmer 8/pause 500/pause 500/speak Harvey \"{{i18n:5599008.03}}\"/pause 500/emote farmer 40/pause 1500/speak Harvey \"{{i18n:5599008.04}}\"/pause 500/textAboveHead Jasper \"{{i18n:5599008.07}}\"/pause 1500/jump Jasper 5/emote farmer 16/pause 500/move Jasper 0 -1 3 true/move farmer 0 1 1 true/pause 1500/animate Jasper true false 4500 28/animate farmer false false 4500 101/positionOffset farmer 10 0/positionOffset Jasper -10 0/emote farmer 20/faceDirection Harvey 2/pause 1500/emote Harvey 32/pause 1000/fade/viewport -1000 -1000/end dialogue Jasper \"{{i18n:5599008.05}}\"",
+                "5599010/e 5599008/O Jasper/A FarmerPregnantJasper/x Jasper_BabyArrives true": "null",
+                "5599009/e 5599012/O Jasper/A Jasper_BabySleep/t 0600 0900/L": "kindadumbautumn/31 14/farmer 27 21 0 Jasper 32 16 0/addConversationTopic Jasper_BabyCrib 14/skippable/addTemporaryActor Baby 22 32 31 14 0 false/positionOffset Baby 0 -12/animate Baby false true 480 8 9 10 11 8 8 8 8/pause 500/speak Jasper \"{{i18n:5599009.01}}\"/pause 500/move farmer 0 -5 1 true/speak Jasper \"{{i18n:5599009.02}}\"/pause 500/move farmer 3 0 1/stopAnimation Baby 11/pause 500/emote farmer 32/pause 500/showFrame Baby 4/animate Baby false false 480 4 5 6 7 4 4 4/textAboveHead Baby \"{{i18n:5599009.06}}\"/faceDirection Jasper 3/pause 500/speak Jasper \"{{i18n:5599009.03}}\"/pause 500/textAboveHead Baby \"{{i18n:5599009.07}}\"/faceDirection farmer 0/speak Jasper \"{{i18n:5599009.04}}\"/pause 500/pause 500/emote farmer 20/pause 500/textAboveHead Jasper \"{{i18n:5599009.08}}\"/faceDirection Jasper 0/pause 500/speak Jasper \"{{i18n:5599009.05}}\"/pause 1000/warp -100 -100 true/end",
+                "5599013/e 5599009/A Jasper_BabyCrib/O Jasper/x Jasper_BabyCrawling": "null",
+                "5599014/e 5599013/A Jasper_BabyCrawler/n Jasper_BabyCrawling/O Jasper/x Jasper_Todd": "null",
+                "5599017/O Jasper/z fall/z spring/z summer/u 28/t 2000 2600/L": "continue/36 26/farmer 27 24 3 Jasper 22 24 0/skippable/pause 500/faceDirection Jasper 1/emote Jasper 20/move Jasper 2 0 1 true/move farmer -2 0 3 true/speak Jasper \"{{i18n:5599017.01}}\"/positionOffset Jasper 16 0/positionOffset farmer -16 0/showFrame Jasper 28/animate farmer true false 1500 101/pause 1500/warp Jasper 24 24/warp farmer 25 24/showFrame Jasper 4/positionOffset farmer 0 16/speak Jasper \"{{i18n:5599017.02}}#$b#$q 55990171 null#{{i18n:5599017.03}}#$r 55990172 0 NewYears_1#{{i18n:5599017.04}}#$r 55990172 25 NewYears_2#{{i18n:5599017.05}}#$r 55990172 50 NewYears_3#{{i18n:5599017.06}}#$r 55990172 50 NewYears_4#{{i18n:5599017.07}}#$r 55990173 -10 NewYears_5#{{i18n:5599017.08}}#$r 55990173 -50 NewYears_6#{{i18n:5599017.09}}\"/fork 55990173 NewYearEnd/pause 500/speak Jasper \"{{i18n:5599017.10}}\"/pause 500/faceDirection Jasper 0/pause 500/pause 500/emote Jasper 40/playMusic starshoot/pause 1500/faceDirection Jasper 1/speak Jasper \"{{i18n:5599017.11}}\"/pause 500/emote Jasper 40/pause 1500/speak Jasper \"{{i18n:5599017.12}}\"/pause 500/emote farmer 56/pause 1000/end",
+                "NewYearEnd": "pause 500/faceDirection Jasper 0/pause 500/emote Jasper 40/pause 1500/speak Jasper \"{{i18n:NewYearEnd.01}}\"/pause 1000/end",
+                "5599040/e 5599021/O Jasper/A Jasper_BabySleep2/x Parent_Letter3 true": "null",
+                "5599042/Hn Got_Capsule/Hl Capsule_Broken/p Jasper/L": "continue/27 24/farmer 27 28 0 Jasper 26 24 1/addTemporaryActor StrangeCapsule 16 32 27 24 2/addConversationTopic AlienCapsule 3/skippable/animate AlienCapsule false true 1000 0 1/pause 500/textAboveHead Jasper \"{{i18n:5599042.00}}\"/pause 500/jump farmer 5/emote farmer 8/move farmer 0 -2 0/pause 1000/faceDirection Jasper 2/emote Jasper 16/pause 500/speak Jasper \"{{i18n:5599042.01}}\"/emote farmer 28/pause 500/speak Jasper \"{{i18n:5599042.02}}\"/faceDirection Jasper 1/move farmer 0 -1 0/speak Jasper \"{{i18n:5599042.03}}\"/pause 400/emote Jasper 40/emote farmer 8/pause 1000/speak Jasper \"{{i18n:5599042.04}}\"/faceDirection Jasper 2/pause 500/faceDirection farmer 3/speak Jasper \"{{i18n:5599042.05}}\"/emote farmer 56/faceDirection farmer 0/faceDirection Jasper 1/speak Jasper \"{{i18n:5599042.06}}\"/emote farmer 60/pause 1000/end",
+                "5599043/e 5599042/p Jasper/Hn Capsule_Broken/L": "continue/27 24/farmer 24 24 0 Jasper -100 -100 0/addConversationTopic Capsule_Hatched 14/skippable/pause 1000/playSound doorOpen/warp Jasper 27 29/speed Jasper 4/move Jasper 0 -4 0/textAboveHead Jasper \"{{i18n:5599043.00}}\"/jump farmer 3/faceDirection farmer 1/speed farmer 5/move farmer 3 0 2/emote farmer 8/speak Jasper \"{{i18n:5599043.01}}\"/pause 500/emote farmer 16/speak Jasper \"{{i18n:5599043.02}}\"/faceDirection Jasper 1/pause 500/faceDirection Jasper 3/pause 500/faceDirection Jasper 0/speak Jasper \"{{i18n:5599043.03}}\"/pause 500/emote Jasper 40/pause 500/speak Jasper \"{{i18n:5599043.04}}\"/pause 500/emote farmer 56/pause 500/emote Jasper 32/pause 1000/faceDirection Jasper 2/speak Jasper \"{{i18n:5599043.05}}\"/speed Jasper 5/move Jasper 0 4 2/warp Jasper -100 -100/playSound doorClose/emote farmer 28/pause 1000/end dialogue Jasper \"{{i18n:5599043.06}}\""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/EventRepeater/EventstoRepeat",
+            "Entries": {
+                "5599017": "null"
+            }
+        },
+        {
+            "LogName": "Shane reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries": {
+                "Capsule_Hatched": "The girls were really unsettled last night. I hope there's no fox around.$2"
+            }
+        },
+        {
+            "LogName": "Demetrius reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries": {
+                "Capsule_Hatched": "Those shards of Jasper's? I analysed them. Unfortunately, I can make no firm conclusion on their origin.$2#$b#No silica based, certainly. Further research will be required.$3"
+            }
+        },
+        {
+            "LogName": "George reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/George",
+            "Entries": {
+                "Capsule_Hatched": "Something rattled the garbage cans last night, what an unearthly racket!$2#$b#Left trash strewn all over the lawn too. Darned 'coons.$3"
+            }
+        },
+        {
+            "LogName": "Alex reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries": {
+                "Capsule_Hatched": "Dusty's upset today. That cat must've been tormenting him again. Poor boy.$2"
+            }
+        },
+        //Kid related Dialogue
+        { //Jasper talks about the first kid (he talks less about kid2 currently, this may change when in game we have a second child)
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJasper",
+            "Entries": {
+                "OneKid_0": "{{i18n:OneKid0.{{kid1}}}}",
+                "OneKid_1": "{{i18n:OneKid1.{{kid1}}}}",
+                "OneKid_2": "{{i18n:OneKid2.{{kid1}}}}",
+                "OneKid_3": "{{i18n:OneKid3.{{kid1}}}}"
+            }
+        },
+        {
+            "LogName": "Villager comments - Caroline",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries": {
+                "FarmerPregnantJasper": "{{i18n:pregnancyTalk.caroline}}"
+            },
+            "When": {
+                "Pregnant": "@{{playerName}}",
+                "PregnancyTalk": "true"
+            }
+        },
+        {
+            "LogName": "Villager comments - Jodi",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+            "Entries": {
+                "FarmerPregnantJasper": "{{i18n:pregnancyTalk.jodi}}"
+            }
+        },
+        {
+            "LogName": "Dwarf comments",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dwarf",
+            "Entries": {
+                "FarmerPregnantJasper": "{{i18n:pregnancyTalk.dwarf}}"
+            },
+            "When": {
+                "HasSeenEvent": "55990005",
+                "Pregnant": "@{{playerName}}",
+                "PregnancyTalk": "true"
+            }
+        },
+        {
+            "LogName": "Evelyn",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Evelyn",
+            "Entries": {
+                "FarmerPregnantJasper": "{{i18n:pregnancyTalk.evelyn}}"
+            },
+            "When": {
+                "Pregnant": "@{{playerName}}",
+                "PregnancyTalk": "true"
+            }
+        },
+        {
+            "LogName": "Marlon",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "Entries": {
+                "FarmerPregnantJasper": "{{i18n:pregnancyTalk.marlon}}"
+            }
+        },
+        {
+            "LogName": "Gunther",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gunther",
+            "Entries": {
+                "FarmerPregnantJasper": "{{i18n:pregnancyTalk.gunther}}"
+            }
+        },
+        {
+            "LogName": "Jasper",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jasper",
+            "When": {
+                "Relationship:Jasper": "married"
+            },
+            "Entries": {
+                "FarmerPregnantJasper": "{{i18n:pregnancyTalk.jasper}}",
+                //Locational Dialogue
+                "Town": "Good day my love.$l",
+                // "CommunityCenter": "Ah, Beloved. I have so many ideas for today.",
+                "Beach": "Shall we dabble our toes in the water, my love?$l",
+                "Forest": "Can you hear them, my love? The creatures in the trees? The forest is truly alive.",
+                "Mountain": "There's nothing quite like this fresh mountain air, is there beloved?",
+                "Mine": "Oh Beloved, I still am not too fond of the dark and the embrace of the earth.$2"
+            }
+        },
+        {
+            "LogName": "Harvey",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries": {
+                "FarmerPregnantJasper": "{{i18n:pregnancyTalk.harvey}}"
+            },
+            "When": {
+                "Pregnant": "@{{playerName}}",
+                "PregnancyTalk": "true"
+            }
+        },
+        {
+            "LogName": "Pregnant and farmhouse strings",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "NPC.cs.4448": "{{i18n:jasper.4448}}",
+                "NPC.cs.4449": "{{i18n:jasper.4449}}",
+                "NPC.cs.4452": "{{i18n:jasper.4452}}",
+                "NPC.cs.4455": "{{i18n:jasper.4455}}",
+                "NPC.cs.4500": "{{i18n:jasper.4500}}",
+                "NPC.cs.4486": "{{i18n:jasper.4486}}",
+                "NPC.cs.4488": "{{i18n:jasper.4488}}"
+            },
+            "When": {
+                "Spouse": "Jasper",
+            }
+        },
+        {
+            "LogName": "Giving birth in game",
+            "Action": "EditData",
+            "Target": "strings/Events",
+            "Entries": {
+                "BirthMessage_PlayerMother": "{{i18n:jasper.birth}}",
+                "BabyNamingTitle_Male": "{{i18n:jasper.babyboy}}",
+                "BabyNamingTitle_Female": "{{i18n:jasper.babygirl}}"
+            },
+            "When": {
+                "HasFlag": "Gunther_Letter",
+                "PregnancyTalk": true
+            }
+        },
+        {
+            "LogName": "Player birth scene",
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "5599012/e 5599008/A FarmerPregnantJasper/O Jasper/t 600 700": "sappypiano/-100 -100/farmer 19 12 2 Jasper 20 12 2 Harvey 5 15 2/addConversationTopic Jasper_BabySleep 14/skippable/pause 500/speak Jasper \"{{i18n:5599012.01}}\"/changeLocation Hospital/showFrame 5/ambientLight 150 150 150/viewport 12 14 true/pause 1000/speak Jasper \"{{i18n:5599012.02}}\"/faceDirection Jasper 3/pause 500/emote farmer 60/emote Jasper 28/pause 500/speak Jasper \"{{i18n:5599012.03}}\"/pause 500/move Jasper 0 1 3/pause 500/speak Jasper \"{{i18n:5599012.04}}\"/pause 500/emote farmer 12/pause 500/move Jasper 0 -1 3/speak Jasper \"{{i18n:5599012.05}}\"/pause 500/emote farmer 36/pause 500/speak Jasper \"{{i18n:5599012.06}}\"/pause 500/emote farmer 32/pause 500/speak Jasper \"{{i18n:5599012.07}}\"/pause 1000/fade/viewport -1000 -1000 true/warp Harvey 21 12/faceDirection Harvey 3/warp Jasper 20 11/faceDirection Jasper 2/speak Jasper \"{{i18n:5599012.08}}\"/pause 500/speak Jasper \"{{i18n:5599012.09}}\"/pause 1500/message \"{{i18n:5599012.10}}\"/pause 1500/showFrame 4/speak Harvey \"{{i18n:5599012.11}}\"/showFrame Jasper 40/fade/viewport 12 14 true/pause 500/emote Jasper 20/pause 2000/showFrame Jasper 41/speak Jasper \"{{i18n:5599012.12}}\"/emote farmer 60/pause 500/emote Harvey 32/pause 1500/viewport -1000 -1000 true/message \"{{i18n:5599012.13}}\"/pause 1000/end"
+            },
+            "When": {
+                "HasFlag": "Gunther_Letter",
+                "PregnancyTalk": true
+            }
+        },
+        { //The birth event repeated, to see if it still works. May be rewritten a little later
+            "LogName": "Player birth scene",
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "5599022/e 5599021/A FarmerPregnantJasper2/O Jasper/t 600 700": "sappypiano/-100 -100/farmer 19 12 2 Jasper 20 12 2 Harvey 5 15 2/addConversationTopic Jasper_BabySleep2 14/skippable/pause 500/speak Jasper \"{{i18n:5599012.01}}\"/changeLocation Hospital/showFrame 5/ambientLight 150 150 150/viewport 12 14 true/pause 1000/speak Jasper \"{{i18n:5599012.02}}\"/faceDirection Jasper 3/pause 500/emote farmer 60/emote Jasper 28/pause 500/speak Jasper \"{{i18n:5599012.03}}\"/pause 500/move Jasper 0 1 3/pause 500/speak Jasper \"{{i18n:5599012.04}}\"/pause 500/emote farmer 12/pause 500/move Jasper 0 -1 3/speak Jasper \"{{i18n:5599012.05}}\"/pause 500/emote farmer 36/pause 500/speak Jasper \"{{i18n:5599012.06}}\"/pause 500/emote farmer 32/pause 500/speak Jasper \"{{i18n:5599012.07}}\"/pause 1000/fade/viewport -1000 -1000 true/warp Harvey 21 12/faceDirection Harvey 3/warp Jasper 20 11/faceDirection Jasper 2/speak Jasper \"{{i18n:5599012.08}}\"/pause 500/speak Jasper \"{{i18n:5599012.09}}\"/pause 1500/message \"{{i18n:5599012.10}}\"/pause 1500/showFrame 4/speak Harvey \"{{i18n:5599012.11}}\"/showFrame Jasper 40/fade/viewport 12 14 true/pause 500/emote Jasper 20/pause 2000/showFrame Jasper 41/speak Jasper \"{{i18n:5599012.12}}\"/emote farmer 60/pause 500/emote Harvey 32/pause 1500/viewport -1000 -1000 true/message \"{{i18n:5599012.13}}\"/pause 1000/end"
+            },
+            "When": {
+                "PregnancyTalk": true
+            }
+        },
+        //C H I L D   T W O
+        {
+            "LogName": "Giving birth in game",
+            "Action": "EditData",
+            "Target": "strings/Events",
+            "Entries": {
+                "BirthMessage_PlayerMother": "{{i18n:jasper.birth2}}"
+            },
+            "When": {
+                "HasSeenEvent": "5599009"
+            }
+        },
+        {
+            "LogName": "Farmhouse events",
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "5599021/e 5599009/O Jasper/t 600 610/L": "none/16 16/farmer 22 29 3 Jasper 17 29 1/addConversationTopic FarmerPregnantJasper2 13/skippable/pause 1500/move farmer -3 0 3/speak Jasper \"{{i18n:5599021.01}}\"/addObject 17 27 201 1/pause 1500/animate farmer false true 350 104 105/pause 500/jump Jasper 5/removeSprite 17 27/pause 500/textAboveHead Jasper \"{{i18n:5599021.02}}\"/pause 500/move Jasper 1 0 1/pause 500/stopAnimation farmer/showFrame 5/speak Jasper \"{{i18n:5599021.03}}\"/pause 1000/emote farmer 40/pause 1000/jump Jasper 5/speak Jasper \"{{i18n:5599021.04}}\"/pause 500/emote Jasper 20/pause 500/speak Jasper \"{{i18n:5599021.05}}\"/emote farmer 60/pause 1000/end dialogue Jasper \"{{i18n:5599021.06}}\""
+            },
+            "When": {
+                "HasFlag": "Parent_Letter"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJasper",
+            "Entries": {
+                "patio_Jasper": "{{i18n:patio.havingchild2}}",
+                "spouseRoom_Jasper": "{{i18n:spouseRoom.havingchild2}}"
+            },
+            "When": {
+                "HavingChild": "@{{playerName}}",
+                "HasSeenEvent": "5599009"
+            }
+        },
+        //K I D   S P R I T E S
+        {
+            "Action": "Load",
+            "Target": "Characters/BoyChild",
+            "FromFile": "assets/Characters/Toddler_boy.png",
+            "When": {
+                "Spouse": "Jasper",
+                "JasperKids": true
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Toddler",
+            "FromFile": "assets/Characters/Toddler_boy.png",
+            "When": {
+                "Spouse": "Jasper",
+                "JasperKids": true
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Toddler_girl",
+            "FromFile": "assets/Characters/Toddler_girl.png",
+            "When": {
+                "Spouse": "Jasper",
+                "JasperKids": true
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/GirlChild",
+            "FromFile": "assets/Characters/Toddler_girl.png",
+            "When": {
+                "Spouse": "Jasper",
+                "JasperKids": true
+            }
+        },
+        {
+            "LogName": "Perfection Dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Intro_Spouse": "{{i18n:summit.jasper.1}}",
+                "SummitEvent_Intro2_Spouse": "{{i18n:summit.jasper.2a}}",
+                "SummitEvent_Intro2_Spouse_Gruff": "{{i18n:summit.jasper.2b}}",
+                "SummitEvent_Dialogue1_Spouse": "{{i18n:summit.jasper.3}}",
+                "SummitEvent_Dialogue2_Spouse": "{{i18n:summit.jasper.4}}",
+                "SummitEvent_Dialogue3_Jasper": "{{i18n:summit.jasper.5}}"
+            }
+        },
+        {
+            "LogName": "Jasper",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jasper",
+            "Entries": {
+                "GiftReactionCategory_-80": "{{i18n:giftReaction.flowers.s15}}"
+            },
+            "When": {
+                "Season": "summer",
+                "Day": "15"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/z_RSVspousePic",
+            "FromFile": "assets/Portraits/WeddingPortraitRSV.png",
+            "When": {
+                "Query: '{{Spouse}}' = 'Jasper'": true
+            },
+            "Update": "OnLocationChange, OnTimeChange",
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/z_RSVspousePic",
+            "FromFile": "assets/Portraits/WeddingPortraitJasperIsla.png",
+            "When": {
+                "Query: '{{Spouse}}' = 'Jasper'": true,
+                "PlayerName": "Isla"
+            },
+            "Update": "OnLocationChange, OnTimeChange",
+        },
+        /*{
+            "LogName": "Child NPC events",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "5599500/O Jasper/t 1000 1600": "breezy/47 32/farmer 49 40 0 Jasper 49 32 1/addTemporaryActor BoyChild 16 32 52 33 3 false/addTemporaryActor GirlChild 16 32 51 27 2 true/skippable/advancedMove GirlChild false 3 0 -3 0 0 -3 0 3/animate BoyChild false true 120 17 18 19 18 17 16 0 16 17 18 19 18 17 16 0/move farmer 0 -5 0/faceDirection Jasper 2/speak Jasper \"Good morning, my love! We were just getting some fresh air.#$b#Care to join us?\"/pause 1000/stopAnimation GirlChild/speed GirlChild 6/move GirlChild 0 4 2/jump GirlChild/emote GirlChild 20/pause 1000/end"
+            },
+            "When": {
+                "TwoToddlers": true,
+                "JasperKids": true
+            }
+        }*/
+    ]
+}

@@ -1,0 +1,196 @@
+{
+    "Changes": [
+      
+        {
+            "LogName": "NPC Gift Tastes - Dwarf loves milk",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Fields": {
+                "Dwarf": {
+                    "1": "554 60 62 64 66 68 70 749 -6"
+                }
+            },
+            "When": {
+                "HasSeenEvent": "55990007"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dwarf",
+            "Entries": {
+                "GiftReaction_Milk": "Ah, delicious! A fine vintage, yes?",
+                "GiftReaction_Large_Milk": "This cow juice certainly hits the spot."
+            },
+            "When": {
+                "HasSeenEvent": "55990007"
+            }
+        },
+        //Hides the Dwarf cave from human eyes
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "FromFile": "assets/Maps/MineDwarfIllusion.tmx",
+            "ToArea": {
+                "X": 37,
+                "Y": 2,
+                "Width": 13,
+                "Height": 13
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.Tilesheets": true,
+                "HasWalletItem |contains=DwarvishTranslationGuide": false,
+                "HasMod |contains=delloti.mine": false
+            }
+        },
+        //Reveals the Dwarf cave once you can talk to Dwarf (also will trigger an event first)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "FromFile": "assets/Maps/MineDwarf.tmx",
+            "ToArea": {
+                "X": 37,
+                "Y": 2,
+                "Width": 13,
+                "Height": 13
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR2, delloti.mine": false,
+                "HasMod |contains=DaisyNiko.Tilesheets": true,
+                "HasWalletItem |contains=DwarvishTranslationGuide": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/FarmCave",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 15,
+                        "Y": 34
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 45 9 Mine"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod |contains=delloti.mine": true,
+                "FarmCaveChange": true,
+                "HasMod |contains=DaisyNiko.Tilesheets": true,
+                "HasWalletItem |contains=DwarvishTranslationGuide": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 45,
+                        "Y": 13
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 15 35 FarmCave"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod": "DaisyNiko.Tilesheets",
+                "FarmCaveChange": true,
+                "Relationship:Dwarf": "Friendly,engaged,married",
+                "HasMod |contains=DaisyNiko.SVR2,delloti.mine ": false
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 46,
+                        "Y": 9
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 15 35 FarmCave"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod": "DaisyNiko.Tilesheets",
+                "FarmCaveChange": true,
+                "Relationship:Dwarf": "Friendly,engaged,married",
+                "HasMod |contains=delloti.mine ": true
+            }
+        },
+        { //New dialogue for Dwarf
+            "LogName": "Dwarf Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dwarf",
+            "Entries": {
+                "Mon2": "It's weird what people leave lying around. I don't know what most of it's for, but... do you like my collection?",
+                "summer_Mon4": "The sun is no friend to my kind, sundweller. His gaze burns our skin.",
+                "Mon6": "Sometimes I dream of the sky. How high do you think it goes, friend?",
+                "winter_Mon8": "It wasn't just your skill at mining that proved you trustworthy, friend. The Mother thinks highly of you.",
+                "Mon10": "My people are gone. Lost. What if I'm the last?",
+                "Tue2": "Finest bombs this side of the Cascade Mountains. They'll make all the rocks go boom!",
+                "summer_Tue4": "The earth is our Mother and our guardian, sundweller. I feel safest in her embrace.",
+                "Tue6": "My sires told stories of the shadowfolk. Scary stories that kept sleep away.#$b#I can feel them here, deep in the mines: Broken, lost, and filled with anger.",
+                "winter_Tue8": "We didn't mean to hurt the shadowfolk and blow open their home.#$b#It was an accident! A terrible, horrible accident.",
+                "Tue10": "Do you think the shadow-person in the stinky-underdark gets lonely too?#$b#He doesn't seem angry, like the other ones, the ones below.",
+                "Wed2": "Pretty dangerous place, these mines. You're gonna need some supplies. I've got bombs and I've got lollipops. Best kind. Candied cave carrot!",
+                "summer_Wed4": "The warrior came snooping around last night, smelling of death and sorrow.#$b#I hid from him, sundweller, for I am not brave - and there was blood on his blade.",
+                "winter_Wed8": "I find things in the mines that make me think of my people. It makes me sad.#$b#Where are my kin, friend?",
+                "Wed10": "Have you ever heard or seen any more of my kin, friend? If you find any sign... you'd tell me, wouldn't you?",
+                "Thu6": "My sibling fell in love with the sun; it burned their eyes. Remember friend, the sun cannot be trusted.",
+                "Thu8": "Sometimes at night I wander through town. Humans have the weirdest stuff.#$b#And they just leave it lying around like it doesn't matter.",
+                "Thu10": "The human with the silly hat keeps watch. I don't think he trusts me.#$b#You trust me, don't you friend?",
+                "Fri4": "My sire taught me bombcraft. Do you know the tricks?#$b#Ah, but why make them yourself, when you can buy them from me!",
+                "Fri6": "I had a name, but I hid it so no-one could hurt me.#$b#Names are powerful, friend, be careful who you trust with yours.",
+                "fall_Fri8": "Sometimes when it rains, I sneak out to listen to her play, the female with the amethyst hair.#$b#There is magic in her music.. it makes me remember home.",
+                "Fri10": "I'll tell you a secret, friend. I made this shop for you. Who else is gonna buy my stuff?",
+                "Sat4": "The mines can be treacherous. Be careful, sundweller.#$b#My wares will help you stay alive.",
+                "Sat8": "I came from mountains far away. Escaped from... No, you don't need to hear my sad story!#$b#The valley called me home. The end.",
+                "Sat10": "The Elemental Wars were terrible. My sire told stories about the carnage.#$b#They made sure I remember.",
+                "Sun": "$1 Dwarf_Milk#One day you'll have to tell me about this beverage you call \"milk\".$k#$e#Human food intrigues me. Is it true you drain the juices from other animals to drink?",
+                "Sun8": "That human with the wire-frame eyes, the one that smells of metal and oil. I watch her stare at the stars.#$b#Sire said we came from the stars. I'm not sure I believe them.",
+                "Sun10": "You're a good friend. I'm glad I trusted you.",
+                "summer_Mon10": "I think one day, yes, I will trust you with my true name.#$b#But that day is... not today, friend.",
+                "summer_Tue_8": "Do you hear the song of the earth, friend? No, of course you don't. Human ears aren't very good.",
+                "summer_Wed10": "You are a good to me, friend, for this is a lonely place.#$b#If you ever see more of my people, you will let me know, yes?",
+                "Fri_inlaw_Jasper": "I hope your mate isn't telling all of our secrets, no?",
+                "DwarfVisit": "I'm not ready to return them yet... okay?",
+                "JasperHome1": "I hope your friend's okay. But please keep our secret.#$b#Humans fear what they don't understand and destroy what they fear.",
+                "JasperHomeA": "Thanks for keeping me secret, friend. Maybe one day I'll talk to your friend... but I've gotta decide if he can be trusted first. Okay?"
+            }
+        },
+        {
+            "LogName": "Dwarf dialogue related to Jasper",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dwarf",
+            "When": {
+                "HasSeenEvent": "55990005"
+            },
+            "Entries": {
+                "winter_Fri_inlaw_Jasper": "Your mate has some most outrageous ideas, friend.#$b#But there is insight too, when you listen between the lines",
+                "summer_Fri_inlaw_Jasper": "Your mate is teaching me your language, friend!#$b#But he uses a great many words I don't understand.#$b#What does {{random: preposterous, terraformation, subcutaneous, metamorphic, thesaurus}} mean?",
+                "fall_Fri_inlaw_Jasper": "Humans are a strange species, @. Why does your mate use so many words to say the same thing?",
+                "spring_Fri_inlaw_Jasper": "Greetings friend! Pleased you could join us. How goes your mining?"
+            }
+        },
+        {
+            "LogName": "Mine Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "55990001/k 50709914": "EarthMine/18 7/Dwarf -100 -100 0 farmer 18 12 0/skippable/pause 500/move farmer 0 -4 0/pause 500/playSound stairsdown/emote farmer 16/warp Dwarf 23 9/pause 500/move Dwarf 0 -1 3/pause 500/jump Dwarf 1/faceDirection farmer 1/speak Dwarf \"{{i18n:55990001.01}}\"/pause 500/quickQuestion {{i18n:55990001.q0}}(break)emote Dwarf 16\\speak Dwarf \"{{i18n:55990001.q1}}\"(break)emote Dwarf 16\\speak Dwarf \"{{i18n:55990001.q2}}\"(break)emote Dwarf 16\\speak Dwarf \"{{i18n:55990001.q3}}\"(break)emote Dwarf 12\\speak Dwarf \"{{i18n:55990001.q4}}\"/pause 500/speak Dwarf \"{{i18n:55990001.02}}\"/pause 500/faceDirection Dwarf 1/pause 500/emote Dwarf 28/pause 500/move Dwarf -2 0 3/pause 500/speak Dwarf \"{{i18n:55990001.03}}\"/pause 500/emote farmer 12/pause 500/speak Dwarf \"{{i18n:55990001.04}}\"/shake Dwarf 1050/message \"{{i18n:55990001.05}}\"/question null \"{{i18n:55990001.06}}#{{i18n:55990001.07}}#{{i18n:55990001.08}}\"/pause 500/emote Dwarf 32/pause 1000/speak Dwarf \"{{i18n:55990001.09}}\"/faceDirection Dwarf 1/move Dwarf 5 0 1 true/pause 500/playSound healSound/Message \"{{i18n:55990001.10}}\"/pause 1000/end",
+                "55990007/i 184": "EarthMine/41 11/farmer 35 8 1 Dwarf 43 6 2/skippable/pause 500/move farmer 7 0 0/jump Dwarf 4/move Dwarf 0 1 2/speak Dwarf \"{{i18n:55990007.01}}\"/quickQuestion {{i18n:55990007.q0}}(break)speak Dwarf \"{{i18n:55990007.q1}}\"(break)speak Dwarf \"{{i18n:55990007.q2}}\"(break)speak Dwarf \"{{i18n:55990007.q3}}\"/pause 500/speak Dwarf \"{{i18n:55990007.02}}\"/emote farmer 60/pause 1500/speak Dwarf \"{{i18n:55990007.03}}\"/emote farmer 40/faceDirection farmer 1/addObject 43 8 184/removeItem 184/pause 500/emote Dwarf 16/speak Dwarf \"{{i18n:55990007.04}}\"/pause 500/quickQuestion {{i18n:55990007.q4}}(break)speak Dwarf \"{{i18n:55990007.q5}}\"(break)speak Dwarf \"{{i18n:55990007.q6}}\"(break)speak Dwarf \"{{i18n:55990007.q7}}\"/pause 500/removeSprite 43 8/playSound sipTea/pause 500/jump Dwarf 5/emote Dwarf 20/speak Dwarf \"{{i18n:55990007.05}}\"/emote farmer 32/pause 1000/end"
+            },
+            "When": {
+                "HasWalletItem |contains=DwarvishTranslationGuide": true
+            }
+        }
+    ]
+}

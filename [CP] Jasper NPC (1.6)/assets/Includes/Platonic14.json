@@ -1,0 +1,59 @@
+{
+    "Changes": [
+        //Platonic 14-heart event
+        {
+            "Action": "Load",
+            "Target": "Maps/pk14_Museum2",
+            "FromFile": "assets/Maps/pk14_Museum2.tmx"
+        },
+        {
+            "LogName": "Jasper Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "55990002/f Jasper 2500/e 5599055/e 50709921/t 500 900": "Of Dwarves/-1000 -1000/farmer -100 -100 3 Dwarf 14 10 0 Jasper 19 4 1/skippable/addConversationTopic DwarfVisit_pk 5/changeToTemporaryMap pk14_Museum2/viewport -1000 -1000/addObject 15 4 102 0/showFrame Jasper 38/playSound doorClose/pause 1000/playSound thudStep/pause 1500/playSound wind/pause 1500/pause 500/ambientLight 160 160 160/pause 500/pause 1000/viewport 17 5 clamp true/pause 1000/emote Dwarf 40/move Dwarf 0 -5 0/pause 500/faceDirection Dwarf 3/pause 500/faceDirection Dwarf 1/move Dwarf 1 0 0/pause 500/playSound newRecipe/removeSprite 15 4/move Dwarf 0 -1 1/pause 1000/emote Dwarf 8/pause 1000/showFrame Jasper 39/pause 500/speak Jasper \"{{i18n:55990002.01}}\"/playSound woodyStep/pause 500/emote Dwarf 16/pause 400/emote Dwarf 28/faceDirection Dwarf 0/pause 500/playSound thudStep/jump Dwarf 5/pause 500/warp Dwarf -1000 -1000/pause 500/pause 500/speak Jasper \"{{i18n:55990002.pk14.02}}\"/pause 500/pause 500/emote Jasper 12/fade/warp Jasper 16 4/showFrame Jasper 36/fade unfade/pause 500/emote Jasper 28/speak Jasper \"{{i18n:55990002.pk14.03}}\"/pause 500/speak Jasper \"{{i18n:55990002.04}}\"/pause 500/speak Jasper \"{{i18n:55990002.05}}\"/pause 500/showFrame Jasper 35/speak Jasper \"{{i18n:55990002.pk14.06}}\"/pause 1000/end",
+            },
+        }, //showFrame Jasper 51/
+        {
+            "LogName": "Jasper Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "55990003/e 55990002/k 55990004/f Dwarf 1000/o Jasper": "EarthMine/-100 -100/Dwarf 42 10 2 farmer 36 8 1/skippable/addObject 42 11 102 1/viewport 36 11/pause 500/emote Dwarf 8/pause 1500/emote Dwarf 12/pause 500/move farmer 4 0 2/jump farmer 3/emote farmer 16/pause 500/Message \"{{i18n:55990003.00}}\"/pause 500/speed farmer 5/move farmer 0 2 2/faceDirection Dwarf 3/shake Dwarf 400/pause 500/move Dwarf -1 0 3/faceDirection farmer 1/question null \"#{{i18n:55990003.01}}#{{i18n:55990003.02}}\"/pause 500/emote Dwarf 12/pause 500/faceDirection Dwarf 1/shake Dwarf 250/speak Dwarf \"{{i18n:55990003.pk14.03}}\"/pause 500/emote farmer 40/pause 500/faceDirection Dwarf 1/stopMusic/pause 500/playMusic starshoot/pause 500/faceDirection Dwarf 2/speak Dwarf \"{{i18n:55990003.04}}\"/pause 500/faceDirection Dwarf 3/pause 500/speak Dwarf \"{{i18n:55990003.05}}\"/pause 500/shake Dwarf 140/emote Dwarf 28/quickQuestion {{i18n:55990003.q0}}(break)pause 500\\jump Dwarf 3\\emote Dwarf 16\\speak Dwarf \"{{i18n:55990003.q1}}\"(break)pause 500\\speak Dwarf \"{{i18n:55990003.q2}}\"(break)pause 500\\shake Dwarf 240\\speak Dwarf \"{{i18n:55990003.q3}}\"/pause 500/speak Dwarf \"{{i18n:55990003.pk14.06}}\"/pause 500/emote farmer 8/pause 500/speak Dwarf \"{{i18n:55990003.07}}\"/pause 500/emote farmer 16/speak Dwarf \"{{i18n:55990003.pk14.08}}\"/pause 500/faceDirection Dwarf 1/pause 500/faceDirection Dwarf 3/pause 500/speak Dwarf \"{{i18n:55990003.09}}\"/pause 500/emote Dwarf 40/speak Dwarf \"{{i18n:55990003.10}}\"/pause 500/speak Dwarf \"{{i18n:55990003.11}}\"/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Jasper Events",
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "55990004/e 55990002/o Jasper/f Dwarf 25/A DwarfVisit_pk/t 1000 1800": "sappypiano/12 10/farmer -100 -100 0 Jasper 3 10 0 Gunther 3 8 2/skippable/pause 500/speak Jasper \"{{i18n:55990004.pk14.01}}\"/emote Gunther 36/speak Jasper \"{{i18n:55990004.pk14.02}}\"/pause 1000/playSound doorOpen/pause 500/warp farmer 3 14/move farmer 0 -1 0/faceDirection Jasper 2/textAboveHead Jasper \"{{playerName}}\"/speak Jasper \"{{i18n:55990004.pk14.03}}\"/emote farmer 8/pause 1500/addObject 3 11 102 0/playSound thudStep/pause 500/speak Jasper \"{{i18n:55990004.pk14.04}}\"/pause 500/showFrame Jasper 31/jump farmer 2/move farmer 0 -1 0/pause 500/message \"{{i18n:55990004.05}}\"/pause 500/showFrame Jasper 0/speak Jasper \"{{i18n:55990004.06}}\"/pause 500/speak Jasper \"{{i18n:55990004.07}}\"/pause 500/speak Jasper \"{{i18n:55990004.08}}\"/pause 500/emote farmer 32/emote Jasper 20/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Jasper Events",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jasper",
+            "Entries": {
+                "Fri": "800 Town 46 32 \"Strings\\schedules\\Jasper:marriage_{{Random:To4, To5, To6}}\"/1100 Mountain 43 7/1230 Mountain 52 6 2 Jasper_Breathe/1300 Mine 42 7 1 \"Strings\\schedules\\Jasper:dwarfVisit_{{Random:Dw1, Dw2, Dw3}}\"/1800 Custom_LK_Museum2 12 13 2 Jasper_Read",
+            },
+            "When": {
+                "HasFlag": "Dwarf_Friend"
+            }
+        },
+        {
+            "LogName": "Dwarf dialogue related to Jasper",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dwarf",
+            "When": {
+                "HasFlag": "Dwarf_Friend"
+            },
+            "Entries": {
+                "winter_Fri": "Jasper Thomas has some most outrageous ideas, friend.#$b#But sometimes there's wisdom too.",
+                "summer_Fri": "Jasper Thomas is teaching me your language, friend!#$b#But he uses a great many words I don't understand.#$b#What does {{random: preposterous, terraformation, subcutaneous, metamorphic, thesaurus}} mean?",
+                "fall_Fri": "Humans are a strange, @. Why does Jasper Thomas use so many words to say the same thing?",
+                "spring_Fri": "Greetings friend! Pleased you could join us. How goes your mining?"
+            }
+        },
+    ]
+}

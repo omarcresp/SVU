@@ -1,0 +1,104 @@
+{
+    "Changes": [
+        {
+            "LogName": "Schedule - pre-accident",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jasper",
+            "Entries": {
+                "Fri": "GOTO Mon"
+            },
+            "When": {
+                "HasSeenEvent |contains=50709911": false
+            }
+        },
+        {
+            "LogName": "Schedule - post accident, after marriage",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jasper",
+            "Entries": {
+                "marriage_Fri": "700 Town 50 22 \"Strings\\schedules\\Jasper:marriage_{{Random:To4, To5, To6}}\"/1000 AdventureGuild 5 13 3 \"Strings\\schedules\\Jasper:marriage_{{Random:Adv1, Adv2, Adv3}}\"/1630 ArchaeologyHouse 4 10 0 \"Strings\\schedules\\Jasper:marriage_{{Random:AH1, AH2, AH3}}\"/2030 bed"
+            },
+            "When": {
+                "HasSeenEvent:hostPlayer |contains=50709930": true,
+                "HasSeenEvent |contains=55990004": false
+            }
+        },
+        { //Cleans up litter for Jasper's 4-heart event (provided Shane hasn't done it first)
+            "LogName": "Removes litter from SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 79,
+                        "Y": 99
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": {
+                        "X": 80,
+                        "Y": 98
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": {
+                        "X": 77,
+                        "Y": 99
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                }
+            ],
+            "When": {
+                "HasSeenEvent |contains=50709910": false
+            }
+        },
+        {
+            "LogName": "Allows Jasper to sit on the Pelican",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Maps/PelicanBench.tmx",
+            "ToArea": {
+                "X": 62,
+                "Y": 14,
+                "Width": 3,
+                "Height": 1
+            },
+        },
+        {
+            "LogName": "Jasper Meets Dwarf",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_AdventurerSummit",
+            "Entries": {
+                "55990005/e 55990004/t 2330 2500/w sunny": "nightTime/24 21/Jasper 19 20 2 farmer 31 32 0 Dwarf -1000 -1000 2/addConversationTopic JasperMeetsDwarf 7/addMailReceived Dwarf_Friend/skippable/pause 500/move Jasper 4 0 0 true/move farmer 0 -4 0 true/pause 500/emote Jasper 28/pause 500/move Jasper -4 0 3 true/move farmer 0 -4 0 true/pause 1500/shake Jasper 240/pause 500/move Jasper 4 0 0 true/move farmer -4 0 3 true/pause 500/emote Jasper 40/pause 500/move farmer -4 0 0/emote farmer 56/pause 500/faceDirection Jasper 2/emote Jasper 20/move farmer 0 -2 0/pause 500/speak Jasper \"{{i18n:55990005.01.{{JasperSpouse}}}}\"/pause 500/emote farmer 32/pause 500/showFrame Jasper 33/pause 500/showFrame Jasper 32/pause 1500/showFrame Jasper 33/pause 500/speak Jasper \"{{i18n:55990005.02}}\"/faceDirection Jasper 3/pause 1000/move Jasper -4 0 0 true/move farmer -4 0 1 true/pause 2500/faceDirection Jasper 2/emote Jasper 60/pause 2000/move Jasper 0 -4 0 true/move farmer 0 -4 0 true/pause 1000/move Jasper 0 -1 0/fade/stopMusic/viewport -1000 -1000/warp Jasper 30 8/warp farmer 32 8/warp Dwarf 43 6/changeLocation Mine/viewport 37 8/playMusic Upper_Ambient/advancedMove Jasper false 10 0/move farmer 8 0 1/move farmer 0 1 1/pause 1500/move Dwarf 0 2 3 true/speak Dwarf \"{{i18n:55990005.03}}\"/pause 500/showFrame Jasper 4/jump Jasper 3/pause 500/emote Jasper 16/speak Jasper \"{{i18n:55990005.04}}\"/pause 500/speak Jasper \"{{i18n:55990005.05}}\"/pause 500/emote Dwarf 60/pause 500/speak Jasper \"{{i18n:55990005.06}}\"/pause 500/shake Jasper 240/move Dwarf -1 0 3/move Dwarf 0 1 3/pause 1000/faceDirection Dwarf 3/pause 500/emote Dwarf 8/pause 500/speak Dwarf \"{{i18n:55990005.07.{{JasperSpouse}}}}\"/emote farmer 28/quickQuestion {{i18n:55990005.q0}}(break)pause 500\\speak Dwarf \"{{i18n:55990005.q1}}\"(break)pause 500\\emote Jasper 12\\pause 500\\speak Jasper \"{{i18n:55990005.q2}}\"(break)pause 500\\speak Dwarf \"{{i18n:55990005.q3}}\"/pause 500/speak Jasper \"{{i18n:55990005.08}}\"/move Dwarf 0 -1 3/pause 500/speak Dwarf \"{{i18n:55990005.09}}\"/pause 500/faceDirection Dwarf 1/pause 500/emote Dwarf 40/pause 500/faceDirection Dwarf 3/playMusic sappypiano/speak Dwarf \"{{i18n:55990005.10}}\"/textAboveHead Jasper \"{{i18n:55990005.11}}\"/pause 3000/emote Dwarf 60/pause 1500/emote Jasper 40/pause 1500/speak Jasper \"{{i18n:55990005.12}}\"/speak Dwarf \"{{i18n:55990005.13}}\"/pause 500/textAboveHead Jasper \"{{i18n:55990005.14}}\"/pause 500/speak Jasper \"{{i18n:55990005.15}}\"/pause 500/faceDirection Jasper 2/faceDirection farmer 0/pause 500/speak Jasper \"{{i18n:55990005.16}}\"/faceDirection farmer 1/faceDirection Jasper 3/speak Dwarf \"{{i18n:55990005.17}}\"/jump Jasper 3/faceDirection Jasper 1/pause 500/speak Dwarf \"{{i18n:55990005.18}}\"/emote Jasper 16 true/emote farmer 16 true/speak Dwarf \"{{i18n:55990005.19}}\"/pause 500/speak Jasper \"{{i18n:55990005.20}}\"/pause 500/emote Dwarf 60/speak Dwarf \"{{i18n:55990005.21}}\"/pause 500/emote Dwarf 28/pause 500/emote Jasper 16/speak Dwarf \"{{i18n:55990005.22}}\"/emote Jasper 32/speak Jasper \"{{i18n:55990005.23}}\"/pause 500/emote Dwarf 32/pause 500/message \"{{i18n:55990005.24.{{JasperSpouse}}}}\"/pause 1000/end invisible Jasper"
+            },
+        },
+        {
+            //Jasper Community Center
+            "Action": "EditData",
+            "Target": "characters/schedules/Jasper",
+            "When": {
+                "HasSeenEvent": "191393"
+            },
+            "Entries": {
+                "22": "610 Custom_LK_Museum2 18 13 0/930 Custom_LK_Museum2 12 13 2 Jasper_Read/1100 CommunityCenter 9 23 2 Jasper_Read/1400 CommunityCenter 65 14 3/1630 Custom_LK_Museum2 12 13 2 Jasper_Read"
+            }
+        },
+        {
+            //Jasper Community Center
+            "Action": "EditData",
+            "Target": "characters/schedules/Jasper",
+            "When": {
+                "HasSeenEvent": "191393",
+                "Day": "22"
+            },
+            "Entries": {
+                "marriage_Mon": "1030 CommunityCenter 9 23 2 Jasper_Read/1840 bed"
+            }
+        }
+    ]
+}

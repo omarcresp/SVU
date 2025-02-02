@@ -1,0 +1,147 @@
+{
+	"Changes": [
+		//Festival Dialogue		
+		{
+			"LogName": "Beach Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": {
+				"Jasper": "{{i18n:summer28.jasper}}",
+				"Jasper_spouse": "{{i18n:summer28.jasper.spouse.{{JasperKidFest}}}}"
+			}
+		},
+		{
+			"LogName": "Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Jasper": "{{i18n:winter25.jasper}}",
+				"Gunther": "{{i18n:winter25.gunther}}",
+				"Cameron": "{{i18n:winter25.cameron}}",
+				"Jasper_spouse": "{{i18n:winter25.jasper.spouse.{{JasperKidFest}} }}"
+			}
+		},
+		{
+			"LogName": "Ice Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": {
+				"Jasper": "{{i18n:winter8.jasper}}",
+				"Jasper_y2": "{{i18n:winter8.jasper.y2}}",
+				"Jasper_spouse": "{{i18n:winter8.jasper.spouse.{{JasperKidFest}}}}"
+			}
+		},
+		{
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": {
+				"Jasper": "{{i18n:summer11.jasper}}",
+				"Jasper_spouse": "{{i18n:summer11.jasper.spouse.{{JasperKidFest}} }}",
+				"Jasper_y2": "{{i18n:summer11.jasper.y2}}"
+			}
+		},
+		{
+			"LogName": "Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+				"Jasper": "{{i18n:spring24.jasper}}"
+			},
+			"When": {
+				"HasSeenEvent |contains=50709914": "false"
+			}
+		},
+		{
+			"LogName": "Flower Dance - post accident",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+				"Jasper": "{{i18n:spring24.jasper.9914}}"
+			},
+			"When": {
+				"HasSeenEvent |contains=50709914": "true"
+			}
+		},
+		{
+			"LogName": "Egg Festival-married",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+				"Jasper": "{{i18n:spring24.jasper.spouse.{{JasperKidFest}}}}"
+			},
+			"When": {
+				"spouse": "Jasper",
+				"Hearts:Jasper": "10,12,13,14"
+			}
+		},
+		{
+			"LogName": "Marriage Flower Dance Accept",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Event.cs.1632": "{{i18n:accept.spouse}}"
+			},
+			"When": {
+				"Spouse": "Jasper"
+			}
+		},
+		{
+			"LogName": "Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": {
+				"Jasper": "{{i18n:spring13.jasper}}"
+			}
+		},
+		{
+			"LogName": "Egg Festival-married",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": {
+				"Jasper": "{{i18n:spring13.jasper.spouse.{{JasperKidFest}}}}"
+			},
+			"When": {
+				"spouse": "Jasper"
+			}
+		},
+		{
+			"LogName": "Spirit's Eve",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": {
+				"Jasper": "{{i18n:fall27.jasper}}",
+				"Jasper_y2": "{{i18n:fall27.jasper.y2}}",
+				"Jasper_spouse": "{{i18n:fall27.jasper.spouse.{{JasperKidFest}}}}"
+			}
+		},
+		{
+			"LogName": "Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": {
+				"Jasper": "{{i18n:fall16.jasper}}",
+				"Jasper_spouse": "{{i18n:fall16.jasper.spouse.{{JasperKidFest}}}}"
+			}
+		},
+		{
+			"LogName": "RSV Gathering",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"Entries": {
+				"Jasper": "{{i18n:fall20.jasper}}",
+				"Jasper_spouse": "{{i18n:fall20.jasper.spouse.{{JasperKidFest}}}}",
+				"Gunther": "{{i18n:fall20.gunther}}"
+			}
+		},
+		{
+			"LogName": "RSV Resolutions",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"Entries": {
+				"Jasper": "{{i18n:winter28.jasper}}",
+				"Jasper_spouse": "{{i18n:winter28.jasper.spouse.{{JasperKidFest}}}}"
+			}
+		},
+	]
+}

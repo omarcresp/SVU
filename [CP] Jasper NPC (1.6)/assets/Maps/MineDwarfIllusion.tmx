@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="13" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="13">
+ <properties>
+  <property name="AmbientLight" value="80 80 40"/>
+  <property name="ViewportFollowPlayer" type="bool" value="true"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine.png" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="325" name="z-cave_daisyextras" tilewidth="16" tileheight="16" tilecount="640" columns="20">
+  <image source="cave_daisyextras.png" width="320" height="512"/>
+ </tileset>
+ <tileset firstgid="965" name="z-townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="649">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="13" height="13">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+175,175,175,175,175,175,175,175,175,175,175,175,0,
+175,175,175,255,255,255,255,255,255,175,175,175,0,
+175,255,255,223,271,271,271,271,222,255,255,175,0,
+255,223,271,272,176,38,38,40,270,271,222,255,255,
+271,272,206,39,38,39,71,56,38,40,270,271,222,
+175,175,175,38,54,71,55,55,332,333,334,206,175,
+175,175,191,70,55,70,55,55,352,353,354,191,175,
+175,175,175,175,55,55,55,55,352,353,354,175,175,
+175,175,175,190,54,70,70,55,372,373,374,175,175,
+175,175,175,175,70,71,72,207,208,176,175,175,0,
+175,175,175,175,175,175,175,175,175,175,175,175,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="13" height="13">
+  <data encoding="csv">
+0,0,106,107,41,42,42,43,130,131,0,0,0,
+106,107,44,123,57,58,58,59,146,147,130,131,0,
+122,123,60,134,73,87,74,75,150,163,146,45,148,
+138,139,76,155,89,90,90,91,178,179,162,61,164,
+154,155,92,171,276,516,0,516,194,195,178,77,180,
+170,171,432,433,434,0,0,435,436,411,194,93,196,
+0,0,0,0,0,0,0,0,0,0,0,0,212,
+0,0,0,0,0,0,0,0,0,0,0,611,228,
+114,269,0,0,0,0,0,0,0,0,0,475,244,
+0,114,0,0,432,433,434,0,0,0,0,610,260,
+0,0,269,0,0,0,0,0,0,0,0,0,243,
+0,0,250,0,611,612,610,611,2124,0,0,258,0,
+0,0,0,250,0,0,0,0,0,0,258,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="6" name="TileData" x="128" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DwarfCave.1&quot;"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="128" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DwarfCave.1&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="13" height="13">
+  <data encoding="csv">
+114,114,0,0,0,0,0,0,0,0,114,114,114,
+0,0,0,0,0,0,0,88,0,0,0,0,114,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,392,393,394,496,0,496,0,0,0,0,0,
+0,0,412,413,414,0,0,415,416,391,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+252,253,0,0,392,393,394,0,0,0,0,0,0,
+114,269,0,0,412,413,414,0,0,0,0,0,0,
+114,250,253,0,0,0,0,0,0,0,0,0,0,
+114,114,269,0,0,0,0,0,0,0,0,242,243,
+114,114,250,234,0,0,0,0,0,0,242,258,114,
+114,114,114,250,251,252,251,252,251,252,258,114,114
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="13" height="13" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,9,0,0,0,0,9,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,9,9,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

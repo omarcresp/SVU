@@ -1,0 +1,285 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "When": {
+        "HasFlag:hostPlayer": "Jasper_Penny"
+      },
+      "Entries": {
+        "Lemurkat.SpecialOrders.JasperGeodes": {
+          "Name": "[Lemurkat.SpecialOrders.JasperGeodes_Name]",
+          "Requester": null,
+          "Duration": "TwoWeeks",
+          "Repeatable": "false",
+          "RequiredTags": "!dropbox_GuntherBox, mail_guntherBones, event_55990006",
+          "OrderType": "",
+          "SpecialRule": "",
+          "Text": "[Lemurkat.SpecialOrders.JasperGeodes_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[Lemurkat.SpecialOrders.JasperGeodes_Objective_0_Text]",
+              "RequiredCount": "20",
+              "Data": {
+                "AcceptedContextTags": "item_geode/item_frozen_geode/item_magma_geode/item_omni_geode"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[Lemurkat.SpecialOrders.JasperGeodes_Objective_1_Text]",
+              "RequiredCount": "20",
+              "Data": {
+                "DropBox": "GuntherBox",
+                "DropBoxGameLocation": "ArchaeologyHouse",
+                "DropBoxIndicatorLocation": "6 8",
+                "MinimumCapacity": "9",
+                "AcceptedContextTags": "item_geode/item_frozen_geode/item_magma_geode/item_omni_geode "
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "2000"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "Lemurkat.SpecialOrders.JasperGeodesMail",
+                "NoLetter": "false"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "Lemurkat.SpecialOrders.JasperScrolls": {
+          "Name": "[Lemurkat.SpecialOrders.JasperScrolls_Name]",
+          "Requester": null,
+          "Duration": "Week",
+          "Repeatable": "true",
+          "RequiredTags": "event_50709915",
+          "OrderType": "",
+          "SpecialRule": "",
+          "Text": "[Lemurkat.SpecialOrders.JasperScrolls_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Deliver",
+              "Text": "[Lemurkat.SpecialOrders.JasperScrolls_Objective_0_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_dwarf_scroll_i",
+                "TargetName": "Jasper"
+              }
+            },
+            {
+              "Type": "Deliver",
+              "Text": "[Lemurkat.SpecialOrders.JasperScrolls_Objective_1_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_dwarf_scroll_ii",
+                "TargetName": "Jasper"
+              }
+            },
+            {
+              "Type": "Deliver",
+              "Text": "[Lemurkat.SpecialOrders.JasperScrolls_Objective_3_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_dwarf_scroll_iii",
+                "TargetName": "Jasper"
+              }
+            },
+            {
+              "Type": "Deliver",
+              "Text": "[Lemurkat.SpecialOrders.JasperScrolls_Objective_4_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_dwarf_scroll_iv",
+                "TargetName": "Jasper"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "1000"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "Lemurkat.SpecialOrders.JasperScrollsMail",
+                "NoLetter": "false"
+              }
+            }
+          ]
+        }
+      }
+    },
+    { //Not yet implemented
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "Lemurkat.SpecialOrders.JasperDevices": {
+          "Name": "[Lemurkat.SpecialOrders.JasperDevices_Name]",
+          "Requester": null,
+          "Duration": "TwoWeeks",
+          "Repeatable": "false",
+          "RequiredTags": "event_5599052, !dropbox_GuntherBox, mail_guntherBones",
+          //event_5599052
+          "OrderType": "",
+          "SpecialRule": "",
+          "Text": "[Lemurkat.SpecialOrders.JasperDevices_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[Lemurkat.SpecialOrders.JasperDevices_Objective_0_Text]",
+              "RequiredCount": "20",
+              "Data": {
+                "AcceptedContextTags": "item_cinder_shard"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[Lemurkat.SpecialOrders.JasperDevices_Objective_1_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "DropBox": "GuntherBox",
+                "DropBoxGameLocation": "ArchaeologyHouse",
+                "DropBoxIndicatorLocation": "6 8",
+                "MinimumCapacity": "9",
+                "AcceptedContextTags": "item_dwarf_gadget "
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[Lemurkat.SpecialOrders.JasperDevices_Objective_2_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "DropBox": "GuntherBox",
+                "DropBoxGameLocation": "ArchaeologyHouse",
+                "DropBoxIndicatorLocation": "6 8",
+                "MinimumCapacity": "9",
+                "AcceptedContextTags": "item_rare_disc "
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[Lemurkat.SpecialOrders.JasperDevices_Objective_3_Text]",
+              "RequiredCount": "20",
+              "Data": {
+                "DropBox": "GuntherBox",
+                "DropBoxGameLocation": "ArchaeologyHouse",
+                "DropBoxIndicatorLocation": "6 8",
+                "MinimumCapacity": "9",
+                "AcceptedContextTags": "item_cinder_shard"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "1000"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "Lemurkat.SpecialOrders.JasperDeviceMail",
+                "NoLetter": "false"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Strings/SpecialOrderStrings",
+      "Entries": {
+        //Geodes Order
+        "Lemurkat.SpecialOrders.JasperGeodes_Name": "Geode Order",
+        "Lemurkat.SpecialOrders.JasperGeodes_Text": "I require a selection of geodes for a geology lesson, and would deeply appreciate the delivery of 20 geodes to the Archaeology House.  Many thanks, M. Jasper (Prof).",
+        "Lemurkat.SpecialOrders.JasperGeodes_Objective_0_Text": "Collect 20 Geodes.",
+        "Lemurkat.SpecialOrders.JasperGeodes_Objective_1_Text": "Deposit 20 Geodes in the drop box at the museum counter.",
+        //Scrolls Order
+        "Lemurkat.SpecialOrders.JasperScrolls_Name": "Dwarven Scrolls",
+        "Lemurkat.SpecialOrders.JasperScrolls_Text": "I current seek the mysteries of the dwarves and have heard that certain scrolls can be located deep in the mines. Please, if you have found any, I would deeply appreciate them for my research. - M. Jasper (Prof).",
+        "Lemurkat.SpecialOrders.JasperScrolls_Objective_0_Text": "Deliver a dwarf scroll with a red bow to Jasper",
+        "Lemurkat.SpecialOrders.JasperScrolls_Objective_1_Text": "Deliver a dwarf scroll with a green ribbon to Jasper",
+        "Lemurkat.SpecialOrders.JasperScrolls_Objective_3_Text": "Deliver a dwarf scroll with a blue rope to Jasper",
+        "Lemurkat.SpecialOrders.JasperScrolls_Objective_4_Text": "Deliver a dwarf scroll with a gold chain to Jasper",
+        //Dwarven Device
+        "Lemurkat.SpecialOrders.JasperDevices_Name": "Dwarven Device",
+        "Lemurkat.SpecialOrders.JasperDevices_Text": "My research on the Smoluanu requires a selection of mysterious objects, found in the mines and the volcano. Is anyone please available to deliver them to the Archaeology House. Many Thanks     - M. Jasper (Prof).",
+        "Lemurkat.SpecialOrders.JasperDevices_Objective_0_Text": "Collect 20 cinder shards",
+        "Lemurkat.SpecialOrders.JasperDevices_Objective_1_Text": "Deliver 1 Dwarven Gadget to the museum counter. ",
+        "Lemurkat.SpecialOrders.JasperDevices_Objective_2_Text": "Deliver 1 Rare Disc to the museum counter.",
+        "Lemurkat.SpecialOrders.JasperDevices_Objective_3_Text": "Deliver 20 Cinder Shards to the museum counter."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "Lemurkat.SpecialOrders.JasperGeodesMail": "Dear @,^I am most grateful for your contribution. I hope the children will be delighted to discover the wonders that are hidden within the rock. Please feel free to drop by the Blacksmith during our Wednesday lesson.^Please find included a token of appreciation.^^   - M. Jasper (Prof).%item bigobject 21 %%[#]Geode Order Thank You",
+        "Lemurkat.SpecialOrders.JasperScrollsMail": "Dear @,^Thank you so much for those scrolls. I am confident that they shall yield many revelations. Please accept these small gifts as a token of gratitude; they are rumored to be a Dwarven delicacy.^^  - M. Jasper (Prof.)%item object 554 5 %%[#]Scrolls Order Thank You",
+        "Lemurkat.SpecialOrders.JasperDeviceMail": "Dear @,^Your delivery has been gratefully received. I shall keep you updated on my studies as they proceed, but for the moment, please enjoy the enclosed. I hope you will find them useful.^^   - M. Jasper (Prof).%item object 852 5 %%[#]Dwarvish Devices Thank You"
+      }
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Data/Events/Blacksmith",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Arknir.Lucikiel, aeki.ByeByeClintHelloClarice, foggy.LfL, GuiSmith.LivelyTown": false
+      },
+      "FromFile": "assets/Blank.json"
+    },
+    { //Blacksmith event
+      "Action": "EditData",
+      "Target": "Data/Events/Blacksmith",
+      "Entries": {
+        "55990050/n Lemurkat.SpecialOrders.JasperGeodesMail/d Mon Tue Thu Fri Sat Sun/t 1000 1600": "archaeo/7 13/farmer -100 -100 0 Jas 8 14 0 Vincent 7 14 0 Jasper 5 11 2/addTemporaryActor Clint 32 48 8 12 3/skippable/animate Clint true true 120 8 8 8 8 8 8 8 8 9 10 11 12 8 8 8 8 8 8 8 8 8 8 8/warp farmer 5 19/move farmer 0 -4 1 true/pause 800/playSound crafting/pause 120/stopAnimation Clint/extendSourceRect Clint reset/showFrame Clint 4/speak Clint \"{{i18n:55990050.01}}\"/faceDirection Jasper 2/emote Jasper 32/jump Vincent 3/move Jas 0 1 3/faceDirection Vincent 3/speak Jas \"{{i18n:55990050.{{Blacksmith}}.02}}\"/pause 1000/faceDirection Jas 0/faceDirection Clint 2/emote Jas 20/pause 500/emote Clint 32/speed Vincent 3/move Vincent -1 0 2 true/speed Jas 3/move Jas -1 0 3 true/speak Vincent \"{{i18n:55990050.03}}\"/speak Jas \"{{i18n:55990050.04}}\"/move Jasper 0 3 1/faceDirection Vincent 3 true/faceDirection farmer 0 true/speak Jasper \"{{i18n:55990050.05}}\"/pause 500/faceDirection farmer 1/faceDirection Vincent 1/emote Jas 56/faceDirection Vincent 3/pause 500/textAboveHead Vincent \"{{i18n:55990050.20}}\"/textAboveHead Jas \"{{i18n:55990050.21}}\"/move Clint -1 0 2/faceDirection Vincent 0/move Jas 0 -1 0/speak Jas \"{{i18n:55990050.{{Blacksmith}}.06}}\"/emote Clint 60/speak Clint \"{{i18n:55990050.07}}\"/jump Vincent 3/faceDirection Vincent 1 true/faceDirection Jas 3 true/speak Vincent \"{{i18n:55990050.08}}\"/faceDirection Vincent 3/speak Vincent \"{{i18n:55990050.09}}\"/speak Jasper \"{{i18n:55990050.10}}\"/faceDirection Vincent 1/textAboveHead Vincent \"{{i18n:55990050.22}}\"/pause 500/speak Jasper \"{{i18n:55990050.11}}\"/faceDirection Vincent 3/speak Vincent \"{{i18n:55990050.12}}\"/pause 500/faceDirection Jasper 0/speak Jasper \"{{i18n:55990050.{{Blacksmith}}.13}}\"/faceDirection Vincent 0 true/faceDirection Jas 0 true/emote Clint 28/pause 1000/speak Clint \"{{i18n:55990050.{{Blacksmith}}.14}}\"/jump Jasper 3/speak Jasper \"{{i18n:55990050.15}}\"/faceDirection Jasper 1/faceDirection Vincent 3 true/faceDirection Jas 3 true/pause 500/speak Jasper \"{{i18n:55990050.{{Blacksmith}}.16}}\"/speak Vincent \"{{i18n:55990050.{{Blacksmith}}.17}}\"/speak Jas \"{{i18n:55990050.18}}\"/faceDirection Jas 0/speak Jas \"{{i18n:55990050.{{Blacksmith}}.19}}\"/pause 1000/end"
+      }
+    },
+    { //Archaeology House event
+      "Action": "EditData",
+      "Target": "Data/Events/ArchaeologyHouse",
+      "Entries": {
+        "55990051/n Lemurkat.SpecialOrders.JasperScrollsMail/d Mon Tue Thu Fri Sat Sun/t 1000 1400": "Of Dwarves/-100 -100/Jasper 18 9 2 Jas 19 10 3 Vincent 16 10 1 Penny 13 9 2 Gunther 3 8 2 farmer 10 13 1/skippable/showFrame Jasper 21/showFrame Jas 22/showFrame Vincent 24/showFrame Penny 18/viewport 15 12/move farmer 5 0 0 true/speak Jasper \"{{i18n:55990051.01}}\"/pause 500/emote Vincent 16/pause 500/textAboveHead Jas \"{{i18n:55990051.02}}\"/move farmer 0 1 0/move Penny 1 0 2/speak Penny \"{{i18n:55990051.03}}\"/faceDirection Penny 1/showFrame Jasper 0/faceDirection Jasper 3/showFrame Vincent 0/showFrame Jas 0/speed Vincent 3/speed Jas 3/move Jas 0 2 3 true/move Vincent 0 2 2 true/pause 2000/faceDirection Penny 2/faceDirection Jasper 2/speak Vincent \"{{i18n:55990051.04}}\"/jump Vincent 3/textAboveHead Vincent \"{{i18n:55990051.05}}\"/move Jas -2 0 2/move Jas 0 1 3/speak Vincent \"{{i18n:55990051.06}}\"/move Jas -1 0 0/speak Jas \"{{i18n:55990051.07}}\"/faceDirection Jas 2/speak Jas \"{{i18n:55990051.08}}\"/textAboveHead Vincent \"{{i18n:55990051.09}}\"/pause 1000/move Vincent -1 0 2/faceDirection Jas 3/speak Vincent \"{{i18n:55990051.10}}\"/speak Jas \"{{i18n:55990051.11}}\"/emote Penny 40/speak Penny \"{{i18n:55990051.12}}\"/faceDirection Penny 1/faceDirection Jasper 3/emote Jasper 60/pause 1000/faceDirection Penny 2/faceDirection Jasper 2/speak Penny \"{{i18n:55990051.13}}\"/jump Vincent 3/textAboveHead Vincent \"{{i18n:55990051.14}}\"/pause 1000/faceDirection Jas 0/speak Jas \"{{i18n:55990051.15}}\"/textAboveHead Jasper \"{{i18n:55990051.16}}\"/move Penny 0 4 2/move Vincent 0 1 3/speak Penny \"{{i18n:55990051.17}}\"/pause 1000/emote farmer 32/advancedMove Penny false -4 0 0 1 -4 0 0 -1 -3 0 0 -3/advancedMove Vincent false -5 0 0 1 -4 0 0 -1 -2 0 0 -3/advancedMove Jas false -6 0 0 1 -4 0 0 -1 -1 0 0 -3/faceDirection farmer 3/pause 2000/faceDirection farmer 0/advancedMove Jasper false -3 0 0 3/pause 2000/showFrame Jasper 0/speak Jasper \"{{i18n:55990051.18}}\"/speak Jasper \"$q 55990511 null#{{i18n:55990051.19}}#$r 55990512 -25 JTheory_A#{{i18n:55990051.20}}#$r 55990512 -250 JTheory_B#{{i18n:55990051.21}}#$r 55990513 25 JTheory_C#{{i18n:55990051.22}}#$r 55990513 125 JTheory_D#{{i18n:55990051.23}}\"/pause 1000/speak Jasper \"$p 55990513#{{i18n:55990051.24}}\"/pause 1000/end"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/DSentry",
+      "FromFile": "assets/Characters/DSentry.png"
+    },
+    { //Dwarf Sentry House event
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_LK_Museum2",
+      "Entries": {
+        "5599055/n Lemurkat.SpecialOrders.JasperDeviceMail": "Of Dwarves/14 14/Maru 13 14 1 farmer -100 -100 0 Jasper 14 13 2/skippable/addTemporaryActor DSentry 16 32 14 14 2 false/animate DSentry false true 1000 32/animate Maru false true 120 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 19 20 20 19 19 20 20 21 21 22 23/showFrame Jasper 29/playSound clank/pause 1000/emote Jasper 40/playSound clank/pause 1000/playSound stairsdown/warp farmer 19 19/move farmer 0 -3 3/stopAnimation Maru 4/textAboveHead Maru \"{{playerName}}!\"/showFrame Jasper 0/move farmer -4 0 0 true/speak Jasper \"{{i18n:5599055.02}}\"/pause 500/emote farmer 56/pause 1000/speak Jasper \"{{i18n:5599055.03}}\"/emote farmer 32/pause 1000/move farmer 0 -3 3/faceDirection Jasper 1/pause 500/textAboveHead Jasper \"{{i18n:5599055.04}}\"/pause 1000/faceDirection farmer 2/showFrame farmer 57/addObject 15 11 64 1/playSound discoverMineral/pause 1000/speak Jasper \"{{i18n:5599055.05}}\"/removeSprite 15 11/move farmer 0 1 3/faceDirection Jasper 2/playSound openChest/pause 500/playSound Ship/pause 1500/textAboveHead Maru \"{{i18n:5599055.06}}\"/pause 2000/textAboveHead Jasper \"{{i18n:5599055.07}}\"/pause 2000/emote Maru 28/pause 3000/playSound DwarvishSentry/stopAnimation DSentry 0/shake DSentry 500/jump Maru 3 true/emote Jasper 16 true/animate DSentry false true 30 16 16 16 17 17 18 18 18 19 19 19/pause 1000/stopAnimation DSentry/animate DSentry false true 30 28 28 28 29 29 30 30 30 31 31 31/playSound DwarvishSentry/shake Maru 240/speak Maru \"{{i18n:5599055.08}}\"/speak Jasper \"{{i18n:5599055.09}}\"/emote Maru 28/showFrame Maru 4/jump Maru/showFrame Maru 4/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/faceDirection Maru 1/warp Maru 12 14/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/shake Maru 500/speak Maru \"{{i18n:5599055.10}}\"/emote Jasper 28/speak Jasper \"{{i18n:5599055.11}}\"/emote Maru 28/jump Maru/showFrame Maru 4/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/faceDirection Maru 1/warp Maru 11 14/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/showFrame Jasper 29/faceDirection farmer 0/playSound leafrustle/textAboveHead Jasper \"{{i18n:5599055.12}}\"/pause 1000/faceDirection farmer 3/playSound DwarvishSentry/emote Maru 28/pause 1000/textAboveHead Jasper \"{{i18n:5599055.13}}\"/speak Jasper \"{{i18n:5599055.14}}\"/shake DSentry 500/stopAnimation DSentry 0/playSound Ship/pause 1000/speed Jasper 3/move Jasper -2 0 2/faceDirection Maru 0/speak Jasper \"{{i18n:5599055.15}}\"/emote Maru 60/move farmer -2 0 3/faceDirection Maru 1/speak Jasper \"{{i18n:5599055.16}}\"/pause 500/emote farmer 56/pause 1000/end"
+      }
+    }
+  ]
+}

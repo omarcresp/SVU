@@ -1,0 +1,151 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/ConcessionTastes",
+			"Entries": {
+				"Jasper": {
+					"Name": "Jasper",
+					"LovedTags": [
+						"Stardrop Sorbet",
+						"Cappucino Mousse Cake",
+						"Ice Cream Sandwich"
+					],
+					"LikedTags": [
+						"Sweet"
+					],
+					"DislikedTags": [
+						"Kale Smoothie",
+						"Salted Peanuts"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"Entries": {
+				"Jasper": {
+					"NPCName": "Jasper",
+					"Reactions": [
+						{
+							"Tag": "documentary",
+							"Response": "love",
+							"Whitelist": [],
+							"SpecialResponses": null,
+							"ID": "reaction_0"
+						},
+						{
+							"Tag": "horror",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": null,
+							"ID": "reaction_1"
+						},
+						{
+							"Tag": "spring_movie_1",
+							"Response": "love",
+							"Whitelist": [],
+							"SpecialResponses": {
+							  "BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:movies.2.1}}"
+							  },
+							"DuringMovie": {
+							  "ResponsePoint": null,
+							  "Script": "/message \"{{i18n:movies.2.2}}\"",
+							  "Text": "{{i18n:movies.2.3}}"
+							},
+						
+							  "AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:movies.2.1}}"
+							  }
+							},
+							"ID": "reaction_2"
+						  },
+						{
+							"Tag": "fall_movie_0",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:movies.4.1}}"
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/shake Jasper 1000/pause 500/message \"{{i18n:movies.4.2}}\"",
+									"Text": null
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:movies.4.3}}\"",
+									"Text": "{{i18n:movies.4.4}}"
+								}
+							},
+							"ID": "reaction_4"
+						},
+						{
+							"Tag": "like",
+							"Response": "like",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:movies.5.1}}"
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:movies.5.2}}"
+								}
+							},
+							"ID": "reaction_5"
+						},
+						{
+							"Tag": "dislike",
+							"Response": "like",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:movies.6.1}}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:movies.6.2}}"
+								}
+							},
+							"ID": "reaction_6"
+						}
+					]
+				}
+			}
+		},
+		{ //Adds spouse strings for the movie theater
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"MovieInvite_Spouse_Jasper": "{{i18n:movies.spouse.invite}}"
+			}
+		},
+		{ //Adds spouse strings for the movie theater
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"MovieInvite_Spouse_Jasper": "{{i18n:movies.spouse.kids}}"
+			},
+			"When": {
+				"HasSeenEvent": "5599009"
+			}
+		}
+	]
+}
